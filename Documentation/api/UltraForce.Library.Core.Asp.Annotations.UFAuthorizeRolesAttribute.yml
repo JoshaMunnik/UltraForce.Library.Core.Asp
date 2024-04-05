@@ -14,8 +14,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Annotations.UFAuthorizeRolesAttribute
   type: Class
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Annotations/UFAuthorizeRolesAttribute.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: UFAuthorizeRolesAttribute
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Annotations\UFAuthorizeRolesAttribute.cs
+    path: ../UltraForce.Library.Core.Asp/Annotations/UFAuthorizeRolesAttribute.cs
     startLine: 40
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -98,8 +102,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Annotations.UFAuthorizeRolesAttribute.UFAuthorizeRolesAttribute(params string[])
   type: Constructor
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Annotations/UFAuthorizeRolesAttribute.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: .ctor
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Annotations\UFAuthorizeRolesAttribute.cs
+    path: ../UltraForce.Library.Core.Asp/Annotations/UFAuthorizeRolesAttribute.cs
     startLine: 46
   assemblies:
   - UltraForce.Library.Core.Asp

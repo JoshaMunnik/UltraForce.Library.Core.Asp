@@ -16,8 +16,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Services.UFRazorViewRenderer
   type: Class
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Services/UFRazorViewRenderer.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: UFRazorViewRenderer
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\UFRazorViewRenderer.cs
+    path: ../UltraForce.Library.Core.Asp/Services/UFRazorViewRenderer.cs
     startLine: 50
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -56,8 +60,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Services.UFRazorViewRenderer.UFRazorViewRenderer(Microsoft.AspNetCore.Mvc.Razor.IRazorViewEngine, Microsoft.AspNetCore.Mvc.ViewFeatures.ITempDataProvider, System.IServiceProvider)
   type: Constructor
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Services/UFRazorViewRenderer.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: .ctor
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\UFRazorViewRenderer.cs
+    path: ../UltraForce.Library.Core.Asp/Services/UFRazorViewRenderer.cs
     startLine: 79
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -93,8 +101,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Services.UFRazorViewRenderer.RenderViewAsync<TModel>(string, TModel)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Services/UFRazorViewRenderer.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: RenderViewAsync
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\UFRazorViewRenderer.cs
+    path: ../UltraForce.Library.Core.Asp/Services/UFRazorViewRenderer.cs
     startLine: 104
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -140,8 +152,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Services.UFRazorViewRenderer.RenderEmailViewAsync<TModel>(string, TModel)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Services/UFRazorViewRenderer.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: RenderEmailViewAsync
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\UFRazorViewRenderer.cs
+    path: ../UltraForce.Library.Core.Asp/Services/UFRazorViewRenderer.cs
     startLine: 124
   assemblies:
   - UltraForce.Library.Core.Asp

@@ -15,8 +15,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Tools.UFModelExpressionTools
   type: Class
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Tools/UFModelExpressionTools.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: UFModelExpressionTools
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Tools\UFModelExpressionTools.cs
+    path: ../UltraForce.Library.Core.Asp/Tools/UFModelExpressionTools.cs
     startLine: 34
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -46,8 +50,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Tools.UFModelExpressionTools.IsIEnumerable(Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Tools/UFModelExpressionTools.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: IsIEnumerable
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Tools\UFModelExpressionTools.cs
+    path: ../UltraForce.Library.Core.Asp/Tools/UFModelExpressionTools.cs
     startLine: 41
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -77,8 +85,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Tools.UFModelExpressionTools.IsGenericIEnumerable(Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Tools/UFModelExpressionTools.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: IsGenericIEnumerable
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Tools\UFModelExpressionTools.cs
+    path: ../UltraForce.Library.Core.Asp/Tools/UFModelExpressionTools.cs
     startLine: 52
   assemblies:
   - UltraForce.Library.Core.Asp

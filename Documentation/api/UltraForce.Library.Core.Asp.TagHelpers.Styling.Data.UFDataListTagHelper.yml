@@ -16,8 +16,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Data.UFDataListTagHelper
   type: Class
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Styling/Data/UFDataListTagHelper.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: UFDataListTagHelper
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\TagHelpers\Styling\Data\UFDataListTagHelper.cs
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Data/UFDataListTagHelper.cs
     startLine: 40
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -70,8 +74,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Data.UFDataListTagHelper.UFDataListTagHelper(UltraForce.Library.Core.Asp.Services.IUFTheme)
   type: Constructor
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Styling/Data/UFDataListTagHelper.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: .ctor
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\TagHelpers\Styling\Data\UFDataListTagHelper.cs
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Data/UFDataListTagHelper.cs
     startLine: 40
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -100,8 +108,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Data.UFDataListTagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Styling/Data/UFDataListTagHelper.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Process
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\TagHelpers\Styling\Data\UFDataListTagHelper.cs
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Data/UFDataListTagHelper.cs
     startLine: 46
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -135,8 +147,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Data.UFDataListTagHelper.GetDataListClasses()
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Styling/Data/UFDataListTagHelper.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetDataListClasses
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\TagHelpers\Styling\Data\UFDataListTagHelper.cs
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Data/UFDataListTagHelper.cs
     startLine: 62
   assemblies:
   - UltraForce.Library.Core.Asp

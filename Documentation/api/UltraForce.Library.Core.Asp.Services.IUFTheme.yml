@@ -59,8 +59,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Services.IUFTheme
   type: Interface
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Services/IUFTheme.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: IUFTheme
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFTheme.cs
+    path: ../UltraForce.Library.Core.Asp/Services/IUFTheme.cs
     startLine: 42
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -82,8 +86,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetButtonClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Services/IUFTheme.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetButtonClasses
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFTheme.cs
+    path: ../UltraForce.Library.Core.Asp/Services/IUFTheme.cs
     startLine: 51
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -113,8 +121,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetButtonCaptionClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Services/IUFTheme.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetButtonCaptionClasses
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFTheme.cs
+    path: ../UltraForce.Library.Core.Asp/Services/IUFTheme.cs
     startLine: 58
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -144,8 +156,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetButtonIconHtml(UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Services/IUFTheme.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetButtonIconHtml
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFTheme.cs
+    path: ../UltraForce.Library.Core.Asp/Services/IUFTheme.cs
     startLine: 64
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -174,8 +190,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetContainerClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Services/IUFTheme.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetContainerClasses
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFTheme.cs
+    path: ../UltraForce.Library.Core.Asp/Services/IUFTheme.cs
     startLine: 75
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -205,8 +225,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTabsClasses(int)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Services/IUFTheme.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetTabsClasses
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFTheme.cs
+    path: ../UltraForce.Library.Core.Asp/Services/IUFTheme.cs
     startLine: 82
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -239,8 +263,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTabRadioClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFTabProperties)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Services/IUFTheme.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetTabRadioClasses
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFTheme.cs
+    path: ../UltraForce.Library.Core.Asp/Services/IUFTheme.cs
     startLine: 89
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -270,8 +298,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTabLabelClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFTabProperties)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Services/IUFTheme.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetTabLabelClasses
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFTheme.cs
+    path: ../UltraForce.Library.Core.Asp/Services/IUFTheme.cs
     startLine: 96
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -301,8 +333,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTabContentWrapperClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFTabProperties)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Services/IUFTheme.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetTabContentWrapperClasses
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFTheme.cs
+    path: ../UltraForce.Library.Core.Asp/Services/IUFTheme.cs
     startLine: 103
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -332,8 +368,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetDataListClasses()
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Services/IUFTheme.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetDataListClasses
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFTheme.cs
+    path: ../UltraForce.Library.Core.Asp/Services/IUFTheme.cs
     startLine: 113
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -359,8 +399,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetDataNameClasses()
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Services/IUFTheme.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetDataNameClasses
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFTheme.cs
+    path: ../UltraForce.Library.Core.Asp/Services/IUFTheme.cs
     startLine: 119
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -386,8 +430,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetDataValueClasses()
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Services/IUFTheme.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetDataValueClasses
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFTheme.cs
+    path: ../UltraForce.Library.Core.Asp/Services/IUFTheme.cs
     startLine: 125
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -413,8 +461,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextWrapperClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties, string)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Services/IUFTheme.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetTextWrapperClasses
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFTheme.cs
+    path: ../UltraForce.Library.Core.Asp/Services/IUFTheme.cs
     startLine: 137
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -450,8 +502,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextLabelClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties, string)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Services/IUFTheme.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetTextLabelClasses
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFTheme.cs
+    path: ../UltraForce.Library.Core.Asp/Services/IUFTheme.cs
     startLine: 145
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -487,8 +543,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextLabelSpanClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties, string)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Services/IUFTheme.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetTextLabelSpanClasses
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFTheme.cs
+    path: ../UltraForce.Library.Core.Asp/Services/IUFTheme.cs
     startLine: 154
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -527,8 +587,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextLabelDescriptionClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties, string)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Services/IUFTheme.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetTextLabelDescriptionClasses
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFTheme.cs
+    path: ../UltraForce.Library.Core.Asp/Services/IUFTheme.cs
     startLine: 163
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -567,8 +631,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextInputClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties, string)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Services/IUFTheme.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetTextInputClasses
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFTheme.cs
+    path: ../UltraForce.Library.Core.Asp/Services/IUFTheme.cs
     startLine: 171
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -604,8 +672,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetValidationFeedbackContainerHtml(string)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Services/IUFTheme.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetValidationFeedbackContainerHtml
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFTheme.cs
+    path: ../UltraForce.Library.Core.Asp/Services/IUFTheme.cs
     startLine: 178
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -638,8 +710,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetFieldErrorsHtml(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary, string)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Services/IUFTheme.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetFieldErrorsHtml
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFTheme.cs
+    path: ../UltraForce.Library.Core.Asp/Services/IUFTheme.cs
     startLine: 187
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -678,8 +754,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetFieldErrorsClasses()
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Services/IUFTheme.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetFieldErrorsClasses
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFTheme.cs
+    path: ../UltraForce.Library.Core.Asp/Services/IUFTheme.cs
     startLine: 193
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -705,8 +785,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetCheckboxWrapperClasses()
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Services/IUFTheme.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetCheckboxWrapperClasses
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFTheme.cs
+    path: ../UltraForce.Library.Core.Asp/Services/IUFTheme.cs
     startLine: 199
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -732,8 +816,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetCheckboxLabelClasses()
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Services/IUFTheme.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetCheckboxLabelClasses
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFTheme.cs
+    path: ../UltraForce.Library.Core.Asp/Services/IUFTheme.cs
     startLine: 205
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -759,8 +847,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetCheckboxLabelSpanClasses()
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Services/IUFTheme.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetCheckboxLabelSpanClasses
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFTheme.cs
+    path: ../UltraForce.Library.Core.Asp/Services/IUFTheme.cs
     startLine: 211
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -786,8 +878,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetCheckboxLabelDescriptionClasses()
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Services/IUFTheme.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetCheckboxLabelDescriptionClasses
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFTheme.cs
+    path: ../UltraForce.Library.Core.Asp/Services/IUFTheme.cs
     startLine: 217
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -813,8 +909,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetCheckboxInputClasses()
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Services/IUFTheme.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetCheckboxInputClasses
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFTheme.cs
+    path: ../UltraForce.Library.Core.Asp/Services/IUFTheme.cs
     startLine: 223
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -840,8 +940,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetCheckboxExtraHtml()
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Services/IUFTheme.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetCheckboxExtraHtml
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFTheme.cs
+    path: ../UltraForce.Library.Core.Asp/Services/IUFTheme.cs
     startLine: 230
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -870,8 +974,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetRadioWrapperClasses()
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Services/IUFTheme.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetRadioWrapperClasses
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFTheme.cs
+    path: ../UltraForce.Library.Core.Asp/Services/IUFTheme.cs
     startLine: 236
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -897,8 +1005,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetRadioLabelClasses()
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Services/IUFTheme.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetRadioLabelClasses
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFTheme.cs
+    path: ../UltraForce.Library.Core.Asp/Services/IUFTheme.cs
     startLine: 242
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -924,8 +1036,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetRadioLabelSpanClasses()
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Services/IUFTheme.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetRadioLabelSpanClasses
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFTheme.cs
+    path: ../UltraForce.Library.Core.Asp/Services/IUFTheme.cs
     startLine: 248
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -951,8 +1067,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetRadioLabelDescriptionClasses()
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Services/IUFTheme.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetRadioLabelDescriptionClasses
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFTheme.cs
+    path: ../UltraForce.Library.Core.Asp/Services/IUFTheme.cs
     startLine: 254
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -978,8 +1098,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetRadioInputClasses()
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Services/IUFTheme.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetRadioInputClasses
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFTheme.cs
+    path: ../UltraForce.Library.Core.Asp/Services/IUFTheme.cs
     startLine: 260
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -1005,8 +1129,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetRadioExtraHtml()
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Services/IUFTheme.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetRadioExtraHtml
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFTheme.cs
+    path: ../UltraForce.Library.Core.Asp/Services/IUFTheme.cs
     startLine: 267
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -1035,8 +1163,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetSelectClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Services/IUFTheme.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetSelectClasses
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFTheme.cs
+    path: ../UltraForce.Library.Core.Asp/Services/IUFTheme.cs
     startLine: 273
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -1065,8 +1197,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetSpacerClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFSpacerProperties)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Services/IUFTheme.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetSpacerClasses
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFTheme.cs
+    path: ../UltraForce.Library.Core.Asp/Services/IUFTheme.cs
     startLine: 284
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -1096,8 +1232,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetColumnClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Services/IUFTheme.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetColumnClasses
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFTheme.cs
+    path: ../UltraForce.Library.Core.Asp/Services/IUFTheme.cs
     startLine: 291
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -1127,8 +1267,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetRowClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Services/IUFTheme.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetRowClasses
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFTheme.cs
+    path: ../UltraForce.Library.Core.Asp/Services/IUFTheme.cs
     startLine: 298
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -1158,8 +1302,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTableClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Services/IUFTheme.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetTableClasses
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFTheme.cs
+    path: ../UltraForce.Library.Core.Asp/Services/IUFTheme.cs
     startLine: 309
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -1189,8 +1337,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTableCellClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties, UltraForce.Library.Core.Asp.Types.Enums.UFTableCellType, UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties, UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableRowProperties)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Services/IUFTheme.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetTableCellClasses
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFTheme.cs
+    path: ../UltraForce.Library.Core.Asp/Services/IUFTheme.cs
     startLine: 319
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -1229,8 +1381,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTableHeaderButtonClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties, UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties, UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableRowProperties)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Services/IUFTheme.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetTableHeaderButtonClasses
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFTheme.cs
+    path: ../UltraForce.Library.Core.Asp/Services/IUFTheme.cs
     startLine: 332
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -1269,8 +1425,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTableRowClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableRowProperties, UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Services/IUFTheme.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetTableRowClasses
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFTheme.cs
+    path: ../UltraForce.Library.Core.Asp/Services/IUFTheme.cs
     startLine: 343
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -1303,8 +1463,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetFilterContainerClasses()
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Services/IUFTheme.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetFilterContainerClasses
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFTheme.cs
+    path: ../UltraForce.Library.Core.Asp/Services/IUFTheme.cs
     startLine: 350
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -1333,8 +1497,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetFilterLabelClasses()
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Services/IUFTheme.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetFilterLabelClasses
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFTheme.cs
+    path: ../UltraForce.Library.Core.Asp/Services/IUFTheme.cs
     startLine: 356
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -1360,8 +1528,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetFilterInputClasses()
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Services/IUFTheme.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetFilterInputClasses
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFTheme.cs
+    path: ../UltraForce.Library.Core.Asp/Services/IUFTheme.cs
     startLine: 362
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -1387,8 +1559,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetFilterButtonClasses()
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Services/IUFTheme.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetFilterButtonClasses
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFTheme.cs
+    path: ../UltraForce.Library.Core.Asp/Services/IUFTheme.cs
     startLine: 368
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -1414,8 +1590,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetSortAscendingClasses()
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Services/IUFTheme.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetSortAscendingClasses
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFTheme.cs
+    path: ../UltraForce.Library.Core.Asp/Services/IUFTheme.cs
     startLine: 378
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -1450,8 +1630,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetSortDescendingClasses()
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Services/IUFTheme.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetSortDescendingClasses
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFTheme.cs
+    path: ../UltraForce.Library.Core.Asp/Services/IUFTheme.cs
     startLine: 388
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -1486,8 +1670,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.IsCssClass(string)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Services/IUFTheme.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: IsCssClass
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFTheme.cs
+    path: ../UltraForce.Library.Core.Asp/Services/IUFTheme.cs
     startLine: 399
   assemblies:
   - UltraForce.Library.Core.Asp

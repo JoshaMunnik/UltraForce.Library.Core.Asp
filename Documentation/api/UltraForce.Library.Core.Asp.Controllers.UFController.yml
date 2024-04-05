@@ -15,8 +15,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Controllers.UFController
   type: Class
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Controllers/UFController.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: UFController
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Controllers\UFController.cs
+    path: ../UltraForce.Library.Core.Asp/Controllers/UFController.cs
     startLine: 41
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -253,8 +257,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Controllers.UFController.BadRequest<TEnum>(TEnum)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Controllers/UFController.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: BadRequest
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Controllers\UFController.cs
+    path: ../UltraForce.Library.Core.Asp/Controllers/UFController.cs
     startLine: 64
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -299,8 +307,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Controllers.UFController.Json(Microsoft.Extensions.Logging.ILogger, object)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Controllers/UFController.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Json
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Controllers\UFController.cs
+    path: ../UltraForce.Library.Core.Asp/Controllers/UFController.cs
     startLine: 80
   assemblies:
   - UltraForce.Library.Core.Asp

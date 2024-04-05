@@ -16,8 +16,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer
   type: Interface
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Services/IUFModelExpressionRenderer.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: IUFModelExpressionRenderer
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFModelExpressionRenderer.cs
+    path: ../UltraForce.Library.Core.Asp/Services/IUFModelExpressionRenderer.cs
     startLine: 40
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -39,8 +43,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.SetContentToNameAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput, Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression, Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Services/IUFModelExpressionRenderer.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: SetContentToNameAsync
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFModelExpressionRenderer.cs
+    path: ../UltraForce.Library.Core.Asp/Services/IUFModelExpressionRenderer.cs
     startLine: 49
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -78,8 +86,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.SetContentToValueAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput, Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression, Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Services/IUFModelExpressionRenderer.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: SetContentToValueAsync
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFModelExpressionRenderer.cs
+    path: ../UltraForce.Library.Core.Asp/Services/IUFModelExpressionRenderer.cs
     startLine: 59
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -114,8 +126,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.GetName(Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression, Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Services/IUFModelExpressionRenderer.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetName
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFModelExpressionRenderer.cs
+    path: ../UltraForce.Library.Core.Asp/Services/IUFModelExpressionRenderer.cs
     startLine: 69
   assemblies:
   - UltraForce.Library.Core.Asp

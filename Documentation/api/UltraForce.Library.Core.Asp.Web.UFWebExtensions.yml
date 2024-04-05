@@ -16,8 +16,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Web.UFWebExtensions
   type: Class
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Web/UFWebExtensions.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: UFWebExtensions
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Web\UFWebExtensions.cs
+    path: ../UltraForce.Library.Core.Asp/Web/UFWebExtensions.cs
     startLine: 38
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -50,8 +54,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Web.UFWebExtensions.UseUFSession(Microsoft.AspNetCore.Builder.IApplicationBuilder)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Web/UFWebExtensions.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: UseUFSession
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Web\UFWebExtensions.cs
+    path: ../UltraForce.Library.Core.Asp/Web/UFWebExtensions.cs
     startLine: 46
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -85,8 +93,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Web.UFWebExtensions.IsInRole(System.Security.Claims.ClaimsPrincipal, params string[])
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Web/UFWebExtensions.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: IsInRole
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Web\UFWebExtensions.cs
+    path: ../UltraForce.Library.Core.Asp/Web/UFWebExtensions.cs
     startLine: 59
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -123,8 +135,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Web.UFWebExtensions.IsInRole(System.Security.Claims.ClaimsPrincipal, System.Collections.Generic.IEnumerable<string>)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Web/UFWebExtensions.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: IsInRole
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Web\UFWebExtensions.cs
+    path: ../UltraForce.Library.Core.Asp/Web/UFWebExtensions.cs
     startLine: 70
   assemblies:
   - UltraForce.Library.Core.Asp

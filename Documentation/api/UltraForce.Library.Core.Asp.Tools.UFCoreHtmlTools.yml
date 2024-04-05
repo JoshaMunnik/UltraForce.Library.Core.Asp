@@ -14,8 +14,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Tools.UFCoreHtmlTools
   type: Class
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Tools/UFCoreHtmlTools.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: UFCoreHtmlTools
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Tools\UFCoreHtmlTools.cs
+    path: ../UltraForce.Library.Core.Asp/Tools/UFCoreHtmlTools.cs
     startLine: 36
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -47,8 +51,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Tools.UFCoreHtmlTools.RemoveDomain(Microsoft.AspNetCore.Http.HttpRequest, string)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Tools/UFCoreHtmlTools.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: RemoveDomain
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Tools\UFCoreHtmlTools.cs
+    path: ../UltraForce.Library.Core.Asp/Tools/UFCoreHtmlTools.cs
     startLine: 44
   assemblies:
   - UltraForce.Library.Core.Asp

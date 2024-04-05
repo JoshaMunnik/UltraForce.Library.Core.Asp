@@ -14,8 +14,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Localization.UFDutchDefaultModelBindingMessageProvider
   type: Class
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Localization/UFDutchDefaultModelBindingMessageProvider.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: UFDutchDefaultModelBindingMessageProvider
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Localization\UFDutchDefaultModelBindingMessageProvider.cs
+    path: ../UltraForce.Library.Core.Asp/Localization/UFDutchDefaultModelBindingMessageProvider.cs
     startLine: 38
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -52,8 +56,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Localization.UFDutchDefaultModelBindingMessageProvider.Apply(Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelBindingMessageProvider)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Localization/UFDutchDefaultModelBindingMessageProvider.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Apply
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Localization\UFDutchDefaultModelBindingMessageProvider.cs
+    path: ../UltraForce.Library.Core.Asp/Localization/UFDutchDefaultModelBindingMessageProvider.cs
     startLine: 44
   assemblies:
   - UltraForce.Library.Core.Asp

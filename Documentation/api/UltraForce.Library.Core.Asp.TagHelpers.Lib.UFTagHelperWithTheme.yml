@@ -15,8 +15,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFTagHelperWithTheme
   type: Class
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Lib/UFTagHelperWithTheme.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: UFTagHelperWithTheme
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\TagHelpers\Lib\UFTagHelperWithTheme.cs
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Lib/UFTagHelperWithTheme.cs
     startLine: 37
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -67,8 +71,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFTagHelperWithTheme.UFTagHelperWithTheme(UltraForce.Library.Core.Asp.Services.IUFTheme)
   type: Constructor
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Lib/UFTagHelperWithTheme.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: .ctor
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\TagHelpers\Lib\UFTagHelperWithTheme.cs
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Lib/UFTagHelperWithTheme.cs
     startLine: 45
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -98,8 +106,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFTagHelperWithTheme.Theme
   type: Property
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Lib/UFTagHelperWithTheme.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Theme
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\TagHelpers\Lib\UFTagHelperWithTheme.cs
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Lib/UFTagHelperWithTheme.cs
     startLine: 57
   assemblies:
   - UltraForce.Library.Core.Asp

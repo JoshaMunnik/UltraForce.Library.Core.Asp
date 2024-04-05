@@ -23,8 +23,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Tools.UFMvcTools
   type: Class
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Tools/UFMvcTools.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: UFMvcTools
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Tools\UFMvcTools.cs
+    path: ../UltraForce.Library.Core.Asp/Tools/UFMvcTools.cs
     startLine: 42
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -56,8 +60,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Tools.UFMvcTools.GetControllerName(string)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Tools/UFMvcTools.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetControllerName
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Tools\UFMvcTools.cs
+    path: ../UltraForce.Library.Core.Asp/Tools/UFMvcTools.cs
     startLine: 65
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -90,8 +98,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Tools.UFMvcTools.GetControllerName<T>()
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Tools/UFMvcTools.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetControllerName
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Tools\UFMvcTools.cs
+    path: ../UltraForce.Library.Core.Asp/Tools/UFMvcTools.cs
     startLine: 77
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -123,8 +135,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Tools.UFMvcTools.GetViewComponentName(string)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Tools/UFMvcTools.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetViewComponentName
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Tools\UFMvcTools.cs
+    path: ../UltraForce.Library.Core.Asp/Tools/UFMvcTools.cs
     startLine: 87
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -157,8 +173,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Tools.UFMvcTools.Normalize(string)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Tools/UFMvcTools.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Normalize
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Tools\UFMvcTools.cs
+    path: ../UltraForce.Library.Core.Asp/Tools/UFMvcTools.cs
     startLine: 99
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -191,8 +211,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Tools.UFMvcTools.ReplaceMacros(string, System.Security.Principal.IPrincipal?)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Tools/UFMvcTools.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: ReplaceMacros
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Tools\UFMvcTools.cs
+    path: ../UltraForce.Library.Core.Asp/Tools/UFMvcTools.cs
     startLine: 113
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -235,8 +259,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Tools.UFMvcTools.AddFirstItem(Microsoft.AspNetCore.Mvc.Rendering.SelectList, Microsoft.AspNetCore.Mvc.Rendering.SelectListItem)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Tools/UFMvcTools.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: AddFirstItem
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Tools\UFMvcTools.cs
+    path: ../UltraForce.Library.Core.Asp/Tools/UFMvcTools.cs
     startLine: 130
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -269,8 +297,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Tools.UFMvcTools.CreateListFromEnum<T>(string?)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Tools/UFMvcTools.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: CreateListFromEnum
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Tools\UFMvcTools.cs
+    path: ../UltraForce.Library.Core.Asp/Tools/UFMvcTools.cs
     startLine: 150
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -306,8 +338,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Tools.UFMvcTools.GetErrors(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary, string, string, string, string)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Tools/UFMvcTools.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetErrors
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Tools\UFMvcTools.cs
+    path: ../UltraForce.Library.Core.Asp/Tools/UFMvcTools.cs
     startLine: 185
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -355,8 +391,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Tools.UFMvcTools.Validate(object)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Tools/UFMvcTools.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Validate
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Tools\UFMvcTools.cs
+    path: ../UltraForce.Library.Core.Asp/Tools/UFMvcTools.cs
     startLine: 210
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -389,8 +429,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Tools.UFMvcTools.GetJsonName(object, string)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Tools/UFMvcTools.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetJsonName
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Tools\UFMvcTools.cs
+    path: ../UltraForce.Library.Core.Asp/Tools/UFMvcTools.cs
     startLine: 230
   assemblies:
   - UltraForce.Library.Core.Asp

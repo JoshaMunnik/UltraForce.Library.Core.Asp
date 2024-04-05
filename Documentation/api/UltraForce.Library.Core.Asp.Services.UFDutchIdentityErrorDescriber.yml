@@ -21,8 +21,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber
   type: Class
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Services/UFDutchIdentityErrorDescriber.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: UFDutchIdentityErrorDescriber
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\UFDutchIdentityErrorDescriber.cs
+    path: ../UltraForce.Library.Core.Asp/Services/UFDutchIdentityErrorDescriber.cs
     startLine: 36
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -69,8 +73,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber.PasswordTooShort(int)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Services/UFDutchIdentityErrorDescriber.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: PasswordTooShort
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\UFDutchIdentityErrorDescriber.cs
+    path: ../UltraForce.Library.Core.Asp/Services/UFDutchIdentityErrorDescriber.cs
     startLine: 41
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -103,8 +111,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber.PasswordMismatch()
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Services/UFDutchIdentityErrorDescriber.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: PasswordMismatch
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\UFDutchIdentityErrorDescriber.cs
+    path: ../UltraForce.Library.Core.Asp/Services/UFDutchIdentityErrorDescriber.cs
     startLine: 50
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -131,8 +143,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber.PasswordRequiresDigit()
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Services/UFDutchIdentityErrorDescriber.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: PasswordRequiresDigit
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\UFDutchIdentityErrorDescriber.cs
+    path: ../UltraForce.Library.Core.Asp/Services/UFDutchIdentityErrorDescriber.cs
     startLine: 59
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -159,8 +175,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber.PasswordRequiresLower()
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Services/UFDutchIdentityErrorDescriber.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: PasswordRequiresLower
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\UFDutchIdentityErrorDescriber.cs
+    path: ../UltraForce.Library.Core.Asp/Services/UFDutchIdentityErrorDescriber.cs
     startLine: 68
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -187,8 +207,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber.PasswordRequiresNonAlphanumeric()
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Services/UFDutchIdentityErrorDescriber.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: PasswordRequiresNonAlphanumeric
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\UFDutchIdentityErrorDescriber.cs
+    path: ../UltraForce.Library.Core.Asp/Services/UFDutchIdentityErrorDescriber.cs
     startLine: 77
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -215,8 +239,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber.PasswordRequiresUniqueChars(int)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Services/UFDutchIdentityErrorDescriber.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: PasswordRequiresUniqueChars
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\UFDutchIdentityErrorDescriber.cs
+    path: ../UltraForce.Library.Core.Asp/Services/UFDutchIdentityErrorDescriber.cs
     startLine: 86
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -249,8 +277,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber.PasswordRequiresUpper()
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Services/UFDutchIdentityErrorDescriber.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: PasswordRequiresUpper
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\UFDutchIdentityErrorDescriber.cs
+    path: ../UltraForce.Library.Core.Asp/Services/UFDutchIdentityErrorDescriber.cs
     startLine: 95
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -277,8 +309,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber.DuplicateEmail(string)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Services/UFDutchIdentityErrorDescriber.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: DuplicateEmail
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\UFDutchIdentityErrorDescriber.cs
+    path: ../UltraForce.Library.Core.Asp/Services/UFDutchIdentityErrorDescriber.cs
     startLine: 104
   assemblies:
   - UltraForce.Library.Core.Asp

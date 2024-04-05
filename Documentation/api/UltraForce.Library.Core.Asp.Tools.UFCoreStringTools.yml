@@ -15,8 +15,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Tools.UFCoreStringTools
   type: Class
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Tools/UFCoreStringTools.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: UFCoreStringTools
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Tools\UFCoreStringTools.cs
+    path: ../UltraForce.Library.Core.Asp/Tools/UFCoreStringTools.cs
     startLine: 47
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -48,8 +52,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Tools.UFCoreStringTools.Utf8ToAscii(string)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Tools/UFCoreStringTools.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Utf8ToAscii
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Tools\UFCoreStringTools.cs
+    path: ../UltraForce.Library.Core.Asp/Tools/UFCoreStringTools.cs
     startLine: 66
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -85,8 +93,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Tools.UFCoreStringTools.GetString(Microsoft.AspNetCore.Html.IHtmlContent)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Tools/UFCoreStringTools.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetString
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Tools\UFCoreStringTools.cs
+    path: ../UltraForce.Library.Core.Asp/Tools/UFCoreStringTools.cs
     startLine: 81
   assemblies:
   - UltraForce.Library.Core.Asp

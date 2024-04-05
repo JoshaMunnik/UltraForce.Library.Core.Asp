@@ -17,8 +17,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Services.UFScopedBackgroundService<TAsynchronousExecutableService>
   type: Class
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Services/UFScopedBackgroundService.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: UFScopedBackgroundService
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\UFScopedBackgroundService.cs
+    path: ../UltraForce.Library.Core.Asp/Services/UFScopedBackgroundService.cs
     startLine: 48
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -80,8 +84,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Services.UFScopedBackgroundService<TAsynchronousExecutableService>.UFScopedBackgroundService(System.IServiceProvider, Microsoft.Extensions.Logging.ILogger<UltraForce.Library.Core.Asp.Services.UFScopedBackgroundService<TAsynchronousExecutableService>>)
   type: Constructor
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Services/UFScopedBackgroundService.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: .ctor
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\UFScopedBackgroundService.cs
+    path: ../UltraForce.Library.Core.Asp/Services/UFScopedBackgroundService.cs
     startLine: 68
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -114,8 +122,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Services.UFScopedBackgroundService<TAsynchronousExecutableService>.Services
   type: Property
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Services/UFScopedBackgroundService.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Services
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\UFScopedBackgroundService.cs
+    path: ../UltraForce.Library.Core.Asp/Services/UFScopedBackgroundService.cs
     startLine: 84
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -143,8 +155,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Services.UFScopedBackgroundService<TAsynchronousExecutableService>.ExecuteAsync(System.Threading.CancellationToken)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Services/UFScopedBackgroundService.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: ExecuteAsync
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\UFScopedBackgroundService.cs
+    path: ../UltraForce.Library.Core.Asp/Services/UFScopedBackgroundService.cs
     startLine: 91
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -181,8 +197,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Services.UFScopedBackgroundService<TAsynchronousExecutableService>.StopAsync(System.Threading.CancellationToken)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Services/UFScopedBackgroundService.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: StopAsync
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\UFScopedBackgroundService.cs
+    path: ../UltraForce.Library.Core.Asp/Services/UFScopedBackgroundService.cs
     startLine: 106
   assemblies:
   - UltraForce.Library.Core.Asp

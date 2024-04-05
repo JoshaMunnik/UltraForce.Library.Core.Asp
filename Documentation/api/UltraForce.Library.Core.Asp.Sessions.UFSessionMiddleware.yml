@@ -23,8 +23,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware
   type: Class
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Sessions/UFSessionMiddleware.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: UFSessionMiddleware
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Sessions\UFSessionMiddleware.cs
+    path: ../UltraForce.Library.Core.Asp/Sessions/UFSessionMiddleware.cs
     startLine: 51
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -138,8 +142,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.UFSessionMiddleware(Microsoft.AspNetCore.Http.RequestDelegate)
   type: Constructor
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Sessions/UFSessionMiddleware.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: .ctor
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Sessions\UFSessionMiddleware.cs
+    path: ../UltraForce.Library.Core.Asp/Sessions/UFSessionMiddleware.cs
     startLine: 73
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -169,8 +177,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.Invoke(Microsoft.AspNetCore.Http.HttpContext)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Sessions/UFSessionMiddleware.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Invoke
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Sessions\UFSessionMiddleware.cs
+    path: ../UltraForce.Library.Core.Asp/Sessions/UFSessionMiddleware.cs
     startLine: 88
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -200,8 +212,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.GetInt(string, int)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Sessions/UFSessionMiddleware.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetInt
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Sessions\UFSessionMiddleware.cs
+    path: ../UltraForce.Library.Core.Asp/Sessions/UFSessionMiddleware.cs
     startLine: 99
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -234,8 +250,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.SetInt(string, int)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Sessions/UFSessionMiddleware.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: SetInt
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Sessions\UFSessionMiddleware.cs
+    path: ../UltraForce.Library.Core.Asp/Sessions/UFSessionMiddleware.cs
     startLine: 105
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -266,8 +286,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.GetString(string, string)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Sessions/UFSessionMiddleware.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetString
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Sessions\UFSessionMiddleware.cs
+    path: ../UltraForce.Library.Core.Asp/Sessions/UFSessionMiddleware.cs
     startLine: 115
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -300,8 +324,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.SetString(string, string)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Sessions/UFSessionMiddleware.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: SetString
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Sessions\UFSessionMiddleware.cs
+    path: ../UltraForce.Library.Core.Asp/Sessions/UFSessionMiddleware.cs
     startLine: 123
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -332,8 +360,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.DeleteKey(string)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Sessions/UFSessionMiddleware.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: DeleteKey
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Sessions\UFSessionMiddleware.cs
+    path: ../UltraForce.Library.Core.Asp/Sessions/UFSessionMiddleware.cs
     startLine: 129
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -362,8 +394,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.DeleteAll()
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Sessions/UFSessionMiddleware.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: DeleteAll
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Sessions\UFSessionMiddleware.cs
+    path: ../UltraForce.Library.Core.Asp/Sessions/UFSessionMiddleware.cs
     startLine: 135
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -386,8 +422,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.HasKey(string)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Sessions/UFSessionMiddleware.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: HasKey
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Sessions\UFSessionMiddleware.cs
+    path: ../UltraForce.Library.Core.Asp/Sessions/UFSessionMiddleware.cs
     startLine: 141
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -418,8 +458,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.Instance
   type: Property
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Sessions/UFSessionMiddleware.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Instance
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Sessions\UFSessionMiddleware.cs
+    path: ../UltraForce.Library.Core.Asp/Sessions/UFSessionMiddleware.cs
     startLine: 153
   assemblies:
   - UltraForce.Library.Core.Asp

@@ -14,8 +14,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Services.IUFAsynchronousExecutableService
   type: Interface
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Services/IUFAsynchronousExecutableService.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: IUFAsynchronousExecutableService
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFAsynchronousExecutableService.cs
+    path: ../UltraForce.Library.Core.Asp/Services/IUFAsynchronousExecutableService.cs
     startLine: 37
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -40,8 +44,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Services.IUFAsynchronousExecutableService.ExecuteAsync(System.Threading.CancellationToken)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Services/IUFAsynchronousExecutableService.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: ExecuteAsync
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFAsynchronousExecutableService.cs
+    path: ../UltraForce.Library.Core.Asp/Services/IUFAsynchronousExecutableService.cs
     startLine: 44
   assemblies:
   - UltraForce.Library.Core.Asp

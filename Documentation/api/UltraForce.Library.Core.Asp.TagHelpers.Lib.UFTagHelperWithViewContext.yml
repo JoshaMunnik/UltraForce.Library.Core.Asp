@@ -15,8 +15,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFTagHelperWithViewContext
   type: Class
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Lib/UFTagHelperWithViewContext.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: UFTagHelperWithViewContext
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\TagHelpers\Lib\UFTagHelperWithViewContext.cs
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Lib/UFTagHelperWithViewContext.cs
     startLine: 40
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -61,8 +65,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFTagHelperWithViewContext.UFTagHelperWithViewContext(UltraForce.Library.Core.Asp.Services.IUFTheme)
   type: Constructor
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Lib/UFTagHelperWithViewContext.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: .ctor
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\TagHelpers\Lib\UFTagHelperWithViewContext.cs
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Lib/UFTagHelperWithViewContext.cs
     startLine: 49
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -92,8 +100,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFTagHelperWithViewContext.ViewContext
   type: Property
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Lib/UFTagHelperWithViewContext.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: ViewContext
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\TagHelpers\Lib\UFTagHelperWithViewContext.cs
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Lib/UFTagHelperWithViewContext.cs
     startLine: 60
   assemblies:
   - UltraForce.Library.Core.Asp

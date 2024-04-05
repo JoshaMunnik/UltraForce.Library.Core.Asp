@@ -23,8 +23,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer
   type: Class
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Services/UFModelExpressionRenderer.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: UFModelExpressionRenderer
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\UFModelExpressionRenderer.cs
+    path: ../UltraForce.Library.Core.Asp/Services/UFModelExpressionRenderer.cs
     startLine: 43
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -58,8 +62,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.UFModelExpressionRenderer(Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator)
   type: Constructor
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Services/UFModelExpressionRenderer.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: .ctor
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\UFModelExpressionRenderer.cs
+    path: ../UltraForce.Library.Core.Asp/Services/UFModelExpressionRenderer.cs
     startLine: 51
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -89,8 +97,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.SetContentToNameAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput, Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression, Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Services/UFModelExpressionRenderer.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: SetContentToNameAsync
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\UFModelExpressionRenderer.cs
+    path: ../UltraForce.Library.Core.Asp/Services/UFModelExpressionRenderer.cs
     startLine: 61
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -130,8 +142,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.SetContentToValueAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput, Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression, Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Services/UFModelExpressionRenderer.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: SetContentToValueAsync
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\UFModelExpressionRenderer.cs
+    path: ../UltraForce.Library.Core.Asp/Services/UFModelExpressionRenderer.cs
     startLine: 89
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -181,8 +197,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.GetName(Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression, Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Services/UFModelExpressionRenderer.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetName
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\UFModelExpressionRenderer.cs
+    path: ../UltraForce.Library.Core.Asp/Services/UFModelExpressionRenderer.cs
     startLine: 160
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -217,8 +237,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.HtmlGenerator
   type: Property
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Services/UFModelExpressionRenderer.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: HtmlGenerator
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\UFModelExpressionRenderer.cs
+    path: ../UltraForce.Library.Core.Asp/Services/UFModelExpressionRenderer.cs
     startLine: 179
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -244,8 +268,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.GetCheckBoxHtml(bool)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Services/UFModelExpressionRenderer.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetCheckBoxHtml
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\UFModelExpressionRenderer.cs
+    path: ../UltraForce.Library.Core.Asp/Services/UFModelExpressionRenderer.cs
     startLine: 193
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -284,8 +312,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.GetEmailLinkHtml(string)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Services/UFModelExpressionRenderer.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetEmailLinkHtml
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\UFModelExpressionRenderer.cs
+    path: ../UltraForce.Library.Core.Asp/Services/UFModelExpressionRenderer.cs
     startLine: 207
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -324,8 +356,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.GetDateTimeHtml(System.DateTime?)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Services/UFModelExpressionRenderer.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetDateTimeHtml
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\UFModelExpressionRenderer.cs
+    path: ../UltraForce.Library.Core.Asp/Services/UFModelExpressionRenderer.cs
     startLine: 218
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -361,8 +397,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.GetDateHtml(System.DateOnly?)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Services/UFModelExpressionRenderer.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetDateHtml
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\UFModelExpressionRenderer.cs
+    path: ../UltraForce.Library.Core.Asp/Services/UFModelExpressionRenderer.cs
     startLine: 229
   assemblies:
   - UltraForce.Library.Core.Asp
@@ -395,8 +435,12 @@ items:
   fullName: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.GetTimeHtml(System.TimeOnly?)
   type: Method
   source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Services/UFModelExpressionRenderer.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetTimeHtml
-    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\UFModelExpressionRenderer.cs
+    path: ../UltraForce.Library.Core.Asp/Services/UFModelExpressionRenderer.cs
     startLine: 240
   assemblies:
   - UltraForce.Library.Core.Asp
