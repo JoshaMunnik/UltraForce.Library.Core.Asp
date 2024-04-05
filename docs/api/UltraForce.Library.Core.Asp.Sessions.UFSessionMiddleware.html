@@ -1,0 +1,703 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class UFSessionMiddleware | UltraForce.Library.Core.Asp </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class UFSessionMiddleware | UltraForce.Library.Core.Asp ">
+      
+      <meta name="description" content="is  implementation mapping to .  Use  to access the singleton instance.   To use , import  in Startup.cs or Program.cs and register it at  as middleware: `builder.UseUFSession();`    UseUFSession() will make a call to UseSession().">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="UltraForce.Library.Core.Asp">
+            UltraForce.Library.Core.Asp
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware">
+
+
+
+  <h1 id="UltraForce_Library_Core_Asp_Sessions_UFSessionMiddleware" data-uid="UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware" class="text-break">
+Class UFSessionMiddleware  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="UltraForce.html">UltraForce</a>.<a class="xref" href="UltraForce.Library.html">Library</a>.<a class="xref" href="UltraForce.Library.Core.html">Core</a>.<a class="xref" href="UltraForce.Library.Core.Asp.html">Asp</a>.<a class="xref" href="UltraForce.Library.Core.Asp.Sessions.html">Sessions</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>UltraForce.Library.Core.Asp.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a class="xref" href="UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.html">UFSessionMiddleware</a> is <span class="xref">UltraForce.Library.NetStandard.Storage.UFKeyedStorage</span> implementation mapping
+to <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.http.httpcontext.session">Session</a>.</p>
+<p>
+Use <a class="xref" href="UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.html#UltraForce_Library_Core_Asp_Sessions_UFSessionMiddleware_Instance">Instance</a> to access the singleton instance.
+</p>
+<p>
+To use <a class="xref" href="UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.html">UFSessionMiddleware</a>, import <a class="xref" href="UltraForce.Library.Core.Asp.Web.UFWebExtensions.html">UFWebExtensions</a> in
+<code>Startup.cs</code> or <code>Program.cs</code> and register it at
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.builder.iapplicationbuilder">IApplicationBuilder</a> as
+middleware: `builder.UseUFSession();` 
+</p>
+<p>
+<code>UseUFSession()</code> will make a call to <code>UseSession()</code>.
+</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class UFSessionMiddleware : UFKeyedStorage</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">UFKeyedStorage</span></div>
+      <div><span class="xref">UFSessionMiddleware</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">UFKeyedStorage.GetString(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">UFKeyedStorage.GetByte(string, byte)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">UFKeyedStorage.GetByte(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">UFKeyedStorage.SetByte(string, byte)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">UFKeyedStorage.GetSByte(string, sbyte)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">UFKeyedStorage.GetSByte(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">UFKeyedStorage.SetSByte(string, sbyte)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">UFKeyedStorage.GetShort(string, short)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">UFKeyedStorage.GetShort(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">UFKeyedStorage.SetShort(string, short)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">UFKeyedStorage.GetUShort(string, ushort)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">UFKeyedStorage.GetUShort(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">UFKeyedStorage.SetUShort(string, ushort)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">UFKeyedStorage.GetInt(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">UFKeyedStorage.GetUInt(string, uint)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">UFKeyedStorage.GetUInt(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">UFKeyedStorage.SetUInt(string, uint)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">UFKeyedStorage.GetLong(string, long)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">UFKeyedStorage.GetLong(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">UFKeyedStorage.SetLong(string, long)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">UFKeyedStorage.GetULong(string, ulong)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">UFKeyedStorage.GetULong(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">UFKeyedStorage.SetULong(string, ulong)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">UFKeyedStorage.GetFloat(string, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">UFKeyedStorage.GetFloat(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">UFKeyedStorage.SetFloat(string, float)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">UFKeyedStorage.GetDouble(string, double)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">UFKeyedStorage.GetDouble(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">UFKeyedStorage.SetDouble(string, double)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">UFKeyedStorage.GetBool(string, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">UFKeyedStorage.GetBool(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">UFKeyedStorage.SetBool(string, bool)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">UFKeyedStorage.GetChar(string, char)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">UFKeyedStorage.GetChar(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">UFKeyedStorage.SetChar(string, char)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">UFKeyedStorage.GetBytes(string, byte[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">UFKeyedStorage.GetBytes(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">UFKeyedStorage.SetBytes(string, byte[])</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">UFKeyedStorage.GetDateTime(string, DateTime)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">UFKeyedStorage.GetDateTime(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">UFKeyedStorage.SetDateTime(string, DateTime)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">UFKeyedStorage.GetGuid(string, Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">UFKeyedStorage.GetGuid(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">UFKeyedStorage.SetGuid(string, Guid)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">UFKeyedStorage.GetStorableObject(string, IUFStorableObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">UFKeyedStorage.SetStorableObject(string, IUFStorableObject)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">UFKeyedStorage.GetObject(string, Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">UFKeyedStorage.GetObject&lt;T&gt;(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">UFKeyedStorage.GetObject(string, Type, Func&lt;Type, object&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">UFKeyedStorage.SetObject(string, object, Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">UFKeyedStorage.SetObject(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">UFKeyedStorage.SetObject&lt;T&gt;(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">UFKeyedStorage.SerializeObject(string, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">UFKeyedStorage.DeserializeObject(string, Type, Func&lt;Type, object&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="UltraForce_Library_Core_Asp_Sessions_UFSessionMiddleware__ctor_" data-uid="UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.#ctor*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Sessions_UFSessionMiddleware__ctor_Microsoft_AspNetCore_Http_RequestDelegate_" data-uid="UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate)">
+  UFSessionMiddleware(RequestDelegate)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Constructs an instance of the UFSession middleware.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UFSessionMiddleware(RequestDelegate aNext)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aNext</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.http.requestdelegate">RequestDelegate</a></dt>
+    <dd><p>Next middleware</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="UltraForce_Library_Core_Asp_Sessions_UFSessionMiddleware_Instance_" data-uid="UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.Instance*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Sessions_UFSessionMiddleware_Instance" data-uid="UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.Instance">
+  Instance
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Reference to singleton instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static UFSessionMiddleware Instance { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.html">UFSessionMiddleware</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="UltraForce_Library_Core_Asp_Sessions_UFSessionMiddleware_DeleteAll_" data-uid="UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.DeleteAll*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Sessions_UFSessionMiddleware_DeleteAll" data-uid="UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.DeleteAll">
+  DeleteAll()
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void DeleteAll()</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_Sessions_UFSessionMiddleware_DeleteKey_" data-uid="UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.DeleteKey*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Sessions_UFSessionMiddleware_DeleteKey_System_String_" data-uid="UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.DeleteKey(System.String)">
+  DeleteKey(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void DeleteKey(string aKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_Sessions_UFSessionMiddleware_GetInt_" data-uid="UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.GetInt*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Sessions_UFSessionMiddleware_GetInt_System_String_System_Int32_" data-uid="UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.GetInt(System.String,System.Int32)">
+  GetInt(string, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetInt(string aKey, int aDefault)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>aDefault</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_Sessions_UFSessionMiddleware_GetString_" data-uid="UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.GetString*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Sessions_UFSessionMiddleware_GetString_System_String_System_String_" data-uid="UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.GetString(System.String,System.String)">
+  GetString(string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string GetString(string aKey, string aDefault)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>aDefault</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_Sessions_UFSessionMiddleware_HasKey_" data-uid="UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.HasKey*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Sessions_UFSessionMiddleware_HasKey_System_String_" data-uid="UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.HasKey(System.String)">
+  HasKey(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool HasKey(string aKey)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_Sessions_UFSessionMiddleware_Invoke_" data-uid="UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.Invoke*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Sessions_UFSessionMiddleware_Invoke_Microsoft_AspNetCore_Http_HttpContext_" data-uid="UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.Invoke(Microsoft.AspNetCore.Http.HttpContext)">
+  Invoke(HttpContext)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>This method is called by the http rendering pipeline.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task Invoke(HttpContext aContext)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aContext</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.http.httpcontext">HttpContext</a></dt>
+    <dd><p>Current <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.http.httpcontext">HttpContext</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd><p>result from next middleware</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_Sessions_UFSessionMiddleware_SetInt_" data-uid="UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.SetInt*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Sessions_UFSessionMiddleware_SetInt_System_String_System_Int32_" data-uid="UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.SetInt(System.String,System.Int32)">
+  SetInt(string, int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void SetInt(string aKey, int aValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>aValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_Sessions_UFSessionMiddleware_SetString_" data-uid="UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.SetString*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Sessions_UFSessionMiddleware_SetString_System_String_System_String_" data-uid="UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.SetString(System.String,System.String)">
+  SetString(string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void SetString(string aKey, string aValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>aValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,407 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties
+  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties
+  id: IUFContainerProperties
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers
+  children:
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.FullHeight
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.FullWidth
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.Horizontal
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.Padding
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.PositionChild
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.Vertical
+  langs:
+  - csharp
+  - vb
+  name: IUFContainerProperties
+  nameWithType: IUFContainerProperties
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties
+  type: Interface
+  source:
+    id: IUFContainerProperties
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\TagHelpers\Styling\Containers\IUFContainerProperties.cs
+    startLine: 36
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers
+  summary: Properties for a container that can optionally position its child content.
+  example: []
+  syntax:
+    content: public interface IUFContainerProperties
+    content.vb: Public Interface IUFContainerProperties
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.Horizontal
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.Horizontal
+  id: Horizontal
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties
+  langs:
+  - csharp
+  - vb
+  name: Horizontal
+  nameWithType: IUFContainerProperties.Horizontal
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.Horizontal
+  type: Property
+  source:
+    id: Horizontal
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\TagHelpers\Styling\Containers\IUFContainerProperties.cs
+    startLine: 41
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers
+  summary: How to position the child horizontally within the container.
+  example: []
+  syntax:
+    content: UFContentPosition Horizontal { get; set; }
+    parameters: []
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFContentPosition
+    content.vb: Property Horizontal As UFContentPosition
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.Horizontal*
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.Vertical
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.Vertical
+  id: Vertical
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties
+  langs:
+  - csharp
+  - vb
+  name: Vertical
+  nameWithType: IUFContainerProperties.Vertical
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.Vertical
+  type: Property
+  source:
+    id: Vertical
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\TagHelpers\Styling\Containers\IUFContainerProperties.cs
+    startLine: 46
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers
+  summary: How to position the child vertically within the container.
+  example: []
+  syntax:
+    content: UFContentPosition Vertical { get; set; }
+    parameters: []
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFContentPosition
+    content.vb: Property Vertical As UFContentPosition
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.Vertical*
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.FullWidth
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.FullWidth
+  id: FullWidth
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties
+  langs:
+  - csharp
+  - vb
+  name: FullWidth
+  nameWithType: IUFContainerProperties.FullWidth
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.FullWidth
+  type: Property
+  source:
+    id: FullWidth
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\TagHelpers\Styling\Containers\IUFContainerProperties.cs
+    startLine: 51
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers
+  summary: When true use the width of the parent, otherwise use the width of the content.
+  example: []
+  syntax:
+    content: bool FullWidth { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Property FullWidth As Boolean
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.FullWidth*
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.FullHeight
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.FullHeight
+  id: FullHeight
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties
+  langs:
+  - csharp
+  - vb
+  name: FullHeight
+  nameWithType: IUFContainerProperties.FullHeight
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.FullHeight
+  type: Property
+  source:
+    id: FullHeight
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\TagHelpers\Styling\Containers\IUFContainerProperties.cs
+    startLine: 56
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers
+  summary: When true use the height of the parent, otherwise use the height of the content.
+  example: []
+  syntax:
+    content: bool FullHeight { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Property FullHeight As Boolean
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.FullHeight*
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.PositionChild
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.PositionChild
+  id: PositionChild
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties
+  langs:
+  - csharp
+  - vb
+  name: PositionChild
+  nameWithType: IUFContainerProperties.PositionChild
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.PositionChild
+  type: Property
+  source:
+    id: PositionChild
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\TagHelpers\Styling\Containers\IUFContainerProperties.cs
+    startLine: 62
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers
+  summary: >-
+    When true position the children in the container using <xref href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.Horizontal" data-throw-if-not-resolved="false"></xref> and
+
+    <xref href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.Vertical" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: bool PositionChild { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Property PositionChild As Boolean
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.PositionChild*
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.Padding
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.Padding
+  id: Padding
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties
+  langs:
+  - csharp
+  - vb
+  name: Padding
+  nameWithType: IUFContainerProperties.Padding
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.Padding
+  type: Property
+  source:
+    id: Padding
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\TagHelpers\Styling\Containers\IUFContainerProperties.cs
+    startLine: 67
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers
+  summary: Padding to add to the container.
+  example: []
+  syntax:
+    content: int Padding { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Property Padding As Integer
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.Padding*
+references:
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers
+  commentId: N:UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers
+  href: UltraForce.html
+  name: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers
+  nameWithType: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers
+    name: TagHelpers
+    href: UltraForce.Library.Core.Asp.TagHelpers.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling
+    name: Styling
+    href: UltraForce.Library.Core.Asp.TagHelpers.Styling.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers
+    name: Containers
+    href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers
+    name: TagHelpers
+    href: UltraForce.Library.Core.Asp.TagHelpers.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling
+    name: Styling
+    href: UltraForce.Library.Core.Asp.TagHelpers.Styling.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers
+    name: Containers
+    href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.html
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.Horizontal*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.Horizontal
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Containers_IUFContainerProperties_Horizontal
+  name: Horizontal
+  nameWithType: IUFContainerProperties.Horizontal
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.Horizontal
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFContentPosition
+  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFContentPosition
+  parent: UltraForce.Library.Core.Asp.Types.Enums
+  href: UltraForce.Library.Core.Asp.Types.Enums.UFContentPosition.html
+  name: UFContentPosition
+  nameWithType: UFContentPosition
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFContentPosition
+- uid: UltraForce.Library.Core.Asp.Types.Enums
+  commentId: N:UltraForce.Library.Core.Asp.Types.Enums
+  href: UltraForce.html
+  name: UltraForce.Library.Core.Asp.Types.Enums
+  nameWithType: UltraForce.Library.Core.Asp.Types.Enums
+  fullName: UltraForce.Library.Core.Asp.Types.Enums
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types
+    name: Types
+    href: UltraForce.Library.Core.Asp.Types.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types.Enums
+    name: Enums
+    href: UltraForce.Library.Core.Asp.Types.Enums.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types
+    name: Types
+    href: UltraForce.Library.Core.Asp.Types.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types.Enums
+    name: Enums
+    href: UltraForce.Library.Core.Asp.Types.Enums.html
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.Vertical*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.Vertical
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Containers_IUFContainerProperties_Vertical
+  name: Vertical
+  nameWithType: IUFContainerProperties.Vertical
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.Vertical
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.FullWidth*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.FullWidth
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Containers_IUFContainerProperties_FullWidth
+  name: FullWidth
+  nameWithType: IUFContainerProperties.FullWidth
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.FullWidth
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.FullHeight*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.FullHeight
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Containers_IUFContainerProperties_FullHeight
+  name: FullHeight
+  nameWithType: IUFContainerProperties.FullHeight
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.FullHeight
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.Horizontal
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.Horizontal
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Containers_IUFContainerProperties_Horizontal
+  name: Horizontal
+  nameWithType: IUFContainerProperties.Horizontal
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.Horizontal
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.Vertical
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.Vertical
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Containers_IUFContainerProperties_Vertical
+  name: Vertical
+  nameWithType: IUFContainerProperties.Vertical
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.Vertical
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.PositionChild*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.PositionChild
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Containers_IUFContainerProperties_PositionChild
+  name: PositionChild
+  nameWithType: IUFContainerProperties.PositionChild
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.PositionChild
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties
+  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.html
+  name: IUFContainerProperties
+  nameWithType: IUFContainerProperties
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.Padding*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.Padding
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Containers_IUFContainerProperties_Padding
+  name: Padding
+  nameWithType: IUFContainerProperties.Padding
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.Padding
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer

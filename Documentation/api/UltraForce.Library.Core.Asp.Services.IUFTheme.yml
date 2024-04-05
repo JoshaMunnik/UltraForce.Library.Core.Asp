@@ -1,0 +1,2429 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme
+  commentId: T:UltraForce.Library.Core.Asp.Services.IUFTheme
+  id: IUFTheme
+  parent: UltraForce.Library.Core.Asp.Services
+  children:
+  - UltraForce.Library.Core.Asp.Services.IUFTheme.GetButtonCaptionClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties)
+  - UltraForce.Library.Core.Asp.Services.IUFTheme.GetButtonClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties)
+  - UltraForce.Library.Core.Asp.Services.IUFTheme.GetButtonIconHtml(UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties)
+  - UltraForce.Library.Core.Asp.Services.IUFTheme.GetCheckboxExtraHtml
+  - UltraForce.Library.Core.Asp.Services.IUFTheme.GetCheckboxInputClasses
+  - UltraForce.Library.Core.Asp.Services.IUFTheme.GetCheckboxLabelClasses
+  - UltraForce.Library.Core.Asp.Services.IUFTheme.GetCheckboxLabelDescriptionClasses
+  - UltraForce.Library.Core.Asp.Services.IUFTheme.GetCheckboxLabelSpanClasses
+  - UltraForce.Library.Core.Asp.Services.IUFTheme.GetCheckboxWrapperClasses
+  - UltraForce.Library.Core.Asp.Services.IUFTheme.GetColumnClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties)
+  - UltraForce.Library.Core.Asp.Services.IUFTheme.GetContainerClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties)
+  - UltraForce.Library.Core.Asp.Services.IUFTheme.GetDataListClasses
+  - UltraForce.Library.Core.Asp.Services.IUFTheme.GetDataNameClasses
+  - UltraForce.Library.Core.Asp.Services.IUFTheme.GetDataValueClasses
+  - UltraForce.Library.Core.Asp.Services.IUFTheme.GetFieldErrorsClasses
+  - UltraForce.Library.Core.Asp.Services.IUFTheme.GetFieldErrorsHtml(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary,System.String)
+  - UltraForce.Library.Core.Asp.Services.IUFTheme.GetFilterButtonClasses
+  - UltraForce.Library.Core.Asp.Services.IUFTheme.GetFilterContainerClasses
+  - UltraForce.Library.Core.Asp.Services.IUFTheme.GetFilterInputClasses
+  - UltraForce.Library.Core.Asp.Services.IUFTheme.GetFilterLabelClasses
+  - UltraForce.Library.Core.Asp.Services.IUFTheme.GetRadioExtraHtml
+  - UltraForce.Library.Core.Asp.Services.IUFTheme.GetRadioInputClasses
+  - UltraForce.Library.Core.Asp.Services.IUFTheme.GetRadioLabelClasses
+  - UltraForce.Library.Core.Asp.Services.IUFTheme.GetRadioLabelDescriptionClasses
+  - UltraForce.Library.Core.Asp.Services.IUFTheme.GetRadioLabelSpanClasses
+  - UltraForce.Library.Core.Asp.Services.IUFTheme.GetRadioWrapperClasses
+  - UltraForce.Library.Core.Asp.Services.IUFTheme.GetRowClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties)
+  - UltraForce.Library.Core.Asp.Services.IUFTheme.GetSelectClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties)
+  - UltraForce.Library.Core.Asp.Services.IUFTheme.GetSortAscendingClasses
+  - UltraForce.Library.Core.Asp.Services.IUFTheme.GetSortDescendingClasses
+  - UltraForce.Library.Core.Asp.Services.IUFTheme.GetSpacerClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFSpacerProperties)
+  - UltraForce.Library.Core.Asp.Services.IUFTheme.GetTabContentWrapperClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFTabProperties)
+  - UltraForce.Library.Core.Asp.Services.IUFTheme.GetTabLabelClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFTabProperties)
+  - UltraForce.Library.Core.Asp.Services.IUFTheme.GetTabRadioClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFTabProperties)
+  - UltraForce.Library.Core.Asp.Services.IUFTheme.GetTableCellClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties,UltraForce.Library.Core.Asp.Types.Enums.UFTableCellType,UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties,UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableRowProperties)
+  - UltraForce.Library.Core.Asp.Services.IUFTheme.GetTableClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties)
+  - UltraForce.Library.Core.Asp.Services.IUFTheme.GetTableHeaderButtonClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties,UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties,UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableRowProperties)
+  - UltraForce.Library.Core.Asp.Services.IUFTheme.GetTableRowClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableRowProperties,UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties)
+  - UltraForce.Library.Core.Asp.Services.IUFTheme.GetTabsClasses(System.Int32)
+  - UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextInputClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)
+  - UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextLabelClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)
+  - UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextLabelDescriptionClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)
+  - UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextLabelSpanClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)
+  - UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextWrapperClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)
+  - UltraForce.Library.Core.Asp.Services.IUFTheme.GetValidationFeedbackContainerHtml(System.String)
+  - UltraForce.Library.Core.Asp.Services.IUFTheme.IsCssClass(System.String)
+  langs:
+  - csharp
+  - vb
+  name: IUFTheme
+  nameWithType: IUFTheme
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme
+  type: Interface
+  source:
+    id: IUFTheme
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFTheme.cs
+    startLine: 42
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Services
+  summary: <xref href="UltraForce.Library.Core.Asp.Services.IUFTheme" data-throw-if-not-resolved="false"></xref> generates css classes and html for the different components.
+  example: []
+  syntax:
+    content: public interface IUFTheme
+    content.vb: Public Interface IUFTheme
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetButtonClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties)
+  commentId: M:UltraForce.Library.Core.Asp.Services.IUFTheme.GetButtonClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties)
+  id: GetButtonClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties)
+  parent: UltraForce.Library.Core.Asp.Services.IUFTheme
+  langs:
+  - csharp
+  - vb
+  name: GetButtonClasses(IUFButtonProperties)
+  nameWithType: IUFTheme.GetButtonClasses(IUFButtonProperties)
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetButtonClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties)
+  type: Method
+  source:
+    id: GetButtonClasses
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFTheme.cs
+    startLine: 51
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Services
+  summary: Gets the css classes to use for the button element.
+  example: []
+  syntax:
+    content: string GetButtonClasses(IUFButtonProperties aProperties)
+    parameters:
+    - id: aProperties
+      type: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties
+      description: The button property values
+    return:
+      type: System.String
+      description: One or more css classes to style the button.
+    content.vb: Function GetButtonClasses(aProperties As IUFButtonProperties) As String
+  overload: UltraForce.Library.Core.Asp.Services.IUFTheme.GetButtonClasses*
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetButtonCaptionClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties)
+  commentId: M:UltraForce.Library.Core.Asp.Services.IUFTheme.GetButtonCaptionClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties)
+  id: GetButtonCaptionClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties)
+  parent: UltraForce.Library.Core.Asp.Services.IUFTheme
+  langs:
+  - csharp
+  - vb
+  name: GetButtonCaptionClasses(IUFButtonProperties)
+  nameWithType: IUFTheme.GetButtonCaptionClasses(IUFButtonProperties)
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetButtonCaptionClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties)
+  type: Method
+  source:
+    id: GetButtonCaptionClasses
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFTheme.cs
+    startLine: 58
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Services
+  summary: Gets the css classes to use for the caption element within a button.
+  example: []
+  syntax:
+    content: string GetButtonCaptionClasses(IUFButtonProperties aProperties)
+    parameters:
+    - id: aProperties
+      type: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties
+      description: The button property values
+    return:
+      type: System.String
+      description: One or more css classes to style the caption.
+    content.vb: Function GetButtonCaptionClasses(aProperties As IUFButtonProperties) As String
+  overload: UltraForce.Library.Core.Asp.Services.IUFTheme.GetButtonCaptionClasses*
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetButtonIconHtml(UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties)
+  commentId: M:UltraForce.Library.Core.Asp.Services.IUFTheme.GetButtonIconHtml(UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties)
+  id: GetButtonIconHtml(UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties)
+  parent: UltraForce.Library.Core.Asp.Services.IUFTheme
+  langs:
+  - csharp
+  - vb
+  name: GetButtonIconHtml(IUFButtonProperties)
+  nameWithType: IUFTheme.GetButtonIconHtml(IUFButtonProperties)
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetButtonIconHtml(UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties)
+  type: Method
+  source:
+    id: GetButtonIconHtml
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFTheme.cs
+    startLine: 64
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Services
+  summary: Gets the html for an icon.
+  example: []
+  syntax:
+    content: string GetButtonIconHtml(IUFButtonProperties aProperties)
+    parameters:
+    - id: aProperties
+      type: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties
+    return:
+      type: System.String
+      description: Html snippet or empty string if there is no icon
+    content.vb: Function GetButtonIconHtml(aProperties As IUFButtonProperties) As String
+  overload: UltraForce.Library.Core.Asp.Services.IUFTheme.GetButtonIconHtml*
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetContainerClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties)
+  commentId: M:UltraForce.Library.Core.Asp.Services.IUFTheme.GetContainerClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties)
+  id: GetContainerClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties)
+  parent: UltraForce.Library.Core.Asp.Services.IUFTheme
+  langs:
+  - csharp
+  - vb
+  name: GetContainerClasses(IUFContainerProperties)
+  nameWithType: IUFTheme.GetContainerClasses(IUFContainerProperties)
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetContainerClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties)
+  type: Method
+  source:
+    id: GetContainerClasses
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFTheme.cs
+    startLine: 75
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Services
+  summary: Gets the css classes to use for the container element.
+  example: []
+  syntax:
+    content: string GetContainerClasses(IUFContainerProperties aProperties)
+    parameters:
+    - id: aProperties
+      type: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties
+      description: The container property values
+    return:
+      type: System.String
+      description: One or more css classes to style the container.
+    content.vb: Function GetContainerClasses(aProperties As IUFContainerProperties) As String
+  overload: UltraForce.Library.Core.Asp.Services.IUFTheme.GetContainerClasses*
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTabsClasses(System.Int32)
+  commentId: M:UltraForce.Library.Core.Asp.Services.IUFTheme.GetTabsClasses(System.Int32)
+  id: GetTabsClasses(System.Int32)
+  parent: UltraForce.Library.Core.Asp.Services.IUFTheme
+  langs:
+  - csharp
+  - vb
+  name: GetTabsClasses(int)
+  nameWithType: IUFTheme.GetTabsClasses(int)
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTabsClasses(int)
+  type: Method
+  source:
+    id: GetTabsClasses
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFTheme.cs
+    startLine: 82
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Services
+  summary: Gets the css classes to use for the tabs container element.
+  example: []
+  syntax:
+    content: string GetTabsClasses(int aCount)
+    parameters:
+    - id: aCount
+      type: System.Int32
+      description: Number of tabs the container contains
+    return:
+      type: System.String
+      description: ''
+    content.vb: Function GetTabsClasses(aCount As Integer) As String
+  overload: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTabsClasses*
+  nameWithType.vb: IUFTheme.GetTabsClasses(Integer)
+  fullName.vb: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTabsClasses(Integer)
+  name.vb: GetTabsClasses(Integer)
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTabRadioClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFTabProperties)
+  commentId: M:UltraForce.Library.Core.Asp.Services.IUFTheme.GetTabRadioClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFTabProperties)
+  id: GetTabRadioClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFTabProperties)
+  parent: UltraForce.Library.Core.Asp.Services.IUFTheme
+  langs:
+  - csharp
+  - vb
+  name: GetTabRadioClasses(IUFTabProperties)
+  nameWithType: IUFTheme.GetTabRadioClasses(IUFTabProperties)
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTabRadioClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFTabProperties)
+  type: Method
+  source:
+    id: GetTabRadioClasses
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFTheme.cs
+    startLine: 89
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Services
+  summary: Gets the css classes to use for the radio element with a tab.
+  example: []
+  syntax:
+    content: string GetTabRadioClasses(IUFTabProperties aProperties)
+    parameters:
+    - id: aProperties
+      type: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFTabProperties
+      description: ''
+    return:
+      type: System.String
+      description: ''
+    content.vb: Function GetTabRadioClasses(aProperties As IUFTabProperties) As String
+  overload: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTabRadioClasses*
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTabLabelClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFTabProperties)
+  commentId: M:UltraForce.Library.Core.Asp.Services.IUFTheme.GetTabLabelClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFTabProperties)
+  id: GetTabLabelClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFTabProperties)
+  parent: UltraForce.Library.Core.Asp.Services.IUFTheme
+  langs:
+  - csharp
+  - vb
+  name: GetTabLabelClasses(IUFTabProperties)
+  nameWithType: IUFTheme.GetTabLabelClasses(IUFTabProperties)
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTabLabelClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFTabProperties)
+  type: Method
+  source:
+    id: GetTabLabelClasses
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFTheme.cs
+    startLine: 96
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Services
+  summary: Gets the css classes to use for the label element with a tab.
+  example: []
+  syntax:
+    content: string GetTabLabelClasses(IUFTabProperties aProperties)
+    parameters:
+    - id: aProperties
+      type: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFTabProperties
+      description: ''
+    return:
+      type: System.String
+      description: ''
+    content.vb: Function GetTabLabelClasses(aProperties As IUFTabProperties) As String
+  overload: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTabLabelClasses*
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTabContentWrapperClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFTabProperties)
+  commentId: M:UltraForce.Library.Core.Asp.Services.IUFTheme.GetTabContentWrapperClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFTabProperties)
+  id: GetTabContentWrapperClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFTabProperties)
+  parent: UltraForce.Library.Core.Asp.Services.IUFTheme
+  langs:
+  - csharp
+  - vb
+  name: GetTabContentWrapperClasses(IUFTabProperties)
+  nameWithType: IUFTheme.GetTabContentWrapperClasses(IUFTabProperties)
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTabContentWrapperClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFTabProperties)
+  type: Method
+  source:
+    id: GetTabContentWrapperClasses
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFTheme.cs
+    startLine: 103
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Services
+  summary: Gets the css classes to use for the content wrapper element with a tab.
+  example: []
+  syntax:
+    content: string GetTabContentWrapperClasses(IUFTabProperties aProperties)
+    parameters:
+    - id: aProperties
+      type: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFTabProperties
+      description: ''
+    return:
+      type: System.String
+      description: ''
+    content.vb: Function GetTabContentWrapperClasses(aProperties As IUFTabProperties) As String
+  overload: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTabContentWrapperClasses*
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetDataListClasses
+  commentId: M:UltraForce.Library.Core.Asp.Services.IUFTheme.GetDataListClasses
+  id: GetDataListClasses
+  parent: UltraForce.Library.Core.Asp.Services.IUFTheme
+  langs:
+  - csharp
+  - vb
+  name: GetDataListClasses()
+  nameWithType: IUFTheme.GetDataListClasses()
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetDataListClasses()
+  type: Method
+  source:
+    id: GetDataListClasses
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFTheme.cs
+    startLine: 113
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Services
+  summary: Gets the css classes to use for the data list element.
+  example: []
+  syntax:
+    content: string GetDataListClasses()
+    return:
+      type: System.String
+      description: One or more css classes to style the data list.
+    content.vb: Function GetDataListClasses() As String
+  overload: UltraForce.Library.Core.Asp.Services.IUFTheme.GetDataListClasses*
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetDataNameClasses
+  commentId: M:UltraForce.Library.Core.Asp.Services.IUFTheme.GetDataNameClasses
+  id: GetDataNameClasses
+  parent: UltraForce.Library.Core.Asp.Services.IUFTheme
+  langs:
+  - csharp
+  - vb
+  name: GetDataNameClasses()
+  nameWithType: IUFTheme.GetDataNameClasses()
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetDataNameClasses()
+  type: Method
+  source:
+    id: GetDataNameClasses
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFTheme.cs
+    startLine: 119
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Services
+  summary: Gets the css classes to use for the data name element.
+  example: []
+  syntax:
+    content: string GetDataNameClasses()
+    return:
+      type: System.String
+      description: One or more css classes to style the data name.
+    content.vb: Function GetDataNameClasses() As String
+  overload: UltraForce.Library.Core.Asp.Services.IUFTheme.GetDataNameClasses*
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetDataValueClasses
+  commentId: M:UltraForce.Library.Core.Asp.Services.IUFTheme.GetDataValueClasses
+  id: GetDataValueClasses
+  parent: UltraForce.Library.Core.Asp.Services.IUFTheme
+  langs:
+  - csharp
+  - vb
+  name: GetDataValueClasses()
+  nameWithType: IUFTheme.GetDataValueClasses()
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetDataValueClasses()
+  type: Method
+  source:
+    id: GetDataValueClasses
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFTheme.cs
+    startLine: 125
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Services
+  summary: Gets the css classes to use for the data value element.
+  example: []
+  syntax:
+    content: string GetDataValueClasses()
+    return:
+      type: System.String
+      description: One or more css classes to style the data value.
+    content.vb: Function GetDataValueClasses() As String
+  overload: UltraForce.Library.Core.Asp.Services.IUFTheme.GetDataValueClasses*
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextWrapperClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)
+  commentId: M:UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextWrapperClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)
+  id: GetTextWrapperClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)
+  parent: UltraForce.Library.Core.Asp.Services.IUFTheme
+  langs:
+  - csharp
+  - vb
+  name: GetTextWrapperClasses(IUFInputProperties, string)
+  nameWithType: IUFTheme.GetTextWrapperClasses(IUFInputProperties, string)
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextWrapperClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties, string)
+  type: Method
+  source:
+    id: GetTextWrapperClasses
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFTheme.cs
+    startLine: 137
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Services
+  summary: Returns the css classes to use with the wrapper element for text input and select elements.
+  example: []
+  syntax:
+    content: string GetTextWrapperClasses(IUFInputProperties aProperties, string aType)
+    parameters:
+    - id: aProperties
+      type: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties
+      description: ''
+    - id: aType
+      type: System.String
+      description: Type the input is created for
+    return:
+      type: System.String
+      description: ''
+    content.vb: Function GetTextWrapperClasses(aProperties As IUFInputProperties, aType As String) As String
+  overload: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextWrapperClasses*
+  nameWithType.vb: IUFTheme.GetTextWrapperClasses(IUFInputProperties, String)
+  fullName.vb: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextWrapperClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties, String)
+  name.vb: GetTextWrapperClasses(IUFInputProperties, String)
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextLabelClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)
+  commentId: M:UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextLabelClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)
+  id: GetTextLabelClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)
+  parent: UltraForce.Library.Core.Asp.Services.IUFTheme
+  langs:
+  - csharp
+  - vb
+  name: GetTextLabelClasses(IUFInputProperties, string)
+  nameWithType: IUFTheme.GetTextLabelClasses(IUFInputProperties, string)
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextLabelClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties, string)
+  type: Method
+  source:
+    id: GetTextLabelClasses
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFTheme.cs
+    startLine: 145
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Services
+  summary: Returns the css classes to use with the label for text input and select elements.
+  example: []
+  syntax:
+    content: string GetTextLabelClasses(IUFInputProperties aProperties, string aType)
+    parameters:
+    - id: aProperties
+      type: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties
+      description: ''
+    - id: aType
+      type: System.String
+      description: Type the input is created for
+    return:
+      type: System.String
+      description: ''
+    content.vb: Function GetTextLabelClasses(aProperties As IUFInputProperties, aType As String) As String
+  overload: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextLabelClasses*
+  nameWithType.vb: IUFTheme.GetTextLabelClasses(IUFInputProperties, String)
+  fullName.vb: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextLabelClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties, String)
+  name.vb: GetTextLabelClasses(IUFInputProperties, String)
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextLabelSpanClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)
+  commentId: M:UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextLabelSpanClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)
+  id: GetTextLabelSpanClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)
+  parent: UltraForce.Library.Core.Asp.Services.IUFTheme
+  langs:
+  - csharp
+  - vb
+  name: GetTextLabelSpanClasses(IUFInputProperties, string)
+  nameWithType: IUFTheme.GetTextLabelSpanClasses(IUFInputProperties, string)
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextLabelSpanClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties, string)
+  type: Method
+  source:
+    id: GetTextLabelSpanClasses
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFTheme.cs
+    startLine: 154
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Services
+  summary: >-
+    Returns the css classes to use with the span within the label for text input and select
+
+    elements.
+  example: []
+  syntax:
+    content: string GetTextLabelSpanClasses(IUFInputProperties aProperties, string aType)
+    parameters:
+    - id: aProperties
+      type: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties
+      description: ''
+    - id: aType
+      type: System.String
+      description: Type the input is created for
+    return:
+      type: System.String
+      description: ''
+    content.vb: Function GetTextLabelSpanClasses(aProperties As IUFInputProperties, aType As String) As String
+  overload: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextLabelSpanClasses*
+  nameWithType.vb: IUFTheme.GetTextLabelSpanClasses(IUFInputProperties, String)
+  fullName.vb: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextLabelSpanClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties, String)
+  name.vb: GetTextLabelSpanClasses(IUFInputProperties, String)
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextLabelDescriptionClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)
+  commentId: M:UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextLabelDescriptionClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)
+  id: GetTextLabelDescriptionClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)
+  parent: UltraForce.Library.Core.Asp.Services.IUFTheme
+  langs:
+  - csharp
+  - vb
+  name: GetTextLabelDescriptionClasses(IUFInputProperties, string)
+  nameWithType: IUFTheme.GetTextLabelDescriptionClasses(IUFInputProperties, string)
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextLabelDescriptionClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties, string)
+  type: Method
+  source:
+    id: GetTextLabelDescriptionClasses
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFTheme.cs
+    startLine: 163
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Services
+  summary: >-
+    Returns the css classes to use with the description within label for text input and select
+
+    elements.
+  example: []
+  syntax:
+    content: string GetTextLabelDescriptionClasses(IUFInputProperties aProperties, string aType)
+    parameters:
+    - id: aProperties
+      type: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties
+      description: ''
+    - id: aType
+      type: System.String
+      description: Type the input is created for
+    return:
+      type: System.String
+      description: ''
+    content.vb: Function GetTextLabelDescriptionClasses(aProperties As IUFInputProperties, aType As String) As String
+  overload: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextLabelDescriptionClasses*
+  nameWithType.vb: IUFTheme.GetTextLabelDescriptionClasses(IUFInputProperties, String)
+  fullName.vb: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextLabelDescriptionClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties, String)
+  name.vb: GetTextLabelDescriptionClasses(IUFInputProperties, String)
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextInputClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)
+  commentId: M:UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextInputClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)
+  id: GetTextInputClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)
+  parent: UltraForce.Library.Core.Asp.Services.IUFTheme
+  langs:
+  - csharp
+  - vb
+  name: GetTextInputClasses(IUFInputProperties, string)
+  nameWithType: IUFTheme.GetTextInputClasses(IUFInputProperties, string)
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextInputClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties, string)
+  type: Method
+  source:
+    id: GetTextInputClasses
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFTheme.cs
+    startLine: 171
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Services
+  summary: Returns the css classes to use with the text input element.
+  example: []
+  syntax:
+    content: string GetTextInputClasses(IUFInputProperties aProperties, string aType)
+    parameters:
+    - id: aProperties
+      type: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties
+      description: ''
+    - id: aType
+      type: System.String
+      description: Type the input is created for
+    return:
+      type: System.String
+      description: ''
+    content.vb: Function GetTextInputClasses(aProperties As IUFInputProperties, aType As String) As String
+  overload: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextInputClasses*
+  nameWithType.vb: IUFTheme.GetTextInputClasses(IUFInputProperties, String)
+  fullName.vb: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextInputClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties, String)
+  name.vb: GetTextInputClasses(IUFInputProperties, String)
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetValidationFeedbackContainerHtml(System.String)
+  commentId: M:UltraForce.Library.Core.Asp.Services.IUFTheme.GetValidationFeedbackContainerHtml(System.String)
+  id: GetValidationFeedbackContainerHtml(System.String)
+  parent: UltraForce.Library.Core.Asp.Services.IUFTheme
+  langs:
+  - csharp
+  - vb
+  name: GetValidationFeedbackContainerHtml(string)
+  nameWithType: IUFTheme.GetValidationFeedbackContainerHtml(string)
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetValidationFeedbackContainerHtml(string)
+  type: Method
+  source:
+    id: GetValidationFeedbackContainerHtml
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFTheme.cs
+    startLine: 178
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Services
+  summary: Returns the html for the validation feedback container (used by javascript validation).
+  example: []
+  syntax:
+    content: string GetValidationFeedbackContainerHtml(string anId)
+    parameters:
+    - id: anId
+      type: System.String
+      description: ''
+    return:
+      type: System.String
+      description: ''
+    content.vb: Function GetValidationFeedbackContainerHtml(anId As String) As String
+  overload: UltraForce.Library.Core.Asp.Services.IUFTheme.GetValidationFeedbackContainerHtml*
+  nameWithType.vb: IUFTheme.GetValidationFeedbackContainerHtml(String)
+  fullName.vb: UltraForce.Library.Core.Asp.Services.IUFTheme.GetValidationFeedbackContainerHtml(String)
+  name.vb: GetValidationFeedbackContainerHtml(String)
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetFieldErrorsHtml(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary,System.String)
+  commentId: M:UltraForce.Library.Core.Asp.Services.IUFTheme.GetFieldErrorsHtml(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary,System.String)
+  id: GetFieldErrorsHtml(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary,System.String)
+  parent: UltraForce.Library.Core.Asp.Services.IUFTheme
+  langs:
+  - csharp
+  - vb
+  name: GetFieldErrorsHtml(ModelStateDictionary, string)
+  nameWithType: IUFTheme.GetFieldErrorsHtml(ModelStateDictionary, string)
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetFieldErrorsHtml(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary, string)
+  type: Method
+  source:
+    id: GetFieldErrorsHtml
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFTheme.cs
+    startLine: 187
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Services
+  summary: >-
+    Gets the errors for an input field as an html block. The errors will be wrapped in a
+
+    container, see <xref href="UltraForce.Library.Core.Asp.Services.IUFTheme.GetFieldErrorsClasses" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: string GetFieldErrorsHtml(ModelStateDictionary aModelState, string aName)
+    parameters:
+    - id: aModelState
+      type: Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary
+      description: ''
+    - id: aName
+      type: System.String
+      description: ''
+    return:
+      type: System.String
+      description: ''
+    content.vb: Function GetFieldErrorsHtml(aModelState As ModelStateDictionary, aName As String) As String
+  overload: UltraForce.Library.Core.Asp.Services.IUFTheme.GetFieldErrorsHtml*
+  nameWithType.vb: IUFTheme.GetFieldErrorsHtml(ModelStateDictionary, String)
+  fullName.vb: UltraForce.Library.Core.Asp.Services.IUFTheme.GetFieldErrorsHtml(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary, String)
+  name.vb: GetFieldErrorsHtml(ModelStateDictionary, String)
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetFieldErrorsClasses
+  commentId: M:UltraForce.Library.Core.Asp.Services.IUFTheme.GetFieldErrorsClasses
+  id: GetFieldErrorsClasses
+  parent: UltraForce.Library.Core.Asp.Services.IUFTheme
+  langs:
+  - csharp
+  - vb
+  name: GetFieldErrorsClasses()
+  nameWithType: IUFTheme.GetFieldErrorsClasses()
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetFieldErrorsClasses()
+  type: Method
+  source:
+    id: GetFieldErrorsClasses
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFTheme.cs
+    startLine: 193
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Services
+  summary: Returns the css classes to use for the wrapper of the errors.
+  example: []
+  syntax:
+    content: string GetFieldErrorsClasses()
+    return:
+      type: System.String
+      description: ''
+    content.vb: Function GetFieldErrorsClasses() As String
+  overload: UltraForce.Library.Core.Asp.Services.IUFTheme.GetFieldErrorsClasses*
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetCheckboxWrapperClasses
+  commentId: M:UltraForce.Library.Core.Asp.Services.IUFTheme.GetCheckboxWrapperClasses
+  id: GetCheckboxWrapperClasses
+  parent: UltraForce.Library.Core.Asp.Services.IUFTheme
+  langs:
+  - csharp
+  - vb
+  name: GetCheckboxWrapperClasses()
+  nameWithType: IUFTheme.GetCheckboxWrapperClasses()
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetCheckboxWrapperClasses()
+  type: Method
+  source:
+    id: GetCheckboxWrapperClasses
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFTheme.cs
+    startLine: 199
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Services
+  summary: Returns the css classes to use for the wrapper of a checkbox element.
+  example: []
+  syntax:
+    content: string GetCheckboxWrapperClasses()
+    return:
+      type: System.String
+      description: ''
+    content.vb: Function GetCheckboxWrapperClasses() As String
+  overload: UltraForce.Library.Core.Asp.Services.IUFTheme.GetCheckboxWrapperClasses*
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetCheckboxLabelClasses
+  commentId: M:UltraForce.Library.Core.Asp.Services.IUFTheme.GetCheckboxLabelClasses
+  id: GetCheckboxLabelClasses
+  parent: UltraForce.Library.Core.Asp.Services.IUFTheme
+  langs:
+  - csharp
+  - vb
+  name: GetCheckboxLabelClasses()
+  nameWithType: IUFTheme.GetCheckboxLabelClasses()
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetCheckboxLabelClasses()
+  type: Method
+  source:
+    id: GetCheckboxLabelClasses
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFTheme.cs
+    startLine: 205
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Services
+  summary: Returns the css classes to use for the label of a checkbox element.
+  example: []
+  syntax:
+    content: string GetCheckboxLabelClasses()
+    return:
+      type: System.String
+      description: ''
+    content.vb: Function GetCheckboxLabelClasses() As String
+  overload: UltraForce.Library.Core.Asp.Services.IUFTheme.GetCheckboxLabelClasses*
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetCheckboxLabelSpanClasses
+  commentId: M:UltraForce.Library.Core.Asp.Services.IUFTheme.GetCheckboxLabelSpanClasses
+  id: GetCheckboxLabelSpanClasses
+  parent: UltraForce.Library.Core.Asp.Services.IUFTheme
+  langs:
+  - csharp
+  - vb
+  name: GetCheckboxLabelSpanClasses()
+  nameWithType: IUFTheme.GetCheckboxLabelSpanClasses()
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetCheckboxLabelSpanClasses()
+  type: Method
+  source:
+    id: GetCheckboxLabelSpanClasses
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFTheme.cs
+    startLine: 211
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Services
+  summary: Returns the css classes to use for the text within the checkbox label element.
+  example: []
+  syntax:
+    content: string GetCheckboxLabelSpanClasses()
+    return:
+      type: System.String
+      description: ''
+    content.vb: Function GetCheckboxLabelSpanClasses() As String
+  overload: UltraForce.Library.Core.Asp.Services.IUFTheme.GetCheckboxLabelSpanClasses*
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetCheckboxLabelDescriptionClasses
+  commentId: M:UltraForce.Library.Core.Asp.Services.IUFTheme.GetCheckboxLabelDescriptionClasses
+  id: GetCheckboxLabelDescriptionClasses
+  parent: UltraForce.Library.Core.Asp.Services.IUFTheme
+  langs:
+  - csharp
+  - vb
+  name: GetCheckboxLabelDescriptionClasses()
+  nameWithType: IUFTheme.GetCheckboxLabelDescriptionClasses()
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetCheckboxLabelDescriptionClasses()
+  type: Method
+  source:
+    id: GetCheckboxLabelDescriptionClasses
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFTheme.cs
+    startLine: 217
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Services
+  summary: Returns the css classes to use for the description within the checkbox label element.
+  example: []
+  syntax:
+    content: string GetCheckboxLabelDescriptionClasses()
+    return:
+      type: System.String
+      description: ''
+    content.vb: Function GetCheckboxLabelDescriptionClasses() As String
+  overload: UltraForce.Library.Core.Asp.Services.IUFTheme.GetCheckboxLabelDescriptionClasses*
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetCheckboxInputClasses
+  commentId: M:UltraForce.Library.Core.Asp.Services.IUFTheme.GetCheckboxInputClasses
+  id: GetCheckboxInputClasses
+  parent: UltraForce.Library.Core.Asp.Services.IUFTheme
+  langs:
+  - csharp
+  - vb
+  name: GetCheckboxInputClasses()
+  nameWithType: IUFTheme.GetCheckboxInputClasses()
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetCheckboxInputClasses()
+  type: Method
+  source:
+    id: GetCheckboxInputClasses
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFTheme.cs
+    startLine: 223
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Services
+  summary: Returns the css classes to use for the checkbox input element.
+  example: []
+  syntax:
+    content: string GetCheckboxInputClasses()
+    return:
+      type: System.String
+      description: ''
+    content.vb: Function GetCheckboxInputClasses() As String
+  overload: UltraForce.Library.Core.Asp.Services.IUFTheme.GetCheckboxInputClasses*
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetCheckboxExtraHtml
+  commentId: M:UltraForce.Library.Core.Asp.Services.IUFTheme.GetCheckboxExtraHtml
+  id: GetCheckboxExtraHtml
+  parent: UltraForce.Library.Core.Asp.Services.IUFTheme
+  langs:
+  - csharp
+  - vb
+  name: GetCheckboxExtraHtml()
+  nameWithType: IUFTheme.GetCheckboxExtraHtml()
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetCheckboxExtraHtml()
+  type: Method
+  source:
+    id: GetCheckboxExtraHtml
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFTheme.cs
+    startLine: 230
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Services
+  summary: >-
+    Gets the extra html to render after the checkbox input element. It can be used when
+
+    using custom graphics.
+  example: []
+  syntax:
+    content: string GetCheckboxExtraHtml()
+    return:
+      type: System.String
+      description: ''
+    content.vb: Function GetCheckboxExtraHtml() As String
+  overload: UltraForce.Library.Core.Asp.Services.IUFTheme.GetCheckboxExtraHtml*
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetRadioWrapperClasses
+  commentId: M:UltraForce.Library.Core.Asp.Services.IUFTheme.GetRadioWrapperClasses
+  id: GetRadioWrapperClasses
+  parent: UltraForce.Library.Core.Asp.Services.IUFTheme
+  langs:
+  - csharp
+  - vb
+  name: GetRadioWrapperClasses()
+  nameWithType: IUFTheme.GetRadioWrapperClasses()
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetRadioWrapperClasses()
+  type: Method
+  source:
+    id: GetRadioWrapperClasses
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFTheme.cs
+    startLine: 236
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Services
+  summary: Returns the css classes to use for the wrapper element of a radio element.
+  example: []
+  syntax:
+    content: string GetRadioWrapperClasses()
+    return:
+      type: System.String
+      description: ''
+    content.vb: Function GetRadioWrapperClasses() As String
+  overload: UltraForce.Library.Core.Asp.Services.IUFTheme.GetRadioWrapperClasses*
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetRadioLabelClasses
+  commentId: M:UltraForce.Library.Core.Asp.Services.IUFTheme.GetRadioLabelClasses
+  id: GetRadioLabelClasses
+  parent: UltraForce.Library.Core.Asp.Services.IUFTheme
+  langs:
+  - csharp
+  - vb
+  name: GetRadioLabelClasses()
+  nameWithType: IUFTheme.GetRadioLabelClasses()
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetRadioLabelClasses()
+  type: Method
+  source:
+    id: GetRadioLabelClasses
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFTheme.cs
+    startLine: 242
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Services
+  summary: Returns the css classes to use for the label of a radio element.
+  example: []
+  syntax:
+    content: string GetRadioLabelClasses()
+    return:
+      type: System.String
+      description: ''
+    content.vb: Function GetRadioLabelClasses() As String
+  overload: UltraForce.Library.Core.Asp.Services.IUFTheme.GetRadioLabelClasses*
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetRadioLabelSpanClasses
+  commentId: M:UltraForce.Library.Core.Asp.Services.IUFTheme.GetRadioLabelSpanClasses
+  id: GetRadioLabelSpanClasses
+  parent: UltraForce.Library.Core.Asp.Services.IUFTheme
+  langs:
+  - csharp
+  - vb
+  name: GetRadioLabelSpanClasses()
+  nameWithType: IUFTheme.GetRadioLabelSpanClasses()
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetRadioLabelSpanClasses()
+  type: Method
+  source:
+    id: GetRadioLabelSpanClasses
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFTheme.cs
+    startLine: 248
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Services
+  summary: Returns the css classes to use for the text within the radio label element.
+  example: []
+  syntax:
+    content: string GetRadioLabelSpanClasses()
+    return:
+      type: System.String
+      description: ''
+    content.vb: Function GetRadioLabelSpanClasses() As String
+  overload: UltraForce.Library.Core.Asp.Services.IUFTheme.GetRadioLabelSpanClasses*
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetRadioLabelDescriptionClasses
+  commentId: M:UltraForce.Library.Core.Asp.Services.IUFTheme.GetRadioLabelDescriptionClasses
+  id: GetRadioLabelDescriptionClasses
+  parent: UltraForce.Library.Core.Asp.Services.IUFTheme
+  langs:
+  - csharp
+  - vb
+  name: GetRadioLabelDescriptionClasses()
+  nameWithType: IUFTheme.GetRadioLabelDescriptionClasses()
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetRadioLabelDescriptionClasses()
+  type: Method
+  source:
+    id: GetRadioLabelDescriptionClasses
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFTheme.cs
+    startLine: 254
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Services
+  summary: Returns the css classes to use for the description within the radio label element.
+  example: []
+  syntax:
+    content: string GetRadioLabelDescriptionClasses()
+    return:
+      type: System.String
+      description: ''
+    content.vb: Function GetRadioLabelDescriptionClasses() As String
+  overload: UltraForce.Library.Core.Asp.Services.IUFTheme.GetRadioLabelDescriptionClasses*
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetRadioInputClasses
+  commentId: M:UltraForce.Library.Core.Asp.Services.IUFTheme.GetRadioInputClasses
+  id: GetRadioInputClasses
+  parent: UltraForce.Library.Core.Asp.Services.IUFTheme
+  langs:
+  - csharp
+  - vb
+  name: GetRadioInputClasses()
+  nameWithType: IUFTheme.GetRadioInputClasses()
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetRadioInputClasses()
+  type: Method
+  source:
+    id: GetRadioInputClasses
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFTheme.cs
+    startLine: 260
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Services
+  summary: Returns the css classes to use for the radio input element.
+  example: []
+  syntax:
+    content: string GetRadioInputClasses()
+    return:
+      type: System.String
+      description: ''
+    content.vb: Function GetRadioInputClasses() As String
+  overload: UltraForce.Library.Core.Asp.Services.IUFTheme.GetRadioInputClasses*
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetRadioExtraHtml
+  commentId: M:UltraForce.Library.Core.Asp.Services.IUFTheme.GetRadioExtraHtml
+  id: GetRadioExtraHtml
+  parent: UltraForce.Library.Core.Asp.Services.IUFTheme
+  langs:
+  - csharp
+  - vb
+  name: GetRadioExtraHtml()
+  nameWithType: IUFTheme.GetRadioExtraHtml()
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetRadioExtraHtml()
+  type: Method
+  source:
+    id: GetRadioExtraHtml
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFTheme.cs
+    startLine: 267
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Services
+  summary: >-
+    Gets the extra html to render after the radio input element. It can be used when
+
+    using custom graphics.
+  example: []
+  syntax:
+    content: string GetRadioExtraHtml()
+    return:
+      type: System.String
+      description: ''
+    content.vb: Function GetRadioExtraHtml() As String
+  overload: UltraForce.Library.Core.Asp.Services.IUFTheme.GetRadioExtraHtml*
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetSelectClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties)
+  commentId: M:UltraForce.Library.Core.Asp.Services.IUFTheme.GetSelectClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties)
+  id: GetSelectClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties)
+  parent: UltraForce.Library.Core.Asp.Services.IUFTheme
+  langs:
+  - csharp
+  - vb
+  name: GetSelectClasses(IUFInputProperties)
+  nameWithType: IUFTheme.GetSelectClasses(IUFInputProperties)
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetSelectClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties)
+  type: Method
+  source:
+    id: GetSelectClasses
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFTheme.cs
+    startLine: 273
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Services
+  summary: Returns the css classes to use for the select element.
+  example: []
+  syntax:
+    content: string GetSelectClasses(IUFInputProperties aProperties)
+    parameters:
+    - id: aProperties
+      type: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties
+    return:
+      type: System.String
+      description: ''
+    content.vb: Function GetSelectClasses(aProperties As IUFInputProperties) As String
+  overload: UltraForce.Library.Core.Asp.Services.IUFTheme.GetSelectClasses*
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetSpacerClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFSpacerProperties)
+  commentId: M:UltraForce.Library.Core.Asp.Services.IUFTheme.GetSpacerClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFSpacerProperties)
+  id: GetSpacerClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFSpacerProperties)
+  parent: UltraForce.Library.Core.Asp.Services.IUFTheme
+  langs:
+  - csharp
+  - vb
+  name: GetSpacerClasses(IUFSpacerProperties)
+  nameWithType: IUFTheme.GetSpacerClasses(IUFSpacerProperties)
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetSpacerClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFSpacerProperties)
+  type: Method
+  source:
+    id: GetSpacerClasses
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFTheme.cs
+    startLine: 284
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Services
+  summary: Returns the css classes to use for the spacer element.
+  example: []
+  syntax:
+    content: string GetSpacerClasses(IUFSpacerProperties aProperties)
+    parameters:
+    - id: aProperties
+      type: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFSpacerProperties
+      description: ''
+    return:
+      type: System.String
+      description: ''
+    content.vb: Function GetSpacerClasses(aProperties As IUFSpacerProperties) As String
+  overload: UltraForce.Library.Core.Asp.Services.IUFTheme.GetSpacerClasses*
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetColumnClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties)
+  commentId: M:UltraForce.Library.Core.Asp.Services.IUFTheme.GetColumnClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties)
+  id: GetColumnClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties)
+  parent: UltraForce.Library.Core.Asp.Services.IUFTheme
+  langs:
+  - csharp
+  - vb
+  name: GetColumnClasses(IUFFlexProperties)
+  nameWithType: IUFTheme.GetColumnClasses(IUFFlexProperties)
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetColumnClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties)
+  type: Method
+  source:
+    id: GetColumnClasses
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFTheme.cs
+    startLine: 291
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Services
+  summary: Returns the css classes to use for the column element.
+  example: []
+  syntax:
+    content: string GetColumnClasses(IUFFlexProperties aProperties)
+    parameters:
+    - id: aProperties
+      type: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties
+      description: ''
+    return:
+      type: System.String
+      description: ''
+    content.vb: Function GetColumnClasses(aProperties As IUFFlexProperties) As String
+  overload: UltraForce.Library.Core.Asp.Services.IUFTheme.GetColumnClasses*
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetRowClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties)
+  commentId: M:UltraForce.Library.Core.Asp.Services.IUFTheme.GetRowClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties)
+  id: GetRowClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties)
+  parent: UltraForce.Library.Core.Asp.Services.IUFTheme
+  langs:
+  - csharp
+  - vb
+  name: GetRowClasses(IUFFlexProperties)
+  nameWithType: IUFTheme.GetRowClasses(IUFFlexProperties)
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetRowClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties)
+  type: Method
+  source:
+    id: GetRowClasses
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFTheme.cs
+    startLine: 298
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Services
+  summary: Returns the css classes to use for the row element.
+  example: []
+  syntax:
+    content: string GetRowClasses(IUFFlexProperties aProperties)
+    parameters:
+    - id: aProperties
+      type: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties
+      description: ''
+    return:
+      type: System.String
+      description: ''
+    content.vb: Function GetRowClasses(aProperties As IUFFlexProperties) As String
+  overload: UltraForce.Library.Core.Asp.Services.IUFTheme.GetRowClasses*
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTableClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties)
+  commentId: M:UltraForce.Library.Core.Asp.Services.IUFTheme.GetTableClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties)
+  id: GetTableClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties)
+  parent: UltraForce.Library.Core.Asp.Services.IUFTheme
+  langs:
+  - csharp
+  - vb
+  name: GetTableClasses(IUFTableProperties)
+  nameWithType: IUFTheme.GetTableClasses(IUFTableProperties)
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTableClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties)
+  type: Method
+  source:
+    id: GetTableClasses
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFTheme.cs
+    startLine: 309
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Services
+  summary: Returns the css classes to use for the table element.
+  example: []
+  syntax:
+    content: string GetTableClasses(IUFTableProperties aProperties)
+    parameters:
+    - id: aProperties
+      type: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties
+      description: ''
+    return:
+      type: System.String
+      description: ''
+    content.vb: Function GetTableClasses(aProperties As IUFTableProperties) As String
+  overload: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTableClasses*
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTableCellClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties,UltraForce.Library.Core.Asp.Types.Enums.UFTableCellType,UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties,UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableRowProperties)
+  commentId: M:UltraForce.Library.Core.Asp.Services.IUFTheme.GetTableCellClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties,UltraForce.Library.Core.Asp.Types.Enums.UFTableCellType,UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties,UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableRowProperties)
+  id: GetTableCellClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties,UltraForce.Library.Core.Asp.Types.Enums.UFTableCellType,UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties,UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableRowProperties)
+  parent: UltraForce.Library.Core.Asp.Services.IUFTheme
+  langs:
+  - csharp
+  - vb
+  name: GetTableCellClasses(IUFCellProperties, UFTableCellType, IUFTableProperties, IUFTableRowProperties)
+  nameWithType: IUFTheme.GetTableCellClasses(IUFCellProperties, UFTableCellType, IUFTableProperties, IUFTableRowProperties)
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTableCellClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties, UltraForce.Library.Core.Asp.Types.Enums.UFTableCellType, UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties, UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableRowProperties)
+  type: Method
+  source:
+    id: GetTableCellClasses
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFTheme.cs
+    startLine: 319
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Services
+  summary: Returns the css classes to use for the table cell (td/th) element.
+  example: []
+  syntax:
+    content: string GetTableCellClasses(IUFCellProperties aProperties, UFTableCellType aType, IUFTableProperties aTableProperties, IUFTableRowProperties aRowProperties)
+    parameters:
+    - id: aProperties
+      type: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties
+      description: ''
+    - id: aType
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFTableCellType
+      description: ''
+    - id: aTableProperties
+      type: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties
+      description: ''
+    - id: aRowProperties
+      type: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableRowProperties
+      description: ''
+    return:
+      type: System.String
+      description: ''
+    content.vb: Function GetTableCellClasses(aProperties As IUFCellProperties, aType As UFTableCellType, aTableProperties As IUFTableProperties, aRowProperties As IUFTableRowProperties) As String
+  overload: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTableCellClasses*
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTableHeaderButtonClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties,UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties,UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableRowProperties)
+  commentId: M:UltraForce.Library.Core.Asp.Services.IUFTheme.GetTableHeaderButtonClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties,UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties,UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableRowProperties)
+  id: GetTableHeaderButtonClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties,UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties,UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableRowProperties)
+  parent: UltraForce.Library.Core.Asp.Services.IUFTheme
+  langs:
+  - csharp
+  - vb
+  name: GetTableHeaderButtonClasses(IUFCellProperties, IUFTableProperties, IUFTableRowProperties)
+  nameWithType: IUFTheme.GetTableHeaderButtonClasses(IUFCellProperties, IUFTableProperties, IUFTableRowProperties)
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTableHeaderButtonClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties, UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties, UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableRowProperties)
+  type: Method
+  source:
+    id: GetTableHeaderButtonClasses
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFTheme.cs
+    startLine: 332
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Services
+  summary: >-
+    Returns the css classes to use for the button element within a table header cell that is
+
+    added when the table is sortable.
+  example: []
+  syntax:
+    content: string GetTableHeaderButtonClasses(IUFCellProperties aProperties, IUFTableProperties aTableProperties, IUFTableRowProperties aRowProperties)
+    parameters:
+    - id: aProperties
+      type: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties
+      description: ''
+    - id: aTableProperties
+      type: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties
+      description: ''
+    - id: aRowProperties
+      type: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableRowProperties
+      description: ''
+    return:
+      type: System.String
+      description: ''
+    content.vb: Function GetTableHeaderButtonClasses(aProperties As IUFCellProperties, aTableProperties As IUFTableProperties, aRowProperties As IUFTableRowProperties) As String
+  overload: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTableHeaderButtonClasses*
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTableRowClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableRowProperties,UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties)
+  commentId: M:UltraForce.Library.Core.Asp.Services.IUFTheme.GetTableRowClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableRowProperties,UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties)
+  id: GetTableRowClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableRowProperties,UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties)
+  parent: UltraForce.Library.Core.Asp.Services.IUFTheme
+  langs:
+  - csharp
+  - vb
+  name: GetTableRowClasses(IUFTableRowProperties, IUFTableProperties)
+  nameWithType: IUFTheme.GetTableRowClasses(IUFTableRowProperties, IUFTableProperties)
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTableRowClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableRowProperties, UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties)
+  type: Method
+  source:
+    id: GetTableRowClasses
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFTheme.cs
+    startLine: 343
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Services
+  summary: Returns the css classes to use for the table row (tr) element.
+  example: []
+  syntax:
+    content: string GetTableRowClasses(IUFTableRowProperties aProperties, IUFTableProperties aTableProperties)
+    parameters:
+    - id: aProperties
+      type: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableRowProperties
+      description: ''
+    - id: aTableProperties
+      type: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties
+      description: ''
+    return:
+      type: System.String
+      description: ''
+    content.vb: Function GetTableRowClasses(aProperties As IUFTableRowProperties, aTableProperties As IUFTableProperties) As String
+  overload: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTableRowClasses*
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetFilterContainerClasses
+  commentId: M:UltraForce.Library.Core.Asp.Services.IUFTheme.GetFilterContainerClasses
+  id: GetFilterContainerClasses
+  parent: UltraForce.Library.Core.Asp.Services.IUFTheme
+  langs:
+  - csharp
+  - vb
+  name: GetFilterContainerClasses()
+  nameWithType: IUFTheme.GetFilterContainerClasses()
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetFilterContainerClasses()
+  type: Method
+  source:
+    id: GetFilterContainerClasses
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFTheme.cs
+    startLine: 350
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Services
+  summary: >-
+    Returns the css classes to use for the filter container element shown above the table if
+
+    <xref href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper.Filter" data-throw-if-not-resolved="false"></xref> is true.
+  example: []
+  syntax:
+    content: string GetFilterContainerClasses()
+    return:
+      type: System.String
+      description: ''
+    content.vb: Function GetFilterContainerClasses() As String
+  overload: UltraForce.Library.Core.Asp.Services.IUFTheme.GetFilterContainerClasses*
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetFilterLabelClasses
+  commentId: M:UltraForce.Library.Core.Asp.Services.IUFTheme.GetFilterLabelClasses
+  id: GetFilterLabelClasses
+  parent: UltraForce.Library.Core.Asp.Services.IUFTheme
+  langs:
+  - csharp
+  - vb
+  name: GetFilterLabelClasses()
+  nameWithType: IUFTheme.GetFilterLabelClasses()
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetFilterLabelClasses()
+  type: Method
+  source:
+    id: GetFilterLabelClasses
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFTheme.cs
+    startLine: 356
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Services
+  summary: Returns the css classes to use for the label element within the filter container.
+  example: []
+  syntax:
+    content: string GetFilterLabelClasses()
+    return:
+      type: System.String
+      description: ''
+    content.vb: Function GetFilterLabelClasses() As String
+  overload: UltraForce.Library.Core.Asp.Services.IUFTheme.GetFilterLabelClasses*
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetFilterInputClasses
+  commentId: M:UltraForce.Library.Core.Asp.Services.IUFTheme.GetFilterInputClasses
+  id: GetFilterInputClasses
+  parent: UltraForce.Library.Core.Asp.Services.IUFTheme
+  langs:
+  - csharp
+  - vb
+  name: GetFilterInputClasses()
+  nameWithType: IUFTheme.GetFilterInputClasses()
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetFilterInputClasses()
+  type: Method
+  source:
+    id: GetFilterInputClasses
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFTheme.cs
+    startLine: 362
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Services
+  summary: Returns the css classes to use for input element within the filter container.
+  example: []
+  syntax:
+    content: string GetFilterInputClasses()
+    return:
+      type: System.String
+      description: ''
+    content.vb: Function GetFilterInputClasses() As String
+  overload: UltraForce.Library.Core.Asp.Services.IUFTheme.GetFilterInputClasses*
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetFilterButtonClasses
+  commentId: M:UltraForce.Library.Core.Asp.Services.IUFTheme.GetFilterButtonClasses
+  id: GetFilterButtonClasses
+  parent: UltraForce.Library.Core.Asp.Services.IUFTheme
+  langs:
+  - csharp
+  - vb
+  name: GetFilterButtonClasses()
+  nameWithType: IUFTheme.GetFilterButtonClasses()
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetFilterButtonClasses()
+  type: Method
+  source:
+    id: GetFilterButtonClasses
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFTheme.cs
+    startLine: 368
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Services
+  summary: Returns the css classes to use for button element within the filter container.
+  example: []
+  syntax:
+    content: string GetFilterButtonClasses()
+    return:
+      type: System.String
+      description: ''
+    content.vb: Function GetFilterButtonClasses() As String
+  overload: UltraForce.Library.Core.Asp.Services.IUFTheme.GetFilterButtonClasses*
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetSortAscendingClasses
+  commentId: M:UltraForce.Library.Core.Asp.Services.IUFTheme.GetSortAscendingClasses
+  id: GetSortAscendingClasses
+  parent: UltraForce.Library.Core.Asp.Services.IUFTheme
+  langs:
+  - csharp
+  - vb
+  name: GetSortAscendingClasses()
+  nameWithType: IUFTheme.GetSortAscendingClasses()
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetSortAscendingClasses()
+  type: Method
+  source:
+    id: GetSortAscendingClasses
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFTheme.cs
+    startLine: 378
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Services
+  summary: >-
+    Returns the css classes to use for a table header element when the rows are sorted in
+
+    an ascending order for that column.
+
+    <p>
+
+    The css classes are added to the result from <xref href="UltraForce.Library.Core.Asp.Services.IUFTheme.GetTableRowClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableRowProperties%2cUltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties)" data-throw-if-not-resolved="false"></xref>.
+
+    </p>
+  example: []
+  syntax:
+    content: string GetSortAscendingClasses()
+    return:
+      type: System.String
+      description: ''
+    content.vb: Function GetSortAscendingClasses() As String
+  overload: UltraForce.Library.Core.Asp.Services.IUFTheme.GetSortAscendingClasses*
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetSortDescendingClasses
+  commentId: M:UltraForce.Library.Core.Asp.Services.IUFTheme.GetSortDescendingClasses
+  id: GetSortDescendingClasses
+  parent: UltraForce.Library.Core.Asp.Services.IUFTheme
+  langs:
+  - csharp
+  - vb
+  name: GetSortDescendingClasses()
+  nameWithType: IUFTheme.GetSortDescendingClasses()
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetSortDescendingClasses()
+  type: Method
+  source:
+    id: GetSortDescendingClasses
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFTheme.cs
+    startLine: 388
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Services
+  summary: >-
+    Returns the css classes to use for a table header element when the rows are sorted in
+
+    an descending order for that column.
+
+    <p>
+
+    The css classes are added to the result from <xref href="UltraForce.Library.Core.Asp.Services.IUFTheme.GetTableRowClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableRowProperties%2cUltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties)" data-throw-if-not-resolved="false"></xref>.
+
+    </p>
+  example: []
+  syntax:
+    content: string GetSortDescendingClasses()
+    return:
+      type: System.String
+      description: ''
+    content.vb: Function GetSortDescendingClasses() As String
+  overload: UltraForce.Library.Core.Asp.Services.IUFTheme.GetSortDescendingClasses*
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.IsCssClass(System.String)
+  commentId: M:UltraForce.Library.Core.Asp.Services.IUFTheme.IsCssClass(System.String)
+  id: IsCssClass(System.String)
+  parent: UltraForce.Library.Core.Asp.Services.IUFTheme
+  langs:
+  - csharp
+  - vb
+  name: IsCssClass(string)
+  nameWithType: IUFTheme.IsCssClass(string)
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.IsCssClass(string)
+  type: Method
+  source:
+    id: IsCssClass
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFTheme.cs
+    startLine: 399
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Services
+  summary: Checks if a value is a css class or unit value (to be set within the style attribute).
+  example: []
+  syntax:
+    content: bool IsCssClass(string aValue)
+    parameters:
+    - id: aValue
+      type: System.String
+      description: ''
+    return:
+      type: System.Boolean
+      description: ''
+    content.vb: Function IsCssClass(aValue As String) As Boolean
+  overload: UltraForce.Library.Core.Asp.Services.IUFTheme.IsCssClass*
+  nameWithType.vb: IUFTheme.IsCssClass(String)
+  fullName.vb: UltraForce.Library.Core.Asp.Services.IUFTheme.IsCssClass(String)
+  name.vb: IsCssClass(String)
+references:
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme
+  commentId: T:UltraForce.Library.Core.Asp.Services.IUFTheme
+  parent: UltraForce.Library.Core.Asp.Services
+  href: UltraForce.Library.Core.Asp.Services.IUFTheme.html
+  name: IUFTheme
+  nameWithType: IUFTheme
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme
+- uid: UltraForce.Library.Core.Asp.Services
+  commentId: N:UltraForce.Library.Core.Asp.Services
+  href: UltraForce.html
+  name: UltraForce.Library.Core.Asp.Services
+  nameWithType: UltraForce.Library.Core.Asp.Services
+  fullName: UltraForce.Library.Core.Asp.Services
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Services
+    name: Services
+    href: UltraForce.Library.Core.Asp.Services.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Services
+    name: Services
+    href: UltraForce.Library.Core.Asp.Services.html
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetButtonClasses*
+  commentId: Overload:UltraForce.Library.Core.Asp.Services.IUFTheme.GetButtonClasses
+  href: UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetButtonClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_IUFButtonProperties_
+  name: GetButtonClasses
+  nameWithType: IUFTheme.GetButtonClasses
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetButtonClasses
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties
+  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.html
+  name: IUFButtonProperties
+  nameWithType: IUFButtonProperties
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
+  commentId: N:UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
+  href: UltraForce.html
+  name: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
+  nameWithType: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers
+    name: TagHelpers
+    href: UltraForce.Library.Core.Asp.TagHelpers.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling
+    name: Styling
+    href: UltraForce.Library.Core.Asp.TagHelpers.Styling.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
+    name: Buttons
+    href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers
+    name: TagHelpers
+    href: UltraForce.Library.Core.Asp.TagHelpers.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling
+    name: Styling
+    href: UltraForce.Library.Core.Asp.TagHelpers.Styling.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
+    name: Buttons
+    href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.html
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetButtonCaptionClasses*
+  commentId: Overload:UltraForce.Library.Core.Asp.Services.IUFTheme.GetButtonCaptionClasses
+  href: UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetButtonCaptionClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_IUFButtonProperties_
+  name: GetButtonCaptionClasses
+  nameWithType: IUFTheme.GetButtonCaptionClasses
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetButtonCaptionClasses
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetButtonIconHtml*
+  commentId: Overload:UltraForce.Library.Core.Asp.Services.IUFTheme.GetButtonIconHtml
+  href: UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetButtonIconHtml_UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_IUFButtonProperties_
+  name: GetButtonIconHtml
+  nameWithType: IUFTheme.GetButtonIconHtml
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetButtonIconHtml
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetContainerClasses*
+  commentId: Overload:UltraForce.Library.Core.Asp.Services.IUFTheme.GetContainerClasses
+  href: UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetContainerClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Containers_IUFContainerProperties_
+  name: GetContainerClasses
+  nameWithType: IUFTheme.GetContainerClasses
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetContainerClasses
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties
+  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.html
+  name: IUFContainerProperties
+  nameWithType: IUFContainerProperties
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers
+  commentId: N:UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers
+  href: UltraForce.html
+  name: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers
+  nameWithType: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers
+    name: TagHelpers
+    href: UltraForce.Library.Core.Asp.TagHelpers.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling
+    name: Styling
+    href: UltraForce.Library.Core.Asp.TagHelpers.Styling.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers
+    name: Containers
+    href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers
+    name: TagHelpers
+    href: UltraForce.Library.Core.Asp.TagHelpers.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling
+    name: Styling
+    href: UltraForce.Library.Core.Asp.TagHelpers.Styling.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers
+    name: Containers
+    href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.html
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTabsClasses*
+  commentId: Overload:UltraForce.Library.Core.Asp.Services.IUFTheme.GetTabsClasses
+  href: UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetTabsClasses_System_Int32_
+  name: GetTabsClasses
+  nameWithType: IUFTheme.GetTabsClasses
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTabsClasses
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTabRadioClasses*
+  commentId: Overload:UltraForce.Library.Core.Asp.Services.IUFTheme.GetTabRadioClasses
+  href: UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetTabRadioClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Containers_IUFTabProperties_
+  name: GetTabRadioClasses
+  nameWithType: IUFTheme.GetTabRadioClasses
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTabRadioClasses
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFTabProperties
+  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFTabProperties
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFTabProperties.html
+  name: IUFTabProperties
+  nameWithType: IUFTabProperties
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFTabProperties
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTabLabelClasses*
+  commentId: Overload:UltraForce.Library.Core.Asp.Services.IUFTheme.GetTabLabelClasses
+  href: UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetTabLabelClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Containers_IUFTabProperties_
+  name: GetTabLabelClasses
+  nameWithType: IUFTheme.GetTabLabelClasses
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTabLabelClasses
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTabContentWrapperClasses*
+  commentId: Overload:UltraForce.Library.Core.Asp.Services.IUFTheme.GetTabContentWrapperClasses
+  href: UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetTabContentWrapperClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Containers_IUFTabProperties_
+  name: GetTabContentWrapperClasses
+  nameWithType: IUFTheme.GetTabContentWrapperClasses
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTabContentWrapperClasses
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetDataListClasses*
+  commentId: Overload:UltraForce.Library.Core.Asp.Services.IUFTheme.GetDataListClasses
+  href: UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetDataListClasses
+  name: GetDataListClasses
+  nameWithType: IUFTheme.GetDataListClasses
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetDataListClasses
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetDataNameClasses*
+  commentId: Overload:UltraForce.Library.Core.Asp.Services.IUFTheme.GetDataNameClasses
+  href: UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetDataNameClasses
+  name: GetDataNameClasses
+  nameWithType: IUFTheme.GetDataNameClasses
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetDataNameClasses
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetDataValueClasses*
+  commentId: Overload:UltraForce.Library.Core.Asp.Services.IUFTheme.GetDataValueClasses
+  href: UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetDataValueClasses
+  name: GetDataValueClasses
+  nameWithType: IUFTheme.GetDataValueClasses
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetDataValueClasses
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextWrapperClasses*
+  commentId: Overload:UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextWrapperClasses
+  href: UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetTextWrapperClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Forms_IUFInputProperties_System_String_
+  name: GetTextWrapperClasses
+  nameWithType: IUFTheme.GetTextWrapperClasses
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextWrapperClasses
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties
+  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties.html
+  name: IUFInputProperties
+  nameWithType: IUFInputProperties
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms
+  commentId: N:UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms
+  href: UltraForce.html
+  name: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms
+  nameWithType: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers
+    name: TagHelpers
+    href: UltraForce.Library.Core.Asp.TagHelpers.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling
+    name: Styling
+    href: UltraForce.Library.Core.Asp.TagHelpers.Styling.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms
+    name: Forms
+    href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers
+    name: TagHelpers
+    href: UltraForce.Library.Core.Asp.TagHelpers.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling
+    name: Styling
+    href: UltraForce.Library.Core.Asp.TagHelpers.Styling.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms
+    name: Forms
+    href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.html
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextLabelClasses*
+  commentId: Overload:UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextLabelClasses
+  href: UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetTextLabelClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Forms_IUFInputProperties_System_String_
+  name: GetTextLabelClasses
+  nameWithType: IUFTheme.GetTextLabelClasses
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextLabelClasses
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextLabelSpanClasses*
+  commentId: Overload:UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextLabelSpanClasses
+  href: UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetTextLabelSpanClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Forms_IUFInputProperties_System_String_
+  name: GetTextLabelSpanClasses
+  nameWithType: IUFTheme.GetTextLabelSpanClasses
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextLabelSpanClasses
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextLabelDescriptionClasses*
+  commentId: Overload:UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextLabelDescriptionClasses
+  href: UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetTextLabelDescriptionClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Forms_IUFInputProperties_System_String_
+  name: GetTextLabelDescriptionClasses
+  nameWithType: IUFTheme.GetTextLabelDescriptionClasses
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextLabelDescriptionClasses
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextInputClasses*
+  commentId: Overload:UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextInputClasses
+  href: UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetTextInputClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Forms_IUFInputProperties_System_String_
+  name: GetTextInputClasses
+  nameWithType: IUFTheme.GetTextInputClasses
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextInputClasses
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetValidationFeedbackContainerHtml*
+  commentId: Overload:UltraForce.Library.Core.Asp.Services.IUFTheme.GetValidationFeedbackContainerHtml
+  href: UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetValidationFeedbackContainerHtml_System_String_
+  name: GetValidationFeedbackContainerHtml
+  nameWithType: IUFTheme.GetValidationFeedbackContainerHtml
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetValidationFeedbackContainerHtml
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetFieldErrorsClasses
+  commentId: M:UltraForce.Library.Core.Asp.Services.IUFTheme.GetFieldErrorsClasses
+  parent: UltraForce.Library.Core.Asp.Services.IUFTheme
+  href: UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetFieldErrorsClasses
+  name: GetFieldErrorsClasses()
+  nameWithType: IUFTheme.GetFieldErrorsClasses()
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetFieldErrorsClasses()
+  spec.csharp:
+  - uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetFieldErrorsClasses
+    name: GetFieldErrorsClasses
+    href: UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetFieldErrorsClasses
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetFieldErrorsClasses
+    name: GetFieldErrorsClasses
+    href: UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetFieldErrorsClasses
+  - name: (
+  - name: )
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetFieldErrorsHtml*
+  commentId: Overload:UltraForce.Library.Core.Asp.Services.IUFTheme.GetFieldErrorsHtml
+  href: UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetFieldErrorsHtml_Microsoft_AspNetCore_Mvc_ModelBinding_ModelStateDictionary_System_String_
+  name: GetFieldErrorsHtml
+  nameWithType: IUFTheme.GetFieldErrorsHtml
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetFieldErrorsHtml
+- uid: Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary
+  commentId: T:Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary
+  parent: Microsoft.AspNetCore.Mvc.ModelBinding
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.modelbinding.modelstatedictionary
+  name: ModelStateDictionary
+  nameWithType: ModelStateDictionary
+  fullName: Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary
+- uid: Microsoft.AspNetCore.Mvc.ModelBinding
+  commentId: N:Microsoft.AspNetCore.Mvc.ModelBinding
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.AspNetCore.Mvc.ModelBinding
+  nameWithType: Microsoft.AspNetCore.Mvc.ModelBinding
+  fullName: Microsoft.AspNetCore.Mvc.ModelBinding
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Mvc
+    name: Mvc
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc
+  - name: .
+  - uid: Microsoft.AspNetCore.Mvc.ModelBinding
+    name: ModelBinding
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.modelbinding
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Mvc
+    name: Mvc
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc
+  - name: .
+  - uid: Microsoft.AspNetCore.Mvc.ModelBinding
+    name: ModelBinding
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.modelbinding
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetFieldErrorsClasses*
+  commentId: Overload:UltraForce.Library.Core.Asp.Services.IUFTheme.GetFieldErrorsClasses
+  href: UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetFieldErrorsClasses
+  name: GetFieldErrorsClasses
+  nameWithType: IUFTheme.GetFieldErrorsClasses
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetFieldErrorsClasses
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetCheckboxWrapperClasses*
+  commentId: Overload:UltraForce.Library.Core.Asp.Services.IUFTheme.GetCheckboxWrapperClasses
+  href: UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetCheckboxWrapperClasses
+  name: GetCheckboxWrapperClasses
+  nameWithType: IUFTheme.GetCheckboxWrapperClasses
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetCheckboxWrapperClasses
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetCheckboxLabelClasses*
+  commentId: Overload:UltraForce.Library.Core.Asp.Services.IUFTheme.GetCheckboxLabelClasses
+  href: UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetCheckboxLabelClasses
+  name: GetCheckboxLabelClasses
+  nameWithType: IUFTheme.GetCheckboxLabelClasses
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetCheckboxLabelClasses
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetCheckboxLabelSpanClasses*
+  commentId: Overload:UltraForce.Library.Core.Asp.Services.IUFTheme.GetCheckboxLabelSpanClasses
+  href: UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetCheckboxLabelSpanClasses
+  name: GetCheckboxLabelSpanClasses
+  nameWithType: IUFTheme.GetCheckboxLabelSpanClasses
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetCheckboxLabelSpanClasses
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetCheckboxLabelDescriptionClasses*
+  commentId: Overload:UltraForce.Library.Core.Asp.Services.IUFTheme.GetCheckboxLabelDescriptionClasses
+  href: UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetCheckboxLabelDescriptionClasses
+  name: GetCheckboxLabelDescriptionClasses
+  nameWithType: IUFTheme.GetCheckboxLabelDescriptionClasses
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetCheckboxLabelDescriptionClasses
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetCheckboxInputClasses*
+  commentId: Overload:UltraForce.Library.Core.Asp.Services.IUFTheme.GetCheckboxInputClasses
+  href: UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetCheckboxInputClasses
+  name: GetCheckboxInputClasses
+  nameWithType: IUFTheme.GetCheckboxInputClasses
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetCheckboxInputClasses
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetCheckboxExtraHtml*
+  commentId: Overload:UltraForce.Library.Core.Asp.Services.IUFTheme.GetCheckboxExtraHtml
+  href: UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetCheckboxExtraHtml
+  name: GetCheckboxExtraHtml
+  nameWithType: IUFTheme.GetCheckboxExtraHtml
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetCheckboxExtraHtml
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetRadioWrapperClasses*
+  commentId: Overload:UltraForce.Library.Core.Asp.Services.IUFTheme.GetRadioWrapperClasses
+  href: UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetRadioWrapperClasses
+  name: GetRadioWrapperClasses
+  nameWithType: IUFTheme.GetRadioWrapperClasses
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetRadioWrapperClasses
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetRadioLabelClasses*
+  commentId: Overload:UltraForce.Library.Core.Asp.Services.IUFTheme.GetRadioLabelClasses
+  href: UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetRadioLabelClasses
+  name: GetRadioLabelClasses
+  nameWithType: IUFTheme.GetRadioLabelClasses
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetRadioLabelClasses
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetRadioLabelSpanClasses*
+  commentId: Overload:UltraForce.Library.Core.Asp.Services.IUFTheme.GetRadioLabelSpanClasses
+  href: UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetRadioLabelSpanClasses
+  name: GetRadioLabelSpanClasses
+  nameWithType: IUFTheme.GetRadioLabelSpanClasses
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetRadioLabelSpanClasses
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetRadioLabelDescriptionClasses*
+  commentId: Overload:UltraForce.Library.Core.Asp.Services.IUFTheme.GetRadioLabelDescriptionClasses
+  href: UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetRadioLabelDescriptionClasses
+  name: GetRadioLabelDescriptionClasses
+  nameWithType: IUFTheme.GetRadioLabelDescriptionClasses
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetRadioLabelDescriptionClasses
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetRadioInputClasses*
+  commentId: Overload:UltraForce.Library.Core.Asp.Services.IUFTheme.GetRadioInputClasses
+  href: UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetRadioInputClasses
+  name: GetRadioInputClasses
+  nameWithType: IUFTheme.GetRadioInputClasses
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetRadioInputClasses
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetRadioExtraHtml*
+  commentId: Overload:UltraForce.Library.Core.Asp.Services.IUFTheme.GetRadioExtraHtml
+  href: UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetRadioExtraHtml
+  name: GetRadioExtraHtml
+  nameWithType: IUFTheme.GetRadioExtraHtml
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetRadioExtraHtml
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetSelectClasses*
+  commentId: Overload:UltraForce.Library.Core.Asp.Services.IUFTheme.GetSelectClasses
+  href: UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetSelectClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Forms_IUFInputProperties_
+  name: GetSelectClasses
+  nameWithType: IUFTheme.GetSelectClasses
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetSelectClasses
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetSpacerClasses*
+  commentId: Overload:UltraForce.Library.Core.Asp.Services.IUFTheme.GetSpacerClasses
+  href: UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetSpacerClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Layout_IUFSpacerProperties_
+  name: GetSpacerClasses
+  nameWithType: IUFTheme.GetSpacerClasses
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetSpacerClasses
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFSpacerProperties
+  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFSpacerProperties
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFSpacerProperties.html
+  name: IUFSpacerProperties
+  nameWithType: IUFSpacerProperties
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFSpacerProperties
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
+  commentId: N:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
+  href: UltraForce.html
+  name: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
+  nameWithType: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers
+    name: TagHelpers
+    href: UltraForce.Library.Core.Asp.TagHelpers.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling
+    name: Styling
+    href: UltraForce.Library.Core.Asp.TagHelpers.Styling.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
+    name: Layout
+    href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers
+    name: TagHelpers
+    href: UltraForce.Library.Core.Asp.TagHelpers.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling
+    name: Styling
+    href: UltraForce.Library.Core.Asp.TagHelpers.Styling.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
+    name: Layout
+    href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.html
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetColumnClasses*
+  commentId: Overload:UltraForce.Library.Core.Asp.Services.IUFTheme.GetColumnClasses
+  href: UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetColumnClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Layout_IUFFlexProperties_
+  name: GetColumnClasses
+  nameWithType: IUFTheme.GetColumnClasses
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetColumnClasses
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties
+  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.html
+  name: IUFFlexProperties
+  nameWithType: IUFFlexProperties
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetRowClasses*
+  commentId: Overload:UltraForce.Library.Core.Asp.Services.IUFTheme.GetRowClasses
+  href: UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetRowClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Layout_IUFFlexProperties_
+  name: GetRowClasses
+  nameWithType: IUFTheme.GetRowClasses
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetRowClasses
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTableClasses*
+  commentId: Overload:UltraForce.Library.Core.Asp.Services.IUFTheme.GetTableClasses
+  href: UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetTableClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_IUFTableProperties_
+  name: GetTableClasses
+  nameWithType: IUFTheme.GetTableClasses
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTableClasses
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties
+  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties.html
+  name: IUFTableProperties
+  nameWithType: IUFTableProperties
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table
+  commentId: N:UltraForce.Library.Core.Asp.TagHelpers.Styling.Table
+  href: UltraForce.html
+  name: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table
+  nameWithType: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers
+    name: TagHelpers
+    href: UltraForce.Library.Core.Asp.TagHelpers.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling
+    name: Styling
+    href: UltraForce.Library.Core.Asp.TagHelpers.Styling.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table
+    name: Table
+    href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers
+    name: TagHelpers
+    href: UltraForce.Library.Core.Asp.TagHelpers.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling
+    name: Styling
+    href: UltraForce.Library.Core.Asp.TagHelpers.Styling.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table
+    name: Table
+    href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.html
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTableCellClasses*
+  commentId: Overload:UltraForce.Library.Core.Asp.Services.IUFTheme.GetTableCellClasses
+  href: UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetTableCellClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_IUFCellProperties_UltraForce_Library_Core_Asp_Types_Enums_UFTableCellType_UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_IUFTableProperties_UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_IUFTableRowProperties_
+  name: GetTableCellClasses
+  nameWithType: IUFTheme.GetTableCellClasses
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTableCellClasses
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties
+  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties.html
+  name: IUFCellProperties
+  nameWithType: IUFCellProperties
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFTableCellType
+  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFTableCellType
+  parent: UltraForce.Library.Core.Asp.Types.Enums
+  href: UltraForce.Library.Core.Asp.Types.Enums.UFTableCellType.html
+  name: UFTableCellType
+  nameWithType: UFTableCellType
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFTableCellType
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableRowProperties
+  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableRowProperties
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableRowProperties.html
+  name: IUFTableRowProperties
+  nameWithType: IUFTableRowProperties
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableRowProperties
+- uid: UltraForce.Library.Core.Asp.Types.Enums
+  commentId: N:UltraForce.Library.Core.Asp.Types.Enums
+  href: UltraForce.html
+  name: UltraForce.Library.Core.Asp.Types.Enums
+  nameWithType: UltraForce.Library.Core.Asp.Types.Enums
+  fullName: UltraForce.Library.Core.Asp.Types.Enums
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types
+    name: Types
+    href: UltraForce.Library.Core.Asp.Types.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types.Enums
+    name: Enums
+    href: UltraForce.Library.Core.Asp.Types.Enums.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types
+    name: Types
+    href: UltraForce.Library.Core.Asp.Types.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types.Enums
+    name: Enums
+    href: UltraForce.Library.Core.Asp.Types.Enums.html
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTableHeaderButtonClasses*
+  commentId: Overload:UltraForce.Library.Core.Asp.Services.IUFTheme.GetTableHeaderButtonClasses
+  href: UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetTableHeaderButtonClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_IUFCellProperties_UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_IUFTableProperties_UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_IUFTableRowProperties_
+  name: GetTableHeaderButtonClasses
+  nameWithType: IUFTheme.GetTableHeaderButtonClasses
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTableHeaderButtonClasses
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTableRowClasses*
+  commentId: Overload:UltraForce.Library.Core.Asp.Services.IUFTheme.GetTableRowClasses
+  href: UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetTableRowClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_IUFTableRowProperties_UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_IUFTableProperties_
+  name: GetTableRowClasses
+  nameWithType: IUFTheme.GetTableRowClasses
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTableRowClasses
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper.Filter
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper.Filter
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_UFTableTagHelper_Filter
+  name: Filter
+  nameWithType: UFTableTagHelper.Filter
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper.Filter
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetFilterContainerClasses*
+  commentId: Overload:UltraForce.Library.Core.Asp.Services.IUFTheme.GetFilterContainerClasses
+  href: UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetFilterContainerClasses
+  name: GetFilterContainerClasses
+  nameWithType: IUFTheme.GetFilterContainerClasses
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetFilterContainerClasses
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetFilterLabelClasses*
+  commentId: Overload:UltraForce.Library.Core.Asp.Services.IUFTheme.GetFilterLabelClasses
+  href: UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetFilterLabelClasses
+  name: GetFilterLabelClasses
+  nameWithType: IUFTheme.GetFilterLabelClasses
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetFilterLabelClasses
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetFilterInputClasses*
+  commentId: Overload:UltraForce.Library.Core.Asp.Services.IUFTheme.GetFilterInputClasses
+  href: UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetFilterInputClasses
+  name: GetFilterInputClasses
+  nameWithType: IUFTheme.GetFilterInputClasses
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetFilterInputClasses
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetFilterButtonClasses*
+  commentId: Overload:UltraForce.Library.Core.Asp.Services.IUFTheme.GetFilterButtonClasses
+  href: UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetFilterButtonClasses
+  name: GetFilterButtonClasses
+  nameWithType: IUFTheme.GetFilterButtonClasses
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetFilterButtonClasses
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTableRowClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableRowProperties,UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties)
+  commentId: M:UltraForce.Library.Core.Asp.Services.IUFTheme.GetTableRowClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableRowProperties,UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties)
+  parent: UltraForce.Library.Core.Asp.Services.IUFTheme
+  href: UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetTableRowClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_IUFTableRowProperties_UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_IUFTableProperties_
+  name: GetTableRowClasses(IUFTableRowProperties, IUFTableProperties)
+  nameWithType: IUFTheme.GetTableRowClasses(IUFTableRowProperties, IUFTableProperties)
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTableRowClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableRowProperties, UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties)
+  spec.csharp:
+  - uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTableRowClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableRowProperties,UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties)
+    name: GetTableRowClasses
+    href: UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetTableRowClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_IUFTableRowProperties_UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_IUFTableProperties_
+  - name: (
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableRowProperties
+    name: IUFTableRowProperties
+    href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableRowProperties.html
+  - name: ','
+  - name: " "
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties
+    name: IUFTableProperties
+    href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties.html
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTableRowClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableRowProperties,UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties)
+    name: GetTableRowClasses
+    href: UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetTableRowClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_IUFTableRowProperties_UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_IUFTableProperties_
+  - name: (
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableRowProperties
+    name: IUFTableRowProperties
+    href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableRowProperties.html
+  - name: ','
+  - name: " "
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties
+    name: IUFTableProperties
+    href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties.html
+  - name: )
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetSortAscendingClasses*
+  commentId: Overload:UltraForce.Library.Core.Asp.Services.IUFTheme.GetSortAscendingClasses
+  href: UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetSortAscendingClasses
+  name: GetSortAscendingClasses
+  nameWithType: IUFTheme.GetSortAscendingClasses
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetSortAscendingClasses
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetSortDescendingClasses*
+  commentId: Overload:UltraForce.Library.Core.Asp.Services.IUFTheme.GetSortDescendingClasses
+  href: UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetSortDescendingClasses
+  name: GetSortDescendingClasses
+  nameWithType: IUFTheme.GetSortDescendingClasses
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetSortDescendingClasses
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.IsCssClass*
+  commentId: Overload:UltraForce.Library.Core.Asp.Services.IUFTheme.IsCssClass
+  href: UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_IsCssClass_System_String_
+  name: IsCssClass
+  nameWithType: IUFTheme.IsCssClass
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.IsCssClass
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean

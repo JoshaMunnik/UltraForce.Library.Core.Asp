@@ -1,0 +1,155 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFContentPosition
+  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFContentPosition
+  id: UFContentPosition
+  parent: UltraForce.Library.Core.Asp.Types.Enums
+  children:
+  - UltraForce.Library.Core.Asp.Types.Enums.UFContentPosition.Center
+  - UltraForce.Library.Core.Asp.Types.Enums.UFContentPosition.End
+  - UltraForce.Library.Core.Asp.Types.Enums.UFContentPosition.Start
+  langs:
+  - csharp
+  - vb
+  name: UFContentPosition
+  nameWithType: UFContentPosition
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFContentPosition
+  type: Enum
+  source:
+    id: UFContentPosition
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Types\Enums\UFContentPosition.cs
+    startLine: 31
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  syntax:
+    content: public enum UFContentPosition
+    content.vb: Public Enum UFContentPosition
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFContentPosition.Start
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFContentPosition.Start
+  id: Start
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFContentPosition
+  langs:
+  - csharp
+  - vb
+  name: Start
+  nameWithType: UFContentPosition.Start
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFContentPosition.Start
+  type: Field
+  source:
+    id: Start
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Types\Enums\UFContentPosition.cs
+    startLine: 33
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  syntax:
+    content: Start = 0
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFContentPosition
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFContentPosition.Center
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFContentPosition.Center
+  id: Center
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFContentPosition
+  langs:
+  - csharp
+  - vb
+  name: Center
+  nameWithType: UFContentPosition.Center
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFContentPosition.Center
+  type: Field
+  source:
+    id: Center
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Types\Enums\UFContentPosition.cs
+    startLine: 34
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  syntax:
+    content: Center = 1
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFContentPosition
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFContentPosition.End
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFContentPosition.End
+  id: End
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFContentPosition
+  langs:
+  - csharp
+  - vb
+  name: End
+  nameWithType: UFContentPosition.End
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFContentPosition.End
+  type: Field
+  source:
+    id: End
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Types\Enums\UFContentPosition.cs
+    startLine: 35
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  syntax:
+    content: End = 2
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFContentPosition
+references:
+- uid: UltraForce.Library.Core.Asp.Types.Enums
+  commentId: N:UltraForce.Library.Core.Asp.Types.Enums
+  href: UltraForce.html
+  name: UltraForce.Library.Core.Asp.Types.Enums
+  nameWithType: UltraForce.Library.Core.Asp.Types.Enums
+  fullName: UltraForce.Library.Core.Asp.Types.Enums
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types
+    name: Types
+    href: UltraForce.Library.Core.Asp.Types.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types.Enums
+    name: Enums
+    href: UltraForce.Library.Core.Asp.Types.Enums.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types
+    name: Types
+    href: UltraForce.Library.Core.Asp.Types.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types.Enums
+    name: Enums
+    href: UltraForce.Library.Core.Asp.Types.Enums.html
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFContentPosition
+  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFContentPosition
+  parent: UltraForce.Library.Core.Asp.Types.Enums
+  href: UltraForce.Library.Core.Asp.Types.Enums.UFContentPosition.html
+  name: UFContentPosition
+  nameWithType: UFContentPosition
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFContentPosition

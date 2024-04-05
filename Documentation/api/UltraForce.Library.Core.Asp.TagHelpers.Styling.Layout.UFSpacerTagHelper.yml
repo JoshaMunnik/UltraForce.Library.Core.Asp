@@ -1,0 +1,941 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFSpacerTagHelper
+  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFSpacerTagHelper
+  id: UFSpacerTagHelper
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
+  children:
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFSpacerTagHelper.#ctor(UltraForce.Library.Core.Asp.Services.IUFTheme)
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFSpacerTagHelper.GetSpacerClasses
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFSpacerTagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFSpacerTagHelper.Size
+  langs:
+  - csharp
+  - vb
+  name: UFSpacerTagHelper
+  nameWithType: UFSpacerTagHelper
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFSpacerTagHelper
+  type: Class
+  source:
+    id: UFSpacerTagHelper
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\TagHelpers\Styling\Layout\UFSpacerTagHelper.cs
+    startLine: 44
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
+  summary: >-
+    Adds a space between items in a <xref href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper" data-throw-if-not-resolved="false"></xref>.
+
+    <p>
+
+    Renders:
+
+    &lt;div class="{GetCssClasses()}" /&gt;
+
+    </p>
+  example: []
+  syntax:
+    content: >-
+      [HtmlTargetElement("uf-spacer", TagStructure = TagStructure.NormalOrSelfClosing)]
+
+      public class UFSpacerTagHelper : UFTagHelperWithTheme, ITagHelper, ITagHelperComponent, IUFSpacerProperties
+    content.vb: >-
+      <HtmlTargetElement("uf-spacer", TagStructure:=TagStructure.NormalOrSelfClosing)>
+
+      Public Class UFSpacerTagHelper Inherits UFTagHelperWithTheme Implements ITagHelper, ITagHelperComponent, IUFSpacerProperties
+  inheritance:
+  - System.Object
+  - Microsoft.AspNetCore.Razor.TagHelpers.TagHelper
+  - UltraForce.Library.Core.Asp.TagHelpers.Lib.UFTagHelperWithTheme
+  implements:
+  - Microsoft.AspNetCore.Razor.TagHelpers.ITagHelper
+  - Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFSpacerProperties
+  inheritedMembers:
+  - UltraForce.Library.Core.Asp.TagHelpers.Lib.UFTagHelperWithTheme.Theme
+  - Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Init(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext)
+  - Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  - Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Order
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: Microsoft.AspNetCore.Razor.TagHelpers.HtmlTargetElementAttribute
+    ctor: Microsoft.AspNetCore.Razor.TagHelpers.HtmlTargetElementAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: uf-spacer
+    namedArguments:
+    - name: TagStructure
+      type: Microsoft.AspNetCore.Razor.TagHelpers.TagStructure
+      value: 1
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFSpacerTagHelper.#ctor(UltraForce.Library.Core.Asp.Services.IUFTheme)
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFSpacerTagHelper.#ctor(UltraForce.Library.Core.Asp.Services.IUFTheme)
+  id: '#ctor(UltraForce.Library.Core.Asp.Services.IUFTheme)'
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFSpacerTagHelper
+  langs:
+  - csharp
+  - vb
+  name: UFSpacerTagHelper(IUFTheme)
+  nameWithType: UFSpacerTagHelper.UFSpacerTagHelper(IUFTheme)
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFSpacerTagHelper.UFSpacerTagHelper(UltraForce.Library.Core.Asp.Services.IUFTheme)
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\TagHelpers\Styling\Layout\UFSpacerTagHelper.cs
+    startLine: 44
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
+  summary: >-
+    Adds a space between items in a <xref href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper" data-throw-if-not-resolved="false"></xref>.
+
+    <p>
+
+    Renders:
+
+    &lt;div class="{GetCssClasses()}" /&gt;
+
+    </p>
+  example: []
+  syntax:
+    content: public UFSpacerTagHelper(IUFTheme aTheme)
+    parameters:
+    - id: aTheme
+      type: UltraForce.Library.Core.Asp.Services.IUFTheme
+    content.vb: Public Sub New(aTheme As IUFTheme)
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFSpacerTagHelper.#ctor*
+  nameWithType.vb: UFSpacerTagHelper.New(IUFTheme)
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFSpacerTagHelper.New(UltraForce.Library.Core.Asp.Services.IUFTheme)
+  name.vb: New(IUFTheme)
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFSpacerTagHelper.Size
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFSpacerTagHelper.Size
+  id: Size
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFSpacerTagHelper
+  langs:
+  - csharp
+  - vb
+  name: Size
+  nameWithType: UFSpacerTagHelper.Size
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFSpacerTagHelper.Size
+  type: Property
+  source:
+    id: Size
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\TagHelpers\Styling\Layout\UFSpacerTagHelper.cs
+    startLine: 54
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
+  summary: Space size.
+  example: []
+  syntax:
+    content: >-
+      [HtmlAttributeName("size")]
+
+      public int Size { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <HtmlAttributeName("size")>
+
+      Public Property Size As Integer
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFSpacerTagHelper.Size*
+  implements:
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFSpacerProperties.Size
+  attributes:
+  - type: Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute
+    ctor: Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: size
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFSpacerTagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFSpacerTagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  id: Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFSpacerTagHelper
+  langs:
+  - csharp
+  - vb
+  name: Process(TagHelperContext, TagHelperOutput)
+  nameWithType: UFSpacerTagHelper.Process(TagHelperContext, TagHelperOutput)
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFSpacerTagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  type: Method
+  source:
+    id: Process
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\TagHelpers\Styling\Layout\UFSpacerTagHelper.cs
+    startLine: 61
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
+  summary: >-
+    Synchronously executes the <xref href="Microsoft.AspNetCore.Razor.TagHelpers.TagHelper" data-throw-if-not-resolved="false"></xref> with the given <code class="paramref">context</code> and
+
+    <code class="paramref">output</code>.
+  example: []
+  syntax:
+    content: public override void Process(TagHelperContext context, TagHelperOutput output)
+    parameters:
+    - id: context
+      type: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext
+      description: Contains information associated with the current HTML tag.
+    - id: output
+      type: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput
+      description: A stateful HTML element used to generate an HTML tag.
+    content.vb: Public Overrides Sub Process(context As TagHelperContext, output As TagHelperOutput)
+  overridden: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFSpacerTagHelper.Process*
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFSpacerTagHelper.GetSpacerClasses
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFSpacerTagHelper.GetSpacerClasses
+  id: GetSpacerClasses
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFSpacerTagHelper
+  langs:
+  - csharp
+  - vb
+  name: GetSpacerClasses()
+  nameWithType: UFSpacerTagHelper.GetSpacerClasses()
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFSpacerTagHelper.GetSpacerClasses()
+  type: Method
+  source:
+    id: GetSpacerClasses
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\TagHelpers\Styling\Layout\UFSpacerTagHelper.cs
+    startLine: 76
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
+  summary: The default implementation calls <xref href="UltraForce.Library.Core.Asp.Services.IUFTheme.GetSpacerClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFSpacerProperties)" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: protected virtual string GetSpacerClasses()
+    return:
+      type: System.String
+      description: ''
+    content.vb: Protected Overridable Function GetSpacerClasses() As String
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFSpacerTagHelper.GetSpacerClasses*
+references:
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper
+  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.html
+  name: UFColumnTagHelper
+  nameWithType: UFColumnTagHelper
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
+  commentId: N:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
+  href: UltraForce.html
+  name: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
+  nameWithType: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers
+    name: TagHelpers
+    href: UltraForce.Library.Core.Asp.TagHelpers.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling
+    name: Styling
+    href: UltraForce.Library.Core.Asp.TagHelpers.Styling.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
+    name: Layout
+    href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers
+    name: TagHelpers
+    href: UltraForce.Library.Core.Asp.TagHelpers.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling
+    name: Styling
+    href: UltraForce.Library.Core.Asp.TagHelpers.Styling.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
+    name: Layout
+    href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper
+  commentId: T:Microsoft.AspNetCore.Razor.TagHelpers.TagHelper
+  parent: Microsoft.AspNetCore.Razor.TagHelpers
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper
+  name: TagHelper
+  nameWithType: TagHelper
+  fullName: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFTagHelperWithTheme
+  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Lib.UFTagHelperWithTheme
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Lib
+  href: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFTagHelperWithTheme.html
+  name: UFTagHelperWithTheme
+  nameWithType: UFTagHelperWithTheme
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFTagHelperWithTheme
+- uid: Microsoft.AspNetCore.Razor.TagHelpers.ITagHelper
+  commentId: T:Microsoft.AspNetCore.Razor.TagHelpers.ITagHelper
+  parent: Microsoft.AspNetCore.Razor.TagHelpers
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.itaghelper
+  name: ITagHelper
+  nameWithType: ITagHelper
+  fullName: Microsoft.AspNetCore.Razor.TagHelpers.ITagHelper
+- uid: Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent
+  commentId: T:Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent
+  parent: Microsoft.AspNetCore.Razor.TagHelpers
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.itaghelpercomponent
+  name: ITagHelperComponent
+  nameWithType: ITagHelperComponent
+  fullName: Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFSpacerProperties
+  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFSpacerProperties
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFSpacerProperties.html
+  name: IUFSpacerProperties
+  nameWithType: IUFSpacerProperties
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFSpacerProperties
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFTagHelperWithTheme.Theme
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Lib.UFTagHelperWithTheme.Theme
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFTagHelperWithTheme
+  href: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFTagHelperWithTheme.html#UltraForce_Library_Core_Asp_TagHelpers_Lib_UFTagHelperWithTheme_Theme
+  name: Theme
+  nameWithType: UFTagHelperWithTheme.Theme
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFTagHelperWithTheme.Theme
+- uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Init(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext)
+  commentId: M:Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Init(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext)
+  parent: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper.init
+  name: Init(TagHelperContext)
+  nameWithType: TagHelper.Init(TagHelperContext)
+  fullName: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Init(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Init(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext)
+    name: Init
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper.init
+  - name: (
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext
+    name: TagHelperContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelpercontext
+  - name: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Init(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext)
+    name: Init
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper.init
+  - name: (
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext
+    name: TagHelperContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelpercontext
+  - name: )
+- uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  commentId: M:Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  parent: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper.processasync
+  name: ProcessAsync(TagHelperContext, TagHelperOutput)
+  nameWithType: TagHelper.ProcessAsync(TagHelperContext, TagHelperOutput)
+  fullName: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+    name: ProcessAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper.processasync
+  - name: (
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext
+    name: TagHelperContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelpercontext
+  - name: ','
+  - name: " "
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput
+    name: TagHelperOutput
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelperoutput
+  - name: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+    name: ProcessAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper.processasync
+  - name: (
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext
+    name: TagHelperContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelpercontext
+  - name: ','
+  - name: " "
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput
+    name: TagHelperOutput
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelperoutput
+  - name: )
+- uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Order
+  commentId: P:Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Order
+  parent: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper.order
+  name: Order
+  nameWithType: TagHelper.Order
+  fullName: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Order
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.AspNetCore.Razor.TagHelpers
+  commentId: N:Microsoft.AspNetCore.Razor.TagHelpers
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.AspNetCore.Razor.TagHelpers
+  nameWithType: Microsoft.AspNetCore.Razor.TagHelpers
+  fullName: Microsoft.AspNetCore.Razor.TagHelpers
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Razor
+    name: Razor
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor
+  - name: .
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers
+    name: TagHelpers
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Razor
+    name: Razor
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor
+  - name: .
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers
+    name: TagHelpers
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Lib
+  commentId: N:UltraForce.Library.Core.Asp.TagHelpers.Lib
+  href: UltraForce.html
+  name: UltraForce.Library.Core.Asp.TagHelpers.Lib
+  nameWithType: UltraForce.Library.Core.Asp.TagHelpers.Lib
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Lib
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers
+    name: TagHelpers
+    href: UltraForce.Library.Core.Asp.TagHelpers.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Lib
+    name: Lib
+    href: UltraForce.Library.Core.Asp.TagHelpers.Lib.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers
+    name: TagHelpers
+    href: UltraForce.Library.Core.Asp.TagHelpers.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Lib
+    name: Lib
+    href: UltraForce.Library.Core.Asp.TagHelpers.Lib.html
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFSpacerTagHelper.#ctor*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFSpacerTagHelper.#ctor
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFSpacerTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Layout_UFSpacerTagHelper__ctor_UltraForce_Library_Core_Asp_Services_IUFTheme_
+  name: UFSpacerTagHelper
+  nameWithType: UFSpacerTagHelper.UFSpacerTagHelper
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFSpacerTagHelper.UFSpacerTagHelper
+  nameWithType.vb: UFSpacerTagHelper.New
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFSpacerTagHelper.New
+  name.vb: New
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme
+  commentId: T:UltraForce.Library.Core.Asp.Services.IUFTheme
+  parent: UltraForce.Library.Core.Asp.Services
+  href: UltraForce.Library.Core.Asp.Services.IUFTheme.html
+  name: IUFTheme
+  nameWithType: IUFTheme
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme
+- uid: UltraForce.Library.Core.Asp.Services
+  commentId: N:UltraForce.Library.Core.Asp.Services
+  href: UltraForce.html
+  name: UltraForce.Library.Core.Asp.Services
+  nameWithType: UltraForce.Library.Core.Asp.Services
+  fullName: UltraForce.Library.Core.Asp.Services
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Services
+    name: Services
+    href: UltraForce.Library.Core.Asp.Services.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Services
+    name: Services
+    href: UltraForce.Library.Core.Asp.Services.html
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFSpacerTagHelper.Size*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFSpacerTagHelper.Size
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFSpacerTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Layout_UFSpacerTagHelper_Size
+  name: Size
+  nameWithType: UFSpacerTagHelper.Size
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFSpacerTagHelper.Size
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFSpacerProperties.Size
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFSpacerProperties.Size
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFSpacerProperties
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFSpacerProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Layout_IUFSpacerProperties_Size
+  name: Size
+  nameWithType: IUFSpacerProperties.Size
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFSpacerProperties.Size
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  commentId: M:Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  parent: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper.process
+  name: Process(TagHelperContext, TagHelperOutput)
+  nameWithType: TagHelper.Process(TagHelperContext, TagHelperOutput)
+  fullName: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+    name: Process
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper.process
+  - name: (
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext
+    name: TagHelperContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelpercontext
+  - name: ','
+  - name: " "
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput
+    name: TagHelperOutput
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelperoutput
+  - name: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+    name: Process
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper.process
+  - name: (
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext
+    name: TagHelperContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelpercontext
+  - name: ','
+  - name: " "
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput
+    name: TagHelperOutput
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelperoutput
+  - name: )
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFSpacerTagHelper.Process*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFSpacerTagHelper.Process
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFSpacerTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Layout_UFSpacerTagHelper_Process_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContext_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_
+  name: Process
+  nameWithType: UFSpacerTagHelper.Process
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFSpacerTagHelper.Process
+- uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext
+  commentId: T:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext
+  parent: Microsoft.AspNetCore.Razor.TagHelpers
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelpercontext
+  name: TagHelperContext
+  nameWithType: TagHelperContext
+  fullName: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext
+- uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput
+  commentId: T:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput
+  parent: Microsoft.AspNetCore.Razor.TagHelpers
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelperoutput
+  name: TagHelperOutput
+  nameWithType: TagHelperOutput
+  fullName: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetSpacerClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFSpacerProperties)
+  commentId: M:UltraForce.Library.Core.Asp.Services.IUFTheme.GetSpacerClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFSpacerProperties)
+  parent: UltraForce.Library.Core.Asp.Services.IUFTheme
+  href: UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetSpacerClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Layout_IUFSpacerProperties_
+  name: GetSpacerClasses(IUFSpacerProperties)
+  nameWithType: IUFTheme.GetSpacerClasses(IUFSpacerProperties)
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetSpacerClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFSpacerProperties)
+  spec.csharp:
+  - uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetSpacerClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFSpacerProperties)
+    name: GetSpacerClasses
+    href: UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetSpacerClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Layout_IUFSpacerProperties_
+  - name: (
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFSpacerProperties
+    name: IUFSpacerProperties
+    href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFSpacerProperties.html
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetSpacerClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFSpacerProperties)
+    name: GetSpacerClasses
+    href: UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetSpacerClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Layout_IUFSpacerProperties_
+  - name: (
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFSpacerProperties
+    name: IUFSpacerProperties
+    href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFSpacerProperties.html
+  - name: )
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFSpacerTagHelper.GetSpacerClasses*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFSpacerTagHelper.GetSpacerClasses
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFSpacerTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Layout_UFSpacerTagHelper_GetSpacerClasses
+  name: GetSpacerClasses
+  nameWithType: UFSpacerTagHelper.GetSpacerClasses
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFSpacerTagHelper.GetSpacerClasses
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

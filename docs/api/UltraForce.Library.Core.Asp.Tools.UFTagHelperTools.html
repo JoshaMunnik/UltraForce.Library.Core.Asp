@@ -1,0 +1,770 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class UFTagHelperTools | UltraForce.Library.Core.Asp </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class UFTagHelperTools | UltraForce.Library.Core.Asp ">
+      
+      <meta name="description" content="Support methods for">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="UltraForce.Library.Core.Asp">
+            UltraForce.Library.Core.Asp
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="UltraForce.Library.Core.Asp.Tools.UFTagHelperTools">
+
+
+
+  <h1 id="UltraForce_Library_Core_Asp_Tools_UFTagHelperTools" data-uid="UltraForce.Library.Core.Asp.Tools.UFTagHelperTools" class="text-break">
+Class UFTagHelperTools  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="UltraForce.html">UltraForce</a>.<a class="xref" href="UltraForce.Library.html">Library</a>.<a class="xref" href="UltraForce.Library.Core.html">Core</a>.<a class="xref" href="UltraForce.Library.Core.Asp.html">Asp</a>.<a class="xref" href="UltraForce.Library.Core.Asp.Tools.html">Tools</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>UltraForce.Library.Core.Asp.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Support methods for <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper">TagHelper</a></p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class UFTagHelperTools</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">UFTagHelperTools</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="UltraForce_Library_Core_Asp_Tools_UFTagHelperTools_AddAttribute_" data-uid="UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.AddAttribute*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Tools_UFTagHelperTools_AddAttribute_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperAttributeList_System_String_System_String_System_String_" data-uid="UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.AddAttribute(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttributeList,System.String,System.String,System.String)">
+  AddAttribute(TagHelperAttributeList, string, string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds a value for an attribute. If the attribute exists, the value gets added to its value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddAttribute(TagHelperAttributeList anAttributes, string anAttribute, string aValue, string aSeparator = &quot; &quot;)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>anAttributes</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelperattributelist">TagHelperAttributeList</a></dt>
+    <dd></dd>
+    <dt><code>anAttribute</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>aValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>aSeparator</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_Tools_UFTagHelperTools_AddClasses_" data-uid="UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.AddClasses*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Tools_UFTagHelperTools_AddClasses_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_System_String_" data-uid="UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.AddClasses(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,System.String)">
+  AddClasses(TagHelperOutput, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Shortcut to add css classes to an output. The method calls <a class="xref" href="UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.html#UltraForce_Library_Core_Asp_Tools_UFTagHelperTools_AddAttribute_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperAttributeList_System_String_System_String_System_String_">AddAttribute(TagHelperAttributeList, string, string, string)</a> with
+the correct parameters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddClasses(TagHelperOutput anOutput, string aClasses)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>anOutput</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelperoutput">TagHelperOutput</a></dt>
+    <dd><p>Output to get attributes from</p>
+</dd>
+    <dt><code>aClasses</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Additional css classes to add</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_Tools_UFTagHelperTools_CreateAttributeList_" data-uid="UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.CreateAttributeList*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Tools_UFTagHelperTools_CreateAttributeList_System_Collections_Generic_Dictionary_System_String_System_String__" data-uid="UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.CreateAttributeList(System.Collections.Generic.Dictionary{System.String,System.String})">
+  CreateAttributeList(Dictionary&lt;string, string&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Builds a tag helper attribute list from a dictionary.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TagHelperAttributeList CreateAttributeList(Dictionary&lt;string, string&gt; anAttributes)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>anAttributes</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelperattributelist">TagHelperAttributeList</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_Tools_UFTagHelperTools_FindAttribute_" data-uid="UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.FindAttribute*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Tools_UFTagHelperTools_FindAttribute_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperAttributeList_System_String_" data-uid="UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.FindAttribute(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttributeList,System.String)">
+  FindAttribute(TagHelperAttributeList, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Tries to find an attribute with a certain name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static TagHelperAttribute? FindAttribute(TagHelperAttributeList aList, string aName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aList</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelperattributelist">TagHelperAttributeList</a></dt>
+    <dd></dd>
+    <dt><code>aName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelperattribute">TagHelperAttribute</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_Tools_UFTagHelperTools_GetLabel_" data-uid="UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.GetLabel*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Tools_UFTagHelperTools_GetLabel_Microsoft_AspNetCore_Mvc_ViewFeatures_IHtmlGenerator_Microsoft_AspNetCore_Mvc_Rendering_ViewContext_Microsoft_AspNetCore_Mvc_ViewFeatures_ModelExpression_System_String_" data-uid="UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.GetLabel(Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator,Microsoft.AspNetCore.Mvc.Rendering.ViewContext,Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression,System.String)">
+  GetLabel(IHtmlGenerator, ViewContext, ModelExpression?, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the label from a model expression, by building label with <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.viewfeatures.ihtmlgenerator">IHtmlGenerator</a>
+and getting its inner html contents.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetLabel(IHtmlGenerator aGenerator, ViewContext aViewContext, ModelExpression? anExpression, string aLabelText)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aGenerator</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.viewfeatures.ihtmlgenerator">IHtmlGenerator</a></dt>
+    <dd><p>Generator to use</p>
+</dd>
+    <dt><code>aViewContext</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.rendering.viewcontext">ViewContext</a></dt>
+    <dd><p>View context to render in</p>
+</dd>
+    <dt><code>anExpression</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.viewfeatures.modelexpression">ModelExpression</a></dt>
+    <dd><p>Expression to get label from</p>
+</dd>
+    <dt><code>aLabelText</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>When non null, use this value instead of getting the label</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>the inner html or aLabelText if it was not empty</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_Tools_UFTagHelperTools_RenderTagHelperOutput_" data-uid="UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.RenderTagHelperOutput*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Tools_UFTagHelperTools_RenderTagHelperOutput_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_System_Text_Encodings_Web_HtmlEncoder_" data-uid="UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.RenderTagHelperOutput(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,System.Text.Encodings.Web.HtmlEncoder)">
+  RenderTagHelperOutput(TagHelperOutput, HtmlEncoder?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Renders the output of a tag helper to a string.</p>
+<p>See:
+<a href="https://github.com/MissaouiChedy/RenderingTagHelperInsideAnother/blob/master/src/RenderingTagHelperInsideAnother/TagHelpers/WrapperTagHelper.cs">https://github.com/MissaouiChedy/RenderingTagHelperInsideAnother/blob/master/src/RenderingTagHelperInsideAnother/TagHelpers/WrapperTagHelper.cs</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string RenderTagHelperOutput(TagHelperOutput anOutput, HtmlEncoder? anEncoder = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>anOutput</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelperoutput">TagHelperOutput</a></dt>
+    <dd></dd>
+    <dt><code>anEncoder</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.encodings.web.htmlencoder">HtmlEncoder</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_Tools_UFTagHelperTools_RenderTagHelper_" data-uid="UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.RenderTagHelper*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Tools_UFTagHelperTools_RenderTagHelper__1_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperAttributeList_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContent_" data-uid="UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.RenderTagHelper``1(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttributeList,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent)">
+  RenderTagHelper&lt;T&gt;(TagHelperAttributeList, TagHelperContent?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Renders a tag helper to a string.</p>
+<p>See:
+<a href="https://github.com/MissaouiChedy/RenderingTagHelperInsideAnother/blob/master/src/RenderingTagHelperInsideAnother/TagHelpers/WrapperTagHelper.cs">https://github.com/MissaouiChedy/RenderingTagHelperInsideAnother/blob/master/src/RenderingTagHelperInsideAnother/TagHelpers/WrapperTagHelper.cs</a></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string RenderTagHelper&lt;T&gt;(TagHelperAttributeList anAttributeList, TagHelperContent? aContent = null) where T : TagHelper, new()</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>anAttributeList</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelperattributelist">TagHelperAttributeList</a></dt>
+    <dd></dd>
+    <dt><code>aContent</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelpercontent">TagHelperContent</a></dt>
+    <dd><p>Optional child content for the tag helper</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_Tools_UFTagHelperTools_RenderTagHelper_" data-uid="UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.RenderTagHelper*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Tools_UFTagHelperTools_RenderTagHelper__1_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContent_" data-uid="UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.RenderTagHelper``1(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent)">
+  RenderTagHelper&lt;T&gt;(TagHelperContent?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Renders a tag helper that does not use any attributes to a string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string RenderTagHelper&lt;T&gt;(TagHelperContent? aContent = null) where T : TagHelper, new()</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aContent</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelpercontent">TagHelperContent</a></dt>
+    <dd><p>Optional child content for the tag helper</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_Tools_UFTagHelperTools_RenderTagHelper_" data-uid="UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.RenderTagHelper*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Tools_UFTagHelperTools_RenderTagHelper__1_System_Collections_Generic_Dictionary_System_String_System_String__Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContent_" data-uid="UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.RenderTagHelper``1(System.Collections.Generic.Dictionary{System.String,System.String},Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent)">
+  RenderTagHelper&lt;T&gt;(Dictionary&lt;string, string&gt;, TagHelperContent?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Renders a tag helper to a string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string RenderTagHelper&lt;T&gt;(Dictionary&lt;string, string&gt; anAttributes, TagHelperContent? aContent = null) where T : TagHelper, new()</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>anAttributes</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>aContent</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelpercontent">TagHelperContent</a></dt>
+    <dd><p>Optional child content for the tag helper</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_Tools_UFTagHelperTools_RenderTagHelper_" data-uid="UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.RenderTagHelper*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Tools_UFTagHelperTools_RenderTagHelper__1_System_Collections_Generic_Dictionary_System_String_System_String__System_String_" data-uid="UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.RenderTagHelper``1(System.Collections.Generic.Dictionary{System.String,System.String},System.String)">
+  RenderTagHelper&lt;T&gt;(Dictionary&lt;string, string&gt;, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Renders a tag helper that does not use any attributes to a string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string RenderTagHelper&lt;T&gt;(Dictionary&lt;string, string&gt; anAttributeList, string aContent) where T : TagHelper, new()</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>anAttributeList</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.dictionary-2">Dictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+    <dt><code>aContent</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Optional child content for the tag helper</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_Tools_UFTagHelperTools_RenderTagHelper_" data-uid="UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.RenderTagHelper*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Tools_UFTagHelperTools_RenderTagHelper__1_System_String_" data-uid="UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.RenderTagHelper``1(System.String)">
+  RenderTagHelper&lt;T&gt;(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Renders a tag helper that does not use any attributes to a string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string RenderTagHelper&lt;T&gt;(string aContent) where T : TagHelper, new()</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aContent</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Child content for the tag helper</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_Tools_UFTagHelperTools_SetContentToHtmlAsync_" data-uid="UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.SetContentToHtmlAsync*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Tools_UFTagHelperTools_SetContentToHtmlAsync_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_System_String_" data-uid="UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.SetContentToHtmlAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,System.String)">
+  SetContentToHtmlAsync(TagHelperOutput, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the content to a specific html. The html is only set if there is not another tag helper
+and the content is empty.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task SetContentToHtmlAsync(TagHelperOutput anOutput, string anHtml)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>anOutput</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelperoutput">TagHelperOutput</a></dt>
+    <dd><p>Output to update</p>
+</dd>
+    <dt><code>anHtml</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Html to set</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_Tools_UFTagHelperTools_SetContentToTagBuilderAsync_" data-uid="UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.SetContentToTagBuilderAsync*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Tools_UFTagHelperTools_SetContentToTagBuilderAsync_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_System_Func_Microsoft_AspNetCore_Mvc_Rendering_TagBuilder__" data-uid="UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.SetContentToTagBuilderAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,System.Func{Microsoft.AspNetCore.Mvc.Rendering.TagBuilder})">
+  SetContentToTagBuilderAsync(TagHelperOutput, Func&lt;TagBuilder&gt;)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the content to the inner html of a tag. The content is only set if there is no current
+content and no other tag helper as adjusted the content already.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task SetContentToTagBuilderAsync(TagHelperOutput anOutput, Func&lt;TagBuilder&gt; aFactory)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>anOutput</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelperoutput">TagHelperOutput</a></dt>
+    <dd><p>Output to update content of</p>
+</dd>
+    <dt><code>aFactory</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-1">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.rendering.tagbuilder">TagBuilder</a>&gt;</dt>
+    <dd><p>Factory that generates a tag to get inner content of</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_Tools_UFTagHelperTools_SetContentToText_" data-uid="UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.SetContentToText*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Tools_UFTagHelperTools_SetContentToText_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_System_String_" data-uid="UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.SetContentToText(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,System.String)">
+  SetContentToText(TagHelperOutput, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Sets the content to a specific text. The text is only set if there is not another tag helper
+and the content is empty.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Task SetContentToText(TagHelperOutput anOutput, string aText)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>anOutput</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelperoutput">TagHelperOutput</a></dt>
+    <dd><p>Output to update</p>
+</dd>
+    <dt><code>aText</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Text to set</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

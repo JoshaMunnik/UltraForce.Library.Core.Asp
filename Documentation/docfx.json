@@ -1,0 +1,46 @@
+{
+  "metadata": [
+    {
+      "src": [
+        {
+          "src": "../UltraForce.Library.Core.Asp",
+          "files": [
+            "**/*.csproj"
+          ]
+        }
+      ],
+      "dest": "api"
+    }
+  ],
+  "build": {
+    "content": [
+      {
+        "files": [
+          "**/*.{md,yml}"
+        ],
+        "exclude": [
+          "_site/**",
+          "README.md"
+        ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "images/**"
+        ]
+      }
+    ],
+    "output": "../docs",
+    "template": [
+      "default",
+      "modern"
+    ],
+    "globalMetadata": {
+      "_appName": "UltraForce.Library.Core.Asp",
+      "_appTitle": "UltraForce.Library.Core.Asp",
+      "_enableSearch": true,
+      "pdf": false
+    }
+  }
+}

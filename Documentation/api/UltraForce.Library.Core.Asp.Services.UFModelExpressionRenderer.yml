@@ -1,0 +1,1313 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer
+  commentId: T:UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer
+  id: UFModelExpressionRenderer
+  parent: UltraForce.Library.Core.Asp.Services
+  children:
+  - UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.#ctor(Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator)
+  - UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.GetCheckBoxHtml(System.Boolean)
+  - UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.GetDateHtml(System.Nullable{System.DateOnly})
+  - UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.GetDateTimeHtml(System.Nullable{System.DateTime})
+  - UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.GetEmailLinkHtml(System.String)
+  - UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.GetName(Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression,Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
+  - UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.GetTimeHtml(System.Nullable{System.TimeOnly})
+  - UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.HtmlGenerator
+  - UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.SetContentToNameAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression,Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
+  - UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.SetContentToValueAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression,Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
+  langs:
+  - csharp
+  - vb
+  name: UFModelExpressionRenderer
+  nameWithType: UFModelExpressionRenderer
+  fullName: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer
+  type: Class
+  source:
+    id: UFModelExpressionRenderer
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\UFModelExpressionRenderer.cs
+    startLine: 43
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Services
+  summary: An implementation of <xref href="UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: 'public class UFModelExpressionRenderer : IUFModelExpressionRenderer'
+    content.vb: Public Class UFModelExpressionRenderer Implements IUFModelExpressionRenderer
+  inheritance:
+  - System.Object
+  implements:
+  - UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.#ctor(Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator)
+  commentId: M:UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.#ctor(Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator)
+  id: '#ctor(Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator)'
+  parent: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer
+  langs:
+  - csharp
+  - vb
+  name: UFModelExpressionRenderer(IHtmlGenerator)
+  nameWithType: UFModelExpressionRenderer.UFModelExpressionRenderer(IHtmlGenerator)
+  fullName: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.UFModelExpressionRenderer(Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator)
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\UFModelExpressionRenderer.cs
+    startLine: 51
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Services
+  summary: Constructs an instance of the <xref href="UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public UFModelExpressionRenderer(IHtmlGenerator aGenerator)
+    parameters:
+    - id: aGenerator
+      type: Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator
+      description: ''
+    content.vb: Public Sub New(aGenerator As IHtmlGenerator)
+  overload: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.#ctor*
+  nameWithType.vb: UFModelExpressionRenderer.New(IHtmlGenerator)
+  fullName.vb: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.New(Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator)
+  name.vb: New(IHtmlGenerator)
+- uid: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.SetContentToNameAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression,Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
+  commentId: M:UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.SetContentToNameAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression,Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
+  id: SetContentToNameAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression,Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
+  parent: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer
+  langs:
+  - csharp
+  - vb
+  name: SetContentToNameAsync(TagHelperOutput, ModelExpression, ViewContext)
+  nameWithType: UFModelExpressionRenderer.SetContentToNameAsync(TagHelperOutput, ModelExpression, ViewContext)
+  fullName: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.SetContentToNameAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput, Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression, Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
+  type: Method
+  source:
+    id: SetContentToNameAsync
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\UFModelExpressionRenderer.cs
+    startLine: 61
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Services
+  summary: >-
+    Sets the content to the (display) name of the <xref href="Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression" data-throw-if-not-resolved="false"></xref>. The code is
+
+    based on the code from <xref href="Microsoft.AspNetCore.Mvc.TagHelpers.LabelTagHelper" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public Task SetContentToNameAsync(TagHelperOutput anOutput, ModelExpression anExpression, ViewContext aViewContext)
+    parameters:
+    - id: anOutput
+      type: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput
+      description: Output to update
+    - id: anExpression
+      type: Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression
+      description: Model expression to get name from
+    - id: aViewContext
+      type: Microsoft.AspNetCore.Mvc.Rendering.ViewContext
+      description: View context to use
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function SetContentToNameAsync(anOutput As TagHelperOutput, anExpression As ModelExpression, aViewContext As ViewContext) As Task
+  overload: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.SetContentToNameAsync*
+  implements:
+  - UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.SetContentToNameAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression,Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
+- uid: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.SetContentToValueAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression,Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
+  commentId: M:UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.SetContentToValueAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression,Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
+  id: SetContentToValueAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression,Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
+  parent: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer
+  langs:
+  - csharp
+  - vb
+  name: SetContentToValueAsync(TagHelperOutput, ModelExpression, ViewContext)
+  nameWithType: UFModelExpressionRenderer.SetContentToValueAsync(TagHelperOutput, ModelExpression, ViewContext)
+  fullName: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.SetContentToValueAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput, Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression, Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
+  type: Method
+  source:
+    id: SetContentToValueAsync
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\UFModelExpressionRenderer.cs
+    startLine: 89
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Services
+  summary: >-
+    Sets the content to the value of the <xref href="Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression" data-throw-if-not-resolved="false"></xref>. It handles date
+
+    and bool types. Date types are formatted to "yyyy-MM-dd HH:mm:ss". Bool types are shown
+
+    as a checked or unchecked checkbox.
+
+    <p>
+
+    If the model expression uses the <xref href="System.ComponentModel.DataAnnotations.EmailAddressAttribute" data-throw-if-not-resolved="false"></xref> the value gets
+
+    rendered using a mailto: link.
+
+    </p>
+  example: []
+  syntax:
+    content: public Task SetContentToValueAsync(TagHelperOutput anOutput, ModelExpression anExpression, ViewContext aViewContext)
+    parameters:
+    - id: anOutput
+      type: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput
+      description: ''
+    - id: anExpression
+      type: Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression
+      description: ''
+    - id: aViewContext
+      type: Microsoft.AspNetCore.Mvc.Rendering.ViewContext
+      description: ''
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function SetContentToValueAsync(anOutput As TagHelperOutput, anExpression As ModelExpression, aViewContext As ViewContext) As Task
+  overload: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.SetContentToValueAsync*
+  implements:
+  - UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.SetContentToValueAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression,Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
+- uid: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.GetName(Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression,Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
+  commentId: M:UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.GetName(Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression,Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
+  id: GetName(Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression,Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
+  parent: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer
+  langs:
+  - csharp
+  - vb
+  name: GetName(ModelExpression, ViewContext)
+  nameWithType: UFModelExpressionRenderer.GetName(ModelExpression, ViewContext)
+  fullName: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.GetName(Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression, Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
+  type: Method
+  source:
+    id: GetName
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\UFModelExpressionRenderer.cs
+    startLine: 160
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Services
+  summary: Gets the name for an model expression.
+  example: []
+  syntax:
+    content: public IHtmlContentBuilder GetName(ModelExpression anExpression, ViewContext aViewContext)
+    parameters:
+    - id: anExpression
+      type: Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression
+      description: expression to get name for
+    - id: aViewContext
+      type: Microsoft.AspNetCore.Mvc.Rendering.ViewContext
+      description: ''
+    return:
+      type: Microsoft.AspNetCore.Html.IHtmlContentBuilder
+      description: html representation of name
+    content.vb: Public Function GetName(anExpression As ModelExpression, aViewContext As ViewContext) As IHtmlContentBuilder
+  overload: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.GetName*
+  implements:
+  - UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.GetName(Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression,Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
+- uid: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.HtmlGenerator
+  commentId: P:UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.HtmlGenerator
+  id: HtmlGenerator
+  parent: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer
+  langs:
+  - csharp
+  - vb
+  name: HtmlGenerator
+  nameWithType: UFModelExpressionRenderer.HtmlGenerator
+  fullName: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.HtmlGenerator
+  type: Property
+  source:
+    id: HtmlGenerator
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\UFModelExpressionRenderer.cs
+    startLine: 179
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Services
+  summary: Html generator instance
+  example: []
+  syntax:
+    content: protected IHtmlGenerator HtmlGenerator { get; }
+    parameters: []
+    return:
+      type: Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator
+    content.vb: Protected Property HtmlGenerator As IHtmlGenerator
+  overload: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.HtmlGenerator*
+- uid: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.GetCheckBoxHtml(System.Boolean)
+  commentId: M:UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.GetCheckBoxHtml(System.Boolean)
+  id: GetCheckBoxHtml(System.Boolean)
+  parent: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer
+  langs:
+  - csharp
+  - vb
+  name: GetCheckBoxHtml(bool)
+  nameWithType: UFModelExpressionRenderer.GetCheckBoxHtml(bool)
+  fullName: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.GetCheckBoxHtml(bool)
+  type: Method
+  source:
+    id: GetCheckBoxHtml
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\UFModelExpressionRenderer.cs
+    startLine: 193
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Services
+  summary: >-
+    Generates a input tag using checkbox type.
+
+
+    The default method just creates a basic input type without any styling. Subclasses
+
+    can override if needed.
+  example: []
+  syntax:
+    content: protected virtual string GetCheckBoxHtml(bool aChecked)
+    parameters:
+    - id: aChecked
+      type: System.Boolean
+      description: ''
+    return:
+      type: System.String
+      description: ''
+    content.vb: Protected Overridable Function GetCheckBoxHtml(aChecked As Boolean) As String
+  overload: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.GetCheckBoxHtml*
+  nameWithType.vb: UFModelExpressionRenderer.GetCheckBoxHtml(Boolean)
+  fullName.vb: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.GetCheckBoxHtml(Boolean)
+  name.vb: GetCheckBoxHtml(Boolean)
+- uid: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.GetEmailLinkHtml(System.String)
+  commentId: M:UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.GetEmailLinkHtml(System.String)
+  id: GetEmailLinkHtml(System.String)
+  parent: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer
+  langs:
+  - csharp
+  - vb
+  name: GetEmailLinkHtml(string)
+  nameWithType: UFModelExpressionRenderer.GetEmailLinkHtml(string)
+  fullName: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.GetEmailLinkHtml(string)
+  type: Method
+  source:
+    id: GetEmailLinkHtml
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\UFModelExpressionRenderer.cs
+    startLine: 207
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Services
+  summary: >-
+    Generates an anchor tag using a mailto protocol.
+
+
+    The default method just creates a basic input type without any styling. Subclasses
+
+    can override if needed.
+  example: []
+  syntax:
+    content: protected virtual string GetEmailLinkHtml(string anEmail)
+    parameters:
+    - id: anEmail
+      type: System.String
+      description: ''
+    return:
+      type: System.String
+      description: ''
+    content.vb: Protected Overridable Function GetEmailLinkHtml(anEmail As String) As String
+  overload: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.GetEmailLinkHtml*
+  nameWithType.vb: UFModelExpressionRenderer.GetEmailLinkHtml(String)
+  fullName.vb: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.GetEmailLinkHtml(String)
+  name.vb: GetEmailLinkHtml(String)
+- uid: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.GetDateTimeHtml(System.Nullable{System.DateTime})
+  commentId: M:UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.GetDateTimeHtml(System.Nullable{System.DateTime})
+  id: GetDateTimeHtml(System.Nullable{System.DateTime})
+  parent: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer
+  langs:
+  - csharp
+  - vb
+  name: GetDateTimeHtml(DateTime?)
+  nameWithType: UFModelExpressionRenderer.GetDateTimeHtml(DateTime?)
+  fullName: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.GetDateTimeHtml(System.DateTime?)
+  type: Method
+  source:
+    id: GetDateTimeHtml
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\UFModelExpressionRenderer.cs
+    startLine: 218
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Services
+  summary: >-
+    Generates a html representation of a date and time. The default implementation returns the
+
+    date/time in mysql format (yyyy-MM-dd HH:mm:ss) or '-' if the date is null.
+  example: []
+  syntax:
+    content: protected virtual string GetDateTimeHtml(DateTime? aDateTime)
+    parameters:
+    - id: aDateTime
+      type: System.Nullable{System.DateTime}
+      description: Date/time or null if render no date and time
+    return:
+      type: System.String
+      description: ''
+    content.vb: Protected Overridable Function GetDateTimeHtml(aDateTime As Date?) As String
+  overload: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.GetDateTimeHtml*
+  nameWithType.vb: UFModelExpressionRenderer.GetDateTimeHtml(Date?)
+  fullName.vb: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.GetDateTimeHtml(Date?)
+  name.vb: GetDateTimeHtml(Date?)
+- uid: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.GetDateHtml(System.Nullable{System.DateOnly})
+  commentId: M:UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.GetDateHtml(System.Nullable{System.DateOnly})
+  id: GetDateHtml(System.Nullable{System.DateOnly})
+  parent: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer
+  langs:
+  - csharp
+  - vb
+  name: GetDateHtml(DateOnly?)
+  nameWithType: UFModelExpressionRenderer.GetDateHtml(DateOnly?)
+  fullName: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.GetDateHtml(System.DateOnly?)
+  type: Method
+  source:
+    id: GetDateHtml
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\UFModelExpressionRenderer.cs
+    startLine: 229
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Services
+  summary: >-
+    Generates a html representation of a date. The default implementation returns the
+
+    date in mysql format (yyyy-MM-dd) or '-' if the date is null.
+  example: []
+  syntax:
+    content: protected virtual string GetDateHtml(DateOnly? aDate)
+    parameters:
+    - id: aDate
+      type: System.Nullable{System.DateOnly}
+      description: Date or null if render no date
+    return:
+      type: System.String
+      description: ''
+    content.vb: Protected Overridable Function GetDateHtml(aDate As DateOnly?) As String
+  overload: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.GetDateHtml*
+- uid: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.GetTimeHtml(System.Nullable{System.TimeOnly})
+  commentId: M:UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.GetTimeHtml(System.Nullable{System.TimeOnly})
+  id: GetTimeHtml(System.Nullable{System.TimeOnly})
+  parent: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer
+  langs:
+  - csharp
+  - vb
+  name: GetTimeHtml(TimeOnly?)
+  nameWithType: UFModelExpressionRenderer.GetTimeHtml(TimeOnly?)
+  fullName: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.GetTimeHtml(System.TimeOnly?)
+  type: Method
+  source:
+    id: GetTimeHtml
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\UFModelExpressionRenderer.cs
+    startLine: 240
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Services
+  summary: >-
+    Generates a html representation of a time. The default implementation returns the
+
+    time in mysql format (HH:mm:ss) or '-' if the time is null.
+  example: []
+  syntax:
+    content: protected virtual string GetTimeHtml(TimeOnly? aDate)
+    parameters:
+    - id: aDate
+      type: System.Nullable{System.TimeOnly}
+      description: Time or null if render no time
+    return:
+      type: System.String
+      description: ''
+    content.vb: Protected Overridable Function GetTimeHtml(aDate As TimeOnly?) As String
+  overload: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.GetTimeHtml*
+references:
+- uid: UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer
+  commentId: T:UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer
+  parent: UltraForce.Library.Core.Asp.Services
+  href: UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.html
+  name: IUFModelExpressionRenderer
+  nameWithType: IUFModelExpressionRenderer
+  fullName: UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer
+- uid: UltraForce.Library.Core.Asp.Services
+  commentId: N:UltraForce.Library.Core.Asp.Services
+  href: UltraForce.html
+  name: UltraForce.Library.Core.Asp.Services
+  nameWithType: UltraForce.Library.Core.Asp.Services
+  fullName: UltraForce.Library.Core.Asp.Services
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Services
+    name: Services
+    href: UltraForce.Library.Core.Asp.Services.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Services
+    name: Services
+    href: UltraForce.Library.Core.Asp.Services.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer
+  commentId: T:UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer
+  href: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.html
+  name: UFModelExpressionRenderer
+  nameWithType: UFModelExpressionRenderer
+  fullName: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer
+- uid: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.#ctor*
+  commentId: Overload:UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.#ctor
+  href: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.html#UltraForce_Library_Core_Asp_Services_UFModelExpressionRenderer__ctor_Microsoft_AspNetCore_Mvc_ViewFeatures_IHtmlGenerator_
+  name: UFModelExpressionRenderer
+  nameWithType: UFModelExpressionRenderer.UFModelExpressionRenderer
+  fullName: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.UFModelExpressionRenderer
+  nameWithType.vb: UFModelExpressionRenderer.New
+  fullName.vb: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.New
+  name.vb: New
+- uid: Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator
+  commentId: T:Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator
+  parent: Microsoft.AspNetCore.Mvc.ViewFeatures
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.viewfeatures.ihtmlgenerator
+  name: IHtmlGenerator
+  nameWithType: IHtmlGenerator
+  fullName: Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator
+- uid: Microsoft.AspNetCore.Mvc.ViewFeatures
+  commentId: N:Microsoft.AspNetCore.Mvc.ViewFeatures
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.AspNetCore.Mvc.ViewFeatures
+  nameWithType: Microsoft.AspNetCore.Mvc.ViewFeatures
+  fullName: Microsoft.AspNetCore.Mvc.ViewFeatures
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Mvc
+    name: Mvc
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc
+  - name: .
+  - uid: Microsoft.AspNetCore.Mvc.ViewFeatures
+    name: ViewFeatures
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.viewfeatures
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Mvc
+    name: Mvc
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc
+  - name: .
+  - uid: Microsoft.AspNetCore.Mvc.ViewFeatures
+    name: ViewFeatures
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.viewfeatures
+- uid: Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression
+  commentId: T:Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression
+  parent: Microsoft.AspNetCore.Mvc.ViewFeatures
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.viewfeatures.modelexpression
+  name: ModelExpression
+  nameWithType: ModelExpression
+  fullName: Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression
+- uid: Microsoft.AspNetCore.Mvc.TagHelpers.LabelTagHelper
+  commentId: T:Microsoft.AspNetCore.Mvc.TagHelpers.LabelTagHelper
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers.labeltaghelper
+  name: LabelTagHelper
+  nameWithType: LabelTagHelper
+  fullName: Microsoft.AspNetCore.Mvc.TagHelpers.LabelTagHelper
+- uid: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.SetContentToNameAsync*
+  commentId: Overload:UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.SetContentToNameAsync
+  href: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.html#UltraForce_Library_Core_Asp_Services_UFModelExpressionRenderer_SetContentToNameAsync_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_Microsoft_AspNetCore_Mvc_ViewFeatures_ModelExpression_Microsoft_AspNetCore_Mvc_Rendering_ViewContext_
+  name: SetContentToNameAsync
+  nameWithType: UFModelExpressionRenderer.SetContentToNameAsync
+  fullName: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.SetContentToNameAsync
+- uid: UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.SetContentToNameAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression,Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
+  commentId: M:UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.SetContentToNameAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression,Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
+  parent: UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer
+  isExternal: true
+  href: UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.html#UltraForce_Library_Core_Asp_Services_IUFModelExpressionRenderer_SetContentToNameAsync_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_Microsoft_AspNetCore_Mvc_ViewFeatures_ModelExpression_Microsoft_AspNetCore_Mvc_Rendering_ViewContext_
+  name: SetContentToNameAsync(TagHelperOutput, ModelExpression, ViewContext)
+  nameWithType: IUFModelExpressionRenderer.SetContentToNameAsync(TagHelperOutput, ModelExpression, ViewContext)
+  fullName: UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.SetContentToNameAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput, Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression, Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
+  spec.csharp:
+  - uid: UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.SetContentToNameAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression,Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
+    name: SetContentToNameAsync
+    href: UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.html#UltraForce_Library_Core_Asp_Services_IUFModelExpressionRenderer_SetContentToNameAsync_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_Microsoft_AspNetCore_Mvc_ViewFeatures_ModelExpression_Microsoft_AspNetCore_Mvc_Rendering_ViewContext_
+  - name: (
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput
+    name: TagHelperOutput
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelperoutput
+  - name: ','
+  - name: " "
+  - uid: Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression
+    name: ModelExpression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.viewfeatures.modelexpression
+  - name: ','
+  - name: " "
+  - uid: Microsoft.AspNetCore.Mvc.Rendering.ViewContext
+    name: ViewContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.rendering.viewcontext
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.SetContentToNameAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression,Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
+    name: SetContentToNameAsync
+    href: UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.html#UltraForce_Library_Core_Asp_Services_IUFModelExpressionRenderer_SetContentToNameAsync_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_Microsoft_AspNetCore_Mvc_ViewFeatures_ModelExpression_Microsoft_AspNetCore_Mvc_Rendering_ViewContext_
+  - name: (
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput
+    name: TagHelperOutput
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelperoutput
+  - name: ','
+  - name: " "
+  - uid: Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression
+    name: ModelExpression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.viewfeatures.modelexpression
+  - name: ','
+  - name: " "
+  - uid: Microsoft.AspNetCore.Mvc.Rendering.ViewContext
+    name: ViewContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.rendering.viewcontext
+  - name: )
+- uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput
+  commentId: T:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput
+  parent: Microsoft.AspNetCore.Razor.TagHelpers
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelperoutput
+  name: TagHelperOutput
+  nameWithType: TagHelperOutput
+  fullName: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput
+- uid: Microsoft.AspNetCore.Mvc.Rendering.ViewContext
+  commentId: T:Microsoft.AspNetCore.Mvc.Rendering.ViewContext
+  parent: Microsoft.AspNetCore.Mvc.Rendering
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.rendering.viewcontext
+  name: ViewContext
+  nameWithType: ViewContext
+  fullName: Microsoft.AspNetCore.Mvc.Rendering.ViewContext
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: Microsoft.AspNetCore.Razor.TagHelpers
+  commentId: N:Microsoft.AspNetCore.Razor.TagHelpers
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.AspNetCore.Razor.TagHelpers
+  nameWithType: Microsoft.AspNetCore.Razor.TagHelpers
+  fullName: Microsoft.AspNetCore.Razor.TagHelpers
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Razor
+    name: Razor
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor
+  - name: .
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers
+    name: TagHelpers
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Razor
+    name: Razor
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor
+  - name: .
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers
+    name: TagHelpers
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers
+- uid: Microsoft.AspNetCore.Mvc.Rendering
+  commentId: N:Microsoft.AspNetCore.Mvc.Rendering
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.AspNetCore.Mvc.Rendering
+  nameWithType: Microsoft.AspNetCore.Mvc.Rendering
+  fullName: Microsoft.AspNetCore.Mvc.Rendering
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Mvc
+    name: Mvc
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc
+  - name: .
+  - uid: Microsoft.AspNetCore.Mvc.Rendering
+    name: Rendering
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.rendering
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Mvc
+    name: Mvc
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc
+  - name: .
+  - uid: Microsoft.AspNetCore.Mvc.Rendering
+    name: Rendering
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.rendering
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: System.ComponentModel.DataAnnotations.EmailAddressAttribute
+  commentId: T:System.ComponentModel.DataAnnotations.EmailAddressAttribute
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.componentmodel.dataannotations.emailaddressattribute
+  name: EmailAddressAttribute
+  nameWithType: EmailAddressAttribute
+  fullName: System.ComponentModel.DataAnnotations.EmailAddressAttribute
+- uid: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.SetContentToValueAsync*
+  commentId: Overload:UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.SetContentToValueAsync
+  href: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.html#UltraForce_Library_Core_Asp_Services_UFModelExpressionRenderer_SetContentToValueAsync_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_Microsoft_AspNetCore_Mvc_ViewFeatures_ModelExpression_Microsoft_AspNetCore_Mvc_Rendering_ViewContext_
+  name: SetContentToValueAsync
+  nameWithType: UFModelExpressionRenderer.SetContentToValueAsync
+  fullName: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.SetContentToValueAsync
+- uid: UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.SetContentToValueAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression,Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
+  commentId: M:UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.SetContentToValueAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression,Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
+  parent: UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer
+  isExternal: true
+  href: UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.html#UltraForce_Library_Core_Asp_Services_IUFModelExpressionRenderer_SetContentToValueAsync_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_Microsoft_AspNetCore_Mvc_ViewFeatures_ModelExpression_Microsoft_AspNetCore_Mvc_Rendering_ViewContext_
+  name: SetContentToValueAsync(TagHelperOutput, ModelExpression, ViewContext)
+  nameWithType: IUFModelExpressionRenderer.SetContentToValueAsync(TagHelperOutput, ModelExpression, ViewContext)
+  fullName: UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.SetContentToValueAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput, Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression, Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
+  spec.csharp:
+  - uid: UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.SetContentToValueAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression,Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
+    name: SetContentToValueAsync
+    href: UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.html#UltraForce_Library_Core_Asp_Services_IUFModelExpressionRenderer_SetContentToValueAsync_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_Microsoft_AspNetCore_Mvc_ViewFeatures_ModelExpression_Microsoft_AspNetCore_Mvc_Rendering_ViewContext_
+  - name: (
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput
+    name: TagHelperOutput
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelperoutput
+  - name: ','
+  - name: " "
+  - uid: Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression
+    name: ModelExpression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.viewfeatures.modelexpression
+  - name: ','
+  - name: " "
+  - uid: Microsoft.AspNetCore.Mvc.Rendering.ViewContext
+    name: ViewContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.rendering.viewcontext
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.SetContentToValueAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression,Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
+    name: SetContentToValueAsync
+    href: UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.html#UltraForce_Library_Core_Asp_Services_IUFModelExpressionRenderer_SetContentToValueAsync_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_Microsoft_AspNetCore_Mvc_ViewFeatures_ModelExpression_Microsoft_AspNetCore_Mvc_Rendering_ViewContext_
+  - name: (
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput
+    name: TagHelperOutput
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelperoutput
+  - name: ','
+  - name: " "
+  - uid: Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression
+    name: ModelExpression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.viewfeatures.modelexpression
+  - name: ','
+  - name: " "
+  - uid: Microsoft.AspNetCore.Mvc.Rendering.ViewContext
+    name: ViewContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.rendering.viewcontext
+  - name: )
+- uid: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.GetName*
+  commentId: Overload:UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.GetName
+  href: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.html#UltraForce_Library_Core_Asp_Services_UFModelExpressionRenderer_GetName_Microsoft_AspNetCore_Mvc_ViewFeatures_ModelExpression_Microsoft_AspNetCore_Mvc_Rendering_ViewContext_
+  name: GetName
+  nameWithType: UFModelExpressionRenderer.GetName
+  fullName: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.GetName
+- uid: UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.GetName(Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression,Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
+  commentId: M:UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.GetName(Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression,Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
+  parent: UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer
+  isExternal: true
+  href: UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.html#UltraForce_Library_Core_Asp_Services_IUFModelExpressionRenderer_GetName_Microsoft_AspNetCore_Mvc_ViewFeatures_ModelExpression_Microsoft_AspNetCore_Mvc_Rendering_ViewContext_
+  name: GetName(ModelExpression, ViewContext)
+  nameWithType: IUFModelExpressionRenderer.GetName(ModelExpression, ViewContext)
+  fullName: UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.GetName(Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression, Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
+  spec.csharp:
+  - uid: UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.GetName(Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression,Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
+    name: GetName
+    href: UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.html#UltraForce_Library_Core_Asp_Services_IUFModelExpressionRenderer_GetName_Microsoft_AspNetCore_Mvc_ViewFeatures_ModelExpression_Microsoft_AspNetCore_Mvc_Rendering_ViewContext_
+  - name: (
+  - uid: Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression
+    name: ModelExpression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.viewfeatures.modelexpression
+  - name: ','
+  - name: " "
+  - uid: Microsoft.AspNetCore.Mvc.Rendering.ViewContext
+    name: ViewContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.rendering.viewcontext
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.GetName(Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression,Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
+    name: GetName
+    href: UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.html#UltraForce_Library_Core_Asp_Services_IUFModelExpressionRenderer_GetName_Microsoft_AspNetCore_Mvc_ViewFeatures_ModelExpression_Microsoft_AspNetCore_Mvc_Rendering_ViewContext_
+  - name: (
+  - uid: Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression
+    name: ModelExpression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.viewfeatures.modelexpression
+  - name: ','
+  - name: " "
+  - uid: Microsoft.AspNetCore.Mvc.Rendering.ViewContext
+    name: ViewContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.rendering.viewcontext
+  - name: )
+- uid: Microsoft.AspNetCore.Html.IHtmlContentBuilder
+  commentId: T:Microsoft.AspNetCore.Html.IHtmlContentBuilder
+  parent: Microsoft.AspNetCore.Html
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.html.ihtmlcontentbuilder
+  name: IHtmlContentBuilder
+  nameWithType: IHtmlContentBuilder
+  fullName: Microsoft.AspNetCore.Html.IHtmlContentBuilder
+- uid: Microsoft.AspNetCore.Html
+  commentId: N:Microsoft.AspNetCore.Html
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.AspNetCore.Html
+  nameWithType: Microsoft.AspNetCore.Html
+  fullName: Microsoft.AspNetCore.Html
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Html
+    name: Html
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Html
+    name: Html
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.html
+- uid: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.HtmlGenerator*
+  commentId: Overload:UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.HtmlGenerator
+  href: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.html#UltraForce_Library_Core_Asp_Services_UFModelExpressionRenderer_HtmlGenerator
+  name: HtmlGenerator
+  nameWithType: UFModelExpressionRenderer.HtmlGenerator
+  fullName: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.HtmlGenerator
+- uid: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.GetCheckBoxHtml*
+  commentId: Overload:UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.GetCheckBoxHtml
+  href: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.html#UltraForce_Library_Core_Asp_Services_UFModelExpressionRenderer_GetCheckBoxHtml_System_Boolean_
+  name: GetCheckBoxHtml
+  nameWithType: UFModelExpressionRenderer.GetCheckBoxHtml
+  fullName: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.GetCheckBoxHtml
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.GetEmailLinkHtml*
+  commentId: Overload:UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.GetEmailLinkHtml
+  href: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.html#UltraForce_Library_Core_Asp_Services_UFModelExpressionRenderer_GetEmailLinkHtml_System_String_
+  name: GetEmailLinkHtml
+  nameWithType: UFModelExpressionRenderer.GetEmailLinkHtml
+  fullName: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.GetEmailLinkHtml
+- uid: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.GetDateTimeHtml*
+  commentId: Overload:UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.GetDateTimeHtml
+  href: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.html#UltraForce_Library_Core_Asp_Services_UFModelExpressionRenderer_GetDateTimeHtml_System_Nullable_System_DateTime__
+  name: GetDateTimeHtml
+  nameWithType: UFModelExpressionRenderer.GetDateTimeHtml
+  fullName: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.GetDateTimeHtml
+- uid: System.Nullable{System.DateTime}
+  commentId: T:System.Nullable{System.DateTime}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.datetime
+  name: DateTime?
+  nameWithType: DateTime?
+  fullName: System.DateTime?
+  nameWithType.vb: Date?
+  fullName.vb: Date?
+  name.vb: Date?
+  spec.csharp:
+  - uid: System.DateTime
+    name: DateTime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: '?'
+  spec.vb:
+  - uid: System.DateTime
+    name: Date
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.GetDateHtml*
+  commentId: Overload:UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.GetDateHtml
+  href: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.html#UltraForce_Library_Core_Asp_Services_UFModelExpressionRenderer_GetDateHtml_System_Nullable_System_DateOnly__
+  name: GetDateHtml
+  nameWithType: UFModelExpressionRenderer.GetDateHtml
+  fullName: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.GetDateHtml
+- uid: System.Nullable{System.DateOnly}
+  commentId: T:System.Nullable{System.DateOnly}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.dateonly
+  name: DateOnly?
+  nameWithType: DateOnly?
+  fullName: System.DateOnly?
+  spec.csharp:
+  - uid: System.DateOnly
+    name: DateOnly
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.dateonly
+  - name: '?'
+  spec.vb:
+  - uid: System.DateOnly
+    name: DateOnly
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.dateonly
+  - name: '?'
+- uid: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.GetTimeHtml*
+  commentId: Overload:UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.GetTimeHtml
+  href: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.html#UltraForce_Library_Core_Asp_Services_UFModelExpressionRenderer_GetTimeHtml_System_Nullable_System_TimeOnly__
+  name: GetTimeHtml
+  nameWithType: UFModelExpressionRenderer.GetTimeHtml
+  fullName: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.GetTimeHtml
+- uid: System.Nullable{System.TimeOnly}
+  commentId: T:System.Nullable{System.TimeOnly}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.timeonly
+  name: TimeOnly?
+  nameWithType: TimeOnly?
+  fullName: System.TimeOnly?
+  spec.csharp:
+  - uid: System.TimeOnly
+    name: TimeOnly
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.timeonly
+  - name: '?'
+  spec.vb:
+  - uid: System.TimeOnly
+    name: TimeOnly
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.timeonly
+  - name: '?'

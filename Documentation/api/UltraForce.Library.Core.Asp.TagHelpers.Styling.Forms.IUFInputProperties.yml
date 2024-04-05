@@ -1,0 +1,408 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties
+  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties
+  id: IUFInputProperties
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms
+  children:
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties.Description
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties.Label
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties.Multiline
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties.NoLabel
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties.NoWidth
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties.Wrap
+  langs:
+  - csharp
+  - vb
+  name: IUFInputProperties
+  nameWithType: IUFInputProperties
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties
+  type: Interface
+  source:
+    id: IUFInputProperties
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\TagHelpers\Styling\Forms\IUFInputProperties.cs
+    startLine: 33
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms
+  syntax:
+    content: public interface IUFInputProperties
+    content.vb: Public Interface IUFInputProperties
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties.Label
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties.Label
+  id: Label
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties
+  langs:
+  - csharp
+  - vb
+  name: Label
+  nameWithType: IUFInputProperties.Label
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties.Label
+  type: Property
+  source:
+    id: Label
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\TagHelpers\Styling\Forms\IUFInputProperties.cs
+    startLine: 43
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms
+  summary: >-
+    When set, use this value for label instead of getting from the
+
+    <xref href="Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper.For" data-throw-if-not-resolved="false"></xref> property.
+
+    <p>
+
+    When <xref href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties.Wrap" data-throw-if-not-resolved="false"></xref> is false, the property is only used with checkbox and radio elements.
+
+    For other input elements the value is ignored.
+
+    </p>
+  example: []
+  syntax:
+    content: string Label { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property Label As String
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties.Label*
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties.NoLabel
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties.NoLabel
+  id: NoLabel
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties
+  langs:
+  - csharp
+  - vb
+  name: NoLabel
+  nameWithType: IUFInputProperties.NoLabel
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties.NoLabel
+  type: Property
+  source:
+    id: NoLabel
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\TagHelpers\Styling\Forms\IUFInputProperties.cs
+    startLine: 48
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms
+  summary: When true do not render a label element.
+  example: []
+  syntax:
+    content: bool NoLabel { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Property NoLabel As Boolean
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties.NoLabel*
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties.Wrap
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties.Wrap
+  id: Wrap
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties
+  langs:
+  - csharp
+  - vb
+  name: Wrap
+  nameWithType: IUFInputProperties.Wrap
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties.Wrap
+  type: Property
+  source:
+    id: Wrap
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\TagHelpers\Styling\Forms\IUFInputProperties.cs
+    startLine: 53
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms
+  summary: When true, wrap input element in a div. With false just render the input element.
+  example: []
+  syntax:
+    content: bool Wrap { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Property Wrap As Boolean
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties.Wrap*
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties.Description
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties.Description
+  id: Description
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties
+  langs:
+  - csharp
+  - vb
+  name: Description
+  nameWithType: IUFInputProperties.Description
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties.Description
+  type: Property
+  source:
+    id: Description
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\TagHelpers\Styling\Forms\IUFInputProperties.cs
+    startLine: 58
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms
+  summary: Additional text that is shown below the label. It is only used if <xref href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties.Wrap" data-throw-if-not-resolved="false"></xref> is true.
+  example: []
+  syntax:
+    content: string Description { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property Description As String
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties.Description*
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties.Multiline
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties.Multiline
+  id: Multiline
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties
+  langs:
+  - csharp
+  - vb
+  name: Multiline
+  nameWithType: IUFInputProperties.Multiline
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties.Multiline
+  type: Property
+  source:
+    id: Multiline
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\TagHelpers\Styling\Forms\IUFInputProperties.cs
+    startLine: 63
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms
+  summary: When true show a multiline text input (textarea).
+  example: []
+  syntax:
+    content: bool Multiline { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Property Multiline As Boolean
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties.Multiline*
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties.NoWidth
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties.NoWidth
+  id: NoWidth
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties
+  langs:
+  - csharp
+  - vb
+  name: NoWidth
+  nameWithType: IUFInputProperties.NoWidth
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties.NoWidth
+  type: Property
+  source:
+    id: NoWidth
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\TagHelpers\Styling\Forms\IUFInputProperties.cs
+    startLine: 68
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms
+  summary: When true do not set a width.
+  example: []
+  syntax:
+    content: bool NoWidth { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Property NoWidth As Boolean
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties.NoWidth*
+references:
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms
+  commentId: N:UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms
+  href: UltraForce.html
+  name: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms
+  nameWithType: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers
+    name: TagHelpers
+    href: UltraForce.Library.Core.Asp.TagHelpers.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling
+    name: Styling
+    href: UltraForce.Library.Core.Asp.TagHelpers.Styling.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms
+    name: Forms
+    href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers
+    name: TagHelpers
+    href: UltraForce.Library.Core.Asp.TagHelpers.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling
+    name: Styling
+    href: UltraForce.Library.Core.Asp.TagHelpers.Styling.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms
+    name: Forms
+    href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.html
+- uid: Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper.For
+  commentId: P:Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper.For
+  parent: Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers.inputtaghelper.for
+  name: For
+  nameWithType: InputTagHelper.For
+  fullName: Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper.For
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties.Wrap
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties.Wrap
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Forms_IUFInputProperties_Wrap
+  name: Wrap
+  nameWithType: IUFInputProperties.Wrap
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties.Wrap
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties.Label*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties.Label
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Forms_IUFInputProperties_Label
+  name: Label
+  nameWithType: IUFInputProperties.Label
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties.Label
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper
+  commentId: T:Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper
+  parent: Microsoft.AspNetCore.Mvc.TagHelpers
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers.inputtaghelper
+  name: InputTagHelper
+  nameWithType: InputTagHelper
+  fullName: Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties
+  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties.html
+  name: IUFInputProperties
+  nameWithType: IUFInputProperties
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.AspNetCore.Mvc.TagHelpers
+  commentId: N:Microsoft.AspNetCore.Mvc.TagHelpers
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.AspNetCore.Mvc.TagHelpers
+  nameWithType: Microsoft.AspNetCore.Mvc.TagHelpers
+  fullName: Microsoft.AspNetCore.Mvc.TagHelpers
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Mvc
+    name: Mvc
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc
+  - name: .
+  - uid: Microsoft.AspNetCore.Mvc.TagHelpers
+    name: TagHelpers
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Mvc
+    name: Mvc
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc
+  - name: .
+  - uid: Microsoft.AspNetCore.Mvc.TagHelpers
+    name: TagHelpers
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties.NoLabel*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties.NoLabel
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Forms_IUFInputProperties_NoLabel
+  name: NoLabel
+  nameWithType: IUFInputProperties.NoLabel
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties.NoLabel
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties.Wrap*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties.Wrap
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Forms_IUFInputProperties_Wrap
+  name: Wrap
+  nameWithType: IUFInputProperties.Wrap
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties.Wrap
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties.Description*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties.Description
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Forms_IUFInputProperties_Description
+  name: Description
+  nameWithType: IUFInputProperties.Description
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties.Description
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties.Multiline*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties.Multiline
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Forms_IUFInputProperties_Multiline
+  name: Multiline
+  nameWithType: IUFInputProperties.Multiline
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties.Multiline
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties.NoWidth*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties.NoWidth
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Forms_IUFInputProperties_NoWidth
+  name: NoWidth
+  nameWithType: IUFInputProperties.NoWidth
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties.NoWidth

@@ -1,0 +1,503 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties
+  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties
+  id: IUFFlexProperties
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
+  children:
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.AlignContent
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.AlignItems
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.Buttons
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.FullHeight
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.FullWidth
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.Gap
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.JustifyContent
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.Wrap
+  langs:
+  - csharp
+  - vb
+  name: IUFFlexProperties
+  nameWithType: IUFFlexProperties
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties
+  type: Interface
+  source:
+    id: IUFFlexProperties
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\TagHelpers\Styling\Layout\IUFFlexProperties.cs
+    startLine: 33
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
+  syntax:
+    content: public interface IUFFlexProperties
+    content.vb: Public Interface IUFFlexProperties
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.JustifyContent
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.JustifyContent
+  id: JustifyContent
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties
+  langs:
+  - csharp
+  - vb
+  name: JustifyContent
+  nameWithType: IUFFlexProperties.JustifyContent
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.JustifyContent
+  type: Property
+  source:
+    id: JustifyContent
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\TagHelpers\Styling\Layout\IUFFlexProperties.cs
+    startLine: 38
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
+  summary: How to distribute the items in the direction of the stack.
+  example: []
+  syntax:
+    content: UFFlexJustifyContent JustifyContent { get; set; }
+    parameters: []
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFFlexJustifyContent
+    content.vb: Property JustifyContent As UFFlexJustifyContent
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.JustifyContent*
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.AlignItems
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.AlignItems
+  id: AlignItems
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties
+  langs:
+  - csharp
+  - vb
+  name: AlignItems
+  nameWithType: IUFFlexProperties.AlignItems
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.AlignItems
+  type: Property
+  source:
+    id: AlignItems
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\TagHelpers\Styling\Layout\IUFFlexProperties.cs
+    startLine: 43
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
+  summary: How to align the items in the opposite direction.
+  example: []
+  syntax:
+    content: UFFlexAlignItems AlignItems { get; set; }
+    parameters: []
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignItems
+    content.vb: Property AlignItems As UFFlexAlignItems
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.AlignItems*
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.AlignContent
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.AlignContent
+  id: AlignContent
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties
+  langs:
+  - csharp
+  - vb
+  name: AlignContent
+  nameWithType: IUFFlexProperties.AlignContent
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.AlignContent
+  type: Property
+  source:
+    id: AlignContent
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\TagHelpers\Styling\Layout\IUFFlexProperties.cs
+    startLine: 48
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
+  summary: How to distribute the items in the opposite direction.
+  example: []
+  syntax:
+    content: UFFlexAlignContent AlignContent { get; set; }
+    parameters: []
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignContent
+    content.vb: Property AlignContent As UFFlexAlignContent
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.AlignContent*
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.Buttons
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.Buttons
+  id: Buttons
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties
+  langs:
+  - csharp
+  - vb
+  name: Buttons
+  nameWithType: IUFFlexProperties.Buttons
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.Buttons
+  type: Property
+  source:
+    id: Buttons
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\TagHelpers\Styling\Layout\IUFFlexProperties.cs
+    startLine: 53
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
+  summary: When true, the stack is used to contain buttons.
+  example: []
+  syntax:
+    content: bool Buttons { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Property Buttons As Boolean
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.Buttons*
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.Gap
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.Gap
+  id: Gap
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties
+  langs:
+  - csharp
+  - vb
+  name: Gap
+  nameWithType: IUFFlexProperties.Gap
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.Gap
+  type: Property
+  source:
+    id: Gap
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\TagHelpers\Styling\Layout\IUFFlexProperties.cs
+    startLine: 58
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
+  summary: Gap index, determining minimal space between children. When null, the theme default is used.
+  example: []
+  syntax:
+    content: int? Gap { get; set; }
+    parameters: []
+    return:
+      type: System.Nullable{System.Int32}
+    content.vb: Property Gap As Integer?
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.Gap*
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.FullWidth
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.FullWidth
+  id: FullWidth
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties
+  langs:
+  - csharp
+  - vb
+  name: FullWidth
+  nameWithType: IUFFlexProperties.FullWidth
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.FullWidth
+  type: Property
+  source:
+    id: FullWidth
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\TagHelpers\Styling\Layout\IUFFlexProperties.cs
+    startLine: 63
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
+  summary: When true use all available horizontal space in the parent.
+  example: []
+  syntax:
+    content: bool FullWidth { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Property FullWidth As Boolean
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.FullWidth*
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.FullHeight
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.FullHeight
+  id: FullHeight
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties
+  langs:
+  - csharp
+  - vb
+  name: FullHeight
+  nameWithType: IUFFlexProperties.FullHeight
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.FullHeight
+  type: Property
+  source:
+    id: FullHeight
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\TagHelpers\Styling\Layout\IUFFlexProperties.cs
+    startLine: 68
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
+  summary: When true use all available vertical space in the parent.
+  example: []
+  syntax:
+    content: bool FullHeight { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Property FullHeight As Boolean
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.FullHeight*
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.Wrap
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.Wrap
+  id: Wrap
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties
+  langs:
+  - csharp
+  - vb
+  name: Wrap
+  nameWithType: IUFFlexProperties.Wrap
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.Wrap
+  type: Property
+  source:
+    id: Wrap
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\TagHelpers\Styling\Layout\IUFFlexProperties.cs
+    startLine: 73
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
+  summary: When true wrap children across multiple rows or columns when they don"t fit.
+  example: []
+  syntax:
+    content: bool Wrap { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Property Wrap As Boolean
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.Wrap*
+references:
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
+  commentId: N:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
+  href: UltraForce.html
+  name: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
+  nameWithType: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers
+    name: TagHelpers
+    href: UltraForce.Library.Core.Asp.TagHelpers.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling
+    name: Styling
+    href: UltraForce.Library.Core.Asp.TagHelpers.Styling.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
+    name: Layout
+    href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers
+    name: TagHelpers
+    href: UltraForce.Library.Core.Asp.TagHelpers.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling
+    name: Styling
+    href: UltraForce.Library.Core.Asp.TagHelpers.Styling.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
+    name: Layout
+    href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.html
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.JustifyContent*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.JustifyContent
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Layout_IUFFlexProperties_JustifyContent
+  name: JustifyContent
+  nameWithType: IUFFlexProperties.JustifyContent
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.JustifyContent
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFFlexJustifyContent
+  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFFlexJustifyContent
+  parent: UltraForce.Library.Core.Asp.Types.Enums
+  href: UltraForce.Library.Core.Asp.Types.Enums.UFFlexJustifyContent.html
+  name: UFFlexJustifyContent
+  nameWithType: UFFlexJustifyContent
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFFlexJustifyContent
+- uid: UltraForce.Library.Core.Asp.Types.Enums
+  commentId: N:UltraForce.Library.Core.Asp.Types.Enums
+  href: UltraForce.html
+  name: UltraForce.Library.Core.Asp.Types.Enums
+  nameWithType: UltraForce.Library.Core.Asp.Types.Enums
+  fullName: UltraForce.Library.Core.Asp.Types.Enums
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types
+    name: Types
+    href: UltraForce.Library.Core.Asp.Types.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types.Enums
+    name: Enums
+    href: UltraForce.Library.Core.Asp.Types.Enums.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types
+    name: Types
+    href: UltraForce.Library.Core.Asp.Types.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types.Enums
+    name: Enums
+    href: UltraForce.Library.Core.Asp.Types.Enums.html
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.AlignItems*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.AlignItems
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Layout_IUFFlexProperties_AlignItems
+  name: AlignItems
+  nameWithType: IUFFlexProperties.AlignItems
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.AlignItems
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignItems
+  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignItems
+  parent: UltraForce.Library.Core.Asp.Types.Enums
+  href: UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignItems.html
+  name: UFFlexAlignItems
+  nameWithType: UFFlexAlignItems
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignItems
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.AlignContent*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.AlignContent
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Layout_IUFFlexProperties_AlignContent
+  name: AlignContent
+  nameWithType: IUFFlexProperties.AlignContent
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.AlignContent
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignContent
+  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignContent
+  parent: UltraForce.Library.Core.Asp.Types.Enums
+  href: UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignContent.html
+  name: UFFlexAlignContent
+  nameWithType: UFFlexAlignContent
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignContent
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.Buttons*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.Buttons
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Layout_IUFFlexProperties_Buttons
+  name: Buttons
+  nameWithType: IUFFlexProperties.Buttons
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.Buttons
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.Gap*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.Gap
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Layout_IUFFlexProperties_Gap
+  name: Gap
+  nameWithType: IUFFlexProperties.Gap
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.Gap
+- uid: System.Nullable{System.Int32}
+  commentId: T:System.Nullable{System.Int32}
+  parent: System
+  definition: System.Nullable`1
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int?
+  nameWithType: int?
+  fullName: int?
+  nameWithType.vb: Integer?
+  fullName.vb: Integer?
+  name.vb: Integer?
+  spec.csharp:
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+  spec.vb:
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: '?'
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.FullWidth*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.FullWidth
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Layout_IUFFlexProperties_FullWidth
+  name: FullWidth
+  nameWithType: IUFFlexProperties.FullWidth
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.FullWidth
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.FullHeight*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.FullHeight
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Layout_IUFFlexProperties_FullHeight
+  name: FullHeight
+  nameWithType: IUFFlexProperties.FullHeight
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.FullHeight
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.Wrap*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.Wrap
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Layout_IUFFlexProperties_Wrap
+  name: Wrap
+  nameWithType: IUFFlexProperties.Wrap
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.Wrap

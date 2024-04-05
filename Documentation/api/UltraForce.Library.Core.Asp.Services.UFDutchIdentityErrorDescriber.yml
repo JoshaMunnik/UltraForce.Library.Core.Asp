@@ -1,0 +1,1303 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber
+  commentId: T:UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber
+  id: UFDutchIdentityErrorDescriber
+  parent: UltraForce.Library.Core.Asp.Services
+  children:
+  - UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber.DuplicateEmail(System.String)
+  - UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber.PasswordMismatch
+  - UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber.PasswordRequiresDigit
+  - UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber.PasswordRequiresLower
+  - UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber.PasswordRequiresNonAlphanumeric
+  - UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber.PasswordRequiresUniqueChars(System.Int32)
+  - UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber.PasswordRequiresUpper
+  - UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber.PasswordTooShort(System.Int32)
+  langs:
+  - csharp
+  - vb
+  name: UFDutchIdentityErrorDescriber
+  nameWithType: UFDutchIdentityErrorDescriber
+  fullName: UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber
+  type: Class
+  source:
+    id: UFDutchIdentityErrorDescriber
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\UFDutchIdentityErrorDescriber.cs
+    startLine: 36
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Services
+  summary: This class uses error messages in Dutch.
+  example: []
+  syntax:
+    content: 'public class UFDutchIdentityErrorDescriber : IdentityErrorDescriber'
+    content.vb: Public Class UFDutchIdentityErrorDescriber Inherits IdentityErrorDescriber
+  inheritance:
+  - System.Object
+  - Microsoft.AspNetCore.Identity.IdentityErrorDescriber
+  inheritedMembers:
+  - Microsoft.AspNetCore.Identity.IdentityErrorDescriber.DefaultError
+  - Microsoft.AspNetCore.Identity.IdentityErrorDescriber.ConcurrencyFailure
+  - Microsoft.AspNetCore.Identity.IdentityErrorDescriber.InvalidToken
+  - Microsoft.AspNetCore.Identity.IdentityErrorDescriber.RecoveryCodeRedemptionFailed
+  - Microsoft.AspNetCore.Identity.IdentityErrorDescriber.LoginAlreadyAssociated
+  - Microsoft.AspNetCore.Identity.IdentityErrorDescriber.InvalidUserName(System.String)
+  - Microsoft.AspNetCore.Identity.IdentityErrorDescriber.InvalidEmail(System.String)
+  - Microsoft.AspNetCore.Identity.IdentityErrorDescriber.DuplicateUserName(System.String)
+  - Microsoft.AspNetCore.Identity.IdentityErrorDescriber.InvalidRoleName(System.String)
+  - Microsoft.AspNetCore.Identity.IdentityErrorDescriber.DuplicateRoleName(System.String)
+  - Microsoft.AspNetCore.Identity.IdentityErrorDescriber.UserAlreadyHasPassword
+  - Microsoft.AspNetCore.Identity.IdentityErrorDescriber.UserLockoutNotEnabled
+  - Microsoft.AspNetCore.Identity.IdentityErrorDescriber.UserAlreadyInRole(System.String)
+  - Microsoft.AspNetCore.Identity.IdentityErrorDescriber.UserNotInRole(System.String)
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber.PasswordTooShort(System.Int32)
+  commentId: M:UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber.PasswordTooShort(System.Int32)
+  id: PasswordTooShort(System.Int32)
+  parent: UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber
+  langs:
+  - csharp
+  - vb
+  name: PasswordTooShort(int)
+  nameWithType: UFDutchIdentityErrorDescriber.PasswordTooShort(int)
+  fullName: UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber.PasswordTooShort(int)
+  type: Method
+  source:
+    id: PasswordTooShort
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\UFDutchIdentityErrorDescriber.cs
+    startLine: 41
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Services
+  summary: Returns an <xref href="Microsoft.AspNetCore.Identity.IdentityError" data-throw-if-not-resolved="false"></xref> indicating a password of the specified <code class="paramref">length</code> does not meet the minimum length requirements.
+  example: []
+  syntax:
+    content: public override IdentityError PasswordTooShort(int aLength)
+    parameters:
+    - id: aLength
+      type: System.Int32
+    return:
+      type: Microsoft.AspNetCore.Identity.IdentityError
+      description: An <xref href="Microsoft.AspNetCore.Identity.IdentityError" data-throw-if-not-resolved="false"></xref> indicating a password of the specified <code class="paramref">length</code> does not meet the minimum length requirements.
+    content.vb: Public Overrides Function PasswordTooShort(aLength As Integer) As IdentityError
+  overridden: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.PasswordTooShort(System.Int32)
+  overload: UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber.PasswordTooShort*
+  nameWithType.vb: UFDutchIdentityErrorDescriber.PasswordTooShort(Integer)
+  fullName.vb: UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber.PasswordTooShort(Integer)
+  name.vb: PasswordTooShort(Integer)
+- uid: UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber.PasswordMismatch
+  commentId: M:UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber.PasswordMismatch
+  id: PasswordMismatch
+  parent: UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber
+  langs:
+  - csharp
+  - vb
+  name: PasswordMismatch()
+  nameWithType: UFDutchIdentityErrorDescriber.PasswordMismatch()
+  fullName: UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber.PasswordMismatch()
+  type: Method
+  source:
+    id: PasswordMismatch
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\UFDutchIdentityErrorDescriber.cs
+    startLine: 50
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Services
+  summary: Returns an <xref href="Microsoft.AspNetCore.Identity.IdentityError" data-throw-if-not-resolved="false"></xref> indicating a password mismatch.
+  example: []
+  syntax:
+    content: public override IdentityError PasswordMismatch()
+    return:
+      type: Microsoft.AspNetCore.Identity.IdentityError
+      description: An <xref href="Microsoft.AspNetCore.Identity.IdentityError" data-throw-if-not-resolved="false"></xref> indicating a password mismatch.
+    content.vb: Public Overrides Function PasswordMismatch() As IdentityError
+  overridden: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.PasswordMismatch
+  overload: UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber.PasswordMismatch*
+- uid: UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber.PasswordRequiresDigit
+  commentId: M:UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber.PasswordRequiresDigit
+  id: PasswordRequiresDigit
+  parent: UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber
+  langs:
+  - csharp
+  - vb
+  name: PasswordRequiresDigit()
+  nameWithType: UFDutchIdentityErrorDescriber.PasswordRequiresDigit()
+  fullName: UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber.PasswordRequiresDigit()
+  type: Method
+  source:
+    id: PasswordRequiresDigit
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\UFDutchIdentityErrorDescriber.cs
+    startLine: 59
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Services
+  summary: Returns an <xref href="Microsoft.AspNetCore.Identity.IdentityError" data-throw-if-not-resolved="false"></xref> indicating a password entered does not contain a numeric character, which is required by the password policy.
+  example: []
+  syntax:
+    content: public override IdentityError PasswordRequiresDigit()
+    return:
+      type: Microsoft.AspNetCore.Identity.IdentityError
+      description: An <xref href="Microsoft.AspNetCore.Identity.IdentityError" data-throw-if-not-resolved="false"></xref> indicating a password entered does not contain a numeric character.
+    content.vb: Public Overrides Function PasswordRequiresDigit() As IdentityError
+  overridden: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.PasswordRequiresDigit
+  overload: UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber.PasswordRequiresDigit*
+- uid: UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber.PasswordRequiresLower
+  commentId: M:UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber.PasswordRequiresLower
+  id: PasswordRequiresLower
+  parent: UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber
+  langs:
+  - csharp
+  - vb
+  name: PasswordRequiresLower()
+  nameWithType: UFDutchIdentityErrorDescriber.PasswordRequiresLower()
+  fullName: UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber.PasswordRequiresLower()
+  type: Method
+  source:
+    id: PasswordRequiresLower
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\UFDutchIdentityErrorDescriber.cs
+    startLine: 68
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Services
+  summary: Returns an <xref href="Microsoft.AspNetCore.Identity.IdentityError" data-throw-if-not-resolved="false"></xref> indicating a password entered does not contain a lower case letter, which is required by the password policy.
+  example: []
+  syntax:
+    content: public override IdentityError PasswordRequiresLower()
+    return:
+      type: Microsoft.AspNetCore.Identity.IdentityError
+      description: An <xref href="Microsoft.AspNetCore.Identity.IdentityError" data-throw-if-not-resolved="false"></xref> indicating a password entered does not contain a lower case letter.
+    content.vb: Public Overrides Function PasswordRequiresLower() As IdentityError
+  overridden: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.PasswordRequiresLower
+  overload: UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber.PasswordRequiresLower*
+- uid: UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber.PasswordRequiresNonAlphanumeric
+  commentId: M:UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber.PasswordRequiresNonAlphanumeric
+  id: PasswordRequiresNonAlphanumeric
+  parent: UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber
+  langs:
+  - csharp
+  - vb
+  name: PasswordRequiresNonAlphanumeric()
+  nameWithType: UFDutchIdentityErrorDescriber.PasswordRequiresNonAlphanumeric()
+  fullName: UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber.PasswordRequiresNonAlphanumeric()
+  type: Method
+  source:
+    id: PasswordRequiresNonAlphanumeric
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\UFDutchIdentityErrorDescriber.cs
+    startLine: 77
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Services
+  summary: Returns an <xref href="Microsoft.AspNetCore.Identity.IdentityError" data-throw-if-not-resolved="false"></xref> indicating a password entered does not contain a non-alphanumeric character, which is required by the password policy.
+  example: []
+  syntax:
+    content: public override IdentityError PasswordRequiresNonAlphanumeric()
+    return:
+      type: Microsoft.AspNetCore.Identity.IdentityError
+      description: An <xref href="Microsoft.AspNetCore.Identity.IdentityError" data-throw-if-not-resolved="false"></xref> indicating a password entered does not contain a non-alphanumeric character.
+    content.vb: Public Overrides Function PasswordRequiresNonAlphanumeric() As IdentityError
+  overridden: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.PasswordRequiresNonAlphanumeric
+  overload: UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber.PasswordRequiresNonAlphanumeric*
+- uid: UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber.PasswordRequiresUniqueChars(System.Int32)
+  commentId: M:UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber.PasswordRequiresUniqueChars(System.Int32)
+  id: PasswordRequiresUniqueChars(System.Int32)
+  parent: UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber
+  langs:
+  - csharp
+  - vb
+  name: PasswordRequiresUniqueChars(int)
+  nameWithType: UFDutchIdentityErrorDescriber.PasswordRequiresUniqueChars(int)
+  fullName: UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber.PasswordRequiresUniqueChars(int)
+  type: Method
+  source:
+    id: PasswordRequiresUniqueChars
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\UFDutchIdentityErrorDescriber.cs
+    startLine: 86
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Services
+  summary: Returns an <xref href="Microsoft.AspNetCore.Identity.IdentityError" data-throw-if-not-resolved="false"></xref> indicating a password does not meet the minimum number <code class="paramref">uniqueChars</code> of unique chars.
+  example: []
+  syntax:
+    content: public override IdentityError PasswordRequiresUniqueChars(int anUniqueChars)
+    parameters:
+    - id: anUniqueChars
+      type: System.Int32
+    return:
+      type: Microsoft.AspNetCore.Identity.IdentityError
+      description: An <xref href="Microsoft.AspNetCore.Identity.IdentityError" data-throw-if-not-resolved="false"></xref> indicating a password does not meet the minimum number <code class="paramref">uniqueChars</code> of unique chars.
+    content.vb: Public Overrides Function PasswordRequiresUniqueChars(anUniqueChars As Integer) As IdentityError
+  overridden: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.PasswordRequiresUniqueChars(System.Int32)
+  overload: UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber.PasswordRequiresUniqueChars*
+  nameWithType.vb: UFDutchIdentityErrorDescriber.PasswordRequiresUniqueChars(Integer)
+  fullName.vb: UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber.PasswordRequiresUniqueChars(Integer)
+  name.vb: PasswordRequiresUniqueChars(Integer)
+- uid: UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber.PasswordRequiresUpper
+  commentId: M:UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber.PasswordRequiresUpper
+  id: PasswordRequiresUpper
+  parent: UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber
+  langs:
+  - csharp
+  - vb
+  name: PasswordRequiresUpper()
+  nameWithType: UFDutchIdentityErrorDescriber.PasswordRequiresUpper()
+  fullName: UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber.PasswordRequiresUpper()
+  type: Method
+  source:
+    id: PasswordRequiresUpper
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\UFDutchIdentityErrorDescriber.cs
+    startLine: 95
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Services
+  summary: Returns an <xref href="Microsoft.AspNetCore.Identity.IdentityError" data-throw-if-not-resolved="false"></xref> indicating a password entered does not contain an upper case letter, which is required by the password policy.
+  example: []
+  syntax:
+    content: public override IdentityError PasswordRequiresUpper()
+    return:
+      type: Microsoft.AspNetCore.Identity.IdentityError
+      description: An <xref href="Microsoft.AspNetCore.Identity.IdentityError" data-throw-if-not-resolved="false"></xref> indicating a password entered does not contain an upper case letter.
+    content.vb: Public Overrides Function PasswordRequiresUpper() As IdentityError
+  overridden: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.PasswordRequiresUpper
+  overload: UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber.PasswordRequiresUpper*
+- uid: UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber.DuplicateEmail(System.String)
+  commentId: M:UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber.DuplicateEmail(System.String)
+  id: DuplicateEmail(System.String)
+  parent: UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber
+  langs:
+  - csharp
+  - vb
+  name: DuplicateEmail(string)
+  nameWithType: UFDutchIdentityErrorDescriber.DuplicateEmail(string)
+  fullName: UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber.DuplicateEmail(string)
+  type: Method
+  source:
+    id: DuplicateEmail
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\UFDutchIdentityErrorDescriber.cs
+    startLine: 104
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Services
+  summary: Returns an <xref href="Microsoft.AspNetCore.Identity.IdentityError" data-throw-if-not-resolved="false"></xref> indicating the specified <code class="paramref">email</code> is already associated with an account.
+  example: []
+  syntax:
+    content: public override IdentityError DuplicateEmail(string email)
+    parameters:
+    - id: email
+      type: System.String
+      description: The email that is already associated with an account.
+    return:
+      type: Microsoft.AspNetCore.Identity.IdentityError
+      description: An <xref href="Microsoft.AspNetCore.Identity.IdentityError" data-throw-if-not-resolved="false"></xref> indicating the specified <code class="paramref">email</code> is already associated with an account.
+    content.vb: Public Overrides Function DuplicateEmail(email As String) As IdentityError
+  overridden: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.DuplicateEmail(System.String)
+  overload: UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber.DuplicateEmail*
+  nameWithType.vb: UFDutchIdentityErrorDescriber.DuplicateEmail(String)
+  fullName.vb: UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber.DuplicateEmail(String)
+  name.vb: DuplicateEmail(String)
+references:
+- uid: UltraForce.Library.Core.Asp.Services
+  commentId: N:UltraForce.Library.Core.Asp.Services
+  href: UltraForce.html
+  name: UltraForce.Library.Core.Asp.Services
+  nameWithType: UltraForce.Library.Core.Asp.Services
+  fullName: UltraForce.Library.Core.Asp.Services
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Services
+    name: Services
+    href: UltraForce.Library.Core.Asp.Services.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Services
+    name: Services
+    href: UltraForce.Library.Core.Asp.Services.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Microsoft.AspNetCore.Identity.IdentityErrorDescriber
+  commentId: T:Microsoft.AspNetCore.Identity.IdentityErrorDescriber
+  parent: Microsoft.AspNetCore.Identity
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.identityerrordescriber
+  name: IdentityErrorDescriber
+  nameWithType: IdentityErrorDescriber
+  fullName: Microsoft.AspNetCore.Identity.IdentityErrorDescriber
+- uid: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.DefaultError
+  commentId: M:Microsoft.AspNetCore.Identity.IdentityErrorDescriber.DefaultError
+  parent: Microsoft.AspNetCore.Identity.IdentityErrorDescriber
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.identityerrordescriber.defaulterror
+  name: DefaultError()
+  nameWithType: IdentityErrorDescriber.DefaultError()
+  fullName: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.DefaultError()
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.DefaultError
+    name: DefaultError
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.identityerrordescriber.defaulterror
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.DefaultError
+    name: DefaultError
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.identityerrordescriber.defaulterror
+  - name: (
+  - name: )
+- uid: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.ConcurrencyFailure
+  commentId: M:Microsoft.AspNetCore.Identity.IdentityErrorDescriber.ConcurrencyFailure
+  parent: Microsoft.AspNetCore.Identity.IdentityErrorDescriber
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.identityerrordescriber.concurrencyfailure
+  name: ConcurrencyFailure()
+  nameWithType: IdentityErrorDescriber.ConcurrencyFailure()
+  fullName: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.ConcurrencyFailure()
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.ConcurrencyFailure
+    name: ConcurrencyFailure
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.identityerrordescriber.concurrencyfailure
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.ConcurrencyFailure
+    name: ConcurrencyFailure
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.identityerrordescriber.concurrencyfailure
+  - name: (
+  - name: )
+- uid: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.InvalidToken
+  commentId: M:Microsoft.AspNetCore.Identity.IdentityErrorDescriber.InvalidToken
+  parent: Microsoft.AspNetCore.Identity.IdentityErrorDescriber
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.identityerrordescriber.invalidtoken
+  name: InvalidToken()
+  nameWithType: IdentityErrorDescriber.InvalidToken()
+  fullName: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.InvalidToken()
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.InvalidToken
+    name: InvalidToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.identityerrordescriber.invalidtoken
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.InvalidToken
+    name: InvalidToken
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.identityerrordescriber.invalidtoken
+  - name: (
+  - name: )
+- uid: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.RecoveryCodeRedemptionFailed
+  commentId: M:Microsoft.AspNetCore.Identity.IdentityErrorDescriber.RecoveryCodeRedemptionFailed
+  parent: Microsoft.AspNetCore.Identity.IdentityErrorDescriber
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.identityerrordescriber.recoverycoderedemptionfailed
+  name: RecoveryCodeRedemptionFailed()
+  nameWithType: IdentityErrorDescriber.RecoveryCodeRedemptionFailed()
+  fullName: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.RecoveryCodeRedemptionFailed()
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.RecoveryCodeRedemptionFailed
+    name: RecoveryCodeRedemptionFailed
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.identityerrordescriber.recoverycoderedemptionfailed
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.RecoveryCodeRedemptionFailed
+    name: RecoveryCodeRedemptionFailed
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.identityerrordescriber.recoverycoderedemptionfailed
+  - name: (
+  - name: )
+- uid: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.LoginAlreadyAssociated
+  commentId: M:Microsoft.AspNetCore.Identity.IdentityErrorDescriber.LoginAlreadyAssociated
+  parent: Microsoft.AspNetCore.Identity.IdentityErrorDescriber
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.identityerrordescriber.loginalreadyassociated
+  name: LoginAlreadyAssociated()
+  nameWithType: IdentityErrorDescriber.LoginAlreadyAssociated()
+  fullName: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.LoginAlreadyAssociated()
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.LoginAlreadyAssociated
+    name: LoginAlreadyAssociated
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.identityerrordescriber.loginalreadyassociated
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.LoginAlreadyAssociated
+    name: LoginAlreadyAssociated
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.identityerrordescriber.loginalreadyassociated
+  - name: (
+  - name: )
+- uid: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.InvalidUserName(System.String)
+  commentId: M:Microsoft.AspNetCore.Identity.IdentityErrorDescriber.InvalidUserName(System.String)
+  parent: Microsoft.AspNetCore.Identity.IdentityErrorDescriber
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.identityerrordescriber.invalidusername
+  name: InvalidUserName(string)
+  nameWithType: IdentityErrorDescriber.InvalidUserName(string)
+  fullName: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.InvalidUserName(string)
+  nameWithType.vb: IdentityErrorDescriber.InvalidUserName(String)
+  fullName.vb: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.InvalidUserName(String)
+  name.vb: InvalidUserName(String)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.InvalidUserName(System.String)
+    name: InvalidUserName
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.identityerrordescriber.invalidusername
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.InvalidUserName(System.String)
+    name: InvalidUserName
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.identityerrordescriber.invalidusername
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.InvalidEmail(System.String)
+  commentId: M:Microsoft.AspNetCore.Identity.IdentityErrorDescriber.InvalidEmail(System.String)
+  parent: Microsoft.AspNetCore.Identity.IdentityErrorDescriber
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.identityerrordescriber.invalidemail
+  name: InvalidEmail(string)
+  nameWithType: IdentityErrorDescriber.InvalidEmail(string)
+  fullName: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.InvalidEmail(string)
+  nameWithType.vb: IdentityErrorDescriber.InvalidEmail(String)
+  fullName.vb: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.InvalidEmail(String)
+  name.vb: InvalidEmail(String)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.InvalidEmail(System.String)
+    name: InvalidEmail
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.identityerrordescriber.invalidemail
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.InvalidEmail(System.String)
+    name: InvalidEmail
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.identityerrordescriber.invalidemail
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.DuplicateUserName(System.String)
+  commentId: M:Microsoft.AspNetCore.Identity.IdentityErrorDescriber.DuplicateUserName(System.String)
+  parent: Microsoft.AspNetCore.Identity.IdentityErrorDescriber
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.identityerrordescriber.duplicateusername
+  name: DuplicateUserName(string)
+  nameWithType: IdentityErrorDescriber.DuplicateUserName(string)
+  fullName: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.DuplicateUserName(string)
+  nameWithType.vb: IdentityErrorDescriber.DuplicateUserName(String)
+  fullName.vb: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.DuplicateUserName(String)
+  name.vb: DuplicateUserName(String)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.DuplicateUserName(System.String)
+    name: DuplicateUserName
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.identityerrordescriber.duplicateusername
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.DuplicateUserName(System.String)
+    name: DuplicateUserName
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.identityerrordescriber.duplicateusername
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.InvalidRoleName(System.String)
+  commentId: M:Microsoft.AspNetCore.Identity.IdentityErrorDescriber.InvalidRoleName(System.String)
+  parent: Microsoft.AspNetCore.Identity.IdentityErrorDescriber
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.identityerrordescriber.invalidrolename
+  name: InvalidRoleName(string)
+  nameWithType: IdentityErrorDescriber.InvalidRoleName(string)
+  fullName: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.InvalidRoleName(string)
+  nameWithType.vb: IdentityErrorDescriber.InvalidRoleName(String)
+  fullName.vb: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.InvalidRoleName(String)
+  name.vb: InvalidRoleName(String)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.InvalidRoleName(System.String)
+    name: InvalidRoleName
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.identityerrordescriber.invalidrolename
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.InvalidRoleName(System.String)
+    name: InvalidRoleName
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.identityerrordescriber.invalidrolename
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.DuplicateRoleName(System.String)
+  commentId: M:Microsoft.AspNetCore.Identity.IdentityErrorDescriber.DuplicateRoleName(System.String)
+  parent: Microsoft.AspNetCore.Identity.IdentityErrorDescriber
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.identityerrordescriber.duplicaterolename
+  name: DuplicateRoleName(string)
+  nameWithType: IdentityErrorDescriber.DuplicateRoleName(string)
+  fullName: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.DuplicateRoleName(string)
+  nameWithType.vb: IdentityErrorDescriber.DuplicateRoleName(String)
+  fullName.vb: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.DuplicateRoleName(String)
+  name.vb: DuplicateRoleName(String)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.DuplicateRoleName(System.String)
+    name: DuplicateRoleName
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.identityerrordescriber.duplicaterolename
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.DuplicateRoleName(System.String)
+    name: DuplicateRoleName
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.identityerrordescriber.duplicaterolename
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.UserAlreadyHasPassword
+  commentId: M:Microsoft.AspNetCore.Identity.IdentityErrorDescriber.UserAlreadyHasPassword
+  parent: Microsoft.AspNetCore.Identity.IdentityErrorDescriber
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.identityerrordescriber.useralreadyhaspassword
+  name: UserAlreadyHasPassword()
+  nameWithType: IdentityErrorDescriber.UserAlreadyHasPassword()
+  fullName: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.UserAlreadyHasPassword()
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.UserAlreadyHasPassword
+    name: UserAlreadyHasPassword
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.identityerrordescriber.useralreadyhaspassword
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.UserAlreadyHasPassword
+    name: UserAlreadyHasPassword
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.identityerrordescriber.useralreadyhaspassword
+  - name: (
+  - name: )
+- uid: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.UserLockoutNotEnabled
+  commentId: M:Microsoft.AspNetCore.Identity.IdentityErrorDescriber.UserLockoutNotEnabled
+  parent: Microsoft.AspNetCore.Identity.IdentityErrorDescriber
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.identityerrordescriber.userlockoutnotenabled
+  name: UserLockoutNotEnabled()
+  nameWithType: IdentityErrorDescriber.UserLockoutNotEnabled()
+  fullName: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.UserLockoutNotEnabled()
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.UserLockoutNotEnabled
+    name: UserLockoutNotEnabled
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.identityerrordescriber.userlockoutnotenabled
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.UserLockoutNotEnabled
+    name: UserLockoutNotEnabled
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.identityerrordescriber.userlockoutnotenabled
+  - name: (
+  - name: )
+- uid: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.UserAlreadyInRole(System.String)
+  commentId: M:Microsoft.AspNetCore.Identity.IdentityErrorDescriber.UserAlreadyInRole(System.String)
+  parent: Microsoft.AspNetCore.Identity.IdentityErrorDescriber
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.identityerrordescriber.useralreadyinrole
+  name: UserAlreadyInRole(string)
+  nameWithType: IdentityErrorDescriber.UserAlreadyInRole(string)
+  fullName: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.UserAlreadyInRole(string)
+  nameWithType.vb: IdentityErrorDescriber.UserAlreadyInRole(String)
+  fullName.vb: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.UserAlreadyInRole(String)
+  name.vb: UserAlreadyInRole(String)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.UserAlreadyInRole(System.String)
+    name: UserAlreadyInRole
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.identityerrordescriber.useralreadyinrole
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.UserAlreadyInRole(System.String)
+    name: UserAlreadyInRole
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.identityerrordescriber.useralreadyinrole
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.UserNotInRole(System.String)
+  commentId: M:Microsoft.AspNetCore.Identity.IdentityErrorDescriber.UserNotInRole(System.String)
+  parent: Microsoft.AspNetCore.Identity.IdentityErrorDescriber
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.identityerrordescriber.usernotinrole
+  name: UserNotInRole(string)
+  nameWithType: IdentityErrorDescriber.UserNotInRole(string)
+  fullName: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.UserNotInRole(string)
+  nameWithType.vb: IdentityErrorDescriber.UserNotInRole(String)
+  fullName.vb: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.UserNotInRole(String)
+  name.vb: UserNotInRole(String)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.UserNotInRole(System.String)
+    name: UserNotInRole
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.identityerrordescriber.usernotinrole
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.UserNotInRole(System.String)
+    name: UserNotInRole
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.identityerrordescriber.usernotinrole
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.AspNetCore.Identity
+  commentId: N:Microsoft.AspNetCore.Identity
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.AspNetCore.Identity
+  nameWithType: Microsoft.AspNetCore.Identity
+  fullName: Microsoft.AspNetCore.Identity
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Identity
+    name: Identity
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Identity
+    name: Identity
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity
+- uid: Microsoft.AspNetCore.Identity.IdentityError
+  commentId: T:Microsoft.AspNetCore.Identity.IdentityError
+  parent: Microsoft.AspNetCore.Identity
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.identityerror
+  name: IdentityError
+  nameWithType: IdentityError
+  fullName: Microsoft.AspNetCore.Identity.IdentityError
+- uid: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.PasswordTooShort(System.Int32)
+  commentId: M:Microsoft.AspNetCore.Identity.IdentityErrorDescriber.PasswordTooShort(System.Int32)
+  parent: Microsoft.AspNetCore.Identity.IdentityErrorDescriber
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.identityerrordescriber.passwordtooshort
+  name: PasswordTooShort(int)
+  nameWithType: IdentityErrorDescriber.PasswordTooShort(int)
+  fullName: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.PasswordTooShort(int)
+  nameWithType.vb: IdentityErrorDescriber.PasswordTooShort(Integer)
+  fullName.vb: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.PasswordTooShort(Integer)
+  name.vb: PasswordTooShort(Integer)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.PasswordTooShort(System.Int32)
+    name: PasswordTooShort
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.identityerrordescriber.passwordtooshort
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.PasswordTooShort(System.Int32)
+    name: PasswordTooShort
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.identityerrordescriber.passwordtooshort
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber.PasswordTooShort*
+  commentId: Overload:UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber.PasswordTooShort
+  href: UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber.html#UltraForce_Library_Core_Asp_Services_UFDutchIdentityErrorDescriber_PasswordTooShort_System_Int32_
+  name: PasswordTooShort
+  nameWithType: UFDutchIdentityErrorDescriber.PasswordTooShort
+  fullName: UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber.PasswordTooShort
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.PasswordMismatch
+  commentId: M:Microsoft.AspNetCore.Identity.IdentityErrorDescriber.PasswordMismatch
+  parent: Microsoft.AspNetCore.Identity.IdentityErrorDescriber
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.identityerrordescriber.passwordmismatch
+  name: PasswordMismatch()
+  nameWithType: IdentityErrorDescriber.PasswordMismatch()
+  fullName: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.PasswordMismatch()
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.PasswordMismatch
+    name: PasswordMismatch
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.identityerrordescriber.passwordmismatch
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.PasswordMismatch
+    name: PasswordMismatch
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.identityerrordescriber.passwordmismatch
+  - name: (
+  - name: )
+- uid: UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber.PasswordMismatch*
+  commentId: Overload:UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber.PasswordMismatch
+  href: UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber.html#UltraForce_Library_Core_Asp_Services_UFDutchIdentityErrorDescriber_PasswordMismatch
+  name: PasswordMismatch
+  nameWithType: UFDutchIdentityErrorDescriber.PasswordMismatch
+  fullName: UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber.PasswordMismatch
+- uid: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.PasswordRequiresDigit
+  commentId: M:Microsoft.AspNetCore.Identity.IdentityErrorDescriber.PasswordRequiresDigit
+  parent: Microsoft.AspNetCore.Identity.IdentityErrorDescriber
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.identityerrordescriber.passwordrequiresdigit
+  name: PasswordRequiresDigit()
+  nameWithType: IdentityErrorDescriber.PasswordRequiresDigit()
+  fullName: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.PasswordRequiresDigit()
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.PasswordRequiresDigit
+    name: PasswordRequiresDigit
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.identityerrordescriber.passwordrequiresdigit
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.PasswordRequiresDigit
+    name: PasswordRequiresDigit
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.identityerrordescriber.passwordrequiresdigit
+  - name: (
+  - name: )
+- uid: UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber.PasswordRequiresDigit*
+  commentId: Overload:UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber.PasswordRequiresDigit
+  href: UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber.html#UltraForce_Library_Core_Asp_Services_UFDutchIdentityErrorDescriber_PasswordRequiresDigit
+  name: PasswordRequiresDigit
+  nameWithType: UFDutchIdentityErrorDescriber.PasswordRequiresDigit
+  fullName: UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber.PasswordRequiresDigit
+- uid: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.PasswordRequiresLower
+  commentId: M:Microsoft.AspNetCore.Identity.IdentityErrorDescriber.PasswordRequiresLower
+  parent: Microsoft.AspNetCore.Identity.IdentityErrorDescriber
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.identityerrordescriber.passwordrequireslower
+  name: PasswordRequiresLower()
+  nameWithType: IdentityErrorDescriber.PasswordRequiresLower()
+  fullName: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.PasswordRequiresLower()
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.PasswordRequiresLower
+    name: PasswordRequiresLower
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.identityerrordescriber.passwordrequireslower
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.PasswordRequiresLower
+    name: PasswordRequiresLower
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.identityerrordescriber.passwordrequireslower
+  - name: (
+  - name: )
+- uid: UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber.PasswordRequiresLower*
+  commentId: Overload:UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber.PasswordRequiresLower
+  href: UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber.html#UltraForce_Library_Core_Asp_Services_UFDutchIdentityErrorDescriber_PasswordRequiresLower
+  name: PasswordRequiresLower
+  nameWithType: UFDutchIdentityErrorDescriber.PasswordRequiresLower
+  fullName: UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber.PasswordRequiresLower
+- uid: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.PasswordRequiresNonAlphanumeric
+  commentId: M:Microsoft.AspNetCore.Identity.IdentityErrorDescriber.PasswordRequiresNonAlphanumeric
+  parent: Microsoft.AspNetCore.Identity.IdentityErrorDescriber
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.identityerrordescriber.passwordrequiresnonalphanumeric
+  name: PasswordRequiresNonAlphanumeric()
+  nameWithType: IdentityErrorDescriber.PasswordRequiresNonAlphanumeric()
+  fullName: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.PasswordRequiresNonAlphanumeric()
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.PasswordRequiresNonAlphanumeric
+    name: PasswordRequiresNonAlphanumeric
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.identityerrordescriber.passwordrequiresnonalphanumeric
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.PasswordRequiresNonAlphanumeric
+    name: PasswordRequiresNonAlphanumeric
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.identityerrordescriber.passwordrequiresnonalphanumeric
+  - name: (
+  - name: )
+- uid: UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber.PasswordRequiresNonAlphanumeric*
+  commentId: Overload:UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber.PasswordRequiresNonAlphanumeric
+  href: UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber.html#UltraForce_Library_Core_Asp_Services_UFDutchIdentityErrorDescriber_PasswordRequiresNonAlphanumeric
+  name: PasswordRequiresNonAlphanumeric
+  nameWithType: UFDutchIdentityErrorDescriber.PasswordRequiresNonAlphanumeric
+  fullName: UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber.PasswordRequiresNonAlphanumeric
+- uid: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.PasswordRequiresUniqueChars(System.Int32)
+  commentId: M:Microsoft.AspNetCore.Identity.IdentityErrorDescriber.PasswordRequiresUniqueChars(System.Int32)
+  parent: Microsoft.AspNetCore.Identity.IdentityErrorDescriber
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.identityerrordescriber.passwordrequiresuniquechars
+  name: PasswordRequiresUniqueChars(int)
+  nameWithType: IdentityErrorDescriber.PasswordRequiresUniqueChars(int)
+  fullName: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.PasswordRequiresUniqueChars(int)
+  nameWithType.vb: IdentityErrorDescriber.PasswordRequiresUniqueChars(Integer)
+  fullName.vb: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.PasswordRequiresUniqueChars(Integer)
+  name.vb: PasswordRequiresUniqueChars(Integer)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.PasswordRequiresUniqueChars(System.Int32)
+    name: PasswordRequiresUniqueChars
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.identityerrordescriber.passwordrequiresuniquechars
+  - name: (
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.PasswordRequiresUniqueChars(System.Int32)
+    name: PasswordRequiresUniqueChars
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.identityerrordescriber.passwordrequiresuniquechars
+  - name: (
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber.PasswordRequiresUniqueChars*
+  commentId: Overload:UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber.PasswordRequiresUniqueChars
+  href: UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber.html#UltraForce_Library_Core_Asp_Services_UFDutchIdentityErrorDescriber_PasswordRequiresUniqueChars_System_Int32_
+  name: PasswordRequiresUniqueChars
+  nameWithType: UFDutchIdentityErrorDescriber.PasswordRequiresUniqueChars
+  fullName: UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber.PasswordRequiresUniqueChars
+- uid: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.PasswordRequiresUpper
+  commentId: M:Microsoft.AspNetCore.Identity.IdentityErrorDescriber.PasswordRequiresUpper
+  parent: Microsoft.AspNetCore.Identity.IdentityErrorDescriber
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.identityerrordescriber.passwordrequiresupper
+  name: PasswordRequiresUpper()
+  nameWithType: IdentityErrorDescriber.PasswordRequiresUpper()
+  fullName: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.PasswordRequiresUpper()
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.PasswordRequiresUpper
+    name: PasswordRequiresUpper
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.identityerrordescriber.passwordrequiresupper
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.PasswordRequiresUpper
+    name: PasswordRequiresUpper
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.identityerrordescriber.passwordrequiresupper
+  - name: (
+  - name: )
+- uid: UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber.PasswordRequiresUpper*
+  commentId: Overload:UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber.PasswordRequiresUpper
+  href: UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber.html#UltraForce_Library_Core_Asp_Services_UFDutchIdentityErrorDescriber_PasswordRequiresUpper
+  name: PasswordRequiresUpper
+  nameWithType: UFDutchIdentityErrorDescriber.PasswordRequiresUpper
+  fullName: UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber.PasswordRequiresUpper
+- uid: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.DuplicateEmail(System.String)
+  commentId: M:Microsoft.AspNetCore.Identity.IdentityErrorDescriber.DuplicateEmail(System.String)
+  parent: Microsoft.AspNetCore.Identity.IdentityErrorDescriber
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.identityerrordescriber.duplicateemail
+  name: DuplicateEmail(string)
+  nameWithType: IdentityErrorDescriber.DuplicateEmail(string)
+  fullName: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.DuplicateEmail(string)
+  nameWithType.vb: IdentityErrorDescriber.DuplicateEmail(String)
+  fullName.vb: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.DuplicateEmail(String)
+  name.vb: DuplicateEmail(String)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.DuplicateEmail(System.String)
+    name: DuplicateEmail
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.identityerrordescriber.duplicateemail
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.DuplicateEmail(System.String)
+    name: DuplicateEmail
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.identity.identityerrordescriber.duplicateemail
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber.DuplicateEmail*
+  commentId: Overload:UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber.DuplicateEmail
+  href: UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber.html#UltraForce_Library_Core_Asp_Services_UFDutchIdentityErrorDescriber_DuplicateEmail_System_String_
+  name: DuplicateEmail
+  nameWithType: UFDutchIdentityErrorDescriber.DuplicateEmail
+  fullName: UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber.DuplicateEmail
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

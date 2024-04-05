@@ -1,0 +1,549 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.Core.Asp.ViewModels.UFEditViewModel`1
+  commentId: T:UltraForce.Library.Core.Asp.ViewModels.UFEditViewModel`1
+  id: UFEditViewModel`1
+  parent: UltraForce.Library.Core.Asp.ViewModels
+  children:
+  - UltraForce.Library.Core.Asp.ViewModels.UFEditViewModel`1.#ctor
+  - UltraForce.Library.Core.Asp.ViewModels.UFEditViewModel`1.#ctor(`0)
+  - UltraForce.Library.Core.Asp.ViewModels.UFEditViewModel`1.NewValue
+  - UltraForce.Library.Core.Asp.ViewModels.UFEditViewModel`1.Patch(`0)
+  - UltraForce.Library.Core.Asp.ViewModels.UFEditViewModel`1.Value
+  langs:
+  - csharp
+  - vb
+  name: UFEditViewModel<T>
+  nameWithType: UFEditViewModel<T>
+  fullName: UltraForce.Library.Core.Asp.ViewModels.UFEditViewModel<T>
+  type: Class
+  source:
+    id: UFEditViewModel
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\ViewModels\UFEditViewModel.cs
+    startLine: 37
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.ViewModels
+  summary: A base class for edit forms.
+  example: []
+  syntax:
+    content: 'public abstract class UFEditViewModel<T> where T : class, new()'
+    typeParameters:
+    - id: T
+      description: Type being edited, should be a class and  support a constructor without parameters.
+    content.vb: Public MustInherit Class UFEditViewModel(Of T As {Class, New})
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  nameWithType.vb: UFEditViewModel(Of T)
+  fullName.vb: UltraForce.Library.Core.Asp.ViewModels.UFEditViewModel(Of T)
+  name.vb: UFEditViewModel(Of T)
+- uid: UltraForce.Library.Core.Asp.ViewModels.UFEditViewModel`1.#ctor
+  commentId: M:UltraForce.Library.Core.Asp.ViewModels.UFEditViewModel`1.#ctor
+  id: '#ctor'
+  parent: UltraForce.Library.Core.Asp.ViewModels.UFEditViewModel`1
+  langs:
+  - csharp
+  - vb
+  name: UFEditViewModel()
+  nameWithType: UFEditViewModel<T>.UFEditViewModel()
+  fullName: UltraForce.Library.Core.Asp.ViewModels.UFEditViewModel<T>.UFEditViewModel()
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\ViewModels\UFEditViewModel.cs
+    startLine: 44
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.ViewModels
+  summary: Constructs an instance with a new value.
+  example: []
+  syntax:
+    content: protected UFEditViewModel()
+    content.vb: Protected Sub New()
+  overload: UltraForce.Library.Core.Asp.ViewModels.UFEditViewModel`1.#ctor*
+  nameWithType.vb: UFEditViewModel(Of T).New()
+  fullName.vb: UltraForce.Library.Core.Asp.ViewModels.UFEditViewModel(Of T).New()
+  name.vb: New()
+- uid: UltraForce.Library.Core.Asp.ViewModels.UFEditViewModel`1.#ctor(`0)
+  commentId: M:UltraForce.Library.Core.Asp.ViewModels.UFEditViewModel`1.#ctor(`0)
+  id: '#ctor(`0)'
+  parent: UltraForce.Library.Core.Asp.ViewModels.UFEditViewModel`1
+  langs:
+  - csharp
+  - vb
+  name: UFEditViewModel(T)
+  nameWithType: UFEditViewModel<T>.UFEditViewModel(T)
+  fullName: UltraForce.Library.Core.Asp.ViewModels.UFEditViewModel<T>.UFEditViewModel(T)
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\ViewModels\UFEditViewModel.cs
+    startLine: 54
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.ViewModels
+  summary: Constructs an instance with an existing value.
+  example: []
+  syntax:
+    content: protected UFEditViewModel(T aValue)
+    parameters:
+    - id: aValue
+      type: '{T}'
+      description: ''
+    content.vb: Protected Sub New(aValue As T)
+  overload: UltraForce.Library.Core.Asp.ViewModels.UFEditViewModel`1.#ctor*
+  nameWithType.vb: UFEditViewModel(Of T).New(T)
+  fullName.vb: UltraForce.Library.Core.Asp.ViewModels.UFEditViewModel(Of T).New(T)
+  name.vb: New(T)
+- uid: UltraForce.Library.Core.Asp.ViewModels.UFEditViewModel`1.Value
+  commentId: P:UltraForce.Library.Core.Asp.ViewModels.UFEditViewModel`1.Value
+  id: Value
+  parent: UltraForce.Library.Core.Asp.ViewModels.UFEditViewModel`1
+  langs:
+  - csharp
+  - vb
+  name: Value
+  nameWithType: UFEditViewModel<T>.Value
+  fullName: UltraForce.Library.Core.Asp.ViewModels.UFEditViewModel<T>.Value
+  type: Property
+  source:
+    id: Value
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\ViewModels\UFEditViewModel.cs
+    startLine: 67
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.ViewModels
+  summary: Value being edited
+  example: []
+  syntax:
+    content: public T Value { get; }
+    parameters: []
+    return:
+      type: '{T}'
+    content.vb: Public ReadOnly Property Value As T
+  overload: UltraForce.Library.Core.Asp.ViewModels.UFEditViewModel`1.Value*
+  nameWithType.vb: UFEditViewModel(Of T).Value
+  fullName.vb: UltraForce.Library.Core.Asp.ViewModels.UFEditViewModel(Of T).Value
+- uid: UltraForce.Library.Core.Asp.ViewModels.UFEditViewModel`1.NewValue
+  commentId: P:UltraForce.Library.Core.Asp.ViewModels.UFEditViewModel`1.NewValue
+  id: NewValue
+  parent: UltraForce.Library.Core.Asp.ViewModels.UFEditViewModel`1
+  langs:
+  - csharp
+  - vb
+  name: NewValue
+  nameWithType: UFEditViewModel<T>.NewValue
+  fullName: UltraForce.Library.Core.Asp.ViewModels.UFEditViewModel<T>.NewValue
+  type: Property
+  source:
+    id: NewValue
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\ViewModels\UFEditViewModel.cs
+    startLine: 72
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.ViewModels
+  summary: True when editing a new value or false when editing an existing value
+  example: []
+  syntax:
+    content: public bool NewValue { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property NewValue As Boolean
+  overload: UltraForce.Library.Core.Asp.ViewModels.UFEditViewModel`1.NewValue*
+  nameWithType.vb: UFEditViewModel(Of T).NewValue
+  fullName.vb: UltraForce.Library.Core.Asp.ViewModels.UFEditViewModel(Of T).NewValue
+- uid: UltraForce.Library.Core.Asp.ViewModels.UFEditViewModel`1.Patch(`0)
+  commentId: M:UltraForce.Library.Core.Asp.ViewModels.UFEditViewModel`1.Patch(`0)
+  id: Patch(`0)
+  parent: UltraForce.Library.Core.Asp.ViewModels.UFEditViewModel`1
+  langs:
+  - csharp
+  - vb
+  name: Patch(T)
+  nameWithType: UFEditViewModel<T>.Patch(T)
+  fullName: UltraForce.Library.Core.Asp.ViewModels.UFEditViewModel<T>.Patch(T)
+  type: Method
+  source:
+    id: Patch
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\ViewModels\UFEditViewModel.cs
+    startLine: 86
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.ViewModels
+  summary: >-
+    Patches an existing value with data stored in <xref href="UltraForce.Library.Core.Asp.ViewModels.UFEditViewModel%601.Value" data-throw-if-not-resolved="false"></xref>.
+
+    <p>
+
+    Subclasses must implement this method.
+
+    </p>
+  example: []
+  syntax:
+    content: public abstract T Patch(T aValue)
+    parameters:
+    - id: aValue
+      type: '{T}'
+      description: Value to patch
+    return:
+      type: '{T}'
+      description: Value of <code>aValue</code>, so call can be chained if needed
+    content.vb: Public MustOverride Function Patch(aValue As T) As T
+  overload: UltraForce.Library.Core.Asp.ViewModels.UFEditViewModel`1.Patch*
+  nameWithType.vb: UFEditViewModel(Of T).Patch(T)
+  fullName.vb: UltraForce.Library.Core.Asp.ViewModels.UFEditViewModel(Of T).Patch(T)
+references:
+- uid: UltraForce.Library.Core.Asp.ViewModels
+  commentId: N:UltraForce.Library.Core.Asp.ViewModels
+  href: UltraForce.html
+  name: UltraForce.Library.Core.Asp.ViewModels
+  nameWithType: UltraForce.Library.Core.Asp.ViewModels
+  fullName: UltraForce.Library.Core.Asp.ViewModels
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.ViewModels
+    name: ViewModels
+    href: UltraForce.Library.Core.Asp.ViewModels.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.ViewModels
+    name: ViewModels
+    href: UltraForce.Library.Core.Asp.ViewModels.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UltraForce.Library.Core.Asp.ViewModels.UFEditViewModel`1.#ctor*
+  commentId: Overload:UltraForce.Library.Core.Asp.ViewModels.UFEditViewModel`1.#ctor
+  href: UltraForce.Library.Core.Asp.ViewModels.UFEditViewModel-1.html#UltraForce_Library_Core_Asp_ViewModels_UFEditViewModel_1__ctor
+  name: UFEditViewModel
+  nameWithType: UFEditViewModel<T>.UFEditViewModel
+  fullName: UltraForce.Library.Core.Asp.ViewModels.UFEditViewModel<T>.UFEditViewModel
+  nameWithType.vb: UFEditViewModel(Of T).New
+  fullName.vb: UltraForce.Library.Core.Asp.ViewModels.UFEditViewModel(Of T).New
+  name.vb: New
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: UltraForce.Library.Core.Asp.ViewModels.UFEditViewModel`1.Value*
+  commentId: Overload:UltraForce.Library.Core.Asp.ViewModels.UFEditViewModel`1.Value
+  href: UltraForce.Library.Core.Asp.ViewModels.UFEditViewModel-1.html#UltraForce_Library_Core_Asp_ViewModels_UFEditViewModel_1_Value
+  name: Value
+  nameWithType: UFEditViewModel<T>.Value
+  fullName: UltraForce.Library.Core.Asp.ViewModels.UFEditViewModel<T>.Value
+  nameWithType.vb: UFEditViewModel(Of T).Value
+  fullName.vb: UltraForce.Library.Core.Asp.ViewModels.UFEditViewModel(Of T).Value
+- uid: UltraForce.Library.Core.Asp.ViewModels.UFEditViewModel`1.NewValue*
+  commentId: Overload:UltraForce.Library.Core.Asp.ViewModels.UFEditViewModel`1.NewValue
+  href: UltraForce.Library.Core.Asp.ViewModels.UFEditViewModel-1.html#UltraForce_Library_Core_Asp_ViewModels_UFEditViewModel_1_NewValue
+  name: NewValue
+  nameWithType: UFEditViewModel<T>.NewValue
+  fullName: UltraForce.Library.Core.Asp.ViewModels.UFEditViewModel<T>.NewValue
+  nameWithType.vb: UFEditViewModel(Of T).NewValue
+  fullName.vb: UltraForce.Library.Core.Asp.ViewModels.UFEditViewModel(Of T).NewValue
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: UltraForce.Library.Core.Asp.ViewModels.UFEditViewModel`1.Value
+  commentId: P:UltraForce.Library.Core.Asp.ViewModels.UFEditViewModel`1.Value
+  href: UltraForce.Library.Core.Asp.ViewModels.UFEditViewModel-1.html#UltraForce_Library_Core_Asp_ViewModels_UFEditViewModel_1_Value
+  name: Value
+  nameWithType: UFEditViewModel<T>.Value
+  fullName: UltraForce.Library.Core.Asp.ViewModels.UFEditViewModel<T>.Value
+  nameWithType.vb: UFEditViewModel(Of T).Value
+  fullName.vb: UltraForce.Library.Core.Asp.ViewModels.UFEditViewModel(Of T).Value
+- uid: UltraForce.Library.Core.Asp.ViewModels.UFEditViewModel`1.Patch*
+  commentId: Overload:UltraForce.Library.Core.Asp.ViewModels.UFEditViewModel`1.Patch
+  href: UltraForce.Library.Core.Asp.ViewModels.UFEditViewModel-1.html#UltraForce_Library_Core_Asp_ViewModels_UFEditViewModel_1_Patch__0_
+  name: Patch
+  nameWithType: UFEditViewModel<T>.Patch
+  fullName: UltraForce.Library.Core.Asp.ViewModels.UFEditViewModel<T>.Patch
+  nameWithType.vb: UFEditViewModel(Of T).Patch
+  fullName.vb: UltraForce.Library.Core.Asp.ViewModels.UFEditViewModel(Of T).Patch

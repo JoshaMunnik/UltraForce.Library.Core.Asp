@@ -1,0 +1,163 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFButtonVariant
+  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFButtonVariant
+  id: UFButtonVariant
+  parent: UltraForce.Library.Core.Asp.Types.Enums
+  children:
+  - UltraForce.Library.Core.Asp.Types.Enums.UFButtonVariant.Link
+  - UltraForce.Library.Core.Asp.Types.Enums.UFButtonVariant.Normal
+  - UltraForce.Library.Core.Asp.Types.Enums.UFButtonVariant.Outline
+  langs:
+  - csharp
+  - vb
+  name: UFButtonVariant
+  nameWithType: UFButtonVariant
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFButtonVariant
+  type: Enum
+  source:
+    id: UFButtonVariant
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Types\Enums\UFButtonVariant.cs
+    startLine: 34
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: What style to draw the button in
+  example: []
+  syntax:
+    content: public enum UFButtonVariant
+    content.vb: Public Enum UFButtonVariant
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFButtonVariant.Normal
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFButtonVariant.Normal
+  id: Normal
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFButtonVariant
+  langs:
+  - csharp
+  - vb
+  name: Normal
+  nameWithType: UFButtonVariant.Normal
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFButtonVariant.Normal
+  type: Field
+  source:
+    id: Normal
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Types\Enums\UFButtonVariant.cs
+    startLine: 39
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Normal filled button
+  example: []
+  syntax:
+    content: Normal = 0
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFButtonVariant
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFButtonVariant.Outline
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFButtonVariant.Outline
+  id: Outline
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFButtonVariant
+  langs:
+  - csharp
+  - vb
+  name: Outline
+  nameWithType: UFButtonVariant.Outline
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFButtonVariant.Outline
+  type: Field
+  source:
+    id: Outline
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Types\Enums\UFButtonVariant.cs
+    startLine: 44
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Reverse the colors and draw the button with an outline.
+  example: []
+  syntax:
+    content: Outline = 1
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFButtonVariant
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFButtonVariant.Link
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFButtonVariant.Link
+  id: Link
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFButtonVariant
+  langs:
+  - csharp
+  - vb
+  name: Link
+  nameWithType: UFButtonVariant.Link
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFButtonVariant.Link
+  type: Field
+  source:
+    id: Link
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Types\Enums\UFButtonVariant.cs
+    startLine: 49
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Draw the button with a link style.
+  example: []
+  syntax:
+    content: Link = 2
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFButtonVariant
+references:
+- uid: UltraForce.Library.Core.Asp.Types.Enums
+  commentId: N:UltraForce.Library.Core.Asp.Types.Enums
+  href: UltraForce.html
+  name: UltraForce.Library.Core.Asp.Types.Enums
+  nameWithType: UltraForce.Library.Core.Asp.Types.Enums
+  fullName: UltraForce.Library.Core.Asp.Types.Enums
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types
+    name: Types
+    href: UltraForce.Library.Core.Asp.Types.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types.Enums
+    name: Enums
+    href: UltraForce.Library.Core.Asp.Types.Enums.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types
+    name: Types
+    href: UltraForce.Library.Core.Asp.Types.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types.Enums
+    name: Enums
+    href: UltraForce.Library.Core.Asp.Types.Enums.html
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFButtonVariant
+  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFButtonVariant
+  parent: UltraForce.Library.Core.Asp.Types.Enums
+  href: UltraForce.Library.Core.Asp.Types.Enums.UFButtonVariant.html
+  name: UFButtonVariant
+  nameWithType: UFButtonVariant
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFButtonVariant

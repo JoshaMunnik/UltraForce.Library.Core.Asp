@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <Title>Ultra Force Library for ASP.NET Core</Title>
+        <Authors>Josha Munnik</Authors>
+        <Copyright>(c) 2024 by Ultra Force Development</Copyright>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Description>A set of general usable classes for ASP.NET Core</Description>
+        <PackageIcon>ufd.png</PackageIcon>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <RepositoryUrl>https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp</RepositoryUrl>
+        <PackageReadmeFile>README.md</PackageReadmeFile>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <None Include="ufd.png" Pack="True" PackagePath="" />
+        <None Include="README.md" Pack="True" PackagePath="" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <FrameworkReference Include="Microsoft.AspNetCore.App" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="UltraForce.Library.Core" Version="1.0.0" />
+      <PackageReference Include="UltraForce.Library.NetStandard" Version="1.0.0" />
+    </ItemGroup>
+
+</Project>

@@ -1,0 +1,226 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFFlexJustifyContent
+  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFFlexJustifyContent
+  id: UFFlexJustifyContent
+  parent: UltraForce.Library.Core.Asp.Types.Enums
+  children:
+  - UltraForce.Library.Core.Asp.Types.Enums.UFFlexJustifyContent.Center
+  - UltraForce.Library.Core.Asp.Types.Enums.UFFlexJustifyContent.End
+  - UltraForce.Library.Core.Asp.Types.Enums.UFFlexJustifyContent.SpaceAround
+  - UltraForce.Library.Core.Asp.Types.Enums.UFFlexJustifyContent.SpaceBetween
+  - UltraForce.Library.Core.Asp.Types.Enums.UFFlexJustifyContent.SpaceEvenly
+  - UltraForce.Library.Core.Asp.Types.Enums.UFFlexJustifyContent.Start
+  langs:
+  - csharp
+  - vb
+  name: UFFlexJustifyContent
+  nameWithType: UFFlexJustifyContent
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFFlexJustifyContent
+  type: Enum
+  source:
+    id: UFFlexJustifyContent
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Types\Enums\UFFlexJustifyContent.cs
+    startLine: 36
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: How to distribute the children in the direction of the main axis (column or row).
+  example: []
+  syntax:
+    content: public enum UFFlexJustifyContent
+    content.vb: Public Enum UFFlexJustifyContent
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFFlexJustifyContent.Start
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFFlexJustifyContent.Start
+  id: Start
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFFlexJustifyContent
+  langs:
+  - csharp
+  - vb
+  name: Start
+  nameWithType: UFFlexJustifyContent.Start
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFFlexJustifyContent.Start
+  type: Field
+  source:
+    id: Start
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Types\Enums\UFFlexJustifyContent.cs
+    startLine: 38
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  syntax:
+    content: Start = 0
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFFlexJustifyContent
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFFlexJustifyContent.End
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFFlexJustifyContent.End
+  id: End
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFFlexJustifyContent
+  langs:
+  - csharp
+  - vb
+  name: End
+  nameWithType: UFFlexJustifyContent.End
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFFlexJustifyContent.End
+  type: Field
+  source:
+    id: End
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Types\Enums\UFFlexJustifyContent.cs
+    startLine: 39
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  syntax:
+    content: End = 1
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFFlexJustifyContent
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFFlexJustifyContent.Center
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFFlexJustifyContent.Center
+  id: Center
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFFlexJustifyContent
+  langs:
+  - csharp
+  - vb
+  name: Center
+  nameWithType: UFFlexJustifyContent.Center
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFFlexJustifyContent.Center
+  type: Field
+  source:
+    id: Center
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Types\Enums\UFFlexJustifyContent.cs
+    startLine: 40
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  syntax:
+    content: Center = 2
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFFlexJustifyContent
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFFlexJustifyContent.SpaceBetween
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFFlexJustifyContent.SpaceBetween
+  id: SpaceBetween
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFFlexJustifyContent
+  langs:
+  - csharp
+  - vb
+  name: SpaceBetween
+  nameWithType: UFFlexJustifyContent.SpaceBetween
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFFlexJustifyContent.SpaceBetween
+  type: Field
+  source:
+    id: SpaceBetween
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Types\Enums\UFFlexJustifyContent.cs
+    startLine: 41
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  syntax:
+    content: SpaceBetween = 3
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFFlexJustifyContent
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFFlexJustifyContent.SpaceAround
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFFlexJustifyContent.SpaceAround
+  id: SpaceAround
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFFlexJustifyContent
+  langs:
+  - csharp
+  - vb
+  name: SpaceAround
+  nameWithType: UFFlexJustifyContent.SpaceAround
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFFlexJustifyContent.SpaceAround
+  type: Field
+  source:
+    id: SpaceAround
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Types\Enums\UFFlexJustifyContent.cs
+    startLine: 42
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  syntax:
+    content: SpaceAround = 4
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFFlexJustifyContent
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFFlexJustifyContent.SpaceEvenly
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFFlexJustifyContent.SpaceEvenly
+  id: SpaceEvenly
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFFlexJustifyContent
+  langs:
+  - csharp
+  - vb
+  name: SpaceEvenly
+  nameWithType: UFFlexJustifyContent.SpaceEvenly
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFFlexJustifyContent.SpaceEvenly
+  type: Field
+  source:
+    id: SpaceEvenly
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Types\Enums\UFFlexJustifyContent.cs
+    startLine: 43
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  syntax:
+    content: SpaceEvenly = 5
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFFlexJustifyContent
+references:
+- uid: UltraForce.Library.Core.Asp.Types.Enums
+  commentId: N:UltraForce.Library.Core.Asp.Types.Enums
+  href: UltraForce.html
+  name: UltraForce.Library.Core.Asp.Types.Enums
+  nameWithType: UltraForce.Library.Core.Asp.Types.Enums
+  fullName: UltraForce.Library.Core.Asp.Types.Enums
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types
+    name: Types
+    href: UltraForce.Library.Core.Asp.Types.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types.Enums
+    name: Enums
+    href: UltraForce.Library.Core.Asp.Types.Enums.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types
+    name: Types
+    href: UltraForce.Library.Core.Asp.Types.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types.Enums
+    name: Enums
+    href: UltraForce.Library.Core.Asp.Types.Enums.html
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFFlexJustifyContent
+  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFFlexJustifyContent
+  parent: UltraForce.Library.Core.Asp.Types.Enums
+  href: UltraForce.Library.Core.Asp.Types.Enums.UFFlexJustifyContent.html
+  name: UFFlexJustifyContent
+  nameWithType: UFFlexJustifyContent
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFFlexJustifyContent

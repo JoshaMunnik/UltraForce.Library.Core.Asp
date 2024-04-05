@@ -1,0 +1,413 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle
+  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle
+  id: UFButtonStyle
+  parent: UltraForce.Library.Core.Asp.Types.Enums
+  children:
+  - UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle.Add
+  - UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle.Back
+  - UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle.Copy
+  - UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle.Create
+  - UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle.Custom
+  - UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle.Delete
+  - UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle.Details
+  - UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle.Edit
+  - UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle.List
+  - UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle.Remove
+  - UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle.Save
+  - UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle.Send
+  - UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle.Users
+  langs:
+  - csharp
+  - vb
+  name: UFButtonStyle
+  nameWithType: UFButtonStyle
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle
+  type: Enum
+  source:
+    id: UFButtonStyle
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Types\Enums\UFButtonStyle.cs
+    startLine: 34
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Styles that might set multiple properties to a predefined value.
+  example: []
+  syntax:
+    content: public enum UFButtonStyle
+    content.vb: Public Enum UFButtonStyle
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle.Custom
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle.Custom
+  id: Custom
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle
+  langs:
+  - csharp
+  - vb
+  name: Custom
+  nameWithType: UFButtonStyle.Custom
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle.Custom
+  type: Field
+  source:
+    id: Custom
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Types\Enums\UFButtonStyle.cs
+    startLine: 39
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Do not set any property.
+  example: []
+  syntax:
+    content: Custom = 0
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle.Send
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle.Send
+  id: Send
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle
+  langs:
+  - csharp
+  - vb
+  name: Send
+  nameWithType: UFButtonStyle.Send
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle.Send
+  type: Field
+  source:
+    id: Send
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Types\Enums\UFButtonStyle.cs
+    startLine: 44
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Sets the icon to a visual representing sending something (envelope)
+  example: []
+  syntax:
+    content: Send = 1
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle.Save
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle.Save
+  id: Save
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle
+  langs:
+  - csharp
+  - vb
+  name: Save
+  nameWithType: UFButtonStyle.Save
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle.Save
+  type: Field
+  source:
+    id: Save
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Types\Enums\UFButtonStyle.cs
+    startLine: 49
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Set the icon to a visual representing saving something (floppy disk)
+  example: []
+  syntax:
+    content: Save = 2
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle.Back
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle.Back
+  id: Back
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle
+  langs:
+  - csharp
+  - vb
+  name: Back
+  nameWithType: UFButtonStyle.Back
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle.Back
+  type: Field
+  source:
+    id: Back
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Types\Enums\UFButtonStyle.cs
+    startLine: 54
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Sets the icon to a visual representing going back (left arrow) and use outline variant.
+  example: []
+  syntax:
+    content: Back = 3
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle.Create
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle.Create
+  id: Create
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle
+  langs:
+  - csharp
+  - vb
+  name: Create
+  nameWithType: UFButtonStyle.Create
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle.Create
+  type: Field
+  source:
+    id: Create
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Types\Enums\UFButtonStyle.cs
+    startLine: 59
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Sets the icon to a visual representing creating something (new file)
+  example: []
+  syntax:
+    content: Create = 4
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle.Edit
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle.Edit
+  id: Edit
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle
+  langs:
+  - csharp
+  - vb
+  name: Edit
+  nameWithType: UFButtonStyle.Edit
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle.Edit
+  type: Field
+  source:
+    id: Edit
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Types\Enums\UFButtonStyle.cs
+    startLine: 64
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Sets the icon to a visual representing editing something (pencil)
+  example: []
+  syntax:
+    content: Edit = 5
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle.Details
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle.Details
+  id: Details
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle
+  langs:
+  - csharp
+  - vb
+  name: Details
+  nameWithType: UFButtonStyle.Details
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle.Details
+  type: Field
+  source:
+    id: Details
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Types\Enums\UFButtonStyle.cs
+    startLine: 69
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Sets the icon to a visual representing showing details (info)
+  example: []
+  syntax:
+    content: Details = 6
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle.Delete
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle.Delete
+  id: Delete
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle
+  langs:
+  - csharp
+  - vb
+  name: Delete
+  nameWithType: UFButtonStyle.Delete
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle.Delete
+  type: Field
+  source:
+    id: Delete
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Types\Enums\UFButtonStyle.cs
+    startLine: 74
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Sets the icon to a visual representing deleting something (trash)
+  example: []
+  syntax:
+    content: Delete = 7
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle.List
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle.List
+  id: List
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle
+  langs:
+  - csharp
+  - vb
+  name: List
+  nameWithType: UFButtonStyle.List
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle.List
+  type: Field
+  source:
+    id: List
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Types\Enums\UFButtonStyle.cs
+    startLine: 79
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Sets the icon to a visual representing a list (list)
+  example: []
+  syntax:
+    content: List = 8
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle.Copy
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle.Copy
+  id: Copy
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle
+  langs:
+  - csharp
+  - vb
+  name: Copy
+  nameWithType: UFButtonStyle.Copy
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle.Copy
+  type: Field
+  source:
+    id: Copy
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Types\Enums\UFButtonStyle.cs
+    startLine: 84
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Sets the icon to a visual representing copying something (copy)
+  example: []
+  syntax:
+    content: Copy = 9
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle.Users
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle.Users
+  id: Users
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle
+  langs:
+  - csharp
+  - vb
+  name: Users
+  nameWithType: UFButtonStyle.Users
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle.Users
+  type: Field
+  source:
+    id: Users
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Types\Enums\UFButtonStyle.cs
+    startLine: 89
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Sets the icon to a visual representing a group of users (copy)
+  example: []
+  syntax:
+    content: Users = 10
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle.Add
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle.Add
+  id: Add
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle
+  langs:
+  - csharp
+  - vb
+  name: Add
+  nameWithType: UFButtonStyle.Add
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle.Add
+  type: Field
+  source:
+    id: Add
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Types\Enums\UFButtonStyle.cs
+    startLine: 94
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Sets the icon to a visual representing adding (plus)
+  example: []
+  syntax:
+    content: Add = 11
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle.Remove
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle.Remove
+  id: Remove
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle
+  langs:
+  - csharp
+  - vb
+  name: Remove
+  nameWithType: UFButtonStyle.Remove
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle.Remove
+  type: Field
+  source:
+    id: Remove
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Types\Enums\UFButtonStyle.cs
+    startLine: 99
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Sets the icon to a visual representing adding (minus)
+  example: []
+  syntax:
+    content: Remove = 12
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle
+references:
+- uid: UltraForce.Library.Core.Asp.Types.Enums
+  commentId: N:UltraForce.Library.Core.Asp.Types.Enums
+  href: UltraForce.html
+  name: UltraForce.Library.Core.Asp.Types.Enums
+  nameWithType: UltraForce.Library.Core.Asp.Types.Enums
+  fullName: UltraForce.Library.Core.Asp.Types.Enums
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types
+    name: Types
+    href: UltraForce.Library.Core.Asp.Types.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types.Enums
+    name: Enums
+    href: UltraForce.Library.Core.Asp.Types.Enums.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types
+    name: Types
+    href: UltraForce.Library.Core.Asp.Types.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types.Enums
+    name: Enums
+    href: UltraForce.Library.Core.Asp.Types.Enums.html
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle
+  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle
+  parent: UltraForce.Library.Core.Asp.Types.Enums
+  href: UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle.html
+  name: UFButtonStyle
+  nameWithType: UFButtonStyle
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle

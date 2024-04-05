@@ -1,0 +1,1795 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Interface IUFTheme | UltraForce.Library.Core.Asp </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Interface IUFTheme | UltraForce.Library.Core.Asp ">
+      
+      <meta name="description" content="generates css classes and html for the different components.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="UltraForce.Library.Core.Asp">
+            UltraForce.Library.Core.Asp
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="UltraForce.Library.Core.Asp.Services.IUFTheme">
+
+
+
+  <h1 id="UltraForce_Library_Core_Asp_Services_IUFTheme" data-uid="UltraForce.Library.Core.Asp.Services.IUFTheme" class="text-break">
+Interface IUFTheme  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="UltraForce.html">UltraForce</a>.<a class="xref" href="UltraForce.Library.html">Library</a>.<a class="xref" href="UltraForce.Library.Core.html">Core</a>.<a class="xref" href="UltraForce.Library.Core.Asp.html">Asp</a>.<a class="xref" href="UltraForce.Library.Core.Asp.Services.html">Services</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>UltraForce.Library.Core.Asp.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a class="xref" href="UltraForce.Library.Core.Asp.Services.IUFTheme.html">IUFTheme</a> generates css classes and html for the different components.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IUFTheme</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="UltraForce_Library_Core_Asp_Services_IUFTheme_GetButtonCaptionClasses_" data-uid="UltraForce.Library.Core.Asp.Services.IUFTheme.GetButtonCaptionClasses*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Services_IUFTheme_GetButtonCaptionClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_IUFButtonProperties_" data-uid="UltraForce.Library.Core.Asp.Services.IUFTheme.GetButtonCaptionClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties)">
+  GetButtonCaptionClasses(IUFButtonProperties)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the css classes to use for the caption element within a button.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetButtonCaptionClasses(IUFButtonProperties aProperties)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aProperties</code> <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.html">IUFButtonProperties</a></dt>
+    <dd><p>The button property values</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>One or more css classes to style the caption.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_Services_IUFTheme_GetButtonClasses_" data-uid="UltraForce.Library.Core.Asp.Services.IUFTheme.GetButtonClasses*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Services_IUFTheme_GetButtonClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_IUFButtonProperties_" data-uid="UltraForce.Library.Core.Asp.Services.IUFTheme.GetButtonClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties)">
+  GetButtonClasses(IUFButtonProperties)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the css classes to use for the button element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetButtonClasses(IUFButtonProperties aProperties)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aProperties</code> <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.html">IUFButtonProperties</a></dt>
+    <dd><p>The button property values</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>One or more css classes to style the button.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_Services_IUFTheme_GetButtonIconHtml_" data-uid="UltraForce.Library.Core.Asp.Services.IUFTheme.GetButtonIconHtml*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Services_IUFTheme_GetButtonIconHtml_UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_IUFButtonProperties_" data-uid="UltraForce.Library.Core.Asp.Services.IUFTheme.GetButtonIconHtml(UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties)">
+  GetButtonIconHtml(IUFButtonProperties)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the html for an icon.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetButtonIconHtml(IUFButtonProperties aProperties)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aProperties</code> <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.html">IUFButtonProperties</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Html snippet or empty string if there is no icon</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_Services_IUFTheme_GetCheckboxExtraHtml_" data-uid="UltraForce.Library.Core.Asp.Services.IUFTheme.GetCheckboxExtraHtml*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Services_IUFTheme_GetCheckboxExtraHtml" data-uid="UltraForce.Library.Core.Asp.Services.IUFTheme.GetCheckboxExtraHtml">
+  GetCheckboxExtraHtml()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the extra html to render after the checkbox input element. It can be used when
+using custom graphics.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetCheckboxExtraHtml()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_Services_IUFTheme_GetCheckboxInputClasses_" data-uid="UltraForce.Library.Core.Asp.Services.IUFTheme.GetCheckboxInputClasses*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Services_IUFTheme_GetCheckboxInputClasses" data-uid="UltraForce.Library.Core.Asp.Services.IUFTheme.GetCheckboxInputClasses">
+  GetCheckboxInputClasses()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the css classes to use for the checkbox input element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetCheckboxInputClasses()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_Services_IUFTheme_GetCheckboxLabelClasses_" data-uid="UltraForce.Library.Core.Asp.Services.IUFTheme.GetCheckboxLabelClasses*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Services_IUFTheme_GetCheckboxLabelClasses" data-uid="UltraForce.Library.Core.Asp.Services.IUFTheme.GetCheckboxLabelClasses">
+  GetCheckboxLabelClasses()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the css classes to use for the label of a checkbox element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetCheckboxLabelClasses()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_Services_IUFTheme_GetCheckboxLabelDescriptionClasses_" data-uid="UltraForce.Library.Core.Asp.Services.IUFTheme.GetCheckboxLabelDescriptionClasses*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Services_IUFTheme_GetCheckboxLabelDescriptionClasses" data-uid="UltraForce.Library.Core.Asp.Services.IUFTheme.GetCheckboxLabelDescriptionClasses">
+  GetCheckboxLabelDescriptionClasses()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the css classes to use for the description within the checkbox label element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetCheckboxLabelDescriptionClasses()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_Services_IUFTheme_GetCheckboxLabelSpanClasses_" data-uid="UltraForce.Library.Core.Asp.Services.IUFTheme.GetCheckboxLabelSpanClasses*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Services_IUFTheme_GetCheckboxLabelSpanClasses" data-uid="UltraForce.Library.Core.Asp.Services.IUFTheme.GetCheckboxLabelSpanClasses">
+  GetCheckboxLabelSpanClasses()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the css classes to use for the text within the checkbox label element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetCheckboxLabelSpanClasses()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_Services_IUFTheme_GetCheckboxWrapperClasses_" data-uid="UltraForce.Library.Core.Asp.Services.IUFTheme.GetCheckboxWrapperClasses*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Services_IUFTheme_GetCheckboxWrapperClasses" data-uid="UltraForce.Library.Core.Asp.Services.IUFTheme.GetCheckboxWrapperClasses">
+  GetCheckboxWrapperClasses()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the css classes to use for the wrapper of a checkbox element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetCheckboxWrapperClasses()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_Services_IUFTheme_GetColumnClasses_" data-uid="UltraForce.Library.Core.Asp.Services.IUFTheme.GetColumnClasses*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Services_IUFTheme_GetColumnClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Layout_IUFFlexProperties_" data-uid="UltraForce.Library.Core.Asp.Services.IUFTheme.GetColumnClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties)">
+  GetColumnClasses(IUFFlexProperties)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the css classes to use for the column element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetColumnClasses(IUFFlexProperties aProperties)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aProperties</code> <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.html">IUFFlexProperties</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_Services_IUFTheme_GetContainerClasses_" data-uid="UltraForce.Library.Core.Asp.Services.IUFTheme.GetContainerClasses*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Services_IUFTheme_GetContainerClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Containers_IUFContainerProperties_" data-uid="UltraForce.Library.Core.Asp.Services.IUFTheme.GetContainerClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties)">
+  GetContainerClasses(IUFContainerProperties)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the css classes to use for the container element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetContainerClasses(IUFContainerProperties aProperties)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aProperties</code> <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.html">IUFContainerProperties</a></dt>
+    <dd><p>The container property values</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>One or more css classes to style the container.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_Services_IUFTheme_GetDataListClasses_" data-uid="UltraForce.Library.Core.Asp.Services.IUFTheme.GetDataListClasses*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Services_IUFTheme_GetDataListClasses" data-uid="UltraForce.Library.Core.Asp.Services.IUFTheme.GetDataListClasses">
+  GetDataListClasses()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the css classes to use for the data list element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetDataListClasses()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>One or more css classes to style the data list.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_Services_IUFTheme_GetDataNameClasses_" data-uid="UltraForce.Library.Core.Asp.Services.IUFTheme.GetDataNameClasses*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Services_IUFTheme_GetDataNameClasses" data-uid="UltraForce.Library.Core.Asp.Services.IUFTheme.GetDataNameClasses">
+  GetDataNameClasses()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the css classes to use for the data name element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetDataNameClasses()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>One or more css classes to style the data name.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_Services_IUFTheme_GetDataValueClasses_" data-uid="UltraForce.Library.Core.Asp.Services.IUFTheme.GetDataValueClasses*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Services_IUFTheme_GetDataValueClasses" data-uid="UltraForce.Library.Core.Asp.Services.IUFTheme.GetDataValueClasses">
+  GetDataValueClasses()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the css classes to use for the data value element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetDataValueClasses()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>One or more css classes to style the data value.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_Services_IUFTheme_GetFieldErrorsClasses_" data-uid="UltraForce.Library.Core.Asp.Services.IUFTheme.GetFieldErrorsClasses*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Services_IUFTheme_GetFieldErrorsClasses" data-uid="UltraForce.Library.Core.Asp.Services.IUFTheme.GetFieldErrorsClasses">
+  GetFieldErrorsClasses()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the css classes to use for the wrapper of the errors.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetFieldErrorsClasses()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_Services_IUFTheme_GetFieldErrorsHtml_" data-uid="UltraForce.Library.Core.Asp.Services.IUFTheme.GetFieldErrorsHtml*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Services_IUFTheme_GetFieldErrorsHtml_Microsoft_AspNetCore_Mvc_ModelBinding_ModelStateDictionary_System_String_" data-uid="UltraForce.Library.Core.Asp.Services.IUFTheme.GetFieldErrorsHtml(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary,System.String)">
+  GetFieldErrorsHtml(ModelStateDictionary, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the errors for an input field as an html block. The errors will be wrapped in a
+container, see <a class="xref" href="UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetFieldErrorsClasses">GetFieldErrorsClasses()</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetFieldErrorsHtml(ModelStateDictionary aModelState, string aName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aModelState</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.modelbinding.modelstatedictionary">ModelStateDictionary</a></dt>
+    <dd></dd>
+    <dt><code>aName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_Services_IUFTheme_GetFilterButtonClasses_" data-uid="UltraForce.Library.Core.Asp.Services.IUFTheme.GetFilterButtonClasses*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Services_IUFTheme_GetFilterButtonClasses" data-uid="UltraForce.Library.Core.Asp.Services.IUFTheme.GetFilterButtonClasses">
+  GetFilterButtonClasses()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the css classes to use for button element within the filter container.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetFilterButtonClasses()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_Services_IUFTheme_GetFilterContainerClasses_" data-uid="UltraForce.Library.Core.Asp.Services.IUFTheme.GetFilterContainerClasses*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Services_IUFTheme_GetFilterContainerClasses" data-uid="UltraForce.Library.Core.Asp.Services.IUFTheme.GetFilterContainerClasses">
+  GetFilterContainerClasses()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the css classes to use for the filter container element shown above the table if
+<a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_UFTableTagHelper_Filter">Filter</a> is true.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetFilterContainerClasses()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_Services_IUFTheme_GetFilterInputClasses_" data-uid="UltraForce.Library.Core.Asp.Services.IUFTheme.GetFilterInputClasses*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Services_IUFTheme_GetFilterInputClasses" data-uid="UltraForce.Library.Core.Asp.Services.IUFTheme.GetFilterInputClasses">
+  GetFilterInputClasses()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the css classes to use for input element within the filter container.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetFilterInputClasses()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_Services_IUFTheme_GetFilterLabelClasses_" data-uid="UltraForce.Library.Core.Asp.Services.IUFTheme.GetFilterLabelClasses*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Services_IUFTheme_GetFilterLabelClasses" data-uid="UltraForce.Library.Core.Asp.Services.IUFTheme.GetFilterLabelClasses">
+  GetFilterLabelClasses()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the css classes to use for the label element within the filter container.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetFilterLabelClasses()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_Services_IUFTheme_GetRadioExtraHtml_" data-uid="UltraForce.Library.Core.Asp.Services.IUFTheme.GetRadioExtraHtml*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Services_IUFTheme_GetRadioExtraHtml" data-uid="UltraForce.Library.Core.Asp.Services.IUFTheme.GetRadioExtraHtml">
+  GetRadioExtraHtml()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the extra html to render after the radio input element. It can be used when
+using custom graphics.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetRadioExtraHtml()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_Services_IUFTheme_GetRadioInputClasses_" data-uid="UltraForce.Library.Core.Asp.Services.IUFTheme.GetRadioInputClasses*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Services_IUFTheme_GetRadioInputClasses" data-uid="UltraForce.Library.Core.Asp.Services.IUFTheme.GetRadioInputClasses">
+  GetRadioInputClasses()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the css classes to use for the radio input element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetRadioInputClasses()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_Services_IUFTheme_GetRadioLabelClasses_" data-uid="UltraForce.Library.Core.Asp.Services.IUFTheme.GetRadioLabelClasses*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Services_IUFTheme_GetRadioLabelClasses" data-uid="UltraForce.Library.Core.Asp.Services.IUFTheme.GetRadioLabelClasses">
+  GetRadioLabelClasses()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the css classes to use for the label of a radio element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetRadioLabelClasses()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_Services_IUFTheme_GetRadioLabelDescriptionClasses_" data-uid="UltraForce.Library.Core.Asp.Services.IUFTheme.GetRadioLabelDescriptionClasses*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Services_IUFTheme_GetRadioLabelDescriptionClasses" data-uid="UltraForce.Library.Core.Asp.Services.IUFTheme.GetRadioLabelDescriptionClasses">
+  GetRadioLabelDescriptionClasses()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the css classes to use for the description within the radio label element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetRadioLabelDescriptionClasses()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_Services_IUFTheme_GetRadioLabelSpanClasses_" data-uid="UltraForce.Library.Core.Asp.Services.IUFTheme.GetRadioLabelSpanClasses*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Services_IUFTheme_GetRadioLabelSpanClasses" data-uid="UltraForce.Library.Core.Asp.Services.IUFTheme.GetRadioLabelSpanClasses">
+  GetRadioLabelSpanClasses()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the css classes to use for the text within the radio label element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetRadioLabelSpanClasses()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_Services_IUFTheme_GetRadioWrapperClasses_" data-uid="UltraForce.Library.Core.Asp.Services.IUFTheme.GetRadioWrapperClasses*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Services_IUFTheme_GetRadioWrapperClasses" data-uid="UltraForce.Library.Core.Asp.Services.IUFTheme.GetRadioWrapperClasses">
+  GetRadioWrapperClasses()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the css classes to use for the wrapper element of a radio element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetRadioWrapperClasses()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_Services_IUFTheme_GetRowClasses_" data-uid="UltraForce.Library.Core.Asp.Services.IUFTheme.GetRowClasses*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Services_IUFTheme_GetRowClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Layout_IUFFlexProperties_" data-uid="UltraForce.Library.Core.Asp.Services.IUFTheme.GetRowClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties)">
+  GetRowClasses(IUFFlexProperties)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the css classes to use for the row element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetRowClasses(IUFFlexProperties aProperties)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aProperties</code> <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.html">IUFFlexProperties</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_Services_IUFTheme_GetSelectClasses_" data-uid="UltraForce.Library.Core.Asp.Services.IUFTheme.GetSelectClasses*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Services_IUFTheme_GetSelectClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Forms_IUFInputProperties_" data-uid="UltraForce.Library.Core.Asp.Services.IUFTheme.GetSelectClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties)">
+  GetSelectClasses(IUFInputProperties)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the css classes to use for the select element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetSelectClasses(IUFInputProperties aProperties)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aProperties</code> <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties.html">IUFInputProperties</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_Services_IUFTheme_GetSortAscendingClasses_" data-uid="UltraForce.Library.Core.Asp.Services.IUFTheme.GetSortAscendingClasses*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Services_IUFTheme_GetSortAscendingClasses" data-uid="UltraForce.Library.Core.Asp.Services.IUFTheme.GetSortAscendingClasses">
+  GetSortAscendingClasses()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the css classes to use for a table header element when the rows are sorted in
+an ascending order for that column.</p>
+<p>
+The css classes are added to the result from <a class="xref" href="UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetTableRowClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_IUFTableRowProperties_UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_IUFTableProperties_">GetTableRowClasses(IUFTableRowProperties, IUFTableProperties)</a>.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetSortAscendingClasses()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_Services_IUFTheme_GetSortDescendingClasses_" data-uid="UltraForce.Library.Core.Asp.Services.IUFTheme.GetSortDescendingClasses*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Services_IUFTheme_GetSortDescendingClasses" data-uid="UltraForce.Library.Core.Asp.Services.IUFTheme.GetSortDescendingClasses">
+  GetSortDescendingClasses()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the css classes to use for a table header element when the rows are sorted in
+an descending order for that column.</p>
+<p>
+The css classes are added to the result from <a class="xref" href="UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetTableRowClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_IUFTableRowProperties_UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_IUFTableProperties_">GetTableRowClasses(IUFTableRowProperties, IUFTableProperties)</a>.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetSortDescendingClasses()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_Services_IUFTheme_GetSpacerClasses_" data-uid="UltraForce.Library.Core.Asp.Services.IUFTheme.GetSpacerClasses*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Services_IUFTheme_GetSpacerClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Layout_IUFSpacerProperties_" data-uid="UltraForce.Library.Core.Asp.Services.IUFTheme.GetSpacerClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFSpacerProperties)">
+  GetSpacerClasses(IUFSpacerProperties)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the css classes to use for the spacer element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetSpacerClasses(IUFSpacerProperties aProperties)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aProperties</code> <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFSpacerProperties.html">IUFSpacerProperties</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_Services_IUFTheme_GetTabContentWrapperClasses_" data-uid="UltraForce.Library.Core.Asp.Services.IUFTheme.GetTabContentWrapperClasses*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Services_IUFTheme_GetTabContentWrapperClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Containers_IUFTabProperties_" data-uid="UltraForce.Library.Core.Asp.Services.IUFTheme.GetTabContentWrapperClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFTabProperties)">
+  GetTabContentWrapperClasses(IUFTabProperties)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the css classes to use for the content wrapper element with a tab.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetTabContentWrapperClasses(IUFTabProperties aProperties)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aProperties</code> <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFTabProperties.html">IUFTabProperties</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_Services_IUFTheme_GetTabLabelClasses_" data-uid="UltraForce.Library.Core.Asp.Services.IUFTheme.GetTabLabelClasses*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Services_IUFTheme_GetTabLabelClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Containers_IUFTabProperties_" data-uid="UltraForce.Library.Core.Asp.Services.IUFTheme.GetTabLabelClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFTabProperties)">
+  GetTabLabelClasses(IUFTabProperties)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the css classes to use for the label element with a tab.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetTabLabelClasses(IUFTabProperties aProperties)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aProperties</code> <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFTabProperties.html">IUFTabProperties</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_Services_IUFTheme_GetTabRadioClasses_" data-uid="UltraForce.Library.Core.Asp.Services.IUFTheme.GetTabRadioClasses*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Services_IUFTheme_GetTabRadioClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Containers_IUFTabProperties_" data-uid="UltraForce.Library.Core.Asp.Services.IUFTheme.GetTabRadioClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFTabProperties)">
+  GetTabRadioClasses(IUFTabProperties)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the css classes to use for the radio element with a tab.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetTabRadioClasses(IUFTabProperties aProperties)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aProperties</code> <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFTabProperties.html">IUFTabProperties</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_Services_IUFTheme_GetTableCellClasses_" data-uid="UltraForce.Library.Core.Asp.Services.IUFTheme.GetTableCellClasses*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Services_IUFTheme_GetTableCellClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_IUFCellProperties_UltraForce_Library_Core_Asp_Types_Enums_UFTableCellType_UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_IUFTableProperties_UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_IUFTableRowProperties_" data-uid="UltraForce.Library.Core.Asp.Services.IUFTheme.GetTableCellClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties,UltraForce.Library.Core.Asp.Types.Enums.UFTableCellType,UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties,UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableRowProperties)">
+  GetTableCellClasses(IUFCellProperties, UFTableCellType, IUFTableProperties, IUFTableRowProperties)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the css classes to use for the table cell (td/th) element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetTableCellClasses(IUFCellProperties aProperties, UFTableCellType aType, IUFTableProperties aTableProperties, IUFTableRowProperties aRowProperties)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aProperties</code> <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties.html">IUFCellProperties</a></dt>
+    <dd></dd>
+    <dt><code>aType</code> <a class="xref" href="UltraForce.Library.Core.Asp.Types.Enums.UFTableCellType.html">UFTableCellType</a></dt>
+    <dd></dd>
+    <dt><code>aTableProperties</code> <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties.html">IUFTableProperties</a></dt>
+    <dd></dd>
+    <dt><code>aRowProperties</code> <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableRowProperties.html">IUFTableRowProperties</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_Services_IUFTheme_GetTableClasses_" data-uid="UltraForce.Library.Core.Asp.Services.IUFTheme.GetTableClasses*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Services_IUFTheme_GetTableClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_IUFTableProperties_" data-uid="UltraForce.Library.Core.Asp.Services.IUFTheme.GetTableClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties)">
+  GetTableClasses(IUFTableProperties)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the css classes to use for the table element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetTableClasses(IUFTableProperties aProperties)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aProperties</code> <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties.html">IUFTableProperties</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_Services_IUFTheme_GetTableHeaderButtonClasses_" data-uid="UltraForce.Library.Core.Asp.Services.IUFTheme.GetTableHeaderButtonClasses*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Services_IUFTheme_GetTableHeaderButtonClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_IUFCellProperties_UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_IUFTableProperties_UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_IUFTableRowProperties_" data-uid="UltraForce.Library.Core.Asp.Services.IUFTheme.GetTableHeaderButtonClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties,UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties,UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableRowProperties)">
+  GetTableHeaderButtonClasses(IUFCellProperties, IUFTableProperties, IUFTableRowProperties)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the css classes to use for the button element within a table header cell that is
+added when the table is sortable.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetTableHeaderButtonClasses(IUFCellProperties aProperties, IUFTableProperties aTableProperties, IUFTableRowProperties aRowProperties)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aProperties</code> <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties.html">IUFCellProperties</a></dt>
+    <dd></dd>
+    <dt><code>aTableProperties</code> <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties.html">IUFTableProperties</a></dt>
+    <dd></dd>
+    <dt><code>aRowProperties</code> <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableRowProperties.html">IUFTableRowProperties</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_Services_IUFTheme_GetTableRowClasses_" data-uid="UltraForce.Library.Core.Asp.Services.IUFTheme.GetTableRowClasses*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Services_IUFTheme_GetTableRowClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_IUFTableRowProperties_UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_IUFTableProperties_" data-uid="UltraForce.Library.Core.Asp.Services.IUFTheme.GetTableRowClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableRowProperties,UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties)">
+  GetTableRowClasses(IUFTableRowProperties, IUFTableProperties)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the css classes to use for the table row (tr) element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetTableRowClasses(IUFTableRowProperties aProperties, IUFTableProperties aTableProperties)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aProperties</code> <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableRowProperties.html">IUFTableRowProperties</a></dt>
+    <dd></dd>
+    <dt><code>aTableProperties</code> <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties.html">IUFTableProperties</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_Services_IUFTheme_GetTabsClasses_" data-uid="UltraForce.Library.Core.Asp.Services.IUFTheme.GetTabsClasses*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Services_IUFTheme_GetTabsClasses_System_Int32_" data-uid="UltraForce.Library.Core.Asp.Services.IUFTheme.GetTabsClasses(System.Int32)">
+  GetTabsClasses(int)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the css classes to use for the tabs container element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetTabsClasses(int aCount)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aCount</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Number of tabs the container contains</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_Services_IUFTheme_GetTextInputClasses_" data-uid="UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextInputClasses*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Services_IUFTheme_GetTextInputClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Forms_IUFInputProperties_System_String_" data-uid="UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextInputClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)">
+  GetTextInputClasses(IUFInputProperties, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the css classes to use with the text input element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetTextInputClasses(IUFInputProperties aProperties, string aType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aProperties</code> <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties.html">IUFInputProperties</a></dt>
+    <dd></dd>
+    <dt><code>aType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Type the input is created for</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_Services_IUFTheme_GetTextLabelClasses_" data-uid="UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextLabelClasses*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Services_IUFTheme_GetTextLabelClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Forms_IUFInputProperties_System_String_" data-uid="UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextLabelClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)">
+  GetTextLabelClasses(IUFInputProperties, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the css classes to use with the label for text input and select elements.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetTextLabelClasses(IUFInputProperties aProperties, string aType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aProperties</code> <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties.html">IUFInputProperties</a></dt>
+    <dd></dd>
+    <dt><code>aType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Type the input is created for</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_Services_IUFTheme_GetTextLabelDescriptionClasses_" data-uid="UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextLabelDescriptionClasses*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Services_IUFTheme_GetTextLabelDescriptionClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Forms_IUFInputProperties_System_String_" data-uid="UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextLabelDescriptionClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)">
+  GetTextLabelDescriptionClasses(IUFInputProperties, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the css classes to use with the description within label for text input and select
+elements.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetTextLabelDescriptionClasses(IUFInputProperties aProperties, string aType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aProperties</code> <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties.html">IUFInputProperties</a></dt>
+    <dd></dd>
+    <dt><code>aType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Type the input is created for</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_Services_IUFTheme_GetTextLabelSpanClasses_" data-uid="UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextLabelSpanClasses*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Services_IUFTheme_GetTextLabelSpanClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Forms_IUFInputProperties_System_String_" data-uid="UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextLabelSpanClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)">
+  GetTextLabelSpanClasses(IUFInputProperties, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the css classes to use with the span within the label for text input and select
+elements.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetTextLabelSpanClasses(IUFInputProperties aProperties, string aType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aProperties</code> <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties.html">IUFInputProperties</a></dt>
+    <dd></dd>
+    <dt><code>aType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Type the input is created for</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_Services_IUFTheme_GetTextWrapperClasses_" data-uid="UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextWrapperClasses*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Services_IUFTheme_GetTextWrapperClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Forms_IUFInputProperties_System_String_" data-uid="UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextWrapperClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)">
+  GetTextWrapperClasses(IUFInputProperties, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the css classes to use with the wrapper element for text input and select elements.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetTextWrapperClasses(IUFInputProperties aProperties, string aType)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aProperties</code> <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties.html">IUFInputProperties</a></dt>
+    <dd></dd>
+    <dt><code>aType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Type the input is created for</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_Services_IUFTheme_GetValidationFeedbackContainerHtml_" data-uid="UltraForce.Library.Core.Asp.Services.IUFTheme.GetValidationFeedbackContainerHtml*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Services_IUFTheme_GetValidationFeedbackContainerHtml_System_String_" data-uid="UltraForce.Library.Core.Asp.Services.IUFTheme.GetValidationFeedbackContainerHtml(System.String)">
+  GetValidationFeedbackContainerHtml(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the html for the validation feedback container (used by javascript validation).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetValidationFeedbackContainerHtml(string anId)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>anId</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_Services_IUFTheme_IsCssClass_" data-uid="UltraForce.Library.Core.Asp.Services.IUFTheme.IsCssClass*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Services_IUFTheme_IsCssClass_System_String_" data-uid="UltraForce.Library.Core.Asp.Services.IUFTheme.IsCssClass(System.String)">
+  IsCssClass(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Checks if a value is a css class or unit value (to be set within the style attribute).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool IsCssClass(string aValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

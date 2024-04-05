@@ -1,0 +1,3508 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware
+  commentId: T:UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware
+  id: UFSessionMiddleware
+  parent: UltraForce.Library.Core.Asp.Sessions
+  children:
+  - UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate)
+  - UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.DeleteAll
+  - UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.DeleteKey(System.String)
+  - UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.GetInt(System.String,System.Int32)
+  - UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.GetString(System.String,System.String)
+  - UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.HasKey(System.String)
+  - UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.Instance
+  - UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.Invoke(Microsoft.AspNetCore.Http.HttpContext)
+  - UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.SetInt(System.String,System.Int32)
+  - UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.SetString(System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: UFSessionMiddleware
+  nameWithType: UFSessionMiddleware
+  fullName: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware
+  type: Class
+  source:
+    id: UFSessionMiddleware
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Sessions\UFSessionMiddleware.cs
+    startLine: 51
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Sessions
+  summary: >-
+    <xref href="UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware" data-throw-if-not-resolved="false"></xref> is <xref href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage" data-throw-if-not-resolved="false"></xref> implementation mapping
+
+    to <xref href="Microsoft.AspNetCore.Http.HttpContext.Session" data-throw-if-not-resolved="false"></xref>.
+
+    <p>
+
+    Use <xref href="UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.Instance" data-throw-if-not-resolved="false"></xref> to access the singleton instance.
+
+    </p>
+
+    <p>
+
+    To use <xref href="UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware" data-throw-if-not-resolved="false"></xref>, import <xref href="UltraForce.Library.Core.Asp.Web.UFWebExtensions" data-throw-if-not-resolved="false"></xref> in
+
+    <code>Startup.cs</code> or <code>Program.cs</code> and register it at
+
+    <xref href="Microsoft.AspNetCore.Builder.IApplicationBuilder" data-throw-if-not-resolved="false"></xref> as
+
+    middleware: `builder.UseUFSession();` 
+
+    </p>
+
+    <p>
+
+    <code>UseUFSession()</code> will make a call to <code>UseSession()</code>.
+
+    </p>
+  example: []
+  syntax:
+    content: 'public class UFSessionMiddleware : UFKeyedStorage'
+    content.vb: Public Class UFSessionMiddleware Inherits UFKeyedStorage
+  inheritance:
+  - System.Object
+  - UltraForce.Library.NetStandard.Storage.UFKeyedStorage
+  inheritedMembers:
+  - UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetString(System.String)
+  - UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetByte(System.String,System.Byte)
+  - UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetByte(System.String)
+  - UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetByte(System.String,System.Byte)
+  - UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetSByte(System.String,System.SByte)
+  - UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetSByte(System.String)
+  - UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetSByte(System.String,System.SByte)
+  - UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetShort(System.String,System.Int16)
+  - UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetShort(System.String)
+  - UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetShort(System.String,System.Int16)
+  - UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetUShort(System.String,System.UInt16)
+  - UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetUShort(System.String)
+  - UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetUShort(System.String,System.UInt16)
+  - UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetInt(System.String)
+  - UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetUInt(System.String,System.UInt32)
+  - UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetUInt(System.String)
+  - UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetUInt(System.String,System.UInt32)
+  - UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetLong(System.String,System.Int64)
+  - UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetLong(System.String)
+  - UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetLong(System.String,System.Int64)
+  - UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetULong(System.String,System.UInt64)
+  - UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetULong(System.String)
+  - UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetULong(System.String,System.UInt64)
+  - UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetFloat(System.String,System.Single)
+  - UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetFloat(System.String)
+  - UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetFloat(System.String,System.Single)
+  - UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetDouble(System.String,System.Double)
+  - UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetDouble(System.String)
+  - UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetDouble(System.String,System.Double)
+  - UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetBool(System.String,System.Boolean)
+  - UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetBool(System.String)
+  - UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetBool(System.String,System.Boolean)
+  - UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetChar(System.String,System.Char)
+  - UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetChar(System.String)
+  - UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetChar(System.String,System.Char)
+  - UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetBytes(System.String,System.Byte[])
+  - UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetBytes(System.String)
+  - UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetBytes(System.String,System.Byte[])
+  - UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetDateTime(System.String,System.DateTime)
+  - UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetDateTime(System.String)
+  - UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetDateTime(System.String,System.DateTime)
+  - UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetGuid(System.String,System.Guid)
+  - UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetGuid(System.String)
+  - UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetGuid(System.String,System.Guid)
+  - UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetStorableObject(System.String,UltraForce.Library.NetStandard.Storage.IUFStorableObject)
+  - UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetStorableObject(System.String,UltraForce.Library.NetStandard.Storage.IUFStorableObject)
+  - UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetObject(System.String,System.Type)
+  - UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetObject``1(System.String)
+  - UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetObject(System.String,System.Type,System.Func{System.Type,System.Object})
+  - UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetObject(System.String,System.Object,System.Type)
+  - UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetObject(System.String,System.Object)
+  - UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetObject``1(System.String,System.Object)
+  - UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SerializeObject(System.String,System.Object)
+  - UltraForce.Library.NetStandard.Storage.UFKeyedStorage.DeserializeObject(System.String,System.Type,System.Func{System.Type,System.Object})
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate)
+  commentId: M:UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate)
+  id: '#ctor(Microsoft.AspNetCore.Http.RequestDelegate)'
+  parent: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware
+  langs:
+  - csharp
+  - vb
+  name: UFSessionMiddleware(RequestDelegate)
+  nameWithType: UFSessionMiddleware.UFSessionMiddleware(RequestDelegate)
+  fullName: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.UFSessionMiddleware(Microsoft.AspNetCore.Http.RequestDelegate)
+  type: Constructor
+  source:
+    id: .ctor
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Sessions\UFSessionMiddleware.cs
+    startLine: 73
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Sessions
+  summary: Constructs an instance of the UFSession middleware.
+  example: []
+  syntax:
+    content: public UFSessionMiddleware(RequestDelegate aNext)
+    parameters:
+    - id: aNext
+      type: Microsoft.AspNetCore.Http.RequestDelegate
+      description: Next middleware
+    content.vb: Public Sub New(aNext As RequestDelegate)
+  overload: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.#ctor*
+  nameWithType.vb: UFSessionMiddleware.New(RequestDelegate)
+  fullName.vb: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.New(Microsoft.AspNetCore.Http.RequestDelegate)
+  name.vb: New(RequestDelegate)
+- uid: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.Invoke(Microsoft.AspNetCore.Http.HttpContext)
+  commentId: M:UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.Invoke(Microsoft.AspNetCore.Http.HttpContext)
+  id: Invoke(Microsoft.AspNetCore.Http.HttpContext)
+  parent: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware
+  langs:
+  - csharp
+  - vb
+  name: Invoke(HttpContext)
+  nameWithType: UFSessionMiddleware.Invoke(HttpContext)
+  fullName: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.Invoke(Microsoft.AspNetCore.Http.HttpContext)
+  type: Method
+  source:
+    id: Invoke
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Sessions\UFSessionMiddleware.cs
+    startLine: 88
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Sessions
+  summary: This method is called by the http rendering pipeline.
+  example: []
+  syntax:
+    content: public Task Invoke(HttpContext aContext)
+    parameters:
+    - id: aContext
+      type: Microsoft.AspNetCore.Http.HttpContext
+      description: Current <xref href="Microsoft.AspNetCore.Http.HttpContext" data-throw-if-not-resolved="false"></xref>
+    return:
+      type: System.Threading.Tasks.Task
+      description: result from next middleware
+    content.vb: Public Function Invoke(aContext As HttpContext) As Task
+  overload: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.Invoke*
+- uid: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.GetInt(System.String,System.Int32)
+  commentId: M:UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.GetInt(System.String,System.Int32)
+  id: GetInt(System.String,System.Int32)
+  parent: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware
+  langs:
+  - csharp
+  - vb
+  name: GetInt(string, int)
+  nameWithType: UFSessionMiddleware.GetInt(string, int)
+  fullName: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.GetInt(string, int)
+  type: Method
+  source:
+    id: GetInt
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Sessions\UFSessionMiddleware.cs
+    startLine: 99
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Sessions
+  example: []
+  syntax:
+    content: public override int GetInt(string aKey, int aDefault)
+    parameters:
+    - id: aKey
+      type: System.String
+    - id: aDefault
+      type: System.Int32
+    return:
+      type: System.Int32
+    content.vb: Public Overrides Function GetInt(aKey As String, aDefault As Integer) As Integer
+  overridden: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetInt(System.String,System.Int32)
+  overload: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.GetInt*
+  nameWithType.vb: UFSessionMiddleware.GetInt(String, Integer)
+  fullName.vb: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.GetInt(String, Integer)
+  name.vb: GetInt(String, Integer)
+- uid: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.SetInt(System.String,System.Int32)
+  commentId: M:UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.SetInt(System.String,System.Int32)
+  id: SetInt(System.String,System.Int32)
+  parent: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware
+  langs:
+  - csharp
+  - vb
+  name: SetInt(string, int)
+  nameWithType: UFSessionMiddleware.SetInt(string, int)
+  fullName: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.SetInt(string, int)
+  type: Method
+  source:
+    id: SetInt
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Sessions\UFSessionMiddleware.cs
+    startLine: 105
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Sessions
+  example: []
+  syntax:
+    content: public override void SetInt(string aKey, int aValue)
+    parameters:
+    - id: aKey
+      type: System.String
+    - id: aValue
+      type: System.Int32
+    content.vb: Public Overrides Sub SetInt(aKey As String, aValue As Integer)
+  overridden: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetInt(System.String,System.Int32)
+  overload: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.SetInt*
+  nameWithType.vb: UFSessionMiddleware.SetInt(String, Integer)
+  fullName.vb: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.SetInt(String, Integer)
+  name.vb: SetInt(String, Integer)
+- uid: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.GetString(System.String,System.String)
+  commentId: M:UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.GetString(System.String,System.String)
+  id: GetString(System.String,System.String)
+  parent: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware
+  langs:
+  - csharp
+  - vb
+  name: GetString(string, string)
+  nameWithType: UFSessionMiddleware.GetString(string, string)
+  fullName: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.GetString(string, string)
+  type: Method
+  source:
+    id: GetString
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Sessions\UFSessionMiddleware.cs
+    startLine: 115
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Sessions
+  example: []
+  syntax:
+    content: public override string GetString(string aKey, string aDefault)
+    parameters:
+    - id: aKey
+      type: System.String
+    - id: aDefault
+      type: System.String
+    return:
+      type: System.String
+    content.vb: Public Overrides Function GetString(aKey As String, aDefault As String) As String
+  overridden: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetString(System.String,System.String)
+  overload: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.GetString*
+  nameWithType.vb: UFSessionMiddleware.GetString(String, String)
+  fullName.vb: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.GetString(String, String)
+  name.vb: GetString(String, String)
+- uid: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.SetString(System.String,System.String)
+  commentId: M:UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.SetString(System.String,System.String)
+  id: SetString(System.String,System.String)
+  parent: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware
+  langs:
+  - csharp
+  - vb
+  name: SetString(string, string)
+  nameWithType: UFSessionMiddleware.SetString(string, string)
+  fullName: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.SetString(string, string)
+  type: Method
+  source:
+    id: SetString
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Sessions\UFSessionMiddleware.cs
+    startLine: 123
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Sessions
+  example: []
+  syntax:
+    content: public override void SetString(string aKey, string aValue)
+    parameters:
+    - id: aKey
+      type: System.String
+    - id: aValue
+      type: System.String
+    content.vb: Public Overrides Sub SetString(aKey As String, aValue As String)
+  overridden: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetString(System.String,System.String)
+  overload: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.SetString*
+  nameWithType.vb: UFSessionMiddleware.SetString(String, String)
+  fullName.vb: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.SetString(String, String)
+  name.vb: SetString(String, String)
+- uid: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.DeleteKey(System.String)
+  commentId: M:UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.DeleteKey(System.String)
+  id: DeleteKey(System.String)
+  parent: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware
+  langs:
+  - csharp
+  - vb
+  name: DeleteKey(string)
+  nameWithType: UFSessionMiddleware.DeleteKey(string)
+  fullName: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.DeleteKey(string)
+  type: Method
+  source:
+    id: DeleteKey
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Sessions\UFSessionMiddleware.cs
+    startLine: 129
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Sessions
+  example: []
+  syntax:
+    content: public override void DeleteKey(string aKey)
+    parameters:
+    - id: aKey
+      type: System.String
+    content.vb: Public Overrides Sub DeleteKey(aKey As String)
+  overridden: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.DeleteKey(System.String)
+  overload: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.DeleteKey*
+  nameWithType.vb: UFSessionMiddleware.DeleteKey(String)
+  fullName.vb: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.DeleteKey(String)
+  name.vb: DeleteKey(String)
+- uid: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.DeleteAll
+  commentId: M:UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.DeleteAll
+  id: DeleteAll
+  parent: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware
+  langs:
+  - csharp
+  - vb
+  name: DeleteAll()
+  nameWithType: UFSessionMiddleware.DeleteAll()
+  fullName: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.DeleteAll()
+  type: Method
+  source:
+    id: DeleteAll
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Sessions\UFSessionMiddleware.cs
+    startLine: 135
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Sessions
+  example: []
+  syntax:
+    content: public override void DeleteAll()
+    content.vb: Public Overrides Sub DeleteAll()
+  overridden: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.DeleteAll
+  overload: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.DeleteAll*
+- uid: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.HasKey(System.String)
+  commentId: M:UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.HasKey(System.String)
+  id: HasKey(System.String)
+  parent: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware
+  langs:
+  - csharp
+  - vb
+  name: HasKey(string)
+  nameWithType: UFSessionMiddleware.HasKey(string)
+  fullName: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.HasKey(string)
+  type: Method
+  source:
+    id: HasKey
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Sessions\UFSessionMiddleware.cs
+    startLine: 141
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Sessions
+  example: []
+  syntax:
+    content: public override bool HasKey(string aKey)
+    parameters:
+    - id: aKey
+      type: System.String
+    return:
+      type: System.Boolean
+    content.vb: Public Overrides Function HasKey(aKey As String) As Boolean
+  overridden: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.HasKey(System.String)
+  overload: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.HasKey*
+  nameWithType.vb: UFSessionMiddleware.HasKey(String)
+  fullName.vb: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.HasKey(String)
+  name.vb: HasKey(String)
+- uid: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.Instance
+  commentId: P:UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.Instance
+  id: Instance
+  parent: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware
+  langs:
+  - csharp
+  - vb
+  name: Instance
+  nameWithType: UFSessionMiddleware.Instance
+  fullName: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.Instance
+  type: Property
+  source:
+    id: Instance
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Sessions\UFSessionMiddleware.cs
+    startLine: 153
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Sessions
+  summary: Reference to singleton instance.
+  example: []
+  syntax:
+    content: public static UFSessionMiddleware Instance { get; }
+    parameters: []
+    return:
+      type: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware
+    content.vb: Public Shared Property Instance As UFSessionMiddleware
+  overload: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.Instance*
+references:
+- uid: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware
+  commentId: T:UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware
+  parent: UltraForce.Library.Core.Asp.Sessions
+  href: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.html
+  name: UFSessionMiddleware
+  nameWithType: UFSessionMiddleware
+  fullName: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware
+- uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage
+  commentId: T:UltraForce.Library.NetStandard.Storage.UFKeyedStorage
+  parent: UltraForce.Library.NetStandard.Storage
+  isExternal: true
+  name: UFKeyedStorage
+  nameWithType: UFKeyedStorage
+  fullName: UltraForce.Library.NetStandard.Storage.UFKeyedStorage
+- uid: Microsoft.AspNetCore.Http.HttpContext.Session
+  commentId: P:Microsoft.AspNetCore.Http.HttpContext.Session
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.http.httpcontext.session
+  name: Session
+  nameWithType: HttpContext.Session
+  fullName: Microsoft.AspNetCore.Http.HttpContext.Session
+- uid: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.Instance
+  commentId: P:UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.Instance
+  href: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.html#UltraForce_Library_Core_Asp_Sessions_UFSessionMiddleware_Instance
+  name: Instance
+  nameWithType: UFSessionMiddleware.Instance
+  fullName: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.Instance
+- uid: UltraForce.Library.Core.Asp.Web.UFWebExtensions
+  commentId: T:UltraForce.Library.Core.Asp.Web.UFWebExtensions
+  href: UltraForce.Library.Core.Asp.Web.UFWebExtensions.html
+  name: UFWebExtensions
+  nameWithType: UFWebExtensions
+  fullName: UltraForce.Library.Core.Asp.Web.UFWebExtensions
+- uid: Microsoft.AspNetCore.Builder.IApplicationBuilder
+  commentId: T:Microsoft.AspNetCore.Builder.IApplicationBuilder
+  parent: Microsoft.AspNetCore.Builder
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.builder.iapplicationbuilder
+  name: IApplicationBuilder
+  nameWithType: IApplicationBuilder
+  fullName: Microsoft.AspNetCore.Builder.IApplicationBuilder
+- uid: UltraForce.Library.Core.Asp.Sessions
+  commentId: N:UltraForce.Library.Core.Asp.Sessions
+  href: UltraForce.html
+  name: UltraForce.Library.Core.Asp.Sessions
+  nameWithType: UltraForce.Library.Core.Asp.Sessions
+  fullName: UltraForce.Library.Core.Asp.Sessions
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Sessions
+    name: Sessions
+    href: UltraForce.Library.Core.Asp.Sessions.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Sessions
+    name: Sessions
+    href: UltraForce.Library.Core.Asp.Sessions.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetString(System.String)
+  commentId: M:UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetString(System.String)
+  parent: UltraForce.Library.NetStandard.Storage.UFKeyedStorage
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: GetString(string)
+  nameWithType: UFKeyedStorage.GetString(string)
+  fullName: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetString(string)
+  nameWithType.vb: UFKeyedStorage.GetString(String)
+  fullName.vb: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetString(String)
+  name.vb: GetString(String)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetString(System.String)
+    name: GetString
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetString(System.String)
+    name: GetString
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetByte(System.String,System.Byte)
+  commentId: M:UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetByte(System.String,System.Byte)
+  parent: UltraForce.Library.NetStandard.Storage.UFKeyedStorage
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: GetByte(string, byte)
+  nameWithType: UFKeyedStorage.GetByte(string, byte)
+  fullName: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetByte(string, byte)
+  nameWithType.vb: UFKeyedStorage.GetByte(String, Byte)
+  fullName.vb: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetByte(String, Byte)
+  name.vb: GetByte(String, Byte)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetByte(System.String,System.Byte)
+    name: GetByte
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetByte(System.String,System.Byte)
+    name: GetByte
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: )
+- uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetByte(System.String)
+  commentId: M:UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetByte(System.String)
+  parent: UltraForce.Library.NetStandard.Storage.UFKeyedStorage
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: GetByte(string)
+  nameWithType: UFKeyedStorage.GetByte(string)
+  fullName: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetByte(string)
+  nameWithType.vb: UFKeyedStorage.GetByte(String)
+  fullName.vb: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetByte(String)
+  name.vb: GetByte(String)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetByte(System.String)
+    name: GetByte
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetByte(System.String)
+    name: GetByte
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetByte(System.String,System.Byte)
+  commentId: M:UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetByte(System.String,System.Byte)
+  parent: UltraForce.Library.NetStandard.Storage.UFKeyedStorage
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: SetByte(string, byte)
+  nameWithType: UFKeyedStorage.SetByte(string, byte)
+  fullName: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetByte(string, byte)
+  nameWithType.vb: UFKeyedStorage.SetByte(String, Byte)
+  fullName.vb: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetByte(String, Byte)
+  name.vb: SetByte(String, Byte)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetByte(System.String,System.Byte)
+    name: SetByte
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetByte(System.String,System.Byte)
+    name: SetByte
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: )
+- uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetSByte(System.String,System.SByte)
+  commentId: M:UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetSByte(System.String,System.SByte)
+  parent: UltraForce.Library.NetStandard.Storage.UFKeyedStorage
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: GetSByte(string, sbyte)
+  nameWithType: UFKeyedStorage.GetSByte(string, sbyte)
+  fullName: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetSByte(string, sbyte)
+  nameWithType.vb: UFKeyedStorage.GetSByte(String, SByte)
+  fullName.vb: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetSByte(String, SByte)
+  name.vb: GetSByte(String, SByte)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetSByte(System.String,System.SByte)
+    name: GetSByte
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.SByte
+    name: sbyte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.sbyte
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetSByte(System.String,System.SByte)
+    name: GetSByte
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.SByte
+    name: SByte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.sbyte
+  - name: )
+- uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetSByte(System.String)
+  commentId: M:UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetSByte(System.String)
+  parent: UltraForce.Library.NetStandard.Storage.UFKeyedStorage
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: GetSByte(string)
+  nameWithType: UFKeyedStorage.GetSByte(string)
+  fullName: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetSByte(string)
+  nameWithType.vb: UFKeyedStorage.GetSByte(String)
+  fullName.vb: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetSByte(String)
+  name.vb: GetSByte(String)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetSByte(System.String)
+    name: GetSByte
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetSByte(System.String)
+    name: GetSByte
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetSByte(System.String,System.SByte)
+  commentId: M:UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetSByte(System.String,System.SByte)
+  parent: UltraForce.Library.NetStandard.Storage.UFKeyedStorage
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: SetSByte(string, sbyte)
+  nameWithType: UFKeyedStorage.SetSByte(string, sbyte)
+  fullName: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetSByte(string, sbyte)
+  nameWithType.vb: UFKeyedStorage.SetSByte(String, SByte)
+  fullName.vb: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetSByte(String, SByte)
+  name.vb: SetSByte(String, SByte)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetSByte(System.String,System.SByte)
+    name: SetSByte
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.SByte
+    name: sbyte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.sbyte
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetSByte(System.String,System.SByte)
+    name: SetSByte
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.SByte
+    name: SByte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.sbyte
+  - name: )
+- uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetShort(System.String,System.Int16)
+  commentId: M:UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetShort(System.String,System.Int16)
+  parent: UltraForce.Library.NetStandard.Storage.UFKeyedStorage
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: GetShort(string, short)
+  nameWithType: UFKeyedStorage.GetShort(string, short)
+  fullName: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetShort(string, short)
+  nameWithType.vb: UFKeyedStorage.GetShort(String, Short)
+  fullName.vb: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetShort(String, Short)
+  name.vb: GetShort(String, Short)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetShort(System.String,System.Int16)
+    name: GetShort
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Int16
+    name: short
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int16
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetShort(System.String,System.Int16)
+    name: GetShort
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Int16
+    name: Short
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int16
+  - name: )
+- uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetShort(System.String)
+  commentId: M:UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetShort(System.String)
+  parent: UltraForce.Library.NetStandard.Storage.UFKeyedStorage
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: GetShort(string)
+  nameWithType: UFKeyedStorage.GetShort(string)
+  fullName: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetShort(string)
+  nameWithType.vb: UFKeyedStorage.GetShort(String)
+  fullName.vb: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetShort(String)
+  name.vb: GetShort(String)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetShort(System.String)
+    name: GetShort
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetShort(System.String)
+    name: GetShort
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetShort(System.String,System.Int16)
+  commentId: M:UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetShort(System.String,System.Int16)
+  parent: UltraForce.Library.NetStandard.Storage.UFKeyedStorage
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: SetShort(string, short)
+  nameWithType: UFKeyedStorage.SetShort(string, short)
+  fullName: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetShort(string, short)
+  nameWithType.vb: UFKeyedStorage.SetShort(String, Short)
+  fullName.vb: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetShort(String, Short)
+  name.vb: SetShort(String, Short)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetShort(System.String,System.Int16)
+    name: SetShort
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Int16
+    name: short
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int16
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetShort(System.String,System.Int16)
+    name: SetShort
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Int16
+    name: Short
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int16
+  - name: )
+- uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetUShort(System.String,System.UInt16)
+  commentId: M:UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetUShort(System.String,System.UInt16)
+  parent: UltraForce.Library.NetStandard.Storage.UFKeyedStorage
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: GetUShort(string, ushort)
+  nameWithType: UFKeyedStorage.GetUShort(string, ushort)
+  fullName: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetUShort(string, ushort)
+  nameWithType.vb: UFKeyedStorage.GetUShort(String, UShort)
+  fullName.vb: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetUShort(String, UShort)
+  name.vb: GetUShort(String, UShort)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetUShort(System.String,System.UInt16)
+    name: GetUShort
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.UInt16
+    name: ushort
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint16
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetUShort(System.String,System.UInt16)
+    name: GetUShort
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.UInt16
+    name: UShort
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint16
+  - name: )
+- uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetUShort(System.String)
+  commentId: M:UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetUShort(System.String)
+  parent: UltraForce.Library.NetStandard.Storage.UFKeyedStorage
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: GetUShort(string)
+  nameWithType: UFKeyedStorage.GetUShort(string)
+  fullName: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetUShort(string)
+  nameWithType.vb: UFKeyedStorage.GetUShort(String)
+  fullName.vb: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetUShort(String)
+  name.vb: GetUShort(String)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetUShort(System.String)
+    name: GetUShort
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetUShort(System.String)
+    name: GetUShort
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetUShort(System.String,System.UInt16)
+  commentId: M:UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetUShort(System.String,System.UInt16)
+  parent: UltraForce.Library.NetStandard.Storage.UFKeyedStorage
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: SetUShort(string, ushort)
+  nameWithType: UFKeyedStorage.SetUShort(string, ushort)
+  fullName: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetUShort(string, ushort)
+  nameWithType.vb: UFKeyedStorage.SetUShort(String, UShort)
+  fullName.vb: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetUShort(String, UShort)
+  name.vb: SetUShort(String, UShort)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetUShort(System.String,System.UInt16)
+    name: SetUShort
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.UInt16
+    name: ushort
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint16
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetUShort(System.String,System.UInt16)
+    name: SetUShort
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.UInt16
+    name: UShort
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint16
+  - name: )
+- uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetInt(System.String)
+  commentId: M:UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetInt(System.String)
+  parent: UltraForce.Library.NetStandard.Storage.UFKeyedStorage
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: GetInt(string)
+  nameWithType: UFKeyedStorage.GetInt(string)
+  fullName: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetInt(string)
+  nameWithType.vb: UFKeyedStorage.GetInt(String)
+  fullName.vb: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetInt(String)
+  name.vb: GetInt(String)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetInt(System.String)
+    name: GetInt
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetInt(System.String)
+    name: GetInt
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetUInt(System.String,System.UInt32)
+  commentId: M:UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetUInt(System.String,System.UInt32)
+  parent: UltraForce.Library.NetStandard.Storage.UFKeyedStorage
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: GetUInt(string, uint)
+  nameWithType: UFKeyedStorage.GetUInt(string, uint)
+  fullName: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetUInt(string, uint)
+  nameWithType.vb: UFKeyedStorage.GetUInt(String, UInteger)
+  fullName.vb: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetUInt(String, UInteger)
+  name.vb: GetUInt(String, UInteger)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetUInt(System.String,System.UInt32)
+    name: GetUInt
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.UInt32
+    name: uint
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint32
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetUInt(System.String,System.UInt32)
+    name: GetUInt
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.UInt32
+    name: UInteger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint32
+  - name: )
+- uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetUInt(System.String)
+  commentId: M:UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetUInt(System.String)
+  parent: UltraForce.Library.NetStandard.Storage.UFKeyedStorage
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: GetUInt(string)
+  nameWithType: UFKeyedStorage.GetUInt(string)
+  fullName: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetUInt(string)
+  nameWithType.vb: UFKeyedStorage.GetUInt(String)
+  fullName.vb: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetUInt(String)
+  name.vb: GetUInt(String)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetUInt(System.String)
+    name: GetUInt
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetUInt(System.String)
+    name: GetUInt
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetUInt(System.String,System.UInt32)
+  commentId: M:UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetUInt(System.String,System.UInt32)
+  parent: UltraForce.Library.NetStandard.Storage.UFKeyedStorage
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: SetUInt(string, uint)
+  nameWithType: UFKeyedStorage.SetUInt(string, uint)
+  fullName: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetUInt(string, uint)
+  nameWithType.vb: UFKeyedStorage.SetUInt(String, UInteger)
+  fullName.vb: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetUInt(String, UInteger)
+  name.vb: SetUInt(String, UInteger)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetUInt(System.String,System.UInt32)
+    name: SetUInt
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.UInt32
+    name: uint
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint32
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetUInt(System.String,System.UInt32)
+    name: SetUInt
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.UInt32
+    name: UInteger
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint32
+  - name: )
+- uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetLong(System.String,System.Int64)
+  commentId: M:UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetLong(System.String,System.Int64)
+  parent: UltraForce.Library.NetStandard.Storage.UFKeyedStorage
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: GetLong(string, long)
+  nameWithType: UFKeyedStorage.GetLong(string, long)
+  fullName: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetLong(string, long)
+  nameWithType.vb: UFKeyedStorage.GetLong(String, Long)
+  fullName.vb: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetLong(String, Long)
+  name.vb: GetLong(String, Long)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetLong(System.String,System.Int64)
+    name: GetLong
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Int64
+    name: long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetLong(System.String,System.Int64)
+    name: GetLong
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Int64
+    name: Long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: )
+- uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetLong(System.String)
+  commentId: M:UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetLong(System.String)
+  parent: UltraForce.Library.NetStandard.Storage.UFKeyedStorage
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: GetLong(string)
+  nameWithType: UFKeyedStorage.GetLong(string)
+  fullName: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetLong(string)
+  nameWithType.vb: UFKeyedStorage.GetLong(String)
+  fullName.vb: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetLong(String)
+  name.vb: GetLong(String)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetLong(System.String)
+    name: GetLong
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetLong(System.String)
+    name: GetLong
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetLong(System.String,System.Int64)
+  commentId: M:UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetLong(System.String,System.Int64)
+  parent: UltraForce.Library.NetStandard.Storage.UFKeyedStorage
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: SetLong(string, long)
+  nameWithType: UFKeyedStorage.SetLong(string, long)
+  fullName: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetLong(string, long)
+  nameWithType.vb: UFKeyedStorage.SetLong(String, Long)
+  fullName.vb: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetLong(String, Long)
+  name.vb: SetLong(String, Long)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetLong(System.String,System.Int64)
+    name: SetLong
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Int64
+    name: long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetLong(System.String,System.Int64)
+    name: SetLong
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Int64
+    name: Long
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int64
+  - name: )
+- uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetULong(System.String,System.UInt64)
+  commentId: M:UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetULong(System.String,System.UInt64)
+  parent: UltraForce.Library.NetStandard.Storage.UFKeyedStorage
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: GetULong(string, ulong)
+  nameWithType: UFKeyedStorage.GetULong(string, ulong)
+  fullName: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetULong(string, ulong)
+  nameWithType.vb: UFKeyedStorage.GetULong(String, ULong)
+  fullName.vb: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetULong(String, ULong)
+  name.vb: GetULong(String, ULong)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetULong(System.String,System.UInt64)
+    name: GetULong
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.UInt64
+    name: ulong
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint64
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetULong(System.String,System.UInt64)
+    name: GetULong
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.UInt64
+    name: ULong
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint64
+  - name: )
+- uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetULong(System.String)
+  commentId: M:UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetULong(System.String)
+  parent: UltraForce.Library.NetStandard.Storage.UFKeyedStorage
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: GetULong(string)
+  nameWithType: UFKeyedStorage.GetULong(string)
+  fullName: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetULong(string)
+  nameWithType.vb: UFKeyedStorage.GetULong(String)
+  fullName.vb: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetULong(String)
+  name.vb: GetULong(String)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetULong(System.String)
+    name: GetULong
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetULong(System.String)
+    name: GetULong
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetULong(System.String,System.UInt64)
+  commentId: M:UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetULong(System.String,System.UInt64)
+  parent: UltraForce.Library.NetStandard.Storage.UFKeyedStorage
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: SetULong(string, ulong)
+  nameWithType: UFKeyedStorage.SetULong(string, ulong)
+  fullName: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetULong(string, ulong)
+  nameWithType.vb: UFKeyedStorage.SetULong(String, ULong)
+  fullName.vb: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetULong(String, ULong)
+  name.vb: SetULong(String, ULong)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetULong(System.String,System.UInt64)
+    name: SetULong
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.UInt64
+    name: ulong
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint64
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetULong(System.String,System.UInt64)
+    name: SetULong
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.UInt64
+    name: ULong
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.uint64
+  - name: )
+- uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetFloat(System.String,System.Single)
+  commentId: M:UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetFloat(System.String,System.Single)
+  parent: UltraForce.Library.NetStandard.Storage.UFKeyedStorage
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: GetFloat(string, float)
+  nameWithType: UFKeyedStorage.GetFloat(string, float)
+  fullName: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetFloat(string, float)
+  nameWithType.vb: UFKeyedStorage.GetFloat(String, Single)
+  fullName.vb: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetFloat(String, Single)
+  name.vb: GetFloat(String, Single)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetFloat(System.String,System.Single)
+    name: GetFloat
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetFloat(System.String,System.Single)
+    name: GetFloat
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetFloat(System.String)
+  commentId: M:UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetFloat(System.String)
+  parent: UltraForce.Library.NetStandard.Storage.UFKeyedStorage
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: GetFloat(string)
+  nameWithType: UFKeyedStorage.GetFloat(string)
+  fullName: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetFloat(string)
+  nameWithType.vb: UFKeyedStorage.GetFloat(String)
+  fullName.vb: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetFloat(String)
+  name.vb: GetFloat(String)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetFloat(System.String)
+    name: GetFloat
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetFloat(System.String)
+    name: GetFloat
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetFloat(System.String,System.Single)
+  commentId: M:UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetFloat(System.String,System.Single)
+  parent: UltraForce.Library.NetStandard.Storage.UFKeyedStorage
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: SetFloat(string, float)
+  nameWithType: UFKeyedStorage.SetFloat(string, float)
+  fullName: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetFloat(string, float)
+  nameWithType.vb: UFKeyedStorage.SetFloat(String, Single)
+  fullName.vb: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetFloat(String, Single)
+  name.vb: SetFloat(String, Single)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetFloat(System.String,System.Single)
+    name: SetFloat
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: float
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetFloat(System.String,System.Single)
+    name: SetFloat
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.single
+  - name: )
+- uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetDouble(System.String,System.Double)
+  commentId: M:UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetDouble(System.String,System.Double)
+  parent: UltraForce.Library.NetStandard.Storage.UFKeyedStorage
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: GetDouble(string, double)
+  nameWithType: UFKeyedStorage.GetDouble(string, double)
+  fullName: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetDouble(string, double)
+  nameWithType.vb: UFKeyedStorage.GetDouble(String, Double)
+  fullName.vb: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetDouble(String, Double)
+  name.vb: GetDouble(String, Double)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetDouble(System.String,System.Double)
+    name: GetDouble
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetDouble(System.String,System.Double)
+    name: GetDouble
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+- uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetDouble(System.String)
+  commentId: M:UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetDouble(System.String)
+  parent: UltraForce.Library.NetStandard.Storage.UFKeyedStorage
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: GetDouble(string)
+  nameWithType: UFKeyedStorage.GetDouble(string)
+  fullName: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetDouble(string)
+  nameWithType.vb: UFKeyedStorage.GetDouble(String)
+  fullName.vb: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetDouble(String)
+  name.vb: GetDouble(String)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetDouble(System.String)
+    name: GetDouble
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetDouble(System.String)
+    name: GetDouble
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetDouble(System.String,System.Double)
+  commentId: M:UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetDouble(System.String,System.Double)
+  parent: UltraForce.Library.NetStandard.Storage.UFKeyedStorage
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: SetDouble(string, double)
+  nameWithType: UFKeyedStorage.SetDouble(string, double)
+  fullName: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetDouble(string, double)
+  nameWithType.vb: UFKeyedStorage.SetDouble(String, Double)
+  fullName.vb: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetDouble(String, Double)
+  name.vb: SetDouble(String, Double)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetDouble(System.String,System.Double)
+    name: SetDouble
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetDouble(System.String,System.Double)
+    name: SetDouble
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Double
+    name: Double
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.double
+  - name: )
+- uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetBool(System.String,System.Boolean)
+  commentId: M:UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetBool(System.String,System.Boolean)
+  parent: UltraForce.Library.NetStandard.Storage.UFKeyedStorage
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: GetBool(string, bool)
+  nameWithType: UFKeyedStorage.GetBool(string, bool)
+  fullName: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetBool(string, bool)
+  nameWithType.vb: UFKeyedStorage.GetBool(String, Boolean)
+  fullName.vb: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetBool(String, Boolean)
+  name.vb: GetBool(String, Boolean)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetBool(System.String,System.Boolean)
+    name: GetBool
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetBool(System.String,System.Boolean)
+    name: GetBool
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetBool(System.String)
+  commentId: M:UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetBool(System.String)
+  parent: UltraForce.Library.NetStandard.Storage.UFKeyedStorage
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: GetBool(string)
+  nameWithType: UFKeyedStorage.GetBool(string)
+  fullName: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetBool(string)
+  nameWithType.vb: UFKeyedStorage.GetBool(String)
+  fullName.vb: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetBool(String)
+  name.vb: GetBool(String)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetBool(System.String)
+    name: GetBool
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetBool(System.String)
+    name: GetBool
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetBool(System.String,System.Boolean)
+  commentId: M:UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetBool(System.String,System.Boolean)
+  parent: UltraForce.Library.NetStandard.Storage.UFKeyedStorage
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: SetBool(string, bool)
+  nameWithType: UFKeyedStorage.SetBool(string, bool)
+  fullName: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetBool(string, bool)
+  nameWithType.vb: UFKeyedStorage.SetBool(String, Boolean)
+  fullName.vb: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetBool(String, Boolean)
+  name.vb: SetBool(String, Boolean)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetBool(System.String,System.Boolean)
+    name: SetBool
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetBool(System.String,System.Boolean)
+    name: SetBool
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: )
+- uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetChar(System.String,System.Char)
+  commentId: M:UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetChar(System.String,System.Char)
+  parent: UltraForce.Library.NetStandard.Storage.UFKeyedStorage
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: GetChar(string, char)
+  nameWithType: UFKeyedStorage.GetChar(string, char)
+  fullName: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetChar(string, char)
+  nameWithType.vb: UFKeyedStorage.GetChar(String, Char)
+  fullName.vb: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetChar(String, Char)
+  name.vb: GetChar(String, Char)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetChar(System.String,System.Char)
+    name: GetChar
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Char
+    name: char
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.char
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetChar(System.String,System.Char)
+    name: GetChar
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Char
+    name: Char
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.char
+  - name: )
+- uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetChar(System.String)
+  commentId: M:UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetChar(System.String)
+  parent: UltraForce.Library.NetStandard.Storage.UFKeyedStorage
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: GetChar(string)
+  nameWithType: UFKeyedStorage.GetChar(string)
+  fullName: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetChar(string)
+  nameWithType.vb: UFKeyedStorage.GetChar(String)
+  fullName.vb: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetChar(String)
+  name.vb: GetChar(String)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetChar(System.String)
+    name: GetChar
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetChar(System.String)
+    name: GetChar
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetChar(System.String,System.Char)
+  commentId: M:UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetChar(System.String,System.Char)
+  parent: UltraForce.Library.NetStandard.Storage.UFKeyedStorage
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: SetChar(string, char)
+  nameWithType: UFKeyedStorage.SetChar(string, char)
+  fullName: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetChar(string, char)
+  nameWithType.vb: UFKeyedStorage.SetChar(String, Char)
+  fullName.vb: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetChar(String, Char)
+  name.vb: SetChar(String, Char)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetChar(System.String,System.Char)
+    name: SetChar
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Char
+    name: char
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.char
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetChar(System.String,System.Char)
+    name: SetChar
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Char
+    name: Char
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.char
+  - name: )
+- uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetBytes(System.String,System.Byte[])
+  commentId: M:UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetBytes(System.String,System.Byte[])
+  parent: UltraForce.Library.NetStandard.Storage.UFKeyedStorage
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: GetBytes(string, byte[])
+  nameWithType: UFKeyedStorage.GetBytes(string, byte[])
+  fullName: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetBytes(string, byte[])
+  nameWithType.vb: UFKeyedStorage.GetBytes(String, Byte())
+  fullName.vb: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetBytes(String, Byte())
+  name.vb: GetBytes(String, Byte())
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetBytes(System.String,System.Byte[])
+    name: GetBytes
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetBytes(System.String,System.Byte[])
+    name: GetBytes
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+  - name: )
+- uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetBytes(System.String)
+  commentId: M:UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetBytes(System.String)
+  parent: UltraForce.Library.NetStandard.Storage.UFKeyedStorage
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: GetBytes(string)
+  nameWithType: UFKeyedStorage.GetBytes(string)
+  fullName: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetBytes(string)
+  nameWithType.vb: UFKeyedStorage.GetBytes(String)
+  fullName.vb: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetBytes(String)
+  name.vb: GetBytes(String)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetBytes(System.String)
+    name: GetBytes
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetBytes(System.String)
+    name: GetBytes
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetBytes(System.String,System.Byte[])
+  commentId: M:UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetBytes(System.String,System.Byte[])
+  parent: UltraForce.Library.NetStandard.Storage.UFKeyedStorage
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: SetBytes(string, byte[])
+  nameWithType: UFKeyedStorage.SetBytes(string, byte[])
+  fullName: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetBytes(string, byte[])
+  nameWithType.vb: UFKeyedStorage.SetBytes(String, Byte())
+  fullName.vb: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetBytes(String, Byte())
+  name.vb: SetBytes(String, Byte())
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetBytes(System.String,System.Byte[])
+    name: SetBytes
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Byte
+    name: byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetBytes(System.String,System.Byte[])
+    name: SetBytes
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Byte
+    name: Byte
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.byte
+  - name: (
+  - name: )
+  - name: )
+- uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetDateTime(System.String,System.DateTime)
+  commentId: M:UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetDateTime(System.String,System.DateTime)
+  parent: UltraForce.Library.NetStandard.Storage.UFKeyedStorage
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: GetDateTime(string, DateTime)
+  nameWithType: UFKeyedStorage.GetDateTime(string, DateTime)
+  fullName: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetDateTime(string, System.DateTime)
+  nameWithType.vb: UFKeyedStorage.GetDateTime(String, Date)
+  fullName.vb: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetDateTime(String, Date)
+  name.vb: GetDateTime(String, Date)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetDateTime(System.String,System.DateTime)
+    name: GetDateTime
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: DateTime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetDateTime(System.String,System.DateTime)
+    name: GetDateTime
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: Date
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+- uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetDateTime(System.String)
+  commentId: M:UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetDateTime(System.String)
+  parent: UltraForce.Library.NetStandard.Storage.UFKeyedStorage
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: GetDateTime(string)
+  nameWithType: UFKeyedStorage.GetDateTime(string)
+  fullName: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetDateTime(string)
+  nameWithType.vb: UFKeyedStorage.GetDateTime(String)
+  fullName.vb: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetDateTime(String)
+  name.vb: GetDateTime(String)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetDateTime(System.String)
+    name: GetDateTime
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetDateTime(System.String)
+    name: GetDateTime
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetDateTime(System.String,System.DateTime)
+  commentId: M:UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetDateTime(System.String,System.DateTime)
+  parent: UltraForce.Library.NetStandard.Storage.UFKeyedStorage
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: SetDateTime(string, DateTime)
+  nameWithType: UFKeyedStorage.SetDateTime(string, DateTime)
+  fullName: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetDateTime(string, System.DateTime)
+  nameWithType.vb: UFKeyedStorage.SetDateTime(String, Date)
+  fullName.vb: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetDateTime(String, Date)
+  name.vb: SetDateTime(String, Date)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetDateTime(System.String,System.DateTime)
+    name: SetDateTime
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: DateTime
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetDateTime(System.String,System.DateTime)
+    name: SetDateTime
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.DateTime
+    name: Date
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.datetime
+  - name: )
+- uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetGuid(System.String,System.Guid)
+  commentId: M:UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetGuid(System.String,System.Guid)
+  parent: UltraForce.Library.NetStandard.Storage.UFKeyedStorage
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: GetGuid(string, Guid)
+  nameWithType: UFKeyedStorage.GetGuid(string, Guid)
+  fullName: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetGuid(string, System.Guid)
+  nameWithType.vb: UFKeyedStorage.GetGuid(String, Guid)
+  fullName.vb: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetGuid(String, System.Guid)
+  name.vb: GetGuid(String, Guid)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetGuid(System.String,System.Guid)
+    name: GetGuid
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetGuid(System.String,System.Guid)
+    name: GetGuid
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+- uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetGuid(System.String)
+  commentId: M:UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetGuid(System.String)
+  parent: UltraForce.Library.NetStandard.Storage.UFKeyedStorage
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: GetGuid(string)
+  nameWithType: UFKeyedStorage.GetGuid(string)
+  fullName: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetGuid(string)
+  nameWithType.vb: UFKeyedStorage.GetGuid(String)
+  fullName.vb: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetGuid(String)
+  name.vb: GetGuid(String)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetGuid(System.String)
+    name: GetGuid
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetGuid(System.String)
+    name: GetGuid
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetGuid(System.String,System.Guid)
+  commentId: M:UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetGuid(System.String,System.Guid)
+  parent: UltraForce.Library.NetStandard.Storage.UFKeyedStorage
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: SetGuid(string, Guid)
+  nameWithType: UFKeyedStorage.SetGuid(string, Guid)
+  fullName: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetGuid(string, System.Guid)
+  nameWithType.vb: UFKeyedStorage.SetGuid(String, Guid)
+  fullName.vb: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetGuid(String, System.Guid)
+  name.vb: SetGuid(String, Guid)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetGuid(System.String,System.Guid)
+    name: SetGuid
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetGuid(System.String,System.Guid)
+    name: SetGuid
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Guid
+    name: Guid
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.guid
+  - name: )
+- uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetStorableObject(System.String,UltraForce.Library.NetStandard.Storage.IUFStorableObject)
+  commentId: M:UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetStorableObject(System.String,UltraForce.Library.NetStandard.Storage.IUFStorableObject)
+  parent: UltraForce.Library.NetStandard.Storage.UFKeyedStorage
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: GetStorableObject(string, IUFStorableObject)
+  nameWithType: UFKeyedStorage.GetStorableObject(string, IUFStorableObject)
+  fullName: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetStorableObject(string, UltraForce.Library.NetStandard.Storage.IUFStorableObject)
+  nameWithType.vb: UFKeyedStorage.GetStorableObject(String, IUFStorableObject)
+  fullName.vb: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetStorableObject(String, UltraForce.Library.NetStandard.Storage.IUFStorableObject)
+  name.vb: GetStorableObject(String, IUFStorableObject)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetStorableObject(System.String,UltraForce.Library.NetStandard.Storage.IUFStorableObject)
+    name: GetStorableObject
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: UltraForce.Library.NetStandard.Storage.IUFStorableObject
+    name: IUFStorableObject
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetStorableObject(System.String,UltraForce.Library.NetStandard.Storage.IUFStorableObject)
+    name: GetStorableObject
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: UltraForce.Library.NetStandard.Storage.IUFStorableObject
+    name: IUFStorableObject
+    isExternal: true
+  - name: )
+- uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetStorableObject(System.String,UltraForce.Library.NetStandard.Storage.IUFStorableObject)
+  commentId: M:UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetStorableObject(System.String,UltraForce.Library.NetStandard.Storage.IUFStorableObject)
+  parent: UltraForce.Library.NetStandard.Storage.UFKeyedStorage
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: SetStorableObject(string, IUFStorableObject)
+  nameWithType: UFKeyedStorage.SetStorableObject(string, IUFStorableObject)
+  fullName: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetStorableObject(string, UltraForce.Library.NetStandard.Storage.IUFStorableObject)
+  nameWithType.vb: UFKeyedStorage.SetStorableObject(String, IUFStorableObject)
+  fullName.vb: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetStorableObject(String, UltraForce.Library.NetStandard.Storage.IUFStorableObject)
+  name.vb: SetStorableObject(String, IUFStorableObject)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetStorableObject(System.String,UltraForce.Library.NetStandard.Storage.IUFStorableObject)
+    name: SetStorableObject
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: UltraForce.Library.NetStandard.Storage.IUFStorableObject
+    name: IUFStorableObject
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetStorableObject(System.String,UltraForce.Library.NetStandard.Storage.IUFStorableObject)
+    name: SetStorableObject
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: UltraForce.Library.NetStandard.Storage.IUFStorableObject
+    name: IUFStorableObject
+    isExternal: true
+  - name: )
+- uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetObject(System.String,System.Type)
+  commentId: M:UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetObject(System.String,System.Type)
+  parent: UltraForce.Library.NetStandard.Storage.UFKeyedStorage
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: GetObject(string, Type)
+  nameWithType: UFKeyedStorage.GetObject(string, Type)
+  fullName: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetObject(string, System.Type)
+  nameWithType.vb: UFKeyedStorage.GetObject(String, Type)
+  fullName.vb: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetObject(String, System.Type)
+  name.vb: GetObject(String, Type)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetObject(System.String,System.Type)
+    name: GetObject
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetObject(System.String,System.Type)
+    name: GetObject
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetObject``1(System.String)
+  commentId: M:UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetObject``1(System.String)
+  parent: UltraForce.Library.NetStandard.Storage.UFKeyedStorage
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: GetObject<T>(string)
+  nameWithType: UFKeyedStorage.GetObject<T>(string)
+  fullName: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetObject<T>(string)
+  nameWithType.vb: UFKeyedStorage.GetObject(Of T)(String)
+  fullName.vb: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetObject(Of T)(String)
+  name.vb: GetObject(Of T)(String)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetObject``1(System.String)
+    name: GetObject
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetObject``1(System.String)
+    name: GetObject
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetObject(System.String,System.Type,System.Func{System.Type,System.Object})
+  commentId: M:UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetObject(System.String,System.Type,System.Func{System.Type,System.Object})
+  parent: UltraForce.Library.NetStandard.Storage.UFKeyedStorage
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: GetObject(string, Type, Func<Type, object>)
+  nameWithType: UFKeyedStorage.GetObject(string, Type, Func<Type, object>)
+  fullName: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetObject(string, System.Type, System.Func<System.Type, object>)
+  nameWithType.vb: UFKeyedStorage.GetObject(String, Type, Func(Of Type, Object))
+  fullName.vb: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetObject(String, System.Type, System.Func(Of System.Type, Object))
+  name.vb: GetObject(String, Type, Func(Of Type, Object))
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetObject(System.String,System.Type,System.Func{System.Type,System.Object})
+    name: GetObject
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetObject(System.String,System.Type,System.Func{System.Type,System.Object})
+    name: GetObject
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  - name: )
+- uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetObject(System.String,System.Object,System.Type)
+  commentId: M:UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetObject(System.String,System.Object,System.Type)
+  parent: UltraForce.Library.NetStandard.Storage.UFKeyedStorage
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: SetObject(string, object, Type)
+  nameWithType: UFKeyedStorage.SetObject(string, object, Type)
+  fullName: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetObject(string, object, System.Type)
+  nameWithType.vb: UFKeyedStorage.SetObject(String, Object, Type)
+  fullName.vb: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetObject(String, Object, System.Type)
+  name.vb: SetObject(String, Object, Type)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetObject(System.String,System.Object,System.Type)
+    name: SetObject
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetObject(System.String,System.Object,System.Type)
+    name: SetObject
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: )
+- uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetObject(System.String,System.Object)
+  commentId: M:UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetObject(System.String,System.Object)
+  parent: UltraForce.Library.NetStandard.Storage.UFKeyedStorage
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: SetObject(string, object)
+  nameWithType: UFKeyedStorage.SetObject(string, object)
+  fullName: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetObject(string, object)
+  nameWithType.vb: UFKeyedStorage.SetObject(String, Object)
+  fullName.vb: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetObject(String, Object)
+  name.vb: SetObject(String, Object)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetObject(System.String,System.Object)
+    name: SetObject
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetObject(System.String,System.Object)
+    name: SetObject
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetObject``1(System.String,System.Object)
+  commentId: M:UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetObject``1(System.String,System.Object)
+  parent: UltraForce.Library.NetStandard.Storage.UFKeyedStorage
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: SetObject<T>(string, object)
+  nameWithType: UFKeyedStorage.SetObject<T>(string, object)
+  fullName: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetObject<T>(string, object)
+  nameWithType.vb: UFKeyedStorage.SetObject(Of T)(String, Object)
+  fullName.vb: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetObject(Of T)(String, Object)
+  name.vb: SetObject(Of T)(String, Object)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetObject``1(System.String,System.Object)
+    name: SetObject
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetObject``1(System.String,System.Object)
+    name: SetObject
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SerializeObject(System.String,System.Object)
+  commentId: M:UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SerializeObject(System.String,System.Object)
+  parent: UltraForce.Library.NetStandard.Storage.UFKeyedStorage
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: SerializeObject(string, object)
+  nameWithType: UFKeyedStorage.SerializeObject(string, object)
+  fullName: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SerializeObject(string, object)
+  nameWithType.vb: UFKeyedStorage.SerializeObject(String, Object)
+  fullName.vb: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SerializeObject(String, Object)
+  name.vb: SerializeObject(String, Object)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SerializeObject(System.String,System.Object)
+    name: SerializeObject
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SerializeObject(System.String,System.Object)
+    name: SerializeObject
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.DeserializeObject(System.String,System.Type,System.Func{System.Type,System.Object})
+  commentId: M:UltraForce.Library.NetStandard.Storage.UFKeyedStorage.DeserializeObject(System.String,System.Type,System.Func{System.Type,System.Object})
+  parent: UltraForce.Library.NetStandard.Storage.UFKeyedStorage
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: DeserializeObject(string, Type, Func<Type, object>)
+  nameWithType: UFKeyedStorage.DeserializeObject(string, Type, Func<Type, object>)
+  fullName: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.DeserializeObject(string, System.Type, System.Func<System.Type, object>)
+  nameWithType.vb: UFKeyedStorage.DeserializeObject(String, Type, Func(Of Type, Object))
+  fullName.vb: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.DeserializeObject(String, System.Type, System.Func(Of System.Type, Object))
+  name.vb: DeserializeObject(String, Type, Func(Of Type, Object))
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.DeserializeObject(System.String,System.Type,System.Func{System.Type,System.Object})
+    name: DeserializeObject
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.DeserializeObject(System.String,System.Type,System.Func{System.Type,System.Object})
+    name: DeserializeObject
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: UltraForce.Library.NetStandard.Storage
+  commentId: N:UltraForce.Library.NetStandard.Storage
+  isExternal: true
+  name: UltraForce.Library.NetStandard.Storage
+  nameWithType: UltraForce.Library.NetStandard.Storage
+  fullName: UltraForce.Library.NetStandard.Storage
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    isExternal: true
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    isExternal: true
+  - name: .
+  - uid: UltraForce.Library.NetStandard
+    name: NetStandard
+    isExternal: true
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Storage
+    name: Storage
+    isExternal: true
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    isExternal: true
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    isExternal: true
+  - name: .
+  - uid: UltraForce.Library.NetStandard
+    name: NetStandard
+    isExternal: true
+  - name: .
+  - uid: UltraForce.Library.NetStandard.Storage
+    name: Storage
+    isExternal: true
+- uid: Microsoft.AspNetCore.Builder
+  commentId: N:Microsoft.AspNetCore.Builder
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.AspNetCore.Builder
+  nameWithType: Microsoft.AspNetCore.Builder
+  fullName: Microsoft.AspNetCore.Builder
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Builder
+    name: Builder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.builder
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Builder
+    name: Builder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.builder
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.#ctor*
+  commentId: Overload:UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.#ctor
+  href: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.html#UltraForce_Library_Core_Asp_Sessions_UFSessionMiddleware__ctor_Microsoft_AspNetCore_Http_RequestDelegate_
+  name: UFSessionMiddleware
+  nameWithType: UFSessionMiddleware.UFSessionMiddleware
+  fullName: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.UFSessionMiddleware
+  nameWithType.vb: UFSessionMiddleware.New
+  fullName.vb: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.New
+  name.vb: New
+- uid: Microsoft.AspNetCore.Http.RequestDelegate
+  commentId: T:Microsoft.AspNetCore.Http.RequestDelegate
+  parent: Microsoft.AspNetCore.Http
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.http.requestdelegate
+  name: RequestDelegate
+  nameWithType: RequestDelegate
+  fullName: Microsoft.AspNetCore.Http.RequestDelegate
+- uid: Microsoft.AspNetCore.Http
+  commentId: N:Microsoft.AspNetCore.Http
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.AspNetCore.Http
+  nameWithType: Microsoft.AspNetCore.Http
+  fullName: Microsoft.AspNetCore.Http
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Http
+    name: Http
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.http
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Http
+    name: Http
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.http
+- uid: Microsoft.AspNetCore.Http.HttpContext
+  commentId: T:Microsoft.AspNetCore.Http.HttpContext
+  parent: Microsoft.AspNetCore.Http
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.http.httpcontext
+  name: HttpContext
+  nameWithType: HttpContext
+  fullName: Microsoft.AspNetCore.Http.HttpContext
+- uid: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.Invoke*
+  commentId: Overload:UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.Invoke
+  href: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.html#UltraForce_Library_Core_Asp_Sessions_UFSessionMiddleware_Invoke_Microsoft_AspNetCore_Http_HttpContext_
+  name: Invoke
+  nameWithType: UFSessionMiddleware.Invoke
+  fullName: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.Invoke
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetInt(System.String,System.Int32)
+  commentId: M:UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetInt(System.String,System.Int32)
+  parent: UltraForce.Library.NetStandard.Storage.UFKeyedStorage
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: GetInt(string, int)
+  nameWithType: UFKeyedStorage.GetInt(string, int)
+  fullName: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetInt(string, int)
+  nameWithType.vb: UFKeyedStorage.GetInt(String, Integer)
+  fullName.vb: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetInt(String, Integer)
+  name.vb: GetInt(String, Integer)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetInt(System.String,System.Int32)
+    name: GetInt
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetInt(System.String,System.Int32)
+    name: GetInt
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.GetInt*
+  commentId: Overload:UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.GetInt
+  href: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.html#UltraForce_Library_Core_Asp_Sessions_UFSessionMiddleware_GetInt_System_String_System_Int32_
+  name: GetInt
+  nameWithType: UFSessionMiddleware.GetInt
+  fullName: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.GetInt
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetInt(System.String,System.Int32)
+  commentId: M:UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetInt(System.String,System.Int32)
+  parent: UltraForce.Library.NetStandard.Storage.UFKeyedStorage
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: SetInt(string, int)
+  nameWithType: UFKeyedStorage.SetInt(string, int)
+  fullName: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetInt(string, int)
+  nameWithType.vb: UFKeyedStorage.SetInt(String, Integer)
+  fullName.vb: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetInt(String, Integer)
+  name.vb: SetInt(String, Integer)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetInt(System.String,System.Int32)
+    name: SetInt
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: int
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetInt(System.String,System.Int32)
+    name: SetInt
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Int32
+    name: Integer
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - name: )
+- uid: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.SetInt*
+  commentId: Overload:UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.SetInt
+  href: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.html#UltraForce_Library_Core_Asp_Sessions_UFSessionMiddleware_SetInt_System_String_System_Int32_
+  name: SetInt
+  nameWithType: UFSessionMiddleware.SetInt
+  fullName: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.SetInt
+- uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetString(System.String,System.String)
+  commentId: M:UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetString(System.String,System.String)
+  parent: UltraForce.Library.NetStandard.Storage.UFKeyedStorage
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: GetString(string, string)
+  nameWithType: UFKeyedStorage.GetString(string, string)
+  fullName: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetString(string, string)
+  nameWithType.vb: UFKeyedStorage.GetString(String, String)
+  fullName.vb: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetString(String, String)
+  name.vb: GetString(String, String)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetString(System.String,System.String)
+    name: GetString
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetString(System.String,System.String)
+    name: GetString
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.GetString*
+  commentId: Overload:UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.GetString
+  href: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.html#UltraForce_Library_Core_Asp_Sessions_UFSessionMiddleware_GetString_System_String_System_String_
+  name: GetString
+  nameWithType: UFSessionMiddleware.GetString
+  fullName: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.GetString
+- uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetString(System.String,System.String)
+  commentId: M:UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetString(System.String,System.String)
+  parent: UltraForce.Library.NetStandard.Storage.UFKeyedStorage
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: SetString(string, string)
+  nameWithType: UFKeyedStorage.SetString(string, string)
+  fullName: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetString(string, string)
+  nameWithType.vb: UFKeyedStorage.SetString(String, String)
+  fullName.vb: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetString(String, String)
+  name.vb: SetString(String, String)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetString(System.String,System.String)
+    name: SetString
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetString(System.String,System.String)
+    name: SetString
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.SetString*
+  commentId: Overload:UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.SetString
+  href: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.html#UltraForce_Library_Core_Asp_Sessions_UFSessionMiddleware_SetString_System_String_System_String_
+  name: SetString
+  nameWithType: UFSessionMiddleware.SetString
+  fullName: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.SetString
+- uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.DeleteKey(System.String)
+  commentId: M:UltraForce.Library.NetStandard.Storage.UFKeyedStorage.DeleteKey(System.String)
+  parent: UltraForce.Library.NetStandard.Storage.UFKeyedStorage
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: DeleteKey(string)
+  nameWithType: UFKeyedStorage.DeleteKey(string)
+  fullName: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.DeleteKey(string)
+  nameWithType.vb: UFKeyedStorage.DeleteKey(String)
+  fullName.vb: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.DeleteKey(String)
+  name.vb: DeleteKey(String)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.DeleteKey(System.String)
+    name: DeleteKey
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.DeleteKey(System.String)
+    name: DeleteKey
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.DeleteKey*
+  commentId: Overload:UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.DeleteKey
+  href: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.html#UltraForce_Library_Core_Asp_Sessions_UFSessionMiddleware_DeleteKey_System_String_
+  name: DeleteKey
+  nameWithType: UFSessionMiddleware.DeleteKey
+  fullName: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.DeleteKey
+- uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.DeleteAll
+  commentId: M:UltraForce.Library.NetStandard.Storage.UFKeyedStorage.DeleteAll
+  parent: UltraForce.Library.NetStandard.Storage.UFKeyedStorage
+  isExternal: true
+  name: DeleteAll()
+  nameWithType: UFKeyedStorage.DeleteAll()
+  fullName: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.DeleteAll()
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.DeleteAll
+    name: DeleteAll
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.DeleteAll
+    name: DeleteAll
+    isExternal: true
+  - name: (
+  - name: )
+- uid: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.DeleteAll*
+  commentId: Overload:UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.DeleteAll
+  href: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.html#UltraForce_Library_Core_Asp_Sessions_UFSessionMiddleware_DeleteAll
+  name: DeleteAll
+  nameWithType: UFSessionMiddleware.DeleteAll
+  fullName: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.DeleteAll
+- uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.HasKey(System.String)
+  commentId: M:UltraForce.Library.NetStandard.Storage.UFKeyedStorage.HasKey(System.String)
+  parent: UltraForce.Library.NetStandard.Storage.UFKeyedStorage
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: HasKey(string)
+  nameWithType: UFKeyedStorage.HasKey(string)
+  fullName: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.HasKey(string)
+  nameWithType.vb: UFKeyedStorage.HasKey(String)
+  fullName.vb: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.HasKey(String)
+  name.vb: HasKey(String)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.HasKey(System.String)
+    name: HasKey
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.HasKey(System.String)
+    name: HasKey
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.HasKey*
+  commentId: Overload:UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.HasKey
+  href: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.html#UltraForce_Library_Core_Asp_Sessions_UFSessionMiddleware_HasKey_System_String_
+  name: HasKey
+  nameWithType: UFSessionMiddleware.HasKey
+  fullName: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.HasKey
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.Instance*
+  commentId: Overload:UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.Instance
+  href: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.html#UltraForce_Library_Core_Asp_Sessions_UFSessionMiddleware_Instance
+  name: Instance
+  nameWithType: UFSessionMiddleware.Instance
+  fullName: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.Instance

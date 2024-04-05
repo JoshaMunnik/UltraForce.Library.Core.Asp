@@ -1,0 +1,147 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.Core.Asp.Services
+  commentId: N:UltraForce.Library.Core.Asp.Services
+  id: UltraForce.Library.Core.Asp.Services
+  children:
+  - UltraForce.Library.Core.Asp.Services.IUFAsynchronousExecutableService
+  - UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer
+  - UltraForce.Library.Core.Asp.Services.IUFTheme
+  - UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber
+  - UltraForce.Library.Core.Asp.Services.UFFontAwesomeTheme
+  - UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer
+  - UltraForce.Library.Core.Asp.Services.UFRazorViewRenderer
+  - UltraForce.Library.Core.Asp.Services.UFScopedBackgroundService`1
+  - UltraForce.Library.Core.Asp.Services.UFTheme
+  langs:
+  - csharp
+  - vb
+  name: UltraForce.Library.Core.Asp.Services
+  nameWithType: UltraForce.Library.Core.Asp.Services
+  fullName: UltraForce.Library.Core.Asp.Services
+  type: Namespace
+  assemblies:
+  - UltraForce.Library.Core.Asp
+references:
+- uid: UltraForce.Library.Core.Asp.Services.IUFAsynchronousExecutableService
+  commentId: T:UltraForce.Library.Core.Asp.Services.IUFAsynchronousExecutableService
+  href: UltraForce.Library.Core.Asp.Services.IUFAsynchronousExecutableService.html
+  name: IUFAsynchronousExecutableService
+  nameWithType: IUFAsynchronousExecutableService
+  fullName: UltraForce.Library.Core.Asp.Services.IUFAsynchronousExecutableService
+- uid: UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer
+  commentId: T:UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer
+  parent: UltraForce.Library.Core.Asp.Services
+  href: UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.html
+  name: IUFModelExpressionRenderer
+  nameWithType: IUFModelExpressionRenderer
+  fullName: UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme
+  commentId: T:UltraForce.Library.Core.Asp.Services.IUFTheme
+  parent: UltraForce.Library.Core.Asp.Services
+  href: UltraForce.Library.Core.Asp.Services.IUFTheme.html
+  name: IUFTheme
+  nameWithType: IUFTheme
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme
+- uid: UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber
+  commentId: T:UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber
+  href: UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber.html
+  name: UFDutchIdentityErrorDescriber
+  nameWithType: UFDutchIdentityErrorDescriber
+  fullName: UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber
+- uid: UltraForce.Library.Core.Asp.Services.UFFontAwesomeTheme
+  commentId: T:UltraForce.Library.Core.Asp.Services.UFFontAwesomeTheme
+  href: UltraForce.Library.Core.Asp.Services.UFFontAwesomeTheme.html
+  name: UFFontAwesomeTheme
+  nameWithType: UFFontAwesomeTheme
+  fullName: UltraForce.Library.Core.Asp.Services.UFFontAwesomeTheme
+- uid: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer
+  commentId: T:UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer
+  href: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.html
+  name: UFModelExpressionRenderer
+  nameWithType: UFModelExpressionRenderer
+  fullName: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer
+- uid: UltraForce.Library.Core.Asp.Services.UFRazorViewRenderer
+  commentId: T:UltraForce.Library.Core.Asp.Services.UFRazorViewRenderer
+  href: UltraForce.Library.Core.Asp.Services.UFRazorViewRenderer.html
+  name: UFRazorViewRenderer
+  nameWithType: UFRazorViewRenderer
+  fullName: UltraForce.Library.Core.Asp.Services.UFRazorViewRenderer
+- uid: UltraForce.Library.Core.Asp.Services.UFScopedBackgroundService`1
+  commentId: T:UltraForce.Library.Core.Asp.Services.UFScopedBackgroundService`1
+  href: UltraForce.Library.Core.Asp.Services.UFScopedBackgroundService-1.html
+  name: UFScopedBackgroundService<TAsynchronousExecutableService>
+  nameWithType: UFScopedBackgroundService<TAsynchronousExecutableService>
+  fullName: UltraForce.Library.Core.Asp.Services.UFScopedBackgroundService<TAsynchronousExecutableService>
+  nameWithType.vb: UFScopedBackgroundService(Of TAsynchronousExecutableService)
+  fullName.vb: UltraForce.Library.Core.Asp.Services.UFScopedBackgroundService(Of TAsynchronousExecutableService)
+  name.vb: UFScopedBackgroundService(Of TAsynchronousExecutableService)
+  spec.csharp:
+  - uid: UltraForce.Library.Core.Asp.Services.UFScopedBackgroundService`1
+    name: UFScopedBackgroundService
+    href: UltraForce.Library.Core.Asp.Services.UFScopedBackgroundService-1.html
+  - name: <
+  - name: TAsynchronousExecutableService
+  - name: '>'
+  spec.vb:
+  - uid: UltraForce.Library.Core.Asp.Services.UFScopedBackgroundService`1
+    name: UFScopedBackgroundService
+    href: UltraForce.Library.Core.Asp.Services.UFScopedBackgroundService-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TAsynchronousExecutableService
+  - name: )
+- uid: UltraForce.Library.Core.Asp.Services.UFTheme
+  commentId: T:UltraForce.Library.Core.Asp.Services.UFTheme
+  parent: UltraForce.Library.Core.Asp.Services
+  href: UltraForce.Library.Core.Asp.Services.UFTheme.html
+  name: UFTheme
+  nameWithType: UFTheme
+  fullName: UltraForce.Library.Core.Asp.Services.UFTheme
+- uid: UltraForce.Library.Core.Asp.Services
+  commentId: N:UltraForce.Library.Core.Asp.Services
+  href: UltraForce.html
+  name: UltraForce.Library.Core.Asp.Services
+  nameWithType: UltraForce.Library.Core.Asp.Services
+  fullName: UltraForce.Library.Core.Asp.Services
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Services
+    name: Services
+    href: UltraForce.Library.Core.Asp.Services.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Services
+    name: Services
+    href: UltraForce.Library.Core.Asp.Services.html

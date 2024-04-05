@@ -1,0 +1,465 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer
+  commentId: T:UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer
+  id: IUFModelExpressionRenderer
+  parent: UltraForce.Library.Core.Asp.Services
+  children:
+  - UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.GetName(Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression,Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
+  - UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.SetContentToNameAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression,Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
+  - UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.SetContentToValueAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression,Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
+  langs:
+  - csharp
+  - vb
+  name: IUFModelExpressionRenderer
+  nameWithType: IUFModelExpressionRenderer
+  fullName: UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer
+  type: Interface
+  source:
+    id: IUFModelExpressionRenderer
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFModelExpressionRenderer.cs
+    startLine: 40
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Services
+  summary: Defines a renderer for <xref href="Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression" data-throw-if-not-resolved="false"></xref>s.
+  example: []
+  syntax:
+    content: public interface IUFModelExpressionRenderer
+    content.vb: Public Interface IUFModelExpressionRenderer
+- uid: UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.SetContentToNameAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression,Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
+  commentId: M:UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.SetContentToNameAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression,Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
+  id: SetContentToNameAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression,Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
+  parent: UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer
+  langs:
+  - csharp
+  - vb
+  name: SetContentToNameAsync(TagHelperOutput, ModelExpression, ViewContext)
+  nameWithType: IUFModelExpressionRenderer.SetContentToNameAsync(TagHelperOutput, ModelExpression, ViewContext)
+  fullName: UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.SetContentToNameAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput, Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression, Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
+  type: Method
+  source:
+    id: SetContentToNameAsync
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFModelExpressionRenderer.cs
+    startLine: 49
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Services
+  summary: >-
+    Sets the content to the (display) name of the <xref href="Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression" data-throw-if-not-resolved="false"></xref>. The code is
+
+    based on the code from <xref href="Microsoft.AspNetCore.Mvc.TagHelpers.LabelTagHelper" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: Task SetContentToNameAsync(TagHelperOutput anOutput, ModelExpression anExpression, ViewContext aViewContext)
+    parameters:
+    - id: anOutput
+      type: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput
+      description: Output to update
+    - id: anExpression
+      type: Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression
+      description: Model expression to get name from
+    - id: aViewContext
+      type: Microsoft.AspNetCore.Mvc.Rendering.ViewContext
+      description: View context to use
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function SetContentToNameAsync(anOutput As TagHelperOutput, anExpression As ModelExpression, aViewContext As ViewContext) As Task
+  overload: UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.SetContentToNameAsync*
+- uid: UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.SetContentToValueAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression,Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
+  commentId: M:UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.SetContentToValueAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression,Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
+  id: SetContentToValueAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression,Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
+  parent: UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer
+  langs:
+  - csharp
+  - vb
+  name: SetContentToValueAsync(TagHelperOutput, ModelExpression, ViewContext)
+  nameWithType: IUFModelExpressionRenderer.SetContentToValueAsync(TagHelperOutput, ModelExpression, ViewContext)
+  fullName: UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.SetContentToValueAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput, Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression, Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
+  type: Method
+  source:
+    id: SetContentToValueAsync
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFModelExpressionRenderer.cs
+    startLine: 59
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Services
+  summary: Sets the content to the value of the <xref href="Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: Task SetContentToValueAsync(TagHelperOutput anOutput, ModelExpression anExpression, ViewContext aViewContext)
+    parameters:
+    - id: anOutput
+      type: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput
+      description: Output to update
+    - id: anExpression
+      type: Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression
+      description: Expression to get value from
+    - id: aViewContext
+      type: Microsoft.AspNetCore.Mvc.Rendering.ViewContext
+      description: View context to use
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Function SetContentToValueAsync(anOutput As TagHelperOutput, anExpression As ModelExpression, aViewContext As ViewContext) As Task
+  overload: UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.SetContentToValueAsync*
+- uid: UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.GetName(Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression,Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
+  commentId: M:UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.GetName(Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression,Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
+  id: GetName(Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression,Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
+  parent: UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer
+  langs:
+  - csharp
+  - vb
+  name: GetName(ModelExpression, ViewContext)
+  nameWithType: IUFModelExpressionRenderer.GetName(ModelExpression, ViewContext)
+  fullName: UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.GetName(Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression, Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
+  type: Method
+  source:
+    id: GetName
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFModelExpressionRenderer.cs
+    startLine: 69
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Services
+  summary: Gets the name for an model expression.
+  example: []
+  syntax:
+    content: IHtmlContentBuilder GetName(ModelExpression anExpression, ViewContext aViewContext)
+    parameters:
+    - id: anExpression
+      type: Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression
+      description: expression to get name for
+    - id: aViewContext
+      type: Microsoft.AspNetCore.Mvc.Rendering.ViewContext
+      description: ''
+    return:
+      type: Microsoft.AspNetCore.Html.IHtmlContentBuilder
+      description: html representation of name
+    content.vb: Function GetName(anExpression As ModelExpression, aViewContext As ViewContext) As IHtmlContentBuilder
+  overload: UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.GetName*
+references:
+- uid: Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression
+  commentId: T:Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression
+  parent: Microsoft.AspNetCore.Mvc.ViewFeatures
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.viewfeatures.modelexpression
+  name: ModelExpression
+  nameWithType: ModelExpression
+  fullName: Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression
+- uid: UltraForce.Library.Core.Asp.Services
+  commentId: N:UltraForce.Library.Core.Asp.Services
+  href: UltraForce.html
+  name: UltraForce.Library.Core.Asp.Services
+  nameWithType: UltraForce.Library.Core.Asp.Services
+  fullName: UltraForce.Library.Core.Asp.Services
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Services
+    name: Services
+    href: UltraForce.Library.Core.Asp.Services.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Services
+    name: Services
+    href: UltraForce.Library.Core.Asp.Services.html
+- uid: Microsoft.AspNetCore.Mvc.ViewFeatures
+  commentId: N:Microsoft.AspNetCore.Mvc.ViewFeatures
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.AspNetCore.Mvc.ViewFeatures
+  nameWithType: Microsoft.AspNetCore.Mvc.ViewFeatures
+  fullName: Microsoft.AspNetCore.Mvc.ViewFeatures
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Mvc
+    name: Mvc
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc
+  - name: .
+  - uid: Microsoft.AspNetCore.Mvc.ViewFeatures
+    name: ViewFeatures
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.viewfeatures
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Mvc
+    name: Mvc
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc
+  - name: .
+  - uid: Microsoft.AspNetCore.Mvc.ViewFeatures
+    name: ViewFeatures
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.viewfeatures
+- uid: Microsoft.AspNetCore.Mvc.TagHelpers.LabelTagHelper
+  commentId: T:Microsoft.AspNetCore.Mvc.TagHelpers.LabelTagHelper
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers.labeltaghelper
+  name: LabelTagHelper
+  nameWithType: LabelTagHelper
+  fullName: Microsoft.AspNetCore.Mvc.TagHelpers.LabelTagHelper
+- uid: UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.SetContentToNameAsync*
+  commentId: Overload:UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.SetContentToNameAsync
+  href: UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.html#UltraForce_Library_Core_Asp_Services_IUFModelExpressionRenderer_SetContentToNameAsync_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_Microsoft_AspNetCore_Mvc_ViewFeatures_ModelExpression_Microsoft_AspNetCore_Mvc_Rendering_ViewContext_
+  name: SetContentToNameAsync
+  nameWithType: IUFModelExpressionRenderer.SetContentToNameAsync
+  fullName: UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.SetContentToNameAsync
+- uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput
+  commentId: T:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput
+  parent: Microsoft.AspNetCore.Razor.TagHelpers
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelperoutput
+  name: TagHelperOutput
+  nameWithType: TagHelperOutput
+  fullName: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput
+- uid: Microsoft.AspNetCore.Mvc.Rendering.ViewContext
+  commentId: T:Microsoft.AspNetCore.Mvc.Rendering.ViewContext
+  parent: Microsoft.AspNetCore.Mvc.Rendering
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.rendering.viewcontext
+  name: ViewContext
+  nameWithType: ViewContext
+  fullName: Microsoft.AspNetCore.Mvc.Rendering.ViewContext
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: Microsoft.AspNetCore.Razor.TagHelpers
+  commentId: N:Microsoft.AspNetCore.Razor.TagHelpers
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.AspNetCore.Razor.TagHelpers
+  nameWithType: Microsoft.AspNetCore.Razor.TagHelpers
+  fullName: Microsoft.AspNetCore.Razor.TagHelpers
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Razor
+    name: Razor
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor
+  - name: .
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers
+    name: TagHelpers
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Razor
+    name: Razor
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor
+  - name: .
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers
+    name: TagHelpers
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers
+- uid: Microsoft.AspNetCore.Mvc.Rendering
+  commentId: N:Microsoft.AspNetCore.Mvc.Rendering
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.AspNetCore.Mvc.Rendering
+  nameWithType: Microsoft.AspNetCore.Mvc.Rendering
+  fullName: Microsoft.AspNetCore.Mvc.Rendering
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Mvc
+    name: Mvc
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc
+  - name: .
+  - uid: Microsoft.AspNetCore.Mvc.Rendering
+    name: Rendering
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.rendering
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Mvc
+    name: Mvc
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc
+  - name: .
+  - uid: Microsoft.AspNetCore.Mvc.Rendering
+    name: Rendering
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.rendering
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.SetContentToValueAsync*
+  commentId: Overload:UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.SetContentToValueAsync
+  href: UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.html#UltraForce_Library_Core_Asp_Services_IUFModelExpressionRenderer_SetContentToValueAsync_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_Microsoft_AspNetCore_Mvc_ViewFeatures_ModelExpression_Microsoft_AspNetCore_Mvc_Rendering_ViewContext_
+  name: SetContentToValueAsync
+  nameWithType: IUFModelExpressionRenderer.SetContentToValueAsync
+  fullName: UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.SetContentToValueAsync
+- uid: UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.GetName*
+  commentId: Overload:UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.GetName
+  href: UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.html#UltraForce_Library_Core_Asp_Services_IUFModelExpressionRenderer_GetName_Microsoft_AspNetCore_Mvc_ViewFeatures_ModelExpression_Microsoft_AspNetCore_Mvc_Rendering_ViewContext_
+  name: GetName
+  nameWithType: IUFModelExpressionRenderer.GetName
+  fullName: UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.GetName
+- uid: Microsoft.AspNetCore.Html.IHtmlContentBuilder
+  commentId: T:Microsoft.AspNetCore.Html.IHtmlContentBuilder
+  parent: Microsoft.AspNetCore.Html
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.html.ihtmlcontentbuilder
+  name: IHtmlContentBuilder
+  nameWithType: IHtmlContentBuilder
+  fullName: Microsoft.AspNetCore.Html.IHtmlContentBuilder
+- uid: Microsoft.AspNetCore.Html
+  commentId: N:Microsoft.AspNetCore.Html
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.AspNetCore.Html
+  nameWithType: Microsoft.AspNetCore.Html
+  fullName: Microsoft.AspNetCore.Html
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Html
+    name: Html
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Html
+    name: Html
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.html

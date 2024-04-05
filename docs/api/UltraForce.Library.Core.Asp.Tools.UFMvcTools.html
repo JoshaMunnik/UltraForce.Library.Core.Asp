@@ -1,0 +1,605 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class UFMvcTools | UltraForce.Library.Core.Asp </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class UFMvcTools | UltraForce.Library.Core.Asp ">
+      
+      <meta name="description" content="contain static support methods for MVC.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="UltraForce.Library.Core.Asp">
+            UltraForce.Library.Core.Asp
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="UltraForce.Library.Core.Asp.Tools.UFMvcTools">
+
+
+
+  <h1 id="UltraForce_Library_Core_Asp_Tools_UFMvcTools" data-uid="UltraForce.Library.Core.Asp.Tools.UFMvcTools" class="text-break">
+Class UFMvcTools  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="UltraForce.html">UltraForce</a>.<a class="xref" href="UltraForce.Library.html">Library</a>.<a class="xref" href="UltraForce.Library.Core.html">Core</a>.<a class="xref" href="UltraForce.Library.Core.Asp.html">Asp</a>.<a class="xref" href="UltraForce.Library.Core.Asp.Tools.html">Tools</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>UltraForce.Library.Core.Asp.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a class="xref" href="UltraForce.Library.Core.Asp.Tools.UFMvcTools.html">UFMvcTools</a> contain static support methods for MVC.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class UFMvcTools</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><span class="xref">UFMvcTools</span></div>
+    </dd>
+  </dl>
+
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="UltraForce_Library_Core_Asp_Tools_UFMvcTools_AddFirstItem_" data-uid="UltraForce.Library.Core.Asp.Tools.UFMvcTools.AddFirstItem*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Tools_UFMvcTools_AddFirstItem_Microsoft_AspNetCore_Mvc_Rendering_SelectList_Microsoft_AspNetCore_Mvc_Rendering_SelectListItem_" data-uid="UltraForce.Library.Core.Asp.Tools.UFMvcTools.AddFirstItem(Microsoft.AspNetCore.Mvc.Rendering.SelectList,Microsoft.AspNetCore.Mvc.Rendering.SelectListItem)">
+  AddFirstItem(SelectList, SelectListItem)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Adds an item at the start of a select list. Preserves the selected state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SelectList AddFirstItem(SelectList aList, SelectListItem anItem)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aList</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.rendering.selectlist">SelectList</a></dt>
+    <dd><p>List to add item to</p>
+</dd>
+    <dt><code>anItem</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.rendering.selectlistitem">SelectListItem</a></dt>
+    <dd><p>Item to insert at first position</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.rendering.selectlist">SelectList</a></dt>
+    <dd><p>New list with item inserted</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_Tools_UFMvcTools_CreateListFromEnum_" data-uid="UltraForce.Library.Core.Asp.Tools.UFMvcTools.CreateListFromEnum*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Tools_UFMvcTools_CreateListFromEnum__1_System_String_" data-uid="UltraForce.Library.Core.Asp.Tools.UFMvcTools.CreateListFromEnum``1(System.String)">
+  CreateListFromEnum&lt;T&gt;(string?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Creates a <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.rendering.selectlist">SelectList</a> from an enum type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static SelectList CreateListFromEnum&lt;T&gt;(string? anEmptyChoice = null) where T : struct, Enum</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>anEmptyChoice</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.rendering.selectlist">SelectList</a></dt>
+    <dd><p>Select list</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd><p>Enum type</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_Tools_UFMvcTools_GetControllerName_" data-uid="UltraForce.Library.Core.Asp.Tools.UFMvcTools.GetControllerName*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Tools_UFMvcTools_GetControllerName_System_String_" data-uid="UltraForce.Library.Core.Asp.Tools.UFMvcTools.GetControllerName(System.String)">
+  GetControllerName(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Checks if the name ends with 'Controller', if it does remove it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetControllerName(string aController)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aController</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Name of controller</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Name of controller without 'Controller' at the end</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_Tools_UFMvcTools_GetControllerName_" data-uid="UltraForce.Library.Core.Asp.Tools.UFMvcTools.GetControllerName*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Tools_UFMvcTools_GetControllerName__1" data-uid="UltraForce.Library.Core.Asp.Tools.UFMvcTools.GetControllerName``1">
+  GetControllerName&lt;T&gt;()
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Checks if the type name ends with 'Controller', if it does remove it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetControllerName&lt;T&gt;()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Name of type without 'Controller' at the end</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>T</code></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_Tools_UFMvcTools_GetErrors_" data-uid="UltraForce.Library.Core.Asp.Tools.UFMvcTools.GetErrors*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Tools_UFMvcTools_GetErrors_Microsoft_AspNetCore_Mvc_ModelBinding_ModelStateDictionary_System_String_System_String_System_String_System_String_" data-uid="UltraForce.Library.Core.Asp.Tools.UFMvcTools.GetErrors(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary,System.String,System.String,System.String,System.String)">
+  GetErrors(ModelStateDictionary, string, string, string, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the errors for a field as a single string</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetErrors(ModelStateDictionary aModelState, string aName, string aDivider = &quot;, &quot;, string anHead = &quot;&quot;, string aTail = &quot;&quot;)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aModelState</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.modelbinding.modelstatedictionary">ModelStateDictionary</a></dt>
+    <dd><p>Model state to get errors from</p>
+</dd>
+    <dt><code>aName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Field name to get errors for</p>
+</dd>
+    <dt><code>aDivider</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Value to place between errors</p>
+</dd>
+    <dt><code>anHead</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Value at start, only used if there are errors</p>
+</dd>
+    <dt><code>aTail</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Value at end, only used if there are errors</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>A string containing all errors or <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string.empty">Empty</a> if there are no errors or no field with the
+specified name can be found</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_Tools_UFMvcTools_GetJsonName_" data-uid="UltraForce.Library.Core.Asp.Tools.UFMvcTools.GetJsonName*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Tools_UFMvcTools_GetJsonName_System_Object_System_String_" data-uid="UltraForce.Library.Core.Asp.Tools.UFMvcTools.GetJsonName(System.Object,System.String)">
+  GetJsonName(object, string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the json name for a property in an object. The method checks if a property has
+a <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.text.json.serialization.jsonpropertynameattribute">JsonPropertyNameAttribute</a> and if so returns the name from the attribute.
+If no attribute can be found the property name is returned.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetJsonName(object anObject, string aPropertyName)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>anObject</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>Object to get property from</p>
+</dd>
+    <dt><code>aPropertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Name of property</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Json name or value of <code>aProperty</code></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.exception">Exception</a></dt>
+    <dd><p>When no property can be found for the specified name</p>
+</dd>
+  </dl>
+
+
+
+  <a id="UltraForce_Library_Core_Asp_Tools_UFMvcTools_GetViewComponentName_" data-uid="UltraForce.Library.Core.Asp.Tools.UFMvcTools.GetViewComponentName*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Tools_UFMvcTools_GetViewComponentName_System_String_" data-uid="UltraForce.Library.Core.Asp.Tools.UFMvcTools.GetViewComponentName(System.String)">
+  GetViewComponentName(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Checks if the name ends with 'ViewComponent', if it does remove it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetViewComponentName(string aComponent)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aComponent</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Name of component</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Name of controller without 'ViewComponent' at the end</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_Tools_UFMvcTools_Normalize_" data-uid="UltraForce.Library.Core.Asp.Tools.UFMvcTools.Normalize*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Tools_UFMvcTools_Normalize_System_String_" data-uid="UltraForce.Library.Core.Asp.Tools.UFMvcTools.Normalize(System.String)">
+  Normalize(string)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns a normalized value of a string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string Normalize(string aValue)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Value to normalize</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Normalized value</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_Tools_UFMvcTools_ReplaceMacros_" data-uid="UltraForce.Library.Core.Asp.Tools.UFMvcTools.ReplaceMacros*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Tools_UFMvcTools_ReplaceMacros_System_String_System_Security_Principal_IPrincipal_" data-uid="UltraForce.Library.Core.Asp.Tools.UFMvcTools.ReplaceMacros(System.String,System.Security.Principal.IPrincipal)">
+  ReplaceMacros(string, IPrincipal?)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Replace macro texts with values.</p>
+<p>
+The method replaces the following macro's: {copy}, {year} and {user}
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string ReplaceMacros(string aText, IPrincipal? aPrincipal = null)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aText</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>text that might contain macro's</p>
+</dd>
+    <dt><code>aPrincipal</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.security.principal.iprincipal">IPrincipal</a></dt>
+    <dd><p>value to get user name from</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>aText with macro's replaced</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_Tools_UFMvcTools_Validate_" data-uid="UltraForce.Library.Core.Asp.Tools.UFMvcTools.Validate*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Tools_UFMvcTools_Validate_System_Object_" data-uid="UltraForce.Library.Core.Asp.Tools.UFMvcTools.Validate(System.Object)">
+  Validate(object)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Validates an object using their validation attributes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static (bool isValid, ICollection&lt;ValidationResult&gt; results) Validate(object anObject)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>anObject</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt>(<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.boolean,system.collections.generic.icollection-system.componentmodel.dataannotations.validationresult--.isvalid">isValid</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1">ICollection</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.componentmodel.dataannotations.validationresult">ValidationResult</a>&gt; <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-system.boolean,system.collections.generic.icollection-system.componentmodel.dataannotations.validationresult--.results">results</a>)</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

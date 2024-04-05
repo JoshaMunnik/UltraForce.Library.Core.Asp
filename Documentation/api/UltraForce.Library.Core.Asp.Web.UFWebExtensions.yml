@@ -1,0 +1,752 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.Core.Asp.Web.UFWebExtensions
+  commentId: T:UltraForce.Library.Core.Asp.Web.UFWebExtensions
+  id: UFWebExtensions
+  parent: UltraForce.Library.Core.Asp.Web
+  children:
+  - UltraForce.Library.Core.Asp.Web.UFWebExtensions.IsInRole(System.Security.Claims.ClaimsPrincipal,System.Collections.Generic.IEnumerable{System.String})
+  - UltraForce.Library.Core.Asp.Web.UFWebExtensions.IsInRole(System.Security.Claims.ClaimsPrincipal,System.String[])
+  - UltraForce.Library.Core.Asp.Web.UFWebExtensions.UseUFSession(Microsoft.AspNetCore.Builder.IApplicationBuilder)
+  langs:
+  - csharp
+  - vb
+  name: UFWebExtensions
+  nameWithType: UFWebExtensions
+  fullName: UltraForce.Library.Core.Asp.Web.UFWebExtensions
+  type: Class
+  source:
+    id: UFWebExtensions
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Web\UFWebExtensions.cs
+    startLine: 38
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Web
+  summary: Defines various extensions methods
+  example: []
+  syntax:
+    content: public static class UFWebExtensions
+    content.vb: Public Module UFWebExtensions
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: UltraForce.Library.Core.Asp.Web.UFWebExtensions.UseUFSession(Microsoft.AspNetCore.Builder.IApplicationBuilder)
+  commentId: M:UltraForce.Library.Core.Asp.Web.UFWebExtensions.UseUFSession(Microsoft.AspNetCore.Builder.IApplicationBuilder)
+  id: UseUFSession(Microsoft.AspNetCore.Builder.IApplicationBuilder)
+  isExtensionMethod: true
+  parent: UltraForce.Library.Core.Asp.Web.UFWebExtensions
+  langs:
+  - csharp
+  - vb
+  name: UseUFSession(IApplicationBuilder)
+  nameWithType: UFWebExtensions.UseUFSession(IApplicationBuilder)
+  fullName: UltraForce.Library.Core.Asp.Web.UFWebExtensions.UseUFSession(Microsoft.AspNetCore.Builder.IApplicationBuilder)
+  type: Method
+  source:
+    id: UseUFSession
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Web\UFWebExtensions.cs
+    startLine: 46
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Web
+  summary: >-
+    Registers the <xref href="UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware" data-throw-if-not-resolved="false"></xref> middleware. It also calls
+
+    <xref href="Microsoft.AspNetCore.Builder.SessionMiddlewareExtensions.UseSession(Microsoft.AspNetCore.Builder.IApplicationBuilder)" data-throw-if-not-resolved="false"></xref> to enable sessions.
+  example: []
+  syntax:
+    content: public static IApplicationBuilder UseUFSession(this IApplicationBuilder aBuilder)
+    parameters:
+    - id: aBuilder
+      type: Microsoft.AspNetCore.Builder.IApplicationBuilder
+      description: ''
+    return:
+      type: Microsoft.AspNetCore.Builder.IApplicationBuilder
+      description: value of aBuilder
+    content.vb: Public Shared Function UseUFSession(aBuilder As IApplicationBuilder) As IApplicationBuilder
+  overload: UltraForce.Library.Core.Asp.Web.UFWebExtensions.UseUFSession*
+- uid: UltraForce.Library.Core.Asp.Web.UFWebExtensions.IsInRole(System.Security.Claims.ClaimsPrincipal,System.String[])
+  commentId: M:UltraForce.Library.Core.Asp.Web.UFWebExtensions.IsInRole(System.Security.Claims.ClaimsPrincipal,System.String[])
+  id: IsInRole(System.Security.Claims.ClaimsPrincipal,System.String[])
+  isExtensionMethod: true
+  parent: UltraForce.Library.Core.Asp.Web.UFWebExtensions
+  langs:
+  - csharp
+  - vb
+  name: IsInRole(ClaimsPrincipal, params string[])
+  nameWithType: UFWebExtensions.IsInRole(ClaimsPrincipal, params string[])
+  fullName: UltraForce.Library.Core.Asp.Web.UFWebExtensions.IsInRole(System.Security.Claims.ClaimsPrincipal, params string[])
+  type: Method
+  source:
+    id: IsInRole
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Web\UFWebExtensions.cs
+    startLine: 59
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Web
+  summary: Adds an additional IsInRole method to test if user belongs to any of the specified roles.
+  example: []
+  syntax:
+    content: public static bool IsInRole(this ClaimsPrincipal aClaim, params string[] aRoles)
+    parameters:
+    - id: aClaim
+      type: System.Security.Claims.ClaimsPrincipal
+      description: Claim to check
+    - id: aRoles
+      type: System.String[]
+      description: Roles to check
+    return:
+      type: System.Boolean
+      description: True if claim is at least in one role.
+    content.vb: Public Shared Function IsInRole(aClaim As ClaimsPrincipal, ParamArray aRoles As String()) As Boolean
+  overload: UltraForce.Library.Core.Asp.Web.UFWebExtensions.IsInRole*
+  nameWithType.vb: UFWebExtensions.IsInRole(ClaimsPrincipal, ParamArray String())
+  fullName.vb: UltraForce.Library.Core.Asp.Web.UFWebExtensions.IsInRole(System.Security.Claims.ClaimsPrincipal, ParamArray String())
+  name.vb: IsInRole(ClaimsPrincipal, ParamArray String())
+- uid: UltraForce.Library.Core.Asp.Web.UFWebExtensions.IsInRole(System.Security.Claims.ClaimsPrincipal,System.Collections.Generic.IEnumerable{System.String})
+  commentId: M:UltraForce.Library.Core.Asp.Web.UFWebExtensions.IsInRole(System.Security.Claims.ClaimsPrincipal,System.Collections.Generic.IEnumerable{System.String})
+  id: IsInRole(System.Security.Claims.ClaimsPrincipal,System.Collections.Generic.IEnumerable{System.String})
+  isExtensionMethod: true
+  parent: UltraForce.Library.Core.Asp.Web.UFWebExtensions
+  langs:
+  - csharp
+  - vb
+  name: IsInRole(ClaimsPrincipal, IEnumerable<string>)
+  nameWithType: UFWebExtensions.IsInRole(ClaimsPrincipal, IEnumerable<string>)
+  fullName: UltraForce.Library.Core.Asp.Web.UFWebExtensions.IsInRole(System.Security.Claims.ClaimsPrincipal, System.Collections.Generic.IEnumerable<string>)
+  type: Method
+  source:
+    id: IsInRole
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Web\UFWebExtensions.cs
+    startLine: 70
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Web
+  summary: Adds an additional IsInRole method to test if user belongs to any of the specified roles.
+  example: []
+  syntax:
+    content: public static bool IsInRole(this ClaimsPrincipal aClaim, IEnumerable<string> aRoles)
+    parameters:
+    - id: aClaim
+      type: System.Security.Claims.ClaimsPrincipal
+      description: Claim to check
+    - id: aRoles
+      type: System.Collections.Generic.IEnumerable{System.String}
+      description: Roles to check
+    return:
+      type: System.Boolean
+      description: True if claim is at least in one role.
+    content.vb: Public Shared Function IsInRole(aClaim As ClaimsPrincipal, aRoles As IEnumerable(Of String)) As Boolean
+  overload: UltraForce.Library.Core.Asp.Web.UFWebExtensions.IsInRole*
+  nameWithType.vb: UFWebExtensions.IsInRole(ClaimsPrincipal, IEnumerable(Of String))
+  fullName.vb: UltraForce.Library.Core.Asp.Web.UFWebExtensions.IsInRole(System.Security.Claims.ClaimsPrincipal, System.Collections.Generic.IEnumerable(Of String))
+  name.vb: IsInRole(ClaimsPrincipal, IEnumerable(Of String))
+references:
+- uid: UltraForce.Library.Core.Asp.Web
+  commentId: N:UltraForce.Library.Core.Asp.Web
+  href: UltraForce.html
+  name: UltraForce.Library.Core.Asp.Web
+  nameWithType: UltraForce.Library.Core.Asp.Web
+  fullName: UltraForce.Library.Core.Asp.Web
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Web
+    name: Web
+    href: UltraForce.Library.Core.Asp.Web.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Web
+    name: Web
+    href: UltraForce.Library.Core.Asp.Web.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware
+  commentId: T:UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware
+  parent: UltraForce.Library.Core.Asp.Sessions
+  href: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.html
+  name: UFSessionMiddleware
+  nameWithType: UFSessionMiddleware
+  fullName: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware
+- uid: Microsoft.AspNetCore.Builder.SessionMiddlewareExtensions.UseSession(Microsoft.AspNetCore.Builder.IApplicationBuilder)
+  commentId: M:Microsoft.AspNetCore.Builder.SessionMiddlewareExtensions.UseSession(Microsoft.AspNetCore.Builder.IApplicationBuilder)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.builder.sessionmiddlewareextensions.usesession#microsoft-aspnetcore-builder-sessionmiddlewareextensions-usesession(microsoft-aspnetcore-builder-iapplicationbuilder)
+  name: UseSession(IApplicationBuilder)
+  nameWithType: SessionMiddlewareExtensions.UseSession(IApplicationBuilder)
+  fullName: Microsoft.AspNetCore.Builder.SessionMiddlewareExtensions.UseSession(Microsoft.AspNetCore.Builder.IApplicationBuilder)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Builder.SessionMiddlewareExtensions.UseSession(Microsoft.AspNetCore.Builder.IApplicationBuilder)
+    name: UseSession
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.builder.sessionmiddlewareextensions.usesession#microsoft-aspnetcore-builder-sessionmiddlewareextensions-usesession(microsoft-aspnetcore-builder-iapplicationbuilder)
+  - name: (
+  - uid: Microsoft.AspNetCore.Builder.IApplicationBuilder
+    name: IApplicationBuilder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.builder.iapplicationbuilder
+  - name: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Builder.SessionMiddlewareExtensions.UseSession(Microsoft.AspNetCore.Builder.IApplicationBuilder)
+    name: UseSession
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.builder.sessionmiddlewareextensions.usesession#microsoft-aspnetcore-builder-sessionmiddlewareextensions-usesession(microsoft-aspnetcore-builder-iapplicationbuilder)
+  - name: (
+  - uid: Microsoft.AspNetCore.Builder.IApplicationBuilder
+    name: IApplicationBuilder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.builder.iapplicationbuilder
+  - name: )
+- uid: UltraForce.Library.Core.Asp.Web.UFWebExtensions.UseUFSession*
+  commentId: Overload:UltraForce.Library.Core.Asp.Web.UFWebExtensions.UseUFSession
+  href: UltraForce.Library.Core.Asp.Web.UFWebExtensions.html#UltraForce_Library_Core_Asp_Web_UFWebExtensions_UseUFSession_Microsoft_AspNetCore_Builder_IApplicationBuilder_
+  name: UseUFSession
+  nameWithType: UFWebExtensions.UseUFSession
+  fullName: UltraForce.Library.Core.Asp.Web.UFWebExtensions.UseUFSession
+- uid: Microsoft.AspNetCore.Builder.IApplicationBuilder
+  commentId: T:Microsoft.AspNetCore.Builder.IApplicationBuilder
+  parent: Microsoft.AspNetCore.Builder
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.builder.iapplicationbuilder
+  name: IApplicationBuilder
+  nameWithType: IApplicationBuilder
+  fullName: Microsoft.AspNetCore.Builder.IApplicationBuilder
+- uid: UltraForce.Library.Core.Asp.Sessions
+  commentId: N:UltraForce.Library.Core.Asp.Sessions
+  href: UltraForce.html
+  name: UltraForce.Library.Core.Asp.Sessions
+  nameWithType: UltraForce.Library.Core.Asp.Sessions
+  fullName: UltraForce.Library.Core.Asp.Sessions
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Sessions
+    name: Sessions
+    href: UltraForce.Library.Core.Asp.Sessions.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Sessions
+    name: Sessions
+    href: UltraForce.Library.Core.Asp.Sessions.html
+- uid: Microsoft.AspNetCore.Builder
+  commentId: N:Microsoft.AspNetCore.Builder
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.AspNetCore.Builder
+  nameWithType: Microsoft.AspNetCore.Builder
+  fullName: Microsoft.AspNetCore.Builder
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Builder
+    name: Builder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.builder
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Builder
+    name: Builder
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.builder
+- uid: UltraForce.Library.Core.Asp.Web.UFWebExtensions.IsInRole*
+  commentId: Overload:UltraForce.Library.Core.Asp.Web.UFWebExtensions.IsInRole
+  href: UltraForce.Library.Core.Asp.Web.UFWebExtensions.html#UltraForce_Library_Core_Asp_Web_UFWebExtensions_IsInRole_System_Security_Claims_ClaimsPrincipal_System_String___
+  name: IsInRole
+  nameWithType: UFWebExtensions.IsInRole
+  fullName: UltraForce.Library.Core.Asp.Web.UFWebExtensions.IsInRole
+- uid: System.Security.Claims.ClaimsPrincipal
+  commentId: T:System.Security.Claims.ClaimsPrincipal
+  parent: System.Security.Claims
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.security.claims.claimsprincipal
+  name: ClaimsPrincipal
+  nameWithType: ClaimsPrincipal
+  fullName: System.Security.Claims.ClaimsPrincipal
+- uid: System.String[]
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string[]
+  nameWithType: string[]
+  fullName: string[]
+  nameWithType.vb: String()
+  fullName.vb: String()
+  name.vb: String()
+  spec.csharp:
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: (
+  - name: )
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Security.Claims
+  commentId: N:System.Security.Claims
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Security.Claims
+  nameWithType: System.Security.Claims
+  fullName: System.Security.Claims
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Security
+    name: Security
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.security
+  - name: .
+  - uid: System.Security.Claims
+    name: Claims
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.security.claims
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Security
+    name: Security
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.security
+  - name: .
+  - uid: System.Security.Claims
+    name: Claims
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.security.claims
+- uid: System.Collections.Generic.IEnumerable{System.String}
+  commentId: T:System.Collections.Generic.IEnumerable{System.String}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerable`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<string>
+  nameWithType: IEnumerable<string>
+  fullName: System.Collections.Generic.IEnumerable<string>
+  nameWithType.vb: IEnumerable(Of String)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of String)
+  name.vb: IEnumerable(Of String)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Collections.Generic.IEnumerable`1
+  commentId: T:System.Collections.Generic.IEnumerable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  name: IEnumerable<T>
+  nameWithType: IEnumerable<T>
+  fullName: System.Collections.Generic.IEnumerable<T>
+  nameWithType.vb: IEnumerable(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerable(Of T)
+  name.vb: IEnumerable(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerable`1
+    name: IEnumerable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic

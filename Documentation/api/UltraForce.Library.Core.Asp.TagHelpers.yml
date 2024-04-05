@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.Core.Asp.TagHelpers
+  commentId: N:UltraForce.Library.Core.Asp.TagHelpers
+  id: UltraForce.Library.Core.Asp.TagHelpers
+  children:
+  - UltraForce.Library.Core.Asp.TagHelpers.UFConditionTagHelper
+  - UltraForce.Library.Core.Asp.TagHelpers.UFNotConditionTagHelper
+  langs:
+  - csharp
+  - vb
+  name: UltraForce.Library.Core.Asp.TagHelpers
+  nameWithType: UltraForce.Library.Core.Asp.TagHelpers
+  fullName: UltraForce.Library.Core.Asp.TagHelpers
+  type: Namespace
+  assemblies:
+  - UltraForce.Library.Core.Asp
+references:
+- uid: UltraForce.Library.Core.Asp.TagHelpers.UFConditionTagHelper
+  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.UFConditionTagHelper
+  href: UltraForce.Library.Core.Asp.TagHelpers.UFConditionTagHelper.html
+  name: UFConditionTagHelper
+  nameWithType: UFConditionTagHelper
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.UFConditionTagHelper
+- uid: UltraForce.Library.Core.Asp.TagHelpers.UFNotConditionTagHelper
+  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.UFNotConditionTagHelper
+  href: UltraForce.Library.Core.Asp.TagHelpers.UFNotConditionTagHelper.html
+  name: UFNotConditionTagHelper
+  nameWithType: UFNotConditionTagHelper
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.UFNotConditionTagHelper

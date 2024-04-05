@@ -1,0 +1,269 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties
+  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties
+  id: IUFTableProperties
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table
+  children:
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties.Filter
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties.PageSize
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties.Paging
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties.Sorting
+  langs:
+  - csharp
+  - vb
+  name: IUFTableProperties
+  nameWithType: IUFTableProperties
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties
+  type: Interface
+  source:
+    id: IUFTableProperties
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\TagHelpers\Styling\Table\IUFTableProperties.cs
+    startLine: 31
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table
+  syntax:
+    content: public interface IUFTableProperties
+    content.vb: Public Interface IUFTableProperties
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties.Filter
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties.Filter
+  id: Filter
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties
+  langs:
+  - csharp
+  - vb
+  name: Filter
+  nameWithType: IUFTableProperties.Filter
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties.Filter
+  type: Property
+  source:
+    id: Filter
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\TagHelpers\Styling\Table\IUFTableProperties.cs
+    startLine: 36
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table
+  summary: When true add a `data-filter` attribute with the value "1" to the table.
+  example: []
+  syntax:
+    content: bool Filter { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Property Filter As Boolean
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties.Filter*
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties.Paging
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties.Paging
+  id: Paging
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties
+  langs:
+  - csharp
+  - vb
+  name: Paging
+  nameWithType: IUFTableProperties.Paging
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties.Paging
+  type: Property
+  source:
+    id: Paging
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\TagHelpers\Styling\Table\IUFTableProperties.cs
+    startLine: 41
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table
+  summary: When true add a `data-paging` attribute with the value "1" to the table.
+  example: []
+  syntax:
+    content: bool Paging { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Property Paging As Boolean
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties.Paging*
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties.PageSize
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties.PageSize
+  id: PageSize
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties
+  langs:
+  - csharp
+  - vb
+  name: PageSize
+  nameWithType: IUFTableProperties.PageSize
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties.PageSize
+  type: Property
+  source:
+    id: PageSize
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\TagHelpers\Styling\Table\IUFTableProperties.cs
+    startLine: 47
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table
+  summary: >-
+    Number of rows per page (only used if <xref href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties.Paging" data-throw-if-not-resolved="false"></xref> is true). It will set
+
+    `data-page-size` attribute on the table.
+  example: []
+  syntax:
+    content: int PageSize { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Property PageSize As Integer
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties.PageSize*
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties.Sorting
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties.Sorting
+  id: Sorting
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties
+  langs:
+  - csharp
+  - vb
+  name: Sorting
+  nameWithType: IUFTableProperties.Sorting
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties.Sorting
+  type: Property
+  source:
+    id: Sorting
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\TagHelpers\Styling\Table\IUFTableProperties.cs
+    startLine: 52
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table
+  summary: When true add `data-sorting` attribute with the value "1" to the table.
+  example: []
+  syntax:
+    content: bool Sorting { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Property Sorting As Boolean
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties.Sorting*
+references:
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table
+  commentId: N:UltraForce.Library.Core.Asp.TagHelpers.Styling.Table
+  href: UltraForce.html
+  name: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table
+  nameWithType: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers
+    name: TagHelpers
+    href: UltraForce.Library.Core.Asp.TagHelpers.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling
+    name: Styling
+    href: UltraForce.Library.Core.Asp.TagHelpers.Styling.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table
+    name: Table
+    href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers
+    name: TagHelpers
+    href: UltraForce.Library.Core.Asp.TagHelpers.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling
+    name: Styling
+    href: UltraForce.Library.Core.Asp.TagHelpers.Styling.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table
+    name: Table
+    href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.html
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties.Filter*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties.Filter
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_IUFTableProperties_Filter
+  name: Filter
+  nameWithType: IUFTableProperties.Filter
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties.Filter
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties.Paging*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties.Paging
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_IUFTableProperties_Paging
+  name: Paging
+  nameWithType: IUFTableProperties.Paging
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties.Paging
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties.Paging
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties.Paging
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_IUFTableProperties_Paging
+  name: Paging
+  nameWithType: IUFTableProperties.Paging
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties.Paging
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties.PageSize*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties.PageSize
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_IUFTableProperties_PageSize
+  name: PageSize
+  nameWithType: IUFTableProperties.PageSize
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties.PageSize
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties
+  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties.html
+  name: IUFTableProperties
+  nameWithType: IUFTableProperties
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties.Sorting*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties.Sorting
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_IUFTableProperties_Sorting
+  name: Sorting
+  nameWithType: IUFTableProperties.Sorting
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties.Sorting

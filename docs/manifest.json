@@ -1,0 +1,942 @@
+{
+  "source_base_path": "D:/projects/ultraforce.com/csharp/NuGetPackages/UltraForce.Library.Core.Asp/Documentation",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Asp.Annotations.UFAuthorizeRolesAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Asp.Annotations.UFAuthorizeRolesAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Asp.Annotations.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Asp.Annotations.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Asp.Controllers.UFController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Asp.Controllers.UFController.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Asp.Controllers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Asp.Controllers.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Asp.Localization.UFDutchDefaultModelBindingMessageProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Asp.Localization.UFDutchDefaultModelBindingMessageProvider.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Asp.Localization.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Asp.Localization.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Asp.Models.UFEmailContentModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Asp.Models.UFEmailContentModel.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Asp.Models.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Asp.Models.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Asp.Services.IUFAsynchronousExecutableService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Asp.Services.IUFAsynchronousExecutableService.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Asp.Services.IUFTheme.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Asp.Services.IUFTheme.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Asp.Services.UFFontAwesomeTheme.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Asp.Services.UFFontAwesomeTheme.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Asp.Services.UFRazorViewRenderer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Asp.Services.UFRazorViewRenderer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Asp.Services.UFScopedBackgroundService-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Asp.Services.UFScopedBackgroundService-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Asp.Services.UFTheme.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Asp.Services.UFTheme.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Asp.Services.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Asp.Services.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Asp.Sessions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Asp.Sessions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Asp.TagHelpers.Lib.UFTagHelperWithModelExpressionRenderer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Asp.TagHelpers.Lib.UFTagHelperWithModelExpressionRenderer.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Asp.TagHelpers.Lib.UFTagHelperWithTheme.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Asp.TagHelpers.Lib.UFTagHelperWithTheme.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Asp.TagHelpers.Lib.UFTagHelperWithViewContext.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Asp.TagHelpers.Lib.UFTagHelperWithViewContext.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Asp.TagHelpers.Lib.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Asp.TagHelpers.Lib.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFTabProperties.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFTabProperties.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFContainerProperties.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFContainerProperties.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFContainerTagHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFContainerTagHelper.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFTabTagHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFTabTagHelper.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFTabsTagHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFTabsTagHelper.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Asp.TagHelpers.Styling.Data.UFDataListTagHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Asp.TagHelpers.Styling.Data.UFDataListTagHelper.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Asp.TagHelpers.Styling.Data.UFDataNameTagHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Asp.TagHelpers.Styling.Data.UFDataNameTagHelper.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Asp.TagHelpers.Styling.Data.UFDataValueTagHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Asp.TagHelpers.Styling.Data.UFDataValueTagHelper.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Asp.TagHelpers.Styling.Data.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Asp.TagHelpers.Styling.Data.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputProperties.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputProperties.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFSelectTagHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFSelectTagHelper.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFSpacerProperties.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFSpacerProperties.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFFlexProperties.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFFlexProperties.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFRowTagHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFRowTagHelper.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFSpacerProperties.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFSpacerProperties.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFSpacerTagHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFSpacerTagHelper.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableRowProperties.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableRowProperties.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableRowTagHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableRowTagHelper.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Asp.TagHelpers.UFConditionTagHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Asp.TagHelpers.UFConditionTagHelper.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Asp.TagHelpers.UFNotConditionTagHelper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Asp.TagHelpers.UFNotConditionTagHelper.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Asp.TagHelpers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Asp.TagHelpers.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Asp.Tools.UFCoreHtmlTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Asp.Tools.UFCoreHtmlTools.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Asp.Tools.UFCoreStringTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Asp.Tools.UFCoreStringTools.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Asp.Tools.UFModelExpressionTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Asp.Tools.UFModelExpressionTools.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Asp.Tools.UFMvcTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Asp.Tools.UFMvcTools.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Asp.Tools.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Asp.Tools.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Asp.Types.Enums.UFButtonColor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Asp.Types.Enums.UFButtonColor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Asp.Types.Enums.UFButtonIconPosition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Asp.Types.Enums.UFButtonIconPosition.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Asp.Types.Enums.UFButtonSize.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Asp.Types.Enums.UFButtonSize.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Asp.Types.Enums.UFButtonVariant.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Asp.Types.Enums.UFButtonVariant.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Asp.Types.Enums.UFContentPosition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Asp.Types.Enums.UFContentPosition.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignContent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignContent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignItems.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignItems.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Asp.Types.Enums.UFFlexJustifyContent.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Asp.Types.Enums.UFFlexJustifyContent.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Asp.Types.Enums.UFTableCellType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Asp.Types.Enums.UFTableCellType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Asp.Types.Enums.UFTableRowType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Asp.Types.Enums.UFTableRowType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Asp.Types.Enums.UFTableSortLocation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Asp.Types.Enums.UFTableSortLocation.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Asp.Types.Enums.UFTableSortType.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Asp.Types.Enums.UFTableSortType.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Asp.Types.Enums.UFTableTextSize.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Asp.Types.Enums.UFTableTextSize.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Asp.Types.Enums.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Asp.Types.Enums.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Asp.ViewModels.UFEditViewModel-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Asp.ViewModels.UFEditViewModel-1.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Asp.ViewModels.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Asp.ViewModels.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Asp.Web.UFWebExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Asp.Web.UFWebExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Asp.Web.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Asp.Web.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

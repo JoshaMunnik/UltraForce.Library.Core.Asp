@@ -1,0 +1,203 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFButtonColor
+  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFButtonColor
+  id: UFButtonColor
+  parent: UltraForce.Library.Core.Asp.Types.Enums
+  children:
+  - UltraForce.Library.Core.Asp.Types.Enums.UFButtonColor.Danger
+  - UltraForce.Library.Core.Asp.Types.Enums.UFButtonColor.Disabled
+  - UltraForce.Library.Core.Asp.Types.Enums.UFButtonColor.Normal
+  - UltraForce.Library.Core.Asp.Types.Enums.UFButtonColor.Success
+  - UltraForce.Library.Core.Asp.Types.Enums.UFButtonColor.Warning
+  langs:
+  - csharp
+  - vb
+  name: UFButtonColor
+  nameWithType: UFButtonColor
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFButtonColor
+  type: Enum
+  source:
+    id: UFButtonColor
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Types\Enums\UFButtonColor.cs
+    startLine: 34
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Colors for the button
+  example: []
+  syntax:
+    content: public enum UFButtonColor
+    content.vb: Public Enum UFButtonColor
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFButtonColor.Normal
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFButtonColor.Normal
+  id: Normal
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFButtonColor
+  langs:
+  - csharp
+  - vb
+  name: Normal
+  nameWithType: UFButtonColor.Normal
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFButtonColor.Normal
+  type: Field
+  source:
+    id: Normal
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Types\Enums\UFButtonColor.cs
+    startLine: 36
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  syntax:
+    content: Normal = 0
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFButtonColor
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFButtonColor.Success
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFButtonColor.Success
+  id: Success
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFButtonColor
+  langs:
+  - csharp
+  - vb
+  name: Success
+  nameWithType: UFButtonColor.Success
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFButtonColor.Success
+  type: Field
+  source:
+    id: Success
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Types\Enums\UFButtonColor.cs
+    startLine: 37
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  syntax:
+    content: Success = 1
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFButtonColor
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFButtonColor.Danger
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFButtonColor.Danger
+  id: Danger
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFButtonColor
+  langs:
+  - csharp
+  - vb
+  name: Danger
+  nameWithType: UFButtonColor.Danger
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFButtonColor.Danger
+  type: Field
+  source:
+    id: Danger
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Types\Enums\UFButtonColor.cs
+    startLine: 38
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  syntax:
+    content: Danger = 2
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFButtonColor
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFButtonColor.Warning
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFButtonColor.Warning
+  id: Warning
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFButtonColor
+  langs:
+  - csharp
+  - vb
+  name: Warning
+  nameWithType: UFButtonColor.Warning
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFButtonColor.Warning
+  type: Field
+  source:
+    id: Warning
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Types\Enums\UFButtonColor.cs
+    startLine: 39
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  syntax:
+    content: Warning = 3
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFButtonColor
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFButtonColor.Disabled
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFButtonColor.Disabled
+  id: Disabled
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFButtonColor
+  langs:
+  - csharp
+  - vb
+  name: Disabled
+  nameWithType: UFButtonColor.Disabled
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFButtonColor.Disabled
+  type: Field
+  source:
+    id: Disabled
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Types\Enums\UFButtonColor.cs
+    startLine: 40
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  syntax:
+    content: Disabled = 4
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFButtonColor
+references:
+- uid: UltraForce.Library.Core.Asp.Types.Enums
+  commentId: N:UltraForce.Library.Core.Asp.Types.Enums
+  href: UltraForce.html
+  name: UltraForce.Library.Core.Asp.Types.Enums
+  nameWithType: UltraForce.Library.Core.Asp.Types.Enums
+  fullName: UltraForce.Library.Core.Asp.Types.Enums
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types
+    name: Types
+    href: UltraForce.Library.Core.Asp.Types.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types.Enums
+    name: Enums
+    href: UltraForce.Library.Core.Asp.Types.Enums.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types
+    name: Types
+    href: UltraForce.Library.Core.Asp.Types.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types.Enums
+    name: Enums
+    href: UltraForce.Library.Core.Asp.Types.Enums.html
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFButtonColor
+  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFButtonColor
+  parent: UltraForce.Library.Core.Asp.Types.Enums
+  href: UltraForce.Library.Core.Asp.Types.Enums.UFButtonColor.html
+  name: UFButtonColor
+  nameWithType: UFButtonColor
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFButtonColor

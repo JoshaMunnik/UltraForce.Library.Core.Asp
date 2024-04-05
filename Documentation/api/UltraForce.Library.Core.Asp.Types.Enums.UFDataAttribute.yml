@@ -1,0 +1,959 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute
+  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute
+  id: UFDataAttribute
+  parent: UltraForce.Library.Core.Asp.Types.Enums
+  children:
+  - UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.ClearInput
+  - UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.DisplayValue
+  - UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.FieldValue
+  - UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.Filter
+  - UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.FilterTable
+  - UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.HeaderRow
+  - UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.HideIfField
+  - UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.ImageHeight
+  - UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.ImageName
+  - UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.ImagePreview
+  - UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.ImageSize
+  - UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.ImageType
+  - UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.ImageWidth
+  - UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.NoFilter
+  - UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.PageSize
+  - UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.Paging
+  - UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.ShowIfField
+  - UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.SortAscending
+  - UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.SortDescending
+  - UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.SortLocation
+  - UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.SortType
+  - UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.SortValue
+  - UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.Sorting
+  - UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.StorageId
+  langs:
+  - csharp
+  - vb
+  name: UFDataAttribute
+  nameWithType: UFDataAttribute
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute
+  type: Class
+  source:
+    id: UFDataAttribute
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Types\Enums\UFDataAttribute.cs
+    startLine: 33
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  syntax:
+    content: public static class UFDataAttribute
+    content.vb: Public Module UFDataAttribute
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.Filter
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.Filter
+  id: Filter
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute
+  langs:
+  - csharp
+  - vb
+  name: Filter
+  nameWithType: UFDataAttribute.Filter
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.Filter
+  type: Field
+  source:
+    id: Filter
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Types\Enums\UFDataAttribute.cs
+    startLine: 38
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Used by <xref href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public const string Filter = "data-uf-filter"
+    return:
+      type: System.String
+    content.vb: Public Const Filter As String = "data-uf-filter"
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.Paging
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.Paging
+  id: Paging
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute
+  langs:
+  - csharp
+  - vb
+  name: Paging
+  nameWithType: UFDataAttribute.Paging
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.Paging
+  type: Field
+  source:
+    id: Paging
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Types\Enums\UFDataAttribute.cs
+    startLine: 43
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Used by <xref href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public const string Paging = "data-uf-paging"
+    return:
+      type: System.String
+    content.vb: Public Const Paging As String = "data-uf-paging"
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.PageSize
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.PageSize
+  id: PageSize
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute
+  langs:
+  - csharp
+  - vb
+  name: PageSize
+  nameWithType: UFDataAttribute.PageSize
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.PageSize
+  type: Field
+  source:
+    id: PageSize
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Types\Enums\UFDataAttribute.cs
+    startLine: 48
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Used by <xref href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public const string PageSize = "data-uf-page-size"
+    return:
+      type: System.String
+    content.vb: Public Const PageSize As String = "data-uf-page-size"
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.Sorting
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.Sorting
+  id: Sorting
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute
+  langs:
+  - csharp
+  - vb
+  name: Sorting
+  nameWithType: UFDataAttribute.Sorting
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.Sorting
+  type: Field
+  source:
+    id: Sorting
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Types\Enums\UFDataAttribute.cs
+    startLine: 53
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Used by <xref href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public const string Sorting = "data-uf-sorting"
+    return:
+      type: System.String
+    content.vb: Public Const Sorting As String = "data-uf-sorting"
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.SortType
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.SortType
+  id: SortType
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute
+  langs:
+  - csharp
+  - vb
+  name: SortType
+  nameWithType: UFDataAttribute.SortType
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.SortType
+  type: Field
+  source:
+    id: SortType
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Types\Enums\UFDataAttribute.cs
+    startLine: 58
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Used by <xref href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public const string SortType = "data-uf-sort-type"
+    return:
+      type: System.String
+    content.vb: Public Const SortType As String = "data-uf-sort-type"
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.SortValue
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.SortValue
+  id: SortValue
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute
+  langs:
+  - csharp
+  - vb
+  name: SortValue
+  nameWithType: UFDataAttribute.SortValue
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.SortValue
+  type: Field
+  source:
+    id: SortValue
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Types\Enums\UFDataAttribute.cs
+    startLine: 63
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Used by <xref href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public const string SortValue = "data-uf-sort-value"
+    return:
+      type: System.String
+    content.vb: Public Const SortValue As String = "data-uf-sort-value"
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.NoFilter
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.NoFilter
+  id: NoFilter
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute
+  langs:
+  - csharp
+  - vb
+  name: NoFilter
+  nameWithType: UFDataAttribute.NoFilter
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.NoFilter
+  type: Field
+  source:
+    id: NoFilter
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Types\Enums\UFDataAttribute.cs
+    startLine: 68
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Used by <xref href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public const string NoFilter = "data-uf-no-filter"
+    return:
+      type: System.String
+    content.vb: Public Const NoFilter As String = "data-uf-no-filter"
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.SortLocation
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.SortLocation
+  id: SortLocation
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute
+  langs:
+  - csharp
+  - vb
+  name: SortLocation
+  nameWithType: UFDataAttribute.SortLocation
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.SortLocation
+  type: Field
+  source:
+    id: SortLocation
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Types\Enums\UFDataAttribute.cs
+    startLine: 73
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Used by <xref href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableRowTagHelper" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public const string SortLocation = "data-uf-sort-location"
+    return:
+      type: System.String
+    content.vb: Public Const SortLocation As String = "data-uf-sort-location"
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.FilterTable
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.FilterTable
+  id: FilterTable
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute
+  langs:
+  - csharp
+  - vb
+  name: FilterTable
+  nameWithType: UFDataAttribute.FilterTable
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.FilterTable
+  type: Field
+  source:
+    id: FilterTable
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Types\Enums\UFDataAttribute.cs
+    startLine: 78
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Used by <xref href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public const string FilterTable = "data-uf-filter-table"
+    return:
+      type: System.String
+    content.vb: Public Const FilterTable As String = "data-uf-filter-table"
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.ClearInput
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.ClearInput
+  id: ClearInput
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute
+  langs:
+  - csharp
+  - vb
+  name: ClearInput
+  nameWithType: UFDataAttribute.ClearInput
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.ClearInput
+  type: Field
+  source:
+    id: ClearInput
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Types\Enums\UFDataAttribute.cs
+    startLine: 83
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Used by <xref href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public const string ClearInput = "data-uf-clear-input"
+    return:
+      type: System.String
+    content.vb: Public Const ClearInput As String = "data-uf-clear-input"
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.HeaderRow
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.HeaderRow
+  id: HeaderRow
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute
+  langs:
+  - csharp
+  - vb
+  name: HeaderRow
+  nameWithType: UFDataAttribute.HeaderRow
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.HeaderRow
+  type: Field
+  source:
+    id: HeaderRow
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Types\Enums\UFDataAttribute.cs
+    startLine: 88
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Used by <xref href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableRowTagHelper" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public const string HeaderRow = "data-uf-header-row"
+    return:
+      type: System.String
+    content.vb: Public Const HeaderRow As String = "data-uf-header-row"
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.SortAscending
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.SortAscending
+  id: SortAscending
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute
+  langs:
+  - csharp
+  - vb
+  name: SortAscending
+  nameWithType: UFDataAttribute.SortAscending
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.SortAscending
+  type: Field
+  source:
+    id: SortAscending
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Types\Enums\UFDataAttribute.cs
+    startLine: 93
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Used by <xref href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public const string SortAscending = "data-uf-sort-ascending"
+    return:
+      type: System.String
+    content.vb: Public Const SortAscending As String = "data-uf-sort-ascending"
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.SortDescending
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.SortDescending
+  id: SortDescending
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute
+  langs:
+  - csharp
+  - vb
+  name: SortDescending
+  nameWithType: UFDataAttribute.SortDescending
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.SortDescending
+  type: Field
+  source:
+    id: SortDescending
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Types\Enums\UFDataAttribute.cs
+    startLine: 98
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Used by <xref href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public const string SortDescending = "data-uf-sort-descending"
+    return:
+      type: System.String
+    content.vb: Public Const SortDescending As String = "data-uf-sort-descending"
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.StorageId
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.StorageId
+  id: StorageId
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute
+  langs:
+  - csharp
+  - vb
+  name: StorageId
+  nameWithType: UFDataAttribute.StorageId
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.StorageId
+  type: Field
+  source:
+    id: StorageId
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Types\Enums\UFDataAttribute.cs
+    startLine: 103
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Used by various classes.
+  example: []
+  syntax:
+    content: public const string StorageId = "data-uf-storage-id"
+    return:
+      type: System.String
+    content.vb: Public Const StorageId As String = "data-uf-storage-id"
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.ImagePreview
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.ImagePreview
+  id: ImagePreview
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute
+  langs:
+  - csharp
+  - vb
+  name: ImagePreview
+  nameWithType: UFDataAttribute.ImagePreview
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.ImagePreview
+  type: Field
+  source:
+    id: ImagePreview
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Types\Enums\UFDataAttribute.cs
+    startLine: 105
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  syntax:
+    content: public const string ImagePreview = "data-uf-image-preview"
+    return:
+      type: System.String
+    content.vb: Public Const ImagePreview As String = "data-uf-image-preview"
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.ImageWidth
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.ImageWidth
+  id: ImageWidth
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute
+  langs:
+  - csharp
+  - vb
+  name: ImageWidth
+  nameWithType: UFDataAttribute.ImageWidth
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.ImageWidth
+  type: Field
+  source:
+    id: ImageWidth
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Types\Enums\UFDataAttribute.cs
+    startLine: 107
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  syntax:
+    content: public const string ImageWidth = "data-uf-image-width"
+    return:
+      type: System.String
+    content.vb: Public Const ImageWidth As String = "data-uf-image-width"
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.ImageHeight
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.ImageHeight
+  id: ImageHeight
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute
+  langs:
+  - csharp
+  - vb
+  name: ImageHeight
+  nameWithType: UFDataAttribute.ImageHeight
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.ImageHeight
+  type: Field
+  source:
+    id: ImageHeight
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Types\Enums\UFDataAttribute.cs
+    startLine: 109
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  syntax:
+    content: public const string ImageHeight = "data-uf-image-height"
+    return:
+      type: System.String
+    content.vb: Public Const ImageHeight As String = "data-uf-image-height"
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.ImageName
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.ImageName
+  id: ImageName
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute
+  langs:
+  - csharp
+  - vb
+  name: ImageName
+  nameWithType: UFDataAttribute.ImageName
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.ImageName
+  type: Field
+  source:
+    id: ImageName
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Types\Enums\UFDataAttribute.cs
+    startLine: 111
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  syntax:
+    content: public const string ImageName = "data-uf-image-name"
+    return:
+      type: System.String
+    content.vb: Public Const ImageName As String = "data-uf-image-name"
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.ImageSize
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.ImageSize
+  id: ImageSize
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute
+  langs:
+  - csharp
+  - vb
+  name: ImageSize
+  nameWithType: UFDataAttribute.ImageSize
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.ImageSize
+  type: Field
+  source:
+    id: ImageSize
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Types\Enums\UFDataAttribute.cs
+    startLine: 113
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  syntax:
+    content: public const string ImageSize = "data-uf-image-size"
+    return:
+      type: System.String
+    content.vb: Public Const ImageSize As String = "data-uf-image-size"
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.ImageType
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.ImageType
+  id: ImageType
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute
+  langs:
+  - csharp
+  - vb
+  name: ImageType
+  nameWithType: UFDataAttribute.ImageType
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.ImageType
+  type: Field
+  source:
+    id: ImageType
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Types\Enums\UFDataAttribute.cs
+    startLine: 115
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  syntax:
+    content: public const string ImageType = "data-uf-image-type"
+    return:
+      type: System.String
+    content.vb: Public Const ImageType As String = "data-uf-image-type"
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.ShowIfField
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.ShowIfField
+  id: ShowIfField
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute
+  langs:
+  - csharp
+  - vb
+  name: ShowIfField
+  nameWithType: UFDataAttribute.ShowIfField
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.ShowIfField
+  type: Field
+  source:
+    id: ShowIfField
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Types\Enums\UFDataAttribute.cs
+    startLine: 117
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  syntax:
+    content: public const string ShowIfField = "data-uf-show-if-field"
+    return:
+      type: System.String
+    content.vb: Public Const ShowIfField As String = "data-uf-show-if-field"
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.HideIfField
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.HideIfField
+  id: HideIfField
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute
+  langs:
+  - csharp
+  - vb
+  name: HideIfField
+  nameWithType: UFDataAttribute.HideIfField
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.HideIfField
+  type: Field
+  source:
+    id: HideIfField
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Types\Enums\UFDataAttribute.cs
+    startLine: 119
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  syntax:
+    content: public const string HideIfField = "data-uf-show-if-field"
+    return:
+      type: System.String
+    content.vb: Public Const HideIfField As String = "data-uf-show-if-field"
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.FieldValue
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.FieldValue
+  id: FieldValue
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute
+  langs:
+  - csharp
+  - vb
+  name: FieldValue
+  nameWithType: UFDataAttribute.FieldValue
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.FieldValue
+  type: Field
+  source:
+    id: FieldValue
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Types\Enums\UFDataAttribute.cs
+    startLine: 121
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  syntax:
+    content: public const string FieldValue = "data-uf-field-value"
+    return:
+      type: System.String
+    content.vb: Public Const FieldValue As String = "data-uf-field-value"
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.DisplayValue
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.DisplayValue
+  id: DisplayValue
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute
+  langs:
+  - csharp
+  - vb
+  name: DisplayValue
+  nameWithType: UFDataAttribute.DisplayValue
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.DisplayValue
+  type: Field
+  source:
+    id: DisplayValue
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Types\Enums\UFDataAttribute.cs
+    startLine: 123
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  syntax:
+    content: public const string DisplayValue = "data-uf-display-value"
+    return:
+      type: System.String
+    content.vb: Public Const DisplayValue As String = "data-uf-display-value"
+references:
+- uid: UltraForce.Library.Core.Asp.Types.Enums
+  commentId: N:UltraForce.Library.Core.Asp.Types.Enums
+  href: UltraForce.html
+  name: UltraForce.Library.Core.Asp.Types.Enums
+  nameWithType: UltraForce.Library.Core.Asp.Types.Enums
+  fullName: UltraForce.Library.Core.Asp.Types.Enums
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types
+    name: Types
+    href: UltraForce.Library.Core.Asp.Types.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types.Enums
+    name: Enums
+    href: UltraForce.Library.Core.Asp.Types.Enums.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types
+    name: Types
+    href: UltraForce.Library.Core.Asp.Types.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types.Enums
+    name: Enums
+    href: UltraForce.Library.Core.Asp.Types.Enums.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper
+  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper.html
+  name: UFTableTagHelper
+  nameWithType: UFTableTagHelper
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper
+  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.html
+  name: UFCellTagHelper
+  nameWithType: UFCellTagHelper
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableRowTagHelper
+  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableRowTagHelper
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableRowTagHelper.html
+  name: UFTableRowTagHelper
+  nameWithType: UFTableRowTagHelper
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableRowTagHelper

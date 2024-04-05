@@ -1,0 +1,222 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFTableSortType
+  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFTableSortType
+  id: UFTableSortType
+  parent: UltraForce.Library.Core.Asp.Types.Enums
+  children:
+  - UltraForce.Library.Core.Asp.Types.Enums.UFTableSortType.Auto
+  - UltraForce.Library.Core.Asp.Types.Enums.UFTableSortType.Date
+  - UltraForce.Library.Core.Asp.Types.Enums.UFTableSortType.None
+  - UltraForce.Library.Core.Asp.Types.Enums.UFTableSortType.Number
+  - UltraForce.Library.Core.Asp.Types.Enums.UFTableSortType.Text
+  langs:
+  - csharp
+  - vb
+  name: UFTableSortType
+  nameWithType: UFTableSortType
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFTableSortType
+  type: Enum
+  source:
+    id: UFTableSortType
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Types\Enums\UFTableSortType.cs
+    startLine: 37
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Determines how a column is sorted in a table.
+  example: []
+  syntax:
+    content: public enum UFTableSortType
+    content.vb: Public Enum UFTableSortType
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFTableSortType.Auto
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFTableSortType.Auto
+  id: Auto
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFTableSortType
+  langs:
+  - csharp
+  - vb
+  name: Auto
+  nameWithType: UFTableSortType.Auto
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFTableSortType.Auto
+  type: Field
+  source:
+    id: Auto
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Types\Enums\UFTableSortType.cs
+    startLine: 43
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: >-
+    Determine type from <xref href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.For" data-throw-if-not-resolved="false"></xref> (if any), else defaults to
+
+    text
+  example: []
+  syntax:
+    content: Auto = 0
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFTableSortType
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFTableSortType.Text
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFTableSortType.Text
+  id: Text
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFTableSortType
+  langs:
+  - csharp
+  - vb
+  name: Text
+  nameWithType: UFTableSortType.Text
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFTableSortType.Text
+  type: Field
+  source:
+    id: Text
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Types\Enums\UFTableSortType.cs
+    startLine: 48
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Sort values as text
+  example: []
+  syntax:
+    content: Text = 1
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFTableSortType
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFTableSortType.Number
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFTableSortType.Number
+  id: Number
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFTableSortType
+  langs:
+  - csharp
+  - vb
+  name: Number
+  nameWithType: UFTableSortType.Number
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFTableSortType.Number
+  type: Field
+  source:
+    id: Number
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Types\Enums\UFTableSortType.cs
+    startLine: 54
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Sort values as number
+  example: []
+  syntax:
+    content: Number = 2
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFTableSortType
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFTableSortType.Date
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFTableSortType.Date
+  id: Date
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFTableSortType
+  langs:
+  - csharp
+  - vb
+  name: Date
+  nameWithType: UFTableSortType.Date
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFTableSortType.Date
+  type: Field
+  source:
+    id: Date
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Types\Enums\UFTableSortType.cs
+    startLine: 60
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Sort values as dates
+  example: []
+  syntax:
+    content: Date = 3
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFTableSortType
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFTableSortType.None
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFTableSortType.None
+  id: None
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFTableSortType
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: UFTableSortType.None
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFTableSortType.None
+  type: Field
+  source:
+    id: None
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Types\Enums\UFTableSortType.cs
+    startLine: 66
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: No sorting
+  example: []
+  syntax:
+    content: None = 4
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFTableSortType
+references:
+- uid: UltraForce.Library.Core.Asp.Types.Enums
+  commentId: N:UltraForce.Library.Core.Asp.Types.Enums
+  href: UltraForce.html
+  name: UltraForce.Library.Core.Asp.Types.Enums
+  nameWithType: UltraForce.Library.Core.Asp.Types.Enums
+  fullName: UltraForce.Library.Core.Asp.Types.Enums
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types
+    name: Types
+    href: UltraForce.Library.Core.Asp.Types.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types.Enums
+    name: Enums
+    href: UltraForce.Library.Core.Asp.Types.Enums.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types
+    name: Types
+    href: UltraForce.Library.Core.Asp.Types.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types.Enums
+    name: Enums
+    href: UltraForce.Library.Core.Asp.Types.Enums.html
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.For
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.For
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_UFCellTagHelper_For
+  name: For
+  nameWithType: UFCellTagHelper.For
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.For
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFTableSortType
+  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFTableSortType
+  parent: UltraForce.Library.Core.Asp.Types.Enums
+  href: UltraForce.Library.Core.Asp.Types.Enums.UFTableSortType.html
+  name: UFTableSortType
+  nameWithType: UFTableSortType
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFTableSortType

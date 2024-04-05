@@ -1,0 +1,458 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.Core.Asp.Tools.UFCoreStringTools
+  commentId: T:UltraForce.Library.Core.Asp.Tools.UFCoreStringTools
+  id: UFCoreStringTools
+  parent: UltraForce.Library.Core.Asp.Tools
+  children:
+  - UltraForce.Library.Core.Asp.Tools.UFCoreStringTools.GetString(Microsoft.AspNetCore.Html.IHtmlContent)
+  - UltraForce.Library.Core.Asp.Tools.UFCoreStringTools.Utf8ToAscii(System.String)
+  langs:
+  - csharp
+  - vb
+  name: UFCoreStringTools
+  nameWithType: UFCoreStringTools
+  fullName: UltraForce.Library.Core.Asp.Tools.UFCoreStringTools
+  type: Class
+  source:
+    id: UFCoreStringTools
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Tools\UFCoreStringTools.cs
+    startLine: 47
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Tools
+  summary: An utility class that adds extra string related methods.
+  example: []
+  syntax:
+    content: public static class UFCoreStringTools
+    content.vb: Public Module UFCoreStringTools
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: UltraForce.Library.Core.Asp.Tools.UFCoreStringTools.Utf8ToAscii(System.String)
+  commentId: M:UltraForce.Library.Core.Asp.Tools.UFCoreStringTools.Utf8ToAscii(System.String)
+  id: Utf8ToAscii(System.String)
+  parent: UltraForce.Library.Core.Asp.Tools.UFCoreStringTools
+  langs:
+  - csharp
+  - vb
+  name: Utf8ToAscii(string)
+  nameWithType: UFCoreStringTools.Utf8ToAscii(string)
+  fullName: UltraForce.Library.Core.Asp.Tools.UFCoreStringTools.Utf8ToAscii(string)
+  type: Method
+  source:
+    id: Utf8ToAscii
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Tools\UFCoreStringTools.cs
+    startLine: 66
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Tools
+  summary: >-
+    Converts an utf8 string to ascii string. Characters that can not be 
+
+    converted are removed.
+  example: []
+  syntax:
+    content: public static string Utf8ToAscii(string aText)
+    parameters:
+    - id: aText
+      type: System.String
+      description: Text using UTF8 encoding
+    return:
+      type: System.String
+      description: Text using ascii encoding
+    content.vb: Public Shared Function Utf8ToAscii(aText As String) As String
+  overload: UltraForce.Library.Core.Asp.Tools.UFCoreStringTools.Utf8ToAscii*
+  nameWithType.vb: UFCoreStringTools.Utf8ToAscii(String)
+  fullName.vb: UltraForce.Library.Core.Asp.Tools.UFCoreStringTools.Utf8ToAscii(String)
+  name.vb: Utf8ToAscii(String)
+- uid: UltraForce.Library.Core.Asp.Tools.UFCoreStringTools.GetString(Microsoft.AspNetCore.Html.IHtmlContent)
+  commentId: M:UltraForce.Library.Core.Asp.Tools.UFCoreStringTools.GetString(Microsoft.AspNetCore.Html.IHtmlContent)
+  id: GetString(Microsoft.AspNetCore.Html.IHtmlContent)
+  parent: UltraForce.Library.Core.Asp.Tools.UFCoreStringTools
+  langs:
+  - csharp
+  - vb
+  name: GetString(IHtmlContent)
+  nameWithType: UFCoreStringTools.GetString(IHtmlContent)
+  fullName: UltraForce.Library.Core.Asp.Tools.UFCoreStringTools.GetString(Microsoft.AspNetCore.Html.IHtmlContent)
+  type: Method
+  source:
+    id: GetString
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Tools\UFCoreStringTools.cs
+    startLine: 81
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Tools
+  summary: Gets the html content as string.
+  example: []
+  syntax:
+    content: public static string GetString(IHtmlContent aContent)
+    parameters:
+    - id: aContent
+      type: Microsoft.AspNetCore.Html.IHtmlContent
+      description: Content to convert to string
+    return:
+      type: System.String
+      description: Content as string
+    content.vb: Public Shared Function GetString(aContent As IHtmlContent) As String
+  overload: UltraForce.Library.Core.Asp.Tools.UFCoreStringTools.GetString*
+references:
+- uid: UltraForce.Library.Core.Asp.Tools
+  commentId: N:UltraForce.Library.Core.Asp.Tools
+  href: UltraForce.html
+  name: UltraForce.Library.Core.Asp.Tools
+  nameWithType: UltraForce.Library.Core.Asp.Tools
+  fullName: UltraForce.Library.Core.Asp.Tools
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Tools
+    name: Tools
+    href: UltraForce.Library.Core.Asp.Tools.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Tools
+    name: Tools
+    href: UltraForce.Library.Core.Asp.Tools.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UltraForce.Library.Core.Asp.Tools.UFCoreStringTools.Utf8ToAscii*
+  commentId: Overload:UltraForce.Library.Core.Asp.Tools.UFCoreStringTools.Utf8ToAscii
+  href: UltraForce.Library.Core.Asp.Tools.UFCoreStringTools.html#UltraForce_Library_Core_Asp_Tools_UFCoreStringTools_Utf8ToAscii_System_String_
+  name: Utf8ToAscii
+  nameWithType: UFCoreStringTools.Utf8ToAscii
+  fullName: UltraForce.Library.Core.Asp.Tools.UFCoreStringTools.Utf8ToAscii
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: UltraForce.Library.Core.Asp.Tools.UFCoreStringTools.GetString*
+  commentId: Overload:UltraForce.Library.Core.Asp.Tools.UFCoreStringTools.GetString
+  href: UltraForce.Library.Core.Asp.Tools.UFCoreStringTools.html#UltraForce_Library_Core_Asp_Tools_UFCoreStringTools_GetString_Microsoft_AspNetCore_Html_IHtmlContent_
+  name: GetString
+  nameWithType: UFCoreStringTools.GetString
+  fullName: UltraForce.Library.Core.Asp.Tools.UFCoreStringTools.GetString
+- uid: Microsoft.AspNetCore.Html.IHtmlContent
+  commentId: T:Microsoft.AspNetCore.Html.IHtmlContent
+  parent: Microsoft.AspNetCore.Html
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.html.ihtmlcontent
+  name: IHtmlContent
+  nameWithType: IHtmlContent
+  fullName: Microsoft.AspNetCore.Html.IHtmlContent
+- uid: Microsoft.AspNetCore.Html
+  commentId: N:Microsoft.AspNetCore.Html
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.AspNetCore.Html
+  nameWithType: Microsoft.AspNetCore.Html
+  fullName: Microsoft.AspNetCore.Html
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Html
+    name: Html
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.html
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Html
+    name: Html
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.html

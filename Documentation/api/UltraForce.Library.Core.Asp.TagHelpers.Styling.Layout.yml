@@ -1,0 +1,129 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
+  commentId: N:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
+  id: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
+  children:
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFSpacerProperties
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFFlexProperties
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFRowTagHelper
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFSpacerProperties
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFSpacerTagHelper
+  langs:
+  - csharp
+  - vb
+  name: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
+  nameWithType: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
+  type: Namespace
+  assemblies:
+  - UltraForce.Library.Core.Asp
+references:
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties
+  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.html
+  name: IUFFlexProperties
+  nameWithType: IUFFlexProperties
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFSpacerProperties
+  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFSpacerProperties
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFSpacerProperties.html
+  name: IUFSpacerProperties
+  nameWithType: IUFSpacerProperties
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFSpacerProperties
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper
+  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.html
+  name: UFColumnTagHelper
+  nameWithType: UFColumnTagHelper
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFFlexProperties
+  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFFlexProperties
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFFlexProperties.html
+  name: UFFlexProperties
+  nameWithType: UFFlexProperties
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFFlexProperties
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFRowTagHelper
+  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFRowTagHelper
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFRowTagHelper.html
+  name: UFRowTagHelper
+  nameWithType: UFRowTagHelper
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFRowTagHelper
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFSpacerProperties
+  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFSpacerProperties
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFSpacerProperties.html
+  name: UFSpacerProperties
+  nameWithType: UFSpacerProperties
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFSpacerProperties
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFSpacerTagHelper
+  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFSpacerTagHelper
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFSpacerTagHelper.html
+  name: UFSpacerTagHelper
+  nameWithType: UFSpacerTagHelper
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFSpacerTagHelper
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
+  commentId: N:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
+  href: UltraForce.html
+  name: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
+  nameWithType: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers
+    name: TagHelpers
+    href: UltraForce.Library.Core.Asp.TagHelpers.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling
+    name: Styling
+    href: UltraForce.Library.Core.Asp.TagHelpers.Styling.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
+    name: Layout
+    href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers
+    name: TagHelpers
+    href: UltraForce.Library.Core.Asp.TagHelpers.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling
+    name: Styling
+    href: UltraForce.Library.Core.Asp.TagHelpers.Styling.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
+    name: Layout
+    href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.html

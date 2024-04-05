@@ -1,0 +1,180 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFButtonIconPosition
+  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFButtonIconPosition
+  id: UFButtonIconPosition
+  parent: UltraForce.Library.Core.Asp.Types.Enums
+  children:
+  - UltraForce.Library.Core.Asp.Types.Enums.UFButtonIconPosition.Bottom
+  - UltraForce.Library.Core.Asp.Types.Enums.UFButtonIconPosition.End
+  - UltraForce.Library.Core.Asp.Types.Enums.UFButtonIconPosition.Start
+  - UltraForce.Library.Core.Asp.Types.Enums.UFButtonIconPosition.Top
+  langs:
+  - csharp
+  - vb
+  name: UFButtonIconPosition
+  nameWithType: UFButtonIconPosition
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFButtonIconPosition
+  type: Enum
+  source:
+    id: UFButtonIconPosition
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Types\Enums\UFButtonIconPosition.cs
+    startLine: 34
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Position of the icon in the button.
+  example: []
+  syntax:
+    content: public enum UFButtonIconPosition
+    content.vb: Public Enum UFButtonIconPosition
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFButtonIconPosition.Start
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFButtonIconPosition.Start
+  id: Start
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFButtonIconPosition
+  langs:
+  - csharp
+  - vb
+  name: Start
+  nameWithType: UFButtonIconPosition.Start
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFButtonIconPosition.Start
+  type: Field
+  source:
+    id: Start
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Types\Enums\UFButtonIconPosition.cs
+    startLine: 36
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  syntax:
+    content: Start = 0
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFButtonIconPosition
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFButtonIconPosition.End
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFButtonIconPosition.End
+  id: End
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFButtonIconPosition
+  langs:
+  - csharp
+  - vb
+  name: End
+  nameWithType: UFButtonIconPosition.End
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFButtonIconPosition.End
+  type: Field
+  source:
+    id: End
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Types\Enums\UFButtonIconPosition.cs
+    startLine: 37
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  syntax:
+    content: End = 1
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFButtonIconPosition
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFButtonIconPosition.Top
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFButtonIconPosition.Top
+  id: Top
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFButtonIconPosition
+  langs:
+  - csharp
+  - vb
+  name: Top
+  nameWithType: UFButtonIconPosition.Top
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFButtonIconPosition.Top
+  type: Field
+  source:
+    id: Top
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Types\Enums\UFButtonIconPosition.cs
+    startLine: 38
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  syntax:
+    content: Top = 2
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFButtonIconPosition
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFButtonIconPosition.Bottom
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFButtonIconPosition.Bottom
+  id: Bottom
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFButtonIconPosition
+  langs:
+  - csharp
+  - vb
+  name: Bottom
+  nameWithType: UFButtonIconPosition.Bottom
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFButtonIconPosition.Bottom
+  type: Field
+  source:
+    id: Bottom
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Types\Enums\UFButtonIconPosition.cs
+    startLine: 39
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  syntax:
+    content: Bottom = 3
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFButtonIconPosition
+references:
+- uid: UltraForce.Library.Core.Asp.Types.Enums
+  commentId: N:UltraForce.Library.Core.Asp.Types.Enums
+  href: UltraForce.html
+  name: UltraForce.Library.Core.Asp.Types.Enums
+  nameWithType: UltraForce.Library.Core.Asp.Types.Enums
+  fullName: UltraForce.Library.Core.Asp.Types.Enums
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types
+    name: Types
+    href: UltraForce.Library.Core.Asp.Types.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types.Enums
+    name: Enums
+    href: UltraForce.Library.Core.Asp.Types.Enums.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types
+    name: Types
+    href: UltraForce.Library.Core.Asp.Types.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types.Enums
+    name: Enums
+    href: UltraForce.Library.Core.Asp.Types.Enums.html
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFButtonIconPosition
+  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFButtonIconPosition
+  parent: UltraForce.Library.Core.Asp.Types.Enums
+  href: UltraForce.Library.Core.Asp.Types.Enums.UFButtonIconPosition.html
+  name: UFButtonIconPosition
+  nameWithType: UFButtonIconPosition
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFButtonIconPosition

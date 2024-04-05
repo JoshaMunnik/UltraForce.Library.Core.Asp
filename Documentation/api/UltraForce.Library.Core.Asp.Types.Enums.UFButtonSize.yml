@@ -1,0 +1,157 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFButtonSize
+  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFButtonSize
+  id: UFButtonSize
+  parent: UltraForce.Library.Core.Asp.Types.Enums
+  children:
+  - UltraForce.Library.Core.Asp.Types.Enums.UFButtonSize.Large
+  - UltraForce.Library.Core.Asp.Types.Enums.UFButtonSize.Normal
+  - UltraForce.Library.Core.Asp.Types.Enums.UFButtonSize.Small
+  langs:
+  - csharp
+  - vb
+  name: UFButtonSize
+  nameWithType: UFButtonSize
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFButtonSize
+  type: Enum
+  source:
+    id: UFButtonSize
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Types\Enums\UFButtonSize.cs
+    startLine: 34
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Size of button and caption
+  example: []
+  syntax:
+    content: public enum UFButtonSize
+    content.vb: Public Enum UFButtonSize
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFButtonSize.Normal
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFButtonSize.Normal
+  id: Normal
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFButtonSize
+  langs:
+  - csharp
+  - vb
+  name: Normal
+  nameWithType: UFButtonSize.Normal
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFButtonSize.Normal
+  type: Field
+  source:
+    id: Normal
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Types\Enums\UFButtonSize.cs
+    startLine: 36
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  syntax:
+    content: Normal = 0
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFButtonSize
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFButtonSize.Small
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFButtonSize.Small
+  id: Small
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFButtonSize
+  langs:
+  - csharp
+  - vb
+  name: Small
+  nameWithType: UFButtonSize.Small
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFButtonSize.Small
+  type: Field
+  source:
+    id: Small
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Types\Enums\UFButtonSize.cs
+    startLine: 37
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  syntax:
+    content: Small = 1
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFButtonSize
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFButtonSize.Large
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFButtonSize.Large
+  id: Large
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFButtonSize
+  langs:
+  - csharp
+  - vb
+  name: Large
+  nameWithType: UFButtonSize.Large
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFButtonSize.Large
+  type: Field
+  source:
+    id: Large
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Types\Enums\UFButtonSize.cs
+    startLine: 38
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  syntax:
+    content: Large = 2
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFButtonSize
+references:
+- uid: UltraForce.Library.Core.Asp.Types.Enums
+  commentId: N:UltraForce.Library.Core.Asp.Types.Enums
+  href: UltraForce.html
+  name: UltraForce.Library.Core.Asp.Types.Enums
+  nameWithType: UltraForce.Library.Core.Asp.Types.Enums
+  fullName: UltraForce.Library.Core.Asp.Types.Enums
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types
+    name: Types
+    href: UltraForce.Library.Core.Asp.Types.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types.Enums
+    name: Enums
+    href: UltraForce.Library.Core.Asp.Types.Enums.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types
+    name: Types
+    href: UltraForce.Library.Core.Asp.Types.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types.Enums
+    name: Enums
+    href: UltraForce.Library.Core.Asp.Types.Enums.html
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFButtonSize
+  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFButtonSize
+  parent: UltraForce.Library.Core.Asp.Types.Enums
+  href: UltraForce.Library.Core.Asp.Types.Enums.UFButtonSize.html
+  name: UFButtonSize
+  nameWithType: UFButtonSize
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFButtonSize

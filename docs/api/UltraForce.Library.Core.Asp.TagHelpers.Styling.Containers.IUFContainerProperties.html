@@ -1,0 +1,341 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Interface IUFContainerProperties | UltraForce.Library.Core.Asp </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Interface IUFContainerProperties | UltraForce.Library.Core.Asp ">
+      
+      <meta name="description" content="Properties for a container that can optionally position its child content.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="UltraForce.Library.Core.Asp">
+            UltraForce.Library.Core.Asp
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties">
+
+
+
+  <h1 id="UltraForce_Library_Core_Asp_TagHelpers_Styling_Containers_IUFContainerProperties" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties" class="text-break">
+Interface IUFContainerProperties  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="UltraForce.html">UltraForce</a>.<a class="xref" href="UltraForce.Library.html">Library</a>.<a class="xref" href="UltraForce.Library.Core.html">Core</a>.<a class="xref" href="UltraForce.Library.Core.Asp.html">Asp</a>.<a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.html">TagHelpers</a>.<a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Styling.html">Styling</a>.<a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.html">Containers</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>UltraForce.Library.Core.Asp.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Properties for a container that can optionally position its child content.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IUFContainerProperties</code></pre>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="UltraForce_Library_Core_Asp_TagHelpers_Styling_Containers_IUFContainerProperties_FullHeight_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.FullHeight*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Styling_Containers_IUFContainerProperties_FullHeight" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.FullHeight">
+  FullHeight
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>When true use the height of the parent, otherwise use the height of the content.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool FullHeight { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_TagHelpers_Styling_Containers_IUFContainerProperties_FullWidth_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.FullWidth*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Styling_Containers_IUFContainerProperties_FullWidth" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.FullWidth">
+  FullWidth
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>When true use the width of the parent, otherwise use the width of the content.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool FullWidth { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_TagHelpers_Styling_Containers_IUFContainerProperties_Horizontal_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.Horizontal*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Styling_Containers_IUFContainerProperties_Horizontal" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.Horizontal">
+  Horizontal
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>How to position the child horizontally within the container.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">UFContentPosition Horizontal { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="UltraForce.Library.Core.Asp.Types.Enums.UFContentPosition.html">UFContentPosition</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_TagHelpers_Styling_Containers_IUFContainerProperties_Padding_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.Padding*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Styling_Containers_IUFContainerProperties_Padding" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.Padding">
+  Padding
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Padding to add to the container.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int Padding { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_TagHelpers_Styling_Containers_IUFContainerProperties_PositionChild_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.PositionChild*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Styling_Containers_IUFContainerProperties_PositionChild" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.PositionChild">
+  PositionChild
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>When true position the children in the container using <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Containers_IUFContainerProperties_Horizontal">Horizontal</a> and
+<a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Containers_IUFContainerProperties_Vertical">Vertical</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool PositionChild { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_TagHelpers_Styling_Containers_IUFContainerProperties_Vertical_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.Vertical*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Styling_Containers_IUFContainerProperties_Vertical" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.Vertical">
+  Vertical
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>How to position the child vertically within the container.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">UFContentPosition Vertical { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="UltraForce.Library.Core.Asp.Types.Enums.UFContentPosition.html">UFContentPosition</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,203 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignItems
+  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignItems
+  id: UFFlexAlignItems
+  parent: UltraForce.Library.Core.Asp.Types.Enums
+  children:
+  - UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignItems.Base
+  - UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignItems.Center
+  - UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignItems.End
+  - UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignItems.Start
+  - UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignItems.Stretch
+  langs:
+  - csharp
+  - vb
+  name: UFFlexAlignItems
+  nameWithType: UFFlexAlignItems
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignItems
+  type: Enum
+  source:
+    id: UFFlexAlignItems
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Types\Enums\UFFlexAlignItems.cs
+    startLine: 36
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: How to align the children in the opposite direction of the main axis (column or row).
+  example: []
+  syntax:
+    content: public enum UFFlexAlignItems
+    content.vb: Public Enum UFFlexAlignItems
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignItems.Start
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignItems.Start
+  id: Start
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignItems
+  langs:
+  - csharp
+  - vb
+  name: Start
+  nameWithType: UFFlexAlignItems.Start
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignItems.Start
+  type: Field
+  source:
+    id: Start
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Types\Enums\UFFlexAlignItems.cs
+    startLine: 38
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  syntax:
+    content: Start = 0
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignItems
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignItems.Center
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignItems.Center
+  id: Center
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignItems
+  langs:
+  - csharp
+  - vb
+  name: Center
+  nameWithType: UFFlexAlignItems.Center
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignItems.Center
+  type: Field
+  source:
+    id: Center
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Types\Enums\UFFlexAlignItems.cs
+    startLine: 39
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  syntax:
+    content: Center = 1
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignItems
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignItems.End
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignItems.End
+  id: End
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignItems
+  langs:
+  - csharp
+  - vb
+  name: End
+  nameWithType: UFFlexAlignItems.End
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignItems.End
+  type: Field
+  source:
+    id: End
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Types\Enums\UFFlexAlignItems.cs
+    startLine: 40
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  syntax:
+    content: End = 2
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignItems
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignItems.Stretch
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignItems.Stretch
+  id: Stretch
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignItems
+  langs:
+  - csharp
+  - vb
+  name: Stretch
+  nameWithType: UFFlexAlignItems.Stretch
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignItems.Stretch
+  type: Field
+  source:
+    id: Stretch
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Types\Enums\UFFlexAlignItems.cs
+    startLine: 41
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  syntax:
+    content: Stretch = 3
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignItems
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignItems.Base
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignItems.Base
+  id: Base
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignItems
+  langs:
+  - csharp
+  - vb
+  name: Base
+  nameWithType: UFFlexAlignItems.Base
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignItems.Base
+  type: Field
+  source:
+    id: Base
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Types\Enums\UFFlexAlignItems.cs
+    startLine: 42
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  syntax:
+    content: Base = 4
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignItems
+references:
+- uid: UltraForce.Library.Core.Asp.Types.Enums
+  commentId: N:UltraForce.Library.Core.Asp.Types.Enums
+  href: UltraForce.html
+  name: UltraForce.Library.Core.Asp.Types.Enums
+  nameWithType: UltraForce.Library.Core.Asp.Types.Enums
+  fullName: UltraForce.Library.Core.Asp.Types.Enums
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types
+    name: Types
+    href: UltraForce.Library.Core.Asp.Types.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types.Enums
+    name: Enums
+    href: UltraForce.Library.Core.Asp.Types.Enums.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types
+    name: Types
+    href: UltraForce.Library.Core.Asp.Types.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types.Enums
+    name: Enums
+    href: UltraForce.Library.Core.Asp.Types.Enums.html
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignItems
+  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignItems
+  parent: UltraForce.Library.Core.Asp.Types.Enums
+  href: UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignItems.html
+  name: UFFlexAlignItems
+  nameWithType: UFFlexAlignItems
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignItems

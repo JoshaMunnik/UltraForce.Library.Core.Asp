@@ -1,0 +1,403 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class UFFontAwesomeTheme | UltraForce.Library.Core.Asp </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class UFFontAwesomeTheme | UltraForce.Library.Core.Asp ">
+      
+      <meta name="description" content="implements icon related methods for use with font awesome.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="UltraForce.Library.Core.Asp">
+            UltraForce.Library.Core.Asp
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="UltraForce.Library.Core.Asp.Services.UFFontAwesomeTheme">
+
+
+
+  <h1 id="UltraForce_Library_Core_Asp_Services_UFFontAwesomeTheme" data-uid="UltraForce.Library.Core.Asp.Services.UFFontAwesomeTheme" class="text-break">
+Class UFFontAwesomeTheme  
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="UltraForce.html">UltraForce</a>.<a class="xref" href="UltraForce.Library.html">Library</a>.<a class="xref" href="UltraForce.Library.Core.html">Core</a>.<a class="xref" href="UltraForce.Library.Core.Asp.html">Asp</a>.<a class="xref" href="UltraForce.Library.Core.Asp.Services.html">Services</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>UltraForce.Library.Core.Asp.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a class="xref" href="UltraForce.Library.Core.Asp.Services.UFFontAwesomeTheme.html">UFFontAwesomeTheme</a> implements icon related methods for use with font awesome.</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class UFFontAwesomeTheme : UFTheme, IUFTheme</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="UltraForce.Library.Core.Asp.Services.UFTheme.html">UFTheme</a></div>
+      <div><span class="xref">UFFontAwesomeTheme</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="UltraForce.Library.Core.Asp.Services.IUFTheme.html">IUFTheme</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="UltraForce.Library.Core.Asp.Services.UFTheme.html#UltraForce_Library_Core_Asp_Services_UFTheme_GetButtonClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_IUFButtonProperties_">UFTheme.GetButtonClasses(IUFButtonProperties)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.Core.Asp.Services.UFTheme.html#UltraForce_Library_Core_Asp_Services_UFTheme_GetButtonCaptionClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_IUFButtonProperties_">UFTheme.GetButtonCaptionClasses(IUFButtonProperties)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.Core.Asp.Services.UFTheme.html#UltraForce_Library_Core_Asp_Services_UFTheme_GetContainerClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Containers_IUFContainerProperties_">UFTheme.GetContainerClasses(IUFContainerProperties)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.Core.Asp.Services.UFTheme.html#UltraForce_Library_Core_Asp_Services_UFTheme_GetTabsClasses_System_Int32_">UFTheme.GetTabsClasses(int)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.Core.Asp.Services.UFTheme.html#UltraForce_Library_Core_Asp_Services_UFTheme_GetTabRadioClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Containers_IUFTabProperties_">UFTheme.GetTabRadioClasses(IUFTabProperties)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.Core.Asp.Services.UFTheme.html#UltraForce_Library_Core_Asp_Services_UFTheme_GetTabLabelClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Containers_IUFTabProperties_">UFTheme.GetTabLabelClasses(IUFTabProperties)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.Core.Asp.Services.UFTheme.html#UltraForce_Library_Core_Asp_Services_UFTheme_GetTabContentWrapperClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Containers_IUFTabProperties_">UFTheme.GetTabContentWrapperClasses(IUFTabProperties)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.Core.Asp.Services.UFTheme.html#UltraForce_Library_Core_Asp_Services_UFTheme_GetDataListClasses">UFTheme.GetDataListClasses()</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.Core.Asp.Services.UFTheme.html#UltraForce_Library_Core_Asp_Services_UFTheme_GetDataNameClasses">UFTheme.GetDataNameClasses()</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.Core.Asp.Services.UFTheme.html#UltraForce_Library_Core_Asp_Services_UFTheme_GetDataValueClasses">UFTheme.GetDataValueClasses()</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.Core.Asp.Services.UFTheme.html#UltraForce_Library_Core_Asp_Services_UFTheme_GetTextWrapperClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Forms_IUFInputProperties_System_String_">UFTheme.GetTextWrapperClasses(IUFInputProperties, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.Core.Asp.Services.UFTheme.html#UltraForce_Library_Core_Asp_Services_UFTheme_GetTextLabelClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Forms_IUFInputProperties_System_String_">UFTheme.GetTextLabelClasses(IUFInputProperties, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.Core.Asp.Services.UFTheme.html#UltraForce_Library_Core_Asp_Services_UFTheme_GetTextLabelSpanClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Forms_IUFInputProperties_System_String_">UFTheme.GetTextLabelSpanClasses(IUFInputProperties, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.Core.Asp.Services.UFTheme.html#UltraForce_Library_Core_Asp_Services_UFTheme_GetTextLabelDescriptionClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Forms_IUFInputProperties_System_String_">UFTheme.GetTextLabelDescriptionClasses(IUFInputProperties, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.Core.Asp.Services.UFTheme.html#UltraForce_Library_Core_Asp_Services_UFTheme_GetTextInputClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Forms_IUFInputProperties_System_String_">UFTheme.GetTextInputClasses(IUFInputProperties, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.Core.Asp.Services.UFTheme.html#UltraForce_Library_Core_Asp_Services_UFTheme_GetValidationFeedbackContainerHtml_System_String_">UFTheme.GetValidationFeedbackContainerHtml(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.Core.Asp.Services.UFTheme.html#UltraForce_Library_Core_Asp_Services_UFTheme_GetFieldErrorsHtml_Microsoft_AspNetCore_Mvc_ModelBinding_ModelStateDictionary_System_String_">UFTheme.GetFieldErrorsHtml(ModelStateDictionary, string)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.Core.Asp.Services.UFTheme.html#UltraForce_Library_Core_Asp_Services_UFTheme_GetFieldErrorsClasses">UFTheme.GetFieldErrorsClasses()</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.Core.Asp.Services.UFTheme.html#UltraForce_Library_Core_Asp_Services_UFTheme_GetCheckboxWrapperClasses">UFTheme.GetCheckboxWrapperClasses()</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.Core.Asp.Services.UFTheme.html#UltraForce_Library_Core_Asp_Services_UFTheme_GetCheckboxLabelClasses">UFTheme.GetCheckboxLabelClasses()</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.Core.Asp.Services.UFTheme.html#UltraForce_Library_Core_Asp_Services_UFTheme_GetCheckboxLabelSpanClasses">UFTheme.GetCheckboxLabelSpanClasses()</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.Core.Asp.Services.UFTheme.html#UltraForce_Library_Core_Asp_Services_UFTheme_GetCheckboxLabelDescriptionClasses">UFTheme.GetCheckboxLabelDescriptionClasses()</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.Core.Asp.Services.UFTheme.html#UltraForce_Library_Core_Asp_Services_UFTheme_GetCheckboxInputClasses">UFTheme.GetCheckboxInputClasses()</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.Core.Asp.Services.UFTheme.html#UltraForce_Library_Core_Asp_Services_UFTheme_GetCheckboxExtraHtml">UFTheme.GetCheckboxExtraHtml()</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.Core.Asp.Services.UFTheme.html#UltraForce_Library_Core_Asp_Services_UFTheme_GetRadioWrapperClasses">UFTheme.GetRadioWrapperClasses()</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.Core.Asp.Services.UFTheme.html#UltraForce_Library_Core_Asp_Services_UFTheme_GetRadioLabelClasses">UFTheme.GetRadioLabelClasses()</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.Core.Asp.Services.UFTheme.html#UltraForce_Library_Core_Asp_Services_UFTheme_GetRadioLabelSpanClasses">UFTheme.GetRadioLabelSpanClasses()</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.Core.Asp.Services.UFTheme.html#UltraForce_Library_Core_Asp_Services_UFTheme_GetRadioLabelDescriptionClasses">UFTheme.GetRadioLabelDescriptionClasses()</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.Core.Asp.Services.UFTheme.html#UltraForce_Library_Core_Asp_Services_UFTheme_GetRadioInputClasses">UFTheme.GetRadioInputClasses()</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.Core.Asp.Services.UFTheme.html#UltraForce_Library_Core_Asp_Services_UFTheme_GetRadioExtraHtml">UFTheme.GetRadioExtraHtml()</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.Core.Asp.Services.UFTheme.html#UltraForce_Library_Core_Asp_Services_UFTheme_GetSelectClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Forms_IUFInputProperties_">UFTheme.GetSelectClasses(IUFInputProperties)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.Core.Asp.Services.UFTheme.html#UltraForce_Library_Core_Asp_Services_UFTheme_GetSpacerClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Layout_IUFSpacerProperties_">UFTheme.GetSpacerClasses(IUFSpacerProperties)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.Core.Asp.Services.UFTheme.html#UltraForce_Library_Core_Asp_Services_UFTheme_GetColumnClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Layout_IUFFlexProperties_">UFTheme.GetColumnClasses(IUFFlexProperties)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.Core.Asp.Services.UFTheme.html#UltraForce_Library_Core_Asp_Services_UFTheme_GetRowClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Layout_IUFFlexProperties_">UFTheme.GetRowClasses(IUFFlexProperties)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.Core.Asp.Services.UFTheme.html#UltraForce_Library_Core_Asp_Services_UFTheme_GetTableClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_IUFTableProperties_">UFTheme.GetTableClasses(IUFTableProperties)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.Core.Asp.Services.UFTheme.html#UltraForce_Library_Core_Asp_Services_UFTheme_GetTableCellClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_IUFCellProperties_UltraForce_Library_Core_Asp_Types_Enums_UFTableCellType_UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_IUFTableProperties_UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_IUFTableRowProperties_">UFTheme.GetTableCellClasses(IUFCellProperties, UFTableCellType, IUFTableProperties, IUFTableRowProperties)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.Core.Asp.Services.UFTheme.html#UltraForce_Library_Core_Asp_Services_UFTheme_GetTableHeaderButtonClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_IUFCellProperties_UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_IUFTableProperties_UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_IUFTableRowProperties_">UFTheme.GetTableHeaderButtonClasses(IUFCellProperties, IUFTableProperties, IUFTableRowProperties)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.Core.Asp.Services.UFTheme.html#UltraForce_Library_Core_Asp_Services_UFTheme_GetTableRowClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_IUFTableRowProperties_UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_IUFTableProperties_">UFTheme.GetTableRowClasses(IUFTableRowProperties, IUFTableProperties)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.Core.Asp.Services.UFTheme.html#UltraForce_Library_Core_Asp_Services_UFTheme_GetFilterContainerClasses">UFTheme.GetFilterContainerClasses()</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.Core.Asp.Services.UFTheme.html#UltraForce_Library_Core_Asp_Services_UFTheme_GetFilterLabelClasses">UFTheme.GetFilterLabelClasses()</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.Core.Asp.Services.UFTheme.html#UltraForce_Library_Core_Asp_Services_UFTheme_GetFilterInputClasses">UFTheme.GetFilterInputClasses()</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.Core.Asp.Services.UFTheme.html#UltraForce_Library_Core_Asp_Services_UFTheme_GetFilterButtonClasses">UFTheme.GetFilterButtonClasses()</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.Core.Asp.Services.UFTheme.html#UltraForce_Library_Core_Asp_Services_UFTheme_GetSortAscendingClasses">UFTheme.GetSortAscendingClasses()</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.Core.Asp.Services.UFTheme.html#UltraForce_Library_Core_Asp_Services_UFTheme_GetSortDescendingClasses">UFTheme.GetSortDescendingClasses()</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.Core.Asp.Services.UFTheme.html#UltraForce_Library_Core_Asp_Services_UFTheme_IsCssClass_System_String_">UFTheme.IsCssClass(string)</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.Core.Asp.Services.UFTheme.html#UltraForce_Library_Core_Asp_Services_UFTheme_GetValidationFeedbackClasses">UFTheme.GetValidationFeedbackClasses()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="UltraForce_Library_Core_Asp_Services_UFFontAwesomeTheme_GetButtonIconHtml_" data-uid="UltraForce.Library.Core.Asp.Services.UFFontAwesomeTheme.GetButtonIconHtml*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Services_UFFontAwesomeTheme_GetButtonIconHtml_UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_IUFButtonProperties_" data-uid="UltraForce.Library.Core.Asp.Services.UFFontAwesomeTheme.GetButtonIconHtml(UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties)">
+  GetButtonIconHtml(IUFButtonProperties)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the html for an icon.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string GetButtonIconHtml(IUFButtonProperties aProperties)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aProperties</code> <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.html">IUFButtonProperties</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Html snippet or empty string if there is no icon</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_Services_UFFontAwesomeTheme_GetIconCssClasses_" data-uid="UltraForce.Library.Core.Asp.Services.UFFontAwesomeTheme.GetIconCssClasses*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Services_UFFontAwesomeTheme_GetIconCssClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_IUFButtonProperties_" data-uid="UltraForce.Library.Core.Asp.Services.UFFontAwesomeTheme.GetIconCssClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties)">
+  GetIconCssClasses(IUFButtonProperties)
+  
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the css classes for an icon. The default implementation assumes font awesome v6+ is used
+and returns a solid icon by adding &quot;fa-&quot; to the icon name and using the &quot;fas&quot; class:<br>
+<code>fas fa-{Icon}</code></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual string GetIconCssClasses(IUFButtonProperties aProperties)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aProperties</code> <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.html">IUFButtonProperties</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Css classes or empty string if there is no icon</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,1056 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.Core.Asp.Tools.UFMvcTools
+  commentId: T:UltraForce.Library.Core.Asp.Tools.UFMvcTools
+  id: UFMvcTools
+  parent: UltraForce.Library.Core.Asp.Tools
+  children:
+  - UltraForce.Library.Core.Asp.Tools.UFMvcTools.AddFirstItem(Microsoft.AspNetCore.Mvc.Rendering.SelectList,Microsoft.AspNetCore.Mvc.Rendering.SelectListItem)
+  - UltraForce.Library.Core.Asp.Tools.UFMvcTools.CreateListFromEnum``1(System.String)
+  - UltraForce.Library.Core.Asp.Tools.UFMvcTools.GetControllerName(System.String)
+  - UltraForce.Library.Core.Asp.Tools.UFMvcTools.GetControllerName``1
+  - UltraForce.Library.Core.Asp.Tools.UFMvcTools.GetErrors(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary,System.String,System.String,System.String,System.String)
+  - UltraForce.Library.Core.Asp.Tools.UFMvcTools.GetJsonName(System.Object,System.String)
+  - UltraForce.Library.Core.Asp.Tools.UFMvcTools.GetViewComponentName(System.String)
+  - UltraForce.Library.Core.Asp.Tools.UFMvcTools.Normalize(System.String)
+  - UltraForce.Library.Core.Asp.Tools.UFMvcTools.ReplaceMacros(System.String,System.Security.Principal.IPrincipal)
+  - UltraForce.Library.Core.Asp.Tools.UFMvcTools.Validate(System.Object)
+  langs:
+  - csharp
+  - vb
+  name: UFMvcTools
+  nameWithType: UFMvcTools
+  fullName: UltraForce.Library.Core.Asp.Tools.UFMvcTools
+  type: Class
+  source:
+    id: UFMvcTools
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Tools\UFMvcTools.cs
+    startLine: 42
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Tools
+  summary: <xref href="UltraForce.Library.Core.Asp.Tools.UFMvcTools" data-throw-if-not-resolved="false"></xref> contain static support methods for MVC.
+  example: []
+  syntax:
+    content: public static class UFMvcTools
+    content.vb: Public Module UFMvcTools
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: UltraForce.Library.Core.Asp.Tools.UFMvcTools.GetControllerName(System.String)
+  commentId: M:UltraForce.Library.Core.Asp.Tools.UFMvcTools.GetControllerName(System.String)
+  id: GetControllerName(System.String)
+  parent: UltraForce.Library.Core.Asp.Tools.UFMvcTools
+  langs:
+  - csharp
+  - vb
+  name: GetControllerName(string)
+  nameWithType: UFMvcTools.GetControllerName(string)
+  fullName: UltraForce.Library.Core.Asp.Tools.UFMvcTools.GetControllerName(string)
+  type: Method
+  source:
+    id: GetControllerName
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Tools\UFMvcTools.cs
+    startLine: 65
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Tools
+  summary: Checks if the name ends with 'Controller', if it does remove it.
+  example: []
+  syntax:
+    content: public static string GetControllerName(string aController)
+    parameters:
+    - id: aController
+      type: System.String
+      description: Name of controller
+    return:
+      type: System.String
+      description: Name of controller without 'Controller' at the end
+    content.vb: Public Shared Function GetControllerName(aController As String) As String
+  overload: UltraForce.Library.Core.Asp.Tools.UFMvcTools.GetControllerName*
+  nameWithType.vb: UFMvcTools.GetControllerName(String)
+  fullName.vb: UltraForce.Library.Core.Asp.Tools.UFMvcTools.GetControllerName(String)
+  name.vb: GetControllerName(String)
+- uid: UltraForce.Library.Core.Asp.Tools.UFMvcTools.GetControllerName``1
+  commentId: M:UltraForce.Library.Core.Asp.Tools.UFMvcTools.GetControllerName``1
+  id: GetControllerName``1
+  parent: UltraForce.Library.Core.Asp.Tools.UFMvcTools
+  langs:
+  - csharp
+  - vb
+  name: GetControllerName<T>()
+  nameWithType: UFMvcTools.GetControllerName<T>()
+  fullName: UltraForce.Library.Core.Asp.Tools.UFMvcTools.GetControllerName<T>()
+  type: Method
+  source:
+    id: GetControllerName
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Tools\UFMvcTools.cs
+    startLine: 77
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Tools
+  summary: Checks if the type name ends with 'Controller', if it does remove it.
+  example: []
+  syntax:
+    content: public static string GetControllerName<T>()
+    typeParameters:
+    - id: T
+      description: ''
+    return:
+      type: System.String
+      description: Name of type without 'Controller' at the end
+    content.vb: Public Shared Function GetControllerName(Of T)() As String
+  overload: UltraForce.Library.Core.Asp.Tools.UFMvcTools.GetControllerName*
+  nameWithType.vb: UFMvcTools.GetControllerName(Of T)()
+  fullName.vb: UltraForce.Library.Core.Asp.Tools.UFMvcTools.GetControllerName(Of T)()
+  name.vb: GetControllerName(Of T)()
+- uid: UltraForce.Library.Core.Asp.Tools.UFMvcTools.GetViewComponentName(System.String)
+  commentId: M:UltraForce.Library.Core.Asp.Tools.UFMvcTools.GetViewComponentName(System.String)
+  id: GetViewComponentName(System.String)
+  parent: UltraForce.Library.Core.Asp.Tools.UFMvcTools
+  langs:
+  - csharp
+  - vb
+  name: GetViewComponentName(string)
+  nameWithType: UFMvcTools.GetViewComponentName(string)
+  fullName: UltraForce.Library.Core.Asp.Tools.UFMvcTools.GetViewComponentName(string)
+  type: Method
+  source:
+    id: GetViewComponentName
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Tools\UFMvcTools.cs
+    startLine: 87
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Tools
+  summary: Checks if the name ends with 'ViewComponent', if it does remove it.
+  example: []
+  syntax:
+    content: public static string GetViewComponentName(string aComponent)
+    parameters:
+    - id: aComponent
+      type: System.String
+      description: Name of component
+    return:
+      type: System.String
+      description: Name of controller without 'ViewComponent' at the end
+    content.vb: Public Shared Function GetViewComponentName(aComponent As String) As String
+  overload: UltraForce.Library.Core.Asp.Tools.UFMvcTools.GetViewComponentName*
+  nameWithType.vb: UFMvcTools.GetViewComponentName(String)
+  fullName.vb: UltraForce.Library.Core.Asp.Tools.UFMvcTools.GetViewComponentName(String)
+  name.vb: GetViewComponentName(String)
+- uid: UltraForce.Library.Core.Asp.Tools.UFMvcTools.Normalize(System.String)
+  commentId: M:UltraForce.Library.Core.Asp.Tools.UFMvcTools.Normalize(System.String)
+  id: Normalize(System.String)
+  parent: UltraForce.Library.Core.Asp.Tools.UFMvcTools
+  langs:
+  - csharp
+  - vb
+  name: Normalize(string)
+  nameWithType: UFMvcTools.Normalize(string)
+  fullName: UltraForce.Library.Core.Asp.Tools.UFMvcTools.Normalize(string)
+  type: Method
+  source:
+    id: Normalize
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Tools\UFMvcTools.cs
+    startLine: 99
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Tools
+  summary: Returns a normalized value of a string.
+  example: []
+  syntax:
+    content: public static string Normalize(string aValue)
+    parameters:
+    - id: aValue
+      type: System.String
+      description: Value to normalize
+    return:
+      type: System.String
+      description: Normalized value
+    content.vb: Public Shared Function Normalize(aValue As String) As String
+  overload: UltraForce.Library.Core.Asp.Tools.UFMvcTools.Normalize*
+  nameWithType.vb: UFMvcTools.Normalize(String)
+  fullName.vb: UltraForce.Library.Core.Asp.Tools.UFMvcTools.Normalize(String)
+  name.vb: Normalize(String)
+- uid: UltraForce.Library.Core.Asp.Tools.UFMvcTools.ReplaceMacros(System.String,System.Security.Principal.IPrincipal)
+  commentId: M:UltraForce.Library.Core.Asp.Tools.UFMvcTools.ReplaceMacros(System.String,System.Security.Principal.IPrincipal)
+  id: ReplaceMacros(System.String,System.Security.Principal.IPrincipal)
+  parent: UltraForce.Library.Core.Asp.Tools.UFMvcTools
+  langs:
+  - csharp
+  - vb
+  name: ReplaceMacros(string, IPrincipal?)
+  nameWithType: UFMvcTools.ReplaceMacros(string, IPrincipal?)
+  fullName: UltraForce.Library.Core.Asp.Tools.UFMvcTools.ReplaceMacros(string, System.Security.Principal.IPrincipal?)
+  type: Method
+  source:
+    id: ReplaceMacros
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Tools\UFMvcTools.cs
+    startLine: 113
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Tools
+  summary: >-
+    Replace macro texts with values.
+
+    <p>
+
+    The method replaces the following macro's: {copy}, {year} and {user}
+
+    </p>
+  example: []
+  syntax:
+    content: public static string ReplaceMacros(string aText, IPrincipal? aPrincipal = null)
+    parameters:
+    - id: aText
+      type: System.String
+      description: text that might contain macro's
+    - id: aPrincipal
+      type: System.Security.Principal.IPrincipal
+      description: value to get user name from
+    return:
+      type: System.String
+      description: aText with macro's replaced
+    content.vb: Public Shared Function ReplaceMacros(aText As String, aPrincipal As IPrincipal = Nothing) As String
+  overload: UltraForce.Library.Core.Asp.Tools.UFMvcTools.ReplaceMacros*
+  nameWithType.vb: UFMvcTools.ReplaceMacros(String, IPrincipal)
+  fullName.vb: UltraForce.Library.Core.Asp.Tools.UFMvcTools.ReplaceMacros(String, System.Security.Principal.IPrincipal)
+  name.vb: ReplaceMacros(String, IPrincipal)
+- uid: UltraForce.Library.Core.Asp.Tools.UFMvcTools.AddFirstItem(Microsoft.AspNetCore.Mvc.Rendering.SelectList,Microsoft.AspNetCore.Mvc.Rendering.SelectListItem)
+  commentId: M:UltraForce.Library.Core.Asp.Tools.UFMvcTools.AddFirstItem(Microsoft.AspNetCore.Mvc.Rendering.SelectList,Microsoft.AspNetCore.Mvc.Rendering.SelectListItem)
+  id: AddFirstItem(Microsoft.AspNetCore.Mvc.Rendering.SelectList,Microsoft.AspNetCore.Mvc.Rendering.SelectListItem)
+  parent: UltraForce.Library.Core.Asp.Tools.UFMvcTools
+  langs:
+  - csharp
+  - vb
+  name: AddFirstItem(SelectList, SelectListItem)
+  nameWithType: UFMvcTools.AddFirstItem(SelectList, SelectListItem)
+  fullName: UltraForce.Library.Core.Asp.Tools.UFMvcTools.AddFirstItem(Microsoft.AspNetCore.Mvc.Rendering.SelectList, Microsoft.AspNetCore.Mvc.Rendering.SelectListItem)
+  type: Method
+  source:
+    id: AddFirstItem
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Tools\UFMvcTools.cs
+    startLine: 130
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Tools
+  summary: Adds an item at the start of a select list. Preserves the selected state.
+  example: []
+  syntax:
+    content: public static SelectList AddFirstItem(SelectList aList, SelectListItem anItem)
+    parameters:
+    - id: aList
+      type: Microsoft.AspNetCore.Mvc.Rendering.SelectList
+      description: List to add item to
+    - id: anItem
+      type: Microsoft.AspNetCore.Mvc.Rendering.SelectListItem
+      description: Item to insert at first position
+    return:
+      type: Microsoft.AspNetCore.Mvc.Rendering.SelectList
+      description: New list with item inserted
+    content.vb: Public Shared Function AddFirstItem(aList As SelectList, anItem As SelectListItem) As SelectList
+  overload: UltraForce.Library.Core.Asp.Tools.UFMvcTools.AddFirstItem*
+- uid: UltraForce.Library.Core.Asp.Tools.UFMvcTools.CreateListFromEnum``1(System.String)
+  commentId: M:UltraForce.Library.Core.Asp.Tools.UFMvcTools.CreateListFromEnum``1(System.String)
+  id: CreateListFromEnum``1(System.String)
+  parent: UltraForce.Library.Core.Asp.Tools.UFMvcTools
+  langs:
+  - csharp
+  - vb
+  name: CreateListFromEnum<T>(string?)
+  nameWithType: UFMvcTools.CreateListFromEnum<T>(string?)
+  fullName: UltraForce.Library.Core.Asp.Tools.UFMvcTools.CreateListFromEnum<T>(string?)
+  type: Method
+  source:
+    id: CreateListFromEnum
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Tools\UFMvcTools.cs
+    startLine: 150
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Tools
+  summary: Creates a <xref href="Microsoft.AspNetCore.Mvc.Rendering.SelectList" data-throw-if-not-resolved="false"></xref> from an enum type.
+  example: []
+  syntax:
+    content: 'public static SelectList CreateListFromEnum<T>(string? anEmptyChoice = null) where T : struct, Enum'
+    parameters:
+    - id: anEmptyChoice
+      type: System.String
+      description: ''
+    typeParameters:
+    - id: T
+      description: Enum type
+    return:
+      type: Microsoft.AspNetCore.Mvc.Rendering.SelectList
+      description: Select list
+    content.vb: Public Shared Function CreateListFromEnum(Of T As {Structure, [Enum]})(anEmptyChoice As String = Nothing) As SelectList
+  overload: UltraForce.Library.Core.Asp.Tools.UFMvcTools.CreateListFromEnum*
+  nameWithType.vb: UFMvcTools.CreateListFromEnum(Of T)(String)
+  fullName.vb: UltraForce.Library.Core.Asp.Tools.UFMvcTools.CreateListFromEnum(Of T)(String)
+  name.vb: CreateListFromEnum(Of T)(String)
+- uid: UltraForce.Library.Core.Asp.Tools.UFMvcTools.GetErrors(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary,System.String,System.String,System.String,System.String)
+  commentId: M:UltraForce.Library.Core.Asp.Tools.UFMvcTools.GetErrors(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary,System.String,System.String,System.String,System.String)
+  id: GetErrors(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary,System.String,System.String,System.String,System.String)
+  parent: UltraForce.Library.Core.Asp.Tools.UFMvcTools
+  langs:
+  - csharp
+  - vb
+  name: GetErrors(ModelStateDictionary, string, string, string, string)
+  nameWithType: UFMvcTools.GetErrors(ModelStateDictionary, string, string, string, string)
+  fullName: UltraForce.Library.Core.Asp.Tools.UFMvcTools.GetErrors(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary, string, string, string, string)
+  type: Method
+  source:
+    id: GetErrors
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Tools\UFMvcTools.cs
+    startLine: 185
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Tools
+  summary: Gets the errors for a field as a single string
+  example: []
+  syntax:
+    content: public static string GetErrors(ModelStateDictionary aModelState, string aName, string aDivider = ", ", string anHead = "", string aTail = "")
+    parameters:
+    - id: aModelState
+      type: Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary
+      description: Model state to get errors from
+    - id: aName
+      type: System.String
+      description: Field name to get errors for
+    - id: aDivider
+      type: System.String
+      description: Value to place between errors
+    - id: anHead
+      type: System.String
+      description: Value at start, only used if there are errors
+    - id: aTail
+      type: System.String
+      description: Value at end, only used if there are errors
+    return:
+      type: System.String
+      description: >-
+        A string containing all errors or <xref href="System.String.Empty" data-throw-if-not-resolved="false"></xref> if there are no errors or no field with the
+
+        specified name can be found
+    content.vb: Public Shared Function GetErrors(aModelState As ModelStateDictionary, aName As String, aDivider As String = ", ", anHead As String = "", aTail As String = "") As String
+  overload: UltraForce.Library.Core.Asp.Tools.UFMvcTools.GetErrors*
+  nameWithType.vb: UFMvcTools.GetErrors(ModelStateDictionary, String, String, String, String)
+  fullName.vb: UltraForce.Library.Core.Asp.Tools.UFMvcTools.GetErrors(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary, String, String, String, String)
+  name.vb: GetErrors(ModelStateDictionary, String, String, String, String)
+- uid: UltraForce.Library.Core.Asp.Tools.UFMvcTools.Validate(System.Object)
+  commentId: M:UltraForce.Library.Core.Asp.Tools.UFMvcTools.Validate(System.Object)
+  id: Validate(System.Object)
+  parent: UltraForce.Library.Core.Asp.Tools.UFMvcTools
+  langs:
+  - csharp
+  - vb
+  name: Validate(object)
+  nameWithType: UFMvcTools.Validate(object)
+  fullName: UltraForce.Library.Core.Asp.Tools.UFMvcTools.Validate(object)
+  type: Method
+  source:
+    id: Validate
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Tools\UFMvcTools.cs
+    startLine: 210
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Tools
+  summary: Validates an object using their validation attributes.
+  example: []
+  syntax:
+    content: public static (bool isValid, ICollection<ValidationResult> results) Validate(object anObject)
+    parameters:
+    - id: anObject
+      type: System.Object
+      description: ''
+    return:
+      type: System.ValueTuple{System.Boolean,System.Collections.Generic.ICollection{System.ComponentModel.DataAnnotations.ValidationResult}}
+      description: ''
+    content.vb: Public Shared Function Validate(anObject As Object) As (isValid As Boolean, results As ICollection(Of ValidationResult))
+  overload: UltraForce.Library.Core.Asp.Tools.UFMvcTools.Validate*
+  nameWithType.vb: UFMvcTools.Validate(Object)
+  fullName.vb: UltraForce.Library.Core.Asp.Tools.UFMvcTools.Validate(Object)
+  name.vb: Validate(Object)
+- uid: UltraForce.Library.Core.Asp.Tools.UFMvcTools.GetJsonName(System.Object,System.String)
+  commentId: M:UltraForce.Library.Core.Asp.Tools.UFMvcTools.GetJsonName(System.Object,System.String)
+  id: GetJsonName(System.Object,System.String)
+  parent: UltraForce.Library.Core.Asp.Tools.UFMvcTools
+  langs:
+  - csharp
+  - vb
+  name: GetJsonName(object, string)
+  nameWithType: UFMvcTools.GetJsonName(object, string)
+  fullName: UltraForce.Library.Core.Asp.Tools.UFMvcTools.GetJsonName(object, string)
+  type: Method
+  source:
+    id: GetJsonName
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Tools\UFMvcTools.cs
+    startLine: 230
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Tools
+  summary: >-
+    Gets the json name for a property in an object. The method checks if a property has
+
+    a <xref href="System.Text.Json.Serialization.JsonPropertyNameAttribute" data-throw-if-not-resolved="false"></xref> and if so returns the name from the attribute.
+
+    If no attribute can be found the property name is returned.
+  example: []
+  syntax:
+    content: public static string GetJsonName(object anObject, string aPropertyName)
+    parameters:
+    - id: anObject
+      type: System.Object
+      description: Object to get property from
+    - id: aPropertyName
+      type: System.String
+      description: Name of property
+    return:
+      type: System.String
+      description: Json name or value of <code>aProperty</code>
+    content.vb: Public Shared Function GetJsonName(anObject As Object, aPropertyName As String) As String
+  overload: UltraForce.Library.Core.Asp.Tools.UFMvcTools.GetJsonName*
+  exceptions:
+  - type: System.Exception
+    commentId: T:System.Exception
+    description: When no property can be found for the specified name
+  nameWithType.vb: UFMvcTools.GetJsonName(Object, String)
+  fullName.vb: UltraForce.Library.Core.Asp.Tools.UFMvcTools.GetJsonName(Object, String)
+  name.vb: GetJsonName(Object, String)
+references:
+- uid: UltraForce.Library.Core.Asp.Tools.UFMvcTools
+  commentId: T:UltraForce.Library.Core.Asp.Tools.UFMvcTools
+  href: UltraForce.Library.Core.Asp.Tools.UFMvcTools.html
+  name: UFMvcTools
+  nameWithType: UFMvcTools
+  fullName: UltraForce.Library.Core.Asp.Tools.UFMvcTools
+- uid: UltraForce.Library.Core.Asp.Tools
+  commentId: N:UltraForce.Library.Core.Asp.Tools
+  href: UltraForce.html
+  name: UltraForce.Library.Core.Asp.Tools
+  nameWithType: UltraForce.Library.Core.Asp.Tools
+  fullName: UltraForce.Library.Core.Asp.Tools
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Tools
+    name: Tools
+    href: UltraForce.Library.Core.Asp.Tools.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Tools
+    name: Tools
+    href: UltraForce.Library.Core.Asp.Tools.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UltraForce.Library.Core.Asp.Tools.UFMvcTools.GetControllerName*
+  commentId: Overload:UltraForce.Library.Core.Asp.Tools.UFMvcTools.GetControllerName
+  href: UltraForce.Library.Core.Asp.Tools.UFMvcTools.html#UltraForce_Library_Core_Asp_Tools_UFMvcTools_GetControllerName_System_String_
+  name: GetControllerName
+  nameWithType: UFMvcTools.GetControllerName
+  fullName: UltraForce.Library.Core.Asp.Tools.UFMvcTools.GetControllerName
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: UltraForce.Library.Core.Asp.Tools.UFMvcTools.GetViewComponentName*
+  commentId: Overload:UltraForce.Library.Core.Asp.Tools.UFMvcTools.GetViewComponentName
+  href: UltraForce.Library.Core.Asp.Tools.UFMvcTools.html#UltraForce_Library_Core_Asp_Tools_UFMvcTools_GetViewComponentName_System_String_
+  name: GetViewComponentName
+  nameWithType: UFMvcTools.GetViewComponentName
+  fullName: UltraForce.Library.Core.Asp.Tools.UFMvcTools.GetViewComponentName
+- uid: UltraForce.Library.Core.Asp.Tools.UFMvcTools.Normalize*
+  commentId: Overload:UltraForce.Library.Core.Asp.Tools.UFMvcTools.Normalize
+  href: UltraForce.Library.Core.Asp.Tools.UFMvcTools.html#UltraForce_Library_Core_Asp_Tools_UFMvcTools_Normalize_System_String_
+  name: Normalize
+  nameWithType: UFMvcTools.Normalize
+  fullName: UltraForce.Library.Core.Asp.Tools.UFMvcTools.Normalize
+- uid: UltraForce.Library.Core.Asp.Tools.UFMvcTools.ReplaceMacros*
+  commentId: Overload:UltraForce.Library.Core.Asp.Tools.UFMvcTools.ReplaceMacros
+  href: UltraForce.Library.Core.Asp.Tools.UFMvcTools.html#UltraForce_Library_Core_Asp_Tools_UFMvcTools_ReplaceMacros_System_String_System_Security_Principal_IPrincipal_
+  name: ReplaceMacros
+  nameWithType: UFMvcTools.ReplaceMacros
+  fullName: UltraForce.Library.Core.Asp.Tools.UFMvcTools.ReplaceMacros
+- uid: System.Security.Principal.IPrincipal
+  commentId: T:System.Security.Principal.IPrincipal
+  parent: System.Security.Principal
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.security.principal.iprincipal
+  name: IPrincipal
+  nameWithType: IPrincipal
+  fullName: System.Security.Principal.IPrincipal
+- uid: System.Security.Principal
+  commentId: N:System.Security.Principal
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Security.Principal
+  nameWithType: System.Security.Principal
+  fullName: System.Security.Principal
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Security
+    name: Security
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.security
+  - name: .
+  - uid: System.Security.Principal
+    name: Principal
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.security.principal
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Security
+    name: Security
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.security
+  - name: .
+  - uid: System.Security.Principal
+    name: Principal
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.security.principal
+- uid: UltraForce.Library.Core.Asp.Tools.UFMvcTools.AddFirstItem*
+  commentId: Overload:UltraForce.Library.Core.Asp.Tools.UFMvcTools.AddFirstItem
+  href: UltraForce.Library.Core.Asp.Tools.UFMvcTools.html#UltraForce_Library_Core_Asp_Tools_UFMvcTools_AddFirstItem_Microsoft_AspNetCore_Mvc_Rendering_SelectList_Microsoft_AspNetCore_Mvc_Rendering_SelectListItem_
+  name: AddFirstItem
+  nameWithType: UFMvcTools.AddFirstItem
+  fullName: UltraForce.Library.Core.Asp.Tools.UFMvcTools.AddFirstItem
+- uid: Microsoft.AspNetCore.Mvc.Rendering.SelectList
+  commentId: T:Microsoft.AspNetCore.Mvc.Rendering.SelectList
+  parent: Microsoft.AspNetCore.Mvc.Rendering
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.rendering.selectlist
+  name: SelectList
+  nameWithType: SelectList
+  fullName: Microsoft.AspNetCore.Mvc.Rendering.SelectList
+- uid: Microsoft.AspNetCore.Mvc.Rendering.SelectListItem
+  commentId: T:Microsoft.AspNetCore.Mvc.Rendering.SelectListItem
+  parent: Microsoft.AspNetCore.Mvc.Rendering
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.rendering.selectlistitem
+  name: SelectListItem
+  nameWithType: SelectListItem
+  fullName: Microsoft.AspNetCore.Mvc.Rendering.SelectListItem
+- uid: Microsoft.AspNetCore.Mvc.Rendering
+  commentId: N:Microsoft.AspNetCore.Mvc.Rendering
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.AspNetCore.Mvc.Rendering
+  nameWithType: Microsoft.AspNetCore.Mvc.Rendering
+  fullName: Microsoft.AspNetCore.Mvc.Rendering
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Mvc
+    name: Mvc
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc
+  - name: .
+  - uid: Microsoft.AspNetCore.Mvc.Rendering
+    name: Rendering
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.rendering
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Mvc
+    name: Mvc
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc
+  - name: .
+  - uid: Microsoft.AspNetCore.Mvc.Rendering
+    name: Rendering
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.rendering
+- uid: UltraForce.Library.Core.Asp.Tools.UFMvcTools.CreateListFromEnum*
+  commentId: Overload:UltraForce.Library.Core.Asp.Tools.UFMvcTools.CreateListFromEnum
+  href: UltraForce.Library.Core.Asp.Tools.UFMvcTools.html#UltraForce_Library_Core_Asp_Tools_UFMvcTools_CreateListFromEnum__1_System_String_
+  name: CreateListFromEnum
+  nameWithType: UFMvcTools.CreateListFromEnum
+  fullName: UltraForce.Library.Core.Asp.Tools.UFMvcTools.CreateListFromEnum
+- uid: System.String.Empty
+  commentId: F:System.String.Empty
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string.empty
+  name: Empty
+  nameWithType: string.Empty
+  fullName: string.Empty
+  nameWithType.vb: String.Empty
+  fullName.vb: String.Empty
+- uid: UltraForce.Library.Core.Asp.Tools.UFMvcTools.GetErrors*
+  commentId: Overload:UltraForce.Library.Core.Asp.Tools.UFMvcTools.GetErrors
+  href: UltraForce.Library.Core.Asp.Tools.UFMvcTools.html#UltraForce_Library_Core_Asp_Tools_UFMvcTools_GetErrors_Microsoft_AspNetCore_Mvc_ModelBinding_ModelStateDictionary_System_String_System_String_System_String_System_String_
+  name: GetErrors
+  nameWithType: UFMvcTools.GetErrors
+  fullName: UltraForce.Library.Core.Asp.Tools.UFMvcTools.GetErrors
+- uid: Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary
+  commentId: T:Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary
+  parent: Microsoft.AspNetCore.Mvc.ModelBinding
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.modelbinding.modelstatedictionary
+  name: ModelStateDictionary
+  nameWithType: ModelStateDictionary
+  fullName: Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary
+- uid: Microsoft.AspNetCore.Mvc.ModelBinding
+  commentId: N:Microsoft.AspNetCore.Mvc.ModelBinding
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.AspNetCore.Mvc.ModelBinding
+  nameWithType: Microsoft.AspNetCore.Mvc.ModelBinding
+  fullName: Microsoft.AspNetCore.Mvc.ModelBinding
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Mvc
+    name: Mvc
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc
+  - name: .
+  - uid: Microsoft.AspNetCore.Mvc.ModelBinding
+    name: ModelBinding
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.modelbinding
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Mvc
+    name: Mvc
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc
+  - name: .
+  - uid: Microsoft.AspNetCore.Mvc.ModelBinding
+    name: ModelBinding
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.modelbinding
+- uid: UltraForce.Library.Core.Asp.Tools.UFMvcTools.Validate*
+  commentId: Overload:UltraForce.Library.Core.Asp.Tools.UFMvcTools.Validate
+  href: UltraForce.Library.Core.Asp.Tools.UFMvcTools.html#UltraForce_Library_Core_Asp_Tools_UFMvcTools_Validate_System_Object_
+  name: Validate
+  nameWithType: UFMvcTools.Validate
+  fullName: UltraForce.Library.Core.Asp.Tools.UFMvcTools.Validate
+- uid: System.ValueTuple{System.Boolean,System.Collections.Generic.ICollection{System.ComponentModel.DataAnnotations.ValidationResult}}
+  commentId: T:System.ValueTuple{System.Boolean,System.Collections.Generic.ICollection{System.ComponentModel.DataAnnotations.ValidationResult}}
+  parent: System
+  definition: System.ValueTuple`2
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: (bool isValid, ICollection<ValidationResult> results)
+  nameWithType: (bool isValid, ICollection<ValidationResult> results)
+  fullName: (bool isValid, System.Collections.Generic.ICollection<System.ComponentModel.DataAnnotations.ValidationResult> results)
+  nameWithType.vb: (isValid As Boolean, results As ICollection(Of ValidationResult))
+  fullName.vb: (isValid As Boolean, results As System.Collections.Generic.ICollection(Of System.ComponentModel.DataAnnotations.ValidationResult))
+  name.vb: (isValid As Boolean, results As ICollection(Of ValidationResult))
+  spec.csharp:
+  - name: (
+  - uid: System.Boolean
+    name: bool
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: " "
+  - uid: System.ValueTuple{System.Boolean,System.Collections.Generic.ICollection{System.ComponentModel.DataAnnotations.ValidationResult}}.isValid
+    name: isValid
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.boolean,system.collections.generic.icollection-system.componentmodel.dataannotations.validationresult--.isvalid
+  - name: ','
+  - name: " "
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: <
+  - uid: System.ComponentModel.DataAnnotations.ValidationResult
+    name: ValidationResult
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel.dataannotations.validationresult
+  - name: '>'
+  - name: " "
+  - uid: System.ValueTuple{System.Boolean,System.Collections.Generic.ICollection{System.ComponentModel.DataAnnotations.ValidationResult}}.results
+    name: results
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.boolean,system.collections.generic.icollection-system.componentmodel.dataannotations.validationresult--.results
+  - name: )
+  spec.vb:
+  - name: (
+  - uid: System.ValueTuple{System.Boolean,System.Collections.Generic.ICollection{System.ComponentModel.DataAnnotations.ValidationResult}}.isValid
+    name: isValid
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.boolean,system.collections.generic.icollection-system.componentmodel.dataannotations.validationresult--.isvalid
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.Boolean
+    name: Boolean
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.boolean
+  - name: ','
+  - name: " "
+  - uid: System.ValueTuple{System.Boolean,System.Collections.Generic.ICollection{System.ComponentModel.DataAnnotations.ValidationResult}}.results
+    name: results
+    href: https://learn.microsoft.com/dotnet/api/system.valuetuple-system.boolean,system.collections.generic.icollection-system.componentmodel.dataannotations.validationresult--.results
+  - name: " "
+  - name: As
+  - name: " "
+  - uid: System.Collections.Generic.ICollection`1
+    name: ICollection
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.icollection-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.ComponentModel.DataAnnotations.ValidationResult
+    name: ValidationResult
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.componentmodel.dataannotations.validationresult
+  - name: )
+  - name: )
+- uid: System.ValueTuple`2
+  commentId: T:System.ValueTuple`2
+  name: (T1, T2)
+  nameWithType: (T1, T2)
+  fullName: (T1, T2)
+  spec.csharp:
+  - name: (
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+  spec.vb:
+  - name: (
+  - name: T1
+  - name: ','
+  - name: " "
+  - name: T2
+  - name: )
+- uid: System.Text.Json.Serialization.JsonPropertyNameAttribute
+  commentId: T:System.Text.Json.Serialization.JsonPropertyNameAttribute
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.text.json.serialization.jsonpropertynameattribute
+  name: JsonPropertyNameAttribute
+  nameWithType: JsonPropertyNameAttribute
+  fullName: System.Text.Json.Serialization.JsonPropertyNameAttribute
+- uid: System.Exception
+  commentId: T:System.Exception
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.exception
+  name: Exception
+  nameWithType: Exception
+  fullName: System.Exception
+- uid: UltraForce.Library.Core.Asp.Tools.UFMvcTools.GetJsonName*
+  commentId: Overload:UltraForce.Library.Core.Asp.Tools.UFMvcTools.GetJsonName
+  href: UltraForce.Library.Core.Asp.Tools.UFMvcTools.html#UltraForce_Library_Core_Asp_Tools_UFMvcTools_GetJsonName_System_Object_System_String_
+  name: GetJsonName
+  nameWithType: UFMvcTools.GetJsonName
+  fullName: UltraForce.Library.Core.Asp.Tools.UFMvcTools.GetJsonName

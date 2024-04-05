@@ -1,0 +1,239 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.Core.Asp.Services.IUFAsynchronousExecutableService
+  commentId: T:UltraForce.Library.Core.Asp.Services.IUFAsynchronousExecutableService
+  id: IUFAsynchronousExecutableService
+  parent: UltraForce.Library.Core.Asp.Services
+  children:
+  - UltraForce.Library.Core.Asp.Services.IUFAsynchronousExecutableService.ExecuteAsync(System.Threading.CancellationToken)
+  langs:
+  - csharp
+  - vb
+  name: IUFAsynchronousExecutableService
+  nameWithType: IUFAsynchronousExecutableService
+  fullName: UltraForce.Library.Core.Asp.Services.IUFAsynchronousExecutableService
+  type: Interface
+  source:
+    id: IUFAsynchronousExecutableService
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFAsynchronousExecutableService.cs
+    startLine: 37
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Services
+  summary: >-
+    An interface defining a method that will be run asynchronously. It is based on the
+
+    <xref href="Microsoft.Extensions.Hosting.BackgroundService" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public interface IUFAsynchronousExecutableService
+    content.vb: Public Interface IUFAsynchronousExecutableService
+- uid: UltraForce.Library.Core.Asp.Services.IUFAsynchronousExecutableService.ExecuteAsync(System.Threading.CancellationToken)
+  commentId: M:UltraForce.Library.Core.Asp.Services.IUFAsynchronousExecutableService.ExecuteAsync(System.Threading.CancellationToken)
+  id: ExecuteAsync(System.Threading.CancellationToken)
+  parent: UltraForce.Library.Core.Asp.Services.IUFAsynchronousExecutableService
+  langs:
+  - csharp
+  - vb
+  name: ExecuteAsync(CancellationToken)
+  nameWithType: IUFAsynchronousExecutableService.ExecuteAsync(CancellationToken)
+  fullName: UltraForce.Library.Core.Asp.Services.IUFAsynchronousExecutableService.ExecuteAsync(System.Threading.CancellationToken)
+  type: Method
+  source:
+    id: ExecuteAsync
+    path: D:\projects\ultraforce.com\csharp\NuGetPackages\UltraForce.Library.Core.Asp\UltraForce.Library.Core.Asp\Services\IUFAsynchronousExecutableService.cs
+    startLine: 44
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Services
+  summary: Executes the service asynchronously.
+  example: []
+  syntax:
+    content: Task ExecuteAsync(CancellationToken aCancellationToken)
+    parameters:
+    - id: aCancellationToken
+      type: System.Threading.CancellationToken
+      description: A token that should be checked and the execution should stop
+    return:
+      type: System.Threading.Tasks.Task
+      description: ''
+    content.vb: Function ExecuteAsync(aCancellationToken As CancellationToken) As Task
+  overload: UltraForce.Library.Core.Asp.Services.IUFAsynchronousExecutableService.ExecuteAsync*
+references:
+- uid: Microsoft.Extensions.Hosting.BackgroundService
+  commentId: T:Microsoft.Extensions.Hosting.BackgroundService
+  parent: Microsoft.Extensions.Hosting
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.backgroundservice
+  name: BackgroundService
+  nameWithType: BackgroundService
+  fullName: Microsoft.Extensions.Hosting.BackgroundService
+- uid: UltraForce.Library.Core.Asp.Services
+  commentId: N:UltraForce.Library.Core.Asp.Services
+  href: UltraForce.html
+  name: UltraForce.Library.Core.Asp.Services
+  nameWithType: UltraForce.Library.Core.Asp.Services
+  fullName: UltraForce.Library.Core.Asp.Services
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Services
+    name: Services
+    href: UltraForce.Library.Core.Asp.Services.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Services
+    name: Services
+    href: UltraForce.Library.Core.Asp.Services.html
+- uid: Microsoft.Extensions.Hosting
+  commentId: N:Microsoft.Extensions.Hosting
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.Extensions.Hosting
+  nameWithType: Microsoft.Extensions.Hosting
+  fullName: Microsoft.Extensions.Hosting
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Hosting
+    name: Hosting
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.Extensions
+    name: Extensions
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions
+  - name: .
+  - uid: Microsoft.Extensions.Hosting
+    name: Hosting
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting
+- uid: UltraForce.Library.Core.Asp.Services.IUFAsynchronousExecutableService.ExecuteAsync*
+  commentId: Overload:UltraForce.Library.Core.Asp.Services.IUFAsynchronousExecutableService.ExecuteAsync
+  href: UltraForce.Library.Core.Asp.Services.IUFAsynchronousExecutableService.html#UltraForce_Library_Core_Asp_Services_IUFAsynchronousExecutableService_ExecuteAsync_System_Threading_CancellationToken_
+  name: ExecuteAsync
+  nameWithType: IUFAsynchronousExecutableService.ExecuteAsync
+  fullName: UltraForce.Library.Core.Asp.Services.IUFAsynchronousExecutableService.ExecuteAsync
+- uid: System.Threading.CancellationToken
+  commentId: T:System.Threading.CancellationToken
+  parent: System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.cancellationtoken
+  name: CancellationToken
+  nameWithType: CancellationToken
+  fullName: System.Threading.CancellationToken
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading
+  commentId: N:System.Threading
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading
+  nameWithType: System.Threading
+  fullName: System.Threading
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
