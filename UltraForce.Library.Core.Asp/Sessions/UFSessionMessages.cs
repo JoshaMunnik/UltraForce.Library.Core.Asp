@@ -110,7 +110,7 @@ namespace UltraForce.Library.Core.Asp.Sessions
     {
       return HasMessages(Normal) || HasMessages(Warning) || HasMessages(Error);
     }
-    
+
     #endregion
 
     #region private methods
@@ -122,17 +122,25 @@ namespace UltraForce.Library.Core.Asp.Sessions
     /// <param name="aMessage">Message to add</param>
     private static void AddMessage(string aType, string aMessage)
     {
-      string indexKey = GetIndexKey(aType);
-      int currentIndex = UFSessionMiddleware.Instance.GetInt(indexKey, 0);
-      for (int index = 0; index < currentIndex; index++)
+      try
       {
-        if (aMessage == UFSessionMiddleware.Instance.GetString(GetItemKey(aType, index)))
+        string indexKey = GetIndexKey(aType);
+        int currentIndex = UFSessionMiddleware.Instance.GetInt(indexKey, 0);
+        for (int index = 0; index < currentIndex; index++)
         {
-          return;
+          if (aMessage == UFSessionMiddleware.Instance.GetString(GetItemKey(aType, index)))
+          {
+            return;
+          }
         }
+
+        UFSessionMiddleware.Instance.SetString(GetItemKey(aType, currentIndex), aMessage);
+        UFSessionMiddleware.Instance.SetInt(indexKey, currentIndex + 1);
       }
-      UFSessionMiddleware.Instance.SetString(GetItemKey(aType, currentIndex), aMessage);
-      UFSessionMiddleware.Instance.SetInt(indexKey, currentIndex + 1);
+      catch
+      {
+        // ignored
+      }
     }
 
     /// <summary>
@@ -141,13 +149,20 @@ namespace UltraForce.Library.Core.Asp.Sessions
     /// <param name="aType">Type to remove message for</param>
     private static void ClearMessages(string aType)
     {
-      string indexKey = GetIndexKey(aType);
-      int count = UFSessionMiddleware.Instance.GetInt(indexKey, 0);
-      for (int index = 0; index < count; index++)
+      try
       {
-        UFSessionMiddleware.Instance.DeleteKey(GetItemKey(aType, index));
+        string indexKey = GetIndexKey(aType);
+        int count = UFSessionMiddleware.Instance.GetInt(indexKey, 0);
+        for (int index = 0; index < count; index++)
+        {
+          UFSessionMiddleware.Instance.DeleteKey(GetItemKey(aType, index));
+        }
+        UFSessionMiddleware.Instance.DeleteKey(indexKey);
       }
-      UFSessionMiddleware.Instance.DeleteKey(indexKey);
+      catch
+      {
+        // ignored
+      }
     }
 
     /// <summary>
@@ -157,7 +172,14 @@ namespace UltraForce.Library.Core.Asp.Sessions
     /// <returns></returns>
     private static bool HasMessages(string aType)
     {
-      return UFSessionMiddleware.Instance.HasKey(GetIndexKey(aType));
+      try
+      {
+        return UFSessionMiddleware.Instance.HasKey(GetIndexKey(aType));
+      }
+      catch
+      {
+        return false;
+      }
     }
 
     /// <summary>
@@ -167,14 +189,22 @@ namespace UltraForce.Library.Core.Asp.Sessions
     /// <returns>messages</returns>
     private static IEnumerable<string> GetMessages(string aType)
     {
-      string indexKey = GetIndexKey(aType);
-      int count = UFSessionMiddleware.Instance.GetInt(indexKey, 0);
-      List<string> result = new(count);
-      for (int index = 0; index < count; index++)
+      try
       {
-        result.Add(UFSessionMiddleware.Instance.GetString(GetItemKey(aType, index)));
+        string indexKey = GetIndexKey(aType);
+        int count = UFSessionMiddleware.Instance.GetInt(indexKey, 0);
+        List<string> result = new(count);
+        for (int index = 0; index < count; index++)
+        {
+          result.Add(UFSessionMiddleware.Instance.GetString(GetItemKey(aType, index)));
+        }
+
+        return result;
       }
-      return result;
+      catch
+      {
+        return [];
+      }
     }
 
     /// <summary>
