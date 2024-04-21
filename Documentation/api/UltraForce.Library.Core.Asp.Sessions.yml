@@ -4,9 +4,8 @@ items:
   commentId: N:UltraForce.Library.Core.Asp.Sessions
   id: UltraForce.Library.Core.Asp.Sessions
   children:
-  - UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages
+  - UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage
   - UltraForce.Library.Core.Asp.Sessions.UFSessionMessages
-  - UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware
   langs:
   - csharp
   - vb
@@ -17,69 +16,15 @@ items:
   assemblies:
   - UltraForce.Library.Core.Asp
 references:
-- uid: UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages
-  commentId: T:UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages
-  parent: UltraForce.Library.Core.Asp.Sessions
-  href: UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages.html
-  name: IUFSessionMessages
-  nameWithType: IUFSessionMessages
-  fullName: UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages
+- uid: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage
+  commentId: T:UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage
+  href: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.html
+  name: UFSessionKeyedStorage
+  nameWithType: UFSessionKeyedStorage
+  fullName: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage
 - uid: UltraForce.Library.Core.Asp.Sessions.UFSessionMessages
   commentId: T:UltraForce.Library.Core.Asp.Sessions.UFSessionMessages
   href: UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.html
   name: UFSessionMessages
   nameWithType: UFSessionMessages
   fullName: UltraForce.Library.Core.Asp.Sessions.UFSessionMessages
-- uid: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware
-  commentId: T:UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware
-  parent: UltraForce.Library.Core.Asp.Sessions
-  href: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.html
-  name: UFSessionMiddleware
-  nameWithType: UFSessionMiddleware
-  fullName: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware
-- uid: UltraForce.Library.Core.Asp.Sessions
-  commentId: N:UltraForce.Library.Core.Asp.Sessions
-  href: UltraForce.html
-  name: UltraForce.Library.Core.Asp.Sessions
-  nameWithType: UltraForce.Library.Core.Asp.Sessions
-  fullName: UltraForce.Library.Core.Asp.Sessions
-  spec.csharp:
-  - uid: UltraForce
-    name: UltraForce
-    href: UltraForce.html
-  - name: .
-  - uid: UltraForce.Library
-    name: Library
-    href: UltraForce.Library.html
-  - name: .
-  - uid: UltraForce.Library.Core
-    name: Core
-    href: UltraForce.Library.Core.html
-  - name: .
-  - uid: UltraForce.Library.Core.Asp
-    name: Asp
-    href: UltraForce.Library.Core.Asp.html
-  - name: .
-  - uid: UltraForce.Library.Core.Asp.Sessions
-    name: Sessions
-    href: UltraForce.Library.Core.Asp.Sessions.html
-  spec.vb:
-  - uid: UltraForce
-    name: UltraForce
-    href: UltraForce.html
-  - name: .
-  - uid: UltraForce.Library
-    name: Library
-    href: UltraForce.Library.html
-  - name: .
-  - uid: UltraForce.Library.Core
-    name: Core
-    href: UltraForce.Library.Core.html
-  - name: .
-  - uid: UltraForce.Library.Core.Asp
-    name: Asp
-    href: UltraForce.Library.Core.Asp.html
-  - name: .
-  - uid: UltraForce.Library.Core.Asp.Sessions
-    name: Sessions
-    href: UltraForce.Library.Core.Asp.Sessions.html

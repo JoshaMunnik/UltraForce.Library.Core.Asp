@@ -95,35 +95,21 @@
 Classes
 </h3>
     <dl class="jumplist">
+      <dt><a class="xref" href="UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.html">UFSessionKeyedStorage</a></dt>
+      <dd><p>This class maps a <span class="xref">UltraForce.Library.NetStandard.Storage.UFKeyedStorage</span> to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.http.isession">ISession</a>.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.html">UFSessionMessages</a></dt>
-      <dd><p><a class="xref" href="UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.html">UFSessionMessages</a> implements <a class="xref" href="UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages.html">IUFSessionMessages</a> using
-<a class="xref" href="UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.html">UFSessionMiddleware</a> to store the messages.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.html">UFSessionMiddleware</a></dt>
-      <dd><p><a class="xref" href="UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.html">UFSessionMiddleware</a> is <span class="xref">UltraForce.Library.NetStandard.Storage.UFKeyedStorage</span> implementation mapping
-to <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.http.httpcontext.session">Session</a>.</p>
+      <dd><p><a class="xref" href="UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.html">UFSessionMessages</a> can be used to store messages in a session or retrieve them
+to be show them inside a view.</p>
 <p>
-Use <a class="xref" href="UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.html#UltraForce_Library_Core_Asp_Sessions_UFSessionMiddleware_Instance">Instance</a> to access the singleton instance.
+To use this class, register this class as a scoped service.
 </p>
 <p>
-To use <a class="xref" href="UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.html">UFSessionMiddleware</a>, import <a class="xref" href="UltraForce.Library.Core.Asp.Web.UFWebExtensions.html">UFWebExtensions</a> in
-<code>Startup.cs</code> or <code>Program.cs</code> and register it at
-<a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.builder.iapplicationbuilder">IApplicationBuilder</a> as
-middleware: `builder.UseUFSession();` 
+If there is no session because either the class fails to get a <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.http.httpcontext">HttpContext</a> or
+the <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.http.isession">ISession</a>; messages will be not be stored and the get messages methods will return empty lists. 
 </p>
-<p>
-<code>UseUFSession()</code> will make a call to <code>UseSession()</code>.
-</p>
-</dd>
-    </dl>
-    <h3 id="interfaces">
-Interfaces
-</h3>
-    <dl class="jumplist">
-      <dt><a class="xref" href="UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages.html">IUFSessionMessages</a></dt>
-      <dd><p>Interface with properties that map to session data.</p>
 </dd>
     </dl>
 

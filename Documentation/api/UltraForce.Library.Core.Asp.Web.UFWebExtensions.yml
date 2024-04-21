@@ -7,7 +7,6 @@ items:
   children:
   - UltraForce.Library.Core.Asp.Web.UFWebExtensions.IsInRole(System.Security.Claims.ClaimsPrincipal,System.Collections.Generic.IEnumerable{System.String})
   - UltraForce.Library.Core.Asp.Web.UFWebExtensions.IsInRole(System.Security.Claims.ClaimsPrincipal,System.String[])
-  - UltraForce.Library.Core.Asp.Web.UFWebExtensions.UseUFSession(Microsoft.AspNetCore.Builder.IApplicationBuilder)
   langs:
   - csharp
   - vb
@@ -22,7 +21,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: UFWebExtensions
     path: ../UltraForce.Library.Core.Asp/Web/UFWebExtensions.cs
-    startLine: 38
+    startLine: 36
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Web
@@ -41,45 +40,6 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: UltraForce.Library.Core.Asp.Web.UFWebExtensions.UseUFSession(Microsoft.AspNetCore.Builder.IApplicationBuilder)
-  commentId: M:UltraForce.Library.Core.Asp.Web.UFWebExtensions.UseUFSession(Microsoft.AspNetCore.Builder.IApplicationBuilder)
-  id: UseUFSession(Microsoft.AspNetCore.Builder.IApplicationBuilder)
-  isExtensionMethod: true
-  parent: UltraForce.Library.Core.Asp.Web.UFWebExtensions
-  langs:
-  - csharp
-  - vb
-  name: UseUFSession(IApplicationBuilder)
-  nameWithType: UFWebExtensions.UseUFSession(IApplicationBuilder)
-  fullName: UltraForce.Library.Core.Asp.Web.UFWebExtensions.UseUFSession(Microsoft.AspNetCore.Builder.IApplicationBuilder)
-  type: Method
-  source:
-    remote:
-      path: UltraForce.Library.Core.Asp/Web/UFWebExtensions.cs
-      branch: master
-      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
-    id: UseUFSession
-    path: ../UltraForce.Library.Core.Asp/Web/UFWebExtensions.cs
-    startLine: 46
-  assemblies:
-  - UltraForce.Library.Core.Asp
-  namespace: UltraForce.Library.Core.Asp.Web
-  summary: >-
-    Registers the <xref href="UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware" data-throw-if-not-resolved="false"></xref> middleware. It also calls
-
-    <xref href="Microsoft.AspNetCore.Builder.SessionMiddlewareExtensions.UseSession(Microsoft.AspNetCore.Builder.IApplicationBuilder)" data-throw-if-not-resolved="false"></xref> to enable sessions.
-  example: []
-  syntax:
-    content: public static IApplicationBuilder UseUFSession(this IApplicationBuilder aBuilder)
-    parameters:
-    - id: aBuilder
-      type: Microsoft.AspNetCore.Builder.IApplicationBuilder
-      description: ''
-    return:
-      type: Microsoft.AspNetCore.Builder.IApplicationBuilder
-      description: value of aBuilder
-    content.vb: Public Shared Function UseUFSession(aBuilder As IApplicationBuilder) As IApplicationBuilder
-  overload: UltraForce.Library.Core.Asp.Web.UFWebExtensions.UseUFSession*
 - uid: UltraForce.Library.Core.Asp.Web.UFWebExtensions.IsInRole(System.Security.Claims.ClaimsPrincipal,System.String[])
   commentId: M:UltraForce.Library.Core.Asp.Web.UFWebExtensions.IsInRole(System.Security.Claims.ClaimsPrincipal,System.String[])
   id: IsInRole(System.Security.Claims.ClaimsPrincipal,System.String[])
@@ -99,7 +59,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: IsInRole
     path: ../UltraForce.Library.Core.Asp/Web/UFWebExtensions.cs
-    startLine: 59
+    startLine: 44
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Web
@@ -141,7 +101,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: IsInRole
     path: ../UltraForce.Library.Core.Asp/Web/UFWebExtensions.cs
-    startLine: 70
+    startLine: 55
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Web
@@ -448,139 +408,6 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware
-  commentId: T:UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware
-  parent: UltraForce.Library.Core.Asp.Sessions
-  href: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.html
-  name: UFSessionMiddleware
-  nameWithType: UFSessionMiddleware
-  fullName: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware
-- uid: Microsoft.AspNetCore.Builder.SessionMiddlewareExtensions.UseSession(Microsoft.AspNetCore.Builder.IApplicationBuilder)
-  commentId: M:Microsoft.AspNetCore.Builder.SessionMiddlewareExtensions.UseSession(Microsoft.AspNetCore.Builder.IApplicationBuilder)
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.builder.sessionmiddlewareextensions.usesession#microsoft-aspnetcore-builder-sessionmiddlewareextensions-usesession(microsoft-aspnetcore-builder-iapplicationbuilder)
-  name: UseSession(IApplicationBuilder)
-  nameWithType: SessionMiddlewareExtensions.UseSession(IApplicationBuilder)
-  fullName: Microsoft.AspNetCore.Builder.SessionMiddlewareExtensions.UseSession(Microsoft.AspNetCore.Builder.IApplicationBuilder)
-  spec.csharp:
-  - uid: Microsoft.AspNetCore.Builder.SessionMiddlewareExtensions.UseSession(Microsoft.AspNetCore.Builder.IApplicationBuilder)
-    name: UseSession
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.builder.sessionmiddlewareextensions.usesession#microsoft-aspnetcore-builder-sessionmiddlewareextensions-usesession(microsoft-aspnetcore-builder-iapplicationbuilder)
-  - name: (
-  - uid: Microsoft.AspNetCore.Builder.IApplicationBuilder
-    name: IApplicationBuilder
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.builder.iapplicationbuilder
-  - name: )
-  spec.vb:
-  - uid: Microsoft.AspNetCore.Builder.SessionMiddlewareExtensions.UseSession(Microsoft.AspNetCore.Builder.IApplicationBuilder)
-    name: UseSession
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.builder.sessionmiddlewareextensions.usesession#microsoft-aspnetcore-builder-sessionmiddlewareextensions-usesession(microsoft-aspnetcore-builder-iapplicationbuilder)
-  - name: (
-  - uid: Microsoft.AspNetCore.Builder.IApplicationBuilder
-    name: IApplicationBuilder
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.builder.iapplicationbuilder
-  - name: )
-- uid: UltraForce.Library.Core.Asp.Web.UFWebExtensions.UseUFSession*
-  commentId: Overload:UltraForce.Library.Core.Asp.Web.UFWebExtensions.UseUFSession
-  href: UltraForce.Library.Core.Asp.Web.UFWebExtensions.html#UltraForce_Library_Core_Asp_Web_UFWebExtensions_UseUFSession_Microsoft_AspNetCore_Builder_IApplicationBuilder_
-  name: UseUFSession
-  nameWithType: UFWebExtensions.UseUFSession
-  fullName: UltraForce.Library.Core.Asp.Web.UFWebExtensions.UseUFSession
-- uid: Microsoft.AspNetCore.Builder.IApplicationBuilder
-  commentId: T:Microsoft.AspNetCore.Builder.IApplicationBuilder
-  parent: Microsoft.AspNetCore.Builder
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.builder.iapplicationbuilder
-  name: IApplicationBuilder
-  nameWithType: IApplicationBuilder
-  fullName: Microsoft.AspNetCore.Builder.IApplicationBuilder
-- uid: UltraForce.Library.Core.Asp.Sessions
-  commentId: N:UltraForce.Library.Core.Asp.Sessions
-  href: UltraForce.html
-  name: UltraForce.Library.Core.Asp.Sessions
-  nameWithType: UltraForce.Library.Core.Asp.Sessions
-  fullName: UltraForce.Library.Core.Asp.Sessions
-  spec.csharp:
-  - uid: UltraForce
-    name: UltraForce
-    href: UltraForce.html
-  - name: .
-  - uid: UltraForce.Library
-    name: Library
-    href: UltraForce.Library.html
-  - name: .
-  - uid: UltraForce.Library.Core
-    name: Core
-    href: UltraForce.Library.Core.html
-  - name: .
-  - uid: UltraForce.Library.Core.Asp
-    name: Asp
-    href: UltraForce.Library.Core.Asp.html
-  - name: .
-  - uid: UltraForce.Library.Core.Asp.Sessions
-    name: Sessions
-    href: UltraForce.Library.Core.Asp.Sessions.html
-  spec.vb:
-  - uid: UltraForce
-    name: UltraForce
-    href: UltraForce.html
-  - name: .
-  - uid: UltraForce.Library
-    name: Library
-    href: UltraForce.Library.html
-  - name: .
-  - uid: UltraForce.Library.Core
-    name: Core
-    href: UltraForce.Library.Core.html
-  - name: .
-  - uid: UltraForce.Library.Core.Asp
-    name: Asp
-    href: UltraForce.Library.Core.Asp.html
-  - name: .
-  - uid: UltraForce.Library.Core.Asp.Sessions
-    name: Sessions
-    href: UltraForce.Library.Core.Asp.Sessions.html
-- uid: Microsoft.AspNetCore.Builder
-  commentId: N:Microsoft.AspNetCore.Builder
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/microsoft
-  name: Microsoft.AspNetCore.Builder
-  nameWithType: Microsoft.AspNetCore.Builder
-  fullName: Microsoft.AspNetCore.Builder
-  spec.csharp:
-  - uid: Microsoft
-    name: Microsoft
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/microsoft
-  - name: .
-  - uid: Microsoft.AspNetCore
-    name: AspNetCore
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
-  - name: .
-  - uid: Microsoft.AspNetCore.Builder
-    name: Builder
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.builder
-  spec.vb:
-  - uid: Microsoft
-    name: Microsoft
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/microsoft
-  - name: .
-  - uid: Microsoft.AspNetCore
-    name: AspNetCore
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
-  - name: .
-  - uid: Microsoft.AspNetCore.Builder
-    name: Builder
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.builder
 - uid: UltraForce.Library.Core.Asp.Web.UFWebExtensions.IsInRole*
   commentId: Overload:UltraForce.Library.Core.Asp.Web.UFWebExtensions.IsInRole
   href: UltraForce.Library.Core.Asp.Web.UFWebExtensions.html#UltraForce_Library_Core_Asp_Web_UFWebExtensions_IsInRole_System_Security_Claims_ClaimsPrincipal_System_String___

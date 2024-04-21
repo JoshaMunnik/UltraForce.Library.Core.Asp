@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class UFSessionMessages | UltraForce.Library.Core.Asp ">
       
-      <meta name="description" content="implements  using  to store the messages.">
+      <meta name="description" content="can be used to store messages in a session or retrieve them to be show them inside a view.  To use this class, register this class as a scoped service.   If there is no session because either the class fails to get a  or the ; messages will be not be stored and the get messages methods will return empty lists.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="UltraForce_Library_Core_Asp_Sessions_UFSessionMessages" data-uid="UltraForce.Library.Core.Asp.Sessions.UFSessionMessages" class="text-break">
-Class UFSessionMessages  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Sessions/UFSessionMessages.cs/#L36"><i class="bi bi-code-slash"></i></a>
+Class UFSessionMessages  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Sessions/UFSessionMessages.cs/#L45"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,13 +97,20 @@ Class UFSessionMessages  <a class="header-action link-secondary" title="View sou
   <dl><dt>Assembly</dt><dd>UltraForce.Library.Core.Asp.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p><a class="xref" href="UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.html">UFSessionMessages</a> implements <a class="xref" href="UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages.html">IUFSessionMessages</a> using
-<a class="xref" href="UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.html">UFSessionMiddleware</a> to store the messages.</p>
+  <div class="markdown summary"><p><a class="xref" href="UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.html">UFSessionMessages</a> can be used to store messages in a session or retrieve them
+to be show them inside a view.</p>
+<p>
+To use this class, register this class as a scoped service.
+</p>
+<p>
+If there is no session because either the class fails to get a <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.http.httpcontext">HttpContext</a> or
+the <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.http.isession">ISession</a>; messages will be not be stored and the get messages methods will return empty lists. 
+</p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public sealed class UFSessionMessages : IUFSessionMessages</code></pre>
+    <pre><code class="lang-csharp hljs">public sealed class UFSessionMessages</code></pre>
   </div>
 
 
@@ -117,12 +124,6 @@ Class UFSessionMessages  <a class="header-action link-secondary" title="View sou
     </dd>
   </dl>
 
-  <dl class="typelist implements">
-    <dt>Implements</dt>
-    <dd>
-      <div><a class="xref" href="UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages.html">IUFSessionMessages</a></div>
-    </dd>
-  </dl>
 
 
   <dl class="typelist inheritedMembers">
@@ -153,6 +154,50 @@ Class UFSessionMessages  <a class="header-action link-secondary" title="View sou
 
 
 
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="UltraForce_Library_Core_Asp_Sessions_UFSessionMessages__ctor_" data-uid="UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.#ctor*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Sessions_UFSessionMessages__ctor_Microsoft_AspNetCore_Http_IHttpContextAccessor_" data-uid="UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.#ctor(Microsoft.AspNetCore.Http.IHttpContextAccessor)">
+  UFSessionMessages(IHttpContextAccessor)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Sessions/UFSessionMessages.cs/#L45"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p><a class="xref" href="UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.html">UFSessionMessages</a> can be used to store messages in a session or retrieve them
+to be show them inside a view.</p>
+<p>
+To use this class, register this class as a scoped service.
+</p>
+<p>
+If there is no session because either the class fails to get a <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.http.httpcontext">HttpContext</a> or
+the <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.http.isession">ISession</a>; messages will be not be stored and the get messages methods will return empty lists. 
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UFSessionMessages(IHttpContextAccessor anAccessor)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>anAccessor</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.http.ihttpcontextaccessor">IHttpContextAccessor</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <h2 class="section" id="methods">Methods
 </h2>
 
@@ -161,7 +206,7 @@ Class UFSessionMessages  <a class="header-action link-secondary" title="View sou
 
   <h3 id="UltraForce_Library_Core_Asp_Sessions_UFSessionMessages_Add_System_String_" data-uid="UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.Add(System.String)">
   Add(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Sessions/UFSessionMessages.cs/#L65"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Sessions/UFSessionMessages.cs/#L88"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Adds a message to show in page</p>
@@ -194,7 +239,7 @@ Class UFSessionMessages  <a class="header-action link-secondary" title="View sou
 
   <h3 id="UltraForce_Library_Core_Asp_Sessions_UFSessionMessages_AddError_System_String_" data-uid="UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.AddError(System.String)">
   AddError(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Sessions/UFSessionMessages.cs/#L71"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Sessions/UFSessionMessages.cs/#L97"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Adds an error message to show in page</p>
@@ -227,7 +272,7 @@ Class UFSessionMessages  <a class="header-action link-secondary" title="View sou
 
   <h3 id="UltraForce_Library_Core_Asp_Sessions_UFSessionMessages_AddWarning_System_String_" data-uid="UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.AddWarning(System.String)">
   AddWarning(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Sessions/UFSessionMessages.cs/#L77"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Sessions/UFSessionMessages.cs/#L106"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Adds a warning message to show in page</p>
@@ -260,7 +305,7 @@ Class UFSessionMessages  <a class="header-action link-secondary" title="View sou
 
   <h3 id="UltraForce_Library_Core_Asp_Sessions_UFSessionMessages_Clear" data-uid="UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.Clear">
   Clear()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Sessions/UFSessionMessages.cs/#L83"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Sessions/UFSessionMessages.cs/#L114"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Clears all stored messages</p>
@@ -287,7 +332,7 @@ Class UFSessionMessages  <a class="header-action link-secondary" title="View sou
 
   <h3 id="UltraForce_Library_Core_Asp_Sessions_UFSessionMessages_GetErrorMessages" data-uid="UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.GetErrorMessages">
   GetErrorMessages()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Sessions/UFSessionMessages.cs/#L97"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Sessions/UFSessionMessages.cs/#L134"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets all error messages</p>
@@ -320,7 +365,7 @@ Class UFSessionMessages  <a class="header-action link-secondary" title="View sou
 
   <h3 id="UltraForce_Library_Core_Asp_Sessions_UFSessionMessages_GetMessages" data-uid="UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.GetMessages">
   GetMessages()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Sessions/UFSessionMessages.cs/#L91"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Sessions/UFSessionMessages.cs/#L125"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets all messages</p>
@@ -353,7 +398,7 @@ Class UFSessionMessages  <a class="header-action link-secondary" title="View sou
 
   <h3 id="UltraForce_Library_Core_Asp_Sessions_UFSessionMessages_GetWarningMessages" data-uid="UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.GetWarningMessages">
   GetWarningMessages()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Sessions/UFSessionMessages.cs/#L103"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Sessions/UFSessionMessages.cs/#L143"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets all warning messages</p>
@@ -386,7 +431,7 @@ Class UFSessionMessages  <a class="header-action link-secondary" title="View sou
 
   <h3 id="UltraForce_Library_Core_Asp_Sessions_UFSessionMessages_HasMessages" data-uid="UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.HasMessages">
   HasMessages()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Sessions/UFSessionMessages.cs/#L109"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Sessions/UFSessionMessages.cs/#L152"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Checks if there are any messages.</p>
@@ -419,7 +464,7 @@ Class UFSessionMessages  <a class="header-action link-secondary" title="View sou
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Sessions/UFSessionMessages.cs/#L36" class="edit-link">Edit this page</a>
+          <a href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Sessions/UFSessionMessages.cs/#L45" class="edit-link">Edit this page</a>
         </div>
 
 

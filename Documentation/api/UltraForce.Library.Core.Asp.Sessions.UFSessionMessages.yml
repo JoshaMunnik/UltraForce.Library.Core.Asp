@@ -5,6 +5,7 @@ items:
   id: UFSessionMessages
   parent: UltraForce.Library.Core.Asp.Sessions
   children:
+  - UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.#ctor(Microsoft.AspNetCore.Http.IHttpContextAccessor)
   - UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.Add(System.String)
   - UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.AddError(System.String)
   - UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.AddWarning(System.String)
@@ -27,22 +28,34 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: UFSessionMessages
     path: ../UltraForce.Library.Core.Asp/Sessions/UFSessionMessages.cs
-    startLine: 35
+    startLine: 44
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Sessions
   summary: >-
-    <xref href="UltraForce.Library.Core.Asp.Sessions.UFSessionMessages" data-throw-if-not-resolved="false"></xref> implements <xref href="UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages" data-throw-if-not-resolved="false"></xref> using
+    <xref href="UltraForce.Library.Core.Asp.Sessions.UFSessionMessages" data-throw-if-not-resolved="false"></xref> can be used to store messages in a session or retrieve them
 
-    <xref href="UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware" data-throw-if-not-resolved="false"></xref> to store the messages.
+    to be show them inside a view.
+
+    <p>
+
+    To use this class, register this class as a scoped service.
+
+    </p>
+
+    <p>
+
+    If there is no session because either the class fails to get a <xref href="Microsoft.AspNetCore.Http.HttpContext" data-throw-if-not-resolved="false"></xref> or
+
+    the <xref href="Microsoft.AspNetCore.Http.ISession" data-throw-if-not-resolved="false"></xref>; messages will be not be stored and the get messages methods will return empty lists. 
+
+    </p>
   example: []
   syntax:
-    content: 'public sealed class UFSessionMessages : IUFSessionMessages'
-    content.vb: Public NotInheritable Class UFSessionMessages Implements IUFSessionMessages
+    content: public sealed class UFSessionMessages
+    content.vb: Public NotInheritable Class UFSessionMessages
   inheritance:
   - System.Object
-  implements:
-  - UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages
   inheritedMembers:
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
@@ -50,6 +63,57 @@ items:
   - System.Object.GetType
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
+- uid: UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.#ctor(Microsoft.AspNetCore.Http.IHttpContextAccessor)
+  commentId: M:UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.#ctor(Microsoft.AspNetCore.Http.IHttpContextAccessor)
+  id: '#ctor(Microsoft.AspNetCore.Http.IHttpContextAccessor)'
+  parent: UltraForce.Library.Core.Asp.Sessions.UFSessionMessages
+  langs:
+  - csharp
+  - vb
+  name: UFSessionMessages(IHttpContextAccessor)
+  nameWithType: UFSessionMessages.UFSessionMessages(IHttpContextAccessor)
+  fullName: UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.UFSessionMessages(Microsoft.AspNetCore.Http.IHttpContextAccessor)
+  type: Constructor
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Sessions/UFSessionMessages.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: .ctor
+    path: ../UltraForce.Library.Core.Asp/Sessions/UFSessionMessages.cs
+    startLine: 44
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Sessions
+  summary: >-
+    <xref href="UltraForce.Library.Core.Asp.Sessions.UFSessionMessages" data-throw-if-not-resolved="false"></xref> can be used to store messages in a session or retrieve them
+
+    to be show them inside a view.
+
+    <p>
+
+    To use this class, register this class as a scoped service.
+
+    </p>
+
+    <p>
+
+    If there is no session because either the class fails to get a <xref href="Microsoft.AspNetCore.Http.HttpContext" data-throw-if-not-resolved="false"></xref> or
+
+    the <xref href="Microsoft.AspNetCore.Http.ISession" data-throw-if-not-resolved="false"></xref>; messages will be not be stored and the get messages methods will return empty lists. 
+
+    </p>
+  example: []
+  syntax:
+    content: public UFSessionMessages(IHttpContextAccessor anAccessor)
+    parameters:
+    - id: anAccessor
+      type: Microsoft.AspNetCore.Http.IHttpContextAccessor
+    content.vb: Public Sub New(anAccessor As IHttpContextAccessor)
+  overload: UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.#ctor*
+  nameWithType.vb: UFSessionMessages.New(IHttpContextAccessor)
+  fullName.vb: UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.New(Microsoft.AspNetCore.Http.IHttpContextAccessor)
+  name.vb: New(IHttpContextAccessor)
 - uid: UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.Add(System.String)
   commentId: M:UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.Add(System.String)
   id: Add(System.String)
@@ -68,7 +132,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Add
     path: ../UltraForce.Library.Core.Asp/Sessions/UFSessionMessages.cs
-    startLine: 64
+    startLine: 87
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Sessions
@@ -82,8 +146,6 @@ items:
       description: Message to show
     content.vb: Public Sub Add(aMessage As String)
   overload: UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.Add*
-  implements:
-  - UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages.Add(System.String)
   nameWithType.vb: UFSessionMessages.Add(String)
   fullName.vb: UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.Add(String)
   name.vb: Add(String)
@@ -105,7 +167,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: AddError
     path: ../UltraForce.Library.Core.Asp/Sessions/UFSessionMessages.cs
-    startLine: 70
+    startLine: 96
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Sessions
@@ -119,8 +181,6 @@ items:
       description: Message to show
     content.vb: Public Sub AddError(aMessage As String)
   overload: UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.AddError*
-  implements:
-  - UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages.AddError(System.String)
   nameWithType.vb: UFSessionMessages.AddError(String)
   fullName.vb: UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.AddError(String)
   name.vb: AddError(String)
@@ -142,7 +202,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: AddWarning
     path: ../UltraForce.Library.Core.Asp/Sessions/UFSessionMessages.cs
-    startLine: 76
+    startLine: 105
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Sessions
@@ -156,8 +216,6 @@ items:
       description: Message to show
     content.vb: Public Sub AddWarning(aMessage As String)
   overload: UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.AddWarning*
-  implements:
-  - UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages.AddWarning(System.String)
   nameWithType.vb: UFSessionMessages.AddWarning(String)
   fullName.vb: UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.AddWarning(String)
   name.vb: AddWarning(String)
@@ -179,7 +237,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Clear
     path: ../UltraForce.Library.Core.Asp/Sessions/UFSessionMessages.cs
-    startLine: 82
+    startLine: 113
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Sessions
@@ -189,8 +247,6 @@ items:
     content: public void Clear()
     content.vb: Public Sub Clear()
   overload: UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.Clear*
-  implements:
-  - UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages.Clear
 - uid: UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.GetMessages
   commentId: M:UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.GetMessages
   id: GetMessages
@@ -209,7 +265,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetMessages
     path: ../UltraForce.Library.Core.Asp/Sessions/UFSessionMessages.cs
-    startLine: 90
+    startLine: 124
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Sessions
@@ -222,8 +278,6 @@ items:
       description: messages
     content.vb: Public Function GetMessages() As IEnumerable(Of String)
   overload: UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.GetMessages*
-  implements:
-  - UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages.GetMessages
 - uid: UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.GetErrorMessages
   commentId: M:UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.GetErrorMessages
   id: GetErrorMessages
@@ -242,7 +296,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetErrorMessages
     path: ../UltraForce.Library.Core.Asp/Sessions/UFSessionMessages.cs
-    startLine: 96
+    startLine: 133
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Sessions
@@ -255,8 +309,6 @@ items:
       description: messages
     content.vb: Public Function GetErrorMessages() As IEnumerable(Of String)
   overload: UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.GetErrorMessages*
-  implements:
-  - UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages.GetErrorMessages
 - uid: UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.GetWarningMessages
   commentId: M:UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.GetWarningMessages
   id: GetWarningMessages
@@ -275,7 +327,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetWarningMessages
     path: ../UltraForce.Library.Core.Asp/Sessions/UFSessionMessages.cs
-    startLine: 102
+    startLine: 142
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Sessions
@@ -288,8 +340,6 @@ items:
       description: messages
     content.vb: Public Function GetWarningMessages() As IEnumerable(Of String)
   overload: UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.GetWarningMessages*
-  implements:
-  - UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages.GetWarningMessages
 - uid: UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.HasMessages
   commentId: M:UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.HasMessages
   id: HasMessages
@@ -308,7 +358,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: HasMessages
     path: ../UltraForce.Library.Core.Asp/Sessions/UFSessionMessages.cs
-    startLine: 108
+    startLine: 151
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Sessions
@@ -321,8 +371,6 @@ items:
       description: True if there is at least one message
     content.vb: Public Function HasMessages() As Boolean
   overload: UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.HasMessages*
-  implements:
-  - UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages.HasMessages
 references:
 - uid: UltraForce.Library.Core.Asp.Sessions.UFSessionMessages
   commentId: T:UltraForce.Library.Core.Asp.Sessions.UFSessionMessages
@@ -330,20 +378,21 @@ references:
   name: UFSessionMessages
   nameWithType: UFSessionMessages
   fullName: UltraForce.Library.Core.Asp.Sessions.UFSessionMessages
-- uid: UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages
-  commentId: T:UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages
-  parent: UltraForce.Library.Core.Asp.Sessions
-  href: UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages.html
-  name: IUFSessionMessages
-  nameWithType: IUFSessionMessages
-  fullName: UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages
-- uid: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware
-  commentId: T:UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware
-  parent: UltraForce.Library.Core.Asp.Sessions
-  href: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware.html
-  name: UFSessionMiddleware
-  nameWithType: UFSessionMiddleware
-  fullName: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware
+- uid: Microsoft.AspNetCore.Http.HttpContext
+  commentId: T:Microsoft.AspNetCore.Http.HttpContext
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.http.httpcontext
+  name: HttpContext
+  nameWithType: HttpContext
+  fullName: Microsoft.AspNetCore.Http.HttpContext
+- uid: Microsoft.AspNetCore.Http.ISession
+  commentId: T:Microsoft.AspNetCore.Http.ISession
+  parent: Microsoft.AspNetCore.Http
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.http.isession
+  name: ISession
+  nameWithType: ISession
+  fullName: Microsoft.AspNetCore.Http.ISession
 - uid: UltraForce.Library.Core.Asp.Sessions
   commentId: N:UltraForce.Library.Core.Asp.Sessions
   href: UltraForce.html
@@ -596,6 +645,43 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.object.tostring
   - name: (
   - name: )
+- uid: Microsoft.AspNetCore.Http
+  commentId: N:Microsoft.AspNetCore.Http
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.AspNetCore.Http
+  nameWithType: Microsoft.AspNetCore.Http
+  fullName: Microsoft.AspNetCore.Http
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Http
+    name: Http
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.http
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Http
+    name: Http
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.http
 - uid: System
   commentId: N:System
   isExternal: true
@@ -603,43 +689,29 @@ references:
   name: System
   nameWithType: System
   fullName: System
+- uid: UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.#ctor*
+  commentId: Overload:UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.#ctor
+  href: UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.html#UltraForce_Library_Core_Asp_Sessions_UFSessionMessages__ctor_Microsoft_AspNetCore_Http_IHttpContextAccessor_
+  name: UFSessionMessages
+  nameWithType: UFSessionMessages.UFSessionMessages
+  fullName: UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.UFSessionMessages
+  nameWithType.vb: UFSessionMessages.New
+  fullName.vb: UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.New
+  name.vb: New
+- uid: Microsoft.AspNetCore.Http.IHttpContextAccessor
+  commentId: T:Microsoft.AspNetCore.Http.IHttpContextAccessor
+  parent: Microsoft.AspNetCore.Http
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.http.ihttpcontextaccessor
+  name: IHttpContextAccessor
+  nameWithType: IHttpContextAccessor
+  fullName: Microsoft.AspNetCore.Http.IHttpContextAccessor
 - uid: UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.Add*
   commentId: Overload:UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.Add
   href: UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.html#UltraForce_Library_Core_Asp_Sessions_UFSessionMessages_Add_System_String_
   name: Add
   nameWithType: UFSessionMessages.Add
   fullName: UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.Add
-- uid: UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages.Add(System.String)
-  commentId: M:UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages.Add(System.String)
-  parent: UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages
-  isExternal: true
-  href: UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages.html#UltraForce_Library_Core_Asp_Sessions_IUFSessionMessages_Add_System_String_
-  name: Add(string)
-  nameWithType: IUFSessionMessages.Add(string)
-  fullName: UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages.Add(string)
-  nameWithType.vb: IUFSessionMessages.Add(String)
-  fullName.vb: UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages.Add(String)
-  name.vb: Add(String)
-  spec.csharp:
-  - uid: UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages.Add(System.String)
-    name: Add
-    href: UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages.html#UltraForce_Library_Core_Asp_Sessions_IUFSessionMessages_Add_System_String_
-  - name: (
-  - uid: System.String
-    name: string
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.string
-  - name: )
-  spec.vb:
-  - uid: UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages.Add(System.String)
-    name: Add
-    href: UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages.html#UltraForce_Library_Core_Asp_Sessions_IUFSessionMessages_Add_System_String_
-  - name: (
-  - uid: System.String
-    name: String
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.string
-  - name: )
 - uid: System.String
   commentId: T:System.String
   parent: System
@@ -657,124 +729,24 @@ references:
   name: AddError
   nameWithType: UFSessionMessages.AddError
   fullName: UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.AddError
-- uid: UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages.AddError(System.String)
-  commentId: M:UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages.AddError(System.String)
-  parent: UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages
-  isExternal: true
-  href: UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages.html#UltraForce_Library_Core_Asp_Sessions_IUFSessionMessages_AddError_System_String_
-  name: AddError(string)
-  nameWithType: IUFSessionMessages.AddError(string)
-  fullName: UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages.AddError(string)
-  nameWithType.vb: IUFSessionMessages.AddError(String)
-  fullName.vb: UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages.AddError(String)
-  name.vb: AddError(String)
-  spec.csharp:
-  - uid: UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages.AddError(System.String)
-    name: AddError
-    href: UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages.html#UltraForce_Library_Core_Asp_Sessions_IUFSessionMessages_AddError_System_String_
-  - name: (
-  - uid: System.String
-    name: string
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.string
-  - name: )
-  spec.vb:
-  - uid: UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages.AddError(System.String)
-    name: AddError
-    href: UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages.html#UltraForce_Library_Core_Asp_Sessions_IUFSessionMessages_AddError_System_String_
-  - name: (
-  - uid: System.String
-    name: String
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.string
-  - name: )
 - uid: UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.AddWarning*
   commentId: Overload:UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.AddWarning
   href: UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.html#UltraForce_Library_Core_Asp_Sessions_UFSessionMessages_AddWarning_System_String_
   name: AddWarning
   nameWithType: UFSessionMessages.AddWarning
   fullName: UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.AddWarning
-- uid: UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages.AddWarning(System.String)
-  commentId: M:UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages.AddWarning(System.String)
-  parent: UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages
-  isExternal: true
-  href: UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages.html#UltraForce_Library_Core_Asp_Sessions_IUFSessionMessages_AddWarning_System_String_
-  name: AddWarning(string)
-  nameWithType: IUFSessionMessages.AddWarning(string)
-  fullName: UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages.AddWarning(string)
-  nameWithType.vb: IUFSessionMessages.AddWarning(String)
-  fullName.vb: UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages.AddWarning(String)
-  name.vb: AddWarning(String)
-  spec.csharp:
-  - uid: UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages.AddWarning(System.String)
-    name: AddWarning
-    href: UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages.html#UltraForce_Library_Core_Asp_Sessions_IUFSessionMessages_AddWarning_System_String_
-  - name: (
-  - uid: System.String
-    name: string
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.string
-  - name: )
-  spec.vb:
-  - uid: UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages.AddWarning(System.String)
-    name: AddWarning
-    href: UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages.html#UltraForce_Library_Core_Asp_Sessions_IUFSessionMessages_AddWarning_System_String_
-  - name: (
-  - uid: System.String
-    name: String
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.string
-  - name: )
 - uid: UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.Clear*
   commentId: Overload:UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.Clear
   href: UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.html#UltraForce_Library_Core_Asp_Sessions_UFSessionMessages_Clear
   name: Clear
   nameWithType: UFSessionMessages.Clear
   fullName: UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.Clear
-- uid: UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages.Clear
-  commentId: M:UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages.Clear
-  parent: UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages
-  href: UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages.html#UltraForce_Library_Core_Asp_Sessions_IUFSessionMessages_Clear
-  name: Clear()
-  nameWithType: IUFSessionMessages.Clear()
-  fullName: UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages.Clear()
-  spec.csharp:
-  - uid: UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages.Clear
-    name: Clear
-    href: UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages.html#UltraForce_Library_Core_Asp_Sessions_IUFSessionMessages_Clear
-  - name: (
-  - name: )
-  spec.vb:
-  - uid: UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages.Clear
-    name: Clear
-    href: UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages.html#UltraForce_Library_Core_Asp_Sessions_IUFSessionMessages_Clear
-  - name: (
-  - name: )
 - uid: UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.GetMessages*
   commentId: Overload:UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.GetMessages
   href: UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.html#UltraForce_Library_Core_Asp_Sessions_UFSessionMessages_GetMessages
   name: GetMessages
   nameWithType: UFSessionMessages.GetMessages
   fullName: UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.GetMessages
-- uid: UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages.GetMessages
-  commentId: M:UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages.GetMessages
-  parent: UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages
-  href: UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages.html#UltraForce_Library_Core_Asp_Sessions_IUFSessionMessages_GetMessages
-  name: GetMessages()
-  nameWithType: IUFSessionMessages.GetMessages()
-  fullName: UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages.GetMessages()
-  spec.csharp:
-  - uid: UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages.GetMessages
-    name: GetMessages
-    href: UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages.html#UltraForce_Library_Core_Asp_Sessions_IUFSessionMessages_GetMessages
-  - name: (
-  - name: )
-  spec.vb:
-  - uid: UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages.GetMessages
-    name: GetMessages
-    href: UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages.html#UltraForce_Library_Core_Asp_Sessions_IUFSessionMessages_GetMessages
-  - name: (
-  - name: )
 - uid: System.Collections.Generic.IEnumerable{System.String}
   commentId: T:System.Collections.Generic.IEnumerable{System.String}
   parent: System.Collections.Generic
@@ -881,75 +853,18 @@ references:
   name: GetErrorMessages
   nameWithType: UFSessionMessages.GetErrorMessages
   fullName: UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.GetErrorMessages
-- uid: UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages.GetErrorMessages
-  commentId: M:UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages.GetErrorMessages
-  parent: UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages
-  href: UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages.html#UltraForce_Library_Core_Asp_Sessions_IUFSessionMessages_GetErrorMessages
-  name: GetErrorMessages()
-  nameWithType: IUFSessionMessages.GetErrorMessages()
-  fullName: UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages.GetErrorMessages()
-  spec.csharp:
-  - uid: UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages.GetErrorMessages
-    name: GetErrorMessages
-    href: UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages.html#UltraForce_Library_Core_Asp_Sessions_IUFSessionMessages_GetErrorMessages
-  - name: (
-  - name: )
-  spec.vb:
-  - uid: UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages.GetErrorMessages
-    name: GetErrorMessages
-    href: UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages.html#UltraForce_Library_Core_Asp_Sessions_IUFSessionMessages_GetErrorMessages
-  - name: (
-  - name: )
 - uid: UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.GetWarningMessages*
   commentId: Overload:UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.GetWarningMessages
   href: UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.html#UltraForce_Library_Core_Asp_Sessions_UFSessionMessages_GetWarningMessages
   name: GetWarningMessages
   nameWithType: UFSessionMessages.GetWarningMessages
   fullName: UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.GetWarningMessages
-- uid: UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages.GetWarningMessages
-  commentId: M:UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages.GetWarningMessages
-  parent: UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages
-  href: UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages.html#UltraForce_Library_Core_Asp_Sessions_IUFSessionMessages_GetWarningMessages
-  name: GetWarningMessages()
-  nameWithType: IUFSessionMessages.GetWarningMessages()
-  fullName: UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages.GetWarningMessages()
-  spec.csharp:
-  - uid: UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages.GetWarningMessages
-    name: GetWarningMessages
-    href: UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages.html#UltraForce_Library_Core_Asp_Sessions_IUFSessionMessages_GetWarningMessages
-  - name: (
-  - name: )
-  spec.vb:
-  - uid: UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages.GetWarningMessages
-    name: GetWarningMessages
-    href: UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages.html#UltraForce_Library_Core_Asp_Sessions_IUFSessionMessages_GetWarningMessages
-  - name: (
-  - name: )
 - uid: UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.HasMessages*
   commentId: Overload:UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.HasMessages
   href: UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.html#UltraForce_Library_Core_Asp_Sessions_UFSessionMessages_HasMessages
   name: HasMessages
   nameWithType: UFSessionMessages.HasMessages
   fullName: UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.HasMessages
-- uid: UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages.HasMessages
-  commentId: M:UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages.HasMessages
-  parent: UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages
-  href: UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages.html#UltraForce_Library_Core_Asp_Sessions_IUFSessionMessages_HasMessages
-  name: HasMessages()
-  nameWithType: IUFSessionMessages.HasMessages()
-  fullName: UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages.HasMessages()
-  spec.csharp:
-  - uid: UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages.HasMessages
-    name: HasMessages
-    href: UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages.html#UltraForce_Library_Core_Asp_Sessions_IUFSessionMessages_HasMessages
-  - name: (
-  - name: )
-  spec.vb:
-  - uid: UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages.HasMessages
-    name: HasMessages
-    href: UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages.html#UltraForce_Library_Core_Asp_Sessions_IUFSessionMessages_HasMessages
-  - name: (
-  - name: )
 - uid: System.Boolean
   commentId: T:System.Boolean
   parent: System

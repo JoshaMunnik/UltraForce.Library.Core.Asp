@@ -28,8 +28,6 @@
 // </license>
 
 using System.Security.Claims;
-using Microsoft.AspNetCore.Builder;
-using UltraForce.Library.Core.Asp.Sessions;
 
 namespace UltraForce.Library.Core.Asp.Web
 {
@@ -38,19 +36,6 @@ namespace UltraForce.Library.Core.Asp.Web
   /// </summary>
   public static class UFWebExtensions
   {
-    /// <summary>
-    /// Registers the <see cref="UFSessionMiddleware"/> middleware. It also calls
-    /// <see cref="SessionMiddlewareExtensions.UseSession(IApplicationBuilder)"/> to enable sessions.
-    /// </summary>
-    /// <param name="aBuilder"></param>
-    /// <returns>value of aBuilder</returns>
-    public static IApplicationBuilder UseUFSession(this IApplicationBuilder aBuilder)
-    {
-      return aBuilder
-        .UseSession()
-        .UseMiddleware<UFSessionMiddleware>();
-    }
-
     /// <summary>
     /// Adds an additional IsInRole method to test if user belongs to any of the specified roles.
     /// </summary>

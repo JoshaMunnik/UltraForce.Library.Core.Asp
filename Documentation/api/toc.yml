@@ -44,12 +44,10 @@ items:
 - uid: UltraForce.Library.Core.Asp.Sessions
   name: UltraForce.Library.Core.Asp.Sessions
   items:
-  - uid: UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages
-    name: IUFSessionMessages
+  - uid: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage
+    name: UFSessionKeyedStorage
   - uid: UltraForce.Library.Core.Asp.Sessions.UFSessionMessages
     name: UFSessionMessages
-  - uid: UltraForce.Library.Core.Asp.Sessions.UFSessionMiddleware
-    name: UFSessionMiddleware
 - uid: UltraForce.Library.Core.Asp.TagHelpers
   name: UltraForce.Library.Core.Asp.TagHelpers
   items:

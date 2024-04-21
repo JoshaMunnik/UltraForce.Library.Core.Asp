@@ -27,13 +27,22 @@
 // IN THE SOFTWARE.
 // </license>
 
+using Microsoft.AspNetCore.Http;
+
 namespace UltraForce.Library.Core.Asp.Sessions
 {
   /// <summary>
-  /// <see cref="UFSessionMessages" /> implements <see cref="IUFSessionMessages"/> using
-  /// <see cref="UFSessionMiddleware"/> to store the messages.
+  /// <see cref="UFSessionMessages" /> can be used to store messages in a session or retrieve them
+  /// to be show them inside a view.
+  /// <para>
+  /// To use this class, register this class as a scoped service.
+  /// </para>
+  /// <para>
+  /// If there is no session because either the class fails to get a <see cref="HttpContext"/> or
+  /// the <see cref="ISession"/>; messages will be not be stored and the get messages methods will return empty lists. 
+  /// </para>
   /// </summary>
-  public sealed class UFSessionMessages : IUFSessionMessages
+  public sealed class UFSessionMessages(IHttpContextAccessor anAccessor)
   {
     #region private constants
 
@@ -58,57 +67,91 @@ namespace UltraForce.Library.Core.Asp.Sessions
     private const string Warning = "Warning";
 
     #endregion
+    
+    #region private variables
 
+    /// <summary>
+    /// The session to use (if any)
+    /// </summary>
+    private readonly UFSessionKeyedStorage? m_session = anAccessor.HttpContext?.Session != null 
+      ? new UFSessionKeyedStorage(anAccessor.HttpContext.Session) 
+      : null;
+    
+    #endregion
+    
     #region IUFAdminSession
 
-    /// <inheritdoc />
+    /// <summary>
+    /// Adds a message to show in page
+    /// </summary>
+    /// <param name="aMessage">Message to show</param>
     public void Add(string aMessage)
     {
-      AddMessage(Normal, aMessage);
+      this.AddMessage(Normal, aMessage);
     }
 
-    /// <inheritdoc />
+    /// <summary>
+    /// Adds an error message to show in page
+    /// </summary>
+    /// <param name="aMessage">Message to show</param>
     public void AddError(string aMessage)
     {
-      AddMessage(Error, aMessage);
+      this.AddMessage(Error, aMessage);
     }
 
-    /// <inheritdoc />
+    /// <summary>
+    /// Adds a warning message to show in page
+    /// </summary>
+    /// <param name="aMessage">Message to show</param>
     public void AddWarning(string aMessage)
     {
-      AddMessage(Warning, aMessage);
+      this.AddMessage(Warning, aMessage);
     }
 
-    /// <inheritdoc />
+    /// <summary>
+    /// Clears all stored messages
+    /// </summary>
     public void Clear()
     {
-      ClearMessages(Normal);
-      ClearMessages(Error);
-      ClearMessages(Warning);
+      this.ClearMessages(Normal);
+      this.ClearMessages(Error);
+      this.ClearMessages(Warning);
     }
 
-    /// <inheritdoc />
+    /// <summary>
+    /// Gets all messages
+    /// </summary>
+    /// <returns>messages</returns>
     public IEnumerable<string> GetMessages()
     {
-      return GetMessages(Normal);
+      return this.GetMessages(Normal);
     }
 
-    /// <inheritdoc />
+    /// <summary>
+    /// Gets all error messages
+    /// </summary>
+    /// <returns>messages</returns>
     public IEnumerable<string> GetErrorMessages()
     {
-      return GetMessages(Error);
+      return this.GetMessages(Error);
     }
 
-    /// <inheritdoc />
+    /// <summary>
+    /// Gets all warning messages
+    /// </summary>
+    /// <returns>messages</returns>
     public IEnumerable<string> GetWarningMessages()
     {
-      return GetMessages(Warning);
+      return this.GetMessages(Warning);
     }
 
-    /// <inheritdoc />
+    /// <summary>
+    /// Checks if there are any messages.
+    /// </summary>
+    /// <returns>True if there is at least one message</returns>
     public bool HasMessages()
     {
-      return HasMessages(Normal) || HasMessages(Warning) || HasMessages(Error);
+      return this.HasMessages(Normal) || this.HasMessages(Warning) || this.HasMessages(Error);
     }
 
     #endregion
@@ -120,22 +163,25 @@ namespace UltraForce.Library.Core.Asp.Sessions
     /// </summary>
     /// <param name="aType">Type of message</param>
     /// <param name="aMessage">Message to add</param>
-    private static void AddMessage(string aType, string aMessage)
+    private void AddMessage(string aType, string aMessage)
     {
+      if (this.m_session == null)
+      {
+        return;
+      }
       try
       {
         string indexKey = GetIndexKey(aType);
-        int currentIndex = UFSessionMiddleware.Instance.GetInt(indexKey, 0);
+        int currentIndex = this.m_session.GetInt(indexKey, 0);
         for (int index = 0; index < currentIndex; index++)
         {
-          if (aMessage == UFSessionMiddleware.Instance.GetString(GetItemKey(aType, index)))
+          if (aMessage == this.m_session.GetString(GetItemKey(aType, index)))
           {
             return;
           }
         }
-
-        UFSessionMiddleware.Instance.SetString(GetItemKey(aType, currentIndex), aMessage);
-        UFSessionMiddleware.Instance.SetInt(indexKey, currentIndex + 1);
+        this.m_session.SetString(GetItemKey(aType, currentIndex), aMessage);
+        this.m_session.SetInt(indexKey, currentIndex + 1);
       }
       catch
       {
@@ -147,17 +193,21 @@ namespace UltraForce.Library.Core.Asp.Sessions
     /// Removes all messages for a certain type.
     /// </summary>
     /// <param name="aType">Type to remove message for</param>
-    private static void ClearMessages(string aType)
+    private void ClearMessages(string aType)
     {
+      if (this.m_session == null)
+      {
+        return;
+      }
       try
       {
         string indexKey = GetIndexKey(aType);
-        int count = UFSessionMiddleware.Instance.GetInt(indexKey, 0);
+        int count = this.m_session.GetInt(indexKey, 0);
         for (int index = 0; index < count; index++)
         {
-          UFSessionMiddleware.Instance.DeleteKey(GetItemKey(aType, index));
+          this.m_session.DeleteKey(GetItemKey(aType, index));
         }
-        UFSessionMiddleware.Instance.DeleteKey(indexKey);
+        this.m_session.DeleteKey(indexKey);
       }
       catch
       {
@@ -170,11 +220,15 @@ namespace UltraForce.Library.Core.Asp.Sessions
     /// </summary>
     /// <param name="aType"></param>
     /// <returns></returns>
-    private static bool HasMessages(string aType)
+    private bool HasMessages(string aType)
     {
+      if (this.m_session == null)
+      {
+        return false;
+      }
       try
       {
-        return UFSessionMiddleware.Instance.HasKey(GetIndexKey(aType));
+        return this.m_session.HasKey(GetIndexKey(aType));
       }
       catch
       {
@@ -187,18 +241,21 @@ namespace UltraForce.Library.Core.Asp.Sessions
     /// </summary>
     /// <param name="aType">type</param>
     /// <returns>messages</returns>
-    private static IEnumerable<string> GetMessages(string aType)
+    private IEnumerable<string> GetMessages(string aType)
     {
+      if (this.m_session == null)
+      {
+        return [];
+      }
       try
       {
         string indexKey = GetIndexKey(aType);
-        int count = UFSessionMiddleware.Instance.GetInt(indexKey, 0);
+        int count = this.m_session.GetInt(indexKey, 0);
         List<string> result = new(count);
         for (int index = 0; index < count; index++)
         {
-          result.Add(UFSessionMiddleware.Instance.GetString(GetItemKey(aType, index)));
+          result.Add(this.m_session.GetString(GetItemKey(aType, index)));
         }
-
         return result;
       }
       catch

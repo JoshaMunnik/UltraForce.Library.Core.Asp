@@ -2079,12 +2079,165 @@ references:
   isSpec: "True"
   fullName: UltraForce.Library.Core.Asp.Sessions.IUFSessionMessages.HasMessages
   nameWithType: IUFSessionMessages.HasMessages
+- uid: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage
+  name: UFSessionKeyedStorage
+  href: api/UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.html
+  commentId: T:UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage
+  fullName: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage
+  nameWithType: UFSessionKeyedStorage
+- uid: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.#ctor(Microsoft.AspNetCore.Http.ISession)
+  name: UFSessionKeyedStorage(ISession)
+  href: api/UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.html#UltraForce_Library_Core_Asp_Sessions_UFSessionKeyedStorage__ctor_Microsoft_AspNetCore_Http_ISession_
+  commentId: M:UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.#ctor(Microsoft.AspNetCore.Http.ISession)
+  name.vb: New(ISession)
+  fullName: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.UFSessionKeyedStorage(Microsoft.AspNetCore.Http.ISession)
+  fullName.vb: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.New(Microsoft.AspNetCore.Http.ISession)
+  nameWithType: UFSessionKeyedStorage.UFSessionKeyedStorage(ISession)
+  nameWithType.vb: UFSessionKeyedStorage.New(ISession)
+- uid: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.#ctor*
+  name: UFSessionKeyedStorage
+  href: api/UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.html#UltraForce_Library_Core_Asp_Sessions_UFSessionKeyedStorage__ctor_
+  commentId: Overload:UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.UFSessionKeyedStorage
+  fullName.vb: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.New
+  nameWithType: UFSessionKeyedStorage.UFSessionKeyedStorage
+  nameWithType.vb: UFSessionKeyedStorage.New
+- uid: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.DeleteAll
+  name: DeleteAll()
+  href: api/UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.html#UltraForce_Library_Core_Asp_Sessions_UFSessionKeyedStorage_DeleteAll
+  commentId: M:UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.DeleteAll
+  fullName: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.DeleteAll()
+  nameWithType: UFSessionKeyedStorage.DeleteAll()
+- uid: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.DeleteAll*
+  name: DeleteAll
+  href: api/UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.html#UltraForce_Library_Core_Asp_Sessions_UFSessionKeyedStorage_DeleteAll_
+  commentId: Overload:UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.DeleteAll
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.DeleteAll
+  nameWithType: UFSessionKeyedStorage.DeleteAll
+- uid: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.DeleteKey(System.String)
+  name: DeleteKey(string)
+  href: api/UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.html#UltraForce_Library_Core_Asp_Sessions_UFSessionKeyedStorage_DeleteKey_System_String_
+  commentId: M:UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.DeleteKey(System.String)
+  name.vb: DeleteKey(String)
+  fullName: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.DeleteKey(string)
+  fullName.vb: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.DeleteKey(String)
+  nameWithType: UFSessionKeyedStorage.DeleteKey(string)
+  nameWithType.vb: UFSessionKeyedStorage.DeleteKey(String)
+- uid: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.DeleteKey*
+  name: DeleteKey
+  href: api/UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.html#UltraForce_Library_Core_Asp_Sessions_UFSessionKeyedStorage_DeleteKey_
+  commentId: Overload:UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.DeleteKey
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.DeleteKey
+  nameWithType: UFSessionKeyedStorage.DeleteKey
+- uid: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.GetInt(System.String,System.Int32)
+  name: GetInt(string, int)
+  href: api/UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.html#UltraForce_Library_Core_Asp_Sessions_UFSessionKeyedStorage_GetInt_System_String_System_Int32_
+  commentId: M:UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.GetInt(System.String,System.Int32)
+  name.vb: GetInt(String, Integer)
+  fullName: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.GetInt(string, int)
+  fullName.vb: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.GetInt(String, Integer)
+  nameWithType: UFSessionKeyedStorage.GetInt(string, int)
+  nameWithType.vb: UFSessionKeyedStorage.GetInt(String, Integer)
+- uid: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.GetInt*
+  name: GetInt
+  href: api/UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.html#UltraForce_Library_Core_Asp_Sessions_UFSessionKeyedStorage_GetInt_
+  commentId: Overload:UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.GetInt
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.GetInt
+  nameWithType: UFSessionKeyedStorage.GetInt
+- uid: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.GetString(System.String,System.String)
+  name: GetString(string, string)
+  href: api/UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.html#UltraForce_Library_Core_Asp_Sessions_UFSessionKeyedStorage_GetString_System_String_System_String_
+  commentId: M:UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.GetString(System.String,System.String)
+  name.vb: GetString(String, String)
+  fullName: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.GetString(string, string)
+  fullName.vb: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.GetString(String, String)
+  nameWithType: UFSessionKeyedStorage.GetString(string, string)
+  nameWithType.vb: UFSessionKeyedStorage.GetString(String, String)
+- uid: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.GetString*
+  name: GetString
+  href: api/UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.html#UltraForce_Library_Core_Asp_Sessions_UFSessionKeyedStorage_GetString_
+  commentId: Overload:UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.GetString
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.GetString
+  nameWithType: UFSessionKeyedStorage.GetString
+- uid: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.HasKey(System.String)
+  name: HasKey(string)
+  href: api/UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.html#UltraForce_Library_Core_Asp_Sessions_UFSessionKeyedStorage_HasKey_System_String_
+  commentId: M:UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.HasKey(System.String)
+  name.vb: HasKey(String)
+  fullName: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.HasKey(string)
+  fullName.vb: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.HasKey(String)
+  nameWithType: UFSessionKeyedStorage.HasKey(string)
+  nameWithType.vb: UFSessionKeyedStorage.HasKey(String)
+- uid: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.HasKey*
+  name: HasKey
+  href: api/UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.html#UltraForce_Library_Core_Asp_Sessions_UFSessionKeyedStorage_HasKey_
+  commentId: Overload:UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.HasKey
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.HasKey
+  nameWithType: UFSessionKeyedStorage.HasKey
+- uid: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.SetInt(System.String,System.Int32)
+  name: SetInt(string, int)
+  href: api/UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.html#UltraForce_Library_Core_Asp_Sessions_UFSessionKeyedStorage_SetInt_System_String_System_Int32_
+  commentId: M:UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.SetInt(System.String,System.Int32)
+  name.vb: SetInt(String, Integer)
+  fullName: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.SetInt(string, int)
+  fullName.vb: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.SetInt(String, Integer)
+  nameWithType: UFSessionKeyedStorage.SetInt(string, int)
+  nameWithType.vb: UFSessionKeyedStorage.SetInt(String, Integer)
+- uid: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.SetInt*
+  name: SetInt
+  href: api/UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.html#UltraForce_Library_Core_Asp_Sessions_UFSessionKeyedStorage_SetInt_
+  commentId: Overload:UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.SetInt
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.SetInt
+  nameWithType: UFSessionKeyedStorage.SetInt
+- uid: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.SetString(System.String,System.String)
+  name: SetString(string, string)
+  href: api/UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.html#UltraForce_Library_Core_Asp_Sessions_UFSessionKeyedStorage_SetString_System_String_System_String_
+  commentId: M:UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.SetString(System.String,System.String)
+  name.vb: SetString(String, String)
+  fullName: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.SetString(string, string)
+  fullName.vb: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.SetString(String, String)
+  nameWithType: UFSessionKeyedStorage.SetString(string, string)
+  nameWithType.vb: UFSessionKeyedStorage.SetString(String, String)
+- uid: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.SetString*
+  name: SetString
+  href: api/UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.html#UltraForce_Library_Core_Asp_Sessions_UFSessionKeyedStorage_SetString_
+  commentId: Overload:UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.SetString
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.SetString
+  nameWithType: UFSessionKeyedStorage.SetString
 - uid: UltraForce.Library.Core.Asp.Sessions.UFSessionMessages
   name: UFSessionMessages
   href: api/UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.html
   commentId: T:UltraForce.Library.Core.Asp.Sessions.UFSessionMessages
   fullName: UltraForce.Library.Core.Asp.Sessions.UFSessionMessages
   nameWithType: UFSessionMessages
+- uid: UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.#ctor(Microsoft.AspNetCore.Http.IHttpContextAccessor)
+  name: UFSessionMessages(IHttpContextAccessor)
+  href: api/UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.html#UltraForce_Library_Core_Asp_Sessions_UFSessionMessages__ctor_Microsoft_AspNetCore_Http_IHttpContextAccessor_
+  commentId: M:UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.#ctor(Microsoft.AspNetCore.Http.IHttpContextAccessor)
+  name.vb: New(IHttpContextAccessor)
+  fullName: UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.UFSessionMessages(Microsoft.AspNetCore.Http.IHttpContextAccessor)
+  fullName.vb: UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.New(Microsoft.AspNetCore.Http.IHttpContextAccessor)
+  nameWithType: UFSessionMessages.UFSessionMessages(IHttpContextAccessor)
+  nameWithType.vb: UFSessionMessages.New(IHttpContextAccessor)
+- uid: UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.#ctor*
+  name: UFSessionMessages
+  href: api/UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.html#UltraForce_Library_Core_Asp_Sessions_UFSessionMessages__ctor_
+  commentId: Overload:UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.UFSessionMessages
+  fullName.vb: UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.New
+  nameWithType: UFSessionMessages.UFSessionMessages
+  nameWithType.vb: UFSessionMessages.New
 - uid: UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.Add(System.String)
   name: Add(string)
   href: api/UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.html#UltraForce_Library_Core_Asp_Sessions_UFSessionMessages_Add_System_String_
@@ -6689,16 +6842,3 @@ references:
   isSpec: "True"
   fullName: UltraForce.Library.Core.Asp.Web.UFWebExtensions.IsInRole
   nameWithType: UFWebExtensions.IsInRole
-- uid: UltraForce.Library.Core.Asp.Web.UFWebExtensions.UseUFSession(Microsoft.AspNetCore.Builder.IApplicationBuilder)
-  name: UseUFSession(IApplicationBuilder)
-  href: api/UltraForce.Library.Core.Asp.Web.UFWebExtensions.html#UltraForce_Library_Core_Asp_Web_UFWebExtensions_UseUFSession_Microsoft_AspNetCore_Builder_IApplicationBuilder_
-  commentId: M:UltraForce.Library.Core.Asp.Web.UFWebExtensions.UseUFSession(Microsoft.AspNetCore.Builder.IApplicationBuilder)
-  fullName: UltraForce.Library.Core.Asp.Web.UFWebExtensions.UseUFSession(Microsoft.AspNetCore.Builder.IApplicationBuilder)
-  nameWithType: UFWebExtensions.UseUFSession(IApplicationBuilder)
-- uid: UltraForce.Library.Core.Asp.Web.UFWebExtensions.UseUFSession*
-  name: UseUFSession
-  href: api/UltraForce.Library.Core.Asp.Web.UFWebExtensions.html#UltraForce_Library_Core_Asp_Web_UFWebExtensions_UseUFSession_
-  commentId: Overload:UltraForce.Library.Core.Asp.Web.UFWebExtensions.UseUFSession
-  isSpec: "True"
-  fullName: UltraForce.Library.Core.Asp.Web.UFWebExtensions.UseUFSession
-  nameWithType: UFWebExtensions.UseUFSession
