@@ -595,11 +595,14 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: AddAttribute
     path: ../UltraForce.Library.Core.Asp/Tools/UFTagHelperTools.cs
-    startLine: 303
+    startLine: 304
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Tools
-  summary: Adds a value for an attribute. If the attribute exists, the value gets added to its value.
+  summary: >-
+    Adds a value for an attribute. If the attribute exists, the aValue gets inserted before
+
+    the attributes original value.
   example: []
   syntax:
     content: public static void AddAttribute(TagHelperAttributeList anAttributes, string anAttribute, string aValue, string aSeparator = " ")
@@ -639,7 +642,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: AddClasses
     path: ../UltraForce.Library.Core.Asp/Tools/UFTagHelperTools.cs
-    startLine: 327
+    startLine: 328
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Tools

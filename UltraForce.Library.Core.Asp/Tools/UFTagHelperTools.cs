@@ -295,7 +295,8 @@ namespace UltraForce.Library.Core.Asp.Tools
     }
 
     /// <summary>
-    /// Adds a value for an attribute. If the attribute exists, the value gets added to its value.
+    /// Adds a value for an attribute. If the attribute exists, the aValue gets inserted before
+    /// the attributes original value.
     /// </summary>
     /// <param name="anAttributes"></param>
     /// <param name="anAttribute"></param>
@@ -314,7 +315,7 @@ namespace UltraForce.Library.Core.Asp.Tools
       TagHelperAttribute? attribute = FindAttribute(anAttributes, anAttribute);
       if (attribute != null)
       {
-        value = $"{attribute.Value}{aSeparator}{value}";
+        value = $"{value}{aSeparator}{attribute.Value}";
       }
       anAttributes.SetAttribute(anAttribute, value);
     }
