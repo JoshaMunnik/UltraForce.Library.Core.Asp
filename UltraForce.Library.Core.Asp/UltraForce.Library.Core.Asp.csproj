@@ -14,8 +14,11 @@
         <RepositoryUrl>https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp</RepositoryUrl>
         <PackageReadmeFile>README.md</PackageReadmeFile>
         <AssemblyVersion></AssemblyVersion>
-        <Version>1.0.2</Version>
-        <PackageReleaseNotes>1.0.2
+        <Version>1.0.3</Version>
+        <PackageReleaseNotes>1.0.3
+UFTableRowTagHelper Hover and Alternate are false by default
+
+1.0.2
 Removed UFSession middleware
 Removed IUFSessionMessages; register UFSessionMessages as a scoped service.
 

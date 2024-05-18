@@ -65,13 +65,13 @@ public class UFTableRowTagHelper(IUFTheme aTheme)
   /// When true show rows with alternating background colors
   /// </summary>
   [HtmlAttributeName("alternate")]
-  public bool Alternate { get; set; } = true;
+  public bool Alternate { get; set; } = false;
 
   /// <summary>
   /// When true show different background on hover
   /// </summary>
   [HtmlAttributeName("hover")]
-  public bool Hover { get; set; } = true;
+  public bool Hover { get; set; } = false;
 
   /// <summary>
   /// Keep the row at top or bottom if table gets sorted
