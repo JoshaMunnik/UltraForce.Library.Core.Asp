@@ -4,6 +4,7 @@ items:
   commentId: N:UltraForce.Library.Core.Asp.TagHelpers.Styling.Data
   id: UltraForce.Library.Core.Asp.TagHelpers.Styling.Data
   children:
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Data.UFDataItemTagHelper
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Data.UFDataListTagHelper
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Data.UFDataNameTagHelper
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Data.UFDataValueTagHelper
@@ -17,6 +18,12 @@ items:
   assemblies:
   - UltraForce.Library.Core.Asp
 references:
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Data.UFDataItemTagHelper
+  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Styling.Data.UFDataItemTagHelper
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Data.UFDataItemTagHelper.html
+  name: UFDataItemTagHelper
+  nameWithType: UFDataItemTagHelper
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Data.UFDataItemTagHelper
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Data.UFDataListTagHelper
   commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Styling.Data.UFDataListTagHelper
   href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Data.UFDataListTagHelper.html

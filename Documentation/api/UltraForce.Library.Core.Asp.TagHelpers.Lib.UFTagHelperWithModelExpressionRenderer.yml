@@ -45,6 +45,7 @@ items:
   - UltraForce.Library.Core.Asp.TagHelpers.Lib.UFTagHelperWithTheme
   - UltraForce.Library.Core.Asp.TagHelpers.Lib.UFTagHelperWithViewContext
   derivedClasses:
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Data.UFDataItemTagHelper
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Data.UFDataNameTagHelper
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Data.UFDataValueTagHelper
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper
