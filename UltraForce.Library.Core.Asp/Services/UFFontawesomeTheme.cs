@@ -27,8 +27,8 @@
 // IN THE SOFTWARE.
 // </license>
 
+using Microsoft.IdentityModel.Tokens;
 using UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons;
-using UltraForce.Library.Core.Asp.Types.Enums;
 
 namespace UltraForce.Library.Core.Asp.Services;
 
@@ -42,7 +42,7 @@ public class UFFontAwesomeTheme : UFTheme
   /// <inheritdoc />
   public override string GetButtonIconHtml(IUFButtonProperties aProperties)
   {
-    string classValue = this.GetIconCssClasses(aProperties);
+    string classValue = this.GetButtonIconCssClasses(aProperties);
     return string.IsNullOrEmpty(classValue) ? "" : $"<i class=\"{classValue}\"></i>";
   }
   
@@ -51,36 +51,25 @@ public class UFFontAwesomeTheme : UFTheme
   #region protected support methods
 
   /// <summary>
-  /// Gets the css classes for an icon. The default implementation assumes font awesome v6+ is used
-  /// and returns a solid icon by adding "fa-" to the icon name and using the "fas" class:<br/>
-  /// `fas fa-{Icon}`
+  /// Gets the css classes for an icon. The default implementation assumes font awesome v6+ is used.
+  /// If the icon is not empty, the method checks if the icon starts with "fa" and if not, it adds
+  /// the required fa classes:<br/>
+  /// `fa fa-{Icon}`
   /// </summary>
   /// <returns>Css classes or empty string if there is no icon</returns>
-  protected virtual string GetIconCssClasses(IUFButtonProperties aProperties)
+  protected virtual string GetButtonIconCssClasses(IUFButtonProperties aProperties)
   {
     string icon = aProperties.Icon ?? "";
-    if (icon == "")
+    if (icon.IsNullOrEmpty())
     {
-      icon = aProperties.Styled switch
-      {
-        UFButtonStyle.Back => "left-long",
-        UFButtonStyle.Save => "floppy-disk",
-        UFButtonStyle.Send => "envelope",
-        UFButtonStyle.Create => "file",
-        UFButtonStyle.Edit => "pen",
-        UFButtonStyle.Delete => "trash",
-        UFButtonStyle.Details => "info",
-        UFButtonStyle.List => "list",
-        UFButtonStyle.Copy => "copy",
-        UFButtonStyle.Users => "users",
-        UFButtonStyle.Add => "plus",
-        UFButtonStyle.Remove => "minus",
-        _ => icon
-      };
+      return "";
     }
-    return (icon == "") ? "" : $"fa fa-{icon}";
+    if (icon.StartsWith("fa", StringComparison.OrdinalIgnoreCase))
+    {
+      return icon;
+    }
+    return $"fa fa-{icon}";
   }
 
   #endregion
-
 }

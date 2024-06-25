@@ -157,6 +157,11 @@ items:
     name: UFMvcTools
   - uid: UltraForce.Library.Core.Asp.Tools.UFTagHelperTools
     name: UFTagHelperTools
+- uid: UltraForce.Library.Core.Asp.Types.Classes
+  name: UltraForce.Library.Core.Asp.Types.Classes
+  items:
+  - uid: UltraForce.Library.Core.Asp.Types.Classes.UFFontAwesome
+    name: UFFontAwesome
 - uid: UltraForce.Library.Core.Asp.Types.Enums
   name: UltraForce.Library.Core.Asp.Types.Enums
   items:
@@ -166,8 +171,6 @@ items:
     name: UFButtonIconPosition
   - uid: UltraForce.Library.Core.Asp.Types.Enums.UFButtonSize
     name: UFButtonSize
-  - uid: UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle
-    name: UFButtonStyle
   - uid: UltraForce.Library.Core.Asp.Types.Enums.UFButtonVariant
     name: UFButtonVariant
   - uid: UltraForce.Library.Core.Asp.Types.Enums.UFContentPosition

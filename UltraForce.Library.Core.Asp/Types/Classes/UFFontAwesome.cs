@@ -1,4 +1,4 @@
-// <copyright file="UFButtonProperties.cs" company="Ultra Force Development">
+// <copyright file="UFFontAwesome.cs" company="Ultra Force Development">
 // Ultra Force Library - Copyright (C) 2024 Ultra Force Development
 // </copyright>
 // <author>Josha Munnik</author>
@@ -27,34 +27,23 @@
 // IN THE SOFTWARE.
 // </license>
 
-using UltraForce.Library.Core.Asp.Types.Enums;
-
-namespace UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons;
+namespace UltraForce.Library.Core.Asp.Types.Classes;
 
 /// <summary>
-/// A simple implementation of the <see cref="IUFButtonProperties"/>. Assigning default values
-/// to each property. 
+/// A set of constants that map to certain font awesome icons (without 'fa-' prefix).
 /// </summary>
-public class UFButtonProperties : IUFButtonProperties
+public class UFFontAwesome
 {
-  /// <inheritdoc />
-  public UFButtonColor Color { get; set; } = UFButtonColor.Normal;
-
-  /// <inheritdoc />
-  public UFButtonSize Size { get; set; } = UFButtonSize.Normal;
-
-  /// <inheritdoc />
-  public UFButtonVariant Variant { get; set; } = UFButtonVariant.Normal;
-
-  /// <inheritdoc />
-  public string? Icon { get; set; } = null;
-
-  /// <inheritdoc />
-  public UFButtonIconPosition IconPosition { get; set; } = UFButtonIconPosition.Start;
-
-  /// <inheritdoc />
-  public bool Disabled { get; set; } = false;
-
-  /// <inheritdoc />
-  public bool Interactive { get; set; } = true;
+  public const string Send = "envelope";
+  public const string Save = "floppy-disk";
+  public const string Back = "left-long";
+  public const string Create = "file";
+  public const string Edit = "pen";
+  public const string Details = "info";
+  public const string Delete = "trash";
+  public const string List = "list";
+  public const string Copy = "copy";
+  public const string Users = "users";
+  public const string Add = "plus";
+  public const string Remove = "minus";
 }

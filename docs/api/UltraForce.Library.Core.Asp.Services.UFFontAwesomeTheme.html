@@ -298,6 +298,47 @@ Class UFFontAwesomeTheme  <a class="header-action link-secondary" title="View so
 </h2>
 
 
+  <a id="UltraForce_Library_Core_Asp_Services_UFFontAwesomeTheme_GetButtonIconCssClasses_" data-uid="UltraForce.Library.Core.Asp.Services.UFFontAwesomeTheme.GetButtonIconCssClasses*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Services_UFFontAwesomeTheme_GetButtonIconCssClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_IUFButtonProperties_" data-uid="UltraForce.Library.Core.Asp.Services.UFFontAwesomeTheme.GetButtonIconCssClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties)">
+  GetButtonIconCssClasses(IUFButtonProperties)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Services/UFFontawesomeTheme.cs/#L60"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the css classes for an icon. The default implementation assumes font awesome v6+ is used.
+If the icon is not empty, the method checks if the icon starts with &quot;fa&quot; and if not, it adds
+the required fa classes:<br>
+<code>fa fa-{Icon}</code></p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual string GetButtonIconCssClasses(IUFButtonProperties aProperties)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aProperties</code> <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.html">IUFButtonProperties</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Css classes or empty string if there is no icon</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="UltraForce_Library_Core_Asp_Services_UFFontAwesomeTheme_GetButtonIconHtml_" data-uid="UltraForce.Library.Core.Asp.Services.UFFontAwesomeTheme.GetButtonIconHtml*"></a>
 
   <h3 id="UltraForce_Library_Core_Asp_Services_UFFontAwesomeTheme_GetButtonIconHtml_UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_IUFButtonProperties_" data-uid="UltraForce.Library.Core.Asp.Services.UFFontAwesomeTheme.GetButtonIconHtml(UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties)">
@@ -323,46 +364,6 @@ Class UFFontAwesomeTheme  <a class="header-action link-secondary" title="View so
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd><p>Html snippet or empty string if there is no icon</p>
-</dd>
-  </dl>
-
-
-
-
-
-
-
-
-
-
-
-  <a id="UltraForce_Library_Core_Asp_Services_UFFontAwesomeTheme_GetIconCssClasses_" data-uid="UltraForce.Library.Core.Asp.Services.UFFontAwesomeTheme.GetIconCssClasses*"></a>
-
-  <h3 id="UltraForce_Library_Core_Asp_Services_UFFontAwesomeTheme_GetIconCssClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_IUFButtonProperties_" data-uid="UltraForce.Library.Core.Asp.Services.UFFontAwesomeTheme.GetIconCssClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties)">
-  GetIconCssClasses(IUFButtonProperties)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Services/UFFontawesomeTheme.cs/#L59"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Gets the css classes for an icon. The default implementation assumes font awesome v6+ is used
-and returns a solid icon by adding &quot;fa-&quot; to the icon name and using the &quot;fas&quot; class:<br>
-<code>fas fa-{Icon}</code></p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected virtual string GetIconCssClasses(IUFButtonProperties aProperties)</code></pre>
-  </div>
-
-  <h4 class="section">Parameters</h4>
-  <dl class="parameters">
-    <dt><code>aProperties</code> <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.html">IUFButtonProperties</a></dt>
-    <dd></dd>
-  </dl>
-
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>Css classes or empty string if there is no icon</p>
 </dd>
   </dl>
 

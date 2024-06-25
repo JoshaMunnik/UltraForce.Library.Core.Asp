@@ -132,7 +132,7 @@ public class UFClickableTagHelperBase : UFTagHelperWithViewContext
   /// </summary>
   /// <param name="anOutput"></param>
   /// <returns>True if a href value could be determined</returns>
-  protected bool HasHref(TagHelperOutput anOutput)
+  protected bool ProcessHref(TagHelperOutput anOutput)
   {
     string? href = this.GetHref(anOutput);
     if (string.IsNullOrEmpty(href))

@@ -21,7 +21,6 @@ items:
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.OnClick
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.Size
-  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.Styled
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.Value
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.Variant
   langs:
@@ -91,7 +90,7 @@ items:
   - UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.NewTab
   - UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.RouteValues
   - UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.HtmlGenerator
-  - UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.HasHref(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  - UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.ProcessHref(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
   - UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.GetHref(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
   - UltraForce.Library.Core.Asp.TagHelpers.Lib.UFTagHelperWithViewContext.ViewContext
   - UltraForce.Library.Core.Asp.TagHelpers.Lib.UFTagHelperWithTheme.Theme
@@ -488,51 +487,6 @@ items:
     arguments:
     - type: System.String
       value: interactive
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.Styled
-  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.Styled
-  id: Styled
-  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper
-  langs:
-  - csharp
-  - vb
-  name: Styled
-  nameWithType: UFButtonTagHelper.Styled
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.Styled
-  type: Property
-  source:
-    remote:
-      path: UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonTagHelper.cs
-      branch: master
-      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
-    id: Styled
-    path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonTagHelper.cs
-    startLine: 93
-  assemblies:
-  - UltraForce.Library.Core.Asp
-  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
-  summary: Use style to set multiple properties to a predefined value.
-  example: []
-  syntax:
-    content: >-
-      [HtmlAttributeName("styled")]
-
-      public UFButtonStyle Styled { get; set; }
-    parameters: []
-    return:
-      type: UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle
-    content.vb: >-
-      <HtmlAttributeName("styled")>
-
-      Public Property Styled As UFButtonStyle
-  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.Styled*
-  implements:
-  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.Styled
-  attributes:
-  - type: Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute
-    ctor: Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute.#ctor(System.String)
-    arguments:
-    - type: System.String
-      value: styled
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.OnClick
   commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.OnClick
   id: OnClick
@@ -551,7 +505,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: OnClick
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonTagHelper.cs
-    startLine: 104
+    startLine: 100
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
@@ -597,7 +551,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Clipboard
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonTagHelper.cs
-    startLine: 110
+    startLine: 106
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
@@ -628,7 +582,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: For
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonTagHelper.cs
-    startLine: 115
+    startLine: 111
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
@@ -659,7 +613,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Name
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonTagHelper.cs
-    startLine: 120
+    startLine: 116
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
@@ -690,7 +644,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Value
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonTagHelper.cs
-    startLine: 125
+    startLine: 121
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
@@ -721,7 +675,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: ProcessAsync
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonTagHelper.cs
-    startLine: 132
+    startLine: 128
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
@@ -764,7 +718,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: ModelExpressionRenderer
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonTagHelper.cs
-    startLine: 194
+    startLine: 190
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
@@ -795,7 +749,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetButtonIconHtml
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonTagHelper.cs
-    startLine: 204
+    startLine: 200
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
@@ -826,7 +780,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetButtonCaptionClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonTagHelper.cs
-    startLine: 213
+    startLine: 209
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
@@ -857,7 +811,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetButtonClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonTagHelper.cs
-    startLine: 222
+    startLine: 218
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
@@ -1045,18 +999,18 @@ references:
   name: HtmlGenerator
   nameWithType: UFClickableTagHelperBase.HtmlGenerator
   fullName: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.HtmlGenerator
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.HasHref(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
-  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.HasHref(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.ProcessHref(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.ProcessHref(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
   parent: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase
   isExternal: true
-  href: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_HasHref_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_
-  name: HasHref(TagHelperOutput)
-  nameWithType: UFClickableTagHelperBase.HasHref(TagHelperOutput)
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.HasHref(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  href: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_ProcessHref_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_
+  name: ProcessHref(TagHelperOutput)
+  nameWithType: UFClickableTagHelperBase.ProcessHref(TagHelperOutput)
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.ProcessHref(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
   spec.csharp:
-  - uid: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.HasHref(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
-    name: HasHref
-    href: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_HasHref_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.ProcessHref(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+    name: ProcessHref
+    href: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_ProcessHref_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_
   - name: (
   - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput
     name: TagHelperOutput
@@ -1064,9 +1018,9 @@ references:
     href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelperoutput
   - name: )
   spec.vb:
-  - uid: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.HasHref(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
-    name: HasHref
-    href: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_HasHref_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.ProcessHref(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+    name: ProcessHref
+    href: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_ProcessHref_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_
   - name: (
   - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput
     name: TagHelperOutput
@@ -1841,26 +1795,6 @@ references:
   name: Interactive
   nameWithType: IUFButtonProperties.Interactive
   fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.Interactive
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.Styled*
-  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.Styled
-  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_UFButtonTagHelper_Styled
-  name: Styled
-  nameWithType: UFButtonTagHelper.Styled
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.Styled
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.Styled
-  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.Styled
-  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties
-  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_IUFButtonProperties_Styled
-  name: Styled
-  nameWithType: IUFButtonProperties.Styled
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.Styled
-- uid: UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle
-  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle
-  parent: UltraForce.Library.Core.Asp.Types.Enums
-  href: UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle.html
-  name: UFButtonStyle
-  nameWithType: UFButtonStyle
-  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.Clipboard
   commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.Clipboard
   href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_UFButtonTagHelper_Clipboard

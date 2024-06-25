@@ -71,9 +71,4 @@ public interface IUFButtonProperties
   /// When <code>false</code> the button is rendered with a div element.
   /// </summary>
   public bool Interactive { get; set; }
-
-  /// <summary>
-  /// Use style to set multiple properties to a predefined value.
-  /// </summary>
-  public UFButtonStyle Styled { get; set; }
 }

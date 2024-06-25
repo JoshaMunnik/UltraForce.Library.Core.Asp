@@ -997,6 +997,19 @@ references:
   commentId: T:UltraForce.Library.Core.Asp.Services.UFFontAwesomeTheme
   fullName: UltraForce.Library.Core.Asp.Services.UFFontAwesomeTheme
   nameWithType: UFFontAwesomeTheme
+- uid: UltraForce.Library.Core.Asp.Services.UFFontAwesomeTheme.GetButtonIconCssClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties)
+  name: GetButtonIconCssClasses(IUFButtonProperties)
+  href: api/UltraForce.Library.Core.Asp.Services.UFFontAwesomeTheme.html#UltraForce_Library_Core_Asp_Services_UFFontAwesomeTheme_GetButtonIconCssClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_IUFButtonProperties_
+  commentId: M:UltraForce.Library.Core.Asp.Services.UFFontAwesomeTheme.GetButtonIconCssClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties)
+  fullName: UltraForce.Library.Core.Asp.Services.UFFontAwesomeTheme.GetButtonIconCssClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties)
+  nameWithType: UFFontAwesomeTheme.GetButtonIconCssClasses(IUFButtonProperties)
+- uid: UltraForce.Library.Core.Asp.Services.UFFontAwesomeTheme.GetButtonIconCssClasses*
+  name: GetButtonIconCssClasses
+  href: api/UltraForce.Library.Core.Asp.Services.UFFontAwesomeTheme.html#UltraForce_Library_Core_Asp_Services_UFFontAwesomeTheme_GetButtonIconCssClasses_
+  commentId: Overload:UltraForce.Library.Core.Asp.Services.UFFontAwesomeTheme.GetButtonIconCssClasses
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Asp.Services.UFFontAwesomeTheme.GetButtonIconCssClasses
+  nameWithType: UFFontAwesomeTheme.GetButtonIconCssClasses
 - uid: UltraForce.Library.Core.Asp.Services.UFFontAwesomeTheme.GetButtonIconHtml(UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties)
   name: GetButtonIconHtml(IUFButtonProperties)
   href: api/UltraForce.Library.Core.Asp.Services.UFFontAwesomeTheme.html#UltraForce_Library_Core_Asp_Services_UFFontAwesomeTheme_GetButtonIconHtml_UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_IUFButtonProperties_
@@ -1010,19 +1023,6 @@ references:
   isSpec: "True"
   fullName: UltraForce.Library.Core.Asp.Services.UFFontAwesomeTheme.GetButtonIconHtml
   nameWithType: UFFontAwesomeTheme.GetButtonIconHtml
-- uid: UltraForce.Library.Core.Asp.Services.UFFontAwesomeTheme.GetIconCssClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties)
-  name: GetIconCssClasses(IUFButtonProperties)
-  href: api/UltraForce.Library.Core.Asp.Services.UFFontAwesomeTheme.html#UltraForce_Library_Core_Asp_Services_UFFontAwesomeTheme_GetIconCssClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_IUFButtonProperties_
-  commentId: M:UltraForce.Library.Core.Asp.Services.UFFontAwesomeTheme.GetIconCssClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties)
-  fullName: UltraForce.Library.Core.Asp.Services.UFFontAwesomeTheme.GetIconCssClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties)
-  nameWithType: UFFontAwesomeTheme.GetIconCssClasses(IUFButtonProperties)
-- uid: UltraForce.Library.Core.Asp.Services.UFFontAwesomeTheme.GetIconCssClasses*
-  name: GetIconCssClasses
-  href: api/UltraForce.Library.Core.Asp.Services.UFFontAwesomeTheme.html#UltraForce_Library_Core_Asp_Services_UFFontAwesomeTheme_GetIconCssClasses_
-  commentId: Overload:UltraForce.Library.Core.Asp.Services.UFFontAwesomeTheme.GetIconCssClasses
-  isSpec: "True"
-  fullName: UltraForce.Library.Core.Asp.Services.UFFontAwesomeTheme.GetIconCssClasses
-  nameWithType: UFFontAwesomeTheme.GetIconCssClasses
 - uid: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer
   name: UFModelExpressionRenderer
   href: api/UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.html
@@ -2587,19 +2587,6 @@ references:
   isSpec: "True"
   fullName: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.GetHref
   nameWithType: UFClickableTagHelperBase.GetHref
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.HasHref(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
-  name: HasHref(TagHelperOutput)
-  href: api/UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_HasHref_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_
-  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.HasHref(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.HasHref(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
-  nameWithType: UFClickableTagHelperBase.HasHref(TagHelperOutput)
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.HasHref*
-  name: HasHref
-  href: api/UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_HasHref_
-  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.HasHref
-  isSpec: "True"
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.HasHref
-  nameWithType: UFClickableTagHelperBase.HasHref
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.Href
   name: Href
   href: api/UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_Href
@@ -2639,6 +2626,19 @@ references:
   isSpec: "True"
   fullName: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.NewTab
   nameWithType: UFClickableTagHelperBase.NewTab
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.ProcessHref(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  name: ProcessHref(TagHelperOutput)
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_ProcessHref_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.ProcessHref(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.ProcessHref(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  nameWithType: UFClickableTagHelperBase.ProcessHref(TagHelperOutput)
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.ProcessHref*
+  name: ProcessHref
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_ProcessHref_
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.ProcessHref
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.ProcessHref
+  nameWithType: UFClickableTagHelperBase.ProcessHref
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.RouteValues
   name: RouteValues
   href: api/UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_RouteValues
@@ -2856,19 +2856,6 @@ references:
   isSpec: "True"
   fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.Size
   nameWithType: IUFButtonProperties.Size
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.Styled
-  name: Styled
-  href: api/UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_IUFButtonProperties_Styled
-  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.Styled
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.Styled
-  nameWithType: IUFButtonProperties.Styled
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.Styled*
-  name: Styled
-  href: api/UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_IUFButtonProperties_Styled_
-  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.Styled
-  isSpec: "True"
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.Styled
-  nameWithType: IUFButtonProperties.Styled
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.Variant
   name: Variant
   href: api/UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_IUFButtonProperties_Variant
@@ -2966,19 +2953,6 @@ references:
   isSpec: "True"
   fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties.Size
   nameWithType: UFButtonProperties.Size
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties.Styled
-  name: Styled
-  href: api/UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_UFButtonProperties_Styled
-  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties.Styled
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties.Styled
-  nameWithType: UFButtonProperties.Styled
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties.Styled*
-  name: Styled
-  href: api/UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_UFButtonProperties_Styled_
-  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties.Styled
-  isSpec: "True"
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties.Styled
-  nameWithType: UFButtonProperties.Styled
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties.Variant
   name: Variant
   href: api/UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_UFButtonProperties_Variant
@@ -3212,19 +3186,6 @@ references:
   isSpec: "True"
   fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.Size
   nameWithType: UFButtonTagHelper.Size
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.Styled
-  name: Styled
-  href: api/UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_UFButtonTagHelper_Styled
-  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.Styled
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.Styled
-  nameWithType: UFButtonTagHelper.Styled
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.Styled*
-  name: Styled
-  href: api/UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_UFButtonTagHelper_Styled_
-  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.Styled
-  isSpec: "True"
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.Styled
-  nameWithType: UFButtonTagHelper.Styled
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.Value
   name: Value
   href: api/UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_UFButtonTagHelper_Value
@@ -6164,6 +6125,90 @@ references:
   isSpec: "True"
   fullName: UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.SetContentToText
   nameWithType: UFTagHelperTools.SetContentToText
+- uid: UltraForce.Library.Core.Asp.Types.Classes
+  name: UltraForce.Library.Core.Asp.Types.Classes
+  href: api/UltraForce.Library.Core.Asp.Types.Classes.html
+  commentId: N:UltraForce.Library.Core.Asp.Types.Classes
+  fullName: UltraForce.Library.Core.Asp.Types.Classes
+  nameWithType: UltraForce.Library.Core.Asp.Types.Classes
+- uid: UltraForce.Library.Core.Asp.Types.Classes.UFFontAwesome
+  name: UFFontAwesome
+  href: api/UltraForce.Library.Core.Asp.Types.Classes.UFFontAwesome.html
+  commentId: T:UltraForce.Library.Core.Asp.Types.Classes.UFFontAwesome
+  fullName: UltraForce.Library.Core.Asp.Types.Classes.UFFontAwesome
+  nameWithType: UFFontAwesome
+- uid: UltraForce.Library.Core.Asp.Types.Classes.UFFontAwesome.Add
+  name: Add
+  href: api/UltraForce.Library.Core.Asp.Types.Classes.UFFontAwesome.html#UltraForce_Library_Core_Asp_Types_Classes_UFFontAwesome_Add
+  commentId: F:UltraForce.Library.Core.Asp.Types.Classes.UFFontAwesome.Add
+  fullName: UltraForce.Library.Core.Asp.Types.Classes.UFFontAwesome.Add
+  nameWithType: UFFontAwesome.Add
+- uid: UltraForce.Library.Core.Asp.Types.Classes.UFFontAwesome.Back
+  name: Back
+  href: api/UltraForce.Library.Core.Asp.Types.Classes.UFFontAwesome.html#UltraForce_Library_Core_Asp_Types_Classes_UFFontAwesome_Back
+  commentId: F:UltraForce.Library.Core.Asp.Types.Classes.UFFontAwesome.Back
+  fullName: UltraForce.Library.Core.Asp.Types.Classes.UFFontAwesome.Back
+  nameWithType: UFFontAwesome.Back
+- uid: UltraForce.Library.Core.Asp.Types.Classes.UFFontAwesome.Copy
+  name: Copy
+  href: api/UltraForce.Library.Core.Asp.Types.Classes.UFFontAwesome.html#UltraForce_Library_Core_Asp_Types_Classes_UFFontAwesome_Copy
+  commentId: F:UltraForce.Library.Core.Asp.Types.Classes.UFFontAwesome.Copy
+  fullName: UltraForce.Library.Core.Asp.Types.Classes.UFFontAwesome.Copy
+  nameWithType: UFFontAwesome.Copy
+- uid: UltraForce.Library.Core.Asp.Types.Classes.UFFontAwesome.Create
+  name: Create
+  href: api/UltraForce.Library.Core.Asp.Types.Classes.UFFontAwesome.html#UltraForce_Library_Core_Asp_Types_Classes_UFFontAwesome_Create
+  commentId: F:UltraForce.Library.Core.Asp.Types.Classes.UFFontAwesome.Create
+  fullName: UltraForce.Library.Core.Asp.Types.Classes.UFFontAwesome.Create
+  nameWithType: UFFontAwesome.Create
+- uid: UltraForce.Library.Core.Asp.Types.Classes.UFFontAwesome.Delete
+  name: Delete
+  href: api/UltraForce.Library.Core.Asp.Types.Classes.UFFontAwesome.html#UltraForce_Library_Core_Asp_Types_Classes_UFFontAwesome_Delete
+  commentId: F:UltraForce.Library.Core.Asp.Types.Classes.UFFontAwesome.Delete
+  fullName: UltraForce.Library.Core.Asp.Types.Classes.UFFontAwesome.Delete
+  nameWithType: UFFontAwesome.Delete
+- uid: UltraForce.Library.Core.Asp.Types.Classes.UFFontAwesome.Details
+  name: Details
+  href: api/UltraForce.Library.Core.Asp.Types.Classes.UFFontAwesome.html#UltraForce_Library_Core_Asp_Types_Classes_UFFontAwesome_Details
+  commentId: F:UltraForce.Library.Core.Asp.Types.Classes.UFFontAwesome.Details
+  fullName: UltraForce.Library.Core.Asp.Types.Classes.UFFontAwesome.Details
+  nameWithType: UFFontAwesome.Details
+- uid: UltraForce.Library.Core.Asp.Types.Classes.UFFontAwesome.Edit
+  name: Edit
+  href: api/UltraForce.Library.Core.Asp.Types.Classes.UFFontAwesome.html#UltraForce_Library_Core_Asp_Types_Classes_UFFontAwesome_Edit
+  commentId: F:UltraForce.Library.Core.Asp.Types.Classes.UFFontAwesome.Edit
+  fullName: UltraForce.Library.Core.Asp.Types.Classes.UFFontAwesome.Edit
+  nameWithType: UFFontAwesome.Edit
+- uid: UltraForce.Library.Core.Asp.Types.Classes.UFFontAwesome.List
+  name: List
+  href: api/UltraForce.Library.Core.Asp.Types.Classes.UFFontAwesome.html#UltraForce_Library_Core_Asp_Types_Classes_UFFontAwesome_List
+  commentId: F:UltraForce.Library.Core.Asp.Types.Classes.UFFontAwesome.List
+  fullName: UltraForce.Library.Core.Asp.Types.Classes.UFFontAwesome.List
+  nameWithType: UFFontAwesome.List
+- uid: UltraForce.Library.Core.Asp.Types.Classes.UFFontAwesome.Remove
+  name: Remove
+  href: api/UltraForce.Library.Core.Asp.Types.Classes.UFFontAwesome.html#UltraForce_Library_Core_Asp_Types_Classes_UFFontAwesome_Remove
+  commentId: F:UltraForce.Library.Core.Asp.Types.Classes.UFFontAwesome.Remove
+  fullName: UltraForce.Library.Core.Asp.Types.Classes.UFFontAwesome.Remove
+  nameWithType: UFFontAwesome.Remove
+- uid: UltraForce.Library.Core.Asp.Types.Classes.UFFontAwesome.Save
+  name: Save
+  href: api/UltraForce.Library.Core.Asp.Types.Classes.UFFontAwesome.html#UltraForce_Library_Core_Asp_Types_Classes_UFFontAwesome_Save
+  commentId: F:UltraForce.Library.Core.Asp.Types.Classes.UFFontAwesome.Save
+  fullName: UltraForce.Library.Core.Asp.Types.Classes.UFFontAwesome.Save
+  nameWithType: UFFontAwesome.Save
+- uid: UltraForce.Library.Core.Asp.Types.Classes.UFFontAwesome.Send
+  name: Send
+  href: api/UltraForce.Library.Core.Asp.Types.Classes.UFFontAwesome.html#UltraForce_Library_Core_Asp_Types_Classes_UFFontAwesome_Send
+  commentId: F:UltraForce.Library.Core.Asp.Types.Classes.UFFontAwesome.Send
+  fullName: UltraForce.Library.Core.Asp.Types.Classes.UFFontAwesome.Send
+  nameWithType: UFFontAwesome.Send
+- uid: UltraForce.Library.Core.Asp.Types.Classes.UFFontAwesome.Users
+  name: Users
+  href: api/UltraForce.Library.Core.Asp.Types.Classes.UFFontAwesome.html#UltraForce_Library_Core_Asp_Types_Classes_UFFontAwesome_Users
+  commentId: F:UltraForce.Library.Core.Asp.Types.Classes.UFFontAwesome.Users
+  fullName: UltraForce.Library.Core.Asp.Types.Classes.UFFontAwesome.Users
+  nameWithType: UFFontAwesome.Users
 - uid: UltraForce.Library.Core.Asp.Types.Enums
   name: UltraForce.Library.Core.Asp.Types.Enums
   href: api/UltraForce.Library.Core.Asp.Types.Enums.html

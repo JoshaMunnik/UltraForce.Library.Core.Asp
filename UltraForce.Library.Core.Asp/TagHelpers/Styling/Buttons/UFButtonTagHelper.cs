@@ -90,10 +90,6 @@ public class UFButtonTagHelper(
   [HtmlAttributeName("interactive")]
   public bool Interactive { get; set; } = true;
 
-  /// <inheritdoc />
-  [HtmlAttributeName("styled")]
-  public UFButtonStyle Styled { get; set; } = UFButtonStyle.Custom;
-
   #endregion
 
   #region public properties
@@ -134,7 +130,7 @@ public class UFButtonTagHelper(
   {
     await base.ProcessAsync(context, output);
     string iconHtml = this.GetButtonIconHtml();
-    bool hasHref = this.HasHref(output);
+    bool hasHref = this.ProcessHref(output);
     output.TagName = !this.Interactive ? "div" : hasHref ? "a" : "button";
     output.TagMode = TagMode.StartTagAndEndTag;
     if (this.Disabled)

@@ -11,7 +11,6 @@ items:
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties.IconPosition
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties.Interactive
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties.Size
-  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties.Styled
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties.Variant
   langs:
   - csharp
@@ -285,39 +284,6 @@ items:
   overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties.Interactive*
   implements:
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.Interactive
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties.Styled
-  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties.Styled
-  id: Styled
-  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties
-  langs:
-  - csharp
-  - vb
-  name: Styled
-  nameWithType: UFButtonProperties.Styled
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties.Styled
-  type: Property
-  source:
-    remote:
-      path: UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonProperties.cs
-      branch: master
-      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
-    id: Styled
-    path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonProperties.cs
-    startLine: 61
-  assemblies:
-  - UltraForce.Library.Core.Asp
-  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
-  summary: Use style to set multiple properties to a predefined value.
-  example: []
-  syntax:
-    content: public UFButtonStyle Styled { get; set; }
-    parameters: []
-    return:
-      type: UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle
-    content.vb: Public Property Styled As UFButtonStyle
-  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties.Styled*
-  implements:
-  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.Styled
 references:
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties
   commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties
@@ -820,23 +786,3 @@ references:
   name: Interactive
   nameWithType: IUFButtonProperties.Interactive
   fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.Interactive
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties.Styled*
-  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties.Styled
-  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_UFButtonProperties_Styled
-  name: Styled
-  nameWithType: UFButtonProperties.Styled
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties.Styled
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.Styled
-  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.Styled
-  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties
-  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_IUFButtonProperties_Styled
-  name: Styled
-  nameWithType: IUFButtonProperties.Styled
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.Styled
-- uid: UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle
-  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle
-  parent: UltraForce.Library.Core.Asp.Types.Enums
-  href: UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle.html
-  name: UFButtonStyle
-  nameWithType: UFButtonStyle
-  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFButtonStyle

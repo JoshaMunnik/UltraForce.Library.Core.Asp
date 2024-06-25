@@ -5,8 +5,8 @@ items:
   id: UFFontAwesomeTheme
   parent: UltraForce.Library.Core.Asp.Services
   children:
+  - UltraForce.Library.Core.Asp.Services.UFFontAwesomeTheme.GetButtonIconCssClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties)
   - UltraForce.Library.Core.Asp.Services.UFFontAwesomeTheme.GetButtonIconHtml(UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties)
-  - UltraForce.Library.Core.Asp.Services.UFFontAwesomeTheme.GetIconCssClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties)
   langs:
   - csharp
   - vb
@@ -124,45 +124,47 @@ items:
     content.vb: Public Overrides Function GetButtonIconHtml(aProperties As IUFButtonProperties) As String
   overridden: UltraForce.Library.Core.Asp.Services.UFTheme.GetButtonIconHtml(UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties)
   overload: UltraForce.Library.Core.Asp.Services.UFFontAwesomeTheme.GetButtonIconHtml*
-- uid: UltraForce.Library.Core.Asp.Services.UFFontAwesomeTheme.GetIconCssClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties)
-  commentId: M:UltraForce.Library.Core.Asp.Services.UFFontAwesomeTheme.GetIconCssClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties)
-  id: GetIconCssClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties)
+- uid: UltraForce.Library.Core.Asp.Services.UFFontAwesomeTheme.GetButtonIconCssClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties)
+  commentId: M:UltraForce.Library.Core.Asp.Services.UFFontAwesomeTheme.GetButtonIconCssClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties)
+  id: GetButtonIconCssClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties)
   parent: UltraForce.Library.Core.Asp.Services.UFFontAwesomeTheme
   langs:
   - csharp
   - vb
-  name: GetIconCssClasses(IUFButtonProperties)
-  nameWithType: UFFontAwesomeTheme.GetIconCssClasses(IUFButtonProperties)
-  fullName: UltraForce.Library.Core.Asp.Services.UFFontAwesomeTheme.GetIconCssClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties)
+  name: GetButtonIconCssClasses(IUFButtonProperties)
+  nameWithType: UFFontAwesomeTheme.GetButtonIconCssClasses(IUFButtonProperties)
+  fullName: UltraForce.Library.Core.Asp.Services.UFFontAwesomeTheme.GetButtonIconCssClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties)
   type: Method
   source:
     remote:
       path: UltraForce.Library.Core.Asp/Services/UFFontawesomeTheme.cs
       branch: master
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
-    id: GetIconCssClasses
+    id: GetButtonIconCssClasses
     path: ../UltraForce.Library.Core.Asp/Services/UFFontawesomeTheme.cs
-    startLine: 58
+    startLine: 59
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Services
   summary: >-
-    Gets the css classes for an icon. The default implementation assumes font awesome v6+ is used
+    Gets the css classes for an icon. The default implementation assumes font awesome v6+ is used.
 
-    and returns a solid icon by adding "fa-" to the icon name and using the "fas" class:<br />
+    If the icon is not empty, the method checks if the icon starts with "fa" and if not, it adds
 
-    `fas fa-{Icon}`
+    the required fa classes:<br />
+
+    `fa fa-{Icon}`
   example: []
   syntax:
-    content: protected virtual string GetIconCssClasses(IUFButtonProperties aProperties)
+    content: protected virtual string GetButtonIconCssClasses(IUFButtonProperties aProperties)
     parameters:
     - id: aProperties
       type: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties
     return:
       type: System.String
       description: Css classes or empty string if there is no icon
-    content.vb: Protected Overridable Function GetIconCssClasses(aProperties As IUFButtonProperties) As String
-  overload: UltraForce.Library.Core.Asp.Services.UFFontAwesomeTheme.GetIconCssClasses*
+    content.vb: Protected Overridable Function GetButtonIconCssClasses(aProperties As IUFButtonProperties) As String
+  overload: UltraForce.Library.Core.Asp.Services.UFFontAwesomeTheme.GetButtonIconCssClasses*
 references:
 - uid: UltraForce.Library.Core.Asp.Services.UFFontAwesomeTheme
   commentId: T:UltraForce.Library.Core.Asp.Services.UFFontAwesomeTheme
@@ -1766,9 +1768,9 @@ references:
   - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
     name: Buttons
     href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.html
-- uid: UltraForce.Library.Core.Asp.Services.UFFontAwesomeTheme.GetIconCssClasses*
-  commentId: Overload:UltraForce.Library.Core.Asp.Services.UFFontAwesomeTheme.GetIconCssClasses
-  href: UltraForce.Library.Core.Asp.Services.UFFontAwesomeTheme.html#UltraForce_Library_Core_Asp_Services_UFFontAwesomeTheme_GetIconCssClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_IUFButtonProperties_
-  name: GetIconCssClasses
-  nameWithType: UFFontAwesomeTheme.GetIconCssClasses
-  fullName: UltraForce.Library.Core.Asp.Services.UFFontAwesomeTheme.GetIconCssClasses
+- uid: UltraForce.Library.Core.Asp.Services.UFFontAwesomeTheme.GetButtonIconCssClasses*
+  commentId: Overload:UltraForce.Library.Core.Asp.Services.UFFontAwesomeTheme.GetButtonIconCssClasses
+  href: UltraForce.Library.Core.Asp.Services.UFFontAwesomeTheme.html#UltraForce_Library_Core_Asp_Services_UFFontAwesomeTheme_GetButtonIconCssClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_IUFButtonProperties_
+  name: GetButtonIconCssClasses
+  nameWithType: UFFontAwesomeTheme.GetButtonIconCssClasses
+  fullName: UltraForce.Library.Core.Asp.Services.UFFontAwesomeTheme.GetButtonIconCssClasses
