@@ -351,12 +351,6 @@ public interface IUFTheme
   string GetFilterContainerClasses();
 
   /// <summary>
-  /// Returns the css classes to use for the label element within the filter container.
-  /// </summary>
-  /// <returns></returns>
-  string GetFilterLabelClasses();
-
-  /// <summary>
   /// Returns the css classes to use for input element within the filter container.
   /// </summary>
   /// <returns></returns>

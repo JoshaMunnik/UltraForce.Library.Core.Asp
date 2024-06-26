@@ -24,7 +24,6 @@ items:
   - UltraForce.Library.Core.Asp.Services.IUFTheme.GetFilterButtonClasses
   - UltraForce.Library.Core.Asp.Services.IUFTheme.GetFilterContainerClasses
   - UltraForce.Library.Core.Asp.Services.IUFTheme.GetFilterInputClasses
-  - UltraForce.Library.Core.Asp.Services.IUFTheme.GetFilterLabelClasses
   - UltraForce.Library.Core.Asp.Services.IUFTheme.GetRadioExtraHtml
   - UltraForce.Library.Core.Asp.Services.IUFTheme.GetRadioInputClasses
   - UltraForce.Library.Core.Asp.Services.IUFTheme.GetRadioLabelClasses
@@ -1485,37 +1484,6 @@ items:
       description: ''
     content.vb: Function GetFilterContainerClasses() As String
   overload: UltraForce.Library.Core.Asp.Services.IUFTheme.GetFilterContainerClasses*
-- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetFilterLabelClasses
-  commentId: M:UltraForce.Library.Core.Asp.Services.IUFTheme.GetFilterLabelClasses
-  id: GetFilterLabelClasses
-  parent: UltraForce.Library.Core.Asp.Services.IUFTheme
-  langs:
-  - csharp
-  - vb
-  name: GetFilterLabelClasses()
-  nameWithType: IUFTheme.GetFilterLabelClasses()
-  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetFilterLabelClasses()
-  type: Method
-  source:
-    remote:
-      path: UltraForce.Library.Core.Asp/Services/IUFTheme.cs
-      branch: master
-      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
-    id: GetFilterLabelClasses
-    path: ../UltraForce.Library.Core.Asp/Services/IUFTheme.cs
-    startLine: 356
-  assemblies:
-  - UltraForce.Library.Core.Asp
-  namespace: UltraForce.Library.Core.Asp.Services
-  summary: Returns the css classes to use for the label element within the filter container.
-  example: []
-  syntax:
-    content: string GetFilterLabelClasses()
-    return:
-      type: System.String
-      description: ''
-    content.vb: Function GetFilterLabelClasses() As String
-  overload: UltraForce.Library.Core.Asp.Services.IUFTheme.GetFilterLabelClasses*
 - uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetFilterInputClasses
   commentId: M:UltraForce.Library.Core.Asp.Services.IUFTheme.GetFilterInputClasses
   id: GetFilterInputClasses
@@ -1534,7 +1502,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetFilterInputClasses
     path: ../UltraForce.Library.Core.Asp/Services/IUFTheme.cs
-    startLine: 362
+    startLine: 356
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Services
@@ -1565,7 +1533,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetFilterButtonClasses
     path: ../UltraForce.Library.Core.Asp/Services/IUFTheme.cs
-    startLine: 368
+    startLine: 362
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Services
@@ -1596,7 +1564,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetSortAscendingClasses
     path: ../UltraForce.Library.Core.Asp/Services/IUFTheme.cs
-    startLine: 378
+    startLine: 372
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Services
@@ -1636,7 +1604,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetSortDescendingClasses
     path: ../UltraForce.Library.Core.Asp/Services/IUFTheme.cs
-    startLine: 388
+    startLine: 382
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Services
@@ -1676,7 +1644,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: IsCssClass
     path: ../UltraForce.Library.Core.Asp/Services/IUFTheme.cs
-    startLine: 399
+    startLine: 393
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Services
@@ -2533,12 +2501,6 @@ references:
   name: GetFilterContainerClasses
   nameWithType: IUFTheme.GetFilterContainerClasses
   fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetFilterContainerClasses
-- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetFilterLabelClasses*
-  commentId: Overload:UltraForce.Library.Core.Asp.Services.IUFTheme.GetFilterLabelClasses
-  href: UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetFilterLabelClasses
-  name: GetFilterLabelClasses
-  nameWithType: IUFTheme.GetFilterLabelClasses
-  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetFilterLabelClasses
 - uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetFilterInputClasses*
   commentId: Overload:UltraForce.Library.Core.Asp.Services.IUFTheme.GetFilterInputClasses
   href: UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetFilterInputClasses

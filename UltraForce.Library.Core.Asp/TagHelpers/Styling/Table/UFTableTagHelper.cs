@@ -113,16 +113,13 @@ public class UFTableTagHelper(IUFTheme aTheme) : UFTagHelperWithTheme(aTheme), I
   private void AddFilter(TagHelperOutput anOutput, string aTableId)
   {
     anOutput.Attributes.SetAttribute(UFDataAttribute.Filter, "1");
-    string inputId = UFHtmlTools.NewDomId();
     string buttonId = UFHtmlTools.NewDomId();
-    string label =
-      $"<label class=\"{this.Theme.GetFilterLabelClasses()}\" for=\"{inputId}\">Filter:</label>";
     string input =
-      $"<input class=\"{this.Theme.GetFilterInputClasses()}\" type=\"text\" {UFDataAttribute.ClearInput}=\"#{buttonId}\" {UFDataAttribute.FilterTable}=\"#{aTableId}\" autocomplete=\"off\" />";
+      $"<input class=\"{this.Theme.GetFilterInputClasses()}\" placeholder=\"filter...\" type=\"text\" {UFDataAttribute.ClearInput}=\"#{buttonId}\" {UFDataAttribute.FilterTable}=\"#{aTableId}\" autocomplete=\"off\" />";
     string button =
       $"<button id=\"{buttonId}\" class=\"{this.Theme.GetFilterButtonClasses()}\">clear</button>";
     anOutput.PreElement.AppendHtml(
-      $"<div><div class=\"{this.Theme.GetFilterContainerClasses()}\">{label}{input}{button}</div>"
+      $"<div><div class=\"{this.Theme.GetFilterContainerClasses()}\">{input}{button}</div>"
     );
     anOutput.PostElement.AppendHtml("</div>");
   }
