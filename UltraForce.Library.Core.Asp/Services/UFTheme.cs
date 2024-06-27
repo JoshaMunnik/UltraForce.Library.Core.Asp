@@ -331,12 +331,6 @@ public class UFTheme : IUFTheme
   }
 
   /// <inheritdoc />
-  public virtual string GetFilterLabelClasses()
-  {
-    return "";
-  }
-
-  /// <inheritdoc />
   public virtual string GetFilterInputClasses()
   {
     return "";

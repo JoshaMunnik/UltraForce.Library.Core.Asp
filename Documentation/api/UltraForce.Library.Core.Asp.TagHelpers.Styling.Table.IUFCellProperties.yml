@@ -5,8 +5,8 @@ items:
   id: IUFCellProperties
   parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table
   children:
-  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties.Filter
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties.Horizontal
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties.NoFilter
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties.TextSize
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties.Vertical
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties.Width
@@ -94,42 +94,42 @@ items:
       type: UltraForce.Library.Core.Asp.Types.Enums.UFContentPosition
     content.vb: Property Vertical As UFContentPosition
   overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties.Vertical*
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties.Filter
-  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties.Filter
-  id: Filter
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties.NoFilter
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties.NoFilter
+  id: NoFilter
   parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties
   langs:
   - csharp
   - vb
-  name: Filter
-  nameWithType: IUFCellProperties.Filter
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties.Filter
+  name: NoFilter
+  nameWithType: IUFCellProperties.NoFilter
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties.NoFilter
   type: Property
   source:
     remote:
       path: UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/IUFCellProperties.cs
       branch: master
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
-    id: Filter
+    id: NoFilter
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/IUFCellProperties.cs
     startLine: 50
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table
   summary: >-
-    When true data in the cell can be found via the filter. When false an attribute with
+    When false (default) the data in the cell can be found via the filter. When true an
 
-    the name "data-no-filter" is added to the cell tag. This property is only processed
+    attribute with the name "data-no-filter" is added to the cell tag. This property is
 
-    when <xref href="System.Type" data-throw-if-not-resolved="false"></xref> is <xref href="UltraForce.Library.Core.Asp.Types.Enums.UFTableCellType.Data" data-throw-if-not-resolved="false"></xref>.
+    only processed when <xref href="System.Type" data-throw-if-not-resolved="false"></xref> is <xref href="UltraForce.Library.Core.Asp.Types.Enums.UFTableCellType.Data" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
-    content: bool Filter { get; set; }
+    content: bool NoFilter { get; set; }
     parameters: []
     return:
       type: System.Boolean
-    content.vb: Property Filter As Boolean
-  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties.Filter*
+    content.vb: Property NoFilter As Boolean
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties.NoFilter*
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties.Width
   commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties.Width
   id: Width
@@ -375,12 +375,12 @@ references:
   name: Data
   nameWithType: UFTableCellType.Data
   fullName: UltraForce.Library.Core.Asp.Types.Enums.UFTableCellType.Data
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties.Filter*
-  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties.Filter
-  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_IUFCellProperties_Filter
-  name: Filter
-  nameWithType: IUFCellProperties.Filter
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties.Filter
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties.NoFilter*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties.NoFilter
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_IUFCellProperties_NoFilter
+  name: NoFilter
+  nameWithType: IUFCellProperties.NoFilter
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties.NoFilter
 - uid: System.Boolean
   commentId: T:System.Boolean
   parent: System

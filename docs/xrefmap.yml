@@ -1553,19 +1553,6 @@ references:
   isSpec: "True"
   fullName: UltraForce.Library.Core.Asp.Services.UFTheme.GetFilterInputClasses
   nameWithType: UFTheme.GetFilterInputClasses
-- uid: UltraForce.Library.Core.Asp.Services.UFTheme.GetFilterLabelClasses
-  name: GetFilterLabelClasses()
-  href: api/UltraForce.Library.Core.Asp.Services.UFTheme.html#UltraForce_Library_Core_Asp_Services_UFTheme_GetFilterLabelClasses
-  commentId: M:UltraForce.Library.Core.Asp.Services.UFTheme.GetFilterLabelClasses
-  fullName: UltraForce.Library.Core.Asp.Services.UFTheme.GetFilterLabelClasses()
-  nameWithType: UFTheme.GetFilterLabelClasses()
-- uid: UltraForce.Library.Core.Asp.Services.UFTheme.GetFilterLabelClasses*
-  name: GetFilterLabelClasses
-  href: api/UltraForce.Library.Core.Asp.Services.UFTheme.html#UltraForce_Library_Core_Asp_Services_UFTheme_GetFilterLabelClasses_
-  commentId: Overload:UltraForce.Library.Core.Asp.Services.UFTheme.GetFilterLabelClasses
-  isSpec: "True"
-  fullName: UltraForce.Library.Core.Asp.Services.UFTheme.GetFilterLabelClasses
-  nameWithType: UFTheme.GetFilterLabelClasses
 - uid: UltraForce.Library.Core.Asp.Services.UFTheme.GetRadioExtraHtml
   name: GetRadioExtraHtml()
   href: api/UltraForce.Library.Core.Asp.Services.UFTheme.html#UltraForce_Library_Core_Asp_Services_UFTheme_GetRadioExtraHtml
@@ -5041,19 +5028,6 @@ references:
   commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties
   fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties
   nameWithType: IUFCellProperties
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties.Filter
-  name: Filter
-  href: api/UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_IUFCellProperties_Filter
-  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties.Filter
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties.Filter
-  nameWithType: IUFCellProperties.Filter
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties.Filter*
-  name: Filter
-  href: api/UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_IUFCellProperties_Filter_
-  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties.Filter
-  isSpec: "True"
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties.Filter
-  nameWithType: IUFCellProperties.Filter
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties.Horizontal
   name: Horizontal
   href: api/UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_IUFCellProperties_Horizontal
@@ -5067,6 +5041,19 @@ references:
   isSpec: "True"
   fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties.Horizontal
   nameWithType: IUFCellProperties.Horizontal
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties.NoFilter
+  name: NoFilter
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_IUFCellProperties_NoFilter
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties.NoFilter
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties.NoFilter
+  nameWithType: IUFCellProperties.NoFilter
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties.NoFilter*
+  name: NoFilter
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_IUFCellProperties_NoFilter_
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties.NoFilter
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties.NoFilter
+  nameWithType: IUFCellProperties.NoFilter
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties.TextSize
   name: TextSize
   href: api/UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_IUFCellProperties_TextSize
@@ -5260,19 +5247,6 @@ references:
   fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.New
   nameWithType: UFCellTagHelper.UFCellTagHelper
   nameWithType.vb: UFCellTagHelper.New
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.Filter
-  name: Filter
-  href: api/UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_UFCellTagHelper_Filter
-  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.Filter
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.Filter
-  nameWithType: UFCellTagHelper.Filter
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.Filter*
-  name: Filter
-  href: api/UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_UFCellTagHelper_Filter_
-  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.Filter
-  isSpec: "True"
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.Filter
-  nameWithType: UFCellTagHelper.Filter
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.For
   name: For
   href: api/UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_UFCellTagHelper_For
@@ -5299,6 +5273,19 @@ references:
   isSpec: "True"
   fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.Horizontal
   nameWithType: UFCellTagHelper.Horizontal
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.NoFilter
+  name: NoFilter
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_UFCellTagHelper_NoFilter
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.NoFilter
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.NoFilter
+  nameWithType: UFCellTagHelper.NoFilter
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.NoFilter*
+  name: NoFilter
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_UFCellTagHelper_NoFilter_
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.NoFilter
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.NoFilter
+  nameWithType: UFCellTagHelper.NoFilter
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
   name: ProcessAsync(TagHelperContext, TagHelperOutput)
   href: api/UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_UFCellTagHelper_ProcessAsync_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContext_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_

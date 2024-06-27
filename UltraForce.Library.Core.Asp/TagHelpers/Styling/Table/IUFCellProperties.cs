@@ -44,11 +44,11 @@ public interface IUFCellProperties
   UFContentPosition Vertical { get; set; }
 
   /// <summary>
-  /// When true data in the cell can be found via the filter. When false an attribute with
-  /// the name "data-no-filter" is added to the cell tag. This property is only processed
-  /// when <see cref="Type"/> is <see cref="UFTableCellType.Data"/>.
+  /// When false (default) the data in the cell can be found via the filter. When true an
+  /// attribute with the name "data-no-filter" is added to the cell tag. This property is
+  /// only processed when <see cref="Type"/> is <see cref="UFTableCellType.Data"/>.
   /// </summary>
-  bool Filter { get; set; }
+  bool NoFilter { get; set; }
 
   /// <summary>
   /// When non empty, set this value as width value. This can either be a css class or a

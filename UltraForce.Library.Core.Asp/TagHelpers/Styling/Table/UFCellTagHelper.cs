@@ -144,8 +144,8 @@ public class UFCellTagHelper(IUFModelExpressionRenderer aModelExpressionRenderer
   /// the name "data-no-filter" is added to the cell tag. This property is only processed
   /// when <see cref="Type"/> is <see cref="UFTableCellType.Data"/>.
   /// </summary>
-  [HtmlAttributeName("filter")]
-  public bool Filter { get; set; } = true;
+  [HtmlAttributeName("no-filter")]
+  public bool NoFilter { get; set; } = false;
 
   /// <summary>
   /// Size of text within the cell
@@ -154,10 +154,10 @@ public class UFCellTagHelper(IUFModelExpressionRenderer aModelExpressionRenderer
   public UFTableTextSize TextSize { get; set; } = UFTableTextSize.Normal;
 
   /// <summary>
-  /// When true wrap content if cell is to small
+  /// When true wrap content if cell is to small.
   /// </summary>
   [HtmlAttributeName("wrap")]
-  public bool Wrap { get; set; } = true;
+  public bool Wrap { get; set; } = false;
 
   #endregion
 
@@ -181,7 +181,7 @@ public class UFCellTagHelper(IUFModelExpressionRenderer aModelExpressionRenderer
     }
     if (table.Filter)
     {
-      this.SetNoFilter(anOutput);
+      this.SetFilter(anOutput);
     }
     this.UpdateClasses(anOutput, type, table, tableRow);
     if (
@@ -285,12 +285,12 @@ public class UFCellTagHelper(IUFModelExpressionRenderer aModelExpressionRenderer
 
   /// <summary>
   /// Adds a <see cref="UFDataAttribute.NoFilter"/> attribute if the cell is a data cell and
-  /// <see cref="Filter"/> is false.
+  /// <see cref="NoFilter"/> is true.
   /// </summary>
   /// <param name="anOutput"></param>
-  private void SetNoFilter(TagHelperOutput anOutput)
+  private void SetFilter(TagHelperOutput anOutput)
   {
-    if ((this.Type == UFTableCellType.Data) && !this.Filter)
+    if ((this.Type == UFTableCellType.Data) && this.NoFilter)
     {
       anOutput.Attributes.SetAttribute(UFDataAttribute.NoFilter, "1");
     }

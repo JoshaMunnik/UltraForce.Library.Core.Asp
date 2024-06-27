@@ -14,8 +14,12 @@
         <RepositoryUrl>https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp</RepositoryUrl>
         <PackageReadmeFile>README.md</PackageReadmeFile>
         <AssemblyVersion></AssemblyVersion>
-        <Version>1.0.7</Version>
-        <PackageReleaseNotes>1.0.7
+        <Version>1.0.8</Version>
+        <PackageReleaseNotes>1.0.8
+Renamed IUFTableCellProperties.Filter to NoFilter
+UFCellTagHelper.Wrap is now false when not set
+
+1.0.7
 Removed label with table filter (using placeholder)
 Removed table filter label related call in IUFTheme
 

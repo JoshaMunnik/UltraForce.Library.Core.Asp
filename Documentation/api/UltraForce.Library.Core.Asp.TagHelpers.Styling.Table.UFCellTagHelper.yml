@@ -6,9 +6,9 @@ items:
   parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table
   children:
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.#ctor(UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer,UltraForce.Library.Core.Asp.Services.IUFTheme)
-  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.Filter
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.For
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.Horizontal
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.NoFilter
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.SortType
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.TextSize
@@ -522,23 +522,23 @@ items:
     arguments:
     - type: System.String
       value: vertical
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.Filter
-  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.Filter
-  id: Filter
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.NoFilter
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.NoFilter
+  id: NoFilter
   parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper
   langs:
   - csharp
   - vb
-  name: Filter
-  nameWithType: UFCellTagHelper.Filter
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.Filter
+  name: NoFilter
+  nameWithType: UFCellTagHelper.NoFilter
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.NoFilter
   type: Property
   source:
     remote:
       path: UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/UFCellTagHelper.cs
       branch: master
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
-    id: Filter
+    id: NoFilter
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/UFCellTagHelper.cs
     startLine: 146
   assemblies:
@@ -553,25 +553,25 @@ items:
   example: []
   syntax:
     content: >-
-      [HtmlAttributeName("filter")]
+      [HtmlAttributeName("no-filter")]
 
-      public bool Filter { get; set; }
+      public bool NoFilter { get; set; }
     parameters: []
     return:
       type: System.Boolean
     content.vb: >-
-      <HtmlAttributeName("filter")>
+      <HtmlAttributeName("no-filter")>
 
-      Public Property Filter As Boolean
-  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.Filter*
+      Public Property NoFilter As Boolean
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.NoFilter*
   implements:
-  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties.Filter
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties.NoFilter
   attributes:
   - type: Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute
     ctor: Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute.#ctor(System.String)
     arguments:
     - type: System.String
-      value: filter
+      value: no-filter
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.TextSize
   commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.TextSize
   id: TextSize
@@ -639,7 +639,7 @@ items:
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table
-  summary: When true wrap content if cell is to small
+  summary: When true wrap content if cell is to small.
   example: []
   syntax:
     content: >-
@@ -1591,19 +1591,19 @@ references:
   name: Data
   nameWithType: UFTableCellType.Data
   fullName: UltraForce.Library.Core.Asp.Types.Enums.UFTableCellType.Data
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.Filter*
-  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.Filter
-  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_UFCellTagHelper_Filter
-  name: Filter
-  nameWithType: UFCellTagHelper.Filter
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.Filter
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties.Filter
-  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties.Filter
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.NoFilter*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.NoFilter
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_UFCellTagHelper_NoFilter
+  name: NoFilter
+  nameWithType: UFCellTagHelper.NoFilter
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.NoFilter
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties.NoFilter
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties.NoFilter
   parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties
-  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_IUFCellProperties_Filter
-  name: Filter
-  nameWithType: IUFCellProperties.Filter
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties.Filter
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_IUFCellProperties_NoFilter
+  name: NoFilter
+  nameWithType: IUFCellProperties.NoFilter
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties.NoFilter
 - uid: System.Boolean
   commentId: T:System.Boolean
   parent: System

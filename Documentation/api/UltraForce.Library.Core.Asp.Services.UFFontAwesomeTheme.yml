@@ -75,7 +75,6 @@ items:
   - UltraForce.Library.Core.Asp.Services.UFTheme.GetTableHeaderButtonClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties,UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties,UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableRowProperties)
   - UltraForce.Library.Core.Asp.Services.UFTheme.GetTableRowClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableRowProperties,UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties)
   - UltraForce.Library.Core.Asp.Services.UFTheme.GetFilterContainerClasses
-  - UltraForce.Library.Core.Asp.Services.UFTheme.GetFilterLabelClasses
   - UltraForce.Library.Core.Asp.Services.UFTheme.GetFilterInputClasses
   - UltraForce.Library.Core.Asp.Services.UFTheme.GetFilterButtonClasses
   - UltraForce.Library.Core.Asp.Services.UFTheme.GetSortAscendingClasses
@@ -1284,25 +1283,6 @@ references:
   - uid: UltraForce.Library.Core.Asp.Services.UFTheme.GetFilterContainerClasses
     name: GetFilterContainerClasses
     href: UltraForce.Library.Core.Asp.Services.UFTheme.html#UltraForce_Library_Core_Asp_Services_UFTheme_GetFilterContainerClasses
-  - name: (
-  - name: )
-- uid: UltraForce.Library.Core.Asp.Services.UFTheme.GetFilterLabelClasses
-  commentId: M:UltraForce.Library.Core.Asp.Services.UFTheme.GetFilterLabelClasses
-  parent: UltraForce.Library.Core.Asp.Services.UFTheme
-  href: UltraForce.Library.Core.Asp.Services.UFTheme.html#UltraForce_Library_Core_Asp_Services_UFTheme_GetFilterLabelClasses
-  name: GetFilterLabelClasses()
-  nameWithType: UFTheme.GetFilterLabelClasses()
-  fullName: UltraForce.Library.Core.Asp.Services.UFTheme.GetFilterLabelClasses()
-  spec.csharp:
-  - uid: UltraForce.Library.Core.Asp.Services.UFTheme.GetFilterLabelClasses
-    name: GetFilterLabelClasses
-    href: UltraForce.Library.Core.Asp.Services.UFTheme.html#UltraForce_Library_Core_Asp_Services_UFTheme_GetFilterLabelClasses
-  - name: (
-  - name: )
-  spec.vb:
-  - uid: UltraForce.Library.Core.Asp.Services.UFTheme.GetFilterLabelClasses
-    name: GetFilterLabelClasses
-    href: UltraForce.Library.Core.Asp.Services.UFTheme.html#UltraForce_Library_Core_Asp_Services_UFTheme_GetFilterLabelClasses
   - name: (
   - name: )
 - uid: UltraForce.Library.Core.Asp.Services.UFTheme.GetFilterInputClasses
