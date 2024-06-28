@@ -639,20 +639,20 @@ items:
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table
-  summary: When true wrap content if cell is to small.
+  summary: How to wrap the content.
   example: []
   syntax:
     content: >-
       [HtmlAttributeName("wrap")]
 
-      public bool Wrap { get; set; }
+      public UFWrapType Wrap { get; set; }
     parameters: []
     return:
-      type: System.Boolean
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFWrapType
     content.vb: >-
       <HtmlAttributeName("wrap")>
 
-      Public Property Wrap As Boolean
+      Public Property Wrap As UFWrapType
   overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.Wrap*
   implements:
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties.Wrap
@@ -1648,6 +1648,13 @@ references:
   name: Wrap
   nameWithType: IUFCellProperties.Wrap
   fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties.Wrap
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFWrapType
+  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFWrapType
+  parent: UltraForce.Library.Core.Asp.Types.Enums
+  href: UltraForce.Library.Core.Asp.Types.Enums.UFWrapType.html
+  name: UFWrapType
+  nameWithType: UFWrapType
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFWrapType
 - uid: System.Threading.Tasks.Task
   commentId: T:System.Threading.Tasks.Task
   parent: System.Threading.Tasks

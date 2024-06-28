@@ -14,8 +14,11 @@
         <RepositoryUrl>https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp</RepositoryUrl>
         <PackageReadmeFile>README.md</PackageReadmeFile>
         <AssemblyVersion></AssemblyVersion>
-        <Version>1.0.8</Version>
-        <PackageReleaseNotes>1.0.8
+        <Version>1.0.9</Version>
+        <PackageReleaseNotes>1.0.9
+IUFCellProperties.Wrap is now using UFWrapType
+
+1.0.8
 Renamed IUFTableCellProperties.Filter to NoFilter
 UFCellTagHelper.Wrap is now false when not set
 

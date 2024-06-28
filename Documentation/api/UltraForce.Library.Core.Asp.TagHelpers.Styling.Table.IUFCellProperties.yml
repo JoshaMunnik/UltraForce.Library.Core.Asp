@@ -220,11 +220,11 @@ items:
   summary: When true wrap content if cell is to small
   example: []
   syntax:
-    content: bool Wrap { get; set; }
+    content: UFWrapType Wrap { get; set; }
     parameters: []
     return:
-      type: System.Boolean
-    content.vb: Property Wrap As Boolean
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFWrapType
+    content.vb: Property Wrap As UFWrapType
   overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties.Wrap*
 references:
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table
@@ -435,3 +435,10 @@ references:
   name: Wrap
   nameWithType: IUFCellProperties.Wrap
   fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties.Wrap
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFWrapType
+  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFWrapType
+  parent: UltraForce.Library.Core.Asp.Types.Enums
+  href: UltraForce.Library.Core.Asp.Types.Enums.UFWrapType.html
+  name: UFWrapType
+  nameWithType: UFWrapType
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFWrapType

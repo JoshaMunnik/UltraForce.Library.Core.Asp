@@ -154,10 +154,10 @@ public class UFCellTagHelper(IUFModelExpressionRenderer aModelExpressionRenderer
   public UFTableTextSize TextSize { get; set; } = UFTableTextSize.Normal;
 
   /// <summary>
-  /// When true wrap content if cell is to small.
+  /// How to wrap the content.
   /// </summary>
   [HtmlAttributeName("wrap")]
-  public bool Wrap { get; set; } = false;
+  public UFWrapType Wrap { get; set; } = UFWrapType.None;
 
   #endregion
 

@@ -64,5 +64,5 @@ public interface IUFCellProperties
   /// <summary>
   /// When true wrap content if cell is to small
   /// </summary>
-  bool Wrap { get; set; }
+  UFWrapType Wrap { get; set; }
 }
