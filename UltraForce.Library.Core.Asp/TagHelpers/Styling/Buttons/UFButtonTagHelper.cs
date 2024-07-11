@@ -39,7 +39,8 @@ using UltraForce.Library.Core.Asp.Types.Enums;
 namespace UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons;
 
 /// <summary>
-/// Renders a button or link using a button styling.
+/// Renders a button or link using a button styling. When rendering a button the default type is
+/// button; use the <see cref="Submit"/> property to change it to submit.
 /// <para>
 /// Renders:<br/>
 /// &lt;{a|button|div} class="{GetButtonCssClasses()}" {href} {disabled}&gt;<br/>
@@ -87,8 +88,12 @@ public class UFButtonTagHelper(
   public bool Disabled { get; set; } = false;
 
   /// <inheritdoc />
-  [HtmlAttributeName("interactive")]
-  public bool Interactive { get; set; } = true;
+  [HtmlAttributeName("static")]
+  public bool Static { get; set; } = false;
+
+  /// <inheritdoc />
+  [HtmlAttributeName("submit")]
+  public bool Submit { get; set; } = false;
 
   #endregion
 
@@ -131,11 +136,15 @@ public class UFButtonTagHelper(
     await base.ProcessAsync(context, output);
     string iconHtml = this.GetButtonIconHtml();
     bool hasHref = this.ProcessHref(output);
-    output.TagName = !this.Interactive ? "div" : hasHref ? "a" : "button";
+    output.TagName = this.Static ? "div" : hasHref ? "a" : "button";
     output.TagMode = TagMode.StartTagAndEndTag;
     if (this.Disabled)
     {
       output.Attributes.SetAttribute("disabled", "disabled");
+    }
+    if ((output.TagName == "button") && !output.Attributes.ContainsName("type"))
+    {
+      output.Attributes.SetAttribute("type", this.Submit ? "submit" : "button");
     }
     TagHelperContent? children = await output.GetChildContentAsync();
     if (children is { IsEmptyOrWhiteSpace: false })

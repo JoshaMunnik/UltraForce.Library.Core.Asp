@@ -14,8 +14,12 @@
         <RepositoryUrl>https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp</RepositoryUrl>
         <PackageReadmeFile>README.md</PackageReadmeFile>
         <AssemblyVersion></AssemblyVersion>
-        <Version>1.0.9</Version>
-        <PackageReleaseNotes>1.0.9
+        <Version>1.0.10</Version>
+        <PackageReleaseNotes>1.0.10
+Added Submit to IUFButtonProperties
+Renamed Interactive to Static in IUFButtonProperties and swapped its functionality
+
+1.0.9
 IUFCellProperties.Wrap is now using UFWrapType
 
 1.0.8

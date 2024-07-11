@@ -68,7 +68,13 @@ public interface IUFButtonProperties
   public bool Disabled { get; set; }
 
   /// <summary>
-  /// When <code>false</code> the button is rendered with a div element.
+  /// When <code>true</code> the button is rendered with a div element.
   /// </summary>
-  public bool Interactive { get; set; }
+  public bool Static { get; set; }
+  
+  /// <summary>
+  /// When <code>true</code> the button type is set to submit. This property is only of use if
+  /// the button is placed inside a form element.
+  /// </summary>
+  public bool Submit { get; set; }
 }

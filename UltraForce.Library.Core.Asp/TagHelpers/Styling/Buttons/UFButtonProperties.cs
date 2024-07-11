@@ -56,5 +56,8 @@ public class UFButtonProperties : IUFButtonProperties
   public bool Disabled { get; set; } = false;
 
   /// <inheritdoc />
-  public bool Interactive { get; set; } = true;
+  public bool Static { get; set; } = false;
+
+  /// <inheritdoc />
+  public bool Submit { get; set; } = false;
 }

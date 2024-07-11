@@ -1,0 +1,206 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFWrapType
+  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFWrapType
+  id: UFWrapType
+  parent: UltraForce.Library.Core.Asp.Types.Enums
+  children:
+  - UltraForce.Library.Core.Asp.Types.Enums.UFWrapType.All
+  - UltraForce.Library.Core.Asp.Types.Enums.UFWrapType.None
+  - UltraForce.Library.Core.Asp.Types.Enums.UFWrapType.Normal
+  - UltraForce.Library.Core.Asp.Types.Enums.UFWrapType.Word
+  langs:
+  - csharp
+  - vb
+  name: UFWrapType
+  nameWithType: UFWrapType
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFWrapType
+  type: Enum
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFWrapType.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: UFWrapType
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFWrapType.cs
+    startLine: 2
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  syntax:
+    content: public enum UFWrapType
+    content.vb: Public Enum UFWrapType
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFWrapType.None
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFWrapType.None
+  id: None
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFWrapType
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: UFWrapType.None
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFWrapType.None
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFWrapType.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: None
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFWrapType.cs
+    startLine: 7
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: No wrapping
+  example: []
+  syntax:
+    content: None = 0
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFWrapType
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFWrapType.Normal
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFWrapType.Normal
+  id: Normal
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFWrapType
+  langs:
+  - csharp
+  - vb
+  name: Normal
+  nameWithType: UFWrapType.Normal
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFWrapType.Normal
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFWrapType.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: Normal
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFWrapType.cs
+    startLine: 12
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Normal wrapping (split at word boundaries)
+  example: []
+  syntax:
+    content: Normal = 1
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFWrapType
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFWrapType.Word
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFWrapType.Word
+  id: Word
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFWrapType
+  langs:
+  - csharp
+  - vb
+  name: Word
+  nameWithType: UFWrapType.Word
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFWrapType.Word
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFWrapType.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: Word
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFWrapType.cs
+    startLine: 17
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Split only long words, try to preserve smaller words
+  example: []
+  syntax:
+    content: Word = 2
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFWrapType
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFWrapType.All
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFWrapType.All
+  id: All
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFWrapType
+  langs:
+  - csharp
+  - vb
+  name: All
+  nameWithType: UFWrapType.All
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFWrapType.All
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFWrapType.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: All
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFWrapType.cs
+    startLine: 22
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Split all words
+  example: []
+  syntax:
+    content: All = 3
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFWrapType
+references:
+- uid: UltraForce.Library.Core.Asp.Types.Enums
+  commentId: N:UltraForce.Library.Core.Asp.Types.Enums
+  href: UltraForce.html
+  name: UltraForce.Library.Core.Asp.Types.Enums
+  nameWithType: UltraForce.Library.Core.Asp.Types.Enums
+  fullName: UltraForce.Library.Core.Asp.Types.Enums
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types
+    name: Types
+    href: UltraForce.Library.Core.Asp.Types.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types.Enums
+    name: Enums
+    href: UltraForce.Library.Core.Asp.Types.Enums.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types
+    name: Types
+    href: UltraForce.Library.Core.Asp.Types.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types.Enums
+    name: Enums
+    href: UltraForce.Library.Core.Asp.Types.Enums.html
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFWrapType
+  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFWrapType
+  parent: UltraForce.Library.Core.Asp.Types.Enums
+  href: UltraForce.Library.Core.Asp.Types.Enums.UFWrapType.html
+  name: UFWrapType
+  nameWithType: UFWrapType
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFWrapType

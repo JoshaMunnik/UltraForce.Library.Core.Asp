@@ -9,8 +9,9 @@ items:
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.Disabled
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.Icon
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.IconPosition
-  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.Interactive
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.Size
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.Static
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.Submit
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.Variant
   langs:
   - csharp
@@ -224,37 +225,71 @@ items:
       type: System.Boolean
     content.vb: Property Disabled As Boolean
   overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.Disabled*
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.Interactive
-  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.Interactive
-  id: Interactive
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.Static
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.Static
+  id: Static
   parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties
   langs:
   - csharp
   - vb
-  name: Interactive
-  nameWithType: IUFButtonProperties.Interactive
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.Interactive
+  name: Static
+  nameWithType: IUFButtonProperties.Static
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.Static
   type: Property
   source:
     remote:
       path: UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/IUFButtonProperties.cs
       branch: master
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
-    id: Interactive
+    id: Static
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/IUFButtonProperties.cs
     startLine: 72
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
-  summary: When <pre><code class="lang-csharp">false</code></pre> the button is rendered with a div element.
+  summary: When <pre><code class="lang-csharp">true</code></pre> the button is rendered with a div element.
   example: []
   syntax:
-    content: bool Interactive { get; set; }
+    content: bool Static { get; set; }
     parameters: []
     return:
       type: System.Boolean
-    content.vb: Property Interactive As Boolean
-  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.Interactive*
+    content.vb: Property [Static] As Boolean
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.Static*
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.Submit
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.Submit
+  id: Submit
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties
+  langs:
+  - csharp
+  - vb
+  name: Submit
+  nameWithType: IUFButtonProperties.Submit
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.Submit
+  type: Property
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/IUFButtonProperties.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: Submit
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/IUFButtonProperties.cs
+    startLine: 78
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
+  summary: >-
+    When <pre><code class="lang-csharp">true</code></pre> the button type is set to submit. This property is only of use if
+
+    the button is placed inside a form element.
+  example: []
+  syntax:
+    content: bool Submit { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Property Submit As Boolean
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.Submit*
 references:
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
   commentId: N:UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
@@ -479,9 +514,15 @@ references:
   nameWithType.vb: Boolean
   fullName.vb: Boolean
   name.vb: Boolean
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.Interactive*
-  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.Interactive
-  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_IUFButtonProperties_Interactive
-  name: Interactive
-  nameWithType: IUFButtonProperties.Interactive
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.Interactive
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.Static*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.Static
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_IUFButtonProperties_Static
+  name: Static
+  nameWithType: IUFButtonProperties.Static
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.Static
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.Submit*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.Submit
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_IUFButtonProperties_Submit
+  name: Submit
+  nameWithType: IUFButtonProperties.Submit
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.Submit

@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class UFButtonTagHelper | UltraForce.Library.Core.Asp ">
       
-      <meta name="description" content="Renders a button or link using a button styling.  Renders: &amp;lt;{a|button|div} class=&quot;{GetButtonCssClasses()}&quot; {href} {disabled}&amp;gt; {GetButtonIconHtml()} &amp;lt;span class=&quot;{GetButtonCaptionCssClasses()}&quot;&amp;gt;{children}&amp;lt;/span&amp;gt; &amp;lt;/{a|button|div}&amp;gt;   Part of the code is based on the  implemenation.">
+      <meta name="description" content="Renders a button or link using a button styling. When rendering a button the default type is button; use the  property to change it to submit.  Renders: &amp;lt;{a|button|div} class=&quot;{GetButtonCssClasses()}&quot; {href} {disabled}&amp;gt; {GetButtonIconHtml()} &amp;lt;span class=&quot;{GetButtonCaptionCssClasses()}&quot;&amp;gt;{children}&amp;lt;/span&amp;gt; &amp;lt;/{a|button|div}&amp;gt;   Part of the code is based on the  implemenation.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_UFButtonTagHelper" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper" class="text-break">
-Class UFButtonTagHelper  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonTagHelper.cs/#L54"><i class="bi bi-code-slash"></i></a>
+Class UFButtonTagHelper  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonTagHelper.cs/#L55"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,8 @@ Class UFButtonTagHelper  <a class="header-action link-secondary" title="View sou
   <dl><dt>Assembly</dt><dd>UltraForce.Library.Core.Asp.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Renders a button or link using a button styling.</p>
+  <div class="markdown summary"><p>Renders a button or link using a button styling. When rendering a button the default type is
+button; use the <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_UFButtonTagHelper_Submit">Submit</a> property to change it to submit.</p>
 <p>
 Renders:<br>
 &lt;{a|button|div} class="{GetButtonCssClasses()}" {href} {disabled}&gt;<br>
@@ -219,10 +220,11 @@ public class UFButtonTagHelper : UFClickableTagHelperBase, ITagHelper, ITagHelpe
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_UFButtonTagHelper__ctor_Microsoft_AspNetCore_Mvc_ViewFeatures_IHtmlGenerator_UltraForce_Library_Core_Asp_Services_IUFModelExpressionRenderer_UltraForce_Library_Core_Asp_Services_IUFTheme_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.#ctor(Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator,UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer,UltraForce.Library.Core.Asp.Services.IUFTheme)">
   UFButtonTagHelper(IHtmlGenerator, IUFModelExpressionRenderer, IUFTheme)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonTagHelper.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonTagHelper.cs/#L55"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Renders a button or link using a button styling.</p>
+  <div class="markdown level1 summary"><p>Renders a button or link using a button styling. When rendering a button the default type is
+button; use the <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_UFButtonTagHelper_Submit">Submit</a> property to change it to submit.</p>
 <p>
 Renders:<br>
 &lt;{a|button|div} class="{GetButtonCssClasses()}" {href} {disabled}&gt;<br>
@@ -269,7 +271,7 @@ Part of the code is based on the <a class="xref" href="https://learn.microsoft.c
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_UFButtonTagHelper_Clipboard" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.Clipboard">
   Clipboard
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonTagHelper.cs/#L107"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonTagHelper.cs/#L112"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>When set, an onclick handler is added to copy the value to the clipboard.</p>
@@ -301,7 +303,7 @@ Part of the code is based on the <a class="xref" href="https://learn.microsoft.c
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_UFButtonTagHelper_Color" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.Color">
   Color
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonTagHelper.cs/#L66"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonTagHelper.cs/#L67"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Color scheme to use for the button.</p>
@@ -334,7 +336,7 @@ public UFButtonColor Color { get; set; }</code></pre>
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_UFButtonTagHelper_Disabled" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.Disabled">
   Disabled
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonTagHelper.cs/#L86"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonTagHelper.cs/#L87"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Sets the disabled attribute. Note that this does nothing if the anchor tag is used.</p>
@@ -367,7 +369,7 @@ public bool Disabled { get; set; }</code></pre>
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_UFButtonTagHelper_For" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.For">
   For
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonTagHelper.cs/#L112"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonTagHelper.cs/#L117"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>When set, use it to get a name for. The <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_UFButtonTagHelper_Name">Name</a> property is ignored.</p>
@@ -399,7 +401,7 @@ public bool Disabled { get; set; }</code></pre>
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_UFButtonTagHelper_Icon" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.Icon">
   Icon
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonTagHelper.cs/#L78"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonTagHelper.cs/#L79"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Optional font awesome icon to show in the button. Use the name without the <pre><code class="lang-csharp">fa-</code></pre>
@@ -433,7 +435,7 @@ public string? Icon { get; set; }</code></pre>
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_UFButtonTagHelper_IconPosition" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.IconPosition">
   IconPosition
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonTagHelper.cs/#L82"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonTagHelper.cs/#L83"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Position of the icon in the button. Only of use if <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_IUFButtonProperties_Icon">Icon</a> has been set.</p>
@@ -462,44 +464,11 @@ public UFButtonIconPosition IconPosition { get; set; }</code></pre>
 
 
 
-  <a id="UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_UFButtonTagHelper_Interactive_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.Interactive*"></a>
-
-  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_UFButtonTagHelper_Interactive" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.Interactive">
-  Interactive
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonTagHelper.cs/#L90"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>When <pre><code class="lang-csharp">false</code></pre> the button is rendered with a div element.
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[HtmlAttributeName(&quot;interactive&quot;)]
-public bool Interactive { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
   <a id="UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_UFButtonTagHelper_ModelExpressionRenderer_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.ModelExpressionRenderer*"></a>
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_UFButtonTagHelper_ModelExpressionRenderer" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.ModelExpressionRenderer">
   ModelExpressionRenderer
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonTagHelper.cs/#L191"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonTagHelper.cs/#L200"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -530,7 +499,7 @@ public bool Interactive { get; set; }</code></pre>
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_UFButtonTagHelper_Name" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.Name">
   Name
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonTagHelper.cs/#L117"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonTagHelper.cs/#L122"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>When set, set a name attribute.</p>
@@ -562,7 +531,7 @@ public bool Interactive { get; set; }</code></pre>
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_UFButtonTagHelper_OnClick" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.OnClick">
   OnClick
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonTagHelper.cs/#L101"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonTagHelper.cs/#L106"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Value to set for the onclick attribute of the button. This property is ignored if
@@ -596,7 +565,7 @@ public string? OnClick { get; set; }</code></pre>
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_UFButtonTagHelper_Size" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.Size">
   Size
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonTagHelper.cs/#L70"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonTagHelper.cs/#L71"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Size of the button.</p>
@@ -625,11 +594,78 @@ public UFButtonSize Size { get; set; }</code></pre>
 
 
 
+  <a id="UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_UFButtonTagHelper_Static_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.Static*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_UFButtonTagHelper_Static" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.Static">
+  Static
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonTagHelper.cs/#L91"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>When <pre><code class="lang-csharp">true</code></pre> the button is rendered with a div element.
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HtmlAttributeName(&quot;static&quot;)]
+public bool Static { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_UFButtonTagHelper_Submit_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.Submit*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_UFButtonTagHelper_Submit" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.Submit">
+  Submit
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonTagHelper.cs/#L95"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>When <pre><code class="lang-csharp">true</code></pre> the button type is set to submit. This property is only of use if
+the button is placed inside a form element.
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HtmlAttributeName(&quot;submit&quot;)]
+public bool Submit { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_UFButtonTagHelper_Value_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.Value*"></a>
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_UFButtonTagHelper_Value" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.Value">
   Value
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonTagHelper.cs/#L122"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonTagHelper.cs/#L127"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>When set, set a value attribute.</p>
@@ -661,7 +697,7 @@ public UFButtonSize Size { get; set; }</code></pre>
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_UFButtonTagHelper_Variant" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.Variant">
   Variant
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonTagHelper.cs/#L74"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonTagHelper.cs/#L75"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Style to draw the button in.</p>
@@ -698,7 +734,7 @@ public UFButtonVariant Variant { get; set; }</code></pre>
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_UFButtonTagHelper_GetButtonCaptionClasses" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.GetButtonCaptionClasses">
   GetButtonCaptionClasses()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonTagHelper.cs/#L210"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonTagHelper.cs/#L219"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The default implementation calls <a class="xref" href="UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetButtonCaptionClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_IUFButtonProperties_">GetButtonCaptionClasses(IUFButtonProperties)</a>.</p>
@@ -730,7 +766,7 @@ public UFButtonVariant Variant { get; set; }</code></pre>
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_UFButtonTagHelper_GetButtonClasses" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.GetButtonClasses">
   GetButtonClasses()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonTagHelper.cs/#L219"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonTagHelper.cs/#L228"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The default implementation calls <a class="xref" href="UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetButtonClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_IUFButtonProperties_">GetButtonClasses(IUFButtonProperties)</a>.</p>
@@ -762,7 +798,7 @@ public UFButtonVariant Variant { get; set; }</code></pre>
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_UFButtonTagHelper_GetButtonIconHtml" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.GetButtonIconHtml">
   GetButtonIconHtml()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonTagHelper.cs/#L201"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonTagHelper.cs/#L210"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The default implementation calls <a class="xref" href="UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetButtonIconHtml_UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_IUFButtonProperties_">GetButtonIconHtml(IUFButtonProperties)</a>.</p>
@@ -794,7 +830,7 @@ public UFButtonVariant Variant { get; set; }</code></pre>
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_UFButtonTagHelper_ProcessAsync_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContext_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)">
   ProcessAsync(TagHelperContext, TagHelperOutput)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonTagHelper.cs/#L129"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonTagHelper.cs/#L134"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Asynchronously executes the <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper">TagHelper</a> with the given <code class="paramref">context</code> and
@@ -840,7 +876,7 @@ public UFButtonVariant Variant { get; set; }</code></pre>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonTagHelper.cs/#L54" class="edit-link">Edit this page</a>
+          <a href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonTagHelper.cs/#L55" class="edit-link">Edit this page</a>
         </div>
 
 
