@@ -79,11 +79,6 @@ public static class UFDataAttribute
   public const string FilterTable = "data-uf-filter-table";
 
   /// <summary>
-  /// Used by <see cref="UFTableTagHelper"/>.
-  /// </summary>
-  public const string ClearInput = "data-uf-clear-input";
-  
-  /// <summary>
   /// Used by <see cref="UFTableRowTagHelper"/>.
   /// </summary>
   public const string HeaderRow = "data-uf-header-row";
@@ -102,6 +97,16 @@ public static class UFDataAttribute
   /// Used by various classes.
   /// </summary>
   public const string StorageId = "data-uf-storage-id";
+
+  /// <summary>
+  /// Points to a clickable element
+  /// </summary>
+  public const string SetFieldSelector = "data-uf-set-field-selector";
+  
+  /// <summary>
+  /// Value to set if clickable element is clicked upon.
+  /// </summary>
+  public const string SetFieldValue = "data-uf-set-field-value";
   
   public const string ImagePreview = "data-uf-image-preview";
   
