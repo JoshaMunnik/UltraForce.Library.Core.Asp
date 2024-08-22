@@ -209,7 +209,7 @@ public class UFCellTagHelper(IUFModelExpressionRenderer aModelExpressionRenderer
   {
     if (this.For == null)
     {
-      return UFTableSortType.None;
+      return this.SortType == UFTableSortType.Auto ? UFTableSortType.None : this.SortType;
     }
     Type type = this.For!.Metadata.UnderlyingOrModelType;
     UFTableSortType sortType = this.SortType;
