@@ -99,6 +99,13 @@ public class UFCellTagHelper(IUFModelExpressionRenderer aModelExpressionRenderer
   /// </summary>
   [HtmlAttributeName("sort-type")]
   public UFTableSortType SortType { get; set; } = UFTableSortType.Auto;
+  
+  /// <summary>
+  /// When true the cell contents will not be cached with sorting. This is useful when the cell
+  /// contents will be changed while using a sorted table.
+  /// </summary>
+  [HtmlAttributeName("no-caching")]
+  public bool NoCaching { get; set; } = false;
 
   /// <summary>
   /// An expression to be evaluated against the current model. When set, the method will use the
@@ -189,6 +196,10 @@ public class UFCellTagHelper(IUFModelExpressionRenderer aModelExpressionRenderer
     )
     {
       this.AddButtonWrapper(anOutput, table, tableRow);
+    }
+    if (this.NoCaching)
+    {
+      anOutput.Attributes.SetAttribute(UFDataAttribute.NoCaching, "1");
     }
   }
 

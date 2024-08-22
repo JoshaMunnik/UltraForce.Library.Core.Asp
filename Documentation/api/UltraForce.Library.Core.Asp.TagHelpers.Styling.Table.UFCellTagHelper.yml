@@ -8,6 +8,7 @@ items:
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.#ctor(UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer,UltraForce.Library.Core.Asp.Services.IUFTheme)
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.For
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.Horizontal
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.NoCaching
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.NoFilter
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.SortType
@@ -354,6 +355,52 @@ items:
     arguments:
     - type: System.String
       value: sort-type
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.NoCaching
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.NoCaching
+  id: NoCaching
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper
+  langs:
+  - csharp
+  - vb
+  name: NoCaching
+  nameWithType: UFCellTagHelper.NoCaching
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.NoCaching
+  type: Property
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/UFCellTagHelper.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: NoCaching
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/UFCellTagHelper.cs
+    startLine: 106
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table
+  summary: >-
+    When true the cell contents will not be cached with sorting. This is useful when the cell
+
+    contents will be changed while using a sorted table.
+  example: []
+  syntax:
+    content: >-
+      [HtmlAttributeName("no-caching")]
+
+      public bool NoCaching { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <HtmlAttributeName("no-caching")>
+
+      Public Property NoCaching As Boolean
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.NoCaching*
+  attributes:
+  - type: Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute
+    ctor: Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: no-caching
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.For
   commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.For
   id: For
@@ -372,7 +419,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: For
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/UFCellTagHelper.cs
-    startLine: 122
+    startLine: 129
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table
@@ -450,7 +497,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Horizontal
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/UFCellTagHelper.cs
-    startLine: 132
+    startLine: 139
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table
@@ -495,7 +542,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Vertical
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/UFCellTagHelper.cs
-    startLine: 138
+    startLine: 145
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table
@@ -540,7 +587,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: NoFilter
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/UFCellTagHelper.cs
-    startLine: 146
+    startLine: 153
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table
@@ -590,7 +637,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: TextSize
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/UFCellTagHelper.cs
-    startLine: 152
+    startLine: 159
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table
@@ -635,7 +682,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Wrap
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/UFCellTagHelper.cs
-    startLine: 158
+    startLine: 165
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table
@@ -680,7 +727,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: ProcessAsync
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/UFCellTagHelper.cs
-    startLine: 166
+    startLine: 173
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table
@@ -1479,6 +1526,23 @@ references:
   name: UFTableSortType
   nameWithType: UFTableSortType
   fullName: UltraForce.Library.Core.Asp.Types.Enums.UFTableSortType
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.NoCaching*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.NoCaching
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_UFCellTagHelper_NoCaching
+  name: NoCaching
+  nameWithType: UFCellTagHelper.NoCaching
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.NoCaching
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.SortType
   commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.SortType
   href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_UFCellTagHelper_SortType
@@ -1604,17 +1668,6 @@ references:
   name: NoFilter
   nameWithType: IUFCellProperties.NoFilter
   fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties.NoFilter
-- uid: System.Boolean
-  commentId: T:System.Boolean
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.boolean
-  name: bool
-  nameWithType: bool
-  fullName: bool
-  nameWithType.vb: Boolean
-  fullName.vb: Boolean
-  name.vb: Boolean
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.TextSize*
   commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.TextSize
   href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_UFCellTagHelper_TextSize

@@ -107,6 +107,11 @@ public static class UFDataAttribute
   /// Value to set if clickable element is clicked upon.
   /// </summary>
   public const string SetFieldValue = "data-uf-set-field-value";
+
+  /// <summary>
+  /// When set don't cache values with sorted tables.
+  /// </summary>
+  public const string NoCaching = "data-uf-no-caching";
   
   public const string ImagePreview = "data-uf-image-preview";
   

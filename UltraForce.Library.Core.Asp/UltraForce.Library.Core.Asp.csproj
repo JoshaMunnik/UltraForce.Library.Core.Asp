@@ -14,8 +14,17 @@
         <RepositoryUrl>https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp</RepositoryUrl>
         <PackageReadmeFile>README.md</PackageReadmeFile>
         <AssemblyVersion></AssemblyVersion>
-        <Version>1.0.10</Version>
-        <PackageReleaseNotes>1.0.10
+        <Version>1.0.14</Version>
+        <PackageReleaseNotes>1.0.14
+Added support for data-uf-no-caching with tables.
+
+1.0.13
+UFCells sort-type is now also processed if for attribute is not used.
+
+1.0.12
+Bug fix: clear button with table filter clears input field
+
+1.0.10
 Added Submit to IUFButtonProperties
 Renamed Interactive to Static in IUFButtonProperties and swapped its functionality
 
