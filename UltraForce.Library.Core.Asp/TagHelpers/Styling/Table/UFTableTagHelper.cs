@@ -113,11 +113,11 @@ public class UFTableTagHelper(IUFTheme aTheme) : UFTagHelperWithTheme(aTheme), I
   private void AddFilter(TagHelperOutput anOutput, string aTableId)
   {
     anOutput.Attributes.SetAttribute(UFDataAttribute.Filter, "1");
-    string buttonId = UFHtmlTools.NewDomId();
+    string inputId = UFHtmlTools.NewDomId();
     string input =
-      $"<input class=\"{this.Theme.GetFilterInputClasses()}\" placeholder=\"filter...\" type=\"text\" {UFDataAttribute.ClearInput}=\"#{buttonId}\" {UFDataAttribute.FilterTable}=\"#{aTableId}\" autocomplete=\"off\" />";
+      $"<input id=\"{inputId}\" class=\"{this.Theme.GetFilterInputClasses()}\" placeholder=\"filter...\" type=\"text\" {UFDataAttribute.FilterTable}=\"#{aTableId}\" autocomplete=\"off\" />";
     string button =
-      $"<button id=\"{buttonId}\" class=\"{this.Theme.GetFilterButtonClasses()}\">clear</button>";
+      $"<button class=\"{this.Theme.GetFilterButtonClasses()}\" {UFDataAttribute.SetFieldSelector}=\"#{inputId}\">clear</button>";
     anOutput.PreElement.AppendHtml(
       $"<div><div class=\"{this.Theme.GetFilterContainerClasses()}\">{input}{button}</div>"
     );
