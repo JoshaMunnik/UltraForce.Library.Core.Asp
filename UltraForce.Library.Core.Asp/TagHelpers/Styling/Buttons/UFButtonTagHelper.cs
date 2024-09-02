@@ -35,12 +35,17 @@ using UltraForce.Library.Core.Asp.Services;
 using UltraForce.Library.Core.Asp.TagHelpers.Lib;
 using UltraForce.Library.Core.Asp.Tools;
 using UltraForce.Library.Core.Asp.Types.Enums;
+using UltraForce.Library.NetStandard.Tools;
 
 namespace UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons;
 
 /// <summary>
 /// Renders a button or link using a button styling. When rendering a button the default type is
 /// button; use the <see cref="Submit"/> property to change it to submit.
+/// <para>
+/// If the <see cref="Color"/> is set to <see cref="UFButtonColor.Auto"/> the class will
+/// update it to one of the other color values depending on the state of the button.
+/// </para>
 /// <para>
 /// Renders:<br/>
 /// &lt;{a|button|div} class="{GetButtonCssClasses()}" {href} {disabled}&gt;<br/>
@@ -54,6 +59,7 @@ namespace UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons;
 /// </summary>
 [SuppressMessage("ReSharper", "ClassWithVirtualMembersNeverInherited.Global")]
 [HtmlTargetElement("uf-button")]
+[SuppressMessage("ReSharper", "MemberCanBePrivate.Global")]
 public class UFButtonTagHelper(
   IHtmlGenerator aHtmlGenerator,
   IUFModelExpressionRenderer aModelExpressionRenderer,
@@ -65,7 +71,7 @@ public class UFButtonTagHelper(
 
   /// <inheritdoc />
   [HtmlAttributeName("color")]
-  public UFButtonColor Color { get; set; } = UFButtonColor.Normal;
+  public UFButtonColor Color { get; set; } = UFButtonColor.Auto;
 
   /// <inheritdoc />
   [HtmlAttributeName("size")]
@@ -81,7 +87,7 @@ public class UFButtonTagHelper(
 
   /// <inheritdoc />
   [HtmlAttributeName("icon-position")]
-  public UFButtonIconPosition IconPosition { get; set; } = UFButtonIconPosition.Start;
+  public UFButtonIconPosition IconPosition { get; set; } = UFButtonIconPosition.Auto;
 
   /// <inheritdoc />
   [HtmlAttributeName("disabled")]
@@ -117,7 +123,7 @@ public class UFButtonTagHelper(
   public ModelExpression? For { get; set; }
 
   /// <summary>
-  /// When set, set a name attribute.
+  /// When set, set a name attribute. This property is not used if <see cref="For"/> is set.
   /// </summary>
   public string? Name { get; set; }
 
@@ -134,23 +140,36 @@ public class UFButtonTagHelper(
   public override async Task ProcessAsync(TagHelperContext context, TagHelperOutput output)
   {
     await base.ProcessAsync(context, output);
-    string iconHtml = this.GetButtonIconHtml();
     bool hasHref = this.ProcessHref(output);
     output.TagName = this.Static ? "div" : hasHref ? (this.Disabled ? "div" : "a") : "button";
     output.TagMode = TagMode.StartTagAndEndTag;
-    if (this.Disabled && !hasHref)
+    UFButtonProperties properties = new ();
+    UFObjectTools.CopyProperties<IUFButtonProperties>(this, properties);
+    if (this.Disabled)
     {
-      output.Attributes.SetAttribute("disabled", "disabled");
+      if (!hasHref)
+      {
+        output.Attributes.SetAttribute("disabled", "disabled");
+      }
+      else if (properties.Color == UFButtonColor.Auto)
+      {
+        properties.Color = UFButtonColor.Disabled;
+      }
+    }
+    if (properties.Color == UFButtonColor.Auto)
+    {
+      properties.Color = UFButtonColor.Normal;
     }
     if ((output.TagName == "button") && !output.Attributes.ContainsName("type"))
     {
       output.Attributes.SetAttribute("type", this.Submit ? "submit" : "button");
     }
+    string iconHtml = this.GetButtonIconHtml(properties);
     TagHelperContent? children = await output.GetChildContentAsync();
     if (children is { IsEmptyOrWhiteSpace: false })
     {
       output.PreContent.SetHtmlContent(
-        $"{iconHtml}<span class=\"{this.GetButtonCaptionClasses()}\">"
+        $"{iconHtml}<span class=\"{this.GetButtonCaptionClasses(properties)}\">"
       );
       output.PostContent.SetHtmlContent("</span>");
     }
@@ -172,7 +191,7 @@ public class UFButtonTagHelper(
     UFTagHelperTools.AddAttribute(
       output.Attributes,
       "class",
-      this.GetButtonClasses()
+      this.GetButtonClasses(properties)
     );
     if (this.For != null)
     {
@@ -207,27 +226,27 @@ public class UFButtonTagHelper(
   /// The default implementation calls <see cref="IUFTheme.GetButtonIconHtml"/>.
   /// </summary>
   /// <returns></returns>
-  protected virtual string GetButtonIconHtml()
+  protected virtual string GetButtonIconHtml(IUFButtonProperties aProperties)
   {
-    return this.Theme.GetButtonIconHtml(this);
+    return this.Theme.GetButtonIconHtml(aProperties);
   }
 
   /// <summary>
   /// The default implementation calls <see cref="IUFTheme.GetButtonCaptionClasses"/>.
   /// </summary>
   /// <returns></returns>
-  protected virtual string GetButtonCaptionClasses()
+  protected virtual string GetButtonCaptionClasses(IUFButtonProperties aProperties)
   {
-    return this.Theme.GetButtonCaptionClasses(this);
+    return this.Theme.GetButtonCaptionClasses(aProperties);
   }
 
   /// <summary>
   /// The default implementation calls <see cref="IUFTheme.GetButtonClasses"/>.
   /// </summary>
   /// <returns></returns>
-  protected virtual string GetButtonClasses()
+  protected virtual string GetButtonClasses(IUFButtonProperties aProperties)
   {
-    return this.Theme.GetButtonClasses(this);
+    return this.Theme.GetButtonClasses(aProperties);
   }
 
   #endregion

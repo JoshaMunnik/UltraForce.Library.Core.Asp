@@ -10,9 +10,9 @@ items:
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.Color
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.Disabled
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.For
-  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.GetButtonCaptionClasses
-  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.GetButtonClasses
-  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.GetButtonIconHtml
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.GetButtonCaptionClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties)
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.GetButtonClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties)
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.GetButtonIconHtml(UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties)
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.Icon
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.IconPosition
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.ModelExpressionRenderer
@@ -38,7 +38,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: UFButtonTagHelper
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonTagHelper.cs
-    startLine: 54
+    startLine: 59
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
@@ -46,6 +46,14 @@ items:
     Renders a button or link using a button styling. When rendering a button the default type is
 
     button; use the <xref href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.Submit" data-throw-if-not-resolved="false"></xref> property to change it to submit.
+
+    <p>
+
+    If the <xref href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.Color" data-throw-if-not-resolved="false"></xref> is set to <xref href="UltraForce.Library.Core.Asp.Types.Enums.UFButtonColor.Auto" data-throw-if-not-resolved="false"></xref> the class will
+
+    update it to one of the other color values depending on the state of the button.
+
+    </p>
 
     <p>
 
@@ -131,7 +139,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: .ctor
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonTagHelper.cs
-    startLine: 54
+    startLine: 59
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
@@ -139,6 +147,14 @@ items:
     Renders a button or link using a button styling. When rendering a button the default type is
 
     button; use the <xref href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.Submit" data-throw-if-not-resolved="false"></xref> property to change it to submit.
+
+    <p>
+
+    If the <xref href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.Color" data-throw-if-not-resolved="false"></xref> is set to <xref href="UltraForce.Library.Core.Asp.Types.Enums.UFButtonColor.Auto" data-throw-if-not-resolved="false"></xref> the class will
+
+    update it to one of the other color values depending on the state of the button.
+
+    </p>
 
     <p>
 
@@ -192,7 +208,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Color
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonTagHelper.cs
-    startLine: 66
+    startLine: 72
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
@@ -240,7 +256,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Size
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonTagHelper.cs
-    startLine: 70
+    startLine: 76
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
@@ -285,7 +301,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Variant
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonTagHelper.cs
-    startLine: 74
+    startLine: 80
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
@@ -330,7 +346,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Icon
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonTagHelper.cs
-    startLine: 78
+    startLine: 84
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
@@ -378,7 +394,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: IconPosition
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonTagHelper.cs
-    startLine: 82
+    startLine: 88
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
@@ -426,7 +442,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Disabled
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonTagHelper.cs
-    startLine: 86
+    startLine: 92
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
@@ -474,7 +490,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Static
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonTagHelper.cs
-    startLine: 90
+    startLine: 96
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
@@ -519,7 +535,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Submit
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonTagHelper.cs
-    startLine: 94
+    startLine: 100
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
@@ -567,7 +583,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: OnClick
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonTagHelper.cs
-    startLine: 105
+    startLine: 111
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
@@ -613,7 +629,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Clipboard
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonTagHelper.cs
-    startLine: 111
+    startLine: 117
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
@@ -644,7 +660,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: For
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonTagHelper.cs
-    startLine: 116
+    startLine: 122
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
@@ -675,11 +691,11 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Name
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonTagHelper.cs
-    startLine: 121
+    startLine: 127
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
-  summary: When set, set a name attribute.
+  summary: When set, set a name attribute. This property is not used if <xref href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.For" data-throw-if-not-resolved="false"></xref> is set.
   example: []
   syntax:
     content: public string? Name { get; set; }
@@ -706,7 +722,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Value
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonTagHelper.cs
-    startLine: 126
+    startLine: 132
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
@@ -737,7 +753,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: ProcessAsync
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonTagHelper.cs
-    startLine: 133
+    startLine: 139
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
@@ -780,7 +796,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: ModelExpressionRenderer
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonTagHelper.cs
-    startLine: 199
+    startLine: 218
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
@@ -793,16 +809,16 @@ items:
       type: UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer
     content.vb: Protected ReadOnly Property ModelExpressionRenderer As IUFModelExpressionRenderer
   overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.ModelExpressionRenderer*
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.GetButtonIconHtml
-  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.GetButtonIconHtml
-  id: GetButtonIconHtml
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.GetButtonIconHtml(UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties)
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.GetButtonIconHtml(UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties)
+  id: GetButtonIconHtml(UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties)
   parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper
   langs:
   - csharp
   - vb
-  name: GetButtonIconHtml()
-  nameWithType: UFButtonTagHelper.GetButtonIconHtml()
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.GetButtonIconHtml()
+  name: GetButtonIconHtml(IUFButtonProperties)
+  nameWithType: UFButtonTagHelper.GetButtonIconHtml(IUFButtonProperties)
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.GetButtonIconHtml(UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties)
   type: Method
   source:
     remote:
@@ -811,29 +827,32 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetButtonIconHtml
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonTagHelper.cs
-    startLine: 209
+    startLine: 228
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
   summary: The default implementation calls <xref href="UltraForce.Library.Core.Asp.Services.IUFTheme.GetButtonIconHtml(UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties)" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
-    content: protected virtual string GetButtonIconHtml()
+    content: protected virtual string GetButtonIconHtml(IUFButtonProperties aProperties)
+    parameters:
+    - id: aProperties
+      type: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties
     return:
       type: System.String
       description: ''
-    content.vb: Protected Overridable Function GetButtonIconHtml() As String
+    content.vb: Protected Overridable Function GetButtonIconHtml(aProperties As IUFButtonProperties) As String
   overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.GetButtonIconHtml*
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.GetButtonCaptionClasses
-  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.GetButtonCaptionClasses
-  id: GetButtonCaptionClasses
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.GetButtonCaptionClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties)
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.GetButtonCaptionClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties)
+  id: GetButtonCaptionClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties)
   parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper
   langs:
   - csharp
   - vb
-  name: GetButtonCaptionClasses()
-  nameWithType: UFButtonTagHelper.GetButtonCaptionClasses()
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.GetButtonCaptionClasses()
+  name: GetButtonCaptionClasses(IUFButtonProperties)
+  nameWithType: UFButtonTagHelper.GetButtonCaptionClasses(IUFButtonProperties)
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.GetButtonCaptionClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties)
   type: Method
   source:
     remote:
@@ -842,29 +861,32 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetButtonCaptionClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonTagHelper.cs
-    startLine: 218
+    startLine: 237
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
   summary: The default implementation calls <xref href="UltraForce.Library.Core.Asp.Services.IUFTheme.GetButtonCaptionClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties)" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
-    content: protected virtual string GetButtonCaptionClasses()
+    content: protected virtual string GetButtonCaptionClasses(IUFButtonProperties aProperties)
+    parameters:
+    - id: aProperties
+      type: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties
     return:
       type: System.String
       description: ''
-    content.vb: Protected Overridable Function GetButtonCaptionClasses() As String
+    content.vb: Protected Overridable Function GetButtonCaptionClasses(aProperties As IUFButtonProperties) As String
   overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.GetButtonCaptionClasses*
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.GetButtonClasses
-  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.GetButtonClasses
-  id: GetButtonClasses
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.GetButtonClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties)
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.GetButtonClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties)
+  id: GetButtonClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties)
   parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper
   langs:
   - csharp
   - vb
-  name: GetButtonClasses()
-  nameWithType: UFButtonTagHelper.GetButtonClasses()
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.GetButtonClasses()
+  name: GetButtonClasses(IUFButtonProperties)
+  nameWithType: UFButtonTagHelper.GetButtonClasses(IUFButtonProperties)
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.GetButtonClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties)
   type: Method
   source:
     remote:
@@ -873,18 +895,21 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetButtonClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonTagHelper.cs
-    startLine: 227
+    startLine: 246
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
   summary: The default implementation calls <xref href="UltraForce.Library.Core.Asp.Services.IUFTheme.GetButtonClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties)" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
-    content: protected virtual string GetButtonClasses()
+    content: protected virtual string GetButtonClasses(IUFButtonProperties aProperties)
+    parameters:
+    - id: aProperties
+      type: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties
     return:
       type: System.String
       description: ''
-    content.vb: Protected Overridable Function GetButtonClasses() As String
+    content.vb: Protected Overridable Function GetButtonClasses(aProperties As IUFButtonProperties) As String
   overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.GetButtonClasses*
 references:
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.Submit
@@ -893,6 +918,18 @@ references:
   name: Submit
   nameWithType: UFButtonTagHelper.Submit
   fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.Submit
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.Color
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.Color
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_UFButtonTagHelper_Color
+  name: Color
+  nameWithType: UFButtonTagHelper.Color
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.Color
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFButtonColor.Auto
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFButtonColor.Auto
+  href: UltraForce.Library.Core.Asp.Types.Enums.UFButtonColor.html#UltraForce_Library_Core_Asp_Types_Enums_UFButtonColor_Auto
+  name: Auto
+  nameWithType: UFButtonColor.Auto
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFButtonColor.Auto
 - uid: Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper
   commentId: T:Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper
   isExternal: true
@@ -1668,12 +1705,6 @@ references:
   - uid: UltraForce.Library.Core.Asp.Services
     name: Services
     href: UltraForce.Library.Core.Asp.Services.html
-- uid: UltraForce.Library.Core.Asp.Types.Enums.UFButtonColor.Auto
-  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFButtonColor.Auto
-  href: UltraForce.Library.Core.Asp.Types.Enums.UFButtonColor.html#UltraForce_Library_Core_Asp_Types_Enums_UFButtonColor_Auto
-  name: Auto
-  nameWithType: UFButtonColor.Auto
-  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFButtonColor.Auto
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.Color*
   commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.Color
   href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_UFButtonTagHelper_Color
@@ -1926,6 +1957,12 @@ references:
   name: ModelExpression
   nameWithType: ModelExpression
   fullName: Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.For
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.For
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_UFButtonTagHelper_For
+  name: For
+  nameWithType: UFButtonTagHelper.For
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.For
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.Name*
   commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.Name
   href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_UFButtonTagHelper_Name
@@ -2080,7 +2117,7 @@ references:
   - name: )
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.GetButtonIconHtml*
   commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.GetButtonIconHtml
-  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_UFButtonTagHelper_GetButtonIconHtml
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_UFButtonTagHelper_GetButtonIconHtml_UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_IUFButtonProperties_
   name: GetButtonIconHtml
   nameWithType: UFButtonTagHelper.GetButtonIconHtml
   fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.GetButtonIconHtml
@@ -2111,7 +2148,7 @@ references:
   - name: )
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.GetButtonCaptionClasses*
   commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.GetButtonCaptionClasses
-  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_UFButtonTagHelper_GetButtonCaptionClasses
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_UFButtonTagHelper_GetButtonCaptionClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_IUFButtonProperties_
   name: GetButtonCaptionClasses
   nameWithType: UFButtonTagHelper.GetButtonCaptionClasses
   fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.GetButtonCaptionClasses
@@ -2142,7 +2179,7 @@ references:
   - name: )
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.GetButtonClasses*
   commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.GetButtonClasses
-  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_UFButtonTagHelper_GetButtonClasses
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_UFButtonTagHelper_GetButtonClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_IUFButtonProperties_
   name: GetButtonClasses
   nameWithType: UFButtonTagHelper.GetButtonClasses
   fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.GetButtonClasses
