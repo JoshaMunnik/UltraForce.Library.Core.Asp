@@ -37,7 +37,9 @@ namespace UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons;
 public interface IUFButtonProperties
 {
   /// <summary>
-  /// Color scheme to use for the button.
+  /// Color scheme to use for the button. When <see cref="UFButtonColor.Auto"/> is used, the
+  /// styling will decide the color based on the button state.
+  /// 
   /// </summary>
   public UFButtonColor Color { get; set; }
 
@@ -58,12 +60,14 @@ public interface IUFButtonProperties
   public string? Icon { get; set; }
 
   /// <summary>
-  /// Position of the icon in the button. Only of use if <see cref="Icon"/> has been set. 
+  /// Position of the icon in the button. Only of use if <see cref="Icon"/> has been set. When
+  /// <see cref="UFButtonIconPosition.Auto"/> is used, the styling will decide the position. 
   /// </summary>
   public UFButtonIconPosition IconPosition { get; set; }
 
   /// <summary>
-  /// Sets the disabled attribute. Note that this does nothing if the anchor tag is used.
+  /// If the button is an anchor, a `div` tag is used instead of `a` tag. With buttons the
+  /// `disabled` attribute is set.
   /// </summary>
   public bool Disabled { get; set; }
 

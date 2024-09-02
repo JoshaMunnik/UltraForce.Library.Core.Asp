@@ -54,11 +54,14 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Color
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/IUFButtonProperties.cs
-    startLine: 41
+    startLine: 43
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
-  summary: Color scheme to use for the button.
+  summary: >-
+    Color scheme to use for the button. When <xref href="UltraForce.Library.Core.Asp.Types.Enums.UFButtonColor.Auto" data-throw-if-not-resolved="false"></xref> is used, the
+
+    styling will decide the color based on the button state.
   example: []
   syntax:
     content: UFButtonColor Color { get; set; }
@@ -85,7 +88,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Size
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/IUFButtonProperties.cs
-    startLine: 46
+    startLine: 48
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
@@ -116,7 +119,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Variant
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/IUFButtonProperties.cs
-    startLine: 51
+    startLine: 53
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
@@ -147,7 +150,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Icon
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/IUFButtonProperties.cs
-    startLine: 57
+    startLine: 59
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
@@ -181,11 +184,14 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: IconPosition
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/IUFButtonProperties.cs
-    startLine: 62
+    startLine: 65
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
-  summary: Position of the icon in the button. Only of use if <xref href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.Icon" data-throw-if-not-resolved="false"></xref> has been set.
+  summary: >-
+    Position of the icon in the button. Only of use if <xref href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.Icon" data-throw-if-not-resolved="false"></xref> has been set. When
+
+    <xref href="UltraForce.Library.Core.Asp.Types.Enums.UFButtonIconPosition.Auto" data-throw-if-not-resolved="false"></xref> is used, the styling will decide the position.
   example: []
   syntax:
     content: UFButtonIconPosition IconPosition { get; set; }
@@ -212,11 +218,14 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Disabled
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/IUFButtonProperties.cs
-    startLine: 67
+    startLine: 71
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
-  summary: Sets the disabled attribute. Note that this does nothing if the anchor tag is used.
+  summary: >-
+    If the button is an anchor, a `div` tag is used instead of `a` tag. With buttons the
+
+    `disabled` attribute is set.
   example: []
   syntax:
     content: bool Disabled { get; set; }
@@ -243,7 +252,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Static
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/IUFButtonProperties.cs
-    startLine: 72
+    startLine: 76
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
@@ -274,7 +283,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Submit
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/IUFButtonProperties.cs
-    startLine: 78
+    startLine: 82
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
@@ -353,6 +362,12 @@ references:
   - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
     name: Buttons
     href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.html
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFButtonColor.Auto
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFButtonColor.Auto
+  href: UltraForce.Library.Core.Asp.Types.Enums.UFButtonColor.html#UltraForce_Library_Core_Asp_Types_Enums_UFButtonColor_Auto
+  name: Auto
+  nameWithType: UFButtonColor.Auto
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFButtonColor.Auto
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.Color*
   commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.Color
   href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_IUFButtonProperties_Color
@@ -477,6 +492,12 @@ references:
   name: Icon
   nameWithType: IUFButtonProperties.Icon
   fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.Icon
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFButtonIconPosition.Auto
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFButtonIconPosition.Auto
+  href: UltraForce.Library.Core.Asp.Types.Enums.UFButtonIconPosition.html#UltraForce_Library_Core_Asp_Types_Enums_UFButtonIconPosition_Auto
+  name: Auto
+  nameWithType: UFButtonIconPosition.Auto
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFButtonIconPosition.Auto
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.IconPosition*
   commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.IconPosition
   href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_IUFButtonProperties_IconPosition

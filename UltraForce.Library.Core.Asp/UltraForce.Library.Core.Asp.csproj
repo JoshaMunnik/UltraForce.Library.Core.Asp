@@ -14,8 +14,12 @@
         <RepositoryUrl>https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp</RepositoryUrl>
         <PackageReadmeFile>README.md</PackageReadmeFile>
         <AssemblyVersion></AssemblyVersion>
-        <Version>1.0.14</Version>
-        <PackageReleaseNotes>1.0.14
+        <Version>1.0.15</Version>
+        <PackageReleaseNotes>1.0.15
+If UFButonTagHelper.Disabled is true, an anchor is rendered as a div
+Added Auto to UFButtonColor and UFButtonIconPosition 
+
+1.0.14
 Added support for data-uf-no-caching with tables.
 
 1.0.13

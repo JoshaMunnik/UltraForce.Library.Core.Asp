@@ -83,7 +83,9 @@ namespace UltraForce.Library.Core.Asp.ViewModels
     /// </para>
     /// </summary>
     /// <param name="aValue">Value to patch</param>
-    /// <returns>Value of <c>aValue</c>, so call can be chained if needed</returns>
+    /// <returns>
+    /// The updated value, can either be aValue or a new instance.
+    /// </returns>
     public abstract T Patch(T aValue);
 
     #endregion

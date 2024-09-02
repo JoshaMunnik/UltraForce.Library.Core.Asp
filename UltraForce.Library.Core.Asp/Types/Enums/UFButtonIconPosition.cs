@@ -34,6 +34,7 @@ namespace UltraForce.Library.Core.Asp.Types.Enums;
 /// </summary>
 public enum UFButtonIconPosition
 {
+  Auto,
   Start,
   End,
   Top,

@@ -28,6 +28,7 @@
 // </license>
 
 using System.ComponentModel.DataAnnotations;
+using System.Diagnostics.CodeAnalysis;
 using System.Reflection;
 using System.Security.Principal;
 using System.Text.Json.Serialization;
@@ -40,6 +41,7 @@ namespace UltraForce.Library.Core.Asp.Tools
   /// <summary>
   /// <see cref="UFMvcTools"/> contain static support methods for MVC.
   /// </summary>  
+  [SuppressMessage("ReSharper", "MemberCanBePrivate.Global")]
   public static class UFMvcTools
   {
     #region private constants
@@ -63,7 +65,9 @@ namespace UltraForce.Library.Core.Asp.Tools
     /// </summary>
     /// <param name="aController">Name of controller</param>
     /// <returns>Name of controller without 'Controller' at the end</returns>
-    public static string GetControllerName(string aController)
+    public static string GetControllerName(
+      string aController
+    )
     {
       return aController.EndsWith(UFMvcTools.Controller)
         ? aController[..^UFMvcTools.Controller.Length]
@@ -85,7 +89,9 @@ namespace UltraForce.Library.Core.Asp.Tools
     /// </summary>
     /// <param name="aComponent">Name of component</param>
     /// <returns>Name of controller without 'ViewComponent' at the end</returns>
-    public static string GetViewComponentName(string aComponent)
+    public static string GetViewComponentName(
+      string aComponent
+    )
     {
       return aComponent.EndsWith(UFMvcTools.ViewComponent)
         ? aComponent[..^UFMvcTools.ViewComponent.Length]
@@ -97,7 +103,9 @@ namespace UltraForce.Library.Core.Asp.Tools
     /// </summary>
     /// <param name="aValue">Value to normalize</param>
     /// <returns>Normalized value</returns>
-    public static string Normalize(string aValue)
+    public static string Normalize(
+      string aValue
+    )
     {
       return aValue.ToLowerInvariant();
     }
@@ -109,9 +117,12 @@ namespace UltraForce.Library.Core.Asp.Tools
     /// </para>
     /// </summary>
     /// <param name="aText">text that might contain macro's</param>
-    /// <param name="aPrincipal">value to get user name from</param>
-    /// <returns>aText with macro's replaced</returns>
-    public static string ReplaceMacros(string aText, IPrincipal? aPrincipal = null)
+    /// <param name="aPrincipal">value to get the username from</param>
+    /// <returns>aText with the macro's replaced</returns>
+    public static string ReplaceMacros(
+      string aText,
+      IPrincipal? aPrincipal = null
+    )
     {
       string result = aText.Replace("{copy}", "&copy;")
         .Replace("{year}", DateTime.Now.Year.ToString());
@@ -128,7 +139,10 @@ namespace UltraForce.Library.Core.Asp.Tools
     /// <param name="aList">List to add item to</param>
     /// <param name="anItem">Item to insert at first position</param>
     /// <returns>New list with item inserted</returns>
-    public static SelectList AddFirstItem(SelectList aList, SelectListItem anItem)
+    public static SelectList AddFirstItem(
+      SelectList aList,
+      SelectListItem anItem
+    )
     {
       List<SelectListItem> newList = aList.ToList();
       newList.Insert(0, anItem);
@@ -138,8 +152,10 @@ namespace UltraForce.Library.Core.Asp.Tools
       {
         selectedItemValue = selectedItem.Value;
       }
-      return new SelectList(newList, nameof(SelectListItem.Value), nameof(SelectListItem.Text),
-        selectedItemValue);
+      return new SelectList(
+        newList, nameof(SelectListItem.Value), nameof(SelectListItem.Text),
+        selectedItemValue
+      );
     }
 
     /// <summary>
@@ -148,18 +164,25 @@ namespace UltraForce.Library.Core.Asp.Tools
     /// <param name="anEmptyChoice"></param>
     /// <typeparam name="T">Enum type</typeparam>
     /// <returns>Select list</returns>
-    public static SelectList CreateListFromEnum<T>(string? anEmptyChoice = null)
+    public static SelectList CreateListFromEnum<T>(
+      string? anEmptyChoice = null
+    )
       where T : struct, Enum
     {
       List<SelectListItem> items = Enum
         .GetValues<T>()
-        .Select(value => new SelectListItem(
-          //value.GetDisplayDescription(), System.Convert.ToInt32(value).ToString()
-          value.GetDisplayDescription(), value.ToString()
-        ))
+        .Select(
+          value => new SelectListItem(
+            //value.GetDisplayDescription(), System.Convert.ToInt32(value).ToString()
+            value.GetDisplayDescription(), value.ToString()
+          )
+        )
         .ToList();
       items.Sort(
-        (item1, item2) => string.Compare(item1.Text, item2.Text, StringComparison.Ordinal)
+        (
+          item1,
+          item2
+        ) => string.Compare(item1.Text, item2.Text, StringComparison.Ordinal)
       );
       SelectList list = new(
         items,
@@ -180,8 +203,8 @@ namespace UltraForce.Library.Core.Asp.Tools
     /// <param name="anHead">Value at start, only used if there are errors</param>
     /// <param name="aTail">Value at end, only used if there are errors</param>
     /// <returns>
-    ///   A string containing all errors or <see cref="string.Empty" /> if there are no errors or no field with the
-    ///   specified name can be found
+    /// A string containing all errors or <see cref="string.Empty" /> if there are no errors
+    /// or no field with the specified name can be found
     /// </returns>
     public static string GetErrors(
       ModelStateDictionary aModelState,
@@ -191,16 +214,24 @@ namespace UltraForce.Library.Core.Asp.Tools
       string aTail = ""
     )
     {
-      if (string.IsNullOrEmpty(aName) || !aModelState.ContainsKey(aName))
+      if (
+        string.IsNullOrEmpty(aName) || !aModelState.TryGetValue(aName, out ModelStateEntry? value)
+      )
       {
         return string.Empty;
       }
-      ModelErrorCollection errors = aModelState[aName]!.Errors;
+      ModelErrorCollection errors = value.Errors;
       if (errors.Count == 0)
       {
         return string.Empty;
       }
-      return errors.Aggregate(anHead, (current, error) => current + error.ErrorMessage) + aTail;
+      return errors.Aggregate(
+        anHead, 
+        (
+          current,
+          error
+        ) => current + error.ErrorMessage
+      ) + aTail;
     }
 
     /// <summary>
@@ -208,7 +239,9 @@ namespace UltraForce.Library.Core.Asp.Tools
     /// </summary>
     /// <param name="anObject"></param>
     /// <returns></returns>
-    public static (bool isValid, ICollection<ValidationResult> results) Validate(object anObject)
+    public static (bool isValid, ICollection<ValidationResult> results) Validate(
+      object anObject
+    )
     {
       ICollection<ValidationResult> results = new List<ValidationResult>();
       bool isValid = Validator.TryValidateObject(
@@ -228,7 +261,10 @@ namespace UltraForce.Library.Core.Asp.Tools
     /// <exception cref="Exception">
     /// When no property can be found for the specified name
     /// </exception>
-    public static string GetJsonName(object anObject, string aPropertyName)
+    public static string GetJsonName(
+      object anObject,
+      string aPropertyName
+    )
     {
       PropertyInfo? propertyInfo = anObject.GetType().GetProperty(aPropertyName);
       if (propertyInfo == null)

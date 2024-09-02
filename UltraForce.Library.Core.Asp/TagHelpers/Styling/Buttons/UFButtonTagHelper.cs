@@ -136,9 +136,9 @@ public class UFButtonTagHelper(
     await base.ProcessAsync(context, output);
     string iconHtml = this.GetButtonIconHtml();
     bool hasHref = this.ProcessHref(output);
-    output.TagName = this.Static ? "div" : hasHref ? "a" : "button";
+    output.TagName = this.Static ? "div" : hasHref ? (this.Disabled ? "div" : "a") : "button";
     output.TagMode = TagMode.StartTagAndEndTag;
-    if (this.Disabled)
+    if (this.Disabled && !hasHref)
     {
       output.Attributes.SetAttribute("disabled", "disabled");
     }

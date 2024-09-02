@@ -5,6 +5,7 @@ items:
   id: UFButtonIconPosition
   parent: UltraForce.Library.Core.Asp.Types.Enums
   children:
+  - UltraForce.Library.Core.Asp.Types.Enums.UFButtonIconPosition.Auto
   - UltraForce.Library.Core.Asp.Types.Enums.UFButtonIconPosition.Bottom
   - UltraForce.Library.Core.Asp.Types.Enums.UFButtonIconPosition.End
   - UltraForce.Library.Core.Asp.Types.Enums.UFButtonIconPosition.Start
@@ -32,6 +33,32 @@ items:
   syntax:
     content: public enum UFButtonIconPosition
     content.vb: Public Enum UFButtonIconPosition
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFButtonIconPosition.Auto
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFButtonIconPosition.Auto
+  id: Auto
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFButtonIconPosition
+  langs:
+  - csharp
+  - vb
+  name: Auto
+  nameWithType: UFButtonIconPosition.Auto
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFButtonIconPosition.Auto
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFButtonIconPosition.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: Auto
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFButtonIconPosition.cs
+    startLine: 36
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  syntax:
+    content: Auto = 0
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFButtonIconPosition
 - uid: UltraForce.Library.Core.Asp.Types.Enums.UFButtonIconPosition.Start
   commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFButtonIconPosition.Start
   id: Start
@@ -50,12 +77,12 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Start
     path: ../UltraForce.Library.Core.Asp/Types/Enums/UFButtonIconPosition.cs
-    startLine: 36
+    startLine: 37
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Enums
   syntax:
-    content: Start = 0
+    content: Start = 1
     return:
       type: UltraForce.Library.Core.Asp.Types.Enums.UFButtonIconPosition
 - uid: UltraForce.Library.Core.Asp.Types.Enums.UFButtonIconPosition.End
@@ -76,12 +103,12 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: End
     path: ../UltraForce.Library.Core.Asp/Types/Enums/UFButtonIconPosition.cs
-    startLine: 37
+    startLine: 38
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Enums
   syntax:
-    content: End = 1
+    content: End = 2
     return:
       type: UltraForce.Library.Core.Asp.Types.Enums.UFButtonIconPosition
 - uid: UltraForce.Library.Core.Asp.Types.Enums.UFButtonIconPosition.Top
@@ -102,12 +129,12 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Top
     path: ../UltraForce.Library.Core.Asp/Types/Enums/UFButtonIconPosition.cs
-    startLine: 38
+    startLine: 39
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Enums
   syntax:
-    content: Top = 2
+    content: Top = 3
     return:
       type: UltraForce.Library.Core.Asp.Types.Enums.UFButtonIconPosition
 - uid: UltraForce.Library.Core.Asp.Types.Enums.UFButtonIconPosition.Bottom
@@ -128,12 +155,12 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Bottom
     path: ../UltraForce.Library.Core.Asp/Types/Enums/UFButtonIconPosition.cs
-    startLine: 39
+    startLine: 40
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Enums
   syntax:
-    content: Bottom = 3
+    content: Bottom = 4
     return:
       type: UltraForce.Library.Core.Asp.Types.Enums.UFButtonIconPosition
 references:

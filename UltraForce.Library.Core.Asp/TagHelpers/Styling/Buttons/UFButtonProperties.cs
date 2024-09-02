@@ -38,7 +38,7 @@ namespace UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons;
 public class UFButtonProperties : IUFButtonProperties
 {
   /// <inheritdoc />
-  public UFButtonColor Color { get; set; } = UFButtonColor.Normal;
+  public UFButtonColor Color { get; set; } = UFButtonColor.Auto;
 
   /// <inheritdoc />
   public UFButtonSize Size { get; set; } = UFButtonSize.Normal;
@@ -50,7 +50,7 @@ public class UFButtonProperties : IUFButtonProperties
   public string? Icon { get; set; } = null;
 
   /// <inheritdoc />
-  public UFButtonIconPosition IconPosition { get; set; } = UFButtonIconPosition.Start;
+  public UFButtonIconPosition IconPosition { get; set; } = UFButtonIconPosition.Auto;
 
   /// <inheritdoc />
   public bool Disabled { get; set; } = false;

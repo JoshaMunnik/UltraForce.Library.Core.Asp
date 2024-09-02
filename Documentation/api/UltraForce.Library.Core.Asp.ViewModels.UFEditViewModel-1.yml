@@ -199,7 +199,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Patch
     path: ../UltraForce.Library.Core.Asp/ViewModels/UFEditViewModel.cs
-    startLine: 86
+    startLine: 88
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.ViewModels
@@ -220,7 +220,7 @@ items:
       description: Value to patch
     return:
       type: '{T}'
-      description: Value of <code>aValue</code>, so call can be chained if needed
+      description: The updated value, can either be aValue or a new instance.
     content.vb: Public MustOverride Function Patch(aValue As T) As T
   overload: UltraForce.Library.Core.Asp.ViewModels.UFEditViewModel`1.Patch*
   nameWithType.vb: UFEditViewModel(Of T).Patch(T)

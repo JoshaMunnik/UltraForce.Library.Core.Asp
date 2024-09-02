@@ -5,6 +5,7 @@ items:
   id: UFButtonColor
   parent: UltraForce.Library.Core.Asp.Types.Enums
   children:
+  - UltraForce.Library.Core.Asp.Types.Enums.UFButtonColor.Auto
   - UltraForce.Library.Core.Asp.Types.Enums.UFButtonColor.Danger
   - UltraForce.Library.Core.Asp.Types.Enums.UFButtonColor.Disabled
   - UltraForce.Library.Core.Asp.Types.Enums.UFButtonColor.Normal
@@ -33,6 +34,32 @@ items:
   syntax:
     content: public enum UFButtonColor
     content.vb: Public Enum UFButtonColor
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFButtonColor.Auto
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFButtonColor.Auto
+  id: Auto
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFButtonColor
+  langs:
+  - csharp
+  - vb
+  name: Auto
+  nameWithType: UFButtonColor.Auto
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFButtonColor.Auto
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFButtonColor.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: Auto
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFButtonColor.cs
+    startLine: 36
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  syntax:
+    content: Auto = 0
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFButtonColor
 - uid: UltraForce.Library.Core.Asp.Types.Enums.UFButtonColor.Normal
   commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFButtonColor.Normal
   id: Normal
@@ -51,12 +78,12 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Normal
     path: ../UltraForce.Library.Core.Asp/Types/Enums/UFButtonColor.cs
-    startLine: 36
+    startLine: 37
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Enums
   syntax:
-    content: Normal = 0
+    content: Normal = 1
     return:
       type: UltraForce.Library.Core.Asp.Types.Enums.UFButtonColor
 - uid: UltraForce.Library.Core.Asp.Types.Enums.UFButtonColor.Success
@@ -77,12 +104,12 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Success
     path: ../UltraForce.Library.Core.Asp/Types/Enums/UFButtonColor.cs
-    startLine: 37
+    startLine: 38
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Enums
   syntax:
-    content: Success = 1
+    content: Success = 2
     return:
       type: UltraForce.Library.Core.Asp.Types.Enums.UFButtonColor
 - uid: UltraForce.Library.Core.Asp.Types.Enums.UFButtonColor.Danger
@@ -103,12 +130,12 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Danger
     path: ../UltraForce.Library.Core.Asp/Types/Enums/UFButtonColor.cs
-    startLine: 38
+    startLine: 39
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Enums
   syntax:
-    content: Danger = 2
+    content: Danger = 3
     return:
       type: UltraForce.Library.Core.Asp.Types.Enums.UFButtonColor
 - uid: UltraForce.Library.Core.Asp.Types.Enums.UFButtonColor.Warning
@@ -129,12 +156,12 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Warning
     path: ../UltraForce.Library.Core.Asp/Types/Enums/UFButtonColor.cs
-    startLine: 39
+    startLine: 40
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Enums
   syntax:
-    content: Warning = 3
+    content: Warning = 4
     return:
       type: UltraForce.Library.Core.Asp.Types.Enums.UFButtonColor
 - uid: UltraForce.Library.Core.Asp.Types.Enums.UFButtonColor.Disabled
@@ -155,12 +182,12 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Disabled
     path: ../UltraForce.Library.Core.Asp/Types/Enums/UFButtonColor.cs
-    startLine: 40
+    startLine: 41
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Enums
   syntax:
-    content: Disabled = 4
+    content: Disabled = 5
     return:
       type: UltraForce.Library.Core.Asp.Types.Enums.UFButtonColor
 references:
