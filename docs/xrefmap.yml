@@ -2503,15 +2503,15 @@ references:
   commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase
   fullName: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase
   nameWithType: UFClickableTagHelperBase
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.#ctor(Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator,UltraForce.Library.Core.Asp.Services.IUFTheme)
-  name: UFClickableTagHelperBase(IHtmlGenerator, IUFTheme)
-  href: api/UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase__ctor_Microsoft_AspNetCore_Mvc_ViewFeatures_IHtmlGenerator_UltraForce_Library_Core_Asp_Services_IUFTheme_
-  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.#ctor(Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator,UltraForce.Library.Core.Asp.Services.IUFTheme)
-  name.vb: New(IHtmlGenerator, IUFTheme)
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.UFClickableTagHelperBase(Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator, UltraForce.Library.Core.Asp.Services.IUFTheme)
-  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.New(Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator, UltraForce.Library.Core.Asp.Services.IUFTheme)
-  nameWithType: UFClickableTagHelperBase.UFClickableTagHelperBase(IHtmlGenerator, IUFTheme)
-  nameWithType.vb: UFClickableTagHelperBase.New(IHtmlGenerator, IUFTheme)
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.#ctor(Microsoft.AspNetCore.Routing.EndpointDataSource,Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator,UltraForce.Library.Core.Asp.Services.IUFTheme)
+  name: UFClickableTagHelperBase(EndpointDataSource, IHtmlGenerator, IUFTheme)
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase__ctor_Microsoft_AspNetCore_Routing_EndpointDataSource_Microsoft_AspNetCore_Mvc_ViewFeatures_IHtmlGenerator_UltraForce_Library_Core_Asp_Services_IUFTheme_
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.#ctor(Microsoft.AspNetCore.Routing.EndpointDataSource,Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator,UltraForce.Library.Core.Asp.Services.IUFTheme)
+  name.vb: New(EndpointDataSource, IHtmlGenerator, IUFTheme)
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.UFClickableTagHelperBase(Microsoft.AspNetCore.Routing.EndpointDataSource, Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator, UltraForce.Library.Core.Asp.Services.IUFTheme)
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.New(Microsoft.AspNetCore.Routing.EndpointDataSource, Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator, UltraForce.Library.Core.Asp.Services.IUFTheme)
+  nameWithType: UFClickableTagHelperBase.UFClickableTagHelperBase(EndpointDataSource, IHtmlGenerator, IUFTheme)
+  nameWithType.vb: UFClickableTagHelperBase.New(EndpointDataSource, IHtmlGenerator, IUFTheme)
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.#ctor*
   name: UFClickableTagHelperBase
   href: api/UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase__ctor_
@@ -2522,45 +2522,45 @@ references:
   fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.New
   nameWithType: UFClickableTagHelperBase.UFClickableTagHelperBase
   nameWithType.vb: UFClickableTagHelperBase.New
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.Action
-  name: Action
-  href: api/UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_Action
-  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.Action
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.Action
-  nameWithType: UFClickableTagHelperBase.Action
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.Action*
-  name: Action
-  href: api/UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_Action_
-  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.Action
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.Call
+  name: Call
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_Call
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.Call
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.Call
+  nameWithType: UFClickableTagHelperBase.Call
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.Call*
+  name: Call
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_Call_
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.Call
   isSpec: "True"
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.Action
-  nameWithType: UFClickableTagHelperBase.Action
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.Controller
-  name: Controller
-  href: api/UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_Controller
-  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.Controller
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.Controller
-  nameWithType: UFClickableTagHelperBase.Controller
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.Controller*
-  name: Controller
-  href: api/UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_Controller_
-  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.Controller
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.Call
+  nameWithType: UFClickableTagHelperBase.Call
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.CallParameterSeparator
+  name: CallParameterSeparator
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_CallParameterSeparator
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.CallParameterSeparator
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.CallParameterSeparator
+  nameWithType: UFClickableTagHelperBase.CallParameterSeparator
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.CallParameterSeparator*
+  name: CallParameterSeparator
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_CallParameterSeparator_
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.CallParameterSeparator
   isSpec: "True"
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.Controller
-  nameWithType: UFClickableTagHelperBase.Controller
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.GetHref(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
-  name: GetHref(TagHelperOutput)
-  href: api/UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_GetHref_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_
-  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.GetHref(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.GetHref(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
-  nameWithType: UFClickableTagHelperBase.GetHref(TagHelperOutput)
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.GetHref*
-  name: GetHref
-  href: api/UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_GetHref_
-  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.GetHref
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.CallParameterSeparator
+  nameWithType: UFClickableTagHelperBase.CallParameterSeparator
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.EndpointDataSource
+  name: EndpointDataSource
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_EndpointDataSource
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.EndpointDataSource
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.EndpointDataSource
+  nameWithType: UFClickableTagHelperBase.EndpointDataSource
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.EndpointDataSource*
+  name: EndpointDataSource
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_EndpointDataSource_
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.EndpointDataSource
   isSpec: "True"
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.GetHref
-  nameWithType: UFClickableTagHelperBase.GetHref
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.EndpointDataSource
+  nameWithType: UFClickableTagHelperBase.EndpointDataSource
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.Href
   name: Href
   href: api/UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_Href
@@ -2574,19 +2574,6 @@ references:
   isSpec: "True"
   fullName: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.Href
   nameWithType: UFClickableTagHelperBase.Href
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.HtmlGenerator
-  name: HtmlGenerator
-  href: api/UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_HtmlGenerator
-  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.HtmlGenerator
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.HtmlGenerator
-  nameWithType: UFClickableTagHelperBase.HtmlGenerator
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.HtmlGenerator*
-  name: HtmlGenerator
-  href: api/UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_HtmlGenerator_
-  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.HtmlGenerator
-  isSpec: "True"
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.HtmlGenerator
-  nameWithType: UFClickableTagHelperBase.HtmlGenerator
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.NewTab
   name: NewTab
   href: api/UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_NewTab
@@ -2600,6 +2587,45 @@ references:
   isSpec: "True"
   fullName: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.NewTab
   nameWithType: UFClickableTagHelperBase.NewTab
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.OldAction
+  name: OldAction
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_OldAction
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.OldAction
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.OldAction
+  nameWithType: UFClickableTagHelperBase.OldAction
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.OldAction*
+  name: OldAction
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_OldAction_
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.OldAction
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.OldAction
+  nameWithType: UFClickableTagHelperBase.OldAction
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.OldController
+  name: OldController
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_OldController
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.OldController
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.OldController
+  nameWithType: UFClickableTagHelperBase.OldController
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.OldController*
+  name: OldController
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_OldController_
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.OldController
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.OldController
+  nameWithType: UFClickableTagHelperBase.OldController
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.OldRouteValues
+  name: OldRouteValues
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_OldRouteValues
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.OldRouteValues
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.OldRouteValues
+  nameWithType: UFClickableTagHelperBase.OldRouteValues
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.OldRouteValues*
+  name: OldRouteValues
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_OldRouteValues_
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.OldRouteValues
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.OldRouteValues
+  nameWithType: UFClickableTagHelperBase.OldRouteValues
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.ProcessHref(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
   name: ProcessHref(TagHelperOutput)
   href: api/UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_ProcessHref_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_
@@ -2613,19 +2639,19 @@ references:
   isSpec: "True"
   fullName: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.ProcessHref
   nameWithType: UFClickableTagHelperBase.ProcessHref
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.RouteValues
-  name: RouteValues
-  href: api/UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_RouteValues
-  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.RouteValues
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.RouteValues
-  nameWithType: UFClickableTagHelperBase.RouteValues
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.RouteValues*
-  name: RouteValues
-  href: api/UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_RouteValues_
-  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.RouteValues
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.Theme
+  name: Theme
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_Theme
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.Theme
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.Theme
+  nameWithType: UFClickableTagHelperBase.Theme
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.Theme*
+  name: Theme
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_Theme_
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.Theme
   isSpec: "True"
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.RouteValues
-  nameWithType: UFClickableTagHelperBase.RouteValues
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.Theme
+  nameWithType: UFClickableTagHelperBase.Theme
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFTagHelperWithModelExpressionRenderer
   name: UFTagHelperWithModelExpressionRenderer
   href: api/UltraForce.Library.Core.Asp.TagHelpers.Lib.UFTagHelperWithModelExpressionRenderer.html
@@ -2972,15 +2998,15 @@ references:
   commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper
   fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper
   nameWithType: UFButtonTagHelper
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.#ctor(Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator,UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer,UltraForce.Library.Core.Asp.Services.IUFTheme)
-  name: UFButtonTagHelper(IHtmlGenerator, IUFModelExpressionRenderer, IUFTheme)
-  href: api/UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_UFButtonTagHelper__ctor_Microsoft_AspNetCore_Mvc_ViewFeatures_IHtmlGenerator_UltraForce_Library_Core_Asp_Services_IUFModelExpressionRenderer_UltraForce_Library_Core_Asp_Services_IUFTheme_
-  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.#ctor(Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator,UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer,UltraForce.Library.Core.Asp.Services.IUFTheme)
-  name.vb: New(IHtmlGenerator, IUFModelExpressionRenderer, IUFTheme)
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.UFButtonTagHelper(Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator, UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer, UltraForce.Library.Core.Asp.Services.IUFTheme)
-  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.New(Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator, UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer, UltraForce.Library.Core.Asp.Services.IUFTheme)
-  nameWithType: UFButtonTagHelper.UFButtonTagHelper(IHtmlGenerator, IUFModelExpressionRenderer, IUFTheme)
-  nameWithType.vb: UFButtonTagHelper.New(IHtmlGenerator, IUFModelExpressionRenderer, IUFTheme)
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.#ctor(Microsoft.AspNetCore.Routing.EndpointDataSource,Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator,UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer,UltraForce.Library.Core.Asp.Services.IUFTheme)
+  name: UFButtonTagHelper(EndpointDataSource, IHtmlGenerator, IUFModelExpressionRenderer, IUFTheme)
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_UFButtonTagHelper__ctor_Microsoft_AspNetCore_Routing_EndpointDataSource_Microsoft_AspNetCore_Mvc_ViewFeatures_IHtmlGenerator_UltraForce_Library_Core_Asp_Services_IUFModelExpressionRenderer_UltraForce_Library_Core_Asp_Services_IUFTheme_
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.#ctor(Microsoft.AspNetCore.Routing.EndpointDataSource,Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator,UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer,UltraForce.Library.Core.Asp.Services.IUFTheme)
+  name.vb: New(EndpointDataSource, IHtmlGenerator, IUFModelExpressionRenderer, IUFTheme)
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.UFButtonTagHelper(Microsoft.AspNetCore.Routing.EndpointDataSource, Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator, UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer, UltraForce.Library.Core.Asp.Services.IUFTheme)
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.New(Microsoft.AspNetCore.Routing.EndpointDataSource, Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator, UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer, UltraForce.Library.Core.Asp.Services.IUFTheme)
+  nameWithType: UFButtonTagHelper.UFButtonTagHelper(EndpointDataSource, IHtmlGenerator, IUFModelExpressionRenderer, IUFTheme)
+  nameWithType.vb: UFButtonTagHelper.New(EndpointDataSource, IHtmlGenerator, IUFModelExpressionRenderer, IUFTheme)
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.#ctor*
   name: UFButtonTagHelper
   href: api/UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_UFButtonTagHelper__ctor_

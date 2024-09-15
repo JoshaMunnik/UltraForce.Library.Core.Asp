@@ -14,8 +14,13 @@
         <RepositoryUrl>https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp</RepositoryUrl>
         <PackageReadmeFile>README.md</PackageReadmeFile>
         <AssemblyVersion></AssemblyVersion>
-        <Version>1.0.16</Version>
-        <PackageReleaseNotes>1.0.16
+        <Version>1.0.17</Version>
+        <PackageReleaseNotes>1.0.17
+UFClickableTagHelper now is a subclass of AnchorTagHelper
+Breaking change: "controller", "action", "route-" are now obsolete; use "asp-..." instead
+Added "call" and "call-parameter-separator" to UFClickableTagHelper
+
+1.0.16
 UFButtonTagHelper updates the color based on the button state.
 
 1.0.15

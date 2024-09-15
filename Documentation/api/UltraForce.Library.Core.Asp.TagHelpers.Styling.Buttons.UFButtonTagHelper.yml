@@ -5,7 +5,7 @@ items:
   id: UFButtonTagHelper
   parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
   children:
-  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.#ctor(Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator,UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer,UltraForce.Library.Core.Asp.Services.IUFTheme)
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.#ctor(Microsoft.AspNetCore.Routing.EndpointDataSource,Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator,UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer,UltraForce.Library.Core.Asp.Services.IUFTheme)
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.Clipboard
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.Color
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.Disabled
@@ -38,7 +38,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: UFButtonTagHelper
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonTagHelper.cs
-    startLine: 59
+    startLine: 60
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
@@ -87,27 +87,38 @@ items:
   inheritance:
   - System.Object
   - Microsoft.AspNetCore.Razor.TagHelpers.TagHelper
-  - UltraForce.Library.Core.Asp.TagHelpers.Lib.UFTagHelperWithTheme
-  - UltraForce.Library.Core.Asp.TagHelpers.Lib.UFTagHelperWithViewContext
+  - Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper
   - UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase
   implements:
   - Microsoft.AspNetCore.Razor.TagHelpers.ITagHelper
   - Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties
   inheritedMembers:
-  - UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.Action
-  - UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.Controller
   - UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.Href
   - UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.NewTab
-  - UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.RouteValues
-  - UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.HtmlGenerator
+  - UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.Call
+  - UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.CallParameterSeparator
+  - UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.OldController
+  - UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.OldAction
+  - UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.OldRouteValues
+  - UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.Theme
+  - UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.EndpointDataSource
   - UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.ProcessHref(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
-  - UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.GetHref(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
-  - UltraForce.Library.Core.Asp.TagHelpers.Lib.UFTagHelperWithViewContext.ViewContext
-  - UltraForce.Library.Core.Asp.TagHelpers.Lib.UFTagHelperWithTheme.Theme
+  - Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  - Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.Order
+  - Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.Generator
+  - Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.Action
+  - Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.Controller
+  - Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.Area
+  - Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.Page
+  - Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.PageHandler
+  - Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.Protocol
+  - Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.Host
+  - Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.Fragment
+  - Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.Route
+  - Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.RouteValues
+  - Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.ViewContext
   - Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Init(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext)
-  - Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
-  - Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Order
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.GetHashCode
@@ -121,16 +132,16 @@ items:
     arguments:
     - type: System.String
       value: uf-button
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.#ctor(Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator,UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer,UltraForce.Library.Core.Asp.Services.IUFTheme)
-  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.#ctor(Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator,UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer,UltraForce.Library.Core.Asp.Services.IUFTheme)
-  id: '#ctor(Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator,UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer,UltraForce.Library.Core.Asp.Services.IUFTheme)'
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.#ctor(Microsoft.AspNetCore.Routing.EndpointDataSource,Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator,UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer,UltraForce.Library.Core.Asp.Services.IUFTheme)
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.#ctor(Microsoft.AspNetCore.Routing.EndpointDataSource,Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator,UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer,UltraForce.Library.Core.Asp.Services.IUFTheme)
+  id: '#ctor(Microsoft.AspNetCore.Routing.EndpointDataSource,Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator,UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer,UltraForce.Library.Core.Asp.Services.IUFTheme)'
   parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper
   langs:
   - csharp
   - vb
-  name: UFButtonTagHelper(IHtmlGenerator, IUFModelExpressionRenderer, IUFTheme)
-  nameWithType: UFButtonTagHelper.UFButtonTagHelper(IHtmlGenerator, IUFModelExpressionRenderer, IUFTheme)
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.UFButtonTagHelper(Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator, UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer, UltraForce.Library.Core.Asp.Services.IUFTheme)
+  name: UFButtonTagHelper(EndpointDataSource, IHtmlGenerator, IUFModelExpressionRenderer, IUFTheme)
+  nameWithType: UFButtonTagHelper.UFButtonTagHelper(EndpointDataSource, IHtmlGenerator, IUFModelExpressionRenderer, IUFTheme)
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.UFButtonTagHelper(Microsoft.AspNetCore.Routing.EndpointDataSource, Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator, UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer, UltraForce.Library.Core.Asp.Services.IUFTheme)
   type: Constructor
   source:
     remote:
@@ -139,7 +150,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: .ctor
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonTagHelper.cs
-    startLine: 59
+    startLine: 60
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
@@ -177,19 +188,21 @@ items:
     </remarks>
   example: []
   syntax:
-    content: public UFButtonTagHelper(IHtmlGenerator aHtmlGenerator, IUFModelExpressionRenderer aModelExpressionRenderer, IUFTheme aTheme)
+    content: public UFButtonTagHelper(EndpointDataSource anEndpointDataSource, IHtmlGenerator aHtmlGenerator, IUFModelExpressionRenderer aModelExpressionRenderer, IUFTheme aTheme)
     parameters:
+    - id: anEndpointDataSource
+      type: Microsoft.AspNetCore.Routing.EndpointDataSource
     - id: aHtmlGenerator
       type: Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator
     - id: aModelExpressionRenderer
       type: UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer
     - id: aTheme
       type: UltraForce.Library.Core.Asp.Services.IUFTheme
-    content.vb: Public Sub New(aHtmlGenerator As IHtmlGenerator, aModelExpressionRenderer As IUFModelExpressionRenderer, aTheme As IUFTheme)
+    content.vb: Public Sub New(anEndpointDataSource As EndpointDataSource, aHtmlGenerator As IHtmlGenerator, aModelExpressionRenderer As IUFModelExpressionRenderer, aTheme As IUFTheme)
   overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.#ctor*
-  nameWithType.vb: UFButtonTagHelper.New(IHtmlGenerator, IUFModelExpressionRenderer, IUFTheme)
-  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.New(Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator, UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer, UltraForce.Library.Core.Asp.Services.IUFTheme)
-  name.vb: New(IHtmlGenerator, IUFModelExpressionRenderer, IUFTheme)
+  nameWithType.vb: UFButtonTagHelper.New(EndpointDataSource, IHtmlGenerator, IUFModelExpressionRenderer, IUFTheme)
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.New(Microsoft.AspNetCore.Routing.EndpointDataSource, Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator, UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer, UltraForce.Library.Core.Asp.Services.IUFTheme)
+  name.vb: New(EndpointDataSource, IHtmlGenerator, IUFModelExpressionRenderer, IUFTheme)
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.Color
   commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.Color
   id: Color
@@ -208,7 +221,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Color
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonTagHelper.cs
-    startLine: 72
+    startLine: 74
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
@@ -256,7 +269,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Size
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonTagHelper.cs
-    startLine: 76
+    startLine: 78
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
@@ -301,7 +314,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Variant
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonTagHelper.cs
-    startLine: 80
+    startLine: 82
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
@@ -346,7 +359,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Icon
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonTagHelper.cs
-    startLine: 84
+    startLine: 86
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
@@ -394,7 +407,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: IconPosition
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonTagHelper.cs
-    startLine: 88
+    startLine: 90
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
@@ -442,7 +455,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Disabled
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonTagHelper.cs
-    startLine: 92
+    startLine: 94
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
@@ -490,7 +503,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Static
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonTagHelper.cs
-    startLine: 96
+    startLine: 98
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
@@ -535,7 +548,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Submit
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonTagHelper.cs
-    startLine: 100
+    startLine: 102
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
@@ -583,7 +596,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: OnClick
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonTagHelper.cs
-    startLine: 111
+    startLine: 113
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
@@ -629,7 +642,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Clipboard
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonTagHelper.cs
-    startLine: 117
+    startLine: 119
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
@@ -660,7 +673,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: For
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonTagHelper.cs
-    startLine: 122
+    startLine: 124
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
@@ -691,7 +704,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Name
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonTagHelper.cs
-    startLine: 127
+    startLine: 129
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
@@ -722,7 +735,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Value
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonTagHelper.cs
-    startLine: 132
+    startLine: 134
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
@@ -753,7 +766,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: ProcessAsync
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonTagHelper.cs
-    startLine: 139
+    startLine: 141
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
@@ -796,7 +809,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: ModelExpressionRenderer
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonTagHelper.cs
-    startLine: 218
+    startLine: 220
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
@@ -827,7 +840,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetButtonIconHtml
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonTagHelper.cs
-    startLine: 228
+    startLine: 230
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
@@ -861,7 +874,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetButtonCaptionClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonTagHelper.cs
-    startLine: 237
+    startLine: 239
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
@@ -895,7 +908,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetButtonClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonTagHelper.cs
-    startLine: 246
+    startLine: 248
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
@@ -932,6 +945,7 @@ references:
   fullName: UltraForce.Library.Core.Asp.Types.Enums.UFButtonColor.Auto
 - uid: Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper
   commentId: T:Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper
+  parent: Microsoft.AspNetCore.Mvc.TagHelpers
   isExternal: true
   href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers.anchortaghelper
   name: AnchorTagHelper
@@ -1018,20 +1032,6 @@ references:
   name: TagHelper
   nameWithType: TagHelper
   fullName: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFTagHelperWithTheme
-  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Lib.UFTagHelperWithTheme
-  parent: UltraForce.Library.Core.Asp.TagHelpers.Lib
-  href: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFTagHelperWithTheme.html
-  name: UFTagHelperWithTheme
-  nameWithType: UFTagHelperWithTheme
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFTagHelperWithTheme
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFTagHelperWithViewContext
-  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Lib.UFTagHelperWithViewContext
-  parent: UltraForce.Library.Core.Asp.TagHelpers.Lib
-  href: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFTagHelperWithViewContext.html
-  name: UFTagHelperWithViewContext
-  nameWithType: UFTagHelperWithViewContext
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFTagHelperWithViewContext
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase
   commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase
   parent: UltraForce.Library.Core.Asp.TagHelpers.Lib
@@ -1062,20 +1062,6 @@ references:
   name: IUFButtonProperties
   nameWithType: IUFButtonProperties
   fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.Action
-  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.Action
-  parent: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase
-  href: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_Action
-  name: Action
-  nameWithType: UFClickableTagHelperBase.Action
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.Action
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.Controller
-  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.Controller
-  parent: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase
-  href: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_Controller
-  name: Controller
-  nameWithType: UFClickableTagHelperBase.Controller
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.Controller
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.Href
   commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.Href
   parent: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase
@@ -1090,20 +1076,55 @@ references:
   name: NewTab
   nameWithType: UFClickableTagHelperBase.NewTab
   fullName: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.NewTab
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.RouteValues
-  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.RouteValues
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.Call
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.Call
   parent: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase
-  href: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_RouteValues
-  name: RouteValues
-  nameWithType: UFClickableTagHelperBase.RouteValues
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.RouteValues
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.HtmlGenerator
-  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.HtmlGenerator
+  href: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_Call
+  name: Call
+  nameWithType: UFClickableTagHelperBase.Call
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.Call
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.CallParameterSeparator
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.CallParameterSeparator
   parent: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase
-  href: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_HtmlGenerator
-  name: HtmlGenerator
-  nameWithType: UFClickableTagHelperBase.HtmlGenerator
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.HtmlGenerator
+  href: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_CallParameterSeparator
+  name: CallParameterSeparator
+  nameWithType: UFClickableTagHelperBase.CallParameterSeparator
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.CallParameterSeparator
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.OldController
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.OldController
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase
+  href: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_OldController
+  name: OldController
+  nameWithType: UFClickableTagHelperBase.OldController
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.OldController
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.OldAction
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.OldAction
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase
+  href: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_OldAction
+  name: OldAction
+  nameWithType: UFClickableTagHelperBase.OldAction
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.OldAction
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.OldRouteValues
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.OldRouteValues
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase
+  href: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_OldRouteValues
+  name: OldRouteValues
+  nameWithType: UFClickableTagHelperBase.OldRouteValues
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.OldRouteValues
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.Theme
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.Theme
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase
+  href: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_Theme
+  name: Theme
+  nameWithType: UFClickableTagHelperBase.Theme
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.Theme
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.EndpointDataSource
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.EndpointDataSource
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase
+  href: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_EndpointDataSource
+  name: EndpointDataSource
+  nameWithType: UFClickableTagHelperBase.EndpointDataSource
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.EndpointDataSource
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.ProcessHref(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
   commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.ProcessHref(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
   parent: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase
@@ -1132,48 +1153,152 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelperoutput
   - name: )
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.GetHref(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
-  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.GetHref(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
-  parent: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase
+- uid: Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  commentId: M:Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  parent: Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper
   isExternal: true
-  href: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_GetHref_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_
-  name: GetHref(TagHelperOutput)
-  nameWithType: UFClickableTagHelperBase.GetHref(TagHelperOutput)
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.GetHref(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers.anchortaghelper.process
+  name: Process(TagHelperContext, TagHelperOutput)
+  nameWithType: AnchorTagHelper.Process(TagHelperContext, TagHelperOutput)
+  fullName: Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
   spec.csharp:
-  - uid: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.GetHref(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
-    name: GetHref
-    href: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_GetHref_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_
+  - uid: Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+    name: Process
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers.anchortaghelper.process
   - name: (
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext
+    name: TagHelperContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelpercontext
+  - name: ','
+  - name: " "
   - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput
     name: TagHelperOutput
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelperoutput
   - name: )
   spec.vb:
-  - uid: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.GetHref(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
-    name: GetHref
-    href: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_GetHref_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_
+  - uid: Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+    name: Process
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers.anchortaghelper.process
   - name: (
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext
+    name: TagHelperContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelpercontext
+  - name: ','
+  - name: " "
   - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput
     name: TagHelperOutput
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelperoutput
   - name: )
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFTagHelperWithViewContext.ViewContext
-  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Lib.UFTagHelperWithViewContext.ViewContext
-  parent: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFTagHelperWithViewContext
-  href: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFTagHelperWithViewContext.html#UltraForce_Library_Core_Asp_TagHelpers_Lib_UFTagHelperWithViewContext_ViewContext
+- uid: Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.Order
+  commentId: P:Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.Order
+  parent: Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers.anchortaghelper.order
+  name: Order
+  nameWithType: AnchorTagHelper.Order
+  fullName: Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.Order
+- uid: Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.Generator
+  commentId: P:Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.Generator
+  parent: Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers.anchortaghelper.generator
+  name: Generator
+  nameWithType: AnchorTagHelper.Generator
+  fullName: Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.Generator
+- uid: Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.Action
+  commentId: P:Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.Action
+  parent: Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers.anchortaghelper.action
+  name: Action
+  nameWithType: AnchorTagHelper.Action
+  fullName: Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.Action
+- uid: Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.Controller
+  commentId: P:Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.Controller
+  parent: Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers.anchortaghelper.controller
+  name: Controller
+  nameWithType: AnchorTagHelper.Controller
+  fullName: Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.Controller
+- uid: Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.Area
+  commentId: P:Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.Area
+  parent: Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers.anchortaghelper.area
+  name: Area
+  nameWithType: AnchorTagHelper.Area
+  fullName: Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.Area
+- uid: Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.Page
+  commentId: P:Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.Page
+  parent: Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers.anchortaghelper.page
+  name: Page
+  nameWithType: AnchorTagHelper.Page
+  fullName: Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.Page
+- uid: Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.PageHandler
+  commentId: P:Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.PageHandler
+  parent: Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers.anchortaghelper.pagehandler
+  name: PageHandler
+  nameWithType: AnchorTagHelper.PageHandler
+  fullName: Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.PageHandler
+- uid: Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.Protocol
+  commentId: P:Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.Protocol
+  parent: Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers.anchortaghelper.protocol
+  name: Protocol
+  nameWithType: AnchorTagHelper.Protocol
+  fullName: Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.Protocol
+- uid: Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.Host
+  commentId: P:Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.Host
+  parent: Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers.anchortaghelper.host
+  name: Host
+  nameWithType: AnchorTagHelper.Host
+  fullName: Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.Host
+- uid: Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.Fragment
+  commentId: P:Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.Fragment
+  parent: Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers.anchortaghelper.fragment
+  name: Fragment
+  nameWithType: AnchorTagHelper.Fragment
+  fullName: Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.Fragment
+- uid: Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.Route
+  commentId: P:Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.Route
+  parent: Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers.anchortaghelper.route
+  name: Route
+  nameWithType: AnchorTagHelper.Route
+  fullName: Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.Route
+- uid: Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.RouteValues
+  commentId: P:Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.RouteValues
+  parent: Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers.anchortaghelper.routevalues
+  name: RouteValues
+  nameWithType: AnchorTagHelper.RouteValues
+  fullName: Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.RouteValues
+- uid: Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.ViewContext
+  commentId: P:Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.ViewContext
+  parent: Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers.anchortaghelper.viewcontext
   name: ViewContext
-  nameWithType: UFTagHelperWithViewContext.ViewContext
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFTagHelperWithViewContext.ViewContext
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFTagHelperWithTheme.Theme
-  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Lib.UFTagHelperWithTheme.Theme
-  parent: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFTagHelperWithTheme
-  href: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFTagHelperWithTheme.html#UltraForce_Library_Core_Asp_TagHelpers_Lib_UFTagHelperWithTheme_Theme
-  name: Theme
-  nameWithType: UFTagHelperWithTheme.Theme
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFTagHelperWithTheme.Theme
+  nameWithType: AnchorTagHelper.ViewContext
+  fullName: Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper.ViewContext
 - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Init(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext)
   commentId: M:Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Init(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext)
   parent: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper
@@ -1204,56 +1329,6 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelpercontext
   - name: )
-- uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
-  commentId: M:Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
-  parent: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper.process
-  name: Process(TagHelperContext, TagHelperOutput)
-  nameWithType: TagHelper.Process(TagHelperContext, TagHelperOutput)
-  fullName: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
-  spec.csharp:
-  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
-    name: Process
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper.process
-  - name: (
-  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext
-    name: TagHelperContext
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelpercontext
-  - name: ','
-  - name: " "
-  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput
-    name: TagHelperOutput
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelperoutput
-  - name: )
-  spec.vb:
-  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
-    name: Process
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper.process
-  - name: (
-  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext
-    name: TagHelperContext
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelpercontext
-  - name: ','
-  - name: " "
-  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput
-    name: TagHelperOutput
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelperoutput
-  - name: )
-- uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Order
-  commentId: P:Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Order
-  parent: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper.order
-  name: Order
-  nameWithType: TagHelper.Order
-  fullName: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Order
 - uid: System.Object.Equals(System.Object)
   commentId: M:System.Object.Equals(System.Object)
   parent: System.Object
@@ -1473,6 +1548,53 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.object.tostring
   - name: (
   - name: )
+- uid: Microsoft.AspNetCore.Mvc.TagHelpers
+  commentId: N:Microsoft.AspNetCore.Mvc.TagHelpers
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.AspNetCore.Mvc.TagHelpers
+  nameWithType: Microsoft.AspNetCore.Mvc.TagHelpers
+  fullName: Microsoft.AspNetCore.Mvc.TagHelpers
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Mvc
+    name: Mvc
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc
+  - name: .
+  - uid: Microsoft.AspNetCore.Mvc.TagHelpers
+    name: TagHelpers
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Mvc
+    name: Mvc
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc
+  - name: .
+  - uid: Microsoft.AspNetCore.Mvc.TagHelpers
+    name: TagHelpers
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers
 - uid: System
   commentId: N:System
   isExternal: true
@@ -1583,13 +1705,21 @@ references:
     href: UltraForce.Library.Core.Asp.TagHelpers.Lib.html
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.#ctor*
   commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.#ctor
-  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_UFButtonTagHelper__ctor_Microsoft_AspNetCore_Mvc_ViewFeatures_IHtmlGenerator_UltraForce_Library_Core_Asp_Services_IUFModelExpressionRenderer_UltraForce_Library_Core_Asp_Services_IUFTheme_
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_UFButtonTagHelper__ctor_Microsoft_AspNetCore_Routing_EndpointDataSource_Microsoft_AspNetCore_Mvc_ViewFeatures_IHtmlGenerator_UltraForce_Library_Core_Asp_Services_IUFModelExpressionRenderer_UltraForce_Library_Core_Asp_Services_IUFTheme_
   name: UFButtonTagHelper
   nameWithType: UFButtonTagHelper.UFButtonTagHelper
   fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.UFButtonTagHelper
   nameWithType.vb: UFButtonTagHelper.New
   fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.New
   name.vb: New
+- uid: Microsoft.AspNetCore.Routing.EndpointDataSource
+  commentId: T:Microsoft.AspNetCore.Routing.EndpointDataSource
+  parent: Microsoft.AspNetCore.Routing
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.routing.endpointdatasource
+  name: EndpointDataSource
+  nameWithType: EndpointDataSource
+  fullName: Microsoft.AspNetCore.Routing.EndpointDataSource
 - uid: Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator
   commentId: T:Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator
   parent: Microsoft.AspNetCore.Mvc.ViewFeatures
@@ -1612,6 +1742,43 @@ references:
   name: IUFTheme
   nameWithType: IUFTheme
   fullName: UltraForce.Library.Core.Asp.Services.IUFTheme
+- uid: Microsoft.AspNetCore.Routing
+  commentId: N:Microsoft.AspNetCore.Routing
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.AspNetCore.Routing
+  nameWithType: Microsoft.AspNetCore.Routing
+  fullName: Microsoft.AspNetCore.Routing
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Routing
+    name: Routing
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.routing
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Routing
+    name: Routing
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.routing
 - uid: Microsoft.AspNetCore.Mvc.ViewFeatures
   commentId: N:Microsoft.AspNetCore.Mvc.ViewFeatures
   isExternal: true
@@ -1983,6 +2150,48 @@ references:
   name: Task
   nameWithType: Task
   fullName: System.Threading.Tasks.Task
+- uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  commentId: M:Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  parent: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper.process
+  name: Process(TagHelperContext, TagHelperOutput)
+  nameWithType: TagHelper.Process(TagHelperContext, TagHelperOutput)
+  fullName: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+    name: Process
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper.process
+  - name: (
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext
+    name: TagHelperContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelpercontext
+  - name: ','
+  - name: " "
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput
+    name: TagHelperOutput
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelperoutput
+  - name: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+    name: Process
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper.process
+  - name: (
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext
+    name: TagHelperContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelpercontext
+  - name: ','
+  - name: " "
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput
+    name: TagHelperOutput
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelperoutput
+  - name: )
 - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
   commentId: M:Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
   parent: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper

@@ -99,10 +99,11 @@ Classes
       <dd><p><a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.html">UFClickableTagHelperBase</a> can be used as base class for elements that can
 be clicked upon and will jump to some other page.</p>
 <p>
-It defines various properties to create an url from.
+It is a subclass of <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers.anchortaghelper">AnchorTagHelper</a> adding some additional properties.
 </p>
 <p>
-Subclasses can call the <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_GetHref_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_">GetHref(TagHelperOutput)</a> to get the href value.
+Subclasses can call <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_ProcessHref_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_">ProcessHref(TagHelperOutput)</a> to determine the href value and process the
+additional properties.
 </p>
 </dd>
     </dl>

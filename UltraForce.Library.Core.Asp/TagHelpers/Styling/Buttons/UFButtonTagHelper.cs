@@ -31,6 +31,7 @@ using System.Diagnostics.CodeAnalysis;
 using Microsoft.AspNetCore.Mvc.TagHelpers;
 using Microsoft.AspNetCore.Mvc.ViewFeatures;
 using Microsoft.AspNetCore.Razor.TagHelpers;
+using Microsoft.AspNetCore.Routing;
 using UltraForce.Library.Core.Asp.Services;
 using UltraForce.Library.Core.Asp.TagHelpers.Lib;
 using UltraForce.Library.Core.Asp.Tools;
@@ -61,11 +62,12 @@ namespace UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons;
 [HtmlTargetElement("uf-button")]
 [SuppressMessage("ReSharper", "MemberCanBePrivate.Global")]
 public class UFButtonTagHelper(
+  EndpointDataSource anEndpointDataSource,
   IHtmlGenerator aHtmlGenerator,
   IUFModelExpressionRenderer aModelExpressionRenderer,
   IUFTheme aTheme
 )
-  : UFClickableTagHelperBase(aHtmlGenerator, aTheme), IUFButtonProperties
+  : UFClickableTagHelperBase(anEndpointDataSource, aHtmlGenerator, aTheme), IUFButtonProperties
 {
   #region IUFButtonProperties
 

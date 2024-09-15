@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class UFClickableTagHelperBase | UltraForce.Library.Core.Asp ">
       
-      <meta name="description" content="can be used as base class for elements that can be clicked upon and will jump to some other page.  It defines various properties to create an url from.   Subclasses can call the  to get the href value.">
+      <meta name="description" content="can be used as base class for elements that can be clicked upon and will jump to some other page.  It is a subclass of  adding some additional properties.   Subclasses can call  to determine the href value and process the additional properties.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase" class="text-break">
-Class UFClickableTagHelperBase  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Lib/UFClickableTagHelperBase.cs/#L48"><i class="bi bi-code-slash"></i></a>
+Class UFClickableTagHelperBase  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Lib/UFClickableTagHelperBase.cs/#L51"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -100,16 +100,17 @@ Class UFClickableTagHelperBase  <a class="header-action link-secondary" title="V
   <div class="markdown summary"><p><a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.html">UFClickableTagHelperBase</a> can be used as base class for elements that can
 be clicked upon and will jump to some other page.</p>
 <p>
-It defines various properties to create an url from.
+It is a subclass of <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers.anchortaghelper">AnchorTagHelper</a> adding some additional properties.
 </p>
 <p>
-Subclasses can call the <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_GetHref_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_">GetHref(TagHelperOutput)</a> to get the href value.
+Subclasses can call <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_ProcessHref_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_">ProcessHref(TagHelperOutput)</a> to determine the href value and process the
+additional properties.
 </p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class UFClickableTagHelperBase : UFTagHelperWithViewContext, ITagHelper, ITagHelperComponent</code></pre>
+    <pre><code class="lang-csharp hljs">public class UFClickableTagHelperBase : AnchorTagHelper, ITagHelper, ITagHelperComponent</code></pre>
   </div>
 
 
@@ -120,8 +121,7 @@ Subclasses can call the <a class="xref" href="UltraForce.Library.Core.Asp.TagHel
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper">TagHelper</a></div>
-      <div><a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Lib.UFTagHelperWithTheme.html">UFTagHelperWithTheme</a></div>
-      <div><a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Lib.UFTagHelperWithViewContext.html">UFTagHelperWithViewContext</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers.anchortaghelper">AnchorTagHelper</a></div>
       <div><span class="xref">UFClickableTagHelperBase</span></div>
     </dd>
   </dl>
@@ -145,22 +145,52 @@ Subclasses can call the <a class="xref" href="UltraForce.Library.Core.Asp.TagHel
     <dt>Inherited Members</dt>
     <dd>
     <div>
-      <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Lib.UFTagHelperWithViewContext.html#UltraForce_Library_Core_Asp_TagHelpers_Lib_UFTagHelperWithViewContext_ViewContext">UFTagHelperWithViewContext.ViewContext</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers.anchortaghelper.process">AnchorTagHelper.Process(TagHelperContext, TagHelperOutput)</a>
     </div>
     <div>
-      <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Lib.UFTagHelperWithTheme.html#UltraForce_Library_Core_Asp_TagHelpers_Lib_UFTagHelperWithTheme_Theme">UFTagHelperWithTheme.Theme</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers.anchortaghelper.order">AnchorTagHelper.Order</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers.anchortaghelper.generator">AnchorTagHelper.Generator</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers.anchortaghelper.action">AnchorTagHelper.Action</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers.anchortaghelper.controller">AnchorTagHelper.Controller</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers.anchortaghelper.area">AnchorTagHelper.Area</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers.anchortaghelper.page">AnchorTagHelper.Page</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers.anchortaghelper.pagehandler">AnchorTagHelper.PageHandler</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers.anchortaghelper.protocol">AnchorTagHelper.Protocol</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers.anchortaghelper.host">AnchorTagHelper.Host</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers.anchortaghelper.fragment">AnchorTagHelper.Fragment</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers.anchortaghelper.route">AnchorTagHelper.Route</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers.anchortaghelper.routevalues">AnchorTagHelper.RouteValues</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers.anchortaghelper.viewcontext">AnchorTagHelper.ViewContext</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper.init">TagHelper.Init(TagHelperContext)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper.process">TagHelper.Process(TagHelperContext, TagHelperOutput)</a>
-    </div>
-    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper.processasync">TagHelper.ProcessAsync(TagHelperContext, TagHelperOutput)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper.order">TagHelper.Order</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
@@ -196,9 +226,9 @@ Subclasses can call the <a class="xref" href="UltraForce.Library.Core.Asp.TagHel
 
   <a id="UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase__ctor_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.#ctor*"></a>
 
-  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase__ctor_Microsoft_AspNetCore_Mvc_ViewFeatures_IHtmlGenerator_UltraForce_Library_Core_Asp_Services_IUFTheme_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.#ctor(Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator,UltraForce.Library.Core.Asp.Services.IUFTheme)">
-  UFClickableTagHelperBase(IHtmlGenerator, IUFTheme)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Lib/UFClickableTagHelperBase.cs/#L66"><i class="bi bi-code-slash"></i></a>
+  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase__ctor_Microsoft_AspNetCore_Routing_EndpointDataSource_Microsoft_AspNetCore_Mvc_ViewFeatures_IHtmlGenerator_UltraForce_Library_Core_Asp_Services_IUFTheme_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.#ctor(Microsoft.AspNetCore.Routing.EndpointDataSource,Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator,UltraForce.Library.Core.Asp.Services.IUFTheme)">
+  UFClickableTagHelperBase(EndpointDataSource, IHtmlGenerator, IUFTheme)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Lib/UFClickableTagHelperBase.cs/#L62"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Constructs an instance <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.html">UFClickableTagHelperBase</a>.</p>
@@ -206,11 +236,13 @@ Subclasses can call the <a class="xref" href="UltraForce.Library.Core.Asp.TagHel
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected UFClickableTagHelperBase(IHtmlGenerator aHtmlGenerator, IUFTheme aTheme)</code></pre>
+    <pre><code class="lang-csharp hljs">protected UFClickableTagHelperBase(EndpointDataSource anEndpointDataSource, IHtmlGenerator aHtmlGenerator, IUFTheme aTheme)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
+    <dt><code>anEndpointDataSource</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.routing.endpointdatasource">EndpointDataSource</a></dt>
+    <dd></dd>
     <dt><code>aHtmlGenerator</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.viewfeatures.ihtmlgenerator">IHtmlGenerator</a></dt>
     <dd><p>Used to generate an href value</p>
 </dd>
@@ -233,20 +265,39 @@ Subclasses can call the <a class="xref" href="UltraForce.Library.Core.Asp.TagHel
 </h2>
 
 
-  <a id="UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_Action_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.Action*"></a>
+  <a id="UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_Call_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.Call*"></a>
 
-  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_Action" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.Action">
-  Action
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Lib/UFClickableTagHelperBase.cs/#L78"><i class="bi bi-code-slash"></i></a>
+  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_Call" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.Call">
+  Call
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Lib/UFClickableTagHelperBase.cs/#L111"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>When set generate an url and use anchor tag instead of a button tag.</p>
+  <div class="markdown level1 summary"><p>This property can be used as a shorthand combining <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers.anchortaghelper.controller">Controller</a>,
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers.anchortaghelper.action">Action</a> and <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers.anchortaghelper.routevalues">RouteValues</a> values.
+It 'calls' a controller action by building a href from the value.</p>
+<p>
+Use the following format: "[Controller.]Action[(RouteValue1,RouteValue2,...)]"
+</p>
+<p>
+Values between square brackets are optional.
+</p>
+<p>
+If the controller is not set the current controller is used.
+</p>
+<p>
+The text separating parameters is set by the <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_CallParameterSeparator">CallParameterSeparator</a>; the
+default value is a comma.
+</p>
+<p>
+If the action does not expect any parameters, do not use the round brackets! Else the
+code assumes there is one parameter that has an empty string as value.
+</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[HtmlAttributeName(&quot;action&quot;)]
-public string? Action { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[HtmlAttributeName(&quot;call&quot;)]
+public string? Call { get; set; }</code></pre>
   </div>
 
 
@@ -266,20 +317,20 @@ public string? Action { get; set; }</code></pre>
 
 
 
-  <a id="UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_Controller_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.Controller*"></a>
+  <a id="UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_CallParameterSeparator_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.CallParameterSeparator*"></a>
 
-  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_Controller" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.Controller">
-  Controller
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Lib/UFClickableTagHelperBase.cs/#L84"><i class="bi bi-code-slash"></i></a>
+  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_CallParameterSeparator" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.CallParameterSeparator">
+  CallParameterSeparator
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Lib/UFClickableTagHelperBase.cs/#L117"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>When set generate an url and use anchor tag instead of a button tag.</p>
+  <div class="markdown level1 summary"><p>The separator used to separate parameters in the <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_Call">Call</a> property.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[HtmlAttributeName(&quot;controller&quot;)]
-public string? Controller { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[HtmlAttributeName(&quot;call-parameter-separator&quot;)]
+public string? CallParameterSeparator { get; set; }</code></pre>
   </div>
 
 
@@ -289,6 +340,38 @@ public string? Controller { get; set; }</code></pre>
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_EndpointDataSource_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.EndpointDataSource*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_EndpointDataSource" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.EndpointDataSource">
+  EndpointDataSource
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Lib/UFClickableTagHelperBase.cs/#L159"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Routing information</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected EndpointDataSource EndpointDataSource { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.routing.endpointdatasource">EndpointDataSource</a></dt>
     <dd></dd>
   </dl>
 
@@ -303,10 +386,10 @@ public string? Controller { get; set; }</code></pre>
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_Href" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.Href">
   Href
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Lib/UFClickableTagHelperBase.cs/#L90"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Lib/UFClickableTagHelperBase.cs/#L80"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>When set, use a anchor tag instead of a button tag.</p>
+  <div class="markdown level1 summary"><p>Use this value if no other route is set.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -332,47 +415,14 @@ public string? Href { get; set; }</code></pre>
 
 
 
-  <a id="UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_HtmlGenerator_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.HtmlGenerator*"></a>
-
-  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_HtmlGenerator" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.HtmlGenerator">
-  HtmlGenerator
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Lib/UFClickableTagHelperBase.cs/#L123"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Gets the <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.viewfeatures.ihtmlgenerator">IHtmlGenerator</a> used to generate
-the <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers.anchortaghelper">AnchorTagHelper</a>'s output.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected IHtmlGenerator HtmlGenerator { get; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.viewfeatures.ihtmlgenerator">IHtmlGenerator</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
   <a id="UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_NewTab_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.NewTab*"></a>
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_NewTab" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.NewTab">
   NewTab
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Lib/UFClickableTagHelperBase.cs/#L96"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Lib/UFClickableTagHelperBase.cs/#L86"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Only used if <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_Href">Href</a> contains a value. When true open the link in a new tab.</p>
+  <div class="markdown level1 summary"><p>When true add the <code>target=&quot;_blank&quot;</code> attribute.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -398,25 +448,87 @@ public bool NewTab { get; set; }</code></pre>
 
 
 
-  <a id="UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_RouteValues_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.RouteValues*"></a>
+  <a id="UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_OldAction_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.OldAction*"></a>
 
-  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_RouteValues" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.RouteValues">
-  RouteValues
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Lib/UFClickableTagHelperBase.cs/#L107"><i class="bi bi-code-slash"></i></a>
+  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_OldAction" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.OldAction">
+  OldAction
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Lib/UFClickableTagHelperBase.cs/#L128"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Additional parameters for the route. Only used if <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_Action">Action</a> and/or
-<a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_Controller">Controller</a> are used.</p>
-<p>
-For the attribute name add the name of the parameter to `route-`.<br>
-Example: `route-id="123"`
-</p>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HtmlAttributeName(&quot;action&quot;)]
+[Obsolete(&quot;Use asp-action property instead&quot;, true)]
+public string OldAction { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_OldController_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.OldController*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_OldController" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.OldController">
+  OldController
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Lib/UFClickableTagHelperBase.cs/#L120"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HtmlAttributeName(&quot;controller&quot;)]
+[Obsolete(&quot;Use asp-controller property instead&quot;, true)]
+public string OldController { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_OldRouteValues_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.OldRouteValues*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_OldRouteValues" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.OldRouteValues">
+  OldRouteValues
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Lib/UFClickableTagHelperBase.cs/#L139"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Additional parameters for the route.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[HtmlAttributeName(&quot;all-route-data&quot;, DictionaryAttributePrefix = &quot;route-&quot;)]
-public IDictionary&lt;string, string&gt; RouteValues { get; set; }</code></pre>
+[Obsolete(&quot;Use asp-route property instead&quot;, true)]
+public IDictionary&lt;string, string&gt; OldRouteValues { get; set; }</code></pre>
   </div>
 
 
@@ -436,37 +548,31 @@ public IDictionary&lt;string, string&gt; RouteValues { get; set; }</code></pre>
 
 
 
-  <h2 class="section" id="methods">Methods
-</h2>
+  <a id="UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_Theme_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.Theme*"></a>
 
-
-  <a id="UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_GetHref_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.GetHref*"></a>
-
-  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_GetHref_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.GetHref(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)">
-  GetHref(TagHelperOutput)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Lib/UFClickableTagHelperBase.cs/#L156"><i class="bi bi-code-slash"></i></a>
+  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_Theme" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.Theme">
+  Theme
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Lib/UFClickableTagHelperBase.cs/#L154"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Gets the href. If a controller and/or action is set build the url from these, else check
-the href attribute.</p>
+  <div class="markdown level1 summary"><p>Theme to use for styling.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected string? GetHref(TagHelperOutput anOutput)</code></pre>
+    <pre><code class="lang-csharp hljs">protected IUFTheme Theme { get; }</code></pre>
   </div>
 
-  <h4 class="section">Parameters</h4>
+
+
+
+
+  <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><code>anOutput</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelperoutput">TagHelperOutput</a></dt>
+    <dt><a class="xref" href="UltraForce.Library.Core.Asp.Services.IUFTheme.html">IUFTheme</a></dt>
     <dd></dd>
   </dl>
 
-  <h4 class="section">Returns</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
 
 
 
@@ -474,19 +580,18 @@ the href attribute.</p>
 
 
 
-
-
+  <h2 class="section" id="methods">Methods
+</h2>
 
 
   <a id="UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_ProcessHref_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.ProcessHref*"></a>
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_ProcessHref_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.ProcessHref(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)">
   ProcessHref(TagHelperOutput)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Lib/UFClickableTagHelperBase.cs/#L135"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Lib/UFClickableTagHelperBase.cs/#L170"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Determines the href value via <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_GetHref_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_">GetHref(TagHelperOutput)</a> and sets the href attribute and target
-attribute if <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_NewTab">NewTab</a> is true.</p>
+  <div class="markdown level1 summary"><p>Checks if a href attribute is set; if not create one based on the <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_Href">Href</a> property.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -521,7 +626,7 @@ attribute if <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Lib.UF
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Lib/UFClickableTagHelperBase.cs/#L48" class="edit-link">Edit this page</a>
+          <a href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Lib/UFClickableTagHelperBase.cs/#L51" class="edit-link">Edit this page</a>
         </div>
 
 

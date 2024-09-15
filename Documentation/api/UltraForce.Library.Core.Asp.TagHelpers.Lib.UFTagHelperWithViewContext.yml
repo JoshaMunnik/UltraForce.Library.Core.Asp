@@ -35,7 +35,6 @@ items:
   - Microsoft.AspNetCore.Razor.TagHelpers.TagHelper
   - UltraForce.Library.Core.Asp.TagHelpers.Lib.UFTagHelperWithTheme
   derivedClasses:
-  - UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase
   - UltraForce.Library.Core.Asp.TagHelpers.Lib.UFTagHelperWithModelExpressionRenderer
   implements:
   - Microsoft.AspNetCore.Razor.TagHelpers.ITagHelper
