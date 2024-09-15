@@ -1,0 +1,26 @@
+﻿@{
+  ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+  <h1 class="display-4">Welcome</h1>
+  <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+  <p>
+    A button: <a asp-action="NoParameters" asp-controller="Test">No parameters</a>
+  </p>
+  <p>
+    A button: <a asp-action="WithParameters" asp-controller="Test" asp-route-first="@Guid.NewGuid()" asp-route-second="Test">With parameters</a>
+  </p>
+  <p>
+    A button: <uf-button asp-action="NoParameters" asp-controller="Test">No parameters</uf-button>
+  </p>
+  <p>
+    A button: <uf-button asp-action="WithParameters" asp-controller="Test" asp-route-first="@Guid.NewGuid()" asp-route-second="Test">With parameters</uf-button>
+  </p>
+  <p>
+    A button: <uf-button call="Test.NoParameters">With no parameters</uf-button>
+  </p>
+  <p>
+    A button: <uf-button call="Test.WithParameters(@Guid.NewGuid(),Test)">With parameters</uf-button>
+  </p>
+</div>
