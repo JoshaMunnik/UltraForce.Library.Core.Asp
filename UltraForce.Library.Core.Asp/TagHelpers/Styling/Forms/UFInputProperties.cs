@@ -29,6 +29,9 @@
 
 namespace UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms;
 
+/// <summary>
+/// Implements the interface with default values.
+/// </summary>
 public class UFInputProperties : IUFInputProperties
 {
   /// <inheritdoc />

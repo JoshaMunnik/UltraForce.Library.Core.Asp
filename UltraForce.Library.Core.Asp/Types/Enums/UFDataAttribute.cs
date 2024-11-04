@@ -31,6 +31,9 @@ using UltraForce.Library.Core.Asp.TagHelpers.Styling.Table;
 
 namespace UltraForce.Library.Core.Asp.Types.Enums;
 
+/// <summary>
+/// Constants mapping to various data attributes used by the Ultra Force DOM typescript library.
+/// </summary>
 public static class UFDataAttribute
 {
   /// <summary>
@@ -42,32 +45,32 @@ public static class UFDataAttribute
   /// Used by <see cref="UFTableTagHelper"/>.
   /// </summary>
   public const string Paging = "data-uf-paging";
-  
+
   /// <summary>
   /// Used by <see cref="UFTableTagHelper"/>.
   /// </summary>
   public const string PageSize = "data-uf-page-size";
-  
+
   /// <summary>
   /// Used by <see cref="UFTableTagHelper"/>.
   /// </summary>
   public const string Sorting = "data-uf-sorting";
-  
+
   /// <summary>
   /// Used by <see cref="UFCellTagHelper"/>.
   /// </summary>
   public const string SortType = "data-uf-sort-type";
-  
+
   /// <summary>
   /// Used by <see cref="UFCellTagHelper"/>.
   /// </summary>
   public const string SortValue = "data-uf-sort-value";
-  
+
   /// <summary>
   /// Used by <see cref="UFCellTagHelper"/>.
   /// </summary>
   public const string NoFilter = "data-uf-no-filter";
-  
+
   /// <summary>
   /// Used by <see cref="UFTableRowTagHelper"/>.
   /// </summary>
@@ -82,12 +85,12 @@ public static class UFDataAttribute
   /// Used by <see cref="UFTableRowTagHelper"/>.
   /// </summary>
   public const string HeaderRow = "data-uf-header-row";
-  
+
   /// <summary>
   /// Used by <see cref="UFTableTagHelper"/>.
   /// </summary>
   public const string SortAscending = "data-uf-sort-ascending";
-  
+
   /// <summary>
   /// Used by <see cref="UFTableTagHelper"/>.
   /// </summary>
@@ -102,7 +105,7 @@ public static class UFDataAttribute
   /// Points to a clickable element
   /// </summary>
   public const string SetFieldSelector = "data-uf-set-field-selector";
-  
+
   /// <summary>
   /// Value to set if clickable element is clicked upon.
   /// </summary>
@@ -112,24 +115,54 @@ public static class UFDataAttribute
   /// When set don't cache values with sorted tables.
   /// </summary>
   public const string NoCaching = "data-uf-no-caching";
-  
+
+  /// <summary>
+  /// Image preview for file input.
+  /// </summary>
   public const string ImagePreview = "data-uf-image-preview";
-  
+
+  /// <summary>
+  /// Set content to width of image.
+  /// </summary>
   public const string ImageWidth = "data-uf-image-width";
-  
+
+  /// <summary>
+  /// Set content to height of image.
+  /// </summary>
   public const string ImageHeight = "data-uf-image-height";
-  
+
+  /// <summary>
+  /// Set content to name of image.
+  /// </summary>
   public const string ImageName = "data-uf-image-name";
-  
+
+  /// <summary>
+  /// Set content to size of image.
+  /// </summary>
   public const string ImageSize = "data-uf-image-size";
-  
+
+  /// <summary>
+  /// Set content to type of image.
+  /// </summary>
   public const string ImageType = "data-uf-image-type";
-  
+
+  /// <summary>
+  /// Show the content of the field if some condition is met.
+  /// </summary>
   public const string ShowIfField = "data-uf-show-if-field";
-  
-  public const string HideIfField = "data-uf-show-if-field";
-  
+
+  /// <summary>
+  /// Hide the content of the field if some condition is met.
+  /// </summary>
+  public const string HideIfField = "data-uf-hide-if-field";
+
+  /// <summary>
+  /// Value to use.
+  /// </summary>
   public const string FieldValue = "data-uf-field-value";
-  
+
+  /// <summary>
+  /// Value to assign to the display style.
+  /// </summary>
   public const string DisplayValue = "data-uf-display-value";
 }

@@ -1,5 +1,8 @@
 namespace UltraForce.Library.Core.Asp.Types.Enums;
 
+/// <summary>
+/// How to wrap text across multiple lines
+/// </summary>
 public enum UFWrapType
 {
   /// <summary>

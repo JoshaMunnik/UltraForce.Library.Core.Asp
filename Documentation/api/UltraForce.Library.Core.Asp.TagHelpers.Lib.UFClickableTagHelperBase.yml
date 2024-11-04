@@ -359,10 +359,12 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: OldController
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Lib/UFClickableTagHelperBase.cs
-    startLine: 119
+    startLine: 122
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Lib
+  summary: Obsolete property. Use "asp-controller" instead.
+  example: []
   syntax:
     content: >-
       [HtmlAttributeName("controller")]
@@ -411,10 +413,12 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: OldAction
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Lib/UFClickableTagHelperBase.cs
-    startLine: 127
+    startLine: 133
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Lib
+  summary: Obsolete property. Use "asp-action" instead.
+  example: []
   syntax:
     content: >-
       [HtmlAttributeName("action")]
@@ -463,7 +467,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: OldRouteValues
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Lib/UFClickableTagHelperBase.cs
-    startLine: 138
+    startLine: 144
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Lib
@@ -521,7 +525,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Theme
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Lib/UFClickableTagHelperBase.cs
-    startLine: 153
+    startLine: 159
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Lib
@@ -552,7 +556,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: EndpointDataSource
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Lib/UFClickableTagHelperBase.cs
-    startLine: 158
+    startLine: 164
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Lib
@@ -583,7 +587,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: ProcessHref
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Lib/UFClickableTagHelperBase.cs
-    startLine: 169
+    startLine: 175
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Lib

@@ -25,10 +25,12 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: UFContainerProperties
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Containers/UFContainerProperties.cs
-    startLine: 33
+    startLine: 36
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers
+  summary: Properties for a container in a web page.
+  example: []
   syntax:
     content: 'public class UFContainerProperties : IUFContainerProperties'
     content.vb: Public Class UFContainerProperties Implements IUFContainerProperties
@@ -62,7 +64,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Horizontal
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Containers/UFContainerProperties.cs
-    startLine: 36
+    startLine: 39
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers
@@ -95,7 +97,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Vertical
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Containers/UFContainerProperties.cs
-    startLine: 39
+    startLine: 42
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers
@@ -128,7 +130,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: FullWidth
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Containers/UFContainerProperties.cs
-    startLine: 42
+    startLine: 45
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers
@@ -161,7 +163,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: FullHeight
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Containers/UFContainerProperties.cs
-    startLine: 45
+    startLine: 48
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers
@@ -194,7 +196,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: PositionChild
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Containers/UFContainerProperties.cs
-    startLine: 48
+    startLine: 51
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers
@@ -230,7 +232,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Padding
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Containers/UFContainerProperties.cs
-    startLine: 51
+    startLine: 54
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers

@@ -29,6 +29,9 @@
 
 namespace UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout;
 
+/// <summary>
+/// Properties for a spacer element in a container in a web page.
+/// </summary>
 public interface IUFSpacerProperties
 {
   /// <summary>

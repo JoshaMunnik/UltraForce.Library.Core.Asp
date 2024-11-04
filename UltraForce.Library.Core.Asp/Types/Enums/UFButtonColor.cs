@@ -34,10 +34,33 @@ namespace UltraForce.Library.Core.Asp.Types.Enums;
 /// </summary>
 public enum UFButtonColor
 {
+  /// <summary>
+  /// Auto assign color based on the context.
+  /// </summary>
   Auto,
+  
+  /// <summary>
+  /// Normal color
+  /// </summary>
   Normal,
+  
+  /// <summary>
+  /// Success color
+  /// </summary>
   Success,
+  
+  /// <summary>
+  /// Danger color
+  /// </summary>
   Danger,
+  
+  /// <summary>
+  /// Warning color
+  /// </summary>
   Warning,
+  
+  /// <summary>
+  /// Disabled color
+  /// </summary>
   Disabled
 }

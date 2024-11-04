@@ -31,6 +31,9 @@ using UltraForce.Library.Core.Asp.Types.Enums;
 
 namespace UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers;
 
+/// <summary>
+/// Properties for a container in a web page.
+/// </summary>
 public class UFContainerProperties : IUFContainerProperties
 {
   /// <inheritdoc />

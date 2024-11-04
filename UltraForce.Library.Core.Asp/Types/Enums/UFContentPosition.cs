@@ -29,9 +29,23 @@
 
 namespace UltraForce.Library.Core.Asp.Types.Enums;
 
+/// <summary>
+/// How to position content in a container.
+/// </summary>
 public enum UFContentPosition
 {
+  /// <summary>
+  /// Place at start of container.
+  /// </summary>
   Start,
+  
+  /// <summary>
+  /// Place at center of container.
+  /// </summary>
   Center,
+  
+  /// <summary>
+  /// Place at end of container.
+  /// </summary>
   End
 }

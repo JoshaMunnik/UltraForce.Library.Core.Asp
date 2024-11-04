@@ -32,6 +32,9 @@ using Microsoft.AspNetCore.Mvc.ViewFeatures;
 
 namespace UltraForce.Library.Core.Asp.Tools;
 
+/// <summary>
+/// Support methods for <see cref="ModelExpression"/>.
+/// </summary>
 public static class UFModelExpressionTools
 {
   /// <summary>

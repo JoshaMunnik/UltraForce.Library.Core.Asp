@@ -143,32 +143,28 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: ProcessAsync
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Data/UFDataItemTagHelper.cs
-    startLine: 29
+    startLine: 30
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Data
   summary: >-
-    <summary>
-                Asynchronously executes the <xref href="Microsoft.AspNetCore.Razor.TagHelpers.TagHelper" data-throw-if-not-resolved="false"></xref> with the given <code class="paramref">context</code> and
-                <code class="paramref">output</code>.
-                </summary>
-    <param name="context">Contains information associated with the current HTML tag.</param>
+    Asynchronously executes the <xref href="Microsoft.AspNetCore.Razor.TagHelpers.TagHelper" data-throw-if-not-resolved="false"></xref> with the given <code class="paramref">context</code> and
 
-    <param name="output">A stateful HTML element used to generate an HTML tag.</param>
-
-    <returns>A <xref href="System.Threading.Tasks.Task" data-throw-if-not-resolved="false"></xref> that on completion updates the <code class="paramref">output</code>.</returns>
-
-    <remarks>By default this calls into <xref href="Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext%2cMicrosoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)" data-throw-if-not-resolved="false"></xref>.</remarks>.
+    <code class="paramref">output</code>.
+  remarks: By default this calls into <xref href="Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext%2cMicrosoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
     content: public override Task ProcessAsync(TagHelperContext context, TagHelperOutput output)
     parameters:
     - id: context
       type: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext
+      description: Contains information associated with the current HTML tag.
     - id: output
       type: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput
+      description: A stateful HTML element used to generate an HTML tag.
     return:
       type: System.Threading.Tasks.Task
+      description: A <xref href="System.Threading.Tasks.Task" data-throw-if-not-resolved="false"></xref> that on completion updates the <code class="paramref">output</code>.
     content.vb: Public Overrides Function ProcessAsync(context As TagHelperContext, output As TagHelperOutput) As Task
   overridden: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
   overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Data.UFDataItemTagHelper.ProcessAsync*
@@ -190,7 +186,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetDataNameClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Data/UFDataItemTagHelper.cs
-    startLine: 69
+    startLine: 70
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Data
@@ -221,7 +217,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetDataValueClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Data/UFDataItemTagHelper.cs
-    startLine: 78
+    startLine: 79
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Data

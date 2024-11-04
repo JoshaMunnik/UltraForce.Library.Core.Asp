@@ -49,10 +49,12 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Normal
     path: ../UltraForce.Library.Core.Asp/Types/Enums/UFButtonSize.cs
-    startLine: 36
+    startLine: 39
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Normal size
+  example: []
   syntax:
     content: Normal = 0
     return:
@@ -75,10 +77,12 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Small
     path: ../UltraForce.Library.Core.Asp/Types/Enums/UFButtonSize.cs
-    startLine: 37
+    startLine: 44
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Smaller size
+  example: []
   syntax:
     content: Small = 1
     return:
@@ -101,10 +105,12 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Large
     path: ../UltraForce.Library.Core.Asp/Types/Enums/UFButtonSize.cs
-    startLine: 38
+    startLine: 49
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Larger size
+  example: []
   syntax:
     content: Large = 2
     return:

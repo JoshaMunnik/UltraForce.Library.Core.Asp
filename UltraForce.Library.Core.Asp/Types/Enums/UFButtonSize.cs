@@ -34,7 +34,18 @@ namespace UltraForce.Library.Core.Asp.Types.Enums;
 /// </summary>
 public enum UFButtonSize
 {
+  /// <summary>
+  /// Normal size
+  /// </summary>
   Normal,
+  
+  /// <summary>
+  /// Smaller size
+  /// </summary>
   Small,
+  
+  /// <summary>
+  /// Larger size
+  /// </summary>
   Large
 }

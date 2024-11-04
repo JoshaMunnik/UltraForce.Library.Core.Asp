@@ -34,9 +34,28 @@ namespace UltraForce.Library.Core.Asp.Types.Enums;
 /// </summary>
 public enum UFFlexAlignItems
 {
+  /// <summary>
+  /// Align children at the start of the container.
+  /// </summary>
   Start,
+  
+  /// <summary>
+  /// Align children at the center of the container.
+  /// </summary>
   Center,
+  
+  /// <summary>
+  /// Align children at the end of the container.
+  /// </summary>
   End,
+  
+  /// <summary>
+  /// Stretch children to fill the container.
+  /// </summary>
   Stretch,
+  
+  /// <summary>
+  /// Align children at the baseline of the container.
+  /// </summary>
   Base
 }

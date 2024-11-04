@@ -34,9 +34,28 @@ namespace UltraForce.Library.Core.Asp.Types.Enums;
 /// </summary>
 public enum UFButtonIconPosition
 {
+  /// <summary>
+  /// Position is automatically determined.
+  /// </summary>
   Auto,
+  
+  /// <summary>
+  /// Place icon at horizontal start of button
+  /// </summary>
   Start,
+  
+  /// <summary>
+  /// Place icon at horizontal end of button
+  /// </summary>
   End,
+  
+  /// <summary>
+  /// Place icon at top of button
+  /// </summary>
   Top,
+  
+  /// <summary>
+  /// Place icon at bottom of button
+  /// </summary>
   Bottom
 }

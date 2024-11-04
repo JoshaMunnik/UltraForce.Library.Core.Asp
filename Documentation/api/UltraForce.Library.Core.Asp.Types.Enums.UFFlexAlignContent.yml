@@ -53,10 +53,12 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Start
     path: ../UltraForce.Library.Core.Asp/Types/Enums/UFFlexAlignContent.cs
-    startLine: 36
+    startLine: 39
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Place at start
+  example: []
   syntax:
     content: Start = 0
     return:
@@ -79,10 +81,12 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Center
     path: ../UltraForce.Library.Core.Asp/Types/Enums/UFFlexAlignContent.cs
-    startLine: 37
+    startLine: 44
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Place at center
+  example: []
   syntax:
     content: Center = 1
     return:
@@ -105,10 +109,12 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: End
     path: ../UltraForce.Library.Core.Asp/Types/Enums/UFFlexAlignContent.cs
-    startLine: 38
+    startLine: 49
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Place at end
+  example: []
   syntax:
     content: End = 2
     return:
@@ -131,10 +137,12 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Stretch
     path: ../UltraForce.Library.Core.Asp/Types/Enums/UFFlexAlignContent.cs
-    startLine: 39
+    startLine: 54
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Stretch each child
+  example: []
   syntax:
     content: Stretch = 3
     return:
@@ -157,10 +165,12 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: SpaceBetween
     path: ../UltraForce.Library.Core.Asp/Types/Enums/UFFlexAlignContent.cs
-    startLine: 40
+    startLine: 59
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Distribute space between children
+  example: []
   syntax:
     content: SpaceBetween = 4
     return:
@@ -183,10 +193,12 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: SpaceAround
     path: ../UltraForce.Library.Core.Asp/Types/Enums/UFFlexAlignContent.cs
-    startLine: 41
+    startLine: 64
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Distribute space around children
+  example: []
   syntax:
     content: SpaceAround = 5
     return:
@@ -209,10 +221,12 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: SpaceEvenly
     path: ../UltraForce.Library.Core.Asp/Types/Enums/UFFlexAlignContent.cs
-    startLine: 42
+    startLine: 69
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Distribute space evenly between children
+  example: []
   syntax:
     content: SpaceEvenly = 6
     return:

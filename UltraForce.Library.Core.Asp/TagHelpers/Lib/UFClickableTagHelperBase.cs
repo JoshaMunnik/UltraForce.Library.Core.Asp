@@ -117,6 +117,9 @@ public class UFClickableTagHelperBase : AnchorTagHelper
   [HtmlAttributeName("call-parameter-separator")]
   public string? CallParameterSeparator { get; set; } = ",";
 
+  /// <summary>
+  /// Obsolete property. Use "asp-controller" instead.
+  /// </summary>
   [HtmlAttributeName("controller")]
   [Obsolete("Use asp-controller property instead", true)]
   public string OldController
@@ -125,6 +128,9 @@ public class UFClickableTagHelperBase : AnchorTagHelper
     set => this.Controller = value;
   }
 
+  /// <summary>
+  /// Obsolete property. Use "asp-action" instead.
+  /// </summary>
   [HtmlAttributeName("action")]
   [Obsolete("Use asp-action property instead", true)]
   public string OldAction
@@ -316,7 +322,7 @@ public class UFClickableTagHelperBase : AnchorTagHelper
 
   /// <summary>
   /// Extracts the parameters from the call property.
-  /// </summary>this\n      .EndpointDataSource.Endpoints = {List<Endpoint>} Count = 6 Explore
+  /// </summary>
   /// <returns></returns>
   private List<string> GetParametersFromCall()
   {

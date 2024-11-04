@@ -45,10 +45,12 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: UFDataAttribute
     path: ../UltraForce.Library.Core.Asp/Types/Enums/UFDataAttribute.cs
-    startLine: 33
+    startLine: 36
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Constants mapping to various data attributes used by the Ultra Force DOM typescript library.
+  example: []
   syntax:
     content: public static class UFDataAttribute
     content.vb: Public Module UFDataAttribute
@@ -80,7 +82,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Filter
     path: ../UltraForce.Library.Core.Asp/Types/Enums/UFDataAttribute.cs
-    startLine: 38
+    startLine: 41
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Enums
@@ -109,7 +111,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Paging
     path: ../UltraForce.Library.Core.Asp/Types/Enums/UFDataAttribute.cs
-    startLine: 43
+    startLine: 46
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Enums
@@ -138,7 +140,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: PageSize
     path: ../UltraForce.Library.Core.Asp/Types/Enums/UFDataAttribute.cs
-    startLine: 48
+    startLine: 51
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Enums
@@ -167,7 +169,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Sorting
     path: ../UltraForce.Library.Core.Asp/Types/Enums/UFDataAttribute.cs
-    startLine: 53
+    startLine: 56
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Enums
@@ -196,7 +198,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: SortType
     path: ../UltraForce.Library.Core.Asp/Types/Enums/UFDataAttribute.cs
-    startLine: 58
+    startLine: 61
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Enums
@@ -225,7 +227,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: SortValue
     path: ../UltraForce.Library.Core.Asp/Types/Enums/UFDataAttribute.cs
-    startLine: 63
+    startLine: 66
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Enums
@@ -254,7 +256,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: NoFilter
     path: ../UltraForce.Library.Core.Asp/Types/Enums/UFDataAttribute.cs
-    startLine: 68
+    startLine: 71
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Enums
@@ -283,7 +285,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: SortLocation
     path: ../UltraForce.Library.Core.Asp/Types/Enums/UFDataAttribute.cs
-    startLine: 73
+    startLine: 76
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Enums
@@ -312,7 +314,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: FilterTable
     path: ../UltraForce.Library.Core.Asp/Types/Enums/UFDataAttribute.cs
-    startLine: 78
+    startLine: 81
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Enums
@@ -341,7 +343,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: HeaderRow
     path: ../UltraForce.Library.Core.Asp/Types/Enums/UFDataAttribute.cs
-    startLine: 83
+    startLine: 86
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Enums
@@ -370,7 +372,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: SortAscending
     path: ../UltraForce.Library.Core.Asp/Types/Enums/UFDataAttribute.cs
-    startLine: 88
+    startLine: 91
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Enums
@@ -399,7 +401,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: SortDescending
     path: ../UltraForce.Library.Core.Asp/Types/Enums/UFDataAttribute.cs
-    startLine: 93
+    startLine: 96
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Enums
@@ -428,7 +430,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: StorageId
     path: ../UltraForce.Library.Core.Asp/Types/Enums/UFDataAttribute.cs
-    startLine: 98
+    startLine: 101
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Enums
@@ -457,7 +459,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: SetFieldSelector
     path: ../UltraForce.Library.Core.Asp/Types/Enums/UFDataAttribute.cs
-    startLine: 103
+    startLine: 106
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Enums
@@ -486,7 +488,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: SetFieldValue
     path: ../UltraForce.Library.Core.Asp/Types/Enums/UFDataAttribute.cs
-    startLine: 108
+    startLine: 111
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Enums
@@ -515,7 +517,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: NoCaching
     path: ../UltraForce.Library.Core.Asp/Types/Enums/UFDataAttribute.cs
-    startLine: 113
+    startLine: 116
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Enums
@@ -544,10 +546,12 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: ImagePreview
     path: ../UltraForce.Library.Core.Asp/Types/Enums/UFDataAttribute.cs
-    startLine: 115
+    startLine: 121
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Image preview for file input.
+  example: []
   syntax:
     content: public const string ImagePreview = "data-uf-image-preview"
     return:
@@ -571,10 +575,12 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: ImageWidth
     path: ../UltraForce.Library.Core.Asp/Types/Enums/UFDataAttribute.cs
-    startLine: 117
+    startLine: 126
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Set content to width of image.
+  example: []
   syntax:
     content: public const string ImageWidth = "data-uf-image-width"
     return:
@@ -598,10 +604,12 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: ImageHeight
     path: ../UltraForce.Library.Core.Asp/Types/Enums/UFDataAttribute.cs
-    startLine: 119
+    startLine: 131
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Set content to height of image.
+  example: []
   syntax:
     content: public const string ImageHeight = "data-uf-image-height"
     return:
@@ -625,10 +633,12 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: ImageName
     path: ../UltraForce.Library.Core.Asp/Types/Enums/UFDataAttribute.cs
-    startLine: 121
+    startLine: 136
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Set content to name of image.
+  example: []
   syntax:
     content: public const string ImageName = "data-uf-image-name"
     return:
@@ -652,10 +662,12 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: ImageSize
     path: ../UltraForce.Library.Core.Asp/Types/Enums/UFDataAttribute.cs
-    startLine: 123
+    startLine: 141
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Set content to size of image.
+  example: []
   syntax:
     content: public const string ImageSize = "data-uf-image-size"
     return:
@@ -679,10 +691,12 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: ImageType
     path: ../UltraForce.Library.Core.Asp/Types/Enums/UFDataAttribute.cs
-    startLine: 125
+    startLine: 146
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Set content to type of image.
+  example: []
   syntax:
     content: public const string ImageType = "data-uf-image-type"
     return:
@@ -706,10 +720,12 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: ShowIfField
     path: ../UltraForce.Library.Core.Asp/Types/Enums/UFDataAttribute.cs
-    startLine: 127
+    startLine: 151
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Show the content of the field if some condition is met.
+  example: []
   syntax:
     content: public const string ShowIfField = "data-uf-show-if-field"
     return:
@@ -733,15 +749,17 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: HideIfField
     path: ../UltraForce.Library.Core.Asp/Types/Enums/UFDataAttribute.cs
-    startLine: 129
+    startLine: 156
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Hide the content of the field if some condition is met.
+  example: []
   syntax:
-    content: public const string HideIfField = "data-uf-show-if-field"
+    content: public const string HideIfField = "data-uf-hide-if-field"
     return:
       type: System.String
-    content.vb: Public Const HideIfField As String = "data-uf-show-if-field"
+    content.vb: Public Const HideIfField As String = "data-uf-hide-if-field"
 - uid: UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.FieldValue
   commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.FieldValue
   id: FieldValue
@@ -760,10 +778,12 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: FieldValue
     path: ../UltraForce.Library.Core.Asp/Types/Enums/UFDataAttribute.cs
-    startLine: 131
+    startLine: 161
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Value to use.
+  example: []
   syntax:
     content: public const string FieldValue = "data-uf-field-value"
     return:
@@ -787,10 +807,12 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: DisplayValue
     path: ../UltraForce.Library.Core.Asp/Types/Enums/UFDataAttribute.cs
-    startLine: 133
+    startLine: 166
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Value to assign to the display style.
+  example: []
   syntax:
     content: public const string DisplayValue = "data-uf-display-value"
     return:

@@ -57,6 +57,7 @@ public class UFDataValueTagHelper(
 
   #region public methods
 
+  /// <inheritdoc />
   public override async Task ProcessAsync(TagHelperContext context, TagHelperOutput output)
   {
     await base.ProcessAsync(context, output);

@@ -68,10 +68,12 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Send
     path: ../UltraForce.Library.Core.Asp/Types/Classes/UFFontAwesome.cs
-    startLine: 36
+    startLine: 39
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Classes
+  summary: Shows an envelope icon.
+  example: []
   syntax:
     content: public const string Send = "envelope"
     return:
@@ -95,10 +97,12 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Save
     path: ../UltraForce.Library.Core.Asp/Types/Classes/UFFontAwesome.cs
-    startLine: 37
+    startLine: 44
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Classes
+  summary: Shows a floppy disk icon.
+  example: []
   syntax:
     content: public const string Save = "floppy-disk"
     return:
@@ -122,10 +126,12 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Back
     path: ../UltraForce.Library.Core.Asp/Types/Classes/UFFontAwesome.cs
-    startLine: 38
+    startLine: 49
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Classes
+  summary: Shows a left long arrow icon.
+  example: []
   syntax:
     content: public const string Back = "left-long"
     return:
@@ -149,10 +155,12 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Create
     path: ../UltraForce.Library.Core.Asp/Types/Classes/UFFontAwesome.cs
-    startLine: 39
+    startLine: 54
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Classes
+  summary: Shows a file icon.
+  example: []
   syntax:
     content: public const string Create = "file"
     return:
@@ -176,10 +184,12 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Edit
     path: ../UltraForce.Library.Core.Asp/Types/Classes/UFFontAwesome.cs
-    startLine: 40
+    startLine: 59
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Classes
+  summary: Shows a pen icon.
+  example: []
   syntax:
     content: public const string Edit = "pen"
     return:
@@ -203,10 +213,12 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Details
     path: ../UltraForce.Library.Core.Asp/Types/Classes/UFFontAwesome.cs
-    startLine: 41
+    startLine: 64
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Classes
+  summary: Show an info icon.
+  example: []
   syntax:
     content: public const string Details = "info"
     return:
@@ -230,10 +242,12 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Delete
     path: ../UltraForce.Library.Core.Asp/Types/Classes/UFFontAwesome.cs
-    startLine: 42
+    startLine: 69
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Classes
+  summary: Shows a trash can icon.
+  example: []
   syntax:
     content: public const string Delete = "trash"
     return:
@@ -257,10 +271,12 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: List
     path: ../UltraForce.Library.Core.Asp/Types/Classes/UFFontAwesome.cs
-    startLine: 43
+    startLine: 74
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Classes
+  summary: Shows a list icon.
+  example: []
   syntax:
     content: public const string List = "list"
     return:
@@ -284,10 +300,12 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Copy
     path: ../UltraForce.Library.Core.Asp/Types/Classes/UFFontAwesome.cs
-    startLine: 44
+    startLine: 79
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Classes
+  summary: Shows a copy icon.
+  example: []
   syntax:
     content: public const string Copy = "copy"
     return:
@@ -311,10 +329,12 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Users
     path: ../UltraForce.Library.Core.Asp/Types/Classes/UFFontAwesome.cs
-    startLine: 45
+    startLine: 84
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Classes
+  summary: Shows a users icon.
+  example: []
   syntax:
     content: public const string Users = "users"
     return:
@@ -338,10 +358,12 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Add
     path: ../UltraForce.Library.Core.Asp/Types/Classes/UFFontAwesome.cs
-    startLine: 46
+    startLine: 89
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Classes
+  summary: Shows a plug icon.
+  example: []
   syntax:
     content: public const string Add = "plus"
     return:
@@ -365,10 +387,12 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Remove
     path: ../UltraForce.Library.Core.Asp/Types/Classes/UFFontAwesome.cs
-    startLine: 47
+    startLine: 94
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Classes
+  summary: Shows a minus icon.
+  example: []
   syntax:
     content: public const string Remove = "minus"
     return:

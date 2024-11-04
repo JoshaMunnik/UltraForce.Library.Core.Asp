@@ -34,16 +34,63 @@ namespace UltraForce.Library.Core.Asp.Types.Classes;
 /// </summary>
 public class UFFontAwesome
 {
+  /// <summary>
+  /// Shows an envelope icon.
+  /// </summary>
   public const string Send = "envelope";
+  
+  /// <summary>
+  /// Shows a floppy disk icon.
+  /// </summary>
   public const string Save = "floppy-disk";
+  
+  /// <summary>
+  /// Shows a left long arrow icon.
+  /// </summary>
   public const string Back = "left-long";
+  
+  /// <summary>
+  /// Shows a file icon.
+  /// </summary>
   public const string Create = "file";
+  
+  /// <summary>
+  /// Shows a pen icon.
+  /// </summary>
   public const string Edit = "pen";
+  
+  /// <summary>
+  /// Show an info icon.
+  /// </summary>
   public const string Details = "info";
+  
+  /// <summary>
+  /// Shows a trash can icon.
+  /// </summary>
   public const string Delete = "trash";
+  
+  /// <summary>
+  /// Shows a list icon.
+  /// </summary>
   public const string List = "list";
+  
+  /// <summary>
+  /// Shows a copy icon.
+  /// </summary>
   public const string Copy = "copy";
+  
+  /// <summary>
+  /// Shows a users icon.
+  /// </summary>
   public const string Users = "users";
+  
+  /// <summary>
+  /// Shows a plug icon.
+  /// </summary>
   public const string Add = "plus";
+  
+  /// <summary>
+  /// Shows a minus icon.
+  /// </summary>
   public const string Remove = "minus";
 }

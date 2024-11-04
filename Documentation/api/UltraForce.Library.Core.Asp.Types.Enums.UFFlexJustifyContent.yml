@@ -52,10 +52,12 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Start
     path: ../UltraForce.Library.Core.Asp/Types/Enums/UFFlexJustifyContent.cs
-    startLine: 36
+    startLine: 39
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Start of the container.
+  example: []
   syntax:
     content: Start = 0
     return:
@@ -78,10 +80,12 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: End
     path: ../UltraForce.Library.Core.Asp/Types/Enums/UFFlexJustifyContent.cs
-    startLine: 37
+    startLine: 44
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: End of the container.
+  example: []
   syntax:
     content: End = 1
     return:
@@ -104,10 +108,12 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Center
     path: ../UltraForce.Library.Core.Asp/Types/Enums/UFFlexJustifyContent.cs
-    startLine: 38
+    startLine: 49
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Center of the container.
+  example: []
   syntax:
     content: Center = 2
     return:
@@ -130,10 +136,12 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: SpaceBetween
     path: ../UltraForce.Library.Core.Asp/Types/Enums/UFFlexJustifyContent.cs
-    startLine: 39
+    startLine: 54
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Distribute space between children
+  example: []
   syntax:
     content: SpaceBetween = 3
     return:
@@ -156,10 +164,12 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: SpaceAround
     path: ../UltraForce.Library.Core.Asp/Types/Enums/UFFlexJustifyContent.cs
-    startLine: 40
+    startLine: 59
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Distribute space around children
+  example: []
   syntax:
     content: SpaceAround = 4
     return:
@@ -182,10 +192,12 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: SpaceEvenly
     path: ../UltraForce.Library.Core.Asp/Types/Enums/UFFlexJustifyContent.cs
-    startLine: 41
+    startLine: 64
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Distribute space evenly between children
+  example: []
   syntax:
     content: SpaceEvenly = 5
     return:

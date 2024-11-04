@@ -29,6 +29,9 @@
 
 namespace UltraForce.Library.Core.Asp.TagHelpers.Styling.Table;
 
+/// <summary>
+/// Propeties for a table in a web page.
+/// </summary>
 public interface IUFTableProperties
 {
   /// <summary>

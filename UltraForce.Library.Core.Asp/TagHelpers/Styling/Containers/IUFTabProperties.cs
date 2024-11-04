@@ -29,6 +29,9 @@
 
 namespace UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers;
 
+/// <summary>
+/// Properties for a tab in a web page.
+/// </summary>
 public interface IUFTabProperties
 {
   /// <summary>

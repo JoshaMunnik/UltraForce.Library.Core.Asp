@@ -954,10 +954,12 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Theme
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Forms/UFInputTagHelper.cs
-    startLine: 290
+    startLine: 293
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms
+  summary: Shortcut to theme used to style the input.
+  example: []
   syntax:
     content: protected IUFTheme Theme { get; }
     parameters: []

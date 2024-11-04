@@ -20,10 +20,12 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: IUFSpacerProperties
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Layout/IUFSpacerProperties.cs
-    startLine: 31
+    startLine: 34
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
+  summary: Properties for a spacer element in a container in a web page.
+  example: []
   syntax:
     content: public interface IUFSpacerProperties
     content.vb: Public Interface IUFSpacerProperties
@@ -45,7 +47,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Size
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Layout/IUFSpacerProperties.cs
-    startLine: 36
+    startLine: 39
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout

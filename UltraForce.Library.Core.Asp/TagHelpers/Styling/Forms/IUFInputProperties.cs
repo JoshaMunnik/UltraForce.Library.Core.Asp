@@ -31,6 +31,9 @@ using Microsoft.AspNetCore.Mvc.TagHelpers;
 
 namespace UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms;
 
+/// <summary>
+/// Properties for an input field within a web form.
+/// </summary>
 public interface IUFInputProperties
 {
   /// <summary>

@@ -59,6 +59,7 @@ public class UFSpacerTagHelper(IUFTheme aTheme)
   
   #region overriden public methods
 
+  /// <inheritdoc />
   public override void Process(TagHelperContext context, TagHelperOutput output)
   {
     output.TagName = "div";

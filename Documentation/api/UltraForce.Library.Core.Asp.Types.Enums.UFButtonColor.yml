@@ -52,10 +52,12 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Auto
     path: ../UltraForce.Library.Core.Asp/Types/Enums/UFButtonColor.cs
-    startLine: 36
+    startLine: 39
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Auto assign color based on the context.
+  example: []
   syntax:
     content: Auto = 0
     return:
@@ -78,10 +80,12 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Normal
     path: ../UltraForce.Library.Core.Asp/Types/Enums/UFButtonColor.cs
-    startLine: 37
+    startLine: 44
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Normal color
+  example: []
   syntax:
     content: Normal = 1
     return:
@@ -104,10 +108,12 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Success
     path: ../UltraForce.Library.Core.Asp/Types/Enums/UFButtonColor.cs
-    startLine: 38
+    startLine: 49
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Success color
+  example: []
   syntax:
     content: Success = 2
     return:
@@ -130,10 +136,12 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Danger
     path: ../UltraForce.Library.Core.Asp/Types/Enums/UFButtonColor.cs
-    startLine: 39
+    startLine: 54
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Danger color
+  example: []
   syntax:
     content: Danger = 3
     return:
@@ -156,10 +164,12 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Warning
     path: ../UltraForce.Library.Core.Asp/Types/Enums/UFButtonColor.cs
-    startLine: 40
+    startLine: 59
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Warning color
+  example: []
   syntax:
     content: Warning = 4
     return:
@@ -182,10 +192,12 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Disabled
     path: ../UltraForce.Library.Core.Asp/Types/Enums/UFButtonColor.cs
-    startLine: 41
+    startLine: 64
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Disabled color
+  example: []
   syntax:
     content: Disabled = 5
     return:

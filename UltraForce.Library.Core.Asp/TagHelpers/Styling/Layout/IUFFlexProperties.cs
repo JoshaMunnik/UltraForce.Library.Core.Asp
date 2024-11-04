@@ -31,6 +31,9 @@ using UltraForce.Library.Core.Asp.Types.Enums;
 
 namespace UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout;
 
+/// <summary>
+/// Properties for a flex container in a web page.
+/// </summary>
 public interface IUFFlexProperties
 {
   /// <summary>

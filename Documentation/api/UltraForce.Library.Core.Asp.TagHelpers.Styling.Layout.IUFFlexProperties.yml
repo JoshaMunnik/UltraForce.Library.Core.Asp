@@ -27,10 +27,12 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: IUFFlexProperties
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Layout/IUFFlexProperties.cs
-    startLine: 33
+    startLine: 36
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
+  summary: Properties for a flex container in a web page.
+  example: []
   syntax:
     content: public interface IUFFlexProperties
     content.vb: Public Interface IUFFlexProperties
@@ -52,7 +54,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: JustifyContent
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Layout/IUFFlexProperties.cs
-    startLine: 38
+    startLine: 41
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
@@ -83,7 +85,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: AlignItems
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Layout/IUFFlexProperties.cs
-    startLine: 43
+    startLine: 46
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
@@ -114,7 +116,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: AlignContent
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Layout/IUFFlexProperties.cs
-    startLine: 48
+    startLine: 51
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
@@ -145,7 +147,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Buttons
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Layout/IUFFlexProperties.cs
-    startLine: 53
+    startLine: 56
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
@@ -176,7 +178,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Gap
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Layout/IUFFlexProperties.cs
-    startLine: 58
+    startLine: 61
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
@@ -207,7 +209,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: FullWidth
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Layout/IUFFlexProperties.cs
-    startLine: 63
+    startLine: 66
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
@@ -238,7 +240,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: FullHeight
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Layout/IUFFlexProperties.cs
-    startLine: 68
+    startLine: 71
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
@@ -269,7 +271,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Wrap
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Layout/IUFFlexProperties.cs
-    startLine: 73
+    startLine: 76
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout

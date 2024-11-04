@@ -89,6 +89,7 @@ public class UFRowTagHelper(IUFTheme aTheme) : UFTagHelperWithTheme(aTheme), IUF
   
   #region overriden public methods
 
+  /// <inheritdoc />
   public override void Process(TagHelperContext context, TagHelperOutput output)
   {
     output.TagName = "div";

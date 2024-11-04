@@ -34,10 +34,33 @@ namespace UltraForce.Library.Core.Asp.Types.Enums;
 /// </summary>
 public enum UFFlexJustifyContent
 {
+  /// <summary>
+  /// Start of the container.
+  /// </summary>
   Start,
+  
+  /// <summary>
+  /// End of the container.
+  /// </summary>
   End,
+  
+  /// <summary>
+  /// Center of the container.
+  /// </summary>
   Center,
+  
+  /// <summary>
+  /// Distribute space between children
+  /// </summary>
   SpaceBetween,
+  
+  /// <summary>
+  /// Distribute space around children
+  /// </summary>
   SpaceAround,
+  
+  /// <summary>
+  /// Distribute space evenly between children
+  /// </summary>
   SpaceEvenly
 }

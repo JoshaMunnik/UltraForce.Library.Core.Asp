@@ -25,10 +25,12 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: IUFInputProperties
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Forms/IUFInputProperties.cs
-    startLine: 33
+    startLine: 36
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms
+  summary: Properties for an input field within a web form.
+  example: []
   syntax:
     content: public interface IUFInputProperties
     content.vb: Public Interface IUFInputProperties
@@ -50,7 +52,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Label
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Forms/IUFInputProperties.cs
-    startLine: 43
+    startLine: 46
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms
@@ -92,7 +94,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: NoLabel
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Forms/IUFInputProperties.cs
-    startLine: 48
+    startLine: 51
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms
@@ -123,7 +125,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Wrap
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Forms/IUFInputProperties.cs
-    startLine: 53
+    startLine: 56
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms
@@ -154,7 +156,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Description
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Forms/IUFInputProperties.cs
-    startLine: 58
+    startLine: 61
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms
@@ -185,7 +187,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Multiline
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Forms/IUFInputProperties.cs
-    startLine: 63
+    startLine: 66
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms
@@ -216,7 +218,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: NoWidth
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Forms/IUFInputProperties.cs
-    startLine: 68
+    startLine: 71
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms

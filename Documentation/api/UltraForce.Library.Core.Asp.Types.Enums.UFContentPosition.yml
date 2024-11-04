@@ -22,10 +22,12 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: UFContentPosition
     path: ../UltraForce.Library.Core.Asp/Types/Enums/UFContentPosition.cs
-    startLine: 31
+    startLine: 34
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: How to position content in a container.
+  example: []
   syntax:
     content: public enum UFContentPosition
     content.vb: Public Enum UFContentPosition
@@ -47,10 +49,12 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Start
     path: ../UltraForce.Library.Core.Asp/Types/Enums/UFContentPosition.cs
-    startLine: 33
+    startLine: 39
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Place at start of container.
+  example: []
   syntax:
     content: Start = 0
     return:
@@ -73,10 +77,12 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Center
     path: ../UltraForce.Library.Core.Asp/Types/Enums/UFContentPosition.cs
-    startLine: 34
+    startLine: 44
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Place at center of container.
+  example: []
   syntax:
     content: Center = 1
     return:
@@ -99,10 +105,12 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: End
     path: ../UltraForce.Library.Core.Asp/Types/Enums/UFContentPosition.cs
-    startLine: 35
+    startLine: 49
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Place at end of container.
+  example: []
   syntax:
     content: End = 2
     return:

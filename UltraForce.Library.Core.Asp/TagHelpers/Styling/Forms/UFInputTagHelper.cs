@@ -288,6 +288,9 @@ public class UFInputTagHelper(IHtmlGenerator generator, IUFTheme aTheme)
 
   #region protected properties
 
+  /// <summary>
+  /// Shortcut to theme used to style the input.
+  /// </summary>
   protected IUFTheme Theme { get; } = aTheme;
 
   #endregion
@@ -312,6 +315,7 @@ public class UFInputTagHelper(IHtmlGenerator generator, IUFTheme aTheme)
   /// <param name="anOutput">Output to wrap</param>
   /// <param name="anId">Id of input element</param>
   /// <param name="aLabel">Label text to use</param>
+  /// <param name="aType">Input type</param>
   /// <param name="anErrorMessage">Error message to show</param>
   private void RenderWrappedInput(
     TagHelperOutput anOutput, string anId, string aLabel, string aType, string anErrorMessage

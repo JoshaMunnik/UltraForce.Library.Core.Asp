@@ -29,6 +29,9 @@
 
 namespace UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout;
 
+/// <summary>
+/// Implements the interface with default values.
+/// </summary>
 public class UFSpacerProperties : IUFSpacerProperties
 {
   /// <inheritdoc />

@@ -31,6 +31,9 @@ using UltraForce.Library.Core.Asp.Types.Enums;
 
 namespace UltraForce.Library.Core.Asp.TagHelpers.Styling.Table;
 
+/// <summary>
+/// Properties for a table row in a web page.
+/// </summary>
 public interface IUFTableRowProperties
 {
   /// <summary>

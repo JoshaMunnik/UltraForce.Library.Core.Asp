@@ -14,8 +14,11 @@
         <RepositoryUrl>https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp</RepositoryUrl>
         <PackageReadmeFile>README.md</PackageReadmeFile>
         <AssemblyVersion></AssemblyVersion>
-        <Version>1.0.17</Version>
-        <PackageReleaseNotes>1.0.17
+        <Version>1.0.18</Version>
+        <PackageReleaseNotes>1.0.18
+Included source documentation
+
+1.0.17
 UFClickableTagHelper now is a subclass of AnchorTagHelper
 Breaking change: "controller", "action", "route-" are now obsolete; use "asp-..." instead
 Added "call" and "call-parameter-separator" to UFClickableTagHelper
@@ -75,9 +78,14 @@ Added try/catch when accessing the session.
 Initial version</PackageReleaseNotes>
     </PropertyGroup>
 
+    <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+      <DocumentationFile>bin\Release\UltraForce.Library.Core.Asp.xml</DocumentationFile>
+    </PropertyGroup>
+
     <ItemGroup>
         <None Include="ufd.png" Pack="True" PackagePath="" />
         <None Include="README.md" Pack="True" PackagePath="" />
+        <None Include="bin\$(Configuration)\$(TargetFramework)\*.xml" Pack="true" PackagePath="\" />
     </ItemGroup>
 
     <ItemGroup>

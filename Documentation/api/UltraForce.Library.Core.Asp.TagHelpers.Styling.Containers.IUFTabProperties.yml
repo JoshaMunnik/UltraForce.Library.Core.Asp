@@ -21,10 +21,12 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: IUFTabProperties
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Containers/IUFTabProperties.cs
-    startLine: 31
+    startLine: 34
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers
+  summary: Properties for a tab in a web page.
+  example: []
   syntax:
     content: public interface IUFTabProperties
     content.vb: Public Interface IUFTabProperties
@@ -46,7 +48,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Caption
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Containers/IUFTabProperties.cs
-    startLine: 36
+    startLine: 39
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers
@@ -77,7 +79,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Selected
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Containers/IUFTabProperties.cs
-    startLine: 41
+    startLine: 44
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers

@@ -23,10 +23,12 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: IUFTableRowProperties
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/IUFTableRowProperties.cs
-    startLine: 33
+    startLine: 36
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table
+  summary: Properties for a table row in a web page.
+  example: []
   syntax:
     content: public interface IUFTableRowProperties
     content.vb: Public Interface IUFTableRowProperties
@@ -48,7 +50,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Type
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/IUFTableRowProperties.cs
-    startLine: 38
+    startLine: 41
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table
@@ -79,7 +81,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Alternate
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/IUFTableRowProperties.cs
-    startLine: 43
+    startLine: 46
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table
@@ -110,7 +112,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Hover
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/IUFTableRowProperties.cs
-    startLine: 48
+    startLine: 51
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table
@@ -141,7 +143,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: SortLocation
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/IUFTableRowProperties.cs
-    startLine: 58
+    startLine: 61
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table

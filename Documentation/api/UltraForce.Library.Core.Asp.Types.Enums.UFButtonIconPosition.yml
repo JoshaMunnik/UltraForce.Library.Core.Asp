@@ -51,10 +51,12 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Auto
     path: ../UltraForce.Library.Core.Asp/Types/Enums/UFButtonIconPosition.cs
-    startLine: 36
+    startLine: 39
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Position is automatically determined.
+  example: []
   syntax:
     content: Auto = 0
     return:
@@ -77,10 +79,12 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Start
     path: ../UltraForce.Library.Core.Asp/Types/Enums/UFButtonIconPosition.cs
-    startLine: 37
+    startLine: 44
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Place icon at horizontal start of button
+  example: []
   syntax:
     content: Start = 1
     return:
@@ -103,10 +107,12 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: End
     path: ../UltraForce.Library.Core.Asp/Types/Enums/UFButtonIconPosition.cs
-    startLine: 38
+    startLine: 49
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Place icon at horizontal end of button
+  example: []
   syntax:
     content: End = 2
     return:
@@ -129,10 +135,12 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Top
     path: ../UltraForce.Library.Core.Asp/Types/Enums/UFButtonIconPosition.cs
-    startLine: 39
+    startLine: 54
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Place icon at top of button
+  example: []
   syntax:
     content: Top = 3
     return:
@@ -155,10 +163,12 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Bottom
     path: ../UltraForce.Library.Core.Asp/Types/Enums/UFButtonIconPosition.cs
-    startLine: 40
+    startLine: 59
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Place icon at bottom of button
+  example: []
   syntax:
     content: Bottom = 4
     return:
