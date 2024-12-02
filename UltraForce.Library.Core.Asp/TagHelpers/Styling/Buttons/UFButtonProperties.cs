@@ -44,7 +44,7 @@ public class UFButtonProperties : IUFButtonProperties
   public UFButtonSize Size { get; set; } = UFButtonSize.Normal;
 
   /// <inheritdoc />
-  public UFButtonVariant Variant { get; set; } = UFButtonVariant.Normal;
+  public UFButtonVariant Variant { get; set; } = UFButtonVariant.Auto;
 
   /// <inheritdoc />
   public string? Icon { get; set; } = null;

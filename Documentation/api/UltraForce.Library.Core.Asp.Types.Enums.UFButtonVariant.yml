@@ -5,6 +5,7 @@ items:
   id: UFButtonVariant
   parent: UltraForce.Library.Core.Asp.Types.Enums
   children:
+  - UltraForce.Library.Core.Asp.Types.Enums.UFButtonVariant.Auto
   - UltraForce.Library.Core.Asp.Types.Enums.UFButtonVariant.Link
   - UltraForce.Library.Core.Asp.Types.Enums.UFButtonVariant.Normal
   - UltraForce.Library.Core.Asp.Types.Enums.UFButtonVariant.Outline
@@ -31,6 +32,34 @@ items:
   syntax:
     content: public enum UFButtonVariant
     content.vb: Public Enum UFButtonVariant
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFButtonVariant.Auto
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFButtonVariant.Auto
+  id: Auto
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFButtonVariant
+  langs:
+  - csharp
+  - vb
+  name: Auto
+  nameWithType: UFButtonVariant.Auto
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFButtonVariant.Auto
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFButtonVariant.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: Auto
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFButtonVariant.cs
+    startLine: 39
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Select the variant automatically based on the context.
+  example: []
+  syntax:
+    content: Auto = 0
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFButtonVariant
 - uid: UltraForce.Library.Core.Asp.Types.Enums.UFButtonVariant.Normal
   commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFButtonVariant.Normal
   id: Normal
@@ -49,14 +78,14 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Normal
     path: ../UltraForce.Library.Core.Asp/Types/Enums/UFButtonVariant.cs
-    startLine: 39
+    startLine: 44
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Enums
   summary: Normal filled button
   example: []
   syntax:
-    content: Normal = 0
+    content: Normal = 1
     return:
       type: UltraForce.Library.Core.Asp.Types.Enums.UFButtonVariant
 - uid: UltraForce.Library.Core.Asp.Types.Enums.UFButtonVariant.Outline
@@ -77,14 +106,14 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Outline
     path: ../UltraForce.Library.Core.Asp/Types/Enums/UFButtonVariant.cs
-    startLine: 44
+    startLine: 49
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Enums
   summary: Reverse the colors and draw the button with an outline.
   example: []
   syntax:
-    content: Outline = 1
+    content: Outline = 2
     return:
       type: UltraForce.Library.Core.Asp.Types.Enums.UFButtonVariant
 - uid: UltraForce.Library.Core.Asp.Types.Enums.UFButtonVariant.Link
@@ -105,14 +134,14 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Link
     path: ../UltraForce.Library.Core.Asp/Types/Enums/UFButtonVariant.cs
-    startLine: 49
+    startLine: 54
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Enums
   summary: Draw the button with a link style.
   example: []
   syntax:
-    content: Link = 2
+    content: Link = 3
     return:
       type: UltraForce.Library.Core.Asp.Types.Enums.UFButtonVariant
 references:

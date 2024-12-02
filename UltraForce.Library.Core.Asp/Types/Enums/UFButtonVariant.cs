@@ -35,6 +35,11 @@ namespace UltraForce.Library.Core.Asp.Types.Enums;
 public enum UFButtonVariant
 {
   /// <summary>
+  /// Select the variant automatically based on the context.
+  /// </summary>
+  Auto,
+  
+  /// <summary>
   /// Normal filled button
   /// </summary>
   Normal,

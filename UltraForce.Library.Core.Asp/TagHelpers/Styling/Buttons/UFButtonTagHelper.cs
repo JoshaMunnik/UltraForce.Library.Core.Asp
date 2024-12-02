@@ -81,7 +81,7 @@ public class UFButtonTagHelper(
 
   /// <inheritdoc />
   [HtmlAttributeName("variant")]
-  public UFButtonVariant Variant { get; set; } = UFButtonVariant.Normal;
+  public UFButtonVariant Variant { get; set; } = UFButtonVariant.Auto;
 
   /// <inheritdoc />
   [HtmlAttributeName("icon")]
