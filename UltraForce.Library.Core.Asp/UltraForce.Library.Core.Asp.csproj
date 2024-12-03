@@ -14,8 +14,11 @@
         <RepositoryUrl>https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp</RepositoryUrl>
         <PackageReadmeFile>README.md</PackageReadmeFile>
         <AssemblyVersion></AssemblyVersion>
-        <Version>1.0.21</Version>
-        <PackageReleaseNotes>1.0.21
+        <Version>1.0.22</Version>
+        <PackageReleaseNotes>1.0.22
+Fixed bug: stack styling methods are now virtual in UFTheme
+
+1.0.21
 Added &lt;uf-stack&gt; and &lt;uf-stack-item&gt;
 Added UFContentPosition.Stretch
 

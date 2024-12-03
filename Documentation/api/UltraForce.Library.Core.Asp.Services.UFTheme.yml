@@ -420,7 +420,7 @@ items:
   summary: Gets the css classes to use for a stack element.
   example: []
   syntax:
-    content: public string GetStackClasses(IUFContainerProperties aProperties)
+    content: public virtual string GetStackClasses(IUFContainerProperties aProperties)
     parameters:
     - id: aProperties
       type: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties
@@ -428,7 +428,7 @@ items:
     return:
       type: System.String
       description: ''
-    content.vb: Public Function GetStackClasses(aProperties As IUFContainerProperties) As String
+    content.vb: Public Overridable Function GetStackClasses(aProperties As IUFContainerProperties) As String
   overload: UltraForce.Library.Core.Asp.Services.UFTheme.GetStackClasses*
   implements:
   - UltraForce.Library.Core.Asp.Services.IUFTheme.GetStackClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties)
@@ -457,7 +457,7 @@ items:
   summary: Gets the css classes to use for a stack item element (that is placed within a stack element).
   example: []
   syntax:
-    content: public string GetStackItemClasses(IUFStackItemProperties aProperties)
+    content: public virtual string GetStackItemClasses(IUFStackItemProperties aProperties)
     parameters:
     - id: aProperties
       type: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFStackItemProperties
@@ -465,7 +465,7 @@ items:
     return:
       type: System.String
       description: ''
-    content.vb: Public Function GetStackItemClasses(aProperties As IUFStackItemProperties) As String
+    content.vb: Public Overridable Function GetStackItemClasses(aProperties As IUFStackItemProperties) As String
   overload: UltraForce.Library.Core.Asp.Services.UFTheme.GetStackItemClasses*
   implements:
   - UltraForce.Library.Core.Asp.Services.IUFTheme.GetStackItemClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFStackItemProperties)

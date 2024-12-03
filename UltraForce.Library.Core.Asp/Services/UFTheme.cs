@@ -97,7 +97,7 @@ public class UFTheme : IUFTheme
   }
 
   /// <inheritdoc />
-  public string GetStackClasses(
+  public virtual string GetStackClasses(
     IUFContainerProperties aProperties
   )
   {
@@ -105,7 +105,7 @@ public class UFTheme : IUFTheme
   }
 
   /// <inheritdoc />
-  public string GetStackItemClasses(
+  public virtual string GetStackItemClasses(
     IUFStackItemProperties aProperties
   )
   {
