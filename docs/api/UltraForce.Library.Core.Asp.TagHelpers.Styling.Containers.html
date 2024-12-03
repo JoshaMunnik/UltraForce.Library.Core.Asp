@@ -111,6 +111,30 @@ Renders:
 </dd>
     </dl>
     <dl class="jumplist">
+      <dt><a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackItemTagHelper.html">UFStackItemTagHelper</a></dt>
+      <dd><p>This tag should be used with <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper.html">UFStackTagHelper</a>, each child within the stack should
+be wrapped with this tag.</p>
+<p>
+Renders:
+<pre><code class="lang-csharp">&lt;div class="{GetStackItemClasses()}"&gt;
+{children}
+&lt;/div&gt;</code></pre>
+
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper.html">UFStackTagHelper</a></dt>
+      <dd><p>Places children on top of each other. Each child should be wrapped with a
+<a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackItemTagHelper.html">UFStackItemTagHelper</a>.</p>
+<p>
+Renders:
+<pre><code class="lang-csharp">&lt;div class="{GetStackClasses()}"&gt;
+{children}
+&lt;/div&gt;</code></pre>
+
+</dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFTabTagHelper.html">UFTabTagHelper</a></dt>
       <dd><p>This tag helper is used to render a tab container. It expects to be used as a child of a
 <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFTabsTagHelper.html">UFTabsTagHelper</a>.</p>
@@ -145,6 +169,11 @@ Interfaces
     <dl class="jumplist">
       <dt><a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.html">IUFContainerProperties</a></dt>
       <dd><p>Properties for a container that can optionally position its child content.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFStackItemProperties.html">IUFStackItemProperties</a></dt>
+      <dd><p>Properties for a stack item.</p>
 </dd>
     </dl>
     <dl class="jumplist">

@@ -11,6 +11,7 @@ items:
   - UltraForce.Library.Core.Asp.Types.Enums.UFFlexJustifyContent.SpaceBetween
   - UltraForce.Library.Core.Asp.Types.Enums.UFFlexJustifyContent.SpaceEvenly
   - UltraForce.Library.Core.Asp.Types.Enums.UFFlexJustifyContent.Start
+  - UltraForce.Library.Core.Asp.Types.Enums.UFFlexJustifyContent.Stretch
   langs:
   - csharp
   - vb
@@ -200,6 +201,34 @@ items:
   example: []
   syntax:
     content: SpaceEvenly = 5
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFFlexJustifyContent
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFFlexJustifyContent.Stretch
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFFlexJustifyContent.Stretch
+  id: Stretch
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFFlexJustifyContent
+  langs:
+  - csharp
+  - vb
+  name: Stretch
+  nameWithType: UFFlexJustifyContent.Stretch
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFFlexJustifyContent.Stretch
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFFlexJustifyContent.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: Stretch
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFFlexJustifyContent.cs
+    startLine: 69
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Stretch the children to fill the container
+  example: []
+  syntax:
+    content: Stretch = 6
     return:
       type: UltraForce.Library.Core.Asp.Types.Enums.UFFlexJustifyContent
 references:

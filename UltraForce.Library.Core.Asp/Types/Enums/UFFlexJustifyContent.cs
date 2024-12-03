@@ -62,5 +62,10 @@ public enum UFFlexJustifyContent
   /// <summary>
   /// Distribute space evenly between children
   /// </summary>
-  SpaceEvenly
+  SpaceEvenly,
+  
+  /// <summary>
+  /// Stretch the children to fill the container
+  /// </summary>
+  Stretch
 }

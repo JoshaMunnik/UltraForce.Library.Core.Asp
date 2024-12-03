@@ -1,47 +1,47 @@
 ### YamlMime:ManagedReference
 items:
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper
-  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper
-  id: UFColumnTagHelper
-  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper
+  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper
+  id: UFStackTagHelper
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers
   children:
-  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.#ctor(UltraForce.Library.Core.Asp.Services.IUFTheme)
-  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.AlignContent
-  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.AlignItems
-  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.Buttons
-  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.FullHeight
-  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.FullWidth
-  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.Gap
-  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.GetColumnClasses
-  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.JustifyContent
-  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
-  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.Wrap
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper.#ctor(UltraForce.Library.Core.Asp.Services.IUFTheme)
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper.FullHeight
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper.FullWidth
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper.GetStackClasses
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper.Horizontal
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper.Padding
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper.PositionChild
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper.Vertical
   langs:
   - csharp
   - vb
-  name: UFColumnTagHelper
-  nameWithType: UFColumnTagHelper
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper
+  name: UFStackTagHelper
+  nameWithType: UFStackTagHelper
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper
   type: Class
   source:
     remote:
-      path: UltraForce.Library.Core.Asp/TagHelpers/Styling/Layout/UFColumnTagHelper.cs
+      path: UltraForce.Library.Core.Asp/TagHelpers/Styling/Containers/UFStackTagHelper.cs
       branch: master
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
-    id: UFColumnTagHelper
-    path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Layout/UFColumnTagHelper.cs
-    startLine: 49
+    id: UFStackTagHelper
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Containers/UFStackTagHelper.cs
+    startLine: 50
   assemblies:
   - UltraForce.Library.Core.Asp
-  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers
   summary: >-
-    Places children in a column.
+    Places children on top of each other. Each child should be wrapped with a
+
+    <xref href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackItemTagHelper" data-throw-if-not-resolved="false"></xref>.
 
     <p>
 
     Renders:
 
-    <pre><code class="lang-csharp">&lt;div class="{GetColumnClasses()}"&gt;
+    <pre><code class="lang-csharp">&lt;div class="{GetStackClasses()}"&gt;
 
     {children}
 
@@ -53,11 +53,11 @@ items:
     content: >-
       [HtmlTargetElement("uf-column", TagStructure = TagStructure.NormalOrSelfClosing)]
 
-      public class UFColumnTagHelper : UFTagHelperWithTheme, ITagHelper, ITagHelperComponent, IUFFlexProperties
+      public class UFStackTagHelper : UFTagHelperWithTheme, ITagHelper, ITagHelperComponent, IUFContainerProperties
     content.vb: >-
       <HtmlTargetElement("uf-column", TagStructure:=TagStructure.NormalOrSelfClosing)>
 
-      Public Class UFColumnTagHelper Inherits UFTagHelperWithTheme Implements ITagHelper, ITagHelperComponent, IUFFlexProperties
+      Public Class UFStackTagHelper Inherits UFTagHelperWithTheme Implements ITagHelper, ITagHelperComponent, IUFContainerProperties
   inheritance:
   - System.Object
   - Microsoft.AspNetCore.Razor.TagHelpers.TagHelper
@@ -65,7 +65,7 @@ items:
   implements:
   - Microsoft.AspNetCore.Razor.TagHelpers.ITagHelper
   - Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent
-  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties
   inheritedMembers:
   - UltraForce.Library.Core.Asp.TagHelpers.Lib.UFTagHelperWithTheme.Theme
   - Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Init(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext)
@@ -88,36 +88,38 @@ items:
     - name: TagStructure
       type: Microsoft.AspNetCore.Razor.TagHelpers.TagStructure
       value: 1
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.#ctor(UltraForce.Library.Core.Asp.Services.IUFTheme)
-  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.#ctor(UltraForce.Library.Core.Asp.Services.IUFTheme)
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper.#ctor(UltraForce.Library.Core.Asp.Services.IUFTheme)
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper.#ctor(UltraForce.Library.Core.Asp.Services.IUFTheme)
   id: '#ctor(UltraForce.Library.Core.Asp.Services.IUFTheme)'
-  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper
   langs:
   - csharp
   - vb
-  name: UFColumnTagHelper(IUFTheme)
-  nameWithType: UFColumnTagHelper.UFColumnTagHelper(IUFTheme)
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.UFColumnTagHelper(UltraForce.Library.Core.Asp.Services.IUFTheme)
+  name: UFStackTagHelper(IUFTheme)
+  nameWithType: UFStackTagHelper.UFStackTagHelper(IUFTheme)
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper.UFStackTagHelper(UltraForce.Library.Core.Asp.Services.IUFTheme)
   type: Constructor
   source:
     remote:
-      path: UltraForce.Library.Core.Asp/TagHelpers/Styling/Layout/UFColumnTagHelper.cs
+      path: UltraForce.Library.Core.Asp/TagHelpers/Styling/Containers/UFStackTagHelper.cs
       branch: master
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: .ctor
-    path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Layout/UFColumnTagHelper.cs
-    startLine: 49
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Containers/UFStackTagHelper.cs
+    startLine: 50
   assemblies:
   - UltraForce.Library.Core.Asp
-  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers
   summary: >-
-    Places children in a column.
+    Places children on top of each other. Each child should be wrapped with a
+
+    <xref href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackItemTagHelper" data-throw-if-not-resolved="false"></xref>.
 
     <p>
 
     Renders:
 
-    <pre><code class="lang-csharp">&lt;div class="{GetColumnClasses()}"&gt;
+    <pre><code class="lang-csharp">&lt;div class="{GetStackClasses()}"&gt;
 
     {children}
 
@@ -126,263 +128,128 @@ items:
     </p>
   example: []
   syntax:
-    content: public UFColumnTagHelper(IUFTheme aTheme)
+    content: public UFStackTagHelper(IUFTheme aTheme)
     parameters:
     - id: aTheme
       type: UltraForce.Library.Core.Asp.Services.IUFTheme
     content.vb: Public Sub New(aTheme As IUFTheme)
-  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.#ctor*
-  nameWithType.vb: UFColumnTagHelper.New(IUFTheme)
-  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.New(UltraForce.Library.Core.Asp.Services.IUFTheme)
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper.#ctor*
+  nameWithType.vb: UFStackTagHelper.New(IUFTheme)
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper.New(UltraForce.Library.Core.Asp.Services.IUFTheme)
   name.vb: New(IUFTheme)
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.JustifyContent
-  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.JustifyContent
-  id: JustifyContent
-  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper.Horizontal
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper.Horizontal
+  id: Horizontal
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper
   langs:
   - csharp
   - vb
-  name: JustifyContent
-  nameWithType: UFColumnTagHelper.JustifyContent
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.JustifyContent
+  name: Horizontal
+  nameWithType: UFStackTagHelper.Horizontal
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper.Horizontal
   type: Property
   source:
     remote:
-      path: UltraForce.Library.Core.Asp/TagHelpers/Styling/Layout/UFColumnTagHelper.cs
+      path: UltraForce.Library.Core.Asp/TagHelpers/Styling/Containers/UFStackTagHelper.cs
       branch: master
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
-    id: JustifyContent
-    path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Layout/UFColumnTagHelper.cs
-    startLine: 56
+    id: Horizontal
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Containers/UFStackTagHelper.cs
+    startLine: 57
   assemblies:
   - UltraForce.Library.Core.Asp
-  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
-  summary: How to distribute the items in the direction of the container.
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers
+  summary: How to position the child horizontally within the container.
   example: []
   syntax:
     content: >-
-      [HtmlAttributeName("justify-content")]
+      [HtmlAttributeName("horizontal")]
 
-      public UFFlexJustifyContent JustifyContent { get; set; }
+      public UFContentPosition Horizontal { get; set; }
     parameters: []
     return:
-      type: UltraForce.Library.Core.Asp.Types.Enums.UFFlexJustifyContent
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFContentPosition
     content.vb: >-
-      <HtmlAttributeName("justify-content")>
+      <HtmlAttributeName("horizontal")>
 
-      Public Property JustifyContent As UFFlexJustifyContent
-  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.JustifyContent*
+      Public Property Horizontal As UFContentPosition
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper.Horizontal*
   implements:
-  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.JustifyContent
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.Horizontal
   attributes:
   - type: Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute
     ctor: Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute.#ctor(System.String)
     arguments:
     - type: System.String
-      value: justify-content
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.AlignItems
-  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.AlignItems
-  id: AlignItems
-  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper
+      value: horizontal
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper.Vertical
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper.Vertical
+  id: Vertical
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper
   langs:
   - csharp
   - vb
-  name: AlignItems
-  nameWithType: UFColumnTagHelper.AlignItems
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.AlignItems
+  name: Vertical
+  nameWithType: UFStackTagHelper.Vertical
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper.Vertical
   type: Property
   source:
     remote:
-      path: UltraForce.Library.Core.Asp/TagHelpers/Styling/Layout/UFColumnTagHelper.cs
+      path: UltraForce.Library.Core.Asp/TagHelpers/Styling/Containers/UFStackTagHelper.cs
       branch: master
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
-    id: AlignItems
-    path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Layout/UFColumnTagHelper.cs
-    startLine: 60
+    id: Vertical
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Containers/UFStackTagHelper.cs
+    startLine: 61
   assemblies:
   - UltraForce.Library.Core.Asp
-  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
-  summary: How to align the items in the opposite direction.
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers
+  summary: How to position the child vertically within the container.
   example: []
   syntax:
     content: >-
-      [HtmlAttributeName("align-items")]
+      [HtmlAttributeName("vertical")]
 
-      public UFFlexAlignItems AlignItems { get; set; }
+      public UFContentPosition Vertical { get; set; }
     parameters: []
     return:
-      type: UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignItems
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFContentPosition
     content.vb: >-
-      <HtmlAttributeName("align-items")>
+      <HtmlAttributeName("vertical")>
 
-      Public Property AlignItems As UFFlexAlignItems
-  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.AlignItems*
+      Public Property Vertical As UFContentPosition
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper.Vertical*
   implements:
-  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.AlignItems
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.Vertical
   attributes:
   - type: Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute
     ctor: Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute.#ctor(System.String)
     arguments:
     - type: System.String
-      value: align-items
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.AlignContent
-  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.AlignContent
-  id: AlignContent
-  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper
-  langs:
-  - csharp
-  - vb
-  name: AlignContent
-  nameWithType: UFColumnTagHelper.AlignContent
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.AlignContent
-  type: Property
-  source:
-    remote:
-      path: UltraForce.Library.Core.Asp/TagHelpers/Styling/Layout/UFColumnTagHelper.cs
-      branch: master
-      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
-    id: AlignContent
-    path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Layout/UFColumnTagHelper.cs
-    startLine: 64
-  assemblies:
-  - UltraForce.Library.Core.Asp
-  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
-  summary: How to distribute the items in the opposite direction.
-  example: []
-  syntax:
-    content: >-
-      [HtmlAttributeName("align-content")]
-
-      public UFFlexAlignContent AlignContent { get; set; }
-    parameters: []
-    return:
-      type: UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignContent
-    content.vb: >-
-      <HtmlAttributeName("align-content")>
-
-      Public Property AlignContent As UFFlexAlignContent
-  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.AlignContent*
-  implements:
-  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.AlignContent
-  attributes:
-  - type: Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute
-    ctor: Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute.#ctor(System.String)
-    arguments:
-    - type: System.String
-      value: align-content
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.Buttons
-  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.Buttons
-  id: Buttons
-  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper
-  langs:
-  - csharp
-  - vb
-  name: Buttons
-  nameWithType: UFColumnTagHelper.Buttons
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.Buttons
-  type: Property
-  source:
-    remote:
-      path: UltraForce.Library.Core.Asp/TagHelpers/Styling/Layout/UFColumnTagHelper.cs
-      branch: master
-      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
-    id: Buttons
-    path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Layout/UFColumnTagHelper.cs
-    startLine: 68
-  assemblies:
-  - UltraForce.Library.Core.Asp
-  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
-  summary: When true, the container is used to contain buttons.
-  example: []
-  syntax:
-    content: >-
-      [HtmlAttributeName("buttons")]
-
-      public bool Buttons { get; set; }
-    parameters: []
-    return:
-      type: System.Boolean
-    content.vb: >-
-      <HtmlAttributeName("buttons")>
-
-      Public Property Buttons As Boolean
-  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.Buttons*
-  implements:
-  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.Buttons
-  attributes:
-  - type: Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute
-    ctor: Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute.#ctor(System.String)
-    arguments:
-    - type: System.String
-      value: buttons
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.Gap
-  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.Gap
-  id: Gap
-  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper
-  langs:
-  - csharp
-  - vb
-  name: Gap
-  nameWithType: UFColumnTagHelper.Gap
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.Gap
-  type: Property
-  source:
-    remote:
-      path: UltraForce.Library.Core.Asp/TagHelpers/Styling/Layout/UFColumnTagHelper.cs
-      branch: master
-      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
-    id: Gap
-    path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Layout/UFColumnTagHelper.cs
-    startLine: 72
-  assemblies:
-  - UltraForce.Library.Core.Asp
-  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
-  summary: Gap index, determining minimal space between children. When null, the theme default is used.
-  example: []
-  syntax:
-    content: >-
-      [HtmlAttributeName("gap")]
-
-      public int? Gap { get; set; }
-    parameters: []
-    return:
-      type: System.Nullable{System.Int32}
-    content.vb: >-
-      <HtmlAttributeName("gap")>
-
-      Public Property Gap As Integer?
-  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.Gap*
-  implements:
-  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.Gap
-  attributes:
-  - type: Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute
-    ctor: Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute.#ctor(System.String)
-    arguments:
-    - type: System.String
-      value: gap
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.FullWidth
-  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.FullWidth
+      value: vertical
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper.FullWidth
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper.FullWidth
   id: FullWidth
-  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper
   langs:
   - csharp
   - vb
   name: FullWidth
-  nameWithType: UFColumnTagHelper.FullWidth
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.FullWidth
+  nameWithType: UFStackTagHelper.FullWidth
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper.FullWidth
   type: Property
   source:
     remote:
-      path: UltraForce.Library.Core.Asp/TagHelpers/Styling/Layout/UFColumnTagHelper.cs
+      path: UltraForce.Library.Core.Asp/TagHelpers/Styling/Containers/UFStackTagHelper.cs
       branch: master
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: FullWidth
-    path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Layout/UFColumnTagHelper.cs
-    startLine: 76
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Containers/UFStackTagHelper.cs
+    startLine: 65
   assemblies:
   - UltraForce.Library.Core.Asp
-  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
-  summary: When true use all available horizontal space in the parent.
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers
+  summary: When true use the width of the parent, otherwise use the width of the content.
   example: []
   syntax:
     content: >-
@@ -396,38 +263,38 @@ items:
       <HtmlAttributeName("full-width")>
 
       Public Property FullWidth As Boolean
-  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.FullWidth*
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper.FullWidth*
   implements:
-  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.FullWidth
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.FullWidth
   attributes:
   - type: Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute
     ctor: Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute.#ctor(System.String)
     arguments:
     - type: System.String
       value: full-width
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.FullHeight
-  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.FullHeight
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper.FullHeight
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper.FullHeight
   id: FullHeight
-  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper
   langs:
   - csharp
   - vb
   name: FullHeight
-  nameWithType: UFColumnTagHelper.FullHeight
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.FullHeight
+  nameWithType: UFStackTagHelper.FullHeight
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper.FullHeight
   type: Property
   source:
     remote:
-      path: UltraForce.Library.Core.Asp/TagHelpers/Styling/Layout/UFColumnTagHelper.cs
+      path: UltraForce.Library.Core.Asp/TagHelpers/Styling/Containers/UFStackTagHelper.cs
       branch: master
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: FullHeight
-    path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Layout/UFColumnTagHelper.cs
-    startLine: 80
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Containers/UFStackTagHelper.cs
+    startLine: 69
   assemblies:
   - UltraForce.Library.Core.Asp
-  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
-  summary: When true use all available vertical space in the parent.
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers
+  summary: When true use the height of the parent, otherwise use the height of the content.
   example: []
   syntax:
     content: >-
@@ -441,82 +308,130 @@ items:
       <HtmlAttributeName("full-height")>
 
       Public Property FullHeight As Boolean
-  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.FullHeight*
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper.FullHeight*
   implements:
-  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.FullHeight
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.FullHeight
   attributes:
   - type: Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute
     ctor: Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute.#ctor(System.String)
     arguments:
     - type: System.String
       value: full-height
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.Wrap
-  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.Wrap
-  id: Wrap
-  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper.PositionChild
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper.PositionChild
+  id: PositionChild
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper
   langs:
   - csharp
   - vb
-  name: Wrap
-  nameWithType: UFColumnTagHelper.Wrap
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.Wrap
+  name: PositionChild
+  nameWithType: UFStackTagHelper.PositionChild
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper.PositionChild
   type: Property
   source:
     remote:
-      path: UltraForce.Library.Core.Asp/TagHelpers/Styling/Layout/UFColumnTagHelper.cs
+      path: UltraForce.Library.Core.Asp/TagHelpers/Styling/Containers/UFStackTagHelper.cs
       branch: master
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
-    id: Wrap
-    path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Layout/UFColumnTagHelper.cs
-    startLine: 84
+    id: PositionChild
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Containers/UFStackTagHelper.cs
+    startLine: 73
   assemblies:
   - UltraForce.Library.Core.Asp
-  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
-  summary: When true wrap children across multiple rows or columns when they don"t fit.
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers
+  summary: >-
+    When true position the children in the container using <xref href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.Horizontal" data-throw-if-not-resolved="false"></xref> and
+
+    <xref href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.Vertical" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
     content: >-
-      [HtmlAttributeName("wrap")]
+      [HtmlAttributeName("position-child")]
 
-      public bool Wrap { get; set; }
+      public bool PositionChild { get; set; }
     parameters: []
     return:
       type: System.Boolean
     content.vb: >-
-      <HtmlAttributeName("wrap")>
+      <HtmlAttributeName("position-child")>
 
-      Public Property Wrap As Boolean
-  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.Wrap*
+      Public Property PositionChild As Boolean
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper.PositionChild*
   implements:
-  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.Wrap
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.PositionChild
   attributes:
   - type: Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute
     ctor: Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute.#ctor(System.String)
     arguments:
     - type: System.String
-      value: wrap
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
-  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+      value: position-child
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper.Padding
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper.Padding
+  id: Padding
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper
+  langs:
+  - csharp
+  - vb
+  name: Padding
+  nameWithType: UFStackTagHelper.Padding
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper.Padding
+  type: Property
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Styling/Containers/UFStackTagHelper.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: Padding
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Containers/UFStackTagHelper.cs
+    startLine: 77
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers
+  summary: Padding to add to the container.
+  example: []
+  syntax:
+    content: >-
+      [HtmlAttributeName("padding")]
+
+      public int Padding { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: >-
+      <HtmlAttributeName("padding")>
+
+      Public Property Padding As Integer
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper.Padding*
+  implements:
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.Padding
+  attributes:
+  - type: Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute
+    ctor: Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: padding
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
   id: Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
-  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper
   langs:
   - csharp
   - vb
   name: Process(TagHelperContext, TagHelperOutput)
-  nameWithType: UFColumnTagHelper.Process(TagHelperContext, TagHelperOutput)
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  nameWithType: UFStackTagHelper.Process(TagHelperContext, TagHelperOutput)
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
   type: Method
   source:
     remote:
-      path: UltraForce.Library.Core.Asp/TagHelpers/Styling/Layout/UFColumnTagHelper.cs
+      path: UltraForce.Library.Core.Asp/TagHelpers/Styling/Containers/UFStackTagHelper.cs
       branch: master
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Process
-    path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Layout/UFColumnTagHelper.cs
-    startLine: 92
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Containers/UFStackTagHelper.cs
+    startLine: 85
   assemblies:
   - UltraForce.Library.Core.Asp
-  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers
   summary: >-
     Synchronously executes the <xref href="Microsoft.AspNetCore.Razor.TagHelpers.TagHelper" data-throw-if-not-resolved="false"></xref> with the given <code class="paramref">context</code> and
 
@@ -533,45 +448,51 @@ items:
       description: A stateful HTML element used to generate an HTML tag.
     content.vb: Public Overrides Sub Process(context As TagHelperContext, output As TagHelperOutput)
   overridden: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
-  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.Process*
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.GetColumnClasses
-  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.GetColumnClasses
-  id: GetColumnClasses
-  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper.Process*
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper.GetStackClasses
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper.GetStackClasses
+  id: GetStackClasses
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper
   langs:
   - csharp
   - vb
-  name: GetColumnClasses()
-  nameWithType: UFColumnTagHelper.GetColumnClasses()
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.GetColumnClasses()
+  name: GetStackClasses()
+  nameWithType: UFStackTagHelper.GetStackClasses()
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper.GetStackClasses()
   type: Method
   source:
     remote:
-      path: UltraForce.Library.Core.Asp/TagHelpers/Styling/Layout/UFColumnTagHelper.cs
+      path: UltraForce.Library.Core.Asp/TagHelpers/Styling/Containers/UFStackTagHelper.cs
       branch: master
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
-    id: GetColumnClasses
-    path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Layout/UFColumnTagHelper.cs
-    startLine: 107
+    id: GetStackClasses
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Containers/UFStackTagHelper.cs
+    startLine: 100
   assemblies:
   - UltraForce.Library.Core.Asp
-  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
-  summary: The default implementation calls <xref href="UltraForce.Library.Core.Asp.Services.IUFTheme.GetColumnClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties)" data-throw-if-not-resolved="false"></xref>.
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers
+  summary: The default implementation calls <xref href="UltraForce.Library.Core.Asp.Services.IUFTheme.GetStackClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties)" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
-    content: protected virtual string GetColumnClasses()
+    content: protected virtual string GetStackClasses()
     return:
       type: System.String
       description: ''
-    content.vb: Protected Overridable Function GetColumnClasses() As String
-  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.GetColumnClasses*
+    content.vb: Protected Overridable Function GetStackClasses() As String
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper.GetStackClasses*
 references:
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
-  commentId: N:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackItemTagHelper
+  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackItemTagHelper
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackItemTagHelper.html
+  name: UFStackItemTagHelper
+  nameWithType: UFStackItemTagHelper
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackItemTagHelper
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers
+  commentId: N:UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers
   href: UltraForce.html
-  name: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
-  nameWithType: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
+  name: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers
+  nameWithType: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers
   spec.csharp:
   - uid: UltraForce
     name: UltraForce
@@ -597,9 +518,9 @@ references:
     name: Styling
     href: UltraForce.Library.Core.Asp.TagHelpers.Styling.html
   - name: .
-  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
-    name: Layout
-    href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.html
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers
+    name: Containers
+    href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.html
   spec.vb:
   - uid: UltraForce
     name: UltraForce
@@ -625,9 +546,9 @@ references:
     name: Styling
     href: UltraForce.Library.Core.Asp.TagHelpers.Styling.html
   - name: .
-  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
-    name: Layout
-    href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.html
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers
+    name: Containers
+    href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.html
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -670,13 +591,13 @@ references:
   name: ITagHelperComponent
   nameWithType: ITagHelperComponent
   fullName: Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties
-  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties
-  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
-  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.html
-  name: IUFFlexProperties
-  nameWithType: IUFFlexProperties
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties
+  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.html
+  name: IUFContainerProperties
+  nameWithType: IUFContainerProperties
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFTagHelperWithTheme.Theme
   commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Lib.UFTagHelperWithTheme.Theme
   parent: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFTagHelperWithTheme
@@ -1091,14 +1012,14 @@ references:
   - uid: UltraForce.Library.Core.Asp.TagHelpers.Lib
     name: Lib
     href: UltraForce.Library.Core.Asp.TagHelpers.Lib.html
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.#ctor*
-  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.#ctor
-  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Layout_UFColumnTagHelper__ctor_UltraForce_Library_Core_Asp_Services_IUFTheme_
-  name: UFColumnTagHelper
-  nameWithType: UFColumnTagHelper.UFColumnTagHelper
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.UFColumnTagHelper
-  nameWithType.vb: UFColumnTagHelper.New
-  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.New
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper.#ctor*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper.#ctor
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Containers_UFStackTagHelper__ctor_UltraForce_Library_Core_Asp_Services_IUFTheme_
+  name: UFStackTagHelper
+  nameWithType: UFStackTagHelper.UFStackTagHelper
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper.UFStackTagHelper
+  nameWithType.vb: UFStackTagHelper.New
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper.New
   name.vb: New
 - uid: UltraForce.Library.Core.Asp.Services.IUFTheme
   commentId: T:UltraForce.Library.Core.Asp.Services.IUFTheme
@@ -1153,26 +1074,26 @@ references:
   - uid: UltraForce.Library.Core.Asp.Services
     name: Services
     href: UltraForce.Library.Core.Asp.Services.html
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.JustifyContent*
-  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.JustifyContent
-  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Layout_UFColumnTagHelper_JustifyContent
-  name: JustifyContent
-  nameWithType: UFColumnTagHelper.JustifyContent
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.JustifyContent
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.JustifyContent
-  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.JustifyContent
-  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties
-  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Layout_IUFFlexProperties_JustifyContent
-  name: JustifyContent
-  nameWithType: IUFFlexProperties.JustifyContent
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.JustifyContent
-- uid: UltraForce.Library.Core.Asp.Types.Enums.UFFlexJustifyContent
-  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFFlexJustifyContent
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper.Horizontal*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper.Horizontal
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Containers_UFStackTagHelper_Horizontal
+  name: Horizontal
+  nameWithType: UFStackTagHelper.Horizontal
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper.Horizontal
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.Horizontal
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.Horizontal
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Containers_IUFContainerProperties_Horizontal
+  name: Horizontal
+  nameWithType: IUFContainerProperties.Horizontal
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.Horizontal
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFContentPosition
+  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFContentPosition
   parent: UltraForce.Library.Core.Asp.Types.Enums
-  href: UltraForce.Library.Core.Asp.Types.Enums.UFFlexJustifyContent.html
-  name: UFFlexJustifyContent
-  nameWithType: UFFlexJustifyContent
-  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFFlexJustifyContent
+  href: UltraForce.Library.Core.Asp.Types.Enums.UFContentPosition.html
+  name: UFContentPosition
+  nameWithType: UFContentPosition
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFContentPosition
 - uid: UltraForce.Library.Core.Asp.Types.Enums
   commentId: N:UltraForce.Library.Core.Asp.Types.Enums
   href: UltraForce.html
@@ -1227,59 +1148,32 @@ references:
   - uid: UltraForce.Library.Core.Asp.Types.Enums
     name: Enums
     href: UltraForce.Library.Core.Asp.Types.Enums.html
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.AlignItems*
-  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.AlignItems
-  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Layout_UFColumnTagHelper_AlignItems
-  name: AlignItems
-  nameWithType: UFColumnTagHelper.AlignItems
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.AlignItems
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.AlignItems
-  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.AlignItems
-  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties
-  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Layout_IUFFlexProperties_AlignItems
-  name: AlignItems
-  nameWithType: IUFFlexProperties.AlignItems
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.AlignItems
-- uid: UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignItems
-  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignItems
-  parent: UltraForce.Library.Core.Asp.Types.Enums
-  href: UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignItems.html
-  name: UFFlexAlignItems
-  nameWithType: UFFlexAlignItems
-  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignItems
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.AlignContent*
-  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.AlignContent
-  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Layout_UFColumnTagHelper_AlignContent
-  name: AlignContent
-  nameWithType: UFColumnTagHelper.AlignContent
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.AlignContent
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.AlignContent
-  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.AlignContent
-  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties
-  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Layout_IUFFlexProperties_AlignContent
-  name: AlignContent
-  nameWithType: IUFFlexProperties.AlignContent
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.AlignContent
-- uid: UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignContent
-  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignContent
-  parent: UltraForce.Library.Core.Asp.Types.Enums
-  href: UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignContent.html
-  name: UFFlexAlignContent
-  nameWithType: UFFlexAlignContent
-  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignContent
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.Buttons*
-  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.Buttons
-  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Layout_UFColumnTagHelper_Buttons
-  name: Buttons
-  nameWithType: UFColumnTagHelper.Buttons
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.Buttons
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.Buttons
-  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.Buttons
-  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties
-  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Layout_IUFFlexProperties_Buttons
-  name: Buttons
-  nameWithType: IUFFlexProperties.Buttons
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.Buttons
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper.Vertical*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper.Vertical
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Containers_UFStackTagHelper_Vertical
+  name: Vertical
+  nameWithType: UFStackTagHelper.Vertical
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper.Vertical
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.Vertical
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.Vertical
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Containers_IUFContainerProperties_Vertical
+  name: Vertical
+  nameWithType: IUFContainerProperties.Vertical
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.Vertical
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper.FullWidth*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper.FullWidth
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Containers_UFStackTagHelper_FullWidth
+  name: FullWidth
+  nameWithType: UFStackTagHelper.FullWidth
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper.FullWidth
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.FullWidth
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.FullWidth
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Containers_IUFContainerProperties_FullWidth
+  name: FullWidth
+  nameWithType: IUFContainerProperties.FullWidth
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.FullWidth
 - uid: System.Boolean
   commentId: T:System.Boolean
   parent: System
@@ -1291,109 +1185,56 @@ references:
   nameWithType.vb: Boolean
   fullName.vb: Boolean
   name.vb: Boolean
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.Gap*
-  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.Gap
-  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Layout_UFColumnTagHelper_Gap
-  name: Gap
-  nameWithType: UFColumnTagHelper.Gap
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.Gap
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.Gap
-  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.Gap
-  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties
-  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Layout_IUFFlexProperties_Gap
-  name: Gap
-  nameWithType: IUFFlexProperties.Gap
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.Gap
-- uid: System.Nullable{System.Int32}
-  commentId: T:System.Nullable{System.Int32}
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper.FullHeight*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper.FullHeight
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Containers_UFStackTagHelper_FullHeight
+  name: FullHeight
+  nameWithType: UFStackTagHelper.FullHeight
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper.FullHeight
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.FullHeight
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.FullHeight
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Containers_IUFContainerProperties_FullHeight
+  name: FullHeight
+  nameWithType: IUFContainerProperties.FullHeight
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.FullHeight
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper.PositionChild*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper.PositionChild
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Containers_UFStackTagHelper_PositionChild
+  name: PositionChild
+  nameWithType: UFStackTagHelper.PositionChild
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper.PositionChild
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.PositionChild
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.PositionChild
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Containers_IUFContainerProperties_PositionChild
+  name: PositionChild
+  nameWithType: IUFContainerProperties.PositionChild
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.PositionChild
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper.Padding*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper.Padding
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Containers_UFStackTagHelper_Padding
+  name: Padding
+  nameWithType: UFStackTagHelper.Padding
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper.Padding
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.Padding
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.Padding
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Containers_IUFContainerProperties_Padding
+  name: Padding
+  nameWithType: IUFContainerProperties.Padding
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.Padding
+- uid: System.Int32
+  commentId: T:System.Int32
   parent: System
-  definition: System.Nullable`1
-  href: https://learn.microsoft.com/dotnet/api/system.int32
-  name: int?
-  nameWithType: int?
-  fullName: int?
-  nameWithType.vb: Integer?
-  fullName.vb: Integer?
-  name.vb: Integer?
-  spec.csharp:
-  - uid: System.Int32
-    name: int
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int32
-  - name: '?'
-  spec.vb:
-  - uid: System.Int32
-    name: Integer
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int32
-  - name: '?'
-- uid: System.Nullable`1
-  commentId: T:System.Nullable`1
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
-  name: Nullable<T>
-  nameWithType: Nullable<T>
-  fullName: System.Nullable<T>
-  nameWithType.vb: Nullable(Of T)
-  fullName.vb: System.Nullable(Of T)
-  name.vb: Nullable(Of T)
-  spec.csharp:
-  - uid: System.Nullable`1
-    name: Nullable
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
-  - name: <
-  - name: T
-  - name: '>'
-  spec.vb:
-  - uid: System.Nullable`1
-    name: Nullable
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
-  - name: (
-  - name: Of
-  - name: " "
-  - name: T
-  - name: )
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.FullWidth*
-  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.FullWidth
-  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Layout_UFColumnTagHelper_FullWidth
-  name: FullWidth
-  nameWithType: UFColumnTagHelper.FullWidth
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.FullWidth
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.FullWidth
-  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.FullWidth
-  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties
-  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Layout_IUFFlexProperties_FullWidth
-  name: FullWidth
-  nameWithType: IUFFlexProperties.FullWidth
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.FullWidth
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.FullHeight*
-  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.FullHeight
-  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Layout_UFColumnTagHelper_FullHeight
-  name: FullHeight
-  nameWithType: UFColumnTagHelper.FullHeight
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.FullHeight
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.FullHeight
-  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.FullHeight
-  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties
-  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Layout_IUFFlexProperties_FullHeight
-  name: FullHeight
-  nameWithType: IUFFlexProperties.FullHeight
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.FullHeight
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.Wrap*
-  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.Wrap
-  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Layout_UFColumnTagHelper_Wrap
-  name: Wrap
-  nameWithType: UFColumnTagHelper.Wrap
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.Wrap
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.Wrap
-  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.Wrap
-  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties
-  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Layout_IUFFlexProperties_Wrap
-  name: Wrap
-  nameWithType: IUFFlexProperties.Wrap
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.Wrap
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
 - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
   commentId: M:Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
   parent: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper
@@ -1436,12 +1277,12 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelperoutput
   - name: )
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.Process*
-  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.Process
-  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Layout_UFColumnTagHelper_Process_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContext_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper.Process*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper.Process
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Containers_UFStackTagHelper_Process_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContext_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_
   name: Process
-  nameWithType: UFColumnTagHelper.Process
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.Process
+  nameWithType: UFStackTagHelper.Process
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper.Process
 - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext
   commentId: T:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext
   parent: Microsoft.AspNetCore.Razor.TagHelpers
@@ -1458,37 +1299,37 @@ references:
   name: TagHelperOutput
   nameWithType: TagHelperOutput
   fullName: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput
-- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetColumnClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties)
-  commentId: M:UltraForce.Library.Core.Asp.Services.IUFTheme.GetColumnClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties)
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetStackClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties)
+  commentId: M:UltraForce.Library.Core.Asp.Services.IUFTheme.GetStackClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties)
   parent: UltraForce.Library.Core.Asp.Services.IUFTheme
-  href: UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetColumnClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Layout_IUFFlexProperties_
-  name: GetColumnClasses(IUFFlexProperties)
-  nameWithType: IUFTheme.GetColumnClasses(IUFFlexProperties)
-  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetColumnClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties)
+  href: UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetStackClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Containers_IUFContainerProperties_
+  name: GetStackClasses(IUFContainerProperties)
+  nameWithType: IUFTheme.GetStackClasses(IUFContainerProperties)
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetStackClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties)
   spec.csharp:
-  - uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetColumnClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties)
-    name: GetColumnClasses
-    href: UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetColumnClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Layout_IUFFlexProperties_
+  - uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetStackClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties)
+    name: GetStackClasses
+    href: UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetStackClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Containers_IUFContainerProperties_
   - name: (
-  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties
-    name: IUFFlexProperties
-    href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.html
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties
+    name: IUFContainerProperties
+    href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.html
   - name: )
   spec.vb:
-  - uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetColumnClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties)
-    name: GetColumnClasses
-    href: UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetColumnClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Layout_IUFFlexProperties_
+  - uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetStackClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties)
+    name: GetStackClasses
+    href: UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetStackClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Containers_IUFContainerProperties_
   - name: (
-  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties
-    name: IUFFlexProperties
-    href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.html
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties
+    name: IUFContainerProperties
+    href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.html
   - name: )
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.GetColumnClasses*
-  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.GetColumnClasses
-  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Layout_UFColumnTagHelper_GetColumnClasses
-  name: GetColumnClasses
-  nameWithType: UFColumnTagHelper.GetColumnClasses
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper.GetColumnClasses
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper.GetStackClasses*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper.GetStackClasses
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Containers_UFStackTagHelper_GetStackClasses
+  name: GetStackClasses
+  nameWithType: UFStackTagHelper.GetStackClasses
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper.GetStackClasses
 - uid: System.String
   commentId: T:System.String
   parent: System

@@ -43,6 +43,8 @@ items:
   - UltraForce.Library.Core.Asp.Services.UFTheme.GetTabRadioClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFTabProperties)
   - UltraForce.Library.Core.Asp.Services.UFTheme.GetTabLabelClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFTabProperties)
   - UltraForce.Library.Core.Asp.Services.UFTheme.GetTabContentWrapperClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFTabProperties)
+  - UltraForce.Library.Core.Asp.Services.UFTheme.GetStackClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties)
+  - UltraForce.Library.Core.Asp.Services.UFTheme.GetStackItemClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFStackItemProperties)
   - UltraForce.Library.Core.Asp.Services.UFTheme.GetDataListClasses
   - UltraForce.Library.Core.Asp.Services.UFTheme.GetDataNameClasses
   - UltraForce.Library.Core.Asp.Services.UFTheme.GetDataValueClasses
@@ -422,6 +424,56 @@ references:
   - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFTabProperties
     name: IUFTabProperties
     href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFTabProperties.html
+  - name: )
+- uid: UltraForce.Library.Core.Asp.Services.UFTheme.GetStackClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties)
+  commentId: M:UltraForce.Library.Core.Asp.Services.UFTheme.GetStackClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties)
+  parent: UltraForce.Library.Core.Asp.Services.UFTheme
+  href: UltraForce.Library.Core.Asp.Services.UFTheme.html#UltraForce_Library_Core_Asp_Services_UFTheme_GetStackClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Containers_IUFContainerProperties_
+  name: GetStackClasses(IUFContainerProperties)
+  nameWithType: UFTheme.GetStackClasses(IUFContainerProperties)
+  fullName: UltraForce.Library.Core.Asp.Services.UFTheme.GetStackClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties)
+  spec.csharp:
+  - uid: UltraForce.Library.Core.Asp.Services.UFTheme.GetStackClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties)
+    name: GetStackClasses
+    href: UltraForce.Library.Core.Asp.Services.UFTheme.html#UltraForce_Library_Core_Asp_Services_UFTheme_GetStackClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Containers_IUFContainerProperties_
+  - name: (
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties
+    name: IUFContainerProperties
+    href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.html
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.Core.Asp.Services.UFTheme.GetStackClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties)
+    name: GetStackClasses
+    href: UltraForce.Library.Core.Asp.Services.UFTheme.html#UltraForce_Library_Core_Asp_Services_UFTheme_GetStackClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Containers_IUFContainerProperties_
+  - name: (
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties
+    name: IUFContainerProperties
+    href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties.html
+  - name: )
+- uid: UltraForce.Library.Core.Asp.Services.UFTheme.GetStackItemClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFStackItemProperties)
+  commentId: M:UltraForce.Library.Core.Asp.Services.UFTheme.GetStackItemClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFStackItemProperties)
+  parent: UltraForce.Library.Core.Asp.Services.UFTheme
+  href: UltraForce.Library.Core.Asp.Services.UFTheme.html#UltraForce_Library_Core_Asp_Services_UFTheme_GetStackItemClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Containers_IUFStackItemProperties_
+  name: GetStackItemClasses(IUFStackItemProperties)
+  nameWithType: UFTheme.GetStackItemClasses(IUFStackItemProperties)
+  fullName: UltraForce.Library.Core.Asp.Services.UFTheme.GetStackItemClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFStackItemProperties)
+  spec.csharp:
+  - uid: UltraForce.Library.Core.Asp.Services.UFTheme.GetStackItemClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFStackItemProperties)
+    name: GetStackItemClasses
+    href: UltraForce.Library.Core.Asp.Services.UFTheme.html#UltraForce_Library_Core_Asp_Services_UFTheme_GetStackItemClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Containers_IUFStackItemProperties_
+  - name: (
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFStackItemProperties
+    name: IUFStackItemProperties
+    href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFStackItemProperties.html
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.Core.Asp.Services.UFTheme.GetStackItemClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFStackItemProperties)
+    name: GetStackItemClasses
+    href: UltraForce.Library.Core.Asp.Services.UFTheme.html#UltraForce_Library_Core_Asp_Services_UFTheme_GetStackItemClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Containers_IUFStackItemProperties_
+  - name: (
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFStackItemProperties
+    name: IUFStackItemProperties
+    href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFStackItemProperties.html
   - name: )
 - uid: UltraForce.Library.Core.Asp.Services.UFTheme.GetDataListClasses
   commentId: M:UltraForce.Library.Core.Asp.Services.UFTheme.GetDataListClasses

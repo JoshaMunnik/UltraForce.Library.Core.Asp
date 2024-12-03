@@ -36,7 +36,7 @@ using UltraForce.Library.Core.Asp.Tools;
 namespace UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout;
 
 /// <summary>
-/// Adds a space between items in a <see cref="UFColumnTagHelper"/>.
+/// Adds a space between items in a <see cref="UFColumnTagHelper"/> or <see cref="UFRowTagHelper"/>.
 /// <para>
 /// Renders:
 /// &lt;div class="{GetCssClasses()}" /&gt;

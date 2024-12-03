@@ -97,6 +97,22 @@ public class UFTheme : IUFTheme
   }
 
   /// <inheritdoc />
+  public string GetStackClasses(
+    IUFContainerProperties aProperties
+  )
+  {
+    return "";
+  }
+
+  /// <inheritdoc />
+  public string GetStackItemClasses(
+    IUFStackItemProperties aProperties
+  )
+  {
+    return "";
+  }
+
+  /// <inheritdoc />
   public virtual string GetDataListClasses()
   {
     return "";
@@ -355,7 +371,8 @@ public class UFTheme : IUFTheme
   }
 
   /// <summary>
-  /// The default implementation checks if the value ends with: "px", "pt", "em", "rem" or "%".
+  /// The default implementation returns true if the value does not end with:
+  /// "px", "pt", "em", "rem" or "%".
   /// </summary>
   /// <param name="aValue"></param>
   /// <returns></returns>

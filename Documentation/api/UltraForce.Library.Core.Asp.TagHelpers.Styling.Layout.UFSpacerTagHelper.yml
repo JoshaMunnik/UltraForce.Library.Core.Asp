@@ -28,7 +28,7 @@ items:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
   summary: >-
-    Adds a space between items in a <xref href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper" data-throw-if-not-resolved="false"></xref>.
+    Adds a space between items in a <xref href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper" data-throw-if-not-resolved="false"></xref> or <xref href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFRowTagHelper" data-throw-if-not-resolved="false"></xref>.
 
     <p>
 
@@ -100,7 +100,7 @@ items:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
   summary: >-
-    Adds a space between items in a <xref href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper" data-throw-if-not-resolved="false"></xref>.
+    Adds a space between items in a <xref href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper" data-throw-if-not-resolved="false"></xref> or <xref href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFRowTagHelper" data-throw-if-not-resolved="false"></xref>.
 
     <p>
 
@@ -242,6 +242,12 @@ references:
   name: UFColumnTagHelper
   nameWithType: UFColumnTagHelper
   fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFRowTagHelper
+  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFRowTagHelper
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFRowTagHelper.html
+  name: UFRowTagHelper
+  nameWithType: UFRowTagHelper
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFRowTagHelper
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
   commentId: N:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
   href: UltraForce.html

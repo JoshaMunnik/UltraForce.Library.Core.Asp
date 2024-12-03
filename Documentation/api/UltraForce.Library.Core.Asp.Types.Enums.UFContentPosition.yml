@@ -8,6 +8,7 @@ items:
   - UltraForce.Library.Core.Asp.Types.Enums.UFContentPosition.Center
   - UltraForce.Library.Core.Asp.Types.Enums.UFContentPosition.End
   - UltraForce.Library.Core.Asp.Types.Enums.UFContentPosition.Start
+  - UltraForce.Library.Core.Asp.Types.Enums.UFContentPosition.Stretch
   langs:
   - csharp
   - vb
@@ -113,6 +114,34 @@ items:
   example: []
   syntax:
     content: End = 2
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFContentPosition
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFContentPosition.Stretch
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFContentPosition.Stretch
+  id: Stretch
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFContentPosition
+  langs:
+  - csharp
+  - vb
+  name: Stretch
+  nameWithType: UFContentPosition.Stretch
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFContentPosition.Stretch
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFContentPosition.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: Stretch
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFContentPosition.cs
+    startLine: 54
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Stretch content to fill the container.
+  example: []
+  syntax:
+    content: Stretch = 3
     return:
       type: UltraForce.Library.Core.Asp.Types.Enums.UFContentPosition
 references:

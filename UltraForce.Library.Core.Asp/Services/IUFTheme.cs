@@ -102,6 +102,20 @@ public interface IUFTheme
   /// <param name="aProperties"></param>
   /// <returns></returns>
   string GetTabContentWrapperClasses(IUFTabProperties aProperties);
+  
+  /// <summary>
+  /// Gets the css classes to use for a stack element.
+  /// </summary>
+  /// <param name="aProperties"></param>
+  /// <returns></returns>
+  string GetStackClasses(IUFContainerProperties aProperties);
+  
+  /// <summary>
+  /// Gets the css classes to use for a stack item element (that is placed within a stack element).
+  /// </summary>
+  /// <param name="aProperties"></param>
+  /// <returns></returns>
+  string GetStackItemClasses(IUFStackItemProperties aProperties);
 
   #endregion
 

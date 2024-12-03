@@ -37,7 +37,7 @@ namespace UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout;
 public interface IUFFlexProperties
 {
   /// <summary>
-  /// How to distribute the items in the direction of the stack.
+  /// How to distribute the items in the direction of the container.
   /// </summary>
   UFFlexJustifyContent JustifyContent { get; set; }
 
@@ -52,7 +52,7 @@ public interface IUFFlexProperties
   UFFlexAlignContent AlignContent { get; set; }
   
   /// <summary>
-  /// When true, the stack is used to contain buttons. 
+  /// When true, the container is used to contain buttons. 
   /// </summary>
   bool Buttons { get; set; }
 

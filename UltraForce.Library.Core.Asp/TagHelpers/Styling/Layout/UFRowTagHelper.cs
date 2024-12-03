@@ -37,11 +37,11 @@ using UltraForce.Library.Core.Asp.Types.Enums;
 namespace UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout;
 
 /// <summary>
-/// Stack items vertically or horizontally.
+/// Places children in a row.
 /// <para>
 /// Renders:
 /// <code>
-/// &lt;div class="{GetStackClasses()}"&gt;
+/// &lt;div class="{GetRowClasses()}"&gt;
 /// {children}
 /// &lt;/div&gt;
 /// </code>

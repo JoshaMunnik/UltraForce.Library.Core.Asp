@@ -58,7 +58,7 @@ items:
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
-  summary: How to distribute the items in the direction of the stack.
+  summary: How to distribute the items in the direction of the container.
   example: []
   syntax:
     content: UFFlexJustifyContent JustifyContent { get; set; }
@@ -151,7 +151,7 @@ items:
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
-  summary: When true, the stack is used to contain buttons.
+  summary: When true, the container is used to contain buttons.
   example: []
   syntax:
     content: bool Buttons { get; set; }

@@ -1,42 +1,42 @@
 ### YamlMime:ManagedReference
 items:
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFTabsTagHelper
-  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFTabsTagHelper
-  id: UFTabsTagHelper
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackItemTagHelper
+  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackItemTagHelper
+  id: UFStackItemTagHelper
   parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers
   children:
-  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFTabsTagHelper.#ctor(UltraForce.Library.Core.Asp.Services.IUFTheme)
-  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFTabsTagHelper.GetTabsClasses(System.Int32)
-  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFTabsTagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
-  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFTabsTagHelper.TabsRadioName
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackItemTagHelper.#ctor(UltraForce.Library.Core.Asp.Services.IUFTheme)
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackItemTagHelper.GetStackItemClasses
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackItemTagHelper.NoInteraction
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackItemTagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
   langs:
   - csharp
   - vb
-  name: UFTabsTagHelper
-  nameWithType: UFTabsTagHelper
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFTabsTagHelper
+  name: UFStackItemTagHelper
+  nameWithType: UFStackItemTagHelper
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackItemTagHelper
   type: Class
   source:
     remote:
-      path: UltraForce.Library.Core.Asp/TagHelpers/Styling/Containers/UFTabsTagHelper.cs
+      path: UltraForce.Library.Core.Asp/TagHelpers/Styling/Containers/UFStackItemTagHelper.cs
       branch: master
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
-    id: UFTabsTagHelper
-    path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Containers/UFTabsTagHelper.cs
-    startLine: 49
+    id: UFStackItemTagHelper
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Containers/UFStackItemTagHelper.cs
+    startLine: 50
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers
   summary: >-
-    This tag helper is used to render a tab container. It expects its children to be instances
+    This tag should be used with <xref href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper" data-throw-if-not-resolved="false"></xref>, each child within the stack should
 
-    of <xref href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFTabTagHelper" data-throw-if-not-resolved="false"></xref>.
+    be wrapped with this tag.
 
     <p>
 
-    The class will render:
+    Renders:
 
-    <pre><code class="lang-csharp">&lt;div class="{GetTabsClasses}"&gt;
+    <pre><code class="lang-csharp">&lt;div class="{GetStackItemClasses()}"&gt;
 
     {children}
 
@@ -46,13 +46,13 @@ items:
   example: []
   syntax:
     content: >-
-      [HtmlTargetElement("uf-tabs")]
+      [HtmlTargetElement("uf-column", TagStructure = TagStructure.NormalOrSelfClosing)]
 
-      public class UFTabsTagHelper : UFTagHelperWithTheme, ITagHelper, ITagHelperComponent
+      public class UFStackItemTagHelper : UFTagHelperWithTheme, ITagHelper, ITagHelperComponent, IUFStackItemProperties
     content.vb: >-
-      <HtmlTargetElement("uf-tabs")>
+      <HtmlTargetElement("uf-column", TagStructure:=TagStructure.NormalOrSelfClosing)>
 
-      Public Class UFTabsTagHelper Inherits UFTagHelperWithTheme Implements ITagHelper, ITagHelperComponent
+      Public Class UFStackItemTagHelper Inherits UFTagHelperWithTheme Implements ITagHelper, ITagHelperComponent, IUFStackItemProperties
   inheritance:
   - System.Object
   - Microsoft.AspNetCore.Razor.TagHelpers.TagHelper
@@ -60,10 +60,11 @@ items:
   implements:
   - Microsoft.AspNetCore.Razor.TagHelpers.ITagHelper
   - Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFStackItemProperties
   inheritedMembers:
   - UltraForce.Library.Core.Asp.TagHelpers.Lib.UFTagHelperWithTheme.Theme
   - Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Init(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext)
-  - Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  - Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
   - Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Order
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
@@ -77,39 +78,43 @@ items:
     ctor: Microsoft.AspNetCore.Razor.TagHelpers.HtmlTargetElementAttribute.#ctor(System.String)
     arguments:
     - type: System.String
-      value: uf-tabs
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFTabsTagHelper.#ctor(UltraForce.Library.Core.Asp.Services.IUFTheme)
-  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFTabsTagHelper.#ctor(UltraForce.Library.Core.Asp.Services.IUFTheme)
+      value: uf-column
+    namedArguments:
+    - name: TagStructure
+      type: Microsoft.AspNetCore.Razor.TagHelpers.TagStructure
+      value: 1
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackItemTagHelper.#ctor(UltraForce.Library.Core.Asp.Services.IUFTheme)
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackItemTagHelper.#ctor(UltraForce.Library.Core.Asp.Services.IUFTheme)
   id: '#ctor(UltraForce.Library.Core.Asp.Services.IUFTheme)'
-  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFTabsTagHelper
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackItemTagHelper
   langs:
   - csharp
   - vb
-  name: UFTabsTagHelper(IUFTheme)
-  nameWithType: UFTabsTagHelper.UFTabsTagHelper(IUFTheme)
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFTabsTagHelper.UFTabsTagHelper(UltraForce.Library.Core.Asp.Services.IUFTheme)
+  name: UFStackItemTagHelper(IUFTheme)
+  nameWithType: UFStackItemTagHelper.UFStackItemTagHelper(IUFTheme)
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackItemTagHelper.UFStackItemTagHelper(UltraForce.Library.Core.Asp.Services.IUFTheme)
   type: Constructor
   source:
     remote:
-      path: UltraForce.Library.Core.Asp/TagHelpers/Styling/Containers/UFTabsTagHelper.cs
+      path: UltraForce.Library.Core.Asp/TagHelpers/Styling/Containers/UFStackItemTagHelper.cs
       branch: master
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: .ctor
-    path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Containers/UFTabsTagHelper.cs
-    startLine: 49
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Containers/UFStackItemTagHelper.cs
+    startLine: 50
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers
   summary: >-
-    This tag helper is used to render a tab container. It expects its children to be instances
+    This tag should be used with <xref href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper" data-throw-if-not-resolved="false"></xref>, each child within the stack should
 
-    of <xref href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFTabTagHelper" data-throw-if-not-resolved="false"></xref>.
+    be wrapped with this tag.
 
     <p>
 
-    The class will render:
+    Renders:
 
-    <pre><code class="lang-csharp">&lt;div class="{GetTabsClasses}"&gt;
+    <pre><code class="lang-csharp">&lt;div class="{GetStackItemClasses()}"&gt;
 
     {children}
 
@@ -118,77 +123,89 @@ items:
     </p>
   example: []
   syntax:
-    content: public UFTabsTagHelper(IUFTheme aTheme)
+    content: public UFStackItemTagHelper(IUFTheme aTheme)
     parameters:
     - id: aTheme
       type: UltraForce.Library.Core.Asp.Services.IUFTheme
     content.vb: Public Sub New(aTheme As IUFTheme)
-  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFTabsTagHelper.#ctor*
-  nameWithType.vb: UFTabsTagHelper.New(IUFTheme)
-  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFTabsTagHelper.New(UltraForce.Library.Core.Asp.Services.IUFTheme)
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackItemTagHelper.#ctor*
+  nameWithType.vb: UFStackItemTagHelper.New(IUFTheme)
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackItemTagHelper.New(UltraForce.Library.Core.Asp.Services.IUFTheme)
   name.vb: New(IUFTheme)
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFTabsTagHelper.TabsRadioName
-  commentId: F:UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFTabsTagHelper.TabsRadioName
-  id: TabsRadioName
-  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFTabsTagHelper
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackItemTagHelper.NoInteraction
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackItemTagHelper.NoInteraction
+  id: NoInteraction
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackItemTagHelper
   langs:
   - csharp
   - vb
-  name: TabsRadioName
-  nameWithType: UFTabsTagHelper.TabsRadioName
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFTabsTagHelper.TabsRadioName
-  type: Field
+  name: NoInteraction
+  nameWithType: UFStackItemTagHelper.NoInteraction
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackItemTagHelper.NoInteraction
+  type: Property
   source:
     remote:
-      path: UltraForce.Library.Core.Asp/TagHelpers/Styling/Containers/UFTabsTagHelper.cs
+      path: UltraForce.Library.Core.Asp/TagHelpers/Styling/Containers/UFStackItemTagHelper.cs
       branch: master
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
-    id: TabsRadioName
-    path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Containers/UFTabsTagHelper.cs
-    startLine: 60
+    id: NoInteraction
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Containers/UFStackItemTagHelper.cs
+    startLine: 57
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers
-  summary: >-
-    The key that <xref href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFTabTagHelper" data-throw-if-not-resolved="false"></xref> can use to get the name of the radio button from the
-
-    <xref href="Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext.Items" data-throw-if-not-resolved="false"></xref>.
+  summary: When true prevent interaction with the stack item.
   example: []
   syntax:
-    content: public const string TabsRadioName = "uf_tabs_radio_name"
+    content: >-
+      [HtmlAttributeName("no-interaction")]
+
+      public bool NoInteraction { get; set; }
+    parameters: []
     return:
-      type: System.String
-    content.vb: Public Const TabsRadioName As String = "uf_tabs_radio_name"
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFTabsTagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
-  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFTabsTagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
-  id: ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
-  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFTabsTagHelper
+      type: System.Boolean
+    content.vb: >-
+      <HtmlAttributeName("no-interaction")>
+
+      Public Property NoInteraction As Boolean
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackItemTagHelper.NoInteraction*
+  implements:
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFStackItemProperties.NoInteraction
+  attributes:
+  - type: Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute
+    ctor: Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: no-interaction
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackItemTagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackItemTagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  id: Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackItemTagHelper
   langs:
   - csharp
   - vb
-  name: ProcessAsync(TagHelperContext, TagHelperOutput)
-  nameWithType: UFTabsTagHelper.ProcessAsync(TagHelperContext, TagHelperOutput)
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFTabsTagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  name: Process(TagHelperContext, TagHelperOutput)
+  nameWithType: UFStackItemTagHelper.Process(TagHelperContext, TagHelperOutput)
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackItemTagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
   type: Method
   source:
     remote:
-      path: UltraForce.Library.Core.Asp/TagHelpers/Styling/Containers/UFTabsTagHelper.cs
+      path: UltraForce.Library.Core.Asp/TagHelpers/Styling/Containers/UFStackItemTagHelper.cs
       branch: master
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
-    id: ProcessAsync
-    path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Containers/UFTabsTagHelper.cs
-    startLine: 67
+    id: Process
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Containers/UFStackItemTagHelper.cs
+    startLine: 65
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers
   summary: >-
-    Asynchronously executes the <xref href="Microsoft.AspNetCore.Razor.TagHelpers.TagHelper" data-throw-if-not-resolved="false"></xref> with the given <code class="paramref">context</code> and
+    Synchronously executes the <xref href="Microsoft.AspNetCore.Razor.TagHelpers.TagHelper" data-throw-if-not-resolved="false"></xref> with the given <code class="paramref">context</code> and
 
     <code class="paramref">output</code>.
-  remarks: By default this calls into <xref href="Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext%2cMicrosoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
-    content: public override Task ProcessAsync(TagHelperContext context, TagHelperOutput output)
+    content: public override void Process(TagHelperContext context, TagHelperOutput output)
     parameters:
     - id: context
       type: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext
@@ -196,57 +213,47 @@ items:
     - id: output
       type: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput
       description: A stateful HTML element used to generate an HTML tag.
-    return:
-      type: System.Threading.Tasks.Task
-      description: A <xref href="System.Threading.Tasks.Task" data-throw-if-not-resolved="false"></xref> that on completion updates the <code class="paramref">output</code>.
-    content.vb: Public Overrides Function ProcessAsync(context As TagHelperContext, output As TagHelperOutput) As Task
-  overridden: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
-  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFTabsTagHelper.ProcessAsync*
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFTabsTagHelper.GetTabsClasses(System.Int32)
-  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFTabsTagHelper.GetTabsClasses(System.Int32)
-  id: GetTabsClasses(System.Int32)
-  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFTabsTagHelper
+    content.vb: Public Overrides Sub Process(context As TagHelperContext, output As TagHelperOutput)
+  overridden: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackItemTagHelper.Process*
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackItemTagHelper.GetStackItemClasses
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackItemTagHelper.GetStackItemClasses
+  id: GetStackItemClasses
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackItemTagHelper
   langs:
   - csharp
   - vb
-  name: GetTabsClasses(int)
-  nameWithType: UFTabsTagHelper.GetTabsClasses(int)
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFTabsTagHelper.GetTabsClasses(int)
+  name: GetStackItemClasses()
+  nameWithType: UFStackItemTagHelper.GetStackItemClasses()
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackItemTagHelper.GetStackItemClasses()
   type: Method
   source:
     remote:
-      path: UltraForce.Library.Core.Asp/TagHelpers/Styling/Containers/UFTabsTagHelper.cs
+      path: UltraForce.Library.Core.Asp/TagHelpers/Styling/Containers/UFStackItemTagHelper.cs
       branch: master
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
-    id: GetTabsClasses
-    path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Containers/UFTabsTagHelper.cs
-    startLine: 92
+    id: GetStackItemClasses
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Containers/UFStackItemTagHelper.cs
+    startLine: 80
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers
-  summary: The default implementation returns the result from <xref href="UltraForce.Library.Core.Asp.Services.IUFTheme.GetTabsClasses(System.Int32)" data-throw-if-not-resolved="false"></xref>.
+  summary: The default implementation calls <xref href="UltraForce.Library.Core.Asp.Services.IUFTheme.GetStackItemClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFStackItemProperties)" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
-    content: protected virtual string GetTabsClasses(int aCount)
-    parameters:
-    - id: aCount
-      type: System.Int32
-      description: ''
+    content: protected virtual string GetStackItemClasses()
     return:
       type: System.String
       description: ''
-    content.vb: Protected Overridable Function GetTabsClasses(aCount As Integer) As String
-  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFTabsTagHelper.GetTabsClasses*
-  nameWithType.vb: UFTabsTagHelper.GetTabsClasses(Integer)
-  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFTabsTagHelper.GetTabsClasses(Integer)
-  name.vb: GetTabsClasses(Integer)
+    content.vb: Protected Overridable Function GetStackItemClasses() As String
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackItemTagHelper.GetStackItemClasses*
 references:
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFTabTagHelper
-  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFTabTagHelper
-  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFTabTagHelper.html
-  name: UFTabTagHelper
-  nameWithType: UFTabTagHelper
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFTabTagHelper
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper
+  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper.html
+  name: UFStackTagHelper
+  nameWithType: UFStackTagHelper
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers
   commentId: N:UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers
   href: UltraForce.html
@@ -351,6 +358,13 @@ references:
   name: ITagHelperComponent
   nameWithType: ITagHelperComponent
   fullName: Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFStackItemProperties
+  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFStackItemProperties
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFStackItemProperties.html
+  name: IUFStackItemProperties
+  nameWithType: IUFStackItemProperties
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFStackItemProperties
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFTagHelperWithTheme.Theme
   commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Lib.UFTagHelperWithTheme.Theme
   parent: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFTagHelperWithTheme
@@ -388,19 +402,19 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelpercontext
   - name: )
-- uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
-  commentId: M:Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+- uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  commentId: M:Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
   parent: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper.process
-  name: Process(TagHelperContext, TagHelperOutput)
-  nameWithType: TagHelper.Process(TagHelperContext, TagHelperOutput)
-  fullName: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper.processasync
+  name: ProcessAsync(TagHelperContext, TagHelperOutput)
+  nameWithType: TagHelper.ProcessAsync(TagHelperContext, TagHelperOutput)
+  fullName: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
   spec.csharp:
-  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
-    name: Process
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+    name: ProcessAsync
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper.process
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper.processasync
   - name: (
   - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext
     name: TagHelperContext
@@ -414,10 +428,10 @@ references:
     href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelperoutput
   - name: )
   spec.vb:
-  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
-    name: Process
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+    name: ProcessAsync
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper.process
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper.processasync
   - name: (
   - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext
     name: TagHelperContext
@@ -765,14 +779,14 @@ references:
   - uid: UltraForce.Library.Core.Asp.TagHelpers.Lib
     name: Lib
     href: UltraForce.Library.Core.Asp.TagHelpers.Lib.html
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFTabsTagHelper.#ctor*
-  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFTabsTagHelper.#ctor
-  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFTabsTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Containers_UFTabsTagHelper__ctor_UltraForce_Library_Core_Asp_Services_IUFTheme_
-  name: UFTabsTagHelper
-  nameWithType: UFTabsTagHelper.UFTabsTagHelper
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFTabsTagHelper.UFTabsTagHelper
-  nameWithType.vb: UFTabsTagHelper.New
-  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFTabsTagHelper.New
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackItemTagHelper.#ctor*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackItemTagHelper.#ctor
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackItemTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Containers_UFStackItemTagHelper__ctor_UltraForce_Library_Core_Asp_Services_IUFTheme_
+  name: UFStackItemTagHelper
+  nameWithType: UFStackItemTagHelper.UFStackItemTagHelper
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackItemTagHelper.UFStackItemTagHelper
+  nameWithType.vb: UFStackItemTagHelper.New
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackItemTagHelper.New
   name.vb: New
 - uid: UltraForce.Library.Core.Asp.Services.IUFTheme
   commentId: T:UltraForce.Library.Core.Asp.Services.IUFTheme
@@ -827,45 +841,43 @@ references:
   - uid: UltraForce.Library.Core.Asp.Services
     name: Services
     href: UltraForce.Library.Core.Asp.Services.html
-- uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext.Items
-  commentId: P:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext.Items
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelpercontext.items
-  name: Items
-  nameWithType: TagHelperContext.Items
-  fullName: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext.Items
-- uid: System.String
-  commentId: T:System.String
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackItemTagHelper.NoInteraction*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackItemTagHelper.NoInteraction
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackItemTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Containers_UFStackItemTagHelper_NoInteraction
+  name: NoInteraction
+  nameWithType: UFStackItemTagHelper.NoInteraction
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackItemTagHelper.NoInteraction
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFStackItemProperties.NoInteraction
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFStackItemProperties.NoInteraction
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFStackItemProperties
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFStackItemProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Containers_IUFStackItemProperties_NoInteraction
+  name: NoInteraction
+  nameWithType: IUFStackItemProperties.NoInteraction
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFStackItemProperties.NoInteraction
+- uid: System.Boolean
+  commentId: T:System.Boolean
   parent: System
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String
-- uid: System.Threading.Tasks.Task
-  commentId: T:System.Threading.Tasks.Task
-  parent: System.Threading.Tasks
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
-  name: Task
-  nameWithType: Task
-  fullName: System.Threading.Tasks.Task
-- uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
-  commentId: M:Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  commentId: M:Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
   parent: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper.processasync
-  name: ProcessAsync(TagHelperContext, TagHelperOutput)
-  nameWithType: TagHelper.ProcessAsync(TagHelperContext, TagHelperOutput)
-  fullName: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper.process
+  name: Process(TagHelperContext, TagHelperOutput)
+  nameWithType: TagHelper.Process(TagHelperContext, TagHelperOutput)
+  fullName: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
   spec.csharp:
-  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
-    name: ProcessAsync
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+    name: Process
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper.processasync
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper.process
   - name: (
   - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext
     name: TagHelperContext
@@ -879,10 +891,10 @@ references:
     href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelperoutput
   - name: )
   spec.vb:
-  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
-    name: ProcessAsync
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+    name: Process
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper.processasync
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper.process
   - name: (
   - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext
     name: TagHelperContext
@@ -895,12 +907,12 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelperoutput
   - name: )
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFTabsTagHelper.ProcessAsync*
-  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFTabsTagHelper.ProcessAsync
-  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFTabsTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Containers_UFTabsTagHelper_ProcessAsync_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContext_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_
-  name: ProcessAsync
-  nameWithType: UFTabsTagHelper.ProcessAsync
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFTabsTagHelper.ProcessAsync
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackItemTagHelper.Process*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackItemTagHelper.Process
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackItemTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Containers_UFStackItemTagHelper_Process_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContext_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_
+  name: Process
+  nameWithType: UFStackItemTagHelper.Process
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackItemTagHelper.Process
 - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext
   commentId: T:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext
   parent: Microsoft.AspNetCore.Razor.TagHelpers
@@ -917,88 +929,45 @@ references:
   name: TagHelperOutput
   nameWithType: TagHelperOutput
   fullName: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput
-- uid: System.Threading.Tasks
-  commentId: N:System.Threading.Tasks
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system
-  name: System.Threading.Tasks
-  nameWithType: System.Threading.Tasks
-  fullName: System.Threading.Tasks
-  spec.csharp:
-  - uid: System
-    name: System
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system
-  - name: .
-  - uid: System.Threading
-    name: Threading
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.threading
-  - name: .
-  - uid: System.Threading.Tasks
-    name: Tasks
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
-  spec.vb:
-  - uid: System
-    name: System
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system
-  - name: .
-  - uid: System.Threading
-    name: Threading
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.threading
-  - name: .
-  - uid: System.Threading.Tasks
-    name: Tasks
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
-- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTabsClasses(System.Int32)
-  commentId: M:UltraForce.Library.Core.Asp.Services.IUFTheme.GetTabsClasses(System.Int32)
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetStackItemClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFStackItemProperties)
+  commentId: M:UltraForce.Library.Core.Asp.Services.IUFTheme.GetStackItemClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFStackItemProperties)
   parent: UltraForce.Library.Core.Asp.Services.IUFTheme
-  isExternal: true
-  href: UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetTabsClasses_System_Int32_
-  name: GetTabsClasses(int)
-  nameWithType: IUFTheme.GetTabsClasses(int)
-  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTabsClasses(int)
-  nameWithType.vb: IUFTheme.GetTabsClasses(Integer)
-  fullName.vb: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTabsClasses(Integer)
-  name.vb: GetTabsClasses(Integer)
+  href: UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetStackItemClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Containers_IUFStackItemProperties_
+  name: GetStackItemClasses(IUFStackItemProperties)
+  nameWithType: IUFTheme.GetStackItemClasses(IUFStackItemProperties)
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetStackItemClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFStackItemProperties)
   spec.csharp:
-  - uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTabsClasses(System.Int32)
-    name: GetTabsClasses
-    href: UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetTabsClasses_System_Int32_
+  - uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetStackItemClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFStackItemProperties)
+    name: GetStackItemClasses
+    href: UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetStackItemClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Containers_IUFStackItemProperties_
   - name: (
-  - uid: System.Int32
-    name: int
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFStackItemProperties
+    name: IUFStackItemProperties
+    href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFStackItemProperties.html
   - name: )
   spec.vb:
-  - uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTabsClasses(System.Int32)
-    name: GetTabsClasses
-    href: UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetTabsClasses_System_Int32_
+  - uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetStackItemClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFStackItemProperties)
+    name: GetStackItemClasses
+    href: UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetStackItemClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Containers_IUFStackItemProperties_
   - name: (
-  - uid: System.Int32
-    name: Integer
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.int32
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFStackItemProperties
+    name: IUFStackItemProperties
+    href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFStackItemProperties.html
   - name: )
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFTabsTagHelper.GetTabsClasses*
-  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFTabsTagHelper.GetTabsClasses
-  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFTabsTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Containers_UFTabsTagHelper_GetTabsClasses_System_Int32_
-  name: GetTabsClasses
-  nameWithType: UFTabsTagHelper.GetTabsClasses
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFTabsTagHelper.GetTabsClasses
-- uid: System.Int32
-  commentId: T:System.Int32
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackItemTagHelper.GetStackItemClasses*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackItemTagHelper.GetStackItemClasses
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackItemTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Containers_UFStackItemTagHelper_GetStackItemClasses
+  name: GetStackItemClasses
+  nameWithType: UFStackItemTagHelper.GetStackItemClasses
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackItemTagHelper.GetStackItemClasses
+- uid: System.String
+  commentId: T:System.String
   parent: System
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.int32
-  name: int
-  nameWithType: int
-  fullName: int
-  nameWithType.vb: Integer
-  fullName.vb: Integer
-  name.vb: Integer
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

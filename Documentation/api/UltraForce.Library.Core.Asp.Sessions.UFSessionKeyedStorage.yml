@@ -157,16 +157,29 @@ items:
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Sessions
+  summary: >-
+    Gets an integer.
+
+    <p>
+
+    The default implementation uses <xref href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetString(System.String)" data-throw-if-not-resolved="false"></xref> and
+
+    uses <xref href="System.Int32.Parse(System.String)" data-throw-if-not-resolved="false"></xref> to convert it back to a integer.
+
+    </p>
   example: []
   syntax:
     content: public override int GetInt(string aKey, int aDefault)
     parameters:
     - id: aKey
       type: System.String
+      description: A key to get the integer for.
     - id: aDefault
       type: System.Int32
+      description: A default value to use when there is no integer stored for the key.
     return:
       type: System.Int32
+      description: The stored integer or aDefault.
     content.vb: Public Overrides Function GetInt(aKey As String, aDefault As Integer) As Integer
   overridden: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetInt(System.String,System.Int32)
   overload: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.GetInt*
@@ -195,14 +208,26 @@ items:
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Sessions
+  summary: >-
+    Stores an integer in the storage.
+
+    <p>
+
+    The default implementation convert the value to a string and uses
+
+    <xref href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetString(System.String%2cSystem.String)" data-throw-if-not-resolved="false"></xref> to store it.
+
+    </p>
   example: []
   syntax:
     content: public override void SetInt(string aKey, int aValue)
     parameters:
     - id: aKey
       type: System.String
+      description: Key to store value for.
     - id: aValue
       type: System.Int32
+      description: A value to store.
     content.vb: Public Overrides Sub SetInt(aKey As String, aValue As Integer)
   overridden: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetInt(System.String,System.Int32)
   overload: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.SetInt*
@@ -231,16 +256,20 @@ items:
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Sessions
+  summary: Gets a string.
   example: []
   syntax:
     content: public override string GetString(string aKey, string aDefault)
     parameters:
     - id: aKey
       type: System.String
+      description: A key to get the string for.
     - id: aDefault
       type: System.String
+      description: A default value to use when there is no string stored for the key.
     return:
       type: System.String
+      description: The stored string or aDefault.
     content.vb: Public Overrides Function GetString(aKey As String, aDefault As String) As String
   overridden: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetString(System.String,System.String)
   overload: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.GetString*
@@ -269,14 +298,17 @@ items:
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Sessions
+  summary: Stores a string in the storage.
   example: []
   syntax:
     content: public override void SetString(string aKey, string aValue)
     parameters:
     - id: aKey
       type: System.String
+      description: Key to store value for.
     - id: aValue
       type: System.String
+      description: A value to store.
     content.vb: Public Overrides Sub SetString(aKey As String, aValue As String)
   overridden: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetString(System.String,System.String)
   overload: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.SetString*
@@ -305,12 +337,14 @@ items:
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Sessions
+  summary: Deletes the data for specific key.
   example: []
   syntax:
     content: public override void DeleteKey(string aKey)
     parameters:
     - id: aKey
       type: System.String
+      description: A key to Delete the data for.
     content.vb: Public Overrides Sub DeleteKey(aKey As String)
   overridden: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.DeleteKey(System.String)
   overload: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.DeleteKey*
@@ -339,6 +373,7 @@ items:
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Sessions
+  summary: Deletes all stored data.
   example: []
   syntax:
     content: public override void DeleteAll()
@@ -367,14 +402,17 @@ items:
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Sessions
+  summary: Checks if there is a locally stored data for a specific key.
   example: []
   syntax:
     content: public override bool HasKey(string aKey)
     parameters:
     - id: aKey
       type: System.String
+      description: A key to check.
     return:
       type: System.Boolean
+      description: True if has there is data for the key; otherwise, false.
     content.vb: Public Overrides Function HasKey(aKey As String) As Boolean
   overridden: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.HasKey(System.String)
   overload: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.HasKey*
@@ -2990,6 +3028,38 @@ references:
   nameWithType.vb: UFSessionKeyedStorage.New
   fullName.vb: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.New
   name.vb: New
+- uid: System.Int32.Parse(System.String)
+  commentId: M:System.Int32.Parse(System.String)
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32.parse#system-int32-parse(system-string)
+  name: Parse(string)
+  nameWithType: int.Parse(string)
+  fullName: int.Parse(string)
+  nameWithType.vb: Integer.Parse(String)
+  fullName.vb: Integer.Parse(String)
+  name.vb: Parse(String)
+  spec.csharp:
+  - uid: System.Int32.Parse(System.String)
+    name: Parse
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32.parse#system-int32-parse(system-string)
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: System.Int32.Parse(System.String)
+    name: Parse
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.int32.parse#system-int32-parse(system-string)
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
 - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetInt(System.String,System.Int32)
   commentId: M:UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetInt(System.String,System.Int32)
   parent: UltraForce.Library.NetStandard.Storage.UFKeyedStorage
@@ -3061,6 +3131,49 @@ references:
   nameWithType.vb: Integer
   fullName.vb: Integer
   name.vb: Integer
+- uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetString(System.String,System.String)
+  commentId: M:UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetString(System.String,System.String)
+  parent: UltraForce.Library.NetStandard.Storage.UFKeyedStorage
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: SetString(string, string)
+  nameWithType: UFKeyedStorage.SetString(string, string)
+  fullName: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetString(string, string)
+  nameWithType.vb: UFKeyedStorage.SetString(String, String)
+  fullName.vb: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetString(String, String)
+  name.vb: SetString(String, String)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetString(System.String,System.String)
+    name: SetString
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetString(System.String,System.String)
+    name: SetString
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
 - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetInt(System.String,System.Int32)
   commentId: M:UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetInt(System.String,System.Int32)
   parent: UltraForce.Library.NetStandard.Storage.UFKeyedStorage
@@ -3159,49 +3272,6 @@ references:
   name: GetString
   nameWithType: UFSessionKeyedStorage.GetString
   fullName: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.GetString
-- uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetString(System.String,System.String)
-  commentId: M:UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetString(System.String,System.String)
-  parent: UltraForce.Library.NetStandard.Storage.UFKeyedStorage
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.string
-  name: SetString(string, string)
-  nameWithType: UFKeyedStorage.SetString(string, string)
-  fullName: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetString(string, string)
-  nameWithType.vb: UFKeyedStorage.SetString(String, String)
-  fullName.vb: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetString(String, String)
-  name.vb: SetString(String, String)
-  spec.csharp:
-  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetString(System.String,System.String)
-    name: SetString
-    isExternal: true
-  - name: (
-  - uid: System.String
-    name: string
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.string
-  - name: ','
-  - name: " "
-  - uid: System.String
-    name: string
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.string
-  - name: )
-  spec.vb:
-  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetString(System.String,System.String)
-    name: SetString
-    isExternal: true
-  - name: (
-  - uid: System.String
-    name: String
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.string
-  - name: ','
-  - name: " "
-  - uid: System.String
-    name: String
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.string
-  - name: )
 - uid: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.SetString*
   commentId: Overload:UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.SetString
   href: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.html#UltraForce_Library_Core_Asp_Sessions_UFSessionKeyedStorage_SetString_System_String_System_String_

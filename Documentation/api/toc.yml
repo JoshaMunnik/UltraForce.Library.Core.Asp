@@ -80,12 +80,18 @@ items:
   items:
   - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties
     name: IUFContainerProperties
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFStackItemProperties
+    name: IUFStackItemProperties
   - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFTabProperties
     name: IUFTabProperties
   - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFContainerProperties
     name: UFContainerProperties
   - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFContainerTagHelper
     name: UFContainerTagHelper
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackItemTagHelper
+    name: UFStackItemTagHelper
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper
+    name: UFStackTagHelper
   - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFTabTagHelper
     name: UFTabTagHelper
   - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFTabsTagHelper

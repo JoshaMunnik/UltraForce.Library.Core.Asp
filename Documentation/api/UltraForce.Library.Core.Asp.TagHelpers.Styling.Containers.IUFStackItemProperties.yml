@@ -1,0 +1,149 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFStackItemProperties
+  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFStackItemProperties
+  id: IUFStackItemProperties
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers
+  children:
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFStackItemProperties.NoInteraction
+  langs:
+  - csharp
+  - vb
+  name: IUFStackItemProperties
+  nameWithType: IUFStackItemProperties
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFStackItemProperties
+  type: Interface
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Styling/Containers/IUFStackItemProperties.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: IUFStackItemProperties
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Containers/IUFStackItemProperties.cs
+    startLine: 5
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers
+  summary: Properties for a stack item.
+  example: []
+  syntax:
+    content: public interface IUFStackItemProperties
+    content.vb: Public Interface IUFStackItemProperties
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFStackItemProperties.NoInteraction
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFStackItemProperties.NoInteraction
+  id: NoInteraction
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFStackItemProperties
+  langs:
+  - csharp
+  - vb
+  name: NoInteraction
+  nameWithType: IUFStackItemProperties.NoInteraction
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFStackItemProperties.NoInteraction
+  type: Property
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Styling/Containers/IUFStackItemProperties.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: NoInteraction
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Containers/IUFStackItemProperties.cs
+    startLine: 10
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers
+  summary: When true prevent interaction with the stack item.
+  example: []
+  syntax:
+    content: bool NoInteraction { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Property NoInteraction As Boolean
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFStackItemProperties.NoInteraction*
+references:
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers
+  commentId: N:UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers
+  href: UltraForce.html
+  name: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers
+  nameWithType: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers
+    name: TagHelpers
+    href: UltraForce.Library.Core.Asp.TagHelpers.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling
+    name: Styling
+    href: UltraForce.Library.Core.Asp.TagHelpers.Styling.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers
+    name: Containers
+    href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers
+    name: TagHelpers
+    href: UltraForce.Library.Core.Asp.TagHelpers.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling
+    name: Styling
+    href: UltraForce.Library.Core.Asp.TagHelpers.Styling.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers
+    name: Containers
+    href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.html
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFStackItemProperties.NoInteraction*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFStackItemProperties.NoInteraction
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFStackItemProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Containers_IUFStackItemProperties_NoInteraction
+  name: NoInteraction
+  nameWithType: IUFStackItemProperties.NoInteraction
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFStackItemProperties.NoInteraction
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System

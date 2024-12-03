@@ -35,6 +35,8 @@ items:
   - UltraForce.Library.Core.Asp.Services.IUFTheme.GetSortAscendingClasses
   - UltraForce.Library.Core.Asp.Services.IUFTheme.GetSortDescendingClasses
   - UltraForce.Library.Core.Asp.Services.IUFTheme.GetSpacerClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFSpacerProperties)
+  - UltraForce.Library.Core.Asp.Services.IUFTheme.GetStackClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties)
+  - UltraForce.Library.Core.Asp.Services.IUFTheme.GetStackItemClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFStackItemProperties)
   - UltraForce.Library.Core.Asp.Services.IUFTheme.GetTabContentWrapperClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFTabProperties)
   - UltraForce.Library.Core.Asp.Services.IUFTheme.GetTabLabelClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFTabProperties)
   - UltraForce.Library.Core.Asp.Services.IUFTheme.GetTabRadioClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFTabProperties)
@@ -355,6 +357,76 @@ items:
       description: ''
     content.vb: Function GetTabContentWrapperClasses(aProperties As IUFTabProperties) As String
   overload: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTabContentWrapperClasses*
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetStackClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties)
+  commentId: M:UltraForce.Library.Core.Asp.Services.IUFTheme.GetStackClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties)
+  id: GetStackClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties)
+  parent: UltraForce.Library.Core.Asp.Services.IUFTheme
+  langs:
+  - csharp
+  - vb
+  name: GetStackClasses(IUFContainerProperties)
+  nameWithType: IUFTheme.GetStackClasses(IUFContainerProperties)
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetStackClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Services/IUFTheme.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: GetStackClasses
+    path: ../UltraForce.Library.Core.Asp/Services/IUFTheme.cs
+    startLine: 110
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Services
+  summary: Gets the css classes to use for a stack element.
+  example: []
+  syntax:
+    content: string GetStackClasses(IUFContainerProperties aProperties)
+    parameters:
+    - id: aProperties
+      type: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties
+      description: ''
+    return:
+      type: System.String
+      description: ''
+    content.vb: Function GetStackClasses(aProperties As IUFContainerProperties) As String
+  overload: UltraForce.Library.Core.Asp.Services.IUFTheme.GetStackClasses*
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetStackItemClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFStackItemProperties)
+  commentId: M:UltraForce.Library.Core.Asp.Services.IUFTheme.GetStackItemClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFStackItemProperties)
+  id: GetStackItemClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFStackItemProperties)
+  parent: UltraForce.Library.Core.Asp.Services.IUFTheme
+  langs:
+  - csharp
+  - vb
+  name: GetStackItemClasses(IUFStackItemProperties)
+  nameWithType: IUFTheme.GetStackItemClasses(IUFStackItemProperties)
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetStackItemClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFStackItemProperties)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Services/IUFTheme.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: GetStackItemClasses
+    path: ../UltraForce.Library.Core.Asp/Services/IUFTheme.cs
+    startLine: 117
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Services
+  summary: Gets the css classes to use for a stack item element (that is placed within a stack element).
+  example: []
+  syntax:
+    content: string GetStackItemClasses(IUFStackItemProperties aProperties)
+    parameters:
+    - id: aProperties
+      type: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFStackItemProperties
+      description: ''
+    return:
+      type: System.String
+      description: ''
+    content.vb: Function GetStackItemClasses(aProperties As IUFStackItemProperties) As String
+  overload: UltraForce.Library.Core.Asp.Services.IUFTheme.GetStackItemClasses*
 - uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetDataListClasses
   commentId: M:UltraForce.Library.Core.Asp.Services.IUFTheme.GetDataListClasses
   id: GetDataListClasses
@@ -373,7 +445,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetDataListClasses
     path: ../UltraForce.Library.Core.Asp/Services/IUFTheme.cs
-    startLine: 113
+    startLine: 127
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Services
@@ -404,7 +476,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetDataNameClasses
     path: ../UltraForce.Library.Core.Asp/Services/IUFTheme.cs
-    startLine: 119
+    startLine: 133
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Services
@@ -435,7 +507,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetDataValueClasses
     path: ../UltraForce.Library.Core.Asp/Services/IUFTheme.cs
-    startLine: 125
+    startLine: 139
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Services
@@ -466,7 +538,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetTextWrapperClasses
     path: ../UltraForce.Library.Core.Asp/Services/IUFTheme.cs
-    startLine: 137
+    startLine: 151
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Services
@@ -507,7 +579,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetTextLabelClasses
     path: ../UltraForce.Library.Core.Asp/Services/IUFTheme.cs
-    startLine: 145
+    startLine: 159
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Services
@@ -548,7 +620,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetTextLabelSpanClasses
     path: ../UltraForce.Library.Core.Asp/Services/IUFTheme.cs
-    startLine: 154
+    startLine: 168
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Services
@@ -592,7 +664,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetTextLabelDescriptionClasses
     path: ../UltraForce.Library.Core.Asp/Services/IUFTheme.cs
-    startLine: 163
+    startLine: 177
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Services
@@ -636,7 +708,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetTextInputClasses
     path: ../UltraForce.Library.Core.Asp/Services/IUFTheme.cs
-    startLine: 171
+    startLine: 185
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Services
@@ -677,7 +749,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetValidationFeedbackContainerHtml
     path: ../UltraForce.Library.Core.Asp/Services/IUFTheme.cs
-    startLine: 178
+    startLine: 192
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Services
@@ -715,7 +787,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetFieldErrorsHtml
     path: ../UltraForce.Library.Core.Asp/Services/IUFTheme.cs
-    startLine: 187
+    startLine: 201
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Services
@@ -759,7 +831,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetFieldErrorsClasses
     path: ../UltraForce.Library.Core.Asp/Services/IUFTheme.cs
-    startLine: 193
+    startLine: 207
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Services
@@ -790,7 +862,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetCheckboxWrapperClasses
     path: ../UltraForce.Library.Core.Asp/Services/IUFTheme.cs
-    startLine: 199
+    startLine: 213
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Services
@@ -821,7 +893,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetCheckboxLabelClasses
     path: ../UltraForce.Library.Core.Asp/Services/IUFTheme.cs
-    startLine: 205
+    startLine: 219
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Services
@@ -852,7 +924,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetCheckboxLabelSpanClasses
     path: ../UltraForce.Library.Core.Asp/Services/IUFTheme.cs
-    startLine: 211
+    startLine: 225
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Services
@@ -883,7 +955,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetCheckboxLabelDescriptionClasses
     path: ../UltraForce.Library.Core.Asp/Services/IUFTheme.cs
-    startLine: 217
+    startLine: 231
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Services
@@ -914,7 +986,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetCheckboxInputClasses
     path: ../UltraForce.Library.Core.Asp/Services/IUFTheme.cs
-    startLine: 223
+    startLine: 237
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Services
@@ -945,7 +1017,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetCheckboxExtraHtml
     path: ../UltraForce.Library.Core.Asp/Services/IUFTheme.cs
-    startLine: 230
+    startLine: 244
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Services
@@ -979,7 +1051,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetRadioWrapperClasses
     path: ../UltraForce.Library.Core.Asp/Services/IUFTheme.cs
-    startLine: 236
+    startLine: 250
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Services
@@ -1010,7 +1082,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetRadioLabelClasses
     path: ../UltraForce.Library.Core.Asp/Services/IUFTheme.cs
-    startLine: 242
+    startLine: 256
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Services
@@ -1041,7 +1113,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetRadioLabelSpanClasses
     path: ../UltraForce.Library.Core.Asp/Services/IUFTheme.cs
-    startLine: 248
+    startLine: 262
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Services
@@ -1072,7 +1144,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetRadioLabelDescriptionClasses
     path: ../UltraForce.Library.Core.Asp/Services/IUFTheme.cs
-    startLine: 254
+    startLine: 268
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Services
@@ -1103,7 +1175,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetRadioInputClasses
     path: ../UltraForce.Library.Core.Asp/Services/IUFTheme.cs
-    startLine: 260
+    startLine: 274
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Services
@@ -1134,7 +1206,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetRadioExtraHtml
     path: ../UltraForce.Library.Core.Asp/Services/IUFTheme.cs
-    startLine: 267
+    startLine: 281
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Services
@@ -1168,7 +1240,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetSelectClasses
     path: ../UltraForce.Library.Core.Asp/Services/IUFTheme.cs
-    startLine: 273
+    startLine: 287
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Services
@@ -1202,7 +1274,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetSpacerClasses
     path: ../UltraForce.Library.Core.Asp/Services/IUFTheme.cs
-    startLine: 284
+    startLine: 298
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Services
@@ -1237,7 +1309,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetColumnClasses
     path: ../UltraForce.Library.Core.Asp/Services/IUFTheme.cs
-    startLine: 291
+    startLine: 305
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Services
@@ -1272,7 +1344,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetRowClasses
     path: ../UltraForce.Library.Core.Asp/Services/IUFTheme.cs
-    startLine: 298
+    startLine: 312
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Services
@@ -1307,7 +1379,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetTableClasses
     path: ../UltraForce.Library.Core.Asp/Services/IUFTheme.cs
-    startLine: 309
+    startLine: 323
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Services
@@ -1342,7 +1414,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetTableCellClasses
     path: ../UltraForce.Library.Core.Asp/Services/IUFTheme.cs
-    startLine: 319
+    startLine: 333
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Services
@@ -1386,7 +1458,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetTableHeaderButtonClasses
     path: ../UltraForce.Library.Core.Asp/Services/IUFTheme.cs
-    startLine: 332
+    startLine: 346
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Services
@@ -1430,7 +1502,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetTableRowClasses
     path: ../UltraForce.Library.Core.Asp/Services/IUFTheme.cs
-    startLine: 343
+    startLine: 357
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Services
@@ -1468,7 +1540,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetFilterContainerClasses
     path: ../UltraForce.Library.Core.Asp/Services/IUFTheme.cs
-    startLine: 350
+    startLine: 364
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Services
@@ -1502,7 +1574,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetFilterInputClasses
     path: ../UltraForce.Library.Core.Asp/Services/IUFTheme.cs
-    startLine: 356
+    startLine: 370
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Services
@@ -1533,7 +1605,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetFilterButtonClasses
     path: ../UltraForce.Library.Core.Asp/Services/IUFTheme.cs
-    startLine: 362
+    startLine: 376
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Services
@@ -1564,7 +1636,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetSortAscendingClasses
     path: ../UltraForce.Library.Core.Asp/Services/IUFTheme.cs
-    startLine: 372
+    startLine: 386
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Services
@@ -1604,7 +1676,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetSortDescendingClasses
     path: ../UltraForce.Library.Core.Asp/Services/IUFTheme.cs
-    startLine: 382
+    startLine: 396
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Services
@@ -1644,7 +1716,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: IsCssClass
     path: ../UltraForce.Library.Core.Asp/Services/IUFTheme.cs
-    startLine: 393
+    startLine: 407
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Services
@@ -1940,6 +2012,25 @@ references:
   name: GetTabContentWrapperClasses
   nameWithType: IUFTheme.GetTabContentWrapperClasses
   fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTabContentWrapperClasses
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetStackClasses*
+  commentId: Overload:UltraForce.Library.Core.Asp.Services.IUFTheme.GetStackClasses
+  href: UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetStackClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Containers_IUFContainerProperties_
+  name: GetStackClasses
+  nameWithType: IUFTheme.GetStackClasses
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetStackClasses
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetStackItemClasses*
+  commentId: Overload:UltraForce.Library.Core.Asp.Services.IUFTheme.GetStackItemClasses
+  href: UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetStackItemClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Containers_IUFStackItemProperties_
+  name: GetStackItemClasses
+  nameWithType: IUFTheme.GetStackItemClasses
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetStackItemClasses
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFStackItemProperties
+  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFStackItemProperties
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFStackItemProperties.html
+  name: IUFStackItemProperties
+  nameWithType: IUFStackItemProperties
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFStackItemProperties
 - uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetDataListClasses*
   commentId: Overload:UltraForce.Library.Core.Asp.Services.IUFTheme.GetDataListClasses
   href: UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetDataListClasses

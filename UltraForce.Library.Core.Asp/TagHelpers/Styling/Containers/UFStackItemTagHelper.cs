@@ -1,4 +1,4 @@
-// <copyright file="UFTabsTagHelper.cs" company="Ultra Force Development">
+// <copyright file="UFStackItemTagHelper.cs" company="Ultra Force Development">
 // Ultra Force Library - Copyright (C) 2024 Ultra Force Development
 // </copyright>
 // <author>Josha Munnik</author>
@@ -31,70 +31,57 @@ using System.Diagnostics.CodeAnalysis;
 using Microsoft.AspNetCore.Razor.TagHelpers;
 using UltraForce.Library.Core.Asp.Services;
 using UltraForce.Library.Core.Asp.TagHelpers.Lib;
-using UltraForce.Library.NetStandard.Tools;
+using UltraForce.Library.Core.Asp.Tools;
+using UltraForce.Library.Core.Asp.Types.Enums;
 
 namespace UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers;
 
 /// <summary>
-/// This tag helper is used to render a tab container. It expects its children to be instances
-/// of <see cref="UFTabTagHelper"/>.
+/// This tag should be used with <see cref="UFStackTagHelper"/>, each child within the stack should
+/// be wrapped with this tag.
 /// <para>
-/// The class will render:
+/// Renders:
 /// <code>
-/// &lt;div class="{GetTabsClasses}"&gt;
+/// &lt;div class="{GetStackItemClasses()}"&gt;
 /// {children}
 /// &lt;/div&gt;
 /// </code>
 /// </para>
 /// </summary>
-[HtmlTargetElement("uf-tabs")]
 [SuppressMessage("ReSharper", "ClassWithVirtualMembersNeverInherited.Global")]
-[SuppressMessage("ReSharper", "ClassNeverInstantiated.Global")]
-public class UFTabsTagHelper(IUFTheme aTheme) : UFTagHelperWithTheme(aTheme)
+[HtmlTargetElement("uf-column", TagStructure = TagStructure.NormalOrSelfClosing)]
+public class UFStackItemTagHelper(IUFTheme aTheme) : UFTagHelperWithTheme(aTheme), IUFStackItemProperties
 {
-  #region public constants
-  
-  /// <summary>
-  /// The key that <see cref="UFTabTagHelper"/> can use to get the name of the radio button from the
-  /// <see cref="TagHelperContext.Items"/>.
-  /// </summary>
-  public const string TabsRadioName = "uf_tabs_radio_name";
-  
-  #endregion
-  
-  #region public methods
+  #region IUFStackItemProperties
 
   /// <inheritdoc />
-  public override async Task ProcessAsync(TagHelperContext context, TagHelperOutput output)
+  [HtmlAttributeName("no-interaction")]
+  public bool NoInteraction { get; set; }
+  
+  #endregion
+  
+  #region overriden public methods
+
+  /// <inheritdoc />
+  public override void Process(TagHelperContext context, TagHelperOutput output)
   {
-    await base.ProcessAsync(context, output);
     output.TagName = "div";
     output.TagMode = TagMode.StartTagAndEndTag;
-    // use a guid to get a unique name the children can use as name for the radio button
-    string id = Guid.NewGuid().ToString();
-    context.Items[TabsRadioName] = id;
-    // determine the number of tabs by counting the number of the times the name value is used.
-    TagHelperContent? childContent = 
-      output.IsContentModified ? output.Content : await output.GetChildContentAsync();
-    string textContent = childContent.GetContent();
-    int tabCount = UFStringTools.Count(id, textContent);
-    output.Attributes.SetAttribute("class", this.GetTabsClasses(tabCount));
+    UFTagHelperTools.AddClasses(output, this.GetStackItemClasses());
   }
-  
+
   #endregion
   
-  #region protected overridable methods
-
+  #region overridable protected methods
+  
   /// <summary>
-  /// The default implementation returns the result from <see cref="IUFTheme.GetTabsClasses"/>.
+  /// The default implementation calls <see cref="IUFTheme.GetStackItemClasses"/>.
   /// </summary>
-  /// <param name="aCount"></param>
   /// <returns></returns>
-  protected virtual string GetTabsClasses(int aCount)
+  protected virtual string GetStackItemClasses()
   {
-    return this.Theme.GetTabsClasses(aCount);
+    return this.Theme.GetStackItemClasses(this);
   }
   
   #endregion
-
 }

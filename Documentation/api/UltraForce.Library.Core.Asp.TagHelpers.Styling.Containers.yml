@@ -5,9 +5,12 @@ items:
   id: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers
   children:
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFStackItemProperties
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFTabProperties
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFContainerProperties
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFContainerTagHelper
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackItemTagHelper
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFTabTagHelper
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFTabsTagHelper
   langs:
@@ -27,6 +30,13 @@ references:
   name: IUFContainerProperties
   nameWithType: IUFContainerProperties
   fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFStackItemProperties
+  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFStackItemProperties
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFStackItemProperties.html
+  name: IUFStackItemProperties
+  nameWithType: IUFStackItemProperties
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFStackItemProperties
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFTabProperties
   commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFTabProperties
   parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers
@@ -46,6 +56,18 @@ references:
   name: UFContainerTagHelper
   nameWithType: UFContainerTagHelper
   fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFContainerTagHelper
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackItemTagHelper
+  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackItemTagHelper
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackItemTagHelper.html
+  name: UFStackItemTagHelper
+  nameWithType: UFStackItemTagHelper
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackItemTagHelper
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper
+  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper.html
+  name: UFStackTagHelper
+  nameWithType: UFStackTagHelper
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFTabsTagHelper
   commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFTabsTagHelper
   href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFTabsTagHelper.html

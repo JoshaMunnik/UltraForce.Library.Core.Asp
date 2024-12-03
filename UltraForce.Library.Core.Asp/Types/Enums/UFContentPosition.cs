@@ -47,5 +47,10 @@ public enum UFContentPosition
   /// <summary>
   /// Place at end of container.
   /// </summary>
-  End
+  End,
+  
+  /// <summary>
+  /// Stretch content to fill the container.
+  /// </summary>
+  Stretch,
 }
