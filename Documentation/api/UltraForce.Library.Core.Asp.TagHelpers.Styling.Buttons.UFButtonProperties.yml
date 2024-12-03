@@ -7,12 +7,18 @@ items:
   children:
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties.Color
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties.Disabled
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties.FullHeight
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties.FullWidth
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties.HorizontalContentPosition
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties.HorizontalPadding
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties.Icon
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties.IconPosition
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties.Size
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties.Static
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties.Submit
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties.Variant
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties.VerticalContentPosition
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties.VerticalPadding
   langs:
   - csharp
   - vb
@@ -330,6 +336,204 @@ items:
   overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties.Submit*
   implements:
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.Submit
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties.FullWidth
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties.FullWidth
+  id: FullWidth
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties
+  langs:
+  - csharp
+  - vb
+  name: FullWidth
+  nameWithType: UFButtonProperties.FullWidth
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties.FullWidth
+  type: Property
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonProperties.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: FullWidth
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonProperties.cs
+    startLine: 64
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
+  summary: When true stretch the button to the full width of the parent element.
+  example: []
+  syntax:
+    content: public bool FullWidth { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property FullWidth As Boolean
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties.FullWidth*
+  implements:
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.FullWidth
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties.FullHeight
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties.FullHeight
+  id: FullHeight
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties
+  langs:
+  - csharp
+  - vb
+  name: FullHeight
+  nameWithType: UFButtonProperties.FullHeight
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties.FullHeight
+  type: Property
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonProperties.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: FullHeight
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonProperties.cs
+    startLine: 67
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
+  summary: When true stretch the button to the full height of the parent element.
+  example: []
+  syntax:
+    content: public bool FullHeight { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property FullHeight As Boolean
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties.FullHeight*
+  implements:
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.FullHeight
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties.VerticalPadding
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties.VerticalPadding
+  id: VerticalPadding
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties
+  langs:
+  - csharp
+  - vb
+  name: VerticalPadding
+  nameWithType: UFButtonProperties.VerticalPadding
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties.VerticalPadding
+  type: Property
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonProperties.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: VerticalPadding
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonProperties.cs
+    startLine: 70
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
+  summary: Additional vertical padding to add to the content within the button.
+  example: []
+  syntax:
+    content: public int VerticalPadding { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property VerticalPadding As Integer
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties.VerticalPadding*
+  implements:
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.VerticalPadding
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties.HorizontalPadding
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties.HorizontalPadding
+  id: HorizontalPadding
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties
+  langs:
+  - csharp
+  - vb
+  name: HorizontalPadding
+  nameWithType: UFButtonProperties.HorizontalPadding
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties.HorizontalPadding
+  type: Property
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonProperties.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: HorizontalPadding
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonProperties.cs
+    startLine: 73
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
+  summary: Additional horizontal padding to add to the content within the button.
+  example: []
+  syntax:
+    content: public int HorizontalPadding { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property HorizontalPadding As Integer
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties.HorizontalPadding*
+  implements:
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.HorizontalPadding
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties.HorizontalContentPosition
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties.HorizontalContentPosition
+  id: HorizontalContentPosition
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties
+  langs:
+  - csharp
+  - vb
+  name: HorizontalContentPosition
+  nameWithType: UFButtonProperties.HorizontalContentPosition
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties.HorizontalContentPosition
+  type: Property
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonProperties.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: HorizontalContentPosition
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonProperties.cs
+    startLine: 76
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
+  summary: The horizontal position of the caption and icon within the button.
+  example: []
+  syntax:
+    content: public UFContentPosition HorizontalContentPosition { get; set; }
+    parameters: []
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFContentPosition
+    content.vb: Public Property HorizontalContentPosition As UFContentPosition
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties.HorizontalContentPosition*
+  implements:
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.HorizontalContentPosition
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties.VerticalContentPosition
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties.VerticalContentPosition
+  id: VerticalContentPosition
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties
+  langs:
+  - csharp
+  - vb
+  name: VerticalContentPosition
+  nameWithType: UFButtonProperties.VerticalContentPosition
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties.VerticalContentPosition
+  type: Property
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonProperties.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: VerticalContentPosition
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/UFButtonProperties.cs
+    startLine: 79
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
+  summary: The vertical position of the caption and icon within the button.
+  example: []
+  syntax:
+    content: public UFContentPosition VerticalContentPosition { get; set; }
+    parameters: []
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFContentPosition
+    content.vb: Public Property VerticalContentPosition As UFContentPosition
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties.VerticalContentPosition*
+  implements:
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.VerticalContentPosition
 references:
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties
   commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties
@@ -857,3 +1061,99 @@ references:
   name: Submit
   nameWithType: IUFButtonProperties.Submit
   fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.Submit
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties.FullWidth*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties.FullWidth
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_UFButtonProperties_FullWidth
+  name: FullWidth
+  nameWithType: UFButtonProperties.FullWidth
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties.FullWidth
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.FullWidth
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.FullWidth
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_IUFButtonProperties_FullWidth
+  name: FullWidth
+  nameWithType: IUFButtonProperties.FullWidth
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.FullWidth
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties.FullHeight*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties.FullHeight
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_UFButtonProperties_FullHeight
+  name: FullHeight
+  nameWithType: UFButtonProperties.FullHeight
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties.FullHeight
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.FullHeight
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.FullHeight
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_IUFButtonProperties_FullHeight
+  name: FullHeight
+  nameWithType: IUFButtonProperties.FullHeight
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.FullHeight
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties.VerticalPadding*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties.VerticalPadding
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_UFButtonProperties_VerticalPadding
+  name: VerticalPadding
+  nameWithType: UFButtonProperties.VerticalPadding
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties.VerticalPadding
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.VerticalPadding
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.VerticalPadding
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_IUFButtonProperties_VerticalPadding
+  name: VerticalPadding
+  nameWithType: IUFButtonProperties.VerticalPadding
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.VerticalPadding
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties.HorizontalPadding*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties.HorizontalPadding
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_UFButtonProperties_HorizontalPadding
+  name: HorizontalPadding
+  nameWithType: UFButtonProperties.HorizontalPadding
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties.HorizontalPadding
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.HorizontalPadding
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.HorizontalPadding
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_IUFButtonProperties_HorizontalPadding
+  name: HorizontalPadding
+  nameWithType: IUFButtonProperties.HorizontalPadding
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.HorizontalPadding
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties.HorizontalContentPosition*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties.HorizontalContentPosition
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_UFButtonProperties_HorizontalContentPosition
+  name: HorizontalContentPosition
+  nameWithType: UFButtonProperties.HorizontalContentPosition
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties.HorizontalContentPosition
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.HorizontalContentPosition
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.HorizontalContentPosition
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_IUFButtonProperties_HorizontalContentPosition
+  name: HorizontalContentPosition
+  nameWithType: IUFButtonProperties.HorizontalContentPosition
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.HorizontalContentPosition
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFContentPosition
+  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFContentPosition
+  parent: UltraForce.Library.Core.Asp.Types.Enums
+  href: UltraForce.Library.Core.Asp.Types.Enums.UFContentPosition.html
+  name: UFContentPosition
+  nameWithType: UFContentPosition
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFContentPosition
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties.VerticalContentPosition*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties.VerticalContentPosition
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_UFButtonProperties_VerticalContentPosition
+  name: VerticalContentPosition
+  nameWithType: UFButtonProperties.VerticalContentPosition
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties.VerticalContentPosition
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.VerticalContentPosition
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.VerticalContentPosition
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_IUFButtonProperties_VerticalContentPosition
+  name: VerticalContentPosition
+  nameWithType: IUFButtonProperties.VerticalContentPosition
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.VerticalContentPosition

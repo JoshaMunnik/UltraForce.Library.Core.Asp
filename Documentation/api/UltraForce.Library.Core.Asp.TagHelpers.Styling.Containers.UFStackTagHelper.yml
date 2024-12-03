@@ -51,11 +51,11 @@ items:
   example: []
   syntax:
     content: >-
-      [HtmlTargetElement("uf-column", TagStructure = TagStructure.NormalOrSelfClosing)]
+      [HtmlTargetElement("uf-stack", TagStructure = TagStructure.NormalOrSelfClosing)]
 
       public class UFStackTagHelper : UFTagHelperWithTheme, ITagHelper, ITagHelperComponent, IUFContainerProperties
     content.vb: >-
-      <HtmlTargetElement("uf-column", TagStructure:=TagStructure.NormalOrSelfClosing)>
+      <HtmlTargetElement("uf-stack", TagStructure:=TagStructure.NormalOrSelfClosing)>
 
       Public Class UFStackTagHelper Inherits UFTagHelperWithTheme Implements ITagHelper, ITagHelperComponent, IUFContainerProperties
   inheritance:
@@ -83,7 +83,7 @@ items:
     ctor: Microsoft.AspNetCore.Razor.TagHelpers.HtmlTargetElementAttribute.#ctor(System.String)
     arguments:
     - type: System.String
-      value: uf-column
+      value: uf-stack
     namedArguments:
     - name: TagStructure
       type: Microsoft.AspNetCore.Razor.TagHelpers.TagStructure

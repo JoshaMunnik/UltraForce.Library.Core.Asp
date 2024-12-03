@@ -60,4 +60,22 @@ public class UFButtonProperties : IUFButtonProperties
 
   /// <inheritdoc />
   public bool Submit { get; set; } = false;
+
+  /// <inheritdoc />
+  public bool FullWidth { get; set; } = false;
+
+  /// <inheritdoc />
+  public bool FullHeight { get; set; } = false;
+
+  /// <inheritdoc />
+  public int VerticalPadding { get; set; } = 0;
+
+  /// <inheritdoc />
+  public int HorizontalPadding { get; set; } = 0;
+
+  /// <inheritdoc />
+  public UFContentPosition HorizontalContentPosition { get; set; } = UFContentPosition.Center;
+  
+  /// <inheritdoc />
+  public UFContentPosition VerticalContentPosition { get; set; } = UFContentPosition.Center;
 }

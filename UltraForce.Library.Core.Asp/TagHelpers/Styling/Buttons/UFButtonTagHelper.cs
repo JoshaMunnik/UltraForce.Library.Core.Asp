@@ -42,7 +42,7 @@ namespace UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons;
 
 /// <summary>
 /// Renders a button or link using a button styling. When rendering a button the default type is
-/// button; use the <see cref="Submit"/> property to change it to submit.
+/// `button`; use the <see cref="Submit"/> property to change it to submit.
 /// <para>
 /// If the <see cref="Color"/> is set to <see cref="UFButtonColor.Auto"/> the class will
 /// update it to one of the other color values depending on the state of the button.
@@ -102,6 +102,30 @@ public class UFButtonTagHelper(
   /// <inheritdoc />
   [HtmlAttributeName("submit")]
   public bool Submit { get; set; } = false;
+
+  /// <inheritdoc />
+  [HtmlAttributeName("full-width")]
+  public bool FullWidth { get; set; } = false;
+
+  /// <inheritdoc />
+  [HtmlAttributeName("full-height")]
+  public bool FullHeight { get; set; } = false;
+
+  /// <inheritdoc />
+  [HtmlAttributeName("vertical-padding")]
+  public int VerticalPadding { get; set; } = 0;
+
+  /// <inheritdoc />
+  [HtmlAttributeName("horizontal-padding")]
+  public int HorizontalPadding { get; set; } = 0;
+  
+  /// <inheritdoc />
+  [HtmlAttributeName("horizontal-content-position")]
+  public UFContentPosition HorizontalContentPosition { get; set; } = UFContentPosition.Center;
+  
+  /// <inheritdoc />
+  [HtmlAttributeName("vertical-content-position")]
+  public UFContentPosition VerticalContentPosition { get; set; } = UFContentPosition.Center;
 
   #endregion
 

@@ -39,7 +39,6 @@ public interface IUFButtonProperties
   /// <summary>
   /// Color scheme to use for the button. When <see cref="UFButtonColor.Auto"/> is used, the
   /// styling will decide the color based on the button state.
-  /// 
   /// </summary>
   public UFButtonColor Color { get; set; }
 
@@ -81,4 +80,34 @@ public interface IUFButtonProperties
   /// the button is placed inside a form element.
   /// </summary>
   public bool Submit { get; set; }
+  
+  /// <summary>
+  /// When true stretch the button to the full width of the parent element.
+  /// </summary>
+  public bool FullWidth { get; set; }
+  
+  /// <summary>
+  /// When true stretch the button to the full height of the parent element.
+  /// </summary>
+  public bool FullHeight { get; set; }
+  
+  /// <summary>
+  /// Additional vertical padding to add to the content within the button.
+  /// </summary>
+  public int VerticalPadding { get; set; }
+  
+  /// <summary>
+  /// Additional horizontal padding to add to the content within the button.
+  /// </summary>
+  public int HorizontalPadding { get; set; }
+  
+  /// <summary>
+  /// The horizontal position of the caption and icon within the button.
+  /// </summary>
+  public UFContentPosition HorizontalContentPosition { get; set; }
+  
+  /// <summary>
+  /// The vertical position of the caption and icon within the button.
+  /// </summary>
+  public UFContentPosition VerticalContentPosition { get; set; }
 }
