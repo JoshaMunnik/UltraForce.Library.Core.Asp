@@ -68,10 +68,10 @@ public class UFButtonProperties : IUFButtonProperties
   public bool FullHeight { get; set; } = false;
 
   /// <inheritdoc />
-  public int VerticalPadding { get; set; } = 0;
+  public int VerticalPadding { get; set; } = -1;
 
   /// <inheritdoc />
-  public int HorizontalPadding { get; set; } = 0;
+  public int HorizontalPadding { get; set; } = -1;
 
   /// <inheritdoc />
   public UFContentPosition HorizontalContentPosition { get; set; } = UFContentPosition.Center;

@@ -92,12 +92,14 @@ public interface IUFButtonProperties
   public bool FullHeight { get; set; }
   
   /// <summary>
-  /// Additional vertical padding to add to the content within the button.
+  /// Additional vertical padding to add to the content within the button. Use -1 to auto set
+  /// the padding.
   /// </summary>
   public int VerticalPadding { get; set; }
   
   /// <summary>
-  /// Additional horizontal padding to add to the content within the button.
+  /// Additional horizontal padding to add to the content within the button. Use -1 to auto set
+  /// the padding.
   /// </summary>
   public int HorizontalPadding { get; set; }
   

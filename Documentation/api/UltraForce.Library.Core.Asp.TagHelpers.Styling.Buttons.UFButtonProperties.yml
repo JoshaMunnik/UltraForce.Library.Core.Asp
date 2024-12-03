@@ -424,7 +424,10 @@ items:
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
-  summary: Additional vertical padding to add to the content within the button.
+  summary: >-
+    Additional vertical padding to add to the content within the button. Use -1 to auto set
+
+    the padding.
   example: []
   syntax:
     content: public int VerticalPadding { get; set; }
@@ -457,7 +460,10 @@ items:
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
-  summary: Additional horizontal padding to add to the content within the button.
+  summary: >-
+    Additional horizontal padding to add to the content within the button. Use -1 to auto set
+
+    the padding.
   example: []
   syntax:
     content: public int HorizontalPadding { get; set; }

@@ -385,11 +385,14 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: VerticalPadding
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/IUFButtonProperties.cs
-    startLine: 96
+    startLine: 97
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
-  summary: Additional vertical padding to add to the content within the button.
+  summary: >-
+    Additional vertical padding to add to the content within the button. Use -1 to auto set
+
+    the padding.
   example: []
   syntax:
     content: int VerticalPadding { get; set; }
@@ -416,11 +419,14 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: HorizontalPadding
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/IUFButtonProperties.cs
-    startLine: 101
+    startLine: 103
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
-  summary: Additional horizontal padding to add to the content within the button.
+  summary: >-
+    Additional horizontal padding to add to the content within the button. Use -1 to auto set
+
+    the padding.
   example: []
   syntax:
     content: int HorizontalPadding { get; set; }
@@ -447,7 +453,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: HorizontalContentPosition
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/IUFButtonProperties.cs
-    startLine: 106
+    startLine: 108
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
@@ -478,7 +484,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: VerticalContentPosition
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/IUFButtonProperties.cs
-    startLine: 111
+    startLine: 113
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons

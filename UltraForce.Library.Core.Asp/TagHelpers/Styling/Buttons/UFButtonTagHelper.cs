@@ -113,11 +113,11 @@ public class UFButtonTagHelper(
 
   /// <inheritdoc />
   [HtmlAttributeName("vertical-padding")]
-  public int VerticalPadding { get; set; } = 0;
+  public int VerticalPadding { get; set; } = -1;
 
   /// <inheritdoc />
   [HtmlAttributeName("horizontal-padding")]
-  public int HorizontalPadding { get; set; } = 0;
+  public int HorizontalPadding { get; set; } = -1;
   
   /// <inheritdoc />
   [HtmlAttributeName("horizontal-content-position")]
