@@ -49,7 +49,7 @@ namespace UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers;
 /// </para>
 /// </summary>
 [SuppressMessage("ReSharper", "ClassWithVirtualMembersNeverInherited.Global")]
-[HtmlTargetElement("uf-column", TagStructure = TagStructure.NormalOrSelfClosing)]
+[HtmlTargetElement("uf-stack-item", TagStructure = TagStructure.NormalOrSelfClosing)]
 public class UFStackItemTagHelper(IUFTheme aTheme) : UFTagHelperWithTheme(aTheme), IUFStackItemProperties
 {
   #region IUFStackItemProperties
