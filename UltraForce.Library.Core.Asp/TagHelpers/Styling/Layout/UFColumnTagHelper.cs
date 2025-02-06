@@ -42,29 +42,33 @@ namespace UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout;
 /// Renders:
 /// <code>
 /// &lt;div class="{GetColumnClasses()}"&gt;
-/// {children}
+///   {children}
 /// &lt;/div&gt;
 /// </code>
 /// </para>
 /// </summary>
 [SuppressMessage("ReSharper", "ClassWithVirtualMembersNeverInherited.Global")]
 [HtmlTargetElement("uf-column", TagStructure = TagStructure.NormalOrSelfClosing)]
-public class UFColumnTagHelper(IUFTheme aTheme) : UFTagHelperWithTheme(aTheme), IUFFlexProperties
+public class UFColumnTagHelper(
+  IUFTheme aTheme
+) : UFTagHelperWithTheme(aTheme), IUFFlexProperties
 {
   #region IUFFlexProperties
 
   /// <inheritdoc/>
-  [HtmlAttributeName("justify-content")]
-  public UFFlexJustifyContent JustifyContent { get; set; } = UFFlexJustifyContent.Start;
+  [HtmlAttributeName("distribute-main-axis")]
+  public UFFlexDistributeContent DistributeContentMainAxis { get; set; } =
+    UFFlexDistributeContent.Start;
 
   /// <inheritdoc/>
-  [HtmlAttributeName("align-items")]
-  public UFFlexAlignItems AlignItems { get; set; } = UFFlexAlignItems.Start;
+  [HtmlAttributeName("align-cross-axis")]
+  public UFFlexAlignItems AlignCrossAxis { get; set; } = UFFlexAlignItems.Start;
 
   /// <inheritdoc/>
-  [HtmlAttributeName("align-content")]
-  public UFFlexAlignContent AlignContent { get; set; } = UFFlexAlignContent.Start;
-  
+  [HtmlAttributeName("distribute-cross-axis")]
+  public UFFlexDistributeContent DistributeContentCrossAxis { get; set; } =
+    UFFlexDistributeContent.Start;
+
   /// <inheritdoc/>
   [HtmlAttributeName("buttons")]
   public bool Buttons { get; set; } = false;
@@ -86,11 +90,14 @@ public class UFColumnTagHelper(IUFTheme aTheme) : UFTagHelperWithTheme(aTheme), 
   public bool Wrap { get; set; } = false;
 
   #endregion
-  
+
   #region overriden public methods
 
   /// <inheritdoc />
-  public override void Process(TagHelperContext context, TagHelperOutput output)
+  public override void Process(
+    TagHelperContext context,
+    TagHelperOutput output
+  )
   {
     output.TagName = "div";
     output.TagMode = TagMode.StartTagAndEndTag;
@@ -98,9 +105,9 @@ public class UFColumnTagHelper(IUFTheme aTheme) : UFTagHelperWithTheme(aTheme), 
   }
 
   #endregion
-  
+
   #region overridable protected methods
-  
+
   /// <summary>
   /// The default implementation calls <see cref="IUFTheme.GetColumnClasses"/>.
   /// </summary>
@@ -109,6 +116,6 @@ public class UFColumnTagHelper(IUFTheme aTheme) : UFTagHelperWithTheme(aTheme), 
   {
     return this.Theme.GetColumnClasses(this);
   }
-  
+
   #endregion
 }

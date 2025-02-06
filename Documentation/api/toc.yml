@@ -112,8 +112,6 @@ items:
   items:
   - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties
     name: IUFInputProperties
-  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputProperties
-    name: UFInputProperties
   - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper
     name: UFInputTagHelper
   - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFSelectTagHelper
@@ -127,12 +125,8 @@ items:
     name: IUFSpacerProperties
   - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper
     name: UFColumnTagHelper
-  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFFlexProperties
-    name: UFFlexProperties
   - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFRowTagHelper
     name: UFRowTagHelper
-  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFSpacerProperties
-    name: UFSpacerProperties
   - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFSpacerTagHelper
     name: UFSpacerTagHelper
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table
@@ -171,24 +165,20 @@ items:
 - uid: UltraForce.Library.Core.Asp.Types.Enums
   name: UltraForce.Library.Core.Asp.Types.Enums
   items:
-  - uid: UltraForce.Library.Core.Asp.Types.Enums.UFButtonColor
-    name: UFButtonColor
   - uid: UltraForce.Library.Core.Asp.Types.Enums.UFButtonIconPosition
     name: UFButtonIconPosition
-  - uid: UltraForce.Library.Core.Asp.Types.Enums.UFButtonSize
-    name: UFButtonSize
-  - uid: UltraForce.Library.Core.Asp.Types.Enums.UFButtonVariant
-    name: UFButtonVariant
+  - uid: UltraForce.Library.Core.Asp.Types.Enums.UFButtonType
+    name: UFButtonType
   - uid: UltraForce.Library.Core.Asp.Types.Enums.UFContentPosition
     name: UFContentPosition
   - uid: UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute
     name: UFDataAttribute
-  - uid: UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignContent
-    name: UFFlexAlignContent
   - uid: UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignItems
     name: UFFlexAlignItems
-  - uid: UltraForce.Library.Core.Asp.Types.Enums.UFFlexJustifyContent
-    name: UFFlexJustifyContent
+  - uid: UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContent
+    name: UFFlexDistributeContent
+  - uid: UltraForce.Library.Core.Asp.Types.Enums.UFSize
+    name: UFSize
   - uid: UltraForce.Library.Core.Asp.Types.Enums.UFTableCellType
     name: UFTableCellType
   - uid: UltraForce.Library.Core.Asp.Types.Enums.UFTableRowType
@@ -197,8 +187,6 @@ items:
     name: UFTableSortLocation
   - uid: UltraForce.Library.Core.Asp.Types.Enums.UFTableSortType
     name: UFTableSortType
-  - uid: UltraForce.Library.Core.Asp.Types.Enums.UFTableTextSize
-    name: UFTableTextSize
   - uid: UltraForce.Library.Core.Asp.Types.Enums.UFWrapType
     name: UFWrapType
 - uid: UltraForce.Library.Core.Asp.ViewModels

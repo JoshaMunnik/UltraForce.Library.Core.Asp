@@ -37,14 +37,45 @@ namespace UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons;
 /// </summary>
 public class UFButtonProperties : IUFButtonProperties
 {
+  #region constructors
+  
+  /// <summary>
+  /// Constructs a new instance of <see cref="UFButtonProperties"/> using default values.
+  /// </summary>
+  public UFButtonProperties() { }
+
+  /// <summary>
+  /// Constructs a new instance of <see cref="UFButtonProperties"/> copying values from another
+  /// instance.
+  /// </summary>
+  public UFButtonProperties(
+    IUFButtonProperties aSource
+  )
+  {
+    this.Type = aSource.Type;
+    this.Size = aSource.Size;
+    this.Icon = aSource.Icon;
+    this.IconPosition = aSource.IconPosition;
+    this.Disabled = aSource.Disabled;
+    this.Static = aSource.Static;
+    this.Submit = aSource.Submit;
+    this.FullWidth = aSource.FullWidth;
+    this.FullHeight = aSource.FullHeight;
+    this.VerticalPadding = aSource.VerticalPadding;
+    this.HorizontalPadding = aSource.HorizontalPadding;
+    this.HorizontalContentPosition = aSource.HorizontalContentPosition;
+    this.VerticalContentPosition = aSource.VerticalContentPosition;
+  }
+  
+  #endregion
+  
+  #region IUFButtonProperties
+  
   /// <inheritdoc />
-  public UFButtonColor Color { get; set; } = UFButtonColor.Auto;
+  public UFButtonType Type { get; set; } = UFButtonType.Auto;
 
   /// <inheritdoc />
-  public UFButtonSize Size { get; set; } = UFButtonSize.Normal;
-
-  /// <inheritdoc />
-  public UFButtonVariant Variant { get; set; } = UFButtonVariant.Auto;
+  public UFSize Size { get; set; } = UFSize.Normal;
 
   /// <inheritdoc />
   public string? Icon { get; set; } = null;
@@ -78,4 +109,6 @@ public class UFButtonProperties : IUFButtonProperties
   
   /// <inheritdoc />
   public UFContentPosition VerticalContentPosition { get; set; } = UFContentPosition.Center;
+  
+  #endregion
 }

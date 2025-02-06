@@ -102,31 +102,65 @@ content with a separate closing tag.</p>
 The generated td or th element always uses a opening and closing tag.
 </p>
 <p>
-Rendered html for header:<br>
-&lt;th class="{GetCssClasses()}}"&gt;{children}&lt;/th&gt;
-</p>
+Rendered html for header:
+<pre><code class="lang-csharp">&lt;th class="{GetTableCellClasses()}}"&gt;{children}&lt;/th&gt;</code></pre>
+
 <p>
-Rendered html for data:<br>
-&lt;td class="{GetCssClasses()}}"&gt;{children}&lt;/td&gt;
-</p>
+Rendered html for data:
+<pre><code class="lang-csharp">&lt;td class="{GetTableCellClasses()}}"&gt;{children}&lt;/td&gt;</code></pre>
+
 <p>
-Rendered html for buttons (a div is used so that flex or grid styling can be used):<br>
-&lt;td class="{GetCssClasses()}}"&gt;<br>
-&lt;div class="{GetButtonsCssClasses()} &gt;<br>
-{children}<br>
-&lt;/div&gt;<br>
-&lt;/td&gt;
-</p>
+Rendered html for buttons (a div is used so that flex or grid styling can be used):
+<pre><code class="lang-csharp">&lt;td class="{GetTableCellClasses()}}"&gt;
+  &lt;div class="{GetTableHeaderButtonClasses()} &gt;
+    {children}
+  &lt;/div&gt;
+&lt;/td&gt;</code></pre>
+
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableRowTagHelper.html">UFTableRowTagHelper</a></dt>
-      <dd><p>Creates a table row.</p>
+      <dd><p>Creates a table row. Renders:</p>
+<pre><code class="lang-csharp">&lt;tr class="{GetTableRowClasses()}&gt;
+  {children}
+&lt;/tr&gt;</code></pre>
 </dd>
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper.html">UFTableTagHelper</a></dt>
       <dd><p>Simple tag helper to render a table.</p>
+<p>
+Table without filter and sorting:
+<pre><code class="lang-csharp">&lt;table class="GetTableClasses()"&gt;
+  {children}
+&lt;/table&gt;</code></pre>
+
+<p>
+Table with a filter:
+<pre><code class="lang-csharp">&lt;div&gt;
+  &lt;div class="GetFilterContainerClasses()"&gt;
+    &lt;input {id} class="GetFilterInputClasses()" data-uf-filter-table="{id}" /&gt;
+    &lt;button class="GetFilterButtonClasses()" data-uf-set-field-selector="#{id}"&gt;
+      clear
+    &lt;/button&gt;
+  &lt;/div&gt;
+  &lt;table class="GetTableClasses()"&gt;
+    {children}
+  &lt;/table&gt;
+&lt;/div&gt;</code></pre>
+
+<p>
+Table with sorting:
+<pre><code class="lang-csharp">&lt;table
+  class="GetTableClasses()"
+  data-uf-sorting="1"
+  data-uf-sort-ascending="GetSortAscendingClasses()"
+  data-uf-sort-descending="GetSortDescendingClasses()"
+  >
+  {children}
+&lt;/table&gt;</code></pre>
+
 </dd>
     </dl>
     <h3 id="interfaces">

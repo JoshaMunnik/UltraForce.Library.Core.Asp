@@ -95,11 +95,6 @@
 Classes
 </h3>
     <dl class="jumplist">
-      <dt><a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputProperties.html">UFInputProperties</a></dt>
-      <dd><p>Implements the interface with default values.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
       <dt><a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.html">UFInputTagHelper</a></dt>
       <dd><p>Renders either a text input, a checkbox or a radio button. If no <code>id</code> is set and
 <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Forms_UFInputTagHelper_Wrap">Wrap</a> is <code>true</code> the class will generate an id so the label can reference the
@@ -109,122 +104,122 @@ If there are no field errors, the field error block is not rendered.
 </p>
 <p>
 Renders text input with wrapping and label:
-<pre><code class="lang-csharp">&lt;div class="{Theme.GetTextWrapperClasses(type)}"&gt;
-&lt;label class="{Theme.GetTextLabelClasses(type)}" for="{id}"&gt;
-&lt;span class="{Theme.GetTextLabelSpanClasses(type)}"&gt;{label}&lt;/span&gt;
-&lt;span class="{Theme.GetTextLabelDescriptionClasses(type)}"&gt;{description}&lt;/span&gt;
-&lt;/label&gt;
-&lt;input class="{Theme.GetTextInputClasses(type)}" id={} .../&gt;
-{Theme.GetValidationFeedbackContainer(id)}
-{RenderFieldErrors(...)}
+<pre><code class="lang-csharp">&lt;div class="{GetTextWrapperClasses(type)}"&gt;
+  &lt;label class="{GetTextLabelClasses(type)}" for="{id}"&gt;
+    &lt;span class="{GetTextLabelSpanClasses(type)}"&gt;{label}&lt;/span&gt;
+    &lt;span class="{GetTextLabelDescriptionClasses(type)}"&gt;{description}&lt;/span&gt;
+  &lt;/label&gt;
+  &lt;input class="{GetTextInputClasses(type)}" id={} .../&gt;
+  {GetValidationFeedbackContainer(id)}
+  {RenderFieldErrors(...)}
 &lt;/div&gt;</code></pre>
 
 <p>
 Renders text input with wrapping and no label:
-<pre><code class="lang-csharp">&lt;div class="{Theme.GetTextWrapperClasses(type)}"&gt;
-&lt;input class="{Theme.GetTextInputClasses(type)}" id={} .../&gt;
-{Theme.GetValidationFeedbackContainer(id)}
-&lt;div class="{Theme.GetFieldErrorsClasses()}"&gt;{Theme.GetFieldErrorsHtml()}&lt;/div&gt;
+<pre><code class="lang-csharp">&lt;div class="{GetTextWrapperClasses(type)}"&gt;
+  &lt;input class="{GetTextInputClasses(type)}" id={} .../&gt;
+  {GetValidationFeedbackContainer(id)}
+  &lt;div class="{GetFieldErrorsClasses()}"&gt;{GetFieldErrorsHtml()}&lt;/div&gt;
 &lt;/div&gt;</code></pre>
 
 <p>
 Renders text input without wrapping:
-<pre><code class="lang-csharp">&lt;input class="{Theme.GetTextInputClasses(type) .../&gt;</code></pre>
+<pre><code class="lang-csharp">&lt;input class="{GetTextInputClasses(type) .../&gt;</code></pre>
 
 <p>
 Renders multiline text input with wrapping and label:
-<pre><code class="lang-csharp">&lt;div class="{Theme.GetTextWrapperClasses(type)}"&gt;
-&lt;label class="{Theme.GetTextLabelClasses(type)}" for="{id}"&gt;
-&lt;span class="{Theme.GetTextLabelSpanClasses(type)}"&gt;{label}&lt;/span&gt;
-&lt;span class="{Theme.GetTextLabelDescriptionClasses(type)}"&gt;{description}&lt;/span&gt;
-&lt;/label&gt;
-&lt;textarea class="{Theme.GetTextInputClasses(type)}" id={} ..." &gt;{value}&lt;/textarea&gt;
-{Theme.GetValidationFeedbackContainer(id)}
-{RenderFieldErrors(...)}
+<pre><code class="lang-csharp">&lt;div class="{GetTextWrapperClasses(type)}"&gt;
+  &lt;label class="{GetTextLabelClasses(type)}" for="{id}"&gt;
+    &lt;span class="{GetTextLabelSpanClasses(type)}"&gt;{label}&lt;/span&gt;
+    &lt;span class="{GetTextLabelDescriptionClasses(type)}"&gt;{description}&lt;/span&gt;
+  &lt;/label&gt;
+  &lt;textarea class="{GetTextInputClasses(type)}" id={} ..." &gt;{value}&lt;/textarea&gt;
+  {GetValidationFeedbackContainer(id)}
+  {RenderFieldErrors(...)}
 &lt;/div&gt;</code></pre>
 
 <p>
 Renders multiline text input with wrapping and no label:
-<pre><code class="lang-csharp">&lt;div class="{Theme.GetTextWrapperClasses(type)}"&gt;
-&lt;textarea class="{Theme.GetTextInputClasses(type)}" id={} ..." &gt;{value}&lt;/textarea&gt;
-{Theme.GetValidationFeedbackContainer(id)}
-&lt;div class="{Theme.GetFieldErrorsClasses()}"&gt;{Theme.GetFieldErrorsHtml()}&lt;/div&gt;
+<pre><code class="lang-csharp">&lt;div class="{GetTextWrapperClasses(type)}"&gt;
+  &lt;textarea class="{GetTextInputClasses(type)}" id={} ..." &gt;{value}&lt;/textarea&gt;
+  {GetValidationFeedbackContainer(id)}
+  &lt;div class="{GetFieldErrorsClasses()}"&gt;{GetFieldErrorsHtml()}&lt;/div&gt;
 &lt;/div&gt;</code></pre>
 
 <p>
 Renders multiline text input without wrapping:
-<pre><code class="lang-csharp">&lt;textarea class="{Theme.GetTextInputClasses(type)}" id={} ..." &gt;{value}&lt;/textarea&gt;</code></pre>
+<pre><code class="lang-csharp">&lt;textarea class="{GetTextInputClasses(type)}" id={} ..." &gt;{value}&lt;/textarea&gt;</code></pre>
 
 <p>
 Renders radio input with wrapping and a label:
-<pre><code class="lang-csharp">&lt;div class="{Theme.GetRadioWrapperClasses()}"&gt;
-&lt;label class="{Theme.GetRadioLabelClasses()}"&gt;
-{Theme.GetRadioExtraHtml()}
-&lt;span class="{Theme.GetRadioLabelSpanClasses()}&gt;{label}&lt;/span&gt;
-&lt;span class="{Theme.GetRadioLabelDescriptionClasses()}"&gt;{description}&lt;/span&gt;
-&lt;/label&gt;
-{Theme.GetValidationFeedbackContainer(id)}
-&lt;div class="{Theme.GetFieldErrorsClasses()}"&gt;{Theme.GetFieldErrorsHtml()}&lt;/div&gt;
+<pre><code class="lang-csharp">&lt;div class="{GetRadioWrapperClasses()}"&gt;
+  &lt;label class="{GetRadioLabelClasses()}"&gt;
+    {GetRadioExtraHtml()}
+    &lt;span class="{GetRadioLabelSpanClasses()}&gt;{label}&lt;/span&gt;
+    &lt;span class="{GetRadioLabelDescriptionClasses()}"&gt;{description}&lt;/span&gt;
+  &lt;/label&gt;
+  {GetValidationFeedbackContainer(id)}
+  &lt;div class="{GetFieldErrorsClasses()}"&gt;{GetFieldErrorsHtml()}&lt;/div&gt;
 &lt;/div&gt;</code></pre>
 
 <p>
 Renders radio input with wrapping but no label:
-<pre><code class="lang-csharp">&lt;div class="{Theme.GetRadioWrapperClasses()}"&gt;
-&lt;input type="radio" class="{Theme.GetRadioInputClasses()}" id={} .../&gt;
-{Theme.GetRadioExtraHtml()}
-{Theme.GetValidationFeedbackContainer(id)}
-&lt;div class="{Theme.GetFieldErrorsClasses()}"&gt;{Theme.GetFieldErrorsHtml()}&lt;/div&gt;
+<pre><code class="lang-csharp">&lt;div class="{GetRadioWrapperClasses()}"&gt;
+  &lt;input type="radio" class="{GetRadioInputClasses()}" id={} .../&gt;
+  {GetRadioExtraHtml()}
+  {GetValidationFeedbackContainer(id)}
+  &lt;div class="{GetFieldErrorsClasses()}"&gt;{GetFieldErrorsHtml()}&lt;/div&gt;
 &lt;/div&gt;</code></pre>
 
 <p>
 Renders radio input without wrapping but with a label:
-<pre><code class="lang-csharp">&lt;label class="{Theme.GetRadioLabelClasses()}"&gt;
-&lt;input type="radio" class="{Theme.GetRadioInputClasses()}" id={} .../&gt;
-{Theme.GetRadioExtraHtml()}
-&lt;span class="{Theme.GetRadioLabelSpanClasses()}&gt;{label}&lt;/span&gt;
-&lt;span class="{Theme.GetRadioLabelDescriptionClasses()}"&gt;{description}&lt;/span&gt;
+<pre><code class="lang-csharp">&lt;label class="{GetRadioLabelClasses()}"&gt;
+  &lt;input type="radio" class="{GetRadioInputClasses()}" id={} .../&gt;
+  {GetRadioExtraHtml()}
+  &lt;span class="{GetRadioLabelSpanClasses()}&gt;{label}&lt;/span&gt;
+  &lt;span class="{GetRadioLabelDescriptionClasses()}"&gt;{description}&lt;/span&gt;
 &lt;/label&gt;</code></pre>
 
 <p>
 Renders radio input without wrapping and without a label:
-<pre><code class="lang-csharp">&lt;input type="radio" class="{Theme.GetRadioInputClasses()}" id={} .../&gt;
-{Theme.GetRadioExtraHtml()}</code></pre>
+<pre><code class="lang-csharp">&lt;input type="radio" class="{GetRadioInputClasses()}" id={} .../&gt;
+{GetRadioExtraHtml()}</code></pre>
 
 <p>
 Renders checkbox input with wrapping and a label:
-<pre><code class="lang-csharp">&lt;div class="{Theme.GetCheckboxWrapperClasses()}"&gt;
-&lt;label class="{Theme.GetCheckboxLabelClasses()}"&gt;
-&lt;input type="checkbox" class="{Theme.GetCheckboxInputClasses()}" id={} .../&gt;
-{Theme.GetCheckboxExtraHtml()}
-&lt;span class="{Theme.GetCheckboxLabelSpanClasses()}&gt;{label}&lt;/span&gt;
-&lt;span class="{Theme.GetCheckboxLabelDescriptionClasses()}"&gt;{description}&lt;/span&gt;
-&lt;/label&gt;
-{Theme.GetValidationFeedbackContainer(id)}
-&lt;div class="{Theme.GetFieldErrorsClasses()}"&gt;{Theme.GetFieldErrorsHtml()}&lt;/div&gt;
+<pre><code class="lang-csharp">&lt;div class="{GetCheckboxWrapperClasses()}"&gt;
+  &lt;label class="{GetCheckboxLabelClasses()}"&gt;
+    &lt;input type="checkbox" class="{GetCheckboxInputClasses()}" id={} .../&gt;
+   {GetCheckboxExtraHtml()}
+   &lt;span class="{GetCheckboxLabelSpanClasses()}&gt;{label}&lt;/span&gt;
+   &lt;span class="{GetCheckboxLabelDescriptionClasses()}"&gt;{description}&lt;/span&gt;
+  &lt;/label&gt;
+  {GetValidationFeedbackContainer(id)}
+  &lt;div class="{GetFieldErrorsClasses()}"&gt;{GetFieldErrorsHtml()}&lt;/div&gt;
 &lt;/div&gt;</code></pre>
 
 <p>
 Renders checkbox input with wrapping but no label:
-<pre><code class="lang-csharp">&lt;div class="{Theme.GetCheckboxWrapperClasses()}"&gt;
-&lt;input type="checkbox" class="{Theme.GetCheckboxInputClasses()}" id={} .../&gt;
-{Theme.GetCheckboxExtraHtml()}
-{Theme.GetValidationFeedbackContainer(id)}
-&lt;div class="{Theme.GetFieldErrorsClasses()}"&gt;{Theme.GetFieldErrorsHtml()}&lt;/div&gt;
+<pre><code class="lang-csharp">&lt;div class="{GetCheckboxWrapperClasses()}"&gt;
+  &lt;input type="checkbox" class="{GetCheckboxInputClasses()}" id={} .../&gt;
+  {GetCheckboxExtraHtml()}
+  {GetValidationFeedbackContainer(id)}
+  &lt;div class="{GetFieldErrorsClasses()}"&gt;{GetFieldErrorsHtml()}&lt;/div&gt;
 &lt;/div&gt;</code></pre>
 
 <p>
 Renders checkbox input without wrapping but with a label:
-<pre><code class="lang-csharp">&lt;label class="{Theme.GetCheckboxLabelClasses()}"&gt;
-&lt;input type="checkbox" class="{Theme.GetCheckboxInputClasses()}" id={} ... /&gt;
-{Theme.GetCheckboxExtraHtml()}
-&lt;span class="{Theme.GetCheckboxLabelSpanClasses()}&gt;{label}&lt;/span&gt;
-&lt;span class="{Theme.GetCheckboxLabelDescriptionClasses()}"&gt;{description}&lt;/span&gt;
+<pre><code class="lang-csharp">&lt;label class="{GetCheckboxLabelClasses()}"&gt;
+  &lt;input type="checkbox" class="{GetCheckboxInputClasses()}" id={} ... /&gt;
+  {GetCheckboxExtraHtml()}
+  &lt;span class="{GetCheckboxLabelSpanClasses()}&gt;{label}&lt;/span&gt;
+  &lt;span class="{GetCheckboxLabelDescriptionClasses()}"&gt;{description}&lt;/span&gt;
 &lt;/label&gt;</code></pre>
 
 <p>
 Renders checkbox input without wrapping and without a label:
-<pre><code class="lang-csharp">&lt;input type="checkbox" class="{Theme.GetCheckboxInputClasses()}" id={} .../&gt;
-{Theme.GetCheckboxExtraHtml()}</code></pre>
+<pre><code class="lang-csharp">&lt;input type="checkbox" class="{GetCheckboxInputClasses()}" id={} .../&gt;
+{GetCheckboxExtraHtml()}</code></pre>
 
 </dd>
     </dl>
@@ -237,22 +232,22 @@ select element.</p>
 If there are no field errors, the field error block is not rendered.
 </p>
 <p>
-Renders with wrapping:<br>
-&lt;div class="{Theme.GetInputWrapperClasses()}"&gt;<br>
-&lt;label class="{Theme.GetInputLabelClasses()}" for="{id}"&gt;{label}&lt;/label&gt;<br>
-&lt;select class="{Theme.GetSelectClasses() id={} ..." &gt;<br>
-{children}<br>
-&lt;/select&gt;<br>
-{Theme.GetValidationFeedbackContainer(id)}<br>
-&lt;div class="{Theme.GetFieldErrorsClasses()}"&gt;{Theme.GetFieldErrorsHtml()}&lt;/div&gt;<br>
-&lt;/div&gt;
-</p>
+Renders with wrapping:
+<pre><code class="lang-csharp">&lt;div class="{GetInputWrapperClasses()}"&gt;
+  &lt;label class="{GetInputLabelClasses()}" for="{id}"&gt;{label}&lt;/label&gt;
+  &lt;select class="{GetSelectClasses() id={} ..." &gt;
+    {children}
+  &lt;/select&gt;
+  {GetValidationFeedbackContainer(id)}
+  &lt;div class="{GetFieldErrorsClasses()}"&gt;{GetFieldErrorsHtml()}&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
 <p>
-Renders without wrapping:<br>
-&lt;select class="{Theme.GetSelectClasses()}" &gt;<br>
-{children}<br>
-&lt;/select&gt;
-</p>
+Renders without wrapping:
+<pre><code class="lang-csharp">&lt;select class="{GetSelectClasses()}" &gt;
+  {children}
+&lt;/select&gt;</code></pre>
+
 </dd>
     </dl>
     <h3 id="interfaces">

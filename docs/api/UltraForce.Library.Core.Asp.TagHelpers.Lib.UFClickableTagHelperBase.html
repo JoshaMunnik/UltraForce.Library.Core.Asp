@@ -110,7 +110,7 @@ additional properties.
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class UFClickableTagHelperBase : AnchorTagHelper, ITagHelper, ITagHelperComponent</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class UFClickableTagHelperBase : AnchorTagHelper, ITagHelper, ITagHelperComponent</code></pre>
   </div>
 
 
@@ -354,7 +354,7 @@ public string? CallParameterSeparator { get; set; }</code></pre>
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_EndpointDataSource" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.EndpointDataSource">
   EndpointDataSource
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Lib/UFClickableTagHelperBase.cs/#L165"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Lib/UFClickableTagHelperBase.cs/#L132"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Routing information</p>
@@ -448,113 +448,11 @@ public bool NewTab { get; set; }</code></pre>
 
 
 
-  <a id="UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_OldAction_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.OldAction*"></a>
-
-  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_OldAction" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.OldAction">
-  OldAction
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Lib/UFClickableTagHelperBase.cs/#L134"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Obsolete property. Use &quot;asp-action&quot; instead.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[HtmlAttributeName(&quot;action&quot;)]
-[Obsolete(&quot;Use asp-action property instead&quot;, true)]
-public string OldAction { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_OldController_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.OldController*"></a>
-
-  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_OldController" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.OldController">
-  OldController
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Lib/UFClickableTagHelperBase.cs/#L123"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Obsolete property. Use &quot;asp-controller&quot; instead.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[HtmlAttributeName(&quot;controller&quot;)]
-[Obsolete(&quot;Use asp-controller property instead&quot;, true)]
-public string OldController { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_OldRouteValues_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.OldRouteValues*"></a>
-
-  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_OldRouteValues" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.OldRouteValues">
-  OldRouteValues
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Lib/UFClickableTagHelperBase.cs/#L145"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>Additional parameters for the route.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[HtmlAttributeName(&quot;all-route-data&quot;, DictionaryAttributePrefix = &quot;route-&quot;)]
-[Obsolete(&quot;Use asp-route property instead&quot;, true)]
-public IDictionary&lt;string, string&gt; OldRouteValues { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2">IDictionary</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
   <a id="UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_Theme_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.Theme*"></a>
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_Theme" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.Theme">
   Theme
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Lib/UFClickableTagHelperBase.cs/#L160"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Lib/UFClickableTagHelperBase.cs/#L127"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Theme to use for styling.</p>
@@ -590,7 +488,7 @@ public IDictionary&lt;string, string&gt; OldRouteValues { get; set; }</code></pr
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_ProcessHref_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.ProcessHref(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)">
   ProcessHref(TagHelperOutput)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Lib/UFClickableTagHelperBase.cs/#L176"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Lib/UFClickableTagHelperBase.cs/#L143"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Checks if a href attribute is set; if not create one based on the <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_Href">Href</a> property.</p>

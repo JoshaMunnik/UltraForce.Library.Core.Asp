@@ -1,4 +1,4 @@
-// <copyright file="UFButtonColor.cs" company="Ultra Force Development">
+// <copyright file="UFButtonSize.cs" company="Ultra Force Development">
 // Ultra Force Library - Copyright (C) 2024 Ultra Force Development
 // </copyright>
 // <author>Josha Munnik</author>
@@ -30,37 +30,32 @@
 namespace UltraForce.Library.Core.Asp.Types.Enums;
 
 /// <summary>
-/// Colors for the button
+/// Sizes at which elements can be styled.
 /// </summary>
-public enum UFButtonColor
+public enum UFSize
 {
   /// <summary>
-  /// Auto assign color based on the context.
-  /// </summary>
-  Auto,
-  
-  /// <summary>
-  /// Normal color
+  /// Normal size
   /// </summary>
   Normal,
   
   /// <summary>
-  /// Success color
+  /// Smaller size
   /// </summary>
-  Success,
+  Small,
   
   /// <summary>
-  /// Danger color
+  /// Very small size
   /// </summary>
-  Danger,
+  VerySmall,
   
   /// <summary>
-  /// Warning color
+  /// Larger size
   /// </summary>
-  Warning,
+  Large,
   
   /// <summary>
-  /// Disabled color
+  /// Very large size
   /// </summary>
-  Disabled
+  VeryLarge,
 }

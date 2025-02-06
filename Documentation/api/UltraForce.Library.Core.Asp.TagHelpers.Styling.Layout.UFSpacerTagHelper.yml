@@ -23,7 +23,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: UFSpacerTagHelper
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Layout/UFSpacerTagHelper.cs
-    startLine: 44
+    startLine: 46
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
@@ -34,7 +34,7 @@ items:
 
     Renders:
 
-    &lt;div class="{GetCssClasses()}" /&gt;
+    <pre><code class="lang-csharp">&lt;div class="{GetCssClasses()}" /&gt;</code></pre>
 
     </p>
   example: []
@@ -95,7 +95,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: .ctor
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Layout/UFSpacerTagHelper.cs
-    startLine: 44
+    startLine: 46
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
@@ -106,7 +106,7 @@ items:
 
     Renders:
 
-    &lt;div class="{GetCssClasses()}" /&gt;
+    <pre><code class="lang-csharp">&lt;div class="{GetCssClasses()}" /&gt;</code></pre>
 
     </p>
   example: []
@@ -138,7 +138,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Size
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Layout/UFSpacerTagHelper.cs
-    startLine: 54
+    startLine: 56
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
@@ -183,7 +183,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Process
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Layout/UFSpacerTagHelper.cs
-    startLine: 62
+    startLine: 64
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
@@ -222,7 +222,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetSpacerClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Layout/UFSpacerTagHelper.cs
-    startLine: 77
+    startLine: 79
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout

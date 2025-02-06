@@ -370,22 +370,6 @@ public class UFTheme : IUFTheme
     return "";
   }
 
-  /// <summary>
-  /// The default implementation returns true if the value does not end with:
-  /// "px", "pt", "em", "rem" or "%".
-  /// </summary>
-  /// <param name="aValue"></param>
-  /// <returns></returns>
-  public virtual bool IsCssClass(string aValue)
-  {
-    return
-      !aValue.EndsWith("px", StringComparison.OrdinalIgnoreCase) &&
-      !aValue.EndsWith("pt", StringComparison.OrdinalIgnoreCase) &&
-      !aValue.EndsWith("em", StringComparison.OrdinalIgnoreCase) &&
-      !aValue.EndsWith("rem", StringComparison.OrdinalIgnoreCase) &&
-      !aValue.EndsWith("%", StringComparison.OrdinalIgnoreCase);
-  }
-
   #endregion
 
   #region overridable protected methods

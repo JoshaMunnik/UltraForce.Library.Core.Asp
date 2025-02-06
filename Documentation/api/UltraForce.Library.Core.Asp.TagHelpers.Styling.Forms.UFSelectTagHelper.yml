@@ -7,6 +7,12 @@ items:
   children:
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFSelectTagHelper.#ctor(Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator,UltraForce.Library.Core.Asp.Services.IUFTheme)
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFSelectTagHelper.Description
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFSelectTagHelper.GetFieldErrorsClasses
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFSelectTagHelper.GetFieldErrorsHtml(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary,System.String)
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFSelectTagHelper.GetSelectClasses
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFSelectTagHelper.GetTextLabelClasses(System.String)
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFSelectTagHelper.GetTextWrapperClasses(System.String)
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFSelectTagHelper.GetValidationFeedbackContainerHtml(System.String)
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFSelectTagHelper.Label
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFSelectTagHelper.Multiline
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFSelectTagHelper.NoLabel
@@ -28,7 +34,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: UFSelectTagHelper
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Forms/UFSelectTagHelper.cs
-    startLine: 63
+    startLine: 68
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms
@@ -47,35 +53,26 @@ items:
 
     <p>
 
-    Renders with wrapping:<br />
+    Renders with wrapping:
 
-    &lt;div class="{Theme.GetInputWrapperClasses()}"&gt;<br />
-
-    &lt;label class="{Theme.GetInputLabelClasses()}" for="{id}"&gt;{label}&lt;/label&gt;<br />
-
-    &lt;select class="{Theme.GetSelectClasses() id={} ..." &gt;<br />
-
-    {children}<br />
-
-    &lt;/select&gt;<br />
-
-    {Theme.GetValidationFeedbackContainer(id)}<br />
-
-    &lt;div class="{Theme.GetFieldErrorsClasses()}"&gt;{Theme.GetFieldErrorsHtml()}&lt;/div&gt;<br />
-
-    &lt;/div&gt;
+    <pre><code class="lang-csharp">&lt;div class="{GetInputWrapperClasses()}"&gt;
+      &lt;label class="{GetInputLabelClasses()}" for="{id}"&gt;{label}&lt;/label&gt;
+      &lt;select class="{GetSelectClasses() id={} ..." &gt;
+        {children}
+      &lt;/select&gt;
+      {GetValidationFeedbackContainer(id)}
+      &lt;div class="{GetFieldErrorsClasses()}"&gt;{GetFieldErrorsHtml()}&lt;/div&gt;
+    &lt;/div&gt;</code></pre>
 
     </p>
 
     <p>
 
-    Renders without wrapping:<br />
+    Renders without wrapping:
 
-    &lt;select class="{Theme.GetSelectClasses()}" &gt;<br />
-
-    {children}<br />
-
-    &lt;/select&gt;
+    <pre><code class="lang-csharp">&lt;select class="{GetSelectClasses()}" &gt;
+      {children}
+    &lt;/select&gt;</code></pre>
 
     </p>
   example: []
@@ -140,7 +137,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: .ctor
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Forms/UFSelectTagHelper.cs
-    startLine: 63
+    startLine: 68
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms
@@ -159,35 +156,26 @@ items:
 
     <p>
 
-    Renders with wrapping:<br />
+    Renders with wrapping:
 
-    &lt;div class="{Theme.GetInputWrapperClasses()}"&gt;<br />
-
-    &lt;label class="{Theme.GetInputLabelClasses()}" for="{id}"&gt;{label}&lt;/label&gt;<br />
-
-    &lt;select class="{Theme.GetSelectClasses() id={} ..." &gt;<br />
-
-    {children}<br />
-
-    &lt;/select&gt;<br />
-
-    {Theme.GetValidationFeedbackContainer(id)}<br />
-
-    &lt;div class="{Theme.GetFieldErrorsClasses()}"&gt;{Theme.GetFieldErrorsHtml()}&lt;/div&gt;<br />
-
-    &lt;/div&gt;
+    <pre><code class="lang-csharp">&lt;div class="{GetInputWrapperClasses()}"&gt;
+      &lt;label class="{GetInputLabelClasses()}" for="{id}"&gt;{label}&lt;/label&gt;
+      &lt;select class="{GetSelectClasses() id={} ..." &gt;
+        {children}
+      &lt;/select&gt;
+      {GetValidationFeedbackContainer(id)}
+      &lt;div class="{GetFieldErrorsClasses()}"&gt;{GetFieldErrorsHtml()}&lt;/div&gt;
+    &lt;/div&gt;</code></pre>
 
     </p>
 
     <p>
 
-    Renders without wrapping:<br />
+    Renders without wrapping:
 
-    &lt;select class="{Theme.GetSelectClasses()}" &gt;<br />
-
-    {children}<br />
-
-    &lt;/select&gt;
+    <pre><code class="lang-csharp">&lt;select class="{GetSelectClasses()}" &gt;
+      {children}
+    &lt;/select&gt;</code></pre>
 
     </p>
   example: []
@@ -221,7 +209,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Label
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Forms/UFSelectTagHelper.cs
-    startLine: 71
+    startLine: 76
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms
@@ -277,7 +265,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: NoLabel
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Forms/UFSelectTagHelper.cs
-    startLine: 75
+    startLine: 80
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms
@@ -322,7 +310,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Wrap
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Forms/UFSelectTagHelper.cs
-    startLine: 79
+    startLine: 84
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms
@@ -367,7 +355,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Description
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Forms/UFSelectTagHelper.cs
-    startLine: 83
+    startLine: 88
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms
@@ -412,7 +400,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Multiline
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Forms/UFSelectTagHelper.cs
-    startLine: 89
+    startLine: 94
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms
@@ -455,7 +443,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: NoWidth
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Forms/UFSelectTagHelper.cs
-    startLine: 93
+    startLine: 98
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms
@@ -500,7 +488,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Theme
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Forms/UFSelectTagHelper.cs
-    startLine: 103
+    startLine: 108
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms
@@ -531,7 +519,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Process
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Forms/UFSelectTagHelper.cs
-    startLine: 110
+    startLine: 115
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms
@@ -553,6 +541,222 @@ items:
     content.vb: Public Overrides Sub Process(context As TagHelperContext, output As TagHelperOutput)
   overridden: Microsoft.AspNetCore.Mvc.TagHelpers.SelectTagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
   overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFSelectTagHelper.Process*
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFSelectTagHelper.GetSelectClasses
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFSelectTagHelper.GetSelectClasses
+  id: GetSelectClasses
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFSelectTagHelper
+  langs:
+  - csharp
+  - vb
+  name: GetSelectClasses()
+  nameWithType: UFSelectTagHelper.GetSelectClasses()
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFSelectTagHelper.GetSelectClasses()
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Styling/Forms/UFSelectTagHelper.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: GetSelectClasses
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Forms/UFSelectTagHelper.cs
+    startLine: 150
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms
+  summary: Returns css classes for the select element.
+  example: []
+  syntax:
+    content: protected virtual string GetSelectClasses()
+    return:
+      type: System.String
+      description: ''
+    content.vb: Protected Overridable Function GetSelectClasses() As String
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFSelectTagHelper.GetSelectClasses*
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFSelectTagHelper.GetTextLabelClasses(System.String)
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFSelectTagHelper.GetTextLabelClasses(System.String)
+  id: GetTextLabelClasses(System.String)
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFSelectTagHelper
+  langs:
+  - csharp
+  - vb
+  name: GetTextLabelClasses(string)
+  nameWithType: UFSelectTagHelper.GetTextLabelClasses(string)
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFSelectTagHelper.GetTextLabelClasses(string)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Styling/Forms/UFSelectTagHelper.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: GetTextLabelClasses
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Forms/UFSelectTagHelper.cs
+    startLine: 159
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms
+  summary: Returns css classes for the label element.
+  example: []
+  syntax:
+    content: protected virtual string GetTextLabelClasses(string aType)
+    parameters:
+    - id: aType
+      type: System.String
+    return:
+      type: System.String
+      description: ''
+    content.vb: Protected Overridable Function GetTextLabelClasses(aType As String) As String
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFSelectTagHelper.GetTextLabelClasses*
+  nameWithType.vb: UFSelectTagHelper.GetTextLabelClasses(String)
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFSelectTagHelper.GetTextLabelClasses(String)
+  name.vb: GetTextLabelClasses(String)
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFSelectTagHelper.GetTextWrapperClasses(System.String)
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFSelectTagHelper.GetTextWrapperClasses(System.String)
+  id: GetTextWrapperClasses(System.String)
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFSelectTagHelper
+  langs:
+  - csharp
+  - vb
+  name: GetTextWrapperClasses(string)
+  nameWithType: UFSelectTagHelper.GetTextWrapperClasses(string)
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFSelectTagHelper.GetTextWrapperClasses(string)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Styling/Forms/UFSelectTagHelper.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: GetTextWrapperClasses
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Forms/UFSelectTagHelper.cs
+    startLine: 170
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms
+  summary: Returns css classes for the wrapper element.
+  example: []
+  syntax:
+    content: protected virtual string GetTextWrapperClasses(string aType)
+    parameters:
+    - id: aType
+      type: System.String
+      description: ''
+    return:
+      type: System.String
+      description: ''
+    content.vb: Protected Overridable Function GetTextWrapperClasses(aType As String) As String
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFSelectTagHelper.GetTextWrapperClasses*
+  nameWithType.vb: UFSelectTagHelper.GetTextWrapperClasses(String)
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFSelectTagHelper.GetTextWrapperClasses(String)
+  name.vb: GetTextWrapperClasses(String)
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFSelectTagHelper.GetValidationFeedbackContainerHtml(System.String)
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFSelectTagHelper.GetValidationFeedbackContainerHtml(System.String)
+  id: GetValidationFeedbackContainerHtml(System.String)
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFSelectTagHelper
+  langs:
+  - csharp
+  - vb
+  name: GetValidationFeedbackContainerHtml(string)
+  nameWithType: UFSelectTagHelper.GetValidationFeedbackContainerHtml(string)
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFSelectTagHelper.GetValidationFeedbackContainerHtml(string)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Styling/Forms/UFSelectTagHelper.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: GetValidationFeedbackContainerHtml
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Forms/UFSelectTagHelper.cs
+    startLine: 180
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms
+  summary: Returns the html for the validation feedback container.
+  example: []
+  syntax:
+    content: protected virtual string GetValidationFeedbackContainerHtml(string anId)
+    parameters:
+    - id: anId
+      type: System.String
+      description: ''
+    return:
+      type: System.String
+      description: ''
+    content.vb: Protected Overridable Function GetValidationFeedbackContainerHtml(anId As String) As String
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFSelectTagHelper.GetValidationFeedbackContainerHtml*
+  nameWithType.vb: UFSelectTagHelper.GetValidationFeedbackContainerHtml(String)
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFSelectTagHelper.GetValidationFeedbackContainerHtml(String)
+  name.vb: GetValidationFeedbackContainerHtml(String)
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFSelectTagHelper.GetFieldErrorsClasses
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFSelectTagHelper.GetFieldErrorsClasses
+  id: GetFieldErrorsClasses
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFSelectTagHelper
+  langs:
+  - csharp
+  - vb
+  name: GetFieldErrorsClasses()
+  nameWithType: UFSelectTagHelper.GetFieldErrorsClasses()
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFSelectTagHelper.GetFieldErrorsClasses()
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Styling/Forms/UFSelectTagHelper.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: GetFieldErrorsClasses
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Forms/UFSelectTagHelper.cs
+    startLine: 189
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms
+  summary: Returns the css classes for the field errors block.
+  example: []
+  syntax:
+    content: protected virtual string GetFieldErrorsClasses()
+    return:
+      type: System.String
+      description: ''
+    content.vb: Protected Overridable Function GetFieldErrorsClasses() As String
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFSelectTagHelper.GetFieldErrorsClasses*
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFSelectTagHelper.GetFieldErrorsHtml(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary,System.String)
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFSelectTagHelper.GetFieldErrorsHtml(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary,System.String)
+  id: GetFieldErrorsHtml(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary,System.String)
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFSelectTagHelper
+  langs:
+  - csharp
+  - vb
+  name: GetFieldErrorsHtml(ModelStateDictionary, string)
+  nameWithType: UFSelectTagHelper.GetFieldErrorsHtml(ModelStateDictionary, string)
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFSelectTagHelper.GetFieldErrorsHtml(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary, string)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Styling/Forms/UFSelectTagHelper.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: GetFieldErrorsHtml
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Forms/UFSelectTagHelper.cs
+    startLine: 200
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms
+  summary: Returns the html for the field errors block.
+  example: []
+  syntax:
+    content: protected virtual string GetFieldErrorsHtml(ModelStateDictionary states, string name)
+    parameters:
+    - id: states
+      type: Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary
+      description: ''
+    - id: name
+      type: System.String
+      description: ''
+    return:
+      type: System.String
+      description: ''
+    content.vb: Protected Overridable Function GetFieldErrorsHtml(states As ModelStateDictionary, name As String) As String
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFSelectTagHelper.GetFieldErrorsHtml*
+  nameWithType.vb: UFSelectTagHelper.GetFieldErrorsHtml(ModelStateDictionary, String)
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFSelectTagHelper.GetFieldErrorsHtml(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary, String)
+  name.vb: GetFieldErrorsHtml(ModelStateDictionary, String)
 references:
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFSelectTagHelper.Wrap
   commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFSelectTagHelper.Wrap
@@ -1415,3 +1619,94 @@ references:
   name: TagHelperOutput
   nameWithType: TagHelperOutput
   fullName: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFSelectTagHelper.GetSelectClasses*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFSelectTagHelper.GetSelectClasses
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFSelectTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Forms_UFSelectTagHelper_GetSelectClasses
+  name: GetSelectClasses
+  nameWithType: UFSelectTagHelper.GetSelectClasses
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFSelectTagHelper.GetSelectClasses
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFSelectTagHelper.GetTextLabelClasses*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFSelectTagHelper.GetTextLabelClasses
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFSelectTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Forms_UFSelectTagHelper_GetTextLabelClasses_System_String_
+  name: GetTextLabelClasses
+  nameWithType: UFSelectTagHelper.GetTextLabelClasses
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFSelectTagHelper.GetTextLabelClasses
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFSelectTagHelper.GetTextWrapperClasses*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFSelectTagHelper.GetTextWrapperClasses
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFSelectTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Forms_UFSelectTagHelper_GetTextWrapperClasses_System_String_
+  name: GetTextWrapperClasses
+  nameWithType: UFSelectTagHelper.GetTextWrapperClasses
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFSelectTagHelper.GetTextWrapperClasses
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFSelectTagHelper.GetValidationFeedbackContainerHtml*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFSelectTagHelper.GetValidationFeedbackContainerHtml
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFSelectTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Forms_UFSelectTagHelper_GetValidationFeedbackContainerHtml_System_String_
+  name: GetValidationFeedbackContainerHtml
+  nameWithType: UFSelectTagHelper.GetValidationFeedbackContainerHtml
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFSelectTagHelper.GetValidationFeedbackContainerHtml
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFSelectTagHelper.GetFieldErrorsClasses*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFSelectTagHelper.GetFieldErrorsClasses
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFSelectTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Forms_UFSelectTagHelper_GetFieldErrorsClasses
+  name: GetFieldErrorsClasses
+  nameWithType: UFSelectTagHelper.GetFieldErrorsClasses
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFSelectTagHelper.GetFieldErrorsClasses
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFSelectTagHelper.GetFieldErrorsHtml*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFSelectTagHelper.GetFieldErrorsHtml
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFSelectTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Forms_UFSelectTagHelper_GetFieldErrorsHtml_Microsoft_AspNetCore_Mvc_ModelBinding_ModelStateDictionary_System_String_
+  name: GetFieldErrorsHtml
+  nameWithType: UFSelectTagHelper.GetFieldErrorsHtml
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFSelectTagHelper.GetFieldErrorsHtml
+- uid: Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary
+  commentId: T:Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary
+  parent: Microsoft.AspNetCore.Mvc.ModelBinding
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.modelbinding.modelstatedictionary
+  name: ModelStateDictionary
+  nameWithType: ModelStateDictionary
+  fullName: Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary
+- uid: Microsoft.AspNetCore.Mvc.ModelBinding
+  commentId: N:Microsoft.AspNetCore.Mvc.ModelBinding
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.AspNetCore.Mvc.ModelBinding
+  nameWithType: Microsoft.AspNetCore.Mvc.ModelBinding
+  fullName: Microsoft.AspNetCore.Mvc.ModelBinding
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Mvc
+    name: Mvc
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc
+  - name: .
+  - uid: Microsoft.AspNetCore.Mvc.ModelBinding
+    name: ModelBinding
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.modelbinding
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Mvc
+    name: Mvc
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc
+  - name: .
+  - uid: Microsoft.AspNetCore.Mvc.ModelBinding
+    name: ModelBinding
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.modelbinding

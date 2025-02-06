@@ -33,8 +33,8 @@ using Microsoft.AspNetCore.Razor.TagHelpers;
 namespace UltraForce.Library.Core.Asp.TagHelpers
 {
   /// <summary>
-  /// This tag helper adds support for condition attribute. When specified the tag and its children are only processed
-  /// if the value is <c>true</c>.
+  /// This tag helper adds support for condition attribute. When specified the tag and its children
+  /// are only processed if the value is <c>true</c>.
   /// </summary>
   /// <remarks>
   /// Based on the example code of: 

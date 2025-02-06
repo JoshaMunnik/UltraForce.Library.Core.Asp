@@ -1,4 +1,4 @@
-// <copyright file="UFButtonVariant.cs" company="Ultra Force Development">
+// <copyright file="UFFlexAlignContent.cs" company="Ultra Force Development">
 // Ultra Force Library - Copyright (C) 2024 Ultra Force Development
 // </copyright>
 // <author>Josha Munnik</author>
@@ -30,27 +30,42 @@
 namespace UltraForce.Library.Core.Asp.Types.Enums;
 
 /// <summary>
-/// What style to draw the button in
+/// How to distribute the children in the opposite direction of the main axis (column or row).
 /// </summary>
-public enum UFButtonVariant
+public enum UFFlexDistributeContent
 {
   /// <summary>
-  /// Select the variant automatically based on the context.
+  /// Place at start
   /// </summary>
-  Auto,
+  Start,
   
   /// <summary>
-  /// Normal filled button
+  /// Place at center
   /// </summary>
-  Normal,
-
+  Center,
+  
   /// <summary>
-  /// Reverse the colors and draw the button with an outline.
+  /// Place at end
   /// </summary>
-  Outline,
-
+  End,
+  
   /// <summary>
-  /// Draw the button with a link style. 
+  /// Stretch each child
   /// </summary>
-  Link
+  Stretch,
+  
+  /// <summary>
+  /// Distribute space between children
+  /// </summary>
+  SpaceBetween,
+  
+  /// <summary>
+  /// Distribute space around children
+  /// </summary>
+  SpaceAround,
+  
+  /// <summary>
+  /// Distribute space evenly between children
+  /// </summary>
+  SpaceEvenly
 }

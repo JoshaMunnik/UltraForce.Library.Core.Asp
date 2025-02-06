@@ -36,7 +36,6 @@ using UltraForce.Library.Core.Asp.Services;
 using UltraForce.Library.Core.Asp.TagHelpers.Lib;
 using UltraForce.Library.Core.Asp.Tools;
 using UltraForce.Library.Core.Asp.Types.Enums;
-using UltraForce.Library.NetStandard.Tools;
 
 namespace UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons;
 
@@ -44,15 +43,22 @@ namespace UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons;
 /// Renders a button or link using a button styling. When rendering a button the default type is
 /// `button`; use the <see cref="Submit"/> property to change it to submit.
 /// <para>
-/// If the <see cref="Color"/> is set to <see cref="UFButtonColor.Auto"/> the class will
-/// update it to one of the other color values depending on the state of the button.
+/// If the <see cref="Type"/> is set to <see cref="UFButtonType.Auto"/> the class will
+/// update it to one of the type values depending on the state of the button.
 /// </para>
 /// <para>
-/// Renders:<br/>
-/// &lt;{a|button|div} class="{GetButtonCssClasses()}" {href} {disabled}&gt;<br/>
-/// {GetButtonIconHtml()}<br/>
-/// &lt;span class="{GetButtonCaptionCssClasses()}"&gt;{children}&lt;/span&gt;<br/>
+/// Setting the <see cref="Type"/> to <see cref="UFButtonType.Disabled"/> will style the button
+/// as disabled; however so long <see cref="Disabled"/> is not set to true, the button is still
+/// clickable.
+/// </para>
+/// <para>
+/// Renders:
+/// <code>
+/// &lt;{a|button|div} class="{GetButtonCssClasses()}" {href} {disabled} {target}&gt;<br/>
+///   {GetButtonIconHtml()}<br/>
+///   &lt;span class="{GetButtonCaptionCssClasses()}"&gt;{children}&lt;/span&gt;<br/>
 /// &lt;/{a|button|div}&gt;
+/// </code>
 /// </para>
 /// <remarks>
 /// Part of the code is based on the <see cref="AnchorTagHelper"/> implemenation.
@@ -73,15 +79,11 @@ public class UFButtonTagHelper(
 
   /// <inheritdoc />
   [HtmlAttributeName("color")]
-  public UFButtonColor Color { get; set; } = UFButtonColor.Auto;
+  public UFButtonType Type { get; set; } = UFButtonType.Auto;
 
   /// <inheritdoc />
   [HtmlAttributeName("size")]
-  public UFButtonSize Size { get; set; } = UFButtonSize.Normal;
-
-  /// <inheritdoc />
-  [HtmlAttributeName("variant")]
-  public UFButtonVariant Variant { get; set; } = UFButtonVariant.Auto;
+  public UFSize Size { get; set; } = UFSize.Normal;
 
   /// <inheritdoc />
   [HtmlAttributeName("icon")]
@@ -169,22 +171,21 @@ public class UFButtonTagHelper(
     bool hasHref = this.ProcessHref(output);
     output.TagName = this.Static ? "div" : hasHref ? (this.Disabled ? "div" : "a") : "button";
     output.TagMode = TagMode.StartTagAndEndTag;
-    UFButtonProperties properties = new ();
-    UFObjectTools.CopyProperties<IUFButtonProperties>(this, properties);
+    UFButtonProperties properties = new (this);
     if (this.Disabled)
     {
       if (!hasHref)
       {
         output.Attributes.SetAttribute("disabled", "disabled");
       }
-      else if (properties.Color == UFButtonColor.Auto)
+      if (properties.Type == UFButtonType.Auto)
       {
-        properties.Color = UFButtonColor.Disabled;
+        properties.Type = UFButtonType.Disabled;
       }
     }
-    if (properties.Color == UFButtonColor.Auto)
+    if (properties.Type == UFButtonType.Auto)
     {
-      properties.Color = UFButtonColor.Normal;
+      properties.Type = UFButtonType.Normal;
     }
     if ((output.TagName == "button") && !output.Attributes.ContainsName("type"))
     {

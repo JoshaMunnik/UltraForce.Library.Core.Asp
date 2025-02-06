@@ -1,0 +1,237 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFSize
+  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFSize
+  id: UFSize
+  parent: UltraForce.Library.Core.Asp.Types.Enums
+  children:
+  - UltraForce.Library.Core.Asp.Types.Enums.UFSize.Large
+  - UltraForce.Library.Core.Asp.Types.Enums.UFSize.Normal
+  - UltraForce.Library.Core.Asp.Types.Enums.UFSize.Small
+  - UltraForce.Library.Core.Asp.Types.Enums.UFSize.VeryLarge
+  - UltraForce.Library.Core.Asp.Types.Enums.UFSize.VerySmall
+  langs:
+  - csharp
+  - vb
+  name: UFSize
+  nameWithType: UFSize
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFSize
+  type: Enum
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFSize.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: UFSize
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFSize.cs
+    startLine: 34
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Sizes at which elements can be styled.
+  example: []
+  syntax:
+    content: public enum UFSize
+    content.vb: Public Enum UFSize
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFSize.Normal
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFSize.Normal
+  id: Normal
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFSize
+  langs:
+  - csharp
+  - vb
+  name: Normal
+  nameWithType: UFSize.Normal
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFSize.Normal
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFSize.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: Normal
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFSize.cs
+    startLine: 39
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Normal size
+  example: []
+  syntax:
+    content: Normal = 0
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFSize
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFSize.Small
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFSize.Small
+  id: Small
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFSize
+  langs:
+  - csharp
+  - vb
+  name: Small
+  nameWithType: UFSize.Small
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFSize.Small
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFSize.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: Small
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFSize.cs
+    startLine: 44
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Smaller size
+  example: []
+  syntax:
+    content: Small = 1
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFSize
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFSize.VerySmall
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFSize.VerySmall
+  id: VerySmall
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFSize
+  langs:
+  - csharp
+  - vb
+  name: VerySmall
+  nameWithType: UFSize.VerySmall
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFSize.VerySmall
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFSize.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: VerySmall
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFSize.cs
+    startLine: 49
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Very small size
+  example: []
+  syntax:
+    content: VerySmall = 2
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFSize
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFSize.Large
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFSize.Large
+  id: Large
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFSize
+  langs:
+  - csharp
+  - vb
+  name: Large
+  nameWithType: UFSize.Large
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFSize.Large
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFSize.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: Large
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFSize.cs
+    startLine: 54
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Larger size
+  example: []
+  syntax:
+    content: Large = 3
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFSize
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFSize.VeryLarge
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFSize.VeryLarge
+  id: VeryLarge
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFSize
+  langs:
+  - csharp
+  - vb
+  name: VeryLarge
+  nameWithType: UFSize.VeryLarge
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFSize.VeryLarge
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFSize.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: VeryLarge
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFSize.cs
+    startLine: 59
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Very large size
+  example: []
+  syntax:
+    content: VeryLarge = 4
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFSize
+references:
+- uid: UltraForce.Library.Core.Asp.Types.Enums
+  commentId: N:UltraForce.Library.Core.Asp.Types.Enums
+  href: UltraForce.html
+  name: UltraForce.Library.Core.Asp.Types.Enums
+  nameWithType: UltraForce.Library.Core.Asp.Types.Enums
+  fullName: UltraForce.Library.Core.Asp.Types.Enums
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types
+    name: Types
+    href: UltraForce.Library.Core.Asp.Types.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types.Enums
+    name: Enums
+    href: UltraForce.Library.Core.Asp.Types.Enums.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types
+    name: Types
+    href: UltraForce.Library.Core.Asp.Types.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types.Enums
+    name: Enums
+    href: UltraForce.Library.Core.Asp.Types.Enums.html
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFSize
+  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFSize
+  parent: UltraForce.Library.Core.Asp.Types.Enums
+  href: UltraForce.Library.Core.Asp.Types.Enums.UFSize.html
+  name: UFSize
+  nameWithType: UFSize
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFSize

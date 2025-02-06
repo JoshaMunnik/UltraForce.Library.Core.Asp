@@ -42,7 +42,7 @@ namespace UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers;
 /// The class will render:
 /// <code>
 /// &lt;div class="{GetTabsClasses}"&gt;
-/// {children}
+///   {children}
 /// &lt;/div&gt;
 /// </code>
 /// </para>

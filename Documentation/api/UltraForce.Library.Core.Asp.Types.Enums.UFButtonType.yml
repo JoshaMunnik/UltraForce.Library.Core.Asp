@@ -1,0 +1,382 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFButtonType
+  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFButtonType
+  id: UFButtonType
+  parent: UltraForce.Library.Core.Asp.Types.Enums
+  children:
+  - UltraForce.Library.Core.Asp.Types.Enums.UFButtonType.Auto
+  - UltraForce.Library.Core.Asp.Types.Enums.UFButtonType.Danger
+  - UltraForce.Library.Core.Asp.Types.Enums.UFButtonType.Disabled
+  - UltraForce.Library.Core.Asp.Types.Enums.UFButtonType.Link
+  - UltraForce.Library.Core.Asp.Types.Enums.UFButtonType.Normal
+  - UltraForce.Library.Core.Asp.Types.Enums.UFButtonType.Primary
+  - UltraForce.Library.Core.Asp.Types.Enums.UFButtonType.Secondary
+  - UltraForce.Library.Core.Asp.Types.Enums.UFButtonType.Success
+  - UltraForce.Library.Core.Asp.Types.Enums.UFButtonType.Tertiary
+  - UltraForce.Library.Core.Asp.Types.Enums.UFButtonType.Warning
+  langs:
+  - csharp
+  - vb
+  name: UFButtonType
+  nameWithType: UFButtonType
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFButtonType
+  type: Enum
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFButtonType.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: UFButtonType
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFButtonType.cs
+    startLine: 34
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Button types
+  example: []
+  syntax:
+    content: public enum UFButtonType
+    content.vb: Public Enum UFButtonType
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFButtonType.Auto
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFButtonType.Auto
+  id: Auto
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFButtonType
+  langs:
+  - csharp
+  - vb
+  name: Auto
+  nameWithType: UFButtonType.Auto
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFButtonType.Auto
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFButtonType.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: Auto
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFButtonType.cs
+    startLine: 39
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Auto assign type based on the context.
+  example: []
+  syntax:
+    content: Auto = 0
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFButtonType
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFButtonType.Normal
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFButtonType.Normal
+  id: Normal
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFButtonType
+  langs:
+  - csharp
+  - vb
+  name: Normal
+  nameWithType: UFButtonType.Normal
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFButtonType.Normal
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFButtonType.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: Normal
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFButtonType.cs
+    startLine: 44
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Normal button
+  example: []
+  syntax:
+    content: Normal = 1
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFButtonType
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFButtonType.Primary
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFButtonType.Primary
+  id: Primary
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFButtonType
+  langs:
+  - csharp
+  - vb
+  name: Primary
+  nameWithType: UFButtonType.Primary
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFButtonType.Primary
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFButtonType.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: Primary
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFButtonType.cs
+    startLine: 49
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Button using primary styling
+  example: []
+  syntax:
+    content: Primary = 2
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFButtonType
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFButtonType.Secondary
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFButtonType.Secondary
+  id: Secondary
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFButtonType
+  langs:
+  - csharp
+  - vb
+  name: Secondary
+  nameWithType: UFButtonType.Secondary
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFButtonType.Secondary
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFButtonType.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: Secondary
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFButtonType.cs
+    startLine: 54
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Button using secondary styling
+  example: []
+  syntax:
+    content: Secondary = 3
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFButtonType
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFButtonType.Tertiary
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFButtonType.Tertiary
+  id: Tertiary
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFButtonType
+  langs:
+  - csharp
+  - vb
+  name: Tertiary
+  nameWithType: UFButtonType.Tertiary
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFButtonType.Tertiary
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFButtonType.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: Tertiary
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFButtonType.cs
+    startLine: 59
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Button using tertiary styling
+  example: []
+  syntax:
+    content: Tertiary = 4
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFButtonType
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFButtonType.Link
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFButtonType.Link
+  id: Link
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFButtonType
+  langs:
+  - csharp
+  - vb
+  name: Link
+  nameWithType: UFButtonType.Link
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFButtonType.Link
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFButtonType.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: Link
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFButtonType.cs
+    startLine: 64
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Button using link styling
+  example: []
+  syntax:
+    content: Link = 5
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFButtonType
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFButtonType.Success
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFButtonType.Success
+  id: Success
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFButtonType
+  langs:
+  - csharp
+  - vb
+  name: Success
+  nameWithType: UFButtonType.Success
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFButtonType.Success
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFButtonType.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: Success
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFButtonType.cs
+    startLine: 69
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Button using success styling
+  example: []
+  syntax:
+    content: Success = 6
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFButtonType
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFButtonType.Danger
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFButtonType.Danger
+  id: Danger
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFButtonType
+  langs:
+  - csharp
+  - vb
+  name: Danger
+  nameWithType: UFButtonType.Danger
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFButtonType.Danger
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFButtonType.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: Danger
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFButtonType.cs
+    startLine: 74
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Button using danger styling
+  example: []
+  syntax:
+    content: Danger = 7
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFButtonType
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFButtonType.Warning
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFButtonType.Warning
+  id: Warning
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFButtonType
+  langs:
+  - csharp
+  - vb
+  name: Warning
+  nameWithType: UFButtonType.Warning
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFButtonType.Warning
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFButtonType.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: Warning
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFButtonType.cs
+    startLine: 79
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Button using warning styling
+  example: []
+  syntax:
+    content: Warning = 8
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFButtonType
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFButtonType.Disabled
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFButtonType.Disabled
+  id: Disabled
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFButtonType
+  langs:
+  - csharp
+  - vb
+  name: Disabled
+  nameWithType: UFButtonType.Disabled
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFButtonType.Disabled
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFButtonType.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: Disabled
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFButtonType.cs
+    startLine: 84
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Button using disabled styling
+  example: []
+  syntax:
+    content: Disabled = 9
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFButtonType
+references:
+- uid: UltraForce.Library.Core.Asp.Types.Enums
+  commentId: N:UltraForce.Library.Core.Asp.Types.Enums
+  href: UltraForce.html
+  name: UltraForce.Library.Core.Asp.Types.Enums
+  nameWithType: UltraForce.Library.Core.Asp.Types.Enums
+  fullName: UltraForce.Library.Core.Asp.Types.Enums
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types
+    name: Types
+    href: UltraForce.Library.Core.Asp.Types.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types.Enums
+    name: Enums
+    href: UltraForce.Library.Core.Asp.Types.Enums.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types
+    name: Types
+    href: UltraForce.Library.Core.Asp.Types.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types.Enums
+    name: Enums
+    href: UltraForce.Library.Core.Asp.Types.Enums.html
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFButtonType
+  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFButtonType
+  parent: UltraForce.Library.Core.Asp.Types.Enums
+  href: UltraForce.Library.Core.Asp.Types.Enums.UFButtonType.html
+  name: UFButtonType
+  nameWithType: UFButtonType
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFButtonType

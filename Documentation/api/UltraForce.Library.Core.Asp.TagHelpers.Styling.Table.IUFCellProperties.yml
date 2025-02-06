@@ -191,11 +191,11 @@ items:
   summary: Size of text within the cell
   example: []
   syntax:
-    content: UFTableTextSize TextSize { get; set; }
+    content: UFSize TextSize { get; set; }
     parameters: []
     return:
-      type: UltraForce.Library.Core.Asp.Types.Enums.UFTableTextSize
-    content.vb: Property TextSize As UFTableTextSize
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFSize
+    content.vb: Property TextSize As UFSize
   overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties.TextSize*
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties.Wrap
   commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties.Wrap
@@ -424,13 +424,13 @@ references:
   name: TextSize
   nameWithType: IUFCellProperties.TextSize
   fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties.TextSize
-- uid: UltraForce.Library.Core.Asp.Types.Enums.UFTableTextSize
-  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFTableTextSize
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFSize
+  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFSize
   parent: UltraForce.Library.Core.Asp.Types.Enums
-  href: UltraForce.Library.Core.Asp.Types.Enums.UFTableTextSize.html
-  name: UFTableTextSize
-  nameWithType: UFTableTextSize
-  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFTableTextSize
+  href: UltraForce.Library.Core.Asp.Types.Enums.UFSize.html
+  name: UFSize
+  nameWithType: UFSize
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFSize
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties.Wrap*
   commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties.Wrap
   href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_IUFCellProperties_Wrap

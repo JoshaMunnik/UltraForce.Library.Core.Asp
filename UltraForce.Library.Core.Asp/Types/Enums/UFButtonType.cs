@@ -1,4 +1,4 @@
-// <copyright file="UFFlexProperties.cs" company="Ultra Force Development">
+// <copyright file="UFButtonColor.cs" company="Ultra Force Development">
 // Ultra Force Library - Copyright (C) 2024 Ultra Force Development
 // </copyright>
 // <author>Josha Munnik</author>
@@ -27,36 +27,60 @@
 // IN THE SOFTWARE.
 // </license>
 
-using UltraForce.Library.Core.Asp.Types.Enums;
-
-namespace UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout;
+namespace UltraForce.Library.Core.Asp.Types.Enums;
 
 /// <summary>
-/// Properties for a flex container in a web page.
+/// Button types
 /// </summary>
-public class UFFlexProperties : IUFFlexProperties
+public enum UFButtonType
 {
-  /// <inheritdoc/>
-  public UFFlexJustifyContent JustifyContent { get; set; } = UFFlexJustifyContent.Start;
-
-  /// <inheritdoc/>
-  public UFFlexAlignItems AlignItems { get; set; } = UFFlexAlignItems.Stretch;
-
-  /// <inheritdoc/>
-  public UFFlexAlignContent AlignContent { get; set; } = UFFlexAlignContent.Start;
+  /// <summary>
+  /// Auto assign type based on the context.
+  /// </summary>
+  Auto,
   
-  /// <inheritdoc/>
-  public bool Buttons { get; set; } = false;
-
-  /// <inheritdoc/>
-  public int? Gap { get; set; } = null;
-
-  /// <inheritdoc/>
-  public bool FullWidth { get; set; } = false;
-
-  /// <inheritdoc/>
-  public bool FullHeight { get; set; } = false;
-
-  /// <inheritdoc/>
-  public bool Wrap { get; set; } = false;
+  /// <summary>
+  /// Normal button
+  /// </summary>
+  Normal,
+  
+  /// <summary>
+  /// Button using primary styling
+  /// </summary>
+  Primary,
+  
+  /// <summary>
+  /// Button using secondary styling
+  /// </summary>
+  Secondary,
+  
+  /// <summary>
+  /// Button using tertiary styling
+  /// </summary>
+  Tertiary,
+  
+  /// <summary>
+  /// Button using link styling
+  /// </summary>
+  Link,
+  
+  /// <summary>
+  /// Button using success styling
+  /// </summary>
+  Success,
+  
+  /// <summary>
+  /// Button using danger styling
+  /// </summary>
+  Danger,
+  
+  /// <summary>
+  /// Button using warning styling
+  /// </summary>
+  Warning,
+  
+  /// <summary>
+  /// Button using disabled styling
+  /// </summary>
+  Disabled,
 }

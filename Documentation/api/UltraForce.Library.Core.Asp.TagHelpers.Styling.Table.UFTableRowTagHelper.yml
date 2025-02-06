@@ -7,6 +7,7 @@ items:
   children:
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableRowTagHelper.#ctor(UltraForce.Library.Core.Asp.Services.IUFTheme)
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableRowTagHelper.Alternate
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableRowTagHelper.GetTableRowClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper)
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableRowTagHelper.Hover
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableRowTagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableRowTagHelper.Row
@@ -26,11 +27,16 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: UFTableRowTagHelper
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/UFTableRowTagHelper.cs
-    startLine: 41
+    startLine: 46
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table
-  summary: Creates a table row.
+  summary: >-
+    Creates a table row. Renders:
+
+    <pre><code class="lang-csharp">&lt;tr class="{GetTableRowClasses()}&gt;
+      {children}
+    &lt;/tr&gt;</code></pre>
   example: []
   syntax:
     content: >-
@@ -89,11 +95,16 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: .ctor
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/UFTableRowTagHelper.cs
-    startLine: 41
+    startLine: 46
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table
-  summary: Creates a table row.
+  summary: >-
+    Creates a table row. Renders:
+
+    <pre><code class="lang-csharp">&lt;tr class="{GetTableRowClasses()}&gt;
+      {children}
+    &lt;/tr&gt;</code></pre>
   example: []
   syntax:
     content: public UFTableRowTagHelper(IUFTheme aTheme)
@@ -123,7 +134,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Row
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/UFTableRowTagHelper.cs
-    startLine: 51
+    startLine: 56
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table
@@ -152,7 +163,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Type
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/UFTableRowTagHelper.cs
-    startLine: 60
+    startLine: 65
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table
@@ -197,7 +208,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Alternate
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/UFTableRowTagHelper.cs
-    startLine: 66
+    startLine: 71
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table
@@ -242,7 +253,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Hover
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/UFTableRowTagHelper.cs
-    startLine: 72
+    startLine: 77
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table
@@ -287,7 +298,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: SortLocation
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/UFTableRowTagHelper.cs
-    startLine: 83
+    startLine: 88
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table
@@ -343,7 +354,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Process
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/UFTableRowTagHelper.cs
-    startLine: 91
+    startLine: 96
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table
@@ -363,6 +374,41 @@ items:
     content.vb: Public Overrides Sub Process(context As TagHelperContext, anOutput As TagHelperOutput)
   overridden: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
   overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableRowTagHelper.Process*
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableRowTagHelper.GetTableRowClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper)
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableRowTagHelper.GetTableRowClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper)
+  id: GetTableRowClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper)
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableRowTagHelper
+  langs:
+  - csharp
+  - vb
+  name: GetTableRowClasses(UFTableTagHelper)
+  nameWithType: UFTableRowTagHelper.GetTableRowClasses(UFTableTagHelper)
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableRowTagHelper.GetTableRowClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/UFTableRowTagHelper.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: GetTableRowClasses
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/UFTableRowTagHelper.cs
+    startLine: 131
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table
+  summary: Returns the classes for the table row.
+  example: []
+  syntax:
+    content: protected virtual string GetTableRowClasses(UFTableTagHelper aTable)
+    parameters:
+    - id: aTable
+      type: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper
+      description: ''
+    return:
+      type: System.String
+      description: ''
+    content.vb: Protected Overridable Function GetTableRowClasses(aTable As UFTableTagHelper) As String
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableRowTagHelper.GetTableRowClasses*
 references:
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table
   commentId: N:UltraForce.Library.Core.Asp.TagHelpers.Styling.Table
@@ -1169,3 +1215,16 @@ references:
   name: TagHelperOutput
   nameWithType: TagHelperOutput
   fullName: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableRowTagHelper.GetTableRowClasses*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableRowTagHelper.GetTableRowClasses
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableRowTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_UFTableRowTagHelper_GetTableRowClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_UFTableTagHelper_
+  name: GetTableRowClasses
+  nameWithType: UFTableRowTagHelper.GetTableRowClasses
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableRowTagHelper.GetTableRowClasses
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper
+  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper.html
+  name: UFTableTagHelper
+  nameWithType: UFTableTagHelper
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper

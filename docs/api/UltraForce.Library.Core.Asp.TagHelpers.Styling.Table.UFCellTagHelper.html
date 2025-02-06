@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class UFCellTagHelper | UltraForce.Library.Core.Asp ">
       
-      <meta name="description" content="Creates a table cell using custom styling. The cell can be self-closing or can contain content with a separate closing tag.  The generated td or th element always uses a opening and closing tag.   Rendered html for header: &amp;lt;th class=&quot;{GetCssClasses()}}&quot;&amp;gt;{children}&amp;lt;/th&amp;gt;   Rendered html for data: &amp;lt;td class=&quot;{GetCssClasses()}}&quot;&amp;gt;{children}&amp;lt;/td&amp;gt;   Rendered html for buttons (a div is used so that flex or grid styling can be used): &amp;lt;td class=&quot;{GetCssClasses()}}&quot;&amp;gt; &amp;lt;div class=&quot;{GetButtonsCssClasses()} &amp;gt; {children} &amp;lt;/div&amp;gt; &amp;lt;/td&amp;gt;">
+      <meta name="description" content="Creates a table cell using custom styling. The cell can be self-closing or can contain content with a separate closing tag.  The generated td or th element always uses a opening and closing tag.   Rendered html for header: &amp;lt;th class=&quot;{GetTableCellClasses()}}&quot;&amp;gt;{children}&amp;lt;/th&amp;gt;   Rendered html for data: &amp;lt;td class=&quot;{GetTableCellClasses()}}&quot;&amp;gt;{children}&amp;lt;/td&amp;gt;   Rendered html for buttons (a div is used so that flex or grid styling can be used): &amp;lt;td class=&quot;{GetTableCellClasses()}}&quot;&amp;gt;   &amp;lt;div class=&quot;{GetTableHeaderButtonClasses()} &amp;gt;     {children}   &amp;lt;/div&amp;gt; &amp;lt;/td&amp;gt;">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_UFCellTagHelper" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper" class="text-break">
-Class UFCellTagHelper  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/UFCellTagHelper.cs/#L65"><i class="bi bi-code-slash"></i></a>
+Class UFCellTagHelper  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/UFCellTagHelper.cs/#L71"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -103,21 +103,21 @@ content with a separate closing tag.</p>
 The generated td or th element always uses a opening and closing tag.
 </p>
 <p>
-Rendered html for header:<br>
-&lt;th class="{GetCssClasses()}}"&gt;{children}&lt;/th&gt;
-</p>
+Rendered html for header:
+<pre><code class="lang-csharp">&lt;th class="{GetTableCellClasses()}}"&gt;{children}&lt;/th&gt;</code></pre>
+
 <p>
-Rendered html for data:<br>
-&lt;td class="{GetCssClasses()}}"&gt;{children}&lt;/td&gt;
-</p>
+Rendered html for data:
+<pre><code class="lang-csharp">&lt;td class="{GetTableCellClasses()}}"&gt;{children}&lt;/td&gt;</code></pre>
+
 <p>
-Rendered html for buttons (a div is used so that flex or grid styling can be used):<br>
-&lt;td class="{GetCssClasses()}}"&gt;<br>
-&lt;div class="{GetButtonsCssClasses()} &gt;<br>
-{children}<br>
-&lt;/div&gt;<br>
-&lt;/td&gt;
-</p>
+Rendered html for buttons (a div is used so that flex or grid styling can be used):
+<pre><code class="lang-csharp">&lt;td class="{GetTableCellClasses()}}"&gt;
+  &lt;div class="{GetTableHeaderButtonClasses()} &gt;
+    {children}
+  &lt;/div&gt;
+&lt;/td&gt;</code></pre>
+
 </div>
   <div class="markdown conceptual"></div>
 
@@ -208,7 +208,7 @@ public class UFCellTagHelper : UFTagHelperWithModelExpressionRenderer, ITagHelpe
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_UFCellTagHelper__ctor_UltraForce_Library_Core_Asp_Services_IUFModelExpressionRenderer_UltraForce_Library_Core_Asp_Services_IUFTheme_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.#ctor(UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer,UltraForce.Library.Core.Asp.Services.IUFTheme)">
   UFCellTagHelper(IUFModelExpressionRenderer, IUFTheme)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/UFCellTagHelper.cs/#L65"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/UFCellTagHelper.cs/#L71"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Creates a table cell using custom styling. The cell can be self-closing or can contain
@@ -217,21 +217,21 @@ content with a separate closing tag.</p>
 The generated td or th element always uses a opening and closing tag.
 </p>
 <p>
-Rendered html for header:<br>
-&lt;th class="{GetCssClasses()}}"&gt;{children}&lt;/th&gt;
-</p>
+Rendered html for header:
+<pre><code class="lang-csharp">&lt;th class="{GetTableCellClasses()}}"&gt;{children}&lt;/th&gt;</code></pre>
+
 <p>
-Rendered html for data:<br>
-&lt;td class="{GetCssClasses()}}"&gt;{children}&lt;/td&gt;
-</p>
+Rendered html for data:
+<pre><code class="lang-csharp">&lt;td class="{GetTableCellClasses()}}"&gt;{children}&lt;/td&gt;</code></pre>
+
 <p>
-Rendered html for buttons (a div is used so that flex or grid styling can be used):<br>
-&lt;td class="{GetCssClasses()}}"&gt;<br>
-&lt;div class="{GetButtonsCssClasses()} &gt;<br>
-{children}<br>
-&lt;/div&gt;<br>
-&lt;/td&gt;
-</p>
+Rendered html for buttons (a div is used so that flex or grid styling can be used):
+<pre><code class="lang-csharp">&lt;td class="{GetTableCellClasses()}}"&gt;
+  &lt;div class="{GetTableHeaderButtonClasses()} &gt;
+    {children}
+  &lt;/div&gt;
+&lt;/td&gt;</code></pre>
+
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -266,7 +266,7 @@ Rendered html for buttons (a div is used so that flex or grid styling can be use
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_UFCellTagHelper_For" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.For">
   For
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/UFCellTagHelper.cs/#L130"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/UFCellTagHelper.cs/#L137"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>An expression to be evaluated against the current model. When set, the method will use the
@@ -316,7 +316,7 @@ public ModelExpression? For { get; set; }</code></pre>
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_UFCellTagHelper_Horizontal" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.Horizontal">
   Horizontal
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/UFCellTagHelper.cs/#L140"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/UFCellTagHelper.cs/#L147"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Horizontal position of content within the cell</p>
@@ -349,7 +349,7 @@ public UFContentPosition Horizontal { get; set; }</code></pre>
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_UFCellTagHelper_NoCaching" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.NoCaching">
   NoCaching
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/UFCellTagHelper.cs/#L107"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/UFCellTagHelper.cs/#L114"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>When true the cell contents will not be cached with sorting. This is useful when the cell
@@ -383,7 +383,7 @@ public bool NoCaching { get; set; }</code></pre>
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_UFCellTagHelper_NoFilter" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.NoFilter">
   NoFilter
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/UFCellTagHelper.cs/#L154"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/UFCellTagHelper.cs/#L161"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>When true data in the cell can be found via the filter. When false an attribute with
@@ -418,7 +418,7 @@ public bool NoFilter { get; set; }</code></pre>
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_UFCellTagHelper_SortType" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.SortType">
   SortType
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/UFCellTagHelper.cs/#L100"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/UFCellTagHelper.cs/#L107"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Type of sorting (only of use with <a class="xref" href="UltraForce.Library.Core.Asp.Types.Enums.UFTableCellType.html#UltraForce_Library_Core_Asp_Types_Enums_UFTableCellType_Header">Header</a>). If type is set to
@@ -462,7 +462,7 @@ public UFTableSortType SortType { get; set; }</code></pre>
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_UFCellTagHelper_TextSize" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.TextSize">
   TextSize
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/UFCellTagHelper.cs/#L160"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/UFCellTagHelper.cs/#L167"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Size of text within the cell</p>
@@ -471,7 +471,7 @@ public UFTableSortType SortType { get; set; }</code></pre>
 
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">[HtmlAttributeName(&quot;text-size&quot;)]
-public UFTableTextSize TextSize { get; set; }</code></pre>
+public UFSize TextSize { get; set; }</code></pre>
   </div>
 
 
@@ -480,7 +480,7 @@ public UFTableTextSize TextSize { get; set; }</code></pre>
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="UltraForce.Library.Core.Asp.Types.Enums.UFTableTextSize.html">UFTableTextSize</a></dt>
+    <dt><a class="xref" href="UltraForce.Library.Core.Asp.Types.Enums.UFSize.html">UFSize</a></dt>
     <dd></dd>
   </dl>
 
@@ -495,7 +495,7 @@ public UFTableTextSize TextSize { get; set; }</code></pre>
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_UFCellTagHelper_Type" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.Type">
   Type
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/UFCellTagHelper.cs/#L76"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/UFCellTagHelper.cs/#L82"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Type of cell.</p>
@@ -528,7 +528,7 @@ public UFTableCellType Type { get; set; }</code></pre>
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_UFCellTagHelper_Vertical" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.Vertical">
   Vertical
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/UFCellTagHelper.cs/#L146"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/UFCellTagHelper.cs/#L153"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Vertical position of content within the cell</p>
@@ -561,11 +561,12 @@ public UFContentPosition Vertical { get; set; }</code></pre>
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_UFCellTagHelper_Width" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.Width">
   Width
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/UFCellTagHelper.cs/#L83"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/UFCellTagHelper.cs/#L90"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>When non empty, set this value as width value. This can either be a css class or a
-style definition. The method <a class="xref" href="UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_IsCssClass_System_String_">IsCssClass(string)</a> is used to determine which.</p>
+unit definition. The method <a class="xref" href="UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.html#UltraForce_Library_Core_Asp_Tools_UFTagHelperTools_IsCssValue_System_String_">IsCssValue(string)</a> is used to determine
+which.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -595,7 +596,7 @@ public string Width { get; set; }</code></pre>
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_UFCellTagHelper_Wrap" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.Wrap">
   Wrap
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/UFCellTagHelper.cs/#L166"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/UFCellTagHelper.cs/#L173"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>How to wrap the content.</p>
@@ -628,11 +629,91 @@ public UFWrapType Wrap { get; set; }</code></pre>
 </h2>
 
 
+  <a id="UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_UFCellTagHelper_GetTableCellClasses_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.GetTableCellClasses*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_UFCellTagHelper_GetTableCellClasses_UltraForce_Library_Core_Asp_Types_Enums_UFTableCellType_UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_UFTableTagHelper_UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_UFTableRowTagHelper_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.GetTableCellClasses(UltraForce.Library.Core.Asp.Types.Enums.UFTableCellType,UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper,UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableRowTagHelper)">
+  GetTableCellClasses(UFTableCellType, UFTableTagHelper, UFTableRowTagHelper)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/UFCellTagHelper.cs/#L224"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the css classes for the cell.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual string GetTableCellClasses(UFTableCellType aType, UFTableTagHelper aTable, UFTableRowTagHelper aTableRow)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aType</code> <a class="xref" href="UltraForce.Library.Core.Asp.Types.Enums.UFTableCellType.html">UFTableCellType</a></dt>
+    <dd></dd>
+    <dt><code>aTable</code> <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper.html">UFTableTagHelper</a></dt>
+    <dd></dd>
+    <dt><code>aTableRow</code> <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableRowTagHelper.html">UFTableRowTagHelper</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_UFCellTagHelper_GetTableHeaderButtonClasses_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.GetTableHeaderButtonClasses*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_UFCellTagHelper_GetTableHeaderButtonClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_UFTableTagHelper_UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_UFTableRowTagHelper_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.GetTableHeaderButtonClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper,UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableRowTagHelper)">
+  GetTableHeaderButtonClasses(UFTableTagHelper, UFTableRowTagHelper)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/UFCellTagHelper.cs/#L237"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the css classes for the buttons in the header.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual string GetTableHeaderButtonClasses(UFTableTagHelper aTable, UFTableRowTagHelper aTableRow)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aTable</code> <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper.html">UFTableTagHelper</a></dt>
+    <dd></dd>
+    <dt><code>aTableRow</code> <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableRowTagHelper.html">UFTableRowTagHelper</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_UFCellTagHelper_ProcessAsync_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.ProcessAsync*"></a>
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_UFCellTagHelper_ProcessAsync_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContext_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)">
   ProcessAsync(TagHelperContext, TagHelperOutput)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/UFCellTagHelper.cs/#L174"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/UFCellTagHelper.cs/#L181"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Asynchronously executes the <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper">TagHelper</a> with the given <code class="paramref">context</code> and
@@ -676,7 +757,7 @@ public UFWrapType Wrap { get; set; }</code></pre>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/UFCellTagHelper.cs/#L65" class="edit-link">Edit this page</a>
+          <a href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/UFCellTagHelper.cs/#L71" class="edit-link">Edit this page</a>
         </div>
 
 

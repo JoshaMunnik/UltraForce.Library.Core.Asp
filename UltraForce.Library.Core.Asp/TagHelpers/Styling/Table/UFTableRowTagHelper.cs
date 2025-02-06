@@ -37,7 +37,12 @@ using UltraForce.Library.Core.Asp.Types.Enums;
 namespace UltraForce.Library.Core.Asp.TagHelpers.Styling.Table;
 
 /// <summary>
-/// Creates a table row.
+/// Creates a table row. Renders:
+/// <code>
+/// &lt;tr class="{GetTableRowClasses()}&gt;
+///   {children}
+/// &lt;/tr&gt;
+/// </code> 
 /// </summary>
 [SuppressMessage("ReSharper", "AutoPropertyCanBeMadeGetOnly.Global")]
 [HtmlTargetElement("uf-table-row", TagStructure = TagStructure.NormalOrSelfClosing)]
@@ -112,8 +117,22 @@ public class UFTableRowTagHelper(IUFTheme aTheme)
     {
       anOutput.Attributes.SetAttribute(UFDataAttribute.HeaderRow, "1");
     }
-    UFTagHelperTools.AddClasses(anOutput, this.Theme.GetTableRowClasses(this, table));
+    UFTagHelperTools.AddClasses(anOutput, this.GetTableRowClasses(table));
   }
 
+  #endregion
+  
+  #region protected overridable methods
+
+  /// <summary>
+  /// Returns the classes for the table row.
+  /// </summary>
+  /// <param name="aTable"></param>
+  /// <returns></returns>
+  protected virtual string GetTableRowClasses(UFTableTagHelper aTable)
+  {
+    return this.Theme.GetTableRowClasses(this, aTable);
+  }
+  
   #endregion
 }

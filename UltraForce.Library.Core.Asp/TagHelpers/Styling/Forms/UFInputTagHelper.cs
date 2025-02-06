@@ -31,6 +31,7 @@ using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;
 using System.Diagnostics.CodeAnalysis;
 using System.Reflection;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Microsoft.AspNetCore.Mvc.TagHelpers;
 using Microsoft.AspNetCore.Mvc.ViewFeatures;
 using Microsoft.AspNetCore.Razor.TagHelpers;
@@ -51,148 +52,148 @@ namespace UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms;
 /// <para>
 /// Renders text input with wrapping and label:
 /// <code>
-/// &lt;div class="{Theme.GetTextWrapperClasses(type)}"&gt;
-/// &lt;label class="{Theme.GetTextLabelClasses(type)}" for="{id}"&gt;
-/// &lt;span class="{Theme.GetTextLabelSpanClasses(type)}"&gt;{label}&lt;/span&gt;
-/// &lt;span class="{Theme.GetTextLabelDescriptionClasses(type)}"&gt;{description}&lt;/span&gt;
-/// &lt;/label&gt;
-/// &lt;input class="{Theme.GetTextInputClasses(type)}" id={} .../&gt;
-/// {Theme.GetValidationFeedbackContainer(id)}
-/// {RenderFieldErrors(...)}
+/// &lt;div class="{GetTextWrapperClasses(type)}"&gt;
+///   &lt;label class="{GetTextLabelClasses(type)}" for="{id}"&gt;
+///     &lt;span class="{GetTextLabelSpanClasses(type)}"&gt;{label}&lt;/span&gt;
+///     &lt;span class="{GetTextLabelDescriptionClasses(type)}"&gt;{description}&lt;/span&gt;
+///   &lt;/label&gt;
+///   &lt;input class="{GetTextInputClasses(type)}" id={} .../&gt;
+///   {GetValidationFeedbackContainer(id)}
+///   {RenderFieldErrors(...)}
 /// &lt;/div&gt;
 /// </code>
 /// </para>
 /// <para>
 /// Renders text input with wrapping and no label:
 /// <code>
-/// &lt;div class="{Theme.GetTextWrapperClasses(type)}"&gt;
-/// &lt;input class="{Theme.GetTextInputClasses(type)}" id={} .../&gt;
-/// {Theme.GetValidationFeedbackContainer(id)}
-/// &lt;div class="{Theme.GetFieldErrorsClasses()}"&gt;{Theme.GetFieldErrorsHtml()}&lt;/div&gt;
+/// &lt;div class="{GetTextWrapperClasses(type)}"&gt;
+///   &lt;input class="{GetTextInputClasses(type)}" id={} .../&gt;
+///   {GetValidationFeedbackContainer(id)}
+///   &lt;div class="{GetFieldErrorsClasses()}"&gt;{GetFieldErrorsHtml()}&lt;/div&gt;
 /// &lt;/div&gt;
 /// </code>
 /// </para>
 /// <para>
 /// Renders text input without wrapping:
 /// <code>
-/// &lt;input class="{Theme.GetTextInputClasses(type) .../&gt;
+/// &lt;input class="{GetTextInputClasses(type) .../&gt;
 /// </code>
 /// </para>
 /// <para>
 /// Renders multiline text input with wrapping and label:
 /// <code>
-/// &lt;div class="{Theme.GetTextWrapperClasses(type)}"&gt;
-/// &lt;label class="{Theme.GetTextLabelClasses(type)}" for="{id}"&gt;
-/// &lt;span class="{Theme.GetTextLabelSpanClasses(type)}"&gt;{label}&lt;/span&gt;
-/// &lt;span class="{Theme.GetTextLabelDescriptionClasses(type)}"&gt;{description}&lt;/span&gt;
-/// &lt;/label&gt;
-/// &lt;textarea class="{Theme.GetTextInputClasses(type)}" id={} ..." &gt;{value}&lt;/textarea&gt;
-/// {Theme.GetValidationFeedbackContainer(id)}
-/// {RenderFieldErrors(...)}
+/// &lt;div class="{GetTextWrapperClasses(type)}"&gt;
+///   &lt;label class="{GetTextLabelClasses(type)}" for="{id}"&gt;
+///     &lt;span class="{GetTextLabelSpanClasses(type)}"&gt;{label}&lt;/span&gt;
+///     &lt;span class="{GetTextLabelDescriptionClasses(type)}"&gt;{description}&lt;/span&gt;
+///   &lt;/label&gt;
+///   &lt;textarea class="{GetTextInputClasses(type)}" id={} ..." &gt;{value}&lt;/textarea&gt;
+///   {GetValidationFeedbackContainer(id)}
+///   {RenderFieldErrors(...)}
 /// &lt;/div&gt;
 /// </code>
 /// </para>
 /// <para>
 /// Renders multiline text input with wrapping and no label:
 /// <code>
-/// &lt;div class="{Theme.GetTextWrapperClasses(type)}"&gt;
-/// &lt;textarea class="{Theme.GetTextInputClasses(type)}" id={} ..." &gt;{value}&lt;/textarea&gt;
-/// {Theme.GetValidationFeedbackContainer(id)}
-/// &lt;div class="{Theme.GetFieldErrorsClasses()}"&gt;{Theme.GetFieldErrorsHtml()}&lt;/div&gt;
+/// &lt;div class="{GetTextWrapperClasses(type)}"&gt;
+///   &lt;textarea class="{GetTextInputClasses(type)}" id={} ..." &gt;{value}&lt;/textarea&gt;
+///   {GetValidationFeedbackContainer(id)}
+///   &lt;div class="{GetFieldErrorsClasses()}"&gt;{GetFieldErrorsHtml()}&lt;/div&gt;
 /// &lt;/div&gt;
 /// </code>
 /// </para>
 /// <para>
 /// Renders multiline text input without wrapping:
 /// <code>
-/// &lt;textarea class="{Theme.GetTextInputClasses(type)}" id={} ..." &gt;{value}&lt;/textarea&gt;
+/// &lt;textarea class="{GetTextInputClasses(type)}" id={} ..." &gt;{value}&lt;/textarea&gt;
 /// </code>
 /// </para>
 /// <para>
 /// Renders radio input with wrapping and a label:
 /// <code>
-/// &lt;div class="{Theme.GetRadioWrapperClasses()}"&gt;
-/// &lt;label class="{Theme.GetRadioLabelClasses()}"&gt;
-/// {Theme.GetRadioExtraHtml()}
-/// &lt;span class="{Theme.GetRadioLabelSpanClasses()}&gt;{label}&lt;/span&gt;
-/// &lt;span class="{Theme.GetRadioLabelDescriptionClasses()}"&gt;{description}&lt;/span&gt;
-/// &lt;/label&gt;
-/// {Theme.GetValidationFeedbackContainer(id)}
-/// &lt;div class="{Theme.GetFieldErrorsClasses()}"&gt;{Theme.GetFieldErrorsHtml()}&lt;/div&gt;
+/// &lt;div class="{GetRadioWrapperClasses()}"&gt;
+///   &lt;label class="{GetRadioLabelClasses()}"&gt;
+///     {GetRadioExtraHtml()}
+///     &lt;span class="{GetRadioLabelSpanClasses()}&gt;{label}&lt;/span&gt;
+///     &lt;span class="{GetRadioLabelDescriptionClasses()}"&gt;{description}&lt;/span&gt;
+///   &lt;/label&gt;
+///   {GetValidationFeedbackContainer(id)}
+///   &lt;div class="{GetFieldErrorsClasses()}"&gt;{GetFieldErrorsHtml()}&lt;/div&gt;
 /// &lt;/div&gt;
 /// </code>
 /// </para>
 /// <para>
 /// Renders radio input with wrapping but no label:
 /// <code>
-/// &lt;div class="{Theme.GetRadioWrapperClasses()}"&gt;
-/// &lt;input type="radio" class="{Theme.GetRadioInputClasses()}" id={} .../&gt;
-/// {Theme.GetRadioExtraHtml()}
-/// {Theme.GetValidationFeedbackContainer(id)}
-/// &lt;div class="{Theme.GetFieldErrorsClasses()}"&gt;{Theme.GetFieldErrorsHtml()}&lt;/div&gt;
+/// &lt;div class="{GetRadioWrapperClasses()}"&gt;
+///   &lt;input type="radio" class="{GetRadioInputClasses()}" id={} .../&gt;
+///   {GetRadioExtraHtml()}
+///   {GetValidationFeedbackContainer(id)}
+///   &lt;div class="{GetFieldErrorsClasses()}"&gt;{GetFieldErrorsHtml()}&lt;/div&gt;
 /// &lt;/div&gt;
 /// </code>
 /// </para>
 /// <para>
 /// Renders radio input without wrapping but with a label:
 /// <code>
-/// &lt;label class="{Theme.GetRadioLabelClasses()}"&gt;
-/// &lt;input type="radio" class="{Theme.GetRadioInputClasses()}" id={} .../&gt;
-/// {Theme.GetRadioExtraHtml()}
-/// &lt;span class="{Theme.GetRadioLabelSpanClasses()}&gt;{label}&lt;/span&gt;
-/// &lt;span class="{Theme.GetRadioLabelDescriptionClasses()}"&gt;{description}&lt;/span&gt;
+/// &lt;label class="{GetRadioLabelClasses()}"&gt;
+///   &lt;input type="radio" class="{GetRadioInputClasses()}" id={} .../&gt;
+///   {GetRadioExtraHtml()}
+///   &lt;span class="{GetRadioLabelSpanClasses()}&gt;{label}&lt;/span&gt;
+///   &lt;span class="{GetRadioLabelDescriptionClasses()}"&gt;{description}&lt;/span&gt;
 /// &lt;/label&gt;
 /// </code>
 /// </para>
 /// <para>
 /// Renders radio input without wrapping and without a label:
 /// <code>
-/// &lt;input type="radio" class="{Theme.GetRadioInputClasses()}" id={} .../&gt;
-/// {Theme.GetRadioExtraHtml()}
+/// &lt;input type="radio" class="{GetRadioInputClasses()}" id={} .../&gt;
+/// {GetRadioExtraHtml()}
 /// </code>
 /// </para>
 /// <para>
 /// Renders checkbox input with wrapping and a label:
 /// <code>
-/// &lt;div class="{Theme.GetCheckboxWrapperClasses()}"&gt;
-/// &lt;label class="{Theme.GetCheckboxLabelClasses()}"&gt;
-/// &lt;input type="checkbox" class="{Theme.GetCheckboxInputClasses()}" id={} .../&gt;
-/// {Theme.GetCheckboxExtraHtml()}
-/// &lt;span class="{Theme.GetCheckboxLabelSpanClasses()}&gt;{label}&lt;/span&gt;
-/// &lt;span class="{Theme.GetCheckboxLabelDescriptionClasses()}"&gt;{description}&lt;/span&gt;
-/// &lt;/label&gt;
-/// {Theme.GetValidationFeedbackContainer(id)}
-/// &lt;div class="{Theme.GetFieldErrorsClasses()}"&gt;{Theme.GetFieldErrorsHtml()}&lt;/div&gt;
+/// &lt;div class="{GetCheckboxWrapperClasses()}"&gt;
+///   &lt;label class="{GetCheckboxLabelClasses()}"&gt;
+///     &lt;input type="checkbox" class="{GetCheckboxInputClasses()}" id={} .../&gt;
+///    {GetCheckboxExtraHtml()}
+///    &lt;span class="{GetCheckboxLabelSpanClasses()}&gt;{label}&lt;/span&gt;
+///    &lt;span class="{GetCheckboxLabelDescriptionClasses()}"&gt;{description}&lt;/span&gt;
+///   &lt;/label&gt;
+///   {GetValidationFeedbackContainer(id)}
+///   &lt;div class="{GetFieldErrorsClasses()}"&gt;{GetFieldErrorsHtml()}&lt;/div&gt;
 /// &lt;/div&gt;
 /// </code>
 /// </para>
 /// <para>
 /// Renders checkbox input with wrapping but no label:
 /// <code>
-/// &lt;div class="{Theme.GetCheckboxWrapperClasses()}"&gt;
-/// &lt;input type="checkbox" class="{Theme.GetCheckboxInputClasses()}" id={} .../&gt;
-/// {Theme.GetCheckboxExtraHtml()}
-/// {Theme.GetValidationFeedbackContainer(id)}
-/// &lt;div class="{Theme.GetFieldErrorsClasses()}"&gt;{Theme.GetFieldErrorsHtml()}&lt;/div&gt;
+/// &lt;div class="{GetCheckboxWrapperClasses()}"&gt;
+///   &lt;input type="checkbox" class="{GetCheckboxInputClasses()}" id={} .../&gt;
+///   {GetCheckboxExtraHtml()}
+///   {GetValidationFeedbackContainer(id)}
+///   &lt;div class="{GetFieldErrorsClasses()}"&gt;{GetFieldErrorsHtml()}&lt;/div&gt;
 /// &lt;/div&gt;
 /// </code>
 /// </para>
 /// <para>
 /// Renders checkbox input without wrapping but with a label:
 /// <code>
-/// &lt;label class="{Theme.GetCheckboxLabelClasses()}"&gt;
-/// &lt;input type="checkbox" class="{Theme.GetCheckboxInputClasses()}" id={} ... /&gt;
-/// {Theme.GetCheckboxExtraHtml()}
-/// &lt;span class="{Theme.GetCheckboxLabelSpanClasses()}&gt;{label}&lt;/span&gt;
-/// &lt;span class="{Theme.GetCheckboxLabelDescriptionClasses()}"&gt;{description}&lt;/span&gt;
+/// &lt;label class="{GetCheckboxLabelClasses()}"&gt;
+///   &lt;input type="checkbox" class="{GetCheckboxInputClasses()}" id={} ... /&gt;
+///   {GetCheckboxExtraHtml()}
+///   &lt;span class="{GetCheckboxLabelSpanClasses()}&gt;{label}&lt;/span&gt;
+///   &lt;span class="{GetCheckboxLabelDescriptionClasses()}"&gt;{description}&lt;/span&gt;
 /// &lt;/label&gt;
 /// </code>
 /// </para>
 /// <para>
 /// Renders checkbox input without wrapping and without a label:
 /// <code>
-/// &lt;input type="checkbox" class="{Theme.GetCheckboxInputClasses()}" id={} .../&gt;
-/// {Theme.GetCheckboxExtraHtml()}
+/// &lt;input type="checkbox" class="{GetCheckboxInputClasses()}" id={} .../&gt;
+/// {GetCheckboxExtraHtml()}
 /// </code>
 /// </para>
 /// </summary>
@@ -259,7 +260,7 @@ public class UFInputTagHelper(IHtmlGenerator generator, IUFTheme aTheme)
     }
     string id = (output.Attributes["id"] == null) ? "" : output.Attributes["id"].Value.ToString()!;
     string type = output.Attributes["type"]?.Value?.ToString()?.ToLowerInvariant() ?? "";
-    string errorMessage = this.Theme.GetFieldErrorsHtml(
+    string errorMessage = this.GetFieldErrorsHtml(
       this.ViewContext.ModelState,
       output.Attributes["name"]?.Value?.ToString() ?? ""
     );
@@ -278,7 +279,7 @@ public class UFInputTagHelper(IHtmlGenerator generator, IUFTheme aTheme)
         }
         else
         {
-          UFTagHelperTools.AddClasses(output, this.Theme.GetTextInputClasses(this, type));
+          UFTagHelperTools.AddClasses(output, this.GetTextInputClasses(type));
         }
         break;
     }
@@ -294,6 +295,198 @@ public class UFInputTagHelper(IHtmlGenerator generator, IUFTheme aTheme)
   protected IUFTheme Theme { get; } = aTheme;
 
   #endregion
+  
+  #region overridable protected methods
+  
+  /// <summary>
+  /// Returns the classes to use for the input element.
+  /// </summary>
+  /// <param name="aType"></param>
+  /// <returns></returns>
+  protected virtual string GetTextInputClasses(string aType)
+  {
+    return this.Theme.GetTextInputClasses(this, aType);
+  }
+  
+  /// <summary>
+  /// Returns the classes to use for the label element.
+  /// </summary>
+  /// <param name="aType"></param>
+  /// <returns></returns>
+  protected virtual string GetTextLabelClasses(string aType)
+  {
+    return this.Theme.GetTextLabelClasses(this, aType);
+  }
+  
+  /// <summary>
+  /// Returns the classes to use for the span element inside the label.
+  /// </summary>
+  /// <param name="aType"></param>
+  /// <returns></returns>
+  protected virtual string GetTextLabelSpanClasses(string aType)
+  {
+    return this.Theme.GetTextLabelSpanClasses(this, aType);
+  }
+  
+  /// <summary>
+  /// Returns the classes to use for the description span element inside the label.
+  /// </summary>
+  /// <param name="aType"></param>
+  /// <returns></returns>
+  protected virtual string GetTextLabelDescriptionClasses(string aType)
+  {
+    return this.Theme.GetTextLabelDescriptionClasses(this, aType);
+  }
+  
+  /// <summary>
+  /// Returns the classes to use for the wrapper div element.
+  /// </summary>
+  /// <param name="aType"></param>
+  /// <returns></returns>
+  protected virtual string GetTextWrapperClasses(string aType)
+  {
+    return this.Theme.GetTextWrapperClasses(this, aType);
+  }
+  
+  /// <summary>
+  /// Returns the classes to use for the validation feedback container.
+  /// </summary>
+  /// <param name="anId"></param>
+  /// <returns></returns>
+  protected virtual string GetValidationFeedbackContainerHtml(string anId)
+  {
+    return this.Theme.GetValidationFeedbackContainerHtml(anId);
+  }
+  
+  /// <summary>
+  /// Returns the classes to use for the field errors div element.
+  /// </summary>
+  /// <returns></returns>
+  protected virtual string GetFieldErrorsClasses()
+  {
+    return this.Theme.GetFieldErrorsClasses();
+  }
+  
+  /// <summary>
+  /// Returns the html to use for the field errors.
+  /// </summary>
+  /// <param name="states"></param>
+  /// <param name="name"></param>
+  /// <returns></returns>
+  protected virtual string GetFieldErrorsHtml(ModelStateDictionary states, string name)
+  {
+    return this.Theme.GetFieldErrorsHtml(states, name);
+  }
+  
+  /// <summary>
+  /// Returns the classes to use for the radio input element.
+  /// </summary>
+  /// <returns></returns>
+  protected virtual string GetRadioInputClasses()
+  {
+    return this.Theme.GetRadioInputClasses();
+  }
+  
+  /// <summary>
+  /// Returns the classes to use for the radio wrapper div element.
+  /// </summary>
+  /// <returns></returns>
+  protected virtual string GetRadioWrapperClasses()
+  {
+    return this.Theme.GetRadioWrapperClasses();
+  }
+  
+  /// <summary>
+  /// Returns the classes to use for the radio label element.
+  /// </summary>
+  /// <returns></returns>
+  protected virtual string GetRadioLabelClasses()
+  {
+    return this.Theme.GetRadioLabelClasses();
+  }
+  
+  /// <summary>
+  /// Returns the classes to use for the span element inside the radio label.
+  /// </summary>
+  /// <returns></returns>
+  protected virtual string GetRadioLabelSpanClasses()
+  {
+    return this.Theme.GetRadioLabelSpanClasses();
+  }
+  
+  /// <summary>
+  /// Returns the classes to use for the description span element inside the radio label.
+  /// </summary>
+  /// <returns></returns>
+  protected virtual string GetRadioLabelDescriptionClasses()
+  {
+    return this.Theme.GetRadioLabelDescriptionClasses();
+  }
+  
+  /// <summary>
+  /// Returns the html to use for the radio extra content.
+  /// </summary>
+  /// <returns></returns>
+  protected virtual string GetRadioExtraHtml()
+  {
+    return this.Theme.GetRadioExtraHtml();
+  }
+  
+  /// <summary>
+  /// Returns the classes to use for the checkbox input element.
+  /// </summary>
+  /// <returns></returns>
+  protected virtual string GetCheckboxInputClasses()
+  {
+    return this.Theme.GetCheckboxInputClasses();
+  }
+  
+  /// <summary>
+  /// Returns the classes to use for the checkbox wrapper div element.
+  /// </summary>
+  /// <returns></returns>
+  protected virtual string GetCheckboxWrapperClasses()
+  {
+    return this.Theme.GetCheckboxWrapperClasses();
+  }
+  
+  /// <summary>
+  /// Returns the classes to use for the checkbox label element.
+  /// </summary>
+  /// <returns></returns>
+  protected virtual string GetCheckboxLabelClasses()
+  {
+    return this.Theme.GetCheckboxLabelClasses();
+  }
+  
+  /// <summary>
+  /// Returns the classes to use for the span element inside the checkbox label.
+  /// </summary>
+  /// <returns></returns>
+  protected virtual string GetCheckboxLabelSpanClasses()
+  {
+    return this.Theme.GetCheckboxLabelSpanClasses();
+  }
+  
+  /// <summary>
+  /// Returns the classes to use for the description span element inside the checkbox label.
+  /// </summary>
+  /// <returns></returns>
+  protected virtual string GetCheckboxLabelDescriptionClasses()
+  {
+    return this.Theme.GetCheckboxLabelDescriptionClasses();
+  }
+  
+  /// <summary>
+  /// Returns the html to use for the checkbox extra content.
+  /// </summary>
+  /// <returns></returns>
+  protected virtual string GetCheckboxExtraHtml()
+  {
+    return this.Theme.GetCheckboxExtraHtml();
+  }
+  
+  #endregion
 
   #region private methods
 
@@ -305,7 +498,7 @@ public class UFInputTagHelper(IHtmlGenerator generator, IUFTheme aTheme)
   private string GetErrorMessageHtml(string anErrorMessage)
   {
     return anErrorMessage != ""
-      ? $"<div class=\"{this.Theme.GetFieldErrorsClasses()}\">{anErrorMessage}</div>"
+      ? $"<div class=\"{this.GetFieldErrorsClasses()}\">{anErrorMessage}</div>"
       : "";
   }
 
@@ -323,24 +516,24 @@ public class UFInputTagHelper(IHtmlGenerator generator, IUFTheme aTheme)
   {
     string errorMessage = this.GetErrorMessageHtml(anErrorMessage);
     UFTagHelperTools.AddClasses(
-      anOutput, this.Theme.GetTextInputClasses(this, aType)
+      anOutput, this.GetTextInputClasses(aType)
     );
     string description = this.GetDescription();
     string descriptionHtml = string.IsNullOrEmpty(description) || string.IsNullOrEmpty(aLabel)
       ? ""
-      : $"<span class=\"{this.Theme.GetTextLabelDescriptionClasses(this, aType)}\">" +
+      : $"<span class=\"{this.GetTextLabelDescriptionClasses(aType)}\">" +
         $"{description}</span>";
     string labelHtml = string.IsNullOrEmpty(aLabel)
       ? ""
-      : $"<label class=\"{this.Theme.GetTextLabelClasses(this, aType)}\" for=\"{anId}\">" +
-        $"<span class=\"{this.Theme.GetTextLabelSpanClasses(this, aType)}\">{aLabel}</span>" +
+      : $"<label class=\"{this.GetTextLabelClasses(aType)}\" for=\"{anId}\">" +
+        $"<span class=\"{this.GetTextLabelSpanClasses(aType)}\">{aLabel}</span>" +
         descriptionHtml +
         "</label>";
     anOutput.PreElement.SetHtmlContent(
-      $"<div class=\"{this.Theme.GetTextWrapperClasses(this, aType)}\">{labelHtml}"
+      $"<div class=\"{this.GetTextWrapperClasses(aType)}\">{labelHtml}"
     );
     anOutput.PostElement.SetHtmlContent(
-      $"{this.Theme.GetValidationFeedbackContainerHtml(anId)}{errorMessage}</div>"
+      $"{this.GetValidationFeedbackContainerHtml(anId)}{errorMessage}</div>"
     );
   }
 
@@ -349,35 +542,35 @@ public class UFInputTagHelper(IHtmlGenerator generator, IUFTheme aTheme)
   )
   {
     string errorMessage = this.GetErrorMessageHtml(anErrorMessage);
-    UFTagHelperTools.AddClasses(anOutput, this.Theme.GetRadioInputClasses());
-    string pre = this.Wrap ? $"<div class=\"{this.Theme.GetRadioWrapperClasses()}\">" : "";
+    UFTagHelperTools.AddClasses(anOutput, this.GetRadioInputClasses());
+    string pre = this.Wrap ? $"<div class=\"{this.GetRadioWrapperClasses()}\">" : "";
     string post = this.Wrap
       //? $"{this.GetValidationFeedbackContainer(anId)}{errorMessage}</div>"
       ? $"{errorMessage}</div>"
       : "";
     string preLabel = string.IsNullOrEmpty(aLabel)
       ? ""
-      : $"<label class=\"{this.Theme.GetRadioLabelClasses()}\"><span>";
+      : $"<label class=\"{this.GetRadioLabelClasses()}\"><span>";
     string description = this.GetDescription();
     string descriptionHtml = string.IsNullOrEmpty(description) || string.IsNullOrEmpty(aLabel)
       ? ""
-      : $"<span class=\"{this.Theme.GetRadioLabelDescriptionClasses()}\">" +
+      : $"<span class=\"{this.GetRadioLabelDescriptionClasses()}\">" +
         $"{description}" +
         $"</span>";
     string postLabel = string.IsNullOrEmpty(aLabel)
       ? ""
       : $"</span>" +
-        $"<span class=\"{this.Theme.GetRadioLabelSpanClasses()}\">{aLabel}</span>" +
+        $"<span class=\"{this.GetRadioLabelSpanClasses()}\">{aLabel}</span>" +
         descriptionHtml +
         $"</label>";
     if (pre.Length + preLabel.Length > 0)
     {
       anOutput.PreElement.SetHtmlContent(pre + preLabel);
-      anOutput.PostElement.SetHtmlContent(this.Theme.GetRadioExtraHtml() + postLabel + post);
+      anOutput.PostElement.SetHtmlContent(this.GetRadioExtraHtml() + postLabel + post);
     }
     else
     {
-      anOutput.PostElement.SetHtmlContent(this.Theme.GetRadioExtraHtml());
+      anOutput.PostElement.SetHtmlContent(this.GetRadioExtraHtml());
     }
   }
 
@@ -386,35 +579,35 @@ public class UFInputTagHelper(IHtmlGenerator generator, IUFTheme aTheme)
   )
   {
     string errorMessage = this.GetErrorMessageHtml(anErrorMessage);
-    UFTagHelperTools.AddClasses(anOutput, this.Theme.GetCheckboxInputClasses());
-    string pre = this.Wrap ? $"<div class=\"{this.Theme.GetCheckboxWrapperClasses()}\">" : "";
+    UFTagHelperTools.AddClasses(anOutput, this.GetCheckboxInputClasses());
+    string pre = this.Wrap ? $"<div class=\"{this.GetCheckboxWrapperClasses()}\">" : "";
     string post = this.Wrap
       //? $"{this.GetValidationFeedbackContainer(anId)}{errorMessage}</div>"
       ? $"{errorMessage}</div>"
       : "";
     string preLabel = string.IsNullOrEmpty(aLabel)
       ? ""
-      : $"<label class=\"{this.Theme.GetCheckboxLabelClasses()}\"><span>";
+      : $"<label class=\"{this.GetCheckboxLabelClasses()}\"><span>";
     string description = this.GetDescription();
     string descriptionHtml = string.IsNullOrEmpty(description) || string.IsNullOrEmpty(aLabel)
       ? ""
-      : $"<span class=\"{this.Theme.GetCheckboxLabelDescriptionClasses()}\">" +
+      : $"<span class=\"{this.GetCheckboxLabelDescriptionClasses()}\">" +
         $"{description}" +
         $"</span>";
     string postLabel = string.IsNullOrEmpty(aLabel)
       ? ""
       : $"</span>" +
-        $"<span class=\"{this.Theme.GetCheckboxLabelSpanClasses()}\">{aLabel}</span>" +
+        $"<span class=\"{this.GetCheckboxLabelSpanClasses()}\">{aLabel}</span>" +
         descriptionHtml +
         $"</label>";
     if (pre.Length + preLabel.Length > 0)
     {
       anOutput.PreElement.SetHtmlContent(pre + preLabel);
-      anOutput.PostElement.SetHtmlContent(this.Theme.GetCheckboxExtraHtml() + postLabel + post);
+      anOutput.PostElement.SetHtmlContent(this.GetCheckboxExtraHtml() + postLabel + post);
     }
     else
     {
-      anOutput.PostElement.SetHtmlContent(this.Theme.GetCheckboxExtraHtml());
+      anOutput.PostElement.SetHtmlContent(this.GetCheckboxExtraHtml());
     }
   }
 

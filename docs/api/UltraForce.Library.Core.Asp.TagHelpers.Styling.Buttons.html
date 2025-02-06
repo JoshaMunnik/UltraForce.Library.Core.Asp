@@ -105,16 +105,21 @@ to each property.</p>
       <dd><p>Renders a button or link using a button styling. When rendering a button the default type is
 <code>button</code>; use the <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_UFButtonTagHelper_Submit">Submit</a> property to change it to submit.</p>
 <p>
-If the <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_UFButtonTagHelper_Color">Color</a> is set to <a class="xref" href="UltraForce.Library.Core.Asp.Types.Enums.UFButtonColor.html#UltraForce_Library_Core_Asp_Types_Enums_UFButtonColor_Auto">Auto</a> the class will
-update it to one of the other color values depending on the state of the button.
+If the <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_UFButtonTagHelper_Type">Type</a> is set to <a class="xref" href="UltraForce.Library.Core.Asp.Types.Enums.UFButtonType.html#UltraForce_Library_Core_Asp_Types_Enums_UFButtonType_Auto">Auto</a> the class will
+update it to one of the type values depending on the state of the button.
 </p>
 <p>
-Renders:<br>
-&lt;{a|button|div} class="{GetButtonCssClasses()}" {href} {disabled}&gt;<br>
-{GetButtonIconHtml()}<br>
-&lt;span class="{GetButtonCaptionCssClasses()}"&gt;{children}&lt;/span&gt;<br>
-&lt;/{a|button|div}&gt;
+Setting the <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_UFButtonTagHelper_Type">Type</a> to <a class="xref" href="UltraForce.Library.Core.Asp.Types.Enums.UFButtonType.html#UltraForce_Library_Core_Asp_Types_Enums_UFButtonType_Disabled">Disabled</a> will style the button
+as disabled; however so long <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_UFButtonTagHelper_Disabled">Disabled</a> is not set to true, the button is still
+clickable.
 </p>
+<p>
+Renders:
+<pre><code class="lang-csharp">&lt;{a|button|div} class="{GetButtonCssClasses()}" {href} {disabled} {target}&gt;
+  {GetButtonIconHtml()}
+  &lt;span class="{GetButtonCaptionCssClasses()}"&gt;{children}&lt;/span&gt;
+&lt;/{a|button|div}&gt;</code></pre>
+
 <remarks>
 Part of the code is based on the <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers.anchortaghelper">AnchorTagHelper</a> implemenation.
 </remarks>

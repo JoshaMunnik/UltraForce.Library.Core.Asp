@@ -46,20 +46,26 @@ namespace UltraForce.Library.Core.Asp.TagHelpers.Styling.Table;
 /// The generated td or th element always uses a opening and closing tag.
 /// </para>
 /// <para>
-/// Rendered html for header:<br/>
-/// &lt;th class="{GetCssClasses()}}"&gt;{children}&lt;/th&gt;
+/// Rendered html for header:
+/// <code>
+/// &lt;th class="{GetTableCellClasses()}}"&gt;{children}&lt;/th&gt;
+/// </code>
 /// </para>
 /// <para>
-/// Rendered html for data:<br/>
-/// &lt;td class="{GetCssClasses()}}"&gt;{children}&lt;/td&gt;
+/// Rendered html for data:
+/// <code>
+/// &lt;td class="{GetTableCellClasses()}}"&gt;{children}&lt;/td&gt;
+/// </code>
 /// </para>
 /// <para>
-/// Rendered html for buttons (a div is used so that flex or grid styling can be used):<br/>
-/// &lt;td class="{GetCssClasses()}}"&gt;<br/>
-/// &lt;div class="{GetButtonsCssClasses()} &gt;<br/>
-/// {children}<br/>
-/// &lt;/div&gt;<br/>
+/// Rendered html for buttons (a div is used so that flex or grid styling can be used):
+/// <code>
+/// &lt;td class="{GetTableCellClasses()}}"&gt;<br/>
+///   &lt;div class="{GetTableHeaderButtonClasses()} &gt;<br/>
+///     {children}<br/>
+///   &lt;/div&gt;<br/>
 /// &lt;/td&gt;
+/// </code>
 /// </para>
 /// </summary>
 [SuppressMessage("ReSharper", "MemberCanBePrivate.Global")]
@@ -78,7 +84,8 @@ public class UFCellTagHelper(IUFModelExpressionRenderer aModelExpressionRenderer
 
   /// <summary>
   /// When non empty, set this value as width value. This can either be a css class or a
-  /// style definition. The method <see cref="IUFTheme.IsCssClass"/> is used to determine which.
+  /// unit definition. The method <see cref="UFTagHelperTools.IsCssValue"/> is used to determine
+  /// which.
   /// </summary>
   [HtmlAttributeName("width")]
   public string Width { get; set; } = "";
@@ -158,7 +165,7 @@ public class UFCellTagHelper(IUFModelExpressionRenderer aModelExpressionRenderer
   /// Size of text within the cell
   /// </summary>
   [HtmlAttributeName("text-size")]
-  public UFTableTextSize TextSize { get; set; } = UFTableTextSize.Normal;
+  public UFSize TextSize { get; set; } = UFSize.Normal;
 
   /// <summary>
   /// How to wrap the content.
@@ -203,6 +210,37 @@ public class UFCellTagHelper(IUFModelExpressionRenderer aModelExpressionRenderer
     }
   }
 
+  #endregion
+  
+  #region protected methods
+  
+  /// <summary>
+  /// Returns the css classes for the cell.
+  /// </summary>
+  /// <param name="aType"></param>
+  /// <param name="aTable"></param>
+  /// <param name="aTableRow"></param>
+  /// <returns></returns>
+  protected virtual string GetTableCellClasses(
+    UFTableCellType aType, UFTableTagHelper aTable, UFTableRowTagHelper aTableRow
+    )
+  {
+    return this.Theme.GetTableCellClasses(this, aType, aTable, aTableRow);
+  }
+  
+  /// <summary>
+  /// Returns the css classes for the buttons in the header.
+  /// </summary>
+  /// <param name="aTable"></param>
+  /// <param name="aTableRow"></param>
+  /// <returns></returns>
+  protected virtual string GetTableHeaderButtonClasses(
+    UFTableTagHelper aTable, UFTableRowTagHelper aTableRow
+  )
+  {
+    return this.Theme.GetTableHeaderButtonClasses(this, aTable, aTableRow);
+  }
+  
   #endregion
 
   #region private methods
@@ -277,18 +315,18 @@ public class UFCellTagHelper(IUFModelExpressionRenderer aModelExpressionRenderer
   /// <param name="aTableRow"></param>
   private void UpdateClasses(TagHelperOutput anOutput, UFTableCellType aType, UFTableTagHelper aTable, UFTableRowTagHelper aTableRow)
   {
-    string classValue = this.Theme.GetTableCellClasses(this, aType, aTable, aTableRow);
+    string classValue = this.GetTableCellClasses(aType, aTable, aTableRow);
     if (!string.IsNullOrEmpty(this.Width))
     {
-      if (this.Theme.IsCssClass(this.Width))
-      {
-        classValue += " " + this.Width;
-      }
-      else
+      if (UFTagHelperTools.IsCssValue(this.Width))
       {
         UFTagHelperTools.AddAttribute(
           anOutput.Attributes, "style", "width: " + this.Width
         );
+      }
+      else
+      {
+        classValue += " " + this.Width;
       }
     }
     UFTagHelperTools.AddClasses(anOutput, classValue);
@@ -343,7 +381,7 @@ public class UFCellTagHelper(IUFModelExpressionRenderer aModelExpressionRenderer
   {
     anOutput.PreContent.SetHtmlContent(
       $"<button" +
-      $" class=\"{this.Theme.GetTableHeaderButtonClasses(this, aTable, aTableRow)}\"" +
+      $" class=\"{this.GetTableHeaderButtonClasses(aTable, aTableRow)}\"" +
       $">"
     );
     anOutput.PostContent.SetHtmlContent("</button>");

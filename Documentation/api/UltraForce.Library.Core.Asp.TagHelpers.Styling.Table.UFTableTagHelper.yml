@@ -7,6 +7,12 @@ items:
   children:
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper.#ctor(UltraForce.Library.Core.Asp.Services.IUFTheme)
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper.Filter
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper.GetFilterButtonClasses
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper.GetFilterContainerClasses
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper.GetFilterInputClasses
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper.GetSortAscendingClasses
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper.GetSortDescendingClasses
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper.GetTableClasses
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper.PageSize
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper.Paging
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
@@ -27,11 +33,55 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: UFTableTagHelper
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/UFTableTagHelper.cs
-    startLine: 13
+    startLine: 50
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table
-  summary: Simple tag helper to render a table.
+  summary: >-
+    Simple tag helper to render a table.
+
+    <p>
+
+    Table without filter and sorting:
+
+    <pre><code class="lang-csharp">&lt;table class="GetTableClasses()"&gt;
+      {children}
+    &lt;/table&gt;</code></pre>
+
+    </p>
+
+    <p>
+
+    Table with a filter:
+
+    <pre><code class="lang-csharp">&lt;div&gt;
+      &lt;div class="GetFilterContainerClasses()"&gt;
+        &lt;input {id} class="GetFilterInputClasses()" data-uf-filter-table="{id}" /&gt;
+        &lt;button class="GetFilterButtonClasses()" data-uf-set-field-selector="#{id}"&gt;
+          clear
+        &lt;/button&gt;
+      &lt;/div&gt;
+      &lt;table class="GetTableClasses()"&gt;
+        {children}
+      &lt;/table&gt;
+    &lt;/div&gt;</code></pre>
+
+    </p>
+
+    <p>
+
+    Table with sorting:
+
+    <pre><code class="lang-csharp">&lt;table
+      class="GetTableClasses()"
+      data-uf-sorting="1"
+      data-uf-sort-ascending="GetSortAscendingClasses()"
+      data-uf-sort-descending="GetSortDescendingClasses()"
+      >
+      {children}
+    &lt;/table&gt;</code></pre>
+
+    </p>
   example: []
   syntax:
     content: >-
@@ -90,11 +140,55 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: .ctor
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/UFTableTagHelper.cs
-    startLine: 13
+    startLine: 50
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table
-  summary: Simple tag helper to render a table.
+  summary: >-
+    Simple tag helper to render a table.
+
+    <p>
+
+    Table without filter and sorting:
+
+    <pre><code class="lang-csharp">&lt;table class="GetTableClasses()"&gt;
+      {children}
+    &lt;/table&gt;</code></pre>
+
+    </p>
+
+    <p>
+
+    Table with a filter:
+
+    <pre><code class="lang-csharp">&lt;div&gt;
+      &lt;div class="GetFilterContainerClasses()"&gt;
+        &lt;input {id} class="GetFilterInputClasses()" data-uf-filter-table="{id}" /&gt;
+        &lt;button class="GetFilterButtonClasses()" data-uf-set-field-selector="#{id}"&gt;
+          clear
+        &lt;/button&gt;
+      &lt;/div&gt;
+      &lt;table class="GetTableClasses()"&gt;
+        {children}
+      &lt;/table&gt;
+    &lt;/div&gt;</code></pre>
+
+    </p>
+
+    <p>
+
+    Table with sorting:
+
+    <pre><code class="lang-csharp">&lt;table
+      class="GetTableClasses()"
+      data-uf-sorting="1"
+      data-uf-sort-ascending="GetSortAscendingClasses()"
+      data-uf-sort-descending="GetSortDescendingClasses()"
+      >
+      {children}
+    &lt;/table&gt;</code></pre>
+
+    </p>
   example: []
   syntax:
     content: public UFTableTagHelper(IUFTheme aTheme)
@@ -124,7 +218,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Table
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/UFTableTagHelper.cs
-    startLine: 22
+    startLine: 59
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table
@@ -153,7 +247,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Filter
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/UFTableTagHelper.cs
-    startLine: 31
+    startLine: 68
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table
@@ -198,7 +292,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Paging
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/UFTableTagHelper.cs
-    startLine: 37
+    startLine: 74
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table
@@ -243,7 +337,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: PageSize
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/UFTableTagHelper.cs
-    startLine: 44
+    startLine: 81
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table
@@ -291,7 +385,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Sorting
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/UFTableTagHelper.cs
-    startLine: 50
+    startLine: 87
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table
@@ -336,7 +430,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: StorageId
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/UFTableTagHelper.cs
-    startLine: 61
+    startLine: 98
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table
@@ -370,7 +464,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Process
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/UFTableTagHelper.cs
-    startLine: 68
+    startLine: 105
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table
@@ -391,6 +485,192 @@ items:
     content.vb: Public Overrides Sub Process(context As TagHelperContext, output As TagHelperOutput)
   overridden: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
   overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper.Process*
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper.GetTableClasses
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper.GetTableClasses
+  id: GetTableClasses
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper
+  langs:
+  - csharp
+  - vb
+  name: GetTableClasses()
+  nameWithType: UFTableTagHelper.GetTableClasses()
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper.GetTableClasses()
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/UFTableTagHelper.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: GetTableClasses
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/UFTableTagHelper.cs
+    startLine: 144
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table
+  summary: Returns the classes for the table.
+  example: []
+  syntax:
+    content: protected virtual string GetTableClasses()
+    return:
+      type: System.String
+      description: ''
+    content.vb: Protected Overridable Function GetTableClasses() As String
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper.GetTableClasses*
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper.GetFilterInputClasses
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper.GetFilterInputClasses
+  id: GetFilterInputClasses
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper
+  langs:
+  - csharp
+  - vb
+  name: GetFilterInputClasses()
+  nameWithType: UFTableTagHelper.GetFilterInputClasses()
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper.GetFilterInputClasses()
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/UFTableTagHelper.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: GetFilterInputClasses
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/UFTableTagHelper.cs
+    startLine: 153
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table
+  summary: Returns the classes for the filter input.
+  example: []
+  syntax:
+    content: protected virtual string GetFilterInputClasses()
+    return:
+      type: System.String
+      description: ''
+    content.vb: Protected Overridable Function GetFilterInputClasses() As String
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper.GetFilterInputClasses*
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper.GetFilterButtonClasses
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper.GetFilterButtonClasses
+  id: GetFilterButtonClasses
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper
+  langs:
+  - csharp
+  - vb
+  name: GetFilterButtonClasses()
+  nameWithType: UFTableTagHelper.GetFilterButtonClasses()
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper.GetFilterButtonClasses()
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/UFTableTagHelper.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: GetFilterButtonClasses
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/UFTableTagHelper.cs
+    startLine: 162
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table
+  summary: Returns the classes for the filter button.
+  example: []
+  syntax:
+    content: protected virtual string GetFilterButtonClasses()
+    return:
+      type: System.String
+      description: ''
+    content.vb: Protected Overridable Function GetFilterButtonClasses() As String
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper.GetFilterButtonClasses*
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper.GetFilterContainerClasses
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper.GetFilterContainerClasses
+  id: GetFilterContainerClasses
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper
+  langs:
+  - csharp
+  - vb
+  name: GetFilterContainerClasses()
+  nameWithType: UFTableTagHelper.GetFilterContainerClasses()
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper.GetFilterContainerClasses()
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/UFTableTagHelper.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: GetFilterContainerClasses
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/UFTableTagHelper.cs
+    startLine: 171
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table
+  summary: Returns the classes for the filter container.
+  example: []
+  syntax:
+    content: protected virtual string GetFilterContainerClasses()
+    return:
+      type: System.String
+      description: ''
+    content.vb: Protected Overridable Function GetFilterContainerClasses() As String
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper.GetFilterContainerClasses*
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper.GetSortAscendingClasses
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper.GetSortAscendingClasses
+  id: GetSortAscendingClasses
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper
+  langs:
+  - csharp
+  - vb
+  name: GetSortAscendingClasses()
+  nameWithType: UFTableTagHelper.GetSortAscendingClasses()
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper.GetSortAscendingClasses()
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/UFTableTagHelper.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: GetSortAscendingClasses
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/UFTableTagHelper.cs
+    startLine: 180
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table
+  summary: Returns the classes for the sort ascending icon.
+  example: []
+  syntax:
+    content: protected virtual string GetSortAscendingClasses()
+    return:
+      type: System.String
+      description: ''
+    content.vb: Protected Overridable Function GetSortAscendingClasses() As String
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper.GetSortAscendingClasses*
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper.GetSortDescendingClasses
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper.GetSortDescendingClasses
+  id: GetSortDescendingClasses
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper
+  langs:
+  - csharp
+  - vb
+  name: GetSortDescendingClasses()
+  nameWithType: UFTableTagHelper.GetSortDescendingClasses()
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper.GetSortDescendingClasses()
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/UFTableTagHelper.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: GetSortDescendingClasses
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/UFTableTagHelper.cs
+    startLine: 189
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table
+  summary: Returns the classes for the sort descending icon.
+  example: []
+  syntax:
+    content: protected virtual string GetSortDescendingClasses()
+    return:
+      type: System.String
+      description: ''
+    content.vb: Protected Overridable Function GetSortDescendingClasses() As String
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper.GetSortDescendingClasses*
 references:
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table
   commentId: N:UltraForce.Library.Core.Asp.TagHelpers.Styling.Table
@@ -1140,3 +1420,39 @@ references:
   name: TagHelperOutput
   nameWithType: TagHelperOutput
   fullName: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper.GetTableClasses*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper.GetTableClasses
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_UFTableTagHelper_GetTableClasses
+  name: GetTableClasses
+  nameWithType: UFTableTagHelper.GetTableClasses
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper.GetTableClasses
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper.GetFilterInputClasses*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper.GetFilterInputClasses
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_UFTableTagHelper_GetFilterInputClasses
+  name: GetFilterInputClasses
+  nameWithType: UFTableTagHelper.GetFilterInputClasses
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper.GetFilterInputClasses
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper.GetFilterButtonClasses*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper.GetFilterButtonClasses
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_UFTableTagHelper_GetFilterButtonClasses
+  name: GetFilterButtonClasses
+  nameWithType: UFTableTagHelper.GetFilterButtonClasses
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper.GetFilterButtonClasses
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper.GetFilterContainerClasses*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper.GetFilterContainerClasses
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_UFTableTagHelper_GetFilterContainerClasses
+  name: GetFilterContainerClasses
+  nameWithType: UFTableTagHelper.GetFilterContainerClasses
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper.GetFilterContainerClasses
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper.GetSortAscendingClasses*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper.GetSortAscendingClasses
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_UFTableTagHelper_GetSortAscendingClasses
+  name: GetSortAscendingClasses
+  nameWithType: UFTableTagHelper.GetSortAscendingClasses
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper.GetSortAscendingClasses
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper.GetSortDescendingClasses*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper.GetSortDescendingClasses
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_UFTableTagHelper_GetSortDescendingClasses
+  name: GetSortDescendingClasses
+  nameWithType: UFTableTagHelper.GetSortDescendingClasses
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper.GetSortDescendingClasses

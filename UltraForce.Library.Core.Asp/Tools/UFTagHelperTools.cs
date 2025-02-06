@@ -28,6 +28,7 @@
 // </license>
 
 using System.Text.Encodings.Web;
+using System.Text.RegularExpressions;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.AspNetCore.Mvc.ViewFeatures;
 using Microsoft.AspNetCore.Razor.TagHelpers;
@@ -37,8 +38,29 @@ namespace UltraForce.Library.Core.Asp.Tools
   /// <summary>
   /// Support methods for <see cref="TagHelper"/>
   /// </summary>
-  public static class UFTagHelperTools
+  public static partial class UFTagHelperTools
   {
+    #region private constants
+
+    private static readonly string[] ValidUnits =
+    {
+      "cm", "mm", "in", "px", "pt", "pc", // Absolute length units
+      "em", "ex", "ch", "rem", "vw", "vh", "vmin", "vmax", "%", // Relative length units
+      "deg", "grad", "rad", "turn", // Angle units
+      "s", "ms", // Time units
+      "Hz", "kHz", // Frequency units
+      "dpi", "dpcm", "dppx" // Resolution units
+    };
+
+    [GeneratedRegex(@"^-?\d*\.?\d+([a-zA-Z%]+)?$", RegexOptions.Compiled)]
+    private static partial Regex UnitRegDef();
+
+    private static readonly Regex UnitRegex = UnitRegDef();
+
+    #endregion
+
+    #region public methods
+
     /// <summary>
     /// Sets the content to the inner html of a tag. The content is only set if there is no current
     /// content and no other tag helper as adjusted the content already. 
@@ -77,7 +99,10 @@ namespace UltraForce.Library.Core.Asp.Tools
     /// </summary>
     /// <param name="anOutput">Output to update</param>
     /// <param name="aText">Text to set</param>
-    public static async Task SetContentToText(TagHelperOutput anOutput, string aText)
+    public static async Task SetContentToText(
+      TagHelperOutput anOutput,
+      string aText
+    )
     {
       // do not update the content if another tag helper targeting this element has already done so.
       if (!anOutput.IsContentModified)
@@ -101,7 +126,10 @@ namespace UltraForce.Library.Core.Asp.Tools
     /// </summary>
     /// <param name="anOutput">Output to update</param>
     /// <param name="anHtml">Html to set</param>
-    public static async Task SetContentToHtmlAsync(TagHelperOutput anOutput, string anHtml)
+    public static async Task SetContentToHtmlAsync(
+      TagHelperOutput anOutput,
+      string anHtml
+    )
     {
       // do not update the content if another tag helper targeting this element has already done so.
       if (!anOutput.IsContentModified)
@@ -249,7 +277,10 @@ namespace UltraForce.Library.Core.Asp.Tools
       TagHelperOutput output = new(
         tagName: "div",
         attributes: anAttributeList,
-        getChildContentAsync: (useCachedResult, encoder) =>
+        getChildContentAsync: (
+            useCachedResult,
+            encoder
+          ) =>
           Task.Run<TagHelperContent>(() => aContent ?? new DefaultTagHelperContent())
       )
       {
@@ -275,7 +306,8 @@ namespace UltraForce.Library.Core.Asp.Tools
     /// <param name="anEncoder"></param>
     /// <returns></returns>
     public static string RenderTagHelperOutput(
-      TagHelperOutput anOutput, HtmlEncoder? anEncoder = null
+      TagHelperOutput anOutput,
+      HtmlEncoder? anEncoder = null
     )
     {
       using StringWriter writer = new();
@@ -289,7 +321,10 @@ namespace UltraForce.Library.Core.Asp.Tools
     /// <param name="aList"></param>
     /// <param name="aName"></param>
     /// <returns></returns>
-    public static TagHelperAttribute? FindAttribute(TagHelperAttributeList aList, string aName)
+    public static TagHelperAttribute? FindAttribute(
+      TagHelperAttributeList aList,
+      string aName
+    )
     {
       return aList.FirstOrDefault(tagHelperAttribute => tagHelperAttribute.Name == aName);
     }
@@ -303,7 +338,9 @@ namespace UltraForce.Library.Core.Asp.Tools
     /// <param name="aValue"></param>
     /// <param name="aSeparator"></param>
     public static void AddAttribute(
-      TagHelperAttributeList anAttributes, string anAttribute, string aValue, 
+      TagHelperAttributeList anAttributes,
+      string anAttribute,
+      string aValue,
       string aSeparator = " "
     )
     {
@@ -326,9 +363,40 @@ namespace UltraForce.Library.Core.Asp.Tools
     /// </summary>
     /// <param name="anOutput">Output to get attributes from</param>
     /// <param name="aClasses">Additional css classes to add</param>
-    public static void AddClasses(TagHelperOutput anOutput, string aClasses)
+    public static void AddClasses(
+      TagHelperOutput anOutput,
+      string aClasses
+    )
     {
       AddAttribute(anOutput.Attributes, "class", aClasses);
     }
+
+    /// <summary>
+    /// Checks if a value is a floating number with an optional unit like px, em, rem, %, etc.
+    /// </summary>
+    /// <param name="value"></param>
+    /// <returns></returns>
+    public static bool IsCssValue(
+      string value
+    )
+    {
+      if (string.IsNullOrWhiteSpace(value))
+      {
+        return false;
+      }
+
+      Match match = UnitRegex.Match(value);
+      if (!match.Success)
+      {
+        return false;
+      }
+      string unit = match.Groups[1].Value;
+      return string.IsNullOrEmpty(unit) || Array.Exists(
+        ValidUnits, 
+        validUnit => validUnit.Equals(unit, StringComparison.OrdinalIgnoreCase)
+      );
+    }
+  
+    #endregion
   }
 }

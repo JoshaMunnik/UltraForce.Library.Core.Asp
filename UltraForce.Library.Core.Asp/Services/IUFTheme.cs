@@ -74,6 +74,10 @@ public interface IUFTheme
   /// <param name="aProperties">The container property values</param>
   /// <returns>One or more css classes to style the container.</returns>
   string GetContainerClasses(IUFContainerProperties aProperties);
+  
+  #endregion
+  
+  #region tab styling
 
   /// <summary>
   /// Gets the css classes to use for the tabs container element.
@@ -102,6 +106,10 @@ public interface IUFTheme
   /// <param name="aProperties"></param>
   /// <returns></returns>
   string GetTabContentWrapperClasses(IUFTabProperties aProperties);
+  
+  #endregion
+  
+  #region stack styling
   
   /// <summary>
   /// Gets the css classes to use for a stack element.
@@ -378,7 +386,7 @@ public interface IUFTheme
 
   /// <summary>
   /// Returns the css classes to use for a table header element when the rows are sorted in
-  /// an ascending order for that column.
+  /// ascending order for that column.
   /// <para>
   /// The css classes are added to the result from <see cref="GetTableRowClasses"/>.
   /// </para>
@@ -388,24 +396,13 @@ public interface IUFTheme
 
   /// <summary>
   /// Returns the css classes to use for a table header element when the rows are sorted in
-  /// an descending order for that column.
+  /// descending order for that column.
   /// <para>
   /// The css classes are added to the result from <see cref="GetTableRowClasses"/>.
   /// </para>
   /// </summary>
   /// <returns></returns>
   string GetSortDescendingClasses();
-
-  #endregion
-
-  #region support methods
-
-  /// <summary>
-  /// Checks if a value is a css class or unit value (to be set within the style attribute).
-  /// </summary>
-  /// <param name="aValue"></param>
-  /// <returns></returns>
-  bool IsCssClass(string aValue);
 
   #endregion
 }

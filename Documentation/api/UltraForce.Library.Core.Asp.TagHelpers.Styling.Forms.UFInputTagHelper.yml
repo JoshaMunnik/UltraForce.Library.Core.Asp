@@ -7,6 +7,26 @@ items:
   children:
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.#ctor(Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator,UltraForce.Library.Core.Asp.Services.IUFTheme)
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.Description
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetCheckboxExtraHtml
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetCheckboxInputClasses
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetCheckboxLabelClasses
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetCheckboxLabelDescriptionClasses
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetCheckboxLabelSpanClasses
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetCheckboxWrapperClasses
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetFieldErrorsClasses
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetFieldErrorsHtml(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary,System.String)
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetRadioExtraHtml
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetRadioInputClasses
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetRadioLabelClasses
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetRadioLabelDescriptionClasses
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetRadioLabelSpanClasses
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetRadioWrapperClasses
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetTextInputClasses(System.String)
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetTextLabelClasses(System.String)
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetTextLabelDescriptionClasses(System.String)
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetTextLabelSpanClasses(System.String)
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetTextWrapperClasses(System.String)
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetValidationFeedbackContainerHtml(System.String)
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.Label
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.Multiline
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.NoLabel
@@ -28,7 +48,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: UFInputTagHelper
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Forms/UFInputTagHelper.cs
-    startLine: 198
+    startLine: 199
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms
@@ -49,22 +69,14 @@ items:
 
     Renders text input with wrapping and label:
 
-    <pre><code class="lang-csharp">&lt;div class="{Theme.GetTextWrapperClasses(type)}"&gt;
-
-    &lt;label class="{Theme.GetTextLabelClasses(type)}" for="{id}"&gt;
-
-    &lt;span class="{Theme.GetTextLabelSpanClasses(type)}"&gt;{label}&lt;/span&gt;
-
-    &lt;span class="{Theme.GetTextLabelDescriptionClasses(type)}"&gt;{description}&lt;/span&gt;
-
-    &lt;/label&gt;
-
-    &lt;input class="{Theme.GetTextInputClasses(type)}" id={} .../&gt;
-
-    {Theme.GetValidationFeedbackContainer(id)}
-
-    {RenderFieldErrors(...)}
-
+    <pre><code class="lang-csharp">&lt;div class="{GetTextWrapperClasses(type)}"&gt;
+      &lt;label class="{GetTextLabelClasses(type)}" for="{id}"&gt;
+        &lt;span class="{GetTextLabelSpanClasses(type)}"&gt;{label}&lt;/span&gt;
+        &lt;span class="{GetTextLabelDescriptionClasses(type)}"&gt;{description}&lt;/span&gt;
+      &lt;/label&gt;
+      &lt;input class="{GetTextInputClasses(type)}" id={} .../&gt;
+      {GetValidationFeedbackContainer(id)}
+      {RenderFieldErrors(...)}
     &lt;/div&gt;</code></pre>
 
     </p>
@@ -73,14 +85,10 @@ items:
 
     Renders text input with wrapping and no label:
 
-    <pre><code class="lang-csharp">&lt;div class="{Theme.GetTextWrapperClasses(type)}"&gt;
-
-    &lt;input class="{Theme.GetTextInputClasses(type)}" id={} .../&gt;
-
-    {Theme.GetValidationFeedbackContainer(id)}
-
-    &lt;div class="{Theme.GetFieldErrorsClasses()}"&gt;{Theme.GetFieldErrorsHtml()}&lt;/div&gt;
-
+    <pre><code class="lang-csharp">&lt;div class="{GetTextWrapperClasses(type)}"&gt;
+      &lt;input class="{GetTextInputClasses(type)}" id={} .../&gt;
+      {GetValidationFeedbackContainer(id)}
+      &lt;div class="{GetFieldErrorsClasses()}"&gt;{GetFieldErrorsHtml()}&lt;/div&gt;
     &lt;/div&gt;</code></pre>
 
     </p>
@@ -89,7 +97,7 @@ items:
 
     Renders text input without wrapping:
 
-    <pre><code class="lang-csharp">&lt;input class="{Theme.GetTextInputClasses(type) .../&gt;</code></pre>
+    <pre><code class="lang-csharp">&lt;input class="{GetTextInputClasses(type) .../&gt;</code></pre>
 
     </p>
 
@@ -97,22 +105,14 @@ items:
 
     Renders multiline text input with wrapping and label:
 
-    <pre><code class="lang-csharp">&lt;div class="{Theme.GetTextWrapperClasses(type)}"&gt;
-
-    &lt;label class="{Theme.GetTextLabelClasses(type)}" for="{id}"&gt;
-
-    &lt;span class="{Theme.GetTextLabelSpanClasses(type)}"&gt;{label}&lt;/span&gt;
-
-    &lt;span class="{Theme.GetTextLabelDescriptionClasses(type)}"&gt;{description}&lt;/span&gt;
-
-    &lt;/label&gt;
-
-    &lt;textarea class="{Theme.GetTextInputClasses(type)}" id={} ..." &gt;{value}&lt;/textarea&gt;
-
-    {Theme.GetValidationFeedbackContainer(id)}
-
-    {RenderFieldErrors(...)}
-
+    <pre><code class="lang-csharp">&lt;div class="{GetTextWrapperClasses(type)}"&gt;
+      &lt;label class="{GetTextLabelClasses(type)}" for="{id}"&gt;
+        &lt;span class="{GetTextLabelSpanClasses(type)}"&gt;{label}&lt;/span&gt;
+        &lt;span class="{GetTextLabelDescriptionClasses(type)}"&gt;{description}&lt;/span&gt;
+      &lt;/label&gt;
+      &lt;textarea class="{GetTextInputClasses(type)}" id={} ..." &gt;{value}&lt;/textarea&gt;
+      {GetValidationFeedbackContainer(id)}
+      {RenderFieldErrors(...)}
     &lt;/div&gt;</code></pre>
 
     </p>
@@ -121,14 +121,10 @@ items:
 
     Renders multiline text input with wrapping and no label:
 
-    <pre><code class="lang-csharp">&lt;div class="{Theme.GetTextWrapperClasses(type)}"&gt;
-
-    &lt;textarea class="{Theme.GetTextInputClasses(type)}" id={} ..." &gt;{value}&lt;/textarea&gt;
-
-    {Theme.GetValidationFeedbackContainer(id)}
-
-    &lt;div class="{Theme.GetFieldErrorsClasses()}"&gt;{Theme.GetFieldErrorsHtml()}&lt;/div&gt;
-
+    <pre><code class="lang-csharp">&lt;div class="{GetTextWrapperClasses(type)}"&gt;
+      &lt;textarea class="{GetTextInputClasses(type)}" id={} ..." &gt;{value}&lt;/textarea&gt;
+      {GetValidationFeedbackContainer(id)}
+      &lt;div class="{GetFieldErrorsClasses()}"&gt;{GetFieldErrorsHtml()}&lt;/div&gt;
     &lt;/div&gt;</code></pre>
 
     </p>
@@ -137,7 +133,7 @@ items:
 
     Renders multiline text input without wrapping:
 
-    <pre><code class="lang-csharp">&lt;textarea class="{Theme.GetTextInputClasses(type)}" id={} ..." &gt;{value}&lt;/textarea&gt;</code></pre>
+    <pre><code class="lang-csharp">&lt;textarea class="{GetTextInputClasses(type)}" id={} ..." &gt;{value}&lt;/textarea&gt;</code></pre>
 
     </p>
 
@@ -145,22 +141,14 @@ items:
 
     Renders radio input with wrapping and a label:
 
-    <pre><code class="lang-csharp">&lt;div class="{Theme.GetRadioWrapperClasses()}"&gt;
-
-    &lt;label class="{Theme.GetRadioLabelClasses()}"&gt;
-
-    {Theme.GetRadioExtraHtml()}
-
-    &lt;span class="{Theme.GetRadioLabelSpanClasses()}&gt;{label}&lt;/span&gt;
-
-    &lt;span class="{Theme.GetRadioLabelDescriptionClasses()}"&gt;{description}&lt;/span&gt;
-
-    &lt;/label&gt;
-
-    {Theme.GetValidationFeedbackContainer(id)}
-
-    &lt;div class="{Theme.GetFieldErrorsClasses()}"&gt;{Theme.GetFieldErrorsHtml()}&lt;/div&gt;
-
+    <pre><code class="lang-csharp">&lt;div class="{GetRadioWrapperClasses()}"&gt;
+      &lt;label class="{GetRadioLabelClasses()}"&gt;
+        {GetRadioExtraHtml()}
+        &lt;span class="{GetRadioLabelSpanClasses()}&gt;{label}&lt;/span&gt;
+        &lt;span class="{GetRadioLabelDescriptionClasses()}"&gt;{description}&lt;/span&gt;
+      &lt;/label&gt;
+      {GetValidationFeedbackContainer(id)}
+      &lt;div class="{GetFieldErrorsClasses()}"&gt;{GetFieldErrorsHtml()}&lt;/div&gt;
     &lt;/div&gt;</code></pre>
 
     </p>
@@ -169,16 +157,11 @@ items:
 
     Renders radio input with wrapping but no label:
 
-    <pre><code class="lang-csharp">&lt;div class="{Theme.GetRadioWrapperClasses()}"&gt;
-
-    &lt;input type="radio" class="{Theme.GetRadioInputClasses()}" id={} .../&gt;
-
-    {Theme.GetRadioExtraHtml()}
-
-    {Theme.GetValidationFeedbackContainer(id)}
-
-    &lt;div class="{Theme.GetFieldErrorsClasses()}"&gt;{Theme.GetFieldErrorsHtml()}&lt;/div&gt;
-
+    <pre><code class="lang-csharp">&lt;div class="{GetRadioWrapperClasses()}"&gt;
+      &lt;input type="radio" class="{GetRadioInputClasses()}" id={} .../&gt;
+      {GetRadioExtraHtml()}
+      {GetValidationFeedbackContainer(id)}
+      &lt;div class="{GetFieldErrorsClasses()}"&gt;{GetFieldErrorsHtml()}&lt;/div&gt;
     &lt;/div&gt;</code></pre>
 
     </p>
@@ -187,16 +170,11 @@ items:
 
     Renders radio input without wrapping but with a label:
 
-    <pre><code class="lang-csharp">&lt;label class="{Theme.GetRadioLabelClasses()}"&gt;
-
-    &lt;input type="radio" class="{Theme.GetRadioInputClasses()}" id={} .../&gt;
-
-    {Theme.GetRadioExtraHtml()}
-
-    &lt;span class="{Theme.GetRadioLabelSpanClasses()}&gt;{label}&lt;/span&gt;
-
-    &lt;span class="{Theme.GetRadioLabelDescriptionClasses()}"&gt;{description}&lt;/span&gt;
-
+    <pre><code class="lang-csharp">&lt;label class="{GetRadioLabelClasses()}"&gt;
+      &lt;input type="radio" class="{GetRadioInputClasses()}" id={} .../&gt;
+      {GetRadioExtraHtml()}
+      &lt;span class="{GetRadioLabelSpanClasses()}&gt;{label}&lt;/span&gt;
+      &lt;span class="{GetRadioLabelDescriptionClasses()}"&gt;{description}&lt;/span&gt;
     &lt;/label&gt;</code></pre>
 
     </p>
@@ -205,9 +183,9 @@ items:
 
     Renders radio input without wrapping and without a label:
 
-    <pre><code class="lang-csharp">&lt;input type="radio" class="{Theme.GetRadioInputClasses()}" id={} .../&gt;
+    <pre><code class="lang-csharp">&lt;input type="radio" class="{GetRadioInputClasses()}" id={} .../&gt;
 
-    {Theme.GetRadioExtraHtml()}</code></pre>
+    {GetRadioExtraHtml()}</code></pre>
 
     </p>
 
@@ -215,24 +193,15 @@ items:
 
     Renders checkbox input with wrapping and a label:
 
-    <pre><code class="lang-csharp">&lt;div class="{Theme.GetCheckboxWrapperClasses()}"&gt;
-
-    &lt;label class="{Theme.GetCheckboxLabelClasses()}"&gt;
-
-    &lt;input type="checkbox" class="{Theme.GetCheckboxInputClasses()}" id={} .../&gt;
-
-    {Theme.GetCheckboxExtraHtml()}
-
-    &lt;span class="{Theme.GetCheckboxLabelSpanClasses()}&gt;{label}&lt;/span&gt;
-
-    &lt;span class="{Theme.GetCheckboxLabelDescriptionClasses()}"&gt;{description}&lt;/span&gt;
-
-    &lt;/label&gt;
-
-    {Theme.GetValidationFeedbackContainer(id)}
-
-    &lt;div class="{Theme.GetFieldErrorsClasses()}"&gt;{Theme.GetFieldErrorsHtml()}&lt;/div&gt;
-
+    <pre><code class="lang-csharp">&lt;div class="{GetCheckboxWrapperClasses()}"&gt;
+      &lt;label class="{GetCheckboxLabelClasses()}"&gt;
+        &lt;input type="checkbox" class="{GetCheckboxInputClasses()}" id={} .../&gt;
+       {GetCheckboxExtraHtml()}
+       &lt;span class="{GetCheckboxLabelSpanClasses()}&gt;{label}&lt;/span&gt;
+       &lt;span class="{GetCheckboxLabelDescriptionClasses()}"&gt;{description}&lt;/span&gt;
+      &lt;/label&gt;
+      {GetValidationFeedbackContainer(id)}
+      &lt;div class="{GetFieldErrorsClasses()}"&gt;{GetFieldErrorsHtml()}&lt;/div&gt;
     &lt;/div&gt;</code></pre>
 
     </p>
@@ -241,16 +210,11 @@ items:
 
     Renders checkbox input with wrapping but no label:
 
-    <pre><code class="lang-csharp">&lt;div class="{Theme.GetCheckboxWrapperClasses()}"&gt;
-
-    &lt;input type="checkbox" class="{Theme.GetCheckboxInputClasses()}" id={} .../&gt;
-
-    {Theme.GetCheckboxExtraHtml()}
-
-    {Theme.GetValidationFeedbackContainer(id)}
-
-    &lt;div class="{Theme.GetFieldErrorsClasses()}"&gt;{Theme.GetFieldErrorsHtml()}&lt;/div&gt;
-
+    <pre><code class="lang-csharp">&lt;div class="{GetCheckboxWrapperClasses()}"&gt;
+      &lt;input type="checkbox" class="{GetCheckboxInputClasses()}" id={} .../&gt;
+      {GetCheckboxExtraHtml()}
+      {GetValidationFeedbackContainer(id)}
+      &lt;div class="{GetFieldErrorsClasses()}"&gt;{GetFieldErrorsHtml()}&lt;/div&gt;
     &lt;/div&gt;</code></pre>
 
     </p>
@@ -259,16 +223,11 @@ items:
 
     Renders checkbox input without wrapping but with a label:
 
-    <pre><code class="lang-csharp">&lt;label class="{Theme.GetCheckboxLabelClasses()}"&gt;
-
-    &lt;input type="checkbox" class="{Theme.GetCheckboxInputClasses()}" id={} ... /&gt;
-
-    {Theme.GetCheckboxExtraHtml()}
-
-    &lt;span class="{Theme.GetCheckboxLabelSpanClasses()}&gt;{label}&lt;/span&gt;
-
-    &lt;span class="{Theme.GetCheckboxLabelDescriptionClasses()}"&gt;{description}&lt;/span&gt;
-
+    <pre><code class="lang-csharp">&lt;label class="{GetCheckboxLabelClasses()}"&gt;
+      &lt;input type="checkbox" class="{GetCheckboxInputClasses()}" id={} ... /&gt;
+      {GetCheckboxExtraHtml()}
+      &lt;span class="{GetCheckboxLabelSpanClasses()}&gt;{label}&lt;/span&gt;
+      &lt;span class="{GetCheckboxLabelDescriptionClasses()}"&gt;{description}&lt;/span&gt;
     &lt;/label&gt;</code></pre>
 
     </p>
@@ -277,9 +236,9 @@ items:
 
     Renders checkbox input without wrapping and without a label:
 
-    <pre><code class="lang-csharp">&lt;input type="checkbox" class="{Theme.GetCheckboxInputClasses()}" id={} .../&gt;
+    <pre><code class="lang-csharp">&lt;input type="checkbox" class="{GetCheckboxInputClasses()}" id={} .../&gt;
 
-    {Theme.GetCheckboxExtraHtml()}</code></pre>
+    {GetCheckboxExtraHtml()}</code></pre>
 
     </p>
   example: []
@@ -344,7 +303,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: .ctor
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Forms/UFInputTagHelper.cs
-    startLine: 198
+    startLine: 199
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms
@@ -365,22 +324,14 @@ items:
 
     Renders text input with wrapping and label:
 
-    <pre><code class="lang-csharp">&lt;div class="{Theme.GetTextWrapperClasses(type)}"&gt;
-
-    &lt;label class="{Theme.GetTextLabelClasses(type)}" for="{id}"&gt;
-
-    &lt;span class="{Theme.GetTextLabelSpanClasses(type)}"&gt;{label}&lt;/span&gt;
-
-    &lt;span class="{Theme.GetTextLabelDescriptionClasses(type)}"&gt;{description}&lt;/span&gt;
-
-    &lt;/label&gt;
-
-    &lt;input class="{Theme.GetTextInputClasses(type)}" id={} .../&gt;
-
-    {Theme.GetValidationFeedbackContainer(id)}
-
-    {RenderFieldErrors(...)}
-
+    <pre><code class="lang-csharp">&lt;div class="{GetTextWrapperClasses(type)}"&gt;
+      &lt;label class="{GetTextLabelClasses(type)}" for="{id}"&gt;
+        &lt;span class="{GetTextLabelSpanClasses(type)}"&gt;{label}&lt;/span&gt;
+        &lt;span class="{GetTextLabelDescriptionClasses(type)}"&gt;{description}&lt;/span&gt;
+      &lt;/label&gt;
+      &lt;input class="{GetTextInputClasses(type)}" id={} .../&gt;
+      {GetValidationFeedbackContainer(id)}
+      {RenderFieldErrors(...)}
     &lt;/div&gt;</code></pre>
 
     </p>
@@ -389,14 +340,10 @@ items:
 
     Renders text input with wrapping and no label:
 
-    <pre><code class="lang-csharp">&lt;div class="{Theme.GetTextWrapperClasses(type)}"&gt;
-
-    &lt;input class="{Theme.GetTextInputClasses(type)}" id={} .../&gt;
-
-    {Theme.GetValidationFeedbackContainer(id)}
-
-    &lt;div class="{Theme.GetFieldErrorsClasses()}"&gt;{Theme.GetFieldErrorsHtml()}&lt;/div&gt;
-
+    <pre><code class="lang-csharp">&lt;div class="{GetTextWrapperClasses(type)}"&gt;
+      &lt;input class="{GetTextInputClasses(type)}" id={} .../&gt;
+      {GetValidationFeedbackContainer(id)}
+      &lt;div class="{GetFieldErrorsClasses()}"&gt;{GetFieldErrorsHtml()}&lt;/div&gt;
     &lt;/div&gt;</code></pre>
 
     </p>
@@ -405,7 +352,7 @@ items:
 
     Renders text input without wrapping:
 
-    <pre><code class="lang-csharp">&lt;input class="{Theme.GetTextInputClasses(type) .../&gt;</code></pre>
+    <pre><code class="lang-csharp">&lt;input class="{GetTextInputClasses(type) .../&gt;</code></pre>
 
     </p>
 
@@ -413,22 +360,14 @@ items:
 
     Renders multiline text input with wrapping and label:
 
-    <pre><code class="lang-csharp">&lt;div class="{Theme.GetTextWrapperClasses(type)}"&gt;
-
-    &lt;label class="{Theme.GetTextLabelClasses(type)}" for="{id}"&gt;
-
-    &lt;span class="{Theme.GetTextLabelSpanClasses(type)}"&gt;{label}&lt;/span&gt;
-
-    &lt;span class="{Theme.GetTextLabelDescriptionClasses(type)}"&gt;{description}&lt;/span&gt;
-
-    &lt;/label&gt;
-
-    &lt;textarea class="{Theme.GetTextInputClasses(type)}" id={} ..." &gt;{value}&lt;/textarea&gt;
-
-    {Theme.GetValidationFeedbackContainer(id)}
-
-    {RenderFieldErrors(...)}
-
+    <pre><code class="lang-csharp">&lt;div class="{GetTextWrapperClasses(type)}"&gt;
+      &lt;label class="{GetTextLabelClasses(type)}" for="{id}"&gt;
+        &lt;span class="{GetTextLabelSpanClasses(type)}"&gt;{label}&lt;/span&gt;
+        &lt;span class="{GetTextLabelDescriptionClasses(type)}"&gt;{description}&lt;/span&gt;
+      &lt;/label&gt;
+      &lt;textarea class="{GetTextInputClasses(type)}" id={} ..." &gt;{value}&lt;/textarea&gt;
+      {GetValidationFeedbackContainer(id)}
+      {RenderFieldErrors(...)}
     &lt;/div&gt;</code></pre>
 
     </p>
@@ -437,14 +376,10 @@ items:
 
     Renders multiline text input with wrapping and no label:
 
-    <pre><code class="lang-csharp">&lt;div class="{Theme.GetTextWrapperClasses(type)}"&gt;
-
-    &lt;textarea class="{Theme.GetTextInputClasses(type)}" id={} ..." &gt;{value}&lt;/textarea&gt;
-
-    {Theme.GetValidationFeedbackContainer(id)}
-
-    &lt;div class="{Theme.GetFieldErrorsClasses()}"&gt;{Theme.GetFieldErrorsHtml()}&lt;/div&gt;
-
+    <pre><code class="lang-csharp">&lt;div class="{GetTextWrapperClasses(type)}"&gt;
+      &lt;textarea class="{GetTextInputClasses(type)}" id={} ..." &gt;{value}&lt;/textarea&gt;
+      {GetValidationFeedbackContainer(id)}
+      &lt;div class="{GetFieldErrorsClasses()}"&gt;{GetFieldErrorsHtml()}&lt;/div&gt;
     &lt;/div&gt;</code></pre>
 
     </p>
@@ -453,7 +388,7 @@ items:
 
     Renders multiline text input without wrapping:
 
-    <pre><code class="lang-csharp">&lt;textarea class="{Theme.GetTextInputClasses(type)}" id={} ..." &gt;{value}&lt;/textarea&gt;</code></pre>
+    <pre><code class="lang-csharp">&lt;textarea class="{GetTextInputClasses(type)}" id={} ..." &gt;{value}&lt;/textarea&gt;</code></pre>
 
     </p>
 
@@ -461,22 +396,14 @@ items:
 
     Renders radio input with wrapping and a label:
 
-    <pre><code class="lang-csharp">&lt;div class="{Theme.GetRadioWrapperClasses()}"&gt;
-
-    &lt;label class="{Theme.GetRadioLabelClasses()}"&gt;
-
-    {Theme.GetRadioExtraHtml()}
-
-    &lt;span class="{Theme.GetRadioLabelSpanClasses()}&gt;{label}&lt;/span&gt;
-
-    &lt;span class="{Theme.GetRadioLabelDescriptionClasses()}"&gt;{description}&lt;/span&gt;
-
-    &lt;/label&gt;
-
-    {Theme.GetValidationFeedbackContainer(id)}
-
-    &lt;div class="{Theme.GetFieldErrorsClasses()}"&gt;{Theme.GetFieldErrorsHtml()}&lt;/div&gt;
-
+    <pre><code class="lang-csharp">&lt;div class="{GetRadioWrapperClasses()}"&gt;
+      &lt;label class="{GetRadioLabelClasses()}"&gt;
+        {GetRadioExtraHtml()}
+        &lt;span class="{GetRadioLabelSpanClasses()}&gt;{label}&lt;/span&gt;
+        &lt;span class="{GetRadioLabelDescriptionClasses()}"&gt;{description}&lt;/span&gt;
+      &lt;/label&gt;
+      {GetValidationFeedbackContainer(id)}
+      &lt;div class="{GetFieldErrorsClasses()}"&gt;{GetFieldErrorsHtml()}&lt;/div&gt;
     &lt;/div&gt;</code></pre>
 
     </p>
@@ -485,16 +412,11 @@ items:
 
     Renders radio input with wrapping but no label:
 
-    <pre><code class="lang-csharp">&lt;div class="{Theme.GetRadioWrapperClasses()}"&gt;
-
-    &lt;input type="radio" class="{Theme.GetRadioInputClasses()}" id={} .../&gt;
-
-    {Theme.GetRadioExtraHtml()}
-
-    {Theme.GetValidationFeedbackContainer(id)}
-
-    &lt;div class="{Theme.GetFieldErrorsClasses()}"&gt;{Theme.GetFieldErrorsHtml()}&lt;/div&gt;
-
+    <pre><code class="lang-csharp">&lt;div class="{GetRadioWrapperClasses()}"&gt;
+      &lt;input type="radio" class="{GetRadioInputClasses()}" id={} .../&gt;
+      {GetRadioExtraHtml()}
+      {GetValidationFeedbackContainer(id)}
+      &lt;div class="{GetFieldErrorsClasses()}"&gt;{GetFieldErrorsHtml()}&lt;/div&gt;
     &lt;/div&gt;</code></pre>
 
     </p>
@@ -503,16 +425,11 @@ items:
 
     Renders radio input without wrapping but with a label:
 
-    <pre><code class="lang-csharp">&lt;label class="{Theme.GetRadioLabelClasses()}"&gt;
-
-    &lt;input type="radio" class="{Theme.GetRadioInputClasses()}" id={} .../&gt;
-
-    {Theme.GetRadioExtraHtml()}
-
-    &lt;span class="{Theme.GetRadioLabelSpanClasses()}&gt;{label}&lt;/span&gt;
-
-    &lt;span class="{Theme.GetRadioLabelDescriptionClasses()}"&gt;{description}&lt;/span&gt;
-
+    <pre><code class="lang-csharp">&lt;label class="{GetRadioLabelClasses()}"&gt;
+      &lt;input type="radio" class="{GetRadioInputClasses()}" id={} .../&gt;
+      {GetRadioExtraHtml()}
+      &lt;span class="{GetRadioLabelSpanClasses()}&gt;{label}&lt;/span&gt;
+      &lt;span class="{GetRadioLabelDescriptionClasses()}"&gt;{description}&lt;/span&gt;
     &lt;/label&gt;</code></pre>
 
     </p>
@@ -521,9 +438,9 @@ items:
 
     Renders radio input without wrapping and without a label:
 
-    <pre><code class="lang-csharp">&lt;input type="radio" class="{Theme.GetRadioInputClasses()}" id={} .../&gt;
+    <pre><code class="lang-csharp">&lt;input type="radio" class="{GetRadioInputClasses()}" id={} .../&gt;
 
-    {Theme.GetRadioExtraHtml()}</code></pre>
+    {GetRadioExtraHtml()}</code></pre>
 
     </p>
 
@@ -531,24 +448,15 @@ items:
 
     Renders checkbox input with wrapping and a label:
 
-    <pre><code class="lang-csharp">&lt;div class="{Theme.GetCheckboxWrapperClasses()}"&gt;
-
-    &lt;label class="{Theme.GetCheckboxLabelClasses()}"&gt;
-
-    &lt;input type="checkbox" class="{Theme.GetCheckboxInputClasses()}" id={} .../&gt;
-
-    {Theme.GetCheckboxExtraHtml()}
-
-    &lt;span class="{Theme.GetCheckboxLabelSpanClasses()}&gt;{label}&lt;/span&gt;
-
-    &lt;span class="{Theme.GetCheckboxLabelDescriptionClasses()}"&gt;{description}&lt;/span&gt;
-
-    &lt;/label&gt;
-
-    {Theme.GetValidationFeedbackContainer(id)}
-
-    &lt;div class="{Theme.GetFieldErrorsClasses()}"&gt;{Theme.GetFieldErrorsHtml()}&lt;/div&gt;
-
+    <pre><code class="lang-csharp">&lt;div class="{GetCheckboxWrapperClasses()}"&gt;
+      &lt;label class="{GetCheckboxLabelClasses()}"&gt;
+        &lt;input type="checkbox" class="{GetCheckboxInputClasses()}" id={} .../&gt;
+       {GetCheckboxExtraHtml()}
+       &lt;span class="{GetCheckboxLabelSpanClasses()}&gt;{label}&lt;/span&gt;
+       &lt;span class="{GetCheckboxLabelDescriptionClasses()}"&gt;{description}&lt;/span&gt;
+      &lt;/label&gt;
+      {GetValidationFeedbackContainer(id)}
+      &lt;div class="{GetFieldErrorsClasses()}"&gt;{GetFieldErrorsHtml()}&lt;/div&gt;
     &lt;/div&gt;</code></pre>
 
     </p>
@@ -557,16 +465,11 @@ items:
 
     Renders checkbox input with wrapping but no label:
 
-    <pre><code class="lang-csharp">&lt;div class="{Theme.GetCheckboxWrapperClasses()}"&gt;
-
-    &lt;input type="checkbox" class="{Theme.GetCheckboxInputClasses()}" id={} .../&gt;
-
-    {Theme.GetCheckboxExtraHtml()}
-
-    {Theme.GetValidationFeedbackContainer(id)}
-
-    &lt;div class="{Theme.GetFieldErrorsClasses()}"&gt;{Theme.GetFieldErrorsHtml()}&lt;/div&gt;
-
+    <pre><code class="lang-csharp">&lt;div class="{GetCheckboxWrapperClasses()}"&gt;
+      &lt;input type="checkbox" class="{GetCheckboxInputClasses()}" id={} .../&gt;
+      {GetCheckboxExtraHtml()}
+      {GetValidationFeedbackContainer(id)}
+      &lt;div class="{GetFieldErrorsClasses()}"&gt;{GetFieldErrorsHtml()}&lt;/div&gt;
     &lt;/div&gt;</code></pre>
 
     </p>
@@ -575,16 +478,11 @@ items:
 
     Renders checkbox input without wrapping but with a label:
 
-    <pre><code class="lang-csharp">&lt;label class="{Theme.GetCheckboxLabelClasses()}"&gt;
-
-    &lt;input type="checkbox" class="{Theme.GetCheckboxInputClasses()}" id={} ... /&gt;
-
-    {Theme.GetCheckboxExtraHtml()}
-
-    &lt;span class="{Theme.GetCheckboxLabelSpanClasses()}&gt;{label}&lt;/span&gt;
-
-    &lt;span class="{Theme.GetCheckboxLabelDescriptionClasses()}"&gt;{description}&lt;/span&gt;
-
+    <pre><code class="lang-csharp">&lt;label class="{GetCheckboxLabelClasses()}"&gt;
+      &lt;input type="checkbox" class="{GetCheckboxInputClasses()}" id={} ... /&gt;
+      {GetCheckboxExtraHtml()}
+      &lt;span class="{GetCheckboxLabelSpanClasses()}&gt;{label}&lt;/span&gt;
+      &lt;span class="{GetCheckboxLabelDescriptionClasses()}"&gt;{description}&lt;/span&gt;
     &lt;/label&gt;</code></pre>
 
     </p>
@@ -593,9 +491,9 @@ items:
 
     Renders checkbox input without wrapping and without a label:
 
-    <pre><code class="lang-csharp">&lt;input type="checkbox" class="{Theme.GetCheckboxInputClasses()}" id={} .../&gt;
+    <pre><code class="lang-csharp">&lt;input type="checkbox" class="{GetCheckboxInputClasses()}" id={} .../&gt;
 
-    {Theme.GetCheckboxExtraHtml()}</code></pre>
+    {GetCheckboxExtraHtml()}</code></pre>
 
     </p>
   example: []
@@ -629,7 +527,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Label
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Forms/UFInputTagHelper.cs
-    startLine: 206
+    startLine: 207
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms
@@ -685,7 +583,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: NoLabel
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Forms/UFInputTagHelper.cs
-    startLine: 210
+    startLine: 211
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms
@@ -730,7 +628,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Wrap
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Forms/UFInputTagHelper.cs
-    startLine: 214
+    startLine: 215
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms
@@ -775,7 +673,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Description
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Forms/UFInputTagHelper.cs
-    startLine: 218
+    startLine: 219
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms
@@ -820,7 +718,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Multiline
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Forms/UFInputTagHelper.cs
-    startLine: 222
+    startLine: 223
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms
@@ -865,7 +763,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: NoWidth
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Forms/UFInputTagHelper.cs
-    startLine: 226
+    startLine: 227
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms
@@ -910,7 +808,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Process
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Forms/UFInputTagHelper.cs
-    startLine: 234
+    startLine: 235
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms
@@ -954,7 +852,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Theme
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Forms/UFInputTagHelper.cs
-    startLine: 293
+    startLine: 294
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms
@@ -967,6 +865,678 @@ items:
       type: UltraForce.Library.Core.Asp.Services.IUFTheme
     content.vb: Protected ReadOnly Property Theme As IUFTheme
   overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.Theme*
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetTextInputClasses(System.String)
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetTextInputClasses(System.String)
+  id: GetTextInputClasses(System.String)
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper
+  langs:
+  - csharp
+  - vb
+  name: GetTextInputClasses(string)
+  nameWithType: UFInputTagHelper.GetTextInputClasses(string)
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetTextInputClasses(string)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Styling/Forms/UFInputTagHelper.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: GetTextInputClasses
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Forms/UFInputTagHelper.cs
+    startLine: 305
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms
+  summary: Returns the classes to use for the input element.
+  example: []
+  syntax:
+    content: protected virtual string GetTextInputClasses(string aType)
+    parameters:
+    - id: aType
+      type: System.String
+      description: ''
+    return:
+      type: System.String
+      description: ''
+    content.vb: Protected Overridable Function GetTextInputClasses(aType As String) As String
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetTextInputClasses*
+  nameWithType.vb: UFInputTagHelper.GetTextInputClasses(String)
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetTextInputClasses(String)
+  name.vb: GetTextInputClasses(String)
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetTextLabelClasses(System.String)
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetTextLabelClasses(System.String)
+  id: GetTextLabelClasses(System.String)
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper
+  langs:
+  - csharp
+  - vb
+  name: GetTextLabelClasses(string)
+  nameWithType: UFInputTagHelper.GetTextLabelClasses(string)
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetTextLabelClasses(string)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Styling/Forms/UFInputTagHelper.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: GetTextLabelClasses
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Forms/UFInputTagHelper.cs
+    startLine: 315
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms
+  summary: Returns the classes to use for the label element.
+  example: []
+  syntax:
+    content: protected virtual string GetTextLabelClasses(string aType)
+    parameters:
+    - id: aType
+      type: System.String
+      description: ''
+    return:
+      type: System.String
+      description: ''
+    content.vb: Protected Overridable Function GetTextLabelClasses(aType As String) As String
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetTextLabelClasses*
+  nameWithType.vb: UFInputTagHelper.GetTextLabelClasses(String)
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetTextLabelClasses(String)
+  name.vb: GetTextLabelClasses(String)
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetTextLabelSpanClasses(System.String)
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetTextLabelSpanClasses(System.String)
+  id: GetTextLabelSpanClasses(System.String)
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper
+  langs:
+  - csharp
+  - vb
+  name: GetTextLabelSpanClasses(string)
+  nameWithType: UFInputTagHelper.GetTextLabelSpanClasses(string)
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetTextLabelSpanClasses(string)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Styling/Forms/UFInputTagHelper.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: GetTextLabelSpanClasses
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Forms/UFInputTagHelper.cs
+    startLine: 325
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms
+  summary: Returns the classes to use for the span element inside the label.
+  example: []
+  syntax:
+    content: protected virtual string GetTextLabelSpanClasses(string aType)
+    parameters:
+    - id: aType
+      type: System.String
+      description: ''
+    return:
+      type: System.String
+      description: ''
+    content.vb: Protected Overridable Function GetTextLabelSpanClasses(aType As String) As String
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetTextLabelSpanClasses*
+  nameWithType.vb: UFInputTagHelper.GetTextLabelSpanClasses(String)
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetTextLabelSpanClasses(String)
+  name.vb: GetTextLabelSpanClasses(String)
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetTextLabelDescriptionClasses(System.String)
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetTextLabelDescriptionClasses(System.String)
+  id: GetTextLabelDescriptionClasses(System.String)
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper
+  langs:
+  - csharp
+  - vb
+  name: GetTextLabelDescriptionClasses(string)
+  nameWithType: UFInputTagHelper.GetTextLabelDescriptionClasses(string)
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetTextLabelDescriptionClasses(string)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Styling/Forms/UFInputTagHelper.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: GetTextLabelDescriptionClasses
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Forms/UFInputTagHelper.cs
+    startLine: 335
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms
+  summary: Returns the classes to use for the description span element inside the label.
+  example: []
+  syntax:
+    content: protected virtual string GetTextLabelDescriptionClasses(string aType)
+    parameters:
+    - id: aType
+      type: System.String
+      description: ''
+    return:
+      type: System.String
+      description: ''
+    content.vb: Protected Overridable Function GetTextLabelDescriptionClasses(aType As String) As String
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetTextLabelDescriptionClasses*
+  nameWithType.vb: UFInputTagHelper.GetTextLabelDescriptionClasses(String)
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetTextLabelDescriptionClasses(String)
+  name.vb: GetTextLabelDescriptionClasses(String)
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetTextWrapperClasses(System.String)
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetTextWrapperClasses(System.String)
+  id: GetTextWrapperClasses(System.String)
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper
+  langs:
+  - csharp
+  - vb
+  name: GetTextWrapperClasses(string)
+  nameWithType: UFInputTagHelper.GetTextWrapperClasses(string)
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetTextWrapperClasses(string)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Styling/Forms/UFInputTagHelper.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: GetTextWrapperClasses
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Forms/UFInputTagHelper.cs
+    startLine: 345
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms
+  summary: Returns the classes to use for the wrapper div element.
+  example: []
+  syntax:
+    content: protected virtual string GetTextWrapperClasses(string aType)
+    parameters:
+    - id: aType
+      type: System.String
+      description: ''
+    return:
+      type: System.String
+      description: ''
+    content.vb: Protected Overridable Function GetTextWrapperClasses(aType As String) As String
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetTextWrapperClasses*
+  nameWithType.vb: UFInputTagHelper.GetTextWrapperClasses(String)
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetTextWrapperClasses(String)
+  name.vb: GetTextWrapperClasses(String)
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetValidationFeedbackContainerHtml(System.String)
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetValidationFeedbackContainerHtml(System.String)
+  id: GetValidationFeedbackContainerHtml(System.String)
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper
+  langs:
+  - csharp
+  - vb
+  name: GetValidationFeedbackContainerHtml(string)
+  nameWithType: UFInputTagHelper.GetValidationFeedbackContainerHtml(string)
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetValidationFeedbackContainerHtml(string)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Styling/Forms/UFInputTagHelper.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: GetValidationFeedbackContainerHtml
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Forms/UFInputTagHelper.cs
+    startLine: 355
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms
+  summary: Returns the classes to use for the validation feedback container.
+  example: []
+  syntax:
+    content: protected virtual string GetValidationFeedbackContainerHtml(string anId)
+    parameters:
+    - id: anId
+      type: System.String
+      description: ''
+    return:
+      type: System.String
+      description: ''
+    content.vb: Protected Overridable Function GetValidationFeedbackContainerHtml(anId As String) As String
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetValidationFeedbackContainerHtml*
+  nameWithType.vb: UFInputTagHelper.GetValidationFeedbackContainerHtml(String)
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetValidationFeedbackContainerHtml(String)
+  name.vb: GetValidationFeedbackContainerHtml(String)
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetFieldErrorsClasses
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetFieldErrorsClasses
+  id: GetFieldErrorsClasses
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper
+  langs:
+  - csharp
+  - vb
+  name: GetFieldErrorsClasses()
+  nameWithType: UFInputTagHelper.GetFieldErrorsClasses()
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetFieldErrorsClasses()
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Styling/Forms/UFInputTagHelper.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: GetFieldErrorsClasses
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Forms/UFInputTagHelper.cs
+    startLine: 364
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms
+  summary: Returns the classes to use for the field errors div element.
+  example: []
+  syntax:
+    content: protected virtual string GetFieldErrorsClasses()
+    return:
+      type: System.String
+      description: ''
+    content.vb: Protected Overridable Function GetFieldErrorsClasses() As String
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetFieldErrorsClasses*
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetFieldErrorsHtml(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary,System.String)
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetFieldErrorsHtml(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary,System.String)
+  id: GetFieldErrorsHtml(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary,System.String)
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper
+  langs:
+  - csharp
+  - vb
+  name: GetFieldErrorsHtml(ModelStateDictionary, string)
+  nameWithType: UFInputTagHelper.GetFieldErrorsHtml(ModelStateDictionary, string)
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetFieldErrorsHtml(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary, string)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Styling/Forms/UFInputTagHelper.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: GetFieldErrorsHtml
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Forms/UFInputTagHelper.cs
+    startLine: 375
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms
+  summary: Returns the html to use for the field errors.
+  example: []
+  syntax:
+    content: protected virtual string GetFieldErrorsHtml(ModelStateDictionary states, string name)
+    parameters:
+    - id: states
+      type: Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary
+      description: ''
+    - id: name
+      type: System.String
+      description: ''
+    return:
+      type: System.String
+      description: ''
+    content.vb: Protected Overridable Function GetFieldErrorsHtml(states As ModelStateDictionary, name As String) As String
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetFieldErrorsHtml*
+  nameWithType.vb: UFInputTagHelper.GetFieldErrorsHtml(ModelStateDictionary, String)
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetFieldErrorsHtml(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary, String)
+  name.vb: GetFieldErrorsHtml(ModelStateDictionary, String)
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetRadioInputClasses
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetRadioInputClasses
+  id: GetRadioInputClasses
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper
+  langs:
+  - csharp
+  - vb
+  name: GetRadioInputClasses()
+  nameWithType: UFInputTagHelper.GetRadioInputClasses()
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetRadioInputClasses()
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Styling/Forms/UFInputTagHelper.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: GetRadioInputClasses
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Forms/UFInputTagHelper.cs
+    startLine: 384
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms
+  summary: Returns the classes to use for the radio input element.
+  example: []
+  syntax:
+    content: protected virtual string GetRadioInputClasses()
+    return:
+      type: System.String
+      description: ''
+    content.vb: Protected Overridable Function GetRadioInputClasses() As String
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetRadioInputClasses*
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetRadioWrapperClasses
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetRadioWrapperClasses
+  id: GetRadioWrapperClasses
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper
+  langs:
+  - csharp
+  - vb
+  name: GetRadioWrapperClasses()
+  nameWithType: UFInputTagHelper.GetRadioWrapperClasses()
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetRadioWrapperClasses()
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Styling/Forms/UFInputTagHelper.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: GetRadioWrapperClasses
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Forms/UFInputTagHelper.cs
+    startLine: 393
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms
+  summary: Returns the classes to use for the radio wrapper div element.
+  example: []
+  syntax:
+    content: protected virtual string GetRadioWrapperClasses()
+    return:
+      type: System.String
+      description: ''
+    content.vb: Protected Overridable Function GetRadioWrapperClasses() As String
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetRadioWrapperClasses*
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetRadioLabelClasses
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetRadioLabelClasses
+  id: GetRadioLabelClasses
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper
+  langs:
+  - csharp
+  - vb
+  name: GetRadioLabelClasses()
+  nameWithType: UFInputTagHelper.GetRadioLabelClasses()
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetRadioLabelClasses()
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Styling/Forms/UFInputTagHelper.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: GetRadioLabelClasses
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Forms/UFInputTagHelper.cs
+    startLine: 402
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms
+  summary: Returns the classes to use for the radio label element.
+  example: []
+  syntax:
+    content: protected virtual string GetRadioLabelClasses()
+    return:
+      type: System.String
+      description: ''
+    content.vb: Protected Overridable Function GetRadioLabelClasses() As String
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetRadioLabelClasses*
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetRadioLabelSpanClasses
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetRadioLabelSpanClasses
+  id: GetRadioLabelSpanClasses
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper
+  langs:
+  - csharp
+  - vb
+  name: GetRadioLabelSpanClasses()
+  nameWithType: UFInputTagHelper.GetRadioLabelSpanClasses()
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetRadioLabelSpanClasses()
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Styling/Forms/UFInputTagHelper.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: GetRadioLabelSpanClasses
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Forms/UFInputTagHelper.cs
+    startLine: 411
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms
+  summary: Returns the classes to use for the span element inside the radio label.
+  example: []
+  syntax:
+    content: protected virtual string GetRadioLabelSpanClasses()
+    return:
+      type: System.String
+      description: ''
+    content.vb: Protected Overridable Function GetRadioLabelSpanClasses() As String
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetRadioLabelSpanClasses*
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetRadioLabelDescriptionClasses
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetRadioLabelDescriptionClasses
+  id: GetRadioLabelDescriptionClasses
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper
+  langs:
+  - csharp
+  - vb
+  name: GetRadioLabelDescriptionClasses()
+  nameWithType: UFInputTagHelper.GetRadioLabelDescriptionClasses()
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetRadioLabelDescriptionClasses()
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Styling/Forms/UFInputTagHelper.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: GetRadioLabelDescriptionClasses
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Forms/UFInputTagHelper.cs
+    startLine: 420
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms
+  summary: Returns the classes to use for the description span element inside the radio label.
+  example: []
+  syntax:
+    content: protected virtual string GetRadioLabelDescriptionClasses()
+    return:
+      type: System.String
+      description: ''
+    content.vb: Protected Overridable Function GetRadioLabelDescriptionClasses() As String
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetRadioLabelDescriptionClasses*
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetRadioExtraHtml
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetRadioExtraHtml
+  id: GetRadioExtraHtml
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper
+  langs:
+  - csharp
+  - vb
+  name: GetRadioExtraHtml()
+  nameWithType: UFInputTagHelper.GetRadioExtraHtml()
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetRadioExtraHtml()
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Styling/Forms/UFInputTagHelper.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: GetRadioExtraHtml
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Forms/UFInputTagHelper.cs
+    startLine: 429
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms
+  summary: Returns the html to use for the radio extra content.
+  example: []
+  syntax:
+    content: protected virtual string GetRadioExtraHtml()
+    return:
+      type: System.String
+      description: ''
+    content.vb: Protected Overridable Function GetRadioExtraHtml() As String
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetRadioExtraHtml*
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetCheckboxInputClasses
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetCheckboxInputClasses
+  id: GetCheckboxInputClasses
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper
+  langs:
+  - csharp
+  - vb
+  name: GetCheckboxInputClasses()
+  nameWithType: UFInputTagHelper.GetCheckboxInputClasses()
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetCheckboxInputClasses()
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Styling/Forms/UFInputTagHelper.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: GetCheckboxInputClasses
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Forms/UFInputTagHelper.cs
+    startLine: 438
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms
+  summary: Returns the classes to use for the checkbox input element.
+  example: []
+  syntax:
+    content: protected virtual string GetCheckboxInputClasses()
+    return:
+      type: System.String
+      description: ''
+    content.vb: Protected Overridable Function GetCheckboxInputClasses() As String
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetCheckboxInputClasses*
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetCheckboxWrapperClasses
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetCheckboxWrapperClasses
+  id: GetCheckboxWrapperClasses
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper
+  langs:
+  - csharp
+  - vb
+  name: GetCheckboxWrapperClasses()
+  nameWithType: UFInputTagHelper.GetCheckboxWrapperClasses()
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetCheckboxWrapperClasses()
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Styling/Forms/UFInputTagHelper.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: GetCheckboxWrapperClasses
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Forms/UFInputTagHelper.cs
+    startLine: 447
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms
+  summary: Returns the classes to use for the checkbox wrapper div element.
+  example: []
+  syntax:
+    content: protected virtual string GetCheckboxWrapperClasses()
+    return:
+      type: System.String
+      description: ''
+    content.vb: Protected Overridable Function GetCheckboxWrapperClasses() As String
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetCheckboxWrapperClasses*
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetCheckboxLabelClasses
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetCheckboxLabelClasses
+  id: GetCheckboxLabelClasses
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper
+  langs:
+  - csharp
+  - vb
+  name: GetCheckboxLabelClasses()
+  nameWithType: UFInputTagHelper.GetCheckboxLabelClasses()
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetCheckboxLabelClasses()
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Styling/Forms/UFInputTagHelper.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: GetCheckboxLabelClasses
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Forms/UFInputTagHelper.cs
+    startLine: 456
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms
+  summary: Returns the classes to use for the checkbox label element.
+  example: []
+  syntax:
+    content: protected virtual string GetCheckboxLabelClasses()
+    return:
+      type: System.String
+      description: ''
+    content.vb: Protected Overridable Function GetCheckboxLabelClasses() As String
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetCheckboxLabelClasses*
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetCheckboxLabelSpanClasses
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetCheckboxLabelSpanClasses
+  id: GetCheckboxLabelSpanClasses
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper
+  langs:
+  - csharp
+  - vb
+  name: GetCheckboxLabelSpanClasses()
+  nameWithType: UFInputTagHelper.GetCheckboxLabelSpanClasses()
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetCheckboxLabelSpanClasses()
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Styling/Forms/UFInputTagHelper.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: GetCheckboxLabelSpanClasses
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Forms/UFInputTagHelper.cs
+    startLine: 465
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms
+  summary: Returns the classes to use for the span element inside the checkbox label.
+  example: []
+  syntax:
+    content: protected virtual string GetCheckboxLabelSpanClasses()
+    return:
+      type: System.String
+      description: ''
+    content.vb: Protected Overridable Function GetCheckboxLabelSpanClasses() As String
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetCheckboxLabelSpanClasses*
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetCheckboxLabelDescriptionClasses
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetCheckboxLabelDescriptionClasses
+  id: GetCheckboxLabelDescriptionClasses
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper
+  langs:
+  - csharp
+  - vb
+  name: GetCheckboxLabelDescriptionClasses()
+  nameWithType: UFInputTagHelper.GetCheckboxLabelDescriptionClasses()
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetCheckboxLabelDescriptionClasses()
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Styling/Forms/UFInputTagHelper.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: GetCheckboxLabelDescriptionClasses
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Forms/UFInputTagHelper.cs
+    startLine: 474
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms
+  summary: Returns the classes to use for the description span element inside the checkbox label.
+  example: []
+  syntax:
+    content: protected virtual string GetCheckboxLabelDescriptionClasses()
+    return:
+      type: System.String
+      description: ''
+    content.vb: Protected Overridable Function GetCheckboxLabelDescriptionClasses() As String
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetCheckboxLabelDescriptionClasses*
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetCheckboxExtraHtml
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetCheckboxExtraHtml
+  id: GetCheckboxExtraHtml
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper
+  langs:
+  - csharp
+  - vb
+  name: GetCheckboxExtraHtml()
+  nameWithType: UFInputTagHelper.GetCheckboxExtraHtml()
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetCheckboxExtraHtml()
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Styling/Forms/UFInputTagHelper.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: GetCheckboxExtraHtml
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Forms/UFInputTagHelper.cs
+    startLine: 483
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms
+  summary: Returns the html to use for the checkbox extra content.
+  example: []
+  syntax:
+    content: protected virtual string GetCheckboxExtraHtml()
+    return:
+      type: System.String
+      description: ''
+    content.vb: Protected Overridable Function GetCheckboxExtraHtml() As String
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetCheckboxExtraHtml*
 references:
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.Wrap
   commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.Wrap
@@ -1891,3 +2461,178 @@ references:
   name: Theme
   nameWithType: UFInputTagHelper.Theme
   fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.Theme
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetTextInputClasses*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetTextInputClasses
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Forms_UFInputTagHelper_GetTextInputClasses_System_String_
+  name: GetTextInputClasses
+  nameWithType: UFInputTagHelper.GetTextInputClasses
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetTextInputClasses
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetTextLabelClasses*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetTextLabelClasses
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Forms_UFInputTagHelper_GetTextLabelClasses_System_String_
+  name: GetTextLabelClasses
+  nameWithType: UFInputTagHelper.GetTextLabelClasses
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetTextLabelClasses
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetTextLabelSpanClasses*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetTextLabelSpanClasses
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Forms_UFInputTagHelper_GetTextLabelSpanClasses_System_String_
+  name: GetTextLabelSpanClasses
+  nameWithType: UFInputTagHelper.GetTextLabelSpanClasses
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetTextLabelSpanClasses
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetTextLabelDescriptionClasses*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetTextLabelDescriptionClasses
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Forms_UFInputTagHelper_GetTextLabelDescriptionClasses_System_String_
+  name: GetTextLabelDescriptionClasses
+  nameWithType: UFInputTagHelper.GetTextLabelDescriptionClasses
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetTextLabelDescriptionClasses
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetTextWrapperClasses*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetTextWrapperClasses
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Forms_UFInputTagHelper_GetTextWrapperClasses_System_String_
+  name: GetTextWrapperClasses
+  nameWithType: UFInputTagHelper.GetTextWrapperClasses
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetTextWrapperClasses
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetValidationFeedbackContainerHtml*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetValidationFeedbackContainerHtml
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Forms_UFInputTagHelper_GetValidationFeedbackContainerHtml_System_String_
+  name: GetValidationFeedbackContainerHtml
+  nameWithType: UFInputTagHelper.GetValidationFeedbackContainerHtml
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetValidationFeedbackContainerHtml
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetFieldErrorsClasses*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetFieldErrorsClasses
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Forms_UFInputTagHelper_GetFieldErrorsClasses
+  name: GetFieldErrorsClasses
+  nameWithType: UFInputTagHelper.GetFieldErrorsClasses
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetFieldErrorsClasses
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetFieldErrorsHtml*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetFieldErrorsHtml
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Forms_UFInputTagHelper_GetFieldErrorsHtml_Microsoft_AspNetCore_Mvc_ModelBinding_ModelStateDictionary_System_String_
+  name: GetFieldErrorsHtml
+  nameWithType: UFInputTagHelper.GetFieldErrorsHtml
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetFieldErrorsHtml
+- uid: Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary
+  commentId: T:Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary
+  parent: Microsoft.AspNetCore.Mvc.ModelBinding
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.modelbinding.modelstatedictionary
+  name: ModelStateDictionary
+  nameWithType: ModelStateDictionary
+  fullName: Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary
+- uid: Microsoft.AspNetCore.Mvc.ModelBinding
+  commentId: N:Microsoft.AspNetCore.Mvc.ModelBinding
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.AspNetCore.Mvc.ModelBinding
+  nameWithType: Microsoft.AspNetCore.Mvc.ModelBinding
+  fullName: Microsoft.AspNetCore.Mvc.ModelBinding
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Mvc
+    name: Mvc
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc
+  - name: .
+  - uid: Microsoft.AspNetCore.Mvc.ModelBinding
+    name: ModelBinding
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.modelbinding
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Mvc
+    name: Mvc
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc
+  - name: .
+  - uid: Microsoft.AspNetCore.Mvc.ModelBinding
+    name: ModelBinding
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.modelbinding
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetRadioInputClasses*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetRadioInputClasses
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Forms_UFInputTagHelper_GetRadioInputClasses
+  name: GetRadioInputClasses
+  nameWithType: UFInputTagHelper.GetRadioInputClasses
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetRadioInputClasses
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetRadioWrapperClasses*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetRadioWrapperClasses
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Forms_UFInputTagHelper_GetRadioWrapperClasses
+  name: GetRadioWrapperClasses
+  nameWithType: UFInputTagHelper.GetRadioWrapperClasses
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetRadioWrapperClasses
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetRadioLabelClasses*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetRadioLabelClasses
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Forms_UFInputTagHelper_GetRadioLabelClasses
+  name: GetRadioLabelClasses
+  nameWithType: UFInputTagHelper.GetRadioLabelClasses
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetRadioLabelClasses
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetRadioLabelSpanClasses*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetRadioLabelSpanClasses
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Forms_UFInputTagHelper_GetRadioLabelSpanClasses
+  name: GetRadioLabelSpanClasses
+  nameWithType: UFInputTagHelper.GetRadioLabelSpanClasses
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetRadioLabelSpanClasses
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetRadioLabelDescriptionClasses*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetRadioLabelDescriptionClasses
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Forms_UFInputTagHelper_GetRadioLabelDescriptionClasses
+  name: GetRadioLabelDescriptionClasses
+  nameWithType: UFInputTagHelper.GetRadioLabelDescriptionClasses
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetRadioLabelDescriptionClasses
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetRadioExtraHtml*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetRadioExtraHtml
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Forms_UFInputTagHelper_GetRadioExtraHtml
+  name: GetRadioExtraHtml
+  nameWithType: UFInputTagHelper.GetRadioExtraHtml
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetRadioExtraHtml
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetCheckboxInputClasses*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetCheckboxInputClasses
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Forms_UFInputTagHelper_GetCheckboxInputClasses
+  name: GetCheckboxInputClasses
+  nameWithType: UFInputTagHelper.GetCheckboxInputClasses
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetCheckboxInputClasses
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetCheckboxWrapperClasses*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetCheckboxWrapperClasses
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Forms_UFInputTagHelper_GetCheckboxWrapperClasses
+  name: GetCheckboxWrapperClasses
+  nameWithType: UFInputTagHelper.GetCheckboxWrapperClasses
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetCheckboxWrapperClasses
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetCheckboxLabelClasses*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetCheckboxLabelClasses
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Forms_UFInputTagHelper_GetCheckboxLabelClasses
+  name: GetCheckboxLabelClasses
+  nameWithType: UFInputTagHelper.GetCheckboxLabelClasses
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetCheckboxLabelClasses
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetCheckboxLabelSpanClasses*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetCheckboxLabelSpanClasses
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Forms_UFInputTagHelper_GetCheckboxLabelSpanClasses
+  name: GetCheckboxLabelSpanClasses
+  nameWithType: UFInputTagHelper.GetCheckboxLabelSpanClasses
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetCheckboxLabelSpanClasses
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetCheckboxLabelDescriptionClasses*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetCheckboxLabelDescriptionClasses
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Forms_UFInputTagHelper_GetCheckboxLabelDescriptionClasses
+  name: GetCheckboxLabelDescriptionClasses
+  nameWithType: UFInputTagHelper.GetCheckboxLabelDescriptionClasses
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetCheckboxLabelDescriptionClasses
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetCheckboxExtraHtml*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetCheckboxExtraHtml
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Forms_UFInputTagHelper_GetCheckboxExtraHtml
+  name: GetCheckboxExtraHtml
+  nameWithType: UFInputTagHelper.GetCheckboxExtraHtml
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetCheckboxExtraHtml

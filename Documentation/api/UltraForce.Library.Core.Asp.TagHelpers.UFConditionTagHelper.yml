@@ -26,9 +26,9 @@ items:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers
   summary: >-
-    This tag helper adds support for condition attribute. When specified the tag and its children are only processed
+    This tag helper adds support for condition attribute. When specified the tag and its children
 
-    if the value is <code>true</code>.
+    are only processed if the value is <code>true</code>.
   remarks: >-
     Based on the example code of: 
 

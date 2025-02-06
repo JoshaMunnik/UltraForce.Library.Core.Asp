@@ -37,22 +37,23 @@ namespace UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout;
 public interface IUFFlexProperties
 {
   /// <summary>
-  /// How to distribute the items in the direction of the container.
+  /// How to distribute the items in the direction of the main axis.
   /// </summary>
-  UFFlexJustifyContent JustifyContent { get; set; }
+  UFFlexDistributeContent DistributeContentMainAxis { get; set; }
 
+  /// <summary>
+  /// How to distribute the items in the opposite direction. This property is only of use
+  /// when <see cref="Wrap"/> is true and there are multiple rows or columns.
+  /// </summary>
+  UFFlexDistributeContent DistributeContentCrossAxis { get; set; }
+  
   /// <summary>
   /// How to align the items in the opposite direction. 
   /// </summary>
-  UFFlexAlignItems AlignItems { get; set; }
+  UFFlexAlignItems AlignCrossAxis { get; set; }
 
   /// <summary>
-  /// How to distribute the items in the opposite direction.
-  /// </summary>
-  UFFlexAlignContent AlignContent { get; set; }
-  
-  /// <summary>
-  /// When true, the container is used to contain buttons. 
+  /// When true, the container is used to contain buttons.
   /// </summary>
   bool Buttons { get; set; }
 

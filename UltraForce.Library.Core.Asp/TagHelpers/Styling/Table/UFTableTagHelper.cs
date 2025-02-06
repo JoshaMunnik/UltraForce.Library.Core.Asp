@@ -10,6 +10,43 @@ namespace UltraForce.Library.Core.Asp.TagHelpers.Styling.Table;
 
 /// <summary>
 /// Simple tag helper to render a table.
+/// <para>
+/// Table without filter and sorting:
+/// <code>
+/// &lt;table class="GetTableClasses()"&gt;
+///   {children}
+/// &lt;/table&gt;
+/// </code>
+/// </para>
+/// <para>
+/// Table with a filter:
+/// <code>
+/// &lt;div&gt;
+///   &lt;div class="GetFilterContainerClasses()"&gt;
+///     &lt;input {id} class="GetFilterInputClasses()" data-uf-filter-table="{id}" /&gt;
+///     &lt;button class="GetFilterButtonClasses()" data-uf-set-field-selector="#{id}"&gt;
+///       clear
+///     &lt;/button&gt;
+///   &lt;/div&gt;
+///   &lt;table class="GetTableClasses()"&gt;
+///     {children}
+///   &lt;/table&gt;
+/// &lt;/div&gt;
+/// </code>
+/// </para>
+/// <para>
+/// Table with sorting:
+/// <code>
+/// &lt;table
+///   class="GetTableClasses()"
+///   data-uf-sorting="1"
+///   data-uf-sort-ascending="GetSortAscendingClasses()"
+///   data-uf-sort-descending="GetSortDescendingClasses()"
+///   &gt;
+///   {children}
+/// &lt;/table&gt;
+/// </code>
+/// </para>
 /// </summary>
 [SuppressMessage("ReSharper", "AutoPropertyCanBeMadeGetOnly.Global")]
 [HtmlTargetElement("uf-table", TagStructure = TagStructure.NormalOrSelfClosing)]
@@ -94,9 +131,67 @@ public class UFTableTagHelper(IUFTheme aTheme) : UFTagHelperWithTheme(aTheme), I
     {
       output.Attributes.SetAttribute("id", id);
     }
-    UFTagHelperTools.AddClasses(output, this.Theme.GetTableClasses(this));
+    UFTagHelperTools.AddClasses(output, this.GetTableClasses());
   }
 
+  #endregion
+  
+  #region protected overridable methods
+  
+  /// <summary>
+  /// Returns the classes for the table. 
+  /// </summary>
+  /// <returns></returns>
+  protected virtual string GetTableClasses()
+  {
+    return this.Theme.GetTableClasses(this);
+  }
+  
+  /// <summary>
+  /// Returns the classes for the filter input.
+  /// </summary>
+  /// <returns></returns>
+  protected virtual string GetFilterInputClasses()
+  {
+    return this.Theme.GetFilterInputClasses();
+  }
+  
+  /// <summary>
+  /// Returns the classes for the filter button.
+  /// </summary>
+  /// <returns></returns>
+  protected virtual string GetFilterButtonClasses()
+  {
+    return this.Theme.GetFilterButtonClasses();
+  }
+  
+  /// <summary>
+  /// Returns the classes for the filter container.
+  /// </summary>
+  /// <returns></returns>
+  protected virtual string GetFilterContainerClasses()
+  {
+    return this.Theme.GetFilterContainerClasses();
+  }
+  
+  /// <summary>
+  /// Returns the classes for the sort ascending icon.
+  /// </summary>
+  /// <returns></returns>
+  protected virtual string GetSortAscendingClasses()
+  {
+    return this.Theme.GetSortAscendingClasses();
+  }
+  
+  /// <summary>
+  /// Returns the classes for the sort descending icon.
+  /// </summary>
+  /// <returns></returns>
+  protected virtual string GetSortDescendingClasses()
+  {
+    return this.Theme.GetSortDescendingClasses();
+  }
+  
   #endregion
   
   #region internal properties
@@ -115,11 +210,11 @@ public class UFTableTagHelper(IUFTheme aTheme) : UFTagHelperWithTheme(aTheme), I
     anOutput.Attributes.SetAttribute(UFDataAttribute.Filter, "1");
     string inputId = UFHtmlTools.NewDomId();
     string input =
-      $"<input id=\"{inputId}\" class=\"{this.Theme.GetFilterInputClasses()}\" placeholder=\"filter...\" type=\"text\" {UFDataAttribute.FilterTable}=\"#{aTableId}\" autocomplete=\"off\" />";
+      $"<input id=\"{inputId}\" class=\"{this.GetFilterInputClasses()}\" placeholder=\"filter...\" type=\"text\" {UFDataAttribute.FilterTable}=\"#{aTableId}\" autocomplete=\"off\" />";
     string button =
-      $"<button class=\"{this.Theme.GetFilterButtonClasses()}\" {UFDataAttribute.SetFieldSelector}=\"#{inputId}\">clear</button>";
+      $"<button class=\"{this.GetFilterButtonClasses()}\" {UFDataAttribute.SetFieldSelector}=\"#{inputId}\">clear</button>";
     anOutput.PreElement.AppendHtml(
-      $"<div><div class=\"{this.Theme.GetFilterContainerClasses()}\">{input}{button}</div>"
+      $"<div><div class=\"{this.GetFilterContainerClasses()}\">{input}{button}</div>"
     );
     anOutput.PostElement.AppendHtml("</div>");
   }
@@ -128,10 +223,10 @@ public class UFTableTagHelper(IUFTheme aTheme) : UFTagHelperWithTheme(aTheme), I
   {
     anOutput.Attributes.SetAttribute(UFDataAttribute.Sorting, "1");
     anOutput.Attributes.SetAttribute(
-      UFDataAttribute.SortAscending, this.Theme.GetSortAscendingClasses()
+      UFDataAttribute.SortAscending, this.GetSortAscendingClasses()
     );
     anOutput.Attributes.SetAttribute(
-      UFDataAttribute.SortDescending, this.Theme.GetSortDescendingClasses()
+      UFDataAttribute.SortDescending, this.GetSortDescendingClasses()
     );
   }
 

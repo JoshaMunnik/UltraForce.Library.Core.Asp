@@ -62,7 +62,7 @@ public interface IUFCellProperties
   /// <summary>
   /// Size of text within the cell
   /// </summary>
-  UFTableTextSize TextSize { get; set; }
+  UFSize TextSize { get; set; }
 
   /// <summary>
   /// When true wrap content if cell is to small

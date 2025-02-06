@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class UFTableRowTagHelper | UltraForce.Library.Core.Asp ">
       
-      <meta name="description" content="Creates a table row.">
+      <meta name="description" content="Creates a table row. Renders: &amp;lt;tr class=&quot;{GetTableRowClasses()}&amp;gt;   {children} &amp;lt;/tr&amp;gt;">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_UFTableRowTagHelper" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableRowTagHelper" class="text-break">
-Class UFTableRowTagHelper  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/UFTableRowTagHelper.cs/#L42"><i class="bi bi-code-slash"></i></a>
+Class UFTableRowTagHelper  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/UFTableRowTagHelper.cs/#L47"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,10 @@ Class UFTableRowTagHelper  <a class="header-action link-secondary" title="View s
   <dl><dt>Assembly</dt><dd>UltraForce.Library.Core.Asp.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Creates a table row.</p>
+  <div class="markdown summary"><p>Creates a table row. Renders:</p>
+<pre><code class="lang-csharp">&lt;tr class="{GetTableRowClasses()}&gt;
+  {children}
+&lt;/tr&gt;</code></pre>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -180,10 +183,13 @@ public class UFTableRowTagHelper : UFTagHelperWithTheme, ITagHelper, ITagHelperC
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_UFTableRowTagHelper__ctor_UltraForce_Library_Core_Asp_Services_IUFTheme_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableRowTagHelper.#ctor(UltraForce.Library.Core.Asp.Services.IUFTheme)">
   UFTableRowTagHelper(IUFTheme)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/UFTableRowTagHelper.cs/#L42"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/UFTableRowTagHelper.cs/#L47"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Creates a table row.</p>
+  <div class="markdown level1 summary"><p>Creates a table row. Renders:</p>
+<pre><code class="lang-csharp">&lt;tr class="{GetTableRowClasses()}&gt;
+  {children}
+&lt;/tr&gt;</code></pre>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -215,7 +221,7 @@ public class UFTableRowTagHelper : UFTagHelperWithTheme, ITagHelper, ITagHelperC
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_UFTableRowTagHelper_Row" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableRowTagHelper.Row">
   Row
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/UFTableRowTagHelper.cs/#L52"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/UFTableRowTagHelper.cs/#L57"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The key that children can use to access this instance.</p>
@@ -251,7 +257,7 @@ public class UFTableRowTagHelper : UFTagHelperWithTheme, ITagHelper, ITagHelperC
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_UFTableRowTagHelper_Alternate" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableRowTagHelper.Alternate">
   Alternate
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/UFTableRowTagHelper.cs/#L67"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/UFTableRowTagHelper.cs/#L72"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>When true show rows with alternating background colors</p>
@@ -284,7 +290,7 @@ public bool Alternate { get; set; }</code></pre>
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_UFTableRowTagHelper_Hover" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableRowTagHelper.Hover">
   Hover
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/UFTableRowTagHelper.cs/#L73"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/UFTableRowTagHelper.cs/#L78"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>When true show different background on hover</p>
@@ -317,7 +323,7 @@ public bool Hover { get; set; }</code></pre>
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_UFTableRowTagHelper_SortLocation" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableRowTagHelper.SortLocation">
   SortLocation
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/UFTableRowTagHelper.cs/#L84"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/UFTableRowTagHelper.cs/#L89"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Keep the row at top or bottom if table gets sorted</p>
@@ -355,7 +361,7 @@ public UFTableSortLocation SortLocation { get; set; }</code></pre>
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_UFTableRowTagHelper_Type" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableRowTagHelper.Type">
   Type
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/UFTableRowTagHelper.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/UFTableRowTagHelper.cs/#L66"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The type of row</p>
@@ -388,11 +394,48 @@ public UFTableRowType Type { get; set; }</code></pre>
 </h2>
 
 
+  <a id="UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_UFTableRowTagHelper_GetTableRowClasses_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableRowTagHelper.GetTableRowClasses*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_UFTableRowTagHelper_GetTableRowClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_UFTableTagHelper_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableRowTagHelper.GetTableRowClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper)">
+  GetTableRowClasses(UFTableTagHelper)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/UFTableRowTagHelper.cs/#L132"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the classes for the table row.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual string GetTableRowClasses(UFTableTagHelper aTable)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aTable</code> <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper.html">UFTableTagHelper</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_UFTableRowTagHelper_Process_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableRowTagHelper.Process*"></a>
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Styling_Table_UFTableRowTagHelper_Process_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContext_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableRowTagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)">
   Process(TagHelperContext, TagHelperOutput)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/UFTableRowTagHelper.cs/#L92"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/UFTableRowTagHelper.cs/#L97"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Synchronously executes the <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper">TagHelper</a> with the given <code class="paramref">context</code> and
@@ -428,7 +471,7 @@ public UFTableRowType Type { get; set; }</code></pre>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/UFTableRowTagHelper.cs/#L42" class="edit-link">Edit this page</a>
+          <a href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Styling/Table/UFTableRowTagHelper.cs/#L47" class="edit-link">Edit this page</a>
         </div>
 
 

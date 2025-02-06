@@ -5,7 +5,6 @@ items:
   id: IUFButtonProperties
   parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
   children:
-  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.Color
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.Disabled
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.FullHeight
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.FullWidth
@@ -16,7 +15,7 @@ items:
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.Size
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.Static
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.Submit
-  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.Variant
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.Type
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.VerticalContentPosition
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.VerticalPadding
   langs:
@@ -42,40 +41,40 @@ items:
   syntax:
     content: public interface IUFButtonProperties
     content.vb: Public Interface IUFButtonProperties
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.Color
-  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.Color
-  id: Color
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.Type
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.Type
+  id: Type
   parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties
   langs:
   - csharp
   - vb
-  name: Color
-  nameWithType: IUFButtonProperties.Color
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.Color
+  name: Type
+  nameWithType: IUFButtonProperties.Type
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.Type
   type: Property
   source:
     remote:
       path: UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/IUFButtonProperties.cs
       branch: master
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
-    id: Color
+    id: Type
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/IUFButtonProperties.cs
     startLine: 42
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
   summary: >-
-    Color scheme to use for the button. When <xref href="UltraForce.Library.Core.Asp.Types.Enums.UFButtonColor.Auto" data-throw-if-not-resolved="false"></xref> is used, the
+    Styling to use for the button. When <xref href="UltraForce.Library.Core.Asp.Types.Enums.UFButtonType.Auto" data-throw-if-not-resolved="false"></xref> is used, the
 
-    styling will decide the color based on the button state.
+    styling is decided from the button state.
   example: []
   syntax:
-    content: UFButtonColor Color { get; set; }
+    content: UFButtonType Type { get; set; }
     parameters: []
     return:
-      type: UltraForce.Library.Core.Asp.Types.Enums.UFButtonColor
-    content.vb: Property Color As UFButtonColor
-  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.Color*
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFButtonType
+    content.vb: Property Type As UFButtonType
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.Type*
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.Size
   commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.Size
   id: Size
@@ -101,43 +100,12 @@ items:
   summary: Size of the button.
   example: []
   syntax:
-    content: UFButtonSize Size { get; set; }
+    content: UFSize Size { get; set; }
     parameters: []
     return:
-      type: UltraForce.Library.Core.Asp.Types.Enums.UFButtonSize
-    content.vb: Property Size As UFButtonSize
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFSize
+    content.vb: Property Size As UFSize
   overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.Size*
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.Variant
-  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.Variant
-  id: Variant
-  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties
-  langs:
-  - csharp
-  - vb
-  name: Variant
-  nameWithType: IUFButtonProperties.Variant
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.Variant
-  type: Property
-  source:
-    remote:
-      path: UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/IUFButtonProperties.cs
-      branch: master
-      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
-    id: Variant
-    path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/IUFButtonProperties.cs
-    startLine: 52
-  assemblies:
-  - UltraForce.Library.Core.Asp
-  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
-  summary: Style to draw the button in.
-  example: []
-  syntax:
-    content: UFButtonVariant Variant { get; set; }
-    parameters: []
-    return:
-      type: UltraForce.Library.Core.Asp.Types.Enums.UFButtonVariant
-    content.vb: Property [Variant] As UFButtonVariant
-  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.Variant*
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.Icon
   commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.Icon
   id: Icon
@@ -156,14 +124,14 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Icon
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/IUFButtonProperties.cs
-    startLine: 58
+    startLine: 53
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
   summary: >-
-    Optional font awesome icon to show in the button. Use the name without the <pre><code class="lang-csharp">fa-</code></pre>
+    Optional icon to show in the button. It depends on the used theme how this value is
 
-    prefix.
+    interpreted.
   example: []
   syntax:
     content: string? Icon { get; set; }
@@ -190,7 +158,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: IconPosition
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/IUFButtonProperties.cs
-    startLine: 64
+    startLine: 59
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
@@ -224,7 +192,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Disabled
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/IUFButtonProperties.cs
-    startLine: 70
+    startLine: 65
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
@@ -258,7 +226,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Static
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/IUFButtonProperties.cs
-    startLine: 75
+    startLine: 70
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
@@ -289,7 +257,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Submit
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/IUFButtonProperties.cs
-    startLine: 81
+    startLine: 76
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
@@ -323,7 +291,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: FullWidth
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/IUFButtonProperties.cs
-    startLine: 86
+    startLine: 81
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
@@ -354,7 +322,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: FullHeight
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/IUFButtonProperties.cs
-    startLine: 91
+    startLine: 86
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
@@ -385,7 +353,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: VerticalPadding
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/IUFButtonProperties.cs
-    startLine: 97
+    startLine: 92
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
@@ -419,7 +387,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: HorizontalPadding
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/IUFButtonProperties.cs
-    startLine: 103
+    startLine: 98
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
@@ -453,7 +421,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: HorizontalContentPosition
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/IUFButtonProperties.cs
-    startLine: 108
+    startLine: 103
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
@@ -484,7 +452,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: VerticalContentPosition
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Buttons/IUFButtonProperties.cs
-    startLine: 113
+    startLine: 108
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
@@ -560,25 +528,25 @@ references:
   - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
     name: Buttons
     href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.html
-- uid: UltraForce.Library.Core.Asp.Types.Enums.UFButtonColor.Auto
-  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFButtonColor.Auto
-  href: UltraForce.Library.Core.Asp.Types.Enums.UFButtonColor.html#UltraForce_Library_Core_Asp_Types_Enums_UFButtonColor_Auto
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFButtonType.Auto
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFButtonType.Auto
+  href: UltraForce.Library.Core.Asp.Types.Enums.UFButtonType.html#UltraForce_Library_Core_Asp_Types_Enums_UFButtonType_Auto
   name: Auto
-  nameWithType: UFButtonColor.Auto
-  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFButtonColor.Auto
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.Color*
-  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.Color
-  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_IUFButtonProperties_Color
-  name: Color
-  nameWithType: IUFButtonProperties.Color
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.Color
-- uid: UltraForce.Library.Core.Asp.Types.Enums.UFButtonColor
-  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFButtonColor
+  nameWithType: UFButtonType.Auto
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFButtonType.Auto
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.Type*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.Type
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_IUFButtonProperties_Type
+  name: Type
+  nameWithType: IUFButtonProperties.Type
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.Type
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFButtonType
+  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFButtonType
   parent: UltraForce.Library.Core.Asp.Types.Enums
-  href: UltraForce.Library.Core.Asp.Types.Enums.UFButtonColor.html
-  name: UFButtonColor
-  nameWithType: UFButtonColor
-  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFButtonColor
+  href: UltraForce.Library.Core.Asp.Types.Enums.UFButtonType.html
+  name: UFButtonType
+  nameWithType: UFButtonType
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFButtonType
 - uid: UltraForce.Library.Core.Asp.Types.Enums
   commentId: N:UltraForce.Library.Core.Asp.Types.Enums
   href: UltraForce.html
@@ -639,26 +607,13 @@ references:
   name: Size
   nameWithType: IUFButtonProperties.Size
   fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.Size
-- uid: UltraForce.Library.Core.Asp.Types.Enums.UFButtonSize
-  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFButtonSize
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFSize
+  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFSize
   parent: UltraForce.Library.Core.Asp.Types.Enums
-  href: UltraForce.Library.Core.Asp.Types.Enums.UFButtonSize.html
-  name: UFButtonSize
-  nameWithType: UFButtonSize
-  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFButtonSize
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.Variant*
-  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.Variant
-  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_IUFButtonProperties_Variant
-  name: Variant
-  nameWithType: IUFButtonProperties.Variant
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.Variant
-- uid: UltraForce.Library.Core.Asp.Types.Enums.UFButtonVariant
-  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFButtonVariant
-  parent: UltraForce.Library.Core.Asp.Types.Enums
-  href: UltraForce.Library.Core.Asp.Types.Enums.UFButtonVariant.html
-  name: UFButtonVariant
-  nameWithType: UFButtonVariant
-  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFButtonVariant
+  href: UltraForce.Library.Core.Asp.Types.Enums.UFSize.html
+  name: UFSize
+  nameWithType: UFSize
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFSize
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.Icon*
   commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.Icon
   href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Buttons_IUFButtonProperties_Icon

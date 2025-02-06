@@ -37,24 +37,19 @@ namespace UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons;
 public interface IUFButtonProperties
 {
   /// <summary>
-  /// Color scheme to use for the button. When <see cref="UFButtonColor.Auto"/> is used, the
-  /// styling will decide the color based on the button state.
+  /// Styling to use for the button. When <see cref="UFButtonType.Auto"/> is used, the
+  /// styling is decided from the button state.
   /// </summary>
-  public UFButtonColor Color { get; set; }
+  public UFButtonType Type { get; set; }
 
   /// <summary>
   /// Size of the button.
   /// </summary>
-  public UFButtonSize Size { get; set; }
+  public UFSize Size { get; set; }
 
   /// <summary>
-  /// Style to draw the button in.
-  /// </summary>
-  public UFButtonVariant Variant { get; set; }
-
-  /// <summary>
-  /// Optional font awesome icon to show in the button. Use the name without the <code>fa-</code>
-  /// prefix.
+  /// Optional icon to show in the button. It depends on the used theme how this value is
+  /// interpreted.
   /// </summary>
   public string? Icon { get; set; }
 

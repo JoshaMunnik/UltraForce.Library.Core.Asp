@@ -42,7 +42,7 @@ namespace UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout;
 /// Renders:
 /// <code>
 /// &lt;div class="{GetRowClasses()}"&gt;
-/// {children}
+///   {children}
 /// &lt;/div&gt;
 /// </code>
 /// </para>
@@ -54,16 +54,19 @@ public class UFRowTagHelper(IUFTheme aTheme) : UFTagHelperWithTheme(aTheme), IUF
   #region IUFFlexProperties
 
   /// <inheritdoc/>
-  [HtmlAttributeName("justify-content")]
-  public UFFlexJustifyContent JustifyContent { get; set; } = UFFlexJustifyContent.Start;
+  [HtmlAttributeName("distribute-main-axis")]
+  public UFFlexDistributeContent DistributeContentMainAxis { get; set; } =
+    UFFlexDistributeContent.Start;
 
   /// <inheritdoc/>
-  [HtmlAttributeName("align-items")]
-  public UFFlexAlignItems AlignItems { get; set; } = UFFlexAlignItems.Start;
+  [HtmlAttributeName("align-cross-axis")]
+  public UFFlexAlignItems AlignCrossAxis { get; set; } = UFFlexAlignItems.Start;
 
   /// <inheritdoc/>
-  [HtmlAttributeName("align-content")]
-  public UFFlexAlignContent AlignContent { get; set; } = UFFlexAlignContent.Start;
+  [HtmlAttributeName("distribute-cross-axis")]
+  public UFFlexDistributeContent DistributeContentCrossAxis { get; set; } =
+    UFFlexDistributeContent.Start;
+
   
   /// <inheritdoc/>
   [HtmlAttributeName("buttons")]

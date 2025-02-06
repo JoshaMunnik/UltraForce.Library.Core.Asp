@@ -49,7 +49,7 @@ namespace UltraForce.Library.Core.Asp.TagHelpers.Lib;
 /// </para>
 /// </summary>
 [SuppressMessage("ReSharper", "MemberCanBePrivate.Global")]
-public class UFClickableTagHelperBase : AnchorTagHelper
+public abstract class UFClickableTagHelperBase : AnchorTagHelper
 {
   #region constructors
 
@@ -116,39 +116,6 @@ public class UFClickableTagHelperBase : AnchorTagHelper
   /// </summary>
   [HtmlAttributeName("call-parameter-separator")]
   public string? CallParameterSeparator { get; set; } = ",";
-
-  /// <summary>
-  /// Obsolete property. Use "asp-controller" instead.
-  /// </summary>
-  [HtmlAttributeName("controller")]
-  [Obsolete("Use asp-controller property instead", true)]
-  public string OldController
-  {
-    get => this.Controller;
-    set => this.Controller = value;
-  }
-
-  /// <summary>
-  /// Obsolete property. Use "asp-action" instead.
-  /// </summary>
-  [HtmlAttributeName("action")]
-  [Obsolete("Use asp-action property instead", true)]
-  public string OldAction
-  {
-    get => this.Action;
-    set => this.Action = value;
-  }
-  
-  /// <summary>
-  /// Additional parameters for the route.
-  /// </summary>
-  [HtmlAttributeName("all-route-data", DictionaryAttributePrefix = "route-")]
-  [Obsolete("Use asp-route property instead", true)]
-  public IDictionary<string, string> OldRouteValues
-  {
-    get => this.RouteValues;
-    set => this.RouteValues = value;
-  }
 
   #endregion
 

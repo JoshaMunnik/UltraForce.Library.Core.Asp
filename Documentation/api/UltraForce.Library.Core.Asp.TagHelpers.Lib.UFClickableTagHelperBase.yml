@@ -11,9 +11,6 @@ items:
   - UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.EndpointDataSource
   - UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.Href
   - UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.NewTab
-  - UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.OldAction
-  - UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.OldController
-  - UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.OldRouteValues
   - UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.ProcessHref(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
   - UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.Theme
   langs:
@@ -54,8 +51,8 @@ items:
     </p>
   example: []
   syntax:
-    content: 'public class UFClickableTagHelperBase : AnchorTagHelper, ITagHelper, ITagHelperComponent'
-    content.vb: Public Class UFClickableTagHelperBase Inherits AnchorTagHelper Implements ITagHelper, ITagHelperComponent
+    content: 'public abstract class UFClickableTagHelperBase : AnchorTagHelper, ITagHelper, ITagHelperComponent'
+    content.vb: Public MustInherit Class UFClickableTagHelperBase Inherits AnchorTagHelper Implements ITagHelper, ITagHelperComponent
   inheritance:
   - System.Object
   - Microsoft.AspNetCore.Razor.TagHelpers.TagHelper
@@ -341,172 +338,6 @@ items:
     arguments:
     - type: System.String
       value: call-parameter-separator
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.OldController
-  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.OldController
-  id: OldController
-  parent: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase
-  langs:
-  - csharp
-  - vb
-  name: OldController
-  nameWithType: UFClickableTagHelperBase.OldController
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.OldController
-  type: Property
-  source:
-    remote:
-      path: UltraForce.Library.Core.Asp/TagHelpers/Lib/UFClickableTagHelperBase.cs
-      branch: master
-      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
-    id: OldController
-    path: ../UltraForce.Library.Core.Asp/TagHelpers/Lib/UFClickableTagHelperBase.cs
-    startLine: 122
-  assemblies:
-  - UltraForce.Library.Core.Asp
-  namespace: UltraForce.Library.Core.Asp.TagHelpers.Lib
-  summary: Obsolete property. Use "asp-controller" instead.
-  example: []
-  syntax:
-    content: >-
-      [HtmlAttributeName("controller")]
-
-      [Obsolete("Use asp-controller property instead", true)]
-
-      public string OldController { get; set; }
-    parameters: []
-    return:
-      type: System.String
-    content.vb: >-
-      <HtmlAttributeName("controller")>
-
-      <Obsolete("Use asp-controller property instead", True)>
-
-      Public Property OldController As String
-  overload: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.OldController*
-  attributes:
-  - type: Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute
-    ctor: Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute.#ctor(System.String)
-    arguments:
-    - type: System.String
-      value: controller
-  - type: System.ObsoleteAttribute
-    ctor: System.ObsoleteAttribute.#ctor(System.String,System.Boolean)
-    arguments:
-    - type: System.String
-      value: Use asp-controller property instead
-    - type: System.Boolean
-      value: true
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.OldAction
-  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.OldAction
-  id: OldAction
-  parent: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase
-  langs:
-  - csharp
-  - vb
-  name: OldAction
-  nameWithType: UFClickableTagHelperBase.OldAction
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.OldAction
-  type: Property
-  source:
-    remote:
-      path: UltraForce.Library.Core.Asp/TagHelpers/Lib/UFClickableTagHelperBase.cs
-      branch: master
-      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
-    id: OldAction
-    path: ../UltraForce.Library.Core.Asp/TagHelpers/Lib/UFClickableTagHelperBase.cs
-    startLine: 133
-  assemblies:
-  - UltraForce.Library.Core.Asp
-  namespace: UltraForce.Library.Core.Asp.TagHelpers.Lib
-  summary: Obsolete property. Use "asp-action" instead.
-  example: []
-  syntax:
-    content: >-
-      [HtmlAttributeName("action")]
-
-      [Obsolete("Use asp-action property instead", true)]
-
-      public string OldAction { get; set; }
-    parameters: []
-    return:
-      type: System.String
-    content.vb: >-
-      <HtmlAttributeName("action")>
-
-      <Obsolete("Use asp-action property instead", True)>
-
-      Public Property OldAction As String
-  overload: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.OldAction*
-  attributes:
-  - type: Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute
-    ctor: Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute.#ctor(System.String)
-    arguments:
-    - type: System.String
-      value: action
-  - type: System.ObsoleteAttribute
-    ctor: System.ObsoleteAttribute.#ctor(System.String,System.Boolean)
-    arguments:
-    - type: System.String
-      value: Use asp-action property instead
-    - type: System.Boolean
-      value: true
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.OldRouteValues
-  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.OldRouteValues
-  id: OldRouteValues
-  parent: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase
-  langs:
-  - csharp
-  - vb
-  name: OldRouteValues
-  nameWithType: UFClickableTagHelperBase.OldRouteValues
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.OldRouteValues
-  type: Property
-  source:
-    remote:
-      path: UltraForce.Library.Core.Asp/TagHelpers/Lib/UFClickableTagHelperBase.cs
-      branch: master
-      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
-    id: OldRouteValues
-    path: ../UltraForce.Library.Core.Asp/TagHelpers/Lib/UFClickableTagHelperBase.cs
-    startLine: 144
-  assemblies:
-  - UltraForce.Library.Core.Asp
-  namespace: UltraForce.Library.Core.Asp.TagHelpers.Lib
-  summary: Additional parameters for the route.
-  example: []
-  syntax:
-    content: >-
-      [HtmlAttributeName("all-route-data", DictionaryAttributePrefix = "route-")]
-
-      [Obsolete("Use asp-route property instead", true)]
-
-      public IDictionary<string, string> OldRouteValues { get; set; }
-    parameters: []
-    return:
-      type: System.Collections.Generic.IDictionary{System.String,System.String}
-    content.vb: >-
-      <HtmlAttributeName("all-route-data", DictionaryAttributePrefix:="route-")>
-
-      <Obsolete("Use asp-route property instead", True)>
-
-      Public Property OldRouteValues As IDictionary(Of String, String)
-  overload: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.OldRouteValues*
-  attributes:
-  - type: Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute
-    ctor: Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute.#ctor(System.String)
-    arguments:
-    - type: System.String
-      value: all-route-data
-    namedArguments:
-    - name: DictionaryAttributePrefix
-      type: System.String
-      value: route-
-  - type: System.ObsoleteAttribute
-    ctor: System.ObsoleteAttribute.#ctor(System.String,System.Boolean)
-    arguments:
-    - type: System.String
-      value: Use asp-route property instead
-    - type: System.Boolean
-      value: true
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.Theme
   commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.Theme
   id: Theme
@@ -525,7 +356,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Theme
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Lib/UFClickableTagHelperBase.cs
-    startLine: 159
+    startLine: 126
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Lib
@@ -556,7 +387,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: EndpointDataSource
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Lib/UFClickableTagHelperBase.cs
-    startLine: 164
+    startLine: 131
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Lib
@@ -587,7 +418,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: ProcessHref
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Lib/UFClickableTagHelperBase.cs
-    startLine: 175
+    startLine: 142
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Lib
@@ -1497,142 +1328,6 @@ references:
   name: CallParameterSeparator
   nameWithType: UFClickableTagHelperBase.CallParameterSeparator
   fullName: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.CallParameterSeparator
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.OldController*
-  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.OldController
-  href: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_OldController
-  name: OldController
-  nameWithType: UFClickableTagHelperBase.OldController
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.OldController
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.OldAction*
-  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.OldAction
-  href: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_OldAction
-  name: OldAction
-  nameWithType: UFClickableTagHelperBase.OldAction
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.OldAction
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.OldRouteValues*
-  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.OldRouteValues
-  href: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_OldRouteValues
-  name: OldRouteValues
-  nameWithType: UFClickableTagHelperBase.OldRouteValues
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.OldRouteValues
-- uid: System.Collections.Generic.IDictionary{System.String,System.String}
-  commentId: T:System.Collections.Generic.IDictionary{System.String,System.String}
-  parent: System.Collections.Generic
-  definition: System.Collections.Generic.IDictionary`2
-  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
-  name: IDictionary<string, string>
-  nameWithType: IDictionary<string, string>
-  fullName: System.Collections.Generic.IDictionary<string, string>
-  nameWithType.vb: IDictionary(Of String, String)
-  fullName.vb: System.Collections.Generic.IDictionary(Of String, String)
-  name.vb: IDictionary(Of String, String)
-  spec.csharp:
-  - uid: System.Collections.Generic.IDictionary`2
-    name: IDictionary
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
-  - name: <
-  - uid: System.String
-    name: string
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.string
-  - name: ','
-  - name: " "
-  - uid: System.String
-    name: string
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.string
-  - name: '>'
-  spec.vb:
-  - uid: System.Collections.Generic.IDictionary`2
-    name: IDictionary
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
-  - name: (
-  - name: Of
-  - name: " "
-  - uid: System.String
-    name: String
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.string
-  - name: ','
-  - name: " "
-  - uid: System.String
-    name: String
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.string
-  - name: )
-- uid: System.Collections.Generic.IDictionary`2
-  commentId: T:System.Collections.Generic.IDictionary`2
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
-  name: IDictionary<TKey, TValue>
-  nameWithType: IDictionary<TKey, TValue>
-  fullName: System.Collections.Generic.IDictionary<TKey, TValue>
-  nameWithType.vb: IDictionary(Of TKey, TValue)
-  fullName.vb: System.Collections.Generic.IDictionary(Of TKey, TValue)
-  name.vb: IDictionary(Of TKey, TValue)
-  spec.csharp:
-  - uid: System.Collections.Generic.IDictionary`2
-    name: IDictionary
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
-  - name: <
-  - name: TKey
-  - name: ','
-  - name: " "
-  - name: TValue
-  - name: '>'
-  spec.vb:
-  - uid: System.Collections.Generic.IDictionary`2
-    name: IDictionary
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.idictionary-2
-  - name: (
-  - name: Of
-  - name: " "
-  - name: TKey
-  - name: ','
-  - name: " "
-  - name: TValue
-  - name: )
-- uid: System.Collections.Generic
-  commentId: N:System.Collections.Generic
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system
-  name: System.Collections.Generic
-  nameWithType: System.Collections.Generic
-  fullName: System.Collections.Generic
-  spec.csharp:
-  - uid: System
-    name: System
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system
-  - name: .
-  - uid: System.Collections
-    name: Collections
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections
-  - name: .
-  - uid: System.Collections.Generic
-    name: Generic
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
-  spec.vb:
-  - uid: System
-    name: System
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system
-  - name: .
-  - uid: System.Collections
-    name: Collections
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections
-  - name: .
-  - uid: System.Collections.Generic
-    name: Generic
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.Theme*
   commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.Theme
   href: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Lib_UFClickableTagHelperBase_Theme

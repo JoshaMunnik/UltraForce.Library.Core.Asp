@@ -28,6 +28,7 @@
 // </license>
 
 using System.Diagnostics.CodeAnalysis;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Microsoft.AspNetCore.Mvc.TagHelpers;
 using Microsoft.AspNetCore.Mvc.ViewFeatures;
 using Microsoft.AspNetCore.Razor.TagHelpers;
@@ -44,21 +45,25 @@ namespace UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms;
 /// If there are no field errors, the field error block is not rendered.
 /// </para>
 /// <para>
-/// Renders with wrapping:<br/>
-/// &lt;div class="{Theme.GetInputWrapperClasses()}"&gt;<br/>
-/// &lt;label class="{Theme.GetInputLabelClasses()}" for="{id}"&gt;{label}&lt;/label&gt;<br/>
-/// &lt;select class="{Theme.GetSelectClasses() id={} ..." &gt;<br/>
-/// {children}<br/>
-/// &lt;/select&gt;<br/>
-/// {Theme.GetValidationFeedbackContainer(id)}<br/>
-/// &lt;div class="{Theme.GetFieldErrorsClasses()}"&gt;{Theme.GetFieldErrorsHtml()}&lt;/div&gt;<br/>
+/// Renders with wrapping:
+/// <code>
+/// &lt;div class="{GetInputWrapperClasses()}"&gt;<br/>
+///   &lt;label class="{GetInputLabelClasses()}" for="{id}"&gt;{label}&lt;/label&gt;<br/>
+///   &lt;select class="{GetSelectClasses() id={} ..." &gt;<br/>
+///     {children}<br/>
+///   &lt;/select&gt;<br/>
+///   {GetValidationFeedbackContainer(id)}<br/>
+///   &lt;div class="{GetFieldErrorsClasses()}"&gt;{GetFieldErrorsHtml()}&lt;/div&gt;<br/>
 /// &lt;/div&gt;
+/// </code>
 /// </para>
 /// <para>
-/// Renders without wrapping:<br/>
-/// &lt;select class="{Theme.GetSelectClasses()}" &gt;<br/>
-/// {children}<br/>
+/// Renders without wrapping:
+/// <code>
+/// &lt;select class="{GetSelectClasses()}" &gt;<br/>
+///   {children}<br/>
 /// &lt;/select&gt;
+/// </code>
 /// </para>
 /// </summary>
 [SuppressMessage("ReSharper", "ClassWithVirtualMembersNeverInherited.Global")]
@@ -121,7 +126,7 @@ public class UFSelectTagHelper(IHtmlGenerator aGenerator, IUFTheme aTheme)
       output.Attributes.SetAttribute("id", Guid.NewGuid().ToString());
     }
     string id = (output.Attributes["id"] == null) ? "" : output.Attributes["id"].Value.ToString()!;
-    string errorMessage = this.Theme.GetFieldErrorsHtml(
+    string errorMessage = this.GetFieldErrorsHtml(
       this.ViewContext.ModelState,
       output.Attributes["name"]?.Value?.ToString() ?? ""
     );
@@ -131,10 +136,73 @@ public class UFSelectTagHelper(IHtmlGenerator aGenerator, IUFTheme aTheme)
     }
     else
     {
-      UFTagHelperTools.AddClasses(output, this.Theme.GetSelectClasses(this));
+      UFTagHelperTools.AddClasses(output, this.GetSelectClasses());
     }
   }
 
+  #endregion
+  
+  #region overridable protected methods
+  
+  /// <summary>
+  /// Returns css classes for the select element.
+  /// </summary>
+  /// <returns></returns>
+  protected virtual string GetSelectClasses()
+  {
+    return this.Theme.GetSelectClasses(this);
+  }
+  
+  /// <summary>
+  /// Returns css classes for the label element.
+  /// </summary>
+  /// <returns></returns>
+  protected virtual string GetTextLabelClasses(string aType)
+  {
+    return this.Theme.GetTextLabelClasses(this, aType);
+  }
+  
+  
+  /// <summary>
+  /// Returns css classes for the wrapper element.
+  /// </summary>
+  /// <param name="aType"></param>
+  /// <returns></returns>
+  protected virtual string GetTextWrapperClasses(string aType)
+  {
+    return this.Theme.GetTextWrapperClasses(this, aType);
+  }
+  
+  /// <summary>
+  /// Returns the html for the validation feedback container.
+  /// </summary>
+  /// <param name="anId"></param>
+  /// <returns></returns>
+  protected virtual string GetValidationFeedbackContainerHtml(string anId)
+  {
+    return this.Theme.GetValidationFeedbackContainerHtml(anId);
+  }
+  
+  /// <summary>
+  /// Returns the css classes for the field errors block.
+  /// </summary>
+  /// <returns></returns>
+  protected virtual string GetFieldErrorsClasses()
+  {
+    return this.Theme.GetFieldErrorsClasses();
+  }
+
+  /// <summary>
+  /// Returns the html for the field errors block.
+  /// </summary>
+  /// <param name="states"></param>
+  /// <param name="name"></param>
+  /// <returns></returns>
+  protected virtual string GetFieldErrorsHtml(ModelStateDictionary states, string name)
+  {
+    return this.Theme.GetFieldErrorsHtml(states, name);
+  }
+  
   #endregion
 
   #region private methods
@@ -151,17 +219,17 @@ public class UFSelectTagHelper(IHtmlGenerator aGenerator, IUFTheme aTheme)
   )
   {
     string errorMessage = anErrorMessage != ""
-      ? $"<div class=\"{this.Theme.GetFieldErrorsClasses()}\">{anErrorMessage}</div>"
+      ? $"<div class=\"{this.GetFieldErrorsClasses()}\">{anErrorMessage}</div>"
       : "";
-    UFTagHelperTools.AddClasses(anOutput, this.Theme.GetSelectClasses(this));
+    UFTagHelperTools.AddClasses(anOutput, this.GetSelectClasses());
     string labelHtml = string.IsNullOrEmpty(aLabel)
       ? ""
-      : $"<label class=\"{this.Theme.GetTextLabelClasses(this, "select")}\" for=\"{anId}\">{aLabel}</label>";
+      : $"<label class=\"{this.GetTextLabelClasses("select")}\" for=\"{anId}\">{aLabel}</label>";
     anOutput.PreElement.SetHtmlContent(
-      $"<div class=\"{this.Theme.GetTextWrapperClasses(this, "select")}\">{labelHtml}"
+      $"<div class=\"{this.GetTextWrapperClasses("select")}\">{labelHtml}"
     );
     anOutput.PostElement.SetHtmlContent(
-      $"{this.Theme.GetValidationFeedbackContainerHtml(anId)}{errorMessage}</div>"
+      $"{this.GetValidationFeedbackContainerHtml(anId)}{errorMessage}</div>"
     );
   }
 

@@ -6,14 +6,14 @@ items:
   parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
   children:
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFRowTagHelper.#ctor(UltraForce.Library.Core.Asp.Services.IUFTheme)
-  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFRowTagHelper.AlignContent
-  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFRowTagHelper.AlignItems
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFRowTagHelper.AlignCrossAxis
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFRowTagHelper.Buttons
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFRowTagHelper.DistributeContentCrossAxis
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFRowTagHelper.DistributeContentMainAxis
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFRowTagHelper.FullHeight
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFRowTagHelper.FullWidth
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFRowTagHelper.Gap
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFRowTagHelper.GetRowClasses
-  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFRowTagHelper.JustifyContent
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFRowTagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFRowTagHelper.Wrap
   langs:
@@ -42,9 +42,7 @@ items:
     Renders:
 
     <pre><code class="lang-csharp">&lt;div class="{GetRowClasses()}"&gt;
-
-    {children}
-
+      {children}
     &lt;/div&gt;</code></pre>
 
     </p>
@@ -118,9 +116,7 @@ items:
     Renders:
 
     <pre><code class="lang-csharp">&lt;div class="{GetRowClasses()}"&gt;
-
-    {children}
-
+      {children}
     &lt;/div&gt;</code></pre>
 
     </p>
@@ -135,70 +131,70 @@ items:
   nameWithType.vb: UFRowTagHelper.New(IUFTheme)
   fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFRowTagHelper.New(UltraForce.Library.Core.Asp.Services.IUFTheme)
   name.vb: New(IUFTheme)
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFRowTagHelper.JustifyContent
-  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFRowTagHelper.JustifyContent
-  id: JustifyContent
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFRowTagHelper.DistributeContentMainAxis
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFRowTagHelper.DistributeContentMainAxis
+  id: DistributeContentMainAxis
   parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFRowTagHelper
   langs:
   - csharp
   - vb
-  name: JustifyContent
-  nameWithType: UFRowTagHelper.JustifyContent
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFRowTagHelper.JustifyContent
+  name: DistributeContentMainAxis
+  nameWithType: UFRowTagHelper.DistributeContentMainAxis
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFRowTagHelper.DistributeContentMainAxis
   type: Property
   source:
     remote:
       path: UltraForce.Library.Core.Asp/TagHelpers/Styling/Layout/UFRowTagHelper.cs
       branch: master
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
-    id: JustifyContent
+    id: DistributeContentMainAxis
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Layout/UFRowTagHelper.cs
     startLine: 56
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
-  summary: How to distribute the items in the direction of the container.
+  summary: How to distribute the items in the direction of the main axis.
   example: []
   syntax:
     content: >-
-      [HtmlAttributeName("justify-content")]
+      [HtmlAttributeName("distribute-main-axis")]
 
-      public UFFlexJustifyContent JustifyContent { get; set; }
+      public UFFlexDistributeContent DistributeContentMainAxis { get; set; }
     parameters: []
     return:
-      type: UltraForce.Library.Core.Asp.Types.Enums.UFFlexJustifyContent
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContent
     content.vb: >-
-      <HtmlAttributeName("justify-content")>
+      <HtmlAttributeName("distribute-main-axis")>
 
-      Public Property JustifyContent As UFFlexJustifyContent
-  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFRowTagHelper.JustifyContent*
+      Public Property DistributeContentMainAxis As UFFlexDistributeContent
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFRowTagHelper.DistributeContentMainAxis*
   implements:
-  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.JustifyContent
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.DistributeContentMainAxis
   attributes:
   - type: Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute
     ctor: Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute.#ctor(System.String)
     arguments:
     - type: System.String
-      value: justify-content
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFRowTagHelper.AlignItems
-  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFRowTagHelper.AlignItems
-  id: AlignItems
+      value: distribute-main-axis
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFRowTagHelper.AlignCrossAxis
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFRowTagHelper.AlignCrossAxis
+  id: AlignCrossAxis
   parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFRowTagHelper
   langs:
   - csharp
   - vb
-  name: AlignItems
-  nameWithType: UFRowTagHelper.AlignItems
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFRowTagHelper.AlignItems
+  name: AlignCrossAxis
+  nameWithType: UFRowTagHelper.AlignCrossAxis
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFRowTagHelper.AlignCrossAxis
   type: Property
   source:
     remote:
       path: UltraForce.Library.Core.Asp/TagHelpers/Styling/Layout/UFRowTagHelper.cs
       branch: master
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
-    id: AlignItems
+    id: AlignCrossAxis
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Layout/UFRowTagHelper.cs
-    startLine: 60
+    startLine: 61
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
@@ -206,70 +202,73 @@ items:
   example: []
   syntax:
     content: >-
-      [HtmlAttributeName("align-items")]
+      [HtmlAttributeName("align-cross-axis")]
 
-      public UFFlexAlignItems AlignItems { get; set; }
+      public UFFlexAlignItems AlignCrossAxis { get; set; }
     parameters: []
     return:
       type: UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignItems
     content.vb: >-
-      <HtmlAttributeName("align-items")>
+      <HtmlAttributeName("align-cross-axis")>
 
-      Public Property AlignItems As UFFlexAlignItems
-  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFRowTagHelper.AlignItems*
+      Public Property AlignCrossAxis As UFFlexAlignItems
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFRowTagHelper.AlignCrossAxis*
   implements:
-  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.AlignItems
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.AlignCrossAxis
   attributes:
   - type: Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute
     ctor: Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute.#ctor(System.String)
     arguments:
     - type: System.String
-      value: align-items
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFRowTagHelper.AlignContent
-  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFRowTagHelper.AlignContent
-  id: AlignContent
+      value: align-cross-axis
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFRowTagHelper.DistributeContentCrossAxis
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFRowTagHelper.DistributeContentCrossAxis
+  id: DistributeContentCrossAxis
   parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFRowTagHelper
   langs:
   - csharp
   - vb
-  name: AlignContent
-  nameWithType: UFRowTagHelper.AlignContent
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFRowTagHelper.AlignContent
+  name: DistributeContentCrossAxis
+  nameWithType: UFRowTagHelper.DistributeContentCrossAxis
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFRowTagHelper.DistributeContentCrossAxis
   type: Property
   source:
     remote:
       path: UltraForce.Library.Core.Asp/TagHelpers/Styling/Layout/UFRowTagHelper.cs
       branch: master
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
-    id: AlignContent
+    id: DistributeContentCrossAxis
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Layout/UFRowTagHelper.cs
-    startLine: 64
+    startLine: 65
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
-  summary: How to distribute the items in the opposite direction.
+  summary: >-
+    How to distribute the items in the opposite direction. This property is only of use
+
+    when <xref href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.Wrap" data-throw-if-not-resolved="false"></xref> is true and there are multiple rows or columns.
   example: []
   syntax:
     content: >-
-      [HtmlAttributeName("align-content")]
+      [HtmlAttributeName("distribute-cross-axis")]
 
-      public UFFlexAlignContent AlignContent { get; set; }
+      public UFFlexDistributeContent DistributeContentCrossAxis { get; set; }
     parameters: []
     return:
-      type: UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignContent
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContent
     content.vb: >-
-      <HtmlAttributeName("align-content")>
+      <HtmlAttributeName("distribute-cross-axis")>
 
-      Public Property AlignContent As UFFlexAlignContent
-  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFRowTagHelper.AlignContent*
+      Public Property DistributeContentCrossAxis As UFFlexDistributeContent
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFRowTagHelper.DistributeContentCrossAxis*
   implements:
-  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.AlignContent
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.DistributeContentCrossAxis
   attributes:
   - type: Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute
     ctor: Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute.#ctor(System.String)
     arguments:
     - type: System.String
-      value: align-content
+      value: distribute-cross-axis
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFRowTagHelper.Buttons
   commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFRowTagHelper.Buttons
   id: Buttons
@@ -288,7 +287,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Buttons
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Layout/UFRowTagHelper.cs
-    startLine: 68
+    startLine: 71
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
@@ -333,7 +332,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Gap
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Layout/UFRowTagHelper.cs
-    startLine: 72
+    startLine: 75
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
@@ -378,7 +377,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: FullWidth
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Layout/UFRowTagHelper.cs
-    startLine: 76
+    startLine: 79
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
@@ -423,7 +422,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: FullHeight
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Layout/UFRowTagHelper.cs
-    startLine: 80
+    startLine: 83
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
@@ -468,7 +467,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Wrap
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Layout/UFRowTagHelper.cs
-    startLine: 84
+    startLine: 87
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
@@ -513,7 +512,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Process
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Layout/UFRowTagHelper.cs
-    startLine: 92
+    startLine: 95
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
@@ -552,7 +551,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetRowClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Layout/UFRowTagHelper.cs
-    startLine: 107
+    startLine: 110
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
@@ -1153,26 +1152,26 @@ references:
   - uid: UltraForce.Library.Core.Asp.Services
     name: Services
     href: UltraForce.Library.Core.Asp.Services.html
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFRowTagHelper.JustifyContent*
-  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFRowTagHelper.JustifyContent
-  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFRowTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Layout_UFRowTagHelper_JustifyContent
-  name: JustifyContent
-  nameWithType: UFRowTagHelper.JustifyContent
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFRowTagHelper.JustifyContent
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.JustifyContent
-  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.JustifyContent
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFRowTagHelper.DistributeContentMainAxis*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFRowTagHelper.DistributeContentMainAxis
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFRowTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Layout_UFRowTagHelper_DistributeContentMainAxis
+  name: DistributeContentMainAxis
+  nameWithType: UFRowTagHelper.DistributeContentMainAxis
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFRowTagHelper.DistributeContentMainAxis
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.DistributeContentMainAxis
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.DistributeContentMainAxis
   parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties
-  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Layout_IUFFlexProperties_JustifyContent
-  name: JustifyContent
-  nameWithType: IUFFlexProperties.JustifyContent
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.JustifyContent
-- uid: UltraForce.Library.Core.Asp.Types.Enums.UFFlexJustifyContent
-  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFFlexJustifyContent
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Layout_IUFFlexProperties_DistributeContentMainAxis
+  name: DistributeContentMainAxis
+  nameWithType: IUFFlexProperties.DistributeContentMainAxis
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.DistributeContentMainAxis
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContent
+  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContent
   parent: UltraForce.Library.Core.Asp.Types.Enums
-  href: UltraForce.Library.Core.Asp.Types.Enums.UFFlexJustifyContent.html
-  name: UFFlexJustifyContent
-  nameWithType: UFFlexJustifyContent
-  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFFlexJustifyContent
+  href: UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContent.html
+  name: UFFlexDistributeContent
+  nameWithType: UFFlexDistributeContent
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContent
 - uid: UltraForce.Library.Core.Asp.Types.Enums
   commentId: N:UltraForce.Library.Core.Asp.Types.Enums
   href: UltraForce.html
@@ -1227,19 +1226,19 @@ references:
   - uid: UltraForce.Library.Core.Asp.Types.Enums
     name: Enums
     href: UltraForce.Library.Core.Asp.Types.Enums.html
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFRowTagHelper.AlignItems*
-  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFRowTagHelper.AlignItems
-  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFRowTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Layout_UFRowTagHelper_AlignItems
-  name: AlignItems
-  nameWithType: UFRowTagHelper.AlignItems
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFRowTagHelper.AlignItems
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.AlignItems
-  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.AlignItems
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFRowTagHelper.AlignCrossAxis*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFRowTagHelper.AlignCrossAxis
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFRowTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Layout_UFRowTagHelper_AlignCrossAxis
+  name: AlignCrossAxis
+  nameWithType: UFRowTagHelper.AlignCrossAxis
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFRowTagHelper.AlignCrossAxis
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.AlignCrossAxis
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.AlignCrossAxis
   parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties
-  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Layout_IUFFlexProperties_AlignItems
-  name: AlignItems
-  nameWithType: IUFFlexProperties.AlignItems
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.AlignItems
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Layout_IUFFlexProperties_AlignCrossAxis
+  name: AlignCrossAxis
+  nameWithType: IUFFlexProperties.AlignCrossAxis
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.AlignCrossAxis
 - uid: UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignItems
   commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignItems
   parent: UltraForce.Library.Core.Asp.Types.Enums
@@ -1247,26 +1246,26 @@ references:
   name: UFFlexAlignItems
   nameWithType: UFFlexAlignItems
   fullName: UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignItems
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFRowTagHelper.AlignContent*
-  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFRowTagHelper.AlignContent
-  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFRowTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Layout_UFRowTagHelper_AlignContent
-  name: AlignContent
-  nameWithType: UFRowTagHelper.AlignContent
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFRowTagHelper.AlignContent
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.AlignContent
-  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.AlignContent
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.Wrap
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.Wrap
   parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties
-  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Layout_IUFFlexProperties_AlignContent
-  name: AlignContent
-  nameWithType: IUFFlexProperties.AlignContent
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.AlignContent
-- uid: UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignContent
-  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignContent
-  parent: UltraForce.Library.Core.Asp.Types.Enums
-  href: UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignContent.html
-  name: UFFlexAlignContent
-  nameWithType: UFFlexAlignContent
-  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignContent
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Layout_IUFFlexProperties_Wrap
+  name: Wrap
+  nameWithType: IUFFlexProperties.Wrap
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.Wrap
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFRowTagHelper.DistributeContentCrossAxis*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFRowTagHelper.DistributeContentCrossAxis
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFRowTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Layout_UFRowTagHelper_DistributeContentCrossAxis
+  name: DistributeContentCrossAxis
+  nameWithType: UFRowTagHelper.DistributeContentCrossAxis
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFRowTagHelper.DistributeContentCrossAxis
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.DistributeContentCrossAxis
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.DistributeContentCrossAxis
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Layout_IUFFlexProperties_DistributeContentCrossAxis
+  name: DistributeContentCrossAxis
+  nameWithType: IUFFlexProperties.DistributeContentCrossAxis
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.DistributeContentCrossAxis
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFRowTagHelper.Buttons*
   commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFRowTagHelper.Buttons
   href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFRowTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Layout_UFRowTagHelper_Buttons
@@ -1387,13 +1386,6 @@ references:
   name: Wrap
   nameWithType: UFRowTagHelper.Wrap
   fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFRowTagHelper.Wrap
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.Wrap
-  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.Wrap
-  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties
-  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Layout_IUFFlexProperties_Wrap
-  name: Wrap
-  nameWithType: IUFFlexProperties.Wrap
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.Wrap
 - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
   commentId: M:Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
   parent: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper

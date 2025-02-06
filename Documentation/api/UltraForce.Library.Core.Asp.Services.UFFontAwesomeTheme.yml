@@ -81,7 +81,6 @@ items:
   - UltraForce.Library.Core.Asp.Services.UFTheme.GetFilterButtonClasses
   - UltraForce.Library.Core.Asp.Services.UFTheme.GetSortAscendingClasses
   - UltraForce.Library.Core.Asp.Services.UFTheme.GetSortDescendingClasses
-  - UltraForce.Library.Core.Asp.Services.UFTheme.IsCssClass(System.String)
   - UltraForce.Library.Core.Asp.Services.UFTheme.GetValidationFeedbackClasses
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
@@ -1412,37 +1411,6 @@ references:
     name: GetSortDescendingClasses
     href: UltraForce.Library.Core.Asp.Services.UFTheme.html#UltraForce_Library_Core_Asp_Services_UFTheme_GetSortDescendingClasses
   - name: (
-  - name: )
-- uid: UltraForce.Library.Core.Asp.Services.UFTheme.IsCssClass(System.String)
-  commentId: M:UltraForce.Library.Core.Asp.Services.UFTheme.IsCssClass(System.String)
-  parent: UltraForce.Library.Core.Asp.Services.UFTheme
-  isExternal: true
-  href: UltraForce.Library.Core.Asp.Services.UFTheme.html#UltraForce_Library_Core_Asp_Services_UFTheme_IsCssClass_System_String_
-  name: IsCssClass(string)
-  nameWithType: UFTheme.IsCssClass(string)
-  fullName: UltraForce.Library.Core.Asp.Services.UFTheme.IsCssClass(string)
-  nameWithType.vb: UFTheme.IsCssClass(String)
-  fullName.vb: UltraForce.Library.Core.Asp.Services.UFTheme.IsCssClass(String)
-  name.vb: IsCssClass(String)
-  spec.csharp:
-  - uid: UltraForce.Library.Core.Asp.Services.UFTheme.IsCssClass(System.String)
-    name: IsCssClass
-    href: UltraForce.Library.Core.Asp.Services.UFTheme.html#UltraForce_Library_Core_Asp_Services_UFTheme_IsCssClass_System_String_
-  - name: (
-  - uid: System.String
-    name: string
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.string
-  - name: )
-  spec.vb:
-  - uid: UltraForce.Library.Core.Asp.Services.UFTheme.IsCssClass(System.String)
-    name: IsCssClass
-    href: UltraForce.Library.Core.Asp.Services.UFTheme.html#UltraForce_Library_Core_Asp_Services_UFTheme_IsCssClass_System_String_
-  - name: (
-  - uid: System.String
-    name: String
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
 - uid: UltraForce.Library.Core.Asp.Services.UFTheme.GetValidationFeedbackClasses
   commentId: M:UltraForce.Library.Core.Asp.Services.UFTheme.GetValidationFeedbackClasses

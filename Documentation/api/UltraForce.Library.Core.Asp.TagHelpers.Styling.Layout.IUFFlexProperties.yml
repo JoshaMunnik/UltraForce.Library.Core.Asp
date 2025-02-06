@@ -5,13 +5,13 @@ items:
   id: IUFFlexProperties
   parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
   children:
-  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.AlignContent
-  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.AlignItems
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.AlignCrossAxis
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.Buttons
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.DistributeContentCrossAxis
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.DistributeContentMainAxis
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.FullHeight
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.FullWidth
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.Gap
-  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.JustifyContent
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.Wrap
   langs:
   - csharp
@@ -36,99 +36,102 @@ items:
   syntax:
     content: public interface IUFFlexProperties
     content.vb: Public Interface IUFFlexProperties
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.JustifyContent
-  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.JustifyContent
-  id: JustifyContent
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.DistributeContentMainAxis
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.DistributeContentMainAxis
+  id: DistributeContentMainAxis
   parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties
   langs:
   - csharp
   - vb
-  name: JustifyContent
-  nameWithType: IUFFlexProperties.JustifyContent
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.JustifyContent
+  name: DistributeContentMainAxis
+  nameWithType: IUFFlexProperties.DistributeContentMainAxis
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.DistributeContentMainAxis
   type: Property
   source:
     remote:
       path: UltraForce.Library.Core.Asp/TagHelpers/Styling/Layout/IUFFlexProperties.cs
       branch: master
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
-    id: JustifyContent
+    id: DistributeContentMainAxis
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Layout/IUFFlexProperties.cs
     startLine: 41
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
-  summary: How to distribute the items in the direction of the container.
+  summary: How to distribute the items in the direction of the main axis.
   example: []
   syntax:
-    content: UFFlexJustifyContent JustifyContent { get; set; }
+    content: UFFlexDistributeContent DistributeContentMainAxis { get; set; }
     parameters: []
     return:
-      type: UltraForce.Library.Core.Asp.Types.Enums.UFFlexJustifyContent
-    content.vb: Property JustifyContent As UFFlexJustifyContent
-  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.JustifyContent*
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.AlignItems
-  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.AlignItems
-  id: AlignItems
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContent
+    content.vb: Property DistributeContentMainAxis As UFFlexDistributeContent
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.DistributeContentMainAxis*
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.DistributeContentCrossAxis
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.DistributeContentCrossAxis
+  id: DistributeContentCrossAxis
   parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties
   langs:
   - csharp
   - vb
-  name: AlignItems
-  nameWithType: IUFFlexProperties.AlignItems
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.AlignItems
+  name: DistributeContentCrossAxis
+  nameWithType: IUFFlexProperties.DistributeContentCrossAxis
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.DistributeContentCrossAxis
   type: Property
   source:
     remote:
       path: UltraForce.Library.Core.Asp/TagHelpers/Styling/Layout/IUFFlexProperties.cs
       branch: master
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
-    id: AlignItems
+    id: DistributeContentCrossAxis
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Layout/IUFFlexProperties.cs
-    startLine: 46
+    startLine: 47
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
+  summary: >-
+    How to distribute the items in the opposite direction. This property is only of use
+
+    when <xref href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.Wrap" data-throw-if-not-resolved="false"></xref> is true and there are multiple rows or columns.
+  example: []
+  syntax:
+    content: UFFlexDistributeContent DistributeContentCrossAxis { get; set; }
+    parameters: []
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContent
+    content.vb: Property DistributeContentCrossAxis As UFFlexDistributeContent
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.DistributeContentCrossAxis*
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.AlignCrossAxis
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.AlignCrossAxis
+  id: AlignCrossAxis
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties
+  langs:
+  - csharp
+  - vb
+  name: AlignCrossAxis
+  nameWithType: IUFFlexProperties.AlignCrossAxis
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.AlignCrossAxis
+  type: Property
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Styling/Layout/IUFFlexProperties.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: AlignCrossAxis
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Layout/IUFFlexProperties.cs
+    startLine: 52
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
   summary: How to align the items in the opposite direction.
   example: []
   syntax:
-    content: UFFlexAlignItems AlignItems { get; set; }
+    content: UFFlexAlignItems AlignCrossAxis { get; set; }
     parameters: []
     return:
       type: UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignItems
-    content.vb: Property AlignItems As UFFlexAlignItems
-  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.AlignItems*
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.AlignContent
-  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.AlignContent
-  id: AlignContent
-  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties
-  langs:
-  - csharp
-  - vb
-  name: AlignContent
-  nameWithType: IUFFlexProperties.AlignContent
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.AlignContent
-  type: Property
-  source:
-    remote:
-      path: UltraForce.Library.Core.Asp/TagHelpers/Styling/Layout/IUFFlexProperties.cs
-      branch: master
-      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
-    id: AlignContent
-    path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Layout/IUFFlexProperties.cs
-    startLine: 51
-  assemblies:
-  - UltraForce.Library.Core.Asp
-  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
-  summary: How to distribute the items in the opposite direction.
-  example: []
-  syntax:
-    content: UFFlexAlignContent AlignContent { get; set; }
-    parameters: []
-    return:
-      type: UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignContent
-    content.vb: Property AlignContent As UFFlexAlignContent
-  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.AlignContent*
+    content.vb: Property AlignCrossAxis As UFFlexAlignItems
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.AlignCrossAxis*
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.Buttons
   commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.Buttons
   id: Buttons
@@ -147,7 +150,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Buttons
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Layout/IUFFlexProperties.cs
-    startLine: 56
+    startLine: 57
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
@@ -178,7 +181,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Gap
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Layout/IUFFlexProperties.cs
-    startLine: 61
+    startLine: 62
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
@@ -209,7 +212,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: FullWidth
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Layout/IUFFlexProperties.cs
-    startLine: 66
+    startLine: 67
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
@@ -240,7 +243,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: FullHeight
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Layout/IUFFlexProperties.cs
-    startLine: 71
+    startLine: 72
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
@@ -271,7 +274,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Wrap
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Layout/IUFFlexProperties.cs
-    startLine: 76
+    startLine: 77
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
@@ -347,19 +350,19 @@ references:
   - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
     name: Layout
     href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.html
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.JustifyContent*
-  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.JustifyContent
-  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Layout_IUFFlexProperties_JustifyContent
-  name: JustifyContent
-  nameWithType: IUFFlexProperties.JustifyContent
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.JustifyContent
-- uid: UltraForce.Library.Core.Asp.Types.Enums.UFFlexJustifyContent
-  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFFlexJustifyContent
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.DistributeContentMainAxis*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.DistributeContentMainAxis
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Layout_IUFFlexProperties_DistributeContentMainAxis
+  name: DistributeContentMainAxis
+  nameWithType: IUFFlexProperties.DistributeContentMainAxis
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.DistributeContentMainAxis
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContent
+  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContent
   parent: UltraForce.Library.Core.Asp.Types.Enums
-  href: UltraForce.Library.Core.Asp.Types.Enums.UFFlexJustifyContent.html
-  name: UFFlexJustifyContent
-  nameWithType: UFFlexJustifyContent
-  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFFlexJustifyContent
+  href: UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContent.html
+  name: UFFlexDistributeContent
+  nameWithType: UFFlexDistributeContent
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContent
 - uid: UltraForce.Library.Core.Asp.Types.Enums
   commentId: N:UltraForce.Library.Core.Asp.Types.Enums
   href: UltraForce.html
@@ -414,12 +417,32 @@ references:
   - uid: UltraForce.Library.Core.Asp.Types.Enums
     name: Enums
     href: UltraForce.Library.Core.Asp.Types.Enums.html
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.AlignItems*
-  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.AlignItems
-  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Layout_IUFFlexProperties_AlignItems
-  name: AlignItems
-  nameWithType: IUFFlexProperties.AlignItems
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.AlignItems
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.Wrap
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.Wrap
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Layout_IUFFlexProperties_Wrap
+  name: Wrap
+  nameWithType: IUFFlexProperties.Wrap
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.Wrap
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.DistributeContentCrossAxis*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.DistributeContentCrossAxis
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Layout_IUFFlexProperties_DistributeContentCrossAxis
+  name: DistributeContentCrossAxis
+  nameWithType: IUFFlexProperties.DistributeContentCrossAxis
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.DistributeContentCrossAxis
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties
+  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.html
+  name: IUFFlexProperties
+  nameWithType: IUFFlexProperties
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.AlignCrossAxis*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.AlignCrossAxis
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Layout_IUFFlexProperties_AlignCrossAxis
+  name: AlignCrossAxis
+  nameWithType: IUFFlexProperties.AlignCrossAxis
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.AlignCrossAxis
 - uid: UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignItems
   commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignItems
   parent: UltraForce.Library.Core.Asp.Types.Enums
@@ -427,19 +450,6 @@ references:
   name: UFFlexAlignItems
   nameWithType: UFFlexAlignItems
   fullName: UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignItems
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.AlignContent*
-  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.AlignContent
-  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Layout_IUFFlexProperties_AlignContent
-  name: AlignContent
-  nameWithType: IUFFlexProperties.AlignContent
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.AlignContent
-- uid: UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignContent
-  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignContent
-  parent: UltraForce.Library.Core.Asp.Types.Enums
-  href: UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignContent.html
-  name: UFFlexAlignContent
-  nameWithType: UFFlexAlignContent
-  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignContent
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.Buttons*
   commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.Buttons
   href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Layout_IUFFlexProperties_Buttons
