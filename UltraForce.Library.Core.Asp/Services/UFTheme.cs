@@ -131,25 +131,25 @@ public class UFTheme : IUFTheme
   }
 
   /// <inheritdoc />
-  public virtual string GetTextWrapperClasses(IUFInputProperties aProperties, string aType)
+  public virtual string GetTextInputWrapperClasses(IUFInputProperties aProperties, string aType)
   {
     return "";
   }
 
   /// <inheritdoc />
-  public virtual string GetTextLabelClasses(IUFInputProperties aProperties, string aType)
+  public virtual string GetTextInputLabelClasses(IUFInputProperties aProperties, string aType)
   {
     return "";
   }
 
   /// <inheritdoc />
-  public virtual string GetTextLabelSpanClasses(IUFInputProperties aProperties, string aType)
+  public virtual string GetTextInputLabelSpanClasses(IUFInputProperties aProperties, string aType)
   {
     return "";
   }
 
   /// <inheritdoc />
-  public virtual string GetTextLabelDescriptionClasses(IUFInputProperties aProperties, string aType)
+  public virtual string GetTextInputLabelDescriptionClasses(IUFInputProperties aProperties, string aType)
   {
     return "";
   }

@@ -157,7 +157,7 @@ public interface IUFTheme
   /// <param name="aProperties"></param>
   /// <param name="aType">Type the input is created for</param>
   /// <returns></returns>
-  string GetTextWrapperClasses(IUFInputProperties aProperties, string aType);
+  string GetTextInputWrapperClasses(IUFInputProperties aProperties, string aType);
 
   /// <summary>
   /// Returns the css classes to use with the label for text input and select elements.
@@ -165,7 +165,7 @@ public interface IUFTheme
   /// <param name="aProperties"></param>
   /// <param name="aType">Type the input is created for</param>
   /// <returns></returns>
-  string GetTextLabelClasses(IUFInputProperties aProperties, string aType);
+  string GetTextInputLabelClasses(IUFInputProperties aProperties, string aType);
 
   /// <summary>
   /// Returns the css classes to use with the span within the label for text input and select
@@ -174,7 +174,7 @@ public interface IUFTheme
   /// <param name="aProperties"></param>
   /// <param name="aType">Type the input is created for</param>
   /// <returns></returns>
-  string GetTextLabelSpanClasses(IUFInputProperties aProperties, string aType);
+  string GetTextInputLabelSpanClasses(IUFInputProperties aProperties, string aType);
 
   /// <summary>
   /// Returns the css classes to use with the description within label for text input and select
@@ -183,7 +183,7 @@ public interface IUFTheme
   /// <param name="aProperties"></param>
   /// <param name="aType">Type the input is created for</param>
   /// <returns></returns>
-  string GetTextLabelDescriptionClasses(IUFInputProperties aProperties, string aType);
+  string GetTextInputLabelDescriptionClasses(IUFInputProperties aProperties, string aType);
 
   /// <summary>
   /// Returns the css classes to use with the text input element.

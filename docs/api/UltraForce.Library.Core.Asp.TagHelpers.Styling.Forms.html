@@ -104,7 +104,7 @@ If there are no field errors, the field error block is not rendered.
 </p>
 <p>
 Renders text input with wrapping and label:
-<pre><code class="lang-csharp">&lt;div class="{GetTextWrapperClasses(type)}"&gt;
+<pre><code class="lang-csharp">&lt;div class="{GetTextInputWrapperClasses(type)}"&gt;
   &lt;label class="{GetTextLabelClasses(type)}" for="{id}"&gt;
     &lt;span class="{GetTextLabelSpanClasses(type)}"&gt;{label}&lt;/span&gt;
     &lt;span class="{GetTextLabelDescriptionClasses(type)}"&gt;{description}&lt;/span&gt;
@@ -116,7 +116,7 @@ Renders text input with wrapping and label:
 
 <p>
 Renders text input with wrapping and no label:
-<pre><code class="lang-csharp">&lt;div class="{GetTextWrapperClasses(type)}"&gt;
+<pre><code class="lang-csharp">&lt;div class="{GetTextInputWrapperClasses(type)}"&gt;
   &lt;input class="{GetTextInputClasses(type)}" id={} .../&gt;
   {GetValidationFeedbackContainer(id)}
   &lt;div class="{GetFieldErrorsClasses()}"&gt;{GetFieldErrorsHtml()}&lt;/div&gt;
@@ -128,7 +128,7 @@ Renders text input without wrapping:
 
 <p>
 Renders multiline text input with wrapping and label:
-<pre><code class="lang-csharp">&lt;div class="{GetTextWrapperClasses(type)}"&gt;
+<pre><code class="lang-csharp">&lt;div class="{GetTextInputWrapperClasses(type)}"&gt;
   &lt;label class="{GetTextLabelClasses(type)}" for="{id}"&gt;
     &lt;span class="{GetTextLabelSpanClasses(type)}"&gt;{label}&lt;/span&gt;
     &lt;span class="{GetTextLabelDescriptionClasses(type)}"&gt;{description}&lt;/span&gt;
@@ -140,7 +140,7 @@ Renders multiline text input with wrapping and label:
 
 <p>
 Renders multiline text input with wrapping and no label:
-<pre><code class="lang-csharp">&lt;div class="{GetTextWrapperClasses(type)}"&gt;
+<pre><code class="lang-csharp">&lt;div class="{GetTextInputWrapperClasses(type)}"&gt;
   &lt;textarea class="{GetTextInputClasses(type)}" id={} ..." &gt;{value}&lt;/textarea&gt;
   {GetValidationFeedbackContainer(id)}
   &lt;div class="{GetFieldErrorsClasses()}"&gt;{GetFieldErrorsHtml()}&lt;/div&gt;

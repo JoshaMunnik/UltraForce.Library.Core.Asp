@@ -60,6 +60,11 @@ public enum UFButtonType
   Tertiary,
   
   /// <summary>
+  /// Button using text styling
+  /// </summary>
+  Text,
+  
+  /// <summary>
   /// Button using link styling
   /// </summary>
   Link,

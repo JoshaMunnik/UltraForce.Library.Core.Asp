@@ -22,10 +22,10 @@ items:
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetRadioLabelSpanClasses
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetRadioWrapperClasses
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetTextInputClasses(System.String)
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetTextInputWrapperClasses(System.String)
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetTextLabelClasses(System.String)
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetTextLabelDescriptionClasses(System.String)
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetTextLabelSpanClasses(System.String)
-  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetTextWrapperClasses(System.String)
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetValidationFeedbackContainerHtml(System.String)
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.Label
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.Multiline
@@ -69,7 +69,7 @@ items:
 
     Renders text input with wrapping and label:
 
-    <pre><code class="lang-csharp">&lt;div class="{GetTextWrapperClasses(type)}"&gt;
+    <pre><code class="lang-csharp">&lt;div class="{GetTextInputWrapperClasses(type)}"&gt;
       &lt;label class="{GetTextLabelClasses(type)}" for="{id}"&gt;
         &lt;span class="{GetTextLabelSpanClasses(type)}"&gt;{label}&lt;/span&gt;
         &lt;span class="{GetTextLabelDescriptionClasses(type)}"&gt;{description}&lt;/span&gt;
@@ -85,7 +85,7 @@ items:
 
     Renders text input with wrapping and no label:
 
-    <pre><code class="lang-csharp">&lt;div class="{GetTextWrapperClasses(type)}"&gt;
+    <pre><code class="lang-csharp">&lt;div class="{GetTextInputWrapperClasses(type)}"&gt;
       &lt;input class="{GetTextInputClasses(type)}" id={} .../&gt;
       {GetValidationFeedbackContainer(id)}
       &lt;div class="{GetFieldErrorsClasses()}"&gt;{GetFieldErrorsHtml()}&lt;/div&gt;
@@ -105,7 +105,7 @@ items:
 
     Renders multiline text input with wrapping and label:
 
-    <pre><code class="lang-csharp">&lt;div class="{GetTextWrapperClasses(type)}"&gt;
+    <pre><code class="lang-csharp">&lt;div class="{GetTextInputWrapperClasses(type)}"&gt;
       &lt;label class="{GetTextLabelClasses(type)}" for="{id}"&gt;
         &lt;span class="{GetTextLabelSpanClasses(type)}"&gt;{label}&lt;/span&gt;
         &lt;span class="{GetTextLabelDescriptionClasses(type)}"&gt;{description}&lt;/span&gt;
@@ -121,7 +121,7 @@ items:
 
     Renders multiline text input with wrapping and no label:
 
-    <pre><code class="lang-csharp">&lt;div class="{GetTextWrapperClasses(type)}"&gt;
+    <pre><code class="lang-csharp">&lt;div class="{GetTextInputWrapperClasses(type)}"&gt;
       &lt;textarea class="{GetTextInputClasses(type)}" id={} ..." &gt;{value}&lt;/textarea&gt;
       {GetValidationFeedbackContainer(id)}
       &lt;div class="{GetFieldErrorsClasses()}"&gt;{GetFieldErrorsHtml()}&lt;/div&gt;
@@ -324,7 +324,7 @@ items:
 
     Renders text input with wrapping and label:
 
-    <pre><code class="lang-csharp">&lt;div class="{GetTextWrapperClasses(type)}"&gt;
+    <pre><code class="lang-csharp">&lt;div class="{GetTextInputWrapperClasses(type)}"&gt;
       &lt;label class="{GetTextLabelClasses(type)}" for="{id}"&gt;
         &lt;span class="{GetTextLabelSpanClasses(type)}"&gt;{label}&lt;/span&gt;
         &lt;span class="{GetTextLabelDescriptionClasses(type)}"&gt;{description}&lt;/span&gt;
@@ -340,7 +340,7 @@ items:
 
     Renders text input with wrapping and no label:
 
-    <pre><code class="lang-csharp">&lt;div class="{GetTextWrapperClasses(type)}"&gt;
+    <pre><code class="lang-csharp">&lt;div class="{GetTextInputWrapperClasses(type)}"&gt;
       &lt;input class="{GetTextInputClasses(type)}" id={} .../&gt;
       {GetValidationFeedbackContainer(id)}
       &lt;div class="{GetFieldErrorsClasses()}"&gt;{GetFieldErrorsHtml()}&lt;/div&gt;
@@ -360,7 +360,7 @@ items:
 
     Renders multiline text input with wrapping and label:
 
-    <pre><code class="lang-csharp">&lt;div class="{GetTextWrapperClasses(type)}"&gt;
+    <pre><code class="lang-csharp">&lt;div class="{GetTextInputWrapperClasses(type)}"&gt;
       &lt;label class="{GetTextLabelClasses(type)}" for="{id}"&gt;
         &lt;span class="{GetTextLabelSpanClasses(type)}"&gt;{label}&lt;/span&gt;
         &lt;span class="{GetTextLabelDescriptionClasses(type)}"&gt;{description}&lt;/span&gt;
@@ -376,7 +376,7 @@ items:
 
     Renders multiline text input with wrapping and no label:
 
-    <pre><code class="lang-csharp">&lt;div class="{GetTextWrapperClasses(type)}"&gt;
+    <pre><code class="lang-csharp">&lt;div class="{GetTextInputWrapperClasses(type)}"&gt;
       &lt;textarea class="{GetTextInputClasses(type)}" id={} ..." &gt;{value}&lt;/textarea&gt;
       {GetValidationFeedbackContainer(id)}
       &lt;div class="{GetFieldErrorsClasses()}"&gt;{GetFieldErrorsHtml()}&lt;/div&gt;
@@ -1017,23 +1017,23 @@ items:
   nameWithType.vb: UFInputTagHelper.GetTextLabelDescriptionClasses(String)
   fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetTextLabelDescriptionClasses(String)
   name.vb: GetTextLabelDescriptionClasses(String)
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetTextWrapperClasses(System.String)
-  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetTextWrapperClasses(System.String)
-  id: GetTextWrapperClasses(System.String)
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetTextInputWrapperClasses(System.String)
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetTextInputWrapperClasses(System.String)
+  id: GetTextInputWrapperClasses(System.String)
   parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper
   langs:
   - csharp
   - vb
-  name: GetTextWrapperClasses(string)
-  nameWithType: UFInputTagHelper.GetTextWrapperClasses(string)
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetTextWrapperClasses(string)
+  name: GetTextInputWrapperClasses(string)
+  nameWithType: UFInputTagHelper.GetTextInputWrapperClasses(string)
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetTextInputWrapperClasses(string)
   type: Method
   source:
     remote:
       path: UltraForce.Library.Core.Asp/TagHelpers/Styling/Forms/UFInputTagHelper.cs
       branch: master
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
-    id: GetTextWrapperClasses
+    id: GetTextInputWrapperClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Forms/UFInputTagHelper.cs
     startLine: 345
   assemblies:
@@ -1042,7 +1042,7 @@ items:
   summary: Returns the classes to use for the wrapper div element.
   example: []
   syntax:
-    content: protected virtual string GetTextWrapperClasses(string aType)
+    content: protected virtual string GetTextInputWrapperClasses(string aType)
     parameters:
     - id: aType
       type: System.String
@@ -1050,11 +1050,11 @@ items:
     return:
       type: System.String
       description: ''
-    content.vb: Protected Overridable Function GetTextWrapperClasses(aType As String) As String
-  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetTextWrapperClasses*
-  nameWithType.vb: UFInputTagHelper.GetTextWrapperClasses(String)
-  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetTextWrapperClasses(String)
-  name.vb: GetTextWrapperClasses(String)
+    content.vb: Protected Overridable Function GetTextInputWrapperClasses(aType As String) As String
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetTextInputWrapperClasses*
+  nameWithType.vb: UFInputTagHelper.GetTextInputWrapperClasses(String)
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetTextInputWrapperClasses(String)
+  name.vb: GetTextInputWrapperClasses(String)
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetValidationFeedbackContainerHtml(System.String)
   commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetValidationFeedbackContainerHtml(System.String)
   id: GetValidationFeedbackContainerHtml(System.String)
@@ -2485,12 +2485,12 @@ references:
   name: GetTextLabelDescriptionClasses
   nameWithType: UFInputTagHelper.GetTextLabelDescriptionClasses
   fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetTextLabelDescriptionClasses
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetTextWrapperClasses*
-  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetTextWrapperClasses
-  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Forms_UFInputTagHelper_GetTextWrapperClasses_System_String_
-  name: GetTextWrapperClasses
-  nameWithType: UFInputTagHelper.GetTextWrapperClasses
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetTextWrapperClasses
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetTextInputWrapperClasses*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetTextInputWrapperClasses
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Forms_UFInputTagHelper_GetTextInputWrapperClasses_System_String_
+  name: GetTextInputWrapperClasses
+  nameWithType: UFInputTagHelper.GetTextInputWrapperClasses
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetTextInputWrapperClasses
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetValidationFeedbackContainerHtml*
   commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.GetValidationFeedbackContainerHtml
   href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Forms_UFInputTagHelper_GetValidationFeedbackContainerHtml_System_String_

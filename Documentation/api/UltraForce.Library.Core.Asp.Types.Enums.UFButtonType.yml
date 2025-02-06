@@ -14,6 +14,7 @@ items:
   - UltraForce.Library.Core.Asp.Types.Enums.UFButtonType.Secondary
   - UltraForce.Library.Core.Asp.Types.Enums.UFButtonType.Success
   - UltraForce.Library.Core.Asp.Types.Enums.UFButtonType.Tertiary
+  - UltraForce.Library.Core.Asp.Types.Enums.UFButtonType.Text
   - UltraForce.Library.Core.Asp.Types.Enums.UFButtonType.Warning
   langs:
   - csharp
@@ -178,6 +179,34 @@ items:
     content: Tertiary = 4
     return:
       type: UltraForce.Library.Core.Asp.Types.Enums.UFButtonType
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFButtonType.Text
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFButtonType.Text
+  id: Text
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFButtonType
+  langs:
+  - csharp
+  - vb
+  name: Text
+  nameWithType: UFButtonType.Text
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFButtonType.Text
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFButtonType.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: Text
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFButtonType.cs
+    startLine: 64
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Button using text styling
+  example: []
+  syntax:
+    content: Text = 5
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFButtonType
 - uid: UltraForce.Library.Core.Asp.Types.Enums.UFButtonType.Link
   commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFButtonType.Link
   id: Link
@@ -196,14 +225,14 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Link
     path: ../UltraForce.Library.Core.Asp/Types/Enums/UFButtonType.cs
-    startLine: 64
+    startLine: 69
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Enums
   summary: Button using link styling
   example: []
   syntax:
-    content: Link = 5
+    content: Link = 6
     return:
       type: UltraForce.Library.Core.Asp.Types.Enums.UFButtonType
 - uid: UltraForce.Library.Core.Asp.Types.Enums.UFButtonType.Success
@@ -224,14 +253,14 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Success
     path: ../UltraForce.Library.Core.Asp/Types/Enums/UFButtonType.cs
-    startLine: 69
+    startLine: 74
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Enums
   summary: Button using success styling
   example: []
   syntax:
-    content: Success = 6
+    content: Success = 7
     return:
       type: UltraForce.Library.Core.Asp.Types.Enums.UFButtonType
 - uid: UltraForce.Library.Core.Asp.Types.Enums.UFButtonType.Danger
@@ -252,14 +281,14 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Danger
     path: ../UltraForce.Library.Core.Asp/Types/Enums/UFButtonType.cs
-    startLine: 74
+    startLine: 79
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Enums
   summary: Button using danger styling
   example: []
   syntax:
-    content: Danger = 7
+    content: Danger = 8
     return:
       type: UltraForce.Library.Core.Asp.Types.Enums.UFButtonType
 - uid: UltraForce.Library.Core.Asp.Types.Enums.UFButtonType.Warning
@@ -280,14 +309,14 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Warning
     path: ../UltraForce.Library.Core.Asp/Types/Enums/UFButtonType.cs
-    startLine: 79
+    startLine: 84
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Enums
   summary: Button using warning styling
   example: []
   syntax:
-    content: Warning = 8
+    content: Warning = 9
     return:
       type: UltraForce.Library.Core.Asp.Types.Enums.UFButtonType
 - uid: UltraForce.Library.Core.Asp.Types.Enums.UFButtonType.Disabled
@@ -308,14 +337,14 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Disabled
     path: ../UltraForce.Library.Core.Asp/Types/Enums/UFButtonType.cs
-    startLine: 84
+    startLine: 89
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Enums
   summary: Button using disabled styling
   example: []
   syntax:
-    content: Disabled = 9
+    content: Disabled = 10
     return:
       type: UltraForce.Library.Core.Asp.Types.Enums.UFButtonType
 references:

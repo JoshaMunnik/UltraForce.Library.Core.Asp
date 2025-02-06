@@ -52,7 +52,7 @@ namespace UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms;
 /// <para>
 /// Renders text input with wrapping and label:
 /// <code>
-/// &lt;div class="{GetTextWrapperClasses(type)}"&gt;
+/// &lt;div class="{GetTextInputWrapperClasses(type)}"&gt;
 ///   &lt;label class="{GetTextLabelClasses(type)}" for="{id}"&gt;
 ///     &lt;span class="{GetTextLabelSpanClasses(type)}"&gt;{label}&lt;/span&gt;
 ///     &lt;span class="{GetTextLabelDescriptionClasses(type)}"&gt;{description}&lt;/span&gt;
@@ -66,7 +66,7 @@ namespace UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms;
 /// <para>
 /// Renders text input with wrapping and no label:
 /// <code>
-/// &lt;div class="{GetTextWrapperClasses(type)}"&gt;
+/// &lt;div class="{GetTextInputWrapperClasses(type)}"&gt;
 ///   &lt;input class="{GetTextInputClasses(type)}" id={} .../&gt;
 ///   {GetValidationFeedbackContainer(id)}
 ///   &lt;div class="{GetFieldErrorsClasses()}"&gt;{GetFieldErrorsHtml()}&lt;/div&gt;
@@ -82,7 +82,7 @@ namespace UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms;
 /// <para>
 /// Renders multiline text input with wrapping and label:
 /// <code>
-/// &lt;div class="{GetTextWrapperClasses(type)}"&gt;
+/// &lt;div class="{GetTextInputWrapperClasses(type)}"&gt;
 ///   &lt;label class="{GetTextLabelClasses(type)}" for="{id}"&gt;
 ///     &lt;span class="{GetTextLabelSpanClasses(type)}"&gt;{label}&lt;/span&gt;
 ///     &lt;span class="{GetTextLabelDescriptionClasses(type)}"&gt;{description}&lt;/span&gt;
@@ -96,7 +96,7 @@ namespace UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms;
 /// <para>
 /// Renders multiline text input with wrapping and no label:
 /// <code>
-/// &lt;div class="{GetTextWrapperClasses(type)}"&gt;
+/// &lt;div class="{GetTextInputWrapperClasses(type)}"&gt;
 ///   &lt;textarea class="{GetTextInputClasses(type)}" id={} ..." &gt;{value}&lt;/textarea&gt;
 ///   {GetValidationFeedbackContainer(id)}
 ///   &lt;div class="{GetFieldErrorsClasses()}"&gt;{GetFieldErrorsHtml()}&lt;/div&gt;
@@ -315,7 +315,7 @@ public class UFInputTagHelper(IHtmlGenerator generator, IUFTheme aTheme)
   /// <returns></returns>
   protected virtual string GetTextLabelClasses(string aType)
   {
-    return this.Theme.GetTextLabelClasses(this, aType);
+    return this.Theme.GetTextInputLabelClasses(this, aType);
   }
   
   /// <summary>
@@ -325,7 +325,7 @@ public class UFInputTagHelper(IHtmlGenerator generator, IUFTheme aTheme)
   /// <returns></returns>
   protected virtual string GetTextLabelSpanClasses(string aType)
   {
-    return this.Theme.GetTextLabelSpanClasses(this, aType);
+    return this.Theme.GetTextInputLabelSpanClasses(this, aType);
   }
   
   /// <summary>
@@ -335,7 +335,7 @@ public class UFInputTagHelper(IHtmlGenerator generator, IUFTheme aTheme)
   /// <returns></returns>
   protected virtual string GetTextLabelDescriptionClasses(string aType)
   {
-    return this.Theme.GetTextLabelDescriptionClasses(this, aType);
+    return this.Theme.GetTextInputLabelDescriptionClasses(this, aType);
   }
   
   /// <summary>
@@ -343,9 +343,9 @@ public class UFInputTagHelper(IHtmlGenerator generator, IUFTheme aTheme)
   /// </summary>
   /// <param name="aType"></param>
   /// <returns></returns>
-  protected virtual string GetTextWrapperClasses(string aType)
+  protected virtual string GetTextInputWrapperClasses(string aType)
   {
-    return this.Theme.GetTextWrapperClasses(this, aType);
+    return this.Theme.GetTextInputWrapperClasses(this, aType);
   }
   
   /// <summary>
@@ -530,7 +530,7 @@ public class UFInputTagHelper(IHtmlGenerator generator, IUFTheme aTheme)
         descriptionHtml +
         "</label>";
     anOutput.PreElement.SetHtmlContent(
-      $"<div class=\"{this.GetTextWrapperClasses(aType)}\">{labelHtml}"
+      $"<div class=\"{this.GetTextInputWrapperClasses(aType)}\">{labelHtml}"
     );
     anOutput.PostElement.SetHtmlContent(
       $"{this.GetValidationFeedbackContainerHtml(anId)}{errorMessage}</div>"

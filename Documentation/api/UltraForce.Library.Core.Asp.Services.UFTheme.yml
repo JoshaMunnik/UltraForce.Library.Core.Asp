@@ -46,10 +46,10 @@ items:
   - UltraForce.Library.Core.Asp.Services.UFTheme.GetTableRowClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableRowProperties,UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties)
   - UltraForce.Library.Core.Asp.Services.UFTheme.GetTabsClasses(System.Int32)
   - UltraForce.Library.Core.Asp.Services.UFTheme.GetTextInputClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)
-  - UltraForce.Library.Core.Asp.Services.UFTheme.GetTextLabelClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)
-  - UltraForce.Library.Core.Asp.Services.UFTheme.GetTextLabelDescriptionClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)
-  - UltraForce.Library.Core.Asp.Services.UFTheme.GetTextLabelSpanClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)
-  - UltraForce.Library.Core.Asp.Services.UFTheme.GetTextWrapperClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)
+  - UltraForce.Library.Core.Asp.Services.UFTheme.GetTextInputLabelClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)
+  - UltraForce.Library.Core.Asp.Services.UFTheme.GetTextInputLabelDescriptionClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)
+  - UltraForce.Library.Core.Asp.Services.UFTheme.GetTextInputLabelSpanClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)
+  - UltraForce.Library.Core.Asp.Services.UFTheme.GetTextInputWrapperClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)
   - UltraForce.Library.Core.Asp.Services.UFTheme.GetValidationFeedbackClasses
   - UltraForce.Library.Core.Asp.Services.UFTheme.GetValidationFeedbackContainerHtml(System.String)
   langs:
@@ -567,23 +567,23 @@ items:
   overload: UltraForce.Library.Core.Asp.Services.UFTheme.GetDataValueClasses*
   implements:
   - UltraForce.Library.Core.Asp.Services.IUFTheme.GetDataValueClasses
-- uid: UltraForce.Library.Core.Asp.Services.UFTheme.GetTextWrapperClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)
-  commentId: M:UltraForce.Library.Core.Asp.Services.UFTheme.GetTextWrapperClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)
-  id: GetTextWrapperClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)
+- uid: UltraForce.Library.Core.Asp.Services.UFTheme.GetTextInputWrapperClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)
+  commentId: M:UltraForce.Library.Core.Asp.Services.UFTheme.GetTextInputWrapperClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)
+  id: GetTextInputWrapperClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)
   parent: UltraForce.Library.Core.Asp.Services.UFTheme
   langs:
   - csharp
   - vb
-  name: GetTextWrapperClasses(IUFInputProperties, string)
-  nameWithType: UFTheme.GetTextWrapperClasses(IUFInputProperties, string)
-  fullName: UltraForce.Library.Core.Asp.Services.UFTheme.GetTextWrapperClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties, string)
+  name: GetTextInputWrapperClasses(IUFInputProperties, string)
+  nameWithType: UFTheme.GetTextInputWrapperClasses(IUFInputProperties, string)
+  fullName: UltraForce.Library.Core.Asp.Services.UFTheme.GetTextInputWrapperClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties, string)
   type: Method
   source:
     remote:
       path: UltraForce.Library.Core.Asp/Services/UFTheme.cs
       branch: master
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
-    id: GetTextWrapperClasses
+    id: GetTextInputWrapperClasses
     path: ../UltraForce.Library.Core.Asp/Services/UFTheme.cs
     startLine: 133
   assemblies:
@@ -592,7 +592,7 @@ items:
   summary: Returns the css classes to use with the wrapper element for text input and select elements.
   example: []
   syntax:
-    content: public virtual string GetTextWrapperClasses(IUFInputProperties aProperties, string aType)
+    content: public virtual string GetTextInputWrapperClasses(IUFInputProperties aProperties, string aType)
     parameters:
     - id: aProperties
       type: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties
@@ -603,30 +603,30 @@ items:
     return:
       type: System.String
       description: ''
-    content.vb: Public Overridable Function GetTextWrapperClasses(aProperties As IUFInputProperties, aType As String) As String
-  overload: UltraForce.Library.Core.Asp.Services.UFTheme.GetTextWrapperClasses*
+    content.vb: Public Overridable Function GetTextInputWrapperClasses(aProperties As IUFInputProperties, aType As String) As String
+  overload: UltraForce.Library.Core.Asp.Services.UFTheme.GetTextInputWrapperClasses*
   implements:
-  - UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextWrapperClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)
-  nameWithType.vb: UFTheme.GetTextWrapperClasses(IUFInputProperties, String)
-  fullName.vb: UltraForce.Library.Core.Asp.Services.UFTheme.GetTextWrapperClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties, String)
-  name.vb: GetTextWrapperClasses(IUFInputProperties, String)
-- uid: UltraForce.Library.Core.Asp.Services.UFTheme.GetTextLabelClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)
-  commentId: M:UltraForce.Library.Core.Asp.Services.UFTheme.GetTextLabelClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)
-  id: GetTextLabelClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)
+  - UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextInputWrapperClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)
+  nameWithType.vb: UFTheme.GetTextInputWrapperClasses(IUFInputProperties, String)
+  fullName.vb: UltraForce.Library.Core.Asp.Services.UFTheme.GetTextInputWrapperClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties, String)
+  name.vb: GetTextInputWrapperClasses(IUFInputProperties, String)
+- uid: UltraForce.Library.Core.Asp.Services.UFTheme.GetTextInputLabelClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)
+  commentId: M:UltraForce.Library.Core.Asp.Services.UFTheme.GetTextInputLabelClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)
+  id: GetTextInputLabelClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)
   parent: UltraForce.Library.Core.Asp.Services.UFTheme
   langs:
   - csharp
   - vb
-  name: GetTextLabelClasses(IUFInputProperties, string)
-  nameWithType: UFTheme.GetTextLabelClasses(IUFInputProperties, string)
-  fullName: UltraForce.Library.Core.Asp.Services.UFTheme.GetTextLabelClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties, string)
+  name: GetTextInputLabelClasses(IUFInputProperties, string)
+  nameWithType: UFTheme.GetTextInputLabelClasses(IUFInputProperties, string)
+  fullName: UltraForce.Library.Core.Asp.Services.UFTheme.GetTextInputLabelClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties, string)
   type: Method
   source:
     remote:
       path: UltraForce.Library.Core.Asp/Services/UFTheme.cs
       branch: master
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
-    id: GetTextLabelClasses
+    id: GetTextInputLabelClasses
     path: ../UltraForce.Library.Core.Asp/Services/UFTheme.cs
     startLine: 139
   assemblies:
@@ -635,7 +635,7 @@ items:
   summary: Returns the css classes to use with the label for text input and select elements.
   example: []
   syntax:
-    content: public virtual string GetTextLabelClasses(IUFInputProperties aProperties, string aType)
+    content: public virtual string GetTextInputLabelClasses(IUFInputProperties aProperties, string aType)
     parameters:
     - id: aProperties
       type: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties
@@ -646,30 +646,30 @@ items:
     return:
       type: System.String
       description: ''
-    content.vb: Public Overridable Function GetTextLabelClasses(aProperties As IUFInputProperties, aType As String) As String
-  overload: UltraForce.Library.Core.Asp.Services.UFTheme.GetTextLabelClasses*
+    content.vb: Public Overridable Function GetTextInputLabelClasses(aProperties As IUFInputProperties, aType As String) As String
+  overload: UltraForce.Library.Core.Asp.Services.UFTheme.GetTextInputLabelClasses*
   implements:
-  - UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextLabelClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)
-  nameWithType.vb: UFTheme.GetTextLabelClasses(IUFInputProperties, String)
-  fullName.vb: UltraForce.Library.Core.Asp.Services.UFTheme.GetTextLabelClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties, String)
-  name.vb: GetTextLabelClasses(IUFInputProperties, String)
-- uid: UltraForce.Library.Core.Asp.Services.UFTheme.GetTextLabelSpanClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)
-  commentId: M:UltraForce.Library.Core.Asp.Services.UFTheme.GetTextLabelSpanClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)
-  id: GetTextLabelSpanClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)
+  - UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextInputLabelClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)
+  nameWithType.vb: UFTheme.GetTextInputLabelClasses(IUFInputProperties, String)
+  fullName.vb: UltraForce.Library.Core.Asp.Services.UFTheme.GetTextInputLabelClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties, String)
+  name.vb: GetTextInputLabelClasses(IUFInputProperties, String)
+- uid: UltraForce.Library.Core.Asp.Services.UFTheme.GetTextInputLabelSpanClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)
+  commentId: M:UltraForce.Library.Core.Asp.Services.UFTheme.GetTextInputLabelSpanClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)
+  id: GetTextInputLabelSpanClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)
   parent: UltraForce.Library.Core.Asp.Services.UFTheme
   langs:
   - csharp
   - vb
-  name: GetTextLabelSpanClasses(IUFInputProperties, string)
-  nameWithType: UFTheme.GetTextLabelSpanClasses(IUFInputProperties, string)
-  fullName: UltraForce.Library.Core.Asp.Services.UFTheme.GetTextLabelSpanClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties, string)
+  name: GetTextInputLabelSpanClasses(IUFInputProperties, string)
+  nameWithType: UFTheme.GetTextInputLabelSpanClasses(IUFInputProperties, string)
+  fullName: UltraForce.Library.Core.Asp.Services.UFTheme.GetTextInputLabelSpanClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties, string)
   type: Method
   source:
     remote:
       path: UltraForce.Library.Core.Asp/Services/UFTheme.cs
       branch: master
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
-    id: GetTextLabelSpanClasses
+    id: GetTextInputLabelSpanClasses
     path: ../UltraForce.Library.Core.Asp/Services/UFTheme.cs
     startLine: 145
   assemblies:
@@ -681,7 +681,7 @@ items:
     elements.
   example: []
   syntax:
-    content: public virtual string GetTextLabelSpanClasses(IUFInputProperties aProperties, string aType)
+    content: public virtual string GetTextInputLabelSpanClasses(IUFInputProperties aProperties, string aType)
     parameters:
     - id: aProperties
       type: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties
@@ -692,30 +692,30 @@ items:
     return:
       type: System.String
       description: ''
-    content.vb: Public Overridable Function GetTextLabelSpanClasses(aProperties As IUFInputProperties, aType As String) As String
-  overload: UltraForce.Library.Core.Asp.Services.UFTheme.GetTextLabelSpanClasses*
+    content.vb: Public Overridable Function GetTextInputLabelSpanClasses(aProperties As IUFInputProperties, aType As String) As String
+  overload: UltraForce.Library.Core.Asp.Services.UFTheme.GetTextInputLabelSpanClasses*
   implements:
-  - UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextLabelSpanClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)
-  nameWithType.vb: UFTheme.GetTextLabelSpanClasses(IUFInputProperties, String)
-  fullName.vb: UltraForce.Library.Core.Asp.Services.UFTheme.GetTextLabelSpanClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties, String)
-  name.vb: GetTextLabelSpanClasses(IUFInputProperties, String)
-- uid: UltraForce.Library.Core.Asp.Services.UFTheme.GetTextLabelDescriptionClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)
-  commentId: M:UltraForce.Library.Core.Asp.Services.UFTheme.GetTextLabelDescriptionClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)
-  id: GetTextLabelDescriptionClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)
+  - UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextInputLabelSpanClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)
+  nameWithType.vb: UFTheme.GetTextInputLabelSpanClasses(IUFInputProperties, String)
+  fullName.vb: UltraForce.Library.Core.Asp.Services.UFTheme.GetTextInputLabelSpanClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties, String)
+  name.vb: GetTextInputLabelSpanClasses(IUFInputProperties, String)
+- uid: UltraForce.Library.Core.Asp.Services.UFTheme.GetTextInputLabelDescriptionClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)
+  commentId: M:UltraForce.Library.Core.Asp.Services.UFTheme.GetTextInputLabelDescriptionClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)
+  id: GetTextInputLabelDescriptionClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)
   parent: UltraForce.Library.Core.Asp.Services.UFTheme
   langs:
   - csharp
   - vb
-  name: GetTextLabelDescriptionClasses(IUFInputProperties, string)
-  nameWithType: UFTheme.GetTextLabelDescriptionClasses(IUFInputProperties, string)
-  fullName: UltraForce.Library.Core.Asp.Services.UFTheme.GetTextLabelDescriptionClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties, string)
+  name: GetTextInputLabelDescriptionClasses(IUFInputProperties, string)
+  nameWithType: UFTheme.GetTextInputLabelDescriptionClasses(IUFInputProperties, string)
+  fullName: UltraForce.Library.Core.Asp.Services.UFTheme.GetTextInputLabelDescriptionClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties, string)
   type: Method
   source:
     remote:
       path: UltraForce.Library.Core.Asp/Services/UFTheme.cs
       branch: master
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
-    id: GetTextLabelDescriptionClasses
+    id: GetTextInputLabelDescriptionClasses
     path: ../UltraForce.Library.Core.Asp/Services/UFTheme.cs
     startLine: 151
   assemblies:
@@ -727,7 +727,7 @@ items:
     elements.
   example: []
   syntax:
-    content: public virtual string GetTextLabelDescriptionClasses(IUFInputProperties aProperties, string aType)
+    content: public virtual string GetTextInputLabelDescriptionClasses(IUFInputProperties aProperties, string aType)
     parameters:
     - id: aProperties
       type: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties
@@ -738,13 +738,13 @@ items:
     return:
       type: System.String
       description: ''
-    content.vb: Public Overridable Function GetTextLabelDescriptionClasses(aProperties As IUFInputProperties, aType As String) As String
-  overload: UltraForce.Library.Core.Asp.Services.UFTheme.GetTextLabelDescriptionClasses*
+    content.vb: Public Overridable Function GetTextInputLabelDescriptionClasses(aProperties As IUFInputProperties, aType As String) As String
+  overload: UltraForce.Library.Core.Asp.Services.UFTheme.GetTextInputLabelDescriptionClasses*
   implements:
-  - UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextLabelDescriptionClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)
-  nameWithType.vb: UFTheme.GetTextLabelDescriptionClasses(IUFInputProperties, String)
-  fullName.vb: UltraForce.Library.Core.Asp.Services.UFTheme.GetTextLabelDescriptionClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties, String)
-  name.vb: GetTextLabelDescriptionClasses(IUFInputProperties, String)
+  - UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextInputLabelDescriptionClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)
+  nameWithType.vb: UFTheme.GetTextInputLabelDescriptionClasses(IUFInputProperties, String)
+  fullName.vb: UltraForce.Library.Core.Asp.Services.UFTheme.GetTextInputLabelDescriptionClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties, String)
+  name.vb: GetTextInputLabelDescriptionClasses(IUFInputProperties, String)
 - uid: UltraForce.Library.Core.Asp.Services.UFTheme.GetTextInputClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)
   commentId: M:UltraForce.Library.Core.Asp.Services.UFTheme.GetTextInputClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)
   id: GetTextInputClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)
@@ -2711,27 +2711,27 @@ references:
     href: UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetDataValueClasses
   - name: (
   - name: )
-- uid: UltraForce.Library.Core.Asp.Services.UFTheme.GetTextWrapperClasses*
-  commentId: Overload:UltraForce.Library.Core.Asp.Services.UFTheme.GetTextWrapperClasses
-  href: UltraForce.Library.Core.Asp.Services.UFTheme.html#UltraForce_Library_Core_Asp_Services_UFTheme_GetTextWrapperClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Forms_IUFInputProperties_System_String_
-  name: GetTextWrapperClasses
-  nameWithType: UFTheme.GetTextWrapperClasses
-  fullName: UltraForce.Library.Core.Asp.Services.UFTheme.GetTextWrapperClasses
-- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextWrapperClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)
-  commentId: M:UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextWrapperClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)
+- uid: UltraForce.Library.Core.Asp.Services.UFTheme.GetTextInputWrapperClasses*
+  commentId: Overload:UltraForce.Library.Core.Asp.Services.UFTheme.GetTextInputWrapperClasses
+  href: UltraForce.Library.Core.Asp.Services.UFTheme.html#UltraForce_Library_Core_Asp_Services_UFTheme_GetTextInputWrapperClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Forms_IUFInputProperties_System_String_
+  name: GetTextInputWrapperClasses
+  nameWithType: UFTheme.GetTextInputWrapperClasses
+  fullName: UltraForce.Library.Core.Asp.Services.UFTheme.GetTextInputWrapperClasses
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextInputWrapperClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)
+  commentId: M:UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextInputWrapperClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)
   parent: UltraForce.Library.Core.Asp.Services.IUFTheme
   isExternal: true
-  href: UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetTextWrapperClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Forms_IUFInputProperties_System_String_
-  name: GetTextWrapperClasses(IUFInputProperties, string)
-  nameWithType: IUFTheme.GetTextWrapperClasses(IUFInputProperties, string)
-  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextWrapperClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties, string)
-  nameWithType.vb: IUFTheme.GetTextWrapperClasses(IUFInputProperties, String)
-  fullName.vb: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextWrapperClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties, String)
-  name.vb: GetTextWrapperClasses(IUFInputProperties, String)
+  href: UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetTextInputWrapperClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Forms_IUFInputProperties_System_String_
+  name: GetTextInputWrapperClasses(IUFInputProperties, string)
+  nameWithType: IUFTheme.GetTextInputWrapperClasses(IUFInputProperties, string)
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextInputWrapperClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties, string)
+  nameWithType.vb: IUFTheme.GetTextInputWrapperClasses(IUFInputProperties, String)
+  fullName.vb: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextInputWrapperClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties, String)
+  name.vb: GetTextInputWrapperClasses(IUFInputProperties, String)
   spec.csharp:
-  - uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextWrapperClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)
-    name: GetTextWrapperClasses
-    href: UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetTextWrapperClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Forms_IUFInputProperties_System_String_
+  - uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextInputWrapperClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)
+    name: GetTextInputWrapperClasses
+    href: UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetTextInputWrapperClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Forms_IUFInputProperties_System_String_
   - name: (
   - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties
     name: IUFInputProperties
@@ -2744,9 +2744,9 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
   spec.vb:
-  - uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextWrapperClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)
-    name: GetTextWrapperClasses
-    href: UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetTextWrapperClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Forms_IUFInputProperties_System_String_
+  - uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextInputWrapperClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)
+    name: GetTextInputWrapperClasses
+    href: UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetTextInputWrapperClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Forms_IUFInputProperties_System_String_
   - name: (
   - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties
     name: IUFInputProperties
@@ -2827,27 +2827,27 @@ references:
   - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms
     name: Forms
     href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.html
-- uid: UltraForce.Library.Core.Asp.Services.UFTheme.GetTextLabelClasses*
-  commentId: Overload:UltraForce.Library.Core.Asp.Services.UFTheme.GetTextLabelClasses
-  href: UltraForce.Library.Core.Asp.Services.UFTheme.html#UltraForce_Library_Core_Asp_Services_UFTheme_GetTextLabelClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Forms_IUFInputProperties_System_String_
-  name: GetTextLabelClasses
-  nameWithType: UFTheme.GetTextLabelClasses
-  fullName: UltraForce.Library.Core.Asp.Services.UFTheme.GetTextLabelClasses
-- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextLabelClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)
-  commentId: M:UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextLabelClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)
+- uid: UltraForce.Library.Core.Asp.Services.UFTheme.GetTextInputLabelClasses*
+  commentId: Overload:UltraForce.Library.Core.Asp.Services.UFTheme.GetTextInputLabelClasses
+  href: UltraForce.Library.Core.Asp.Services.UFTheme.html#UltraForce_Library_Core_Asp_Services_UFTheme_GetTextInputLabelClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Forms_IUFInputProperties_System_String_
+  name: GetTextInputLabelClasses
+  nameWithType: UFTheme.GetTextInputLabelClasses
+  fullName: UltraForce.Library.Core.Asp.Services.UFTheme.GetTextInputLabelClasses
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextInputLabelClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)
+  commentId: M:UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextInputLabelClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)
   parent: UltraForce.Library.Core.Asp.Services.IUFTheme
   isExternal: true
-  href: UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetTextLabelClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Forms_IUFInputProperties_System_String_
-  name: GetTextLabelClasses(IUFInputProperties, string)
-  nameWithType: IUFTheme.GetTextLabelClasses(IUFInputProperties, string)
-  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextLabelClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties, string)
-  nameWithType.vb: IUFTheme.GetTextLabelClasses(IUFInputProperties, String)
-  fullName.vb: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextLabelClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties, String)
-  name.vb: GetTextLabelClasses(IUFInputProperties, String)
+  href: UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetTextInputLabelClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Forms_IUFInputProperties_System_String_
+  name: GetTextInputLabelClasses(IUFInputProperties, string)
+  nameWithType: IUFTheme.GetTextInputLabelClasses(IUFInputProperties, string)
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextInputLabelClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties, string)
+  nameWithType.vb: IUFTheme.GetTextInputLabelClasses(IUFInputProperties, String)
+  fullName.vb: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextInputLabelClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties, String)
+  name.vb: GetTextInputLabelClasses(IUFInputProperties, String)
   spec.csharp:
-  - uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextLabelClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)
-    name: GetTextLabelClasses
-    href: UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetTextLabelClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Forms_IUFInputProperties_System_String_
+  - uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextInputLabelClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)
+    name: GetTextInputLabelClasses
+    href: UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetTextInputLabelClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Forms_IUFInputProperties_System_String_
   - name: (
   - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties
     name: IUFInputProperties
@@ -2860,9 +2860,9 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
   spec.vb:
-  - uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextLabelClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)
-    name: GetTextLabelClasses
-    href: UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetTextLabelClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Forms_IUFInputProperties_System_String_
+  - uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextInputLabelClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)
+    name: GetTextInputLabelClasses
+    href: UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetTextInputLabelClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Forms_IUFInputProperties_System_String_
   - name: (
   - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties
     name: IUFInputProperties
@@ -2874,27 +2874,27 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
-- uid: UltraForce.Library.Core.Asp.Services.UFTheme.GetTextLabelSpanClasses*
-  commentId: Overload:UltraForce.Library.Core.Asp.Services.UFTheme.GetTextLabelSpanClasses
-  href: UltraForce.Library.Core.Asp.Services.UFTheme.html#UltraForce_Library_Core_Asp_Services_UFTheme_GetTextLabelSpanClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Forms_IUFInputProperties_System_String_
-  name: GetTextLabelSpanClasses
-  nameWithType: UFTheme.GetTextLabelSpanClasses
-  fullName: UltraForce.Library.Core.Asp.Services.UFTheme.GetTextLabelSpanClasses
-- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextLabelSpanClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)
-  commentId: M:UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextLabelSpanClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)
+- uid: UltraForce.Library.Core.Asp.Services.UFTheme.GetTextInputLabelSpanClasses*
+  commentId: Overload:UltraForce.Library.Core.Asp.Services.UFTheme.GetTextInputLabelSpanClasses
+  href: UltraForce.Library.Core.Asp.Services.UFTheme.html#UltraForce_Library_Core_Asp_Services_UFTheme_GetTextInputLabelSpanClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Forms_IUFInputProperties_System_String_
+  name: GetTextInputLabelSpanClasses
+  nameWithType: UFTheme.GetTextInputLabelSpanClasses
+  fullName: UltraForce.Library.Core.Asp.Services.UFTheme.GetTextInputLabelSpanClasses
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextInputLabelSpanClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)
+  commentId: M:UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextInputLabelSpanClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)
   parent: UltraForce.Library.Core.Asp.Services.IUFTheme
   isExternal: true
-  href: UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetTextLabelSpanClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Forms_IUFInputProperties_System_String_
-  name: GetTextLabelSpanClasses(IUFInputProperties, string)
-  nameWithType: IUFTheme.GetTextLabelSpanClasses(IUFInputProperties, string)
-  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextLabelSpanClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties, string)
-  nameWithType.vb: IUFTheme.GetTextLabelSpanClasses(IUFInputProperties, String)
-  fullName.vb: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextLabelSpanClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties, String)
-  name.vb: GetTextLabelSpanClasses(IUFInputProperties, String)
+  href: UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetTextInputLabelSpanClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Forms_IUFInputProperties_System_String_
+  name: GetTextInputLabelSpanClasses(IUFInputProperties, string)
+  nameWithType: IUFTheme.GetTextInputLabelSpanClasses(IUFInputProperties, string)
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextInputLabelSpanClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties, string)
+  nameWithType.vb: IUFTheme.GetTextInputLabelSpanClasses(IUFInputProperties, String)
+  fullName.vb: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextInputLabelSpanClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties, String)
+  name.vb: GetTextInputLabelSpanClasses(IUFInputProperties, String)
   spec.csharp:
-  - uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextLabelSpanClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)
-    name: GetTextLabelSpanClasses
-    href: UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetTextLabelSpanClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Forms_IUFInputProperties_System_String_
+  - uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextInputLabelSpanClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)
+    name: GetTextInputLabelSpanClasses
+    href: UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetTextInputLabelSpanClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Forms_IUFInputProperties_System_String_
   - name: (
   - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties
     name: IUFInputProperties
@@ -2907,9 +2907,9 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
   spec.vb:
-  - uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextLabelSpanClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)
-    name: GetTextLabelSpanClasses
-    href: UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetTextLabelSpanClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Forms_IUFInputProperties_System_String_
+  - uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextInputLabelSpanClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)
+    name: GetTextInputLabelSpanClasses
+    href: UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetTextInputLabelSpanClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Forms_IUFInputProperties_System_String_
   - name: (
   - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties
     name: IUFInputProperties
@@ -2921,27 +2921,27 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
-- uid: UltraForce.Library.Core.Asp.Services.UFTheme.GetTextLabelDescriptionClasses*
-  commentId: Overload:UltraForce.Library.Core.Asp.Services.UFTheme.GetTextLabelDescriptionClasses
-  href: UltraForce.Library.Core.Asp.Services.UFTheme.html#UltraForce_Library_Core_Asp_Services_UFTheme_GetTextLabelDescriptionClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Forms_IUFInputProperties_System_String_
-  name: GetTextLabelDescriptionClasses
-  nameWithType: UFTheme.GetTextLabelDescriptionClasses
-  fullName: UltraForce.Library.Core.Asp.Services.UFTheme.GetTextLabelDescriptionClasses
-- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextLabelDescriptionClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)
-  commentId: M:UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextLabelDescriptionClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)
+- uid: UltraForce.Library.Core.Asp.Services.UFTheme.GetTextInputLabelDescriptionClasses*
+  commentId: Overload:UltraForce.Library.Core.Asp.Services.UFTheme.GetTextInputLabelDescriptionClasses
+  href: UltraForce.Library.Core.Asp.Services.UFTheme.html#UltraForce_Library_Core_Asp_Services_UFTheme_GetTextInputLabelDescriptionClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Forms_IUFInputProperties_System_String_
+  name: GetTextInputLabelDescriptionClasses
+  nameWithType: UFTheme.GetTextInputLabelDescriptionClasses
+  fullName: UltraForce.Library.Core.Asp.Services.UFTheme.GetTextInputLabelDescriptionClasses
+- uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextInputLabelDescriptionClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)
+  commentId: M:UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextInputLabelDescriptionClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)
   parent: UltraForce.Library.Core.Asp.Services.IUFTheme
   isExternal: true
-  href: UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetTextLabelDescriptionClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Forms_IUFInputProperties_System_String_
-  name: GetTextLabelDescriptionClasses(IUFInputProperties, string)
-  nameWithType: IUFTheme.GetTextLabelDescriptionClasses(IUFInputProperties, string)
-  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextLabelDescriptionClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties, string)
-  nameWithType.vb: IUFTheme.GetTextLabelDescriptionClasses(IUFInputProperties, String)
-  fullName.vb: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextLabelDescriptionClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties, String)
-  name.vb: GetTextLabelDescriptionClasses(IUFInputProperties, String)
+  href: UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetTextInputLabelDescriptionClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Forms_IUFInputProperties_System_String_
+  name: GetTextInputLabelDescriptionClasses(IUFInputProperties, string)
+  nameWithType: IUFTheme.GetTextInputLabelDescriptionClasses(IUFInputProperties, string)
+  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextInputLabelDescriptionClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties, string)
+  nameWithType.vb: IUFTheme.GetTextInputLabelDescriptionClasses(IUFInputProperties, String)
+  fullName.vb: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextInputLabelDescriptionClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties, String)
+  name.vb: GetTextInputLabelDescriptionClasses(IUFInputProperties, String)
   spec.csharp:
-  - uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextLabelDescriptionClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)
-    name: GetTextLabelDescriptionClasses
-    href: UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetTextLabelDescriptionClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Forms_IUFInputProperties_System_String_
+  - uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextInputLabelDescriptionClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)
+    name: GetTextInputLabelDescriptionClasses
+    href: UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetTextInputLabelDescriptionClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Forms_IUFInputProperties_System_String_
   - name: (
   - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties
     name: IUFInputProperties
@@ -2954,9 +2954,9 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
   spec.vb:
-  - uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextLabelDescriptionClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)
-    name: GetTextLabelDescriptionClasses
-    href: UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetTextLabelDescriptionClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Forms_IUFInputProperties_System_String_
+  - uid: UltraForce.Library.Core.Asp.Services.IUFTheme.GetTextInputLabelDescriptionClasses(UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties,System.String)
+    name: GetTextInputLabelDescriptionClasses
+    href: UltraForce.Library.Core.Asp.Services.IUFTheme.html#UltraForce_Library_Core_Asp_Services_IUFTheme_GetTextInputLabelDescriptionClasses_UltraForce_Library_Core_Asp_TagHelpers_Styling_Forms_IUFInputProperties_System_String_
   - name: (
   - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties
     name: IUFInputProperties

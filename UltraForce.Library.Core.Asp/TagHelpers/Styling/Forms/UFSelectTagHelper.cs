@@ -159,7 +159,7 @@ public class UFSelectTagHelper(IHtmlGenerator aGenerator, IUFTheme aTheme)
   /// <returns></returns>
   protected virtual string GetTextLabelClasses(string aType)
   {
-    return this.Theme.GetTextLabelClasses(this, aType);
+    return this.Theme.GetTextInputLabelClasses(this, aType);
   }
   
   
@@ -170,7 +170,7 @@ public class UFSelectTagHelper(IHtmlGenerator aGenerator, IUFTheme aTheme)
   /// <returns></returns>
   protected virtual string GetTextWrapperClasses(string aType)
   {
-    return this.Theme.GetTextWrapperClasses(this, aType);
+    return this.Theme.GetTextInputWrapperClasses(this, aType);
   }
   
   /// <summary>
