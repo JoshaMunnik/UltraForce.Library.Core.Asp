@@ -5,7 +5,9 @@ items:
   id: IUFStackItemProperties
   parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers
   children:
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFStackItemProperties.Horizontal
   - UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFStackItemProperties.NoInteraction
+  - UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFStackItemProperties.Vertical
   langs:
   - csharp
   - vb
@@ -20,7 +22,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: IUFStackItemProperties
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Containers/IUFStackItemProperties.cs
-    startLine: 5
+    startLine: 7
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers
@@ -47,7 +49,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: NoInteraction
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Containers/IUFStackItemProperties.cs
-    startLine: 10
+    startLine: 12
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers
@@ -60,6 +62,68 @@ items:
       type: System.Boolean
     content.vb: Property NoInteraction As Boolean
   overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFStackItemProperties.NoInteraction*
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFStackItemProperties.Horizontal
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFStackItemProperties.Horizontal
+  id: Horizontal
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFStackItemProperties
+  langs:
+  - csharp
+  - vb
+  name: Horizontal
+  nameWithType: IUFStackItemProperties.Horizontal
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFStackItemProperties.Horizontal
+  type: Property
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Styling/Containers/IUFStackItemProperties.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: Horizontal
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Containers/IUFStackItemProperties.cs
+    startLine: 17
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers
+  summary: How to position this item horizontally within the container.
+  example: []
+  syntax:
+    content: UFContentPosition Horizontal { get; set; }
+    parameters: []
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFContentPosition
+    content.vb: Property Horizontal As UFContentPosition
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFStackItemProperties.Horizontal*
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFStackItemProperties.Vertical
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFStackItemProperties.Vertical
+  id: Vertical
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFStackItemProperties
+  langs:
+  - csharp
+  - vb
+  name: Vertical
+  nameWithType: IUFStackItemProperties.Vertical
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFStackItemProperties.Vertical
+  type: Property
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Styling/Containers/IUFStackItemProperties.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: Vertical
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Styling/Containers/IUFStackItemProperties.cs
+    startLine: 22
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers
+  summary: How to position this item vertically within the container.
+  example: []
+  syntax:
+    content: UFContentPosition Vertical { get; set; }
+    parameters: []
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFContentPosition
+    content.vb: Property Vertical As UFContentPosition
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFStackItemProperties.Vertical*
 references:
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers
   commentId: N:UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers
@@ -147,3 +211,76 @@ references:
   name: System
   nameWithType: System
   fullName: System
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFStackItemProperties.Horizontal*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFStackItemProperties.Horizontal
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFStackItemProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Containers_IUFStackItemProperties_Horizontal
+  name: Horizontal
+  nameWithType: IUFStackItemProperties.Horizontal
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFStackItemProperties.Horizontal
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFContentPosition
+  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFContentPosition
+  parent: UltraForce.Library.Core.Asp.Types.Enums
+  href: UltraForce.Library.Core.Asp.Types.Enums.UFContentPosition.html
+  name: UFContentPosition
+  nameWithType: UFContentPosition
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFContentPosition
+- uid: UltraForce.Library.Core.Asp.Types.Enums
+  commentId: N:UltraForce.Library.Core.Asp.Types.Enums
+  href: UltraForce.html
+  name: UltraForce.Library.Core.Asp.Types.Enums
+  nameWithType: UltraForce.Library.Core.Asp.Types.Enums
+  fullName: UltraForce.Library.Core.Asp.Types.Enums
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types
+    name: Types
+    href: UltraForce.Library.Core.Asp.Types.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types.Enums
+    name: Enums
+    href: UltraForce.Library.Core.Asp.Types.Enums.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types
+    name: Types
+    href: UltraForce.Library.Core.Asp.Types.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types.Enums
+    name: Enums
+    href: UltraForce.Library.Core.Asp.Types.Enums.html
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFStackItemProperties.Vertical*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFStackItemProperties.Vertical
+  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFStackItemProperties.html#UltraForce_Library_Core_Asp_TagHelpers_Styling_Containers_IUFStackItemProperties_Vertical
+  name: Vertical
+  nameWithType: IUFStackItemProperties.Vertical
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFStackItemProperties.Vertical

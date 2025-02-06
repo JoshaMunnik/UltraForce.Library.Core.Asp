@@ -58,6 +58,14 @@ public class UFStackItemTagHelper(IUFTheme aTheme) : UFTagHelperWithTheme(aTheme
   [HtmlAttributeName("no-interaction")]
   public bool NoInteraction { get; set; }
   
+  /// <inheritdoc />
+  [HtmlAttributeName("horizontal")]
+  public UFContentPosition Horizontal { get; set; } = UFContentPosition.Stretch;
+
+  /// <inheritdoc />
+  [HtmlAttributeName("vertical")]
+  public UFContentPosition Vertical { get; set; } = UFContentPosition.Stretch;
+
   #endregion
   
   #region overriden public methods
