@@ -1,0 +1,517 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class UFClickableTagHelperBase | UltraForce.Library.Core.Asp </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class UFClickableTagHelperBase | UltraForce.Library.Core.Asp ">
+      
+      <meta name="description" content="can be used as base class for elements that can be clicked upon and will jump to some other page.  It is a subclass of  adding some additional properties.   Subclasses can call  to determine the href value and process the additional properties.">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/new/master/apiSpec/new?filename=UltraForce_Library_Core_Asp_TagHelpers_Base_UFClickableTagHelperBase.md&amp;value=---%0Auid%3A%20UltraForce.Library.Core.Asp.TagHelpers.Base.UFClickableTagHelperBase%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="UltraForce.Library.Core.Asp">
+            UltraForce.Library.Core.Asp
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.UFClickableTagHelperBase">
+
+
+
+  <h1 id="UltraForce_Library_Core_Asp_TagHelpers_Base_UFClickableTagHelperBase" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.UFClickableTagHelperBase" class="text-break">
+Class UFClickableTagHelperBase  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/UFClickableTagHelperBase.cs/#L50"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="UltraForce.html">UltraForce</a>.<a class="xref" href="UltraForce.Library.html">Library</a>.<a class="xref" href="UltraForce.Library.Core.html">Core</a>.<a class="xref" href="UltraForce.Library.Core.Asp.html">Asp</a>.<a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.html">TagHelpers</a>.<a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.html">Base</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>UltraForce.Library.Core.Asp.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p><a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.UFClickableTagHelperBase.html">UFClickableTagHelperBase</a> can be used as base class for elements that can
+be clicked upon and will jump to some other page.</p>
+<p>
+It is a subclass of <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers.anchortaghelper">AnchorTagHelper</a> adding some additional properties.
+</p>
+<p>
+Subclasses can call <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.UFClickableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_UFClickableTagHelperBase_ProcessHref_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_">ProcessHref(TagHelperOutput)</a> to determine the href value and process the
+additional properties.
+</p>
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class UFClickableTagHelperBase : AnchorTagHelper, ITagHelper, ITagHelperComponent</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper">TagHelper</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers.anchortaghelper">AnchorTagHelper</a></div>
+      <div><span class="xref">UFClickableTagHelperBase</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.itaghelper">ITagHelper</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.itaghelpercomponent">ITagHelperComponent</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist derived">
+    <dt>Derived</dt>
+    <dd>
+      <div><a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Buttons.UFButtonTagHelper.html">UFButtonTagHelper</a></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers.anchortaghelper.process">AnchorTagHelper.Process(TagHelperContext, TagHelperOutput)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers.anchortaghelper.order">AnchorTagHelper.Order</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers.anchortaghelper.generator">AnchorTagHelper.Generator</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers.anchortaghelper.action">AnchorTagHelper.Action</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers.anchortaghelper.controller">AnchorTagHelper.Controller</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers.anchortaghelper.area">AnchorTagHelper.Area</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers.anchortaghelper.page">AnchorTagHelper.Page</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers.anchortaghelper.pagehandler">AnchorTagHelper.PageHandler</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers.anchortaghelper.protocol">AnchorTagHelper.Protocol</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers.anchortaghelper.host">AnchorTagHelper.Host</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers.anchortaghelper.fragment">AnchorTagHelper.Fragment</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers.anchortaghelper.route">AnchorTagHelper.Route</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers.anchortaghelper.routevalues">AnchorTagHelper.RouteValues</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers.anchortaghelper.viewcontext">AnchorTagHelper.ViewContext</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper.init">TagHelper.Init(TagHelperContext)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper.processasync">TagHelper.ProcessAsync(TagHelperContext, TagHelperOutput)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="UltraForce_Library_Core_Asp_TagHelpers_Base_UFClickableTagHelperBase__ctor_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.UFClickableTagHelperBase.#ctor*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_UFClickableTagHelperBase__ctor_Microsoft_AspNetCore_Routing_EndpointDataSource_Microsoft_AspNetCore_Mvc_ViewFeatures_IHtmlGenerator_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.UFClickableTagHelperBase.#ctor(Microsoft.AspNetCore.Routing.EndpointDataSource,Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator)">
+  UFClickableTagHelperBase(EndpointDataSource, IHtmlGenerator)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/UFClickableTagHelperBase.cs/#L60"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Constructs an instance <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.UFClickableTagHelperBase.html">UFClickableTagHelperBase</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected UFClickableTagHelperBase(EndpointDataSource anEndpointDataSource, IHtmlGenerator aHtmlGenerator)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>anEndpointDataSource</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.routing.endpointdatasource">EndpointDataSource</a></dt>
+    <dd></dd>
+    <dt><code>aHtmlGenerator</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.viewfeatures.ihtmlgenerator">IHtmlGenerator</a></dt>
+    <dd><p>Used to generate an href value</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="UltraForce_Library_Core_Asp_TagHelpers_Base_UFClickableTagHelperBase_Call_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.UFClickableTagHelperBase.Call*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_UFClickableTagHelperBase_Call" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.UFClickableTagHelperBase.Call">
+  Call
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/UFClickableTagHelperBase.cs/#L110"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>This property can be used as a shorthand combining <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers.anchortaghelper.controller">Controller</a>,
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers.anchortaghelper.action">Action</a> and <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers.anchortaghelper.routevalues">RouteValues</a> values.
+It 'calls' a controller action by building a href from the value.</p>
+<p>
+Use the following format:
+<pre><code class="lang-csharp">[Controller.]Action[(RouteValue1,RouteValue2,...)]</code></pre>
+
+<p>
+Values between square brackets are optional.
+</p>
+<p>
+If the controller is not set the current controller is used.
+</p>
+<p>
+The text separating parameters is set by the <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.UFClickableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_UFClickableTagHelperBase_CallParameterSeparator">CallParameterSeparator</a>; the
+default value is a comma.
+</p>
+<p>
+If the action does not expect any parameters, do not use the round brackets! Else the
+code assumes there is one parameter that has an empty string as value.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HtmlAttributeName(&quot;call&quot;)]
+public string? Call { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_TagHelpers_Base_UFClickableTagHelperBase_CallParameterSeparator_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.UFClickableTagHelperBase.CallParameterSeparator*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_UFClickableTagHelperBase_CallParameterSeparator" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.UFClickableTagHelperBase.CallParameterSeparator">
+  CallParameterSeparator
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/UFClickableTagHelperBase.cs/#L116"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>The separator used to separate parameters in the <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.UFClickableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_UFClickableTagHelperBase_Call">Call</a> property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HtmlAttributeName(&quot;call-parameter-separator&quot;)]
+public string? CallParameterSeparator { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_TagHelpers_Base_UFClickableTagHelperBase_EndpointDataSource_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.UFClickableTagHelperBase.EndpointDataSource*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_UFClickableTagHelperBase_EndpointDataSource" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.UFClickableTagHelperBase.EndpointDataSource">
+  EndpointDataSource
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/UFClickableTagHelperBase.cs/#L126"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Routing information</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected EndpointDataSource EndpointDataSource { get; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.routing.endpointdatasource">EndpointDataSource</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_TagHelpers_Base_UFClickableTagHelperBase_Href_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.UFClickableTagHelperBase.Href*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_UFClickableTagHelperBase_Href" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.UFClickableTagHelperBase.Href">
+  Href
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/UFClickableTagHelperBase.cs/#L76"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Use this value if no other route is set.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HtmlAttributeName(&quot;href&quot;)]
+public string? Href { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_TagHelpers_Base_UFClickableTagHelperBase_NewTab_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.UFClickableTagHelperBase.NewTab*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_UFClickableTagHelperBase_NewTab" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.UFClickableTagHelperBase.NewTab">
+  NewTab
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/UFClickableTagHelperBase.cs/#L82"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>When true add the <code>target=&quot;_blank&quot;</code> attribute.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HtmlAttributeName(&quot;new-tab&quot;)]
+public bool NewTab { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="UltraForce_Library_Core_Asp_TagHelpers_Base_UFClickableTagHelperBase_ProcessHref_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.UFClickableTagHelperBase.ProcessHref*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_UFClickableTagHelperBase_ProcessHref_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.UFClickableTagHelperBase.ProcessHref(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)">
+  ProcessHref(TagHelperOutput)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/UFClickableTagHelperBase.cs/#L137"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Checks if a href attribute is set; if not create one based on the <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.UFClickableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_UFClickableTagHelperBase_Href">Href</a> property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool ProcessHref(TagHelperOutput anOutput)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>anOutput</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelperoutput">TagHelperOutput</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if a href value could be determined</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/UFClickableTagHelperBase.cs/#L50" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

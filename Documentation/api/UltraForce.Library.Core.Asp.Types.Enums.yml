@@ -4,18 +4,11 @@ items:
   commentId: N:UltraForce.Library.Core.Asp.Types.Enums
   id: UltraForce.Library.Core.Asp.Types.Enums
   children:
-  - UltraForce.Library.Core.Asp.Types.Enums.UFButtonIconPosition
-  - UltraForce.Library.Core.Asp.Types.Enums.UFButtonType
-  - UltraForce.Library.Core.Asp.Types.Enums.UFContentPosition
   - UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute
-  - UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignItems
-  - UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContent
-  - UltraForce.Library.Core.Asp.Types.Enums.UFSize
   - UltraForce.Library.Core.Asp.Types.Enums.UFTableCellType
   - UltraForce.Library.Core.Asp.Types.Enums.UFTableRowType
   - UltraForce.Library.Core.Asp.Types.Enums.UFTableSortLocation
   - UltraForce.Library.Core.Asp.Types.Enums.UFTableSortType
-  - UltraForce.Library.Core.Asp.Types.Enums.UFWrapType
   langs:
   - csharp
   - vb
@@ -26,54 +19,12 @@ items:
   assemblies:
   - UltraForce.Library.Core.Asp
 references:
-- uid: UltraForce.Library.Core.Asp.Types.Enums.UFButtonIconPosition
-  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFButtonIconPosition
-  parent: UltraForce.Library.Core.Asp.Types.Enums
-  href: UltraForce.Library.Core.Asp.Types.Enums.UFButtonIconPosition.html
-  name: UFButtonIconPosition
-  nameWithType: UFButtonIconPosition
-  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFButtonIconPosition
-- uid: UltraForce.Library.Core.Asp.Types.Enums.UFButtonType
-  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFButtonType
-  parent: UltraForce.Library.Core.Asp.Types.Enums
-  href: UltraForce.Library.Core.Asp.Types.Enums.UFButtonType.html
-  name: UFButtonType
-  nameWithType: UFButtonType
-  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFButtonType
-- uid: UltraForce.Library.Core.Asp.Types.Enums.UFContentPosition
-  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFContentPosition
-  parent: UltraForce.Library.Core.Asp.Types.Enums
-  href: UltraForce.Library.Core.Asp.Types.Enums.UFContentPosition.html
-  name: UFContentPosition
-  nameWithType: UFContentPosition
-  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFContentPosition
 - uid: UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute
   commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute
   href: UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.html
   name: UFDataAttribute
   nameWithType: UFDataAttribute
   fullName: UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute
-- uid: UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignItems
-  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignItems
-  parent: UltraForce.Library.Core.Asp.Types.Enums
-  href: UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignItems.html
-  name: UFFlexAlignItems
-  nameWithType: UFFlexAlignItems
-  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignItems
-- uid: UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContent
-  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContent
-  parent: UltraForce.Library.Core.Asp.Types.Enums
-  href: UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContent.html
-  name: UFFlexDistributeContent
-  nameWithType: UFFlexDistributeContent
-  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContent
-- uid: UltraForce.Library.Core.Asp.Types.Enums.UFSize
-  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFSize
-  parent: UltraForce.Library.Core.Asp.Types.Enums
-  href: UltraForce.Library.Core.Asp.Types.Enums.UFSize.html
-  name: UFSize
-  nameWithType: UFSize
-  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFSize
 - uid: UltraForce.Library.Core.Asp.Types.Enums.UFTableCellType
   commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFTableCellType
   parent: UltraForce.Library.Core.Asp.Types.Enums
@@ -102,13 +53,6 @@ references:
   name: UFTableSortType
   nameWithType: UFTableSortType
   fullName: UltraForce.Library.Core.Asp.Types.Enums.UFTableSortType
-- uid: UltraForce.Library.Core.Asp.Types.Enums.UFWrapType
-  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFWrapType
-  parent: UltraForce.Library.Core.Asp.Types.Enums
-  href: UltraForce.Library.Core.Asp.Types.Enums.UFWrapType.html
-  name: UFWrapType
-  nameWithType: UFWrapType
-  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFWrapType
 - uid: UltraForce.Library.Core.Asp.Types.Enums
   commentId: N:UltraForce.Library.Core.Asp.Types.Enums
   href: UltraForce.html

@@ -1,0 +1,101 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base
+  commentId: N:UltraForce.Library.Core.Asp.TagHelpers.Base
+  id: UltraForce.Library.Core.Asp.TagHelpers.Base
+  children:
+  - UltraForce.Library.Core.Asp.TagHelpers.Base.UFClickableTagHelperBase
+  - UltraForce.Library.Core.Asp.TagHelpers.Base.UFStyledTagHelperBase
+  - UltraForce.Library.Core.Asp.TagHelpers.Base.UFTagHelperWithModelExpressionRenderer
+  - UltraForce.Library.Core.Asp.TagHelpers.Base.UFTagHelperWithViewContext
+  langs:
+  - csharp
+  - vb
+  name: UltraForce.Library.Core.Asp.TagHelpers.Base
+  nameWithType: UltraForce.Library.Core.Asp.TagHelpers.Base
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base
+  type: Namespace
+  assemblies:
+  - UltraForce.Library.Core.Asp
+references:
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.UFClickableTagHelperBase
+  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Base.UFClickableTagHelperBase
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Base
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.UFClickableTagHelperBase.html
+  name: UFClickableTagHelperBase
+  nameWithType: UFClickableTagHelperBase
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.UFClickableTagHelperBase
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.UFStyledTagHelperBase
+  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Base.UFStyledTagHelperBase
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.UFStyledTagHelperBase.html
+  name: UFStyledTagHelperBase
+  nameWithType: UFStyledTagHelperBase
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.UFStyledTagHelperBase
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.UFTagHelperWithModelExpressionRenderer
+  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Base.UFTagHelperWithModelExpressionRenderer
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Base
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.UFTagHelperWithModelExpressionRenderer.html
+  name: UFTagHelperWithModelExpressionRenderer
+  nameWithType: UFTagHelperWithModelExpressionRenderer
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.UFTagHelperWithModelExpressionRenderer
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.UFTagHelperWithViewContext
+  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Base.UFTagHelperWithViewContext
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Base
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.UFTagHelperWithViewContext.html
+  name: UFTagHelperWithViewContext
+  nameWithType: UFTagHelperWithViewContext
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.UFTagHelperWithViewContext
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base
+  commentId: N:UltraForce.Library.Core.Asp.TagHelpers.Base
+  href: UltraForce.html
+  name: UltraForce.Library.Core.Asp.TagHelpers.Base
+  nameWithType: UltraForce.Library.Core.Asp.TagHelpers.Base
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers
+    name: TagHelpers
+    href: UltraForce.Library.Core.Asp.TagHelpers.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Base
+    name: Base
+    href: UltraForce.Library.Core.Asp.TagHelpers.Base.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers
+    name: TagHelpers
+    href: UltraForce.Library.Core.Asp.TagHelpers.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Base
+    name: Base
+    href: UltraForce.Library.Core.Asp.TagHelpers.Base.html

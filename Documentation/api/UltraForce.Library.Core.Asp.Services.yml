@@ -6,13 +6,10 @@ items:
   children:
   - UltraForce.Library.Core.Asp.Services.IUFAsynchronousExecutableService
   - UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer
-  - UltraForce.Library.Core.Asp.Services.IUFTheme
   - UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber
-  - UltraForce.Library.Core.Asp.Services.UFFontAwesomeTheme
   - UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer
   - UltraForce.Library.Core.Asp.Services.UFRazorViewRenderer
   - UltraForce.Library.Core.Asp.Services.UFScopedBackgroundService`1
-  - UltraForce.Library.Core.Asp.Services.UFTheme
   langs:
   - csharp
   - vb
@@ -36,25 +33,12 @@ references:
   name: IUFModelExpressionRenderer
   nameWithType: IUFModelExpressionRenderer
   fullName: UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer
-- uid: UltraForce.Library.Core.Asp.Services.IUFTheme
-  commentId: T:UltraForce.Library.Core.Asp.Services.IUFTheme
-  parent: UltraForce.Library.Core.Asp.Services
-  href: UltraForce.Library.Core.Asp.Services.IUFTheme.html
-  name: IUFTheme
-  nameWithType: IUFTheme
-  fullName: UltraForce.Library.Core.Asp.Services.IUFTheme
 - uid: UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber
   commentId: T:UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber
   href: UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber.html
   name: UFDutchIdentityErrorDescriber
   nameWithType: UFDutchIdentityErrorDescriber
   fullName: UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber
-- uid: UltraForce.Library.Core.Asp.Services.UFFontAwesomeTheme
-  commentId: T:UltraForce.Library.Core.Asp.Services.UFFontAwesomeTheme
-  href: UltraForce.Library.Core.Asp.Services.UFFontAwesomeTheme.html
-  name: UFFontAwesomeTheme
-  nameWithType: UFFontAwesomeTheme
-  fullName: UltraForce.Library.Core.Asp.Services.UFFontAwesomeTheme
 - uid: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer
   commentId: T:UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer
   href: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.html
@@ -92,13 +76,6 @@ references:
   - name: " "
   - name: TAsynchronousExecutableService
   - name: )
-- uid: UltraForce.Library.Core.Asp.Services.UFTheme
-  commentId: T:UltraForce.Library.Core.Asp.Services.UFTheme
-  parent: UltraForce.Library.Core.Asp.Services
-  href: UltraForce.Library.Core.Asp.Services.UFTheme.html
-  name: UFTheme
-  nameWithType: UFTheme
-  fullName: UltraForce.Library.Core.Asp.Services.UFTheme
 - uid: UltraForce.Library.Core.Asp.Services
   commentId: N:UltraForce.Library.Core.Asp.Services
   href: UltraForce.html

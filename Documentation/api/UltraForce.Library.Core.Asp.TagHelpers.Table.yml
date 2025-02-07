@@ -1,0 +1,93 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Table
+  commentId: N:UltraForce.Library.Core.Asp.TagHelpers.Table
+  id: UltraForce.Library.Core.Asp.TagHelpers.Table
+  children:
+  - UltraForce.Library.Core.Asp.TagHelpers.Table.UFCellTagHelper
+  - UltraForce.Library.Core.Asp.TagHelpers.Table.UFTableRowTagHelper
+  - UltraForce.Library.Core.Asp.TagHelpers.Table.UFTableTagHelper
+  langs:
+  - csharp
+  - vb
+  name: UltraForce.Library.Core.Asp.TagHelpers.Table
+  nameWithType: UltraForce.Library.Core.Asp.TagHelpers.Table
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Table
+  type: Namespace
+  assemblies:
+  - UltraForce.Library.Core.Asp
+references:
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Table.UFCellTagHelper
+  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Table.UFCellTagHelper
+  href: UltraForce.Library.Core.Asp.TagHelpers.Table.UFCellTagHelper.html
+  name: UFCellTagHelper
+  nameWithType: UFCellTagHelper
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Table.UFCellTagHelper
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Table.UFTableRowTagHelper
+  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Table.UFTableRowTagHelper
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Table
+  href: UltraForce.Library.Core.Asp.TagHelpers.Table.UFTableRowTagHelper.html
+  name: UFTableRowTagHelper
+  nameWithType: UFTableRowTagHelper
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Table.UFTableRowTagHelper
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Table.UFTableTagHelper
+  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Table.UFTableTagHelper
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Table
+  href: UltraForce.Library.Core.Asp.TagHelpers.Table.UFTableTagHelper.html
+  name: UFTableTagHelper
+  nameWithType: UFTableTagHelper
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Table.UFTableTagHelper
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Table
+  commentId: N:UltraForce.Library.Core.Asp.TagHelpers.Table
+  href: UltraForce.html
+  name: UltraForce.Library.Core.Asp.TagHelpers.Table
+  nameWithType: UltraForce.Library.Core.Asp.TagHelpers.Table
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Table
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers
+    name: TagHelpers
+    href: UltraForce.Library.Core.Asp.TagHelpers.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Table
+    name: Table
+    href: UltraForce.Library.Core.Asp.TagHelpers.Table.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers
+    name: TagHelpers
+    href: UltraForce.Library.Core.Asp.TagHelpers.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Table
+    name: Table
+    href: UltraForce.Library.Core.Asp.TagHelpers.Table.html

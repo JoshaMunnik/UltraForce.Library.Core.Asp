@@ -4,7 +4,6 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-builder.Services.AddTransient<IUFTheme, UFTheme>();
 builder.Services.AddTransient<IUFModelExpressionRenderer, UFModelExpressionRenderer>();
 
 var app = builder.Build();

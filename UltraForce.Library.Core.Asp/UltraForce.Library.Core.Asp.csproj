@@ -14,8 +14,17 @@
         <RepositoryUrl>https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp</RepositoryUrl>
         <PackageReadmeFile>README.md</PackageReadmeFile>
         <AssemblyVersion></AssemblyVersion>
-        <Version>1.0.30</Version>
-        <PackageReleaseNotes>1.0.30
+        <Version>1.0.32</Version>
+        <PackageReleaseNotes>1.0.32
+- added UFStyledTagHelperBase
+
+1.0.31
+- removed styling related code and types
+- removed IUFTheme and classes implementing this interface
+- removed tag helpers that only applied some styling
+- most tag helpers are now abstract; subclasses can override any of the protected virtual methods
+
+1.0.30
 - renamed color to type attribute in UFButtonTagHelper
 
 1.0.29

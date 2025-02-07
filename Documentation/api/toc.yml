@@ -27,20 +27,14 @@ items:
     name: IUFAsynchronousExecutableService
   - uid: UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer
     name: IUFModelExpressionRenderer
-  - uid: UltraForce.Library.Core.Asp.Services.IUFTheme
-    name: IUFTheme
   - uid: UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber
     name: UFDutchIdentityErrorDescriber
-  - uid: UltraForce.Library.Core.Asp.Services.UFFontAwesomeTheme
-    name: UFFontAwesomeTheme
   - uid: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer
     name: UFModelExpressionRenderer
   - uid: UltraForce.Library.Core.Asp.Services.UFRazorViewRenderer
     name: UFRazorViewRenderer
   - uid: UltraForce.Library.Core.Asp.Services.UFScopedBackgroundService`1
     name: UFScopedBackgroundService<TAsynchronousExecutableService>
-  - uid: UltraForce.Library.Core.Asp.Services.UFTheme
-    name: UFTheme
 - uid: UltraForce.Library.Core.Asp.Sessions
   name: UltraForce.Library.Core.Asp.Sessions
   items:
@@ -55,94 +49,55 @@ items:
     name: UFConditionTagHelper
   - uid: UltraForce.Library.Core.Asp.TagHelpers.UFNotConditionTagHelper
     name: UFNotConditionTagHelper
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Lib
-  name: UltraForce.Library.Core.Asp.TagHelpers.Lib
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base
+  name: UltraForce.Library.Core.Asp.TagHelpers.Base
   items:
-  - uid: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFClickableTagHelperBase
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.UFClickableTagHelperBase
     name: UFClickableTagHelperBase
-  - uid: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFTagHelperWithModelExpressionRenderer
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.UFStyledTagHelperBase
+    name: UFStyledTagHelperBase
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.UFTagHelperWithModelExpressionRenderer
     name: UFTagHelperWithModelExpressionRenderer
-  - uid: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFTagHelperWithTheme
-    name: UFTagHelperWithTheme
-  - uid: UltraForce.Library.Core.Asp.TagHelpers.Lib.UFTagHelperWithViewContext
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.UFTagHelperWithViewContext
     name: UFTagHelperWithViewContext
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
-  name: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Buttons
+  name: UltraForce.Library.Core.Asp.TagHelpers.Buttons
   items:
-  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.IUFButtonProperties
-    name: IUFButtonProperties
-  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonProperties
-    name: UFButtonProperties
-  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Buttons.UFButtonTagHelper
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Buttons.UFButtonTagHelper
     name: UFButtonTagHelper
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers
-  name: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Containers
+  name: UltraForce.Library.Core.Asp.TagHelpers.Containers
   items:
-  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFContainerProperties
-    name: IUFContainerProperties
-  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFStackItemProperties
-    name: IUFStackItemProperties
-  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.IUFTabProperties
-    name: IUFTabProperties
-  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFContainerProperties
-    name: UFContainerProperties
-  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFContainerTagHelper
-    name: UFContainerTagHelper
-  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackItemTagHelper
-    name: UFStackItemTagHelper
-  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFStackTagHelper
-    name: UFStackTagHelper
-  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFTabTagHelper
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Containers.UFTabTagHelper
     name: UFTabTagHelper
-  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Containers.UFTabsTagHelper
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Containers.UFTabsTagHelper
     name: UFTabsTagHelper
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Data
-  name: UltraForce.Library.Core.Asp.TagHelpers.Styling.Data
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Data
+  name: UltraForce.Library.Core.Asp.TagHelpers.Data
   items:
-  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Data.UFDataItemTagHelper
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Data.UFDataItemTagHelper
     name: UFDataItemTagHelper
-  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Data.UFDataListTagHelper
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Data.UFDataListTagHelper
     name: UFDataListTagHelper
-  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Data.UFDataNameTagHelper
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Data.UFDataNameTagHelper
     name: UFDataNameTagHelper
-  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Data.UFDataValueTagHelper
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Data.UFDataValueTagHelper
     name: UFDataValueTagHelper
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms
-  name: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Forms
+  name: UltraForce.Library.Core.Asp.TagHelpers.Forms
   items:
-  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.IUFInputProperties
-    name: IUFInputProperties
-  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFInputTagHelper
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Forms.UFInputTagHelper
     name: UFInputTagHelper
-  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Forms.UFSelectTagHelper
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Forms.UFSelectTagHelper
     name: UFSelectTagHelper
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
-  name: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Table
+  name: UltraForce.Library.Core.Asp.TagHelpers.Table
   items:
-  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFFlexProperties
-    name: IUFFlexProperties
-  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.IUFSpacerProperties
-    name: IUFSpacerProperties
-  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFColumnTagHelper
-    name: UFColumnTagHelper
-  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFRowTagHelper
-    name: UFRowTagHelper
-  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Layout.UFSpacerTagHelper
-    name: UFSpacerTagHelper
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table
-  name: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table
-  items:
-  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFCellProperties
-    name: IUFCellProperties
-  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableProperties
-    name: IUFTableProperties
-  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.IUFTableRowProperties
-    name: IUFTableRowProperties
-  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Table.UFCellTagHelper
     name: UFCellTagHelper
-  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableRowTagHelper
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Table.UFTableRowTagHelper
     name: UFTableRowTagHelper
-  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Table.UFTableTagHelper
     name: UFTableTagHelper
 - uid: UltraForce.Library.Core.Asp.Tools
   name: UltraForce.Library.Core.Asp.Tools
@@ -165,20 +120,8 @@ items:
 - uid: UltraForce.Library.Core.Asp.Types.Enums
   name: UltraForce.Library.Core.Asp.Types.Enums
   items:
-  - uid: UltraForce.Library.Core.Asp.Types.Enums.UFButtonIconPosition
-    name: UFButtonIconPosition
-  - uid: UltraForce.Library.Core.Asp.Types.Enums.UFButtonType
-    name: UFButtonType
-  - uid: UltraForce.Library.Core.Asp.Types.Enums.UFContentPosition
-    name: UFContentPosition
   - uid: UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute
     name: UFDataAttribute
-  - uid: UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignItems
-    name: UFFlexAlignItems
-  - uid: UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContent
-    name: UFFlexDistributeContent
-  - uid: UltraForce.Library.Core.Asp.Types.Enums.UFSize
-    name: UFSize
   - uid: UltraForce.Library.Core.Asp.Types.Enums.UFTableCellType
     name: UFTableCellType
   - uid: UltraForce.Library.Core.Asp.Types.Enums.UFTableRowType
@@ -187,8 +130,6 @@ items:
     name: UFTableSortLocation
   - uid: UltraForce.Library.Core.Asp.Types.Enums.UFTableSortType
     name: UFTableSortType
-  - uid: UltraForce.Library.Core.Asp.Types.Enums.UFWrapType
-    name: UFWrapType
 - uid: UltraForce.Library.Core.Asp.ViewModels
   name: UltraForce.Library.Core.Asp.ViewModels
   items:

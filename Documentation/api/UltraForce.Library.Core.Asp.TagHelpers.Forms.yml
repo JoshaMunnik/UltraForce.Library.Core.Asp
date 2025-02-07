@@ -1,0 +1,30 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Forms
+  commentId: N:UltraForce.Library.Core.Asp.TagHelpers.Forms
+  id: UltraForce.Library.Core.Asp.TagHelpers.Forms
+  children:
+  - UltraForce.Library.Core.Asp.TagHelpers.Forms.UFInputTagHelper
+  - UltraForce.Library.Core.Asp.TagHelpers.Forms.UFSelectTagHelper
+  langs:
+  - csharp
+  - vb
+  name: UltraForce.Library.Core.Asp.TagHelpers.Forms
+  nameWithType: UltraForce.Library.Core.Asp.TagHelpers.Forms
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Forms
+  type: Namespace
+  assemblies:
+  - UltraForce.Library.Core.Asp
+references:
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Forms.UFInputTagHelper
+  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Forms.UFInputTagHelper
+  href: UltraForce.Library.Core.Asp.TagHelpers.Forms.UFInputTagHelper.html
+  name: UFInputTagHelper
+  nameWithType: UFInputTagHelper
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Forms.UFInputTagHelper
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Forms.UFSelectTagHelper
+  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Forms.UFSelectTagHelper
+  href: UltraForce.Library.Core.Asp.TagHelpers.Forms.UFSelectTagHelper.html
+  name: UFSelectTagHelper
+  nameWithType: UFSelectTagHelper
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Forms.UFSelectTagHelper

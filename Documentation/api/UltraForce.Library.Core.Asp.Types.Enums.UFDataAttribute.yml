@@ -86,7 +86,7 @@ items:
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Enums
-  summary: Used by <xref href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper" data-throw-if-not-resolved="false"></xref>.
+  summary: Used by <xref href="UltraForce.Library.Core.Asp.TagHelpers.Table.UFTableTagHelper" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
     content: public const string Filter = "data-uf-filter"
@@ -115,7 +115,7 @@ items:
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Enums
-  summary: Used by <xref href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper" data-throw-if-not-resolved="false"></xref>.
+  summary: Used by <xref href="UltraForce.Library.Core.Asp.TagHelpers.Table.UFTableTagHelper" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
     content: public const string Paging = "data-uf-paging"
@@ -144,7 +144,7 @@ items:
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Enums
-  summary: Used by <xref href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper" data-throw-if-not-resolved="false"></xref>.
+  summary: Used by <xref href="UltraForce.Library.Core.Asp.TagHelpers.Table.UFTableTagHelper" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
     content: public const string PageSize = "data-uf-page-size"
@@ -173,7 +173,7 @@ items:
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Enums
-  summary: Used by <xref href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper" data-throw-if-not-resolved="false"></xref>.
+  summary: Used by <xref href="UltraForce.Library.Core.Asp.TagHelpers.Table.UFTableTagHelper" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
     content: public const string Sorting = "data-uf-sorting"
@@ -202,7 +202,7 @@ items:
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Enums
-  summary: Used by <xref href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper" data-throw-if-not-resolved="false"></xref>.
+  summary: Used by <xref href="UltraForce.Library.Core.Asp.TagHelpers.Table.UFCellTagHelper" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
     content: public const string SortType = "data-uf-sort-type"
@@ -231,7 +231,7 @@ items:
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Enums
-  summary: Used by <xref href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper" data-throw-if-not-resolved="false"></xref>.
+  summary: Used by <xref href="UltraForce.Library.Core.Asp.TagHelpers.Table.UFCellTagHelper" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
     content: public const string SortValue = "data-uf-sort-value"
@@ -260,7 +260,7 @@ items:
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Enums
-  summary: Used by <xref href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper" data-throw-if-not-resolved="false"></xref>.
+  summary: Used by <xref href="UltraForce.Library.Core.Asp.TagHelpers.Table.UFCellTagHelper" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
     content: public const string NoFilter = "data-uf-no-filter"
@@ -289,7 +289,7 @@ items:
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Enums
-  summary: Used by <xref href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableRowTagHelper" data-throw-if-not-resolved="false"></xref>.
+  summary: Used by <xref href="UltraForce.Library.Core.Asp.TagHelpers.Table.UFTableRowTagHelper" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
     content: public const string SortLocation = "data-uf-sort-location"
@@ -318,7 +318,7 @@ items:
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Enums
-  summary: Used by <xref href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper" data-throw-if-not-resolved="false"></xref>.
+  summary: Used by <xref href="UltraForce.Library.Core.Asp.TagHelpers.Table.UFTableTagHelper" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
     content: public const string FilterTable = "data-uf-filter-table"
@@ -347,7 +347,7 @@ items:
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Enums
-  summary: Used by <xref href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableRowTagHelper" data-throw-if-not-resolved="false"></xref>.
+  summary: Used by <xref href="UltraForce.Library.Core.Asp.TagHelpers.Table.UFTableRowTagHelper" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
     content: public const string HeaderRow = "data-uf-header-row"
@@ -376,7 +376,7 @@ items:
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Enums
-  summary: Used by <xref href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper" data-throw-if-not-resolved="false"></xref>.
+  summary: Used by <xref href="UltraForce.Library.Core.Asp.TagHelpers.Table.UFTableTagHelper" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
     content: public const string SortAscending = "data-uf-sort-ascending"
@@ -405,7 +405,7 @@ items:
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Enums
-  summary: Used by <xref href="UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper" data-throw-if-not-resolved="false"></xref>.
+  summary: Used by <xref href="UltraForce.Library.Core.Asp.TagHelpers.Table.UFTableTagHelper" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
     content: public const string SortDescending = "data-uf-sort-descending"
@@ -1110,13 +1110,13 @@ references:
   name: System
   nameWithType: System
   fullName: System
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper
-  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper
-  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table
-  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper.html
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Table.UFTableTagHelper
+  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Table.UFTableTagHelper
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Table
+  href: UltraForce.Library.Core.Asp.TagHelpers.Table.UFTableTagHelper.html
   name: UFTableTagHelper
   nameWithType: UFTableTagHelper
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableTagHelper
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Table.UFTableTagHelper
 - uid: System.String
   commentId: T:System.String
   parent: System
@@ -1128,12 +1128,12 @@ references:
   nameWithType.vb: String
   fullName.vb: String
   name.vb: String
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table
-  commentId: N:UltraForce.Library.Core.Asp.TagHelpers.Styling.Table
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Table
+  commentId: N:UltraForce.Library.Core.Asp.TagHelpers.Table
   href: UltraForce.html
-  name: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table
-  nameWithType: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table
+  name: UltraForce.Library.Core.Asp.TagHelpers.Table
+  nameWithType: UltraForce.Library.Core.Asp.TagHelpers.Table
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Table
   spec.csharp:
   - uid: UltraForce
     name: UltraForce
@@ -1155,13 +1155,9 @@ references:
     name: TagHelpers
     href: UltraForce.Library.Core.Asp.TagHelpers.html
   - name: .
-  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling
-    name: Styling
-    href: UltraForce.Library.Core.Asp.TagHelpers.Styling.html
-  - name: .
-  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Table
     name: Table
-    href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.html
+    href: UltraForce.Library.Core.Asp.TagHelpers.Table.html
   spec.vb:
   - uid: UltraForce
     name: UltraForce
@@ -1183,23 +1179,19 @@ references:
     name: TagHelpers
     href: UltraForce.Library.Core.Asp.TagHelpers.html
   - name: .
-  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling
-    name: Styling
-    href: UltraForce.Library.Core.Asp.TagHelpers.Styling.html
-  - name: .
-  - uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Table
     name: Table
-    href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.html
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper
-  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper
-  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper.html
+    href: UltraForce.Library.Core.Asp.TagHelpers.Table.html
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Table.UFCellTagHelper
+  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Table.UFCellTagHelper
+  href: UltraForce.Library.Core.Asp.TagHelpers.Table.UFCellTagHelper.html
   name: UFCellTagHelper
   nameWithType: UFCellTagHelper
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFCellTagHelper
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableRowTagHelper
-  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableRowTagHelper
-  parent: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table
-  href: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableRowTagHelper.html
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Table.UFCellTagHelper
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Table.UFTableRowTagHelper
+  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Table.UFTableRowTagHelper
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Table
+  href: UltraForce.Library.Core.Asp.TagHelpers.Table.UFTableRowTagHelper.html
   name: UFTableRowTagHelper
   nameWithType: UFTableRowTagHelper
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Styling.Table.UFTableRowTagHelper
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Table.UFTableRowTagHelper

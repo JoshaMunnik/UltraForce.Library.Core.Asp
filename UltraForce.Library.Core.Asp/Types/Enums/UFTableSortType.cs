@@ -28,7 +28,7 @@
 // </license>
 
 using System.ComponentModel;
-using UltraForce.Library.Core.Asp.TagHelpers.Styling.Table;
+using UltraForce.Library.Core.Asp.TagHelpers.Table;
 
 namespace UltraForce.Library.Core.Asp.Types.Enums;
 
