@@ -103,13 +103,20 @@ input element.</p>
 If there are no field errors, the field error block is not rendered.
 </p>
 <p>
+Since the pseudo selectors ::after and ::before can not be used no input and textarea elements,
+it is possible to override <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Forms.UFInputTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Forms_UFInputTagHelper_GetTextInputPreHtml_System_String_">GetTextInputPreHtml(string)</a> and
+<a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Forms.UFInputTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Forms_UFInputTagHelper_GetTextInputPostHtml_System_String_">GetTextInputPostHtml(string)</a> to add extra html before and after the input element.
+</p>
+<p>
 Renders text input with wrapping and label:
 <pre><code class="lang-csharp">&lt;div class="{GetTextInputWrapperClasses(type)}"&gt;
-  &lt;label class="{GetTextLabelClasses(type)}" for="{id}"&gt;
-    &lt;span class="{GetTextLabelSpanClasses(type)}"&gt;{label}&lt;/span&gt;
-    &lt;span class="{GetTextLabelDescriptionClasses(type)}"&gt;{description}&lt;/span&gt;
+  &lt;label class="{GetTextInputLabelClasses(type)}" for="{id}"&gt;
+    &lt;span class="{GetTextInputLabelSpanClasses(type)}"&gt;{label}&lt;/span&gt;
+    &lt;span class="{GetTextInputLabelDescriptionClasses(type)}"&gt;{description}&lt;/span&gt;
   &lt;/label&gt;
-  &lt;input class="{GetTextInputClasses(type)}" id={} .../&gt;
+  {GetTextInputPreHtml()}
+    &lt;input class="{GetTextInputClasses(type)}" id={} .../&gt;
+  {GetTextInputPostHtml()}
   {GetValidationFeedbackContainer(id)}
   {RenderFieldErrors(...)}
 &lt;/div&gt;</code></pre>
@@ -117,7 +124,9 @@ Renders text input with wrapping and label:
 <p>
 Renders text input with wrapping and no label:
 <pre><code class="lang-csharp">&lt;div class="{GetTextInputWrapperClasses(type)}"&gt;
-  &lt;input class="{GetTextInputClasses(type)}" id={} .../&gt;
+  {GetTextInputPreHtml()}
+    &lt;input class="{GetTextInputClasses(type)}" id={} .../&gt;
+  {GetTextInputPostHtml()}
   {GetValidationFeedbackContainer(id)}
   &lt;div class="{GetFieldErrorsClasses()}"&gt;{GetFieldErrorsHtml()}&lt;/div&gt;
 &lt;/div&gt;</code></pre>
@@ -129,11 +138,13 @@ Renders text input without wrapping:
 <p>
 Renders multiline text input with wrapping and label:
 <pre><code class="lang-csharp">&lt;div class="{GetTextInputWrapperClasses(type)}"&gt;
-  &lt;label class="{GetTextLabelClasses(type)}" for="{id}"&gt;
-    &lt;span class="{GetTextLabelSpanClasses(type)}"&gt;{label}&lt;/span&gt;
-    &lt;span class="{GetTextLabelDescriptionClasses(type)}"&gt;{description}&lt;/span&gt;
+  &lt;label class="{GetTextInputLabelClasses(type)}" for="{id}"&gt;
+    &lt;span class="{GetTextInputLabelSpanClasses(type)}"&gt;{label}&lt;/span&gt;
+    &lt;span class="{GetTextInputLabelDescriptionClasses(type)}"&gt;{description}&lt;/span&gt;
   &lt;/label&gt;
-  &lt;textarea class="{GetTextInputClasses(type)}" id={} ..." &gt;{value}&lt;/textarea&gt;
+  {GetTextInputPreHtml()}
+    &lt;textarea class="{GetTextInputClasses(type)}" id={} ..." &gt;{value}&lt;/textarea&gt;
+  {GetTextInputPostHtml()}
   {GetValidationFeedbackContainer(id)}
   {RenderFieldErrors(...)}
 &lt;/div&gt;</code></pre>
@@ -141,7 +152,9 @@ Renders multiline text input with wrapping and label:
 <p>
 Renders multiline text input with wrapping and no label:
 <pre><code class="lang-csharp">&lt;div class="{GetTextInputWrapperClasses(type)}"&gt;
-  &lt;textarea class="{GetTextInputClasses(type)}" id={} ..." &gt;{value}&lt;/textarea&gt;
+  {GetTextInputPreHtml(type)}
+    &lt;textarea class="{GetTextInputClasses(type)}" id={} ..." &gt;{value}&lt;/textarea&gt;
+  {GetTextInputPostHtml()}
   {GetValidationFeedbackContainer(id)}
   &lt;div class="{GetFieldErrorsClasses()}"&gt;{GetFieldErrorsHtml()}&lt;/div&gt;
 &lt;/div&gt;</code></pre>

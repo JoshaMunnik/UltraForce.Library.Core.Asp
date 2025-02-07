@@ -49,14 +49,21 @@ namespace UltraForce.Library.Core.Asp.TagHelpers.Forms;
 /// If there are no field errors, the field error block is not rendered.
 /// </para>
 /// <para>
+/// Since the pseudo selectors ::after and ::before can not be used no input and textarea elements,
+/// it is possible to override <see cref="GetTextInputPreHtml"/> and
+/// <see cref="GetTextInputPostHtml"/> to add extra html before and after the input element.
+/// </para>
+/// <para>
 /// Renders text input with wrapping and label:
 /// <code>
 /// &lt;div class="{GetTextInputWrapperClasses(type)}"&gt;
-///   &lt;label class="{GetTextLabelClasses(type)}" for="{id}"&gt;
-///     &lt;span class="{GetTextLabelSpanClasses(type)}"&gt;{label}&lt;/span&gt;
-///     &lt;span class="{GetTextLabelDescriptionClasses(type)}"&gt;{description}&lt;/span&gt;
+///   &lt;label class="{GetTextInputLabelClasses(type)}" for="{id}"&gt;
+///     &lt;span class="{GetTextInputLabelSpanClasses(type)}"&gt;{label}&lt;/span&gt;
+///     &lt;span class="{GetTextInputLabelDescriptionClasses(type)}"&gt;{description}&lt;/span&gt;
 ///   &lt;/label&gt;
-///   &lt;input class="{GetTextInputClasses(type)}" id={} .../&gt;
+///   {GetTextInputPreHtml()}
+///     &lt;input class="{GetTextInputClasses(type)}" id={} .../&gt;
+///   {GetTextInputPostHtml()}
 ///   {GetValidationFeedbackContainer(id)}
 ///   {RenderFieldErrors(...)}
 /// &lt;/div&gt;
@@ -66,7 +73,9 @@ namespace UltraForce.Library.Core.Asp.TagHelpers.Forms;
 /// Renders text input with wrapping and no label:
 /// <code>
 /// &lt;div class="{GetTextInputWrapperClasses(type)}"&gt;
-///   &lt;input class="{GetTextInputClasses(type)}" id={} .../&gt;
+///   {GetTextInputPreHtml()}
+///     &lt;input class="{GetTextInputClasses(type)}" id={} .../&gt;
+///   {GetTextInputPostHtml()}
 ///   {GetValidationFeedbackContainer(id)}
 ///   &lt;div class="{GetFieldErrorsClasses()}"&gt;{GetFieldErrorsHtml()}&lt;/div&gt;
 /// &lt;/div&gt;
@@ -82,11 +91,13 @@ namespace UltraForce.Library.Core.Asp.TagHelpers.Forms;
 /// Renders multiline text input with wrapping and label:
 /// <code>
 /// &lt;div class="{GetTextInputWrapperClasses(type)}"&gt;
-///   &lt;label class="{GetTextLabelClasses(type)}" for="{id}"&gt;
-///     &lt;span class="{GetTextLabelSpanClasses(type)}"&gt;{label}&lt;/span&gt;
-///     &lt;span class="{GetTextLabelDescriptionClasses(type)}"&gt;{description}&lt;/span&gt;
+///   &lt;label class="{GetTextInputLabelClasses(type)}" for="{id}"&gt;
+///     &lt;span class="{GetTextInputLabelSpanClasses(type)}"&gt;{label}&lt;/span&gt;
+///     &lt;span class="{GetTextInputLabelDescriptionClasses(type)}"&gt;{description}&lt;/span&gt;
 ///   &lt;/label&gt;
-///   &lt;textarea class="{GetTextInputClasses(type)}" id={} ..." &gt;{value}&lt;/textarea&gt;
+///   {GetTextInputPreHtml()}
+///     &lt;textarea class="{GetTextInputClasses(type)}" id={} ..." &gt;{value}&lt;/textarea&gt;
+///   {GetTextInputPostHtml()}
 ///   {GetValidationFeedbackContainer(id)}
 ///   {RenderFieldErrors(...)}
 /// &lt;/div&gt;
@@ -96,7 +107,9 @@ namespace UltraForce.Library.Core.Asp.TagHelpers.Forms;
 /// Renders multiline text input with wrapping and no label:
 /// <code>
 /// &lt;div class="{GetTextInputWrapperClasses(type)}"&gt;
-///   &lt;textarea class="{GetTextInputClasses(type)}" id={} ..." &gt;{value}&lt;/textarea&gt;
+///   {GetTextInputPreHtml(type)}
+///     &lt;textarea class="{GetTextInputClasses(type)}" id={} ..." &gt;{value}&lt;/textarea&gt;
+///   {GetTextInputPostHtml()}
 ///   {GetValidationFeedbackContainer(id)}
 ///   &lt;div class="{GetFieldErrorsClasses()}"&gt;{GetFieldErrorsHtml()}&lt;/div&gt;
 /// &lt;/div&gt;
@@ -315,7 +328,7 @@ public abstract class UFInputTagHelper(IHtmlGenerator generator)
   /// </summary>
   /// <param name="aType"></param>
   /// <returns></returns>
-  protected virtual string GetTextLabelClasses(string aType)
+  protected virtual string GetTextInputLabelClasses(string aType)
   {
     return string.Empty;
   }
@@ -325,7 +338,31 @@ public abstract class UFInputTagHelper(IHtmlGenerator generator)
   /// </summary>
   /// <param name="aType"></param>
   /// <returns></returns>
-  protected virtual string GetTextLabelSpanClasses(string aType)
+  protected virtual string GetTextInputLabelSpanClasses(string aType)
+  {
+    return string.Empty;
+  }
+
+  /// <summary>
+  /// Gets html code inserted before the input element.
+  /// </summary>
+  /// <param name="aType"></param>
+  /// <returns></returns>
+  protected virtual string GetTextInputPreHtml(
+    string aType
+  )
+  {
+    return string.Empty;
+  }
+  
+  /// <summary>
+  /// Gets html code inserted after the input element.
+  /// </summary>
+  /// <param name="aType"></param>
+  /// <returns></returns>
+  protected virtual string GetTextInputPostHtml(
+    string aType
+  )
   {
     return string.Empty;
   }
@@ -335,7 +372,7 @@ public abstract class UFInputTagHelper(IHtmlGenerator generator)
   /// </summary>
   /// <param name="aType"></param>
   /// <returns></returns>
-  protected virtual string GetTextLabelDescriptionClasses(string aType)
+  protected virtual string GetTextInputLabelDescriptionClasses(string aType)
   {
     return string.Empty;
   }
@@ -523,19 +560,21 @@ public abstract class UFInputTagHelper(IHtmlGenerator generator)
     string description = this.GetDescription();
     string descriptionHtml = string.IsNullOrEmpty(description) || string.IsNullOrEmpty(aLabel)
       ? ""
-      : $"<span class=\"{this.GetTextLabelDescriptionClasses(aType)}\">" +
+      : $"<span class=\"{this.GetTextInputLabelDescriptionClasses(aType)}\">" +
         $"{description}</span>";
     string labelHtml = string.IsNullOrEmpty(aLabel)
       ? ""
-      : $"<label class=\"{this.GetTextLabelClasses(aType)}\" for=\"{anId}\">" +
-        $"<span class=\"{this.GetTextLabelSpanClasses(aType)}\">{aLabel}</span>" +
+      : $"<label class=\"{this.GetTextInputLabelClasses(aType)}\" for=\"{anId}\">" +
+        $"<span class=\"{this.GetTextInputLabelSpanClasses(aType)}\">{aLabel}</span>" +
         descriptionHtml +
         "</label>";
+    string preHtml = this.GetTextInputPreHtml(aType);
+    string postHtml = this.GetTextInputPostHtml(aType);
     anOutput.PreElement.SetHtmlContent(
-      $"<div class=\"{this.GetTextInputWrapperClasses(aType)}\">{labelHtml}"
+      $"<div class=\"{this.GetTextInputWrapperClasses(aType)}\">{labelHtml}{preHtml}"
     );
     anOutput.PostElement.SetHtmlContent(
-      $"{this.GetValidationFeedbackContainerHtml(anId)}{errorMessage}</div>"
+      $"{postHtml}{this.GetValidationFeedbackContainerHtml(anId)}{errorMessage}</div>"
     );
   }
 
