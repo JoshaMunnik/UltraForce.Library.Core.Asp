@@ -78,7 +78,7 @@ public class UFButtonTagHelper(
   #region IUFButtonProperties
 
   /// <inheritdoc />
-  [HtmlAttributeName("color")]
+  [HtmlAttributeName("type")]
   public UFButtonType Type { get; set; } = UFButtonType.Auto;
 
   /// <inheritdoc />
