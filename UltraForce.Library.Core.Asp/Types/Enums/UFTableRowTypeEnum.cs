@@ -1,4 +1,4 @@
-// <copyright file="UFTableRowType.cs" company="Ultra Force Development">
+// <copyright file="UFTableRowTypeEnum.cs" company="Ultra Force Development">
 // Ultra Force Library - Copyright (C) 2024 Ultra Force Development
 // </copyright>
 // <author>Josha Munnik</author>
@@ -32,7 +32,7 @@ namespace UltraForce.Library.Core.Asp.Types.Enums;
 /// <summary>
 /// The row types for a row
 /// </summary>
-public enum UFTableRowType
+public enum UFTableRowTypeEnum
 {
   /// <summary>
   /// Row is a header row

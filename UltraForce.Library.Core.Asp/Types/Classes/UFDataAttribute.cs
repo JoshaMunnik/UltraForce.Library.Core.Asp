@@ -27,9 +27,9 @@
 // IN THE SOFTWARE.
 // </license>
 
-using UltraForce.Library.Core.Asp.TagHelpers.Table;
+using UltraForce.Library.Core.Asp.TagHelpers.Base.Table;
 
-namespace UltraForce.Library.Core.Asp.Types.Enums;
+namespace UltraForce.Library.Core.Asp.Types.Classes;
 
 /// <summary>
 /// Constants mapping to various data attributes used by the Ultra Force DOM typescript library.
@@ -37,62 +37,62 @@ namespace UltraForce.Library.Core.Asp.Types.Enums;
 public static class UFDataAttribute
 {
   /// <summary>
-  /// Used by <see cref="UFTableTagHelper"/>.
+  /// Used by <see cref="UFTableTagHelperBase"/>.
   /// </summary>
   public const string Filter = "data-uf-filter";
 
   /// <summary>
-  /// Used by <see cref="UFTableTagHelper"/>.
+  /// Used by <see cref="UFTableTagHelperBase"/>.
   /// </summary>
   public const string Paging = "data-uf-paging";
 
   /// <summary>
-  /// Used by <see cref="UFTableTagHelper"/>.
+  /// Used by <see cref="UFTableTagHelperBase"/>.
   /// </summary>
   public const string PageSize = "data-uf-page-size";
 
   /// <summary>
-  /// Used by <see cref="UFTableTagHelper"/>.
+  /// Used by <see cref="UFTableTagHelperBase"/>.
   /// </summary>
   public const string Sorting = "data-uf-sorting";
 
   /// <summary>
-  /// Used by <see cref="UFCellTagHelper"/>.
+  /// Used by <see cref="UFCellTagHelperBase"/>.
   /// </summary>
   public const string SortType = "data-uf-sort-type";
 
   /// <summary>
-  /// Used by <see cref="UFCellTagHelper"/>.
+  /// Used by <see cref="UFCellTagHelperBase"/>.
   /// </summary>
   public const string SortValue = "data-uf-sort-value";
 
   /// <summary>
-  /// Used by <see cref="UFCellTagHelper"/>.
+  /// Used by <see cref="UFCellTagHelperBase"/>.
   /// </summary>
   public const string NoFilter = "data-uf-no-filter";
 
   /// <summary>
-  /// Used by <see cref="UFTableRowTagHelper"/>.
+  /// Used by <see cref="UFTableRowTagHelperBase"/>.
   /// </summary>
   public const string SortLocation = "data-uf-sort-location";
 
   /// <summary>
-  /// Used by <see cref="UFTableTagHelper"/>.
+  /// Used by <see cref="UFTableTagHelperBase"/>.
   /// </summary>
   public const string FilterTable = "data-uf-filter-table";
 
   /// <summary>
-  /// Used by <see cref="UFTableRowTagHelper"/>.
+  /// Used by <see cref="UFTableRowTagHelperBase"/>.
   /// </summary>
   public const string HeaderRow = "data-uf-header-row";
 
   /// <summary>
-  /// Used by <see cref="UFTableTagHelper"/>.
+  /// Used by <see cref="UFTableTagHelperBase"/>.
   /// </summary>
   public const string SortAscending = "data-uf-sort-ascending";
 
   /// <summary>
-  /// Used by <see cref="UFTableTagHelper"/>.
+  /// Used by <see cref="UFTableTagHelperBase"/>.
   /// </summary>
   public const string SortDescending = "data-uf-sort-descending";
 

@@ -4,6 +4,7 @@ items:
   commentId: N:UltraForce.Library.Core.Asp.Types.Classes
   id: UltraForce.Library.Core.Asp.Types.Classes
   children:
+  - UltraForce.Library.Core.Asp.Types.Classes.UFDataAttribute
   - UltraForce.Library.Core.Asp.Types.Classes.UFFontAwesome
   langs:
   - csharp
@@ -15,6 +16,12 @@ items:
   assemblies:
   - UltraForce.Library.Core.Asp
 references:
+- uid: UltraForce.Library.Core.Asp.Types.Classes.UFDataAttribute
+  commentId: T:UltraForce.Library.Core.Asp.Types.Classes.UFDataAttribute
+  href: UltraForce.Library.Core.Asp.Types.Classes.UFDataAttribute.html
+  name: UFDataAttribute
+  nameWithType: UFDataAttribute
+  fullName: UltraForce.Library.Core.Asp.Types.Classes.UFDataAttribute
 - uid: UltraForce.Library.Core.Asp.Types.Classes.UFFontAwesome
   commentId: T:UltraForce.Library.Core.Asp.Types.Classes.UFFontAwesome
   href: UltraForce.Library.Core.Asp.Types.Classes.UFFontAwesome.html

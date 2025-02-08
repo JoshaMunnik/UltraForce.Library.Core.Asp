@@ -1,4 +1,4 @@
-// <copyright file="UFTableSortLocation.cs" company="Ultra Force Development">
+// <copyright file="UFFlexAlignContentEnum.cs" company="Ultra Force Development">
 // Ultra Force Library - Copyright (C) 2024 Ultra Force Development
 // </copyright>
 // <author>Josha Munnik</author>
@@ -30,22 +30,42 @@
 namespace UltraForce.Library.Core.Asp.Types.Enums;
 
 /// <summary>
-/// Position of row when sorting a table.
+/// How to distribute the children in the opposite direction of the main axis (column or row).
 /// </summary>
-public enum UFTableSortLocation
+public enum UFFlexDistributeContentEnum
 {
   /// <summary>
-  /// Place row at a sorted location somewhere in the middle
+  /// Place at start
   /// </summary>
-  Middle,
-
+  Start,
+  
   /// <summary>
-  /// Keep row at top while sorting
+  /// Place at center
   /// </summary>
-  Top,
-
+  Center,
+  
   /// <summary>
-  /// Keep row at bottom while sorting
+  /// Place at end
   /// </summary>
-  Bottom
+  End,
+  
+  /// <summary>
+  /// Stretch each child
+  /// </summary>
+  Stretch,
+  
+  /// <summary>
+  /// Distribute space between children
+  /// </summary>
+  SpaceBetween,
+  
+  /// <summary>
+  /// Distribute space around children
+  /// </summary>
+  SpaceAround,
+  
+  /// <summary>
+  /// Distribute space evenly between children
+  /// </summary>
+  SpaceEvenly
 }

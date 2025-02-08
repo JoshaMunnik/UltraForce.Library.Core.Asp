@@ -1,4 +1,4 @@
-// <copyright file="UFDataValueTagHelper.cs" company="Ultra Force Development">
+// <copyright file="UFDataNameTagHelperBase.cs" company="Ultra Force Development">
 // Ultra Force Library - Copyright (C) 2024 Ultra Force Development
 // </copyright>
 // <author>Josha Munnik</author>
@@ -31,23 +31,23 @@ using System.Diagnostics.CodeAnalysis;
 using Microsoft.AspNetCore.Mvc.ViewFeatures;
 using Microsoft.AspNetCore.Razor.TagHelpers;
 using UltraForce.Library.Core.Asp.Services;
-using UltraForce.Library.Core.Asp.TagHelpers.Base;
 using UltraForce.Library.Core.Asp.Tools;
 
-namespace UltraForce.Library.Core.Asp.TagHelpers.Data;
+namespace UltraForce.Library.Core.Asp.TagHelpers.Base.Data;
 
 /// <summary>
-/// Base class for rendering a data value. If <see cref="For"/> is set, the content is set to
-/// the value of the referenced element. Else the children of this tag are rendered.
+/// Base class for rendering a data definition. If <see cref="For"/> is set, the content is set to
+/// the name of the referenced element. Else the children of this tag are rendered.
 /// <para>
 /// It renders the following:
 /// <code>
-/// &lt;dd class="{GetDataNameClasses()}"&gt;{content|For value}&lt;/dd&gt;
+/// &lt;dt class="{GetDataNameClasses()}"&gt;{content|For name}&lt;/dt&gt;
 /// </code>
 /// </para> 
 /// </summary>
 [SuppressMessage("ReSharper", "ClassWithVirtualMembersNeverInherited.Global")]
-public abstract class UFDataValueTagHelper(
+[HtmlTargetElement("uf-data-name")]
+public abstract class UFDataNameTagHelperBase(
   IUFModelExpressionRenderer aModelExpressionRenderer
 ) : UFTagHelperWithModelExpressionRenderer(aModelExpressionRenderer)
 {
@@ -56,7 +56,7 @@ public abstract class UFDataValueTagHelper(
   /// <summary>
   /// When no content is set, use the (display) name of the model property.
   /// </summary>
-  public ModelExpression? For { get; set; } = null;
+  public ModelExpression? For { get; set; }
 
   #endregion
 
@@ -66,13 +66,13 @@ public abstract class UFDataValueTagHelper(
   public override async Task ProcessAsync(TagHelperContext context, TagHelperOutput output)
   {
     await base.ProcessAsync(context, output);
-    output.TagName = "dd";
+    output.TagName = "dt";
     output.TagMode = TagMode.StartTagAndEndTag;
     if (this.For != null)
     {
-      await this.ModelExpressionRenderer.SetContentToValueAsync(output, this.For, this.ViewContext);
+      await this.ModelExpressionRenderer.SetContentToNameAsync(output, this.For, this.ViewContext);
     }
-    UFTagHelperTools.AddClasses(output, this.GetDataValueClasses());
+    UFTagHelperTools.AddClasses(output, this.GetDataNameClasses());
   }
 
   #endregion
@@ -80,10 +80,10 @@ public abstract class UFDataValueTagHelper(
   #region overridable protected methods
 
   /// <summary>
-  /// The default implementation returns an empty string.
+  /// The default returns an empty string.
   /// </summary>
   /// <returns></returns>
-  protected virtual string GetDataValueClasses()
+  protected virtual string GetDataNameClasses()
   {
     return string.Empty;
   }

@@ -1,4 +1,4 @@
-// <copyright file="UFTableSortType.cs" company="Ultra Force Development">
+// <copyright file="UFColumnTagHelper.cs" company="Ultra Force Development">
 // Ultra Force Library - Copyright (C) 2024 Ultra Force Development
 // </copyright>
 // <author>Josha Munnik</author>
@@ -27,42 +27,22 @@
 // IN THE SOFTWARE.
 // </license>
 
-using System.ComponentModel;
-using UltraForce.Library.Core.Asp.TagHelpers.Table;
+using System.Diagnostics.CodeAnalysis;
+using Microsoft.AspNetCore.Razor.TagHelpers;
+using UltraForce.Library.Core.Asp.TagHelpers.Layout.Base;
+using UltraForce.Library.Core.Asp.Types.Enums;
 
-namespace UltraForce.Library.Core.Asp.Types.Enums;
+namespace UltraForce.Library.Core.Asp.TagHelpers.Layout;
 
 /// <summary>
-/// Determines how a column is sorted in a table.
+/// A <see cref="UFFlexTagHelperBase"/> subclass to place the children in a column.
+/// <para>
+/// When using this tag helper, make sure to include the stylesheet in the html:
+/// <code>
+/// &lt;link rel="stylesheet" href="/_content/UltraForce.Library.Core.Asp/css/uf-styles.css"/&gt;
+/// </code>
+/// </para>
 /// </summary>
-public enum UFTableSortType
-{
-  /// <summary>
-  /// Determine type from <see cref="UFCellTagHelper.For"/> (if any), else defaults to
-  /// text
-  /// </summary>
-  Auto,
-
-  /// <summary>
-  /// Sort values as text
-  /// </summary>
-  [Description("text")]
-  Text,
-
-  /// <summary>
-  /// Sort values as number
-  /// </summary>
-  [Description("number")]
-  Number,
-
-  /// <summary>
-  /// Sort values as dates
-  /// </summary>
-  [Description("date")]
-  Date,
-
-  /// <summary>
-  /// No sorting
-  /// </summary>
-  None
-}
+[SuppressMessage("ReSharper", "ClassWithVirtualMembersNeverInherited.Global")]
+[HtmlTargetElement("uf-column", TagStructure = TagStructure.NormalOrSelfClosing)]
+public class UFColumnTagHelper() : UFFlexTagHelperBase(UFFlexTypeEnum.Column);

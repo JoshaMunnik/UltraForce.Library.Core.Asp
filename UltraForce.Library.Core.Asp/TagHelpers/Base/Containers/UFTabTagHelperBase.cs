@@ -1,4 +1,4 @@
-// <copyright file="UFTabTagHelper.cs" company="Ultra Force Development">
+// <copyright file="UFTabTagHelperBase.cs" company="Ultra Force Development">
 // Ultra Force Library - Copyright (C) 2024 Ultra Force Development
 // </copyright>
 // <author>Josha Munnik</author>
@@ -30,11 +30,11 @@
 using System.Diagnostics.CodeAnalysis;
 using Microsoft.AspNetCore.Razor.TagHelpers;
 
-namespace UltraForce.Library.Core.Asp.TagHelpers.Containers;
+namespace UltraForce.Library.Core.Asp.TagHelpers.Base.Containers;
 
 /// <summary>
 /// This tag helper is used to render a tab container. It expects to be used as a child of a
-/// <see cref="UFTabsTagHelper"/>.
+/// <see cref="UFTabsTagHelperBase"/>.
 /// <para>
 /// The class renders the following html:
 /// <code>
@@ -51,7 +51,7 @@ namespace UltraForce.Library.Core.Asp.TagHelpers.Containers;
 /// </summary>
 [SuppressMessage("ReSharper", "ClassWithVirtualMembersNeverInherited.Global")]
 [HtmlTargetElement("uf-tab")]
-public class UFTabTagHelper() : TagHelper
+public class UFTabTagHelperBase : TagHelper
 {
   #region public properties
 
@@ -78,7 +78,7 @@ public class UFTabTagHelper() : TagHelper
     output.TagName = "div";
     output.TagMode = TagMode.StartTagAndEndTag;
     string id = Guid.NewGuid().ToString();
-    string name = context.Items[UFTabsTagHelper.TabsRadioName].ToString()!;
+    string name = context.Items[UFTabsTagHelperBase.TabsRadioName].ToString()!;
     output.PreElement.AppendHtml(
       this.RenderRadio(name, id) +
       this.RenderLabel(id) +

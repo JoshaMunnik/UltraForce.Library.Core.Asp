@@ -60,45 +60,61 @@ items:
     name: UFTagHelperWithModelExpressionRenderer
   - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.UFTagHelperWithViewContext
     name: UFTagHelperWithViewContext
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Buttons
-  name: UltraForce.Library.Core.Asp.TagHelpers.Buttons
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons
+  name: UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons
   items:
-  - uid: UltraForce.Library.Core.Asp.TagHelpers.Buttons.UFButtonTagHelper
-    name: UFButtonTagHelper
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Containers
-  name: UltraForce.Library.Core.Asp.TagHelpers.Containers
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFButtonTagHelperBase
+    name: UFButtonTagHelperBase
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Containers
+  name: UltraForce.Library.Core.Asp.TagHelpers.Base.Containers
   items:
-  - uid: UltraForce.Library.Core.Asp.TagHelpers.Containers.UFTabTagHelper
-    name: UFTabTagHelper
-  - uid: UltraForce.Library.Core.Asp.TagHelpers.Containers.UFTabsTagHelper
-    name: UFTabsTagHelper
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Data
-  name: UltraForce.Library.Core.Asp.TagHelpers.Data
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Containers.UFTabTagHelperBase
+    name: UFTabTagHelperBase
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Containers.UFTabsTagHelperBase
+    name: UFTabsTagHelperBase
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Data
+  name: UltraForce.Library.Core.Asp.TagHelpers.Base.Data
   items:
-  - uid: UltraForce.Library.Core.Asp.TagHelpers.Data.UFDataItemTagHelper
-    name: UFDataItemTagHelper
-  - uid: UltraForce.Library.Core.Asp.TagHelpers.Data.UFDataListTagHelper
-    name: UFDataListTagHelper
-  - uid: UltraForce.Library.Core.Asp.TagHelpers.Data.UFDataNameTagHelper
-    name: UFDataNameTagHelper
-  - uid: UltraForce.Library.Core.Asp.TagHelpers.Data.UFDataValueTagHelper
-    name: UFDataValueTagHelper
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Forms
-  name: UltraForce.Library.Core.Asp.TagHelpers.Forms
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase
+    name: UFDataItemTagHelperBase
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataListTagHelperBase
+    name: UFDataListTagHelperBase
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataNameTagHelperBase
+    name: UFDataNameTagHelperBase
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataValueTagHelperBase
+    name: UFDataValueTagHelperBase
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
+  name: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
   items:
-  - uid: UltraForce.Library.Core.Asp.TagHelpers.Forms.UFInputTagHelper
-    name: UFInputTagHelper
-  - uid: UltraForce.Library.Core.Asp.TagHelpers.Forms.UFSelectTagHelper
-    name: UFSelectTagHelper
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Table
-  name: UltraForce.Library.Core.Asp.TagHelpers.Table
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase
+    name: UFInputTagHelperBase
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase
+    name: UFSelectTagHelperBase
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table
+  name: UltraForce.Library.Core.Asp.TagHelpers.Base.Table
   items:
-  - uid: UltraForce.Library.Core.Asp.TagHelpers.Table.UFCellTagHelper
-    name: UFCellTagHelper
-  - uid: UltraForce.Library.Core.Asp.TagHelpers.Table.UFTableRowTagHelper
-    name: UFTableRowTagHelper
-  - uid: UltraForce.Library.Core.Asp.TagHelpers.Table.UFTableTagHelper
-    name: UFTableTagHelper
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFCellTagHelperBase
+    name: UFCellTagHelperBase
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableRowTagHelperBase
+    name: UFTableRowTagHelperBase
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase
+    name: UFTableTagHelperBase
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Layout
+  name: UltraForce.Library.Core.Asp.TagHelpers.Layout
+  items:
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Layout.UFColumnTagHelper
+    name: UFColumnTagHelper
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Layout.UFRowTagHelper
+    name: UFRowTagHelper
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Layout.UFStackItemTagHelper
+    name: UFStackItemTagHelper
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Layout.UFStackTagHelper
+    name: UFStackTagHelper
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base
+  name: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base
+  items:
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase
+    name: UFFlexTagHelperBase
 - uid: UltraForce.Library.Core.Asp.Tools
   name: UltraForce.Library.Core.Asp.Tools
   items:
@@ -115,21 +131,29 @@ items:
 - uid: UltraForce.Library.Core.Asp.Types.Classes
   name: UltraForce.Library.Core.Asp.Types.Classes
   items:
+  - uid: UltraForce.Library.Core.Asp.Types.Classes.UFDataAttribute
+    name: UFDataAttribute
   - uid: UltraForce.Library.Core.Asp.Types.Classes.UFFontAwesome
     name: UFFontAwesome
 - uid: UltraForce.Library.Core.Asp.Types.Enums
   name: UltraForce.Library.Core.Asp.Types.Enums
   items:
-  - uid: UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute
-    name: UFDataAttribute
-  - uid: UltraForce.Library.Core.Asp.Types.Enums.UFTableCellType
-    name: UFTableCellType
-  - uid: UltraForce.Library.Core.Asp.Types.Enums.UFTableRowType
-    name: UFTableRowType
-  - uid: UltraForce.Library.Core.Asp.Types.Enums.UFTableSortLocation
-    name: UFTableSortLocation
-  - uid: UltraForce.Library.Core.Asp.Types.Enums.UFTableSortType
-    name: UFTableSortType
+  - uid: UltraForce.Library.Core.Asp.Types.Enums.UFContentPositionEnum
+    name: UFContentPositionEnum
+  - uid: UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignItemsEnum
+    name: UFFlexAlignItemsEnum
+  - uid: UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContentEnum
+    name: UFFlexDistributeContentEnum
+  - uid: UltraForce.Library.Core.Asp.Types.Enums.UFFlexTypeEnum
+    name: UFFlexTypeEnum
+  - uid: UltraForce.Library.Core.Asp.Types.Enums.UFTableCellTypeEnum
+    name: UFTableCellTypeEnum
+  - uid: UltraForce.Library.Core.Asp.Types.Enums.UFTableRowTypeEnum
+    name: UFTableRowTypeEnum
+  - uid: UltraForce.Library.Core.Asp.Types.Enums.UFTableSortLocationEnum
+    name: UFTableSortLocationEnum
+  - uid: UltraForce.Library.Core.Asp.Types.Enums.UFTableSortTypeEnum
+    name: UFTableSortTypeEnum
 - uid: UltraForce.Library.Core.Asp.ViewModels
   name: UltraForce.Library.Core.Asp.ViewModels
   items:

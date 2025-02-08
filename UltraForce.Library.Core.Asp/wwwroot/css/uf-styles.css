@@ -1,0 +1,199 @@
+/** 
+ * Styles used by various TagHelper components in the UltraForce.Library.Core.Asp library. 
+ */
+
+/**
+ * Styles used by UFFlexTagHelperBase, UFColumnTagHelper and UFRowTagHelper.
+ */
+.uf-flex {
+  display: flex;
+}
+
+.uf-flex__column {
+  flex-direction: column;
+}
+
+.uf-flex__row {
+  flex-direction: row;
+}
+
+.uf-flex--align-cross-start {
+  align-items: flex-start;
+}
+
+.uf-flex--align-cross-center {
+  align-items: center;
+}
+
+.uf-flex--align-cross-end {
+  align-items: flex-end;
+}
+
+.uf-flex--align-cross-baseline {
+  align-items: baseline;
+}
+
+.uf-flex--distribute-cross-start {
+  align-content: flex-start;
+}
+
+.uf-flex--distribute-cross-center {
+  align-content: center;
+}
+
+.uf-flex--distribute-cross-end {
+  align-content: flex-end;
+}
+
+.uf-flex--distribute-cross-around {
+  align-content: space-around;
+}
+
+.uf-flex--distribute-cross-between {
+  align-content: space-between;
+}
+
+.uf-flex--distribute-cross-evenly {
+  align-content: space-evenly;
+}
+
+.uf-flex--distribute-cross-stretch {
+  align-content: stretch;
+}
+
+.uf-flex--distribute-main-start {
+  justify-content: flex-start;
+}
+
+.uf-flex--distribute-main-center {
+  justify-content: center;
+}
+
+.uf-flex--distribute-main-end {
+  justify-content: flex-end;
+}
+
+.uf-flex--distribute-main-around {
+  justify-content: space-around;
+}
+
+.uf-flex--distribute-main-between {
+  justify-content: space-between;
+}
+
+.uf-flex--distribute-main-evenly {
+  justify-content: space-evenly;
+}
+
+.uf-flex--distribute-main-stretch {
+  justify-content: stretch;
+}
+
+.uf-flex--has-full-width {
+  width: 100%;
+  min-width: 100%;
+}
+
+.uf-flex--has-full-height {
+  height: 100%;
+  min-height: 100%;
+}
+
+.uf-flex--is-wrapped {
+  flex-wrap: wrap;
+}
+
+/**
+ * Styles used by UFStackTagHelper
+ */
+.uf-stack__container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+}
+
+.uf-stack__container--has-full-width {
+  min-width: 100%;
+}
+
+.uf-stack__container--has-full-height {
+  min-height: 100%;
+}
+
+.uf-stack__container--position-child-horizontal-start {
+  justify-items: start;
+}
+
+.uf-stack__container--position-child-horizontal-center {
+  justify-items: center;
+}
+
+.uf-stack__container--position-child-horizontal-end {
+  justify-items: end;
+}
+
+.uf-stack__container--position-stretch-child-horizontal {
+  justify-items: stretch;
+}
+
+.uf-stack__container--position-vertical-child-start {
+  align-items: start;
+}
+
+.uf-stack__container--position-vertical-child-center {
+  align-items: center;
+}
+
+.uf-stack__container--position-vertical-child-end {
+  align-items: end;
+}
+
+.uf-stack__container--position-stretch-child-vertical {
+  align-items: stretch;
+}
+
+/**
+ * Styles used by UFStackItemTagHelper
+ */
+.uf-stack__item {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.uf-stack__item--has-no-interaction {
+  pointer-events: none;
+}
+
+.uf-stack__item--position-horizontal-at-start {
+  justify-self: start;
+}
+
+.uf-stack__item--position-horizontal-at-center {
+  justify-self: center;
+}
+
+.uf-stack__item--position-horizontal-at-end {
+  justify-self: end;
+}
+
+.uf-stack__item--stretch-horizontal {
+  justify-self: stretch;
+}
+
+.uf-stack__item--position-vertical-at-start {
+  align-self: start;
+}
+
+.uf-stack__item--position-vertical-at-center {
+  align-self: center;
+}
+
+.uf-stack__item--position-vertical-at-end {
+  align-self: end;
+}
+
+.uf-stack__item--stretch-vertical {
+  align-self: stretch;
+}

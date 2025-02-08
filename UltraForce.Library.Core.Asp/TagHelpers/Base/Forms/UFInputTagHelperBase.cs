@@ -1,4 +1,4 @@
-// <copyright file="UFInputTagHelper.cs" company="Ultra Force Development">
+// <copyright file="UFInputTagHelperBase.cs" company="Ultra Force Development">
 // Ultra Force Library - Copyright (C) 2024 Ultra Force Development
 // </copyright>
 // <author>Josha Munnik</author>
@@ -39,7 +39,7 @@ using UltraForce.Library.Core.Asp.Tools;
 using UltraForce.Library.NetStandard.Annotations;
 using UltraForce.Library.NetStandard.Tools;
 
-namespace UltraForce.Library.Core.Asp.TagHelpers.Forms;
+namespace UltraForce.Library.Core.Asp.TagHelpers.Base.Forms;
 
 /// <summary>
 /// Renders either a text input, a checkbox or a radio button. If no `id` is set and
@@ -211,7 +211,7 @@ namespace UltraForce.Library.Core.Asp.TagHelpers.Forms;
 /// </summary>
 [SuppressMessage("ReSharper", "ClassWithVirtualMembersNeverInherited.Global")]
 [HtmlTargetElement("uf-input")]
-public abstract class UFInputTagHelper(IHtmlGenerator generator)
+public abstract class UFInputTagHelperBase(IHtmlGenerator generator)
   : InputTagHelper(generator)
 {
   #region public properties

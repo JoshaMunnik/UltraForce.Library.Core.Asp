@@ -1,4 +1,4 @@
-// <copyright file="UFTableCellType.cs" company="Ultra Force Development">
+// <copyright file="UFContentPositionEnum.cs" company="Ultra Force Development">
 // Ultra Force Library - Copyright (C) 2024 Ultra Force Development
 // </copyright>
 // <author>Josha Munnik</author>
@@ -30,23 +30,32 @@
 namespace UltraForce.Library.Core.Asp.Types.Enums;
 
 /// <summary>
-/// The type of cell generated.
+/// How to position content in a container.
 /// </summary>
-public enum UFTableCellType
+public enum UFContentPositionEnum
 {
   /// <summary>
-  /// Determine the type of cell automatically. If the cell is in the header row it will be a
-  /// <see cref="Header"/> cell, else it will be a <see cref="Data"/> cell.
+  /// Do not change the position of the child.
   /// </summary>
-  Auto,
+  None,
   
   /// <summary>
-  /// Cell is a data cell
+  /// Place at start of container.
   /// </summary>
-  Data,
-
+  Start,
+  
   /// <summary>
-  /// Cell is a header cell
+  /// Place at center of container.
   /// </summary>
-  Header
+  Center,
+  
+  /// <summary>
+  /// Place at end of container.
+  /// </summary>
+  End,
+  
+  /// <summary>
+  /// Stretch content to fill the container.
+  /// </summary>
+  Stretch,
 }

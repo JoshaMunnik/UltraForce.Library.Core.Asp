@@ -1,4 +1,4 @@
-// <copyright file="UFTableTagHelper.cs" company="Ultra Force Development">
+// <copyright file="UFTableRowTagHelperBase.cs" company="Ultra Force Development">
 // Ultra Force Library - Copyright (C) 2024 Ultra Force Development
 // </copyright>
 // <author>Josha Munnik</author>
@@ -30,9 +30,10 @@
 using System.Diagnostics.CodeAnalysis;
 using Microsoft.AspNetCore.Razor.TagHelpers;
 using UltraForce.Library.Core.Asp.Tools;
+using UltraForce.Library.Core.Asp.Types.Classes;
 using UltraForce.Library.Core.Asp.Types.Enums;
 
-namespace UltraForce.Library.Core.Asp.TagHelpers.Table;
+namespace UltraForce.Library.Core.Asp.TagHelpers.Base.Table;
 
 /// <summary>
 /// Creates a table row. Renders:
@@ -43,7 +44,7 @@ namespace UltraForce.Library.Core.Asp.TagHelpers.Table;
 /// </code> 
 /// </summary>
 [SuppressMessage("ReSharper", "AutoPropertyCanBeMadeGetOnly.Global")]
-public abstract class UFTableRowTagHelper() : TagHelper
+public abstract class UFTableRowTagHelperBase() : TagHelper
 {
   #region public constants
   
@@ -60,18 +61,18 @@ public abstract class UFTableRowTagHelper() : TagHelper
   /// The type of row
   /// </summary>
   [HtmlAttributeName("type")]
-  public UFTableRowType Type { get; set; } = UFTableRowType.Data;
+  public UFTableRowTypeEnum Type { get; set; } = UFTableRowTypeEnum.Data;
 
   /// <summary>
   /// Keep the row at top or bottom if table gets sorted
   /// <para>
-  /// Setting this value to <see cref="UFTableSortLocation.Top"/> or
-  /// <see cref="UFTableSortLocation.Bottom"/> will create a `data-sort-location` attribute with
+  /// Setting this value to <see cref="UFTableSortLocationEnum.Top"/> or
+  /// <see cref="UFTableSortLocationEnum.Bottom"/> will create a `data-sort-location` attribute with
   /// either "top" or "bottom" as value.
   /// </para>
   /// </summary>
   [HtmlAttributeName("sort-location")]
-  public UFTableSortLocation SortLocation { get; set; } = UFTableSortLocation.Middle;
+  public UFTableSortLocationEnum SortLocation { get; set; } = UFTableSortLocationEnum.Middle;
 
   #endregion
 
@@ -82,22 +83,22 @@ public abstract class UFTableRowTagHelper() : TagHelper
   {
     base.Process(context, anOutput);
     anOutput.TagName = "tr";
-    UFTableTagHelper table = (context.Items[UFTableTagHelper.Table] as UFTableTagHelper)!;
-    if (table is { ProcessedFirstHeaderRow: null } && (this.Type == UFTableRowType.Header))
+    UFTableTagHelperBase table = (context.Items[UFTableTagHelperBase.Table] as UFTableTagHelperBase)!;
+    if (table is { ProcessedFirstHeaderRow: null } && (this.Type == UFTableRowTypeEnum.Header))
     {
       table.ProcessedFirstHeaderRow = this;
     }
     context.Items[Row] = this;
     switch (this.SortLocation)
     {
-      case UFTableSortLocation.Top:
+      case UFTableSortLocationEnum.Top:
         anOutput.Attributes.SetAttribute(UFDataAttribute.SortLocation, "top");
         break;
-      case UFTableSortLocation.Bottom: 
+      case UFTableSortLocationEnum.Bottom: 
         anOutput.Attributes.SetAttribute(UFDataAttribute.SortLocation, "bottom");
         break;
     }
-    if (this.Type == UFTableRowType.Header)
+    if (this.Type == UFTableRowTypeEnum.Header)
     {
       anOutput.Attributes.SetAttribute(UFDataAttribute.HeaderRow, "1");
     }
@@ -113,7 +114,7 @@ public abstract class UFTableRowTagHelper() : TagHelper
   /// </summary>
   /// <param name="aTable"></param>
   /// <returns></returns>
-  protected virtual string GetTableRowClasses(UFTableTagHelper aTable)
+  protected virtual string GetTableRowClasses(UFTableTagHelperBase aTable)
   {
     return string.Empty;
   }

@@ -1,4 +1,4 @@
-// <copyright file="UFButtonTagHelper.cs" company="Ultra Force Development">
+// <copyright file="UFButtonTagHelperBase.cs" company="Ultra Force Development">
 // Ultra Force Library - Copyright (C) 2024 Ultra Force Development
 // </copyright>
 // <author>Josha Munnik</author>
@@ -33,11 +33,9 @@ using Microsoft.AspNetCore.Mvc.ViewFeatures;
 using Microsoft.AspNetCore.Razor.TagHelpers;
 using Microsoft.AspNetCore.Routing;
 using UltraForce.Library.Core.Asp.Services;
-using UltraForce.Library.Core.Asp.TagHelpers.Base;
 using UltraForce.Library.Core.Asp.Tools;
-using UltraForce.Library.Core.Asp.Types.Enums;
 
-namespace UltraForce.Library.Core.Asp.TagHelpers.Buttons;
+namespace UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons;
 
 /// <summary>
 /// Renders a button or link using a button styling. When rendering a button the default type is
@@ -58,7 +56,7 @@ namespace UltraForce.Library.Core.Asp.TagHelpers.Buttons;
 /// </summary>
 [SuppressMessage("ReSharper", "ClassWithVirtualMembersNeverInherited.Global")]
 [SuppressMessage("ReSharper", "MemberCanBePrivate.Global")]
-public abstract class UFButtonTagHelper(
+public abstract class UFButtonTagHelperBase(
   EndpointDataSource anEndpointDataSource,
   IHtmlGenerator aHtmlGenerator,
   IUFModelExpressionRenderer aModelExpressionRenderer

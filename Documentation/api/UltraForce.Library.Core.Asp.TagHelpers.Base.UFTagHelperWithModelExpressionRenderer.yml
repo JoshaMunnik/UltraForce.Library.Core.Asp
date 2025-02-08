@@ -44,10 +44,10 @@ items:
   - Microsoft.AspNetCore.Razor.TagHelpers.TagHelper
   - UltraForce.Library.Core.Asp.TagHelpers.Base.UFTagHelperWithViewContext
   derivedClasses:
-  - UltraForce.Library.Core.Asp.TagHelpers.Data.UFDataItemTagHelper
-  - UltraForce.Library.Core.Asp.TagHelpers.Data.UFDataNameTagHelper
-  - UltraForce.Library.Core.Asp.TagHelpers.Data.UFDataValueTagHelper
-  - UltraForce.Library.Core.Asp.TagHelpers.Table.UFCellTagHelper
+  - UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase
+  - UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataNameTagHelperBase
+  - UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataValueTagHelperBase
+  - UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFCellTagHelperBase
   implements:
   - Microsoft.AspNetCore.Razor.TagHelpers.ITagHelper
   - Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent

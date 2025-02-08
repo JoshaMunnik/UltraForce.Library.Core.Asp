@@ -1,4 +1,4 @@
-// <copyright file="UFDataListTagHelper.cs" company="Ultra Force Development">
+// <copyright file="UFTableCellTypeEnum.cs" company="Ultra Force Development">
 // Ultra Force Library - Copyright (C) 2024 Ultra Force Development
 // </copyright>
 // <author>Josha Munnik</author>
@@ -27,41 +27,26 @@
 // IN THE SOFTWARE.
 // </license>
 
-using System.Diagnostics.CodeAnalysis;
-using Microsoft.AspNetCore.Razor.TagHelpers;
-using UltraForce.Library.Core.Asp.Tools;
-
-namespace UltraForce.Library.Core.Asp.TagHelpers.Data;
+namespace UltraForce.Library.Core.Asp.Types.Enums;
 
 /// <summary>
-/// Base class for rendering a data list. It just sets the tag to "dl".
+/// The type of cell generated.
 /// </summary>
-[SuppressMessage("ReSharper", "ClassWithVirtualMembersNeverInherited.Global")]
-public abstract class UFDataListTagHelper() : TagHelper
+public enum UFTableCellTypeEnum
 {
-  #region overriden public methods
-
-  /// <inheritdoc />
-  public override void Process(TagHelperContext context, TagHelperOutput output)
-  {
-    base.Process(context, output);
-    output.TagName = "dl";
-    output.TagMode = TagMode.StartTagAndEndTag;
-    UFTagHelperTools.AddClasses(output, this.GetDataListClasses());
-  }
-
-  #endregion
-  
-  #region overridable protected methods
+  /// <summary>
+  /// Determine the type of cell automatically. If the cell is in the header row it will be a
+  /// <see cref="Header"/> cell, else it will be a <see cref="Data"/> cell.
+  /// </summary>
+  Auto,
   
   /// <summary>
-  /// The default implementation returns an empty string.
+  /// Cell is a data cell
   /// </summary>
-  /// <returns></returns>
-  protected virtual string GetDataListClasses()
-  {
-    return string.Empty;
-  }
-  
-  #endregion
+  Data,
+
+  /// <summary>
+  /// Cell is a header cell
+  /// </summary>
+  Header
 }

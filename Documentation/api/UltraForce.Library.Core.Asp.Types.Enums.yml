@@ -4,11 +4,14 @@ items:
   commentId: N:UltraForce.Library.Core.Asp.Types.Enums
   id: UltraForce.Library.Core.Asp.Types.Enums
   children:
-  - UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute
-  - UltraForce.Library.Core.Asp.Types.Enums.UFTableCellType
-  - UltraForce.Library.Core.Asp.Types.Enums.UFTableRowType
-  - UltraForce.Library.Core.Asp.Types.Enums.UFTableSortLocation
-  - UltraForce.Library.Core.Asp.Types.Enums.UFTableSortType
+  - UltraForce.Library.Core.Asp.Types.Enums.UFContentPositionEnum
+  - UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignItemsEnum
+  - UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContentEnum
+  - UltraForce.Library.Core.Asp.Types.Enums.UFFlexTypeEnum
+  - UltraForce.Library.Core.Asp.Types.Enums.UFTableCellTypeEnum
+  - UltraForce.Library.Core.Asp.Types.Enums.UFTableRowTypeEnum
+  - UltraForce.Library.Core.Asp.Types.Enums.UFTableSortLocationEnum
+  - UltraForce.Library.Core.Asp.Types.Enums.UFTableSortTypeEnum
   langs:
   - csharp
   - vb
@@ -19,40 +22,62 @@ items:
   assemblies:
   - UltraForce.Library.Core.Asp
 references:
-- uid: UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute
-  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute
-  href: UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute.html
-  name: UFDataAttribute
-  nameWithType: UFDataAttribute
-  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFDataAttribute
-- uid: UltraForce.Library.Core.Asp.Types.Enums.UFTableCellType
-  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFTableCellType
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFContentPositionEnum
+  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFContentPositionEnum
   parent: UltraForce.Library.Core.Asp.Types.Enums
-  href: UltraForce.Library.Core.Asp.Types.Enums.UFTableCellType.html
-  name: UFTableCellType
-  nameWithType: UFTableCellType
-  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFTableCellType
-- uid: UltraForce.Library.Core.Asp.Types.Enums.UFTableRowType
-  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFTableRowType
+  href: UltraForce.Library.Core.Asp.Types.Enums.UFContentPositionEnum.html
+  name: UFContentPositionEnum
+  nameWithType: UFContentPositionEnum
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFContentPositionEnum
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignItemsEnum
+  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignItemsEnum
   parent: UltraForce.Library.Core.Asp.Types.Enums
-  href: UltraForce.Library.Core.Asp.Types.Enums.UFTableRowType.html
-  name: UFTableRowType
-  nameWithType: UFTableRowType
-  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFTableRowType
-- uid: UltraForce.Library.Core.Asp.Types.Enums.UFTableSortLocation
-  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFTableSortLocation
+  href: UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignItemsEnum.html
+  name: UFFlexAlignItemsEnum
+  nameWithType: UFFlexAlignItemsEnum
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignItemsEnum
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContentEnum
+  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContentEnum
   parent: UltraForce.Library.Core.Asp.Types.Enums
-  href: UltraForce.Library.Core.Asp.Types.Enums.UFTableSortLocation.html
-  name: UFTableSortLocation
-  nameWithType: UFTableSortLocation
-  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFTableSortLocation
-- uid: UltraForce.Library.Core.Asp.Types.Enums.UFTableSortType
-  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFTableSortType
+  href: UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContentEnum.html
+  name: UFFlexDistributeContentEnum
+  nameWithType: UFFlexDistributeContentEnum
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContentEnum
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFFlexTypeEnum
+  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFFlexTypeEnum
   parent: UltraForce.Library.Core.Asp.Types.Enums
-  href: UltraForce.Library.Core.Asp.Types.Enums.UFTableSortType.html
-  name: UFTableSortType
-  nameWithType: UFTableSortType
-  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFTableSortType
+  href: UltraForce.Library.Core.Asp.Types.Enums.UFFlexTypeEnum.html
+  name: UFFlexTypeEnum
+  nameWithType: UFFlexTypeEnum
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFFlexTypeEnum
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFTableCellTypeEnum
+  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFTableCellTypeEnum
+  parent: UltraForce.Library.Core.Asp.Types.Enums
+  href: UltraForce.Library.Core.Asp.Types.Enums.UFTableCellTypeEnum.html
+  name: UFTableCellTypeEnum
+  nameWithType: UFTableCellTypeEnum
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFTableCellTypeEnum
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFTableRowTypeEnum
+  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFTableRowTypeEnum
+  parent: UltraForce.Library.Core.Asp.Types.Enums
+  href: UltraForce.Library.Core.Asp.Types.Enums.UFTableRowTypeEnum.html
+  name: UFTableRowTypeEnum
+  nameWithType: UFTableRowTypeEnum
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFTableRowTypeEnum
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFTableSortLocationEnum
+  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFTableSortLocationEnum
+  parent: UltraForce.Library.Core.Asp.Types.Enums
+  href: UltraForce.Library.Core.Asp.Types.Enums.UFTableSortLocationEnum.html
+  name: UFTableSortLocationEnum
+  nameWithType: UFTableSortLocationEnum
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFTableSortLocationEnum
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFTableSortTypeEnum
+  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFTableSortTypeEnum
+  parent: UltraForce.Library.Core.Asp.Types.Enums
+  href: UltraForce.Library.Core.Asp.Types.Enums.UFTableSortTypeEnum.html
+  name: UFTableSortTypeEnum
+  nameWithType: UFTableSortTypeEnum
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFTableSortTypeEnum
 - uid: UltraForce.Library.Core.Asp.Types.Enums
   commentId: N:UltraForce.Library.Core.Asp.Types.Enums
   href: UltraForce.html

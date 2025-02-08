@@ -1,4 +1,4 @@
-// <copyright file="UFTabsTagHelper.cs" company="Ultra Force Development">
+// <copyright file="UFTabsTagHelperBase.cs" company="Ultra Force Development">
 // Ultra Force Library - Copyright (C) 2024 Ultra Force Development
 // </copyright>
 // <author>Josha Munnik</author>
@@ -31,11 +31,11 @@ using System.Diagnostics.CodeAnalysis;
 using Microsoft.AspNetCore.Razor.TagHelpers;
 using UltraForce.Library.NetStandard.Tools;
 
-namespace UltraForce.Library.Core.Asp.TagHelpers.Containers;
+namespace UltraForce.Library.Core.Asp.TagHelpers.Base.Containers;
 
 /// <summary>
 /// This tag helper is used to render a tab container. It expects its children to be instances
-/// of <see cref="UFTabTagHelper"/>.
+/// of <see cref="UFTabTagHelperBase"/>.
 /// <para>
 /// The class will render:
 /// <code>
@@ -47,12 +47,12 @@ namespace UltraForce.Library.Core.Asp.TagHelpers.Containers;
 /// </summary>
 [SuppressMessage("ReSharper", "ClassWithVirtualMembersNeverInherited.Global")]
 [SuppressMessage("ReSharper", "ClassNeverInstantiated.Global")]
-public abstract class UFTabsTagHelper() : TagHelper
+public abstract class UFTabsTagHelperBase : TagHelper
 {
   #region public constants
   
   /// <summary>
-  /// The key that <see cref="UFTabTagHelper"/> can use to get the name of the radio button from the
+  /// The key that <see cref="UFTabTagHelperBase"/> can use to get the name of the radio button from the
   /// <see cref="TagHelperContext.Items"/>.
   /// </summary>
   public const string TabsRadioName = "uf_tabs_radio_name";

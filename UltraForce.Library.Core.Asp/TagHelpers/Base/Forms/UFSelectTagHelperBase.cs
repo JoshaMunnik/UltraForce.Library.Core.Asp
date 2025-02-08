@@ -1,4 +1,4 @@
-// <copyright file="UFSelectTagHelper.cs" company="Ultra Force Development">
+// <copyright file="UFSelectTagHelperBase.cs" company="Ultra Force Development">
 // Ultra Force Library - Copyright (C) 2024 Ultra Force Development
 // </copyright>
 // <author>Josha Munnik</author>
@@ -34,7 +34,7 @@ using Microsoft.AspNetCore.Mvc.ViewFeatures;
 using Microsoft.AspNetCore.Razor.TagHelpers;
 using UltraForce.Library.Core.Asp.Tools;
 
-namespace UltraForce.Library.Core.Asp.TagHelpers.Forms;
+namespace UltraForce.Library.Core.Asp.TagHelpers.Base.Forms;
 
 /// <summary>
 /// Base class to help with rendering a select element. If not `id` is set and
@@ -67,7 +67,7 @@ namespace UltraForce.Library.Core.Asp.TagHelpers.Forms;
 /// </summary>
 [SuppressMessage("ReSharper", "ClassWithVirtualMembersNeverInherited.Global")]
 [HtmlTargetElement("uf-select", TagStructure = TagStructure.NormalOrSelfClosing)]
-public abstract class UFSelectTagHelper(
+public abstract class UFSelectTagHelperBase(
   IHtmlGenerator aGenerator
 ) : SelectTagHelper(aGenerator)
 {

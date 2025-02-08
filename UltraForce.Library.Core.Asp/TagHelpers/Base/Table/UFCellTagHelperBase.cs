@@ -1,4 +1,4 @@
-// <copyright file="UFCellTagHelper.cs" company="Ultra Force Development">
+// <copyright file="UFCellTagHelperBase.cs" company="Ultra Force Development">
 // Ultra Force Library - Copyright (C) 2024 Ultra Force Development
 // </copyright>
 // <author>Josha Munnik</author>
@@ -31,13 +31,13 @@ using System.Diagnostics.CodeAnalysis;
 using Microsoft.AspNetCore.Mvc.ViewFeatures;
 using Microsoft.AspNetCore.Razor.TagHelpers;
 using UltraForce.Library.Core.Asp.Services;
-using UltraForce.Library.Core.Asp.TagHelpers.Base;
 using UltraForce.Library.Core.Asp.Tools;
+using UltraForce.Library.Core.Asp.Types.Classes;
 using UltraForce.Library.Core.Asp.Types.Enums;
 using UltraForce.Library.NetStandard.Extensions;
 using UltraForce.Library.NetStandard.Tools;
 
-namespace UltraForce.Library.Core.Asp.TagHelpers.Table;
+namespace UltraForce.Library.Core.Asp.TagHelpers.Base.Table;
 
 /// <summary>
 /// Creates a table cell. The cell can be self-closing or can contain content with a separate
@@ -70,7 +70,7 @@ namespace UltraForce.Library.Core.Asp.TagHelpers.Table;
 /// </summary>
 [SuppressMessage("ReSharper", "MemberCanBePrivate.Global")]
 [SuppressMessage("ReSharper", "MemberCanBeProtected.Global")]
-public abstract class UFCellTagHelper(IUFModelExpressionRenderer aModelExpressionRenderer)
+public abstract class UFCellTagHelperBase(IUFModelExpressionRenderer aModelExpressionRenderer)
   : UFTagHelperWithModelExpressionRenderer(aModelExpressionRenderer)
 {
   #region public properties
@@ -79,7 +79,7 @@ public abstract class UFCellTagHelper(IUFModelExpressionRenderer aModelExpressio
   /// Type of cell.
   /// </summary>
   [HtmlAttributeName("type")]
-  public UFTableCellType Type { get; set; } = UFTableCellType.Auto;
+  public UFTableCellTypeEnum Type { get; set; } = UFTableCellTypeEnum.Auto;
 
   /// <summary>
   /// When non empty, set this value as width value. This can either be a css class or a
@@ -90,8 +90,8 @@ public abstract class UFCellTagHelper(IUFModelExpressionRenderer aModelExpressio
   public string Width { get; set; } = "";
 
   /// <summary>
-  /// Type of sorting (only of use with <see cref="UFTableCellType.Header"/>). If type is set to
-  /// <see cref="UFTableSortType.Auto"/> (default) the method will try to determine the type
+  /// Type of sorting (only of use with <see cref="UFTableCellTypeEnum.Header"/>). If type is set to
+  /// <see cref="UFTableSortTypeEnum.Auto"/> (default) the method will try to determine the type
   /// from <see cref="For"/>.
   /// <para>
   /// </para>
@@ -104,7 +104,7 @@ public abstract class UFCellTagHelper(IUFModelExpressionRenderer aModelExpressio
   /// </para>
   /// </summary>
   [HtmlAttributeName("sort-type")]
-  public UFTableSortType SortType { get; set; } = UFTableSortType.Auto;
+  public UFTableSortTypeEnum SortType { get; set; } = UFTableSortTypeEnum.Auto;
   
   /// <summary>
   /// When true the cell contents will not be cached with sorting. This is useful when the cell
@@ -116,7 +116,7 @@ public abstract class UFCellTagHelper(IUFModelExpressionRenderer aModelExpressio
   /// <summary>
   /// An expression to be evaluated against the current model. When set, the method will use the
   /// type to adjust the sort type (if <see cref="SortType"/> is set
-  /// to <see cref="UFTableSortType.Auto"/>).
+  /// to <see cref="UFTableSortTypeEnum.Auto"/>).
   /// <para>
   /// Date values are formatted using mysql format (so there is no confusion on month and
   /// day positions):
@@ -139,7 +139,7 @@ public abstract class UFCellTagHelper(IUFModelExpressionRenderer aModelExpressio
   /// <summary>
   /// When true data in the cell can be found via the filter. When false an attribute with
   /// the name "data-no-filter" is added to the cell tag. This property is only processed
-  /// when <see cref="Type"/> is <see cref="UFTableCellType.Data"/>.
+  /// when <see cref="Type"/> is <see cref="UFTableCellTypeEnum.Data"/>.
   /// </summary>
   [HtmlAttributeName("no-filter")]
   public bool NoFilter { get; set; } = false;
@@ -152,14 +152,14 @@ public abstract class UFCellTagHelper(IUFModelExpressionRenderer aModelExpressio
   public override async Task ProcessAsync(TagHelperContext aContext, TagHelperOutput anOutput)
   {
     await base.ProcessAsync(aContext, anOutput);
-    UFTableTagHelper table = (aContext.Items[UFTableTagHelper.Table] as UFTableTagHelper)!;
-    UFTableRowTagHelper tableRow = (aContext.Items[UFTableRowTagHelper.Row] as UFTableRowTagHelper)!;
-    UFTableCellType type = this.Type == UFTableCellType.Auto 
-      ? (tableRow.Type == UFTableRowType.Header ? UFTableCellType.Header : UFTableCellType.Data) 
+    UFTableTagHelperBase table = (aContext.Items[UFTableTagHelperBase.Table] as UFTableTagHelperBase)!;
+    UFTableRowTagHelperBase tableRow = (aContext.Items[UFTableRowTagHelperBase.Row] as UFTableRowTagHelperBase)!;
+    UFTableCellTypeEnum type = this.Type == UFTableCellTypeEnum.Auto 
+      ? (tableRow.Type == UFTableRowTypeEnum.Header ? UFTableCellTypeEnum.Header : UFTableCellTypeEnum.Data) 
       : this.Type;
     anOutput.TagMode = TagMode.StartTagAndEndTag;
-    anOutput.TagName = type == UFTableCellType.Header ? "th" : "td";
-    UFTableSortType sortType = await this.ProcessForAsync(anOutput, type);
+    anOutput.TagName = type == UFTableCellTypeEnum.Header ? "th" : "td";
+    UFTableSortTypeEnum sortType = await this.ProcessForAsync(anOutput, type);
     if (table.Sorting)
     {
       this.SetDataSortType(anOutput, sortType, type);
@@ -170,7 +170,7 @@ public abstract class UFCellTagHelper(IUFModelExpressionRenderer aModelExpressio
     }
     this.UpdateClasses(anOutput, type, table, tableRow);
     if (
-      (tableRow == table.ProcessedFirstHeaderRow) && table.Sorting && (sortType != UFTableSortType.None)
+      (tableRow == table.ProcessedFirstHeaderRow) && table.Sorting && (sortType != UFTableSortTypeEnum.None)
     )
     {
       this.AddButtonWrapper(anOutput, table, tableRow);
@@ -193,7 +193,7 @@ public abstract class UFCellTagHelper(IUFModelExpressionRenderer aModelExpressio
   /// <param name="aTableRow"></param>
   /// <returns></returns>
   protected virtual string GetTableCellClasses(
-    UFTableCellType aType, UFTableTagHelper aTable, UFTableRowTagHelper aTableRow
+    UFTableCellTypeEnum aType, UFTableTagHelperBase aTable, UFTableRowTagHelperBase aTableRow
     )
   {
     return string.Empty;
@@ -206,7 +206,7 @@ public abstract class UFCellTagHelper(IUFModelExpressionRenderer aModelExpressio
   /// <param name="aTableRow"></param>
   /// <returns></returns>
   protected virtual string GetTableHeaderButtonClasses(
-    UFTableTagHelper aTable, UFTableRowTagHelper aTableRow
+    UFTableTagHelperBase aTable, UFTableRowTagHelperBase aTableRow
   )
   {
     return string.Empty;
@@ -223,34 +223,34 @@ public abstract class UFCellTagHelper(IUFModelExpressionRenderer aModelExpressio
   /// <param name="anOutput">Output to update</param>
   /// <param name="aType"></param>
   /// <returns>Sort type</returns>
-  private async Task<UFTableSortType> ProcessForAsync(
-    TagHelperOutput anOutput, UFTableCellType aType
+  private async Task<UFTableSortTypeEnum> ProcessForAsync(
+    TagHelperOutput anOutput, UFTableCellTypeEnum aType
   )
   {
     if (this.For == null)
     {
-      return this.SortType == UFTableSortType.Auto ? UFTableSortType.None : this.SortType;
+      return this.SortType == UFTableSortTypeEnum.Auto ? UFTableSortTypeEnum.None : this.SortType;
     }
     Type type = this.For!.Metadata.UnderlyingOrModelType;
-    UFTableSortType sortType = this.SortType;
-    if (sortType == UFTableSortType.Auto)
+    UFTableSortTypeEnum sortType = this.SortType;
+    if (sortType == UFTableSortTypeEnum.Auto)
     {
       if ((type == typeof(DateTime)) || (type == typeof(DateTime?)))
       {
-        sortType = UFTableSortType.Date;
+        sortType = UFTableSortTypeEnum.Date;
       }
       else if (
         UFReflectionTools.IsNumeric(type) || (type == typeof(bool)) || (type == typeof(bool?))
       )
       {
-        sortType = UFTableSortType.Number;
+        sortType = UFTableSortTypeEnum.Number;
       }
       else
       {
-        sortType = UFTableSortType.Text;
+        sortType = UFTableSortTypeEnum.Text;
       }
     }
-    if (aType == UFTableCellType.Header)
+    if (aType == UFTableCellTypeEnum.Header)
     {
       await this.ModelExpressionRenderer.SetContentToNameAsync(
         anOutput, this.For, this.ViewContext
@@ -284,7 +284,7 @@ public abstract class UFCellTagHelper(IUFModelExpressionRenderer aModelExpressio
   /// <param name="aType"></param>
   /// <param name="aTable"></param>
   /// <param name="aTableRow"></param>
-  private void UpdateClasses(TagHelperOutput anOutput, UFTableCellType aType, UFTableTagHelper aTable, UFTableRowTagHelper aTableRow)
+  private void UpdateClasses(TagHelperOutput anOutput, UFTableCellTypeEnum aType, UFTableTagHelperBase aTable, UFTableRowTagHelperBase aTableRow)
   {
     string classValue = this.GetTableCellClasses(aType, aTable, aTableRow);
     if (!string.IsNullOrEmpty(this.Width))
@@ -304,13 +304,13 @@ public abstract class UFCellTagHelper(IUFModelExpressionRenderer aModelExpressio
   }
 
   /// <summary>
-  /// Adds a <see cref="UFDataAttribute.NoFilter"/> attribute if the cell is a data cell and
+  /// Adds a <see cref="UFDataAttribute.Filter"/> attribute if the cell is a data cell and
   /// <see cref="NoFilter"/> is true.
   /// </summary>
   /// <param name="anOutput"></param>
   private void SetFilter(TagHelperOutput anOutput)
   {
-    if ((this.Type == UFTableCellType.Data) && this.NoFilter)
+    if ((this.Type == UFTableCellTypeEnum.Data) && this.NoFilter)
     {
       anOutput.Attributes.SetAttribute(UFDataAttribute.NoFilter, "1");
     }
@@ -323,18 +323,18 @@ public abstract class UFCellTagHelper(IUFModelExpressionRenderer aModelExpressio
   /// <param name="aSortType"></param>
   /// <param name="aType"></param>
   private void SetDataSortType(
-    TagHelperOutput anOutput, UFTableSortType aSortType, UFTableCellType aType 
+    TagHelperOutput anOutput, UFTableSortTypeEnum aSortType, UFTableCellTypeEnum aType 
   )
   {
-    if ((aType != UFTableCellType.Header) || (aSortType == UFTableSortType.None))
+    if ((aType != UFTableCellTypeEnum.Header) || (aSortType == UFTableSortTypeEnum.None))
     {
       return;
     }
     switch (aSortType)
     {
-      case UFTableSortType.Number:
-      case UFTableSortType.Date:
-      case UFTableSortType.Text:
+      case UFTableSortTypeEnum.Number:
+      case UFTableSortTypeEnum.Date:
+      case UFTableSortTypeEnum.Text:
         anOutput.Attributes.SetAttribute(
           UFDataAttribute.SortType, aSortType.GetDescription()
         );
@@ -348,7 +348,7 @@ public abstract class UFCellTagHelper(IUFModelExpressionRenderer aModelExpressio
   /// <param name="anOutput"></param>
   /// <param name="aTable"></param>
   /// <param name="aTableRow"></param>
-  private void AddButtonWrapper(TagHelperOutput anOutput, UFTableTagHelper aTable, UFTableRowTagHelper aTableRow)
+  private void AddButtonWrapper(TagHelperOutput anOutput, UFTableTagHelperBase aTable, UFTableRowTagHelperBase aTableRow)
   {
     anOutput.PreContent.SetHtmlContent(
       $"<button" +

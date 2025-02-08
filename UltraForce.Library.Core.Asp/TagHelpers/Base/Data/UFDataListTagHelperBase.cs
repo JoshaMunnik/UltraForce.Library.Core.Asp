@@ -1,4 +1,4 @@
-// <copyright file="UFDataNameTagHelper.cs" company="Ultra Force Development">
+// <copyright file="UFDataListTagHelperBase.cs" company="Ultra Force Development">
 // Ultra Force Library - Copyright (C) 2024 Ultra Force Development
 // </copyright>
 // <author>Josha Munnik</author>
@@ -28,66 +28,40 @@
 // </license>
 
 using System.Diagnostics.CodeAnalysis;
-using Microsoft.AspNetCore.Mvc.ViewFeatures;
 using Microsoft.AspNetCore.Razor.TagHelpers;
-using UltraForce.Library.Core.Asp.Services;
-using UltraForce.Library.Core.Asp.TagHelpers.Base;
 using UltraForce.Library.Core.Asp.Tools;
 
-namespace UltraForce.Library.Core.Asp.TagHelpers.Data;
+namespace UltraForce.Library.Core.Asp.TagHelpers.Base.Data;
 
 /// <summary>
-/// Base class for rendering a data definition. If <see cref="For"/> is set, the content is set to
-/// the name of the referenced element. Else the children of this tag are rendered.
-/// <para>
-/// It renders the following:
-/// <code>
-/// &lt;dt class="{GetDataNameClasses()}"&gt;{content|For name}&lt;/dt&gt;
-/// </code>
-/// </para> 
+/// Base class for rendering a data list. It just sets the tag to "dl".
 /// </summary>
 [SuppressMessage("ReSharper", "ClassWithVirtualMembersNeverInherited.Global")]
-[HtmlTargetElement("uf-data-name")]
-public abstract class UFDataNameTagHelper(
-  IUFModelExpressionRenderer aModelExpressionRenderer
-) : UFTagHelperWithModelExpressionRenderer(aModelExpressionRenderer)
+public abstract class UFDataListTagHelperBase : TagHelper
 {
-  #region public properties
-
-  /// <summary>
-  /// When no content is set, use the (display) name of the model property.
-  /// </summary>
-  public ModelExpression? For { get; set; }
-
-  #endregion
-
-  #region public methods
+  #region overriden public methods
 
   /// <inheritdoc />
-  public override async Task ProcessAsync(TagHelperContext context, TagHelperOutput output)
+  public override void Process(TagHelperContext context, TagHelperOutput output)
   {
-    await base.ProcessAsync(context, output);
-    output.TagName = "dt";
+    base.Process(context, output);
+    output.TagName = "dl";
     output.TagMode = TagMode.StartTagAndEndTag;
-    if (this.For != null)
-    {
-      await this.ModelExpressionRenderer.SetContentToNameAsync(output, this.For, this.ViewContext);
-    }
-    UFTagHelperTools.AddClasses(output, this.GetDataNameClasses());
+    UFTagHelperTools.AddClasses(output, this.GetDataListClasses());
   }
 
   #endregion
-
+  
   #region overridable protected methods
-
+  
   /// <summary>
-  /// The default returns an empty string.
+  /// The default implementation returns an empty string.
   /// </summary>
   /// <returns></returns>
-  protected virtual string GetDataNameClasses()
+  protected virtual string GetDataListClasses()
   {
     return string.Empty;
   }
-
+  
   #endregion
 }

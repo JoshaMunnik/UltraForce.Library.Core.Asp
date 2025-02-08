@@ -1,7 +1,8 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
 
     <PropertyGroup>
-        <TargetFramework>net8.0</TargetFramework>
+      <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
+      <GenerateEmbeddedFilesManifest>true</GenerateEmbeddedFilesManifest>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
         <Title>Ultra Force Library for ASP.NET Core</Title>
@@ -14,8 +15,12 @@
         <RepositoryUrl>https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp</RepositoryUrl>
         <PackageReadmeFile>README.md</PackageReadmeFile>
         <AssemblyVersion></AssemblyVersion>
-        <Version>1.0.33</Version>
-        <PackageReleaseNotes>1.0.33
+        <Version>1.0.38</Version>
+        <PackageReleaseNotes>1.0.38
+- added tag helpers for layout
+- Renamed and move base tag helpers 
+
+1.0.33
 - add pre and post html methods to UFInputTagHelper for text inputs.
 
 1.0.32
@@ -125,6 +130,7 @@ Added try/catch when accessing the session.
 
 1.0.0
 Initial version</PackageReleaseNotes>
+        <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
     </PropertyGroup>
 
     <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
