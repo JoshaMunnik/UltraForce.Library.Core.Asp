@@ -13,8 +13,16 @@
   flex-direction: column;
 }
 
+.uf-flex__column--is-reversed {
+  flex-direction: column-reverse;
+}
+
 .uf-flex__row {
   flex-direction: row;
+}
+
+.uf-flex__row--is-reversed {
+  flex-direction: row-reverse;
 }
 
 .uf-flex--align-cross-start {

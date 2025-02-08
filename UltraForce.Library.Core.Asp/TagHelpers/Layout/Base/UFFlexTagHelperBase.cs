@@ -90,6 +90,12 @@ public abstract class UFFlexTagHelperBase(UFFlexTypeEnum flexType) : TagHelper
   /// </summary>
   [HtmlAttributeName("wrap")]
   public bool Wrap { get; set; } = false;
+  
+  /// <summary>
+  /// When true, reverse the order of the items.
+  /// </summary>
+  [HtmlAttributeName("reverse")]
+  public bool Reverse { get; set; } = false;
 
   #endregion
   
@@ -120,6 +126,15 @@ public abstract class UFFlexTagHelperBase(UFFlexTypeEnum flexType) : TagHelper
       UFFlexTypeEnum.Column => " uf-flex__column",
       _ => throw new ArgumentOutOfRangeException(nameof(flexType), flexType, null),
     };
+    if (this.Reverse)
+    {
+      classes += flexType switch
+      {
+        UFFlexTypeEnum.Row => " uf-flex__row--is-reversed",
+        UFFlexTypeEnum.Column => " uf-flex__column--is-reversed",
+        _ => "",
+      };
+    }
     classes += this.AlignCrossAxis switch
     {
       UFFlexAlignItemsEnum.Center => " uf-flex--align-cross-center",

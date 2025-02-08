@@ -13,6 +13,7 @@ items:
   - UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.FullWidth
   - UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.GetFlexClasses
   - UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  - UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.Reverse
   - UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.Wrap
   langs:
   - csharp
@@ -379,6 +380,49 @@ items:
     arguments:
     - type: System.String
       value: wrap
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.Reverse
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.Reverse
+  id: Reverse
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase
+  langs:
+  - csharp
+  - vb
+  name: Reverse
+  nameWithType: UFFlexTagHelperBase.Reverse
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.Reverse
+  type: Property
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Layout/Base/UFFlexTagHelperBase.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: Reverse
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Layout/Base/UFFlexTagHelperBase.cs
+    startLine: 96
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base
+  summary: When true, reverse the order of the items.
+  example: []
+  syntax:
+    content: >-
+      [HtmlAttributeName("reverse")]
+
+      public bool Reverse { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <HtmlAttributeName("reverse")>
+
+      Public Property Reverse As Boolean
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.Reverse*
+  attributes:
+  - type: Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute
+    ctor: Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: reverse
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
   commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
   id: Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
@@ -397,7 +441,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Process
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Layout/Base/UFFlexTagHelperBase.cs
-    startLine: 98
+    startLine: 104
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base
@@ -436,7 +480,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetFlexClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Layout/Base/UFFlexTagHelperBase.cs
-    startLine: 113
+    startLine: 119
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base
@@ -1045,6 +1089,12 @@ references:
   name: Wrap
   nameWithType: UFFlexTagHelperBase.Wrap
   fullName: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.Wrap
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.Reverse*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.Reverse
+  href: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Layout_Base_UFFlexTagHelperBase_Reverse
+  name: Reverse
+  nameWithType: UFFlexTagHelperBase.Reverse
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.Reverse
 - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
   commentId: M:Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
   parent: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper

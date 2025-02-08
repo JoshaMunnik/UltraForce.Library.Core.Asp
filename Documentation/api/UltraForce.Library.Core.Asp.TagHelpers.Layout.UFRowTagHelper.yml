@@ -58,6 +58,7 @@ items:
   - UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.FullWidth
   - UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.FullHeight
   - UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.Wrap
+  - UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.Reverse
   - UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
   - UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.GetFlexClasses
   - Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Init(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext)
@@ -259,6 +260,13 @@ references:
   name: Wrap
   nameWithType: UFFlexTagHelperBase.Wrap
   fullName: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.Wrap
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.Reverse
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.Reverse
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase
+  href: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Layout_Base_UFFlexTagHelperBase_Reverse
+  name: Reverse
+  nameWithType: UFFlexTagHelperBase.Reverse
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.Reverse
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
   commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
   parent: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase
