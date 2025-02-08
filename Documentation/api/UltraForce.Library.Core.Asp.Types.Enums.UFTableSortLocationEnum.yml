@@ -1,0 +1,179 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFTableSortLocationEnum
+  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFTableSortLocationEnum
+  id: UFTableSortLocationEnum
+  parent: UltraForce.Library.Core.Asp.Types.Enums
+  children:
+  - UltraForce.Library.Core.Asp.Types.Enums.UFTableSortLocationEnum.Bottom
+  - UltraForce.Library.Core.Asp.Types.Enums.UFTableSortLocationEnum.Middle
+  - UltraForce.Library.Core.Asp.Types.Enums.UFTableSortLocationEnum.Top
+  langs:
+  - csharp
+  - vb
+  name: UFTableSortLocationEnum
+  nameWithType: UFTableSortLocationEnum
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFTableSortLocationEnum
+  type: Enum
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFTableSortLocationEnum.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: UFTableSortLocationEnum
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFTableSortLocationEnum.cs
+    startLine: 34
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Position of row when sorting a table.
+  example: []
+  syntax:
+    content: public enum UFTableSortLocationEnum
+    content.vb: Public Enum UFTableSortLocationEnum
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFTableSortLocationEnum.Middle
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFTableSortLocationEnum.Middle
+  id: Middle
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFTableSortLocationEnum
+  langs:
+  - csharp
+  - vb
+  name: Middle
+  nameWithType: UFTableSortLocationEnum.Middle
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFTableSortLocationEnum.Middle
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFTableSortLocationEnum.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: Middle
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFTableSortLocationEnum.cs
+    startLine: 39
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Place row at a sorted location somewhere in the middle
+  example: []
+  syntax:
+    content: Middle = 0
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFTableSortLocationEnum
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFTableSortLocationEnum.Top
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFTableSortLocationEnum.Top
+  id: Top
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFTableSortLocationEnum
+  langs:
+  - csharp
+  - vb
+  name: Top
+  nameWithType: UFTableSortLocationEnum.Top
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFTableSortLocationEnum.Top
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFTableSortLocationEnum.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: Top
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFTableSortLocationEnum.cs
+    startLine: 44
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Keep row at top while sorting
+  example: []
+  syntax:
+    content: Top = 1
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFTableSortLocationEnum
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFTableSortLocationEnum.Bottom
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFTableSortLocationEnum.Bottom
+  id: Bottom
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFTableSortLocationEnum
+  langs:
+  - csharp
+  - vb
+  name: Bottom
+  nameWithType: UFTableSortLocationEnum.Bottom
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFTableSortLocationEnum.Bottom
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFTableSortLocationEnum.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: Bottom
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFTableSortLocationEnum.cs
+    startLine: 49
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Keep row at bottom while sorting
+  example: []
+  syntax:
+    content: Bottom = 2
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFTableSortLocationEnum
+references:
+- uid: UltraForce.Library.Core.Asp.Types.Enums
+  commentId: N:UltraForce.Library.Core.Asp.Types.Enums
+  href: UltraForce.html
+  name: UltraForce.Library.Core.Asp.Types.Enums
+  nameWithType: UltraForce.Library.Core.Asp.Types.Enums
+  fullName: UltraForce.Library.Core.Asp.Types.Enums
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types
+    name: Types
+    href: UltraForce.Library.Core.Asp.Types.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types.Enums
+    name: Enums
+    href: UltraForce.Library.Core.Asp.Types.Enums.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types
+    name: Types
+    href: UltraForce.Library.Core.Asp.Types.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types.Enums
+    name: Enums
+    href: UltraForce.Library.Core.Asp.Types.Enums.html
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFTableSortLocationEnum
+  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFTableSortLocationEnum
+  parent: UltraForce.Library.Core.Asp.Types.Enums
+  href: UltraForce.Library.Core.Asp.Types.Enums.UFTableSortLocationEnum.html
+  name: UFTableSortLocationEnum
+  nameWithType: UFTableSortLocationEnum
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFTableSortLocationEnum

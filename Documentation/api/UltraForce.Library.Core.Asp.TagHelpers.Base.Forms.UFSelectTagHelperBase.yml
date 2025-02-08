@@ -1,0 +1,1462 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase
+  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase
+  id: UFSelectTagHelperBase
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
+  children:
+  - UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.#ctor(Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator)
+  - UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.Description
+  - UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetFieldErrorsClasses
+  - UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetFieldErrorsHtml(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary,System.String)
+  - UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetSelectClasses
+  - UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetTextLabelClasses(System.String)
+  - UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetTextWrapperClasses(System.String)
+  - UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetValidationFeedbackContainerHtml(System.String)
+  - UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.Label
+  - UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.NoLabel
+  - UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.NoWrap
+  - UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  langs:
+  - csharp
+  - vb
+  name: UFSelectTagHelperBase
+  nameWithType: UFSelectTagHelperBase
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase
+  type: Class
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFSelectTagHelperBase.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: UFSelectTagHelperBase
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFSelectTagHelperBase.cs
+    startLine: 67
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
+  summary: >-
+    Base class to help with rendering a select element. If not `id` is set and
+
+    <xref href="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.NoWrap" data-throw-if-not-resolved="false"></xref> is `false`, the code will generate an id so the label can reference the
+
+    select element.
+
+    <p>
+
+    If there are no field errors, the field error block is not rendered.
+
+    </p>
+
+    <p>
+
+    Renders with wrapping:
+
+    <pre><code class="lang-csharp">&lt;div class="{GetInputWrapperClasses()}"&gt;
+      &lt;label class="{GetInputLabelClasses()}" for="{id}"&gt;{label}&lt;/label&gt;
+      &lt;select class="{GetSelectClasses() id={} ..." &gt;
+        {children}
+      &lt;/select&gt;
+      {GetValidationFeedbackContainer(id)}
+      &lt;div class="{GetFieldErrorsClasses()}"&gt;{GetFieldErrorsHtml()}&lt;/div&gt;
+    &lt;/div&gt;</code></pre>
+
+    </p>
+
+    <p>
+
+    Renders without wrapping:
+
+    <pre><code class="lang-csharp">&lt;select class="{GetSelectClasses()}" &gt;
+      {children}
+    &lt;/select&gt;</code></pre>
+
+    </p>
+  example: []
+  syntax:
+    content: >-
+      [HtmlTargetElement("uf-select", TagStructure = TagStructure.NormalOrSelfClosing)]
+
+      public abstract class UFSelectTagHelperBase : SelectTagHelper, ITagHelper, ITagHelperComponent
+    content.vb: >-
+      <HtmlTargetElement("uf-select", TagStructure:=TagStructure.NormalOrSelfClosing)>
+
+      Public MustInherit Class UFSelectTagHelperBase Inherits SelectTagHelper Implements ITagHelper, ITagHelperComponent
+  inheritance:
+  - System.Object
+  - Microsoft.AspNetCore.Razor.TagHelpers.TagHelper
+  - Microsoft.AspNetCore.Mvc.TagHelpers.SelectTagHelper
+  implements:
+  - Microsoft.AspNetCore.Razor.TagHelpers.ITagHelper
+  - Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent
+  inheritedMembers:
+  - Microsoft.AspNetCore.Mvc.TagHelpers.SelectTagHelper.Init(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext)
+  - Microsoft.AspNetCore.Mvc.TagHelpers.SelectTagHelper.Order
+  - Microsoft.AspNetCore.Mvc.TagHelpers.SelectTagHelper.Generator
+  - Microsoft.AspNetCore.Mvc.TagHelpers.SelectTagHelper.ViewContext
+  - Microsoft.AspNetCore.Mvc.TagHelpers.SelectTagHelper.For
+  - Microsoft.AspNetCore.Mvc.TagHelpers.SelectTagHelper.Items
+  - Microsoft.AspNetCore.Mvc.TagHelpers.SelectTagHelper.Name
+  - Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+  attributes:
+  - type: Microsoft.AspNetCore.Razor.TagHelpers.HtmlTargetElementAttribute
+    ctor: Microsoft.AspNetCore.Razor.TagHelpers.HtmlTargetElementAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: uf-select
+    namedArguments:
+    - name: TagStructure
+      type: Microsoft.AspNetCore.Razor.TagHelpers.TagStructure
+      value: 1
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.#ctor(Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator)
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.#ctor(Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator)
+  id: '#ctor(Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator)'
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase
+  langs:
+  - csharp
+  - vb
+  name: UFSelectTagHelperBase(IHtmlGenerator)
+  nameWithType: UFSelectTagHelperBase.UFSelectTagHelperBase(IHtmlGenerator)
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.UFSelectTagHelperBase(Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator)
+  type: Constructor
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFSelectTagHelperBase.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: .ctor
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFSelectTagHelperBase.cs
+    startLine: 67
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
+  summary: >-
+    Base class to help with rendering a select element. If not `id` is set and
+
+    <xref href="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.NoWrap" data-throw-if-not-resolved="false"></xref> is `false`, the code will generate an id so the label can reference the
+
+    select element.
+
+    <p>
+
+    If there are no field errors, the field error block is not rendered.
+
+    </p>
+
+    <p>
+
+    Renders with wrapping:
+
+    <pre><code class="lang-csharp">&lt;div class="{GetInputWrapperClasses()}"&gt;
+      &lt;label class="{GetInputLabelClasses()}" for="{id}"&gt;{label}&lt;/label&gt;
+      &lt;select class="{GetSelectClasses() id={} ..." &gt;
+        {children}
+      &lt;/select&gt;
+      {GetValidationFeedbackContainer(id)}
+      &lt;div class="{GetFieldErrorsClasses()}"&gt;{GetFieldErrorsHtml()}&lt;/div&gt;
+    &lt;/div&gt;</code></pre>
+
+    </p>
+
+    <p>
+
+    Renders without wrapping:
+
+    <pre><code class="lang-csharp">&lt;select class="{GetSelectClasses()}" &gt;
+      {children}
+    &lt;/select&gt;</code></pre>
+
+    </p>
+  example: []
+  syntax:
+    content: protected UFSelectTagHelperBase(IHtmlGenerator aGenerator)
+    parameters:
+    - id: aGenerator
+      type: Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator
+    content.vb: Protected Sub New(aGenerator As IHtmlGenerator)
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.#ctor*
+  nameWithType.vb: UFSelectTagHelperBase.New(IHtmlGenerator)
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.New(Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator)
+  name.vb: New(IHtmlGenerator)
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.Label
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.Label
+  id: Label
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase
+  langs:
+  - csharp
+  - vb
+  name: Label
+  nameWithType: UFSelectTagHelperBase.Label
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.Label
+  type: Property
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFSelectTagHelperBase.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: Label
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFSelectTagHelperBase.cs
+    startLine: 83
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
+  summary: >-
+    When set, use this value for label instead of getting from the
+
+    <xref href="Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper.For" data-throw-if-not-resolved="false"></xref> property.
+
+    <p>
+
+    When <xref href="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.NoWrap" data-throw-if-not-resolved="false"></xref> is false, the property is only used with checkbox and radio elements.
+
+    For other input elements the value is ignored.
+
+    </p>
+  example: []
+  syntax:
+    content: >-
+      [HtmlAttributeName("label")]
+
+      public string Label { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <HtmlAttributeName("label")>
+
+      Public Property Label As String
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.Label*
+  attributes:
+  - type: Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute
+    ctor: Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: label
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.NoLabel
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.NoLabel
+  id: NoLabel
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase
+  langs:
+  - csharp
+  - vb
+  name: NoLabel
+  nameWithType: UFSelectTagHelperBase.NoLabel
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.NoLabel
+  type: Property
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFSelectTagHelperBase.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: NoLabel
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFSelectTagHelperBase.cs
+    startLine: 89
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
+  summary: When true do not render a label element.
+  example: []
+  syntax:
+    content: >-
+      [HtmlAttributeName("no-label")]
+
+      public bool NoLabel { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <HtmlAttributeName("no-label")>
+
+      Public Property NoLabel As Boolean
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.NoLabel*
+  attributes:
+  - type: Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute
+    ctor: Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: no-label
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.NoWrap
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.NoWrap
+  id: NoWrap
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase
+  langs:
+  - csharp
+  - vb
+  name: NoWrap
+  nameWithType: UFSelectTagHelperBase.NoWrap
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.NoWrap
+  type: Property
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFSelectTagHelperBase.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: NoWrap
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFSelectTagHelperBase.cs
+    startLine: 95
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
+  summary: When true, do not the wrap input element in a div.
+  example: []
+  syntax:
+    content: >-
+      [HtmlAttributeName("no-wrap")]
+
+      public bool NoWrap { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <HtmlAttributeName("no-wrap")>
+
+      Public Property NoWrap As Boolean
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.NoWrap*
+  attributes:
+  - type: Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute
+    ctor: Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: no-wrap
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.Description
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.Description
+  id: Description
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase
+  langs:
+  - csharp
+  - vb
+  name: Description
+  nameWithType: UFSelectTagHelperBase.Description
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.Description
+  type: Property
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFSelectTagHelperBase.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: Description
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFSelectTagHelperBase.cs
+    startLine: 102
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
+  summary: >-
+    Additional text that is shown below the label. It is only used if <xref href="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.NoWrap" data-throw-if-not-resolved="false"></xref> is
+
+    not true.
+  example: []
+  syntax:
+    content: >-
+      [HtmlAttributeName("description")]
+
+      public string Description { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <HtmlAttributeName("description")>
+
+      Public Property Description As String
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.Description*
+  attributes:
+  - type: Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute
+    ctor: Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: description
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  id: Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase
+  langs:
+  - csharp
+  - vb
+  name: Process(TagHelperContext, TagHelperOutput)
+  nameWithType: UFSelectTagHelperBase.Process(TagHelperContext, TagHelperOutput)
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFSelectTagHelperBase.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: Process
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFSelectTagHelperBase.cs
+    startLine: 110
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
+  summary: >-
+    Synchronously executes the <xref href="Microsoft.AspNetCore.Razor.TagHelpers.TagHelper" data-throw-if-not-resolved="false"></xref> with the given <code class="paramref">context</code> and
+
+    <code class="paramref">output</code>.
+  remarks: Does nothing if <xref href="Microsoft.AspNetCore.Mvc.TagHelpers.SelectTagHelper.For" data-throw-if-not-resolved="false"></xref> is <code>null</code>.
+  example: []
+  syntax:
+    content: public override void Process(TagHelperContext context, TagHelperOutput output)
+    parameters:
+    - id: context
+      type: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext
+      description: Contains information associated with the current HTML tag.
+    - id: output
+      type: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput
+      description: A stateful HTML element used to generate an HTML tag.
+    content.vb: Public Overrides Sub Process(context As TagHelperContext, output As TagHelperOutput)
+  overridden: Microsoft.AspNetCore.Mvc.TagHelpers.SelectTagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.Process*
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetSelectClasses
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetSelectClasses
+  id: GetSelectClasses
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase
+  langs:
+  - csharp
+  - vb
+  name: GetSelectClasses()
+  nameWithType: UFSelectTagHelperBase.GetSelectClasses()
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetSelectClasses()
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFSelectTagHelperBase.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: GetSelectClasses
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFSelectTagHelperBase.cs
+    startLine: 148
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
+  summary: Returns css classes for the select element.
+  example: []
+  syntax:
+    content: protected virtual string GetSelectClasses()
+    return:
+      type: System.String
+      description: ''
+    content.vb: Protected Overridable Function GetSelectClasses() As String
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetSelectClasses*
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetTextLabelClasses(System.String)
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetTextLabelClasses(System.String)
+  id: GetTextLabelClasses(System.String)
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase
+  langs:
+  - csharp
+  - vb
+  name: GetTextLabelClasses(string)
+  nameWithType: UFSelectTagHelperBase.GetTextLabelClasses(string)
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetTextLabelClasses(string)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFSelectTagHelperBase.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: GetTextLabelClasses
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFSelectTagHelperBase.cs
+    startLine: 157
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
+  summary: Returns css classes for the label element.
+  example: []
+  syntax:
+    content: protected virtual string GetTextLabelClasses(string aType)
+    parameters:
+    - id: aType
+      type: System.String
+    return:
+      type: System.String
+      description: ''
+    content.vb: Protected Overridable Function GetTextLabelClasses(aType As String) As String
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetTextLabelClasses*
+  nameWithType.vb: UFSelectTagHelperBase.GetTextLabelClasses(String)
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetTextLabelClasses(String)
+  name.vb: GetTextLabelClasses(String)
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetTextWrapperClasses(System.String)
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetTextWrapperClasses(System.String)
+  id: GetTextWrapperClasses(System.String)
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase
+  langs:
+  - csharp
+  - vb
+  name: GetTextWrapperClasses(string)
+  nameWithType: UFSelectTagHelperBase.GetTextWrapperClasses(string)
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetTextWrapperClasses(string)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFSelectTagHelperBase.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: GetTextWrapperClasses
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFSelectTagHelperBase.cs
+    startLine: 170
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
+  summary: Returns css classes for the wrapper element.
+  example: []
+  syntax:
+    content: protected virtual string GetTextWrapperClasses(string aType)
+    parameters:
+    - id: aType
+      type: System.String
+      description: ''
+    return:
+      type: System.String
+      description: ''
+    content.vb: Protected Overridable Function GetTextWrapperClasses(aType As String) As String
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetTextWrapperClasses*
+  nameWithType.vb: UFSelectTagHelperBase.GetTextWrapperClasses(String)
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetTextWrapperClasses(String)
+  name.vb: GetTextWrapperClasses(String)
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetValidationFeedbackContainerHtml(System.String)
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetValidationFeedbackContainerHtml(System.String)
+  id: GetValidationFeedbackContainerHtml(System.String)
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase
+  langs:
+  - csharp
+  - vb
+  name: GetValidationFeedbackContainerHtml(string)
+  nameWithType: UFSelectTagHelperBase.GetValidationFeedbackContainerHtml(string)
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetValidationFeedbackContainerHtml(string)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFSelectTagHelperBase.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: GetValidationFeedbackContainerHtml
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFSelectTagHelperBase.cs
+    startLine: 182
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
+  summary: Returns the html for the validation feedback container.
+  example: []
+  syntax:
+    content: protected virtual string GetValidationFeedbackContainerHtml(string anId)
+    parameters:
+    - id: anId
+      type: System.String
+      description: ''
+    return:
+      type: System.String
+      description: ''
+    content.vb: Protected Overridable Function GetValidationFeedbackContainerHtml(anId As String) As String
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetValidationFeedbackContainerHtml*
+  nameWithType.vb: UFSelectTagHelperBase.GetValidationFeedbackContainerHtml(String)
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetValidationFeedbackContainerHtml(String)
+  name.vb: GetValidationFeedbackContainerHtml(String)
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetFieldErrorsClasses
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetFieldErrorsClasses
+  id: GetFieldErrorsClasses
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase
+  langs:
+  - csharp
+  - vb
+  name: GetFieldErrorsClasses()
+  nameWithType: UFSelectTagHelperBase.GetFieldErrorsClasses()
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetFieldErrorsClasses()
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFSelectTagHelperBase.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: GetFieldErrorsClasses
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFSelectTagHelperBase.cs
+    startLine: 193
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
+  summary: Returns the css classes for the field errors block.
+  example: []
+  syntax:
+    content: protected virtual string GetFieldErrorsClasses()
+    return:
+      type: System.String
+      description: ''
+    content.vb: Protected Overridable Function GetFieldErrorsClasses() As String
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetFieldErrorsClasses*
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetFieldErrorsHtml(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary,System.String)
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetFieldErrorsHtml(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary,System.String)
+  id: GetFieldErrorsHtml(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary,System.String)
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase
+  langs:
+  - csharp
+  - vb
+  name: GetFieldErrorsHtml(ModelStateDictionary, string)
+  nameWithType: UFSelectTagHelperBase.GetFieldErrorsHtml(ModelStateDictionary, string)
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetFieldErrorsHtml(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary, string)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFSelectTagHelperBase.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: GetFieldErrorsHtml
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFSelectTagHelperBase.cs
+    startLine: 204
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
+  summary: Returns the html for the field errors block.
+  example: []
+  syntax:
+    content: protected virtual string GetFieldErrorsHtml(ModelStateDictionary states, string name)
+    parameters:
+    - id: states
+      type: Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary
+      description: ''
+    - id: name
+      type: System.String
+      description: ''
+    return:
+      type: System.String
+      description: ''
+    content.vb: Protected Overridable Function GetFieldErrorsHtml(states As ModelStateDictionary, name As String) As String
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetFieldErrorsHtml*
+  nameWithType.vb: UFSelectTagHelperBase.GetFieldErrorsHtml(ModelStateDictionary, String)
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetFieldErrorsHtml(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary, String)
+  name.vb: GetFieldErrorsHtml(ModelStateDictionary, String)
+references:
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.NoWrap
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.NoWrap
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFSelectTagHelperBase_NoWrap
+  name: NoWrap
+  nameWithType: UFSelectTagHelperBase.NoWrap
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.NoWrap
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
+  commentId: N:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
+  href: UltraForce.html
+  name: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
+  nameWithType: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers
+    name: TagHelpers
+    href: UltraForce.Library.Core.Asp.TagHelpers.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Base
+    name: Base
+    href: UltraForce.Library.Core.Asp.TagHelpers.Base.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
+    name: Forms
+    href: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers
+    name: TagHelpers
+    href: UltraForce.Library.Core.Asp.TagHelpers.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Base
+    name: Base
+    href: UltraForce.Library.Core.Asp.TagHelpers.Base.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
+    name: Forms
+    href: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper
+  commentId: T:Microsoft.AspNetCore.Razor.TagHelpers.TagHelper
+  parent: Microsoft.AspNetCore.Razor.TagHelpers
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper
+  name: TagHelper
+  nameWithType: TagHelper
+  fullName: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper
+- uid: Microsoft.AspNetCore.Mvc.TagHelpers.SelectTagHelper
+  commentId: T:Microsoft.AspNetCore.Mvc.TagHelpers.SelectTagHelper
+  parent: Microsoft.AspNetCore.Mvc.TagHelpers
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers.selecttaghelper
+  name: SelectTagHelper
+  nameWithType: SelectTagHelper
+  fullName: Microsoft.AspNetCore.Mvc.TagHelpers.SelectTagHelper
+- uid: Microsoft.AspNetCore.Razor.TagHelpers.ITagHelper
+  commentId: T:Microsoft.AspNetCore.Razor.TagHelpers.ITagHelper
+  parent: Microsoft.AspNetCore.Razor.TagHelpers
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.itaghelper
+  name: ITagHelper
+  nameWithType: ITagHelper
+  fullName: Microsoft.AspNetCore.Razor.TagHelpers.ITagHelper
+- uid: Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent
+  commentId: T:Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent
+  parent: Microsoft.AspNetCore.Razor.TagHelpers
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.itaghelpercomponent
+  name: ITagHelperComponent
+  nameWithType: ITagHelperComponent
+  fullName: Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent
+- uid: Microsoft.AspNetCore.Mvc.TagHelpers.SelectTagHelper.Init(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext)
+  commentId: M:Microsoft.AspNetCore.Mvc.TagHelpers.SelectTagHelper.Init(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext)
+  parent: Microsoft.AspNetCore.Mvc.TagHelpers.SelectTagHelper
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers.selecttaghelper.init
+  name: Init(TagHelperContext)
+  nameWithType: SelectTagHelper.Init(TagHelperContext)
+  fullName: Microsoft.AspNetCore.Mvc.TagHelpers.SelectTagHelper.Init(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Mvc.TagHelpers.SelectTagHelper.Init(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext)
+    name: Init
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers.selecttaghelper.init
+  - name: (
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext
+    name: TagHelperContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelpercontext
+  - name: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Mvc.TagHelpers.SelectTagHelper.Init(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext)
+    name: Init
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers.selecttaghelper.init
+  - name: (
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext
+    name: TagHelperContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelpercontext
+  - name: )
+- uid: Microsoft.AspNetCore.Mvc.TagHelpers.SelectTagHelper.Order
+  commentId: P:Microsoft.AspNetCore.Mvc.TagHelpers.SelectTagHelper.Order
+  parent: Microsoft.AspNetCore.Mvc.TagHelpers.SelectTagHelper
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers.selecttaghelper.order
+  name: Order
+  nameWithType: SelectTagHelper.Order
+  fullName: Microsoft.AspNetCore.Mvc.TagHelpers.SelectTagHelper.Order
+- uid: Microsoft.AspNetCore.Mvc.TagHelpers.SelectTagHelper.Generator
+  commentId: P:Microsoft.AspNetCore.Mvc.TagHelpers.SelectTagHelper.Generator
+  parent: Microsoft.AspNetCore.Mvc.TagHelpers.SelectTagHelper
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers.selecttaghelper.generator
+  name: Generator
+  nameWithType: SelectTagHelper.Generator
+  fullName: Microsoft.AspNetCore.Mvc.TagHelpers.SelectTagHelper.Generator
+- uid: Microsoft.AspNetCore.Mvc.TagHelpers.SelectTagHelper.ViewContext
+  commentId: P:Microsoft.AspNetCore.Mvc.TagHelpers.SelectTagHelper.ViewContext
+  parent: Microsoft.AspNetCore.Mvc.TagHelpers.SelectTagHelper
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers.selecttaghelper.viewcontext
+  name: ViewContext
+  nameWithType: SelectTagHelper.ViewContext
+  fullName: Microsoft.AspNetCore.Mvc.TagHelpers.SelectTagHelper.ViewContext
+- uid: Microsoft.AspNetCore.Mvc.TagHelpers.SelectTagHelper.For
+  commentId: P:Microsoft.AspNetCore.Mvc.TagHelpers.SelectTagHelper.For
+  parent: Microsoft.AspNetCore.Mvc.TagHelpers.SelectTagHelper
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers.selecttaghelper.for
+  name: For
+  nameWithType: SelectTagHelper.For
+  fullName: Microsoft.AspNetCore.Mvc.TagHelpers.SelectTagHelper.For
+- uid: Microsoft.AspNetCore.Mvc.TagHelpers.SelectTagHelper.Items
+  commentId: P:Microsoft.AspNetCore.Mvc.TagHelpers.SelectTagHelper.Items
+  parent: Microsoft.AspNetCore.Mvc.TagHelpers.SelectTagHelper
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers.selecttaghelper.items
+  name: Items
+  nameWithType: SelectTagHelper.Items
+  fullName: Microsoft.AspNetCore.Mvc.TagHelpers.SelectTagHelper.Items
+- uid: Microsoft.AspNetCore.Mvc.TagHelpers.SelectTagHelper.Name
+  commentId: P:Microsoft.AspNetCore.Mvc.TagHelpers.SelectTagHelper.Name
+  parent: Microsoft.AspNetCore.Mvc.TagHelpers.SelectTagHelper
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers.selecttaghelper.name
+  name: Name
+  nameWithType: SelectTagHelper.Name
+  fullName: Microsoft.AspNetCore.Mvc.TagHelpers.SelectTagHelper.Name
+- uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  commentId: M:Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  parent: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper.processasync
+  name: ProcessAsync(TagHelperContext, TagHelperOutput)
+  nameWithType: TagHelper.ProcessAsync(TagHelperContext, TagHelperOutput)
+  fullName: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+    name: ProcessAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper.processasync
+  - name: (
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext
+    name: TagHelperContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelpercontext
+  - name: ','
+  - name: " "
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput
+    name: TagHelperOutput
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelperoutput
+  - name: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+    name: ProcessAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper.processasync
+  - name: (
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext
+    name: TagHelperContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelpercontext
+  - name: ','
+  - name: " "
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput
+    name: TagHelperOutput
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelperoutput
+  - name: )
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.AspNetCore.Razor.TagHelpers
+  commentId: N:Microsoft.AspNetCore.Razor.TagHelpers
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.AspNetCore.Razor.TagHelpers
+  nameWithType: Microsoft.AspNetCore.Razor.TagHelpers
+  fullName: Microsoft.AspNetCore.Razor.TagHelpers
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Razor
+    name: Razor
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor
+  - name: .
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers
+    name: TagHelpers
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Razor
+    name: Razor
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor
+  - name: .
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers
+    name: TagHelpers
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers
+- uid: Microsoft.AspNetCore.Mvc.TagHelpers
+  commentId: N:Microsoft.AspNetCore.Mvc.TagHelpers
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.AspNetCore.Mvc.TagHelpers
+  nameWithType: Microsoft.AspNetCore.Mvc.TagHelpers
+  fullName: Microsoft.AspNetCore.Mvc.TagHelpers
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Mvc
+    name: Mvc
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc
+  - name: .
+  - uid: Microsoft.AspNetCore.Mvc.TagHelpers
+    name: TagHelpers
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Mvc
+    name: Mvc
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc
+  - name: .
+  - uid: Microsoft.AspNetCore.Mvc.TagHelpers
+    name: TagHelpers
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.#ctor*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.#ctor
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFSelectTagHelperBase__ctor_Microsoft_AspNetCore_Mvc_ViewFeatures_IHtmlGenerator_
+  name: UFSelectTagHelperBase
+  nameWithType: UFSelectTagHelperBase.UFSelectTagHelperBase
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.UFSelectTagHelperBase
+  nameWithType.vb: UFSelectTagHelperBase.New
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.New
+  name.vb: New
+- uid: Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator
+  commentId: T:Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator
+  parent: Microsoft.AspNetCore.Mvc.ViewFeatures
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.viewfeatures.ihtmlgenerator
+  name: IHtmlGenerator
+  nameWithType: IHtmlGenerator
+  fullName: Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator
+- uid: Microsoft.AspNetCore.Mvc.ViewFeatures
+  commentId: N:Microsoft.AspNetCore.Mvc.ViewFeatures
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.AspNetCore.Mvc.ViewFeatures
+  nameWithType: Microsoft.AspNetCore.Mvc.ViewFeatures
+  fullName: Microsoft.AspNetCore.Mvc.ViewFeatures
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Mvc
+    name: Mvc
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc
+  - name: .
+  - uid: Microsoft.AspNetCore.Mvc.ViewFeatures
+    name: ViewFeatures
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.viewfeatures
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Mvc
+    name: Mvc
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc
+  - name: .
+  - uid: Microsoft.AspNetCore.Mvc.ViewFeatures
+    name: ViewFeatures
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.viewfeatures
+- uid: Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper.For
+  commentId: P:Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper.For
+  parent: Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers.inputtaghelper.for
+  name: For
+  nameWithType: InputTagHelper.For
+  fullName: Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper.For
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.Label*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.Label
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFSelectTagHelperBase_Label
+  name: Label
+  nameWithType: UFSelectTagHelperBase.Label
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.Label
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper
+  commentId: T:Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper
+  parent: Microsoft.AspNetCore.Mvc.TagHelpers
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers.inputtaghelper
+  name: InputTagHelper
+  nameWithType: InputTagHelper
+  fullName: Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.NoLabel*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.NoLabel
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFSelectTagHelperBase_NoLabel
+  name: NoLabel
+  nameWithType: UFSelectTagHelperBase.NoLabel
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.NoLabel
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.NoWrap*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.NoWrap
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFSelectTagHelperBase_NoWrap
+  name: NoWrap
+  nameWithType: UFSelectTagHelperBase.NoWrap
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.NoWrap
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.Description*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.Description
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFSelectTagHelperBase_Description
+  name: Description
+  nameWithType: UFSelectTagHelperBase.Description
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.Description
+- uid: Microsoft.AspNetCore.Mvc.TagHelpers.SelectTagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  commentId: M:Microsoft.AspNetCore.Mvc.TagHelpers.SelectTagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  parent: Microsoft.AspNetCore.Mvc.TagHelpers.SelectTagHelper
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers.selecttaghelper.process
+  name: Process(TagHelperContext, TagHelperOutput)
+  nameWithType: SelectTagHelper.Process(TagHelperContext, TagHelperOutput)
+  fullName: Microsoft.AspNetCore.Mvc.TagHelpers.SelectTagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Mvc.TagHelpers.SelectTagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+    name: Process
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers.selecttaghelper.process
+  - name: (
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext
+    name: TagHelperContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelpercontext
+  - name: ','
+  - name: " "
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput
+    name: TagHelperOutput
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelperoutput
+  - name: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Mvc.TagHelpers.SelectTagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+    name: Process
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers.selecttaghelper.process
+  - name: (
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext
+    name: TagHelperContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelpercontext
+  - name: ','
+  - name: " "
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput
+    name: TagHelperOutput
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelperoutput
+  - name: )
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.Process*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.Process
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFSelectTagHelperBase_Process_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContext_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_
+  name: Process
+  nameWithType: UFSelectTagHelperBase.Process
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.Process
+- uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext
+  commentId: T:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext
+  parent: Microsoft.AspNetCore.Razor.TagHelpers
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelpercontext
+  name: TagHelperContext
+  nameWithType: TagHelperContext
+  fullName: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext
+- uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput
+  commentId: T:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput
+  parent: Microsoft.AspNetCore.Razor.TagHelpers
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelperoutput
+  name: TagHelperOutput
+  nameWithType: TagHelperOutput
+  fullName: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetSelectClasses*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetSelectClasses
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFSelectTagHelperBase_GetSelectClasses
+  name: GetSelectClasses
+  nameWithType: UFSelectTagHelperBase.GetSelectClasses
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetSelectClasses
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetTextLabelClasses*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetTextLabelClasses
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFSelectTagHelperBase_GetTextLabelClasses_System_String_
+  name: GetTextLabelClasses
+  nameWithType: UFSelectTagHelperBase.GetTextLabelClasses
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetTextLabelClasses
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetTextWrapperClasses*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetTextWrapperClasses
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFSelectTagHelperBase_GetTextWrapperClasses_System_String_
+  name: GetTextWrapperClasses
+  nameWithType: UFSelectTagHelperBase.GetTextWrapperClasses
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetTextWrapperClasses
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetValidationFeedbackContainerHtml*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetValidationFeedbackContainerHtml
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFSelectTagHelperBase_GetValidationFeedbackContainerHtml_System_String_
+  name: GetValidationFeedbackContainerHtml
+  nameWithType: UFSelectTagHelperBase.GetValidationFeedbackContainerHtml
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetValidationFeedbackContainerHtml
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetFieldErrorsClasses*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetFieldErrorsClasses
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFSelectTagHelperBase_GetFieldErrorsClasses
+  name: GetFieldErrorsClasses
+  nameWithType: UFSelectTagHelperBase.GetFieldErrorsClasses
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetFieldErrorsClasses
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetFieldErrorsHtml*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetFieldErrorsHtml
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFSelectTagHelperBase_GetFieldErrorsHtml_Microsoft_AspNetCore_Mvc_ModelBinding_ModelStateDictionary_System_String_
+  name: GetFieldErrorsHtml
+  nameWithType: UFSelectTagHelperBase.GetFieldErrorsHtml
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetFieldErrorsHtml
+- uid: Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary
+  commentId: T:Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary
+  parent: Microsoft.AspNetCore.Mvc.ModelBinding
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.modelbinding.modelstatedictionary
+  name: ModelStateDictionary
+  nameWithType: ModelStateDictionary
+  fullName: Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary
+- uid: Microsoft.AspNetCore.Mvc.ModelBinding
+  commentId: N:Microsoft.AspNetCore.Mvc.ModelBinding
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.AspNetCore.Mvc.ModelBinding
+  nameWithType: Microsoft.AspNetCore.Mvc.ModelBinding
+  fullName: Microsoft.AspNetCore.Mvc.ModelBinding
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Mvc
+    name: Mvc
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc
+  - name: .
+  - uid: Microsoft.AspNetCore.Mvc.ModelBinding
+    name: ModelBinding
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.modelbinding
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Mvc
+    name: Mvc
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc
+  - name: .
+  - uid: Microsoft.AspNetCore.Mvc.ModelBinding
+    name: ModelBinding
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.modelbinding

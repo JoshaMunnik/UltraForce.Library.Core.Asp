@@ -1,0 +1,150 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFTableRowTypeEnum
+  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFTableRowTypeEnum
+  id: UFTableRowTypeEnum
+  parent: UltraForce.Library.Core.Asp.Types.Enums
+  children:
+  - UltraForce.Library.Core.Asp.Types.Enums.UFTableRowTypeEnum.Data
+  - UltraForce.Library.Core.Asp.Types.Enums.UFTableRowTypeEnum.Header
+  langs:
+  - csharp
+  - vb
+  name: UFTableRowTypeEnum
+  nameWithType: UFTableRowTypeEnum
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFTableRowTypeEnum
+  type: Enum
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFTableRowTypeEnum.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: UFTableRowTypeEnum
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFTableRowTypeEnum.cs
+    startLine: 34
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: The row types for a row
+  example: []
+  syntax:
+    content: public enum UFTableRowTypeEnum
+    content.vb: Public Enum UFTableRowTypeEnum
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFTableRowTypeEnum.Header
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFTableRowTypeEnum.Header
+  id: Header
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFTableRowTypeEnum
+  langs:
+  - csharp
+  - vb
+  name: Header
+  nameWithType: UFTableRowTypeEnum.Header
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFTableRowTypeEnum.Header
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFTableRowTypeEnum.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: Header
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFTableRowTypeEnum.cs
+    startLine: 39
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Row is a header row
+  example: []
+  syntax:
+    content: Header = 0
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFTableRowTypeEnum
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFTableRowTypeEnum.Data
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFTableRowTypeEnum.Data
+  id: Data
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFTableRowTypeEnum
+  langs:
+  - csharp
+  - vb
+  name: Data
+  nameWithType: UFTableRowTypeEnum.Data
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFTableRowTypeEnum.Data
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFTableRowTypeEnum.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: Data
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFTableRowTypeEnum.cs
+    startLine: 44
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Row is a data row
+  example: []
+  syntax:
+    content: Data = 1
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFTableRowTypeEnum
+references:
+- uid: UltraForce.Library.Core.Asp.Types.Enums
+  commentId: N:UltraForce.Library.Core.Asp.Types.Enums
+  href: UltraForce.html
+  name: UltraForce.Library.Core.Asp.Types.Enums
+  nameWithType: UltraForce.Library.Core.Asp.Types.Enums
+  fullName: UltraForce.Library.Core.Asp.Types.Enums
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types
+    name: Types
+    href: UltraForce.Library.Core.Asp.Types.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types.Enums
+    name: Enums
+    href: UltraForce.Library.Core.Asp.Types.Enums.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types
+    name: Types
+    href: UltraForce.Library.Core.Asp.Types.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types.Enums
+    name: Enums
+    href: UltraForce.Library.Core.Asp.Types.Enums.html
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFTableRowTypeEnum
+  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFTableRowTypeEnum
+  parent: UltraForce.Library.Core.Asp.Types.Enums
+  href: UltraForce.Library.Core.Asp.Types.Enums.UFTableRowTypeEnum.html
+  name: UFTableRowTypeEnum
+  nameWithType: UFTableRowTypeEnum
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFTableRowTypeEnum

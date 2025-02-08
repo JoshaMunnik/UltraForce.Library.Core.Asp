@@ -1,0 +1,237 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFContentPositionEnum
+  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFContentPositionEnum
+  id: UFContentPositionEnum
+  parent: UltraForce.Library.Core.Asp.Types.Enums
+  children:
+  - UltraForce.Library.Core.Asp.Types.Enums.UFContentPositionEnum.Center
+  - UltraForce.Library.Core.Asp.Types.Enums.UFContentPositionEnum.End
+  - UltraForce.Library.Core.Asp.Types.Enums.UFContentPositionEnum.None
+  - UltraForce.Library.Core.Asp.Types.Enums.UFContentPositionEnum.Start
+  - UltraForce.Library.Core.Asp.Types.Enums.UFContentPositionEnum.Stretch
+  langs:
+  - csharp
+  - vb
+  name: UFContentPositionEnum
+  nameWithType: UFContentPositionEnum
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFContentPositionEnum
+  type: Enum
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFContentPositionEnum.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: UFContentPositionEnum
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFContentPositionEnum.cs
+    startLine: 34
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: How to position content in a container.
+  example: []
+  syntax:
+    content: public enum UFContentPositionEnum
+    content.vb: Public Enum UFContentPositionEnum
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFContentPositionEnum.None
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFContentPositionEnum.None
+  id: None
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFContentPositionEnum
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: UFContentPositionEnum.None
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFContentPositionEnum.None
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFContentPositionEnum.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: None
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFContentPositionEnum.cs
+    startLine: 39
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Do not change the position of the child.
+  example: []
+  syntax:
+    content: None = 0
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFContentPositionEnum
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFContentPositionEnum.Start
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFContentPositionEnum.Start
+  id: Start
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFContentPositionEnum
+  langs:
+  - csharp
+  - vb
+  name: Start
+  nameWithType: UFContentPositionEnum.Start
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFContentPositionEnum.Start
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFContentPositionEnum.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: Start
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFContentPositionEnum.cs
+    startLine: 44
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Place at start of container.
+  example: []
+  syntax:
+    content: Start = 1
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFContentPositionEnum
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFContentPositionEnum.Center
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFContentPositionEnum.Center
+  id: Center
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFContentPositionEnum
+  langs:
+  - csharp
+  - vb
+  name: Center
+  nameWithType: UFContentPositionEnum.Center
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFContentPositionEnum.Center
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFContentPositionEnum.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: Center
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFContentPositionEnum.cs
+    startLine: 49
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Place at center of container.
+  example: []
+  syntax:
+    content: Center = 2
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFContentPositionEnum
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFContentPositionEnum.End
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFContentPositionEnum.End
+  id: End
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFContentPositionEnum
+  langs:
+  - csharp
+  - vb
+  name: End
+  nameWithType: UFContentPositionEnum.End
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFContentPositionEnum.End
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFContentPositionEnum.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: End
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFContentPositionEnum.cs
+    startLine: 54
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Place at end of container.
+  example: []
+  syntax:
+    content: End = 3
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFContentPositionEnum
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFContentPositionEnum.Stretch
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFContentPositionEnum.Stretch
+  id: Stretch
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFContentPositionEnum
+  langs:
+  - csharp
+  - vb
+  name: Stretch
+  nameWithType: UFContentPositionEnum.Stretch
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFContentPositionEnum.Stretch
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFContentPositionEnum.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: Stretch
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFContentPositionEnum.cs
+    startLine: 59
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Stretch content to fill the container.
+  example: []
+  syntax:
+    content: Stretch = 4
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFContentPositionEnum
+references:
+- uid: UltraForce.Library.Core.Asp.Types.Enums
+  commentId: N:UltraForce.Library.Core.Asp.Types.Enums
+  href: UltraForce.html
+  name: UltraForce.Library.Core.Asp.Types.Enums
+  nameWithType: UltraForce.Library.Core.Asp.Types.Enums
+  fullName: UltraForce.Library.Core.Asp.Types.Enums
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types
+    name: Types
+    href: UltraForce.Library.Core.Asp.Types.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types.Enums
+    name: Enums
+    href: UltraForce.Library.Core.Asp.Types.Enums.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types
+    name: Types
+    href: UltraForce.Library.Core.Asp.Types.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types.Enums
+    name: Enums
+    href: UltraForce.Library.Core.Asp.Types.Enums.html
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFContentPositionEnum
+  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFContentPositionEnum
+  parent: UltraForce.Library.Core.Asp.Types.Enums
+  href: UltraForce.Library.Core.Asp.Types.Enums.UFContentPositionEnum.html
+  name: UFContentPositionEnum
+  nameWithType: UFContentPositionEnum
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFContentPositionEnum

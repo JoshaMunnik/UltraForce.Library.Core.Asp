@@ -1,0 +1,295 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContentEnum
+  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContentEnum
+  id: UFFlexDistributeContentEnum
+  parent: UltraForce.Library.Core.Asp.Types.Enums
+  children:
+  - UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContentEnum.Center
+  - UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContentEnum.End
+  - UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContentEnum.SpaceAround
+  - UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContentEnum.SpaceBetween
+  - UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContentEnum.SpaceEvenly
+  - UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContentEnum.Start
+  - UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContentEnum.Stretch
+  langs:
+  - csharp
+  - vb
+  name: UFFlexDistributeContentEnum
+  nameWithType: UFFlexDistributeContentEnum
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContentEnum
+  type: Enum
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFFlexDistributeContentEnum.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: UFFlexDistributeContentEnum
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFFlexDistributeContentEnum.cs
+    startLine: 34
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: How to distribute the children in the opposite direction of the main axis (column or row).
+  example: []
+  syntax:
+    content: public enum UFFlexDistributeContentEnum
+    content.vb: Public Enum UFFlexDistributeContentEnum
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContentEnum.Start
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContentEnum.Start
+  id: Start
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContentEnum
+  langs:
+  - csharp
+  - vb
+  name: Start
+  nameWithType: UFFlexDistributeContentEnum.Start
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContentEnum.Start
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFFlexDistributeContentEnum.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: Start
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFFlexDistributeContentEnum.cs
+    startLine: 39
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Place at start
+  example: []
+  syntax:
+    content: Start = 0
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContentEnum
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContentEnum.Center
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContentEnum.Center
+  id: Center
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContentEnum
+  langs:
+  - csharp
+  - vb
+  name: Center
+  nameWithType: UFFlexDistributeContentEnum.Center
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContentEnum.Center
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFFlexDistributeContentEnum.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: Center
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFFlexDistributeContentEnum.cs
+    startLine: 44
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Place at center
+  example: []
+  syntax:
+    content: Center = 1
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContentEnum
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContentEnum.End
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContentEnum.End
+  id: End
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContentEnum
+  langs:
+  - csharp
+  - vb
+  name: End
+  nameWithType: UFFlexDistributeContentEnum.End
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContentEnum.End
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFFlexDistributeContentEnum.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: End
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFFlexDistributeContentEnum.cs
+    startLine: 49
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Place at end
+  example: []
+  syntax:
+    content: End = 2
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContentEnum
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContentEnum.Stretch
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContentEnum.Stretch
+  id: Stretch
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContentEnum
+  langs:
+  - csharp
+  - vb
+  name: Stretch
+  nameWithType: UFFlexDistributeContentEnum.Stretch
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContentEnum.Stretch
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFFlexDistributeContentEnum.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: Stretch
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFFlexDistributeContentEnum.cs
+    startLine: 54
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Stretch each child
+  example: []
+  syntax:
+    content: Stretch = 3
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContentEnum
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContentEnum.SpaceBetween
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContentEnum.SpaceBetween
+  id: SpaceBetween
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContentEnum
+  langs:
+  - csharp
+  - vb
+  name: SpaceBetween
+  nameWithType: UFFlexDistributeContentEnum.SpaceBetween
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContentEnum.SpaceBetween
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFFlexDistributeContentEnum.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: SpaceBetween
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFFlexDistributeContentEnum.cs
+    startLine: 59
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Distribute space between children
+  example: []
+  syntax:
+    content: SpaceBetween = 4
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContentEnum
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContentEnum.SpaceAround
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContentEnum.SpaceAround
+  id: SpaceAround
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContentEnum
+  langs:
+  - csharp
+  - vb
+  name: SpaceAround
+  nameWithType: UFFlexDistributeContentEnum.SpaceAround
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContentEnum.SpaceAround
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFFlexDistributeContentEnum.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: SpaceAround
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFFlexDistributeContentEnum.cs
+    startLine: 64
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Distribute space around children
+  example: []
+  syntax:
+    content: SpaceAround = 5
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContentEnum
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContentEnum.SpaceEvenly
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContentEnum.SpaceEvenly
+  id: SpaceEvenly
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContentEnum
+  langs:
+  - csharp
+  - vb
+  name: SpaceEvenly
+  nameWithType: UFFlexDistributeContentEnum.SpaceEvenly
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContentEnum.SpaceEvenly
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFFlexDistributeContentEnum.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: SpaceEvenly
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFFlexDistributeContentEnum.cs
+    startLine: 69
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Distribute space evenly between children
+  example: []
+  syntax:
+    content: SpaceEvenly = 6
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContentEnum
+references:
+- uid: UltraForce.Library.Core.Asp.Types.Enums
+  commentId: N:UltraForce.Library.Core.Asp.Types.Enums
+  href: UltraForce.html
+  name: UltraForce.Library.Core.Asp.Types.Enums
+  nameWithType: UltraForce.Library.Core.Asp.Types.Enums
+  fullName: UltraForce.Library.Core.Asp.Types.Enums
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types
+    name: Types
+    href: UltraForce.Library.Core.Asp.Types.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types.Enums
+    name: Enums
+    href: UltraForce.Library.Core.Asp.Types.Enums.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types
+    name: Types
+    href: UltraForce.Library.Core.Asp.Types.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types.Enums
+    name: Enums
+    href: UltraForce.Library.Core.Asp.Types.Enums.html
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContentEnum
+  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContentEnum
+  parent: UltraForce.Library.Core.Asp.Types.Enums
+  href: UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContentEnum.html
+  name: UFFlexDistributeContentEnum
+  nameWithType: UFFlexDistributeContentEnum
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContentEnum

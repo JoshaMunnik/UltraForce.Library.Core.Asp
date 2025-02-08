@@ -1,0 +1,150 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFFlexTypeEnum
+  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFFlexTypeEnum
+  id: UFFlexTypeEnum
+  parent: UltraForce.Library.Core.Asp.Types.Enums
+  children:
+  - UltraForce.Library.Core.Asp.Types.Enums.UFFlexTypeEnum.Column
+  - UltraForce.Library.Core.Asp.Types.Enums.UFFlexTypeEnum.Row
+  langs:
+  - csharp
+  - vb
+  name: UFFlexTypeEnum
+  nameWithType: UFFlexTypeEnum
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFFlexTypeEnum
+  type: Enum
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFFlexTypeEnum.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: UFFlexTypeEnum
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFFlexTypeEnum.cs
+    startLine: 34
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: How to lay out the children within flex container.
+  example: []
+  syntax:
+    content: public enum UFFlexTypeEnum
+    content.vb: Public Enum UFFlexTypeEnum
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFFlexTypeEnum.Row
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFFlexTypeEnum.Row
+  id: Row
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFFlexTypeEnum
+  langs:
+  - csharp
+  - vb
+  name: Row
+  nameWithType: UFFlexTypeEnum.Row
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFFlexTypeEnum.Row
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFFlexTypeEnum.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: Row
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFFlexTypeEnum.cs
+    startLine: 40
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: The children are aligned in a row.
+  example: []
+  syntax:
+    content: Row = 0
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFFlexTypeEnum
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFFlexTypeEnum.Column
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFFlexTypeEnum.Column
+  id: Column
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFFlexTypeEnum
+  langs:
+  - csharp
+  - vb
+  name: Column
+  nameWithType: UFFlexTypeEnum.Column
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFFlexTypeEnum.Column
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFFlexTypeEnum.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: Column
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFFlexTypeEnum.cs
+    startLine: 45
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: The children are aligned in a column.
+  example: []
+  syntax:
+    content: Column = 1
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFFlexTypeEnum
+references:
+- uid: UltraForce.Library.Core.Asp.Types.Enums
+  commentId: N:UltraForce.Library.Core.Asp.Types.Enums
+  href: UltraForce.html
+  name: UltraForce.Library.Core.Asp.Types.Enums
+  nameWithType: UltraForce.Library.Core.Asp.Types.Enums
+  fullName: UltraForce.Library.Core.Asp.Types.Enums
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types
+    name: Types
+    href: UltraForce.Library.Core.Asp.Types.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types.Enums
+    name: Enums
+    href: UltraForce.Library.Core.Asp.Types.Enums.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types
+    name: Types
+    href: UltraForce.Library.Core.Asp.Types.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types.Enums
+    name: Enums
+    href: UltraForce.Library.Core.Asp.Types.Enums.html
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFFlexTypeEnum
+  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFFlexTypeEnum
+  parent: UltraForce.Library.Core.Asp.Types.Enums
+  href: UltraForce.Library.Core.Asp.Types.Enums.UFFlexTypeEnum.html
+  name: UFFlexTypeEnum
+  nameWithType: UFFlexTypeEnum
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFFlexTypeEnum

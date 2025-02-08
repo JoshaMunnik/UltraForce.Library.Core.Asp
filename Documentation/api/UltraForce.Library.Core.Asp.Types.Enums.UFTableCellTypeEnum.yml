@@ -1,0 +1,194 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFTableCellTypeEnum
+  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFTableCellTypeEnum
+  id: UFTableCellTypeEnum
+  parent: UltraForce.Library.Core.Asp.Types.Enums
+  children:
+  - UltraForce.Library.Core.Asp.Types.Enums.UFTableCellTypeEnum.Auto
+  - UltraForce.Library.Core.Asp.Types.Enums.UFTableCellTypeEnum.Data
+  - UltraForce.Library.Core.Asp.Types.Enums.UFTableCellTypeEnum.Header
+  langs:
+  - csharp
+  - vb
+  name: UFTableCellTypeEnum
+  nameWithType: UFTableCellTypeEnum
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFTableCellTypeEnum
+  type: Enum
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFTableCellTypeEnum.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: UFTableCellTypeEnum
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFTableCellTypeEnum.cs
+    startLine: 34
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: The type of cell generated.
+  example: []
+  syntax:
+    content: public enum UFTableCellTypeEnum
+    content.vb: Public Enum UFTableCellTypeEnum
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFTableCellTypeEnum.Auto
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFTableCellTypeEnum.Auto
+  id: Auto
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFTableCellTypeEnum
+  langs:
+  - csharp
+  - vb
+  name: Auto
+  nameWithType: UFTableCellTypeEnum.Auto
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFTableCellTypeEnum.Auto
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFTableCellTypeEnum.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: Auto
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFTableCellTypeEnum.cs
+    startLine: 40
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: >-
+    Determine the type of cell automatically. If the cell is in the header row it will be a
+
+    <xref href="UltraForce.Library.Core.Asp.Types.Enums.UFTableCellTypeEnum.Header" data-throw-if-not-resolved="false"></xref> cell, else it will be a <xref href="UltraForce.Library.Core.Asp.Types.Enums.UFTableCellTypeEnum.Data" data-throw-if-not-resolved="false"></xref> cell.
+  example: []
+  syntax:
+    content: Auto = 0
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFTableCellTypeEnum
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFTableCellTypeEnum.Data
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFTableCellTypeEnum.Data
+  id: Data
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFTableCellTypeEnum
+  langs:
+  - csharp
+  - vb
+  name: Data
+  nameWithType: UFTableCellTypeEnum.Data
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFTableCellTypeEnum.Data
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFTableCellTypeEnum.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: Data
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFTableCellTypeEnum.cs
+    startLine: 45
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Cell is a data cell
+  example: []
+  syntax:
+    content: Data = 1
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFTableCellTypeEnum
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFTableCellTypeEnum.Header
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFTableCellTypeEnum.Header
+  id: Header
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFTableCellTypeEnum
+  langs:
+  - csharp
+  - vb
+  name: Header
+  nameWithType: UFTableCellTypeEnum.Header
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFTableCellTypeEnum.Header
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFTableCellTypeEnum.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: Header
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFTableCellTypeEnum.cs
+    startLine: 50
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Cell is a header cell
+  example: []
+  syntax:
+    content: Header = 2
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFTableCellTypeEnum
+references:
+- uid: UltraForce.Library.Core.Asp.Types.Enums
+  commentId: N:UltraForce.Library.Core.Asp.Types.Enums
+  href: UltraForce.html
+  name: UltraForce.Library.Core.Asp.Types.Enums
+  nameWithType: UltraForce.Library.Core.Asp.Types.Enums
+  fullName: UltraForce.Library.Core.Asp.Types.Enums
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types
+    name: Types
+    href: UltraForce.Library.Core.Asp.Types.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types.Enums
+    name: Enums
+    href: UltraForce.Library.Core.Asp.Types.Enums.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types
+    name: Types
+    href: UltraForce.Library.Core.Asp.Types.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types.Enums
+    name: Enums
+    href: UltraForce.Library.Core.Asp.Types.Enums.html
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFTableCellTypeEnum.Header
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFTableCellTypeEnum.Header
+  href: UltraForce.Library.Core.Asp.Types.Enums.UFTableCellTypeEnum.html#UltraForce_Library_Core_Asp_Types_Enums_UFTableCellTypeEnum_Header
+  name: Header
+  nameWithType: UFTableCellTypeEnum.Header
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFTableCellTypeEnum.Header
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFTableCellTypeEnum.Data
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFTableCellTypeEnum.Data
+  href: UltraForce.Library.Core.Asp.Types.Enums.UFTableCellTypeEnum.html#UltraForce_Library_Core_Asp_Types_Enums_UFTableCellTypeEnum_Data
+  name: Data
+  nameWithType: UFTableCellTypeEnum.Data
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFTableCellTypeEnum.Data
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFTableCellTypeEnum
+  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFTableCellTypeEnum
+  parent: UltraForce.Library.Core.Asp.Types.Enums
+  href: UltraForce.Library.Core.Asp.Types.Enums.UFTableCellTypeEnum.html
+  name: UFTableCellTypeEnum
+  nameWithType: UFTableCellTypeEnum
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFTableCellTypeEnum
