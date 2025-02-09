@@ -31,16 +31,33 @@ using System.Globalization;
 using System.Text.Json;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using UltraForce.Library.Core.Asp.Sessions;
 using UltraForce.Library.NetStandard.Net;
 
 namespace UltraForce.Library.Core.Asp.Controllers
 {
   /// <summary>
-  /// This class extends <see cref="Controller"/> and adds some additional
-  /// methods.
+  /// This class extends <see cref="Controller"/> and adds some additional methods and properties.
   /// </summary>
   public class UFController : Controller
   {
+    #region private variables
+
+    private UFSessionKeyedStorage? m_sessionStorage = null;
+    
+    #endregion
+    
+    #region protected properties
+    
+    /// <summary>
+    /// This property can be used to store data in the session using various types. The first
+    /// time the property is accessed the instance is created. 
+    /// </summary>
+    protected UFSessionKeyedStorage SessionStorage =>
+      this.m_sessionStorage ??= new UFSessionKeyedStorage(this.HttpContext.Session);
+
+    #endregion
+    
     #region protected methods
 
     /// <summary>

@@ -7,6 +7,7 @@ items:
   children:
   - UltraForce.Library.Core.Asp.Controllers.UFController.BadRequest``1(``0)
   - UltraForce.Library.Core.Asp.Controllers.UFController.Json(Microsoft.Extensions.Logging.ILogger,System.Object)
+  - UltraForce.Library.Core.Asp.Controllers.UFController.SessionStorage
   langs:
   - csharp
   - vb
@@ -25,10 +26,7 @@ items:
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Controllers
-  summary: >-
-    This class extends <xref href="Microsoft.AspNetCore.Mvc.Controller" data-throw-if-not-resolved="false"></xref> and adds some additional
-
-    methods.
+  summary: This class extends <xref href="Microsoft.AspNetCore.Mvc.Controller" data-throw-if-not-resolved="false"></xref> and adds some additional methods and properties.
   example: []
   syntax:
     content: 'public class UFController : Controller, IActionFilter, IAsyncActionFilter, IFilterMetadata, IDisposable'
@@ -245,6 +243,40 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
+- uid: UltraForce.Library.Core.Asp.Controllers.UFController.SessionStorage
+  commentId: P:UltraForce.Library.Core.Asp.Controllers.UFController.SessionStorage
+  id: SessionStorage
+  parent: UltraForce.Library.Core.Asp.Controllers.UFController
+  langs:
+  - csharp
+  - vb
+  name: SessionStorage
+  nameWithType: UFController.SessionStorage
+  fullName: UltraForce.Library.Core.Asp.Controllers.UFController.SessionStorage
+  type: Property
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Controllers/UFController.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: SessionStorage
+    path: ../UltraForce.Library.Core.Asp/Controllers/UFController.cs
+    startLine: 55
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Controllers
+  summary: >-
+    This property can be used to store data in the session using various types. The first
+
+    time the property is accessed the instance is created.
+  example: []
+  syntax:
+    content: protected UFSessionKeyedStorage SessionStorage { get; }
+    parameters: []
+    return:
+      type: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage
+    content.vb: Protected ReadOnly Property SessionStorage As UFSessionKeyedStorage
+  overload: UltraForce.Library.Core.Asp.Controllers.UFController.SessionStorage*
 - uid: UltraForce.Library.Core.Asp.Controllers.UFController.BadRequest``1(``0)
   commentId: M:UltraForce.Library.Core.Asp.Controllers.UFController.BadRequest``1(``0)
   id: BadRequest``1(``0)
@@ -263,7 +295,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: BadRequest
     path: ../UltraForce.Library.Core.Asp/Controllers/UFController.cs
-    startLine: 64
+    startLine: 81
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Controllers
@@ -313,7 +345,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Json
     path: ../UltraForce.Library.Core.Asp/Controllers/UFController.cs
-    startLine: 80
+    startLine: 97
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Controllers
@@ -10116,6 +10148,65 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.boolean
   - name: )
   - name: )
+- uid: UltraForce.Library.Core.Asp.Controllers.UFController.SessionStorage*
+  commentId: Overload:UltraForce.Library.Core.Asp.Controllers.UFController.SessionStorage
+  href: UltraForce.Library.Core.Asp.Controllers.UFController.html#UltraForce_Library_Core_Asp_Controllers_UFController_SessionStorage
+  name: SessionStorage
+  nameWithType: UFController.SessionStorage
+  fullName: UltraForce.Library.Core.Asp.Controllers.UFController.SessionStorage
+- uid: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage
+  commentId: T:UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage
+  parent: UltraForce.Library.Core.Asp.Sessions
+  href: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.html
+  name: UFSessionKeyedStorage
+  nameWithType: UFSessionKeyedStorage
+  fullName: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage
+- uid: UltraForce.Library.Core.Asp.Sessions
+  commentId: N:UltraForce.Library.Core.Asp.Sessions
+  href: UltraForce.html
+  name: UltraForce.Library.Core.Asp.Sessions
+  nameWithType: UltraForce.Library.Core.Asp.Sessions
+  fullName: UltraForce.Library.Core.Asp.Sessions
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Sessions
+    name: Sessions
+    href: UltraForce.Library.Core.Asp.Sessions.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Sessions
+    name: Sessions
+    href: UltraForce.Library.Core.Asp.Sessions.html
 - uid: UltraForce.Library.NetStandard.Net.UFExtendedErrorResponseModel`1
   commentId: T:UltraForce.Library.NetStandard.Net.UFExtendedErrorResponseModel`1
   isExternal: true

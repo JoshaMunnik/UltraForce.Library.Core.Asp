@@ -39,7 +39,8 @@ namespace UltraForce.Library.Core.Asp.Sessions
   /// </para>
   /// <para>
   /// If there is no session because either the class fails to get a <see cref="HttpContext"/> or
-  /// the <see cref="ISession"/>; messages will be not be stored and the get messages methods will return empty lists. 
+  /// the <see cref="ISession"/>; messages will be not be stored and the get messages methods
+  /// will return empty lists. 
   /// </para>
   /// </summary>
   public sealed class UFSessionMessages(IHttpContextAccessor anAccessor)

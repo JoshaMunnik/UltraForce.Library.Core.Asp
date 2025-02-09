@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class UFSessionKeyedStorage | UltraForce.Library.Core.Asp ">
       
-      <meta name="description" content="This class maps a  to a .">
+      <meta name="description" content="This class maps a  to a .  It uses  to serialize and deserialize objects. Note that the factory function in  is not used, since this is not supported by the Json implementation.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="UltraForce_Library_Core_Asp_Sessions_UFSessionKeyedStorage" data-uid="UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage" class="text-break">
-Class UFSessionKeyedStorage  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Sessions/UFSessionKeyedStorage.cs/#L38"><i class="bi bi-code-slash"></i></a>
+Class UFSessionKeyedStorage  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Sessions/UFSessionKeyedStorage.cs/#L44"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -98,6 +98,11 @@ Class UFSessionKeyedStorage  <a class="header-action link-secondary" title="View
   </div>
 
   <div class="markdown summary"><p>This class maps a <span class="xref">UltraForce.Library.NetStandard.Storage.UFKeyedStorage</span> to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.http.isession">ISession</a>.</p>
+<p>
+It uses <a class="xref" href="https://learn.microsoft.com/dotnet/api/system">System.Text.Json</a> to serialize and deserialize objects. Note that
+the factory function in <a class="xref" href="UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.html#UltraForce_Library_Core_Asp_Sessions_UFSessionKeyedStorage_DeserializeObject_System_String_System_Type_System_Func_System_Type_System_Object__">DeserializeObject(string, Type?, Func&lt;Type, object&gt;)</a> is not used, since this is not
+supported by the Json implementation.
+</p>
 </div>
   <div class="markdown conceptual"></div>
 
@@ -279,12 +284,6 @@ Class UFSessionKeyedStorage  <a class="header-action link-secondary" title="View
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">UFKeyedStorage.SetObject&lt;T&gt;(string, object)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">UFKeyedStorage.SerializeObject(string, object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">UFKeyedStorage.DeserializeObject(string, Type, Func&lt;Type, object&gt;)</a>
-    </div>
-    <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
     </div>
     <div>
@@ -320,10 +319,15 @@ Class UFSessionKeyedStorage  <a class="header-action link-secondary" title="View
 
   <h3 id="UltraForce_Library_Core_Asp_Sessions_UFSessionKeyedStorage__ctor_Microsoft_AspNetCore_Http_ISession_" data-uid="UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.#ctor(Microsoft.AspNetCore.Http.ISession)">
   UFSessionKeyedStorage(ISession)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Sessions/UFSessionKeyedStorage.cs/#L38"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Sessions/UFSessionKeyedStorage.cs/#L44"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>This class maps a <span class="xref">UltraForce.Library.NetStandard.Storage.UFKeyedStorage</span> to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.http.isession">ISession</a>.</p>
+<p>
+It uses <a class="xref" href="https://learn.microsoft.com/dotnet/api/system">System.Text.Json</a> to serialize and deserialize objects. Note that
+the factory function in <a class="xref" href="UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.html#UltraForce_Library_Core_Asp_Sessions_UFSessionKeyedStorage_DeserializeObject_System_String_System_Type_System_Func_System_Type_System_Object__">DeserializeObject(string, Type?, Func&lt;Type, object&gt;)</a> is not used, since this is not
+supported by the Json implementation.
+</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -356,7 +360,7 @@ Class UFSessionKeyedStorage  <a class="header-action link-secondary" title="View
 
   <h3 id="UltraForce_Library_Core_Asp_Sessions_UFSessionKeyedStorage_DeleteAll" data-uid="UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.DeleteAll">
   DeleteAll()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Sessions/UFSessionKeyedStorage.cs/#L84"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Sessions/UFSessionKeyedStorage.cs/#L90"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Deletes all stored data.</p>
@@ -383,7 +387,7 @@ Class UFSessionKeyedStorage  <a class="header-action link-secondary" title="View
 
   <h3 id="UltraForce_Library_Core_Asp_Sessions_UFSessionKeyedStorage_DeleteKey_System_String_" data-uid="UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.DeleteKey(System.String)">
   DeleteKey(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Sessions/UFSessionKeyedStorage.cs/#L78"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Sessions/UFSessionKeyedStorage.cs/#L84"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Deletes the data for specific key.</p>
@@ -412,11 +416,57 @@ Class UFSessionKeyedStorage  <a class="header-action link-secondary" title="View
 
 
 
+  <a id="UltraForce_Library_Core_Asp_Sessions_UFSessionKeyedStorage_DeserializeObject_" data-uid="UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.DeserializeObject*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Sessions_UFSessionKeyedStorage_DeserializeObject_System_String_System_Type_System_Func_System_Type_System_Object__" data-uid="UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.DeserializeObject(System.String,System.Type,System.Func{System.Type,System.Object})">
+  DeserializeObject(string, Type?, Func&lt;Type, object&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Sessions/UFSessionKeyedStorage.cs/#L116"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Deserializes an object that was stored previously with
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">SerializeObject(string, object)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override object DeserializeObject(string aKey, Type? aType, Func&lt;Type, object&gt; aFactory)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Key to retrieve serialized object with</p>
+</dd>
+    <dt><code>aType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd><p>Type of object to create (might be <code>null</code>)</p>
+</dd>
+    <dt><code>aFactory</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
+    <dd><p>A factory to create a new instance of <code>aType</code></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>Retrieved object</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="UltraForce_Library_Core_Asp_Sessions_UFSessionKeyedStorage_GetInt_" data-uid="UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.GetInt*"></a>
 
   <h3 id="UltraForce_Library_Core_Asp_Sessions_UFSessionKeyedStorage_GetInt_System_String_System_Int32_" data-uid="UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.GetInt(System.String,System.Int32)">
   GetInt(string, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Sessions/UFSessionKeyedStorage.cs/#L52"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Sessions/UFSessionKeyedStorage.cs/#L58"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets an integer.</p>
@@ -462,7 +512,7 @@ uses <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32.p
 
   <h3 id="UltraForce_Library_Core_Asp_Sessions_UFSessionKeyedStorage_GetString_System_String_System_String_" data-uid="UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.GetString(System.String,System.String)">
   GetString(string, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Sessions/UFSessionKeyedStorage.cs/#L64"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Sessions/UFSessionKeyedStorage.cs/#L70"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets a string.</p>
@@ -504,7 +554,7 @@ uses <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32.p
 
   <h3 id="UltraForce_Library_Core_Asp_Sessions_UFSessionKeyedStorage_HasKey_System_String_" data-uid="UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.HasKey(System.String)">
   HasKey(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Sessions/UFSessionKeyedStorage.cs/#L90"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Sessions/UFSessionKeyedStorage.cs/#L96"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Checks if there is a locally stored data for a specific key.</p>
@@ -539,11 +589,50 @@ uses <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32.p
 
 
 
+  <a id="UltraForce_Library_Core_Asp_Sessions_UFSessionKeyedStorage_SerializeObject_" data-uid="UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.SerializeObject*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Sessions_UFSessionKeyedStorage_SerializeObject_System_String_System_Object_" data-uid="UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.SerializeObject(System.String,System.Object)">
+  SerializeObject(string, object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Sessions/UFSessionKeyedStorage.cs/#L106"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Serializes an object. This method is called when the class can not store the object in any other way.</p>
+<p>
+The default implementation throws an exception. 
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void SerializeObject(string aKey, object anObject)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Key to store serializes object with</p>
+</dd>
+    <dt><code>anObject</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>Object to store</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
   <a id="UltraForce_Library_Core_Asp_Sessions_UFSessionKeyedStorage_SetInt_" data-uid="UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.SetInt*"></a>
 
   <h3 id="UltraForce_Library_Core_Asp_Sessions_UFSessionKeyedStorage_SetInt_System_String_System_Int32_" data-uid="UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.SetInt(System.String,System.Int32)">
   SetInt(string, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Sessions/UFSessionKeyedStorage.cs/#L58"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Sessions/UFSessionKeyedStorage.cs/#L64"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Stores an integer in the storage.</p>
@@ -583,7 +672,7 @@ The default implementation convert the value to a string and uses
 
   <h3 id="UltraForce_Library_Core_Asp_Sessions_UFSessionKeyedStorage_SetString_System_String_System_String_" data-uid="UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.SetString(System.String,System.String)">
   SetString(string, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Sessions/UFSessionKeyedStorage.cs/#L72"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Sessions/UFSessionKeyedStorage.cs/#L78"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Stores a string in the storage.</p>
@@ -619,7 +708,7 @@ The default implementation convert the value to a string and uses
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Sessions/UFSessionKeyedStorage.cs/#L38" class="edit-link">Edit this page</a>
+          <a href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Sessions/UFSessionKeyedStorage.cs/#L44" class="edit-link">Edit this page</a>
         </div>
 
 

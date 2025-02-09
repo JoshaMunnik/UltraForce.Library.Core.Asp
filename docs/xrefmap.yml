@@ -76,6 +76,19 @@ references:
   isSpec: "True"
   fullName: UltraForce.Library.Core.Asp.Controllers.UFController.Json
   nameWithType: UFController.Json
+- uid: UltraForce.Library.Core.Asp.Controllers.UFController.SessionStorage
+  name: SessionStorage
+  href: api/UltraForce.Library.Core.Asp.Controllers.UFController.html#UltraForce_Library_Core_Asp_Controllers_UFController_SessionStorage
+  commentId: P:UltraForce.Library.Core.Asp.Controllers.UFController.SessionStorage
+  fullName: UltraForce.Library.Core.Asp.Controllers.UFController.SessionStorage
+  nameWithType: UFController.SessionStorage
+- uid: UltraForce.Library.Core.Asp.Controllers.UFController.SessionStorage*
+  name: SessionStorage
+  href: api/UltraForce.Library.Core.Asp.Controllers.UFController.html#UltraForce_Library_Core_Asp_Controllers_UFController_SessionStorage_
+  commentId: Overload:UltraForce.Library.Core.Asp.Controllers.UFController.SessionStorage
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Asp.Controllers.UFController.SessionStorage
+  nameWithType: UFController.SessionStorage
 - uid: UltraForce.Library.Core.Asp.Localization
   name: UltraForce.Library.Core.Asp.Localization
   href: api/UltraForce.Library.Core.Asp.Localization.html
@@ -2127,6 +2140,22 @@ references:
   isSpec: "True"
   fullName: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.DeleteKey
   nameWithType: UFSessionKeyedStorage.DeleteKey
+- uid: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.DeserializeObject(System.String,System.Type,System.Func{System.Type,System.Object})
+  name: DeserializeObject(string, Type?, Func<Type, object>)
+  href: api/UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.html#UltraForce_Library_Core_Asp_Sessions_UFSessionKeyedStorage_DeserializeObject_System_String_System_Type_System_Func_System_Type_System_Object__
+  commentId: M:UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.DeserializeObject(System.String,System.Type,System.Func{System.Type,System.Object})
+  name.vb: DeserializeObject(String, Type, Func(Of Type, Object))
+  fullName: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.DeserializeObject(string, System.Type?, System.Func<System.Type, object>)
+  fullName.vb: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.DeserializeObject(String, System.Type, System.Func(Of System.Type, Object))
+  nameWithType: UFSessionKeyedStorage.DeserializeObject(string, Type?, Func<Type, object>)
+  nameWithType.vb: UFSessionKeyedStorage.DeserializeObject(String, Type, Func(Of Type, Object))
+- uid: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.DeserializeObject*
+  name: DeserializeObject
+  href: api/UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.html#UltraForce_Library_Core_Asp_Sessions_UFSessionKeyedStorage_DeserializeObject_
+  commentId: Overload:UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.DeserializeObject
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.DeserializeObject
+  nameWithType: UFSessionKeyedStorage.DeserializeObject
 - uid: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.GetInt(System.String,System.Int32)
   name: GetInt(string, int)
   href: api/UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.html#UltraForce_Library_Core_Asp_Sessions_UFSessionKeyedStorage_GetInt_System_String_System_Int32_
@@ -2175,6 +2204,22 @@ references:
   isSpec: "True"
   fullName: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.HasKey
   nameWithType: UFSessionKeyedStorage.HasKey
+- uid: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.SerializeObject(System.String,System.Object)
+  name: SerializeObject(string, object)
+  href: api/UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.html#UltraForce_Library_Core_Asp_Sessions_UFSessionKeyedStorage_SerializeObject_System_String_System_Object_
+  commentId: M:UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.SerializeObject(System.String,System.Object)
+  name.vb: SerializeObject(String, Object)
+  fullName: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.SerializeObject(string, object)
+  fullName.vb: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.SerializeObject(String, Object)
+  nameWithType: UFSessionKeyedStorage.SerializeObject(string, object)
+  nameWithType.vb: UFSessionKeyedStorage.SerializeObject(String, Object)
+- uid: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.SerializeObject*
+  name: SerializeObject
+  href: api/UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.html#UltraForce_Library_Core_Asp_Sessions_UFSessionKeyedStorage_SerializeObject_
+  commentId: Overload:UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.SerializeObject
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.SerializeObject
+  nameWithType: UFSessionKeyedStorage.SerializeObject
 - uid: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.SetInt(System.String,System.Int32)
   name: SetInt(string, int)
   href: api/UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.html#UltraForce_Library_Core_Asp_Sessions_UFSessionKeyedStorage_SetInt_System_String_System_Int32_

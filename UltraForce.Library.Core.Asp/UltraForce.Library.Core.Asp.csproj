@@ -15,8 +15,12 @@
         <RepositoryUrl>https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp</RepositoryUrl>
         <PackageReadmeFile>README.md</PackageReadmeFile>
         <AssemblyVersion></AssemblyVersion>
-        <Version>1.0.39</Version>
-        <PackageReleaseNotes>1.0.39
+        <Version>1.0.40</Version>
+        <PackageReleaseNotes>1.0.40
+- added SessionStorage to UFController
+- UFSessionKeyStorage uses System.Text.Json to store and retrieve objects
+
+1.0.39
 - added Reverse property to UFFlexTagHelperBase
 
 1.0.38
@@ -151,8 +155,8 @@ Initial version</PackageReleaseNotes>
     </ItemGroup>
 
     <ItemGroup>
-      <PackageReference Include="UltraForce.Library.Core" Version="1.0.9" />
-      <PackageReference Include="UltraForce.Library.NetStandard" Version="1.0.6" />
+      <PackageReference Include="UltraForce.Library.Core" Version="1.0.11" />
+      <PackageReference Include="UltraForce.Library.NetStandard" Version="1.0.11" />
     </ItemGroup>
 
 </Project>

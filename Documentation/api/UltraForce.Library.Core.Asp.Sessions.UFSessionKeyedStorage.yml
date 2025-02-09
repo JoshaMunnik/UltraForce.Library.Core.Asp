@@ -8,9 +8,11 @@ items:
   - UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.#ctor(Microsoft.AspNetCore.Http.ISession)
   - UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.DeleteAll
   - UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.DeleteKey(System.String)
+  - UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.DeserializeObject(System.String,System.Type,System.Func{System.Type,System.Object})
   - UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.GetInt(System.String,System.Int32)
   - UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.GetString(System.String,System.String)
   - UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.HasKey(System.String)
+  - UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.SerializeObject(System.String,System.Object)
   - UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.SetInt(System.String,System.Int32)
   - UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.SetString(System.String,System.String)
   langs:
@@ -27,11 +29,22 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: UFSessionKeyedStorage
     path: ../UltraForce.Library.Core.Asp/Sessions/UFSessionKeyedStorage.cs
-    startLine: 37
+    startLine: 43
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Sessions
-  summary: This class maps a <xref href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage" data-throw-if-not-resolved="false"></xref> to a <xref href="Microsoft.AspNetCore.Http.ISession" data-throw-if-not-resolved="false"></xref>.
+  summary: >-
+    This class maps a <xref href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage" data-throw-if-not-resolved="false"></xref> to a <xref href="Microsoft.AspNetCore.Http.ISession" data-throw-if-not-resolved="false"></xref>.
+
+    <p>
+
+    It uses <xref href="System.Text.Json" data-throw-if-not-resolved="false"></xref> to serialize and deserialize objects. Note that
+
+    the factory function in <xref href="UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.DeserializeObject(System.String%2cSystem.Type%2cSystem.Func%7bSystem.Type%2cSystem.Object%7d)" data-throw-if-not-resolved="false"></xref> is not used, since this is not
+
+    supported by the Json implementation.
+
+    </p>
   example: []
   syntax:
     content: 'public class UFSessionKeyedStorage : UFKeyedStorage'
@@ -92,8 +105,6 @@ items:
   - UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetObject(System.String,System.Object,System.Type)
   - UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetObject(System.String,System.Object)
   - UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetObject``1(System.String,System.Object)
-  - UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SerializeObject(System.String,System.Object)
-  - UltraForce.Library.NetStandard.Storage.UFKeyedStorage.DeserializeObject(System.String,System.Type,System.Func{System.Type,System.Object})
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.GetHashCode
@@ -119,11 +130,22 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: .ctor
     path: ../UltraForce.Library.Core.Asp/Sessions/UFSessionKeyedStorage.cs
-    startLine: 37
+    startLine: 43
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Sessions
-  summary: This class maps a <xref href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage" data-throw-if-not-resolved="false"></xref> to a <xref href="Microsoft.AspNetCore.Http.ISession" data-throw-if-not-resolved="false"></xref>.
+  summary: >-
+    This class maps a <xref href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage" data-throw-if-not-resolved="false"></xref> to a <xref href="Microsoft.AspNetCore.Http.ISession" data-throw-if-not-resolved="false"></xref>.
+
+    <p>
+
+    It uses <xref href="System.Text.Json" data-throw-if-not-resolved="false"></xref> to serialize and deserialize objects. Note that
+
+    the factory function in <xref href="UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.DeserializeObject(System.String%2cSystem.Type%2cSystem.Func%7bSystem.Type%2cSystem.Object%7d)" data-throw-if-not-resolved="false"></xref> is not used, since this is not
+
+    supported by the Json implementation.
+
+    </p>
   example: []
   syntax:
     content: public UFSessionKeyedStorage(ISession aSession)
@@ -153,7 +175,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetInt
     path: ../UltraForce.Library.Core.Asp/Sessions/UFSessionKeyedStorage.cs
-    startLine: 51
+    startLine: 57
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Sessions
@@ -204,7 +226,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: SetInt
     path: ../UltraForce.Library.Core.Asp/Sessions/UFSessionKeyedStorage.cs
-    startLine: 57
+    startLine: 63
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Sessions
@@ -252,7 +274,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetString
     path: ../UltraForce.Library.Core.Asp/Sessions/UFSessionKeyedStorage.cs
-    startLine: 63
+    startLine: 69
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Sessions
@@ -294,7 +316,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: SetString
     path: ../UltraForce.Library.Core.Asp/Sessions/UFSessionKeyedStorage.cs
-    startLine: 71
+    startLine: 77
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Sessions
@@ -333,7 +355,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: DeleteKey
     path: ../UltraForce.Library.Core.Asp/Sessions/UFSessionKeyedStorage.cs
-    startLine: 77
+    startLine: 83
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Sessions
@@ -369,7 +391,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: DeleteAll
     path: ../UltraForce.Library.Core.Asp/Sessions/UFSessionKeyedStorage.cs
-    startLine: 83
+    startLine: 89
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Sessions
@@ -398,7 +420,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: HasKey
     path: ../UltraForce.Library.Core.Asp/Sessions/UFSessionKeyedStorage.cs
-    startLine: 89
+    startLine: 95
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Sessions
@@ -419,6 +441,100 @@ items:
   nameWithType.vb: UFSessionKeyedStorage.HasKey(String)
   fullName.vb: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.HasKey(String)
   name.vb: HasKey(String)
+- uid: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.SerializeObject(System.String,System.Object)
+  commentId: M:UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.SerializeObject(System.String,System.Object)
+  id: SerializeObject(System.String,System.Object)
+  parent: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage
+  langs:
+  - csharp
+  - vb
+  name: SerializeObject(string, object)
+  nameWithType: UFSessionKeyedStorage.SerializeObject(string, object)
+  fullName: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.SerializeObject(string, object)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Sessions/UFSessionKeyedStorage.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: SerializeObject
+    path: ../UltraForce.Library.Core.Asp/Sessions/UFSessionKeyedStorage.cs
+    startLine: 105
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Sessions
+  summary: >-
+    Serializes an object. This method is called when the class can not store the object in any other way.
+
+    <p>
+
+    The default implementation throws an exception. 
+
+    </p>
+  example: []
+  syntax:
+    content: protected override void SerializeObject(string aKey, object anObject)
+    parameters:
+    - id: aKey
+      type: System.String
+      description: Key to store serializes object with
+    - id: anObject
+      type: System.Object
+      description: Object to store
+    content.vb: Protected Overrides Sub SerializeObject(aKey As String, anObject As Object)
+  overridden: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SerializeObject(System.String,System.Object)
+  overload: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.SerializeObject*
+  nameWithType.vb: UFSessionKeyedStorage.SerializeObject(String, Object)
+  fullName.vb: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.SerializeObject(String, Object)
+  name.vb: SerializeObject(String, Object)
+- uid: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.DeserializeObject(System.String,System.Type,System.Func{System.Type,System.Object})
+  commentId: M:UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.DeserializeObject(System.String,System.Type,System.Func{System.Type,System.Object})
+  id: DeserializeObject(System.String,System.Type,System.Func{System.Type,System.Object})
+  parent: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage
+  langs:
+  - csharp
+  - vb
+  name: DeserializeObject(string, Type?, Func<Type, object>)
+  nameWithType: UFSessionKeyedStorage.DeserializeObject(string, Type?, Func<Type, object>)
+  fullName: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.DeserializeObject(string, System.Type?, System.Func<System.Type, object>)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Sessions/UFSessionKeyedStorage.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: DeserializeObject
+    path: ../UltraForce.Library.Core.Asp/Sessions/UFSessionKeyedStorage.cs
+    startLine: 115
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Sessions
+  summary: >-
+    Deserializes an object that was stored previously with 
+
+    <xref href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SerializeObject(System.String%2cSystem.Object)" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: protected override object DeserializeObject(string aKey, Type? aType, Func<Type, object> aFactory)
+    parameters:
+    - id: aKey
+      type: System.String
+      description: Key to retrieve serialized object with
+    - id: aType
+      type: System.Type
+      description: Type of object to create (might be <code>null</code>)
+    - id: aFactory
+      type: System.Func{System.Type,System.Object}
+      description: A factory to create a new instance of <code>aType</code>
+    return:
+      type: System.Object
+      description: Retrieved object
+    content.vb: Protected Overrides Function DeserializeObject(aKey As String, aType As Type, aFactory As Func(Of Type, Object)) As Object
+  overridden: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.DeserializeObject(System.String,System.Type,System.Func{System.Type,System.Object})
+  overload: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.DeserializeObject*
+  nameWithType.vb: UFSessionKeyedStorage.DeserializeObject(String, Type, Func(Of Type, Object))
+  fullName.vb: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.DeserializeObject(String, System.Type, System.Func(Of System.Type, Object))
+  name.vb: DeserializeObject(String, Type, Func(Of Type, Object))
 references:
 - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage
   commentId: T:UltraForce.Library.NetStandard.Storage.UFKeyedStorage
@@ -435,6 +551,123 @@ references:
   name: ISession
   nameWithType: ISession
   fullName: Microsoft.AspNetCore.Http.ISession
+- uid: System.Text.Json
+  commentId: N:System.Text.Json
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Text.Json
+  nameWithType: System.Text.Json
+  fullName: System.Text.Json
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text
+  - name: .
+  - uid: System.Text.Json
+    name: Json
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text.json
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Text
+    name: Text
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text
+  - name: .
+  - uid: System.Text.Json
+    name: Json
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.text.json
+- uid: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.DeserializeObject(System.String,System.Type,System.Func{System.Type,System.Object})
+  commentId: M:UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.DeserializeObject(System.String,System.Type,System.Func{System.Type,System.Object})
+  isExternal: true
+  href: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.html#UltraForce_Library_Core_Asp_Sessions_UFSessionKeyedStorage_DeserializeObject_System_String_System_Type_System_Func_System_Type_System_Object__
+  name: DeserializeObject(string, Type, Func<Type, object>)
+  nameWithType: UFSessionKeyedStorage.DeserializeObject(string, Type, Func<Type, object>)
+  fullName: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.DeserializeObject(string, System.Type, System.Func<System.Type, object>)
+  nameWithType.vb: UFSessionKeyedStorage.DeserializeObject(String, Type, Func(Of Type, Object))
+  fullName.vb: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.DeserializeObject(String, System.Type, System.Func(Of System.Type, Object))
+  name.vb: DeserializeObject(String, Type, Func(Of Type, Object))
+  spec.csharp:
+  - uid: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.DeserializeObject(System.String,System.Type,System.Func{System.Type,System.Object})
+    name: DeserializeObject
+    href: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.html#UltraForce_Library_Core_Asp_Sessions_UFSessionKeyedStorage_DeserializeObject_System_String_System_Type_System_Func_System_Type_System_Object__
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.DeserializeObject(System.String,System.Type,System.Func{System.Type,System.Object})
+    name: DeserializeObject
+    href: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.html#UltraForce_Library_Core_Asp_Sessions_UFSessionKeyedStorage_DeserializeObject_System_String_System_Type_System_Func_System_Type_System_Object__
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  - name: )
 - uid: UltraForce.Library.Core.Asp.Sessions
   commentId: N:UltraForce.Library.Core.Asp.Sessions
   href: UltraForce.html
@@ -2594,130 +2827,6 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.object
   - name: )
-- uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SerializeObject(System.String,System.Object)
-  commentId: M:UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SerializeObject(System.String,System.Object)
-  parent: UltraForce.Library.NetStandard.Storage.UFKeyedStorage
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.string
-  name: SerializeObject(string, object)
-  nameWithType: UFKeyedStorage.SerializeObject(string, object)
-  fullName: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SerializeObject(string, object)
-  nameWithType.vb: UFKeyedStorage.SerializeObject(String, Object)
-  fullName.vb: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SerializeObject(String, Object)
-  name.vb: SerializeObject(String, Object)
-  spec.csharp:
-  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SerializeObject(System.String,System.Object)
-    name: SerializeObject
-    isExternal: true
-  - name: (
-  - uid: System.String
-    name: string
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.string
-  - name: ','
-  - name: " "
-  - uid: System.Object
-    name: object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: )
-  spec.vb:
-  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SerializeObject(System.String,System.Object)
-    name: SerializeObject
-    isExternal: true
-  - name: (
-  - uid: System.String
-    name: String
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.string
-  - name: ','
-  - name: " "
-  - uid: System.Object
-    name: Object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: )
-- uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.DeserializeObject(System.String,System.Type,System.Func{System.Type,System.Object})
-  commentId: M:UltraForce.Library.NetStandard.Storage.UFKeyedStorage.DeserializeObject(System.String,System.Type,System.Func{System.Type,System.Object})
-  parent: UltraForce.Library.NetStandard.Storage.UFKeyedStorage
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.string
-  name: DeserializeObject(string, Type, Func<Type, object>)
-  nameWithType: UFKeyedStorage.DeserializeObject(string, Type, Func<Type, object>)
-  fullName: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.DeserializeObject(string, System.Type, System.Func<System.Type, object>)
-  nameWithType.vb: UFKeyedStorage.DeserializeObject(String, Type, Func(Of Type, Object))
-  fullName.vb: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.DeserializeObject(String, System.Type, System.Func(Of System.Type, Object))
-  name.vb: DeserializeObject(String, Type, Func(Of Type, Object))
-  spec.csharp:
-  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.DeserializeObject(System.String,System.Type,System.Func{System.Type,System.Object})
-    name: DeserializeObject
-    isExternal: true
-  - name: (
-  - uid: System.String
-    name: string
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.string
-  - name: ','
-  - name: " "
-  - uid: System.Type
-    name: Type
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.type
-  - name: ','
-  - name: " "
-  - uid: System.Func`2
-    name: Func
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.func-2
-  - name: <
-  - uid: System.Type
-    name: Type
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.type
-  - name: ','
-  - name: " "
-  - uid: System.Object
-    name: object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: '>'
-  - name: )
-  spec.vb:
-  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.DeserializeObject(System.String,System.Type,System.Func{System.Type,System.Object})
-    name: DeserializeObject
-    isExternal: true
-  - name: (
-  - uid: System.String
-    name: String
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.string
-  - name: ','
-  - name: " "
-  - uid: System.Type
-    name: Type
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.type
-  - name: ','
-  - name: " "
-  - uid: System.Func`2
-    name: Func
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.func-2
-  - name: (
-  - name: Of
-  - name: " "
-  - uid: System.Type
-    name: Type
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.type
-  - name: ','
-  - name: " "
-  - uid: System.Object
-    name: Object
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.object
-  - name: )
-  - name: )
 - uid: System.Object.Equals(System.Object)
   commentId: M:System.Object.Equals(System.Object)
   parent: System.Object
@@ -3388,3 +3497,228 @@ references:
   nameWithType.vb: Boolean
   fullName.vb: Boolean
   name.vb: Boolean
+- uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SerializeObject(System.String,System.Object)
+  commentId: M:UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SerializeObject(System.String,System.Object)
+  parent: UltraForce.Library.NetStandard.Storage.UFKeyedStorage
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: SerializeObject(string, object)
+  nameWithType: UFKeyedStorage.SerializeObject(string, object)
+  fullName: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SerializeObject(string, object)
+  nameWithType.vb: UFKeyedStorage.SerializeObject(String, Object)
+  fullName.vb: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SerializeObject(String, Object)
+  name.vb: SerializeObject(String, Object)
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SerializeObject(System.String,System.Object)
+    name: SerializeObject
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SerializeObject(System.String,System.Object)
+    name: SerializeObject
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.SerializeObject*
+  commentId: Overload:UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.SerializeObject
+  href: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.html#UltraForce_Library_Core_Asp_Sessions_UFSessionKeyedStorage_SerializeObject_System_String_System_Object_
+  name: SerializeObject
+  nameWithType: UFSessionKeyedStorage.SerializeObject
+  fullName: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.SerializeObject
+- uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.DeserializeObject(System.String,System.Type,System.Func{System.Type,System.Object})
+  commentId: M:UltraForce.Library.NetStandard.Storage.UFKeyedStorage.DeserializeObject(System.String,System.Type,System.Func{System.Type,System.Object})
+  parent: UltraForce.Library.NetStandard.Storage.UFKeyedStorage
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: DeserializeObject(string, Type, Func<Type, object>)
+  nameWithType: UFKeyedStorage.DeserializeObject(string, Type, Func<Type, object>)
+  fullName: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.DeserializeObject(string, System.Type, System.Func<System.Type, object>)
+  nameWithType.vb: UFKeyedStorage.DeserializeObject(String, Type, Func(Of Type, Object))
+  fullName.vb: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.DeserializeObject(String, System.Type, System.Func(Of System.Type, Object))
+  name.vb: DeserializeObject(String, Type, Func(Of Type, Object))
+  spec.csharp:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.DeserializeObject(System.String,System.Type,System.Func{System.Type,System.Object})
+    name: DeserializeObject
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.DeserializeObject(System.String,System.Type,System.Func{System.Type,System.Object})
+    name: DeserializeObject
+    isExternal: true
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  - name: )
+- uid: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.DeserializeObject*
+  commentId: Overload:UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.DeserializeObject
+  href: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.html#UltraForce_Library_Core_Asp_Sessions_UFSessionKeyedStorage_DeserializeObject_System_String_System_Type_System_Func_System_Type_System_Object__
+  name: DeserializeObject
+  nameWithType: UFSessionKeyedStorage.DeserializeObject
+  fullName: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.DeserializeObject
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.type
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: System.Func{System.Type,System.Object}
+  commentId: T:System.Func{System.Type,System.Object}
+  parent: System
+  definition: System.Func`2
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<Type, object>
+  nameWithType: Func<Type, object>
+  fullName: System.Func<System.Type, object>
+  nameWithType.vb: Func(Of Type, Object)
+  fullName.vb: System.Func(Of System.Type, Object)
+  name.vb: Func(Of Type, Object)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Type
+    name: Type
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.type
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Func`2
+  commentId: T:System.Func`2
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.func-2
+  name: Func<T, TResult>
+  nameWithType: Func<T, TResult>
+  fullName: System.Func<T, TResult>
+  nameWithType.vb: Func(Of T, TResult)
+  fullName.vb: System.Func(Of T, TResult)
+  name.vb: Func(Of T, TResult)
+  spec.csharp:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: <
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Func`2
+    name: Func
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.func-2
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: ','
+  - name: " "
+  - name: TResult
+  - name: )

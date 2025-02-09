@@ -97,6 +97,11 @@ Classes
     <dl class="jumplist">
       <dt><a class="xref" href="UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.html">UFSessionKeyedStorage</a></dt>
       <dd><p>This class maps a <span class="xref">UltraForce.Library.NetStandard.Storage.UFKeyedStorage</span> to a <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.http.isession">ISession</a>.</p>
+<p>
+It uses <a class="xref" href="https://learn.microsoft.com/dotnet/api/system">System.Text.Json</a> to serialize and deserialize objects. Note that
+the factory function in <a class="xref" href="UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.html#UltraForce_Library_Core_Asp_Sessions_UFSessionKeyedStorage_DeserializeObject_System_String_System_Type_System_Func_System_Type_System_Object__">DeserializeObject(string, Type?, Func&lt;Type, object&gt;)</a> is not used, since this is not
+supported by the Json implementation.
+</p>
 </dd>
     </dl>
     <dl class="jumplist">
@@ -108,7 +113,8 @@ To use this class, register this class as a scoped service.
 </p>
 <p>
 If there is no session because either the class fails to get a <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.http.httpcontext">HttpContext</a> or
-the <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.http.isession">ISession</a>; messages will be not be stored and the get messages methods will return empty lists. 
+the <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.http.isession">ISession</a>; messages will be not be stored and the get messages methods
+will return empty lists. 
 </p>
 </dd>
     </dl>

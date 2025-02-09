@@ -29,11 +29,17 @@
 
 using Microsoft.AspNetCore.Http;
 using UltraForce.Library.NetStandard.Storage;
+using System.Text.Json;
 
 namespace UltraForce.Library.Core.Asp.Sessions
 {
   /// <summary>
   /// This class maps a <see cref="UFKeyedStorage" /> to a <see cref="ISession"/>.
+  /// <para>
+  /// It uses <see cref="System.Text.Json"/> to serialize and deserialize objects. Note that
+  /// the factory function in <see cref="DeserializeObject"/> is not used, since this is not
+  /// supported by the Json implementation.
+  /// </para>
   /// </summary>
   public class UFSessionKeyedStorage(ISession aSession) : UFKeyedStorage
   {
@@ -90,6 +96,39 @@ namespace UltraForce.Library.Core.Asp.Sessions
     public override bool HasKey(string aKey)
     {
       return this.m_session.Keys.Any(key => key == aKey);
+    }
+
+    #endregion
+    
+    #region protected methods
+
+    /// <inheritdoc />
+    protected override void SerializeObject(
+      string aKey,
+      object anObject
+    )
+    {
+      string value = JsonSerializer.Serialize(anObject);
+      this.SetString(aKey, value);
+    }
+
+    /// <inheritdoc />
+    protected override object DeserializeObject(
+      string aKey,
+      Type? aType,
+      Func<Type, object> aFactory
+    )
+    {
+      if (aType == null)
+      {
+        throw new Exception("Can not deserialize object without type.");
+      }
+      string json = this.GetString(aKey);
+      object? result = JsonSerializer.Deserialize(json, aType!);
+      if (result == null) {
+        throw new Exception($"Failed to deserialize object for type {aType.Name}.");
+      }
+      return result;
     }
 
     #endregion

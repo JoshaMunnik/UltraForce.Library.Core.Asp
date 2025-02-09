@@ -28,7 +28,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: UFSessionMessages
     path: ../UltraForce.Library.Core.Asp/Sessions/UFSessionMessages.cs
-    startLine: 44
+    startLine: 45
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Sessions
@@ -47,7 +47,9 @@ items:
 
     If there is no session because either the class fails to get a <xref href="Microsoft.AspNetCore.Http.HttpContext" data-throw-if-not-resolved="false"></xref> or
 
-    the <xref href="Microsoft.AspNetCore.Http.ISession" data-throw-if-not-resolved="false"></xref>; messages will be not be stored and the get messages methods will return empty lists. 
+    the <xref href="Microsoft.AspNetCore.Http.ISession" data-throw-if-not-resolved="false"></xref>; messages will be not be stored and the get messages methods
+
+    will return empty lists. 
 
     </p>
   example: []
@@ -81,7 +83,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: .ctor
     path: ../UltraForce.Library.Core.Asp/Sessions/UFSessionMessages.cs
-    startLine: 44
+    startLine: 45
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Sessions
@@ -100,7 +102,9 @@ items:
 
     If there is no session because either the class fails to get a <xref href="Microsoft.AspNetCore.Http.HttpContext" data-throw-if-not-resolved="false"></xref> or
 
-    the <xref href="Microsoft.AspNetCore.Http.ISession" data-throw-if-not-resolved="false"></xref>; messages will be not be stored and the get messages methods will return empty lists. 
+    the <xref href="Microsoft.AspNetCore.Http.ISession" data-throw-if-not-resolved="false"></xref>; messages will be not be stored and the get messages methods
+
+    will return empty lists. 
 
     </p>
   example: []
@@ -132,7 +136,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Add
     path: ../UltraForce.Library.Core.Asp/Sessions/UFSessionMessages.cs
-    startLine: 87
+    startLine: 88
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Sessions
@@ -167,7 +171,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: AddError
     path: ../UltraForce.Library.Core.Asp/Sessions/UFSessionMessages.cs
-    startLine: 96
+    startLine: 97
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Sessions
@@ -202,7 +206,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: AddWarning
     path: ../UltraForce.Library.Core.Asp/Sessions/UFSessionMessages.cs
-    startLine: 105
+    startLine: 106
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Sessions
@@ -237,7 +241,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Clear
     path: ../UltraForce.Library.Core.Asp/Sessions/UFSessionMessages.cs
-    startLine: 113
+    startLine: 114
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Sessions
@@ -265,7 +269,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetMessages
     path: ../UltraForce.Library.Core.Asp/Sessions/UFSessionMessages.cs
-    startLine: 124
+    startLine: 125
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Sessions
@@ -296,7 +300,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetErrorMessages
     path: ../UltraForce.Library.Core.Asp/Sessions/UFSessionMessages.cs
-    startLine: 133
+    startLine: 134
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Sessions
@@ -327,7 +331,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetWarningMessages
     path: ../UltraForce.Library.Core.Asp/Sessions/UFSessionMessages.cs
-    startLine: 142
+    startLine: 143
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Sessions
@@ -358,7 +362,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: HasMessages
     path: ../UltraForce.Library.Core.Asp/Sessions/UFSessionMessages.cs
-    startLine: 151
+    startLine: 152
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Sessions
