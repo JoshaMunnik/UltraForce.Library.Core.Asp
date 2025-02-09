@@ -15,8 +15,11 @@
         <RepositoryUrl>https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp</RepositoryUrl>
         <PackageReadmeFile>README.md</PackageReadmeFile>
         <AssemblyVersion></AssemblyVersion>
-        <Version>1.0.43</Version>
-        <PackageReleaseNotes>1.0.43
+        <Version>1.0.44</Version>
+        <PackageReleaseNotes>1.0.44
+- removed HtmlAttribute annotation from base TagHelpers
+
+1.0.43
 - added GetLabelHtmlAsync to UFInputTagHelperBase
 
 1.0.42

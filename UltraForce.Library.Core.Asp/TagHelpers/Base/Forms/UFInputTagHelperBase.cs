@@ -230,7 +230,6 @@ namespace UltraForce.Library.Core.Asp.TagHelpers.Base.Forms;
 /// </para>
 /// </summary>
 [SuppressMessage("ReSharper", "ClassWithVirtualMembersNeverInherited.Global")]
-[HtmlTargetElement("uf-input")]
 public abstract class UFInputTagHelperBase(
   IHtmlGenerator generator
 )

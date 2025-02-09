@@ -66,7 +66,6 @@ namespace UltraForce.Library.Core.Asp.TagHelpers.Base.Forms;
 /// </para>
 /// </summary>
 [SuppressMessage("ReSharper", "ClassWithVirtualMembersNeverInherited.Global")]
-[HtmlTargetElement("uf-select", TagStructure = TagStructure.NormalOrSelfClosing)]
 public abstract class UFSelectTagHelperBase(
   IHtmlGenerator aGenerator
 ) : SelectTagHelper(aGenerator)

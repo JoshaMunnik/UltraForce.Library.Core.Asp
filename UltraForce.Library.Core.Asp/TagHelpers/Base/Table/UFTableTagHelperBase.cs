@@ -76,7 +76,6 @@ namespace UltraForce.Library.Core.Asp.TagHelpers.Base.Table;
 /// </para>
 /// </summary>
 [SuppressMessage("ReSharper", "AutoPropertyCanBeMadeGetOnly.Global")]
-[HtmlTargetElement("uf-table", TagStructure = TagStructure.NormalOrSelfClosing)]
 public abstract class UFTableTagHelperBase : TagHelper
 {
   #region public constants

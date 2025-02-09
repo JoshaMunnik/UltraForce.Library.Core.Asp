@@ -50,7 +50,6 @@ namespace UltraForce.Library.Core.Asp.TagHelpers.Base.Containers;
 /// </remarks>
 /// </summary>
 [SuppressMessage("ReSharper", "ClassWithVirtualMembersNeverInherited.Global")]
-[HtmlTargetElement("uf-tab")]
 public class UFTabTagHelperBase : TagHelper
 {
   #region public properties
