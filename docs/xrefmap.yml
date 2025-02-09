@@ -3300,6 +3300,19 @@ references:
   isSpec: "True"
   fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetFieldErrorsHtml
   nameWithType: UFInputTagHelperBase.GetFieldErrorsHtml
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetLabelHtmlAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  name: GetLabelHtmlAsync(TagHelperContext, TagHelperOutput)
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFInputTagHelperBase_GetLabelHtmlAsync_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContext_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetLabelHtmlAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetLabelHtmlAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  nameWithType: UFInputTagHelperBase.GetLabelHtmlAsync(TagHelperContext, TagHelperOutput)
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetLabelHtmlAsync*
+  name: GetLabelHtmlAsync
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFInputTagHelperBase_GetLabelHtmlAsync_
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetLabelHtmlAsync
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetLabelHtmlAsync
+  nameWithType: UFInputTagHelperBase.GetLabelHtmlAsync
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetRadioExtraHtml
   name: GetRadioExtraHtml()
   href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFInputTagHelperBase_GetRadioExtraHtml
@@ -3558,19 +3571,19 @@ references:
   isSpec: "True"
   fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.NoWrap
   nameWithType: UFInputTagHelperBase.NoWrap
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
-  name: Process(TagHelperContext, TagHelperOutput)
-  href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFInputTagHelperBase_Process_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContext_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_
-  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
-  nameWithType: UFInputTagHelperBase.Process(TagHelperContext, TagHelperOutput)
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.Process*
-  name: Process
-  href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFInputTagHelperBase_Process_
-  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.Process
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  name: ProcessAsync(TagHelperContext, TagHelperOutput)
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFInputTagHelperBase_ProcessAsync_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContext_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  nameWithType: UFInputTagHelperBase.ProcessAsync(TagHelperContext, TagHelperOutput)
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.ProcessAsync*
+  name: ProcessAsync
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFInputTagHelperBase_ProcessAsync_
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.ProcessAsync
   isSpec: "True"
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.Process
-  nameWithType: UFInputTagHelperBase.Process
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.ProcessAsync
+  nameWithType: UFInputTagHelperBase.ProcessAsync
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase
   name: UFSelectTagHelperBase
   href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.html

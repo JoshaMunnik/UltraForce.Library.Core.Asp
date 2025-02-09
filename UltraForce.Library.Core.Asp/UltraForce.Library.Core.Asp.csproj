@@ -15,8 +15,14 @@
         <RepositoryUrl>https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp</RepositoryUrl>
         <PackageReadmeFile>README.md</PackageReadmeFile>
         <AssemblyVersion></AssemblyVersion>
-        <Version>1.0.41</Version>
-        <PackageReleaseNotes>1.0.41
+        <Version>1.0.43</Version>
+        <PackageReleaseNotes>1.0.43
+- added GetLabelHtmlAsync to UFInputTagHelperBase
+
+1.0.42
+- enabled error container below checkbox and radio.
+
+1.0.41
 - updated UFFontAwesome.cs to icon names from v6.7.2
 
 1.0.40

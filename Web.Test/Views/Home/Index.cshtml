@@ -4,7 +4,6 @@
 
 <div class="text-center">
   <h1 class="display-4">Welcome</h1>
-  <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
   <p>
     A button: <a asp-action="NoParameters" asp-controller="Test">No parameters</a>
   </p>
@@ -12,15 +11,19 @@
     A button: <a asp-action="WithParameters" asp-controller="Test" asp-route-first="@Guid.NewGuid()" asp-route-second="Test">With parameters</a>
   </p>
   <p>
-    A button: <uf-button asp-action="NoParameters" asp-controller="Test">No parameters</uf-button>
+    A button: <test-button asp-action="NoParameters" asp-controller="Test">No parameters</test-button>
   </p>
   <p>
-    A button: <uf-button asp-action="WithParameters" asp-controller="Test" asp-route-first="@Guid.NewGuid()" asp-route-second="Test">With parameters</uf-button>
+    A button: <test-button asp-action="WithParameters" asp-controller="Test" asp-route-first="@Guid.NewGuid()" asp-route-second="Test">With parameters</test-button>
   </p>
   <p>
-    A button: <uf-button call="Test.NoParameters">With no parameters</uf-button>
+    A button: <test-button call="Test.NoParameters">With no parameters</test-button>
   </p>
   <p>
-    A button: <uf-button call="Test.WithParameters(@Guid.NewGuid(),Test)">With parameters</uf-button>
+    A button: <test-button call="Test.WithParameters(@Guid.NewGuid(),Test)">With parameters</test-button>
+  </p>
+  <p>
+    Input
+    <test-input>This is a label</test-input>
   </p>
 </div>

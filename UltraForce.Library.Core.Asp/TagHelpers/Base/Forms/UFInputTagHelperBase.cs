@@ -54,11 +54,21 @@ namespace UltraForce.Library.Core.Asp.TagHelpers.Base.Forms;
 /// <see cref="GetTextInputPostHtml"/> to add extra html before and after the input element.
 /// </para>
 /// <para>
+/// To set a label, there are three options:
+/// <ul>
+///   <li>Set the <see cref="Label"/> property/attribute</li>
+///   <li>Add one or more child elements/texts to the tag (they will be moved to the label)</li>
+///   <li>Set the <see cref="InputTagHelper.For"/> property</li>
+/// </ul>
+/// </para>
+/// <para>
 /// Renders text input with wrapping and label:
 /// <code>
 /// &lt;div class="{GetTextInputWrapperClasses(type)}"&gt;
 ///   &lt;label class="{GetTextInputLabelClasses(type)}" for="{id}"&gt;
-///     &lt;span class="{GetTextInputLabelSpanClasses(type)}"&gt;{label}&lt;/span&gt;
+///     &lt;span class="{GetTextInputLabelSpanClasses(type)}"&gt;
+///      {GetLabelAsync(context,output)}
+///     &lt;/span&gt;
 ///     &lt;span class="{GetTextInputLabelDescriptionClasses(type)}"&gt;{description}&lt;/span&gt;
 ///   &lt;/label&gt;
 ///   {GetTextInputPreHtml()}
@@ -92,7 +102,9 @@ namespace UltraForce.Library.Core.Asp.TagHelpers.Base.Forms;
 /// <code>
 /// &lt;div class="{GetTextInputWrapperClasses(type)}"&gt;
 ///   &lt;label class="{GetTextInputLabelClasses(type)}" for="{id}"&gt;
-///     &lt;span class="{GetTextInputLabelSpanClasses(type)}"&gt;{label}&lt;/span&gt;
+///     &lt;span class="{GetTextInputLabelSpanClasses(type)}"&gt;
+///      {GetLabelAsync(context,output)}
+///     &lt;/span&gt;
 ///     &lt;span class="{GetTextInputLabelDescriptionClasses(type)}"&gt;{description}&lt;/span&gt;
 ///   &lt;/label&gt;
 ///   {GetTextInputPreHtml()}
@@ -127,7 +139,9 @@ namespace UltraForce.Library.Core.Asp.TagHelpers.Base.Forms;
 /// &lt;div class="{GetRadioWrapperClasses()}"&gt;
 ///   &lt;label class="{GetRadioLabelClasses()}"&gt;
 ///     {GetRadioExtraHtml()}
-///     &lt;span class="{GetRadioLabelSpanClasses()}&gt;{label}&lt;/span&gt;
+///     &lt;span class="{GetRadiiLabelSpanClasses()}"&gt;
+///      {GetLabelAsync(context,output)}
+///     &lt;/span&gt;
 ///     &lt;span class="{GetRadioLabelDescriptionClasses()}"&gt;{description}&lt;/span&gt;
 ///   &lt;/label&gt;
 ///   {GetValidationFeedbackContainer(id)}
@@ -152,7 +166,9 @@ namespace UltraForce.Library.Core.Asp.TagHelpers.Base.Forms;
 /// &lt;label class="{GetRadioLabelClasses()}"&gt;
 ///   &lt;input type="radio" class="{GetRadioInputClasses()}" id={} .../&gt;
 ///   {GetRadioExtraHtml()}
-///   &lt;span class="{GetRadioLabelSpanClasses()}&gt;{label}&lt;/span&gt;
+///   &lt;span class="{GetRadiiLabelSpanClasses()}"&gt;
+///    {GetLabelAsync(context,output)}
+///   &lt;/span&gt;
 ///   &lt;span class="{GetRadioLabelDescriptionClasses()}"&gt;{description}&lt;/span&gt;
 /// &lt;/label&gt;
 /// </code>
@@ -170,8 +186,10 @@ namespace UltraForce.Library.Core.Asp.TagHelpers.Base.Forms;
 /// &lt;div class="{GetCheckboxWrapperClasses()}"&gt;
 ///   &lt;label class="{GetCheckboxLabelClasses()}"&gt;
 ///     &lt;input type="checkbox" class="{GetCheckboxInputClasses()}" id={} .../&gt;
-///    {GetCheckboxExtraHtml()}
-///    &lt;span class="{GetCheckboxLabelSpanClasses()}&gt;{label}&lt;/span&gt;
+///     {GetCheckboxExtraHtml()}
+///     &lt;span class="{GetCheckboxLabelSpanClasses()}"&gt;
+///      {GetLabelAsync(context,output)}
+///     &lt;/span&gt;
 ///    &lt;span class="{GetCheckboxLabelDescriptionClasses()}"&gt;{description}&lt;/span&gt;
 ///   &lt;/label&gt;
 ///   {GetValidationFeedbackContainer(id)}
@@ -196,7 +214,9 @@ namespace UltraForce.Library.Core.Asp.TagHelpers.Base.Forms;
 /// &lt;label class="{GetCheckboxLabelClasses()}"&gt;
 ///   &lt;input type="checkbox" class="{GetCheckboxInputClasses()}" id={} ... /&gt;
 ///   {GetCheckboxExtraHtml()}
-///   &lt;span class="{GetCheckboxLabelSpanClasses()}&gt;{label}&lt;/span&gt;
+///   &lt;span class="{GetCheckboxLabelSpanClasses()}"&gt;
+///    {GetLabelAsync(context,output)}
+///   &lt;/span&gt;
 ///   &lt;span class="{GetCheckboxLabelDescriptionClasses()}"&gt;{description}&lt;/span&gt;
 /// &lt;/label&gt;
 /// </code>
@@ -211,7 +231,9 @@ namespace UltraForce.Library.Core.Asp.TagHelpers.Base.Forms;
 /// </summary>
 [SuppressMessage("ReSharper", "ClassWithVirtualMembersNeverInherited.Global")]
 [HtmlTargetElement("uf-input")]
-public abstract class UFInputTagHelperBase(IHtmlGenerator generator)
+public abstract class UFInputTagHelperBase(
+  IHtmlGenerator generator
+)
   : InputTagHelper(generator)
 {
   #region public properties
@@ -257,7 +279,10 @@ public abstract class UFInputTagHelperBase(IHtmlGenerator generator)
   #region public methods
 
   /// <inheritdoc />
-  public override void Process(TagHelperContext context, TagHelperOutput output)
+  public override async Task ProcessAsync(
+    TagHelperContext context,
+    TagHelperOutput output
+  )
   {
     output.TagName = this.Multiline ? "textarea" : "input";
     output.TagMode = this.Multiline ? TagMode.StartTagAndEndTag : TagMode.SelfClosing;
@@ -275,9 +300,7 @@ public abstract class UFInputTagHelperBase(IHtmlGenerator generator)
     {
       output.Content.SetContent(output.Attributes["value"]?.Value?.ToString() ?? "");
     }
-    string label = this.NoLabel
-      ? ""
-      : UFTagHelperTools.GetLabel(this.Generator, this.ViewContext, this.For, this.Label);
+    string label = await this.GetLabelHtmlAsync(context, output);
     if (((this.For != null) || !this.NoWrap) && (output.Attributes["id"] == null))
     {
       output.Attributes.SetAttribute("id", Guid.NewGuid().ToString());
@@ -310,35 +333,73 @@ public abstract class UFInputTagHelperBase(IHtmlGenerator generator)
   }
 
   #endregion
-  
+
   #region overridable protected methods
-  
+
   /// <summary>
   /// Returns the classes to use for the input element.
   /// </summary>
   /// <param name="aType"></param>
   /// <returns></returns>
-  protected virtual string GetTextInputClasses(string aType)
+  protected virtual string GetTextInputClasses(
+    string aType
+  )
   {
     return string.Empty;
   }
-  
+
   /// <summary>
   /// Returns the classes to use for the label element.
   /// </summary>
   /// <param name="aType"></param>
   /// <returns></returns>
-  protected virtual string GetTextInputLabelClasses(string aType)
+  protected virtual string GetTextInputLabelClasses(
+    string aType
+  )
   {
     return string.Empty;
   }
-  
+
+  /// <summary>
+  /// Returns the label html. The default implementation checks if <see cref="Label"/> has a value,
+  /// if it does return that value.
+  /// Else check if the tag has any children and return that content.
+  /// If there are no children and <see cref="Label"/> is empty, try to determine the value from
+  /// the <see cref="InputTagHelper.For"/> property.
+  /// </summary>
+  /// <param name="context"></param>
+  /// <param name="output"></param>
+  /// <returns></returns>
+  protected virtual async Task<string> GetLabelHtmlAsync(
+    TagHelperContext context,
+    TagHelperOutput output
+  )
+  {
+    if (this.NoLabel)
+    {
+      return "";
+    }
+    if (!string.IsNullOrEmpty(this.Label))
+    {
+      return this.Label;
+    }
+    string content = (await output.GetChildContentAsync()).GetContent();
+    if (!string.IsNullOrEmpty(content))
+    {
+      output.Content.SetHtmlContent(string.Empty);
+      return content;
+    }
+    return UFTagHelperTools.GetLabel(this.Generator, this.ViewContext, this.For, "");
+  }
+
   /// <summary>
   /// Returns the classes to use for the span element inside the label.
   /// </summary>
   /// <param name="aType"></param>
   /// <returns></returns>
-  protected virtual string GetTextInputLabelSpanClasses(string aType)
+  protected virtual string GetTextInputLabelSpanClasses(
+    string aType
+  )
   {
     return string.Empty;
   }
@@ -354,7 +415,7 @@ public abstract class UFInputTagHelperBase(IHtmlGenerator generator)
   {
     return string.Empty;
   }
-  
+
   /// <summary>
   /// Gets html code inserted after the input element.
   /// </summary>
@@ -366,37 +427,43 @@ public abstract class UFInputTagHelperBase(IHtmlGenerator generator)
   {
     return string.Empty;
   }
-  
+
   /// <summary>
   /// Returns the classes to use for the description span element inside the label.
   /// </summary>
   /// <param name="aType"></param>
   /// <returns></returns>
-  protected virtual string GetTextInputLabelDescriptionClasses(string aType)
+  protected virtual string GetTextInputLabelDescriptionClasses(
+    string aType
+  )
   {
     return string.Empty;
   }
-  
+
   /// <summary>
   /// Returns the classes to use for the wrapper div element.
   /// </summary>
   /// <param name="aType"></param>
   /// <returns></returns>
-  protected virtual string GetTextInputWrapperClasses(string aType)
+  protected virtual string GetTextInputWrapperClasses(
+    string aType
+  )
   {
     return string.Empty;
   }
-  
+
   /// <summary>
   /// Returns the classes to use for the validation feedback container.
   /// </summary>
   /// <param name="anId"></param>
   /// <returns></returns>
-  protected virtual string GetValidationFeedbackContainerHtml(string anId)
+  protected virtual string GetValidationFeedbackContainerHtml(
+    string anId
+  )
   {
     return string.Empty;
   }
-  
+
   /// <summary>
   /// Returns the classes to use for the field errors div element.
   /// </summary>
@@ -405,18 +472,21 @@ public abstract class UFInputTagHelperBase(IHtmlGenerator generator)
   {
     return string.Empty;
   }
-  
+
   /// <summary>
   /// Returns the html to use for the field errors.
   /// </summary>
   /// <param name="states"></param>
   /// <param name="name"></param>
   /// <returns></returns>
-  protected virtual string GetFieldErrorsHtml(ModelStateDictionary states, string name)
+  protected virtual string GetFieldErrorsHtml(
+    ModelStateDictionary states,
+    string name
+  )
   {
     return string.Empty;
   }
-  
+
   /// <summary>
   /// Returns the classes to use for the radio input element.
   /// </summary>
@@ -425,7 +495,7 @@ public abstract class UFInputTagHelperBase(IHtmlGenerator generator)
   {
     return string.Empty;
   }
-  
+
   /// <summary>
   /// Returns the classes to use for the radio wrapper div element.
   /// </summary>
@@ -434,7 +504,7 @@ public abstract class UFInputTagHelperBase(IHtmlGenerator generator)
   {
     return string.Empty;
   }
-  
+
   /// <summary>
   /// Returns the classes to use for the radio label element.
   /// </summary>
@@ -443,7 +513,7 @@ public abstract class UFInputTagHelperBase(IHtmlGenerator generator)
   {
     return string.Empty;
   }
-  
+
   /// <summary>
   /// Returns the classes to use for the span element inside the radio label.
   /// </summary>
@@ -452,7 +522,7 @@ public abstract class UFInputTagHelperBase(IHtmlGenerator generator)
   {
     return string.Empty;
   }
-  
+
   /// <summary>
   /// Returns the classes to use for the description span element inside the radio label.
   /// </summary>
@@ -461,7 +531,7 @@ public abstract class UFInputTagHelperBase(IHtmlGenerator generator)
   {
     return string.Empty;
   }
-  
+
   /// <summary>
   /// Returns the html to use for the radio extra content.
   /// </summary>
@@ -470,7 +540,7 @@ public abstract class UFInputTagHelperBase(IHtmlGenerator generator)
   {
     return string.Empty;
   }
-  
+
   /// <summary>
   /// Returns the classes to use for the checkbox input element.
   /// </summary>
@@ -479,7 +549,7 @@ public abstract class UFInputTagHelperBase(IHtmlGenerator generator)
   {
     return string.Empty;
   }
-  
+
   /// <summary>
   /// Returns the classes to use for the checkbox wrapper div element.
   /// </summary>
@@ -488,7 +558,7 @@ public abstract class UFInputTagHelperBase(IHtmlGenerator generator)
   {
     return string.Empty;
   }
-  
+
   /// <summary>
   /// Returns the classes to use for the checkbox label element.
   /// </summary>
@@ -497,7 +567,7 @@ public abstract class UFInputTagHelperBase(IHtmlGenerator generator)
   {
     return string.Empty;
   }
-  
+
   /// <summary>
   /// Returns the classes to use for the span element inside the checkbox label.
   /// </summary>
@@ -506,7 +576,7 @@ public abstract class UFInputTagHelperBase(IHtmlGenerator generator)
   {
     return string.Empty;
   }
-  
+
   /// <summary>
   /// Returns the classes to use for the description span element inside the checkbox label.
   /// </summary>
@@ -515,7 +585,7 @@ public abstract class UFInputTagHelperBase(IHtmlGenerator generator)
   {
     return string.Empty;
   }
-  
+
   /// <summary>
   /// Returns the html to use for the checkbox extra content.
   /// </summary>
@@ -524,7 +594,7 @@ public abstract class UFInputTagHelperBase(IHtmlGenerator generator)
   {
     return string.Empty;
   }
-  
+
   #endregion
 
   #region private methods
@@ -534,7 +604,9 @@ public abstract class UFInputTagHelperBase(IHtmlGenerator generator)
   /// </summary>
   /// <param name="anErrorMessage"></param>
   /// <returns></returns>
-  private string GetErrorMessageHtml(string anErrorMessage)
+  private string GetErrorMessageHtml(
+    string anErrorMessage
+  )
   {
     return anErrorMessage != ""
       ? $"<div class=\"{this.GetFieldErrorsClasses()}\">{anErrorMessage}</div>"
@@ -550,7 +622,11 @@ public abstract class UFInputTagHelperBase(IHtmlGenerator generator)
   /// <param name="aType">Input type</param>
   /// <param name="anErrorMessage">Error message to show</param>
   private void RenderWrappedInput(
-    TagHelperOutput anOutput, string anId, string aLabel, string aType, string anErrorMessage
+    TagHelperOutput anOutput,
+    string anId,
+    string aLabel,
+    string aType,
+    string anErrorMessage
   )
   {
     string errorMessage = this.GetErrorMessageHtml(anErrorMessage);
@@ -561,13 +637,13 @@ public abstract class UFInputTagHelperBase(IHtmlGenerator generator)
     string descriptionHtml = string.IsNullOrEmpty(description) || string.IsNullOrEmpty(aLabel)
       ? ""
       : $"<span class=\"{this.GetTextInputLabelDescriptionClasses(aType)}\">" +
-        $"{description}</span>";
+      $"{description}</span>";
     string labelHtml = string.IsNullOrEmpty(aLabel)
       ? ""
       : $"<label class=\"{this.GetTextInputLabelClasses(aType)}\" for=\"{anId}\">" +
-        $"<span class=\"{this.GetTextInputLabelSpanClasses(aType)}\">{aLabel}</span>" +
-        descriptionHtml +
-        "</label>";
+      $"<span class=\"{this.GetTextInputLabelSpanClasses(aType)}\">{aLabel}</span>" +
+      descriptionHtml +
+      "</label>";
     string preHtml = this.GetTextInputPreHtml(aType);
     string postHtml = this.GetTextInputPostHtml(aType);
     anOutput.PreElement.SetHtmlContent(
@@ -579,15 +655,18 @@ public abstract class UFInputTagHelperBase(IHtmlGenerator generator)
   }
 
   private void RenderRadio(
-    TagHelperOutput anOutput, string anId, string aLabel, string anErrorMessage
+    TagHelperOutput anOutput,
+    string anId,
+    string aLabel,
+    string anErrorMessage
   )
   {
     string errorMessage = this.GetErrorMessageHtml(anErrorMessage);
     UFTagHelperTools.AddClasses(anOutput, this.GetRadioInputClasses());
-    string pre = this.NoWrap ? $"<div class=\"{this.GetRadioWrapperClasses()}\">" : "";
-    string post = this.NoWrap
-      //? $"{this.GetValidationFeedbackContainer(anId)}{errorMessage}</div>"
-      ? $"{errorMessage}</div>"
+    string pre = !this.NoWrap ? $"<div class=\"{this.GetRadioWrapperClasses()}\">" : "";
+    string post = !this.NoWrap
+      ? $"{this.GetValidationFeedbackContainerHtml(anId)}{errorMessage}</div>"
+      //? $"{errorMessage}</div>"
       : "";
     string preLabel = string.IsNullOrEmpty(aLabel)
       ? ""
@@ -596,14 +675,14 @@ public abstract class UFInputTagHelperBase(IHtmlGenerator generator)
     string descriptionHtml = string.IsNullOrEmpty(description) || string.IsNullOrEmpty(aLabel)
       ? ""
       : $"<span class=\"{this.GetRadioLabelDescriptionClasses()}\">" +
-        $"{description}" +
-        $"</span>";
+      $"{description}" +
+      $"</span>";
     string postLabel = string.IsNullOrEmpty(aLabel)
       ? ""
       : $"</span>" +
-        $"<span class=\"{this.GetRadioLabelSpanClasses()}\">{aLabel}</span>" +
-        descriptionHtml +
-        $"</label>";
+      $"<span class=\"{this.GetRadioLabelSpanClasses()}\">{aLabel}</span>" +
+      descriptionHtml +
+      $"</label>";
     if (pre.Length + preLabel.Length > 0)
     {
       anOutput.PreElement.SetHtmlContent(pre + preLabel);
@@ -616,15 +695,18 @@ public abstract class UFInputTagHelperBase(IHtmlGenerator generator)
   }
 
   private void RenderCheckbox(
-    TagHelperOutput anOutput, string anId, string aLabel, string anErrorMessage
+    TagHelperOutput anOutput,
+    string anId,
+    string aLabel,
+    string anErrorMessage
   )
   {
     string errorMessage = this.GetErrorMessageHtml(anErrorMessage);
     UFTagHelperTools.AddClasses(anOutput, this.GetCheckboxInputClasses());
-    string pre = this.NoWrap ? $"<div class=\"{this.GetCheckboxWrapperClasses()}\">" : "";
-    string post = this.NoWrap
-      //? $"{this.GetValidationFeedbackContainer(anId)}{errorMessage}</div>"
-      ? $"{errorMessage}</div>"
+    string pre = !this.NoWrap ? $"<div class=\"{this.GetCheckboxWrapperClasses()}\">" : "";
+    string post = !this.NoWrap
+      ? $"{this.GetValidationFeedbackContainerHtml(anId)}{errorMessage}</div>"
+      //? $"{errorMessage}</div>"
       : "";
     string preLabel = string.IsNullOrEmpty(aLabel)
       ? ""
@@ -633,14 +715,14 @@ public abstract class UFInputTagHelperBase(IHtmlGenerator generator)
     string descriptionHtml = string.IsNullOrEmpty(description) || string.IsNullOrEmpty(aLabel)
       ? ""
       : $"<span class=\"{this.GetCheckboxLabelDescriptionClasses()}\">" +
-        $"{description}" +
-        $"</span>";
+      $"{description}" +
+      $"</span>";
     string postLabel = string.IsNullOrEmpty(aLabel)
       ? ""
       : $"</span>" +
-        $"<span class=\"{this.GetCheckboxLabelSpanClasses()}\">{aLabel}</span>" +
-        descriptionHtml +
-        $"</label>";
+      $"<span class=\"{this.GetCheckboxLabelSpanClasses()}\">{aLabel}</span>" +
+      descriptionHtml +
+      $"</label>";
     if (pre.Length + preLabel.Length > 0)
     {
       anOutput.PreElement.SetHtmlContent(pre + preLabel);

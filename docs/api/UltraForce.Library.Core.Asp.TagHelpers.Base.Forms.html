@@ -108,10 +108,20 @@ it is possible to override <a class="xref" href="UltraForce.Library.Core.Asp.Tag
 <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFInputTagHelperBase_GetTextInputPostHtml_System_String_">GetTextInputPostHtml(string)</a> to add extra html before and after the input element.
 </p>
 <p>
+To set a label, there are three options:
+<ul>
+  <li>Set the <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFInputTagHelperBase_Label">Label</a> property/attribute</li>
+  <li>Add one or more child elements/texts to the tag (they will be moved to the label)</li>
+  <li>Set the <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers.inputtaghelper.for">For</a> property</li>
+</ul>
+
+<p>
 Renders text input with wrapping and label:
 <pre><code class="lang-csharp">&lt;div class="{GetTextInputWrapperClasses(type)}"&gt;
   &lt;label class="{GetTextInputLabelClasses(type)}" for="{id}"&gt;
-    &lt;span class="{GetTextInputLabelSpanClasses(type)}"&gt;{label}&lt;/span&gt;
+    &lt;span class="{GetTextInputLabelSpanClasses(type)}"&gt;
+     {GetLabelAsync(context,output)}
+    &lt;/span&gt;
     &lt;span class="{GetTextInputLabelDescriptionClasses(type)}"&gt;{description}&lt;/span&gt;
   &lt;/label&gt;
   {GetTextInputPreHtml()}
@@ -139,7 +149,9 @@ Renders text input without wrapping:
 Renders multiline text input with wrapping and label:
 <pre><code class="lang-csharp">&lt;div class="{GetTextInputWrapperClasses(type)}"&gt;
   &lt;label class="{GetTextInputLabelClasses(type)}" for="{id}"&gt;
-    &lt;span class="{GetTextInputLabelSpanClasses(type)}"&gt;{label}&lt;/span&gt;
+    &lt;span class="{GetTextInputLabelSpanClasses(type)}"&gt;
+     {GetLabelAsync(context,output)}
+    &lt;/span&gt;
     &lt;span class="{GetTextInputLabelDescriptionClasses(type)}"&gt;{description}&lt;/span&gt;
   &lt;/label&gt;
   {GetTextInputPreHtml()}
@@ -168,7 +180,9 @@ Renders radio input with wrapping and a label:
 <pre><code class="lang-csharp">&lt;div class="{GetRadioWrapperClasses()}"&gt;
   &lt;label class="{GetRadioLabelClasses()}"&gt;
     {GetRadioExtraHtml()}
-    &lt;span class="{GetRadioLabelSpanClasses()}&gt;{label}&lt;/span&gt;
+    &lt;span class="{GetRadiiLabelSpanClasses()}"&gt;
+     {GetLabelAsync(context,output)}
+    &lt;/span&gt;
     &lt;span class="{GetRadioLabelDescriptionClasses()}"&gt;{description}&lt;/span&gt;
   &lt;/label&gt;
   {GetValidationFeedbackContainer(id)}
@@ -189,7 +203,9 @@ Renders radio input without wrapping but with a label:
 <pre><code class="lang-csharp">&lt;label class="{GetRadioLabelClasses()}"&gt;
   &lt;input type="radio" class="{GetRadioInputClasses()}" id={} .../&gt;
   {GetRadioExtraHtml()}
-  &lt;span class="{GetRadioLabelSpanClasses()}&gt;{label}&lt;/span&gt;
+  &lt;span class="{GetRadiiLabelSpanClasses()}"&gt;
+   {GetLabelAsync(context,output)}
+  &lt;/span&gt;
   &lt;span class="{GetRadioLabelDescriptionClasses()}"&gt;{description}&lt;/span&gt;
 &lt;/label&gt;</code></pre>
 
@@ -203,8 +219,10 @@ Renders checkbox input with wrapping and a label:
 <pre><code class="lang-csharp">&lt;div class="{GetCheckboxWrapperClasses()}"&gt;
   &lt;label class="{GetCheckboxLabelClasses()}"&gt;
     &lt;input type="checkbox" class="{GetCheckboxInputClasses()}" id={} .../&gt;
-   {GetCheckboxExtraHtml()}
-   &lt;span class="{GetCheckboxLabelSpanClasses()}&gt;{label}&lt;/span&gt;
+    {GetCheckboxExtraHtml()}
+    &lt;span class="{GetCheckboxLabelSpanClasses()}"&gt;
+     {GetLabelAsync(context,output)}
+    &lt;/span&gt;
    &lt;span class="{GetCheckboxLabelDescriptionClasses()}"&gt;{description}&lt;/span&gt;
   &lt;/label&gt;
   {GetValidationFeedbackContainer(id)}
@@ -225,7 +243,9 @@ Renders checkbox input without wrapping but with a label:
 <pre><code class="lang-csharp">&lt;label class="{GetCheckboxLabelClasses()}"&gt;
   &lt;input type="checkbox" class="{GetCheckboxInputClasses()}" id={} ... /&gt;
   {GetCheckboxExtraHtml()}
-  &lt;span class="{GetCheckboxLabelSpanClasses()}&gt;{label}&lt;/span&gt;
+  &lt;span class="{GetCheckboxLabelSpanClasses()}"&gt;
+   {GetLabelAsync(context,output)}
+  &lt;/span&gt;
   &lt;span class="{GetCheckboxLabelDescriptionClasses()}"&gt;{description}&lt;/span&gt;
 &lt;/label&gt;</code></pre>
 

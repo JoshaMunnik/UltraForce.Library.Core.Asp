@@ -15,6 +15,7 @@ items:
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetCheckboxWrapperClasses
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetFieldErrorsClasses
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetFieldErrorsHtml(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary,System.String)
+  - UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetLabelHtmlAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetRadioExtraHtml
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetRadioInputClasses
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetRadioLabelClasses
@@ -33,7 +34,7 @@ items:
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.Multiline
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.NoLabel
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.NoWrap
-  - UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  - UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
   langs:
   - csharp
   - vb
@@ -48,7 +49,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: UFInputTagHelperBase
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 211
+    startLine: 231
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -77,11 +78,25 @@ items:
 
     <p>
 
+    To set a label, there are three options:
+
+    <ul>
+      <li>Set the <xref href="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.Label" data-throw-if-not-resolved="false"></xref> property/attribute</li>
+      <li>Add one or more child elements/texts to the tag (they will be moved to the label)</li>
+      <li>Set the <xref href="Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper.For" data-throw-if-not-resolved="false"></xref> property</li>
+    </ul>
+
+    </p>
+
+    <p>
+
     Renders text input with wrapping and label:
 
     <pre><code class="lang-csharp">&lt;div class="{GetTextInputWrapperClasses(type)}"&gt;
       &lt;label class="{GetTextInputLabelClasses(type)}" for="{id}"&gt;
-        &lt;span class="{GetTextInputLabelSpanClasses(type)}"&gt;{label}&lt;/span&gt;
+        &lt;span class="{GetTextInputLabelSpanClasses(type)}"&gt;
+         {GetLabelAsync(context,output)}
+        &lt;/span&gt;
         &lt;span class="{GetTextInputLabelDescriptionClasses(type)}"&gt;{description}&lt;/span&gt;
       &lt;/label&gt;
       {GetTextInputPreHtml()}
@@ -121,7 +136,9 @@ items:
 
     <pre><code class="lang-csharp">&lt;div class="{GetTextInputWrapperClasses(type)}"&gt;
       &lt;label class="{GetTextInputLabelClasses(type)}" for="{id}"&gt;
-        &lt;span class="{GetTextInputLabelSpanClasses(type)}"&gt;{label}&lt;/span&gt;
+        &lt;span class="{GetTextInputLabelSpanClasses(type)}"&gt;
+         {GetLabelAsync(context,output)}
+        &lt;/span&gt;
         &lt;span class="{GetTextInputLabelDescriptionClasses(type)}"&gt;{description}&lt;/span&gt;
       &lt;/label&gt;
       {GetTextInputPreHtml()}
@@ -162,7 +179,9 @@ items:
     <pre><code class="lang-csharp">&lt;div class="{GetRadioWrapperClasses()}"&gt;
       &lt;label class="{GetRadioLabelClasses()}"&gt;
         {GetRadioExtraHtml()}
-        &lt;span class="{GetRadioLabelSpanClasses()}&gt;{label}&lt;/span&gt;
+        &lt;span class="{GetRadiiLabelSpanClasses()}"&gt;
+         {GetLabelAsync(context,output)}
+        &lt;/span&gt;
         &lt;span class="{GetRadioLabelDescriptionClasses()}"&gt;{description}&lt;/span&gt;
       &lt;/label&gt;
       {GetValidationFeedbackContainer(id)}
@@ -191,7 +210,9 @@ items:
     <pre><code class="lang-csharp">&lt;label class="{GetRadioLabelClasses()}"&gt;
       &lt;input type="radio" class="{GetRadioInputClasses()}" id={} .../&gt;
       {GetRadioExtraHtml()}
-      &lt;span class="{GetRadioLabelSpanClasses()}&gt;{label}&lt;/span&gt;
+      &lt;span class="{GetRadiiLabelSpanClasses()}"&gt;
+       {GetLabelAsync(context,output)}
+      &lt;/span&gt;
       &lt;span class="{GetRadioLabelDescriptionClasses()}"&gt;{description}&lt;/span&gt;
     &lt;/label&gt;</code></pre>
 
@@ -214,8 +235,10 @@ items:
     <pre><code class="lang-csharp">&lt;div class="{GetCheckboxWrapperClasses()}"&gt;
       &lt;label class="{GetCheckboxLabelClasses()}"&gt;
         &lt;input type="checkbox" class="{GetCheckboxInputClasses()}" id={} .../&gt;
-       {GetCheckboxExtraHtml()}
-       &lt;span class="{GetCheckboxLabelSpanClasses()}&gt;{label}&lt;/span&gt;
+        {GetCheckboxExtraHtml()}
+        &lt;span class="{GetCheckboxLabelSpanClasses()}"&gt;
+         {GetLabelAsync(context,output)}
+        &lt;/span&gt;
        &lt;span class="{GetCheckboxLabelDescriptionClasses()}"&gt;{description}&lt;/span&gt;
       &lt;/label&gt;
       {GetValidationFeedbackContainer(id)}
@@ -244,7 +267,9 @@ items:
     <pre><code class="lang-csharp">&lt;label class="{GetCheckboxLabelClasses()}"&gt;
       &lt;input type="checkbox" class="{GetCheckboxInputClasses()}" id={} ... /&gt;
       {GetCheckboxExtraHtml()}
-      &lt;span class="{GetCheckboxLabelSpanClasses()}&gt;{label}&lt;/span&gt;
+      &lt;span class="{GetCheckboxLabelSpanClasses()}"&gt;
+       {GetLabelAsync(context,output)}
+      &lt;/span&gt;
       &lt;span class="{GetCheckboxLabelDescriptionClasses()}"&gt;{description}&lt;/span&gt;
     &lt;/label&gt;</code></pre>
 
@@ -277,6 +302,7 @@ items:
   - Microsoft.AspNetCore.Razor.TagHelpers.ITagHelper
   - Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent
   inheritedMembers:
+  - Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
   - Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper.GetInputType(Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExplorer,System.String@)
   - Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper.Order
   - Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper.Generator
@@ -288,7 +314,6 @@ items:
   - Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper.Name
   - Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper.Value
   - Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Init(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext)
-  - Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
   - System.Object.GetHashCode
@@ -320,7 +345,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: .ctor
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 211
+    startLine: 231
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -349,11 +374,25 @@ items:
 
     <p>
 
+    To set a label, there are three options:
+
+    <ul>
+      <li>Set the <xref href="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.Label" data-throw-if-not-resolved="false"></xref> property/attribute</li>
+      <li>Add one or more child elements/texts to the tag (they will be moved to the label)</li>
+      <li>Set the <xref href="Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper.For" data-throw-if-not-resolved="false"></xref> property</li>
+    </ul>
+
+    </p>
+
+    <p>
+
     Renders text input with wrapping and label:
 
     <pre><code class="lang-csharp">&lt;div class="{GetTextInputWrapperClasses(type)}"&gt;
       &lt;label class="{GetTextInputLabelClasses(type)}" for="{id}"&gt;
-        &lt;span class="{GetTextInputLabelSpanClasses(type)}"&gt;{label}&lt;/span&gt;
+        &lt;span class="{GetTextInputLabelSpanClasses(type)}"&gt;
+         {GetLabelAsync(context,output)}
+        &lt;/span&gt;
         &lt;span class="{GetTextInputLabelDescriptionClasses(type)}"&gt;{description}&lt;/span&gt;
       &lt;/label&gt;
       {GetTextInputPreHtml()}
@@ -393,7 +432,9 @@ items:
 
     <pre><code class="lang-csharp">&lt;div class="{GetTextInputWrapperClasses(type)}"&gt;
       &lt;label class="{GetTextInputLabelClasses(type)}" for="{id}"&gt;
-        &lt;span class="{GetTextInputLabelSpanClasses(type)}"&gt;{label}&lt;/span&gt;
+        &lt;span class="{GetTextInputLabelSpanClasses(type)}"&gt;
+         {GetLabelAsync(context,output)}
+        &lt;/span&gt;
         &lt;span class="{GetTextInputLabelDescriptionClasses(type)}"&gt;{description}&lt;/span&gt;
       &lt;/label&gt;
       {GetTextInputPreHtml()}
@@ -434,7 +475,9 @@ items:
     <pre><code class="lang-csharp">&lt;div class="{GetRadioWrapperClasses()}"&gt;
       &lt;label class="{GetRadioLabelClasses()}"&gt;
         {GetRadioExtraHtml()}
-        &lt;span class="{GetRadioLabelSpanClasses()}&gt;{label}&lt;/span&gt;
+        &lt;span class="{GetRadiiLabelSpanClasses()}"&gt;
+         {GetLabelAsync(context,output)}
+        &lt;/span&gt;
         &lt;span class="{GetRadioLabelDescriptionClasses()}"&gt;{description}&lt;/span&gt;
       &lt;/label&gt;
       {GetValidationFeedbackContainer(id)}
@@ -463,7 +506,9 @@ items:
     <pre><code class="lang-csharp">&lt;label class="{GetRadioLabelClasses()}"&gt;
       &lt;input type="radio" class="{GetRadioInputClasses()}" id={} .../&gt;
       {GetRadioExtraHtml()}
-      &lt;span class="{GetRadioLabelSpanClasses()}&gt;{label}&lt;/span&gt;
+      &lt;span class="{GetRadiiLabelSpanClasses()}"&gt;
+       {GetLabelAsync(context,output)}
+      &lt;/span&gt;
       &lt;span class="{GetRadioLabelDescriptionClasses()}"&gt;{description}&lt;/span&gt;
     &lt;/label&gt;</code></pre>
 
@@ -486,8 +531,10 @@ items:
     <pre><code class="lang-csharp">&lt;div class="{GetCheckboxWrapperClasses()}"&gt;
       &lt;label class="{GetCheckboxLabelClasses()}"&gt;
         &lt;input type="checkbox" class="{GetCheckboxInputClasses()}" id={} .../&gt;
-       {GetCheckboxExtraHtml()}
-       &lt;span class="{GetCheckboxLabelSpanClasses()}&gt;{label}&lt;/span&gt;
+        {GetCheckboxExtraHtml()}
+        &lt;span class="{GetCheckboxLabelSpanClasses()}"&gt;
+         {GetLabelAsync(context,output)}
+        &lt;/span&gt;
        &lt;span class="{GetCheckboxLabelDescriptionClasses()}"&gt;{description}&lt;/span&gt;
       &lt;/label&gt;
       {GetValidationFeedbackContainer(id)}
@@ -516,7 +563,9 @@ items:
     <pre><code class="lang-csharp">&lt;label class="{GetCheckboxLabelClasses()}"&gt;
       &lt;input type="checkbox" class="{GetCheckboxInputClasses()}" id={} ... /&gt;
       {GetCheckboxExtraHtml()}
-      &lt;span class="{GetCheckboxLabelSpanClasses()}&gt;{label}&lt;/span&gt;
+      &lt;span class="{GetCheckboxLabelSpanClasses()}"&gt;
+       {GetLabelAsync(context,output)}
+      &lt;/span&gt;
       &lt;span class="{GetCheckboxLabelDescriptionClasses()}"&gt;{description}&lt;/span&gt;
     &lt;/label&gt;</code></pre>
 
@@ -560,7 +609,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Label
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 226
+    startLine: 248
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -614,7 +663,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: NoLabel
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 232
+    startLine: 254
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -657,7 +706,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: NoWrap
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 238
+    startLine: 260
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -700,7 +749,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Description
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 245
+    startLine: 267
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -746,7 +795,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Multiline
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 251
+    startLine: 273
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -771,36 +820,36 @@ items:
     arguments:
     - type: System.String
       value: multiline
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
-  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
-  id: Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  id: ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
   parent: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase
   langs:
   - csharp
   - vb
-  name: Process(TagHelperContext, TagHelperOutput)
-  nameWithType: UFInputTagHelperBase.Process(TagHelperContext, TagHelperOutput)
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  name: ProcessAsync(TagHelperContext, TagHelperOutput)
+  nameWithType: UFInputTagHelperBase.ProcessAsync(TagHelperContext, TagHelperOutput)
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
   type: Method
   source:
     remote:
       path: UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
       branch: master
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
-    id: Process
+    id: ProcessAsync
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 259
+    startLine: 281
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
   summary: >-
-    Synchronously executes the <xref href="Microsoft.AspNetCore.Razor.TagHelpers.TagHelper" data-throw-if-not-resolved="false"></xref> with the given <code class="paramref">context</code> and
+    Asynchronously executes the <xref href="Microsoft.AspNetCore.Razor.TagHelpers.TagHelper" data-throw-if-not-resolved="false"></xref> with the given <code class="paramref">context</code> and
 
     <code class="paramref">output</code>.
-  remarks: Does nothing if <xref href="Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper.For" data-throw-if-not-resolved="false"></xref> is <code>null</code>.
+  remarks: By default this calls into <xref href="Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext%2cMicrosoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
-    content: public override void Process(TagHelperContext context, TagHelperOutput output)
+    content: public override Task ProcessAsync(TagHelperContext context, TagHelperOutput output)
     parameters:
     - id: context
       type: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext
@@ -808,13 +857,12 @@ items:
     - id: output
       type: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput
       description: A stateful HTML element used to generate an HTML tag.
-    content.vb: Public Overrides Sub Process(context As TagHelperContext, output As TagHelperOutput)
-  overridden: Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
-  overload: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.Process*
-  exceptions:
-  - type: System.InvalidOperationException
-    commentId: T:System.InvalidOperationException
-    description: Thrown if <xref href="Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper.Format" data-throw-if-not-resolved="false"></xref> is non-<code>null</code> but <xref href="Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper.For" data-throw-if-not-resolved="false"></xref> is <code>null</code>.
+    return:
+      type: System.Threading.Tasks.Task
+      description: A <xref href="System.Threading.Tasks.Task" data-throw-if-not-resolved="false"></xref> that on completion updates the <code class="paramref">output</code>.
+    content.vb: Public Overrides Function ProcessAsync(context As TagHelperContext, output As TagHelperOutput) As Task
+  overridden: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.ProcessAsync*
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputClasses(System.String)
   commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputClasses(System.String)
   id: GetTextInputClasses(System.String)
@@ -833,7 +881,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetTextInputClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 320
+    startLine: 343
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -871,7 +919,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetTextInputLabelClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 330
+    startLine: 355
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -891,6 +939,53 @@ items:
   nameWithType.vb: UFInputTagHelperBase.GetTextInputLabelClasses(String)
   fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputLabelClasses(String)
   name.vb: GetTextInputLabelClasses(String)
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetLabelHtmlAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetLabelHtmlAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  id: GetLabelHtmlAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase
+  langs:
+  - csharp
+  - vb
+  name: GetLabelHtmlAsync(TagHelperContext, TagHelperOutput)
+  nameWithType: UFInputTagHelperBase.GetLabelHtmlAsync(TagHelperContext, TagHelperOutput)
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetLabelHtmlAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: GetLabelHtmlAsync
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
+    startLine: 372
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
+  summary: >-
+    Returns the label html. The default implementation checks if <xref href="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.Label" data-throw-if-not-resolved="false"></xref> has a value,
+
+    if it does return that value.
+
+    Else check if the tag has any children and return that content.
+
+    If there are no children and <xref href="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.Label" data-throw-if-not-resolved="false"></xref> is empty, try to determine the value from
+
+    the <xref href="Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper.For" data-throw-if-not-resolved="false"></xref> property.
+  example: []
+  syntax:
+    content: protected virtual Task<string> GetLabelHtmlAsync(TagHelperContext context, TagHelperOutput output)
+    parameters:
+    - id: context
+      type: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext
+      description: ''
+    - id: output
+      type: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput
+      description: ''
+    return:
+      type: System.Threading.Tasks.Task{System.String}
+      description: ''
+    content.vb: Protected Overridable Function GetLabelHtmlAsync(context As TagHelperContext, output As TagHelperOutput) As Task(Of String)
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetLabelHtmlAsync*
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputLabelSpanClasses(System.String)
   commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputLabelSpanClasses(System.String)
   id: GetTextInputLabelSpanClasses(System.String)
@@ -909,7 +1004,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetTextInputLabelSpanClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 340
+    startLine: 399
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -947,7 +1042,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetTextInputPreHtml
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 350
+    startLine: 411
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -985,7 +1080,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetTextInputPostHtml
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 362
+    startLine: 423
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -1023,7 +1118,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetTextInputLabelDescriptionClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 374
+    startLine: 435
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -1061,7 +1156,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetTextInputWrapperClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 384
+    startLine: 447
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -1099,7 +1194,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetValidationFeedbackContainerHtml
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 394
+    startLine: 459
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -1137,7 +1232,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetFieldErrorsClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 403
+    startLine: 470
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -1168,7 +1263,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetFieldErrorsHtml
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 414
+    startLine: 481
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -1209,7 +1304,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetRadioInputClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 423
+    startLine: 493
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -1240,7 +1335,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetRadioWrapperClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 432
+    startLine: 502
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -1271,7 +1366,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetRadioLabelClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 441
+    startLine: 511
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -1302,7 +1397,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetRadioLabelSpanClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 450
+    startLine: 520
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -1333,7 +1428,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetRadioLabelDescriptionClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 459
+    startLine: 529
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -1364,7 +1459,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetRadioExtraHtml
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 468
+    startLine: 538
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -1395,7 +1490,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetCheckboxInputClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 477
+    startLine: 547
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -1426,7 +1521,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetCheckboxWrapperClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 486
+    startLine: 556
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -1457,7 +1552,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetCheckboxLabelClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 495
+    startLine: 565
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -1488,7 +1583,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetCheckboxLabelSpanClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 504
+    startLine: 574
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -1519,7 +1614,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetCheckboxLabelDescriptionClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 513
+    startLine: 583
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -1550,7 +1645,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetCheckboxExtraHtml
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 522
+    startLine: 592
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -1630,6 +1725,20 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.Label
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.Label
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFInputTagHelperBase_Label
+  name: Label
+  nameWithType: UFInputTagHelperBase.Label
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.Label
+- uid: Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper.For
+  commentId: P:Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper.For
+  parent: Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers.inputtaghelper.for
+  name: For
+  nameWithType: InputTagHelper.For
+  fullName: Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper.For
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
   commentId: N:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
   href: UltraForce.html
@@ -1735,6 +1844,48 @@ references:
   name: ITagHelperComponent
   nameWithType: ITagHelperComponent
   fullName: Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent
+- uid: Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  commentId: M:Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  parent: Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers.inputtaghelper.process
+  name: Process(TagHelperContext, TagHelperOutput)
+  nameWithType: InputTagHelper.Process(TagHelperContext, TagHelperOutput)
+  fullName: Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+    name: Process
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers.inputtaghelper.process
+  - name: (
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext
+    name: TagHelperContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelpercontext
+  - name: ','
+  - name: " "
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput
+    name: TagHelperOutput
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelperoutput
+  - name: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+    name: Process
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers.inputtaghelper.process
+  - name: (
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext
+    name: TagHelperContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelpercontext
+  - name: ','
+  - name: " "
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput
+    name: TagHelperOutput
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelperoutput
+  - name: )
 - uid: Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper.GetInputType(Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExplorer,System.String@)
   commentId: M:Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper.GetInputType(Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExplorer,System.String@)
   parent: Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper
@@ -1806,14 +1957,6 @@ references:
   name: ViewContext
   nameWithType: InputTagHelper.ViewContext
   fullName: Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper.ViewContext
-- uid: Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper.For
-  commentId: P:Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper.For
-  parent: Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers.inputtaghelper.for
-  name: For
-  nameWithType: InputTagHelper.For
-  fullName: Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper.For
 - uid: Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper.Format
   commentId: P:Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper.Format
   parent: Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper
@@ -1883,48 +2026,6 @@ references:
     name: TagHelperContext
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelpercontext
-  - name: )
-- uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
-  commentId: M:Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
-  parent: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper.processasync
-  name: ProcessAsync(TagHelperContext, TagHelperOutput)
-  nameWithType: TagHelper.ProcessAsync(TagHelperContext, TagHelperOutput)
-  fullName: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
-  spec.csharp:
-  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
-    name: ProcessAsync
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper.processasync
-  - name: (
-  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext
-    name: TagHelperContext
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelpercontext
-  - name: ','
-  - name: " "
-  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput
-    name: TagHelperOutput
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelperoutput
-  - name: )
-  spec.vb:
-  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
-    name: ProcessAsync
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper.processasync
-  - name: (
-  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext
-    name: TagHelperContext
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelpercontext
-  - name: ','
-  - name: " "
-  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput
-    name: TagHelperOutput
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelperoutput
   - name: )
 - uid: System.Object.Equals(System.Object)
   commentId: M:System.Object.Equals(System.Object)
@@ -2362,26 +2463,27 @@ references:
   name: Multiline
   nameWithType: UFInputTagHelperBase.Multiline
   fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.Multiline
-- uid: System.InvalidOperationException
-  commentId: T:System.InvalidOperationException
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.invalidoperationexception
-  name: InvalidOperationException
-  nameWithType: InvalidOperationException
-  fullName: System.InvalidOperationException
-- uid: Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
-  commentId: M:Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
-  parent: Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  commentId: M:Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  parent: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers.inputtaghelper.process
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper.process
   name: Process(TagHelperContext, TagHelperOutput)
-  nameWithType: InputTagHelper.Process(TagHelperContext, TagHelperOutput)
-  fullName: Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  nameWithType: TagHelper.Process(TagHelperContext, TagHelperOutput)
+  fullName: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
   spec.csharp:
-  - uid: Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
     name: Process
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers.inputtaghelper.process
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper.process
   - name: (
   - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext
     name: TagHelperContext
@@ -2395,10 +2497,10 @@ references:
     href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelperoutput
   - name: )
   spec.vb:
-  - uid: Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
     name: Process
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers.inputtaghelper.process
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper.process
   - name: (
   - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext
     name: TagHelperContext
@@ -2411,12 +2513,54 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelperoutput
   - name: )
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.Process*
-  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.Process
-  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFInputTagHelperBase_Process_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContext_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_
-  name: Process
-  nameWithType: UFInputTagHelperBase.Process
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.Process
+- uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  commentId: M:Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  parent: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper.processasync
+  name: ProcessAsync(TagHelperContext, TagHelperOutput)
+  nameWithType: TagHelper.ProcessAsync(TagHelperContext, TagHelperOutput)
+  fullName: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+    name: ProcessAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper.processasync
+  - name: (
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext
+    name: TagHelperContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelpercontext
+  - name: ','
+  - name: " "
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput
+    name: TagHelperOutput
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelperoutput
+  - name: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+    name: ProcessAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper.processasync
+  - name: (
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext
+    name: TagHelperContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelpercontext
+  - name: ','
+  - name: " "
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput
+    name: TagHelperOutput
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelperoutput
+  - name: )
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.ProcessAsync*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.ProcessAsync
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFInputTagHelperBase_ProcessAsync_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContext_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_
+  name: ProcessAsync
+  nameWithType: UFInputTagHelperBase.ProcessAsync
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.ProcessAsync
 - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext
   commentId: T:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext
   parent: Microsoft.AspNetCore.Razor.TagHelpers
@@ -2433,6 +2577,43 @@ references:
   name: TagHelperOutput
   nameWithType: TagHelperOutput
   fullName: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputClasses*
   commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputClasses
   href: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFInputTagHelperBase_GetTextInputClasses_System_String_
@@ -2445,6 +2626,75 @@ references:
   name: GetTextInputLabelClasses
   nameWithType: UFInputTagHelperBase.GetTextInputLabelClasses
   fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputLabelClasses
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetLabelHtmlAsync*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetLabelHtmlAsync
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFInputTagHelperBase_GetLabelHtmlAsync_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContext_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_
+  name: GetLabelHtmlAsync
+  nameWithType: UFInputTagHelperBase.GetLabelHtmlAsync
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetLabelHtmlAsync
+- uid: System.Threading.Tasks.Task{System.String}
+  commentId: T:System.Threading.Tasks.Task{System.String}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<string>
+  nameWithType: Task<string>
+  fullName: System.Threading.Tasks.Task<string>
+  nameWithType.vb: Task(Of String)
+  fullName.vb: System.Threading.Tasks.Task(Of String)
+  name.vb: Task(Of String)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputLabelSpanClasses*
   commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputLabelSpanClasses
   href: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFInputTagHelperBase_GetTextInputLabelSpanClasses_System_String_
