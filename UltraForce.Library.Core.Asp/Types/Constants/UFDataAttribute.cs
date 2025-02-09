@@ -29,7 +29,7 @@
 
 using UltraForce.Library.Core.Asp.TagHelpers.Base.Table;
 
-namespace UltraForce.Library.Core.Asp.Types.Classes;
+namespace UltraForce.Library.Core.Asp.Types.Constants;
 
 /// <summary>
 /// Constants mapping to various data attributes used by the Ultra Force DOM typescript library.

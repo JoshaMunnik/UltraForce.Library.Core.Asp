@@ -30,7 +30,7 @@
 using System.Diagnostics.CodeAnalysis;
 using Microsoft.AspNetCore.Razor.TagHelpers;
 using UltraForce.Library.Core.Asp.Tools;
-using UltraForce.Library.Core.Asp.Types.Classes;
+using UltraForce.Library.Core.Asp.Types.Constants;
 using UltraForce.Library.NetStandard.Tools;
 
 namespace UltraForce.Library.Core.Asp.TagHelpers.Base.Table;

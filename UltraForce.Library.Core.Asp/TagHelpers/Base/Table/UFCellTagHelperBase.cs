@@ -32,7 +32,7 @@ using Microsoft.AspNetCore.Mvc.ViewFeatures;
 using Microsoft.AspNetCore.Razor.TagHelpers;
 using UltraForce.Library.Core.Asp.Services;
 using UltraForce.Library.Core.Asp.Tools;
-using UltraForce.Library.Core.Asp.Types.Classes;
+using UltraForce.Library.Core.Asp.Types.Constants;
 using UltraForce.Library.Core.Asp.Types.Enums;
 using UltraForce.Library.NetStandard.Extensions;
 using UltraForce.Library.NetStandard.Tools;

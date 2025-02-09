@@ -1,0 +1,1205 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute
+  commentId: T:UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute
+  id: UFDataAttribute
+  parent: UltraForce.Library.Core.Asp.Types.Constants
+  children:
+  - UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.DisplayValue
+  - UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.FieldValue
+  - UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.Filter
+  - UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.FilterTable
+  - UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.HeaderRow
+  - UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.HideIfField
+  - UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ImageHeight
+  - UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ImageName
+  - UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ImagePreview
+  - UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ImageSize
+  - UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ImageType
+  - UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ImageWidth
+  - UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.NoCaching
+  - UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.NoFilter
+  - UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.PageSize
+  - UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.Paging
+  - UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.SetFieldSelector
+  - UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.SetFieldValue
+  - UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ShowIfField
+  - UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.SortAscending
+  - UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.SortDescending
+  - UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.SortLocation
+  - UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.SortType
+  - UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.SortValue
+  - UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.Sorting
+  - UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.StorageId
+  langs:
+  - csharp
+  - vb
+  name: UFDataAttribute
+  nameWithType: UFDataAttribute
+  fullName: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute
+  type: Class
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: UFDataAttribute
+    path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
+    startLine: 36
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Constants
+  summary: Constants mapping to various data attributes used by the Ultra Force DOM typescript library.
+  example: []
+  syntax:
+    content: public static class UFDataAttribute
+    content.vb: Public Module UFDataAttribute
+  inheritance:
+  - System.Object
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.Filter
+  commentId: F:UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.Filter
+  id: Filter
+  parent: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute
+  langs:
+  - csharp
+  - vb
+  name: Filter
+  nameWithType: UFDataAttribute.Filter
+  fullName: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.Filter
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: Filter
+    path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
+    startLine: 41
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Constants
+  summary: Used by <xref href="UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public const string Filter = "data-uf-filter"
+    return:
+      type: System.String
+    content.vb: Public Const Filter As String = "data-uf-filter"
+- uid: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.Paging
+  commentId: F:UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.Paging
+  id: Paging
+  parent: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute
+  langs:
+  - csharp
+  - vb
+  name: Paging
+  nameWithType: UFDataAttribute.Paging
+  fullName: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.Paging
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: Paging
+    path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
+    startLine: 46
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Constants
+  summary: Used by <xref href="UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public const string Paging = "data-uf-paging"
+    return:
+      type: System.String
+    content.vb: Public Const Paging As String = "data-uf-paging"
+- uid: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.PageSize
+  commentId: F:UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.PageSize
+  id: PageSize
+  parent: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute
+  langs:
+  - csharp
+  - vb
+  name: PageSize
+  nameWithType: UFDataAttribute.PageSize
+  fullName: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.PageSize
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: PageSize
+    path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
+    startLine: 51
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Constants
+  summary: Used by <xref href="UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public const string PageSize = "data-uf-page-size"
+    return:
+      type: System.String
+    content.vb: Public Const PageSize As String = "data-uf-page-size"
+- uid: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.Sorting
+  commentId: F:UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.Sorting
+  id: Sorting
+  parent: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute
+  langs:
+  - csharp
+  - vb
+  name: Sorting
+  nameWithType: UFDataAttribute.Sorting
+  fullName: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.Sorting
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: Sorting
+    path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
+    startLine: 56
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Constants
+  summary: Used by <xref href="UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public const string Sorting = "data-uf-sorting"
+    return:
+      type: System.String
+    content.vb: Public Const Sorting As String = "data-uf-sorting"
+- uid: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.SortType
+  commentId: F:UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.SortType
+  id: SortType
+  parent: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute
+  langs:
+  - csharp
+  - vb
+  name: SortType
+  nameWithType: UFDataAttribute.SortType
+  fullName: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.SortType
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: SortType
+    path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
+    startLine: 61
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Constants
+  summary: Used by <xref href="UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFCellTagHelperBase" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public const string SortType = "data-uf-sort-type"
+    return:
+      type: System.String
+    content.vb: Public Const SortType As String = "data-uf-sort-type"
+- uid: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.SortValue
+  commentId: F:UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.SortValue
+  id: SortValue
+  parent: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute
+  langs:
+  - csharp
+  - vb
+  name: SortValue
+  nameWithType: UFDataAttribute.SortValue
+  fullName: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.SortValue
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: SortValue
+    path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
+    startLine: 66
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Constants
+  summary: Used by <xref href="UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFCellTagHelperBase" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public const string SortValue = "data-uf-sort-value"
+    return:
+      type: System.String
+    content.vb: Public Const SortValue As String = "data-uf-sort-value"
+- uid: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.NoFilter
+  commentId: F:UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.NoFilter
+  id: NoFilter
+  parent: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute
+  langs:
+  - csharp
+  - vb
+  name: NoFilter
+  nameWithType: UFDataAttribute.NoFilter
+  fullName: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.NoFilter
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: NoFilter
+    path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
+    startLine: 71
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Constants
+  summary: Used by <xref href="UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFCellTagHelperBase" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public const string NoFilter = "data-uf-no-filter"
+    return:
+      type: System.String
+    content.vb: Public Const NoFilter As String = "data-uf-no-filter"
+- uid: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.SortLocation
+  commentId: F:UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.SortLocation
+  id: SortLocation
+  parent: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute
+  langs:
+  - csharp
+  - vb
+  name: SortLocation
+  nameWithType: UFDataAttribute.SortLocation
+  fullName: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.SortLocation
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: SortLocation
+    path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
+    startLine: 76
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Constants
+  summary: Used by <xref href="UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableRowTagHelperBase" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public const string SortLocation = "data-uf-sort-location"
+    return:
+      type: System.String
+    content.vb: Public Const SortLocation As String = "data-uf-sort-location"
+- uid: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.FilterTable
+  commentId: F:UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.FilterTable
+  id: FilterTable
+  parent: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute
+  langs:
+  - csharp
+  - vb
+  name: FilterTable
+  nameWithType: UFDataAttribute.FilterTable
+  fullName: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.FilterTable
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: FilterTable
+    path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
+    startLine: 81
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Constants
+  summary: Used by <xref href="UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public const string FilterTable = "data-uf-filter-table"
+    return:
+      type: System.String
+    content.vb: Public Const FilterTable As String = "data-uf-filter-table"
+- uid: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.HeaderRow
+  commentId: F:UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.HeaderRow
+  id: HeaderRow
+  parent: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute
+  langs:
+  - csharp
+  - vb
+  name: HeaderRow
+  nameWithType: UFDataAttribute.HeaderRow
+  fullName: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.HeaderRow
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: HeaderRow
+    path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
+    startLine: 86
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Constants
+  summary: Used by <xref href="UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableRowTagHelperBase" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public const string HeaderRow = "data-uf-header-row"
+    return:
+      type: System.String
+    content.vb: Public Const HeaderRow As String = "data-uf-header-row"
+- uid: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.SortAscending
+  commentId: F:UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.SortAscending
+  id: SortAscending
+  parent: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute
+  langs:
+  - csharp
+  - vb
+  name: SortAscending
+  nameWithType: UFDataAttribute.SortAscending
+  fullName: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.SortAscending
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: SortAscending
+    path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
+    startLine: 91
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Constants
+  summary: Used by <xref href="UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public const string SortAscending = "data-uf-sort-ascending"
+    return:
+      type: System.String
+    content.vb: Public Const SortAscending As String = "data-uf-sort-ascending"
+- uid: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.SortDescending
+  commentId: F:UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.SortDescending
+  id: SortDescending
+  parent: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute
+  langs:
+  - csharp
+  - vb
+  name: SortDescending
+  nameWithType: UFDataAttribute.SortDescending
+  fullName: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.SortDescending
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: SortDescending
+    path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
+    startLine: 96
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Constants
+  summary: Used by <xref href="UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public const string SortDescending = "data-uf-sort-descending"
+    return:
+      type: System.String
+    content.vb: Public Const SortDescending As String = "data-uf-sort-descending"
+- uid: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.StorageId
+  commentId: F:UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.StorageId
+  id: StorageId
+  parent: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute
+  langs:
+  - csharp
+  - vb
+  name: StorageId
+  nameWithType: UFDataAttribute.StorageId
+  fullName: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.StorageId
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: StorageId
+    path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
+    startLine: 101
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Constants
+  summary: Used by various classes.
+  example: []
+  syntax:
+    content: public const string StorageId = "data-uf-storage-id"
+    return:
+      type: System.String
+    content.vb: Public Const StorageId As String = "data-uf-storage-id"
+- uid: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.SetFieldSelector
+  commentId: F:UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.SetFieldSelector
+  id: SetFieldSelector
+  parent: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute
+  langs:
+  - csharp
+  - vb
+  name: SetFieldSelector
+  nameWithType: UFDataAttribute.SetFieldSelector
+  fullName: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.SetFieldSelector
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: SetFieldSelector
+    path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
+    startLine: 106
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Constants
+  summary: Points to a clickable element
+  example: []
+  syntax:
+    content: public const string SetFieldSelector = "data-uf-set-field-selector"
+    return:
+      type: System.String
+    content.vb: Public Const SetFieldSelector As String = "data-uf-set-field-selector"
+- uid: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.SetFieldValue
+  commentId: F:UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.SetFieldValue
+  id: SetFieldValue
+  parent: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute
+  langs:
+  - csharp
+  - vb
+  name: SetFieldValue
+  nameWithType: UFDataAttribute.SetFieldValue
+  fullName: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.SetFieldValue
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: SetFieldValue
+    path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
+    startLine: 111
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Constants
+  summary: Value to set if clickable element is clicked upon.
+  example: []
+  syntax:
+    content: public const string SetFieldValue = "data-uf-set-field-value"
+    return:
+      type: System.String
+    content.vb: Public Const SetFieldValue As String = "data-uf-set-field-value"
+- uid: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.NoCaching
+  commentId: F:UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.NoCaching
+  id: NoCaching
+  parent: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute
+  langs:
+  - csharp
+  - vb
+  name: NoCaching
+  nameWithType: UFDataAttribute.NoCaching
+  fullName: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.NoCaching
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: NoCaching
+    path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
+    startLine: 116
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Constants
+  summary: When set don't cache values with sorted tables.
+  example: []
+  syntax:
+    content: public const string NoCaching = "data-uf-no-caching"
+    return:
+      type: System.String
+    content.vb: Public Const NoCaching As String = "data-uf-no-caching"
+- uid: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ImagePreview
+  commentId: F:UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ImagePreview
+  id: ImagePreview
+  parent: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute
+  langs:
+  - csharp
+  - vb
+  name: ImagePreview
+  nameWithType: UFDataAttribute.ImagePreview
+  fullName: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ImagePreview
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: ImagePreview
+    path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
+    startLine: 121
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Constants
+  summary: Image preview for file input.
+  example: []
+  syntax:
+    content: public const string ImagePreview = "data-uf-image-preview"
+    return:
+      type: System.String
+    content.vb: Public Const ImagePreview As String = "data-uf-image-preview"
+- uid: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ImageWidth
+  commentId: F:UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ImageWidth
+  id: ImageWidth
+  parent: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute
+  langs:
+  - csharp
+  - vb
+  name: ImageWidth
+  nameWithType: UFDataAttribute.ImageWidth
+  fullName: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ImageWidth
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: ImageWidth
+    path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
+    startLine: 126
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Constants
+  summary: Set content to width of image.
+  example: []
+  syntax:
+    content: public const string ImageWidth = "data-uf-image-width"
+    return:
+      type: System.String
+    content.vb: Public Const ImageWidth As String = "data-uf-image-width"
+- uid: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ImageHeight
+  commentId: F:UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ImageHeight
+  id: ImageHeight
+  parent: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute
+  langs:
+  - csharp
+  - vb
+  name: ImageHeight
+  nameWithType: UFDataAttribute.ImageHeight
+  fullName: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ImageHeight
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: ImageHeight
+    path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
+    startLine: 131
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Constants
+  summary: Set content to height of image.
+  example: []
+  syntax:
+    content: public const string ImageHeight = "data-uf-image-height"
+    return:
+      type: System.String
+    content.vb: Public Const ImageHeight As String = "data-uf-image-height"
+- uid: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ImageName
+  commentId: F:UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ImageName
+  id: ImageName
+  parent: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute
+  langs:
+  - csharp
+  - vb
+  name: ImageName
+  nameWithType: UFDataAttribute.ImageName
+  fullName: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ImageName
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: ImageName
+    path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
+    startLine: 136
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Constants
+  summary: Set content to name of image.
+  example: []
+  syntax:
+    content: public const string ImageName = "data-uf-image-name"
+    return:
+      type: System.String
+    content.vb: Public Const ImageName As String = "data-uf-image-name"
+- uid: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ImageSize
+  commentId: F:UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ImageSize
+  id: ImageSize
+  parent: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute
+  langs:
+  - csharp
+  - vb
+  name: ImageSize
+  nameWithType: UFDataAttribute.ImageSize
+  fullName: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ImageSize
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: ImageSize
+    path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
+    startLine: 141
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Constants
+  summary: Set content to size of image.
+  example: []
+  syntax:
+    content: public const string ImageSize = "data-uf-image-size"
+    return:
+      type: System.String
+    content.vb: Public Const ImageSize As String = "data-uf-image-size"
+- uid: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ImageType
+  commentId: F:UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ImageType
+  id: ImageType
+  parent: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute
+  langs:
+  - csharp
+  - vb
+  name: ImageType
+  nameWithType: UFDataAttribute.ImageType
+  fullName: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ImageType
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: ImageType
+    path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
+    startLine: 146
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Constants
+  summary: Set content to type of image.
+  example: []
+  syntax:
+    content: public const string ImageType = "data-uf-image-type"
+    return:
+      type: System.String
+    content.vb: Public Const ImageType As String = "data-uf-image-type"
+- uid: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ShowIfField
+  commentId: F:UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ShowIfField
+  id: ShowIfField
+  parent: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute
+  langs:
+  - csharp
+  - vb
+  name: ShowIfField
+  nameWithType: UFDataAttribute.ShowIfField
+  fullName: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ShowIfField
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: ShowIfField
+    path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
+    startLine: 151
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Constants
+  summary: Show the content of the field if some condition is met.
+  example: []
+  syntax:
+    content: public const string ShowIfField = "data-uf-show-if-field"
+    return:
+      type: System.String
+    content.vb: Public Const ShowIfField As String = "data-uf-show-if-field"
+- uid: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.HideIfField
+  commentId: F:UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.HideIfField
+  id: HideIfField
+  parent: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute
+  langs:
+  - csharp
+  - vb
+  name: HideIfField
+  nameWithType: UFDataAttribute.HideIfField
+  fullName: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.HideIfField
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: HideIfField
+    path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
+    startLine: 156
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Constants
+  summary: Hide the content of the field if some condition is met.
+  example: []
+  syntax:
+    content: public const string HideIfField = "data-uf-hide-if-field"
+    return:
+      type: System.String
+    content.vb: Public Const HideIfField As String = "data-uf-hide-if-field"
+- uid: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.FieldValue
+  commentId: F:UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.FieldValue
+  id: FieldValue
+  parent: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute
+  langs:
+  - csharp
+  - vb
+  name: FieldValue
+  nameWithType: UFDataAttribute.FieldValue
+  fullName: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.FieldValue
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: FieldValue
+    path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
+    startLine: 161
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Constants
+  summary: Value to use.
+  example: []
+  syntax:
+    content: public const string FieldValue = "data-uf-field-value"
+    return:
+      type: System.String
+    content.vb: Public Const FieldValue As String = "data-uf-field-value"
+- uid: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.DisplayValue
+  commentId: F:UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.DisplayValue
+  id: DisplayValue
+  parent: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute
+  langs:
+  - csharp
+  - vb
+  name: DisplayValue
+  nameWithType: UFDataAttribute.DisplayValue
+  fullName: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.DisplayValue
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: DisplayValue
+    path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
+    startLine: 166
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Constants
+  summary: Value to assign to the display style.
+  example: []
+  syntax:
+    content: public const string DisplayValue = "data-uf-display-value"
+    return:
+      type: System.String
+    content.vb: Public Const DisplayValue As String = "data-uf-display-value"
+references:
+- uid: UltraForce.Library.Core.Asp.Types.Constants
+  commentId: N:UltraForce.Library.Core.Asp.Types.Constants
+  href: UltraForce.html
+  name: UltraForce.Library.Core.Asp.Types.Constants
+  nameWithType: UltraForce.Library.Core.Asp.Types.Constants
+  fullName: UltraForce.Library.Core.Asp.Types.Constants
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types
+    name: Types
+    href: UltraForce.Library.Core.Asp.Types.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types.Constants
+    name: Constants
+    href: UltraForce.Library.Core.Asp.Types.Constants.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types
+    name: Types
+    href: UltraForce.Library.Core.Asp.Types.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types.Constants
+    name: Constants
+    href: UltraForce.Library.Core.Asp.Types.Constants.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase
+  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Base.Table
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.html
+  name: UFTableTagHelperBase
+  nameWithType: UFTableTagHelperBase
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table
+  commentId: N:UltraForce.Library.Core.Asp.TagHelpers.Base.Table
+  href: UltraForce.html
+  name: UltraForce.Library.Core.Asp.TagHelpers.Base.Table
+  nameWithType: UltraForce.Library.Core.Asp.TagHelpers.Base.Table
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers
+    name: TagHelpers
+    href: UltraForce.Library.Core.Asp.TagHelpers.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Base
+    name: Base
+    href: UltraForce.Library.Core.Asp.TagHelpers.Base.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table
+    name: Table
+    href: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers
+    name: TagHelpers
+    href: UltraForce.Library.Core.Asp.TagHelpers.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Base
+    name: Base
+    href: UltraForce.Library.Core.Asp.TagHelpers.Base.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table
+    name: Table
+    href: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.html
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFCellTagHelperBase
+  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFCellTagHelperBase
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFCellTagHelperBase.html
+  name: UFCellTagHelperBase
+  nameWithType: UFCellTagHelperBase
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFCellTagHelperBase
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableRowTagHelperBase
+  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableRowTagHelperBase
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Base.Table
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableRowTagHelperBase.html
+  name: UFTableRowTagHelperBase
+  nameWithType: UFTableRowTagHelperBase
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableRowTagHelperBase
