@@ -89,6 +89,31 @@ references:
   isSpec: "True"
   fullName: UltraForce.Library.Core.Asp.Controllers.UFController.SessionStorage
   nameWithType: UFController.SessionStorage
+- uid: UltraForce.Library.Core.Asp.Filters
+  name: UltraForce.Library.Core.Asp.Filters
+  href: api/UltraForce.Library.Core.Asp.Filters.html
+  commentId: N:UltraForce.Library.Core.Asp.Filters
+  fullName: UltraForce.Library.Core.Asp.Filters
+  nameWithType: UltraForce.Library.Core.Asp.Filters
+- uid: UltraForce.Library.Core.Asp.Filters.UFUseActionExceptionFilter
+  name: UFUseActionExceptionFilter
+  href: api/UltraForce.Library.Core.Asp.Filters.UFUseActionExceptionFilter.html
+  commentId: T:UltraForce.Library.Core.Asp.Filters.UFUseActionExceptionFilter
+  fullName: UltraForce.Library.Core.Asp.Filters.UFUseActionExceptionFilter
+  nameWithType: UFUseActionExceptionFilter
+- uid: UltraForce.Library.Core.Asp.Filters.UFUseActionExceptionFilter.OnException(Microsoft.AspNetCore.Mvc.Filters.ExceptionContext)
+  name: OnException(ExceptionContext)
+  href: api/UltraForce.Library.Core.Asp.Filters.UFUseActionExceptionFilter.html#UltraForce_Library_Core_Asp_Filters_UFUseActionExceptionFilter_OnException_Microsoft_AspNetCore_Mvc_Filters_ExceptionContext_
+  commentId: M:UltraForce.Library.Core.Asp.Filters.UFUseActionExceptionFilter.OnException(Microsoft.AspNetCore.Mvc.Filters.ExceptionContext)
+  fullName: UltraForce.Library.Core.Asp.Filters.UFUseActionExceptionFilter.OnException(Microsoft.AspNetCore.Mvc.Filters.ExceptionContext)
+  nameWithType: UFUseActionExceptionFilter.OnException(ExceptionContext)
+- uid: UltraForce.Library.Core.Asp.Filters.UFUseActionExceptionFilter.OnException*
+  name: OnException
+  href: api/UltraForce.Library.Core.Asp.Filters.UFUseActionExceptionFilter.html#UltraForce_Library_Core_Asp_Filters_UFUseActionExceptionFilter_OnException_
+  commentId: Overload:UltraForce.Library.Core.Asp.Filters.UFUseActionExceptionFilter.OnException
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Asp.Filters.UFUseActionExceptionFilter.OnException
+  nameWithType: UFUseActionExceptionFilter.OnException
 - uid: UltraForce.Library.Core.Asp.Localization
   name: UltraForce.Library.Core.Asp.Localization
   href: api/UltraForce.Library.Core.Asp.Localization.html
@@ -36115,6 +36140,50 @@ references:
   commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFWrapType.Word
   fullName: UltraForce.Library.Core.Asp.Types.Enums.UFWrapType.Word
   nameWithType: UFWrapType.Word
+- uid: UltraForce.Library.Core.Asp.Types.Exceptions
+  name: UltraForce.Library.Core.Asp.Types.Exceptions
+  href: api/UltraForce.Library.Core.Asp.Types.Exceptions.html
+  commentId: N:UltraForce.Library.Core.Asp.Types.Exceptions
+  fullName: UltraForce.Library.Core.Asp.Types.Exceptions
+  nameWithType: UltraForce.Library.Core.Asp.Types.Exceptions
+- uid: UltraForce.Library.Core.Asp.Types.Exceptions.UFUseActionException
+  name: UFUseActionException
+  href: api/UltraForce.Library.Core.Asp.Types.Exceptions.UFUseActionException.html
+  commentId: T:UltraForce.Library.Core.Asp.Types.Exceptions.UFUseActionException
+  fullName: UltraForce.Library.Core.Asp.Types.Exceptions.UFUseActionException
+  nameWithType: UFUseActionException
+- uid: UltraForce.Library.Core.Asp.Types.Exceptions.UFUseActionException.#ctor(Microsoft.AspNetCore.Mvc.IActionResult)
+  name: UFUseActionException(IActionResult)
+  href: api/UltraForce.Library.Core.Asp.Types.Exceptions.UFUseActionException.html#UltraForce_Library_Core_Asp_Types_Exceptions_UFUseActionException__ctor_Microsoft_AspNetCore_Mvc_IActionResult_
+  commentId: M:UltraForce.Library.Core.Asp.Types.Exceptions.UFUseActionException.#ctor(Microsoft.AspNetCore.Mvc.IActionResult)
+  name.vb: New(IActionResult)
+  fullName: UltraForce.Library.Core.Asp.Types.Exceptions.UFUseActionException.UFUseActionException(Microsoft.AspNetCore.Mvc.IActionResult)
+  fullName.vb: UltraForce.Library.Core.Asp.Types.Exceptions.UFUseActionException.New(Microsoft.AspNetCore.Mvc.IActionResult)
+  nameWithType: UFUseActionException.UFUseActionException(IActionResult)
+  nameWithType.vb: UFUseActionException.New(IActionResult)
+- uid: UltraForce.Library.Core.Asp.Types.Exceptions.UFUseActionException.#ctor*
+  name: UFUseActionException
+  href: api/UltraForce.Library.Core.Asp.Types.Exceptions.UFUseActionException.html#UltraForce_Library_Core_Asp_Types_Exceptions_UFUseActionException__ctor_
+  commentId: Overload:UltraForce.Library.Core.Asp.Types.Exceptions.UFUseActionException.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: UltraForce.Library.Core.Asp.Types.Exceptions.UFUseActionException.UFUseActionException
+  fullName.vb: UltraForce.Library.Core.Asp.Types.Exceptions.UFUseActionException.New
+  nameWithType: UFUseActionException.UFUseActionException
+  nameWithType.vb: UFUseActionException.New
+- uid: UltraForce.Library.Core.Asp.Types.Exceptions.UFUseActionException.Result
+  name: Result
+  href: api/UltraForce.Library.Core.Asp.Types.Exceptions.UFUseActionException.html#UltraForce_Library_Core_Asp_Types_Exceptions_UFUseActionException_Result
+  commentId: P:UltraForce.Library.Core.Asp.Types.Exceptions.UFUseActionException.Result
+  fullName: UltraForce.Library.Core.Asp.Types.Exceptions.UFUseActionException.Result
+  nameWithType: UFUseActionException.Result
+- uid: UltraForce.Library.Core.Asp.Types.Exceptions.UFUseActionException.Result*
+  name: Result
+  href: api/UltraForce.Library.Core.Asp.Types.Exceptions.UFUseActionException.html#UltraForce_Library_Core_Asp_Types_Exceptions_UFUseActionException_Result_
+  commentId: Overload:UltraForce.Library.Core.Asp.Types.Exceptions.UFUseActionException.Result
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Asp.Types.Exceptions.UFUseActionException.Result
+  nameWithType: UFUseActionException.Result
 - uid: UltraForce.Library.Core.Asp.ViewModels
   name: UltraForce.Library.Core.Asp.ViewModels
   href: api/UltraForce.Library.Core.Asp.ViewModels.html

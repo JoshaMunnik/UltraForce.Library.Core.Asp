@@ -286,14 +286,8 @@ items:
     </p>
   example: []
   syntax:
-    content: >-
-      [HtmlTargetElement("uf-input")]
-
-      public abstract class UFInputTagHelperBase : InputTagHelper, ITagHelper, ITagHelperComponent
-    content.vb: >-
-      <HtmlTargetElement("uf-input")>
-
-      Public MustInherit Class UFInputTagHelperBase Inherits InputTagHelper Implements ITagHelper, ITagHelperComponent
+    content: 'public abstract class UFInputTagHelperBase : InputTagHelper, ITagHelper, ITagHelperComponent'
+    content.vb: Public MustInherit Class UFInputTagHelperBase Inherits InputTagHelper Implements ITagHelper, ITagHelperComponent
   inheritance:
   - System.Object
   - Microsoft.AspNetCore.Razor.TagHelpers.TagHelper
@@ -321,12 +315,6 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-  attributes:
-  - type: Microsoft.AspNetCore.Razor.TagHelpers.HtmlTargetElementAttribute
-    ctor: Microsoft.AspNetCore.Razor.TagHelpers.HtmlTargetElementAttribute.#ctor(System.String)
-    arguments:
-    - type: System.String
-      value: uf-input
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.#ctor(Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator)
   commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.#ctor(Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator)
   id: '#ctor(Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator)'
@@ -609,7 +597,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Label
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 248
+    startLine: 247
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -663,7 +651,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: NoLabel
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 254
+    startLine: 253
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -706,7 +694,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: NoWrap
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 260
+    startLine: 259
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -749,7 +737,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Description
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 267
+    startLine: 266
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -795,7 +783,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Multiline
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 273
+    startLine: 272
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -838,7 +826,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: ProcessAsync
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 281
+    startLine: 280
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -881,7 +869,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetTextInputClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 343
+    startLine: 342
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -919,7 +907,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetTextInputLabelClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 355
+    startLine: 354
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -957,7 +945,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetLabelHtmlAsync
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 372
+    startLine: 371
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -1004,7 +992,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetTextInputLabelSpanClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 399
+    startLine: 398
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -1042,7 +1030,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetTextInputPreHtml
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 411
+    startLine: 410
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -1080,7 +1068,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetTextInputPostHtml
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 423
+    startLine: 422
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -1118,7 +1106,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetTextInputLabelDescriptionClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 435
+    startLine: 434
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -1156,7 +1144,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetTextInputWrapperClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 447
+    startLine: 446
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -1194,7 +1182,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetValidationFeedbackContainerHtml
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 459
+    startLine: 458
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -1232,7 +1220,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetFieldErrorsClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 470
+    startLine: 469
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -1263,7 +1251,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetFieldErrorsHtml
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 481
+    startLine: 480
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -1304,7 +1292,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetRadioInputClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 493
+    startLine: 492
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -1335,7 +1323,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetRadioWrapperClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 502
+    startLine: 501
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -1366,7 +1354,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetRadioLabelClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 511
+    startLine: 510
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -1397,7 +1385,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetRadioLabelSpanClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 520
+    startLine: 519
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -1428,7 +1416,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetRadioLabelDescriptionClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 529
+    startLine: 528
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -1459,7 +1447,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetRadioExtraHtml
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 538
+    startLine: 537
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -1490,7 +1478,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetCheckboxInputClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 547
+    startLine: 546
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -1521,7 +1509,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetCheckboxWrapperClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 556
+    startLine: 555
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -1552,7 +1540,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetCheckboxLabelClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 565
+    startLine: 564
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -1583,7 +1571,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetCheckboxLabelSpanClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 574
+    startLine: 573
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -1614,7 +1602,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetCheckboxLabelDescriptionClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 583
+    startLine: 582
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -1645,7 +1633,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetCheckboxExtraHtml
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 592
+    startLine: 591
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms

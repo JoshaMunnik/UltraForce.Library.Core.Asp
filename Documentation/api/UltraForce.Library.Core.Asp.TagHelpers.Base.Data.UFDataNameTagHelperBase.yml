@@ -41,14 +41,8 @@ items:
     </p>
   example: []
   syntax:
-    content: >-
-      [HtmlTargetElement("uf-data-name")]
-
-      public abstract class UFDataNameTagHelperBase : UFTagHelperWithModelExpressionRenderer, ITagHelper, ITagHelperComponent
-    content.vb: >-
-      <HtmlTargetElement("uf-data-name")>
-
-      Public MustInherit Class UFDataNameTagHelperBase Inherits UFTagHelperWithModelExpressionRenderer Implements ITagHelper, ITagHelperComponent
+    content: 'public abstract class UFDataNameTagHelperBase : UFTagHelperWithModelExpressionRenderer, ITagHelper, ITagHelperComponent'
+    content.vb: Public MustInherit Class UFDataNameTagHelperBase Inherits UFTagHelperWithModelExpressionRenderer Implements ITagHelper, ITagHelperComponent
   inheritance:
   - System.Object
   - Microsoft.AspNetCore.Razor.TagHelpers.TagHelper
@@ -70,12 +64,6 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-  attributes:
-  - type: Microsoft.AspNetCore.Razor.TagHelpers.HtmlTargetElementAttribute
-    ctor: Microsoft.AspNetCore.Razor.TagHelpers.HtmlTargetElementAttribute.#ctor(System.String)
-    arguments:
-    - type: System.String
-      value: uf-data-name
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataNameTagHelperBase.#ctor(UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer)
   commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataNameTagHelperBase.#ctor(UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer)
   id: '#ctor(UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer)'
@@ -139,7 +127,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: For
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Data/UFDataNameTagHelperBase.cs
-    startLine: 58
+    startLine: 57
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Data
@@ -170,7 +158,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: ProcessAsync
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Data/UFDataNameTagHelperBase.cs
-    startLine: 65
+    startLine: 64
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Data
@@ -213,7 +201,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetDataNameClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Data/UFDataNameTagHelperBase.cs
-    startLine: 85
+    startLine: 84
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Data

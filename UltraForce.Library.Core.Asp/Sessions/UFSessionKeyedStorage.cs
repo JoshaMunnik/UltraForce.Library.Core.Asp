@@ -124,9 +124,9 @@ namespace UltraForce.Library.Core.Asp.Sessions
         throw new Exception("Can not deserialize object without type.");
       }
       string json = this.GetString(aKey);
-      object? result = JsonSerializer.Deserialize(json, aType!);
+      object? result = JsonSerializer.Deserialize(json, aType);
       if (result == null) {
-        throw new Exception($"Failed to deserialize object for type {aType.Name}.");
+        throw new Exception($"Failed to deserialize object for type {aType.Name} from '{json}'.");
       }
       return result;
     }

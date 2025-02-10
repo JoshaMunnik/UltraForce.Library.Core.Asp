@@ -74,14 +74,8 @@ items:
     </p>
   example: []
   syntax:
-    content: >-
-      [HtmlTargetElement("uf-select", TagStructure = TagStructure.NormalOrSelfClosing)]
-
-      public abstract class UFSelectTagHelperBase : SelectTagHelper, ITagHelper, ITagHelperComponent
-    content.vb: >-
-      <HtmlTargetElement("uf-select", TagStructure:=TagStructure.NormalOrSelfClosing)>
-
-      Public MustInherit Class UFSelectTagHelperBase Inherits SelectTagHelper Implements ITagHelper, ITagHelperComponent
+    content: 'public abstract class UFSelectTagHelperBase : SelectTagHelper, ITagHelper, ITagHelperComponent'
+    content.vb: Public MustInherit Class UFSelectTagHelperBase Inherits SelectTagHelper Implements ITagHelper, ITagHelperComponent
   inheritance:
   - System.Object
   - Microsoft.AspNetCore.Razor.TagHelpers.TagHelper
@@ -105,16 +99,6 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-  attributes:
-  - type: Microsoft.AspNetCore.Razor.TagHelpers.HtmlTargetElementAttribute
-    ctor: Microsoft.AspNetCore.Razor.TagHelpers.HtmlTargetElementAttribute.#ctor(System.String)
-    arguments:
-    - type: System.String
-      value: uf-select
-    namedArguments:
-    - name: TagStructure
-      type: Microsoft.AspNetCore.Razor.TagHelpers.TagStructure
-      value: 1
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.#ctor(Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator)
   commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.#ctor(Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator)
   id: '#ctor(Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator)'
@@ -203,7 +187,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Label
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFSelectTagHelperBase.cs
-    startLine: 83
+    startLine: 82
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -257,7 +241,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: NoLabel
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFSelectTagHelperBase.cs
-    startLine: 89
+    startLine: 88
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -300,7 +284,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: NoWrap
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFSelectTagHelperBase.cs
-    startLine: 95
+    startLine: 94
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -343,7 +327,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Description
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFSelectTagHelperBase.cs
-    startLine: 102
+    startLine: 101
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -389,7 +373,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Process
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFSelectTagHelperBase.cs
-    startLine: 110
+    startLine: 109
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -429,7 +413,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetSelectClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFSelectTagHelperBase.cs
-    startLine: 148
+    startLine: 147
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -460,7 +444,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetTextLabelClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFSelectTagHelperBase.cs
-    startLine: 157
+    startLine: 156
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -497,7 +481,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetTextWrapperClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFSelectTagHelperBase.cs
-    startLine: 170
+    startLine: 169
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -535,7 +519,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetValidationFeedbackContainerHtml
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFSelectTagHelperBase.cs
-    startLine: 182
+    startLine: 181
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -573,7 +557,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetFieldErrorsClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFSelectTagHelperBase.cs
-    startLine: 193
+    startLine: 192
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -604,7 +588,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetFieldErrorsHtml
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFSelectTagHelperBase.cs
-    startLine: 204
+    startLine: 203
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms

@@ -83,14 +83,8 @@ items:
     </p>
   example: []
   syntax:
-    content: >-
-      [HtmlTargetElement("uf-table", TagStructure = TagStructure.NormalOrSelfClosing)]
-
-      public abstract class UFTableTagHelperBase : TagHelper, ITagHelper, ITagHelperComponent
-    content.vb: >-
-      <HtmlTargetElement("uf-table", TagStructure:=TagStructure.NormalOrSelfClosing)>
-
-      Public MustInherit Class UFTableTagHelperBase Inherits TagHelper Implements ITagHelper, ITagHelperComponent
+    content: 'public abstract class UFTableTagHelperBase : TagHelper, ITagHelper, ITagHelperComponent'
+    content.vb: Public MustInherit Class UFTableTagHelperBase Inherits TagHelper Implements ITagHelper, ITagHelperComponent
   inheritance:
   - System.Object
   - Microsoft.AspNetCore.Razor.TagHelpers.TagHelper
@@ -108,16 +102,6 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-  attributes:
-  - type: Microsoft.AspNetCore.Razor.TagHelpers.HtmlTargetElementAttribute
-    ctor: Microsoft.AspNetCore.Razor.TagHelpers.HtmlTargetElementAttribute.#ctor(System.String)
-    arguments:
-    - type: System.String
-      value: uf-table
-    namedArguments:
-    - name: TagStructure
-      type: Microsoft.AspNetCore.Razor.TagHelpers.TagStructure
-      value: 1
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.Table
   commentId: F:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.Table
   id: Table
@@ -136,7 +120,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Table
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs
-    startLine: 86
+    startLine: 85
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Table
@@ -165,7 +149,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Filter
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs
-    startLine: 95
+    startLine: 94
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Table
@@ -208,7 +192,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Paging
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs
-    startLine: 101
+    startLine: 100
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Table
@@ -251,7 +235,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: PageSize
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs
-    startLine: 108
+    startLine: 107
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Table
@@ -297,7 +281,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Sorting
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs
-    startLine: 114
+    startLine: 113
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Table
@@ -340,7 +324,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: StorageId
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs
-    startLine: 121
+    startLine: 120
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Table
@@ -374,7 +358,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Process
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs
-    startLine: 128
+    startLine: 127
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Table
@@ -413,7 +397,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetTableClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs
-    startLine: 167
+    startLine: 166
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Table
@@ -444,7 +428,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetFilterInputClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs
-    startLine: 176
+    startLine: 175
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Table
@@ -475,7 +459,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetFilterButtonClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs
-    startLine: 185
+    startLine: 184
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Table
@@ -506,7 +490,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetFilterContainerClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs
-    startLine: 194
+    startLine: 193
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Table
@@ -537,7 +521,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetSortAscendingClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs
-    startLine: 203
+    startLine: 202
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Table
@@ -568,7 +552,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetSortDescendingClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs
-    startLine: 212
+    startLine: 211
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Table

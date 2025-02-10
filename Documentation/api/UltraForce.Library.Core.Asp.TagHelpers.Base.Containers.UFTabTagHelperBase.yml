@@ -55,14 +55,8 @@ items:
     </remarks>
   example: []
   syntax:
-    content: >-
-      [HtmlTargetElement("uf-tab")]
-
-      public class UFTabTagHelperBase : TagHelper, ITagHelper, ITagHelperComponent
-    content.vb: >-
-      <HtmlTargetElement("uf-tab")>
-
-      Public Class UFTabTagHelperBase Inherits TagHelper Implements ITagHelper, ITagHelperComponent
+    content: 'public class UFTabTagHelperBase : TagHelper, ITagHelper, ITagHelperComponent'
+    content.vb: Public Class UFTabTagHelperBase Inherits TagHelper Implements ITagHelper, ITagHelperComponent
   inheritance:
   - System.Object
   - Microsoft.AspNetCore.Razor.TagHelpers.TagHelper
@@ -80,12 +74,6 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-  attributes:
-  - type: Microsoft.AspNetCore.Razor.TagHelpers.HtmlTargetElementAttribute
-    ctor: Microsoft.AspNetCore.Razor.TagHelpers.HtmlTargetElementAttribute.#ctor(System.String)
-    arguments:
-    - type: System.String
-      value: uf-tab
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Containers.UFTabTagHelperBase.Caption
   commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Base.Containers.UFTabTagHelperBase.Caption
   id: Caption
@@ -104,7 +92,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Caption
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Containers/UFTabTagHelperBase.cs
-    startLine: 60
+    startLine: 59
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Containers
@@ -147,7 +135,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Selected
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Containers/UFTabTagHelperBase.cs
-    startLine: 66
+    startLine: 65
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Containers
@@ -190,7 +178,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Process
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Containers/UFTabTagHelperBase.cs
-    startLine: 74
+    startLine: 73
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Containers
@@ -229,7 +217,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetRadioClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Containers/UFTabTagHelperBase.cs
-    startLine: 97
+    startLine: 96
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Containers
@@ -260,7 +248,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetLabelClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Containers/UFTabTagHelperBase.cs
-    startLine: 106
+    startLine: 105
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Containers
@@ -291,7 +279,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetContentWrapperClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Containers/UFTabTagHelperBase.cs
-    startLine: 115
+    startLine: 114
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Containers
