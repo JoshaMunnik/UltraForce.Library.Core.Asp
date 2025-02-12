@@ -137,11 +137,11 @@ public abstract class UFButtonTagHelperBase(
     {
       output.Attributes.SetAttribute("type", this.Submit ? "submit" : "button");
     }
-    string beforeHtml = this.GetBeforeCaptionHtml();
-    string afterHtml = this.GetAfterCaptionHtml();
     TagHelperContent? children = await output.GetChildContentAsync();
     if (children is { IsEmptyOrWhiteSpace: false })
     {
+      string beforeHtml = this.GetBeforeCaptionHtml(true);
+      string afterHtml = this.GetAfterCaptionHtml(true);
       output.PreContent.SetHtmlContent(
         $"{beforeHtml}<span class=\"{this.GetButtonCaptionClasses()}\">"
       );
@@ -149,6 +149,8 @@ public abstract class UFButtonTagHelperBase(
     }
     else
     {
+      string beforeHtml = this.GetBeforeCaptionHtml(false);
+      string afterHtml = this.GetAfterCaptionHtml(false);
       output.PreContent.SetHtmlContent(beforeHtml + afterHtml);
     }
     if (this.Clipboard != null)
@@ -194,8 +196,9 @@ public abstract class UFButtonTagHelperBase(
   /// <summary>
   /// The default implementation returns empty string.
   /// </summary>
+  /// <param name="hasContent">True if there is content for the caption</param>
   /// <returns></returns>
-  protected virtual string GetBeforeCaptionHtml()
+  protected virtual string GetBeforeCaptionHtml(bool hasContent)
   {
     return string.Empty;
   }
@@ -203,8 +206,9 @@ public abstract class UFButtonTagHelperBase(
   /// <summary>
   /// The default implementation returns empty string.
   /// </summary>
+  /// <param name="hasContent">True if there is content for the caption</param>
   /// <returns></returns>
-  protected virtual string GetAfterCaptionHtml()
+  protected virtual string GetAfterCaptionHtml(bool hasContent)
   {
     return string.Empty;
   }
