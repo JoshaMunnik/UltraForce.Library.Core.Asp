@@ -73,7 +73,7 @@ public class UFViewdataTagHelper : UFTagHelperWithViewContext
     else
     {
       TagHelperContent? content = await output.GetChildContentAsync();
-      this.ViewContext.ViewData[this.Key] = content;
+      this.ViewContext.ViewData[this.Key] = content.GetContent();
       output.SuppressOutput();
     }
   }
