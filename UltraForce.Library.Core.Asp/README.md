@@ -10,6 +10,9 @@ Include the styles in your html using (for example `Shared\_Layout.cshtml`):
 <link rel="stylesheet" href="/_content/UltraForce.Library.Core.Asp/css/uf-styles.css" />
 ````
 ## Version history
+1.0.47
+- Added UFViewdataTagHelper 
+
 1.0.46
 - Added hasContent parameter to GetBeforeCaptionHtml and GetAfterCaptionHtml in UFInputTagHelperBase
 

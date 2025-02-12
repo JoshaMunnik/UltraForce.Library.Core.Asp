@@ -6,6 +6,7 @@ items:
   children:
   - UltraForce.Library.Core.Asp.TagHelpers.UFConditionTagHelper
   - UltraForce.Library.Core.Asp.TagHelpers.UFNotConditionTagHelper
+  - UltraForce.Library.Core.Asp.TagHelpers.UFViewdataTagHelper
   langs:
   - csharp
   - vb
@@ -28,3 +29,9 @@ references:
   name: UFNotConditionTagHelper
   nameWithType: UFNotConditionTagHelper
   fullName: UltraForce.Library.Core.Asp.TagHelpers.UFNotConditionTagHelper
+- uid: UltraForce.Library.Core.Asp.TagHelpers.UFViewdataTagHelper
+  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.UFViewdataTagHelper
+  href: UltraForce.Library.Core.Asp.TagHelpers.UFViewdataTagHelper.html
+  name: UFViewdataTagHelper
+  nameWithType: UFViewdataTagHelper
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.UFViewdataTagHelper
