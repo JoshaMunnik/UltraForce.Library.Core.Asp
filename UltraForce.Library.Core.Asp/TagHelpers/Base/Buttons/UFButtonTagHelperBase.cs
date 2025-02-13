@@ -146,12 +146,14 @@ public abstract class UFButtonTagHelperBase(
         $"{beforeHtml}<span class=\"{this.GetButtonCaptionClasses()}\">"
       );
       output.PostContent.SetHtmlContent($"</span>{afterHtml}");
+      UFTagHelperTools.AddClasses(output, this.GetButtonClasses(true));
     }
     else
     {
       string beforeHtml = this.GetBeforeCaptionHtml(false);
       string afterHtml = this.GetAfterCaptionHtml(false);
       output.PreContent.SetHtmlContent(beforeHtml + afterHtml);
+      UFTagHelperTools.AddClasses(output, this.GetButtonClasses(false));
     }
     if (this.Clipboard != null)
     {
@@ -164,7 +166,6 @@ public abstract class UFButtonTagHelperBase(
     {
       output.Attributes.SetAttribute("onclick", this.OnClick);
     }
-    UFTagHelperTools.AddClasses(output, this.GetButtonClasses());
     if (this.For != null)
     {
       output.Attributes.SetAttribute(
@@ -196,9 +197,9 @@ public abstract class UFButtonTagHelperBase(
   /// <summary>
   /// The default implementation returns empty string.
   /// </summary>
-  /// <param name="hasContent">True if there is content for the caption</param>
+  /// <param name="hasCaption">True if there is content for the caption</param>
   /// <returns></returns>
-  protected virtual string GetBeforeCaptionHtml(bool hasContent)
+  protected virtual string GetBeforeCaptionHtml(bool hasCaption)
   {
     return string.Empty;
   }
@@ -206,9 +207,9 @@ public abstract class UFButtonTagHelperBase(
   /// <summary>
   /// The default implementation returns empty string.
   /// </summary>
-  /// <param name="hasContent">True if there is content for the caption</param>
+  /// <param name="hasCaption">True if there is content for the caption</param>
   /// <returns></returns>
-  protected virtual string GetAfterCaptionHtml(bool hasContent)
+  protected virtual string GetAfterCaptionHtml(bool hasCaption)
   {
     return string.Empty;
   }
@@ -225,8 +226,9 @@ public abstract class UFButtonTagHelperBase(
   /// <summary>
   /// The default implementation returns empty string.
   /// </summary>
+  /// <param name="hasCaption">True if there is content for the caption</param>
   /// <returns></returns>
-  protected virtual string GetButtonClasses()
+  protected virtual string GetButtonClasses(bool hasCaption)
   {
     return string.Empty;
   }

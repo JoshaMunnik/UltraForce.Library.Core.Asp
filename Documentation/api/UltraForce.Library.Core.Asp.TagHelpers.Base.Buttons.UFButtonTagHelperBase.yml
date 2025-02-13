@@ -12,7 +12,7 @@ items:
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFButtonTagHelperBase.GetAfterCaptionHtml(System.Boolean)
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFButtonTagHelperBase.GetBeforeCaptionHtml(System.Boolean)
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFButtonTagHelperBase.GetButtonCaptionClasses
-  - UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFButtonTagHelperBase.GetButtonClasses
+  - UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFButtonTagHelperBase.GetButtonClasses(System.Boolean)
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFButtonTagHelperBase.ModelExpressionRenderer
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFButtonTagHelperBase.Name
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFButtonTagHelperBase.OnClick
@@ -526,7 +526,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: ModelExpressionRenderer
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Buttons/UFButtonTagHelperBase.cs
-    startLine: 189
+    startLine: 190
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons
@@ -557,22 +557,22 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetBeforeCaptionHtml
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Buttons/UFButtonTagHelperBase.cs
-    startLine: 200
+    startLine: 201
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons
   summary: The default implementation returns empty string.
   example: []
   syntax:
-    content: protected virtual string GetBeforeCaptionHtml(bool hasContent)
+    content: protected virtual string GetBeforeCaptionHtml(bool hasCaption)
     parameters:
-    - id: hasContent
+    - id: hasCaption
       type: System.Boolean
       description: True if there is content for the caption
     return:
       type: System.String
       description: ''
-    content.vb: Protected Overridable Function GetBeforeCaptionHtml(hasContent As Boolean) As String
+    content.vb: Protected Overridable Function GetBeforeCaptionHtml(hasCaption As Boolean) As String
   overload: UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFButtonTagHelperBase.GetBeforeCaptionHtml*
   nameWithType.vb: UFButtonTagHelperBase.GetBeforeCaptionHtml(Boolean)
   fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFButtonTagHelperBase.GetBeforeCaptionHtml(Boolean)
@@ -595,22 +595,22 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetAfterCaptionHtml
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Buttons/UFButtonTagHelperBase.cs
-    startLine: 210
+    startLine: 211
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons
   summary: The default implementation returns empty string.
   example: []
   syntax:
-    content: protected virtual string GetAfterCaptionHtml(bool hasContent)
+    content: protected virtual string GetAfterCaptionHtml(bool hasCaption)
     parameters:
-    - id: hasContent
+    - id: hasCaption
       type: System.Boolean
       description: True if there is content for the caption
     return:
       type: System.String
       description: ''
-    content.vb: Protected Overridable Function GetAfterCaptionHtml(hasContent As Boolean) As String
+    content.vb: Protected Overridable Function GetAfterCaptionHtml(hasCaption As Boolean) As String
   overload: UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFButtonTagHelperBase.GetAfterCaptionHtml*
   nameWithType.vb: UFButtonTagHelperBase.GetAfterCaptionHtml(Boolean)
   fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFButtonTagHelperBase.GetAfterCaptionHtml(Boolean)
@@ -633,7 +633,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetButtonCaptionClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Buttons/UFButtonTagHelperBase.cs
-    startLine: 219
+    startLine: 220
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons
@@ -646,16 +646,16 @@ items:
       description: ''
     content.vb: Protected Overridable Function GetButtonCaptionClasses() As String
   overload: UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFButtonTagHelperBase.GetButtonCaptionClasses*
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFButtonTagHelperBase.GetButtonClasses
-  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFButtonTagHelperBase.GetButtonClasses
-  id: GetButtonClasses
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFButtonTagHelperBase.GetButtonClasses(System.Boolean)
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFButtonTagHelperBase.GetButtonClasses(System.Boolean)
+  id: GetButtonClasses(System.Boolean)
   parent: UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFButtonTagHelperBase
   langs:
   - csharp
   - vb
-  name: GetButtonClasses()
-  nameWithType: UFButtonTagHelperBase.GetButtonClasses()
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFButtonTagHelperBase.GetButtonClasses()
+  name: GetButtonClasses(bool)
+  nameWithType: UFButtonTagHelperBase.GetButtonClasses(bool)
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFButtonTagHelperBase.GetButtonClasses(bool)
   type: Method
   source:
     remote:
@@ -664,19 +664,26 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetButtonClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Buttons/UFButtonTagHelperBase.cs
-    startLine: 228
+    startLine: 230
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons
   summary: The default implementation returns empty string.
   example: []
   syntax:
-    content: protected virtual string GetButtonClasses()
+    content: protected virtual string GetButtonClasses(bool hasCaption)
+    parameters:
+    - id: hasCaption
+      type: System.Boolean
+      description: True if there is content for the caption
     return:
       type: System.String
       description: ''
-    content.vb: Protected Overridable Function GetButtonClasses() As String
+    content.vb: Protected Overridable Function GetButtonClasses(hasCaption As Boolean) As String
   overload: UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFButtonTagHelperBase.GetButtonClasses*
+  nameWithType.vb: UFButtonTagHelperBase.GetButtonClasses(Boolean)
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFButtonTagHelperBase.GetButtonClasses(Boolean)
+  name.vb: GetButtonClasses(Boolean)
 references:
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFButtonTagHelperBase.Submit
   commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFButtonTagHelperBase.Submit
@@ -1844,7 +1851,7 @@ references:
   fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFButtonTagHelperBase.GetButtonCaptionClasses
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFButtonTagHelperBase.GetButtonClasses*
   commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFButtonTagHelperBase.GetButtonClasses
-  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFButtonTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Buttons_UFButtonTagHelperBase_GetButtonClasses
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFButtonTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Buttons_UFButtonTagHelperBase_GetButtonClasses_System_Boolean_
   name: GetButtonClasses
   nameWithType: UFButtonTagHelperBase.GetButtonClasses
   fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFButtonTagHelperBase.GetButtonClasses
