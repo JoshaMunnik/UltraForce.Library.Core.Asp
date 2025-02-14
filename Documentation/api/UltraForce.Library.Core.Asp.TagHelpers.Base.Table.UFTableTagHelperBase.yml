@@ -7,8 +7,10 @@ items:
   children:
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.Filter
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetFilterButtonClasses
+  - UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetFilterCaptionHtml
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetFilterContainerClasses
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetFilterInputClasses
+  - UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetFilterPlaceholder
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetSortAscendingClasses
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetSortDescendingClasses
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetTableClasses
@@ -55,9 +57,9 @@ items:
 
     <pre><code class="lang-csharp">&lt;div&gt;
       &lt;div class="GetFilterContainerClasses()"&gt;
-        &lt;input {id} class="GetFilterInputClasses()" data-uf-filter-table="{id}" /&gt;
+        &lt;input {id} class="GetFilterInputClasses()" placeholder="GetFilterPlaceholder()" data-uf-filter-table="{id}" /&gt;
         &lt;button class="GetFilterButtonClasses()" data-uf-set-field-selector="#{id}"&gt;
-          clear
+          GetFilterCaptionHtml()
         &lt;/button&gt;
       &lt;/div&gt;
       &lt;table class="GetTableClasses()"&gt;
@@ -441,6 +443,37 @@ items:
       description: ''
     content.vb: Protected Overridable Function GetFilterInputClasses() As String
   overload: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetFilterInputClasses*
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetFilterPlaceholder
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetFilterPlaceholder
+  id: GetFilterPlaceholder
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase
+  langs:
+  - csharp
+  - vb
+  name: GetFilterPlaceholder()
+  nameWithType: UFTableTagHelperBase.GetFilterPlaceholder()
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetFilterPlaceholder()
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: GetFilterPlaceholder
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs
+    startLine: 184
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Table
+  summary: Returns the text to be used as the place-holder for the filter input.
+  example: []
+  syntax:
+    content: protected virtual string GetFilterPlaceholder()
+    return:
+      type: System.String
+      description: ''
+    content.vb: Protected Overridable Function GetFilterPlaceholder() As String
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetFilterPlaceholder*
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetFilterButtonClasses
   commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetFilterButtonClasses
   id: GetFilterButtonClasses
@@ -459,7 +492,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetFilterButtonClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs
-    startLine: 184
+    startLine: 193
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Table
@@ -472,6 +505,44 @@ items:
       description: ''
     content.vb: Protected Overridable Function GetFilterButtonClasses() As String
   overload: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetFilterButtonClasses*
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetFilterCaptionHtml
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetFilterCaptionHtml
+  id: GetFilterCaptionHtml
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase
+  langs:
+  - csharp
+  - vb
+  name: GetFilterCaptionHtml()
+  nameWithType: UFTableTagHelperBase.GetFilterCaptionHtml()
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetFilterCaptionHtml()
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: GetFilterCaptionHtml
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs
+    startLine: 205
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Table
+  summary: >-
+    Returns the html to use for the filter button caption (the child of the button tag).
+
+    <p>
+
+    The default implementation returns "clear".
+
+    </p>
+  example: []
+  syntax:
+    content: protected virtual string GetFilterCaptionHtml()
+    return:
+      type: System.String
+      description: ''
+    content.vb: Protected Overridable Function GetFilterCaptionHtml() As String
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetFilterCaptionHtml*
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetFilterContainerClasses
   commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetFilterContainerClasses
   id: GetFilterContainerClasses
@@ -490,7 +561,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetFilterContainerClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs
-    startLine: 193
+    startLine: 214
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Table
@@ -521,7 +592,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetSortAscendingClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs
-    startLine: 202
+    startLine: 223
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Table
@@ -552,7 +623,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetSortDescendingClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs
-    startLine: 211
+    startLine: 232
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Table
@@ -1161,12 +1232,24 @@ references:
   name: GetFilterInputClasses
   nameWithType: UFTableTagHelperBase.GetFilterInputClasses
   fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetFilterInputClasses
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetFilterPlaceholder*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetFilterPlaceholder
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableTagHelperBase_GetFilterPlaceholder
+  name: GetFilterPlaceholder
+  nameWithType: UFTableTagHelperBase.GetFilterPlaceholder
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetFilterPlaceholder
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetFilterButtonClasses*
   commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetFilterButtonClasses
   href: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableTagHelperBase_GetFilterButtonClasses
   name: GetFilterButtonClasses
   nameWithType: UFTableTagHelperBase.GetFilterButtonClasses
   fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetFilterButtonClasses
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetFilterCaptionHtml*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetFilterCaptionHtml
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableTagHelperBase_GetFilterCaptionHtml
+  name: GetFilterCaptionHtml
+  nameWithType: UFTableTagHelperBase.GetFilterCaptionHtml
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetFilterCaptionHtml
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetFilterContainerClasses*
   commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetFilterContainerClasses
   href: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableTagHelperBase_GetFilterContainerClasses

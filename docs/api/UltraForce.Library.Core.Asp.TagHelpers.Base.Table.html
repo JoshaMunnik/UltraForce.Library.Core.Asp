@@ -140,9 +140,9 @@ Table without filter and sorting:
 Table with a filter:
 <pre><code class="lang-csharp">&lt;div&gt;
   &lt;div class="GetFilterContainerClasses()"&gt;
-    &lt;input {id} class="GetFilterInputClasses()" data-uf-filter-table="{id}" /&gt;
+    &lt;input {id} class="GetFilterInputClasses()" placeholder="GetFilterPlaceholder()" data-uf-filter-table="{id}" /&gt;
     &lt;button class="GetFilterButtonClasses()" data-uf-set-field-selector="#{id}"&gt;
-      clear
+      GetFilterCaptionHtml()
     &lt;/button&gt;
   &lt;/div&gt;
   &lt;table class="GetTableClasses()"&gt;

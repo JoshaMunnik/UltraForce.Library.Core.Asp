@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class UFTableTagHelperBase | UltraForce.Library.Core.Asp ">
       
-      <meta name="description" content="Simple tag helper to render a table.  Table without filter and sorting: &amp;lt;table class=&quot;GetTableClasses()&quot;&amp;gt;   {children} &amp;lt;/table&amp;gt;   Table with a filter: &amp;lt;div&amp;gt;   &amp;lt;div class=&quot;GetFilterContainerClasses()&quot;&amp;gt;     &amp;lt;input {id} class=&quot;GetFilterInputClasses()&quot; data-uf-filter-table=&quot;{id}&quot; /&amp;gt;     &amp;lt;button class=&quot;GetFilterButtonClasses()&quot; data-uf-set-field-selector=&quot;#{id}&quot;&amp;gt;       clear     &amp;lt;/button&amp;gt;   &amp;lt;/div&amp;gt;   &amp;lt;table class=&quot;GetTableClasses()&quot;&amp;gt;     {children}   &amp;lt;/table&amp;gt; &amp;lt;/div&amp;gt;   Table with sorting: &amp;lt;table   class=&quot;GetTableClasses()&quot;   data-uf-sorting=&quot;1&quot;   data-uf-sort-ascending=&quot;GetSortAscendingClasses()&quot;   data-uf-sort-descending=&quot;GetSortDescendingClasses()&quot;   &gt;   {children} &amp;lt;/table&amp;gt;">
+      <meta name="description" content="Simple tag helper to render a table.  Table without filter and sorting: &amp;lt;table class=&quot;GetTableClasses()&quot;&amp;gt;   {children} &amp;lt;/table&amp;gt;   Table with a filter: &amp;lt;div&amp;gt;   &amp;lt;div class=&quot;GetFilterContainerClasses()&quot;&amp;gt;     &amp;lt;input {id} class=&quot;GetFilterInputClasses()&quot; placeholder=&quot;GetFilterPlaceholder()&quot; data-uf-filter-table=&quot;{id}&quot; /&amp;gt;     &amp;lt;button class=&quot;GetFilterButtonClasses()&quot; data-uf-set-field-selector=&quot;#{id}&quot;&amp;gt;       GetFilterCaptionHtml()     &amp;lt;/button&amp;gt;   &amp;lt;/div&amp;gt;   &amp;lt;table class=&quot;GetTableClasses()&quot;&amp;gt;     {children}   &amp;lt;/table&amp;gt; &amp;lt;/div&amp;gt;   Table with sorting: &amp;lt;table   class=&quot;GetTableClasses()&quot;   data-uf-sorting=&quot;1&quot;   data-uf-sort-ascending=&quot;GetSortAscendingClasses()&quot;   data-uf-sort-descending=&quot;GetSortDescendingClasses()&quot;   &gt;   {children} &amp;lt;/table&amp;gt;">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -108,9 +108,9 @@ Table without filter and sorting:
 Table with a filter:
 <pre><code class="lang-csharp">&lt;div&gt;
   &lt;div class="GetFilterContainerClasses()"&gt;
-    &lt;input {id} class="GetFilterInputClasses()" data-uf-filter-table="{id}" /&gt;
+    &lt;input {id} class="GetFilterInputClasses()" placeholder="GetFilterPlaceholder()" data-uf-filter-table="{id}" /&gt;
     &lt;button class="GetFilterButtonClasses()" data-uf-set-field-selector="#{id}"&gt;
-      clear
+      GetFilterCaptionHtml()
     &lt;/button&gt;
   &lt;/div&gt;
   &lt;table class="GetTableClasses()"&gt;
@@ -410,7 +410,7 @@ set the state is stored in a local storage of the browser.</p>
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableTagHelperBase_GetFilterButtonClasses" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetFilterButtonClasses">
   GetFilterButtonClasses()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs/#L185"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs/#L194"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns the classes for the filter button.</p>
@@ -438,11 +438,46 @@ set the state is stored in a local storage of the browser.</p>
 
 
 
+  <a id="UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableTagHelperBase_GetFilterCaptionHtml_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetFilterCaptionHtml*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableTagHelperBase_GetFilterCaptionHtml" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetFilterCaptionHtml">
+  GetFilterCaptionHtml()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs/#L206"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the html to use for the filter button caption (the child of the button tag).</p>
+<p>
+The default implementation returns "clear".
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual string GetFilterCaptionHtml()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableTagHelperBase_GetFilterContainerClasses_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetFilterContainerClasses*"></a>
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableTagHelperBase_GetFilterContainerClasses" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetFilterContainerClasses">
   GetFilterContainerClasses()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs/#L194"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs/#L215"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns the classes for the filter container.</p>
@@ -502,11 +537,43 @@ set the state is stored in a local storage of the browser.</p>
 
 
 
+  <a id="UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableTagHelperBase_GetFilterPlaceholder_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetFilterPlaceholder*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableTagHelperBase_GetFilterPlaceholder" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetFilterPlaceholder">
+  GetFilterPlaceholder()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs/#L185"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the text to be used as the place-holder for the filter input.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual string GetFilterPlaceholder()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableTagHelperBase_GetSortAscendingClasses_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetSortAscendingClasses*"></a>
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableTagHelperBase_GetSortAscendingClasses" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetSortAscendingClasses">
   GetSortAscendingClasses()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs/#L203"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs/#L224"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns the classes for the sort ascending icon.</p>
@@ -538,7 +605,7 @@ set the state is stored in a local storage of the browser.</p>
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableTagHelperBase_GetSortDescendingClasses" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetSortDescendingClasses">
   GetSortDescendingClasses()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs/#L212"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs/#L233"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns the classes for the sort descending icon.</p>

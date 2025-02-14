@@ -50,9 +50,9 @@ namespace UltraForce.Library.Core.Asp.TagHelpers.Base.Table;
 /// <code>
 /// &lt;div&gt;
 ///   &lt;div class="GetFilterContainerClasses()"&gt;
-///     &lt;input {id} class="GetFilterInputClasses()" data-uf-filter-table="{id}" /&gt;
+///     &lt;input {id} class="GetFilterInputClasses()" placeholder="GetFilterPlaceholder()" data-uf-filter-table="{id}" /&gt;
 ///     &lt;button class="GetFilterButtonClasses()" data-uf-set-field-selector="#{id}"&gt;
-///       clear
+///       GetFilterCaptionHtml()
 ///     &lt;/button&gt;
 ///   &lt;/div&gt;
 ///   &lt;table class="GetTableClasses()"&gt;
@@ -177,6 +177,15 @@ public abstract class UFTableTagHelperBase : TagHelper
   {
     return string.Empty;
   }
+
+  /// <summary>
+  /// Returns the text to be used as the place-holder for the filter input.
+  /// </summary>
+  /// <returns></returns>
+  protected virtual string GetFilterPlaceholder()
+  {
+    return "filter...";
+  }
   
   /// <summary>
   /// Returns the classes for the filter button.
@@ -185,6 +194,18 @@ public abstract class UFTableTagHelperBase : TagHelper
   protected virtual string GetFilterButtonClasses()
   {
     return string.Empty;
+  }
+
+  /// <summary>
+  /// Returns the html to use for the filter button caption (the child of the button tag).
+  /// <para>
+  /// The default implementation returns "clear".
+  /// </para>
+  /// </summary>
+  /// <returns></returns>
+  protected virtual string GetFilterCaptionHtml()
+  {
+    return "clear";
   }
   
   /// <summary>
@@ -232,9 +253,19 @@ public abstract class UFTableTagHelperBase : TagHelper
     anOutput.Attributes.SetAttribute(UFDataAttribute.Filter, "1");
     string inputId = UFHtmlTools.NewDomId();
     string input =
-      $"<input id=\"{inputId}\" class=\"{this.GetFilterInputClasses()}\" placeholder=\"filter...\" type=\"text\" {UFDataAttribute.FilterTable}=\"#{aTableId}\" autocomplete=\"off\" />";
+      $"<input id=\"{inputId}\"" +
+      $" class=\"{this.GetFilterInputClasses()}\"" +
+      $" placeholder=\"{this.GetFilterPlaceholder()}\"" +
+      $" type=\"text\" {UFDataAttribute.FilterTable}=\"#{aTableId}\"" +
+      $" autocomplete=\"off\"" +
+      $"/>";
     string button =
-      $"<button class=\"{this.GetFilterButtonClasses()}\" {UFDataAttribute.SetFieldSelector}=\"#{inputId}\">clear</button>";
+      $"<button" +
+      $" class=\"{this.GetFilterButtonClasses()}\"" +
+      $" {UFDataAttribute.SetFieldSelector}=\"#{inputId}\"" +
+      $">" +
+      this.GetFilterCaptionHtml() +
+      "</button>";
     anOutput.PreElement.AppendHtml(
       $"<div><div class=\"{this.GetFilterContainerClasses()}\">{input}{button}</div>"
     );

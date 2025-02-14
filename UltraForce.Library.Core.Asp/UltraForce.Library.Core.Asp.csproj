@@ -15,9 +15,8 @@
         <RepositoryUrl>https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp</RepositoryUrl>
         <PackageReadmeFile>README.md</PackageReadmeFile>
         <AssemblyVersion></AssemblyVersion>
-        <Version>1.0.50</Version>
-        <PackageReleaseNotes>- renamed UFCellTagHelperBase to UFTableCellTagHelperBase 
-- converted UFTableRowTagHelperBase and UFTableCellTagHelperBase to generic classes
+        <Version>1.0.51</Version>
+        <PackageReleaseNotes>- added GetFilterPlaceholder and GetFilterCaptionHtml to UFTableTagHelperBase
 </PackageReleaseNotes>
         <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
     </PropertyGroup>
