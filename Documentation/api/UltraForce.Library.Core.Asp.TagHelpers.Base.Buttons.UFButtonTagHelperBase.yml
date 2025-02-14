@@ -228,7 +228,7 @@ items:
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons
-  summary: When <pre><code class="lang-csharp">true</code></pre> the button is rendered with a div element.
+  summary: When <code>true</code> the button is rendered with a div element.
   example: []
   syntax:
     content: >-
@@ -272,7 +272,7 @@ items:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons
   summary: >-
-    When <pre><code class="lang-csharp">true</code></pre> the button type is set to submit. This property is only of use if
+    When <code>true</code> the button type is set to submit. This property is only of use if
 
     the button is placed inside a form element.
   example: []
@@ -526,7 +526,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: ModelExpressionRenderer
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Buttons/UFButtonTagHelperBase.cs
-    startLine: 190
+    startLine: 194
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons
@@ -557,7 +557,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetBeforeCaptionHtml
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Buttons/UFButtonTagHelperBase.cs
-    startLine: 201
+    startLine: 205
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons
@@ -595,7 +595,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetAfterCaptionHtml
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Buttons/UFButtonTagHelperBase.cs
-    startLine: 211
+    startLine: 215
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons
@@ -633,7 +633,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetButtonCaptionClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Buttons/UFButtonTagHelperBase.cs
-    startLine: 220
+    startLine: 224
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons
@@ -664,7 +664,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetButtonClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Buttons/UFButtonTagHelperBase.cs
-    startLine: 230
+    startLine: 234
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons

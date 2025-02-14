@@ -36,7 +36,9 @@ using UltraForce.Library.NetStandard.Tools;
 namespace UltraForce.Library.Core.Asp.TagHelpers.Base.Table;
 
 /// <summary>
-/// Simple tag helper to render a table.
+/// Tag helper to render a table. The table assumes all header rows are the first rows in the table
+/// and are grouped together. The tag helper will insert thead and tbody tags if there are header
+/// and data rows. To skip this, call the constructor with `skipHeadBody` set to true.
 /// <para>
 /// Table without filter and sorting:
 /// <code>
@@ -75,8 +77,11 @@ namespace UltraForce.Library.Core.Asp.TagHelpers.Base.Table;
 /// </code>
 /// </para>
 /// </summary>
+/// <param name="skipHeadBody">
+/// When true do not insert thead and tbody tags.
+/// </param>
 [SuppressMessage("ReSharper", "AutoPropertyCanBeMadeGetOnly.Global")]
-public abstract class UFTableTagHelperBase : TagHelper
+public abstract class UFTableTagHelperBase(bool skipHeadBody = false) : TagHelper
 {
   #region public constants
 
@@ -125,10 +130,10 @@ public abstract class UFTableTagHelperBase : TagHelper
   #region public methods
 
   /// <inheritdoc />
-  public override void Process(TagHelperContext context, TagHelperOutput output)
+  public override async Task ProcessAsync(TagHelperContext context, TagHelperOutput output)
   {
-    base.Process(context, output);
     this.ProcessedFirstHeaderRow = null;
+    this.ProcessedFirstDataRow = null;
     context.Items[Table] = this;
     output.TagName = "table";
     string id = output.Attributes["id"]?.Value?.ToString() ?? UFHtmlTools.NewDomId();
@@ -154,6 +159,34 @@ public abstract class UFTableTagHelperBase : TagHelper
       output.Attributes.SetAttribute("id", id);
     }
     UFTagHelperTools.AddClasses(output, this.GetTableClasses());
+    // process children (these might set ProcessedFirstHeaderRow and ProcessedFirstDataRow)
+    TagHelperContent? childContent = await output.GetChildContentAsync();
+    output.Content.SetHtmlContent(childContent);
+    // skip adding thead and tbody tags?
+    if (this.SkipHeadBody)
+    {
+      return;
+    }
+    // add thead tag if there was at least one header row
+    if (this.ProcessedFirstHeaderRow != null)
+    {
+      output.PreContent.AppendHtml($"<thead class=\"{this.GetHeadClasses()}\">");
+      // if there are only header rows add also closing thead tag
+      if (this.ProcessedFirstDataRow == null)
+      {
+        output.PostContent.AppendHtml("</thead>");
+      }
+    }
+    // add closing tbody tag there was at leest one data row
+    if (this.ProcessedFirstDataRow != null)
+    {
+      output.PostContent.AppendHtml("</tbody>");
+      // no header rows, then add starting tbody tag as well
+      if (this.ProcessedFirstHeaderRow == null)
+      {
+        output.PreContent.AppendHtml($"<tbody class=\"{this.GetBodyClasses()}\">");
+      }
+    }
   }
 
   #endregion
@@ -234,29 +267,72 @@ public abstract class UFTableTagHelperBase : TagHelper
   {
     return string.Empty;
   }
+
+  /// <summary>
+  /// Returns the classes to use with the tbody tag. This method is not used if
+  /// <see cref="SkipHeadBody"/> is set to true.
+  /// </summary>
+  /// <returns></returns>
+  protected virtual string GetBodyClasses()
+  {
+    return string.Empty;
+  }
+
+  /// <summary>
+  /// Returns the classes to use with the thead tag. This method is not used if
+  /// <see cref="SkipHeadBody"/> is set to true. 
+  /// </summary>
+  /// <returns></returns>
+  protected virtual string GetHeadClasses()
+  {
+    return string.Empty;
+  }
   
   #endregion
   
   #region internal properties
 
   /// <summary>
-  /// Will be set to true by the first header row.
+  /// Will be set to true by the first header row. Will be set by
+  /// <see cref="UFTableRowTagHelperBase{TTable}"/>.
   /// </summary>
   internal object? ProcessedFirstHeaderRow { get; set; }
+  
+  /// <summary>
+  /// Will be set to true by the first header row. Will be set by
+  /// <see cref="UFTableRowTagHelperBase{TTable}"/>.
+  /// </summary>
+  internal object? ProcessedFirstDataRow { get; set; }
+
+  /// <summary>
+  /// True to not insert thead and tbody tags.
+  /// </summary>
+  internal bool SkipHeadBody { get;  } = skipHeadBody;
+  
+  #endregion
+  
+  #region internal methods
+  
+  /// <summary>
+  /// Gets the classes for the table body. Will be called by
+  /// <see cref="UFTableRowTagHelperBase{TTable}"/>.
+  /// </summary>
+  /// <returns></returns>
+  internal string GetTableBodyClasses() => this.GetBodyClasses();
   
   #endregion
 
   #region private methods
 
-  private void AddFilter(TagHelperOutput anOutput, string aTableId)
+  private void AddFilter(TagHelperOutput output, string tableId)
   {
-    anOutput.Attributes.SetAttribute(UFDataAttribute.Filter, "1");
+    output.Attributes.SetAttribute(UFDataAttribute.Filter, "1");
     string inputId = UFHtmlTools.NewDomId();
     string input =
       $"<input id=\"{inputId}\"" +
       $" class=\"{this.GetFilterInputClasses()}\"" +
       $" placeholder=\"{this.GetFilterPlaceholder()}\"" +
-      $" type=\"text\" {UFDataAttribute.FilterTable}=\"#{aTableId}\"" +
+      $" type=\"text\" {UFDataAttribute.FilterTable}=\"#{tableId}\"" +
       $" autocomplete=\"off\"" +
       $"/>";
     string button =
@@ -266,19 +342,19 @@ public abstract class UFTableTagHelperBase : TagHelper
       $">" +
       this.GetFilterCaptionHtml() +
       "</button>";
-    anOutput.PreElement.AppendHtml(
+    output.PreElement.AppendHtml(
       $"<div><div class=\"{this.GetFilterContainerClasses()}\">{input}{button}</div>"
     );
-    anOutput.PostElement.AppendHtml("</div>");
+    output.PostElement.AppendHtml("</div>");
   }
 
-  private void AddSorting(TagHelperOutput anOutput)
+  private void AddSorting(TagHelperOutput output)
   {
-    anOutput.Attributes.SetAttribute(UFDataAttribute.Sorting, "1");
-    anOutput.Attributes.SetAttribute(
+    output.Attributes.SetAttribute(UFDataAttribute.Sorting, "1");
+    output.Attributes.SetAttribute(
       UFDataAttribute.SortAscending, this.GetSortAscendingClasses()
     );
-    anOutput.Attributes.SetAttribute(
+    output.Attributes.SetAttribute(
       UFDataAttribute.SortDescending, this.GetSortDescendingClasses()
     );
   }

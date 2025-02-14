@@ -292,7 +292,7 @@ public UFTableRowTypeEnum Type { get; set; }</code></pre>
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableRowTagHelperBase_1_GetTableRowClasses__0_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableRowTagHelperBase`1.GetTableRowClasses(`0)">
   GetTableRowClasses(TTable)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableRowTagHelperBase.cs/#L118"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableRowTagHelperBase.cs/#L126"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns the classes for the table row.</p>
@@ -300,12 +300,12 @@ public UFTableRowTypeEnum Type { get; set; }</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected virtual string GetTableRowClasses(TTable aTable)</code></pre>
+    <pre><code class="lang-csharp hljs">protected virtual string GetTableRowClasses(TTable table)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>aTable</code> <span class="xref">TTable</span></dt>
+    <dt><code>table</code> <span class="xref">TTable</span></dt>
     <dd></dd>
   </dl>
 
@@ -338,7 +338,7 @@ public UFTableRowTypeEnum Type { get; set; }</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void Process(TagHelperContext context, TagHelperOutput anOutput)</code></pre>
+    <pre><code class="lang-csharp hljs">public override void Process(TagHelperContext context, TagHelperOutput output)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -346,8 +346,9 @@ public UFTableRowTypeEnum Type { get; set; }</code></pre>
     <dt><code>context</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelpercontext">TagHelperContext</a></dt>
     <dd><p>Contains information associated with the current HTML tag.</p>
 </dd>
-    <dt><code>anOutput</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelperoutput">TagHelperOutput</a></dt>
-    <dd></dd>
+    <dt><code>output</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelperoutput">TagHelperOutput</a></dt>
+    <dd><p>A stateful HTML element used to generate an HTML tag.</p>
+</dd>
   </dl>
 
 

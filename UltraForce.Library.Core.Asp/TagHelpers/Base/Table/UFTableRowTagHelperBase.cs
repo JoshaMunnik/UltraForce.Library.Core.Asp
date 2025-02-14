@@ -80,30 +80,38 @@ public abstract class UFTableRowTagHelperBase<TTable> : TagHelper
   #region public methods
 
   /// <inheritdoc />
-  public override void Process(TagHelperContext context, TagHelperOutput anOutput)
+  public override void Process(TagHelperContext context, TagHelperOutput output)
   {
-    base.Process(context, anOutput);
-    anOutput.TagName = "tr";
+    base.Process(context, output);
+    output.TagName = "tr";
     TTable table = (context.Items[UFTableTagHelperBase.Table] as TTable)!;
     if (table is { ProcessedFirstHeaderRow: null } && (this.Type == UFTableRowTypeEnum.Header))
     {
       table.ProcessedFirstHeaderRow = this;
     }
+    if (table is { ProcessedFirstDataRow: null } && (this.Type == UFTableRowTypeEnum.Data))
+    {
+      table.ProcessedFirstDataRow = this;
+      if (table is { ProcessedFirstHeaderRow: not null, SkipHeadBody: false })
+      {
+        output.PreElement.AppendHtml($"</thead><tbody class=\"{table.GetTableBodyClasses()}\">");
+      }
+    }
     context.Items[Row] = this;
     switch (this.SortLocation)
     {
       case UFTableSortLocationEnum.Top:
-        anOutput.Attributes.SetAttribute(UFDataAttribute.SortLocation, "top");
+        output.Attributes.SetAttribute(UFDataAttribute.SortLocation, "top");
         break;
       case UFTableSortLocationEnum.Bottom: 
-        anOutput.Attributes.SetAttribute(UFDataAttribute.SortLocation, "bottom");
+        output.Attributes.SetAttribute(UFDataAttribute.SortLocation, "bottom");
         break;
     }
     if (this.Type == UFTableRowTypeEnum.Header)
     {
-      anOutput.Attributes.SetAttribute(UFDataAttribute.HeaderRow, "1");
+      output.Attributes.SetAttribute(UFDataAttribute.HeaderRow, "1");
     }
-    UFTagHelperTools.AddClasses(anOutput, this.GetTableRowClasses(table));
+    UFTagHelperTools.AddClasses(output, this.GetTableRowClasses(table));
   }
 
   #endregion
@@ -113,9 +121,9 @@ public abstract class UFTableRowTagHelperBase<TTable> : TagHelper
   /// <summary>
   /// Returns the classes for the table row.
   /// </summary>
-  /// <param name="aTable"></param>
+  /// <param name="table"></param>
   /// <returns></returns>
-  protected virtual string GetTableRowClasses(TTable aTable)
+  protected virtual string GetTableRowClasses(TTable table)
   {
     return string.Empty;
   }

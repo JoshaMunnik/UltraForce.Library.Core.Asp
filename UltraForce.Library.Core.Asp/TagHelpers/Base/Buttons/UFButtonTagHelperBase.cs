@@ -73,13 +73,13 @@ public abstract class UFButtonTagHelperBase(
   public bool Disabled { get; set; } = false;
 
   /// <summary>
-  /// When <code>true</code> the button is rendered with a div element.
+  /// When <c>true</c> the button is rendered with a div element.
   /// </summary>
   [HtmlAttributeName("static")]
   public bool Static { get; set; } = false;
 
   /// <summary>
-  /// When <code>true</code> the button type is set to submit. This property is only of use if
+  /// When <c>true</c> the button type is set to submit. This property is only of use if
   /// the button is placed inside a form element.
   /// </summary>
   [HtmlAttributeName("submit")]
@@ -124,6 +124,10 @@ public abstract class UFButtonTagHelperBase(
   {
     await base.ProcessAsync(context, output);
     bool hasHref = this.ProcessHref(output);
+    if (!hasHref)
+    {
+      output.Attributes.Remove(new TagHelperAttribute("href"));
+    }
     output.TagName = this.Static ? "div" : hasHref ? (this.Disabled ? "div" : "a") : "button";
     output.TagMode = TagMode.StartTagAndEndTag;
     if (this.Disabled)

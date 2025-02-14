@@ -129,7 +129,9 @@ Rendered html for buttons (a div is used so that flex or grid styling can be use
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.html">UFTableTagHelperBase</a></dt>
-      <dd><p>Simple tag helper to render a table.</p>
+      <dd><p>Tag helper to render a table. The table assumes all header rows are the first rows in the table
+and are grouped together. The tag helper will insert thead and tbody tags if there are header
+and data rows. To skip this, call the constructor with <code>skipHeadBody</code> set to true.</p>
 <p>
 Table without filter and sorting:
 <pre><code class="lang-csharp">&lt;table class="GetTableClasses()"&gt;

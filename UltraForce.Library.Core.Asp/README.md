@@ -10,6 +10,13 @@ Include the styles in your html using (for example `Shared\_Layout.cshtml`):
 <link rel="stylesheet" href="/_content/UltraForce.Library.Core.Asp/css/uf-styles.css" />
 ````
 ## Version history
+1.0.56
+- removes href attribute from UFButtonTagHelperBase when none could be determined.
+ 
+1.0.52
+- added GetBodyClasses and GetHeadClasses to UFTableTagHelperBase; the class adds thead and tbody 
+  tags.
+ 
 1.0.51
 - added GetFilterPlaceholder and GetFilterCaptionHtml to UFTableTagHelperBase
  

@@ -220,14 +220,15 @@ items:
     <code class="paramref">output</code>.
   example: []
   syntax:
-    content: public override void Process(TagHelperContext context, TagHelperOutput anOutput)
+    content: public override void Process(TagHelperContext context, TagHelperOutput output)
     parameters:
     - id: context
       type: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext
       description: Contains information associated with the current HTML tag.
-    - id: anOutput
+    - id: output
       type: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput
-    content.vb: Public Overrides Sub Process(context As TagHelperContext, anOutput As TagHelperOutput)
+      description: A stateful HTML element used to generate an HTML tag.
+    content.vb: Public Overrides Sub Process(context As TagHelperContext, output As TagHelperOutput)
   overridden: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
   overload: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableRowTagHelperBase`1.Process*
   nameWithType.vb: UFTableRowTagHelperBase(Of TTable).Process(TagHelperContext, TagHelperOutput)
@@ -250,22 +251,22 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetTableRowClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableRowTagHelperBase.cs
-    startLine: 117
+    startLine: 125
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Table
   summary: Returns the classes for the table row.
   example: []
   syntax:
-    content: protected virtual string GetTableRowClasses(TTable aTable)
+    content: protected virtual string GetTableRowClasses(TTable table)
     parameters:
-    - id: aTable
+    - id: table
       type: '{TTable}'
       description: ''
     return:
       type: System.String
       description: ''
-    content.vb: Protected Overridable Function GetTableRowClasses(aTable As TTable) As String
+    content.vb: Protected Overridable Function GetTableRowClasses(table As TTable) As String
   overload: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableRowTagHelperBase`1.GetTableRowClasses*
   nameWithType.vb: UFTableRowTagHelperBase(Of TTable).GetTableRowClasses(TTable)
   fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableRowTagHelperBase(Of TTable).GetTableRowClasses(TTable)
