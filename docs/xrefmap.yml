@@ -3946,6 +3946,187 @@ references:
   isSpec: "True"
   fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFCellTagHelperBase.Width
   nameWithType: UFCellTagHelperBase.Width
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase`2
+  name: UFTableCellTagHelperBase<TTable, TTableRow>
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase-2.html
+  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase`2
+  name.vb: UFTableCellTagHelperBase(Of TTable, TTableRow)
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase<TTable, TTableRow>
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase(Of TTable, TTableRow)
+  nameWithType: UFTableCellTagHelperBase<TTable, TTableRow>
+  nameWithType.vb: UFTableCellTagHelperBase(Of TTable, TTableRow)
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase`2.#ctor(UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer)
+  name: UFTableCellTagHelperBase(IUFModelExpressionRenderer)
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase-2.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableCellTagHelperBase_2__ctor_UltraForce_Library_Core_Asp_Services_IUFModelExpressionRenderer_
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase`2.#ctor(UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer)
+  name.vb: New(IUFModelExpressionRenderer)
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase<TTable, TTableRow>.UFTableCellTagHelperBase(UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer)
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase(Of TTable, TTableRow).New(UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer)
+  nameWithType: UFTableCellTagHelperBase<TTable, TTableRow>.UFTableCellTagHelperBase(IUFModelExpressionRenderer)
+  nameWithType.vb: UFTableCellTagHelperBase(Of TTable, TTableRow).New(IUFModelExpressionRenderer)
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase`2.#ctor*
+  name: UFTableCellTagHelperBase
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase-2.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableCellTagHelperBase_2__ctor_
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase`2.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase<TTable, TTableRow>.UFTableCellTagHelperBase
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase(Of TTable, TTableRow).New
+  nameWithType: UFTableCellTagHelperBase<TTable, TTableRow>.UFTableCellTagHelperBase
+  nameWithType.vb: UFTableCellTagHelperBase(Of TTable, TTableRow).New
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase`2.For
+  name: For
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase-2.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableCellTagHelperBase_2_For
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase`2.For
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase<TTable, TTableRow>.For
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase(Of TTable, TTableRow).For
+  nameWithType: UFTableCellTagHelperBase<TTable, TTableRow>.For
+  nameWithType.vb: UFTableCellTagHelperBase(Of TTable, TTableRow).For
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase`2.For*
+  name: For
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase-2.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableCellTagHelperBase_2_For_
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase`2.For
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase<TTable, TTableRow>.For
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase(Of TTable, TTableRow).For
+  nameWithType: UFTableCellTagHelperBase<TTable, TTableRow>.For
+  nameWithType.vb: UFTableCellTagHelperBase(Of TTable, TTableRow).For
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase`2.GetTableCellClasses(UltraForce.Library.Core.Asp.Types.Enums.UFTableCellTypeEnum,`0,`1)
+  name: GetTableCellClasses(UFTableCellTypeEnum, TTable, TTableRow)
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase-2.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableCellTagHelperBase_2_GetTableCellClasses_UltraForce_Library_Core_Asp_Types_Enums_UFTableCellTypeEnum__0__1_
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase`2.GetTableCellClasses(UltraForce.Library.Core.Asp.Types.Enums.UFTableCellTypeEnum,`0,`1)
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase<TTable, TTableRow>.GetTableCellClasses(UltraForce.Library.Core.Asp.Types.Enums.UFTableCellTypeEnum, TTable, TTableRow)
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase(Of TTable, TTableRow).GetTableCellClasses(UltraForce.Library.Core.Asp.Types.Enums.UFTableCellTypeEnum, TTable, TTableRow)
+  nameWithType: UFTableCellTagHelperBase<TTable, TTableRow>.GetTableCellClasses(UFTableCellTypeEnum, TTable, TTableRow)
+  nameWithType.vb: UFTableCellTagHelperBase(Of TTable, TTableRow).GetTableCellClasses(UFTableCellTypeEnum, TTable, TTableRow)
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase`2.GetTableCellClasses*
+  name: GetTableCellClasses
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase-2.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableCellTagHelperBase_2_GetTableCellClasses_
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase`2.GetTableCellClasses
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase<TTable, TTableRow>.GetTableCellClasses
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase(Of TTable, TTableRow).GetTableCellClasses
+  nameWithType: UFTableCellTagHelperBase<TTable, TTableRow>.GetTableCellClasses
+  nameWithType.vb: UFTableCellTagHelperBase(Of TTable, TTableRow).GetTableCellClasses
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase`2.GetTableHeaderButtonClasses(`0,`1)
+  name: GetTableHeaderButtonClasses(TTable, TTableRow)
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase-2.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableCellTagHelperBase_2_GetTableHeaderButtonClasses__0__1_
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase`2.GetTableHeaderButtonClasses(`0,`1)
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase<TTable, TTableRow>.GetTableHeaderButtonClasses(TTable, TTableRow)
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase(Of TTable, TTableRow).GetTableHeaderButtonClasses(TTable, TTableRow)
+  nameWithType: UFTableCellTagHelperBase<TTable, TTableRow>.GetTableHeaderButtonClasses(TTable, TTableRow)
+  nameWithType.vb: UFTableCellTagHelperBase(Of TTable, TTableRow).GetTableHeaderButtonClasses(TTable, TTableRow)
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase`2.GetTableHeaderButtonClasses*
+  name: GetTableHeaderButtonClasses
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase-2.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableCellTagHelperBase_2_GetTableHeaderButtonClasses_
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase`2.GetTableHeaderButtonClasses
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase<TTable, TTableRow>.GetTableHeaderButtonClasses
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase(Of TTable, TTableRow).GetTableHeaderButtonClasses
+  nameWithType: UFTableCellTagHelperBase<TTable, TTableRow>.GetTableHeaderButtonClasses
+  nameWithType.vb: UFTableCellTagHelperBase(Of TTable, TTableRow).GetTableHeaderButtonClasses
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase`2.NoCaching
+  name: NoCaching
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase-2.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableCellTagHelperBase_2_NoCaching
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase`2.NoCaching
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase<TTable, TTableRow>.NoCaching
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase(Of TTable, TTableRow).NoCaching
+  nameWithType: UFTableCellTagHelperBase<TTable, TTableRow>.NoCaching
+  nameWithType.vb: UFTableCellTagHelperBase(Of TTable, TTableRow).NoCaching
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase`2.NoCaching*
+  name: NoCaching
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase-2.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableCellTagHelperBase_2_NoCaching_
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase`2.NoCaching
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase<TTable, TTableRow>.NoCaching
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase(Of TTable, TTableRow).NoCaching
+  nameWithType: UFTableCellTagHelperBase<TTable, TTableRow>.NoCaching
+  nameWithType.vb: UFTableCellTagHelperBase(Of TTable, TTableRow).NoCaching
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase`2.NoFilter
+  name: NoFilter
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase-2.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableCellTagHelperBase_2_NoFilter
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase`2.NoFilter
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase<TTable, TTableRow>.NoFilter
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase(Of TTable, TTableRow).NoFilter
+  nameWithType: UFTableCellTagHelperBase<TTable, TTableRow>.NoFilter
+  nameWithType.vb: UFTableCellTagHelperBase(Of TTable, TTableRow).NoFilter
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase`2.NoFilter*
+  name: NoFilter
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase-2.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableCellTagHelperBase_2_NoFilter_
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase`2.NoFilter
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase<TTable, TTableRow>.NoFilter
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase(Of TTable, TTableRow).NoFilter
+  nameWithType: UFTableCellTagHelperBase<TTable, TTableRow>.NoFilter
+  nameWithType.vb: UFTableCellTagHelperBase(Of TTable, TTableRow).NoFilter
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase`2.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  name: ProcessAsync(TagHelperContext, TagHelperOutput)
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase-2.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableCellTagHelperBase_2_ProcessAsync_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContext_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase`2.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase<TTable, TTableRow>.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase(Of TTable, TTableRow).ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  nameWithType: UFTableCellTagHelperBase<TTable, TTableRow>.ProcessAsync(TagHelperContext, TagHelperOutput)
+  nameWithType.vb: UFTableCellTagHelperBase(Of TTable, TTableRow).ProcessAsync(TagHelperContext, TagHelperOutput)
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase`2.ProcessAsync*
+  name: ProcessAsync
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase-2.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableCellTagHelperBase_2_ProcessAsync_
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase`2.ProcessAsync
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase<TTable, TTableRow>.ProcessAsync
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase(Of TTable, TTableRow).ProcessAsync
+  nameWithType: UFTableCellTagHelperBase<TTable, TTableRow>.ProcessAsync
+  nameWithType.vb: UFTableCellTagHelperBase(Of TTable, TTableRow).ProcessAsync
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase`2.SortType
+  name: SortType
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase-2.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableCellTagHelperBase_2_SortType
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase`2.SortType
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase<TTable, TTableRow>.SortType
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase(Of TTable, TTableRow).SortType
+  nameWithType: UFTableCellTagHelperBase<TTable, TTableRow>.SortType
+  nameWithType.vb: UFTableCellTagHelperBase(Of TTable, TTableRow).SortType
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase`2.SortType*
+  name: SortType
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase-2.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableCellTagHelperBase_2_SortType_
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase`2.SortType
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase<TTable, TTableRow>.SortType
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase(Of TTable, TTableRow).SortType
+  nameWithType: UFTableCellTagHelperBase<TTable, TTableRow>.SortType
+  nameWithType.vb: UFTableCellTagHelperBase(Of TTable, TTableRow).SortType
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase`2.Type
+  name: Type
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase-2.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableCellTagHelperBase_2_Type
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase`2.Type
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase<TTable, TTableRow>.Type
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase(Of TTable, TTableRow).Type
+  nameWithType: UFTableCellTagHelperBase<TTable, TTableRow>.Type
+  nameWithType.vb: UFTableCellTagHelperBase(Of TTable, TTableRow).Type
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase`2.Type*
+  name: Type
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase-2.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableCellTagHelperBase_2_Type_
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase`2.Type
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase<TTable, TTableRow>.Type
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase(Of TTable, TTableRow).Type
+  nameWithType: UFTableCellTagHelperBase<TTable, TTableRow>.Type
+  nameWithType.vb: UFTableCellTagHelperBase(Of TTable, TTableRow).Type
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase`2.Width
+  name: Width
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase-2.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableCellTagHelperBase_2_Width
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase`2.Width
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase<TTable, TTableRow>.Width
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase(Of TTable, TTableRow).Width
+  nameWithType: UFTableCellTagHelperBase<TTable, TTableRow>.Width
+  nameWithType.vb: UFTableCellTagHelperBase(Of TTable, TTableRow).Width
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase`2.Width*
+  name: Width
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase-2.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableCellTagHelperBase_2_Width_
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase`2.Width
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase<TTable, TTableRow>.Width
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase(Of TTable, TTableRow).Width
+  nameWithType: UFTableCellTagHelperBase<TTable, TTableRow>.Width
+  nameWithType.vb: UFTableCellTagHelperBase(Of TTable, TTableRow).Width
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableRowTagHelperBase
   name: UFTableRowTagHelperBase
   href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableRowTagHelperBase.html
@@ -4029,6 +4210,91 @@ references:
   isSpec: "True"
   fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableRowTagHelperBase.Type
   nameWithType: UFTableRowTagHelperBase.Type
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableRowTagHelperBase`1
+  name: UFTableRowTagHelperBase<TTable>
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableRowTagHelperBase-1.html
+  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableRowTagHelperBase`1
+  name.vb: UFTableRowTagHelperBase(Of TTable)
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableRowTagHelperBase<TTable>
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableRowTagHelperBase(Of TTable)
+  nameWithType: UFTableRowTagHelperBase<TTable>
+  nameWithType.vb: UFTableRowTagHelperBase(Of TTable)
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableRowTagHelperBase`1.GetTableRowClasses(`0)
+  name: GetTableRowClasses(TTable)
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableRowTagHelperBase-1.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableRowTagHelperBase_1_GetTableRowClasses__0_
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableRowTagHelperBase`1.GetTableRowClasses(`0)
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableRowTagHelperBase<TTable>.GetTableRowClasses(TTable)
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableRowTagHelperBase(Of TTable).GetTableRowClasses(TTable)
+  nameWithType: UFTableRowTagHelperBase<TTable>.GetTableRowClasses(TTable)
+  nameWithType.vb: UFTableRowTagHelperBase(Of TTable).GetTableRowClasses(TTable)
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableRowTagHelperBase`1.GetTableRowClasses*
+  name: GetTableRowClasses
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableRowTagHelperBase-1.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableRowTagHelperBase_1_GetTableRowClasses_
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableRowTagHelperBase`1.GetTableRowClasses
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableRowTagHelperBase<TTable>.GetTableRowClasses
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableRowTagHelperBase(Of TTable).GetTableRowClasses
+  nameWithType: UFTableRowTagHelperBase<TTable>.GetTableRowClasses
+  nameWithType.vb: UFTableRowTagHelperBase(Of TTable).GetTableRowClasses
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableRowTagHelperBase`1.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  name: Process(TagHelperContext, TagHelperOutput)
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableRowTagHelperBase-1.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableRowTagHelperBase_1_Process_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContext_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableRowTagHelperBase`1.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableRowTagHelperBase<TTable>.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableRowTagHelperBase(Of TTable).Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  nameWithType: UFTableRowTagHelperBase<TTable>.Process(TagHelperContext, TagHelperOutput)
+  nameWithType.vb: UFTableRowTagHelperBase(Of TTable).Process(TagHelperContext, TagHelperOutput)
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableRowTagHelperBase`1.Process*
+  name: Process
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableRowTagHelperBase-1.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableRowTagHelperBase_1_Process_
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableRowTagHelperBase`1.Process
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableRowTagHelperBase<TTable>.Process
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableRowTagHelperBase(Of TTable).Process
+  nameWithType: UFTableRowTagHelperBase<TTable>.Process
+  nameWithType.vb: UFTableRowTagHelperBase(Of TTable).Process
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableRowTagHelperBase`1.Row
+  name: Row
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableRowTagHelperBase-1.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableRowTagHelperBase_1_Row
+  commentId: F:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableRowTagHelperBase`1.Row
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableRowTagHelperBase<TTable>.Row
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableRowTagHelperBase(Of TTable).Row
+  nameWithType: UFTableRowTagHelperBase<TTable>.Row
+  nameWithType.vb: UFTableRowTagHelperBase(Of TTable).Row
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableRowTagHelperBase`1.SortLocation
+  name: SortLocation
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableRowTagHelperBase-1.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableRowTagHelperBase_1_SortLocation
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableRowTagHelperBase`1.SortLocation
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableRowTagHelperBase<TTable>.SortLocation
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableRowTagHelperBase(Of TTable).SortLocation
+  nameWithType: UFTableRowTagHelperBase<TTable>.SortLocation
+  nameWithType.vb: UFTableRowTagHelperBase(Of TTable).SortLocation
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableRowTagHelperBase`1.SortLocation*
+  name: SortLocation
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableRowTagHelperBase-1.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableRowTagHelperBase_1_SortLocation_
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableRowTagHelperBase`1.SortLocation
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableRowTagHelperBase<TTable>.SortLocation
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableRowTagHelperBase(Of TTable).SortLocation
+  nameWithType: UFTableRowTagHelperBase<TTable>.SortLocation
+  nameWithType.vb: UFTableRowTagHelperBase(Of TTable).SortLocation
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableRowTagHelperBase`1.Type
+  name: Type
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableRowTagHelperBase-1.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableRowTagHelperBase_1_Type
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableRowTagHelperBase`1.Type
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableRowTagHelperBase<TTable>.Type
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableRowTagHelperBase(Of TTable).Type
+  nameWithType: UFTableRowTagHelperBase<TTable>.Type
+  nameWithType.vb: UFTableRowTagHelperBase(Of TTable).Type
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableRowTagHelperBase`1.Type*
+  name: Type
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableRowTagHelperBase-1.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableRowTagHelperBase_1_Type_
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableRowTagHelperBase`1.Type
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableRowTagHelperBase<TTable>.Type
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableRowTagHelperBase(Of TTable).Type
+  nameWithType: UFTableRowTagHelperBase<TTable>.Type
+  nameWithType.vb: UFTableRowTagHelperBase(Of TTable).Type
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase
   name: UFTableTagHelperBase
   href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.html

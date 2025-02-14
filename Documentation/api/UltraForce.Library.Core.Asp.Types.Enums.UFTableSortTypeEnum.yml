@@ -56,7 +56,7 @@ items:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Enums
   summary: >-
-    Determine type from <xref href="UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFCellTagHelperBase.For" data-throw-if-not-resolved="false"></xref> (if any), else defaults to
+    Determine type from <xref href="UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase%602.For" data-throw-if-not-resolved="false"></xref> (if any), else defaults to
 
     text
   example: []
@@ -231,12 +231,14 @@ references:
   - uid: UltraForce.Library.Core.Asp.Types.Enums
     name: Enums
     href: UltraForce.Library.Core.Asp.Types.Enums.html
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFCellTagHelperBase.For
-  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFCellTagHelperBase.For
-  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFCellTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFCellTagHelperBase_For
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase`2.For
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase`2.For
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase-2.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableCellTagHelperBase_2_For
   name: For
-  nameWithType: UFCellTagHelperBase.For
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFCellTagHelperBase.For
+  nameWithType: UFTableCellTagHelperBase<TTable, TTableRow>.For
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase<TTable, TTableRow>.For
+  nameWithType.vb: UFTableCellTagHelperBase(Of TTable, TTableRow).For
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase(Of TTable, TTableRow).For
 - uid: UltraForce.Library.Core.Asp.Types.Enums.UFTableSortTypeEnum
   commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFTableSortTypeEnum
   parent: UltraForce.Library.Core.Asp.Types.Enums

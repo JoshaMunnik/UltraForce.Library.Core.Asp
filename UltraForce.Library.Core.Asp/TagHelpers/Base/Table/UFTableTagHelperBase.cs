@@ -221,7 +221,7 @@ public abstract class UFTableTagHelperBase : TagHelper
   /// <summary>
   /// Will be set to true by the first header row.
   /// </summary>
-  internal UFTableRowTagHelperBase? ProcessedFirstHeaderRow { get; set; }
+  internal object? ProcessedFirstHeaderRow { get; set; }
   
   #endregion
 

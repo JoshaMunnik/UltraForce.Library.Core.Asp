@@ -57,22 +57,22 @@ public static class UFDataAttribute
   public const string Sorting = "data-uf-sorting";
 
   /// <summary>
-  /// Used by <see cref="UFCellTagHelperBase"/>.
+  /// Used by <see cref="UFTableCellTagHelperBase{TTable,TTableRow}"/>.
   /// </summary>
   public const string SortType = "data-uf-sort-type";
 
   /// <summary>
-  /// Used by <see cref="UFCellTagHelperBase"/>.
+  /// Used by <see cref="UFTableCellTagHelperBase{TTable,TTableRow}"/>.
   /// </summary>
   public const string SortValue = "data-uf-sort-value";
 
   /// <summary>
-  /// Used by <see cref="UFCellTagHelperBase"/>.
+  /// Used by <see cref="UFTableCellTagHelperBase{TTable,TTableRow}"/>.
   /// </summary>
   public const string NoFilter = "data-uf-no-filter";
 
   /// <summary>
-  /// Used by <see cref="UFTableRowTagHelperBase"/>.
+  /// Used by <see cref="UFTableRowTagHelperBase{T}"/>.
   /// </summary>
   public const string SortLocation = "data-uf-sort-location";
 
@@ -82,7 +82,7 @@ public static class UFDataAttribute
   public const string FilterTable = "data-uf-filter-table";
 
   /// <summary>
-  /// Used by <see cref="UFTableRowTagHelperBase"/>.
+  /// Used by <see cref="UFTableRowTagHelperBase{T}"/>.
   /// </summary>
   public const string HeaderRow = "data-uf-header-row";
 

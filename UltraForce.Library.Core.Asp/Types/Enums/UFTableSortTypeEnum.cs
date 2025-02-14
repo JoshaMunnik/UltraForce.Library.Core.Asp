@@ -38,7 +38,7 @@ namespace UltraForce.Library.Core.Asp.Types.Enums;
 public enum UFTableSortTypeEnum
 {
   /// <summary>
-  /// Determine type from <see cref="UFCellTagHelperBase.For"/> (if any), else defaults to
+  /// Determine type from <see cref="UFTableCellTagHelperBase{TTable,TTableRow}.For"/> (if any), else defaults to
   /// text
   /// </summary>
   Auto,

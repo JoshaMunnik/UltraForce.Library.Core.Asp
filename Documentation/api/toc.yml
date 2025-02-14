@@ -100,10 +100,10 @@ items:
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table
   name: UltraForce.Library.Core.Asp.TagHelpers.Base.Table
   items:
-  - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFCellTagHelperBase
-    name: UFCellTagHelperBase
-  - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableRowTagHelperBase
-    name: UFTableRowTagHelperBase
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase`2
+    name: UFTableCellTagHelperBase<TTable, TTableRow>
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableRowTagHelperBase`1
+    name: UFTableRowTagHelperBase<TTable>
   - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase
     name: UFTableTagHelperBase
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Layout

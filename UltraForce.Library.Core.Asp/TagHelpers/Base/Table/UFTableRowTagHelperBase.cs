@@ -44,7 +44,8 @@ namespace UltraForce.Library.Core.Asp.TagHelpers.Base.Table;
 /// </code> 
 /// </summary>
 [SuppressMessage("ReSharper", "AutoPropertyCanBeMadeGetOnly.Global")]
-public abstract class UFTableRowTagHelperBase() : TagHelper
+public abstract class UFTableRowTagHelperBase<TTable> : TagHelper
+  where TTable : UFTableTagHelperBase
 {
   #region public constants
   
@@ -83,7 +84,7 @@ public abstract class UFTableRowTagHelperBase() : TagHelper
   {
     base.Process(context, anOutput);
     anOutput.TagName = "tr";
-    UFTableTagHelperBase table = (context.Items[UFTableTagHelperBase.Table] as UFTableTagHelperBase)!;
+    TTable table = (context.Items[UFTableTagHelperBase.Table] as TTable)!;
     if (table is { ProcessedFirstHeaderRow: null } && (this.Type == UFTableRowTypeEnum.Header))
     {
       table.ProcessedFirstHeaderRow = this;
@@ -114,7 +115,7 @@ public abstract class UFTableRowTagHelperBase() : TagHelper
   /// </summary>
   /// <param name="aTable"></param>
   /// <returns></returns>
-  protected virtual string GetTableRowClasses(UFTableTagHelperBase aTable)
+  protected virtual string GetTableRowClasses(TTable aTable)
   {
     return string.Empty;
   }
