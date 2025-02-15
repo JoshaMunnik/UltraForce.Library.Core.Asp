@@ -78,7 +78,8 @@ namespace UltraForce.Library.Core.Asp.TagHelpers.Base.Table;
 /// </para>
 /// </summary>
 /// <param name="skipHeadBody">
-/// When true do not insert thead and tbody tags.
+/// When true do not insert thead and tbody tags. The class will not call
+/// <see cref="GetBodyClasses"/> and <see cref="GetHeadClasses"/>.
 /// </param>
 [SuppressMessage("ReSharper", "AutoPropertyCanBeMadeGetOnly.Global")]
 public abstract class UFTableTagHelperBase(bool skipHeadBody = false) : TagHelper
@@ -269,8 +270,7 @@ public abstract class UFTableTagHelperBase(bool skipHeadBody = false) : TagHelpe
   }
 
   /// <summary>
-  /// Returns the classes to use with the tbody tag. This method is not used if
-  /// <see cref="skipHeadBody"/> is set to true.
+  /// Returns the classes to use with the tbody tag. 
   /// </summary>
   /// <returns></returns>
   protected virtual string GetBodyClasses()
@@ -279,8 +279,7 @@ public abstract class UFTableTagHelperBase(bool skipHeadBody = false) : TagHelpe
   }
 
   /// <summary>
-  /// Returns the classes to use with the thead tag. This method is not used if
-  /// <see cref="skipHeadBody"/> is set to true. 
+  /// Returns the classes to use with the thead tag. 
   /// </summary>
   /// <returns></returns>
   protected virtual string GetHeadClasses()

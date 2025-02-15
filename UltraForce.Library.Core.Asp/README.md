@@ -10,6 +10,9 @@ Include the styles in your html using (for example `Shared\_Layout.cshtml`):
 <link rel="stylesheet" href="/_content/UltraForce.Library.Core.Asp/css/uf-styles.css" />
 ````
 ## Version history
+1.0.63
+- fixed bug with rendering checkbox and radio buttons in UFInputTagHelperBase
+
 1.0.61
 - add MaxWidth to UFTableCellTagHelperBase
 - MaxWidth and Width are added to style tag and no longer are processed as classes

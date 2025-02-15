@@ -139,7 +139,8 @@ namespace UltraForce.Library.Core.Asp.TagHelpers.Base.Forms;
 /// &lt;div class="{GetRadioWrapperClasses()}"&gt;
 ///   &lt;label class="{GetRadioLabelClasses()}"&gt;
 ///     {GetRadioExtraHtml()}
-///     &lt;span class="{GetRadiiLabelSpanClasses()}"&gt;
+///     &lt;input type="radio" class="{GetRadioInputClasses()}" .../&gt;
+///     &lt;span class="{GetRadioLabelSpanClasses()}"&gt;
 ///      {GetLabelAsync(context,output)}
 ///     &lt;/span&gt;
 ///     &lt;span class="{GetRadioLabelDescriptionClasses()}"&gt;{description}&lt;/span&gt;
@@ -153,7 +154,7 @@ namespace UltraForce.Library.Core.Asp.TagHelpers.Base.Forms;
 /// Renders radio input with wrapping but no label:
 /// <code>
 /// &lt;div class="{GetRadioWrapperClasses()}"&gt;
-///   &lt;input type="radio" class="{GetRadioInputClasses()}" id={} .../&gt;
+///   &lt;input type="radio" class="{GetRadioInputClasses()}" .../&gt;
 ///   {GetRadioExtraHtml()}
 ///   {GetValidationFeedbackContainer(id)}
 ///   &lt;div class="{GetFieldErrorsClasses()}"&gt;{GetFieldErrorsHtml()}&lt;/div&gt;
@@ -164,7 +165,7 @@ namespace UltraForce.Library.Core.Asp.TagHelpers.Base.Forms;
 /// Renders radio input without wrapping but with a label:
 /// <code>
 /// &lt;label class="{GetRadioLabelClasses()}"&gt;
-///   &lt;input type="radio" class="{GetRadioInputClasses()}" id={} .../&gt;
+///   &lt;input type="radio" class="{GetRadioInputClasses()}" .../&gt;
 ///   {GetRadioExtraHtml()}
 ///   &lt;span class="{GetRadiiLabelSpanClasses()}"&gt;
 ///    {GetLabelAsync(context,output)}
@@ -176,7 +177,7 @@ namespace UltraForce.Library.Core.Asp.TagHelpers.Base.Forms;
 /// <para>
 /// Renders radio input without wrapping and without a label:
 /// <code>
-/// &lt;input type="radio" class="{GetRadioInputClasses()}" id={} .../&gt;
+/// &lt;input type="radio" class="{GetRadioInputClasses()}" .../&gt;
 /// {GetRadioExtraHtml()}
 /// </code>
 /// </para>
@@ -185,7 +186,7 @@ namespace UltraForce.Library.Core.Asp.TagHelpers.Base.Forms;
 /// <code>
 /// &lt;div class="{GetCheckboxWrapperClasses()}"&gt;
 ///   &lt;label class="{GetCheckboxLabelClasses()}"&gt;
-///     &lt;input type="checkbox" class="{GetCheckboxInputClasses()}" id={} .../&gt;
+///     &lt;input type="checkbox" class="{GetCheckboxInputClasses()}" .../&gt;
 ///     {GetCheckboxExtraHtml()}
 ///     &lt;span class="{GetCheckboxLabelSpanClasses()}"&gt;
 ///      {GetLabelAsync(context,output)}
@@ -201,7 +202,7 @@ namespace UltraForce.Library.Core.Asp.TagHelpers.Base.Forms;
 /// Renders checkbox input with wrapping but no label:
 /// <code>
 /// &lt;div class="{GetCheckboxWrapperClasses()}"&gt;
-///   &lt;input type="checkbox" class="{GetCheckboxInputClasses()}" id={} .../&gt;
+///   &lt;input type="checkbox" class="{GetCheckboxInputClasses()}" .../&gt;
 ///   {GetCheckboxExtraHtml()}
 ///   {GetValidationFeedbackContainer(id)}
 ///   &lt;div class="{GetFieldErrorsClasses()}"&gt;{GetFieldErrorsHtml()}&lt;/div&gt;
@@ -669,19 +670,18 @@ public abstract class UFInputTagHelperBase(
       : "";
     string preLabel = string.IsNullOrEmpty(aLabel)
       ? ""
-      : $"<label class=\"{this.GetRadioLabelClasses()}\"><span>";
+      : $"<label class=\"{this.GetRadioLabelClasses()}\">";
     string description = this.GetDescription();
     string descriptionHtml = string.IsNullOrEmpty(description) || string.IsNullOrEmpty(aLabel)
       ? ""
       : $"<span class=\"{this.GetRadioLabelDescriptionClasses()}\">" +
       $"{description}" +
-      $"</span>";
+      "</span>";
     string postLabel = string.IsNullOrEmpty(aLabel)
       ? ""
-      : $"</span>" +
-      $"<span class=\"{this.GetRadioLabelSpanClasses()}\">{aLabel}</span>" +
+      : $"<span class=\"{this.GetRadioLabelSpanClasses()}\">{aLabel}</span>" +
       descriptionHtml +
-      $"</label>";
+      "</label>";
     if (pre.Length + preLabel.Length > 0)
     {
       anOutput.PreElement.SetHtmlContent(pre + preLabel);
@@ -709,19 +709,18 @@ public abstract class UFInputTagHelperBase(
       : "";
     string preLabel = string.IsNullOrEmpty(aLabel)
       ? ""
-      : $"<label class=\"{this.GetCheckboxLabelClasses()}\"><span>";
+      : $"<label class=\"{this.GetCheckboxLabelClasses()}\">";
     string description = this.GetDescription();
     string descriptionHtml = string.IsNullOrEmpty(description) || string.IsNullOrEmpty(aLabel)
       ? ""
       : $"<span class=\"{this.GetCheckboxLabelDescriptionClasses()}\">" +
       $"{description}" +
-      $"</span>";
+      "</span>";
     string postLabel = string.IsNullOrEmpty(aLabel)
       ? ""
-      : $"</span>" +
-      $"<span class=\"{this.GetCheckboxLabelSpanClasses()}\">{aLabel}</span>" +
+      : $"<span class=\"{this.GetCheckboxLabelSpanClasses()}\">{aLabel}</span>" +
       descriptionHtml +
-      $"</label>";
+      "</label>";
     if (pre.Length + preLabel.Length > 0)
     {
       anOutput.PreElement.SetHtmlContent(pre + preLabel);
