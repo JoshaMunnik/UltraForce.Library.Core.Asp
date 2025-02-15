@@ -322,9 +322,9 @@ public abstract class UFTableCellTagHelperBase<TTable, TTableRow>(
     {
       style = " width: " + this.Width + ";";
     }
-    if (!string.IsNullOrEmpty(this.Width))
+    if (!string.IsNullOrEmpty(this.MaxWidth))
     {
-      style = " max-width: " + this.Width + ";";
+      style = " max-width: " + this.MaxWidth + ";";
     }
     if (!string.IsNullOrEmpty(style))
     {
