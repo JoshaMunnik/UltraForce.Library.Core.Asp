@@ -12,6 +12,7 @@ items:
   - UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.GetEmailLinkHtml(System.String)
   - UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.GetName(Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression,Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
   - UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.GetTimeHtml(System.Nullable{System.TimeOnly})
+  - UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.GetValueAsText(Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression,Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
   - UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.HtmlGenerator
   - UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.SetContentToNameAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression,Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
   - UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.SetContentToValueAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression,Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
@@ -203,11 +204,11 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetName
     path: ../UltraForce.Library.Core.Asp/Services/UFModelExpressionRenderer.cs
-    startLine: 160
+    startLine: 154
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Services
-  summary: Gets the name for an model expression.
+  summary: Gets the name for a model expression.
   example: []
   syntax:
     content: public IHtmlContentBuilder GetName(ModelExpression anExpression, ViewContext aViewContext)
@@ -225,6 +226,46 @@ items:
   overload: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.GetName*
   implements:
   - UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.GetName(Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression,Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
+- uid: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.GetValueAsText(Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression,Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
+  commentId: M:UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.GetValueAsText(Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression,Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
+  id: GetValueAsText(Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression,Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
+  parent: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer
+  langs:
+  - csharp
+  - vb
+  name: GetValueAsText(ModelExpression, ViewContext)
+  nameWithType: UFModelExpressionRenderer.GetValueAsText(ModelExpression, ViewContext)
+  fullName: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.GetValueAsText(Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression, Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Services/UFModelExpressionRenderer.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: GetValueAsText
+    path: ../UltraForce.Library.Core.Asp/Services/UFModelExpressionRenderer.cs
+    startLine: 167
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Services
+  summary: Gets the value as a text string.
+  example: []
+  syntax:
+    content: public string GetValueAsText(ModelExpression anExpression, ViewContext aViewContext)
+    parameters:
+    - id: anExpression
+      type: Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression
+      description: expression to get value for
+    - id: aViewContext
+      type: Microsoft.AspNetCore.Mvc.Rendering.ViewContext
+      description: ''
+    return:
+      type: System.String
+      description: text representation of value
+    content.vb: Public Function GetValueAsText(anExpression As ModelExpression, aViewContext As ViewContext) As String
+  overload: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.GetValueAsText*
+  implements:
+  - UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.GetValueAsText(Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression,Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
 - uid: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.HtmlGenerator
   commentId: P:UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.HtmlGenerator
   id: HtmlGenerator
@@ -243,7 +284,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: HtmlGenerator
     path: ../UltraForce.Library.Core.Asp/Services/UFModelExpressionRenderer.cs
-    startLine: 179
+    startLine: 211
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Services
@@ -274,7 +315,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetCheckBoxHtml
     path: ../UltraForce.Library.Core.Asp/Services/UFModelExpressionRenderer.cs
-    startLine: 193
+    startLine: 225
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Services
@@ -318,7 +359,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetEmailLinkHtml
     path: ../UltraForce.Library.Core.Asp/Services/UFModelExpressionRenderer.cs
-    startLine: 207
+    startLine: 239
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Services
@@ -362,7 +403,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetDateTimeHtml
     path: ../UltraForce.Library.Core.Asp/Services/UFModelExpressionRenderer.cs
-    startLine: 218
+    startLine: 250
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Services
@@ -403,7 +444,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetDateHtml
     path: ../UltraForce.Library.Core.Asp/Services/UFModelExpressionRenderer.cs
-    startLine: 229
+    startLine: 261
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Services
@@ -441,7 +482,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetTimeHtml
     path: ../UltraForce.Library.Core.Asp/Services/UFModelExpressionRenderer.cs
-    startLine: 240
+    startLine: 272
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Services
@@ -1206,6 +1247,63 @@ references:
     name: Html
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.html
+- uid: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.GetValueAsText*
+  commentId: Overload:UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.GetValueAsText
+  href: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.html#UltraForce_Library_Core_Asp_Services_UFModelExpressionRenderer_GetValueAsText_Microsoft_AspNetCore_Mvc_ViewFeatures_ModelExpression_Microsoft_AspNetCore_Mvc_Rendering_ViewContext_
+  name: GetValueAsText
+  nameWithType: UFModelExpressionRenderer.GetValueAsText
+  fullName: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.GetValueAsText
+- uid: UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.GetValueAsText(Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression,Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
+  commentId: M:UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.GetValueAsText(Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression,Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
+  parent: UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer
+  isExternal: true
+  href: UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.html#UltraForce_Library_Core_Asp_Services_IUFModelExpressionRenderer_GetValueAsText_Microsoft_AspNetCore_Mvc_ViewFeatures_ModelExpression_Microsoft_AspNetCore_Mvc_Rendering_ViewContext_
+  name: GetValueAsText(ModelExpression, ViewContext)
+  nameWithType: IUFModelExpressionRenderer.GetValueAsText(ModelExpression, ViewContext)
+  fullName: UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.GetValueAsText(Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression, Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
+  spec.csharp:
+  - uid: UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.GetValueAsText(Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression,Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
+    name: GetValueAsText
+    href: UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.html#UltraForce_Library_Core_Asp_Services_IUFModelExpressionRenderer_GetValueAsText_Microsoft_AspNetCore_Mvc_ViewFeatures_ModelExpression_Microsoft_AspNetCore_Mvc_Rendering_ViewContext_
+  - name: (
+  - uid: Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression
+    name: ModelExpression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.viewfeatures.modelexpression
+  - name: ','
+  - name: " "
+  - uid: Microsoft.AspNetCore.Mvc.Rendering.ViewContext
+    name: ViewContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.rendering.viewcontext
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.GetValueAsText(Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression,Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
+    name: GetValueAsText
+    href: UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.html#UltraForce_Library_Core_Asp_Services_IUFModelExpressionRenderer_GetValueAsText_Microsoft_AspNetCore_Mvc_ViewFeatures_ModelExpression_Microsoft_AspNetCore_Mvc_Rendering_ViewContext_
+  - name: (
+  - uid: Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression
+    name: ModelExpression
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.viewfeatures.modelexpression
+  - name: ','
+  - name: " "
+  - uid: Microsoft.AspNetCore.Mvc.Rendering.ViewContext
+    name: ViewContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.rendering.viewcontext
+  - name: )
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
 - uid: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.HtmlGenerator*
   commentId: Overload:UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.HtmlGenerator
   href: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.html#UltraForce_Library_Core_Asp_Services_UFModelExpressionRenderer_HtmlGenerator
@@ -1229,17 +1327,6 @@ references:
   nameWithType.vb: Boolean
   fullName.vb: Boolean
   name.vb: Boolean
-- uid: System.String
-  commentId: T:System.String
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String
 - uid: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.GetEmailLinkHtml*
   commentId: Overload:UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.GetEmailLinkHtml
   href: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.html#UltraForce_Library_Core_Asp_Services_UFModelExpressionRenderer_GetEmailLinkHtml_System_String_

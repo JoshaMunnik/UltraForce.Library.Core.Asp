@@ -253,6 +253,19 @@ references:
   isSpec: "True"
   fullName: UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.GetName
   nameWithType: IUFModelExpressionRenderer.GetName
+- uid: UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.GetValueAsText(Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression,Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
+  name: GetValueAsText(ModelExpression, ViewContext)
+  href: api/UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.html#UltraForce_Library_Core_Asp_Services_IUFModelExpressionRenderer_GetValueAsText_Microsoft_AspNetCore_Mvc_ViewFeatures_ModelExpression_Microsoft_AspNetCore_Mvc_Rendering_ViewContext_
+  commentId: M:UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.GetValueAsText(Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression,Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
+  fullName: UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.GetValueAsText(Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression, Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
+  nameWithType: IUFModelExpressionRenderer.GetValueAsText(ModelExpression, ViewContext)
+- uid: UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.GetValueAsText*
+  name: GetValueAsText
+  href: api/UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.html#UltraForce_Library_Core_Asp_Services_IUFModelExpressionRenderer_GetValueAsText_
+  commentId: Overload:UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.GetValueAsText
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.GetValueAsText
+  nameWithType: IUFModelExpressionRenderer.GetValueAsText
 - uid: UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.SetContentToNameAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression,Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
   name: SetContentToNameAsync(TagHelperOutput, ModelExpression, ViewContext)
   href: api/UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.html#UltraForce_Library_Core_Asp_Services_IUFModelExpressionRenderer_SetContentToNameAsync_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_Microsoft_AspNetCore_Mvc_ViewFeatures_ModelExpression_Microsoft_AspNetCore_Mvc_Rendering_ViewContext_
@@ -1170,6 +1183,19 @@ references:
   isSpec: "True"
   fullName: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.GetTimeHtml
   nameWithType: UFModelExpressionRenderer.GetTimeHtml
+- uid: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.GetValueAsText(Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression,Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
+  name: GetValueAsText(ModelExpression, ViewContext)
+  href: api/UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.html#UltraForce_Library_Core_Asp_Services_UFModelExpressionRenderer_GetValueAsText_Microsoft_AspNetCore_Mvc_ViewFeatures_ModelExpression_Microsoft_AspNetCore_Mvc_Rendering_ViewContext_
+  commentId: M:UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.GetValueAsText(Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression,Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
+  fullName: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.GetValueAsText(Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression, Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
+  nameWithType: UFModelExpressionRenderer.GetValueAsText(ModelExpression, ViewContext)
+- uid: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.GetValueAsText*
+  name: GetValueAsText
+  href: api/UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.html#UltraForce_Library_Core_Asp_Services_UFModelExpressionRenderer_GetValueAsText_
+  commentId: Overload:UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.GetValueAsText
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.GetValueAsText
+  nameWithType: UFModelExpressionRenderer.GetValueAsText
 - uid: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.HtmlGenerator
   name: HtmlGenerator
   href: api/UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.html#UltraForce_Library_Core_Asp_Services_UFModelExpressionRenderer_HtmlGenerator
@@ -4025,6 +4051,23 @@ references:
   fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase(Of TTable, TTableRow).GetTableHeaderButtonClasses
   nameWithType: UFTableCellTagHelperBase<TTable, TTableRow>.GetTableHeaderButtonClasses
   nameWithType.vb: UFTableCellTagHelperBase(Of TTable, TTableRow).GetTableHeaderButtonClasses
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase`2.MaxWidth
+  name: MaxWidth
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase-2.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableCellTagHelperBase_2_MaxWidth
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase`2.MaxWidth
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase<TTable, TTableRow>.MaxWidth
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase(Of TTable, TTableRow).MaxWidth
+  nameWithType: UFTableCellTagHelperBase<TTable, TTableRow>.MaxWidth
+  nameWithType.vb: UFTableCellTagHelperBase(Of TTable, TTableRow).MaxWidth
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase`2.MaxWidth*
+  name: MaxWidth
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase-2.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableCellTagHelperBase_2_MaxWidth_
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase`2.MaxWidth
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase<TTable, TTableRow>.MaxWidth
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase(Of TTable, TTableRow).MaxWidth
+  nameWithType: UFTableCellTagHelperBase<TTable, TTableRow>.MaxWidth
+  nameWithType.vb: UFTableCellTagHelperBase(Of TTable, TTableRow).MaxWidth
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase`2.NoCaching
   name: NoCaching
   href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase-2.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableCellTagHelperBase_2_NoCaching

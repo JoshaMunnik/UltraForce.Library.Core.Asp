@@ -755,7 +755,7 @@ items:
   summary: >-
     Returns the classes to use with the tbody tag. This method is not used if
 
-    <xref href="UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.SkipHeadBody" data-throw-if-not-resolved="false"></xref> is set to true.
+    skipHeadBody is set to true.
   example: []
   syntax:
     content: protected virtual string GetBodyClasses()
@@ -789,7 +789,7 @@ items:
   summary: >-
     Returns the classes to use with the thead tag. This method is not used if
 
-    <xref href="UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.SkipHeadBody" data-throw-if-not-resolved="false"></xref> is set to true.
+    skipHeadBody is set to true.
   example: []
   syntax:
     content: protected virtual string GetHeadClasses()
@@ -1484,12 +1484,6 @@ references:
   name: GetSortDescendingClasses
   nameWithType: UFTableTagHelperBase.GetSortDescendingClasses
   fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetSortDescendingClasses
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.SkipHeadBody
-  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.SkipHeadBody
-  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableTagHelperBase_SkipHeadBody
-  name: SkipHeadBody
-  nameWithType: UFTableTagHelperBase.SkipHeadBody
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.SkipHeadBody
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetBodyClasses*
   commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetBodyClasses
   href: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableTagHelperBase_GetBodyClasses

@@ -150,14 +150,8 @@ public class UFModelExpressionRenderer : IUFModelExpressionRenderer
       );
     }
   }
-  
 
-  /// <summary>
-  /// Gets the name for an model expression.
-  /// </summary>
-  /// <param name="anExpression">expression to get name for</param>
-  /// <param name="aViewContext"></param>
-  /// <returns>html representation of name</returns>
+  /// <inheritdoc/>
   public IHtmlContentBuilder GetName(ModelExpression anExpression, ViewContext aViewContext)
   {
     TagBuilder tagBuilder = this.HtmlGenerator.GenerateLabel(
@@ -170,6 +164,44 @@ public class UFModelExpressionRenderer : IUFModelExpressionRenderer
     return tagBuilder.InnerHtml;
   }
   
+  /// <inheritdoc/>
+  public string GetValueAsText(
+    ModelExpression anExpression, ViewContext aViewContext
+  )
+  {
+    Type type = anExpression.Metadata.UnderlyingOrModelType;
+    DefaultModelMetadata? metadata = anExpression.Metadata as DefaultModelMetadata;
+    if ((type == typeof(DateTime)) || (type == typeof(DateTime?)))
+    {
+      return anExpression.Model == null
+        ? ""
+        : ((DateTime)anExpression.Model).ToString("yyyy-MM-dd HH:mm:ss");
+    }
+    if ((type == typeof(DateOnly)) || (type == typeof(DateOnly?)))
+    {
+      return anExpression.Model == null
+        ? ""
+        : ((DateOnly)anExpression.Model).ToString("yyyy-MM-dd");
+    }
+    if ((type == typeof(TimeOnly)) || (type == typeof(TimeOnly?)))
+    {
+      return anExpression.Model == null
+        ? ""
+        : ((TimeOnly)anExpression.Model).ToString("HH:mm:ss");
+    }
+    if ((type == typeof(bool)) || (type == typeof(bool?)))
+    {
+      return anExpression.Model == null
+        ? ""
+        : (bool)anExpression.Model ? "true" : "false";
+    }
+    if (type.IsEnum)
+    {
+      return anExpression.Model == null ? "-" : ((Enum)anExpression.Model).GetDisplayDescription();
+    }
+    return anExpression.Model?.ToString() ?? "";
+  }
+
   #endregion
 
   #region protected properties

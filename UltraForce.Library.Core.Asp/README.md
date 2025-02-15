@@ -10,6 +10,13 @@ Include the styles in your html using (for example `Shared\_Layout.cshtml`):
 <link rel="stylesheet" href="/_content/UltraForce.Library.Core.Asp/css/uf-styles.css" />
 ````
 ## Version history
+1.0.61
+- add MaxWidth to UFTableCellTagHelperBase
+- MaxWidth and Width are added to style tag and no longer are processed as classes
+
+1.0.57
+- set title attribute with table data cells when For is being used.
+ 
 1.0.56
 - removes href attribute from UFButtonTagHelperBase when none could be determined.
  

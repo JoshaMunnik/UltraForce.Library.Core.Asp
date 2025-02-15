@@ -128,7 +128,7 @@ Interface IUFModelExpressionRenderer  <a class="header-action link-secondary" ti
   <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Services/IUFModelExpressionRenderer.cs/#L70"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Gets the name for an model expression.</p>
+  <div class="markdown level1 summary"><p>Gets the name for a model expression.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -149,6 +149,47 @@ Interface IUFModelExpressionRenderer  <a class="header-action link-secondary" ti
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.html.ihtmlcontentbuilder">IHtmlContentBuilder</a></dt>
     <dd><p>html representation of name</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_Services_IUFModelExpressionRenderer_GetValueAsText_" data-uid="UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.GetValueAsText*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Services_IUFModelExpressionRenderer_GetValueAsText_Microsoft_AspNetCore_Mvc_ViewFeatures_ModelExpression_Microsoft_AspNetCore_Mvc_Rendering_ViewContext_" data-uid="UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.GetValueAsText(Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression,Microsoft.AspNetCore.Mvc.Rendering.ViewContext)">
+  GetValueAsText(ModelExpression, ViewContext)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Services/IUFModelExpressionRenderer.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the value as a text string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetValueAsText(ModelExpression anExpression, ViewContext aViewContext)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>anExpression</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.viewfeatures.modelexpression">ModelExpression</a></dt>
+    <dd><p>expression to get value for</p>
+</dd>
+    <dt><code>aViewContext</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.rendering.viewcontext">ViewContext</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>text representation of value</p>
 </dd>
   </dl>
 

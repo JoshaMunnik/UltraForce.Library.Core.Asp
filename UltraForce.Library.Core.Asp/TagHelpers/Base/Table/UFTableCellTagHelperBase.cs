@@ -86,12 +86,16 @@ public abstract class UFTableCellTagHelperBase<TTable, TTableRow>(
   public UFTableCellTypeEnum Type { get; set; } = UFTableCellTypeEnum.Auto;
 
   /// <summary>
-  /// When non empty, set this value as width value. This can either be a css class or a
-  /// unit definition. The method <see cref="UFTagHelperTools.IsCssValue"/> is used to determine
-  /// which.
+  /// When not empty, set this value as width value via the style tag. 
   /// </summary>
   [HtmlAttributeName("width")]
   public string Width { get; set; } = "";
+
+  /// <summary>
+  /// When not empty, set this value as max-width value via the style tag. 
+  /// </summary>
+  [HtmlAttributeName("max-width")]
+  public string MaxWidth { get; set; } = "";
 
   /// <summary>
   /// Type of sorting (only of use with <see cref="UFTableCellTypeEnum.Header"/>). If type is set to
@@ -287,6 +291,12 @@ public abstract class UFTableCellTagHelperBase<TTable, TTableRow>(
           UFDataAttribute.SortValue, (value != null) && value.Value ? "1" : "0"
         );
       }
+      if (!anOutput.Attributes.ContainsName("title") && (this.For.Model != null))
+      {
+        anOutput.Attributes.SetAttribute(
+          "title", this.ModelExpressionRenderer.GetValueAsText(this.For, this.ViewContext)
+        );
+      }
     }
     return sortType;
   }
@@ -306,20 +316,20 @@ public abstract class UFTableCellTagHelperBase<TTable, TTableRow>(
   )
   {
     string classValue = this.GetTableCellClasses(aType, aTable, aTableRow);
+    UFTagHelperTools.AddClasses(anOutput, classValue);
+    string style = "";
     if (!string.IsNullOrEmpty(this.Width))
     {
-      if (UFTagHelperTools.IsCssValue(this.Width))
-      {
-        UFTagHelperTools.AddAttribute(
-          anOutput.Attributes, "style", "width: " + this.Width
-        );
-      }
-      else
-      {
-        classValue += " " + this.Width;
-      }
+      style = " width: " + this.Width + ";";
     }
-    UFTagHelperTools.AddClasses(anOutput, classValue);
+    if (!string.IsNullOrEmpty(this.Width))
+    {
+      style = " max-width: " + this.Width + ";";
+    }
+    if (!string.IsNullOrEmpty(style))
+    {
+      anOutput.Attributes.SetAttribute("style", style);
+    }
   }
 
   /// <summary>

@@ -270,7 +270,7 @@ public abstract class UFTableTagHelperBase(bool skipHeadBody = false) : TagHelpe
 
   /// <summary>
   /// Returns the classes to use with the tbody tag. This method is not used if
-  /// <see cref="SkipHeadBody"/> is set to true.
+  /// <see cref="skipHeadBody"/> is set to true.
   /// </summary>
   /// <returns></returns>
   protected virtual string GetBodyClasses()
@@ -280,7 +280,7 @@ public abstract class UFTableTagHelperBase(bool skipHeadBody = false) : TagHelpe
 
   /// <summary>
   /// Returns the classes to use with the thead tag. This method is not used if
-  /// <see cref="SkipHeadBody"/> is set to true. 
+  /// <see cref="skipHeadBody"/> is set to true. 
   /// </summary>
   /// <returns></returns>
   protected virtual string GetHeadClasses()

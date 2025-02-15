@@ -62,10 +62,19 @@ public interface IUFModelExpressionRenderer
   );
 
   /// <summary>
-  /// Gets the name for an model expression.
+  /// Gets the name for a model expression.
   /// </summary>
   /// <param name="anExpression">expression to get name for</param>
   /// <param name="aViewContext"></param>
   /// <returns>html representation of name</returns>
   IHtmlContentBuilder GetName(ModelExpression anExpression, ViewContext aViewContext);
+  
+
+  /// <summary>
+  /// Gets the value as a text string.
+  /// </summary>
+  /// <param name="anExpression">expression to get value for</param>
+  /// <param name="aViewContext"></param>
+  /// <returns>text representation of value</returns>
+  string GetValueAsText(ModelExpression anExpression, ViewContext aViewContext);
 }
