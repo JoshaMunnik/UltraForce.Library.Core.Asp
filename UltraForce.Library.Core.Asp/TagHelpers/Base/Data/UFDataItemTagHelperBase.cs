@@ -35,15 +35,23 @@ using UltraForce.Library.Core.Asp.Tools;
 namespace UltraForce.Library.Core.Asp.TagHelpers.Base.Data;
 
 /// <summary>
-/// Base class for rendering a data definition. For the name part if <see cref="For"/> is set, the
-/// content is set to the name of the referenced element. Else the children of this tag are
-/// rendered. For the data part the content is set to the value of the referenced element. If
-/// <see cref="For"/> is null, the data part is empty.
+/// Base class for rendering a data definition. How it renders depends on the presence of
+/// <see cref="For"/> and <see cref="Name"/> properties.
+/// <para>
+/// If <see cref="For"/> is set and the tag has no content, both the name and value
+/// or obtained from the object referenced by <see cref="For"/>.
+/// If the tag has content and <see cref="For"/> is set, only the name is obtained from
+/// the object and the content is used for the value.
+/// </para>
+/// <para>
+/// If <see cref="For"/> is not set, <see cref="Name"/> is used for the name and the value
+/// from the content of the tag.
+/// </para>
 /// <para>
 /// It renders the following:
 /// <code>
-/// &lt;dt class="{GetDataNameClasses()}"&gt;{content|For name}&lt;/dt&gt;
-/// &lt;dd class="{GetDataValueClasses()}"&gt;{empty|For value}&lt;/dd&gt;
+/// &lt;dt class="{GetDataNameClasses()}"&gt;{For name|For name|Name}&lt;/dt&gt;
+/// &lt;dd class="{GetDataValueClasses()}"&gt;{For value|content|content}&lt;/dd&gt;
 /// </code>
 /// </para> 
 /// </summary>
@@ -58,43 +66,40 @@ public abstract class UFDataItemTagHelperBase(
   /// </summary>
   public ModelExpression? For { get; set; }
 
+  /// <summary>
+  /// When set and <see cref="For" /> is <c>null</c>, the name content is set to this value and the
+  /// content of this tag is used for the value part. If <see cref="For"/> is not <c>null</c>,
+  /// this value is ignored.
+  /// </summary>
+  public string Name { get; set; } = "";
+
   #endregion
 
   #region public methods
 
   /// <inheritdoc />
-  public override async Task ProcessAsync(TagHelperContext context, TagHelperOutput output)
+  public override async Task ProcessAsync(
+    TagHelperContext context,
+    TagHelperOutput output
+  )
   {
     await base.ProcessAsync(context, output);
-    output.TagName = "dt";
-    output.TagMode = TagMode.StartTagAndEndTag;
-    if (this.For != null)
+    if (this.For == null)
     {
-      await this.ModelExpressionRenderer.SetContentToNameAsync(output, this.For, this.ViewContext);
+      this.RenderWithContentForDataAsync(output);
+      return;
     }
-    UFTagHelperTools.AddClasses(output, this.GetDataNameClasses());
-    TagHelperOutput valueOutput = new TagHelperOutput(
-      "dd",
-      [],
-      (useCachedResult, encoder) =>
-      {
-        TagHelperContent value = new DefaultTagHelperContent();
-        return Task.FromResult(value);
-      }
-    )
+    TagHelperContent? content = await output.GetChildContentAsync();
+    if (content.IsEmptyOrWhiteSpace)
     {
-      TagMode = TagMode.StartTagAndEndTag
-    };
-    if (this.For != null)
-    {
-      await this.ModelExpressionRenderer.SetContentToValueAsync(
-        valueOutput, this.For, this.ViewContext
-      );
+      await this.RenderBothWithForAsync(output);
     }
-    UFTagHelperTools.AddClasses(valueOutput, this.GetDataValueClasses());
-    output.PostElement.AppendHtml(valueOutput);
+    else
+    {
+      await this.RenderNameWithForAsync(output);
+    }
   }
-
+  
   #endregion
 
   #region overridable protected methods
@@ -116,6 +121,112 @@ public abstract class UFDataItemTagHelperBase(
   {
     return string.Empty;
   }
-}
+  
+  #endregion
+  
+  #region private methods
+  
+  /// <summary>
+  /// Renders the content for the data part. The name part is set to the value of the
+  /// <see cref="Name"/>.
+  /// </summary>
+  /// <param name="output"></param>
+  private void RenderWithContentForDataAsync(
+    TagHelperOutput output
+  )
+  {
+    output.TagName = "dd";
+    output.TagMode = TagMode.StartTagAndEndTag;
+    UFTagHelperTools.AddClasses(output, this.GetDataValueClasses());
+    TagHelperOutput nameOutput = new(
+      "dt",
+      [],
+      (
+        useCachedResult,
+        encoder
+      ) =>
+      {
+        TagHelperContent value = new DefaultTagHelperContent();
+        return Task.FromResult(value);
+      }
+    )
+    {
+      TagMode = TagMode.StartTagAndEndTag
+    };
+    nameOutput.Content.SetContent(this.Name);
+    UFTagHelperTools.AddClasses(nameOutput, this.GetDataNameClasses());
+    output.PreElement.AppendHtml(nameOutput);
+  }
 
-#endregion
+  /// <summary>
+  /// Renders the content getting the name and data from the instance referenced by
+  /// <see cref="For"/>.
+  /// </summary>
+  /// <param name="output"></param>
+  private async Task RenderBothWithForAsync(
+    TagHelperOutput output
+  )
+  {
+    output.TagName = "dt";
+    output.TagMode = TagMode.StartTagAndEndTag;
+    await this.ModelExpressionRenderer.SetContentToNameAsync(output, this.For!, this.ViewContext);
+    UFTagHelperTools.AddClasses(output, this.GetDataNameClasses());
+    TagHelperOutput valueOutput = new(
+      "dd",
+      [],
+      (
+        useCachedResult,
+        encoder
+      ) =>
+      {
+        TagHelperContent value = new DefaultTagHelperContent();
+        return Task.FromResult(value);
+      }
+    )
+    {
+      TagMode = TagMode.StartTagAndEndTag
+    };
+    await this.ModelExpressionRenderer.SetContentToValueAsync(
+      valueOutput, this.For!, this.ViewContext
+    );
+    UFTagHelperTools.AddClasses(valueOutput, this.GetDataValueClasses());
+    output.PostElement.AppendHtml(valueOutput);
+  }
+
+
+  /// <summary>
+  /// Renders the content getting the name from the instance referenced by <see cref="For"/> and
+  /// use the tags content for the data.
+  /// </summary>
+  /// <param name="output"></param>
+  private async Task RenderNameWithForAsync(
+    TagHelperOutput output
+  )
+  {
+    output.TagName = "dd";
+    output.TagMode = TagMode.StartTagAndEndTag;
+    UFTagHelperTools.AddClasses(output, this.GetDataValueClasses());
+    TagHelperOutput nameOutput = new(
+      "dt",
+      [],
+      (
+        useCachedResult,
+        encoder
+      ) =>
+      {
+        TagHelperContent value = new DefaultTagHelperContent();
+        return Task.FromResult(value);
+      }
+    )
+    {
+      TagMode = TagMode.StartTagAndEndTag
+    };
+    await this.ModelExpressionRenderer.SetContentToNameAsync(
+      nameOutput, this.For!, this.ViewContext
+    );
+    UFTagHelperTools.AddClasses(nameOutput, this.GetDataNameClasses());
+    output.PreElement.AppendHtml(nameOutput);
+  }
+  
+  #endregion
+}

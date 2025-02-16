@@ -10,6 +10,12 @@ Include the styles in your html using (for example `Shared\_Layout.cshtml`):
 <link rel="stylesheet" href="/_content/UltraForce.Library.Core.Asp/css/uf-styles.css" />
 ````
 ## Version history
+1.0.70
+- updated UFDataItemTagHelperBase
+
+1.0.68
+- added Name property to UFDataItemTagHelperBase
+
 1.0.66
 - added UFClearViewDataServiceFilter
 

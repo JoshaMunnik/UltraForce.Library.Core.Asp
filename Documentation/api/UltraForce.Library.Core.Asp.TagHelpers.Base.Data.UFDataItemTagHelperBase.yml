@@ -9,6 +9,7 @@ items:
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase.For
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase.GetDataNameClasses
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase.GetDataValueClasses
+  - UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase.Name
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
   langs:
   - csharp
@@ -24,26 +25,42 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: UFDataItemTagHelperBase
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Data/UFDataItemTagHelperBase.cs
-    startLine: 49
+    startLine: 57
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Data
   summary: >-
-    Base class for rendering a data definition. For the name part if <xref href="UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase.For" data-throw-if-not-resolved="false"></xref> is set, the
+    Base class for rendering a data definition. How it renders depends on the presence of
 
-    content is set to the name of the referenced element. Else the children of this tag are
+    <xref href="UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase.For" data-throw-if-not-resolved="false"></xref> and <xref href="UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase.Name" data-throw-if-not-resolved="false"></xref> properties.
 
-    rendered. For the data part the content is set to the value of the referenced element. If
+    <p>
 
-    <xref href="UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase.For" data-throw-if-not-resolved="false"></xref> is null, the data part is empty.
+    If <xref href="UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase.For" data-throw-if-not-resolved="false"></xref> is set and the tag has no content, both the name and value
+
+    or obtained from the object referenced by <xref href="UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase.For" data-throw-if-not-resolved="false"></xref>.
+
+    If the tag has content and <xref href="UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase.For" data-throw-if-not-resolved="false"></xref> is set, only the name is obtained from
+
+    the object and the content is used for the value.
+
+    </p>
+
+    <p>
+
+    If <xref href="UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase.For" data-throw-if-not-resolved="false"></xref> is not set, <xref href="UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase.Name" data-throw-if-not-resolved="false"></xref> is used for the name and the value
+
+    from the content of the tag.
+
+    </p>
 
     <p>
 
     It renders the following:
 
-    <pre><code class="lang-csharp">&lt;dt class="{GetDataNameClasses()}"&gt;{content|For name}&lt;/dt&gt;
+    <pre><code class="lang-csharp">&lt;dt class="{GetDataNameClasses()}"&gt;{For name|For name|Name}&lt;/dt&gt;
 
-    &lt;dd class="{GetDataValueClasses()}"&gt;{empty|For value}&lt;/dd&gt;</code></pre>
+    &lt;dd class="{GetDataValueClasses()}"&gt;{For value|content|content}&lt;/dd&gt;</code></pre>
 
     </p>
   example: []
@@ -89,26 +106,42 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: .ctor
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Data/UFDataItemTagHelperBase.cs
-    startLine: 49
+    startLine: 57
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Data
   summary: >-
-    Base class for rendering a data definition. For the name part if <xref href="UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase.For" data-throw-if-not-resolved="false"></xref> is set, the
+    Base class for rendering a data definition. How it renders depends on the presence of
 
-    content is set to the name of the referenced element. Else the children of this tag are
+    <xref href="UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase.For" data-throw-if-not-resolved="false"></xref> and <xref href="UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase.Name" data-throw-if-not-resolved="false"></xref> properties.
 
-    rendered. For the data part the content is set to the value of the referenced element. If
+    <p>
 
-    <xref href="UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase.For" data-throw-if-not-resolved="false"></xref> is null, the data part is empty.
+    If <xref href="UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase.For" data-throw-if-not-resolved="false"></xref> is set and the tag has no content, both the name and value
+
+    or obtained from the object referenced by <xref href="UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase.For" data-throw-if-not-resolved="false"></xref>.
+
+    If the tag has content and <xref href="UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase.For" data-throw-if-not-resolved="false"></xref> is set, only the name is obtained from
+
+    the object and the content is used for the value.
+
+    </p>
+
+    <p>
+
+    If <xref href="UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase.For" data-throw-if-not-resolved="false"></xref> is not set, <xref href="UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase.Name" data-throw-if-not-resolved="false"></xref> is used for the name and the value
+
+    from the content of the tag.
+
+    </p>
 
     <p>
 
     It renders the following:
 
-    <pre><code class="lang-csharp">&lt;dt class="{GetDataNameClasses()}"&gt;{content|For name}&lt;/dt&gt;
+    <pre><code class="lang-csharp">&lt;dt class="{GetDataNameClasses()}"&gt;{For name|For name|Name}&lt;/dt&gt;
 
-    &lt;dd class="{GetDataValueClasses()}"&gt;{empty|For value}&lt;/dd&gt;</code></pre>
+    &lt;dd class="{GetDataValueClasses()}"&gt;{For value|content|content}&lt;/dd&gt;</code></pre>
 
     </p>
   example: []
@@ -140,7 +173,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: For
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Data/UFDataItemTagHelperBase.cs
-    startLine: 58
+    startLine: 66
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Data
@@ -153,6 +186,42 @@ items:
       type: Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression
     content.vb: Public Property [For] As ModelExpression
   overload: UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase.For*
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase.Name
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase.Name
+  id: Name
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: UFDataItemTagHelperBase.Name
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase.Name
+  type: Property
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Base/Data/UFDataItemTagHelperBase.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: Name
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Data/UFDataItemTagHelperBase.cs
+    startLine: 73
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Data
+  summary: >-
+    When set and <xref href="UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase.For" data-throw-if-not-resolved="false"></xref> is <code>null</code>, the name content is set to this value and the
+
+    content of this tag is used for the value part. If <xref href="UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase.For" data-throw-if-not-resolved="false"></xref> is not <code>null</code>,
+
+    this value is ignored.
+  example: []
+  syntax:
+    content: public string Name { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property Name As String
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase.Name*
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
   commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
   id: ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
@@ -171,7 +240,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: ProcessAsync
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Data/UFDataItemTagHelperBase.cs
-    startLine: 65
+    startLine: 80
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Data
@@ -214,7 +283,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetDataNameClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Data/UFDataItemTagHelperBase.cs
-    startLine: 105
+    startLine: 110
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Data
@@ -245,7 +314,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetDataValueClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Data/UFDataItemTagHelperBase.cs
-    startLine: 114
+    startLine: 119
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Data
@@ -265,6 +334,12 @@ references:
   name: For
   nameWithType: UFDataItemTagHelperBase.For
   fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase.For
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase.Name
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase.Name
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Data_UFDataItemTagHelperBase_Name
+  name: Name
+  nameWithType: UFDataItemTagHelperBase.Name
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase.Name
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Data
   commentId: N:UltraForce.Library.Core.Asp.TagHelpers.Base.Data
   href: UltraForce.html
@@ -920,6 +995,23 @@ references:
     name: ViewFeatures
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.viewfeatures
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase.Name*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase.Name
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Data_UFDataItemTagHelperBase_Name
+  name: Name
+  nameWithType: UFDataItemTagHelperBase.Name
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
 - uid: System.Threading.Tasks.Task
   commentId: T:System.Threading.Tasks.Task
   parent: System.Threading.Tasks
@@ -1035,17 +1127,6 @@ references:
   name: GetDataNameClasses
   nameWithType: UFDataItemTagHelperBase.GetDataNameClasses
   fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase.GetDataNameClasses
-- uid: System.String
-  commentId: T:System.String
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase.GetDataValueClasses*
   commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase.GetDataValueClasses
   href: UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Data_UFDataItemTagHelperBase_GetDataValueClasses

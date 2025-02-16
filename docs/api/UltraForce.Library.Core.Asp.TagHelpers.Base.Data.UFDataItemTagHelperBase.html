@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class UFDataItemTagHelperBase | UltraForce.Library.Core.Asp ">
       
-      <meta name="description" content="Base class for rendering a data definition. For the name part if  is set, the content is set to the name of the referenced element. Else the children of this tag are rendered. For the data part the content is set to the value of the referenced element. If  is null, the data part is empty.  It renders the following: &amp;lt;dt class=&quot;{GetDataNameClasses()}&quot;&amp;gt;{content|For name}&amp;lt;/dt&amp;gt; &amp;lt;dd class=&quot;{GetDataValueClasses()}&quot;&amp;gt;{empty|For value}&amp;lt;/dd&amp;gt;">
+      <meta name="description" content="Base class for rendering a data definition. How it renders depends on the presence of  and  properties.  If  is set and the tag has no content, both the name and value or obtained from the object referenced by . If the tag has content and  is set, only the name is obtained from the object and the content is used for the value.   If  is not set,  is used for the name and the value from the content of the tag.   It renders the following: &amp;lt;dt class=&quot;{GetDataNameClasses()}&quot;&amp;gt;{For name|For name|Name}&amp;lt;/dt&amp;gt; &amp;lt;dd class=&quot;{GetDataValueClasses()}&quot;&amp;gt;{For value|content|content}&amp;lt;/dd&amp;gt;">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Data_UFDataItemTagHelperBase" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase" class="text-break">
-Class UFDataItemTagHelperBase  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Data/UFDataItemTagHelperBase.cs/#L50"><i class="bi bi-code-slash"></i></a>
+Class UFDataItemTagHelperBase  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Data/UFDataItemTagHelperBase.cs/#L58"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,14 +97,22 @@ Class UFDataItemTagHelperBase  <a class="header-action link-secondary" title="Vi
   <dl><dt>Assembly</dt><dd>UltraForce.Library.Core.Asp.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Base class for rendering a data definition. For the name part if <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Data_UFDataItemTagHelperBase_For">For</a> is set, the
-content is set to the name of the referenced element. Else the children of this tag are
-rendered. For the data part the content is set to the value of the referenced element. If
-<a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Data_UFDataItemTagHelperBase_For">For</a> is null, the data part is empty.</p>
+  <div class="markdown summary"><p>Base class for rendering a data definition. How it renders depends on the presence of
+<a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Data_UFDataItemTagHelperBase_For">For</a> and <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Data_UFDataItemTagHelperBase_Name">Name</a> properties.</p>
+<p>
+If <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Data_UFDataItemTagHelperBase_For">For</a> is set and the tag has no content, both the name and value
+or obtained from the object referenced by <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Data_UFDataItemTagHelperBase_For">For</a>.
+If the tag has content and <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Data_UFDataItemTagHelperBase_For">For</a> is set, only the name is obtained from
+the object and the content is used for the value.
+</p>
+<p>
+If <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Data_UFDataItemTagHelperBase_For">For</a> is not set, <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Data_UFDataItemTagHelperBase_Name">Name</a> is used for the name and the value
+from the content of the tag.
+</p>
 <p>
 It renders the following:
-<pre><code class="lang-csharp">&lt;dt class="{GetDataNameClasses()}"&gt;{content|For name}&lt;/dt&gt;
-&lt;dd class="{GetDataValueClasses()}"&gt;{empty|For value}&lt;/dd&gt;</code></pre>
+<pre><code class="lang-csharp">&lt;dt class="{GetDataNameClasses()}"&gt;{For name|For name|Name}&lt;/dt&gt;
+&lt;dd class="{GetDataValueClasses()}"&gt;{For value|content|content}&lt;/dd&gt;</code></pre>
 
 </div>
   <div class="markdown conceptual"></div>
@@ -190,17 +198,25 @@ It renders the following:
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Data_UFDataItemTagHelperBase__ctor_UltraForce_Library_Core_Asp_Services_IUFModelExpressionRenderer_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase.#ctor(UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer)">
   UFDataItemTagHelperBase(IUFModelExpressionRenderer)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Data/UFDataItemTagHelperBase.cs/#L50"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Data/UFDataItemTagHelperBase.cs/#L58"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Base class for rendering a data definition. For the name part if <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Data_UFDataItemTagHelperBase_For">For</a> is set, the
-content is set to the name of the referenced element. Else the children of this tag are
-rendered. For the data part the content is set to the value of the referenced element. If
-<a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Data_UFDataItemTagHelperBase_For">For</a> is null, the data part is empty.</p>
+  <div class="markdown level1 summary"><p>Base class for rendering a data definition. How it renders depends on the presence of
+<a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Data_UFDataItemTagHelperBase_For">For</a> and <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Data_UFDataItemTagHelperBase_Name">Name</a> properties.</p>
+<p>
+If <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Data_UFDataItemTagHelperBase_For">For</a> is set and the tag has no content, both the name and value
+or obtained from the object referenced by <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Data_UFDataItemTagHelperBase_For">For</a>.
+If the tag has content and <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Data_UFDataItemTagHelperBase_For">For</a> is set, only the name is obtained from
+the object and the content is used for the value.
+</p>
+<p>
+If <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Data_UFDataItemTagHelperBase_For">For</a> is not set, <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Data_UFDataItemTagHelperBase_Name">Name</a> is used for the name and the value
+from the content of the tag.
+</p>
 <p>
 It renders the following:
-<pre><code class="lang-csharp">&lt;dt class="{GetDataNameClasses()}"&gt;{content|For name}&lt;/dt&gt;
-&lt;dd class="{GetDataValueClasses()}"&gt;{empty|For value}&lt;/dd&gt;</code></pre>
+<pre><code class="lang-csharp">&lt;dt class="{GetDataNameClasses()}"&gt;{For name|For name|Name}&lt;/dt&gt;
+&lt;dd class="{GetDataValueClasses()}"&gt;{For value|content|content}&lt;/dd&gt;</code></pre>
 
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -234,7 +250,7 @@ It renders the following:
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Data_UFDataItemTagHelperBase_For" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase.For">
   For
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Data/UFDataItemTagHelperBase.cs/#L59"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Data/UFDataItemTagHelperBase.cs/#L67"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>When no content is set, use the (display) name of the model property.</p>
@@ -262,6 +278,40 @@ It renders the following:
 
 
 
+  <a id="UltraForce_Library_Core_Asp_TagHelpers_Base_Data_UFDataItemTagHelperBase_Name_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase.Name*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Data_UFDataItemTagHelperBase_Name" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase.Name">
+  Name
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Data/UFDataItemTagHelperBase.cs/#L74"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>When set and <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Data_UFDataItemTagHelperBase_For">For</a> is <code>null</code>, the name content is set to this value and the
+content of this tag is used for the value part. If <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Data_UFDataItemTagHelperBase_For">For</a> is not <code>null</code>,
+this value is ignored.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Name { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <h2 class="section" id="methods">Methods
 </h2>
 
@@ -270,7 +320,7 @@ It renders the following:
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Data_UFDataItemTagHelperBase_GetDataNameClasses" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase.GetDataNameClasses">
   GetDataNameClasses()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Data/UFDataItemTagHelperBase.cs/#L106"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Data/UFDataItemTagHelperBase.cs/#L111"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The default implementation returns an empty string.</p>
@@ -302,7 +352,7 @@ It renders the following:
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Data_UFDataItemTagHelperBase_GetDataValueClasses" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase.GetDataValueClasses">
   GetDataValueClasses()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Data/UFDataItemTagHelperBase.cs/#L115"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Data/UFDataItemTagHelperBase.cs/#L120"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The default implementation returns an empty string.</p>
@@ -334,7 +384,7 @@ It renders the following:
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Data_UFDataItemTagHelperBase_ProcessAsync_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContext_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)">
   ProcessAsync(TagHelperContext, TagHelperOutput)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Data/UFDataItemTagHelperBase.cs/#L66"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Data/UFDataItemTagHelperBase.cs/#L81"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Asynchronously executes the <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper">TagHelper</a> with the given <code class="paramref">context</code> and
@@ -380,7 +430,7 @@ It renders the following:
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Data/UFDataItemTagHelperBase.cs/#L50" class="edit-link">Edit this page</a>
+          <a href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Data/UFDataItemTagHelperBase.cs/#L58" class="edit-link">Edit this page</a>
         </div>
 
 

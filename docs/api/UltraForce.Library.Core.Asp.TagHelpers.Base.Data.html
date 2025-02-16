@@ -96,14 +96,22 @@ Classes
 </h3>
     <dl class="jumplist">
       <dt><a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase.html">UFDataItemTagHelperBase</a></dt>
-      <dd><p>Base class for rendering a data definition. For the name part if <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Data_UFDataItemTagHelperBase_For">For</a> is set, the
-content is set to the name of the referenced element. Else the children of this tag are
-rendered. For the data part the content is set to the value of the referenced element. If
-<a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Data_UFDataItemTagHelperBase_For">For</a> is null, the data part is empty.</p>
+      <dd><p>Base class for rendering a data definition. How it renders depends on the presence of
+<a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Data_UFDataItemTagHelperBase_For">For</a> and <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Data_UFDataItemTagHelperBase_Name">Name</a> properties.</p>
+<p>
+If <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Data_UFDataItemTagHelperBase_For">For</a> is set and the tag has no content, both the name and value
+or obtained from the object referenced by <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Data_UFDataItemTagHelperBase_For">For</a>.
+If the tag has content and <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Data_UFDataItemTagHelperBase_For">For</a> is set, only the name is obtained from
+the object and the content is used for the value.
+</p>
+<p>
+If <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Data_UFDataItemTagHelperBase_For">For</a> is not set, <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Data_UFDataItemTagHelperBase_Name">Name</a> is used for the name and the value
+from the content of the tag.
+</p>
 <p>
 It renders the following:
-<pre><code class="lang-csharp">&lt;dt class="{GetDataNameClasses()}"&gt;{content|For name}&lt;/dt&gt;
-&lt;dd class="{GetDataValueClasses()}"&gt;{empty|For value}&lt;/dd&gt;</code></pre>
+<pre><code class="lang-csharp">&lt;dt class="{GetDataNameClasses()}"&gt;{For name|For name|Name}&lt;/dt&gt;
+&lt;dd class="{GetDataValueClasses()}"&gt;{For value|content|content}&lt;/dd&gt;</code></pre>
 
 </dd>
     </dl>
