@@ -1,4 +1,4 @@
-// <copyright file="UFViewdataTagHelper.cs" company="Ultra Force Development">
+// <copyright file="UFDataTitleTagHelper.cs" company="Ultra Force Development">
 // Ultra Force Library - Copyright (C) 2025 Ultra Force Development
 // </copyright>
 // <author>Josha Munnik</author>
@@ -29,53 +29,36 @@
 
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.AspNetCore.Razor.TagHelpers;
+using UltraForce.Library.Core.Asp.Services;
 using UltraForce.Library.Core.Asp.TagHelpers.Base;
+using UltraForce.Library.Core.Asp.TagHelpers.Layout.Base;
 
 namespace UltraForce.Library.Core.Asp.TagHelpers;
 
 /// <summary>
-/// This tag helper can be used to set or read data from <see cref="ViewContext.ViewData"/>.
+/// This tag helper can be used to set or read data from <see cref="IUFViewDataService.Title"/>.
 /// <para>
-/// When using the tag with a self closing tag, the content of this tag will be set to text stored
-/// <see cref="ViewContext.ViewData"/> (without any surrounding tags).
-/// </para>
-/// <para>
-/// When using the tag with and open and close tag with some content. The content will be stored in
-/// the <see cref="ViewContext.ViewData"/>.
+/// It is a subclass of <see cref="UFDataTagHelperBase"/>.
 /// </para>
 /// </summary>
-[HtmlTargetElement("uf-viewdata", TagStructure = TagStructure.NormalOrSelfClosing)]
-public class UFViewdataTagHelper : UFTagHelperWithViewContext
+[HtmlTargetElement("uf-data-title", TagStructure = TagStructure.NormalOrSelfClosing)]
+public class UFDataTitleTagHelper(IUFViewDataService viewDataService) : UFDataTagHelperBase
 {
-  #region public properties
-  
-  /// <summary>
-  /// The key to use to read or write the data with.
-  /// </summary>
-  [HtmlAttributeName("key")]
-  public string Key { get; set; } = string.Empty;
-  
-  #endregion
-  
-  #region public methods
+  #region protected methods
 
   /// <inheritdoc />
-  public override async Task ProcessAsync(
-    TagHelperContext context,
-    TagHelperOutput output
+  protected override Task<string> GetDataAsync()
+  {
+    return Task.FromResult(viewDataService.Title);
+  }
+
+  /// <inheritdoc />
+  protected override Task SetDataAsync(
+    string text
   )
   {
-    if (output.TagMode == TagMode.SelfClosing)
-    {
-      output.TagName = string.Empty;
-      output.Content.SetHtmlContent(this.ViewContext.ViewData[this.Key]?.ToString());
-    }
-    else
-    {
-      TagHelperContent? content = await output.GetChildContentAsync();
-      this.ViewContext.ViewData[this.Key] = content.GetContent();
-      output.SuppressOutput();
-    }
+    viewDataService.Title = text;
+    return Task.CompletedTask;
   }
 
   #endregion

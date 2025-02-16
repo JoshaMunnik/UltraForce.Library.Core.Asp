@@ -5,8 +5,8 @@ items:
   id: UltraForce.Library.Core.Asp.TagHelpers
   children:
   - UltraForce.Library.Core.Asp.TagHelpers.UFConditionTagHelper
+  - UltraForce.Library.Core.Asp.TagHelpers.UFDataTitleTagHelper
   - UltraForce.Library.Core.Asp.TagHelpers.UFNotConditionTagHelper
-  - UltraForce.Library.Core.Asp.TagHelpers.UFViewdataTagHelper
   langs:
   - csharp
   - vb
@@ -23,15 +23,15 @@ references:
   name: UFConditionTagHelper
   nameWithType: UFConditionTagHelper
   fullName: UltraForce.Library.Core.Asp.TagHelpers.UFConditionTagHelper
+- uid: UltraForce.Library.Core.Asp.TagHelpers.UFDataTitleTagHelper
+  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.UFDataTitleTagHelper
+  href: UltraForce.Library.Core.Asp.TagHelpers.UFDataTitleTagHelper.html
+  name: UFDataTitleTagHelper
+  nameWithType: UFDataTitleTagHelper
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.UFDataTitleTagHelper
 - uid: UltraForce.Library.Core.Asp.TagHelpers.UFNotConditionTagHelper
   commentId: T:UltraForce.Library.Core.Asp.TagHelpers.UFNotConditionTagHelper
   href: UltraForce.Library.Core.Asp.TagHelpers.UFNotConditionTagHelper.html
   name: UFNotConditionTagHelper
   nameWithType: UFNotConditionTagHelper
   fullName: UltraForce.Library.Core.Asp.TagHelpers.UFNotConditionTagHelper
-- uid: UltraForce.Library.Core.Asp.TagHelpers.UFViewdataTagHelper
-  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.UFViewdataTagHelper
-  href: UltraForce.Library.Core.Asp.TagHelpers.UFViewdataTagHelper.html
-  name: UFViewdataTagHelper
-  nameWithType: UFViewdataTagHelper
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.UFViewdataTagHelper

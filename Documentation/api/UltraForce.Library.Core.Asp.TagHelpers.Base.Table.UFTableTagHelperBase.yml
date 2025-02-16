@@ -37,7 +37,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: UFTableTagHelperBase
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs
-    startLine: 82
+    startLine: 83
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Table
@@ -129,7 +129,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: .ctor
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs
-    startLine: 82
+    startLine: 83
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Table
@@ -188,7 +188,10 @@ items:
     parameters:
     - id: skipHeadBody
       type: System.Boolean
-      description: When true do not insert thead and tbody tags.
+      description: >-
+        When true do not insert thead and tbody tags. The class will not call
+
+        <xref href="UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetBodyClasses" data-throw-if-not-resolved="false"></xref> and <xref href="UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetHeadClasses" data-throw-if-not-resolved="false"></xref>.
     content.vb: Protected Sub New(skipHeadBody As Boolean = False)
   overload: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.#ctor*
   nameWithType.vb: UFTableTagHelperBase.New(Boolean)
@@ -212,7 +215,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Table
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs
-    startLine: 90
+    startLine: 91
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Table
@@ -241,7 +244,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Filter
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs
-    startLine: 99
+    startLine: 100
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Table
@@ -284,7 +287,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Paging
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs
-    startLine: 105
+    startLine: 106
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Table
@@ -327,7 +330,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: PageSize
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs
-    startLine: 112
+    startLine: 113
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Table
@@ -373,7 +376,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Sorting
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs
-    startLine: 118
+    startLine: 119
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Table
@@ -416,7 +419,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: StorageId
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs
-    startLine: 125
+    startLine: 126
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Table
@@ -450,7 +453,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: ProcessAsync
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs
-    startLine: 132
+    startLine: 133
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Table
@@ -493,7 +496,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetTableClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs
-    startLine: 199
+    startLine: 200
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Table
@@ -524,7 +527,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetFilterInputClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs
-    startLine: 208
+    startLine: 209
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Table
@@ -555,7 +558,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetFilterPlaceholder
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs
-    startLine: 217
+    startLine: 218
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Table
@@ -586,7 +589,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetFilterButtonClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs
-    startLine: 226
+    startLine: 227
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Table
@@ -617,7 +620,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetFilterCaptionHtml
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs
-    startLine: 238
+    startLine: 239
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Table
@@ -655,7 +658,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetFilterContainerClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs
-    startLine: 247
+    startLine: 248
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Table
@@ -686,7 +689,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetSortAscendingClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs
-    startLine: 256
+    startLine: 257
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Table
@@ -717,7 +720,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetSortDescendingClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs
-    startLine: 265
+    startLine: 266
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Table
@@ -752,10 +755,7 @@ items:
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Table
-  summary: >-
-    Returns the classes to use with the tbody tag. This method is not used if
-
-    skipHeadBody is set to true.
+  summary: Returns the classes to use with the tbody tag.
   example: []
   syntax:
     content: protected virtual string GetBodyClasses()
@@ -782,14 +782,11 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetHeadClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs
-    startLine: 285
+    startLine: 284
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Table
-  summary: >-
-    Returns the classes to use with the thead tag. This method is not used if
-
-    skipHeadBody is set to true.
+  summary: Returns the classes to use with the thead tag.
   example: []
   syntax:
     content: protected virtual string GetHeadClasses()
@@ -799,6 +796,42 @@ items:
     content.vb: Protected Overridable Function GetHeadClasses() As String
   overload: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetHeadClasses*
 references:
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetBodyClasses
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetBodyClasses
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableTagHelperBase_GetBodyClasses
+  name: GetBodyClasses()
+  nameWithType: UFTableTagHelperBase.GetBodyClasses()
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetBodyClasses()
+  spec.csharp:
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetBodyClasses
+    name: GetBodyClasses
+    href: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableTagHelperBase_GetBodyClasses
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetBodyClasses
+    name: GetBodyClasses
+    href: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableTagHelperBase_GetBodyClasses
+  - name: (
+  - name: )
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetHeadClasses
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetHeadClasses
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableTagHelperBase_GetHeadClasses
+  name: GetHeadClasses()
+  nameWithType: UFTableTagHelperBase.GetHeadClasses()
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetHeadClasses()
+  spec.csharp:
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetHeadClasses
+    name: GetHeadClasses
+    href: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableTagHelperBase_GetHeadClasses
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetHeadClasses
+    name: GetHeadClasses
+    href: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableTagHelperBase_GetHeadClasses
+  - name: (
+  - name: )
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table
   commentId: N:UltraForce.Library.Core.Asp.TagHelpers.Base.Table
   href: UltraForce.html

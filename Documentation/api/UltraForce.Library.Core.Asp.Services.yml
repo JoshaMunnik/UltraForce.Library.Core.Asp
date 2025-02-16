@@ -6,10 +6,12 @@ items:
   children:
   - UltraForce.Library.Core.Asp.Services.IUFAsynchronousExecutableService
   - UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer
+  - UltraForce.Library.Core.Asp.Services.IUFViewDataService
   - UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber
   - UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer
   - UltraForce.Library.Core.Asp.Services.UFRazorViewRenderer
   - UltraForce.Library.Core.Asp.Services.UFScopedBackgroundService`1
+  - UltraForce.Library.Core.Asp.Services.UFViewDataService
   langs:
   - csharp
   - vb
@@ -33,6 +35,13 @@ references:
   name: IUFModelExpressionRenderer
   nameWithType: IUFModelExpressionRenderer
   fullName: UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer
+- uid: UltraForce.Library.Core.Asp.Services.IUFViewDataService
+  commentId: T:UltraForce.Library.Core.Asp.Services.IUFViewDataService
+  parent: UltraForce.Library.Core.Asp.Services
+  href: UltraForce.Library.Core.Asp.Services.IUFViewDataService.html
+  name: IUFViewDataService
+  nameWithType: IUFViewDataService
+  fullName: UltraForce.Library.Core.Asp.Services.IUFViewDataService
 - uid: UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber
   commentId: T:UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber
   href: UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber.html
@@ -76,6 +85,12 @@ references:
   - name: " "
   - name: TAsynchronousExecutableService
   - name: )
+- uid: UltraForce.Library.Core.Asp.Services.UFViewDataService
+  commentId: T:UltraForce.Library.Core.Asp.Services.UFViewDataService
+  href: UltraForce.Library.Core.Asp.Services.UFViewDataService.html
+  name: UFViewDataService
+  nameWithType: UFViewDataService
+  fullName: UltraForce.Library.Core.Asp.Services.UFViewDataService
 - uid: UltraForce.Library.Core.Asp.Services
   commentId: N:UltraForce.Library.Core.Asp.Services
   href: UltraForce.html

@@ -167,6 +167,11 @@ public abstract class UFClickableTagHelperBase : AnchorTagHelper
       anOutput.Attributes.SetAttribute("href", href);
       return true;
     }
+    int hrefIndex = anOutput.Attributes.IndexOfName("href");
+    if (hrefIndex >= 0)
+    {
+      anOutput.Attributes.RemoveAt(hrefIndex);
+    }
     return false;
   }
 
@@ -270,7 +275,7 @@ public abstract class UFClickableTagHelperBase : AnchorTagHelper
           (endPoint.RoutePattern.RequiredValues["controller"]?.ToString() == aController) &&
           (endPoint.RoutePattern.RequiredValues["action"]?.ToString() == anAction) &&
           (
-            (endPoint.RoutePattern.Parameters.Count == aParameters.Count) || 
+            (endPoint.RoutePattern.Parameters.Count == aParameters.Count) ||
             (
               (endPoint.RoutePattern.Parameters.Count == aParameters.Count + 2) &&
               (endPoint.RoutePattern.Parameters[0].Name == "controller") &&

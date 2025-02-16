@@ -1,0 +1,652 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.Core.Asp.Filters.UFClearViewDataServiceFilter
+  commentId: T:UltraForce.Library.Core.Asp.Filters.UFClearViewDataServiceFilter
+  id: UFClearViewDataServiceFilter
+  parent: UltraForce.Library.Core.Asp.Filters
+  children:
+  - UltraForce.Library.Core.Asp.Filters.UFClearViewDataServiceFilter.#ctor(UltraForce.Library.Core.Asp.Services.IUFViewDataService)
+  - UltraForce.Library.Core.Asp.Filters.UFClearViewDataServiceFilter.OnActionExecuted(Microsoft.AspNetCore.Mvc.Filters.ActionExecutedContext)
+  - UltraForce.Library.Core.Asp.Filters.UFClearViewDataServiceFilter.OnActionExecuting(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext)
+  langs:
+  - csharp
+  - vb
+  name: UFClearViewDataServiceFilter
+  nameWithType: UFClearViewDataServiceFilter
+  fullName: UltraForce.Library.Core.Asp.Filters.UFClearViewDataServiceFilter
+  type: Class
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Filters/UFClearViewDataServiceFilter.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: UFClearViewDataServiceFilter
+    path: ../UltraForce.Library.Core.Asp/Filters/UFClearViewDataServiceFilter.cs
+    startLine: 53
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Filters
+  summary: >-
+    This filter can be used to clear the view data before the action is executed. It assumes that
+
+    the <xref href="UltraForce.Library.Core.Asp.Services.IUFViewDataService" data-throw-if-not-resolved="false"></xref> has been registered with the DI container.
+  example: []
+  syntax:
+    content: 'public class UFClearViewDataServiceFilter : IActionFilter, IFilterMetadata'
+    content.vb: Public Class UFClearViewDataServiceFilter Implements IActionFilter, IFilterMetadata
+  inheritance:
+  - System.Object
+  implements:
+  - Microsoft.AspNetCore.Mvc.Filters.IActionFilter
+  - Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata
+  inheritedMembers:
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: UltraForce.Library.Core.Asp.Filters.UFClearViewDataServiceFilter.#ctor(UltraForce.Library.Core.Asp.Services.IUFViewDataService)
+  commentId: M:UltraForce.Library.Core.Asp.Filters.UFClearViewDataServiceFilter.#ctor(UltraForce.Library.Core.Asp.Services.IUFViewDataService)
+  id: '#ctor(UltraForce.Library.Core.Asp.Services.IUFViewDataService)'
+  parent: UltraForce.Library.Core.Asp.Filters.UFClearViewDataServiceFilter
+  langs:
+  - csharp
+  - vb
+  name: UFClearViewDataServiceFilter(IUFViewDataService)
+  nameWithType: UFClearViewDataServiceFilter.UFClearViewDataServiceFilter(IUFViewDataService)
+  fullName: UltraForce.Library.Core.Asp.Filters.UFClearViewDataServiceFilter.UFClearViewDataServiceFilter(UltraForce.Library.Core.Asp.Services.IUFViewDataService)
+  type: Constructor
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Filters/UFClearViewDataServiceFilter.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: .ctor
+    path: ../UltraForce.Library.Core.Asp/Filters/UFClearViewDataServiceFilter.cs
+    startLine: 53
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Filters
+  summary: >-
+    This filter can be used to clear the view data before the action is executed. It assumes that
+
+    the <xref href="UltraForce.Library.Core.Asp.Services.IUFViewDataService" data-throw-if-not-resolved="false"></xref> has been registered with the DI container.
+  example: []
+  syntax:
+    content: public UFClearViewDataServiceFilter(IUFViewDataService viewDataService)
+    parameters:
+    - id: viewDataService
+      type: UltraForce.Library.Core.Asp.Services.IUFViewDataService
+      description: An object implementing <xref href="UltraForce.Library.Core.Asp.Services.IUFViewDataService" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Sub New(viewDataService As IUFViewDataService)
+  overload: UltraForce.Library.Core.Asp.Filters.UFClearViewDataServiceFilter.#ctor*
+  nameWithType.vb: UFClearViewDataServiceFilter.New(IUFViewDataService)
+  fullName.vb: UltraForce.Library.Core.Asp.Filters.UFClearViewDataServiceFilter.New(UltraForce.Library.Core.Asp.Services.IUFViewDataService)
+  name.vb: New(IUFViewDataService)
+- uid: UltraForce.Library.Core.Asp.Filters.UFClearViewDataServiceFilter.OnActionExecuting(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext)
+  commentId: M:UltraForce.Library.Core.Asp.Filters.UFClearViewDataServiceFilter.OnActionExecuting(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext)
+  id: OnActionExecuting(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext)
+  parent: UltraForce.Library.Core.Asp.Filters.UFClearViewDataServiceFilter
+  langs:
+  - csharp
+  - vb
+  name: OnActionExecuting(ActionExecutingContext)
+  nameWithType: UFClearViewDataServiceFilter.OnActionExecuting(ActionExecutingContext)
+  fullName: UltraForce.Library.Core.Asp.Filters.UFClearViewDataServiceFilter.OnActionExecuting(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Filters/UFClearViewDataServiceFilter.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: OnActionExecuting
+    path: ../UltraForce.Library.Core.Asp/Filters/UFClearViewDataServiceFilter.cs
+    startLine: 58
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Filters
+  summary: Called before the action executes, after model binding is complete.
+  example: []
+  syntax:
+    content: public void OnActionExecuting(ActionExecutingContext context)
+    parameters:
+    - id: context
+      type: Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext
+      description: The <xref href="Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Sub OnActionExecuting(context As ActionExecutingContext)
+  overload: UltraForce.Library.Core.Asp.Filters.UFClearViewDataServiceFilter.OnActionExecuting*
+  implements:
+  - Microsoft.AspNetCore.Mvc.Filters.IActionFilter.OnActionExecuting(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext)
+- uid: UltraForce.Library.Core.Asp.Filters.UFClearViewDataServiceFilter.OnActionExecuted(Microsoft.AspNetCore.Mvc.Filters.ActionExecutedContext)
+  commentId: M:UltraForce.Library.Core.Asp.Filters.UFClearViewDataServiceFilter.OnActionExecuted(Microsoft.AspNetCore.Mvc.Filters.ActionExecutedContext)
+  id: OnActionExecuted(Microsoft.AspNetCore.Mvc.Filters.ActionExecutedContext)
+  parent: UltraForce.Library.Core.Asp.Filters.UFClearViewDataServiceFilter
+  langs:
+  - csharp
+  - vb
+  name: OnActionExecuted(ActionExecutedContext)
+  nameWithType: UFClearViewDataServiceFilter.OnActionExecuted(ActionExecutedContext)
+  fullName: UltraForce.Library.Core.Asp.Filters.UFClearViewDataServiceFilter.OnActionExecuted(Microsoft.AspNetCore.Mvc.Filters.ActionExecutedContext)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Filters/UFClearViewDataServiceFilter.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: OnActionExecuted
+    path: ../UltraForce.Library.Core.Asp/Filters/UFClearViewDataServiceFilter.cs
+    startLine: 66
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Filters
+  summary: Called after the action executes, before the action result.
+  example: []
+  syntax:
+    content: public void OnActionExecuted(ActionExecutedContext context)
+    parameters:
+    - id: context
+      type: Microsoft.AspNetCore.Mvc.Filters.ActionExecutedContext
+      description: The <xref href="Microsoft.AspNetCore.Mvc.Filters.ActionExecutedContext" data-throw-if-not-resolved="false"></xref>.
+    content.vb: Public Sub OnActionExecuted(context As ActionExecutedContext)
+  overload: UltraForce.Library.Core.Asp.Filters.UFClearViewDataServiceFilter.OnActionExecuted*
+  implements:
+  - Microsoft.AspNetCore.Mvc.Filters.IActionFilter.OnActionExecuted(Microsoft.AspNetCore.Mvc.Filters.ActionExecutedContext)
+references:
+- uid: UltraForce.Library.Core.Asp.Services.IUFViewDataService
+  commentId: T:UltraForce.Library.Core.Asp.Services.IUFViewDataService
+  parent: UltraForce.Library.Core.Asp.Services
+  href: UltraForce.Library.Core.Asp.Services.IUFViewDataService.html
+  name: IUFViewDataService
+  nameWithType: IUFViewDataService
+  fullName: UltraForce.Library.Core.Asp.Services.IUFViewDataService
+- uid: UltraForce.Library.Core.Asp.Filters
+  commentId: N:UltraForce.Library.Core.Asp.Filters
+  href: UltraForce.html
+  name: UltraForce.Library.Core.Asp.Filters
+  nameWithType: UltraForce.Library.Core.Asp.Filters
+  fullName: UltraForce.Library.Core.Asp.Filters
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Filters
+    name: Filters
+    href: UltraForce.Library.Core.Asp.Filters.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Filters
+    name: Filters
+    href: UltraForce.Library.Core.Asp.Filters.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Microsoft.AspNetCore.Mvc.Filters.IActionFilter
+  commentId: T:Microsoft.AspNetCore.Mvc.Filters.IActionFilter
+  parent: Microsoft.AspNetCore.Mvc.Filters
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.filters.iactionfilter
+  name: IActionFilter
+  nameWithType: IActionFilter
+  fullName: Microsoft.AspNetCore.Mvc.Filters.IActionFilter
+- uid: Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata
+  commentId: T:Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata
+  parent: Microsoft.AspNetCore.Mvc.Filters
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.filters.ifiltermetadata
+  name: IFilterMetadata
+  nameWithType: IFilterMetadata
+  fullName: Microsoft.AspNetCore.Mvc.Filters.IFilterMetadata
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: UltraForce.Library.Core.Asp.Services
+  commentId: N:UltraForce.Library.Core.Asp.Services
+  href: UltraForce.html
+  name: UltraForce.Library.Core.Asp.Services
+  nameWithType: UltraForce.Library.Core.Asp.Services
+  fullName: UltraForce.Library.Core.Asp.Services
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Services
+    name: Services
+    href: UltraForce.Library.Core.Asp.Services.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Services
+    name: Services
+    href: UltraForce.Library.Core.Asp.Services.html
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.AspNetCore.Mvc.Filters
+  commentId: N:Microsoft.AspNetCore.Mvc.Filters
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.AspNetCore.Mvc.Filters
+  nameWithType: Microsoft.AspNetCore.Mvc.Filters
+  fullName: Microsoft.AspNetCore.Mvc.Filters
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Mvc
+    name: Mvc
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc
+  - name: .
+  - uid: Microsoft.AspNetCore.Mvc.Filters
+    name: Filters
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.filters
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Mvc
+    name: Mvc
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc
+  - name: .
+  - uid: Microsoft.AspNetCore.Mvc.Filters
+    name: Filters
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.filters
+- uid: UltraForce.Library.Core.Asp.Filters.UFClearViewDataServiceFilter.#ctor*
+  commentId: Overload:UltraForce.Library.Core.Asp.Filters.UFClearViewDataServiceFilter.#ctor
+  href: UltraForce.Library.Core.Asp.Filters.UFClearViewDataServiceFilter.html#UltraForce_Library_Core_Asp_Filters_UFClearViewDataServiceFilter__ctor_UltraForce_Library_Core_Asp_Services_IUFViewDataService_
+  name: UFClearViewDataServiceFilter
+  nameWithType: UFClearViewDataServiceFilter.UFClearViewDataServiceFilter
+  fullName: UltraForce.Library.Core.Asp.Filters.UFClearViewDataServiceFilter.UFClearViewDataServiceFilter
+  nameWithType.vb: UFClearViewDataServiceFilter.New
+  fullName.vb: UltraForce.Library.Core.Asp.Filters.UFClearViewDataServiceFilter.New
+  name.vb: New
+- uid: Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext
+  commentId: T:Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext
+  parent: Microsoft.AspNetCore.Mvc.Filters
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.filters.actionexecutingcontext
+  name: ActionExecutingContext
+  nameWithType: ActionExecutingContext
+  fullName: Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext
+- uid: UltraForce.Library.Core.Asp.Filters.UFClearViewDataServiceFilter.OnActionExecuting*
+  commentId: Overload:UltraForce.Library.Core.Asp.Filters.UFClearViewDataServiceFilter.OnActionExecuting
+  href: UltraForce.Library.Core.Asp.Filters.UFClearViewDataServiceFilter.html#UltraForce_Library_Core_Asp_Filters_UFClearViewDataServiceFilter_OnActionExecuting_Microsoft_AspNetCore_Mvc_Filters_ActionExecutingContext_
+  name: OnActionExecuting
+  nameWithType: UFClearViewDataServiceFilter.OnActionExecuting
+  fullName: UltraForce.Library.Core.Asp.Filters.UFClearViewDataServiceFilter.OnActionExecuting
+- uid: Microsoft.AspNetCore.Mvc.Filters.IActionFilter.OnActionExecuting(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext)
+  commentId: M:Microsoft.AspNetCore.Mvc.Filters.IActionFilter.OnActionExecuting(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext)
+  parent: Microsoft.AspNetCore.Mvc.Filters.IActionFilter
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.filters.iactionfilter.onactionexecuting
+  name: OnActionExecuting(ActionExecutingContext)
+  nameWithType: IActionFilter.OnActionExecuting(ActionExecutingContext)
+  fullName: Microsoft.AspNetCore.Mvc.Filters.IActionFilter.OnActionExecuting(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Mvc.Filters.IActionFilter.OnActionExecuting(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext)
+    name: OnActionExecuting
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.filters.iactionfilter.onactionexecuting
+  - name: (
+  - uid: Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext
+    name: ActionExecutingContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.filters.actionexecutingcontext
+  - name: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Mvc.Filters.IActionFilter.OnActionExecuting(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext)
+    name: OnActionExecuting
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.filters.iactionfilter.onactionexecuting
+  - name: (
+  - uid: Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext
+    name: ActionExecutingContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.filters.actionexecutingcontext
+  - name: )
+- uid: Microsoft.AspNetCore.Mvc.Filters.ActionExecutedContext
+  commentId: T:Microsoft.AspNetCore.Mvc.Filters.ActionExecutedContext
+  parent: Microsoft.AspNetCore.Mvc.Filters
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.filters.actionexecutedcontext
+  name: ActionExecutedContext
+  nameWithType: ActionExecutedContext
+  fullName: Microsoft.AspNetCore.Mvc.Filters.ActionExecutedContext
+- uid: UltraForce.Library.Core.Asp.Filters.UFClearViewDataServiceFilter.OnActionExecuted*
+  commentId: Overload:UltraForce.Library.Core.Asp.Filters.UFClearViewDataServiceFilter.OnActionExecuted
+  href: UltraForce.Library.Core.Asp.Filters.UFClearViewDataServiceFilter.html#UltraForce_Library_Core_Asp_Filters_UFClearViewDataServiceFilter_OnActionExecuted_Microsoft_AspNetCore_Mvc_Filters_ActionExecutedContext_
+  name: OnActionExecuted
+  nameWithType: UFClearViewDataServiceFilter.OnActionExecuted
+  fullName: UltraForce.Library.Core.Asp.Filters.UFClearViewDataServiceFilter.OnActionExecuted
+- uid: Microsoft.AspNetCore.Mvc.Filters.IActionFilter.OnActionExecuted(Microsoft.AspNetCore.Mvc.Filters.ActionExecutedContext)
+  commentId: M:Microsoft.AspNetCore.Mvc.Filters.IActionFilter.OnActionExecuted(Microsoft.AspNetCore.Mvc.Filters.ActionExecutedContext)
+  parent: Microsoft.AspNetCore.Mvc.Filters.IActionFilter
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.filters.iactionfilter.onactionexecuted
+  name: OnActionExecuted(ActionExecutedContext)
+  nameWithType: IActionFilter.OnActionExecuted(ActionExecutedContext)
+  fullName: Microsoft.AspNetCore.Mvc.Filters.IActionFilter.OnActionExecuted(Microsoft.AspNetCore.Mvc.Filters.ActionExecutedContext)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Mvc.Filters.IActionFilter.OnActionExecuted(Microsoft.AspNetCore.Mvc.Filters.ActionExecutedContext)
+    name: OnActionExecuted
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.filters.iactionfilter.onactionexecuted
+  - name: (
+  - uid: Microsoft.AspNetCore.Mvc.Filters.ActionExecutedContext
+    name: ActionExecutedContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.filters.actionexecutedcontext
+  - name: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Mvc.Filters.IActionFilter.OnActionExecuted(Microsoft.AspNetCore.Mvc.Filters.ActionExecutedContext)
+    name: OnActionExecuted
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.filters.iactionfilter.onactionexecuted
+  - name: (
+  - uid: Microsoft.AspNetCore.Mvc.Filters.ActionExecutedContext
+    name: ActionExecutedContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.filters.actionexecutedcontext
+  - name: )

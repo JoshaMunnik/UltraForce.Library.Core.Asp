@@ -10,6 +10,15 @@ Include the styles in your html using (for example `Shared\_Layout.cshtml`):
 <link rel="stylesheet" href="/_content/UltraForce.Library.Core.Asp/css/uf-styles.css" />
 ````
 ## Version history
+1.0.66
+- added UFClearViewDataServiceFilter
+
+1.0.65
+- added UFDataTagHelperBase, UFDataTitleTagHelper, IUFViewDataService and UFViewDataService
+
+1.0.64
+- fixed bug, href should no longer be set with when a button or div tag is rendered
+
 1.0.63
 - fixed bug with rendering checkbox and radio buttons in UFInputTagHelperBase
 

@@ -4,6 +4,7 @@ items:
   commentId: N:UltraForce.Library.Core.Asp.Filters
   id: UltraForce.Library.Core.Asp.Filters
   children:
+  - UltraForce.Library.Core.Asp.Filters.UFClearViewDataServiceFilter
   - UltraForce.Library.Core.Asp.Filters.UFUseActionExceptionFilter
   langs:
   - csharp
@@ -15,6 +16,12 @@ items:
   assemblies:
   - UltraForce.Library.Core.Asp
 references:
+- uid: UltraForce.Library.Core.Asp.Filters.UFClearViewDataServiceFilter
+  commentId: T:UltraForce.Library.Core.Asp.Filters.UFClearViewDataServiceFilter
+  href: UltraForce.Library.Core.Asp.Filters.UFClearViewDataServiceFilter.html
+  name: UFClearViewDataServiceFilter
+  nameWithType: UFClearViewDataServiceFilter
+  fullName: UltraForce.Library.Core.Asp.Filters.UFClearViewDataServiceFilter
 - uid: UltraForce.Library.Core.Asp.Filters.UFUseActionExceptionFilter
   commentId: T:UltraForce.Library.Core.Asp.Filters.UFUseActionExceptionFilter
   href: UltraForce.Library.Core.Asp.Filters.UFUseActionExceptionFilter.html

@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class UFTagHelperWithViewContext | UltraForce.Library.Core.Asp </title>
+      <title>Class UFViewDataService | UltraForce.Library.Core.Asp </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class UFTagHelperWithViewContext | UltraForce.Library.Core.Asp ">
+      <meta name="title" content="Class UFViewDataService | UltraForce.Library.Core.Asp ">
       
-      <meta name="description" content="Base class for tag helpers. It exposes  property.">
+      <meta name="description" content="Implements the  interface.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/new/master/apiSpec/new?filename=UltraForce_Library_Core_Asp_TagHelpers_Base_UFTagHelperWithViewContext.md&amp;value=---%0Auid%3A%20UltraForce.Library.Core.Asp.TagHelpers.Base.UFTagHelperWithViewContext%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/new/master/apiSpec/new?filename=UltraForce_Library_Core_Asp_Services_UFViewDataService.md&amp;value=---%0Auid%3A%20UltraForce.Library.Core.Asp.Services.UFViewDataService%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -84,25 +84,25 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.UFTagHelperWithViewContext">
+        <article data-uid="UltraForce.Library.Core.Asp.Services.UFViewDataService">
 
 
 
-  <h1 id="UltraForce_Library_Core_Asp_TagHelpers_Base_UFTagHelperWithViewContext" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.UFTagHelperWithViewContext" class="text-break">
-Class UFTagHelperWithViewContext  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/UFTagHelperWithViewContext.cs/#L40"><i class="bi bi-code-slash"></i></a>
+  <h1 id="UltraForce_Library_Core_Asp_Services_UFViewDataService" data-uid="UltraForce.Library.Core.Asp.Services.UFViewDataService" class="text-break">
+Class UFViewDataService  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Services/UFViewDataService.cs/#L35"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
-    <dl><dt>Namespace</dt><dd><a class="xref" href="UltraForce.html">UltraForce</a>.<a class="xref" href="UltraForce.Library.html">Library</a>.<a class="xref" href="UltraForce.Library.Core.html">Core</a>.<a class="xref" href="UltraForce.Library.Core.Asp.html">Asp</a>.<a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.html">TagHelpers</a>.<a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.html">Base</a></dd></dl>
+    <dl><dt>Namespace</dt><dd><a class="xref" href="UltraForce.html">UltraForce</a>.<a class="xref" href="UltraForce.Library.html">Library</a>.<a class="xref" href="UltraForce.Library.Core.html">Core</a>.<a class="xref" href="UltraForce.Library.Core.Asp.html">Asp</a>.<a class="xref" href="UltraForce.Library.Core.Asp.Services.html">Services</a></dd></dl>
   <dl><dt>Assembly</dt><dd>UltraForce.Library.Core.Asp.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>Base class for tag helpers. It exposes <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.UFTagHelperWithViewContext.html#UltraForce_Library_Core_Asp_TagHelpers_Base_UFTagHelperWithViewContext_ViewContext">ViewContext</a> property.</p>
+  <div class="markdown summary"><p>Implements the <a class="xref" href="UltraForce.Library.Core.Asp.Services.IUFViewDataService.html">IUFViewDataService</a> interface.</p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class UFTagHelperWithViewContext : TagHelper, ITagHelper, ITagHelperComponent</code></pre>
+    <pre><code class="lang-csharp hljs">public class UFViewDataService : IUFViewDataService</code></pre>
   </div>
 
 
@@ -112,42 +112,21 @@ Class UFTagHelperWithViewContext  <a class="header-action link-secondary" title=
     <dt>Inheritance</dt>
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper">TagHelper</a></div>
-      <div><span class="xref">UFTagHelperWithViewContext</span></div>
+      <div><span class="xref">UFViewDataService</span></div>
     </dd>
   </dl>
 
   <dl class="typelist implements">
     <dt>Implements</dt>
     <dd>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.itaghelper">ITagHelper</a></div>
-      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.itaghelpercomponent">ITagHelperComponent</a></div>
+      <div><a class="xref" href="UltraForce.Library.Core.Asp.Services.IUFViewDataService.html">IUFViewDataService</a></div>
     </dd>
   </dl>
 
-  <dl class="typelist derived">
-    <dt>Derived</dt>
-    <dd>
-      <div><a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.UFTagHelperWithModelExpressionRenderer.html">UFTagHelperWithModelExpressionRenderer</a></div>
-      <div><a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFDataTagHelperBase.html">UFDataTagHelperBase</a></div>
-    </dd>
-  </dl>
 
   <dl class="typelist inheritedMembers">
     <dt>Inherited Members</dt>
     <dd>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper.init">TagHelper.Init(TagHelperContext)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper.process">TagHelper.Process(TagHelperContext, TagHelperOutput)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper.processasync">TagHelper.ProcessAsync(TagHelperContext, TagHelperOutput)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper.order">TagHelper.Order</a>
-    </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
     </div>
@@ -180,21 +159,20 @@ Class UFTagHelperWithViewContext  <a class="header-action link-secondary" title=
 </h2>
 
 
-  <a id="UltraForce_Library_Core_Asp_TagHelpers_Base_UFTagHelperWithViewContext_ViewContext_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.UFTagHelperWithViewContext.ViewContext*"></a>
+  <a id="UltraForce_Library_Core_Asp_Services_UFViewDataService_Title_" data-uid="UltraForce.Library.Core.Asp.Services.UFViewDataService.Title*"></a>
 
-  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_UFTagHelperWithViewContext_ViewContext" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.UFTagHelperWithViewContext.ViewContext">
-  ViewContext
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/UFTagHelperWithViewContext.cs/#L48"><i class="bi bi-code-slash"></i></a>
+  <h3 id="UltraForce_Library_Core_Asp_Services_UFViewDataService_Title" data-uid="UltraForce.Library.Core.Asp.Services.UFViewDataService.Title">
+  Title
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Services/UFViewDataService.cs/#L38"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>View context (will be set externally by the razor engine)</p>
+  <div class="markdown level1 summary"><p>This property is used to store the title of the page. The <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.UFDataTitleTagHelper.html">UFDataTitleTagHelper</a>
+uses this property to set or read the title.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[HtmlAttributeNotBound]
-[ViewContext]
-public ViewContext ViewContext { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string Title { get; set; }</code></pre>
   </div>
 
 
@@ -203,9 +181,40 @@ public ViewContext ViewContext { get; set; }</code></pre>
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.rendering.viewcontext">ViewContext</a></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
   </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="UltraForce_Library_Core_Asp_Services_UFViewDataService_Clear_" data-uid="UltraForce.Library.Core.Asp.Services.UFViewDataService.Clear*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Services_UFViewDataService_Clear" data-uid="UltraForce.Library.Core.Asp.Services.UFViewDataService.Clear">
+  Clear()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Services/UFViewDataService.cs/#L41"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Clears all data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Clear()</code></pre>
+  </div>
+
+
+
+
+
 
 
 
@@ -218,7 +227,7 @@ public ViewContext ViewContext { get; set; }</code></pre>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/UFTagHelperWithViewContext.cs/#L40" class="edit-link">Edit this page</a>
+          <a href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Services/UFViewDataService.cs/#L35" class="edit-link">Edit this page</a>
         </div>
 
 

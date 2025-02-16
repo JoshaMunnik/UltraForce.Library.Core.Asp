@@ -13,6 +13,8 @@ items:
 - uid: UltraForce.Library.Core.Asp.Filters
   name: UltraForce.Library.Core.Asp.Filters
   items:
+  - uid: UltraForce.Library.Core.Asp.Filters.UFClearViewDataServiceFilter
+    name: UFClearViewDataServiceFilter
   - uid: UltraForce.Library.Core.Asp.Filters.UFUseActionExceptionFilter
     name: UFUseActionExceptionFilter
 - uid: UltraForce.Library.Core.Asp.Localization
@@ -32,6 +34,8 @@ items:
     name: IUFAsynchronousExecutableService
   - uid: UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer
     name: IUFModelExpressionRenderer
+  - uid: UltraForce.Library.Core.Asp.Services.IUFViewDataService
+    name: IUFViewDataService
   - uid: UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber
     name: UFDutchIdentityErrorDescriber
   - uid: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer
@@ -40,6 +44,8 @@ items:
     name: UFRazorViewRenderer
   - uid: UltraForce.Library.Core.Asp.Services.UFScopedBackgroundService`1
     name: UFScopedBackgroundService<TAsynchronousExecutableService>
+  - uid: UltraForce.Library.Core.Asp.Services.UFViewDataService
+    name: UFViewDataService
 - uid: UltraForce.Library.Core.Asp.Sessions
   name: UltraForce.Library.Core.Asp.Sessions
   items:
@@ -52,10 +58,10 @@ items:
   items:
   - uid: UltraForce.Library.Core.Asp.TagHelpers.UFConditionTagHelper
     name: UFConditionTagHelper
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.UFDataTitleTagHelper
+    name: UFDataTitleTagHelper
   - uid: UltraForce.Library.Core.Asp.TagHelpers.UFNotConditionTagHelper
     name: UFNotConditionTagHelper
-  - uid: UltraForce.Library.Core.Asp.TagHelpers.UFViewdataTagHelper
-    name: UFViewdataTagHelper
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Base
   name: UltraForce.Library.Core.Asp.TagHelpers.Base
   items:
@@ -120,6 +126,8 @@ items:
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base
   name: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base
   items:
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFDataTagHelperBase
+    name: UFDataTagHelperBase
   - uid: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase
     name: UFFlexTagHelperBase
 - uid: UltraForce.Library.Core.Asp.Tools

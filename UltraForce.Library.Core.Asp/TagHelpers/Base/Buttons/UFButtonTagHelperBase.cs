@@ -124,10 +124,6 @@ public abstract class UFButtonTagHelperBase(
   {
     await base.ProcessAsync(context, output);
     bool hasHref = this.ProcessHref(output);
-    if (!hasHref)
-    {
-      output.Attributes.Remove(new TagHelperAttribute("href"));
-    }
     output.TagName = this.Static ? "div" : hasHref ? (this.Disabled ? "div" : "a") : "button";
     output.TagMode = TagMode.StartTagAndEndTag;
     if (this.Disabled)

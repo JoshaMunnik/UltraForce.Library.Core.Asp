@@ -95,6 +95,57 @@ references:
   commentId: N:UltraForce.Library.Core.Asp.Filters
   fullName: UltraForce.Library.Core.Asp.Filters
   nameWithType: UltraForce.Library.Core.Asp.Filters
+- uid: UltraForce.Library.Core.Asp.Filters.UFClearViewDataServiceFilter
+  name: UFClearViewDataServiceFilter
+  href: api/UltraForce.Library.Core.Asp.Filters.UFClearViewDataServiceFilter.html
+  commentId: T:UltraForce.Library.Core.Asp.Filters.UFClearViewDataServiceFilter
+  fullName: UltraForce.Library.Core.Asp.Filters.UFClearViewDataServiceFilter
+  nameWithType: UFClearViewDataServiceFilter
+- uid: UltraForce.Library.Core.Asp.Filters.UFClearViewDataServiceFilter.#ctor(UltraForce.Library.Core.Asp.Services.IUFViewDataService)
+  name: UFClearViewDataServiceFilter(IUFViewDataService)
+  href: api/UltraForce.Library.Core.Asp.Filters.UFClearViewDataServiceFilter.html#UltraForce_Library_Core_Asp_Filters_UFClearViewDataServiceFilter__ctor_UltraForce_Library_Core_Asp_Services_IUFViewDataService_
+  commentId: M:UltraForce.Library.Core.Asp.Filters.UFClearViewDataServiceFilter.#ctor(UltraForce.Library.Core.Asp.Services.IUFViewDataService)
+  name.vb: New(IUFViewDataService)
+  fullName: UltraForce.Library.Core.Asp.Filters.UFClearViewDataServiceFilter.UFClearViewDataServiceFilter(UltraForce.Library.Core.Asp.Services.IUFViewDataService)
+  fullName.vb: UltraForce.Library.Core.Asp.Filters.UFClearViewDataServiceFilter.New(UltraForce.Library.Core.Asp.Services.IUFViewDataService)
+  nameWithType: UFClearViewDataServiceFilter.UFClearViewDataServiceFilter(IUFViewDataService)
+  nameWithType.vb: UFClearViewDataServiceFilter.New(IUFViewDataService)
+- uid: UltraForce.Library.Core.Asp.Filters.UFClearViewDataServiceFilter.#ctor*
+  name: UFClearViewDataServiceFilter
+  href: api/UltraForce.Library.Core.Asp.Filters.UFClearViewDataServiceFilter.html#UltraForce_Library_Core_Asp_Filters_UFClearViewDataServiceFilter__ctor_
+  commentId: Overload:UltraForce.Library.Core.Asp.Filters.UFClearViewDataServiceFilter.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: UltraForce.Library.Core.Asp.Filters.UFClearViewDataServiceFilter.UFClearViewDataServiceFilter
+  fullName.vb: UltraForce.Library.Core.Asp.Filters.UFClearViewDataServiceFilter.New
+  nameWithType: UFClearViewDataServiceFilter.UFClearViewDataServiceFilter
+  nameWithType.vb: UFClearViewDataServiceFilter.New
+- uid: UltraForce.Library.Core.Asp.Filters.UFClearViewDataServiceFilter.OnActionExecuted(Microsoft.AspNetCore.Mvc.Filters.ActionExecutedContext)
+  name: OnActionExecuted(ActionExecutedContext)
+  href: api/UltraForce.Library.Core.Asp.Filters.UFClearViewDataServiceFilter.html#UltraForce_Library_Core_Asp_Filters_UFClearViewDataServiceFilter_OnActionExecuted_Microsoft_AspNetCore_Mvc_Filters_ActionExecutedContext_
+  commentId: M:UltraForce.Library.Core.Asp.Filters.UFClearViewDataServiceFilter.OnActionExecuted(Microsoft.AspNetCore.Mvc.Filters.ActionExecutedContext)
+  fullName: UltraForce.Library.Core.Asp.Filters.UFClearViewDataServiceFilter.OnActionExecuted(Microsoft.AspNetCore.Mvc.Filters.ActionExecutedContext)
+  nameWithType: UFClearViewDataServiceFilter.OnActionExecuted(ActionExecutedContext)
+- uid: UltraForce.Library.Core.Asp.Filters.UFClearViewDataServiceFilter.OnActionExecuted*
+  name: OnActionExecuted
+  href: api/UltraForce.Library.Core.Asp.Filters.UFClearViewDataServiceFilter.html#UltraForce_Library_Core_Asp_Filters_UFClearViewDataServiceFilter_OnActionExecuted_
+  commentId: Overload:UltraForce.Library.Core.Asp.Filters.UFClearViewDataServiceFilter.OnActionExecuted
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Asp.Filters.UFClearViewDataServiceFilter.OnActionExecuted
+  nameWithType: UFClearViewDataServiceFilter.OnActionExecuted
+- uid: UltraForce.Library.Core.Asp.Filters.UFClearViewDataServiceFilter.OnActionExecuting(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext)
+  name: OnActionExecuting(ActionExecutingContext)
+  href: api/UltraForce.Library.Core.Asp.Filters.UFClearViewDataServiceFilter.html#UltraForce_Library_Core_Asp_Filters_UFClearViewDataServiceFilter_OnActionExecuting_Microsoft_AspNetCore_Mvc_Filters_ActionExecutingContext_
+  commentId: M:UltraForce.Library.Core.Asp.Filters.UFClearViewDataServiceFilter.OnActionExecuting(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext)
+  fullName: UltraForce.Library.Core.Asp.Filters.UFClearViewDataServiceFilter.OnActionExecuting(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext)
+  nameWithType: UFClearViewDataServiceFilter.OnActionExecuting(ActionExecutingContext)
+- uid: UltraForce.Library.Core.Asp.Filters.UFClearViewDataServiceFilter.OnActionExecuting*
+  name: OnActionExecuting
+  href: api/UltraForce.Library.Core.Asp.Filters.UFClearViewDataServiceFilter.html#UltraForce_Library_Core_Asp_Filters_UFClearViewDataServiceFilter_OnActionExecuting_
+  commentId: Overload:UltraForce.Library.Core.Asp.Filters.UFClearViewDataServiceFilter.OnActionExecuting
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Asp.Filters.UFClearViewDataServiceFilter.OnActionExecuting
+  nameWithType: UFClearViewDataServiceFilter.OnActionExecuting
 - uid: UltraForce.Library.Core.Asp.Filters.UFUseActionExceptionFilter
   name: UFUseActionExceptionFilter
   href: api/UltraForce.Library.Core.Asp.Filters.UFUseActionExceptionFilter.html
@@ -920,6 +971,38 @@ references:
   isSpec: "True"
   fullName: UltraForce.Library.Core.Asp.Services.IUFTheme.GetValidationFeedbackContainerHtml
   nameWithType: IUFTheme.GetValidationFeedbackContainerHtml
+- uid: UltraForce.Library.Core.Asp.Services.IUFViewDataService
+  name: IUFViewDataService
+  href: api/UltraForce.Library.Core.Asp.Services.IUFViewDataService.html
+  commentId: T:UltraForce.Library.Core.Asp.Services.IUFViewDataService
+  fullName: UltraForce.Library.Core.Asp.Services.IUFViewDataService
+  nameWithType: IUFViewDataService
+- uid: UltraForce.Library.Core.Asp.Services.IUFViewDataService.Clear
+  name: Clear()
+  href: api/UltraForce.Library.Core.Asp.Services.IUFViewDataService.html#UltraForce_Library_Core_Asp_Services_IUFViewDataService_Clear
+  commentId: M:UltraForce.Library.Core.Asp.Services.IUFViewDataService.Clear
+  fullName: UltraForce.Library.Core.Asp.Services.IUFViewDataService.Clear()
+  nameWithType: IUFViewDataService.Clear()
+- uid: UltraForce.Library.Core.Asp.Services.IUFViewDataService.Clear*
+  name: Clear
+  href: api/UltraForce.Library.Core.Asp.Services.IUFViewDataService.html#UltraForce_Library_Core_Asp_Services_IUFViewDataService_Clear_
+  commentId: Overload:UltraForce.Library.Core.Asp.Services.IUFViewDataService.Clear
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Asp.Services.IUFViewDataService.Clear
+  nameWithType: IUFViewDataService.Clear
+- uid: UltraForce.Library.Core.Asp.Services.IUFViewDataService.Title
+  name: Title
+  href: api/UltraForce.Library.Core.Asp.Services.IUFViewDataService.html#UltraForce_Library_Core_Asp_Services_IUFViewDataService_Title
+  commentId: P:UltraForce.Library.Core.Asp.Services.IUFViewDataService.Title
+  fullName: UltraForce.Library.Core.Asp.Services.IUFViewDataService.Title
+  nameWithType: IUFViewDataService.Title
+- uid: UltraForce.Library.Core.Asp.Services.IUFViewDataService.Title*
+  name: Title
+  href: api/UltraForce.Library.Core.Asp.Services.IUFViewDataService.html#UltraForce_Library_Core_Asp_Services_IUFViewDataService_Title_
+  commentId: Overload:UltraForce.Library.Core.Asp.Services.IUFViewDataService.Title
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Asp.Services.IUFViewDataService.Title
+  nameWithType: IUFViewDataService.Title
 - uid: UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber
   name: UFDutchIdentityErrorDescriber
   href: api/UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber.html
@@ -2012,6 +2095,38 @@ references:
   isSpec: "True"
   fullName: UltraForce.Library.Core.Asp.Services.UFTheme.GetValidationFeedbackContainerHtml
   nameWithType: UFTheme.GetValidationFeedbackContainerHtml
+- uid: UltraForce.Library.Core.Asp.Services.UFViewDataService
+  name: UFViewDataService
+  href: api/UltraForce.Library.Core.Asp.Services.UFViewDataService.html
+  commentId: T:UltraForce.Library.Core.Asp.Services.UFViewDataService
+  fullName: UltraForce.Library.Core.Asp.Services.UFViewDataService
+  nameWithType: UFViewDataService
+- uid: UltraForce.Library.Core.Asp.Services.UFViewDataService.Clear
+  name: Clear()
+  href: api/UltraForce.Library.Core.Asp.Services.UFViewDataService.html#UltraForce_Library_Core_Asp_Services_UFViewDataService_Clear
+  commentId: M:UltraForce.Library.Core.Asp.Services.UFViewDataService.Clear
+  fullName: UltraForce.Library.Core.Asp.Services.UFViewDataService.Clear()
+  nameWithType: UFViewDataService.Clear()
+- uid: UltraForce.Library.Core.Asp.Services.UFViewDataService.Clear*
+  name: Clear
+  href: api/UltraForce.Library.Core.Asp.Services.UFViewDataService.html#UltraForce_Library_Core_Asp_Services_UFViewDataService_Clear_
+  commentId: Overload:UltraForce.Library.Core.Asp.Services.UFViewDataService.Clear
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Asp.Services.UFViewDataService.Clear
+  nameWithType: UFViewDataService.Clear
+- uid: UltraForce.Library.Core.Asp.Services.UFViewDataService.Title
+  name: Title
+  href: api/UltraForce.Library.Core.Asp.Services.UFViewDataService.html#UltraForce_Library_Core_Asp_Services_UFViewDataService_Title
+  commentId: P:UltraForce.Library.Core.Asp.Services.UFViewDataService.Title
+  fullName: UltraForce.Library.Core.Asp.Services.UFViewDataService.Title
+  nameWithType: UFViewDataService.Title
+- uid: UltraForce.Library.Core.Asp.Services.UFViewDataService.Title*
+  name: Title
+  href: api/UltraForce.Library.Core.Asp.Services.UFViewDataService.html#UltraForce_Library_Core_Asp_Services_UFViewDataService_Title_
+  commentId: Overload:UltraForce.Library.Core.Asp.Services.UFViewDataService.Title
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Asp.Services.UFViewDataService.Title
+  nameWithType: UFViewDataService.Title
 - uid: UltraForce.Library.Core.Asp.Sessions
   name: UltraForce.Library.Core.Asp.Sessions
   href: api/UltraForce.Library.Core.Asp.Sessions.html
@@ -6046,6 +6161,54 @@ references:
   commentId: N:UltraForce.Library.Core.Asp.TagHelpers.Layout.Base
   fullName: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base
   nameWithType: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFDataTagHelperBase
+  name: UFDataTagHelperBase
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFDataTagHelperBase.html
+  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFDataTagHelperBase
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFDataTagHelperBase
+  nameWithType: UFDataTagHelperBase
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFDataTagHelperBase.GetDataAsync
+  name: GetDataAsync()
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFDataTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Layout_Base_UFDataTagHelperBase_GetDataAsync
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFDataTagHelperBase.GetDataAsync
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFDataTagHelperBase.GetDataAsync()
+  nameWithType: UFDataTagHelperBase.GetDataAsync()
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFDataTagHelperBase.GetDataAsync*
+  name: GetDataAsync
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFDataTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Layout_Base_UFDataTagHelperBase_GetDataAsync_
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFDataTagHelperBase.GetDataAsync
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFDataTagHelperBase.GetDataAsync
+  nameWithType: UFDataTagHelperBase.GetDataAsync
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFDataTagHelperBase.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  name: ProcessAsync(TagHelperContext, TagHelperOutput)
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFDataTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Layout_Base_UFDataTagHelperBase_ProcessAsync_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContext_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFDataTagHelperBase.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFDataTagHelperBase.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  nameWithType: UFDataTagHelperBase.ProcessAsync(TagHelperContext, TagHelperOutput)
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFDataTagHelperBase.ProcessAsync*
+  name: ProcessAsync
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFDataTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Layout_Base_UFDataTagHelperBase_ProcessAsync_
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFDataTagHelperBase.ProcessAsync
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFDataTagHelperBase.ProcessAsync
+  nameWithType: UFDataTagHelperBase.ProcessAsync
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFDataTagHelperBase.SetDataAsync(System.String)
+  name: SetDataAsync(string)
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFDataTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Layout_Base_UFDataTagHelperBase_SetDataAsync_System_String_
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFDataTagHelperBase.SetDataAsync(System.String)
+  name.vb: SetDataAsync(String)
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFDataTagHelperBase.SetDataAsync(string)
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFDataTagHelperBase.SetDataAsync(String)
+  nameWithType: UFDataTagHelperBase.SetDataAsync(string)
+  nameWithType.vb: UFDataTagHelperBase.SetDataAsync(String)
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFDataTagHelperBase.SetDataAsync*
+  name: SetDataAsync
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFDataTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Layout_Base_UFDataTagHelperBase_SetDataAsync_
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFDataTagHelperBase.SetDataAsync
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFDataTagHelperBase.SetDataAsync
+  nameWithType: UFDataTagHelperBase.SetDataAsync
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase
   name: UFFlexTagHelperBase
   href: api/UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.html
@@ -10948,6 +11111,60 @@ references:
   isSpec: "True"
   fullName: UltraForce.Library.Core.Asp.TagHelpers.UFConditionTagHelper.Process
   nameWithType: UFConditionTagHelper.Process
+- uid: UltraForce.Library.Core.Asp.TagHelpers.UFDataTitleTagHelper
+  name: UFDataTitleTagHelper
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.UFDataTitleTagHelper.html
+  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.UFDataTitleTagHelper
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.UFDataTitleTagHelper
+  nameWithType: UFDataTitleTagHelper
+- uid: UltraForce.Library.Core.Asp.TagHelpers.UFDataTitleTagHelper.#ctor(UltraForce.Library.Core.Asp.Services.IUFViewDataService)
+  name: UFDataTitleTagHelper(IUFViewDataService)
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.UFDataTitleTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_UFDataTitleTagHelper__ctor_UltraForce_Library_Core_Asp_Services_IUFViewDataService_
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.UFDataTitleTagHelper.#ctor(UltraForce.Library.Core.Asp.Services.IUFViewDataService)
+  name.vb: New(IUFViewDataService)
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.UFDataTitleTagHelper.UFDataTitleTagHelper(UltraForce.Library.Core.Asp.Services.IUFViewDataService)
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.UFDataTitleTagHelper.New(UltraForce.Library.Core.Asp.Services.IUFViewDataService)
+  nameWithType: UFDataTitleTagHelper.UFDataTitleTagHelper(IUFViewDataService)
+  nameWithType.vb: UFDataTitleTagHelper.New(IUFViewDataService)
+- uid: UltraForce.Library.Core.Asp.TagHelpers.UFDataTitleTagHelper.#ctor*
+  name: UFDataTitleTagHelper
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.UFDataTitleTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_UFDataTitleTagHelper__ctor_
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.UFDataTitleTagHelper.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.UFDataTitleTagHelper.UFDataTitleTagHelper
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.UFDataTitleTagHelper.New
+  nameWithType: UFDataTitleTagHelper.UFDataTitleTagHelper
+  nameWithType.vb: UFDataTitleTagHelper.New
+- uid: UltraForce.Library.Core.Asp.TagHelpers.UFDataTitleTagHelper.GetDataAsync
+  name: GetDataAsync()
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.UFDataTitleTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_UFDataTitleTagHelper_GetDataAsync
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.UFDataTitleTagHelper.GetDataAsync
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.UFDataTitleTagHelper.GetDataAsync()
+  nameWithType: UFDataTitleTagHelper.GetDataAsync()
+- uid: UltraForce.Library.Core.Asp.TagHelpers.UFDataTitleTagHelper.GetDataAsync*
+  name: GetDataAsync
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.UFDataTitleTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_UFDataTitleTagHelper_GetDataAsync_
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.UFDataTitleTagHelper.GetDataAsync
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.UFDataTitleTagHelper.GetDataAsync
+  nameWithType: UFDataTitleTagHelper.GetDataAsync
+- uid: UltraForce.Library.Core.Asp.TagHelpers.UFDataTitleTagHelper.SetDataAsync(System.String)
+  name: SetDataAsync(string)
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.UFDataTitleTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_UFDataTitleTagHelper_SetDataAsync_System_String_
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.UFDataTitleTagHelper.SetDataAsync(System.String)
+  name.vb: SetDataAsync(String)
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.UFDataTitleTagHelper.SetDataAsync(string)
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.UFDataTitleTagHelper.SetDataAsync(String)
+  nameWithType: UFDataTitleTagHelper.SetDataAsync(string)
+  nameWithType.vb: UFDataTitleTagHelper.SetDataAsync(String)
+- uid: UltraForce.Library.Core.Asp.TagHelpers.UFDataTitleTagHelper.SetDataAsync*
+  name: SetDataAsync
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.UFDataTitleTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_UFDataTitleTagHelper_SetDataAsync_
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.UFDataTitleTagHelper.SetDataAsync
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.UFDataTitleTagHelper.SetDataAsync
+  nameWithType: UFDataTitleTagHelper.SetDataAsync
 - uid: UltraForce.Library.Core.Asp.TagHelpers.UFNotConditionTagHelper
   name: UFNotConditionTagHelper
   href: api/UltraForce.Library.Core.Asp.TagHelpers.UFNotConditionTagHelper.html

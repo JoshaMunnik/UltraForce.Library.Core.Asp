@@ -1,0 +1,186 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.Core.Asp.Services.IUFViewDataService
+  commentId: T:UltraForce.Library.Core.Asp.Services.IUFViewDataService
+  id: IUFViewDataService
+  parent: UltraForce.Library.Core.Asp.Services
+  children:
+  - UltraForce.Library.Core.Asp.Services.IUFViewDataService.Clear
+  - UltraForce.Library.Core.Asp.Services.IUFViewDataService.Title
+  langs:
+  - csharp
+  - vb
+  name: IUFViewDataService
+  nameWithType: IUFViewDataService
+  fullName: UltraForce.Library.Core.Asp.Services.IUFViewDataService
+  type: Interface
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Services/IUFViewDataService.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: IUFViewDataService
+    path: ../UltraForce.Library.Core.Asp/Services/IUFViewDataService.cs
+    startLine: 40
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Services
+  summary: >-
+    Defines an interface for a service that provides data for a view which is shared between
+
+    all (partial) views and controllers using typed properties.
+
+    <p>
+
+    Register this service in the DI container as a singleton.
+
+    </p>
+  example: []
+  syntax:
+    content: public interface IUFViewDataService
+    content.vb: Public Interface IUFViewDataService
+- uid: UltraForce.Library.Core.Asp.Services.IUFViewDataService.Title
+  commentId: P:UltraForce.Library.Core.Asp.Services.IUFViewDataService.Title
+  id: Title
+  parent: UltraForce.Library.Core.Asp.Services.IUFViewDataService
+  langs:
+  - csharp
+  - vb
+  name: Title
+  nameWithType: IUFViewDataService.Title
+  fullName: UltraForce.Library.Core.Asp.Services.IUFViewDataService.Title
+  type: Property
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Services/IUFViewDataService.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: Title
+    path: ../UltraForce.Library.Core.Asp/Services/IUFViewDataService.cs
+    startLine: 48
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Services
+  summary: >-
+    This property is used to store the title of the page. The <xref href="UltraForce.Library.Core.Asp.TagHelpers.UFDataTitleTagHelper" data-throw-if-not-resolved="false"></xref>
+
+    uses this property to set or read the title.
+  example: []
+  syntax:
+    content: string Title { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Property Title As String
+  overload: UltraForce.Library.Core.Asp.Services.IUFViewDataService.Title*
+- uid: UltraForce.Library.Core.Asp.Services.IUFViewDataService.Clear
+  commentId: M:UltraForce.Library.Core.Asp.Services.IUFViewDataService.Clear
+  id: Clear
+  parent: UltraForce.Library.Core.Asp.Services.IUFViewDataService
+  langs:
+  - csharp
+  - vb
+  name: Clear()
+  nameWithType: IUFViewDataService.Clear()
+  fullName: UltraForce.Library.Core.Asp.Services.IUFViewDataService.Clear()
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Services/IUFViewDataService.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: Clear
+    path: ../UltraForce.Library.Core.Asp/Services/IUFViewDataService.cs
+    startLine: 57
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Services
+  summary: Clears all data.
+  example: []
+  syntax:
+    content: void Clear()
+    content.vb: Sub Clear()
+  overload: UltraForce.Library.Core.Asp.Services.IUFViewDataService.Clear*
+references:
+- uid: UltraForce.Library.Core.Asp.Services
+  commentId: N:UltraForce.Library.Core.Asp.Services
+  href: UltraForce.html
+  name: UltraForce.Library.Core.Asp.Services
+  nameWithType: UltraForce.Library.Core.Asp.Services
+  fullName: UltraForce.Library.Core.Asp.Services
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Services
+    name: Services
+    href: UltraForce.Library.Core.Asp.Services.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Services
+    name: Services
+    href: UltraForce.Library.Core.Asp.Services.html
+- uid: UltraForce.Library.Core.Asp.TagHelpers.UFDataTitleTagHelper
+  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.UFDataTitleTagHelper
+  href: UltraForce.Library.Core.Asp.TagHelpers.UFDataTitleTagHelper.html
+  name: UFDataTitleTagHelper
+  nameWithType: UFDataTitleTagHelper
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.UFDataTitleTagHelper
+- uid: UltraForce.Library.Core.Asp.Services.IUFViewDataService.Title*
+  commentId: Overload:UltraForce.Library.Core.Asp.Services.IUFViewDataService.Title
+  href: UltraForce.Library.Core.Asp.Services.IUFViewDataService.html#UltraForce_Library_Core_Asp_Services_IUFViewDataService_Title
+  name: Title
+  nameWithType: IUFViewDataService.Title
+  fullName: UltraForce.Library.Core.Asp.Services.IUFViewDataService.Title
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UltraForce.Library.Core.Asp.Services.IUFViewDataService.Clear*
+  commentId: Overload:UltraForce.Library.Core.Asp.Services.IUFViewDataService.Clear
+  href: UltraForce.Library.Core.Asp.Services.IUFViewDataService.html#UltraForce_Library_Core_Asp_Services_IUFViewDataService_Clear
+  name: Clear
+  nameWithType: IUFViewDataService.Clear
+  fullName: UltraForce.Library.Core.Asp.Services.IUFViewDataService.Clear

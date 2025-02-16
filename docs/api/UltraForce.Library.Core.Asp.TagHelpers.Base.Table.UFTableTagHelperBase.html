@@ -89,7 +89,7 @@
 
 
   <h1 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableTagHelperBase" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase" class="text-break">
-Class UFTableTagHelperBase  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs/#L83"><i class="bi bi-code-slash"></i></a>
+Class UFTableTagHelperBase  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs/#L84"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -207,7 +207,7 @@ Table with sorting:
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableTagHelperBase__ctor_System_Boolean_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.#ctor(System.Boolean)">
   UFTableTagHelperBase(bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs/#L83"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs/#L84"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Tag helper to render a table. The table assumes all header rows are the first rows in the table
@@ -254,7 +254,8 @@ Table with sorting:
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
     <dt><code>skipHeadBody</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd><p>When true do not insert thead and tbody tags.</p>
+    <dd><p>When true do not insert thead and tbody tags. The class will not call
+<a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableTagHelperBase_GetBodyClasses">GetBodyClasses()</a> and <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableTagHelperBase_GetHeadClasses">GetHeadClasses()</a>.</p>
 </dd>
   </dl>
 
@@ -276,7 +277,7 @@ Table with sorting:
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableTagHelperBase_Table" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.Table">
   Table
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs/#L91"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs/#L92"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The key that children can use to access this instance.</p>
@@ -312,7 +313,7 @@ Table with sorting:
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableTagHelperBase_Filter" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.Filter">
   Filter
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs/#L100"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs/#L101"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>When true add a <code>data-filter</code> attribute with the value &quot;1&quot; to the table.</p>
@@ -345,7 +346,7 @@ public bool Filter { get; set; }</code></pre>
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableTagHelperBase_PageSize" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.PageSize">
   PageSize
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs/#L113"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs/#L114"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Number of rows per page (only used if <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableTagHelperBase_Paging">Paging</a> is true). It will set
@@ -379,7 +380,7 @@ public int PageSize { get; set; }</code></pre>
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableTagHelperBase_Paging" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.Paging">
   Paging
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs/#L106"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs/#L107"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>When true add a <code>data-paging</code> attribute with the value &quot;1&quot; to the table.</p>
@@ -412,7 +413,7 @@ public bool Paging { get; set; }</code></pre>
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableTagHelperBase_Sorting" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.Sorting">
   Sorting
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs/#L119"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs/#L120"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>When true add <code>data-sorting</code> attribute with the value &quot;1&quot; to the table.</p>
@@ -445,7 +446,7 @@ public bool Sorting { get; set; }</code></pre>
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableTagHelperBase_StorageId" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.StorageId">
   StorageId
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs/#L126"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs/#L127"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Assign a value to preserve the sorting and paging state of the table between sessions. When
@@ -485,8 +486,7 @@ set the state is stored in a local storage of the browser.</p>
   <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs/#L276"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Returns the classes to use with the tbody tag. This method is not used if
-skipHeadBody is set to true.</p>
+  <div class="markdown level1 summary"><p>Returns the classes to use with the tbody tag.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -515,7 +515,7 @@ skipHeadBody is set to true.</p>
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableTagHelperBase_GetFilterButtonClasses" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetFilterButtonClasses">
   GetFilterButtonClasses()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs/#L227"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs/#L228"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns the classes for the filter button.</p>
@@ -547,7 +547,7 @@ skipHeadBody is set to true.</p>
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableTagHelperBase_GetFilterCaptionHtml" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetFilterCaptionHtml">
   GetFilterCaptionHtml()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs/#L239"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs/#L240"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns the html to use for the filter button caption (the child of the button tag).</p>
@@ -582,7 +582,7 @@ The default implementation returns "clear".
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableTagHelperBase_GetFilterContainerClasses" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetFilterContainerClasses">
   GetFilterContainerClasses()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs/#L248"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs/#L249"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns the classes for the filter container.</p>
@@ -614,7 +614,7 @@ The default implementation returns "clear".
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableTagHelperBase_GetFilterInputClasses" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetFilterInputClasses">
   GetFilterInputClasses()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs/#L209"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs/#L210"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns the classes for the filter input.</p>
@@ -646,7 +646,7 @@ The default implementation returns "clear".
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableTagHelperBase_GetFilterPlaceholder" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetFilterPlaceholder">
   GetFilterPlaceholder()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs/#L218"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs/#L219"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns the text to be used as the place-holder for the filter input.</p>
@@ -678,11 +678,10 @@ The default implementation returns "clear".
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableTagHelperBase_GetHeadClasses" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetHeadClasses">
   GetHeadClasses()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs/#L286"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs/#L285"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Returns the classes to use with the thead tag. This method is not used if
-skipHeadBody is set to true.</p>
+  <div class="markdown level1 summary"><p>Returns the classes to use with the thead tag.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -711,7 +710,7 @@ skipHeadBody is set to true.</p>
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableTagHelperBase_GetSortAscendingClasses" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetSortAscendingClasses">
   GetSortAscendingClasses()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs/#L257"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs/#L258"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns the classes for the sort ascending icon.</p>
@@ -743,7 +742,7 @@ skipHeadBody is set to true.</p>
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableTagHelperBase_GetSortDescendingClasses" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetSortDescendingClasses">
   GetSortDescendingClasses()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs/#L266"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs/#L267"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns the classes for the sort descending icon.</p>
@@ -775,7 +774,7 @@ skipHeadBody is set to true.</p>
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableTagHelperBase_GetTableClasses" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetTableClasses">
   GetTableClasses()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs/#L200"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs/#L201"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns the classes for the table.</p>
@@ -807,7 +806,7 @@ skipHeadBody is set to true.</p>
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableTagHelperBase_ProcessAsync_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContext_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)">
   ProcessAsync(TagHelperContext, TagHelperOutput)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs/#L133"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs/#L134"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Asynchronously executes the <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper">TagHelper</a> with the given <code class="paramref">context</code> and
@@ -853,7 +852,7 @@ skipHeadBody is set to true.</p>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs/#L83" class="edit-link">Edit this page</a>
+          <a href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs/#L84" class="edit-link">Edit this page</a>
         </div>
 
 
