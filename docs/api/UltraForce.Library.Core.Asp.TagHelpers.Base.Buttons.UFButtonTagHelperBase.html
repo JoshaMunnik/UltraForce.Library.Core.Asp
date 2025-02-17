@@ -392,7 +392,7 @@ public bool Disabled { get; set; }</code></pre>
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Buttons_UFButtonTagHelperBase_ModelExpressionRenderer" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFButtonTagHelperBase.ModelExpressionRenderer">
   ModelExpressionRenderer
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Buttons/UFButtonTagHelperBase.cs/#L191"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Buttons/UFButtonTagHelperBase.cs/#L192"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"></div>
@@ -590,9 +590,9 @@ public bool Submit { get; set; }</code></pre>
 
   <a id="UltraForce_Library_Core_Asp_TagHelpers_Base_Buttons_UFButtonTagHelperBase_GetAfterCaptionHtml_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFButtonTagHelperBase.GetAfterCaptionHtml*"></a>
 
-  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Buttons_UFButtonTagHelperBase_GetAfterCaptionHtml_System_Boolean_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFButtonTagHelperBase.GetAfterCaptionHtml(System.Boolean)">
-  GetAfterCaptionHtml(bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Buttons/UFButtonTagHelperBase.cs/#L212"><i class="bi bi-code-slash"></i></a>
+  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Buttons_UFButtonTagHelperBase_GetAfterCaptionHtml_System_Boolean_System_Boolean_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFButtonTagHelperBase.GetAfterCaptionHtml(System.Boolean,System.Boolean)">
+  GetAfterCaptionHtml(bool, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Buttons/UFButtonTagHelperBase.cs/#L215"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The default implementation returns empty string.</p>
@@ -600,7 +600,7 @@ public bool Submit { get; set; }</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected virtual string GetAfterCaptionHtml(bool hasCaption)</code></pre>
+    <pre><code class="lang-csharp hljs">protected virtual string GetAfterCaptionHtml(bool hasCaption, bool isStatic)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -608,12 +608,16 @@ public bool Submit { get; set; }</code></pre>
     <dt><code>hasCaption</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
     <dd><p>True if there is content for the caption</p>
 </dd>
+    <dt><code>isStatic</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if the button will be rendered with a <code>div</code> tag</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd><p>string containing html formatting</p>
+</dd>
   </dl>
 
 
@@ -628,9 +632,9 @@ public bool Submit { get; set; }</code></pre>
 
   <a id="UltraForce_Library_Core_Asp_TagHelpers_Base_Buttons_UFButtonTagHelperBase_GetBeforeCaptionHtml_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFButtonTagHelperBase.GetBeforeCaptionHtml*"></a>
 
-  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Buttons_UFButtonTagHelperBase_GetBeforeCaptionHtml_System_Boolean_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFButtonTagHelperBase.GetBeforeCaptionHtml(System.Boolean)">
-  GetBeforeCaptionHtml(bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Buttons/UFButtonTagHelperBase.cs/#L202"><i class="bi bi-code-slash"></i></a>
+  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Buttons_UFButtonTagHelperBase_GetBeforeCaptionHtml_System_Boolean_System_Boolean_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFButtonTagHelperBase.GetBeforeCaptionHtml(System.Boolean,System.Boolean)">
+  GetBeforeCaptionHtml(bool, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Buttons/UFButtonTagHelperBase.cs/#L204"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The default implementation returns empty string.</p>
@@ -638,7 +642,7 @@ public bool Submit { get; set; }</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected virtual string GetBeforeCaptionHtml(bool hasCaption)</code></pre>
+    <pre><code class="lang-csharp hljs">protected virtual string GetBeforeCaptionHtml(bool hasCaption, bool isStatic)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -646,12 +650,16 @@ public bool Submit { get; set; }</code></pre>
     <dt><code>hasCaption</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
     <dd><p>True if there is content for the caption</p>
 </dd>
+    <dt><code>isStatic</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if the button will be rendered with a <code>div</code> tag</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd><p>string containing html formatting</p>
+</dd>
   </dl>
 
 
@@ -666,9 +674,9 @@ public bool Submit { get; set; }</code></pre>
 
   <a id="UltraForce_Library_Core_Asp_TagHelpers_Base_Buttons_UFButtonTagHelperBase_GetButtonCaptionClasses_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFButtonTagHelperBase.GetButtonCaptionClasses*"></a>
 
-  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Buttons_UFButtonTagHelperBase_GetButtonCaptionClasses" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFButtonTagHelperBase.GetButtonCaptionClasses">
-  GetButtonCaptionClasses()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Buttons/UFButtonTagHelperBase.cs/#L221"><i class="bi bi-code-slash"></i></a>
+  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Buttons_UFButtonTagHelperBase_GetButtonCaptionClasses_System_Boolean_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFButtonTagHelperBase.GetButtonCaptionClasses(System.Boolean)">
+  GetButtonCaptionClasses(bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Buttons/UFButtonTagHelperBase.cs/#L225"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The default implementation returns empty string.</p>
@@ -676,14 +684,21 @@ public bool Submit { get; set; }</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected virtual string GetButtonCaptionClasses()</code></pre>
+    <pre><code class="lang-csharp hljs">protected virtual string GetButtonCaptionClasses(bool isStatic)</code></pre>
   </div>
 
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>isStatic</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if the button will be rendered with a <code>div</code> tag</p>
+</dd>
+  </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd><p>css classes</p>
+</dd>
   </dl>
 
 
@@ -698,9 +713,9 @@ public bool Submit { get; set; }</code></pre>
 
   <a id="UltraForce_Library_Core_Asp_TagHelpers_Base_Buttons_UFButtonTagHelperBase_GetButtonClasses_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFButtonTagHelperBase.GetButtonClasses*"></a>
 
-  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Buttons_UFButtonTagHelperBase_GetButtonClasses_System_Boolean_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFButtonTagHelperBase.GetButtonClasses(System.Boolean)">
-  GetButtonClasses(bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Buttons/UFButtonTagHelperBase.cs/#L231"><i class="bi bi-code-slash"></i></a>
+  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Buttons_UFButtonTagHelperBase_GetButtonClasses_System_Boolean_System_Boolean_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFButtonTagHelperBase.GetButtonClasses(System.Boolean,System.Boolean)">
+  GetButtonClasses(bool, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Buttons/UFButtonTagHelperBase.cs/#L236"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The default implementation returns empty string.</p>
@@ -708,7 +723,7 @@ public bool Submit { get; set; }</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected virtual string GetButtonClasses(bool hasCaption)</code></pre>
+    <pre><code class="lang-csharp hljs">protected virtual string GetButtonClasses(bool hasCaption, bool isStatic)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -716,12 +731,16 @@ public bool Submit { get; set; }</code></pre>
     <dt><code>hasCaption</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
     <dd><p>True if there is content for the caption</p>
 </dd>
+    <dt><code>isStatic</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if the button will be rendered with a <code>div</code> tag</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
+    <dd><p>css classes</p>
+</dd>
   </dl>
 
 

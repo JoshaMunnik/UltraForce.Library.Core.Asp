@@ -124,7 +124,8 @@ public abstract class UFButtonTagHelperBase(
   {
     await base.ProcessAsync(context, output);
     bool hasHref = this.ProcessHref(output);
-    output.TagName = this.Static ? "div" : hasHref ? (this.Disabled ? "div" : "a") : "button";
+    bool isStatic = this.Static || (this.Disabled && hasHref);
+    output.TagName = isStatic ? "div" : hasHref ? "a" : "button";
     output.TagMode = TagMode.StartTagAndEndTag;
     if (this.Disabled)
     {
@@ -140,20 +141,20 @@ public abstract class UFButtonTagHelperBase(
     TagHelperContent? children = await output.GetChildContentAsync();
     if (children is { IsEmptyOrWhiteSpace: false })
     {
-      string beforeHtml = this.GetBeforeCaptionHtml(true);
-      string afterHtml = this.GetAfterCaptionHtml(true);
+      string beforeHtml = this.GetBeforeCaptionHtml(true, isStatic);
+      string afterHtml = this.GetAfterCaptionHtml(true, isStatic);
       output.PreContent.SetHtmlContent(
-        $"{beforeHtml}<span class=\"{this.GetButtonCaptionClasses()}\">"
+        $"{beforeHtml}<span class=\"{this.GetButtonCaptionClasses(isStatic)}\">"
       );
       output.PostContent.SetHtmlContent($"</span>{afterHtml}");
-      UFTagHelperTools.AddClasses(output, this.GetButtonClasses(true));
+      UFTagHelperTools.AddClasses(output, this.GetButtonClasses(true, isStatic));
     }
     else
     {
-      string beforeHtml = this.GetBeforeCaptionHtml(false);
-      string afterHtml = this.GetAfterCaptionHtml(false);
+      string beforeHtml = this.GetBeforeCaptionHtml(false, isStatic);
+      string afterHtml = this.GetAfterCaptionHtml(false, isStatic);
       output.PreContent.SetHtmlContent(beforeHtml + afterHtml);
-      UFTagHelperTools.AddClasses(output, this.GetButtonClasses(false));
+      UFTagHelperTools.AddClasses(output, this.GetButtonClasses(false, isStatic));
     }
     if (this.Clipboard != null)
     {
@@ -198,8 +199,9 @@ public abstract class UFButtonTagHelperBase(
   /// The default implementation returns empty string.
   /// </summary>
   /// <param name="hasCaption">True if there is content for the caption</param>
-  /// <returns></returns>
-  protected virtual string GetBeforeCaptionHtml(bool hasCaption)
+  /// <param name="isStatic">True if the button will be rendered with a <c>div</c> tag</param>
+  /// <returns>string containing html formatting</returns>
+  protected virtual string GetBeforeCaptionHtml(bool hasCaption, bool isStatic)
   {
     return string.Empty;
   }
@@ -208,8 +210,9 @@ public abstract class UFButtonTagHelperBase(
   /// The default implementation returns empty string.
   /// </summary>
   /// <param name="hasCaption">True if there is content for the caption</param>
-  /// <returns></returns>
-  protected virtual string GetAfterCaptionHtml(bool hasCaption)
+  /// <param name="isStatic">True if the button will be rendered with a <c>div</c> tag</param>
+  /// <returns>string containing html formatting</returns>
+  protected virtual string GetAfterCaptionHtml(bool hasCaption, bool isStatic)
   {
     return string.Empty;
   }
@@ -217,8 +220,9 @@ public abstract class UFButtonTagHelperBase(
   /// <summary>
   /// The default implementation returns empty string.
   /// </summary>
-  /// <returns></returns>
-  protected virtual string GetButtonCaptionClasses()
+  /// <param name="isStatic">True if the button will be rendered with a <c>div</c> tag</param>
+  /// <returns>css classes</returns>
+  protected virtual string GetButtonCaptionClasses(bool isStatic)
   {
     return string.Empty;
   }
@@ -227,8 +231,9 @@ public abstract class UFButtonTagHelperBase(
   /// The default implementation returns empty string.
   /// </summary>
   /// <param name="hasCaption">True if there is content for the caption</param>
-  /// <returns></returns>
-  protected virtual string GetButtonClasses(bool hasCaption)
+  /// <param name="isStatic">True if the button will be rendered with a <c>div</c> tag</param>
+  /// <returns>css classes</returns>
+  protected virtual string GetButtonClasses(bool hasCaption, bool isStatic)
   {
     return string.Empty;
   }
