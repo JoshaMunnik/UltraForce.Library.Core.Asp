@@ -50,7 +50,7 @@ namespace UltraForce.Library.Core.Asp.TagHelpers.Base.Table;
 /// <para>
 /// Table with a filter:
 /// <code>
-/// &lt;div&gt;
+/// &lt;div class="GetTableContainerClasses()"&gt;
 ///   &lt;div class="GetFilterContainerClasses()"&gt;
 ///     &lt;input {id} class="GetFilterInputClasses()" placeholder="GetFilterPlaceholder()" data-uf-filter-table="{id}" /&gt;
 ///     &lt;button class="GetFilterButtonClasses()" data-uf-set-field-selector="#{id}"&gt;
@@ -202,6 +202,16 @@ public abstract class UFTableTagHelperBase(bool skipHeadBody = false) : TagHelpe
   {
     return string.Empty;
   }
+
+  /// <summary>
+  /// Returns the classes for the element containing the table. This method is only used when
+  /// <see cref="Filter"/> is <c>true</c>.
+  /// </summary>
+  /// <returns></returns>
+  protected virtual string GetTableContainerClasses()
+  {
+    return string.Empty;
+  }
   
   /// <summary>
   /// Returns the classes for the filter input.
@@ -342,7 +352,8 @@ public abstract class UFTableTagHelperBase(bool skipHeadBody = false) : TagHelpe
       this.GetFilterCaptionHtml() +
       "</button>";
     output.PreElement.AppendHtml(
-      $"<div><div class=\"{this.GetFilterContainerClasses()}\">{input}{button}</div>"
+      $"<div class=\"{this.GetTableContainerClasses()}\">" +
+      $"<div class=\"{this.GetFilterContainerClasses()}\">{input}{button}</div>"
     );
     output.PostElement.AppendHtml("</div>");
   }

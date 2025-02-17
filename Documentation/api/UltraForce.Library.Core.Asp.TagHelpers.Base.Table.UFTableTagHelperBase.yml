@@ -17,6 +17,7 @@ items:
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetSortAscendingClasses
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetSortDescendingClasses
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetTableClasses
+  - UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetTableContainerClasses
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.PageSize
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.Paging
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
@@ -62,7 +63,7 @@ items:
 
     Table with a filter:
 
-    <pre><code class="lang-csharp">&lt;div&gt;
+    <pre><code class="lang-csharp">&lt;div class="GetTableContainerClasses()"&gt;
       &lt;div class="GetFilterContainerClasses()"&gt;
         &lt;input {id} class="GetFilterInputClasses()" placeholder="GetFilterPlaceholder()" data-uf-filter-table="{id}" /&gt;
         &lt;button class="GetFilterButtonClasses()" data-uf-set-field-selector="#{id}"&gt;
@@ -154,7 +155,7 @@ items:
 
     Table with a filter:
 
-    <pre><code class="lang-csharp">&lt;div&gt;
+    <pre><code class="lang-csharp">&lt;div class="GetTableContainerClasses()"&gt;
       &lt;div class="GetFilterContainerClasses()"&gt;
         &lt;input {id} class="GetFilterInputClasses()" placeholder="GetFilterPlaceholder()" data-uf-filter-table="{id}" /&gt;
         &lt;button class="GetFilterButtonClasses()" data-uf-set-field-selector="#{id}"&gt;
@@ -509,6 +510,40 @@ items:
       description: ''
     content.vb: Protected Overridable Function GetTableClasses() As String
   overload: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetTableClasses*
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetTableContainerClasses
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetTableContainerClasses
+  id: GetTableContainerClasses
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase
+  langs:
+  - csharp
+  - vb
+  name: GetTableContainerClasses()
+  nameWithType: UFTableTagHelperBase.GetTableContainerClasses()
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetTableContainerClasses()
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: GetTableContainerClasses
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs
+    startLine: 210
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Table
+  summary: >-
+    Returns the classes for the element containing the table. This method is only used when
+
+    <xref href="UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.Filter" data-throw-if-not-resolved="false"></xref> is <code>true</code>.
+  example: []
+  syntax:
+    content: protected virtual string GetTableContainerClasses()
+    return:
+      type: System.String
+      description: ''
+    content.vb: Protected Overridable Function GetTableContainerClasses() As String
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetTableContainerClasses*
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetFilterInputClasses
   commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetFilterInputClasses
   id: GetFilterInputClasses
@@ -527,7 +562,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetFilterInputClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs
-    startLine: 209
+    startLine: 219
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Table
@@ -558,7 +593,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetFilterPlaceholder
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs
-    startLine: 218
+    startLine: 228
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Table
@@ -589,7 +624,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetFilterButtonClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs
-    startLine: 227
+    startLine: 237
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Table
@@ -620,7 +655,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetFilterCaptionHtml
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs
-    startLine: 239
+    startLine: 249
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Table
@@ -658,7 +693,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetFilterContainerClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs
-    startLine: 248
+    startLine: 258
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Table
@@ -689,7 +724,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetSortAscendingClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs
-    startLine: 257
+    startLine: 267
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Table
@@ -720,7 +755,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetSortDescendingClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs
-    startLine: 266
+    startLine: 276
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Table
@@ -751,7 +786,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetBodyClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs
-    startLine: 275
+    startLine: 285
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Table
@@ -782,7 +817,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetHeadClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs
-    startLine: 284
+    startLine: 294
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Table
@@ -1475,6 +1510,18 @@ references:
   name: GetTableClasses
   nameWithType: UFTableTagHelperBase.GetTableClasses
   fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetTableClasses
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.Filter
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.Filter
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableTagHelperBase_Filter
+  name: Filter
+  nameWithType: UFTableTagHelperBase.Filter
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.Filter
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetTableContainerClasses*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetTableContainerClasses
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableTagHelperBase_GetTableContainerClasses
+  name: GetTableContainerClasses
+  nameWithType: UFTableTagHelperBase.GetTableContainerClasses
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetTableContainerClasses
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetFilterInputClasses*
   commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetFilterInputClasses
   href: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableTagHelperBase_GetFilterInputClasses
