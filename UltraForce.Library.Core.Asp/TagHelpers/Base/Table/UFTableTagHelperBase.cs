@@ -84,13 +84,23 @@ namespace UltraForce.Library.Core.Asp.TagHelpers.Base.Table;
 [SuppressMessage("ReSharper", "AutoPropertyCanBeMadeGetOnly.Global")]
 public abstract class UFTableTagHelperBase(bool skipHeadBody = false) : TagHelper
 {
-  #region public constants
+  #region internal constants
 
   /// <summary>
-  /// The key that children can use to access this instance.
+  /// The key that children can use to access this (the table) instance.
   /// </summary>
-  public const string Table = "uf_table";
+  internal const string Table = "uf_table";
 
+  /// <summary>
+  /// The key that children can use to access the row instance.
+  /// </summary>
+  internal const string Row = "uf_row";
+  
+  /// <summary>
+  /// The key that children can use to access the cell instance.
+  /// </summary>
+  internal const string Cell = "uf_cell";
+  
   #endregion
 
   #region public properties

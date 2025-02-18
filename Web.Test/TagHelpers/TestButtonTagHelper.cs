@@ -7,7 +7,7 @@ namespace Web.Test.TagHelpers;
 
 [HtmlTargetElement("test-button")]
 public class TestButtonTagHelper(
-  EndpointDataSource anEndpointDataSource,
-  IHtmlGenerator aHtmlGenerator,
-  IUFModelExpressionRenderer aModelExpressionRenderer
-) : UFButtonTagHelperBase(anEndpointDataSource, aHtmlGenerator, aModelExpressionRenderer);
+  EndpointDataSource endpointDataSource,
+  IHtmlGenerator htmlGenerator,
+  IUFModelExpressionRenderer modelExpressionRenderer
+) : UFButtonTagHelperBase(endpointDataSource, htmlGenerator, modelExpressionRenderer);

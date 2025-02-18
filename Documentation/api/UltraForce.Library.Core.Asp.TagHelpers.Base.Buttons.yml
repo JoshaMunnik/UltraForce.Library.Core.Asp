@@ -4,6 +4,7 @@ items:
   commentId: N:UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons
   id: UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons
   children:
+  - UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFBaseButtonTagHelperBase
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFButtonTagHelperBase
   langs:
   - csharp
@@ -15,9 +16,78 @@ items:
   assemblies:
   - UltraForce.Library.Core.Asp
 references:
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFBaseButtonTagHelperBase
+  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFBaseButtonTagHelperBase
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFBaseButtonTagHelperBase.html
+  name: UFBaseButtonTagHelperBase
+  nameWithType: UFBaseButtonTagHelperBase
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFBaseButtonTagHelperBase
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFButtonTagHelperBase
   commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFButtonTagHelperBase
   href: UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFButtonTagHelperBase.html
   name: UFButtonTagHelperBase
   nameWithType: UFButtonTagHelperBase
   fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFButtonTagHelperBase
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons
+  commentId: N:UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons
+  href: UltraForce.html
+  name: UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons
+  nameWithType: UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers
+    name: TagHelpers
+    href: UltraForce.Library.Core.Asp.TagHelpers.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Base
+    name: Base
+    href: UltraForce.Library.Core.Asp.TagHelpers.Base.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons
+    name: Buttons
+    href: UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers
+    name: TagHelpers
+    href: UltraForce.Library.Core.Asp.TagHelpers.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Base
+    name: Base
+    href: UltraForce.Library.Core.Asp.TagHelpers.Base.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons
+    name: Buttons
+    href: UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.html

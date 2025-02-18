@@ -28,18 +28,15 @@
 // </license>
 
 using System.Diagnostics.CodeAnalysis;
-using Microsoft.AspNetCore.Mvc.TagHelpers;
 using Microsoft.AspNetCore.Mvc.ViewFeatures;
 using Microsoft.AspNetCore.Razor.TagHelpers;
 using Microsoft.AspNetCore.Routing;
 using UltraForce.Library.Core.Asp.Services;
-using UltraForce.Library.Core.Asp.Tools;
 
 namespace UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons;
 
 /// <summary>
-/// Renders a button or link using a button styling. When rendering a button the default type is
-/// `button`; use the <see cref="Submit"/> property to change it to submit.
+/// Base class for buttons. 
 /// <para>
 /// Renders:
 /// <code>
@@ -50,150 +47,60 @@ namespace UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons;
 /// &lt;/{a|button|div}&gt;
 /// </code>
 /// </para>
-/// <remarks>
-/// Part of the code is based on the <see cref="AnchorTagHelper"/> implemenation.
-/// </remarks>
 /// </summary>
 [SuppressMessage("ReSharper", "ClassWithVirtualMembersNeverInherited.Global")]
 [SuppressMessage("ReSharper", "MemberCanBePrivate.Global")]
 public abstract class UFButtonTagHelperBase(
-  EndpointDataSource anEndpointDataSource,
-  IHtmlGenerator aHtmlGenerator,
-  IUFModelExpressionRenderer aModelExpressionRenderer
+  EndpointDataSource endpointDataSource,
+  IHtmlGenerator htmlGenerator,
+  IUFModelExpressionRenderer modelExpressionRenderer
 )
-  : UFClickableTagHelperBase(anEndpointDataSource, aHtmlGenerator)
+  : UFBaseButtonTagHelperBase(endpointDataSource, htmlGenerator, modelExpressionRenderer)
 {
-  #region public properties
-
-  /// <summary>
-  /// If the button is an anchor, a `div` tag is used instead of `a` tag. With buttons the
-  /// `disabled` attribute is set.
-  /// </summary>
-  [HtmlAttributeName("disabled")]
-  public bool Disabled { get; set; } = false;
-
-  /// <summary>
-  /// When <c>true</c> the button is rendered with a div element.
-  /// </summary>
-  [HtmlAttributeName("static")]
-  public bool Static { get; set; } = false;
-
-  /// <summary>
-  /// When <c>true</c> the button type is set to submit. This property is only of use if
-  /// the button is placed inside a form element.
-  /// </summary>
-  [HtmlAttributeName("submit")]
-  public bool Submit { get; set; } = false;
-
-  /// <summary>
-  /// Value to set for the onclick attribute of the button. This property is ignored if
-  /// <see cref="Clipboard"/> has been set.
-  /// </summary>
-  [HtmlAttributeName("on-click")]
-  public string? OnClick { get; set; }
-
-  /// <summary>
-  /// When set, an onclick handler is added to copy the value to the clipboard. 
-  /// </summary>
-  public string? Clipboard { get; set; }
-
-  /// <summary>
-  /// When set, use it to get a name for. The <see cref="Name"/> property is ignored. 
-  /// </summary>
-  public ModelExpression? For { get; set; }
-
-  /// <summary>
-  /// When set, set a name attribute. This property is not used if <see cref="For"/> is set.
-  /// </summary>
-  public string? Name { get; set; }
-
-  /// <summary>
-  /// When set, set a value attribute.
-  /// </summary>
-  public string? Value { get; set; }
-
-  #endregion
-
-  #region public methods
+  #region protected methods
 
   /// <inheritdoc />
-  public override async Task ProcessAsync(
+  protected sealed override string GetBeforeCaptionHtml(
     TagHelperContext context,
-    TagHelperOutput output
+    TagHelperOutput output,
+    bool hasCaption,
+    bool isStatic
   )
   {
-    await base.ProcessAsync(context, output);
-    bool hasHref = this.ProcessHref(output);
-    bool isStatic = this.Static || (this.Disabled && hasHref);
-    output.TagName = isStatic ? "div" : hasHref ? "a" : "button";
-    output.TagMode = TagMode.StartTagAndEndTag;
-    if (this.Disabled)
-    {
-      if (!hasHref)
-      {
-        output.Attributes.SetAttribute("disabled", "disabled");
-      }
-    }
-    if ((output.TagName == "button") && !output.Attributes.ContainsName("type"))
-    {
-      output.Attributes.SetAttribute("type", this.Submit ? "submit" : "button");
-    }
-    TagHelperContent? children = await output.GetChildContentAsync();
-    if (children is { IsEmptyOrWhiteSpace: false })
-    {
-      string beforeHtml = this.GetBeforeCaptionHtml(true, isStatic);
-      string afterHtml = this.GetAfterCaptionHtml(true, isStatic);
-      output.PreContent.SetHtmlContent(
-        $"{beforeHtml}<span class=\"{this.GetButtonCaptionClasses(isStatic)}\">"
-      );
-      output.PostContent.SetHtmlContent($"</span>{afterHtml}");
-      UFTagHelperTools.AddClasses(output, this.GetButtonClasses(true, isStatic));
-    }
-    else
-    {
-      string beforeHtml = this.GetBeforeCaptionHtml(false, isStatic);
-      string afterHtml = this.GetAfterCaptionHtml(false, isStatic);
-      output.PreContent.SetHtmlContent(beforeHtml + afterHtml);
-      UFTagHelperTools.AddClasses(output, this.GetButtonClasses(false, isStatic));
-    }
-    if (this.Clipboard != null)
-    {
-      output.Attributes.SetAttribute(
-        "onclick",
-        $"navigator.clipboard.writeText('{this.Clipboard.Replace("'", "\\'")}')"
-      );
-    }
-    else if (this.OnClick != null)
-    {
-      output.Attributes.SetAttribute("onclick", this.OnClick);
-    }
-    if (this.For != null)
-    {
-      output.Attributes.SetAttribute(
-        "name", this.ModelExpressionRenderer.GetName(this.For, this.ViewContext)
-      );
-    }
-    else if (!string.IsNullOrEmpty(this.Name))
-    {
-      output.Attributes.SetAttribute("name", this.Name);
-    }
-    if (!string.IsNullOrEmpty(this.Value))
-    {
-      output.Attributes.SetAttribute("value", this.Value);
-    }
+    return this.GetBeforeCaptionHtml(hasCaption, isStatic);
   }
 
-  #endregion
+  /// <inheritdoc />
+  protected sealed override string GetAfterCaptionHtml(
+    TagHelperContext context,
+    TagHelperOutput output,
+    bool hasCaption,
+    bool isStatic
+  )
+  {
+    return this.GetAfterCaptionHtml(hasCaption, isStatic);
+  }
 
-  #region protected properties
+  /// <inheritdoc />
+  protected sealed override string GetButtonCaptionClasses(
+    TagHelperContext context,
+    TagHelperOutput output,
+    bool isStatic
+  )
+  {
+    return this.GetButtonCaptionClasses(isStatic);
+  }
 
-  /// <summary>
-  /// </summary>
-  protected IUFModelExpressionRenderer ModelExpressionRenderer { get; } = aModelExpressionRenderer;
-
-  #endregion
-
-  #region overridable protected methods
+  /// <inheritdoc />
+  protected sealed override string GetButtonClasses(
+    TagHelperContext context,
+    TagHelperOutput output,
+    bool hasCaption,
+    bool isStatic
+  )
+  {
+    return this.GetButtonClasses(hasCaption, isStatic);
+  }
 
   /// <summary>
   /// The default implementation returns empty string.
@@ -201,7 +108,10 @@ public abstract class UFButtonTagHelperBase(
   /// <param name="hasCaption">True if there is content for the caption</param>
   /// <param name="isStatic">True if the button will be rendered with a <c>div</c> tag</param>
   /// <returns>string containing html formatting</returns>
-  protected virtual string GetBeforeCaptionHtml(bool hasCaption, bool isStatic)
+  protected virtual string GetBeforeCaptionHtml(
+    bool hasCaption,
+    bool isStatic
+  )
   {
     return string.Empty;
   }
@@ -212,7 +122,10 @@ public abstract class UFButtonTagHelperBase(
   /// <param name="hasCaption">True if there is content for the caption</param>
   /// <param name="isStatic">True if the button will be rendered with a <c>div</c> tag</param>
   /// <returns>string containing html formatting</returns>
-  protected virtual string GetAfterCaptionHtml(bool hasCaption, bool isStatic)
+  protected virtual string GetAfterCaptionHtml(
+    bool hasCaption,
+    bool isStatic
+  )
   {
     return string.Empty;
   }
@@ -222,7 +135,9 @@ public abstract class UFButtonTagHelperBase(
   /// </summary>
   /// <param name="isStatic">True if the button will be rendered with a <c>div</c> tag</param>
   /// <returns>css classes</returns>
-  protected virtual string GetButtonCaptionClasses(bool isStatic)
+  protected virtual string GetButtonCaptionClasses(
+    bool isStatic
+  )
   {
     return string.Empty;
   }
@@ -233,7 +148,10 @@ public abstract class UFButtonTagHelperBase(
   /// <param name="hasCaption">True if there is content for the caption</param>
   /// <param name="isStatic">True if the button will be rendered with a <c>div</c> tag</param>
   /// <returns>css classes</returns>
-  protected virtual string GetButtonClasses(bool hasCaption, bool isStatic)
+  protected virtual string GetButtonClasses(
+    bool hasCaption,
+    bool isStatic
+  )
   {
     return string.Empty;
   }

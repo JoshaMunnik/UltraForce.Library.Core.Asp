@@ -41,49 +41,65 @@ namespace UltraForce.Library.Core.Asp.Sessions
   /// supported by the Json implementation.
   /// </para>
   /// </summary>
-  public class UFSessionKeyedStorage(ISession aSession) : UFKeyedStorage
+  public class UFSessionKeyedStorage(
+    ISession session
+  ) : UFKeyedStorage
   {
     #region Private variables
 
     /// <summary>
     /// Session mapped to.
     /// </summary>
-    private readonly ISession m_session = aSession;
+    private readonly ISession m_session = session;
 
     #endregion
 
     #region UFKeyedStorage
 
     /// <inheritdoc />
-    public override int GetInt(string aKey, int aDefault)
+    public override int GetInt(
+      string key,
+      int defaultValue
+    )
     {
-      return this.m_session.GetInt32(aKey) ?? aDefault;
+      return this.m_session.GetInt32(key) ?? defaultValue;
     }
 
     /// <inheritdoc />
-    public override void SetInt(string aKey, int aValue)
+    public override void SetInt(
+      string key,
+      int value
+    )
     {
-      this.m_session.SetInt32(aKey, aValue);
+      this.m_session.SetInt32(key, value);
     }
 
     /// <inheritdoc />
-    public override string GetString(string aKey, string aDefault)
+    public override string GetString(
+      string key,
+      string defaultValue
+    )
     {
-      return this.HasKey(aKey)
-        ? this.m_session.GetString(aKey) ?? aDefault
-        : aDefault;
+      return this.HasKey(key)
+        ? this.m_session.GetString(key) ?? defaultValue
+        : defaultValue;
     }
 
     /// <inheritdoc />
-    public override void SetString(string aKey, string aValue)
+    public override void SetString(
+      string key,
+      string value
+    )
     {
-      this.m_session.SetString(aKey, aValue);
+      this.m_session.SetString(key, value);
     }
 
     /// <inheritdoc />
-    public override void DeleteKey(string aKey)
+    public override void DeleteKey(
+      string key
+    )
     {
-      this.m_session.Remove(aKey);
+      this.m_session.Remove(key);
     }
 
     /// <inheritdoc />
@@ -93,40 +109,43 @@ namespace UltraForce.Library.Core.Asp.Sessions
     }
 
     /// <inheritdoc />
-    public override bool HasKey(string aKey)
+    public override bool HasKey(
+      string key
+    )
     {
-      return this.m_session.Keys.Any(key => key == aKey);
+      return this.m_session.Keys.Any(sessionKey => key == sessionKey);
     }
 
     #endregion
-    
+
     #region protected methods
 
     /// <inheritdoc />
     protected override void SerializeObject(
-      string aKey,
-      object anObject
+      string key,
+      object value
     )
     {
-      string value = JsonSerializer.Serialize(anObject);
-      this.SetString(aKey, value);
+      string json = JsonSerializer.Serialize(value);
+      this.SetString(key, json);
     }
 
     /// <inheritdoc />
     protected override object DeserializeObject(
-      string aKey,
-      Type? aType,
-      Func<Type, object> aFactory
+      string key,
+      Type? type,
+      Func<Type, object> factory
     )
     {
-      if (aType == null)
+      if (type == null)
       {
         throw new Exception("Can not deserialize object without type.");
       }
-      string json = this.GetString(aKey);
-      object? result = JsonSerializer.Deserialize(json, aType);
-      if (result == null) {
-        throw new Exception($"Failed to deserialize object for type {aType.Name} from '{json}'.");
+      string json = this.GetString(key);
+      object? result = JsonSerializer.Deserialize(json, type);
+      if (result == null)
+      {
+        throw new Exception($"Failed to deserialize object for type {type.Name} from '{json}'.");
       }
       return result;
     }

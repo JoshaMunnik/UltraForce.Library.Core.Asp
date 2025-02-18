@@ -47,15 +47,6 @@ namespace UltraForce.Library.Core.Asp.TagHelpers.Base.Table;
 public abstract class UFTableRowTagHelperBase<TTable> : TagHelper
   where TTable : UFTableTagHelperBase
 {
-  #region public constants
-  
-  /// <summary>
-  /// The key that children can use to access this instance.
-  /// </summary>
-  public const string Row = "uf_row";
-  
-  #endregion
-  
   #region public properties
 
   /// <summary>
@@ -83,6 +74,7 @@ public abstract class UFTableRowTagHelperBase<TTable> : TagHelper
   public override void Process(TagHelperContext context, TagHelperOutput output)
   {
     base.Process(context, output);
+    context.Items[UFTableTagHelperBase.Row] = this;
     output.TagName = "tr";
     TTable table = (context.Items[UFTableTagHelperBase.Table] as TTable)!;
     if (table is { ProcessedFirstHeaderRow: null } && (this.Type == UFTableRowTypeEnum.Header))
@@ -97,7 +89,6 @@ public abstract class UFTableRowTagHelperBase<TTable> : TagHelper
         output.PreElement.AppendHtml($"</thead><tbody class=\"{table.GetTableBodyClasses()}\">");
       }
     }
-    context.Items[Row] = this;
     switch (this.SortLocation)
     {
       case UFTableSortLocationEnum.Top:

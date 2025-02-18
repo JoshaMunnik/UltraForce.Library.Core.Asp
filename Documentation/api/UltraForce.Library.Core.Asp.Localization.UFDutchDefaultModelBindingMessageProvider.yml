@@ -69,12 +69,12 @@ items:
   summary: Replaces the error messages with Dutch versions.
   example: []
   syntax:
-    content: public static void Apply(DefaultModelBindingMessageProvider aProvider)
+    content: public static void Apply(DefaultModelBindingMessageProvider provider)
     parameters:
-    - id: aProvider
+    - id: provider
       type: Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelBindingMessageProvider
       description: Provider to update
-    content.vb: Public Shared Sub Apply(aProvider As DefaultModelBindingMessageProvider)
+    content.vb: Public Shared Sub Apply(provider As DefaultModelBindingMessageProvider)
   overload: UltraForce.Library.Core.Asp.Localization.UFDutchDefaultModelBindingMessageProvider.Apply*
 references:
 - uid: Microsoft.AspNetCore.Mvc.ModelBinding.Metadata.DefaultModelBindingMessageProvider

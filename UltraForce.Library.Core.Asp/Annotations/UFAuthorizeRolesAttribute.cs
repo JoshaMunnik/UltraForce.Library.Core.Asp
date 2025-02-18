@@ -43,10 +43,10 @@ namespace UltraForce.Library.Core.Asp.Annotations
     /// <summary>
     /// Combines the roles into a single string using ',' as a separator.
     /// </summary>
-    /// <param name="aRoles">Roles to combine</param>
-    public UFAuthorizeRolesAttribute(params string[] aRoles)
+    /// <param name="roles">Roles to combine</param>
+    public UFAuthorizeRolesAttribute(params string[] roles)
     {
-      this.Roles = string.Join(",", aRoles);
+      this.Roles = string.Join(",", roles);
     }
   }
 }

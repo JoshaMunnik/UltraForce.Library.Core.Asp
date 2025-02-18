@@ -48,10 +48,12 @@ public class UFModelExpressionRenderer : IUFModelExpressionRenderer
   /// <summary>
   /// Constructs an instance of the <see cref="UFModelExpressionRenderer"/>.
   /// </summary>
-  /// <param name="aGenerator"></param>
-  public UFModelExpressionRenderer(IHtmlGenerator aGenerator)
+  /// <param name="generator"></param>
+  public UFModelExpressionRenderer(
+    IHtmlGenerator generator
+  )
   {
-    this.HtmlGenerator = aGenerator;
+    this.HtmlGenerator = generator;
   }
 
   #endregion
@@ -60,15 +62,17 @@ public class UFModelExpressionRenderer : IUFModelExpressionRenderer
 
   /// <inheritdoc/>
   public async Task SetContentToNameAsync(
-    TagHelperOutput anOutput, ModelExpression anExpression, ViewContext aViewContext
+    TagHelperOutput output,
+    ModelExpression expression,
+    ViewContext viewContext
   )
   {
     await UFTagHelperTools.SetContentToTagBuilderAsync(
-      anOutput,
+      output,
       () => this.HtmlGenerator.GenerateLabel(
-        aViewContext,
-        anExpression.ModelExplorer,
-        anExpression.Name,
+        viewContext,
+        expression.ModelExplorer,
+        expression.Name,
         labelText: null,
         htmlAttributes: null
       )
@@ -84,38 +88,40 @@ public class UFModelExpressionRenderer : IUFModelExpressionRenderer
   /// rendered using a mailto: link.
   /// </para> 
   /// </summary>
-  /// <param name="anOutput"></param>
-  /// <param name="anExpression"></param>
-  /// <param name="aViewContext"></param>
+  /// <param name="output"></param>
+  /// <param name="expression"></param>
+  /// <param name="viewContext"></param>
   public async Task SetContentToValueAsync(
-    TagHelperOutput anOutput, ModelExpression anExpression, ViewContext aViewContext
+    TagHelperOutput output,
+    ModelExpression expression,
+    ViewContext viewContext
   )
   {
-    Type type = anExpression.Metadata.UnderlyingOrModelType;
-    DefaultModelMetadata? metadata = anExpression.Metadata as DefaultModelMetadata;
+    Type type = expression.Metadata.UnderlyingOrModelType;
+    DefaultModelMetadata? metadata = expression.Metadata as DefaultModelMetadata;
     if ((type == typeof(DateTime)) || (type == typeof(DateTime?)))
     {
       await UFTagHelperTools.SetContentToHtmlAsync(
-        anOutput, anExpression.Model == null ? "-" : this.GetDateTimeHtml((DateTime)anExpression.Model)
+        output, expression.Model == null ? "-" : this.GetDateTimeHtml((DateTime)expression.Model)
       );
     }
     else if ((type == typeof(DateOnly)) || (type == typeof(DateOnly?)))
     {
       await UFTagHelperTools.SetContentToHtmlAsync(
-        anOutput, anExpression.Model == null ? "-" : this.GetDateHtml((DateOnly)anExpression.Model)
+        output, expression.Model == null ? "-" : this.GetDateHtml((DateOnly)expression.Model)
       );
     }
     else if ((type == typeof(TimeOnly)) || (type == typeof(TimeOnly?)))
     {
       await UFTagHelperTools.SetContentToHtmlAsync(
-        anOutput, anExpression.Model == null ? "-" : this.GetTimeHtml((TimeOnly)anExpression.Model)
+        output, expression.Model == null ? "-" : this.GetTimeHtml((TimeOnly)expression.Model)
       );
     }
     else if ((type == typeof(bool)) || (type == typeof(bool?)))
     {
       await UFTagHelperTools.SetContentToHtmlAsync(
-        anOutput,
-        this.GetCheckBoxHtml((anExpression.Model != null) && (bool)anExpression.Model)
+        output,
+        this.GetCheckBoxHtml((expression.Model != null) && (bool)expression.Model)
       );
     }
     else if (
@@ -124,25 +130,25 @@ public class UFModelExpressionRenderer : IUFModelExpressionRenderer
       ) != null
     )
     {
-      string email = (string)anExpression.Model;
-      await UFTagHelperTools.SetContentToHtmlAsync(anOutput, this.GetEmailLinkHtml(email));
+      string email = (string)expression.Model;
+      await UFTagHelperTools.SetContentToHtmlAsync(output, this.GetEmailLinkHtml(email));
     }
     else if (type.IsEnum)
     {
       await UFTagHelperTools.SetContentToHtmlAsync(
-        anOutput, 
-        anExpression.Model == null ? "-" : ((Enum) anExpression.Model).GetDisplayDescription()
+        output,
+        expression.Model == null ? "-" : ((Enum)expression.Model).GetDisplayDescription()
       );
     }
     else
     {
       // set content by generating a textarea tag and use its inner html as content
       await UFTagHelperTools.SetContentToTagBuilderAsync(
-        anOutput,
+        output,
         () => this.HtmlGenerator.GenerateTextArea(
-          aViewContext,
-          anExpression.ModelExplorer,
-          anExpression.Name,
+          viewContext,
+          expression.ModelExplorer,
+          expression.Name,
           4,
           80,
           null
@@ -152,54 +158,60 @@ public class UFModelExpressionRenderer : IUFModelExpressionRenderer
   }
 
   /// <inheritdoc/>
-  public IHtmlContentBuilder GetName(ModelExpression anExpression, ViewContext aViewContext)
+  public IHtmlContentBuilder GetName(
+    ModelExpression expression,
+    ViewContext viewContext
+  )
   {
     TagBuilder tagBuilder = this.HtmlGenerator.GenerateLabel(
-      aViewContext,
-      anExpression.ModelExplorer,
-      anExpression.Name,
+      viewContext,
+      expression.ModelExplorer,
+      expression.Name,
       labelText: null,
       htmlAttributes: null
     );
     return tagBuilder.InnerHtml;
   }
-  
+
   /// <inheritdoc/>
   public string GetValueAsText(
-    ModelExpression anExpression, ViewContext aViewContext
+    ModelExpression expression,
+    ViewContext viewContext
   )
   {
-    Type type = anExpression.Metadata.UnderlyingOrModelType;
-    DefaultModelMetadata? metadata = anExpression.Metadata as DefaultModelMetadata;
+    Type type = expression.Metadata.UnderlyingOrModelType;
+    DefaultModelMetadata? metadata = expression.Metadata as DefaultModelMetadata;
     if ((type == typeof(DateTime)) || (type == typeof(DateTime?)))
     {
-      return anExpression.Model == null
+      return expression.Model == null
         ? ""
-        : ((DateTime)anExpression.Model).ToString("yyyy-MM-dd HH:mm:ss");
+        : ((DateTime)expression.Model).ToString("yyyy-MM-dd HH:mm:ss");
     }
     if ((type == typeof(DateOnly)) || (type == typeof(DateOnly?)))
     {
-      return anExpression.Model == null
+      return expression.Model == null
         ? ""
-        : ((DateOnly)anExpression.Model).ToString("yyyy-MM-dd");
+        : ((DateOnly)expression.Model).ToString("yyyy-MM-dd");
     }
     if ((type == typeof(TimeOnly)) || (type == typeof(TimeOnly?)))
     {
-      return anExpression.Model == null
+      return expression.Model == null
         ? ""
-        : ((TimeOnly)anExpression.Model).ToString("HH:mm:ss");
+        : ((TimeOnly)expression.Model).ToString("HH:mm:ss");
     }
     if ((type == typeof(bool)) || (type == typeof(bool?)))
     {
-      return anExpression.Model == null
+      return expression.Model == null
         ? ""
-        : (bool)anExpression.Model ? "true" : "false";
+        : (bool)expression.Model
+          ? "true"
+          : "false";
     }
     if (type.IsEnum)
     {
-      return anExpression.Model == null ? "-" : ((Enum)anExpression.Model).GetDisplayDescription();
+      return expression.Model == null ? "-" : ((Enum)expression.Model).GetDisplayDescription();
     }
-    return anExpression.Model?.ToString() ?? "";
+    return expression.Model?.ToString() ?? "";
   }
 
   #endregion
@@ -221,12 +233,14 @@ public class UFModelExpressionRenderer : IUFModelExpressionRenderer
   /// The default method just creates a basic input type without any styling. Subclasses
   /// can override if needed.
   /// </summary>
-  /// <param name="aChecked"></param>
+  /// <param name="isChecked"></param>
   /// <returns></returns>
-  protected virtual string GetCheckBoxHtml(bool aChecked)
+  protected virtual string GetCheckBoxHtml(
+    bool isChecked
+  )
   {
-    string isChecked = aChecked ? " checked=\"checked\"" : "";
-    return $"<input type=\"checkbox\" disabled=\"disabled\"{isChecked}/>";
+    string checkedAttribute = isChecked ? " isChecked=\"isChecked\"" : "";
+    return $"<input type=\"checkbox\" disabled=\"disabled\"{checkedAttribute}/>";
   }
 
   /// <summary>
@@ -235,44 +249,52 @@ public class UFModelExpressionRenderer : IUFModelExpressionRenderer
   /// The default method just creates a basic input type without any styling. Subclasses
   /// can override if needed.
   /// </summary>
-  /// <param name="anEmail"></param>
+  /// <param name="email"></param>
   /// <returns></returns>
-  protected virtual string GetEmailLinkHtml(string anEmail)
+  protected virtual string GetEmailLinkHtml(
+    string email
+  )
   {
-    return $"<a href=\"mailto:{anEmail}\">{anEmail}</a>";
+    return $"<a href=\"mailto:{email}\">{email}</a>";
   }
 
   /// <summary>
   /// Generates a html representation of a date and time. The default implementation returns the
   /// date/time in mysql format (yyyy-MM-dd HH:mm:ss) or '-' if the date is null.
   /// </summary>
-  /// <param name="aDateTime">Date/time or null if render no date and time</param>
+  /// <param name="dateTime">Date/time or null if render no date and time</param>
   /// <returns></returns>
-  protected virtual string GetDateTimeHtml(DateTime? aDateTime)
+  protected virtual string GetDateTimeHtml(
+    DateTime? dateTime
+  )
   {
-    return aDateTime?.ToString("yyyy-MM-dd HH:mm:ss") ?? "-";
+    return dateTime?.ToString("yyyy-MM-dd HH:mm:ss") ?? "-";
   }
 
   /// <summary>
   /// Generates a html representation of a date. The default implementation returns the
   /// date in mysql format (yyyy-MM-dd) or '-' if the date is null.
   /// </summary>
-  /// <param name="aDate">Date or null if render no date</param>
+  /// <param name="date">Date or null if render no date</param>
   /// <returns></returns>
-  protected virtual string GetDateHtml(DateOnly? aDate)
+  protected virtual string GetDateHtml(
+    DateOnly? date
+  )
   {
-    return aDate?.ToString("yyyy-MM-dd") ?? "-";
+    return date?.ToString("yyyy-MM-dd") ?? "-";
   }
 
   /// <summary>
   /// Generates a html representation of a time. The default implementation returns the
   /// time in mysql format (HH:mm:ss) or '-' if the time is null.
   /// </summary>
-  /// <param name="aDate">Time or null if render no time</param>
+  /// <param name="time">Time or null if render no time</param>
   /// <returns></returns>
-  protected virtual string GetTimeHtml(TimeOnly? aDate)
+  protected virtual string GetTimeHtml(
+    TimeOnly? time
+  )
   {
-    return aDate?.ToString("HH:mm:ss") ?? "-";
+    return time?.ToString("HH:mm:ss") ?? "-";
   }
 
   #endregion

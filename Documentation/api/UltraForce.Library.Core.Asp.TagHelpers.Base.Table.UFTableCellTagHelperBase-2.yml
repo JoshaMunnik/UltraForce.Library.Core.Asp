@@ -165,11 +165,11 @@ items:
     </p>
   example: []
   syntax:
-    content: protected UFTableCellTagHelperBase(IUFModelExpressionRenderer aModelExpressionRenderer)
+    content: protected UFTableCellTagHelperBase(IUFModelExpressionRenderer modelExpressionRenderer)
     parameters:
-    - id: aModelExpressionRenderer
+    - id: modelExpressionRenderer
       type: UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer
-    content.vb: Protected Sub New(aModelExpressionRenderer As IUFModelExpressionRenderer)
+    content.vb: Protected Sub New(modelExpressionRenderer As IUFModelExpressionRenderer)
   overload: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase`2.#ctor*
   nameWithType.vb: UFTableCellTagHelperBase(Of TTable, TTableRow).New(IUFModelExpressionRenderer)
   fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase(Of TTable, TTableRow).New(UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer)
@@ -584,16 +584,18 @@ items:
   remarks: By default this calls into <xref href="Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext%2cMicrosoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
-    content: public override Task ProcessAsync(TagHelperContext aContext, TagHelperOutput anOutput)
+    content: public override Task ProcessAsync(TagHelperContext context, TagHelperOutput output)
     parameters:
-    - id: aContext
+    - id: context
       type: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext
-    - id: anOutput
+      description: Contains information associated with the current HTML tag.
+    - id: output
       type: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput
+      description: A stateful HTML element used to generate an HTML tag.
     return:
       type: System.Threading.Tasks.Task
       description: A <xref href="System.Threading.Tasks.Task" data-throw-if-not-resolved="false"></xref> that on completion updates the <code class="paramref">output</code>.
-    content.vb: Public Overrides Function ProcessAsync(aContext As TagHelperContext, anOutput As TagHelperOutput) As Task
+    content.vb: Public Overrides Function ProcessAsync(context As TagHelperContext, output As TagHelperOutput) As Task
   overridden: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
   overload: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase`2.ProcessAsync*
   nameWithType.vb: UFTableCellTagHelperBase(Of TTable, TTableRow).ProcessAsync(TagHelperContext, TagHelperOutput)
@@ -616,28 +618,28 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetTableCellClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableCellTagHelperBase.cs
-    startLine: 208
+    startLine: 209
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Table
   summary: Returns the css classes for the cell.
   example: []
   syntax:
-    content: protected virtual string GetTableCellClasses(UFTableCellTypeEnum aType, TTable aTable, TTableRow aTableRow)
+    content: protected virtual string GetTableCellClasses(UFTableCellTypeEnum type, TTable table, TTableRow tableRow)
     parameters:
-    - id: aType
+    - id: type
       type: UltraForce.Library.Core.Asp.Types.Enums.UFTableCellTypeEnum
       description: ''
-    - id: aTable
+    - id: table
       type: '{TTable}'
       description: ''
-    - id: aTableRow
+    - id: tableRow
       type: '{TTableRow}'
       description: ''
     return:
       type: System.String
       description: ''
-    content.vb: Protected Overridable Function GetTableCellClasses(aType As UFTableCellTypeEnum, aTable As TTable, aTableRow As TTableRow) As String
+    content.vb: Protected Overridable Function GetTableCellClasses(type As UFTableCellTypeEnum, table As TTable, tableRow As TTableRow) As String
   overload: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase`2.GetTableCellClasses*
   nameWithType.vb: UFTableCellTagHelperBase(Of TTable, TTableRow).GetTableCellClasses(UFTableCellTypeEnum, TTable, TTableRow)
   fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase(Of TTable, TTableRow).GetTableCellClasses(UltraForce.Library.Core.Asp.Types.Enums.UFTableCellTypeEnum, TTable, TTableRow)
@@ -659,25 +661,25 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetTableHeaderButtonClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableCellTagHelperBase.cs
-    startLine: 223
+    startLine: 224
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Table
   summary: Returns the css classes for the buttons in the header.
   example: []
   syntax:
-    content: protected virtual string GetTableHeaderButtonClasses(TTable aTable, TTableRow aTableRow)
+    content: protected virtual string GetTableHeaderButtonClasses(TTable table, TTableRow tableRow)
     parameters:
-    - id: aTable
+    - id: table
       type: '{TTable}'
       description: ''
-    - id: aTableRow
+    - id: tableRow
       type: '{TTableRow}'
       description: ''
     return:
       type: System.String
       description: ''
-    content.vb: Protected Overridable Function GetTableHeaderButtonClasses(aTable As TTable, aTableRow As TTableRow) As String
+    content.vb: Protected Overridable Function GetTableHeaderButtonClasses(table As TTable, tableRow As TTableRow) As String
   overload: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase`2.GetTableHeaderButtonClasses*
   nameWithType.vb: UFTableCellTagHelperBase(Of TTable, TTableRow).GetTableHeaderButtonClasses(TTable, TTableRow)
   fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase(Of TTable, TTableRow).GetTableHeaderButtonClasses(TTable, TTableRow)

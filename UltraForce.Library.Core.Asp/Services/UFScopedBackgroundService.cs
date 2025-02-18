@@ -64,15 +64,15 @@ namespace UltraForce.Library.Core.Asp.Services
     /// <summary>
     /// Constructs an instance of <see cref="UFScopedBackgroundService{TBackgroundService}"/>
     /// </summary>
-    /// <param name="aServices"></param>
-    /// <param name="aLogger"></param>
+    /// <param name="services"></param>
+    /// <param name="logger"></param>
     public UFScopedBackgroundService(
-      IServiceProvider aServices,
-      ILogger<UFScopedBackgroundService<TAsynchronousExecutableService>> aLogger
+      IServiceProvider services,
+      ILogger<UFScopedBackgroundService<TAsynchronousExecutableService>> logger
     )
     {
-      this.Services = aServices;
-      this.m_logger = aLogger;
+      this.Services = services;
+      this.m_logger = logger;
     }
 
     #endregion
@@ -89,7 +89,9 @@ namespace UltraForce.Library.Core.Asp.Services
     #region BackgroundService
 
     /// <inheritdoc />
-    protected override async Task ExecuteAsync(CancellationToken stoppingToken)
+    protected override async Task ExecuteAsync(
+      CancellationToken stoppingToken
+    )
     {
       this.m_logger.LogInformation(
         $"Scoped Background Service for {typeof(TAsynchronousExecutableService).Name} has started"
@@ -104,7 +106,9 @@ namespace UltraForce.Library.Core.Asp.Services
     }
 
     /// <inheritdoc />
-    public override async Task StopAsync(CancellationToken stoppingToken)
+    public override async Task StopAsync(
+      CancellationToken stoppingToken
+    )
     {
       this.m_logger.LogInformation(
         $"Scoped Background Service for {typeof(TAsynchronousExecutableService).Name} is stopping"

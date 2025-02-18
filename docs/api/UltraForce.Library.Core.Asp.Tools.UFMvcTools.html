@@ -157,7 +157,7 @@ Class UFMvcTools  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="UltraForce_Library_Core_Asp_Tools_UFMvcTools_AddFirstItem_Microsoft_AspNetCore_Mvc_Rendering_SelectList_Microsoft_AspNetCore_Mvc_Rendering_SelectListItem_" data-uid="UltraForce.Library.Core.Asp.Tools.UFMvcTools.AddFirstItem(Microsoft.AspNetCore.Mvc.Rendering.SelectList,Microsoft.AspNetCore.Mvc.Rendering.SelectListItem)">
   AddFirstItem(SelectList, SelectListItem)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Tools/UFMvcTools.cs/#L142"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Tools/UFMvcTools.cs/#L143"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Adds an item at the start of a select list. Preserves the selected state.</p>
@@ -165,15 +165,15 @@ Class UFMvcTools  <a class="header-action link-secondary" title="View source" hr
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static SelectList AddFirstItem(SelectList aList, SelectListItem anItem)</code></pre>
+    <pre><code class="lang-csharp hljs">public static SelectList AddFirstItem(SelectList list, SelectListItem newItem)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>aList</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.rendering.selectlist">SelectList</a></dt>
+    <dt><code>list</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.rendering.selectlist">SelectList</a></dt>
     <dd><p>List to add item to</p>
 </dd>
-    <dt><code>anItem</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.rendering.selectlistitem">SelectListItem</a></dt>
+    <dt><code>newItem</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.rendering.selectlistitem">SelectListItem</a></dt>
     <dd><p>Item to insert at first position</p>
 </dd>
   </dl>
@@ -199,7 +199,7 @@ Class UFMvcTools  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="UltraForce_Library_Core_Asp_Tools_UFMvcTools_CreateListFromEnum__1_System_String_" data-uid="UltraForce.Library.Core.Asp.Tools.UFMvcTools.CreateListFromEnum``1(System.String)">
   CreateListFromEnum&lt;T&gt;(string?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Tools/UFMvcTools.cs/#L167"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Tools/UFMvcTools.cs/#L168"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Creates a <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.rendering.selectlist">SelectList</a> from an enum type.</p>
@@ -207,12 +207,12 @@ Class UFMvcTools  <a class="header-action link-secondary" title="View source" hr
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static SelectList CreateListFromEnum&lt;T&gt;(string? anEmptyChoice = null) where T : struct, Enum</code></pre>
+    <pre><code class="lang-csharp hljs">public static SelectList CreateListFromEnum&lt;T&gt;(string? emptyChoice = null) where T : struct, Enum</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>anEmptyChoice</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><code>emptyChoice</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd></dd>
   </dl>
 
@@ -251,12 +251,12 @@ Class UFMvcTools  <a class="header-action link-secondary" title="View source" hr
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string GetControllerName(string aController)</code></pre>
+    <pre><code class="lang-csharp hljs">public static string GetControllerName(string controller)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>aController</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><code>controller</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd><p>Name of controller</p>
 </dd>
   </dl>
@@ -320,7 +320,7 @@ Class UFMvcTools  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="UltraForce_Library_Core_Asp_Tools_UFMvcTools_GetErrors_Microsoft_AspNetCore_Mvc_ModelBinding_ModelStateDictionary_System_String_System_String_System_String_System_String_" data-uid="UltraForce.Library.Core.Asp.Tools.UFMvcTools.GetErrors(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary,System.String,System.String,System.String,System.String)">
   GetErrors(ModelStateDictionary, string, string, string, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Tools/UFMvcTools.cs/#L209"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Tools/UFMvcTools.cs/#L210"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the errors for a field as a single string</p>
@@ -328,7 +328,7 @@ Class UFMvcTools  <a class="header-action link-secondary" title="View source" hr
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string GetErrors(ModelStateDictionary aModelState, string aName, string aDivider = &quot;, &quot;, string anHead = &quot;&quot;, string aTail = &quot;&quot;)</code></pre>
+    <pre><code class="lang-csharp hljs">public static string GetErrors(ModelStateDictionary aModelState, string name, string divider = &quot;, &quot;, string head = &quot;&quot;, string tail = &quot;&quot;)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -336,16 +336,16 @@ Class UFMvcTools  <a class="header-action link-secondary" title="View source" hr
     <dt><code>aModelState</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.modelbinding.modelstatedictionary">ModelStateDictionary</a></dt>
     <dd><p>Model state to get errors from</p>
 </dd>
-    <dt><code>aName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><code>name</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd><p>Field name to get errors for</p>
 </dd>
-    <dt><code>aDivider</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><code>divider</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd><p>Value to place between errors</p>
 </dd>
-    <dt><code>anHead</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><code>head</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd><p>Value at start, only used if there are errors</p>
 </dd>
-    <dt><code>aTail</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><code>tail</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd><p>Value at end, only used if there are errors</p>
 </dd>
   </dl>
@@ -372,7 +372,7 @@ or no field with the specified name can be found</p>
 
   <h3 id="UltraForce_Library_Core_Asp_Tools_UFMvcTools_GetJsonName_System_Object_System_String_" data-uid="UltraForce.Library.Core.Asp.Tools.UFMvcTools.GetJsonName(System.Object,System.String)">
   GetJsonName(object, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Tools/UFMvcTools.cs/#L264"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Tools/UFMvcTools.cs/#L265"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the json name for a property in an object. The method checks if a property has
@@ -382,15 +382,15 @@ If no attribute can be found the property name is returned.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string GetJsonName(object anObject, string aPropertyName)</code></pre>
+    <pre><code class="lang-csharp hljs">public static string GetJsonName(object value, string propertyName)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>anObject</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
     <dd><p>Object to get property from</p>
 </dd>
-    <dt><code>aPropertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><code>propertyName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd><p>Name of property</p>
 </dd>
   </dl>
@@ -430,12 +430,12 @@ If no attribute can be found the property name is returned.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string GetViewComponentName(string aComponent)</code></pre>
+    <pre><code class="lang-csharp hljs">public static string GetViewComponentName(string component)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>aComponent</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><code>component</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd><p>Name of component</p>
 </dd>
   </dl>
@@ -511,15 +511,15 @@ The method replaces the following macro's: {copy}, {year} and {user}
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static string ReplaceMacros(string aText, IPrincipal? aPrincipal = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public static string ReplaceMacros(string text, IPrincipal? principal = null)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>aText</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><code>text</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd><p>text that might contain macro's</p>
 </dd>
-    <dt><code>aPrincipal</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.security.principal.iprincipal">IPrincipal</a></dt>
+    <dt><code>principal</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.security.principal.iprincipal">IPrincipal</a></dt>
     <dd><p>value to get the username from</p>
 </dd>
   </dl>
@@ -527,7 +527,7 @@ The method replaces the following macro's: {copy}, {year} and {user}
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>aText with the macro's replaced</p>
+    <dd><p>text with the macro's replaced</p>
 </dd>
   </dl>
 
@@ -545,7 +545,7 @@ The method replaces the following macro's: {copy}, {year} and {user}
 
   <h3 id="UltraForce_Library_Core_Asp_Tools_UFMvcTools_Validate_System_Object_" data-uid="UltraForce.Library.Core.Asp.Tools.UFMvcTools.Validate(System.Object)">
   Validate(object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Tools/UFMvcTools.cs/#L242"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Tools/UFMvcTools.cs/#L243"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Validates an object using their validation attributes.</p>
@@ -553,12 +553,12 @@ The method replaces the following macro's: {copy}, {year} and {user}
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static (bool isValid, ICollection&lt;ValidationResult&gt; results) Validate(object anObject)</code></pre>
+    <pre><code class="lang-csharp hljs">public static (bool isValid, ICollection&lt;ValidationResult&gt; results) Validate(object value)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>anObject</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
     <dd></dd>
   </dl>
 

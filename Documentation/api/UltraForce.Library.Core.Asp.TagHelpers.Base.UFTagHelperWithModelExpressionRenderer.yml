@@ -89,12 +89,12 @@ items:
   summary: Constructs an instance of the <xref href="UltraForce.Library.Core.Asp.TagHelpers.Base.UFTagHelperWithModelExpressionRenderer" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
-    content: protected UFTagHelperWithModelExpressionRenderer(IUFModelExpressionRenderer aModelExpressionRenderer)
+    content: protected UFTagHelperWithModelExpressionRenderer(IUFModelExpressionRenderer modelExpressionRenderer)
     parameters:
-    - id: aModelExpressionRenderer
+    - id: modelExpressionRenderer
       type: UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer
       description: ''
-    content.vb: Protected Sub New(aModelExpressionRenderer As IUFModelExpressionRenderer)
+    content.vb: Protected Sub New(modelExpressionRenderer As IUFModelExpressionRenderer)
   overload: UltraForce.Library.Core.Asp.TagHelpers.Base.UFTagHelperWithModelExpressionRenderer.#ctor*
   nameWithType.vb: UFTagHelperWithModelExpressionRenderer.New(IUFModelExpressionRenderer)
   fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.UFTagHelperWithModelExpressionRenderer.New(UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer)

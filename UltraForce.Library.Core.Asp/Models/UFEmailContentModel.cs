@@ -39,12 +39,12 @@ namespace UltraForce.Library.Core.Asp.Models
     /// <summary>
     /// Create structure
     /// </summary>
-    /// <param name="anHtml">initial html text</param>
-    /// <param name="aText">initial plain text</param>
-    public UFEmailContentModel(string? anHtml = null, string? aText = null)
+    /// <param name="html">initial html text</param>
+    /// <param name="text">initial plain text</param>
+    public UFEmailContentModel(string? html = null, string? text = null)
     {
-      this.Html = anHtml;
-      this.Text = aText;
+      this.Html = html;
+      this.Text = text;
     }
 
     #endregion

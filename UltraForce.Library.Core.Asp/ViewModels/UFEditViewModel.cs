@@ -51,10 +51,10 @@ namespace UltraForce.Library.Core.Asp.ViewModels
     /// <summary>
     /// Constructs an instance with an existing value.
     /// </summary>
-    /// <param name="aValue"></param>
-    protected UFEditViewModel(T aValue)
+    /// <param name="value"></param>
+    protected UFEditViewModel(T value)
     {
-      this.Value = aValue;
+      this.Value = value;
       this.NewValue = false;
     }
 
@@ -82,11 +82,11 @@ namespace UltraForce.Library.Core.Asp.ViewModels
     /// Subclasses must implement this method.
     /// </para>
     /// </summary>
-    /// <param name="aValue">Value to patch</param>
+    /// <param name="value">Value to patch</param>
     /// <returns>
-    /// The updated value, can either be aValue or a new instance.
+    /// The updated value, can either be value or a new instance.
     /// </returns>
-    public abstract T Patch(T aValue);
+    public abstract T Patch(T value);
 
     #endregion
   }

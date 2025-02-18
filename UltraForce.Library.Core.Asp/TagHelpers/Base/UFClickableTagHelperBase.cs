@@ -55,15 +55,15 @@ public abstract class UFClickableTagHelperBase : AnchorTagHelper
   /// <summary>
   /// Constructs an instance <see cref="UFClickableTagHelperBase"/>. 
   /// </summary>
-  /// <param name="anEndpointDataSource"></param>
-  /// <param name="aHtmlGenerator">Used to generate an href value</param>
+  /// <param name="endpointDataSource"></param>
+  /// <param name="htmlGenerator">Used to generate an href value</param>
   protected UFClickableTagHelperBase(
-    EndpointDataSource anEndpointDataSource,
-    IHtmlGenerator aHtmlGenerator
+    EndpointDataSource endpointDataSource,
+    IHtmlGenerator htmlGenerator
   )
-    : base(aHtmlGenerator)
+    : base(htmlGenerator)
   {
-    this.EndpointDataSource = anEndpointDataSource;
+    this.EndpointDataSource = endpointDataSource;
   }
 
   #endregion
@@ -132,16 +132,16 @@ public abstract class UFClickableTagHelperBase : AnchorTagHelper
   /// <summary>
   /// Checks if a href attribute is set; if not create one based on the <see cref="Href"/> property.
   /// </summary>
-  /// <param name="anOutput"></param>
+  /// <param name="output"></param>
   /// <returns>True if a href value could be determined</returns>
   protected bool ProcessHref(
-    TagHelperOutput anOutput
+    TagHelperOutput output
   )
   {
     // always process new tab
     if (this.NewTab)
     {
-      anOutput.Attributes.SetAttribute("target", "_blank");
+      output.Attributes.SetAttribute("target", "_blank");
     }
     bool routeLink = this.Route != null;
     bool actionLink = this.Controller != null || this.Action != null;
@@ -158,19 +158,19 @@ public abstract class UFClickableTagHelperBase : AnchorTagHelper
     }
     if (!string.IsNullOrWhiteSpace(this.Href))
     {
-      anOutput.Attributes.SetAttribute("href", this.Href);
+      output.Attributes.SetAttribute("href", this.Href);
       return true;
     }
     string href = this.ProcessCall();
     if (href != "")
     {
-      anOutput.Attributes.SetAttribute("href", href);
+      output.Attributes.SetAttribute("href", href);
       return true;
     }
-    int hrefIndex = anOutput.Attributes.IndexOfName("href");
+    int hrefIndex = output.Attributes.IndexOfName("href");
     if (hrefIndex >= 0)
     {
-      anOutput.Attributes.RemoveAt(hrefIndex);
+      output.Attributes.RemoveAt(hrefIndex);
     }
     return false;
   }

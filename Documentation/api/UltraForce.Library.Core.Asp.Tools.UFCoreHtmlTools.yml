@@ -64,18 +64,18 @@ items:
   summary: Removes all domain references from a html string.
   example: []
   syntax:
-    content: public static string RemoveDomain(HttpRequest aRequest, string anHtml)
+    content: public static string RemoveDomain(HttpRequest request, string html)
     parameters:
-    - id: aRequest
+    - id: request
       type: Microsoft.AspNetCore.Http.HttpRequest
       description: Request to get current domain from
-    - id: anHtml
+    - id: html
       type: System.String
       description: ''
     return:
       type: System.String
       description: ''
-    content.vb: Public Shared Function RemoveDomain(aRequest As HttpRequest, anHtml As String) As String
+    content.vb: Public Shared Function RemoveDomain(request As HttpRequest, html As String) As String
   overload: UltraForce.Library.Core.Asp.Tools.UFCoreHtmlTools.RemoveDomain*
   nameWithType.vb: UFCoreHtmlTools.RemoveDomain(HttpRequest, String)
   fullName.vb: UltraForce.Library.Core.Asp.Tools.UFCoreHtmlTools.RemoveDomain(Microsoft.AspNetCore.Http.HttpRequest, String)

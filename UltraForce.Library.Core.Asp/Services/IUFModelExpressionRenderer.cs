@@ -44,37 +44,37 @@ public interface IUFModelExpressionRenderer
   /// Sets the content to the (display) name of the <see cref="ModelExpression"/>. The code is
   /// based on the code from <see cref="LabelTagHelper"/>.
   /// </summary>
-  /// <param name="anOutput">Output to update</param>
-  /// <param name="anExpression">Model expression to get name from</param>
-  /// <param name="aViewContext">View context to use</param>
+  /// <param name="output">Output to update</param>
+  /// <param name="expression">Model expression to get name from</param>
+  /// <param name="viewContext">View context to use</param>
   Task SetContentToNameAsync(
-    TagHelperOutput anOutput, ModelExpression anExpression, ViewContext aViewContext
+    TagHelperOutput output, ModelExpression expression, ViewContext viewContext
   );
 
   /// <summary>
   /// Sets the content to the value of the <see cref="ModelExpression" />. 
   /// </summary>
-  /// <param name="anOutput">Output to update</param>
-  /// <param name="anExpression">Expression to get value from</param>
-  /// <param name="aViewContext">View context to use</param>
+  /// <param name="output">Output to update</param>
+  /// <param name="expression">Expression to get value from</param>
+  /// <param name="viewContext">View context to use</param>
   Task SetContentToValueAsync(
-    TagHelperOutput anOutput, ModelExpression anExpression, ViewContext aViewContext
+    TagHelperOutput output, ModelExpression expression, ViewContext viewContext
   );
 
   /// <summary>
   /// Gets the name for a model expression.
   /// </summary>
-  /// <param name="anExpression">expression to get name for</param>
-  /// <param name="aViewContext"></param>
+  /// <param name="expression">expression to get name for</param>
+  /// <param name="viewContext"></param>
   /// <returns>html representation of name</returns>
-  IHtmlContentBuilder GetName(ModelExpression anExpression, ViewContext aViewContext);
+  IHtmlContentBuilder GetName(ModelExpression expression, ViewContext viewContext);
   
 
   /// <summary>
   /// Gets the value as a text string.
   /// </summary>
-  /// <param name="anExpression">expression to get value for</param>
-  /// <param name="aViewContext"></param>
+  /// <param name="expression">expression to get value for</param>
+  /// <param name="viewContext"></param>
   /// <returns>text representation of value</returns>
-  string GetValueAsText(ModelExpression anExpression, ViewContext aViewContext);
+  string GetValueAsText(ModelExpression expression, ViewContext viewContext);
 }

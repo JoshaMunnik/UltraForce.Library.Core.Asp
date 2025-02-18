@@ -157,23 +157,24 @@ Class UFWebExtensions  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="UltraForce_Library_Core_Asp_Web_UFWebExtensions_IsInRole_System_Security_Claims_ClaimsPrincipal_System_Collections_Generic_IEnumerable_System_String__" data-uid="UltraForce.Library.Core.Asp.Web.UFWebExtensions.IsInRole(System.Security.Claims.ClaimsPrincipal,System.Collections.Generic.IEnumerable{System.String})">
   IsInRole(ClaimsPrincipal, IEnumerable&lt;string&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Web/UFWebExtensions.cs/#L56"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Web/UFWebExtensions.cs/#L58"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Adds an additional IsInRole method to test if user belongs to any of the specified roles.</p>
+  <div class="markdown level1 summary"><p>Adds an additional <code>IsInRole</code> method to test if user belongs to any of the specified
+roles.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool IsInRole(this ClaimsPrincipal aClaim, IEnumerable&lt;string&gt; aRoles)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool IsInRole(this ClaimsPrincipal claim, IEnumerable&lt;string&gt; roles)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>aClaim</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.security.claims.claimsprincipal">ClaimsPrincipal</a></dt>
+    <dt><code>claim</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.security.claims.claimsprincipal">ClaimsPrincipal</a></dt>
     <dd><p>Claim to check</p>
 </dd>
-    <dt><code>aRoles</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dt><code>roles</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
     <dd><p>Roles to check</p>
 </dd>
   </dl>
@@ -199,23 +200,24 @@ Class UFWebExtensions  <a class="header-action link-secondary" title="View sourc
 
   <h3 id="UltraForce_Library_Core_Asp_Web_UFWebExtensions_IsInRole_System_Security_Claims_ClaimsPrincipal_System_String___" data-uid="UltraForce.Library.Core.Asp.Web.UFWebExtensions.IsInRole(System.Security.Claims.ClaimsPrincipal,System.String[])">
   IsInRole(ClaimsPrincipal, params string[])
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Web/UFWebExtensions.cs/#L45"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Web/UFWebExtensions.cs/#L46"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Adds an additional IsInRole method to test if user belongs to any of the specified roles.</p>
+  <div class="markdown level1 summary"><p>Adds an additional <code>IsInRole</code> method to test if user belongs to any of the specified
+roles.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool IsInRole(this ClaimsPrincipal aClaim, params string[] aRoles)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool IsInRole(this ClaimsPrincipal claim, params string[] roles)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>aClaim</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.security.claims.claimsprincipal">ClaimsPrincipal</a></dt>
+    <dt><code>claim</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.security.claims.claimsprincipal">ClaimsPrincipal</a></dt>
     <dd><p>Claim to check</p>
 </dd>
-    <dt><code>aRoles</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
+    <dt><code>roles</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>[]</dt>
     <dd><p>Roles to check</p>
 </dd>
   </dl>

@@ -86,14 +86,15 @@ items:
   summary: Returns an <xref href="Microsoft.AspNetCore.Identity.IdentityError" data-throw-if-not-resolved="false"></xref> indicating a password of the specified <code class="paramref">length</code> does not meet the minimum length requirements.
   example: []
   syntax:
-    content: public override IdentityError PasswordTooShort(int aLength)
+    content: public override IdentityError PasswordTooShort(int length)
     parameters:
-    - id: aLength
+    - id: length
       type: System.Int32
+      description: The length that is not long enough.
     return:
       type: Microsoft.AspNetCore.Identity.IdentityError
       description: An <xref href="Microsoft.AspNetCore.Identity.IdentityError" data-throw-if-not-resolved="false"></xref> indicating a password of the specified <code class="paramref">length</code> does not meet the minimum length requirements.
-    content.vb: Public Overrides Function PasswordTooShort(aLength As Integer) As IdentityError
+    content.vb: Public Overrides Function PasswordTooShort(length As Integer) As IdentityError
   overridden: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.PasswordTooShort(System.Int32)
   overload: UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber.PasswordTooShort*
   nameWithType.vb: UFDutchIdentityErrorDescriber.PasswordTooShort(Integer)
@@ -252,14 +253,15 @@ items:
   summary: Returns an <xref href="Microsoft.AspNetCore.Identity.IdentityError" data-throw-if-not-resolved="false"></xref> indicating a password does not meet the minimum number <code class="paramref">uniqueChars</code> of unique chars.
   example: []
   syntax:
-    content: public override IdentityError PasswordRequiresUniqueChars(int anUniqueChars)
+    content: public override IdentityError PasswordRequiresUniqueChars(int uniqueChars)
     parameters:
-    - id: anUniqueChars
+    - id: uniqueChars
       type: System.Int32
+      description: The number of different chars that must be used.
     return:
       type: Microsoft.AspNetCore.Identity.IdentityError
       description: An <xref href="Microsoft.AspNetCore.Identity.IdentityError" data-throw-if-not-resolved="false"></xref> indicating a password does not meet the minimum number <code class="paramref">uniqueChars</code> of unique chars.
-    content.vb: Public Overrides Function PasswordRequiresUniqueChars(anUniqueChars As Integer) As IdentityError
+    content.vb: Public Overrides Function PasswordRequiresUniqueChars(uniqueChars As Integer) As IdentityError
   overridden: Microsoft.AspNetCore.Identity.IdentityErrorDescriber.PasswordRequiresUniqueChars(System.Int32)
   overload: UltraForce.Library.Core.Asp.Services.UFDutchIdentityErrorDescriber.PasswordRequiresUniqueChars*
   nameWithType.vb: UFDutchIdentityErrorDescriber.PasswordRequiresUniqueChars(Integer)

@@ -161,15 +161,15 @@ items:
   summary: The default implementation returns an empty string.
   example: []
   syntax:
-    content: protected virtual string GetTabsClasses(int aCount)
+    content: protected virtual string GetTabsClasses(int count)
     parameters:
-    - id: aCount
+    - id: count
       type: System.Int32
       description: ''
     return:
       type: System.String
       description: ''
-    content.vb: Protected Overridable Function GetTabsClasses(aCount As Integer) As String
+    content.vb: Protected Overridable Function GetTabsClasses(count As Integer) As String
   overload: UltraForce.Library.Core.Asp.TagHelpers.Base.Containers.UFTabsTagHelperBase.GetTabsClasses*
   nameWithType.vb: UFTabsTagHelperBase.GetTabsClasses(Integer)
   fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Containers.UFTabsTagHelperBase.GetTabsClasses(Integer)

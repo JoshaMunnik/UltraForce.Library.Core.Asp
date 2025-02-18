@@ -73,15 +73,15 @@ items:
   summary: Checks if the name ends with 'Controller', if it does remove it.
   example: []
   syntax:
-    content: public static string GetControllerName(string aController)
+    content: public static string GetControllerName(string controller)
     parameters:
-    - id: aController
+    - id: controller
       type: System.String
       description: Name of controller
     return:
       type: System.String
       description: Name of controller without 'Controller' at the end
-    content.vb: Public Shared Function GetControllerName(aController As String) As String
+    content.vb: Public Shared Function GetControllerName(controller As String) As String
   overload: UltraForce.Library.Core.Asp.Tools.UFMvcTools.GetControllerName*
   nameWithType.vb: UFMvcTools.GetControllerName(String)
   fullName.vb: UltraForce.Library.Core.Asp.Tools.UFMvcTools.GetControllerName(String)
@@ -148,15 +148,15 @@ items:
   summary: Checks if the name ends with 'ViewComponent', if it does remove it.
   example: []
   syntax:
-    content: public static string GetViewComponentName(string aComponent)
+    content: public static string GetViewComponentName(string component)
     parameters:
-    - id: aComponent
+    - id: component
       type: System.String
       description: Name of component
     return:
       type: System.String
       description: Name of controller without 'ViewComponent' at the end
-    content.vb: Public Shared Function GetViewComponentName(aComponent As String) As String
+    content.vb: Public Shared Function GetViewComponentName(component As String) As String
   overload: UltraForce.Library.Core.Asp.Tools.UFMvcTools.GetViewComponentName*
   nameWithType.vb: UFMvcTools.GetViewComponentName(String)
   fullName.vb: UltraForce.Library.Core.Asp.Tools.UFMvcTools.GetViewComponentName(String)
@@ -231,18 +231,18 @@ items:
     </p>
   example: []
   syntax:
-    content: public static string ReplaceMacros(string aText, IPrincipal? aPrincipal = null)
+    content: public static string ReplaceMacros(string text, IPrincipal? principal = null)
     parameters:
-    - id: aText
+    - id: text
       type: System.String
       description: text that might contain macro's
-    - id: aPrincipal
+    - id: principal
       type: System.Security.Principal.IPrincipal
       description: value to get the username from
     return:
       type: System.String
-      description: aText with the macro's replaced
-    content.vb: Public Shared Function ReplaceMacros(aText As String, aPrincipal As IPrincipal = Nothing) As String
+      description: text with the macro's replaced
+    content.vb: Public Shared Function ReplaceMacros(text As String, principal As IPrincipal = Nothing) As String
   overload: UltraForce.Library.Core.Asp.Tools.UFMvcTools.ReplaceMacros*
   nameWithType.vb: UFMvcTools.ReplaceMacros(String, IPrincipal)
   fullName.vb: UltraForce.Library.Core.Asp.Tools.UFMvcTools.ReplaceMacros(String, System.Security.Principal.IPrincipal)
@@ -265,25 +265,25 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: AddFirstItem
     path: ../UltraForce.Library.Core.Asp/Tools/UFMvcTools.cs
-    startLine: 141
+    startLine: 142
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Tools
   summary: Adds an item at the start of a select list. Preserves the selected state.
   example: []
   syntax:
-    content: public static SelectList AddFirstItem(SelectList aList, SelectListItem anItem)
+    content: public static SelectList AddFirstItem(SelectList list, SelectListItem newItem)
     parameters:
-    - id: aList
+    - id: list
       type: Microsoft.AspNetCore.Mvc.Rendering.SelectList
       description: List to add item to
-    - id: anItem
+    - id: newItem
       type: Microsoft.AspNetCore.Mvc.Rendering.SelectListItem
       description: Item to insert at first position
     return:
       type: Microsoft.AspNetCore.Mvc.Rendering.SelectList
       description: New list with item inserted
-    content.vb: Public Shared Function AddFirstItem(aList As SelectList, anItem As SelectListItem) As SelectList
+    content.vb: Public Shared Function AddFirstItem(list As SelectList, newItem As SelectListItem) As SelectList
   overload: UltraForce.Library.Core.Asp.Tools.UFMvcTools.AddFirstItem*
 - uid: UltraForce.Library.Core.Asp.Tools.UFMvcTools.CreateListFromEnum``1(System.String)
   commentId: M:UltraForce.Library.Core.Asp.Tools.UFMvcTools.CreateListFromEnum``1(System.String)
@@ -303,16 +303,16 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: CreateListFromEnum
     path: ../UltraForce.Library.Core.Asp/Tools/UFMvcTools.cs
-    startLine: 166
+    startLine: 167
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Tools
   summary: Creates a <xref href="Microsoft.AspNetCore.Mvc.Rendering.SelectList" data-throw-if-not-resolved="false"></xref> from an enum type.
   example: []
   syntax:
-    content: 'public static SelectList CreateListFromEnum<T>(string? anEmptyChoice = null) where T : struct, Enum'
+    content: 'public static SelectList CreateListFromEnum<T>(string? emptyChoice = null) where T : struct, Enum'
     parameters:
-    - id: anEmptyChoice
+    - id: emptyChoice
       type: System.String
       description: ''
     typeParameters:
@@ -321,7 +321,7 @@ items:
     return:
       type: Microsoft.AspNetCore.Mvc.Rendering.SelectList
       description: Select list
-    content.vb: Public Shared Function CreateListFromEnum(Of T As {Structure, [Enum]})(anEmptyChoice As String = Nothing) As SelectList
+    content.vb: Public Shared Function CreateListFromEnum(Of T As {Structure, [Enum]})(emptyChoice As String = Nothing) As SelectList
   overload: UltraForce.Library.Core.Asp.Tools.UFMvcTools.CreateListFromEnum*
   nameWithType.vb: UFMvcTools.CreateListFromEnum(Of T)(String)
   fullName.vb: UltraForce.Library.Core.Asp.Tools.UFMvcTools.CreateListFromEnum(Of T)(String)
@@ -344,28 +344,28 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetErrors
     path: ../UltraForce.Library.Core.Asp/Tools/UFMvcTools.cs
-    startLine: 208
+    startLine: 209
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Tools
   summary: Gets the errors for a field as a single string
   example: []
   syntax:
-    content: public static string GetErrors(ModelStateDictionary aModelState, string aName, string aDivider = ", ", string anHead = "", string aTail = "")
+    content: public static string GetErrors(ModelStateDictionary aModelState, string name, string divider = ", ", string head = "", string tail = "")
     parameters:
     - id: aModelState
       type: Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary
       description: Model state to get errors from
-    - id: aName
+    - id: name
       type: System.String
       description: Field name to get errors for
-    - id: aDivider
+    - id: divider
       type: System.String
       description: Value to place between errors
-    - id: anHead
+    - id: head
       type: System.String
       description: Value at start, only used if there are errors
-    - id: aTail
+    - id: tail
       type: System.String
       description: Value at end, only used if there are errors
     return:
@@ -374,7 +374,7 @@ items:
         A string containing all errors or <xref href="System.String.Empty" data-throw-if-not-resolved="false"></xref> if there are no errors
 
         or no field with the specified name can be found
-    content.vb: Public Shared Function GetErrors(aModelState As ModelStateDictionary, aName As String, aDivider As String = ", ", anHead As String = "", aTail As String = "") As String
+    content.vb: Public Shared Function GetErrors(aModelState As ModelStateDictionary, name As String, divider As String = ", ", head As String = "", tail As String = "") As String
   overload: UltraForce.Library.Core.Asp.Tools.UFMvcTools.GetErrors*
   nameWithType.vb: UFMvcTools.GetErrors(ModelStateDictionary, String, String, String, String)
   fullName.vb: UltraForce.Library.Core.Asp.Tools.UFMvcTools.GetErrors(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary, String, String, String, String)
@@ -397,22 +397,22 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Validate
     path: ../UltraForce.Library.Core.Asp/Tools/UFMvcTools.cs
-    startLine: 241
+    startLine: 242
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Tools
   summary: Validates an object using their validation attributes.
   example: []
   syntax:
-    content: public static (bool isValid, ICollection<ValidationResult> results) Validate(object anObject)
+    content: public static (bool isValid, ICollection<ValidationResult> results) Validate(object value)
     parameters:
-    - id: anObject
+    - id: value
       type: System.Object
       description: ''
     return:
       type: System.ValueTuple{System.Boolean,System.Collections.Generic.ICollection{System.ComponentModel.DataAnnotations.ValidationResult}}
       description: ''
-    content.vb: Public Shared Function Validate(anObject As Object) As (isValid As Boolean, results As ICollection(Of ValidationResult))
+    content.vb: Public Shared Function Validate(value As Object) As (isValid As Boolean, results As ICollection(Of ValidationResult))
   overload: UltraForce.Library.Core.Asp.Tools.UFMvcTools.Validate*
   nameWithType.vb: UFMvcTools.Validate(Object)
   fullName.vb: UltraForce.Library.Core.Asp.Tools.UFMvcTools.Validate(Object)
@@ -435,7 +435,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetJsonName
     path: ../UltraForce.Library.Core.Asp/Tools/UFMvcTools.cs
-    startLine: 263
+    startLine: 264
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Tools
@@ -447,18 +447,18 @@ items:
     If no attribute can be found the property name is returned.
   example: []
   syntax:
-    content: public static string GetJsonName(object anObject, string aPropertyName)
+    content: public static string GetJsonName(object value, string propertyName)
     parameters:
-    - id: anObject
+    - id: value
       type: System.Object
       description: Object to get property from
-    - id: aPropertyName
+    - id: propertyName
       type: System.String
       description: Name of property
     return:
       type: System.String
       description: Json name or value of <code>aProperty</code>
-    content.vb: Public Shared Function GetJsonName(anObject As Object, aPropertyName As String) As String
+    content.vb: Public Shared Function GetJsonName(value As Object, propertyName As String) As String
   overload: UltraForce.Library.Core.Asp.Tools.UFMvcTools.GetJsonName*
   exceptions:
   - type: System.Exception

@@ -85,28 +85,28 @@ namespace UltraForce.Library.Core.Asp.Sessions
     /// <summary>
     /// Adds a message to show in page
     /// </summary>
-    /// <param name="aMessage">Message to show</param>
-    public void Add(string aMessage)
+    /// <param name="message">Message to show</param>
+    public void Add(string message)
     {
-      this.AddMessage(Normal, aMessage);
+      this.AddMessage(Normal, message);
     }
 
     /// <summary>
     /// Adds an error message to show in page
     /// </summary>
-    /// <param name="aMessage">Message to show</param>
-    public void AddError(string aMessage)
+    /// <param name="message">Message to show</param>
+    public void AddError(string message)
     {
-      this.AddMessage(Error, aMessage);
+      this.AddMessage(Error, message);
     }
 
     /// <summary>
     /// Adds a warning message to show in page
     /// </summary>
-    /// <param name="aMessage">Message to show</param>
-    public void AddWarning(string aMessage)
+    /// <param name="message">Message to show</param>
+    public void AddWarning(string message)
     {
-      this.AddMessage(Warning, aMessage);
+      this.AddMessage(Warning, message);
     }
 
     /// <summary>
@@ -162,9 +162,9 @@ namespace UltraForce.Library.Core.Asp.Sessions
     /// <summary>
     /// Adds a message to the session.
     /// </summary>
-    /// <param name="aType">Type of message</param>
-    /// <param name="aMessage">Message to add</param>
-    private void AddMessage(string aType, string aMessage)
+    /// <param name="type">Type of message</param>
+    /// <param name="message">Message to add</param>
+    private void AddMessage(string type, string message)
     {
       if (this.m_session == null)
       {
@@ -172,16 +172,16 @@ namespace UltraForce.Library.Core.Asp.Sessions
       }
       try
       {
-        string indexKey = GetIndexKey(aType);
+        string indexKey = GetIndexKey(type);
         int currentIndex = this.m_session.GetInt(indexKey, 0);
         for (int index = 0; index < currentIndex; index++)
         {
-          if (aMessage == this.m_session.GetString(GetItemKey(aType, index)))
+          if (message == this.m_session.GetString(GetItemKey(type, index)))
           {
             return;
           }
         }
-        this.m_session.SetString(GetItemKey(aType, currentIndex), aMessage);
+        this.m_session.SetString(GetItemKey(type, currentIndex), message);
         this.m_session.SetInt(indexKey, currentIndex + 1);
       }
       catch
@@ -193,8 +193,8 @@ namespace UltraForce.Library.Core.Asp.Sessions
     /// <summary>
     /// Removes all messages for a certain type.
     /// </summary>
-    /// <param name="aType">Type to remove message for</param>
-    private void ClearMessages(string aType)
+    /// <param name="type">Type to remove message for</param>
+    private void ClearMessages(string type)
     {
       if (this.m_session == null)
       {
@@ -202,11 +202,11 @@ namespace UltraForce.Library.Core.Asp.Sessions
       }
       try
       {
-        string indexKey = GetIndexKey(aType);
+        string indexKey = GetIndexKey(type);
         int count = this.m_session.GetInt(indexKey, 0);
         for (int index = 0; index < count; index++)
         {
-          this.m_session.DeleteKey(GetItemKey(aType, index));
+          this.m_session.DeleteKey(GetItemKey(type, index));
         }
         this.m_session.DeleteKey(indexKey);
       }
@@ -219,9 +219,9 @@ namespace UltraForce.Library.Core.Asp.Sessions
     /// <summary>
     /// Checks if there is at least one messages stored for a type.
     /// </summary>
-    /// <param name="aType"></param>
+    /// <param name="type"></param>
     /// <returns></returns>
-    private bool HasMessages(string aType)
+    private bool HasMessages(string type)
     {
       if (this.m_session == null)
       {
@@ -229,7 +229,7 @@ namespace UltraForce.Library.Core.Asp.Sessions
       }
       try
       {
-        return this.m_session.HasKey(GetIndexKey(aType));
+        return this.m_session.HasKey(GetIndexKey(type));
       }
       catch
       {
@@ -240,9 +240,9 @@ namespace UltraForce.Library.Core.Asp.Sessions
     /// <summary>
     /// Gets all messages for a certain type
     /// </summary>
-    /// <param name="aType">type</param>
+    /// <param name="type">type</param>
     /// <returns>messages</returns>
-    private IEnumerable<string> GetMessages(string aType)
+    private IEnumerable<string> GetMessages(string type)
     {
       if (this.m_session == null)
       {
@@ -250,12 +250,12 @@ namespace UltraForce.Library.Core.Asp.Sessions
       }
       try
       {
-        string indexKey = GetIndexKey(aType);
+        string indexKey = GetIndexKey(type);
         int count = this.m_session.GetInt(indexKey, 0);
         List<string> result = new(count);
         for (int index = 0; index < count; index++)
         {
-          result.Add(this.m_session.GetString(GetItemKey(aType, index)));
+          result.Add(this.m_session.GetString(GetItemKey(type, index)));
         }
         return result;
       }
@@ -268,22 +268,22 @@ namespace UltraForce.Library.Core.Asp.Sessions
     /// <summary>
     /// Gets storage key for the index and certain type.
     /// </summary>
-    /// <param name="aType">Type to get index key for</param>
+    /// <param name="type">Type to get index key for</param>
     /// <returns>index key</returns>
-    private static string GetIndexKey(string aType)
+    private static string GetIndexKey(string type)
     {
-      return Prefix + aType + "Index";
+      return Prefix + type + "Index";
     }
 
     /// <summary>
     /// Gets storage key for a message at a certain index and type.
     /// </summary>
-    /// <param name="aType">Type to get key for</param>
-    /// <param name="anIndex">Index to get key for</param>
+    /// <param name="type">Type to get key for</param>
+    /// <param name="index">Index to get key for</param>
     /// <returns>storage key</returns>
-    private static string GetItemKey(string aType, int anIndex)
+    private static string GetItemKey(string type, int index)
     {
-      return Prefix + aType + anIndex;
+      return Prefix + type + index;
     }
 
     #endregion

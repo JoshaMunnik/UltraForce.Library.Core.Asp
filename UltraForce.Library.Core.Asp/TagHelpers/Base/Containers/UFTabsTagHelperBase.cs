@@ -85,9 +85,9 @@ public abstract class UFTabsTagHelperBase : TagHelper
   /// <summary>
   /// The default implementation returns an empty string.
   /// </summary>
-  /// <param name="aCount"></param>
+  /// <param name="count"></param>
   /// <returns></returns>
-  protected virtual string GetTabsClasses(int aCount)
+  protected virtual string GetTabsClasses(int count)
   {
     return string.Empty;
   }

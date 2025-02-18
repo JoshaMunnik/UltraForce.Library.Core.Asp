@@ -9,6 +9,7 @@ items:
   - UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.AddClasses(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,System.String)
   - UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.CreateAttributeList(System.Collections.Generic.Dictionary{System.String,System.String})
   - UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.FindAttribute(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttributeList,System.String)
+  - UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.GetItem``1(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,System.Object,``0)
   - UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.GetLabel(Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator,Microsoft.AspNetCore.Mvc.Rendering.ViewContext,Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression,System.String)
   - UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.IsCssValue(System.String)
   - UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.RenderTagHelperOutput(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,System.Text.Encodings.Web.HtmlEncoder)
@@ -67,7 +68,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: SetContentToTagBuilderAsync
     path: ../UltraForce.Library.Core.Asp/Tools/UFTagHelperTools.cs
-    startLine: 69
+    startLine: 72
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Tools
@@ -77,17 +78,17 @@ items:
     content and no other tag helper as adjusted the content already.
   example: []
   syntax:
-    content: public static Task SetContentToTagBuilderAsync(TagHelperOutput anOutput, Func<TagBuilder> aFactory)
+    content: public static Task SetContentToTagBuilderAsync(TagHelperOutput output, Func<TagBuilder> factory)
     parameters:
-    - id: anOutput
+    - id: output
       type: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput
       description: Output to update content of
-    - id: aFactory
+    - id: factory
       type: System.Func{Microsoft.AspNetCore.Mvc.Rendering.TagBuilder}
       description: Factory that generates a tag to get inner content of
     return:
       type: System.Threading.Tasks.Task
-    content.vb: Public Shared Function SetContentToTagBuilderAsync(anOutput As TagHelperOutput, aFactory As Func(Of TagBuilder)) As Task
+    content.vb: Public Shared Function SetContentToTagBuilderAsync(output As TagHelperOutput, factory As Func(Of TagBuilder)) As Task
   overload: UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.SetContentToTagBuilderAsync*
   nameWithType.vb: UFTagHelperTools.SetContentToTagBuilderAsync(TagHelperOutput, Func(Of TagBuilder))
   fullName.vb: UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.SetContentToTagBuilderAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput, System.Func(Of Microsoft.AspNetCore.Mvc.Rendering.TagBuilder))
@@ -110,7 +111,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: SetContentToText
     path: ../UltraForce.Library.Core.Asp/Tools/UFTagHelperTools.cs
-    startLine: 101
+    startLine: 104
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Tools
@@ -120,17 +121,17 @@ items:
     and the content is empty.
   example: []
   syntax:
-    content: public static Task SetContentToText(TagHelperOutput anOutput, string aText)
+    content: public static Task SetContentToText(TagHelperOutput output, string text)
     parameters:
-    - id: anOutput
+    - id: output
       type: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput
       description: Output to update
-    - id: aText
+    - id: text
       type: System.String
       description: Text to set
     return:
       type: System.Threading.Tasks.Task
-    content.vb: Public Shared Function SetContentToText(anOutput As TagHelperOutput, aText As String) As Task
+    content.vb: Public Shared Function SetContentToText(output As TagHelperOutput, text As String) As Task
   overload: UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.SetContentToText*
   nameWithType.vb: UFTagHelperTools.SetContentToText(TagHelperOutput, String)
   fullName.vb: UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.SetContentToText(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput, String)
@@ -153,7 +154,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: SetContentToHtmlAsync
     path: ../UltraForce.Library.Core.Asp/Tools/UFTagHelperTools.cs
-    startLine: 128
+    startLine: 131
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Tools
@@ -163,17 +164,17 @@ items:
     and the content is empty.
   example: []
   syntax:
-    content: public static Task SetContentToHtmlAsync(TagHelperOutput anOutput, string anHtml)
+    content: public static Task SetContentToHtmlAsync(TagHelperOutput output, string html)
     parameters:
-    - id: anOutput
+    - id: output
       type: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput
       description: Output to update
-    - id: anHtml
+    - id: html
       type: System.String
       description: Html to set
     return:
       type: System.Threading.Tasks.Task
-    content.vb: Public Shared Function SetContentToHtmlAsync(anOutput As TagHelperOutput, anHtml As String) As Task
+    content.vb: Public Shared Function SetContentToHtmlAsync(output As TagHelperOutput, html As String) As Task
   overload: UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.SetContentToHtmlAsync*
   nameWithType.vb: UFTagHelperTools.SetContentToHtmlAsync(TagHelperOutput, String)
   fullName.vb: UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.SetContentToHtmlAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput, String)
@@ -196,7 +197,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetLabel
     path: ../UltraForce.Library.Core.Asp/Tools/UFTagHelperTools.cs
-    startLine: 158
+    startLine: 161
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Tools
@@ -206,24 +207,24 @@ items:
     and getting its inner html contents.
   example: []
   syntax:
-    content: public static string GetLabel(IHtmlGenerator aGenerator, ViewContext aViewContext, ModelExpression? anExpression, string aLabelText)
+    content: public static string GetLabel(IHtmlGenerator generator, ViewContext viewContext, ModelExpression? expression, string labelText)
     parameters:
-    - id: aGenerator
+    - id: generator
       type: Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator
       description: Generator to use
-    - id: aViewContext
+    - id: viewContext
       type: Microsoft.AspNetCore.Mvc.Rendering.ViewContext
       description: View context to render in
-    - id: anExpression
+    - id: expression
       type: Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression
       description: Expression to get label from
-    - id: aLabelText
+    - id: labelText
       type: System.String
       description: When non null, use this value instead of getting the label
     return:
       type: System.String
-      description: the inner html or aLabelText if it was not empty
-    content.vb: Public Shared Function GetLabel(aGenerator As IHtmlGenerator, aViewContext As ViewContext, anExpression As ModelExpression, aLabelText As String) As String
+      description: the inner html or labelText if it was not empty
+    content.vb: Public Shared Function GetLabel(generator As IHtmlGenerator, viewContext As ViewContext, expression As ModelExpression, labelText As String) As String
   overload: UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.GetLabel*
   nameWithType.vb: UFTagHelperTools.GetLabel(IHtmlGenerator, ViewContext, ModelExpression, String)
   fullName.vb: UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.GetLabel(Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator, Microsoft.AspNetCore.Mvc.Rendering.ViewContext, Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression, String)
@@ -246,22 +247,22 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: CreateAttributeList
     path: ../UltraForce.Library.Core.Asp/Tools/UFTagHelperTools.cs
-    startLine: 186
+    startLine: 189
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Tools
   summary: Builds a tag helper attribute list from a dictionary.
   example: []
   syntax:
-    content: public static TagHelperAttributeList CreateAttributeList(Dictionary<string, string> anAttributes)
+    content: public static TagHelperAttributeList CreateAttributeList(Dictionary<string, string> attributes)
     parameters:
-    - id: anAttributes
+    - id: attributes
       type: System.Collections.Generic.Dictionary{System.String,System.String}
       description: ''
     return:
       type: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttributeList
       description: ''
-    content.vb: Public Shared Function CreateAttributeList(anAttributes As Dictionary(Of String, String)) As TagHelperAttributeList
+    content.vb: Public Shared Function CreateAttributeList(attributes As Dictionary(Of String, String)) As TagHelperAttributeList
   overload: UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.CreateAttributeList*
   nameWithType.vb: UFTagHelperTools.CreateAttributeList(Dictionary(Of String, String))
   fullName.vb: UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.CreateAttributeList(System.Collections.Generic.Dictionary(Of String, String))
@@ -284,16 +285,16 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: RenderTagHelper
     path: ../UltraForce.Library.Core.Asp/Tools/UFTagHelperTools.cs
-    startLine: 208
+    startLine: 211
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Tools
   summary: Renders a tag helper that does not use any attributes to a string.
   example: []
   syntax:
-    content: 'public static string RenderTagHelper<T>(string aContent) where T : TagHelper, new()'
+    content: 'public static string RenderTagHelper<T>(string childContent) where T : TagHelper, new()'
     parameters:
-    - id: aContent
+    - id: childContent
       type: System.String
       description: Child content for the tag helper
     typeParameters:
@@ -302,7 +303,7 @@ items:
     return:
       type: System.String
       description: ''
-    content.vb: Public Shared Function RenderTagHelper(Of T As {TagHelper, New})(aContent As String) As String
+    content.vb: Public Shared Function RenderTagHelper(Of T As {TagHelper, New})(childContent As String) As String
   overload: UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.RenderTagHelper*
   nameWithType.vb: UFTagHelperTools.RenderTagHelper(Of T)(String)
   fullName.vb: UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.RenderTagHelper(Of T)(String)
@@ -325,19 +326,19 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: RenderTagHelper
     path: ../UltraForce.Library.Core.Asp/Tools/UFTagHelperTools.cs
-    startLine: 223
+    startLine: 226
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Tools
   summary: Renders a tag helper that does not use any attributes to a string.
   example: []
   syntax:
-    content: 'public static string RenderTagHelper<T>(Dictionary<string, string> anAttributeList, string aContent) where T : TagHelper, new()'
+    content: 'public static string RenderTagHelper<T>(Dictionary<string, string> attributeList, string childContent) where T : TagHelper, new()'
     parameters:
-    - id: anAttributeList
+    - id: attributeList
       type: System.Collections.Generic.Dictionary{System.String,System.String}
       description: ''
-    - id: aContent
+    - id: childContent
       type: System.String
       description: Optional child content for the tag helper
     typeParameters:
@@ -346,7 +347,7 @@ items:
     return:
       type: System.String
       description: ''
-    content.vb: Public Shared Function RenderTagHelper(Of T As {TagHelper, New})(anAttributeList As Dictionary(Of String, String), aContent As String) As String
+    content.vb: Public Shared Function RenderTagHelper(Of T As {TagHelper, New})(attributeList As Dictionary(Of String, String), childContent As String) As String
   overload: UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.RenderTagHelper*
   nameWithType.vb: UFTagHelperTools.RenderTagHelper(Of T)(Dictionary(Of String, String), String)
   fullName.vb: UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.RenderTagHelper(Of T)(System.Collections.Generic.Dictionary(Of String, String), String)
@@ -369,16 +370,16 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: RenderTagHelper
     path: ../UltraForce.Library.Core.Asp/Tools/UFTagHelperTools.cs
-    startLine: 238
+    startLine: 241
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Tools
   summary: Renders a tag helper that does not use any attributes to a string.
   example: []
   syntax:
-    content: 'public static string RenderTagHelper<T>(TagHelperContent? aContent = null) where T : TagHelper, new()'
+    content: 'public static string RenderTagHelper<T>(TagHelperContent? content = null) where T : TagHelper, new()'
     parameters:
-    - id: aContent
+    - id: content
       type: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent
       description: Optional child content for the tag helper
     typeParameters:
@@ -387,7 +388,7 @@ items:
     return:
       type: System.String
       description: ''
-    content.vb: Public Shared Function RenderTagHelper(Of T As {TagHelper, New})(aContent As TagHelperContent = Nothing) As String
+    content.vb: Public Shared Function RenderTagHelper(Of T As {TagHelper, New})(content As TagHelperContent = Nothing) As String
   overload: UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.RenderTagHelper*
   nameWithType.vb: UFTagHelperTools.RenderTagHelper(Of T)(TagHelperContent)
   fullName.vb: UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.RenderTagHelper(Of T)(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent)
@@ -410,19 +411,19 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: RenderTagHelper
     path: ../UltraForce.Library.Core.Asp/Tools/UFTagHelperTools.cs
-    startLine: 252
+    startLine: 255
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Tools
   summary: Renders a tag helper to a string.
   example: []
   syntax:
-    content: 'public static string RenderTagHelper<T>(Dictionary<string, string> anAttributes, TagHelperContent? aContent = null) where T : TagHelper, new()'
+    content: 'public static string RenderTagHelper<T>(Dictionary<string, string> attributes, TagHelperContent? childContent = null) where T : TagHelper, new()'
     parameters:
-    - id: anAttributes
+    - id: attributes
       type: System.Collections.Generic.Dictionary{System.String,System.String}
       description: ''
-    - id: aContent
+    - id: childContent
       type: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent
       description: Optional child content for the tag helper
     typeParameters:
@@ -431,7 +432,7 @@ items:
     return:
       type: System.String
       description: ''
-    content.vb: Public Shared Function RenderTagHelper(Of T As {TagHelper, New})(anAttributes As Dictionary(Of String, String), aContent As TagHelperContent = Nothing) As String
+    content.vb: Public Shared Function RenderTagHelper(Of T As {TagHelper, New})(attributes As Dictionary(Of String, String), childContent As TagHelperContent = Nothing) As String
   overload: UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.RenderTagHelper*
   nameWithType.vb: UFTagHelperTools.RenderTagHelper(Of T)(Dictionary(Of String, String), TagHelperContent)
   fullName.vb: UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.RenderTagHelper(Of T)(System.Collections.Generic.Dictionary(Of String, String), Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent)
@@ -454,7 +455,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: RenderTagHelper
     path: ../UltraForce.Library.Core.Asp/Tools/UFTagHelperTools.cs
-    startLine: 270
+    startLine: 273
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Tools
@@ -467,12 +468,12 @@ items:
     https://github.com/MissaouiChedy/RenderingTagHelperInsideAnother/blob/master/src/RenderingTagHelperInsideAnother/TagHelpers/WrapperTagHelper.cs
   example: []
   syntax:
-    content: 'public static string RenderTagHelper<T>(TagHelperAttributeList anAttributeList, TagHelperContent? aContent = null) where T : TagHelper, new()'
+    content: 'public static string RenderTagHelper<T>(TagHelperAttributeList attributeList, TagHelperContent? childContent = null) where T : TagHelper, new()'
     parameters:
-    - id: anAttributeList
+    - id: attributeList
       type: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttributeList
       description: ''
-    - id: aContent
+    - id: childContent
       type: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent
       description: Optional child content for the tag helper
     typeParameters:
@@ -481,7 +482,7 @@ items:
     return:
       type: System.String
       description: ''
-    content.vb: Public Shared Function RenderTagHelper(Of T As {TagHelper, New})(anAttributeList As TagHelperAttributeList, aContent As TagHelperContent = Nothing) As String
+    content.vb: Public Shared Function RenderTagHelper(Of T As {TagHelper, New})(attributeList As TagHelperAttributeList, childContent As TagHelperContent = Nothing) As String
   overload: UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.RenderTagHelper*
   nameWithType.vb: UFTagHelperTools.RenderTagHelper(Of T)(TagHelperAttributeList, TagHelperContent)
   fullName.vb: UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.RenderTagHelper(Of T)(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttributeList, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent)
@@ -504,7 +505,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: RenderTagHelperOutput
     path: ../UltraForce.Library.Core.Asp/Tools/UFTagHelperTools.cs
-    startLine: 307
+    startLine: 310
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Tools
@@ -517,18 +518,18 @@ items:
     https://github.com/MissaouiChedy/RenderingTagHelperInsideAnother/blob/master/src/RenderingTagHelperInsideAnother/TagHelpers/WrapperTagHelper.cs
   example: []
   syntax:
-    content: public static string RenderTagHelperOutput(TagHelperOutput anOutput, HtmlEncoder? anEncoder = null)
+    content: public static string RenderTagHelperOutput(TagHelperOutput output, HtmlEncoder? encoder = null)
     parameters:
-    - id: anOutput
+    - id: output
       type: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput
       description: ''
-    - id: anEncoder
+    - id: encoder
       type: System.Text.Encodings.Web.HtmlEncoder
       description: ''
     return:
       type: System.String
       description: ''
-    content.vb: Public Shared Function RenderTagHelperOutput(anOutput As TagHelperOutput, anEncoder As HtmlEncoder = Nothing) As String
+    content.vb: Public Shared Function RenderTagHelperOutput(output As TagHelperOutput, encoder As HtmlEncoder = Nothing) As String
   overload: UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.RenderTagHelperOutput*
   nameWithType.vb: UFTagHelperTools.RenderTagHelperOutput(TagHelperOutput, HtmlEncoder)
   fullName.vb: UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.RenderTagHelperOutput(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput, System.Text.Encodings.Web.HtmlEncoder)
@@ -551,25 +552,25 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: FindAttribute
     path: ../UltraForce.Library.Core.Asp/Tools/UFTagHelperTools.cs
-    startLine: 323
+    startLine: 326
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Tools
   summary: Tries to find an attribute with a certain name.
   example: []
   syntax:
-    content: public static TagHelperAttribute? FindAttribute(TagHelperAttributeList aList, string aName)
+    content: public static TagHelperAttribute? FindAttribute(TagHelperAttributeList list, string name)
     parameters:
-    - id: aList
+    - id: list
       type: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttributeList
       description: ''
-    - id: aName
+    - id: name
       type: System.String
       description: ''
     return:
       type: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute
       description: ''
-    content.vb: Public Shared Function FindAttribute(aList As TagHelperAttributeList, aName As String) As TagHelperAttribute
+    content.vb: Public Shared Function FindAttribute(list As TagHelperAttributeList, name As String) As TagHelperAttribute
   overload: UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.FindAttribute*
   nameWithType.vb: UFTagHelperTools.FindAttribute(TagHelperAttributeList, String)
   fullName.vb: UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.FindAttribute(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttributeList, String)
@@ -592,31 +593,31 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: AddAttribute
     path: ../UltraForce.Library.Core.Asp/Tools/UFTagHelperTools.cs
-    startLine: 339
+    startLine: 344
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Tools
   summary: >-
-    Adds a value for an attribute. If the attribute exists, the aValue gets inserted before
+    Adds a value for an attribute. If the attribute exists, the value gets inserted before
 
     the attributes original value.
   example: []
   syntax:
-    content: public static void AddAttribute(TagHelperAttributeList anAttributes, string anAttribute, string aValue, string aSeparator = " ")
+    content: public static void AddAttribute(TagHelperAttributeList attributes, string attribute, string value, string separator = " ")
     parameters:
-    - id: anAttributes
+    - id: attributes
       type: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttributeList
       description: ''
-    - id: anAttribute
+    - id: attribute
       type: System.String
       description: ''
-    - id: aValue
+    - id: value
       type: System.String
       description: ''
-    - id: aSeparator
+    - id: separator
       type: System.String
-      description: ''
-    content.vb: Public Shared Sub AddAttribute(anAttributes As TagHelperAttributeList, anAttribute As String, aValue As String, aSeparator As String = " ")
+      description: Used when value is inserted before the original value. Default is a space.
+    content.vb: Public Shared Sub AddAttribute(attributes As TagHelperAttributeList, attribute As String, value As String, separator As String = " ")
   overload: UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.AddAttribute*
   nameWithType.vb: UFTagHelperTools.AddAttribute(TagHelperAttributeList, String, String, String)
   fullName.vb: UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.AddAttribute(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttributeList, String, String, String)
@@ -639,7 +640,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: AddClasses
     path: ../UltraForce.Library.Core.Asp/Tools/UFTagHelperTools.cs
-    startLine: 365
+    startLine: 370
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Tools
@@ -649,15 +650,15 @@ items:
     the correct parameters.
   example: []
   syntax:
-    content: public static void AddClasses(TagHelperOutput anOutput, string aClasses)
+    content: public static void AddClasses(TagHelperOutput output, string classes)
     parameters:
-    - id: anOutput
+    - id: output
       type: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput
       description: Output to get attributes from
-    - id: aClasses
+    - id: classes
       type: System.String
       description: Additional css classes to add
-    content.vb: Public Shared Sub AddClasses(anOutput As TagHelperOutput, aClasses As String)
+    content.vb: Public Shared Sub AddClasses(output As TagHelperOutput, classes As String)
   overload: UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.AddClasses*
   nameWithType.vb: UFTagHelperTools.AddClasses(TagHelperOutput, String)
   fullName.vb: UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.AddClasses(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput, String)
@@ -680,7 +681,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: IsCssValue
     path: ../UltraForce.Library.Core.Asp/Tools/UFTagHelperTools.cs
-    startLine: 378
+    startLine: 383
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Tools
@@ -700,6 +701,57 @@ items:
   nameWithType.vb: UFTagHelperTools.IsCssValue(String)
   fullName.vb: UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.IsCssValue(String)
   name.vb: IsCssValue(String)
+- uid: UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.GetItem``1(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,System.Object,``0)
+  commentId: M:UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.GetItem``1(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,System.Object,``0)
+  id: GetItem``1(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,System.Object,``0)
+  parent: UltraForce.Library.Core.Asp.Tools.UFTagHelperTools
+  langs:
+  - csharp
+  - vb
+  name: GetItem<T>(TagHelperContext, object, T?)
+  nameWithType: UFTagHelperTools.GetItem<T>(TagHelperContext, object, T?)
+  fullName: UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.GetItem<T>(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, object, T?)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Tools/UFTagHelperTools.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: GetItem
+    path: ../UltraForce.Library.Core.Asp/Tools/UFTagHelperTools.cs
+    startLine: 420
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Tools
+  summary: Gets an item from the context and typecast it to a certain class type.
+  example: []
+  syntax:
+    content: 'public static T GetItem<T>(TagHelperContext context, object key, T? defaultValue = null) where T : class'
+    parameters:
+    - id: context
+      type: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext
+      description: Context to get value from.
+    - id: key
+      type: System.Object
+      description: Key to get value for.
+    - id: defaultValue
+      type: '{T}'
+      description: Default value to use if no value was found. If null, an exception is thrown.
+    typeParameters:
+    - id: T
+      description: ''
+    return:
+      type: '{T}'
+      description: ''
+    content.vb: Public Shared Function GetItem(Of T As Class)(context As TagHelperContext, key As Object, defaultValue As T = Nothing) As T
+  overload: UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.GetItem*
+  exceptions:
+  - type: System.InvalidOperationException
+    commentId: T:System.InvalidOperationException
+    description: Thrown if there is no value stored for the key and no default value was used.
+  nameWithType.vb: UFTagHelperTools.GetItem(Of T)(TagHelperContext, Object, T)
+  fullName.vb: UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.GetItem(Of T)(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Object, T)
+  name.vb: GetItem(Of T)(TagHelperContext, Object, T)
 references:
 - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper
   commentId: T:Microsoft.AspNetCore.Razor.TagHelpers.TagHelper
@@ -1624,3 +1676,34 @@ references:
   nameWithType.vb: Boolean
   fullName.vb: Boolean
   name.vb: Boolean
+- uid: System.InvalidOperationException
+  commentId: T:System.InvalidOperationException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.invalidoperationexception
+  name: InvalidOperationException
+  nameWithType: InvalidOperationException
+  fullName: System.InvalidOperationException
+- uid: UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.GetItem*
+  commentId: Overload:UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.GetItem
+  href: UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.html#UltraForce_Library_Core_Asp_Tools_UFTagHelperTools_GetItem__1_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContext_System_Object___0_
+  name: GetItem
+  nameWithType: UFTagHelperTools.GetItem
+  fullName: UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.GetItem
+- uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext
+  commentId: T:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext
+  parent: Microsoft.AspNetCore.Razor.TagHelpers
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelpercontext
+  name: TagHelperContext
+  nameWithType: TagHelperContext
+  fullName: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T

@@ -57,7 +57,7 @@ items:
   - Microsoft.AspNetCore.Razor.TagHelpers.TagHelper
   - Microsoft.AspNetCore.Mvc.TagHelpers.AnchorTagHelper
   derivedClasses:
-  - UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFButtonTagHelperBase
+  - UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFBaseButtonTagHelperBase
   implements:
   - Microsoft.AspNetCore.Razor.TagHelpers.ITagHelper
   - Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent
@@ -110,15 +110,15 @@ items:
   summary: Constructs an instance <xref href="UltraForce.Library.Core.Asp.TagHelpers.Base.UFClickableTagHelperBase" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
-    content: protected UFClickableTagHelperBase(EndpointDataSource anEndpointDataSource, IHtmlGenerator aHtmlGenerator)
+    content: protected UFClickableTagHelperBase(EndpointDataSource endpointDataSource, IHtmlGenerator htmlGenerator)
     parameters:
-    - id: anEndpointDataSource
+    - id: endpointDataSource
       type: Microsoft.AspNetCore.Routing.EndpointDataSource
       description: ''
-    - id: aHtmlGenerator
+    - id: htmlGenerator
       type: Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator
       description: Used to generate an href value
-    content.vb: Protected Sub New(anEndpointDataSource As EndpointDataSource, aHtmlGenerator As IHtmlGenerator)
+    content.vb: Protected Sub New(endpointDataSource As EndpointDataSource, htmlGenerator As IHtmlGenerator)
   overload: UltraForce.Library.Core.Asp.TagHelpers.Base.UFClickableTagHelperBase.#ctor*
   nameWithType.vb: UFClickableTagHelperBase.New(EndpointDataSource, IHtmlGenerator)
   fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.UFClickableTagHelperBase.New(Microsoft.AspNetCore.Routing.EndpointDataSource, Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator)
@@ -392,15 +392,15 @@ items:
   summary: Checks if a href attribute is set; if not create one based on the <xref href="UltraForce.Library.Core.Asp.TagHelpers.Base.UFClickableTagHelperBase.Href" data-throw-if-not-resolved="false"></xref> property.
   example: []
   syntax:
-    content: protected bool ProcessHref(TagHelperOutput anOutput)
+    content: protected bool ProcessHref(TagHelperOutput output)
     parameters:
-    - id: anOutput
+    - id: output
       type: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput
       description: ''
     return:
       type: System.Boolean
       description: True if a href value could be determined
-    content.vb: Protected Function ProcessHref(anOutput As TagHelperOutput) As Boolean
+    content.vb: Protected Function ProcessHref(output As TagHelperOutput) As Boolean
   overload: UltraForce.Library.Core.Asp.TagHelpers.Base.UFClickableTagHelperBase.ProcessHref*
 references:
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.UFClickableTagHelperBase

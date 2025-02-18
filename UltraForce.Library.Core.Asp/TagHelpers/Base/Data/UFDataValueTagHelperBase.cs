@@ -47,8 +47,8 @@ namespace UltraForce.Library.Core.Asp.TagHelpers.Base.Data;
 /// </summary>
 [SuppressMessage("ReSharper", "ClassWithVirtualMembersNeverInherited.Global")]
 public abstract class UFDataValueTagHelperBase(
-  IUFModelExpressionRenderer aModelExpressionRenderer
-) : UFTagHelperWithModelExpressionRenderer(aModelExpressionRenderer)
+  IUFModelExpressionRenderer modelExpressionRenderer
+) : UFTagHelperWithModelExpressionRenderer(modelExpressionRenderer)
 {
   #region public properties
 

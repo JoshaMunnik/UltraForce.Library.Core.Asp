@@ -332,12 +332,12 @@ supported by the Json implementation.
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public UFSessionKeyedStorage(ISession aSession)</code></pre>
+    <pre><code class="lang-csharp hljs">public UFSessionKeyedStorage(ISession session)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>aSession</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.http.isession">ISession</a></dt>
+    <dt><code>session</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.http.isession">ISession</a></dt>
     <dd></dd>
   </dl>
 
@@ -360,7 +360,7 @@ supported by the Json implementation.
 
   <h3 id="UltraForce_Library_Core_Asp_Sessions_UFSessionKeyedStorage_DeleteAll" data-uid="UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.DeleteAll">
   DeleteAll()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Sessions/UFSessionKeyedStorage.cs/#L90"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Sessions/UFSessionKeyedStorage.cs/#L106"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Deletes all stored data.</p>
@@ -387,7 +387,7 @@ supported by the Json implementation.
 
   <h3 id="UltraForce_Library_Core_Asp_Sessions_UFSessionKeyedStorage_DeleteKey_System_String_" data-uid="UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.DeleteKey(System.String)">
   DeleteKey(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Sessions/UFSessionKeyedStorage.cs/#L84"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Sessions/UFSessionKeyedStorage.cs/#L98"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Deletes the data for specific key.</p>
@@ -395,14 +395,13 @@ supported by the Json implementation.
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void DeleteKey(string aKey)</code></pre>
+    <pre><code class="lang-csharp hljs">public override void DeleteKey(string key)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>A key to Delete the data for.</p>
-</dd>
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
   </dl>
 
 
@@ -420,7 +419,7 @@ supported by the Json implementation.
 
   <h3 id="UltraForce_Library_Core_Asp_Sessions_UFSessionKeyedStorage_DeserializeObject_System_String_System_Type_System_Func_System_Type_System_Object__" data-uid="UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.DeserializeObject(System.String,System.Type,System.Func{System.Type,System.Object})">
   DeserializeObject(string, Type?, Func&lt;Type, object&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Sessions/UFSessionKeyedStorage.cs/#L116"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Sessions/UFSessionKeyedStorage.cs/#L134"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Deserializes an object that was stored previously with
@@ -429,20 +428,17 @@ supported by the Json implementation.
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected override object DeserializeObject(string aKey, Type? aType, Func&lt;Type, object&gt; aFactory)</code></pre>
+    <pre><code class="lang-csharp hljs">protected override object DeserializeObject(string key, Type? type, Func&lt;Type, object&gt; factory)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>Key to retrieve serialized object with</p>
-</dd>
-    <dt><code>aType</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
-    <dd><p>Type of object to create (might be <code>null</code>)</p>
-</dd>
-    <dt><code>aFactory</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
-    <dd><p>A factory to create a new instance of <code>aType</code></p>
-</dd>
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>type</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a></dt>
+    <dd></dd>
+    <dt><code>factory</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.func-2">Func</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.type">Type</a>, <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a>&gt;</dt>
+    <dd></dd>
   </dl>
 
   <h4 class="section">Returns</h4>
@@ -466,7 +462,7 @@ supported by the Json implementation.
 
   <h3 id="UltraForce_Library_Core_Asp_Sessions_UFSessionKeyedStorage_GetInt_System_String_System_Int32_" data-uid="UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.GetInt(System.String,System.Int32)">
   GetInt(string, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Sessions/UFSessionKeyedStorage.cs/#L58"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Sessions/UFSessionKeyedStorage.cs/#L60"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets an integer.</p>
@@ -478,17 +474,15 @@ uses <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32.p
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override int GetInt(string aKey, int aDefault)</code></pre>
+    <pre><code class="lang-csharp hljs">public override int GetInt(string key, int defaultValue)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>A key to get the integer for.</p>
-</dd>
-    <dt><code>aDefault</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd><p>A default value to use when there is no integer stored for the key.</p>
-</dd>
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>defaultValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
   </dl>
 
   <h4 class="section">Returns</h4>
@@ -512,7 +506,7 @@ uses <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32.p
 
   <h3 id="UltraForce_Library_Core_Asp_Sessions_UFSessionKeyedStorage_GetString_System_String_System_String_" data-uid="UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.GetString(System.String,System.String)">
   GetString(string, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Sessions/UFSessionKeyedStorage.cs/#L70"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Sessions/UFSessionKeyedStorage.cs/#L78"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets a string.</p>
@@ -520,17 +514,15 @@ uses <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32.p
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override string GetString(string aKey, string aDefault)</code></pre>
+    <pre><code class="lang-csharp hljs">public override string GetString(string key, string defaultValue)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>A key to get the string for.</p>
-</dd>
-    <dt><code>aDefault</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>A default value to use when there is no string stored for the key.</p>
-</dd>
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>defaultValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
   </dl>
 
   <h4 class="section">Returns</h4>
@@ -554,7 +546,7 @@ uses <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32.p
 
   <h3 id="UltraForce_Library_Core_Asp_Sessions_UFSessionKeyedStorage_HasKey_System_String_" data-uid="UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.HasKey(System.String)">
   HasKey(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Sessions/UFSessionKeyedStorage.cs/#L96"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Sessions/UFSessionKeyedStorage.cs/#L112"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Checks if there is a locally stored data for a specific key.</p>
@@ -562,14 +554,13 @@ uses <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32.p
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override bool HasKey(string aKey)</code></pre>
+    <pre><code class="lang-csharp hljs">public override bool HasKey(string key)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>A key to check.</p>
-</dd>
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
   </dl>
 
   <h4 class="section">Returns</h4>
@@ -593,7 +584,7 @@ uses <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32.p
 
   <h3 id="UltraForce_Library_Core_Asp_Sessions_UFSessionKeyedStorage_SerializeObject_System_String_System_Object_" data-uid="UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.SerializeObject(System.String,System.Object)">
   SerializeObject(string, object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Sessions/UFSessionKeyedStorage.cs/#L106"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Sessions/UFSessionKeyedStorage.cs/#L124"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Serializes an object. This method is called when the class can not store the object in any other way.</p>
@@ -604,17 +595,15 @@ The default implementation throws an exception.
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected override void SerializeObject(string aKey, object anObject)</code></pre>
+    <pre><code class="lang-csharp hljs">protected override void SerializeObject(string key, object value)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>Key to store serializes object with</p>
-</dd>
-    <dt><code>anObject</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
-    <dd><p>Object to store</p>
-</dd>
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd></dd>
   </dl>
 
 
@@ -632,7 +621,7 @@ The default implementation throws an exception.
 
   <h3 id="UltraForce_Library_Core_Asp_Sessions_UFSessionKeyedStorage_SetInt_System_String_System_Int32_" data-uid="UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.SetInt(System.String,System.Int32)">
   SetInt(string, int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Sessions/UFSessionKeyedStorage.cs/#L64"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Sessions/UFSessionKeyedStorage.cs/#L69"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Stores an integer in the storage.</p>
@@ -644,17 +633,15 @@ The default implementation convert the value to a string and uses
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void SetInt(string aKey, int aValue)</code></pre>
+    <pre><code class="lang-csharp hljs">public override void SetInt(string key, int value)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>Key to store value for.</p>
-</dd>
-    <dt><code>aValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd><p>A value to store.</p>
-</dd>
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd></dd>
   </dl>
 
 
@@ -672,7 +659,7 @@ The default implementation convert the value to a string and uses
 
   <h3 id="UltraForce_Library_Core_Asp_Sessions_UFSessionKeyedStorage_SetString_System_String_System_String_" data-uid="UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.SetString(System.String,System.String)">
   SetString(string, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Sessions/UFSessionKeyedStorage.cs/#L78"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Sessions/UFSessionKeyedStorage.cs/#L89"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Stores a string in the storage.</p>
@@ -680,17 +667,15 @@ The default implementation convert the value to a string and uses
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void SetString(string aKey, string aValue)</code></pre>
+    <pre><code class="lang-csharp hljs">public override void SetString(string key, string value)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>aKey</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>Key to store value for.</p>
-</dd>
-    <dt><code>aValue</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd><p>A value to store.</p>
-</dd>
+    <dt><code>key</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+    <dt><code>value</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
   </dl>
 
 

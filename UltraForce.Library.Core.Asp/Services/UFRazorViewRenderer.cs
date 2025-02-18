@@ -74,18 +74,18 @@ namespace UltraForce.Library.Core.Asp.Services
     /// <summary>
     /// Constructs an instance of <see cref="UFRazorViewRenderer"/>
     /// </summary>
-    /// <param name="aViewEngine"></param>
-    /// <param name="aTempDataProvider"></param>
-    /// <param name="aServiceProvider"></param>
+    /// <param name="viewEngine"></param>
+    /// <param name="tempDataProvider"></param>
+    /// <param name="serviceProvider"></param>
     public UFRazorViewRenderer(
-      IRazorViewEngine aViewEngine,
-      ITempDataProvider aTempDataProvider,
-      IServiceProvider aServiceProvider
+      IRazorViewEngine viewEngine,
+      ITempDataProvider tempDataProvider,
+      IServiceProvider serviceProvider
     )
     {
-      this.m_viewEngine = aViewEngine;
-      this.m_tempDataProvider = aTempDataProvider;
-      this.m_serviceProvider = aServiceProvider;
+      this.m_viewEngine = viewEngine;
+      this.m_tempDataProvider = tempDataProvider;
+      this.m_serviceProvider = serviceProvider;
     }
 
     #endregion
@@ -99,41 +99,46 @@ namespace UltraForce.Library.Core.Asp.Services
     /// </para>
     /// </summary>
     /// <typeparam name="TModel">Type of model data</typeparam>
-    /// <param name="aViewName">Name of view</param>
-    /// <param name="aModel">Model data</param>
+    /// <param name="viewName">Name of view</param>
+    /// <param name="model">Model data</param>
     /// <returns>Rendered view</returns>
-    public async Task<string?> RenderViewAsync<TModel>(string aViewName, TModel aModel)
+    public async Task<string?> RenderViewAsync<TModel>(
+      string viewName,
+      TModel model
+    )
     {
-      return await this.RenderViewAsync(aViewName, aModel, true);
+      return await this.RenderViewAsync(viewName, model, true);
     }
 
     /// <summary>
     /// Tries to render both an html and plain text version of an email by appending
     /// 'Html'/'.Html' and 'Text'/'.Text' to the base view name.
-    /// <c>aBaseViewName</c>.
+    /// <c>baseViewName</c>.
     /// </summary>
     /// <remarks>
     /// If a view can not be found, the value for that property will be set to true.
     /// <para>
-    /// If the HTML view can not be found, the method tries <c>aBaseViewName</c> itself as view name.
+    /// If the HTML view can not be found, the method tries <c>baseViewName</c> itself as view name.
     /// </para>
     /// </remarks>
     /// <typeparam name="TModel">Type of model data</typeparam>
-    /// <param name="aBaseViewName">Base view name</param>
-    /// <param name="aModel">Model to render</param>
+    /// <param name="baseViewName">Base view name</param>
+    /// <param name="model">Model to render</param>
     /// <returns>A <see cref="UFEmailContentModel"/> instance</returns>
-    public async Task<UFEmailContentModel> RenderEmailViewAsync<TModel>(string aBaseViewName,
-      TModel aModel)
+    public async Task<UFEmailContentModel> RenderEmailViewAsync<TModel>(
+      string baseViewName,
+      TModel model
+    )
     {
       UFEmailContentModel result = new UFEmailContentModel
       {
-        Html = await this.RenderViewAsync(aBaseViewName + "Html", aModel, false),
-        Text = await this.RenderViewAsync(aBaseViewName + "Text", aModel, false)
+        Html = await this.RenderViewAsync(baseViewName + "Html", model, false),
+        Text = await this.RenderViewAsync(baseViewName + "Text", model, false)
       };
-      result.Html ??= await this.RenderViewAsync(aBaseViewName + ".html", aModel, false);
-      result.Text ??= await this.RenderViewAsync(aBaseViewName + ".text", aModel, false);
+      result.Html ??= await this.RenderViewAsync(baseViewName + ".html", model, false);
+      result.Text ??= await this.RenderViewAsync(baseViewName + ".text", model, false);
       // try base when base + "Html" could not be found
-      result.Html ??= await this.RenderViewAsync(aBaseViewName, aModel, true);
+      result.Html ??= await this.RenderViewAsync(baseViewName, model, true);
       // remove /r
       if (result.Text != null)
       {
@@ -150,23 +155,26 @@ namespace UltraForce.Library.Core.Asp.Services
     /// Renders a Razor view and its model data to a string.
     /// </summary>
     /// <typeparam name="TModel">Type of model data</typeparam>
-    /// <param name="aViewName">
+    /// <param name="viewName">
     /// Name of view
     /// </param>
-    /// <param name="aModel">
+    /// <param name="model">
     /// Model data
     /// </param>
-    /// <param name="anException">
+    /// <param name="exception">
     /// When true throw an exception if the view can not be found.
     /// </param>
     /// <returns>
-    /// Rendered view or <c>null</c> if <c>anException</c> is <c>true</c>
+    /// Rendered view or <c>null</c> if <c>exception</c> is <c>true</c>
     /// </returns>
-    private async Task<string?> RenderViewAsync<TModel>(string aViewName, TModel aModel,
-      bool anException)
+    private async Task<string?> RenderViewAsync<TModel>(
+      string viewName,
+      TModel model,
+      bool exception
+    )
     {
       ActionContext actionContext = this.GetActionContext();
-      IView? view = this.FindView(actionContext, aViewName, anException);
+      IView? view = this.FindView(actionContext, viewName, exception);
       if (view == null)
       {
         return null;
@@ -179,7 +187,7 @@ namespace UltraForce.Library.Core.Asp.Services
           new EmptyModelMetadataProvider(), new ModelStateDictionary()
         )
         {
-          Model = aModel
+          Model = model
         },
         new TempDataDictionary(actionContext.HttpContext, this.m_tempDataProvider),
         output,
@@ -192,32 +200,36 @@ namespace UltraForce.Library.Core.Asp.Services
     /// <summary>
     /// Tries to find a view.
     /// </summary>
-    /// <param name="anActionContext">
+    /// <param name="actionContext">
     /// Action context to use
     /// </param>
-    /// <param name="aViewName">
+    /// <param name="viewName">
     /// View name
     /// </param>
-    /// <param name="anException">
+    /// <param name="exception">
     /// When true throw an exception if the view can not be found.
     /// </param>
     /// <returns>
-    /// View or <c>null</c> if <c>anException</c> is <c>true</c>
+    /// View or <c>null</c> if <c>exception</c> is <c>true</c>
     /// </returns>
-    private IView? FindView(ActionContext anActionContext, string aViewName, bool anException)
+    private IView? FindView(
+      ActionContext actionContext,
+      string viewName,
+      bool exception
+    )
     {
-      ViewEngineResult getViewResult = this.m_viewEngine.GetView(null, aViewName, true);
+      ViewEngineResult getViewResult = this.m_viewEngine.GetView(null, viewName, true);
       if (getViewResult.Success)
       {
         return getViewResult.View;
       }
       ViewEngineResult findViewResult =
-        this.m_viewEngine.FindView(anActionContext, aViewName, true);
+        this.m_viewEngine.FindView(actionContext, viewName, true);
       if (findViewResult.Success)
       {
         return findViewResult.View;
       }
-      if (!anException)
+      if (!exception)
       {
         return null;
       }
@@ -225,7 +237,7 @@ namespace UltraForce.Library.Core.Asp.Services
         getViewResult.SearchedLocations.Concat(findViewResult.SearchedLocations);
       string errorMessage = string.Join(
         Environment.NewLine,
-        new[] { $"Unable to find view '{aViewName}'. The following locations were searched:" }
+        new[] { $"Unable to find view '{viewName}'. The following locations were searched:" }
           .Concat(searchedLocations)
       );
       throw new InvalidOperationException(errorMessage);

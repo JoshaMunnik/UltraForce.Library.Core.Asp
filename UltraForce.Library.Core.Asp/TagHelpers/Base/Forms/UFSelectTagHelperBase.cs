@@ -67,8 +67,8 @@ namespace UltraForce.Library.Core.Asp.TagHelpers.Base.Forms;
 /// </summary>
 [SuppressMessage("ReSharper", "ClassWithVirtualMembersNeverInherited.Global")]
 public abstract class UFSelectTagHelperBase(
-  IHtmlGenerator aGenerator
-) : SelectTagHelper(aGenerator)
+  IHtmlGenerator generator
+) : SelectTagHelper(generator)
 {
   #region IUFInputProperties
 
@@ -155,7 +155,7 @@ public abstract class UFSelectTagHelperBase(
   /// </summary>
   /// <returns></returns>
   protected virtual string GetTextLabelClasses(
-    string aType
+    string type
   )
   {
     return string.Empty;
@@ -165,10 +165,10 @@ public abstract class UFSelectTagHelperBase(
   /// <summary>
   /// Returns css classes for the wrapper element.
   /// </summary>
-  /// <param name="aType"></param>
+  /// <param name="type"></param>
   /// <returns></returns>
   protected virtual string GetTextWrapperClasses(
-    string aType
+    string type
   )
   {
     return string.Empty;
@@ -177,10 +177,10 @@ public abstract class UFSelectTagHelperBase(
   /// <summary>
   /// Returns the html for the validation feedback container.
   /// </summary>
-  /// <param name="anId"></param>
+  /// <param name="id"></param>
   /// <returns></returns>
   protected virtual string GetValidationFeedbackContainerHtml(
-    string anId
+    string id
   )
   {
     return string.Empty;
@@ -216,29 +216,29 @@ public abstract class UFSelectTagHelperBase(
   /// <summary>
   /// Wraps an element The elements gets wrapped in a div, a label and an error info block.
   /// </summary>
-  /// <param name="anOutput">Output to wrap</param>
-  /// <param name="anId">Id of input element</param>
-  /// <param name="aLabel">Label text to use</param>
-  /// <param name="anErrorMessage">Error message to show</param>
+  /// <param name="output">Output to wrap</param>
+  /// <param name="id">Id of input element</param>
+  /// <param name="label">Label text to use</param>
+  /// <param name="errorMessage">Error message to show</param>
   private void WrapInput(
-    TagHelperOutput anOutput,
-    string anId,
-    string aLabel,
-    string anErrorMessage
+    TagHelperOutput output,
+    string id,
+    string label,
+    string errorMessage
   )
   {
-    string errorMessage = anErrorMessage != ""
-      ? $"<div class=\"{this.GetFieldErrorsClasses()}\">{anErrorMessage}</div>"
+    string errorMessageHtml = errorMessage != ""
+      ? $"<div class=\"{this.GetFieldErrorsClasses()}\">{errorMessage}</div>"
       : "";
-    UFTagHelperTools.AddClasses(anOutput, this.GetSelectClasses());
-    string labelHtml = string.IsNullOrEmpty(aLabel)
+    UFTagHelperTools.AddClasses(output, this.GetSelectClasses());
+    string labelHtml = string.IsNullOrEmpty(label)
       ? ""
-      : $"<label class=\"{this.GetTextLabelClasses("select")}\" for=\"{anId}\">{aLabel}</label>";
-    anOutput.PreElement.SetHtmlContent(
+      : $"<label class=\"{this.GetTextLabelClasses("select")}\" for=\"{id}\">{label}</label>";
+    output.PreElement.SetHtmlContent(
       $"<div class=\"{this.GetTextWrapperClasses("select")}\">{labelHtml}"
     );
-    anOutput.PostElement.SetHtmlContent(
-      $"{this.GetValidationFeedbackContainerHtml(anId)}{errorMessage}</div>"
+    output.PostElement.SetHtmlContent(
+      $"{this.GetValidationFeedbackContainerHtml(id)}{errorMessageHtml}</div>"
     );
   }
 

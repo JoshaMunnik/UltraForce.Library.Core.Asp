@@ -95,9 +95,13 @@
 Classes
 </h3>
     <dl class="jumplist">
-      <dt><a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFButtonTagHelperBase.html">UFButtonTagHelperBase</a></dt>
-      <dd><p>Renders a button or link using a button styling. When rendering a button the default type is
-<code>button</code>; use the <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFButtonTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Buttons_UFButtonTagHelperBase_Submit">Submit</a> property to change it to submit.</p>
+      <dt><a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFBaseButtonTagHelperBase.html">UFBaseButtonTagHelperBase</a></dt>
+      <dd><p>Renders a button or link using a button styling. This class is the base class for all button
+tag helpers.</p>
+<p>
+When rendering a button the default type is `button`; use the <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFBaseButtonTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Buttons_UFBaseButtonTagHelperBase_Submit">Submit</a> property to
+change it to submit.
+</p>
 <p>
 Renders:
 <pre><code class="lang-csharp">&lt;{a|button|div} class="{GetButtonClasses()}" {href} {disabled} {target}&gt;
@@ -109,6 +113,19 @@ Renders:
 <remarks>
 Part of the code is based on the <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers.anchortaghelper">AnchorTagHelper</a> implemenation.
 </remarks>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFButtonTagHelperBase.html">UFButtonTagHelperBase</a></dt>
+      <dd><p>Base class for buttons.</p>
+<p>
+Renders:
+<pre><code class="lang-csharp">&lt;{a|button|div} class="{GetButtonClasses()}" {href} {disabled} {target}&gt;
+  {GetBeforeCaptionHtml()}
+  &lt;span class="{GetButtonCaptionClasses()}"&gt;{children}&lt;/span&gt;
+  {GetAfterCaptionHtml()}
+&lt;/{a|button|div}&gt;</code></pre>
+
 </dd>
     </dl>
 

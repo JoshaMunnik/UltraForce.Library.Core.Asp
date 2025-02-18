@@ -73,18 +73,18 @@ items:
   summary: Constructs an instance of <xref href="UltraForce.Library.Core.Asp.Services.UFRazorViewRenderer" data-throw-if-not-resolved="false"></xref>
   example: []
   syntax:
-    content: public UFRazorViewRenderer(IRazorViewEngine aViewEngine, ITempDataProvider aTempDataProvider, IServiceProvider aServiceProvider)
+    content: public UFRazorViewRenderer(IRazorViewEngine viewEngine, ITempDataProvider tempDataProvider, IServiceProvider serviceProvider)
     parameters:
-    - id: aViewEngine
+    - id: viewEngine
       type: Microsoft.AspNetCore.Mvc.Razor.IRazorViewEngine
       description: ''
-    - id: aTempDataProvider
+    - id: tempDataProvider
       type: Microsoft.AspNetCore.Mvc.ViewFeatures.ITempDataProvider
       description: ''
-    - id: aServiceProvider
+    - id: serviceProvider
       type: System.IServiceProvider
       description: ''
-    content.vb: Public Sub New(aViewEngine As IRazorViewEngine, aTempDataProvider As ITempDataProvider, aServiceProvider As IServiceProvider)
+    content.vb: Public Sub New(viewEngine As IRazorViewEngine, tempDataProvider As ITempDataProvider, serviceProvider As IServiceProvider)
   overload: UltraForce.Library.Core.Asp.Services.UFRazorViewRenderer.#ctor*
   nameWithType.vb: UFRazorViewRenderer.New(IRazorViewEngine, ITempDataProvider, IServiceProvider)
   fullName.vb: UltraForce.Library.Core.Asp.Services.UFRazorViewRenderer.New(Microsoft.AspNetCore.Mvc.Razor.IRazorViewEngine, Microsoft.AspNetCore.Mvc.ViewFeatures.ITempDataProvider, System.IServiceProvider)
@@ -121,12 +121,12 @@ items:
     </p>
   example: []
   syntax:
-    content: public Task<string?> RenderViewAsync<TModel>(string aViewName, TModel aModel)
+    content: public Task<string?> RenderViewAsync<TModel>(string viewName, TModel model)
     parameters:
-    - id: aViewName
+    - id: viewName
       type: System.String
       description: Name of view
-    - id: aModel
+    - id: model
       type: '{TModel}'
       description: Model data
     typeParameters:
@@ -135,7 +135,7 @@ items:
     return:
       type: System.Threading.Tasks.Task{System.String}
       description: Rendered view
-    content.vb: Public Function RenderViewAsync(Of TModel)(aViewName As String, aModel As TModel) As Task(Of String)
+    content.vb: Public Function RenderViewAsync(Of TModel)(viewName As String, model As TModel) As Task(Of String)
   overload: UltraForce.Library.Core.Asp.Services.UFRazorViewRenderer.RenderViewAsync*
   nameWithType.vb: UFRazorViewRenderer.RenderViewAsync(Of TModel)(String, TModel)
   fullName.vb: UltraForce.Library.Core.Asp.Services.UFRazorViewRenderer.RenderViewAsync(Of TModel)(String, TModel)
@@ -158,7 +158,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: RenderEmailViewAsync
     path: ../UltraForce.Library.Core.Asp/Services/UFRazorViewRenderer.cs
-    startLine: 124
+    startLine: 127
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Services
@@ -167,23 +167,23 @@ items:
 
     'Html'/'.Html' and 'Text'/'.Text' to the base view name.
 
-    <code>aBaseViewName</code>.
+    <code>baseViewName</code>.
   remarks: >-
     If a view can not be found, the value for that property will be set to true.
 
     <p>
 
-    If the HTML view can not be found, the method tries <code>aBaseViewName</code> itself as view name.
+    If the HTML view can not be found, the method tries <code>baseViewName</code> itself as view name.
 
     </p>
   example: []
   syntax:
-    content: public Task<UFEmailContentModel> RenderEmailViewAsync<TModel>(string aBaseViewName, TModel aModel)
+    content: public Task<UFEmailContentModel> RenderEmailViewAsync<TModel>(string baseViewName, TModel model)
     parameters:
-    - id: aBaseViewName
+    - id: baseViewName
       type: System.String
       description: Base view name
-    - id: aModel
+    - id: model
       type: '{TModel}'
       description: Model to render
     typeParameters:
@@ -192,7 +192,7 @@ items:
     return:
       type: System.Threading.Tasks.Task{UltraForce.Library.Core.Asp.Models.UFEmailContentModel}
       description: A <xref href="UltraForce.Library.Core.Asp.Models.UFEmailContentModel" data-throw-if-not-resolved="false"></xref> instance
-    content.vb: Public Function RenderEmailViewAsync(Of TModel)(aBaseViewName As String, aModel As TModel) As Task(Of UFEmailContentModel)
+    content.vb: Public Function RenderEmailViewAsync(Of TModel)(baseViewName As String, model As TModel) As Task(Of UFEmailContentModel)
   overload: UltraForce.Library.Core.Asp.Services.UFRazorViewRenderer.RenderEmailViewAsync*
   nameWithType.vb: UFRazorViewRenderer.RenderEmailViewAsync(Of TModel)(String, TModel)
   fullName.vb: UltraForce.Library.Core.Asp.Services.UFRazorViewRenderer.RenderEmailViewAsync(Of TModel)(String, TModel)

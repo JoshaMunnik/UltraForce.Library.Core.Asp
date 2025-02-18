@@ -139,13 +139,15 @@ items:
     <code class="paramref">output</code>.
   example: []
   syntax:
-    content: public override void Process(TagHelperContext aContext, TagHelperOutput anOutput)
+    content: public override void Process(TagHelperContext context, TagHelperOutput output)
     parameters:
-    - id: aContext
+    - id: context
       type: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext
-    - id: anOutput
+      description: Contains information associated with the current HTML tag.
+    - id: output
       type: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput
-    content.vb: Public Overrides Sub Process(aContext As TagHelperContext, anOutput As TagHelperOutput)
+      description: A stateful HTML element used to generate an HTML tag.
+    content.vb: Public Overrides Sub Process(context As TagHelperContext, output As TagHelperOutput)
   overridden: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
   overload: UltraForce.Library.Core.Asp.TagHelpers.UFConditionTagHelper.Process*
 references:

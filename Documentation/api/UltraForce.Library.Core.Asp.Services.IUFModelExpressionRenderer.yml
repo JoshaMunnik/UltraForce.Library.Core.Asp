@@ -60,20 +60,20 @@ items:
     based on the code from <xref href="Microsoft.AspNetCore.Mvc.TagHelpers.LabelTagHelper" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
-    content: Task SetContentToNameAsync(TagHelperOutput anOutput, ModelExpression anExpression, ViewContext aViewContext)
+    content: Task SetContentToNameAsync(TagHelperOutput output, ModelExpression expression, ViewContext viewContext)
     parameters:
-    - id: anOutput
+    - id: output
       type: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput
       description: Output to update
-    - id: anExpression
+    - id: expression
       type: Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression
       description: Model expression to get name from
-    - id: aViewContext
+    - id: viewContext
       type: Microsoft.AspNetCore.Mvc.Rendering.ViewContext
       description: View context to use
     return:
       type: System.Threading.Tasks.Task
-    content.vb: Function SetContentToNameAsync(anOutput As TagHelperOutput, anExpression As ModelExpression, aViewContext As ViewContext) As Task
+    content.vb: Function SetContentToNameAsync(output As TagHelperOutput, expression As ModelExpression, viewContext As ViewContext) As Task
   overload: UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.SetContentToNameAsync*
 - uid: UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.SetContentToValueAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression,Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
   commentId: M:UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.SetContentToValueAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression,Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
@@ -100,20 +100,20 @@ items:
   summary: Sets the content to the value of the <xref href="Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
-    content: Task SetContentToValueAsync(TagHelperOutput anOutput, ModelExpression anExpression, ViewContext aViewContext)
+    content: Task SetContentToValueAsync(TagHelperOutput output, ModelExpression expression, ViewContext viewContext)
     parameters:
-    - id: anOutput
+    - id: output
       type: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput
       description: Output to update
-    - id: anExpression
+    - id: expression
       type: Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression
       description: Expression to get value from
-    - id: aViewContext
+    - id: viewContext
       type: Microsoft.AspNetCore.Mvc.Rendering.ViewContext
       description: View context to use
     return:
       type: System.Threading.Tasks.Task
-    content.vb: Function SetContentToValueAsync(anOutput As TagHelperOutput, anExpression As ModelExpression, aViewContext As ViewContext) As Task
+    content.vb: Function SetContentToValueAsync(output As TagHelperOutput, expression As ModelExpression, viewContext As ViewContext) As Task
   overload: UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.SetContentToValueAsync*
 - uid: UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.GetName(Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression,Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
   commentId: M:UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.GetName(Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression,Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
@@ -140,18 +140,18 @@ items:
   summary: Gets the name for a model expression.
   example: []
   syntax:
-    content: IHtmlContentBuilder GetName(ModelExpression anExpression, ViewContext aViewContext)
+    content: IHtmlContentBuilder GetName(ModelExpression expression, ViewContext viewContext)
     parameters:
-    - id: anExpression
+    - id: expression
       type: Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression
       description: expression to get name for
-    - id: aViewContext
+    - id: viewContext
       type: Microsoft.AspNetCore.Mvc.Rendering.ViewContext
       description: ''
     return:
       type: Microsoft.AspNetCore.Html.IHtmlContentBuilder
       description: html representation of name
-    content.vb: Function GetName(anExpression As ModelExpression, aViewContext As ViewContext) As IHtmlContentBuilder
+    content.vb: Function GetName(expression As ModelExpression, viewContext As ViewContext) As IHtmlContentBuilder
   overload: UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.GetName*
 - uid: UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.GetValueAsText(Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression,Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
   commentId: M:UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.GetValueAsText(Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression,Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
@@ -178,18 +178,18 @@ items:
   summary: Gets the value as a text string.
   example: []
   syntax:
-    content: string GetValueAsText(ModelExpression anExpression, ViewContext aViewContext)
+    content: string GetValueAsText(ModelExpression expression, ViewContext viewContext)
     parameters:
-    - id: anExpression
+    - id: expression
       type: Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression
       description: expression to get value for
-    - id: aViewContext
+    - id: viewContext
       type: Microsoft.AspNetCore.Mvc.Rendering.ViewContext
       description: ''
     return:
       type: System.String
       description: text representation of value
-    content.vb: Function GetValueAsText(anExpression As ModelExpression, aViewContext As ViewContext) As String
+    content.vb: Function GetValueAsText(expression As ModelExpression, viewContext As ViewContext) As String
   overload: UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.GetValueAsText*
 references:
 - uid: Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression

@@ -40,22 +40,22 @@ public static class UFModelExpressionTools
   /// <summary>
   /// Checks if a model expression represents an IEnumerable.
   /// </summary>
-  /// <param name="aModelExpression"></param>
+  /// <param name="modelExpression"></param>
   /// <returns></returns>
-  public static bool IsIEnumerable(ModelExpression aModelExpression)
+  public static bool IsIEnumerable(ModelExpression modelExpression)
   {
-    Type modelType = aModelExpression.Model.GetType();
+    Type modelType = modelExpression.Model.GetType();
     return typeof(IEnumerable).IsAssignableFrom(modelType);
   }
   
   /// <summary>
   /// Checks if a model expression represents a generic IEnumerable.
   /// </summary>
-  /// <param name="aModelExpression"></param>
+  /// <param name="modelExpression"></param>
   /// <returns></returns>
-  public static bool IsGenericIEnumerable(ModelExpression aModelExpression)
+  public static bool IsGenericIEnumerable(ModelExpression modelExpression)
   {
-    Type modelType = aModelExpression.Model.GetType();
+    Type modelType = modelExpression.Model.GetType();
     return modelType.IsGenericType && modelType.GetGenericTypeDefinition() == typeof(IEnumerable<>);
   }
   

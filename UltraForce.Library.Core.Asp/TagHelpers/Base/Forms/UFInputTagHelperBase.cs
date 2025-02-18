@@ -339,10 +339,10 @@ public abstract class UFInputTagHelperBase(
   /// <summary>
   /// Returns the classes to use for the input element.
   /// </summary>
-  /// <param name="aType"></param>
+  /// <param name="type"></param>
   /// <returns></returns>
   protected virtual string GetTextInputClasses(
-    string aType
+    string type
   )
   {
     return string.Empty;
@@ -351,10 +351,10 @@ public abstract class UFInputTagHelperBase(
   /// <summary>
   /// Returns the classes to use for the label element.
   /// </summary>
-  /// <param name="aType"></param>
+  /// <param name="type"></param>
   /// <returns></returns>
   protected virtual string GetTextInputLabelClasses(
-    string aType
+    string type
   )
   {
     return string.Empty;
@@ -395,10 +395,10 @@ public abstract class UFInputTagHelperBase(
   /// <summary>
   /// Returns the classes to use for the span element inside the label.
   /// </summary>
-  /// <param name="aType"></param>
+  /// <param name="type"></param>
   /// <returns></returns>
   protected virtual string GetTextInputLabelSpanClasses(
-    string aType
+    string type
   )
   {
     return string.Empty;
@@ -407,10 +407,10 @@ public abstract class UFInputTagHelperBase(
   /// <summary>
   /// Gets html code inserted before the input element.
   /// </summary>
-  /// <param name="aType"></param>
+  /// <param name="type"></param>
   /// <returns></returns>
   protected virtual string GetTextInputPreHtml(
-    string aType
+    string type
   )
   {
     return string.Empty;
@@ -419,10 +419,10 @@ public abstract class UFInputTagHelperBase(
   /// <summary>
   /// Gets html code inserted after the input element.
   /// </summary>
-  /// <param name="aType"></param>
+  /// <param name="type"></param>
   /// <returns></returns>
   protected virtual string GetTextInputPostHtml(
-    string aType
+    string type
   )
   {
     return string.Empty;
@@ -431,10 +431,10 @@ public abstract class UFInputTagHelperBase(
   /// <summary>
   /// Returns the classes to use for the description span element inside the label.
   /// </summary>
-  /// <param name="aType"></param>
+  /// <param name="type"></param>
   /// <returns></returns>
   protected virtual string GetTextInputLabelDescriptionClasses(
-    string aType
+    string type
   )
   {
     return string.Empty;
@@ -443,10 +443,10 @@ public abstract class UFInputTagHelperBase(
   /// <summary>
   /// Returns the classes to use for the wrapper div element.
   /// </summary>
-  /// <param name="aType"></param>
+  /// <param name="type"></param>
   /// <returns></returns>
   protected virtual string GetTextInputWrapperClasses(
-    string aType
+    string type
   )
   {
     return string.Empty;
@@ -455,10 +455,10 @@ public abstract class UFInputTagHelperBase(
   /// <summary>
   /// Returns the classes to use for the validation feedback container.
   /// </summary>
-  /// <param name="anId"></param>
+  /// <param name="id"></param>
   /// <returns></returns>
   protected virtual string GetValidationFeedbackContainerHtml(
-    string anId
+    string id
   )
   {
     return string.Empty;
@@ -602,84 +602,84 @@ public abstract class UFInputTagHelperBase(
   /// <summary>
   /// Gets the html block showing an error message (if any).
   /// </summary>
-  /// <param name="anErrorMessage"></param>
+  /// <param name="errorMessage"></param>
   /// <returns></returns>
   private string GetErrorMessageHtml(
-    string anErrorMessage
+    string errorMessage
   )
   {
-    return anErrorMessage != ""
-      ? $"<div class=\"{this.GetFieldErrorsClasses()}\">{anErrorMessage}</div>"
+    return errorMessage != ""
+      ? $"<div class=\"{this.GetFieldErrorsClasses()}\">{errorMessage}</div>"
       : "";
   }
 
   /// <summary>
   /// Wraps an element The elements gets wrapped in a div, a label and an error info block.
   /// </summary>
-  /// <param name="anOutput">Output to wrap</param>
-  /// <param name="anId">Id of input element</param>
-  /// <param name="aLabel">Label text to use</param>
-  /// <param name="aType">Input type</param>
-  /// <param name="anErrorMessage">Error message to show</param>
+  /// <param name="output">Output to wrap</param>
+  /// <param name="id">Id of input element</param>
+  /// <param name="label">Label text to use</param>
+  /// <param name="type">Input type</param>
+  /// <param name="errorMessage">Error message to show</param>
   private void RenderWrappedInput(
-    TagHelperOutput anOutput,
-    string anId,
-    string aLabel,
-    string aType,
-    string anErrorMessage
+    TagHelperOutput output,
+    string id,
+    string label,
+    string type,
+    string errorMessage
   )
   {
-    string errorMessage = this.GetErrorMessageHtml(anErrorMessage);
+    string errorMessageHtml = this.GetErrorMessageHtml(errorMessage);
     UFTagHelperTools.AddClasses(
-      anOutput, this.GetTextInputClasses(aType)
+      output, this.GetTextInputClasses(type)
     );
     string description = this.GetDescription();
-    string descriptionHtml = string.IsNullOrEmpty(description) || string.IsNullOrEmpty(aLabel)
+    string descriptionHtml = string.IsNullOrEmpty(description) || string.IsNullOrEmpty(label)
       ? ""
-      : $"<span class=\"{this.GetTextInputLabelDescriptionClasses(aType)}\">" +
+      : $"<span class=\"{this.GetTextInputLabelDescriptionClasses(type)}\">" +
       $"{description}</span>";
-    string labelHtml = string.IsNullOrEmpty(aLabel)
+    string labelHtml = string.IsNullOrEmpty(label)
       ? ""
-      : $"<label class=\"{this.GetTextInputLabelClasses(aType)}\" for=\"{anId}\">" +
-      $"<span class=\"{this.GetTextInputLabelSpanClasses(aType)}\">{aLabel}</span>" +
+      : $"<label class=\"{this.GetTextInputLabelClasses(type)}\" for=\"{id}\">" +
+      $"<span class=\"{this.GetTextInputLabelSpanClasses(type)}\">{label}</span>" +
       descriptionHtml +
       "</label>";
-    string preHtml = this.GetTextInputPreHtml(aType);
-    string postHtml = this.GetTextInputPostHtml(aType);
-    anOutput.PreElement.SetHtmlContent(
-      $"<div class=\"{this.GetTextInputWrapperClasses(aType)}\">{labelHtml}{preHtml}"
+    string preHtml = this.GetTextInputPreHtml(type);
+    string postHtml = this.GetTextInputPostHtml(type);
+    output.PreElement.SetHtmlContent(
+      $"<div class=\"{this.GetTextInputWrapperClasses(type)}\">{labelHtml}{preHtml}"
     );
-    anOutput.PostElement.SetHtmlContent(
-      $"{postHtml}{this.GetValidationFeedbackContainerHtml(anId)}{errorMessage}</div>"
+    output.PostElement.SetHtmlContent(
+      $"{postHtml}{this.GetValidationFeedbackContainerHtml(id)}{errorMessageHtml}</div>"
     );
   }
 
   private void RenderRadio(
     TagHelperOutput anOutput,
-    string anId,
-    string aLabel,
-    string anErrorMessage
+    string id,
+    string label,
+    string errorMessage
   )
   {
-    string errorMessage = this.GetErrorMessageHtml(anErrorMessage);
+    string errorMessageHtml = this.GetErrorMessageHtml(errorMessage);
     UFTagHelperTools.AddClasses(anOutput, this.GetRadioInputClasses());
     string pre = !this.NoWrap ? $"<div class=\"{this.GetRadioWrapperClasses()}\">" : "";
     string post = !this.NoWrap
-      ? $"{this.GetValidationFeedbackContainerHtml(anId)}{errorMessage}</div>"
+      ? $"{this.GetValidationFeedbackContainerHtml(id)}{errorMessageHtml}</div>"
       //? $"{errorMessage}</div>"
       : "";
-    string preLabel = string.IsNullOrEmpty(aLabel)
+    string preLabel = string.IsNullOrEmpty(label)
       ? ""
       : $"<label class=\"{this.GetRadioLabelClasses()}\">";
     string description = this.GetDescription();
-    string descriptionHtml = string.IsNullOrEmpty(description) || string.IsNullOrEmpty(aLabel)
+    string descriptionHtml = string.IsNullOrEmpty(description) || string.IsNullOrEmpty(label)
       ? ""
       : $"<span class=\"{this.GetRadioLabelDescriptionClasses()}\">" +
       $"{description}" +
       "</span>";
-    string postLabel = string.IsNullOrEmpty(aLabel)
+    string postLabel = string.IsNullOrEmpty(label)
       ? ""
-      : $"<span class=\"{this.GetRadioLabelSpanClasses()}\">{aLabel}</span>" +
+      : $"<span class=\"{this.GetRadioLabelSpanClasses()}\">{label}</span>" +
       descriptionHtml +
       "</label>";
     if (pre.Length + preLabel.Length > 0)
@@ -695,30 +695,30 @@ public abstract class UFInputTagHelperBase(
 
   private void RenderCheckbox(
     TagHelperOutput anOutput,
-    string anId,
-    string aLabel,
-    string anErrorMessage
+    string id,
+    string label,
+    string errorMessage
   )
   {
-    string errorMessage = this.GetErrorMessageHtml(anErrorMessage);
+    string errorMessageHtml = this.GetErrorMessageHtml(errorMessage);
     UFTagHelperTools.AddClasses(anOutput, this.GetCheckboxInputClasses());
     string pre = !this.NoWrap ? $"<div class=\"{this.GetCheckboxWrapperClasses()}\">" : "";
     string post = !this.NoWrap
-      ? $"{this.GetValidationFeedbackContainerHtml(anId)}{errorMessage}</div>"
+      ? $"{this.GetValidationFeedbackContainerHtml(id)}{errorMessageHtml}</div>"
       //? $"{errorMessage}</div>"
       : "";
-    string preLabel = string.IsNullOrEmpty(aLabel)
+    string preLabel = string.IsNullOrEmpty(label)
       ? ""
       : $"<label class=\"{this.GetCheckboxLabelClasses()}\">";
     string description = this.GetDescription();
-    string descriptionHtml = string.IsNullOrEmpty(description) || string.IsNullOrEmpty(aLabel)
+    string descriptionHtml = string.IsNullOrEmpty(description) || string.IsNullOrEmpty(label)
       ? ""
       : $"<span class=\"{this.GetCheckboxLabelDescriptionClasses()}\">" +
       $"{description}" +
       "</span>";
-    string postLabel = string.IsNullOrEmpty(aLabel)
+    string postLabel = string.IsNullOrEmpty(label)
       ? ""
-      : $"<span class=\"{this.GetCheckboxLabelSpanClasses()}\">{aLabel}</span>" +
+      : $"<span class=\"{this.GetCheckboxLabelSpanClasses()}\">{label}</span>" +
       descriptionHtml +
       "</label>";
     if (pre.Length + preLabel.Length > 0)

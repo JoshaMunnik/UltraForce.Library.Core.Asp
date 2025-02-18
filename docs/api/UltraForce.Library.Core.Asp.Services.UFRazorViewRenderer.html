@@ -170,16 +170,16 @@ with the service collection.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public UFRazorViewRenderer(IRazorViewEngine aViewEngine, ITempDataProvider aTempDataProvider, IServiceProvider aServiceProvider)</code></pre>
+    <pre><code class="lang-csharp hljs">public UFRazorViewRenderer(IRazorViewEngine viewEngine, ITempDataProvider tempDataProvider, IServiceProvider serviceProvider)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>aViewEngine</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.razor.irazorviewengine">IRazorViewEngine</a></dt>
+    <dt><code>viewEngine</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.razor.irazorviewengine">IRazorViewEngine</a></dt>
     <dd></dd>
-    <dt><code>aTempDataProvider</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.viewfeatures.itempdataprovider">ITempDataProvider</a></dt>
+    <dt><code>tempDataProvider</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.viewfeatures.itempdataprovider">ITempDataProvider</a></dt>
     <dd></dd>
-    <dt><code>aServiceProvider</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iserviceprovider">IServiceProvider</a></dt>
+    <dt><code>serviceProvider</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iserviceprovider">IServiceProvider</a></dt>
     <dd></dd>
   </dl>
 
@@ -202,25 +202,25 @@ with the service collection.</p>
 
   <h3 id="UltraForce_Library_Core_Asp_Services_UFRazorViewRenderer_RenderEmailViewAsync__1_System_String___0_" data-uid="UltraForce.Library.Core.Asp.Services.UFRazorViewRenderer.RenderEmailViewAsync``1(System.String,``0)">
   RenderEmailViewAsync&lt;TModel&gt;(string, TModel)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Services/UFRazorViewRenderer.cs/#L125"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Services/UFRazorViewRenderer.cs/#L128"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Tries to render both an html and plain text version of an email by appending
 'Html'/'.Html' and 'Text'/'.Text' to the base view name.
-<code>aBaseViewName</code>.</p>
+<code>baseViewName</code>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;UFEmailContentModel&gt; RenderEmailViewAsync&lt;TModel&gt;(string aBaseViewName, TModel aModel)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;UFEmailContentModel&gt; RenderEmailViewAsync&lt;TModel&gt;(string baseViewName, TModel model)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>aBaseViewName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><code>baseViewName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd><p>Base view name</p>
 </dd>
-    <dt><code>aModel</code> <span class="xref">TModel</span></dt>
+    <dt><code>model</code> <span class="xref">TModel</span></dt>
     <dd><p>Model to render</p>
 </dd>
   </dl>
@@ -247,7 +247,7 @@ with the service collection.</p>
   <h4 class="section" id="UltraForce_Library_Core_Asp_Services_UFRazorViewRenderer_RenderEmailViewAsync__1_System_String___0__remarks">Remarks</h4>
   <div class="markdown level1 remarks"><p>If a view can not be found, the value for that property will be set to true.</p>
 <p>
-If the HTML view can not be found, the method tries <code>aBaseViewName</code> itself as view name.
+If the HTML view can not be found, the method tries <code>baseViewName</code> itself as view name.
 </p>
 </div>
 
@@ -269,15 +269,15 @@ If the view can not be found the method with raise an exception.
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Task&lt;string?&gt; RenderViewAsync&lt;TModel&gt;(string aViewName, TModel aModel)</code></pre>
+    <pre><code class="lang-csharp hljs">public Task&lt;string?&gt; RenderViewAsync&lt;TModel&gt;(string viewName, TModel model)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>aViewName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dt><code>viewName</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
     <dd><p>Name of view</p>
 </dd>
-    <dt><code>aModel</code> <span class="xref">TModel</span></dt>
+    <dt><code>model</code> <span class="xref">TModel</span></dt>
     <dd><p>Model data</p>
 </dd>
   </dl>

@@ -305,9 +305,9 @@ items:
     <xref href="UltraForce.Library.NetStandard.Net.UFExtendedErrorResponseModel%601" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
-    content: 'protected IActionResult BadRequest<TEnum>(TEnum aCode) where TEnum : struct, IConvertible'
+    content: 'protected IActionResult BadRequest<TEnum>(TEnum code) where TEnum : struct, IConvertible'
     parameters:
-    - id: aCode
+    - id: code
       type: '{TEnum}'
       description: Extended error code
     typeParameters:
@@ -322,7 +322,7 @@ items:
           code /* int */,
           name /* string */
         }</code></pre>
-    content.vb: Protected Function BadRequest(Of TEnum As {Structure, IConvertible})(aCode As TEnum) As IActionResult
+    content.vb: Protected Function BadRequest(Of TEnum As {Structure, IConvertible})(code As TEnum) As IActionResult
   overload: UltraForce.Library.Core.Asp.Controllers.UFController.BadRequest*
   nameWithType.vb: UFController.BadRequest(Of TEnum)(TEnum)
   fullName.vb: UltraForce.Library.Core.Asp.Controllers.UFController.BadRequest(Of TEnum)(TEnum)
@@ -355,18 +355,18 @@ items:
     to the server.
   example: []
   syntax:
-    content: protected JsonResult Json(ILogger aLogger, object aData)
+    content: protected JsonResult Json(ILogger logger, object data)
     parameters:
-    - id: aLogger
+    - id: logger
       type: Microsoft.Extensions.Logging.ILogger
       description: Logger to write to
-    - id: aData
+    - id: data
       type: System.Object
       description: Data to create Json for
     return:
       type: Microsoft.AspNetCore.Mvc.JsonResult
       description: <xref href="Microsoft.AspNetCore.Mvc.JsonResult" data-throw-if-not-resolved="false"></xref> instance
-    content.vb: Protected Function Json(aLogger As ILogger, aData As Object) As JsonResult
+    content.vb: Protected Function Json(logger As ILogger, data As Object) As JsonResult
   overload: UltraForce.Library.Core.Asp.Controllers.UFController.Json*
   nameWithType.vb: UFController.Json(ILogger, Object)
   fullName.vb: UltraForce.Library.Core.Asp.Controllers.UFController.Json(Microsoft.Extensions.Logging.ILogger, Object)

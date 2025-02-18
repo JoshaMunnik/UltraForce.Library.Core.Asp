@@ -67,15 +67,15 @@ items:
   summary: Create structure
   example: []
   syntax:
-    content: public UFEmailContentModel(string? anHtml = null, string? aText = null)
+    content: public UFEmailContentModel(string? html = null, string? text = null)
     parameters:
-    - id: anHtml
+    - id: html
       type: System.String
       description: initial html text
-    - id: aText
+    - id: text
       type: System.String
       description: initial plain text
-    content.vb: Public Sub New(anHtml As String = Nothing, aText As String = Nothing)
+    content.vb: Public Sub New(html As String = Nothing, text As String = Nothing)
   overload: UltraForce.Library.Core.Asp.Models.UFEmailContentModel.#ctor*
   nameWithType.vb: UFEmailContentModel.New(String, String)
   fullName.vb: UltraForce.Library.Core.Asp.Models.UFEmailContentModel.New(String, String)

@@ -148,11 +148,11 @@ items:
     </p>
   example: []
   syntax:
-    content: public UFSessionKeyedStorage(ISession aSession)
+    content: public UFSessionKeyedStorage(ISession session)
     parameters:
-    - id: aSession
+    - id: session
       type: Microsoft.AspNetCore.Http.ISession
-    content.vb: Public Sub New(aSession As ISession)
+    content.vb: Public Sub New(session As ISession)
   overload: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.#ctor*
   nameWithType.vb: UFSessionKeyedStorage.New(ISession)
   fullName.vb: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.New(Microsoft.AspNetCore.Http.ISession)
@@ -175,7 +175,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetInt
     path: ../UltraForce.Library.Core.Asp/Sessions/UFSessionKeyedStorage.cs
-    startLine: 57
+    startLine: 59
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Sessions
@@ -191,18 +191,16 @@ items:
     </p>
   example: []
   syntax:
-    content: public override int GetInt(string aKey, int aDefault)
+    content: public override int GetInt(string key, int defaultValue)
     parameters:
-    - id: aKey
+    - id: key
       type: System.String
-      description: A key to get the integer for.
-    - id: aDefault
+    - id: defaultValue
       type: System.Int32
-      description: A default value to use when there is no integer stored for the key.
     return:
       type: System.Int32
       description: The stored integer or aDefault.
-    content.vb: Public Overrides Function GetInt(aKey As String, aDefault As Integer) As Integer
+    content.vb: Public Overrides Function GetInt(key As String, defaultValue As Integer) As Integer
   overridden: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetInt(System.String,System.Int32)
   overload: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.GetInt*
   nameWithType.vb: UFSessionKeyedStorage.GetInt(String, Integer)
@@ -226,7 +224,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: SetInt
     path: ../UltraForce.Library.Core.Asp/Sessions/UFSessionKeyedStorage.cs
-    startLine: 63
+    startLine: 68
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Sessions
@@ -242,15 +240,13 @@ items:
     </p>
   example: []
   syntax:
-    content: public override void SetInt(string aKey, int aValue)
+    content: public override void SetInt(string key, int value)
     parameters:
-    - id: aKey
+    - id: key
       type: System.String
-      description: Key to store value for.
-    - id: aValue
+    - id: value
       type: System.Int32
-      description: A value to store.
-    content.vb: Public Overrides Sub SetInt(aKey As String, aValue As Integer)
+    content.vb: Public Overrides Sub SetInt(key As String, value As Integer)
   overridden: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetInt(System.String,System.Int32)
   overload: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.SetInt*
   nameWithType.vb: UFSessionKeyedStorage.SetInt(String, Integer)
@@ -274,25 +270,23 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetString
     path: ../UltraForce.Library.Core.Asp/Sessions/UFSessionKeyedStorage.cs
-    startLine: 69
+    startLine: 77
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Sessions
   summary: Gets a string.
   example: []
   syntax:
-    content: public override string GetString(string aKey, string aDefault)
+    content: public override string GetString(string key, string defaultValue)
     parameters:
-    - id: aKey
+    - id: key
       type: System.String
-      description: A key to get the string for.
-    - id: aDefault
+    - id: defaultValue
       type: System.String
-      description: A default value to use when there is no string stored for the key.
     return:
       type: System.String
       description: The stored string or aDefault.
-    content.vb: Public Overrides Function GetString(aKey As String, aDefault As String) As String
+    content.vb: Public Overrides Function GetString(key As String, defaultValue As String) As String
   overridden: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.GetString(System.String,System.String)
   overload: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.GetString*
   nameWithType.vb: UFSessionKeyedStorage.GetString(String, String)
@@ -316,22 +310,20 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: SetString
     path: ../UltraForce.Library.Core.Asp/Sessions/UFSessionKeyedStorage.cs
-    startLine: 77
+    startLine: 88
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Sessions
   summary: Stores a string in the storage.
   example: []
   syntax:
-    content: public override void SetString(string aKey, string aValue)
+    content: public override void SetString(string key, string value)
     parameters:
-    - id: aKey
+    - id: key
       type: System.String
-      description: Key to store value for.
-    - id: aValue
+    - id: value
       type: System.String
-      description: A value to store.
-    content.vb: Public Overrides Sub SetString(aKey As String, aValue As String)
+    content.vb: Public Overrides Sub SetString(key As String, value As String)
   overridden: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SetString(System.String,System.String)
   overload: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.SetString*
   nameWithType.vb: UFSessionKeyedStorage.SetString(String, String)
@@ -355,19 +347,18 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: DeleteKey
     path: ../UltraForce.Library.Core.Asp/Sessions/UFSessionKeyedStorage.cs
-    startLine: 83
+    startLine: 97
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Sessions
   summary: Deletes the data for specific key.
   example: []
   syntax:
-    content: public override void DeleteKey(string aKey)
+    content: public override void DeleteKey(string key)
     parameters:
-    - id: aKey
+    - id: key
       type: System.String
-      description: A key to Delete the data for.
-    content.vb: Public Overrides Sub DeleteKey(aKey As String)
+    content.vb: Public Overrides Sub DeleteKey(key As String)
   overridden: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.DeleteKey(System.String)
   overload: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.DeleteKey*
   nameWithType.vb: UFSessionKeyedStorage.DeleteKey(String)
@@ -391,7 +382,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: DeleteAll
     path: ../UltraForce.Library.Core.Asp/Sessions/UFSessionKeyedStorage.cs
-    startLine: 89
+    startLine: 105
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Sessions
@@ -420,22 +411,21 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: HasKey
     path: ../UltraForce.Library.Core.Asp/Sessions/UFSessionKeyedStorage.cs
-    startLine: 95
+    startLine: 111
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Sessions
   summary: Checks if there is a locally stored data for a specific key.
   example: []
   syntax:
-    content: public override bool HasKey(string aKey)
+    content: public override bool HasKey(string key)
     parameters:
-    - id: aKey
+    - id: key
       type: System.String
-      description: A key to check.
     return:
       type: System.Boolean
       description: True if has there is data for the key; otherwise, false.
-    content.vb: Public Overrides Function HasKey(aKey As String) As Boolean
+    content.vb: Public Overrides Function HasKey(key As String) As Boolean
   overridden: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.HasKey(System.String)
   overload: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.HasKey*
   nameWithType.vb: UFSessionKeyedStorage.HasKey(String)
@@ -459,7 +449,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: SerializeObject
     path: ../UltraForce.Library.Core.Asp/Sessions/UFSessionKeyedStorage.cs
-    startLine: 105
+    startLine: 123
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Sessions
@@ -473,15 +463,13 @@ items:
     </p>
   example: []
   syntax:
-    content: protected override void SerializeObject(string aKey, object anObject)
+    content: protected override void SerializeObject(string key, object value)
     parameters:
-    - id: aKey
+    - id: key
       type: System.String
-      description: Key to store serializes object with
-    - id: anObject
+    - id: value
       type: System.Object
-      description: Object to store
-    content.vb: Protected Overrides Sub SerializeObject(aKey As String, anObject As Object)
+    content.vb: Protected Overrides Sub SerializeObject(key As String, value As Object)
   overridden: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SerializeObject(System.String,System.Object)
   overload: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.SerializeObject*
   nameWithType.vb: UFSessionKeyedStorage.SerializeObject(String, Object)
@@ -505,7 +493,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: DeserializeObject
     path: ../UltraForce.Library.Core.Asp/Sessions/UFSessionKeyedStorage.cs
-    startLine: 115
+    startLine: 133
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Sessions
@@ -515,21 +503,18 @@ items:
     <xref href="UltraForce.Library.NetStandard.Storage.UFKeyedStorage.SerializeObject(System.String%2cSystem.Object)" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
-    content: protected override object DeserializeObject(string aKey, Type? aType, Func<Type, object> aFactory)
+    content: protected override object DeserializeObject(string key, Type? type, Func<Type, object> factory)
     parameters:
-    - id: aKey
+    - id: key
       type: System.String
-      description: Key to retrieve serialized object with
-    - id: aType
+    - id: type
       type: System.Type
-      description: Type of object to create (might be <code>null</code>)
-    - id: aFactory
+    - id: factory
       type: System.Func{System.Type,System.Object}
-      description: A factory to create a new instance of <code>aType</code>
     return:
       type: System.Object
       description: Retrieved object
-    content.vb: Protected Overrides Function DeserializeObject(aKey As String, aType As Type, aFactory As Func(Of Type, Object)) As Object
+    content.vb: Protected Overrides Function DeserializeObject(key As String, type As Type, factory As Func(Of Type, Object)) As Object
   overridden: UltraForce.Library.NetStandard.Storage.UFKeyedStorage.DeserializeObject(System.String,System.Type,System.Func{System.Type,System.Object})
   overload: UltraForce.Library.Core.Asp.Sessions.UFSessionKeyedStorage.DeserializeObject*
   nameWithType.vb: UFSessionKeyedStorage.DeserializeObject(String, Type, Func(Of Type, Object))

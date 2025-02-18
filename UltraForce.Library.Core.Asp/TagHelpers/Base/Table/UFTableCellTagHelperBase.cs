@@ -71,9 +71,9 @@ namespace UltraForce.Library.Core.Asp.TagHelpers.Base.Table;
 [SuppressMessage("ReSharper", "MemberCanBePrivate.Global")]
 [SuppressMessage("ReSharper", "MemberCanBeProtected.Global")]
 public abstract class UFTableCellTagHelperBase<TTable, TTableRow>(
-  IUFModelExpressionRenderer aModelExpressionRenderer
+  IUFModelExpressionRenderer modelExpressionRenderer
 )
-  : UFTagHelperWithModelExpressionRenderer(aModelExpressionRenderer)
+  : UFTagHelperWithModelExpressionRenderer(modelExpressionRenderer)
   where TTable : UFTableTagHelperBase
   where TTableRow : UFTableRowTagHelperBase<TTable>
 {
@@ -158,40 +158,41 @@ public abstract class UFTableCellTagHelperBase<TTable, TTableRow>(
 
   /// <inheritdoc />
   public override async Task ProcessAsync(
-    TagHelperContext aContext,
-    TagHelperOutput anOutput
+    TagHelperContext context,
+    TagHelperOutput output
   )
   {
-    await base.ProcessAsync(aContext, anOutput);
-    TTable table = (aContext.Items[UFTableTagHelperBase.Table] as TTable)!;
-    TTableRow tableRow = (aContext.Items[UFTableRowTagHelperBase<TTable>.Row] as TTableRow)!;
+    await base.ProcessAsync(context, output);
+    context.Items[UFTableTagHelperBase.Cell] = this;
+    TTable table = (context.Items[UFTableTagHelperBase.Table] as TTable)!;
+    TTableRow tableRow = (context.Items[UFTableTagHelperBase.Row] as TTableRow)!;
     UFTableCellTypeEnum type = this.Type == UFTableCellTypeEnum.Auto
       ? (tableRow.Type == UFTableRowTypeEnum.Header
         ? UFTableCellTypeEnum.Header
         : UFTableCellTypeEnum.Data)
       : this.Type;
-    anOutput.TagMode = TagMode.StartTagAndEndTag;
-    anOutput.TagName = type == UFTableCellTypeEnum.Header ? "th" : "td";
-    UFTableSortTypeEnum sortType = await this.ProcessForAsync(anOutput, type);
+    output.TagMode = TagMode.StartTagAndEndTag;
+    output.TagName = type == UFTableCellTypeEnum.Header ? "th" : "td";
+    UFTableSortTypeEnum sortType = await this.ProcessForAsync(output, type);
     if (table.Sorting)
     {
-      this.SetDataSortType(anOutput, sortType, type);
+      this.SetDataSortType(output, sortType, type);
     }
     if (table.Filter)
     {
-      this.SetFilter(anOutput);
+      this.SetFilter(output);
     }
-    this.UpdateClasses(anOutput, type, table, tableRow);
+    this.UpdateClasses(output, type, table, tableRow);
     if (
       (tableRow == table.ProcessedFirstHeaderRow) && table.Sorting &&
       (sortType != UFTableSortTypeEnum.None)
     )
     {
-      this.AddButtonWrapper(anOutput, table, tableRow);
+      this.AddButtonWrapper(output, table, tableRow);
     }
     if (this.NoCaching)
     {
-      anOutput.Attributes.SetAttribute(UFDataAttribute.NoCaching, "1");
+      output.Attributes.SetAttribute(UFDataAttribute.NoCaching, "1");
     }
   }
 
@@ -202,14 +203,14 @@ public abstract class UFTableCellTagHelperBase<TTable, TTableRow>(
   /// <summary>
   /// Returns the css classes for the cell.
   /// </summary>
-  /// <param name="aType"></param>
-  /// <param name="aTable"></param>
-  /// <param name="aTableRow"></param>
+  /// <param name="type"></param>
+  /// <param name="table"></param>
+  /// <param name="tableRow"></param>
   /// <returns></returns>
   protected virtual string GetTableCellClasses(
-    UFTableCellTypeEnum aType,
-    TTable aTable,
-    TTableRow aTableRow
+    UFTableCellTypeEnum type,
+    TTable table,
+    TTableRow tableRow
   )
   {
     return string.Empty;
@@ -218,12 +219,12 @@ public abstract class UFTableCellTagHelperBase<TTable, TTableRow>(
   /// <summary>
   /// Returns the css classes for the buttons in the header.
   /// </summary>
-  /// <param name="aTable"></param>
-  /// <param name="aTableRow"></param>
+  /// <param name="table"></param>
+  /// <param name="tableRow"></param>
   /// <returns></returns>
   protected virtual string GetTableHeaderButtonClasses(
-    TTable aTable,
-    TTableRow aTableRow
+    TTable table,
+    TTableRow tableRow
   )
   {
     return string.Empty;
@@ -237,12 +238,12 @@ public abstract class UFTableCellTagHelperBase<TTable, TTableRow>(
   /// Processes the <see cref="For"/> property. It determines the sort type and sets the
   /// content (if it has not been altered) to either the name or value.
   /// </summary>
-  /// <param name="anOutput">Output to update</param>
-  /// <param name="aType"></param>
+  /// <param name="output">Output to update</param>
+  /// <param name="cellType"></param>
   /// <returns>Sort type</returns>
   private async Task<UFTableSortTypeEnum> ProcessForAsync(
-    TagHelperOutput anOutput,
-    UFTableCellTypeEnum aType
+    TagHelperOutput output,
+    UFTableCellTypeEnum cellType
   )
   {
     if (this.For == null)
@@ -268,32 +269,32 @@ public abstract class UFTableCellTagHelperBase<TTable, TTableRow>(
         sortType = UFTableSortTypeEnum.Text;
       }
     }
-    if (aType == UFTableCellTypeEnum.Header)
+    if (cellType == UFTableCellTypeEnum.Header)
     {
       await this.ModelExpressionRenderer.SetContentToNameAsync(
-        anOutput, this.For, this.ViewContext
+        output, this.For, this.ViewContext
       );
     }
     else
     {
       await this.ModelExpressionRenderer.SetContentToValueAsync(
-        anOutput, this.For, this.ViewContext
+        output, this.For, this.ViewContext
       );
       if (type == typeof(bool))
       {
         bool value = (bool)this.For.Model;
-        anOutput.Attributes.SetAttribute(UFDataAttribute.SortValue, value ? "1" : "0");
+        output.Attributes.SetAttribute(UFDataAttribute.SortValue, value ? "1" : "0");
       }
       else if (type == typeof(bool?))
       {
         bool? value = (bool?)this.For.Model;
-        anOutput.Attributes.SetAttribute(
+        output.Attributes.SetAttribute(
           UFDataAttribute.SortValue, (value != null) && value.Value ? "1" : "0"
         );
       }
-      if (!anOutput.Attributes.ContainsName("title") && (this.For.Model != null))
+      if (!output.Attributes.ContainsName("title") && (this.For.Model != null))
       {
-        anOutput.Attributes.SetAttribute(
+        output.Attributes.SetAttribute(
           "title", this.ModelExpressionRenderer.GetValueAsText(this.For, this.ViewContext)
         );
       }
@@ -304,19 +305,19 @@ public abstract class UFTableCellTagHelperBase<TTable, TTableRow>(
   /// <summary>
   /// Adds css classes to the classes attribute and process the <see cref="Width"/> property.
   /// </summary>
-  /// <param name="anOutput"></param>
-  /// <param name="aType"></param>
-  /// <param name="aTable"></param>
-  /// <param name="aTableRow"></param>
+  /// <param name="output"></param>
+  /// <param name="cellType"></param>
+  /// <param name="table"></param>
+  /// <param name="tableRow"></param>
   private void UpdateClasses(
-    TagHelperOutput anOutput,
-    UFTableCellTypeEnum aType,
-    TTable aTable,
-    TTableRow aTableRow
+    TagHelperOutput output,
+    UFTableCellTypeEnum cellType,
+    TTable table,
+    TTableRow tableRow
   )
   {
-    string classValue = this.GetTableCellClasses(aType, aTable, aTableRow);
-    UFTagHelperTools.AddClasses(anOutput, classValue);
+    string classValue = this.GetTableCellClasses(cellType, table, tableRow);
+    UFTagHelperTools.AddClasses(output, classValue);
     string style = "";
     if (!string.IsNullOrEmpty(this.Width))
     {
@@ -328,7 +329,7 @@ public abstract class UFTableCellTagHelperBase<TTable, TTableRow>(
     }
     if (!string.IsNullOrEmpty(style))
     {
-      anOutput.Attributes.SetAttribute("style", style);
+      output.Attributes.SetAttribute("style", style);
     }
   }
 
@@ -336,40 +337,40 @@ public abstract class UFTableCellTagHelperBase<TTable, TTableRow>(
   /// Adds a <see cref="UFDataAttribute.Filter"/> attribute if the cell is a data cell and
   /// <see cref="NoFilter"/> is true.
   /// </summary>
-  /// <param name="anOutput"></param>
+  /// <param name="output"></param>
   private void SetFilter(
-    TagHelperOutput anOutput
+    TagHelperOutput output
   )
   {
     if ((this.Type == UFTableCellTypeEnum.Data) && this.NoFilter)
     {
-      anOutput.Attributes.SetAttribute(UFDataAttribute.NoFilter, "1");
+      output.Attributes.SetAttribute(UFDataAttribute.NoFilter, "1");
     }
   }
 
   /// <summary>
   /// Sets the `data-sort-type` attribute based on the sort type.
   /// </summary>
-  /// <param name="anOutput"></param>
-  /// <param name="aSortType"></param>
-  /// <param name="aType"></param>
+  /// <param name="output"></param>
+  /// <param name="sortType"></param>
+  /// <param name="cellType"></param>
   private void SetDataSortType(
-    TagHelperOutput anOutput,
-    UFTableSortTypeEnum aSortType,
-    UFTableCellTypeEnum aType
+    TagHelperOutput output,
+    UFTableSortTypeEnum sortType,
+    UFTableCellTypeEnum cellType
   )
   {
-    if ((aType != UFTableCellTypeEnum.Header) || (aSortType == UFTableSortTypeEnum.None))
+    if ((cellType != UFTableCellTypeEnum.Header) || (sortType == UFTableSortTypeEnum.None))
     {
       return;
     }
-    switch (aSortType)
+    switch (sortType)
     {
       case UFTableSortTypeEnum.Number:
       case UFTableSortTypeEnum.Date:
       case UFTableSortTypeEnum.Text:
-        anOutput.Attributes.SetAttribute(
-          UFDataAttribute.SortType, aSortType.GetDescription()
+        output.Attributes.SetAttribute(
+          UFDataAttribute.SortType, sortType.GetDescription()
         );
         break;
     }
@@ -378,21 +379,21 @@ public abstract class UFTableCellTagHelperBase<TTable, TTableRow>(
   /// <summary>
   /// Adds a wrapper for the content of a cell that is clickable for sorting.
   /// </summary>
-  /// <param name="anOutput"></param>
-  /// <param name="aTable"></param>
-  /// <param name="aTableRow"></param>
+  /// <param name="output"></param>
+  /// <param name="table"></param>
+  /// <param name="tableRow"></param>
   private void AddButtonWrapper(
-    TagHelperOutput anOutput,
-    TTable aTable,
-    TTableRow aTableRow
+    TagHelperOutput output,
+    TTable table,
+    TTableRow tableRow
   )
   {
-    anOutput.PreContent.SetHtmlContent(
+    output.PreContent.SetHtmlContent(
       $"<button" +
-      $" class=\"{this.GetTableHeaderButtonClasses(aTable, aTableRow)}\"" +
+      $" class=\"{this.GetTableHeaderButtonClasses(table, tableRow)}\"" +
       $">"
     );
-    anOutput.PostContent.SetHtmlContent("</button>");
+    output.PostContent.SetHtmlContent("</button>");
   }
 
   #endregion

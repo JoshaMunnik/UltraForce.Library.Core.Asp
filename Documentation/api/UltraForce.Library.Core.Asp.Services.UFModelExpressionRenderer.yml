@@ -76,12 +76,12 @@ items:
   summary: Constructs an instance of the <xref href="UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
-    content: public UFModelExpressionRenderer(IHtmlGenerator aGenerator)
+    content: public UFModelExpressionRenderer(IHtmlGenerator generator)
     parameters:
-    - id: aGenerator
+    - id: generator
       type: Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator
       description: ''
-    content.vb: Public Sub New(aGenerator As IHtmlGenerator)
+    content.vb: Public Sub New(generator As IHtmlGenerator)
   overload: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.#ctor*
   nameWithType.vb: UFModelExpressionRenderer.New(IHtmlGenerator)
   fullName.vb: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.New(Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator)
@@ -104,7 +104,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: SetContentToNameAsync
     path: ../UltraForce.Library.Core.Asp/Services/UFModelExpressionRenderer.cs
-    startLine: 61
+    startLine: 63
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Services
@@ -114,20 +114,20 @@ items:
     based on the code from <xref href="Microsoft.AspNetCore.Mvc.TagHelpers.LabelTagHelper" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
-    content: public Task SetContentToNameAsync(TagHelperOutput anOutput, ModelExpression anExpression, ViewContext aViewContext)
+    content: public Task SetContentToNameAsync(TagHelperOutput output, ModelExpression expression, ViewContext viewContext)
     parameters:
-    - id: anOutput
+    - id: output
       type: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput
       description: Output to update
-    - id: anExpression
+    - id: expression
       type: Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression
       description: Model expression to get name from
-    - id: aViewContext
+    - id: viewContext
       type: Microsoft.AspNetCore.Mvc.Rendering.ViewContext
       description: View context to use
     return:
       type: System.Threading.Tasks.Task
-    content.vb: Public Function SetContentToNameAsync(anOutput As TagHelperOutput, anExpression As ModelExpression, aViewContext As ViewContext) As Task
+    content.vb: Public Function SetContentToNameAsync(output As TagHelperOutput, expression As ModelExpression, viewContext As ViewContext) As Task
   overload: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.SetContentToNameAsync*
   implements:
   - UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.SetContentToNameAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression,Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
@@ -149,7 +149,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: SetContentToValueAsync
     path: ../UltraForce.Library.Core.Asp/Services/UFModelExpressionRenderer.cs
-    startLine: 89
+    startLine: 93
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Services
@@ -169,20 +169,20 @@ items:
     </p>
   example: []
   syntax:
-    content: public Task SetContentToValueAsync(TagHelperOutput anOutput, ModelExpression anExpression, ViewContext aViewContext)
+    content: public Task SetContentToValueAsync(TagHelperOutput output, ModelExpression expression, ViewContext viewContext)
     parameters:
-    - id: anOutput
+    - id: output
       type: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput
       description: ''
-    - id: anExpression
+    - id: expression
       type: Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression
       description: ''
-    - id: aViewContext
+    - id: viewContext
       type: Microsoft.AspNetCore.Mvc.Rendering.ViewContext
       description: ''
     return:
       type: System.Threading.Tasks.Task
-    content.vb: Public Function SetContentToValueAsync(anOutput As TagHelperOutput, anExpression As ModelExpression, aViewContext As ViewContext) As Task
+    content.vb: Public Function SetContentToValueAsync(output As TagHelperOutput, expression As ModelExpression, viewContext As ViewContext) As Task
   overload: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.SetContentToValueAsync*
   implements:
   - UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.SetContentToValueAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression,Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
@@ -204,25 +204,25 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetName
     path: ../UltraForce.Library.Core.Asp/Services/UFModelExpressionRenderer.cs
-    startLine: 154
+    startLine: 160
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Services
   summary: Gets the name for a model expression.
   example: []
   syntax:
-    content: public IHtmlContentBuilder GetName(ModelExpression anExpression, ViewContext aViewContext)
+    content: public IHtmlContentBuilder GetName(ModelExpression expression, ViewContext viewContext)
     parameters:
-    - id: anExpression
+    - id: expression
       type: Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression
       description: expression to get name for
-    - id: aViewContext
+    - id: viewContext
       type: Microsoft.AspNetCore.Mvc.Rendering.ViewContext
       description: ''
     return:
       type: Microsoft.AspNetCore.Html.IHtmlContentBuilder
       description: html representation of name
-    content.vb: Public Function GetName(anExpression As ModelExpression, aViewContext As ViewContext) As IHtmlContentBuilder
+    content.vb: Public Function GetName(expression As ModelExpression, viewContext As ViewContext) As IHtmlContentBuilder
   overload: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.GetName*
   implements:
   - UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.GetName(Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression,Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
@@ -244,25 +244,25 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetValueAsText
     path: ../UltraForce.Library.Core.Asp/Services/UFModelExpressionRenderer.cs
-    startLine: 167
+    startLine: 176
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Services
   summary: Gets the value as a text string.
   example: []
   syntax:
-    content: public string GetValueAsText(ModelExpression anExpression, ViewContext aViewContext)
+    content: public string GetValueAsText(ModelExpression expression, ViewContext viewContext)
     parameters:
-    - id: anExpression
+    - id: expression
       type: Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression
       description: expression to get value for
-    - id: aViewContext
+    - id: viewContext
       type: Microsoft.AspNetCore.Mvc.Rendering.ViewContext
       description: ''
     return:
       type: System.String
       description: text representation of value
-    content.vb: Public Function GetValueAsText(anExpression As ModelExpression, aViewContext As ViewContext) As String
+    content.vb: Public Function GetValueAsText(expression As ModelExpression, viewContext As ViewContext) As String
   overload: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.GetValueAsText*
   implements:
   - UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.GetValueAsText(Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression,Microsoft.AspNetCore.Mvc.Rendering.ViewContext)
@@ -284,7 +284,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: HtmlGenerator
     path: ../UltraForce.Library.Core.Asp/Services/UFModelExpressionRenderer.cs
-    startLine: 211
+    startLine: 223
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Services
@@ -315,7 +315,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetCheckBoxHtml
     path: ../UltraForce.Library.Core.Asp/Services/UFModelExpressionRenderer.cs
-    startLine: 225
+    startLine: 237
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Services
@@ -328,15 +328,15 @@ items:
     can override if needed.
   example: []
   syntax:
-    content: protected virtual string GetCheckBoxHtml(bool aChecked)
+    content: protected virtual string GetCheckBoxHtml(bool isChecked)
     parameters:
-    - id: aChecked
+    - id: isChecked
       type: System.Boolean
       description: ''
     return:
       type: System.String
       description: ''
-    content.vb: Protected Overridable Function GetCheckBoxHtml(aChecked As Boolean) As String
+    content.vb: Protected Overridable Function GetCheckBoxHtml(isChecked As Boolean) As String
   overload: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.GetCheckBoxHtml*
   nameWithType.vb: UFModelExpressionRenderer.GetCheckBoxHtml(Boolean)
   fullName.vb: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.GetCheckBoxHtml(Boolean)
@@ -359,7 +359,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetEmailLinkHtml
     path: ../UltraForce.Library.Core.Asp/Services/UFModelExpressionRenderer.cs
-    startLine: 239
+    startLine: 253
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Services
@@ -372,15 +372,15 @@ items:
     can override if needed.
   example: []
   syntax:
-    content: protected virtual string GetEmailLinkHtml(string anEmail)
+    content: protected virtual string GetEmailLinkHtml(string email)
     parameters:
-    - id: anEmail
+    - id: email
       type: System.String
       description: ''
     return:
       type: System.String
       description: ''
-    content.vb: Protected Overridable Function GetEmailLinkHtml(anEmail As String) As String
+    content.vb: Protected Overridable Function GetEmailLinkHtml(email As String) As String
   overload: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.GetEmailLinkHtml*
   nameWithType.vb: UFModelExpressionRenderer.GetEmailLinkHtml(String)
   fullName.vb: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.GetEmailLinkHtml(String)
@@ -403,7 +403,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetDateTimeHtml
     path: ../UltraForce.Library.Core.Asp/Services/UFModelExpressionRenderer.cs
-    startLine: 250
+    startLine: 266
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Services
@@ -413,15 +413,15 @@ items:
     date/time in mysql format (yyyy-MM-dd HH:mm:ss) or '-' if the date is null.
   example: []
   syntax:
-    content: protected virtual string GetDateTimeHtml(DateTime? aDateTime)
+    content: protected virtual string GetDateTimeHtml(DateTime? dateTime)
     parameters:
-    - id: aDateTime
+    - id: dateTime
       type: System.Nullable{System.DateTime}
       description: Date/time or null if render no date and time
     return:
       type: System.String
       description: ''
-    content.vb: Protected Overridable Function GetDateTimeHtml(aDateTime As Date?) As String
+    content.vb: Protected Overridable Function GetDateTimeHtml(dateTime As Date?) As String
   overload: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.GetDateTimeHtml*
   nameWithType.vb: UFModelExpressionRenderer.GetDateTimeHtml(Date?)
   fullName.vb: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.GetDateTimeHtml(Date?)
@@ -444,7 +444,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetDateHtml
     path: ../UltraForce.Library.Core.Asp/Services/UFModelExpressionRenderer.cs
-    startLine: 261
+    startLine: 279
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Services
@@ -454,15 +454,15 @@ items:
     date in mysql format (yyyy-MM-dd) or '-' if the date is null.
   example: []
   syntax:
-    content: protected virtual string GetDateHtml(DateOnly? aDate)
+    content: protected virtual string GetDateHtml(DateOnly? date)
     parameters:
-    - id: aDate
+    - id: date
       type: System.Nullable{System.DateOnly}
       description: Date or null if render no date
     return:
       type: System.String
       description: ''
-    content.vb: Protected Overridable Function GetDateHtml(aDate As DateOnly?) As String
+    content.vb: Protected Overridable Function GetDateHtml([date] As DateOnly?) As String
   overload: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.GetDateHtml*
 - uid: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.GetTimeHtml(System.Nullable{System.TimeOnly})
   commentId: M:UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.GetTimeHtml(System.Nullable{System.TimeOnly})
@@ -482,7 +482,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetTimeHtml
     path: ../UltraForce.Library.Core.Asp/Services/UFModelExpressionRenderer.cs
-    startLine: 272
+    startLine: 292
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Services
@@ -492,15 +492,15 @@ items:
     time in mysql format (HH:mm:ss) or '-' if the time is null.
   example: []
   syntax:
-    content: protected virtual string GetTimeHtml(TimeOnly? aDate)
+    content: protected virtual string GetTimeHtml(TimeOnly? time)
     parameters:
-    - id: aDate
+    - id: time
       type: System.Nullable{System.TimeOnly}
       description: Time or null if render no time
     return:
       type: System.String
       description: ''
-    content.vb: Protected Overridable Function GetTimeHtml(aDate As TimeOnly?) As String
+    content.vb: Protected Overridable Function GetTimeHtml(time As TimeOnly?) As String
   overload: UltraForce.Library.Core.Asp.Services.UFModelExpressionRenderer.GetTimeHtml*
 references:
 - uid: UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer

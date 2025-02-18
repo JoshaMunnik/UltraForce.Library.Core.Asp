@@ -143,12 +143,12 @@ items:
   summary: Adds a message to show in page
   example: []
   syntax:
-    content: public void Add(string aMessage)
+    content: public void Add(string message)
     parameters:
-    - id: aMessage
+    - id: message
       type: System.String
       description: Message to show
-    content.vb: Public Sub Add(aMessage As String)
+    content.vb: Public Sub Add(message As String)
   overload: UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.Add*
   nameWithType.vb: UFSessionMessages.Add(String)
   fullName.vb: UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.Add(String)
@@ -178,12 +178,12 @@ items:
   summary: Adds an error message to show in page
   example: []
   syntax:
-    content: public void AddError(string aMessage)
+    content: public void AddError(string message)
     parameters:
-    - id: aMessage
+    - id: message
       type: System.String
       description: Message to show
-    content.vb: Public Sub AddError(aMessage As String)
+    content.vb: Public Sub AddError(message As String)
   overload: UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.AddError*
   nameWithType.vb: UFSessionMessages.AddError(String)
   fullName.vb: UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.AddError(String)
@@ -213,12 +213,12 @@ items:
   summary: Adds a warning message to show in page
   example: []
   syntax:
-    content: public void AddWarning(string aMessage)
+    content: public void AddWarning(string message)
     parameters:
-    - id: aMessage
+    - id: message
       type: System.String
       description: Message to show
-    content.vb: Public Sub AddWarning(aMessage As String)
+    content.vb: Public Sub AddWarning(message As String)
   overload: UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.AddWarning*
   nameWithType.vb: UFSessionMessages.AddWarning(String)
   fullName.vb: UltraForce.Library.Core.Asp.Sessions.UFSessionMessages.AddWarning(String)

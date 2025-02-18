@@ -67,7 +67,7 @@ namespace UltraForce.Library.Core.Asp.Controllers
     /// <typeparam name="TEnum">
     /// Enumeration type that defines extended error codes
     /// </typeparam>
-    /// <param name="aCode">
+    /// <param name="code">
     /// Extended error code
     /// </param>
     /// <returns>
@@ -79,12 +79,12 @@ namespace UltraForce.Library.Core.Asp.Controllers
     /// }
     /// </code>
     /// </returns>
-    protected IActionResult BadRequest<TEnum>(TEnum aCode)
+    protected IActionResult BadRequest<TEnum>(TEnum code)
       where TEnum : struct, IConvertible
     {
       return base.BadRequest(new UFExtendedErrorResponseModel<TEnum> {
-        Code = aCode,
-        Name = aCode.ToString(CultureInfo.InvariantCulture)
+        Code = code,
+        Name = code.ToString(CultureInfo.InvariantCulture)
       });
     }
 
@@ -92,16 +92,16 @@ namespace UltraForce.Library.Core.Asp.Controllers
     /// Writes the json response first to the logger before sending it back
     /// to the server.
     /// </summary>
-    /// <param name="aLogger">Logger to write to</param>
-    /// <param name="aData">Data to create Json for</param>
+    /// <param name="logger">Logger to write to</param>
+    /// <param name="data">Data to create Json for</param>
     /// <returns><see cref="JsonResult"/> instance</returns>
-    protected JsonResult Json(ILogger aLogger, object aData)
+    protected JsonResult Json(ILogger logger, object data)
     {
-      aLogger.LogInformation(
+      logger.LogInformation(
         $"{nameof(Json)} response = {{0}}",
-        JsonSerializer.Serialize(aData)
+        JsonSerializer.Serialize(data)
       );
-      return this.Json(aData);
+      return this.Json(data);
     }
 
     #endregion

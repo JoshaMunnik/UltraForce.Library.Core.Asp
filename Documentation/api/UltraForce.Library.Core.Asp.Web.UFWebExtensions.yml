@@ -59,25 +59,28 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: IsInRole
     path: ../UltraForce.Library.Core.Asp/Web/UFWebExtensions.cs
-    startLine: 44
+    startLine: 45
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Web
-  summary: Adds an additional IsInRole method to test if user belongs to any of the specified roles.
+  summary: >-
+    Adds an additional <code>IsInRole</code> method to test if user belongs to any of the specified
+
+    roles.
   example: []
   syntax:
-    content: public static bool IsInRole(this ClaimsPrincipal aClaim, params string[] aRoles)
+    content: public static bool IsInRole(this ClaimsPrincipal claim, params string[] roles)
     parameters:
-    - id: aClaim
+    - id: claim
       type: System.Security.Claims.ClaimsPrincipal
       description: Claim to check
-    - id: aRoles
+    - id: roles
       type: System.String[]
       description: Roles to check
     return:
       type: System.Boolean
       description: True if claim is at least in one role.
-    content.vb: Public Shared Function IsInRole(aClaim As ClaimsPrincipal, ParamArray aRoles As String()) As Boolean
+    content.vb: Public Shared Function IsInRole(claim As ClaimsPrincipal, ParamArray roles As String()) As Boolean
   overload: UltraForce.Library.Core.Asp.Web.UFWebExtensions.IsInRole*
   nameWithType.vb: UFWebExtensions.IsInRole(ClaimsPrincipal, ParamArray String())
   fullName.vb: UltraForce.Library.Core.Asp.Web.UFWebExtensions.IsInRole(System.Security.Claims.ClaimsPrincipal, ParamArray String())
@@ -101,25 +104,28 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: IsInRole
     path: ../UltraForce.Library.Core.Asp/Web/UFWebExtensions.cs
-    startLine: 55
+    startLine: 57
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Web
-  summary: Adds an additional IsInRole method to test if user belongs to any of the specified roles.
+  summary: >-
+    Adds an additional <code>IsInRole</code> method to test if user belongs to any of the specified
+
+    roles.
   example: []
   syntax:
-    content: public static bool IsInRole(this ClaimsPrincipal aClaim, IEnumerable<string> aRoles)
+    content: public static bool IsInRole(this ClaimsPrincipal claim, IEnumerable<string> roles)
     parameters:
-    - id: aClaim
+    - id: claim
       type: System.Security.Claims.ClaimsPrincipal
       description: Claim to check
-    - id: aRoles
+    - id: roles
       type: System.Collections.Generic.IEnumerable{System.String}
       description: Roles to check
     return:
       type: System.Boolean
       description: True if claim is at least in one role.
-    content.vb: Public Shared Function IsInRole(aClaim As ClaimsPrincipal, aRoles As IEnumerable(Of String)) As Boolean
+    content.vb: Public Shared Function IsInRole(claim As ClaimsPrincipal, roles As IEnumerable(Of String)) As Boolean
   overload: UltraForce.Library.Core.Asp.Web.UFWebExtensions.IsInRole*
   nameWithType.vb: UFWebExtensions.IsInRole(ClaimsPrincipal, IEnumerable(Of String))
   fullName.vb: UltraForce.Library.Core.Asp.Web.UFWebExtensions.IsInRole(System.Security.Claims.ClaimsPrincipal, System.Collections.Generic.IEnumerable(Of String))

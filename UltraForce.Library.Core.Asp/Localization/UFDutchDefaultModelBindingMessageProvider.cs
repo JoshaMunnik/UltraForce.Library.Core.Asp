@@ -41,28 +41,28 @@ namespace UltraForce.Library.Core.Asp.Localization
     /// <summary>
     /// Replaces the error messages with Dutch versions.
     /// </summary>
-    /// <param name="aProvider">Provider to update</param>
-    public static void Apply(DefaultModelBindingMessageProvider aProvider)
+    /// <param name="provider">Provider to update</param>
+    public static void Apply(DefaultModelBindingMessageProvider provider)
     {
-      aProvider.SetValueIsInvalidAccessor(
+      provider.SetValueIsInvalidAccessor(
         s => $"Ongeldige waarde voor {s}."
       );
-      aProvider.SetValueMustBeANumberAccessor(
+      provider.SetValueMustBeANumberAccessor(
         s => $"De waarde voor {s} moet een getal zijn."
       );
-      aProvider.SetValueMustNotBeNullAccessor(
+      provider.SetValueMustNotBeNullAccessor(
         s => $"De waarde voor {s} mag niet leeg zijn."
       );
-      aProvider.SetMissingBindRequiredValueAccessor(
+      provider.SetMissingBindRequiredValueAccessor(
         s => $"{s} is nodig en mag niet leeg zijn."
       );
-      aProvider.SetAttemptedValueIsInvalidAccessor(
+      provider.SetAttemptedValueIsInvalidAccessor(
         (s, v) => $"{s} bevat een ongeldige waarde `{v}`."
       );
-      aProvider.SetUnknownValueIsInvalidAccessor(
+      provider.SetUnknownValueIsInvalidAccessor(
         s => $"{s} bevat een onbekende ongeldige waarde."
       );
-      string test = aProvider.ValueMustNotBeNullAccessor("Test");
+      string test = provider.ValueMustNotBeNullAccessor("Test");
     }
   }
 }

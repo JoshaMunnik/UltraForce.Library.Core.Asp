@@ -56,13 +56,13 @@ namespace UltraForce.Library.Core.Asp.TagHelpers
 
     /// <inheritdoc />
     public override void Process(
-      TagHelperContext aContext,
-      TagHelperOutput anOutput
+      TagHelperContext context,
+      TagHelperOutput output
     )
     {
       if (this.NotCondition)
       {
-        anOutput.SuppressOutput();
+        output.SuppressOutput();
       }
     }
   }

@@ -62,27 +62,27 @@ namespace UltraForce.Library.Core.Asp.Tools
     /// Converts an utf8 string to ascii string. Characters that can not be 
     /// converted are removed.
     /// </summary>
-    /// <param name="aText">Text using UTF8 encoding</param>
+    /// <param name="text">Text using UTF8 encoding</param>
     /// <returns>Text using ascii encoding</returns>
-    public static string Utf8ToAscii(string aText)
+    public static string Utf8ToAscii(string text)
     {
       s_encoder ??= ASCIIEncoding.GetEncoding(
         "us-ascii",
         new EncoderReplacementFallback(string.Empty),
         new DecoderExceptionFallback()
       );
-      return s_encoder.GetString(s_encoder.GetBytes(aText));
+      return s_encoder.GetString(s_encoder.GetBytes(text));
     }
 
     /// <summary>
     /// Gets the html content as string.
     /// </summary>
-    /// <param name="aContent">Content to convert to string</param>
+    /// <param name="content">Content to convert to string</param>
     /// <returns>Content as string</returns>
-    public static string GetString(IHtmlContent aContent)
+    public static string GetString(IHtmlContent content)
     {
       using StringWriter writer = new();
-      aContent.WriteTo(writer, HtmlEncoder.Default);
+      content.WriteTo(writer, HtmlEncoder.Default);
       return writer.ToString();
     }
 

@@ -40,8 +40,8 @@ namespace UltraForce.Library.Core.Asp.Services
     /// <summary>
     /// Executes the service asynchronously.
     /// </summary>
-    /// <param name="aCancellationToken">A token that should be checked and the execution should stop</param>
+    /// <param name="cancellationToken">A token that should be checked and the execution should stop</param>
     /// <returns></returns>
-    Task ExecuteAsync(CancellationToken aCancellationToken);
+    Task ExecuteAsync(CancellationToken cancellationToken);
   }
 }

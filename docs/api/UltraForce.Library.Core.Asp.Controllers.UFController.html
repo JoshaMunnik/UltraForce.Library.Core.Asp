@@ -799,12 +799,12 @@ time the property is accessed the instance is created.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected IActionResult BadRequest&lt;TEnum&gt;(TEnum aCode) where TEnum : struct, IConvertible</code></pre>
+    <pre><code class="lang-csharp hljs">protected IActionResult BadRequest&lt;TEnum&gt;(TEnum code) where TEnum : struct, IConvertible</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>aCode</code> <span class="xref">TEnum</span></dt>
+    <dt><code>code</code> <span class="xref">TEnum</span></dt>
     <dd><p>Extended error code</p>
 </dd>
   </dl>
@@ -849,15 +849,15 @@ to the server.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected JsonResult Json(ILogger aLogger, object aData)</code></pre>
+    <pre><code class="lang-csharp hljs">protected JsonResult Json(ILogger logger, object data)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>aLogger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger">ILogger</a></dt>
+    <dt><code>logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger">ILogger</a></dt>
     <dd><p>Logger to write to</p>
 </dd>
-    <dt><code>aData</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dt><code>data</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
     <dd><p>Data to create Json for</p>
 </dd>
   </dl>

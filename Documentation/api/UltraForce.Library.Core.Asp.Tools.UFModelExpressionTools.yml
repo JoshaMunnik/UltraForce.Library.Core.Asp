@@ -65,15 +65,15 @@ items:
   summary: Checks if a model expression represents an IEnumerable.
   example: []
   syntax:
-    content: public static bool IsIEnumerable(ModelExpression aModelExpression)
+    content: public static bool IsIEnumerable(ModelExpression modelExpression)
     parameters:
-    - id: aModelExpression
+    - id: modelExpression
       type: Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression
       description: ''
     return:
       type: System.Boolean
       description: ''
-    content.vb: Public Shared Function IsIEnumerable(aModelExpression As ModelExpression) As Boolean
+    content.vb: Public Shared Function IsIEnumerable(modelExpression As ModelExpression) As Boolean
   overload: UltraForce.Library.Core.Asp.Tools.UFModelExpressionTools.IsIEnumerable*
 - uid: UltraForce.Library.Core.Asp.Tools.UFModelExpressionTools.IsGenericIEnumerable(Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression)
   commentId: M:UltraForce.Library.Core.Asp.Tools.UFModelExpressionTools.IsGenericIEnumerable(Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression)
@@ -100,15 +100,15 @@ items:
   summary: Checks if a model expression represents a generic IEnumerable.
   example: []
   syntax:
-    content: public static bool IsGenericIEnumerable(ModelExpression aModelExpression)
+    content: public static bool IsGenericIEnumerable(ModelExpression modelExpression)
     parameters:
-    - id: aModelExpression
+    - id: modelExpression
       type: Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression
       description: ''
     return:
       type: System.Boolean
       description: ''
-    content.vb: Public Shared Function IsGenericIEnumerable(aModelExpression As ModelExpression) As Boolean
+    content.vb: Public Shared Function IsGenericIEnumerable(modelExpression As ModelExpression) As Boolean
   overload: UltraForce.Library.Core.Asp.Tools.UFModelExpressionTools.IsGenericIEnumerable*
 references:
 - uid: Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression

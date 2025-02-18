@@ -195,14 +195,14 @@ https://docs.microsoft.com/en-us/aspnet/core/fundamentals/host/hosted-services?v
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public UFScopedBackgroundService(IServiceProvider aServices, ILogger&lt;UFScopedBackgroundService&lt;TAsynchronousExecutableService&gt;&gt; aLogger)</code></pre>
+    <pre><code class="lang-csharp hljs">public UFScopedBackgroundService(IServiceProvider services, ILogger&lt;UFScopedBackgroundService&lt;TAsynchronousExecutableService&gt;&gt; logger)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>aServices</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iserviceprovider">IServiceProvider</a></dt>
+    <dt><code>services</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.iserviceprovider">IServiceProvider</a></dt>
     <dd></dd>
-    <dt><code>aLogger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1">ILogger</a>&lt;<a class="xref" href="UltraForce.Library.Core.Asp.Services.UFScopedBackgroundService-1.html">UFScopedBackgroundService</a>&lt;TAsynchronousExecutableService&gt;&gt;</dt>
+    <dt><code>logger</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging.ilogger-1">ILogger</a>&lt;<a class="xref" href="UltraForce.Library.Core.Asp.Services.UFScopedBackgroundService-1.html">UFScopedBackgroundService</a>&lt;TAsynchronousExecutableService&gt;&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -304,7 +304,7 @@ the lifetime of the long running operation(s) being performed.</p>
 
   <h3 id="UltraForce_Library_Core_Asp_Services_UFScopedBackgroundService_1_StopAsync_System_Threading_CancellationToken_" data-uid="UltraForce.Library.Core.Asp.Services.UFScopedBackgroundService`1.StopAsync(System.Threading.CancellationToken)">
   StopAsync(CancellationToken)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Services/UFScopedBackgroundService.cs/#L107"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Services/UFScopedBackgroundService.cs/#L109"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Triggered when the application host is performing a graceful shutdown.</p>

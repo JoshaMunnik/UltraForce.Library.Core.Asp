@@ -146,11 +146,11 @@ items:
     </p>
   example: []
   syntax:
-    content: protected UFDataItemTagHelperBase(IUFModelExpressionRenderer aModelExpressionRenderer)
+    content: protected UFDataItemTagHelperBase(IUFModelExpressionRenderer modelExpressionRenderer)
     parameters:
-    - id: aModelExpressionRenderer
+    - id: modelExpressionRenderer
       type: UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer
-    content.vb: Protected Sub New(aModelExpressionRenderer As IUFModelExpressionRenderer)
+    content.vb: Protected Sub New(modelExpressionRenderer As IUFModelExpressionRenderer)
   overload: UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase.#ctor*
   nameWithType.vb: UFDataItemTagHelperBase.New(IUFModelExpressionRenderer)
   fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase.New(UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer)

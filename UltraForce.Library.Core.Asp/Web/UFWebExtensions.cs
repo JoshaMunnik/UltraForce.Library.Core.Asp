@@ -37,25 +37,27 @@ namespace UltraForce.Library.Core.Asp.Web
   public static class UFWebExtensions
   {
     /// <summary>
-    /// Adds an additional IsInRole method to test if user belongs to any of the specified roles.
+    /// Adds an additional <c>IsInRole</c> method to test if user belongs to any of the specified
+    /// roles.
     /// </summary>
-    /// <param name="aClaim">Claim to check</param>
-    /// <param name="aRoles">Roles to check</param>
+    /// <param name="claim">Claim to check</param>
+    /// <param name="roles">Roles to check</param>
     /// <returns>True if claim is at least in one role.</returns>
-    public static bool IsInRole(this ClaimsPrincipal aClaim, params string[] aRoles)
+    public static bool IsInRole(this ClaimsPrincipal claim, params string[] roles)
     {
-      return aRoles.Any(aClaim.IsInRole);
+      return roles.Any(claim.IsInRole);
     }
 
     /// <summary>
-    /// Adds an additional IsInRole method to test if user belongs to any of the specified roles.
+    /// Adds an additional <c>IsInRole</c> method to test if user belongs to any of the specified
+    /// roles.
     /// </summary>
-    /// <param name="aClaim">Claim to check</param>
-    /// <param name="aRoles">Roles to check</param>
+    /// <param name="claim">Claim to check</param>
+    /// <param name="roles">Roles to check</param>
     /// <returns>True if claim is at least in one role.</returns>
-    public static bool IsInRole(this ClaimsPrincipal aClaim, IEnumerable<string> aRoles)
+    public static bool IsInRole(this ClaimsPrincipal claim, IEnumerable<string> roles)
     {
-      return aRoles.Any(aClaim.IsInRole);
+      return roles.Any(claim.IsInRole);
     }
   }
 }

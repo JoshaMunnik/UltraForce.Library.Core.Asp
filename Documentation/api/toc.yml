@@ -76,6 +76,8 @@ items:
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons
   name: UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons
   items:
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFBaseButtonTagHelperBase
+    name: UFBaseButtonTagHelperBase
   - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFButtonTagHelperBase
     name: UFButtonTagHelperBase
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Containers
@@ -106,8 +108,12 @@ items:
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table
   name: UltraForce.Library.Core.Asp.TagHelpers.Base.Table
   items:
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableButtonTagHelperBase`3
+    name: UFTableButtonTagHelperBase<TTable, TRow, TCell>
   - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase`2
     name: UFTableCellTagHelperBase<TTable, TTableRow>
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableChildTagHelperBase`3
+    name: UFTableChildTagHelperBase<TTable, TRow, TCell>
   - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableRowTagHelperBase`1
     name: UFTableRowTagHelperBase<TTable>
   - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase

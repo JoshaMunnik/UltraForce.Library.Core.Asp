@@ -160,11 +160,11 @@ items:
     </p>
   example: []
   syntax:
-    content: protected UFSelectTagHelperBase(IHtmlGenerator aGenerator)
+    content: protected UFSelectTagHelperBase(IHtmlGenerator generator)
     parameters:
-    - id: aGenerator
+    - id: generator
       type: Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator
-    content.vb: Protected Sub New(aGenerator As IHtmlGenerator)
+    content.vb: Protected Sub New(generator As IHtmlGenerator)
   overload: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.#ctor*
   nameWithType.vb: UFSelectTagHelperBase.New(IHtmlGenerator)
   fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.New(Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator)
@@ -451,14 +451,14 @@ items:
   summary: Returns css classes for the label element.
   example: []
   syntax:
-    content: protected virtual string GetTextLabelClasses(string aType)
+    content: protected virtual string GetTextLabelClasses(string type)
     parameters:
-    - id: aType
+    - id: type
       type: System.String
     return:
       type: System.String
       description: ''
-    content.vb: Protected Overridable Function GetTextLabelClasses(aType As String) As String
+    content.vb: Protected Overridable Function GetTextLabelClasses(type As String) As String
   overload: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetTextLabelClasses*
   nameWithType.vb: UFSelectTagHelperBase.GetTextLabelClasses(String)
   fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetTextLabelClasses(String)
@@ -488,15 +488,15 @@ items:
   summary: Returns css classes for the wrapper element.
   example: []
   syntax:
-    content: protected virtual string GetTextWrapperClasses(string aType)
+    content: protected virtual string GetTextWrapperClasses(string type)
     parameters:
-    - id: aType
+    - id: type
       type: System.String
       description: ''
     return:
       type: System.String
       description: ''
-    content.vb: Protected Overridable Function GetTextWrapperClasses(aType As String) As String
+    content.vb: Protected Overridable Function GetTextWrapperClasses(type As String) As String
   overload: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetTextWrapperClasses*
   nameWithType.vb: UFSelectTagHelperBase.GetTextWrapperClasses(String)
   fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetTextWrapperClasses(String)
@@ -526,15 +526,15 @@ items:
   summary: Returns the html for the validation feedback container.
   example: []
   syntax:
-    content: protected virtual string GetValidationFeedbackContainerHtml(string anId)
+    content: protected virtual string GetValidationFeedbackContainerHtml(string id)
     parameters:
-    - id: anId
+    - id: id
       type: System.String
       description: ''
     return:
       type: System.String
       description: ''
-    content.vb: Protected Overridable Function GetValidationFeedbackContainerHtml(anId As String) As String
+    content.vb: Protected Overridable Function GetValidationFeedbackContainerHtml(id As String) As String
   overload: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetValidationFeedbackContainerHtml*
   nameWithType.vb: UFSelectTagHelperBase.GetValidationFeedbackContainerHtml(String)
   fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetValidationFeedbackContainerHtml(String)

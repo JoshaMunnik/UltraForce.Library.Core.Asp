@@ -115,12 +115,12 @@ items:
   summary: Combines the roles into a single string using ',' as a separator.
   example: []
   syntax:
-    content: public UFAuthorizeRolesAttribute(params string[] aRoles)
+    content: public UFAuthorizeRolesAttribute(params string[] roles)
     parameters:
-    - id: aRoles
+    - id: roles
       type: System.String[]
       description: Roles to combine
-    content.vb: Public Sub New(ParamArray aRoles As String())
+    content.vb: Public Sub New(ParamArray roles As String())
   overload: UltraForce.Library.Core.Asp.Annotations.UFAuthorizeRolesAttribute.#ctor*
   nameWithType.vb: UFAuthorizeRolesAttribute.New(ParamArray String())
   fullName.vb: UltraForce.Library.Core.Asp.Annotations.UFAuthorizeRolesAttribute.New(ParamArray String())

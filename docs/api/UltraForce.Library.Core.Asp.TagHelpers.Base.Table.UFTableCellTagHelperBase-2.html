@@ -237,12 +237,12 @@ Rendered html for buttons (a div is used so that flex or grid styling can be use
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected UFTableCellTagHelperBase(IUFModelExpressionRenderer aModelExpressionRenderer)</code></pre>
+    <pre><code class="lang-csharp hljs">protected UFTableCellTagHelperBase(IUFModelExpressionRenderer modelExpressionRenderer)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>aModelExpressionRenderer</code> <a class="xref" href="UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.html">IUFModelExpressionRenderer</a></dt>
+    <dt><code>modelExpressionRenderer</code> <a class="xref" href="UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.html">IUFModelExpressionRenderer</a></dt>
     <dd></dd>
   </dl>
 
@@ -531,7 +531,7 @@ public string Width { get; set; }</code></pre>
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableCellTagHelperBase_2_GetTableCellClasses_UltraForce_Library_Core_Asp_Types_Enums_UFTableCellTypeEnum__0__1_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase`2.GetTableCellClasses(UltraForce.Library.Core.Asp.Types.Enums.UFTableCellTypeEnum,`0,`1)">
   GetTableCellClasses(UFTableCellTypeEnum, TTable, TTableRow)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableCellTagHelperBase.cs/#L209"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableCellTagHelperBase.cs/#L210"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns the css classes for the cell.</p>
@@ -539,16 +539,16 @@ public string Width { get; set; }</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected virtual string GetTableCellClasses(UFTableCellTypeEnum aType, TTable aTable, TTableRow aTableRow)</code></pre>
+    <pre><code class="lang-csharp hljs">protected virtual string GetTableCellClasses(UFTableCellTypeEnum type, TTable table, TTableRow tableRow)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>aType</code> <a class="xref" href="UltraForce.Library.Core.Asp.Types.Enums.UFTableCellTypeEnum.html">UFTableCellTypeEnum</a></dt>
+    <dt><code>type</code> <a class="xref" href="UltraForce.Library.Core.Asp.Types.Enums.UFTableCellTypeEnum.html">UFTableCellTypeEnum</a></dt>
     <dd></dd>
-    <dt><code>aTable</code> <span class="xref">TTable</span></dt>
+    <dt><code>table</code> <span class="xref">TTable</span></dt>
     <dd></dd>
-    <dt><code>aTableRow</code> <span class="xref">TTableRow</span></dt>
+    <dt><code>tableRow</code> <span class="xref">TTableRow</span></dt>
     <dd></dd>
   </dl>
 
@@ -572,7 +572,7 @@ public string Width { get; set; }</code></pre>
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableCellTagHelperBase_2_GetTableHeaderButtonClasses__0__1_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase`2.GetTableHeaderButtonClasses(`0,`1)">
   GetTableHeaderButtonClasses(TTable, TTableRow)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableCellTagHelperBase.cs/#L224"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableCellTagHelperBase.cs/#L225"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns the css classes for the buttons in the header.</p>
@@ -580,14 +580,14 @@ public string Width { get; set; }</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected virtual string GetTableHeaderButtonClasses(TTable aTable, TTableRow aTableRow)</code></pre>
+    <pre><code class="lang-csharp hljs">protected virtual string GetTableHeaderButtonClasses(TTable table, TTableRow tableRow)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>aTable</code> <span class="xref">TTable</span></dt>
+    <dt><code>table</code> <span class="xref">TTable</span></dt>
     <dd></dd>
-    <dt><code>aTableRow</code> <span class="xref">TTableRow</span></dt>
+    <dt><code>tableRow</code> <span class="xref">TTableRow</span></dt>
     <dd></dd>
   </dl>
 
@@ -620,15 +620,17 @@ public string Width { get; set; }</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override Task ProcessAsync(TagHelperContext aContext, TagHelperOutput anOutput)</code></pre>
+    <pre><code class="lang-csharp hljs">public override Task ProcessAsync(TagHelperContext context, TagHelperOutput output)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>aContext</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelpercontext">TagHelperContext</a></dt>
-    <dd></dd>
-    <dt><code>anOutput</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelperoutput">TagHelperOutput</a></dt>
-    <dd></dd>
+    <dt><code>context</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelpercontext">TagHelperContext</a></dt>
+    <dd><p>Contains information associated with the current HTML tag.</p>
+</dd>
+    <dt><code>output</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelperoutput">TagHelperOutput</a></dt>
+    <dd><p>A stateful HTML element used to generate an HTML tag.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>

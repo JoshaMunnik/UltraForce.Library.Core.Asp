@@ -27,6 +27,7 @@
 // IN THE SOFTWARE.
 // </license>
 
+using System.Diagnostics.CodeAnalysis;
 using System.Text.Encodings.Web;
 using System.Text.RegularExpressions;
 using Microsoft.AspNetCore.Mvc.Rendering;
@@ -38,6 +39,8 @@ namespace UltraForce.Library.Core.Asp.Tools
   /// <summary>
   /// Support methods for <see cref="TagHelper"/>
   /// </summary>
+  [SuppressMessage("ReSharper", "MemberCanBePrivate.Global")]
+  [SuppressMessage("ReSharper", "MemberCanBePrivate.Global")]
   public static partial class UFTagHelperTools
   {
     #region private constants
@@ -65,30 +68,30 @@ namespace UltraForce.Library.Core.Asp.Tools
     /// Sets the content to the inner html of a tag. The content is only set if there is no current
     /// content and no other tag helper as adjusted the content already. 
     /// </summary>
-    /// <param name="anOutput">Output to update content of</param>
-    /// <param name="aFactory">Factory that generates a tag to get inner content of</param>
+    /// <param name="output">Output to update content of</param>
+    /// <param name="factory">Factory that generates a tag to get inner content of</param>
     public static async Task SetContentToTagBuilderAsync(
-      TagHelperOutput anOutput,
-      Func<TagBuilder> aFactory
+      TagHelperOutput output,
+      Func<TagBuilder> factory
     )
     {
       // do not update the content if another tag helper targeting this element has already done so.
-      if (!anOutput.IsContentModified)
+      if (!output.IsContentModified)
       {
         // only replace if there is no child content
-        TagHelperContent childContent = await anOutput.GetChildContentAsync();
+        TagHelperContent childContent = await output.GetChildContentAsync();
         if (childContent.IsEmptyOrWhiteSpace)
         {
           // build tag and copy it's inner html
-          TagBuilder tagBuilder = aFactory();
+          TagBuilder tagBuilder = factory();
           if (tagBuilder is { HasInnerHtml: true })
           {
-            anOutput.Content.SetHtmlContent(tagBuilder.InnerHtml);
+            output.Content.SetHtmlContent(tagBuilder.InnerHtml);
           }
         }
         else
         {
-          anOutput.Content.SetHtmlContent(childContent);
+          output.Content.SetHtmlContent(childContent);
         }
       }
     }
@@ -97,25 +100,25 @@ namespace UltraForce.Library.Core.Asp.Tools
     /// Sets the content to a specific text. The text is only set if there is not another tag helper
     /// and the content is empty.
     /// </summary>
-    /// <param name="anOutput">Output to update</param>
-    /// <param name="aText">Text to set</param>
+    /// <param name="output">Output to update</param>
+    /// <param name="text">Text to set</param>
     public static async Task SetContentToText(
-      TagHelperOutput anOutput,
-      string aText
+      TagHelperOutput output,
+      string text
     )
     {
       // do not update the content if another tag helper targeting this element has already done so.
-      if (!anOutput.IsContentModified)
+      if (!output.IsContentModified)
       {
         // only replace if there is no child content
-        TagHelperContent childContent = await anOutput.GetChildContentAsync();
+        TagHelperContent childContent = await output.GetChildContentAsync();
         if (childContent.IsEmptyOrWhiteSpace)
         {
-          anOutput.Content.SetContent(aText);
+          output.Content.SetContent(text);
         }
         else
         {
-          anOutput.Content.SetHtmlContent(childContent);
+          output.Content.SetHtmlContent(childContent);
         }
       }
     }
@@ -124,25 +127,25 @@ namespace UltraForce.Library.Core.Asp.Tools
     /// Sets the content to a specific html. The html is only set if there is not another tag helper
     /// and the content is empty.
     /// </summary>
-    /// <param name="anOutput">Output to update</param>
-    /// <param name="anHtml">Html to set</param>
+    /// <param name="output">Output to update</param>
+    /// <param name="html">Html to set</param>
     public static async Task SetContentToHtmlAsync(
-      TagHelperOutput anOutput,
-      string anHtml
+      TagHelperOutput output,
+      string html
     )
     {
       // do not update the content if another tag helper targeting this element has already done so.
-      if (!anOutput.IsContentModified)
+      if (!output.IsContentModified)
       {
         // only replace if there is no child content
-        TagHelperContent childContent = await anOutput.GetChildContentAsync();
+        TagHelperContent childContent = await output.GetChildContentAsync();
         if (childContent.IsEmptyOrWhiteSpace)
         {
-          anOutput.Content.SetHtmlContent(anHtml);
+          output.Content.SetHtmlContent(html);
         }
         else
         {
-          anOutput.Content.SetHtmlContent(childContent);
+          output.Content.SetHtmlContent(childContent);
         }
       }
     }
@@ -151,27 +154,27 @@ namespace UltraForce.Library.Core.Asp.Tools
     /// Gets the label from a model expression, by building label with <see cref="IHtmlGenerator"/>
     /// and getting its inner html contents.
     /// </summary>
-    /// <param name="aGenerator">Generator to use</param>
-    /// <param name="aViewContext">View context to render in</param>
-    /// <param name="anExpression">Expression to get label from</param>
-    /// <param name="aLabelText">When non null, use this value instead of getting the label</param>
-    /// <returns>the inner html or aLabelText if it was not empty</returns>
+    /// <param name="generator">Generator to use</param>
+    /// <param name="viewContext">View context to render in</param>
+    /// <param name="expression">Expression to get label from</param>
+    /// <param name="labelText">When non null, use this value instead of getting the label</param>
+    /// <returns>the inner html or labelText if it was not empty</returns>
     public static string GetLabel(
-      IHtmlGenerator aGenerator,
-      ViewContext aViewContext,
-      ModelExpression? anExpression,
-      string aLabelText
+      IHtmlGenerator generator,
+      ViewContext viewContext,
+      ModelExpression? expression,
+      string labelText
     )
     {
-      string label = aLabelText;
-      if (!string.IsNullOrEmpty(label) || (anExpression == null))
+      string label = labelText;
+      if (!string.IsNullOrEmpty(label) || (expression == null))
       {
         return label;
       }
-      TagBuilder tagBuilder = aGenerator.GenerateLabel(
-        aViewContext,
-        anExpression.ModelExplorer,
-        anExpression.Name,
+      TagBuilder tagBuilder = generator.GenerateLabel(
+        viewContext,
+        expression.ModelExplorer,
+        expression.Name,
         labelText: null,
         htmlAttributes: null
       );
@@ -182,14 +185,14 @@ namespace UltraForce.Library.Core.Asp.Tools
     /// <summary>
     /// Builds a tag helper attribute list from a dictionary.
     /// </summary>
-    /// <param name="anAttributes"></param>
+    /// <param name="attributes"></param>
     /// <returns></returns>
     public static TagHelperAttributeList CreateAttributeList(
-      Dictionary<string, string> anAttributes
+      Dictionary<string, string> attributes
     )
     {
       TagHelperAttributeList attributeList = new();
-      foreach (KeyValuePair<string, string> attribute in anAttributes)
+      foreach (KeyValuePair<string, string> attribute in attributes)
       {
         attributeList.Add(
           string.IsNullOrEmpty(attribute.Value)
@@ -203,59 +206,59 @@ namespace UltraForce.Library.Core.Asp.Tools
     /// <summary>
     /// Renders a tag helper that does not use any attributes to a string.
     /// </summary>
-    /// <param name="aContent">Child content for the tag helper</param>
+    /// <param name="childContent">Child content for the tag helper</param>
     /// <typeparam name="T"></typeparam>
     /// <returns></returns>
     public static string RenderTagHelper<T>(
-      string aContent
+      string childContent
     ) where T : TagHelper, new()
     {
       DefaultTagHelperContent content = new();
-      return RenderTagHelper<T>(new TagHelperAttributeList(), content.SetHtmlContent(aContent));
+      return RenderTagHelper<T>(new TagHelperAttributeList(), content.SetHtmlContent(childContent));
     }
 
     /// <summary>
     /// Renders a tag helper that does not use any attributes to a string.
     /// </summary>
-    /// <param name="anAttributeList"></param>
-    /// <param name="aContent">Optional child content for the tag helper</param>
+    /// <param name="attributeList"></param>
+    /// <param name="childContent">Optional child content for the tag helper</param>
     /// <typeparam name="T"></typeparam>
     /// <returns></returns>
     public static string RenderTagHelper<T>(
-      Dictionary<string, string> anAttributeList,
-      string aContent
+      Dictionary<string, string> attributeList,
+      string childContent
     ) where T : TagHelper, new()
     {
       DefaultTagHelperContent content = new();
-      return RenderTagHelper<T>(anAttributeList, content.SetHtmlContent(aContent));
+      return RenderTagHelper<T>(attributeList, content.SetHtmlContent(childContent));
     }
 
     /// <summary>
     /// Renders a tag helper that does not use any attributes to a string.
     /// </summary>
-    /// <param name="aContent">Optional child content for the tag helper</param>
+    /// <param name="content">Optional child content for the tag helper</param>
     /// <typeparam name="T"></typeparam>
     /// <returns></returns>
     public static string RenderTagHelper<T>(
-      TagHelperContent? aContent = null
+      TagHelperContent? content = null
     ) where T : TagHelper, new()
     {
-      return RenderTagHelper<T>(new TagHelperAttributeList(), aContent);
+      return RenderTagHelper<T>(new TagHelperAttributeList(), content);
     }
 
     /// <summary>
     /// Renders a tag helper to a string.
     /// </summary>
-    /// <param name="anAttributes"></param>
-    /// <param name="aContent">Optional child content for the tag helper</param>
+    /// <param name="attributes"></param>
+    /// <param name="childContent">Optional child content for the tag helper</param>
     /// <typeparam name="T"></typeparam>
     /// <returns></returns>
     public static string RenderTagHelper<T>(
-      Dictionary<string, string> anAttributes,
-      TagHelperContent? aContent = null
+      Dictionary<string, string> attributes,
+      TagHelperContent? childContent = null
     ) where T : TagHelper, new()
     {
-      return RenderTagHelper<T>(CreateAttributeList(anAttributes), aContent);
+      return RenderTagHelper<T>(CreateAttributeList(attributes), childContent);
     }
 
     /// <summary>
@@ -264,31 +267,31 @@ namespace UltraForce.Library.Core.Asp.Tools
     /// See:
     /// https://github.com/MissaouiChedy/RenderingTagHelperInsideAnother/blob/master/src/RenderingTagHelperInsideAnother/TagHelpers/WrapperTagHelper.cs
     /// </summary>
-    /// <param name="anAttributeList"></param>
-    /// <param name="aContent">Optional child content for the tag helper</param>
+    /// <param name="attributeList"></param>
+    /// <param name="childContent">Optional child content for the tag helper</param>
     /// <typeparam name="T"></typeparam>
     /// <returns></returns>
     public static string RenderTagHelper<T>(
-      TagHelperAttributeList anAttributeList,
-      TagHelperContent? aContent = null
+      TagHelperAttributeList attributeList,
+      TagHelperContent? childContent = null
     ) where T : TagHelper, new()
     {
       T tagHelper = new();
       TagHelperOutput output = new(
         tagName: "div",
-        attributes: anAttributeList,
+        attributes: attributeList,
         getChildContentAsync: (
             useCachedResult,
             encoder
           ) =>
-          Task.Run<TagHelperContent>(() => aContent ?? new DefaultTagHelperContent())
+          Task.Run<TagHelperContent>(() => childContent ?? new DefaultTagHelperContent())
       )
       {
         TagMode = TagMode.StartTagAndEndTag
       };
-      output.Content.SetHtmlContent(aContent);
+      output.Content.SetHtmlContent(childContent);
       TagHelperContext context = new(
-        allAttributes: anAttributeList,
+        allAttributes: attributeList,
         items: new Dictionary<object, object>(),
         uniqueId: Guid.NewGuid().ToString()
       );
@@ -302,73 +305,75 @@ namespace UltraForce.Library.Core.Asp.Tools
     /// See:
     /// https://github.com/MissaouiChedy/RenderingTagHelperInsideAnother/blob/master/src/RenderingTagHelperInsideAnother/TagHelpers/WrapperTagHelper.cs
     /// </summary>
-    /// <param name="anOutput"></param>
-    /// <param name="anEncoder"></param>
+    /// <param name="output"></param>
+    /// <param name="encoder"></param>
     /// <returns></returns>
     public static string RenderTagHelperOutput(
-      TagHelperOutput anOutput,
-      HtmlEncoder? anEncoder = null
+      TagHelperOutput output,
+      HtmlEncoder? encoder = null
     )
     {
       using StringWriter writer = new();
-      anOutput.WriteTo(writer, anEncoder ?? HtmlEncoder.Default);
+      output.WriteTo(writer, encoder ?? HtmlEncoder.Default);
       return writer.ToString();
     }
 
     /// <summary>
     /// Tries to find an attribute with a certain name.
     /// </summary>
-    /// <param name="aList"></param>
-    /// <param name="aName"></param>
+    /// <param name="list"></param>
+    /// <param name="name"></param>
     /// <returns></returns>
     public static TagHelperAttribute? FindAttribute(
-      TagHelperAttributeList aList,
-      string aName
+      TagHelperAttributeList list,
+      string name
     )
     {
-      return aList.FirstOrDefault(tagHelperAttribute => tagHelperAttribute.Name == aName);
+      return list.FirstOrDefault(tagHelperAttribute => tagHelperAttribute.Name == name);
     }
 
     /// <summary>
-    /// Adds a value for an attribute. If the attribute exists, the aValue gets inserted before
+    /// Adds a value for an attribute. If the attribute exists, the value gets inserted before
     /// the attributes original value.
     /// </summary>
-    /// <param name="anAttributes"></param>
-    /// <param name="anAttribute"></param>
-    /// <param name="aValue"></param>
-    /// <param name="aSeparator"></param>
+    /// <param name="attributes"></param>
+    /// <param name="attribute"></param>
+    /// <param name="value"></param>
+    /// <param name="separator">
+    /// Used when value is inserted before the original value. Default is a space.
+    /// </param>
     public static void AddAttribute(
-      TagHelperAttributeList anAttributes,
-      string anAttribute,
-      string aValue,
-      string aSeparator = " "
+      TagHelperAttributeList attributes,
+      string attribute,
+      string value,
+      string separator = " "
     )
     {
-      string value = aValue.Trim();
-      if (string.IsNullOrEmpty(value))
+      string trimmedValue = value.Trim();
+      if (string.IsNullOrEmpty(trimmedValue))
       {
         return;
       }
-      TagHelperAttribute? attribute = FindAttribute(anAttributes, anAttribute);
-      if (attribute != null)
+      TagHelperAttribute? existingAttribute = FindAttribute(attributes, attribute);
+      if (existingAttribute != null)
       {
-        value = $"{value}{aSeparator}{attribute.Value}";
+        trimmedValue = $"{trimmedValue}{separator}{existingAttribute.Value}";
       }
-      anAttributes.SetAttribute(anAttribute, value);
+      attributes.SetAttribute(attribute, trimmedValue);
     }
 
     /// <summary>
     /// Shortcut to add css classes to an output. The method calls <see cref="AddAttribute"/> with
     /// the correct parameters.
     /// </summary>
-    /// <param name="anOutput">Output to get attributes from</param>
-    /// <param name="aClasses">Additional css classes to add</param>
+    /// <param name="output">Output to get attributes from</param>
+    /// <param name="classes">Additional css classes to add</param>
     public static void AddClasses(
-      TagHelperOutput anOutput,
-      string aClasses
+      TagHelperOutput output,
+      string classes
     )
     {
-      AddAttribute(anOutput.Attributes, "class", aClasses);
+      AddAttribute(output.Attributes, "class", classes);
     }
 
     /// <summary>
@@ -384,7 +389,6 @@ namespace UltraForce.Library.Core.Asp.Tools
       {
         return false;
       }
-
       Match match = UnitRegex.Match(value);
       if (!match.Success)
       {
@@ -392,11 +396,47 @@ namespace UltraForce.Library.Core.Asp.Tools
       }
       string unit = match.Groups[1].Value;
       return string.IsNullOrEmpty(unit) || Array.Exists(
-        ValidUnits, 
+        ValidUnits,
         validUnit => validUnit.Equals(unit, StringComparison.OrdinalIgnoreCase)
       );
     }
-  
+
+    /// <summary>
+    /// Gets an item from the context and typecast it to a certain class type. 
+    /// </summary>
+    /// <param name="context">
+    /// Context to get value from. 
+    /// </param>
+    /// <param name="key">
+    /// Key to get value for. 
+    /// </param>
+    /// <param name="defaultValue">
+    /// Default value to use if no value was found. If null, an exception is thrown.
+    /// </param>
+    /// <typeparam name="T"></typeparam>
+    /// <returns></returns>
+    /// <exception cref="InvalidOperationException">
+    /// Thrown if there is no value stored for the key and no default value was used.
+    /// </exception>
+    public static T GetItem<T>(
+      TagHelperContext context,
+      object key,
+      T? defaultValue = null
+    )
+      where T : class
+    {
+      object? result = context.Items[key];
+      if (result != null)
+      {
+        return (result as T)!;
+      }
+      if (defaultValue != null)
+      {
+        return defaultValue;
+      }
+      throw new InvalidOperationException($"Item with key {key} not found in context.");
+    }
+
     #endregion
   }
 }

@@ -57,15 +57,15 @@ items:
   summary: Executes the service asynchronously.
   example: []
   syntax:
-    content: Task ExecuteAsync(CancellationToken aCancellationToken)
+    content: Task ExecuteAsync(CancellationToken cancellationToken)
     parameters:
-    - id: aCancellationToken
+    - id: cancellationToken
       type: System.Threading.CancellationToken
       description: A token that should be checked and the execution should stop
     return:
       type: System.Threading.Tasks.Task
       description: ''
-    content.vb: Function ExecuteAsync(aCancellationToken As CancellationToken) As Task
+    content.vb: Function ExecuteAsync(cancellationToken As CancellationToken) As Task
   overload: UltraForce.Library.Core.Asp.Services.IUFAsynchronousExecutableService.ExecuteAsync*
 references:
 - uid: Microsoft.Extensions.Hosting.BackgroundService

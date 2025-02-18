@@ -97,15 +97,15 @@ items:
   summary: Constructs an instance of <xref href="UltraForce.Library.Core.Asp.Services.UFScopedBackgroundService%601" data-throw-if-not-resolved="false"></xref>
   example: []
   syntax:
-    content: public UFScopedBackgroundService(IServiceProvider aServices, ILogger<UFScopedBackgroundService<TAsynchronousExecutableService>> aLogger)
+    content: public UFScopedBackgroundService(IServiceProvider services, ILogger<UFScopedBackgroundService<TAsynchronousExecutableService>> logger)
     parameters:
-    - id: aServices
+    - id: services
       type: System.IServiceProvider
       description: ''
-    - id: aLogger
+    - id: logger
       type: Microsoft.Extensions.Logging.ILogger{UltraForce.Library.Core.Asp.Services.UFScopedBackgroundService`1}
       description: ''
-    content.vb: Public Sub New(aServices As IServiceProvider, aLogger As ILogger(Of UFScopedBackgroundService(Of TAsynchronousExecutableService)))
+    content.vb: Public Sub New(services As IServiceProvider, logger As ILogger(Of UFScopedBackgroundService(Of TAsynchronousExecutableService)))
   overload: UltraForce.Library.Core.Asp.Services.UFScopedBackgroundService`1.#ctor*
   nameWithType.vb: UFScopedBackgroundService(Of TAsynchronousExecutableService).New(IServiceProvider, ILogger(Of UFScopedBackgroundService(Of TAsynchronousExecutableService)))
   fullName.vb: UltraForce.Library.Core.Asp.Services.UFScopedBackgroundService(Of TAsynchronousExecutableService).New(System.IServiceProvider, Microsoft.Extensions.Logging.ILogger(Of UltraForce.Library.Core.Asp.Services.UFScopedBackgroundService(Of TAsynchronousExecutableService)))
@@ -203,7 +203,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: StopAsync
     path: ../UltraForce.Library.Core.Asp/Services/UFScopedBackgroundService.cs
-    startLine: 106
+    startLine: 108
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Services

@@ -124,16 +124,16 @@ public class UFTabTagHelperBase : TagHelper
   /// <summary>
   /// Renders a radio input element, used to select the tab.
   /// </summary>
-  /// <param name="aName"></param>
-  /// <param name="anId"></param>
+  /// <param name="name"></param>
+  /// <param name="id"></param>
   /// <returns></returns>
-  private string RenderRadio(string aName, string anId)
+  private string RenderRadio(string name, string id)
   {
     return
       $"<input" +
       $" type=\"radio\"" +
-      $" name=\"{aName}\"" +
-      $" id=\"{anId}\"" +
+      $" name=\"{name}\"" +
+      $" id=\"{id}\"" +
       $" class=\"{this.GetRadioClasses()}\"" +
       $" {(this.Selected ? "checked" : "")}" +
       " />";
@@ -142,12 +142,12 @@ public class UFTabTagHelperBase : TagHelper
   /// <summary>
   /// Renders a label element, used to display the caption of the tab.
   /// </summary>
-  /// <param name="anId"></param>
+  /// <param name="id"></param>
   /// <returns></returns>
-  private string RenderLabel(string anId)
+  private string RenderLabel(string id)
   {
     return
-      $"<label for=\"{anId}\"" +
+      $"<label for=\"{id}\"" +
       $" class=\"{this.GetLabelClasses()}\"" +
       $">{this.Caption}</label>";
   }

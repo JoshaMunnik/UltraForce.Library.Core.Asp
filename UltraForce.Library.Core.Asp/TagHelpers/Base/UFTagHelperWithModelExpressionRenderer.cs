@@ -45,12 +45,12 @@ public abstract class UFTagHelperWithModelExpressionRenderer : UFTagHelperWithVi
   /// <summary>
   /// Constructs an instance of the <see cref="UFTagHelperWithModelExpressionRenderer"/>.
   /// </summary>
-  /// <param name="aModelExpressionRenderer"></param>
+  /// <param name="modelExpressionRenderer"></param>
   protected UFTagHelperWithModelExpressionRenderer(
-    IUFModelExpressionRenderer aModelExpressionRenderer
+    IUFModelExpressionRenderer modelExpressionRenderer
     )
   {
-    this.ModelExpressionRenderer = aModelExpressionRenderer;
+    this.ModelExpressionRenderer = modelExpressionRenderer;
   }
 
   #endregion

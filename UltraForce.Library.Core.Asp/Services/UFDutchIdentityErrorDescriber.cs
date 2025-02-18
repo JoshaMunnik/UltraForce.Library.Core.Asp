@@ -39,11 +39,11 @@ namespace UltraForce.Library.Core.Asp.Services
     #region Public overriden methods
 
     /// <inheritdoc />
-    public override IdentityError PasswordTooShort(int aLength)
+    public override IdentityError PasswordTooShort(int length)
     {
       return this.Replace(
-        base.PasswordTooShort(aLength),
-        $"Het wachtwoord moet tenminste {aLength} karakters bevatten."
+        base.PasswordTooShort(length),
+        $"Het wachtwoord moet tenminste {length} karakters bevatten."
       );
     }
 
@@ -84,11 +84,11 @@ namespace UltraForce.Library.Core.Asp.Services
     }
 
     /// <inheritdoc />
-    public override IdentityError PasswordRequiresUniqueChars(int anUniqueChars)
+    public override IdentityError PasswordRequiresUniqueChars(int uniqueChars)
     {
       return this.Replace(
-        base.PasswordRequiresUniqueChars(anUniqueChars),
-        $"Het wachtwoord moet tenminste {anUniqueChars} unieke karakters bevatten."
+        base.PasswordRequiresUniqueChars(uniqueChars),
+        $"Het wachtwoord moet tenminste {uniqueChars} unieke karakters bevatten."
       );
     }
 

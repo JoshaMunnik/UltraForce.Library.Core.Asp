@@ -379,13 +379,14 @@ Class UFDutchIdentityErrorDescriber  <a class="header-action link-secondary" tit
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override IdentityError PasswordRequiresUniqueChars(int anUniqueChars)</code></pre>
+    <pre><code class="lang-csharp hljs">public override IdentityError PasswordRequiresUniqueChars(int uniqueChars)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>anUniqueChars</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
+    <dt><code>uniqueChars</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The number of different chars that must be used.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>
@@ -450,13 +451,14 @@ Class UFDutchIdentityErrorDescriber  <a class="header-action link-secondary" tit
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override IdentityError PasswordTooShort(int aLength)</code></pre>
+    <pre><code class="lang-csharp hljs">public override IdentityError PasswordTooShort(int length)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>aLength</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd></dd>
+    <dt><code>length</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The length that is not long enough.</p>
+</dd>
   </dl>
 
   <h4 class="section">Returns</h4>

@@ -39,14 +39,14 @@ namespace UltraForce.Library.Core.Asp.Tools
     /// <summary>
     /// Removes all domain references from a html string.
     /// </summary>
-    /// <param name="aRequest">Request to get current domain from</param>
-    /// <param name="anHtml"></param>
+    /// <param name="request">Request to get current domain from</param>
+    /// <param name="html"></param>
     /// <returns></returns>
-    public static string RemoveDomain(HttpRequest aRequest, string anHtml)
+    public static string RemoveDomain(HttpRequest request, string html)
     {
-      return anHtml
-        .Replace($"{aRequest.Scheme}://{aRequest.Host}", "", StringComparison.OrdinalIgnoreCase)
-        .Replace($"//{aRequest.Host}", "", StringComparison.OrdinalIgnoreCase);
+      return html
+        .Replace($"{request.Scheme}://{request.Host}", "", StringComparison.OrdinalIgnoreCase)
+        .Replace($"//{request.Host}", "", StringComparison.OrdinalIgnoreCase);
     }
   }
 }

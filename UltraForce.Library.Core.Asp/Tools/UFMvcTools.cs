@@ -63,15 +63,15 @@ namespace UltraForce.Library.Core.Asp.Tools
     /// <summary>
     /// Checks if the name ends with 'Controller', if it does remove it.
     /// </summary>
-    /// <param name="aController">Name of controller</param>
+    /// <param name="controller">Name of controller</param>
     /// <returns>Name of controller without 'Controller' at the end</returns>
     public static string GetControllerName(
-      string aController
+      string controller
     )
     {
-      return aController.EndsWith(UFMvcTools.Controller)
-        ? aController[..^UFMvcTools.Controller.Length]
-        : aController;
+      return controller.EndsWith(UFMvcTools.Controller)
+        ? controller[..^UFMvcTools.Controller.Length]
+        : controller;
     }
 
     /// <summary>
@@ -87,15 +87,15 @@ namespace UltraForce.Library.Core.Asp.Tools
     /// <summary>
     /// Checks if the name ends with 'ViewComponent', if it does remove it.
     /// </summary>
-    /// <param name="aComponent">Name of component</param>
+    /// <param name="component">Name of component</param>
     /// <returns>Name of controller without 'ViewComponent' at the end</returns>
     public static string GetViewComponentName(
-      string aComponent
+      string component
     )
     {
-      return aComponent.EndsWith(UFMvcTools.ViewComponent)
-        ? aComponent[..^UFMvcTools.ViewComponent.Length]
-        : aComponent;
+      return component.EndsWith(UFMvcTools.ViewComponent)
+        ? component[..^UFMvcTools.ViewComponent.Length]
+        : component;
     }
 
     /// <summary>
@@ -116,19 +116,20 @@ namespace UltraForce.Library.Core.Asp.Tools
     /// The method replaces the following macro's: {copy}, {year} and {user}
     /// </para>
     /// </summary>
-    /// <param name="aText">text that might contain macro's</param>
-    /// <param name="aPrincipal">value to get the username from</param>
-    /// <returns>aText with the macro's replaced</returns>
+    /// <param name="text">text that might contain macro's</param>
+    /// <param name="principal">value to get the username from</param>
+    /// <returns>text with the macro's replaced</returns>
     public static string ReplaceMacros(
-      string aText,
-      IPrincipal? aPrincipal = null
+      string text,
+      IPrincipal? principal = null
     )
     {
-      string result = aText.Replace("{copy}", "&copy;")
+      string result = text
+        .Replace("{copy}", "&copy;")
         .Replace("{year}", DateTime.Now.Year.ToString());
-      if (aPrincipal is { Identity: not null })
+      if (principal is { Identity: not null })
       {
-        result = result.Replace("{user}", aPrincipal.Identity.Name);
+        result = result.Replace("{user}", principal.Identity.Name);
       }
       return result;
     }
@@ -136,16 +137,16 @@ namespace UltraForce.Library.Core.Asp.Tools
     /// <summary>
     /// Adds an item at the start of a select list. Preserves the selected state.
     /// </summary>
-    /// <param name="aList">List to add item to</param>
-    /// <param name="anItem">Item to insert at first position</param>
+    /// <param name="list">List to add item to</param>
+    /// <param name="newItem">Item to insert at first position</param>
     /// <returns>New list with item inserted</returns>
     public static SelectList AddFirstItem(
-      SelectList aList,
-      SelectListItem anItem
+      SelectList list,
+      SelectListItem newItem
     )
     {
-      List<SelectListItem> newList = aList.ToList();
-      newList.Insert(0, anItem);
+      List<SelectListItem> newList = list.ToList();
+      newList.Insert(0, newItem);
       SelectListItem? selectedItem = newList.FirstOrDefault(item => item.Selected);
       string selectedItemValue = string.Empty;
       if (selectedItem != null)
@@ -161,11 +162,11 @@ namespace UltraForce.Library.Core.Asp.Tools
     /// <summary>
     /// Creates a <see cref="SelectList"/> from an enum type.
     /// </summary>
-    /// <param name="anEmptyChoice"></param>
+    /// <param name="emptyChoice"></param>
     /// <typeparam name="T">Enum type</typeparam>
     /// <returns>Select list</returns>
     public static SelectList CreateListFromEnum<T>(
-      string? anEmptyChoice = null
+      string? emptyChoice = null
     )
       where T : struct, Enum
     {
@@ -189,33 +190,33 @@ namespace UltraForce.Library.Core.Asp.Tools
         nameof(SelectListItem.Value),
         nameof(SelectListItem.Text)
       );
-      return string.IsNullOrEmpty(anEmptyChoice)
+      return string.IsNullOrEmpty(emptyChoice)
         ? list
-        : AddFirstItem(list, new SelectListItem(anEmptyChoice, string.Empty));
+        : AddFirstItem(list, new SelectListItem(emptyChoice, string.Empty));
     }
 
     /// <summary>
     /// Gets the errors for a field as a single string
     /// </summary>
     /// <param name="aModelState">Model state to get errors from</param>
-    /// <param name="aName">Field name to get errors for</param>
-    /// <param name="aDivider">Value to place between errors</param>
-    /// <param name="anHead">Value at start, only used if there are errors</param>
-    /// <param name="aTail">Value at end, only used if there are errors</param>
+    /// <param name="name">Field name to get errors for</param>
+    /// <param name="divider">Value to place between errors</param>
+    /// <param name="head">Value at start, only used if there are errors</param>
+    /// <param name="tail">Value at end, only used if there are errors</param>
     /// <returns>
     /// A string containing all errors or <see cref="string.Empty" /> if there are no errors
     /// or no field with the specified name can be found
     /// </returns>
     public static string GetErrors(
       ModelStateDictionary aModelState,
-      string aName,
-      string aDivider = ", ",
-      string anHead = "",
-      string aTail = ""
+      string name,
+      string divider = ", ",
+      string head = "",
+      string tail = ""
     )
     {
       if (
-        string.IsNullOrEmpty(aName) || !aModelState.TryGetValue(aName, out ModelStateEntry? value)
+        string.IsNullOrEmpty(name) || !aModelState.TryGetValue(name, out ModelStateEntry? value)
       )
       {
         return string.Empty;
@@ -226,26 +227,26 @@ namespace UltraForce.Library.Core.Asp.Tools
         return string.Empty;
       }
       return errors.Aggregate(
-        anHead, 
+        head, 
         (
           current,
           error
         ) => current + error.ErrorMessage
-      ) + aTail;
+      ) + tail;
     }
 
     /// <summary>
     /// Validates an object using their validation attributes.
     /// </summary>
-    /// <param name="anObject"></param>
+    /// <param name="value"></param>
     /// <returns></returns>
     public static (bool isValid, ICollection<ValidationResult> results) Validate(
-      object anObject
+      object value
     )
     {
       ICollection<ValidationResult> results = new List<ValidationResult>();
       bool isValid = Validator.TryValidateObject(
-        anObject, new ValidationContext(anObject), results, true
+        value, new ValidationContext(value), results, true
       );
       return (isValid, results);
     }
@@ -255,25 +256,25 @@ namespace UltraForce.Library.Core.Asp.Tools
     /// a <see cref="JsonPropertyNameAttribute"/> and if so returns the name from the attribute.
     /// If no attribute can be found the property name is returned.
     /// </summary>
-    /// <param name="anObject">Object to get property from</param>
-    /// <param name="aPropertyName">Name of property</param>
+    /// <param name="value">Object to get property from</param>
+    /// <param name="propertyName">Name of property</param>
     /// <returns>Json name or value of <c>aProperty</c></returns>
     /// <exception cref="Exception">
     /// When no property can be found for the specified name
     /// </exception>
     public static string GetJsonName(
-      object anObject,
-      string aPropertyName
+      object value,
+      string propertyName
     )
     {
-      PropertyInfo? propertyInfo = anObject.GetType().GetProperty(aPropertyName);
+      PropertyInfo? propertyInfo = value.GetType().GetProperty(propertyName);
       if (propertyInfo == null)
       {
-        throw new Exception("Can not find property " + aPropertyName);
+        throw new Exception("Can not find property " + propertyName);
       }
       JsonPropertyNameAttribute? attribute =
         propertyInfo.GetCustomAttribute<JsonPropertyNameAttribute>();
-      return attribute == null ? aPropertyName : attribute.Name;
+      return attribute == null ? propertyName : attribute.Name;
     }
 
     #endregion

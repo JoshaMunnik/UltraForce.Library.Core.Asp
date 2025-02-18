@@ -68,15 +68,15 @@ items:
     converted are removed.
   example: []
   syntax:
-    content: public static string Utf8ToAscii(string aText)
+    content: public static string Utf8ToAscii(string text)
     parameters:
-    - id: aText
+    - id: text
       type: System.String
       description: Text using UTF8 encoding
     return:
       type: System.String
       description: Text using ascii encoding
-    content.vb: Public Shared Function Utf8ToAscii(aText As String) As String
+    content.vb: Public Shared Function Utf8ToAscii(text As String) As String
   overload: UltraForce.Library.Core.Asp.Tools.UFCoreStringTools.Utf8ToAscii*
   nameWithType.vb: UFCoreStringTools.Utf8ToAscii(String)
   fullName.vb: UltraForce.Library.Core.Asp.Tools.UFCoreStringTools.Utf8ToAscii(String)
@@ -106,15 +106,15 @@ items:
   summary: Gets the html content as string.
   example: []
   syntax:
-    content: public static string GetString(IHtmlContent aContent)
+    content: public static string GetString(IHtmlContent content)
     parameters:
-    - id: aContent
+    - id: content
       type: Microsoft.AspNetCore.Html.IHtmlContent
       description: Content to convert to string
     return:
       type: System.String
       description: Content as string
-    content.vb: Public Shared Function GetString(aContent As IHtmlContent) As String
+    content.vb: Public Shared Function GetString(content As IHtmlContent) As String
   overload: UltraForce.Library.Core.Asp.Tools.UFCoreStringTools.GetString*
 references:
 - uid: UltraForce.Library.Core.Asp.Tools

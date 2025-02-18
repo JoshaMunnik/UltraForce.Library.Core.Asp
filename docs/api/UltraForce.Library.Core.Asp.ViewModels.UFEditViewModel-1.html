@@ -198,12 +198,12 @@ Class UFEditViewModel&lt;T&gt;  <a class="header-action link-secondary" title="V
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected UFEditViewModel(T aValue)</code></pre>
+    <pre><code class="lang-csharp hljs">protected UFEditViewModel(T value)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>aValue</code> <span class="xref">T</span></dt>
+    <dt><code>value</code> <span class="xref">T</span></dt>
     <dd></dd>
   </dl>
 
@@ -305,12 +305,12 @@ Subclasses must implement this method.
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract T Patch(T aValue)</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract T Patch(T value)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>aValue</code> <span class="xref">T</span></dt>
+    <dt><code>value</code> <span class="xref">T</span></dt>
     <dd><p>Value to patch</p>
 </dd>
   </dl>
@@ -318,7 +318,7 @@ Subclasses must implement this method.
   <h4 class="section">Returns</h4>
   <dl class="parameters">
     <dt><span class="xref">T</span></dt>
-    <dd><p>The updated value, can either be aValue or a new instance.</p>
+    <dd><p>The updated value, can either be value or a new instance.</p>
 </dd>
   </dl>
 

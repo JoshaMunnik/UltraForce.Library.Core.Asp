@@ -100,11 +100,11 @@ items:
     </p>
   example: []
   syntax:
-    content: protected UFDataNameTagHelperBase(IUFModelExpressionRenderer aModelExpressionRenderer)
+    content: protected UFDataNameTagHelperBase(IUFModelExpressionRenderer modelExpressionRenderer)
     parameters:
-    - id: aModelExpressionRenderer
+    - id: modelExpressionRenderer
       type: UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer
-    content.vb: Protected Sub New(aModelExpressionRenderer As IUFModelExpressionRenderer)
+    content.vb: Protected Sub New(modelExpressionRenderer As IUFModelExpressionRenderer)
   overload: UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataNameTagHelperBase.#ctor*
   nameWithType.vb: UFDataNameTagHelperBase.New(IUFModelExpressionRenderer)
   fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataNameTagHelperBase.New(UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer)

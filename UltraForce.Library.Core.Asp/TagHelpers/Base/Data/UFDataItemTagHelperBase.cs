@@ -56,8 +56,8 @@ namespace UltraForce.Library.Core.Asp.TagHelpers.Base.Data;
 /// </para> 
 /// </summary>
 public abstract class UFDataItemTagHelperBase(
-  IUFModelExpressionRenderer aModelExpressionRenderer
-) : UFTagHelperWithModelExpressionRenderer(aModelExpressionRenderer)
+  IUFModelExpressionRenderer modelExpressionRenderer
+) : UFTagHelperWithModelExpressionRenderer(modelExpressionRenderer)
 {
   #region public properties
 

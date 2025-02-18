@@ -105,12 +105,12 @@ items:
   summary: Constructs an instance with an existing value.
   example: []
   syntax:
-    content: protected UFEditViewModel(T aValue)
+    content: protected UFEditViewModel(T value)
     parameters:
-    - id: aValue
+    - id: value
       type: '{T}'
       description: ''
-    content.vb: Protected Sub New(aValue As T)
+    content.vb: Protected Sub New(value As T)
   overload: UltraForce.Library.Core.Asp.ViewModels.UFEditViewModel`1.#ctor*
   nameWithType.vb: UFEditViewModel(Of T).New(T)
   fullName.vb: UltraForce.Library.Core.Asp.ViewModels.UFEditViewModel(Of T).New(T)
@@ -213,15 +213,15 @@ items:
     </p>
   example: []
   syntax:
-    content: public abstract T Patch(T aValue)
+    content: public abstract T Patch(T value)
     parameters:
-    - id: aValue
+    - id: value
       type: '{T}'
       description: Value to patch
     return:
       type: '{T}'
-      description: The updated value, can either be aValue or a new instance.
-    content.vb: Public MustOverride Function Patch(aValue As T) As T
+      description: The updated value, can either be value or a new instance.
+    content.vb: Public MustOverride Function Patch(value As T) As T
   overload: UltraForce.Library.Core.Asp.ViewModels.UFEditViewModel`1.Patch*
   nameWithType.vb: UFEditViewModel(Of T).Patch(T)
   fullName.vb: UltraForce.Library.Core.Asp.ViewModels.UFEditViewModel(Of T).Patch(T)
