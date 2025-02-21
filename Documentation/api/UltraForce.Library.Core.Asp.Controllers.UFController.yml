@@ -7,6 +7,14 @@ items:
   children:
   - UltraForce.Library.Core.Asp.Controllers.UFController.BadRequest``1(``0)
   - UltraForce.Library.Core.Asp.Controllers.UFController.Json(Microsoft.Extensions.Logging.ILogger,System.Object)
+  - UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToAction``1(System.String)
+  - UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToAction``1(System.String,System.Object)
+  - UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToIndex
+  - UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToIndex(System.String)
+  - UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToIndexWithId``1(System.String,``0)
+  - UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToIndexWithId``1(``0)
+  - UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToIndexWithId``2(``1)
+  - UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToIndex``1
   - UltraForce.Library.Core.Asp.Controllers.UFController.SessionStorage
   langs:
   - csharp
@@ -22,7 +30,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: UFController
     path: ../UltraForce.Library.Core.Asp/Controllers/UFController.cs
-    startLine: 41
+    startLine: 42
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Controllers
@@ -261,7 +269,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: SessionStorage
     path: ../UltraForce.Library.Core.Asp/Controllers/UFController.cs
-    startLine: 55
+    startLine: 56
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Controllers
@@ -295,7 +303,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: BadRequest
     path: ../UltraForce.Library.Core.Asp/Controllers/UFController.cs
-    startLine: 81
+    startLine: 82
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Controllers
@@ -345,7 +353,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Json
     path: ../UltraForce.Library.Core.Asp/Controllers/UFController.cs
-    startLine: 97
+    startLine: 103
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Controllers
@@ -371,6 +379,346 @@ items:
   nameWithType.vb: UFController.Json(ILogger, Object)
   fullName.vb: UltraForce.Library.Core.Asp.Controllers.UFController.Json(Microsoft.Extensions.Logging.ILogger, Object)
   name.vb: Json(ILogger, Object)
+- uid: UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToIndex
+  commentId: M:UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToIndex
+  id: RedirectToIndex
+  parent: UltraForce.Library.Core.Asp.Controllers.UFController
+  langs:
+  - csharp
+  - vb
+  name: RedirectToIndex()
+  nameWithType: UFController.RedirectToIndex()
+  fullName: UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToIndex()
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Controllers/UFController.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: RedirectToIndex
+    path: ../UltraForce.Library.Core.Asp/Controllers/UFController.cs
+    startLine: 119
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Controllers
+  summary: A helper method that redirects to the index action of the current controller.
+  example: []
+  syntax:
+    content: protected IActionResult RedirectToIndex()
+    return:
+      type: Microsoft.AspNetCore.Mvc.IActionResult
+      description: A <xref href="Microsoft.AspNetCore.Mvc.RedirectResult" data-throw-if-not-resolved="false"></xref>
+    content.vb: Protected Function RedirectToIndex() As IActionResult
+  overload: UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToIndex*
+- uid: UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToIndex(System.String)
+  commentId: M:UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToIndex(System.String)
+  id: RedirectToIndex(System.String)
+  parent: UltraForce.Library.Core.Asp.Controllers.UFController
+  langs:
+  - csharp
+  - vb
+  name: RedirectToIndex(string)
+  nameWithType: UFController.RedirectToIndex(string)
+  fullName: UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToIndex(string)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Controllers/UFController.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: RedirectToIndex
+    path: ../UltraForce.Library.Core.Asp/Controllers/UFController.cs
+    startLine: 132
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Controllers
+  summary: A helper method that redirects to the index action of some controller.
+  example: []
+  syntax:
+    content: protected IActionResult RedirectToIndex(string controller)
+    parameters:
+    - id: controller
+      type: System.String
+      description: Name of controller
+    return:
+      type: Microsoft.AspNetCore.Mvc.IActionResult
+      description: A <xref href="Microsoft.AspNetCore.Mvc.RedirectResult" data-throw-if-not-resolved="false"></xref>
+    content.vb: Protected Function RedirectToIndex(controller As String) As IActionResult
+  overload: UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToIndex*
+  nameWithType.vb: UFController.RedirectToIndex(String)
+  fullName.vb: UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToIndex(String)
+  name.vb: RedirectToIndex(String)
+- uid: UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToIndex``1
+  commentId: M:UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToIndex``1
+  id: RedirectToIndex``1
+  parent: UltraForce.Library.Core.Asp.Controllers.UFController
+  langs:
+  - csharp
+  - vb
+  name: RedirectToIndex<TController>()
+  nameWithType: UFController.RedirectToIndex<TController>()
+  fullName: UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToIndex<TController>()
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Controllers/UFController.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: RedirectToIndex
+    path: ../UltraForce.Library.Core.Asp/Controllers/UFController.cs
+    startLine: 148
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Controllers
+  summary: A helper method that redirects to the index action of some controller.
+  example: []
+  syntax:
+    content: 'protected IActionResult RedirectToIndex<TController>() where TController : Controller'
+    typeParameters:
+    - id: TController
+      description: >-
+        Some controller type. The method uses <xref href="UltraForce.Library.Core.Asp.Tools.UFMvcTools.GetControllerName%60%601" data-throw-if-not-resolved="false"></xref> to
+
+        get the controller name.
+    return:
+      type: Microsoft.AspNetCore.Mvc.IActionResult
+      description: A <xref href="Microsoft.AspNetCore.Mvc.RedirectResult" data-throw-if-not-resolved="false"></xref>
+    content.vb: Protected Function RedirectToIndex(Of TController As Controller)() As IActionResult
+  overload: UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToIndex*
+  nameWithType.vb: UFController.RedirectToIndex(Of TController)()
+  fullName.vb: UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToIndex(Of TController)()
+  name.vb: RedirectToIndex(Of TController)()
+- uid: UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToIndexWithId``1(``0)
+  commentId: M:UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToIndexWithId``1(``0)
+  id: RedirectToIndexWithId``1(``0)
+  parent: UltraForce.Library.Core.Asp.Controllers.UFController
+  langs:
+  - csharp
+  - vb
+  name: RedirectToIndexWithId<TId>(TId)
+  nameWithType: UFController.RedirectToIndexWithId<TId>(TId)
+  fullName: UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToIndexWithId<TId>(TId)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Controllers/UFController.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: RedirectToIndexWithId
+    path: ../UltraForce.Library.Core.Asp/Controllers/UFController.cs
+    startLine: 166
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Controllers
+  summary: >-
+    A helper method that redirects to the index action of the current controller passing a
+
+    single id parameter.
+  example: []
+  syntax:
+    content: protected IActionResult RedirectToIndexWithId<TId>(TId id)
+    parameters:
+    - id: id
+      type: '{TId}'
+      description: The id to pass on to the index action.
+    typeParameters:
+    - id: TId
+      description: Type of id.
+    return:
+      type: Microsoft.AspNetCore.Mvc.IActionResult
+      description: A <xref href="Microsoft.AspNetCore.Mvc.RedirectResult" data-throw-if-not-resolved="false"></xref>
+    content.vb: Protected Function RedirectToIndexWithId(Of TId)(id As TId) As IActionResult
+  overload: UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToIndexWithId*
+  nameWithType.vb: UFController.RedirectToIndexWithId(Of TId)(TId)
+  fullName.vb: UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToIndexWithId(Of TId)(TId)
+  name.vb: RedirectToIndexWithId(Of TId)(TId)
+- uid: UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToIndexWithId``1(System.String,``0)
+  commentId: M:UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToIndexWithId``1(System.String,``0)
+  id: RedirectToIndexWithId``1(System.String,``0)
+  parent: UltraForce.Library.Core.Asp.Controllers.UFController
+  langs:
+  - csharp
+  - vb
+  name: RedirectToIndexWithId<TId>(string, TId)
+  nameWithType: UFController.RedirectToIndexWithId<TId>(string, TId)
+  fullName: UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToIndexWithId<TId>(string, TId)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Controllers/UFController.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: RedirectToIndexWithId
+    path: ../UltraForce.Library.Core.Asp/Controllers/UFController.cs
+    startLine: 188
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Controllers
+  summary: >-
+    A helper method that redirects to the index action of some controller passing a
+
+    single id parameter.
+  example: []
+  syntax:
+    content: protected IActionResult RedirectToIndexWithId<TId>(string controller, TId id)
+    parameters:
+    - id: controller
+      type: System.String
+      description: Name of controller
+    - id: id
+      type: '{TId}'
+      description: The id to pass on to the index action.
+    typeParameters:
+    - id: TId
+      description: Type of id.
+    return:
+      type: Microsoft.AspNetCore.Mvc.IActionResult
+      description: A <xref href="Microsoft.AspNetCore.Mvc.RedirectResult" data-throw-if-not-resolved="false"></xref>
+    content.vb: Protected Function RedirectToIndexWithId(Of TId)(controller As String, id As TId) As IActionResult
+  overload: UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToIndexWithId*
+  nameWithType.vb: UFController.RedirectToIndexWithId(Of TId)(String, TId)
+  fullName.vb: UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToIndexWithId(Of TId)(String, TId)
+  name.vb: RedirectToIndexWithId(Of TId)(String, TId)
+- uid: UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToIndexWithId``2(``1)
+  commentId: M:UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToIndexWithId``2(``1)
+  id: RedirectToIndexWithId``2(``1)
+  parent: UltraForce.Library.Core.Asp.Controllers.UFController
+  langs:
+  - csharp
+  - vb
+  name: RedirectToIndexWithId<TController, TId>(TId)
+  nameWithType: UFController.RedirectToIndexWithId<TController, TId>(TId)
+  fullName: UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToIndexWithId<TController, TId>(TId)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Controllers/UFController.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: RedirectToIndexWithId
+    path: ../UltraForce.Library.Core.Asp/Controllers/UFController.cs
+    startLine: 212
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Controllers
+  summary: >-
+    A helper method that redirects to the index action of some controller passing a
+
+    single id parameter.
+  example: []
+  syntax:
+    content: 'protected IActionResult RedirectToIndexWithId<TController, TId>(TId id) where TController : Controller'
+    parameters:
+    - id: id
+      type: '{TId}'
+      description: The id to pass on to the index action.
+    typeParameters:
+    - id: TController
+      description: >-
+        Some controller type. The method uses <xref href="UltraForce.Library.Core.Asp.Tools.UFMvcTools.GetControllerName%60%601" data-throw-if-not-resolved="false"></xref> to
+
+        get the controller name.
+    - id: TId
+      description: Type of id.
+    return:
+      type: Microsoft.AspNetCore.Mvc.IActionResult
+      description: A <xref href="Microsoft.AspNetCore.Mvc.RedirectResult" data-throw-if-not-resolved="false"></xref>
+    content.vb: Protected Function RedirectToIndexWithId(Of TController As Controller, TId)(id As TId) As IActionResult
+  overload: UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToIndexWithId*
+  nameWithType.vb: UFController.RedirectToIndexWithId(Of TController, TId)(TId)
+  fullName.vb: UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToIndexWithId(Of TController, TId)(TId)
+  name.vb: RedirectToIndexWithId(Of TController, TId)(TId)
+- uid: UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToAction``1(System.String)
+  commentId: M:UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToAction``1(System.String)
+  id: RedirectToAction``1(System.String)
+  parent: UltraForce.Library.Core.Asp.Controllers.UFController
+  langs:
+  - csharp
+  - vb
+  name: RedirectToAction<TController>(string)
+  nameWithType: UFController.RedirectToAction<TController>(string)
+  fullName: UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToAction<TController>(string)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Controllers/UFController.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: RedirectToAction
+    path: ../UltraForce.Library.Core.Asp/Controllers/UFController.cs
+    startLine: 231
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Controllers
+  summary: Redirect to an action of some controller.
+  example: []
+  syntax:
+    content: 'protected IActionResult RedirectToAction<TController>(string action) where TController : Controller'
+    parameters:
+    - id: action
+      type: System.String
+      description: Action to redirect to.
+    typeParameters:
+    - id: TController
+      description: >-
+        Some controller type. The method uses <xref href="UltraForce.Library.Core.Asp.Tools.UFMvcTools.GetControllerName%60%601" data-throw-if-not-resolved="false"></xref> to
+
+        get the controller name.
+    return:
+      type: Microsoft.AspNetCore.Mvc.IActionResult
+      description: ''
+    content.vb: Protected Function RedirectToAction(Of TController As Controller)(action As String) As IActionResult
+  overload: UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToAction*
+  nameWithType.vb: UFController.RedirectToAction(Of TController)(String)
+  fullName.vb: UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToAction(Of TController)(String)
+  name.vb: RedirectToAction(Of TController)(String)
+- uid: UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToAction``1(System.String,System.Object)
+  commentId: M:UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToAction``1(System.String,System.Object)
+  id: RedirectToAction``1(System.String,System.Object)
+  parent: UltraForce.Library.Core.Asp.Controllers.UFController
+  langs:
+  - csharp
+  - vb
+  name: RedirectToAction<TController>(string, object)
+  nameWithType: UFController.RedirectToAction<TController>(string, object)
+  fullName: UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToAction<TController>(string, object)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Controllers/UFController.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: RedirectToAction
+    path: ../UltraForce.Library.Core.Asp/Controllers/UFController.cs
+    startLine: 253
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Controllers
+  summary: Redirect to an action of some controller.
+  example: []
+  syntax:
+    content: 'protected IActionResult RedirectToAction<TController>(string action, object routeValues) where TController : Controller'
+    parameters:
+    - id: action
+      type: System.String
+      description: Action to redirect to.
+    - id: routeValues
+      type: System.Object
+      description: Values to pass to the action.
+    typeParameters:
+    - id: TController
+      description: >-
+        Some controller type. The method uses <xref href="UltraForce.Library.Core.Asp.Tools.UFMvcTools.GetControllerName%60%601" data-throw-if-not-resolved="false"></xref> to
+
+        get the controller name.
+    return:
+      type: Microsoft.AspNetCore.Mvc.IActionResult
+      description: ''
+    content.vb: Protected Function RedirectToAction(Of TController As Controller)(action As String, routeValues As Object) As IActionResult
+  overload: UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToAction*
+  nameWithType.vb: UFController.RedirectToAction(Of TController)(String, Object)
+  fullName.vb: UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToAction(Of TController)(String, Object)
+  name.vb: RedirectToAction(Of TController)(String, Object)
 references:
 - uid: Microsoft.AspNetCore.Mvc.Controller
   commentId: T:Microsoft.AspNetCore.Mvc.Controller
@@ -10316,3 +10664,78 @@ references:
     name: Logging
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/microsoft.extensions.logging
+- uid: Microsoft.AspNetCore.Mvc.RedirectResult
+  commentId: T:Microsoft.AspNetCore.Mvc.RedirectResult
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.redirectresult
+  name: RedirectResult
+  nameWithType: RedirectResult
+  fullName: Microsoft.AspNetCore.Mvc.RedirectResult
+- uid: UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToIndex*
+  commentId: Overload:UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToIndex
+  href: UltraForce.Library.Core.Asp.Controllers.UFController.html#UltraForce_Library_Core_Asp_Controllers_UFController_RedirectToIndex
+  name: RedirectToIndex
+  nameWithType: UFController.RedirectToIndex
+  fullName: UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToIndex
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: UltraForce.Library.Core.Asp.Tools.UFMvcTools.GetControllerName``1
+  commentId: M:UltraForce.Library.Core.Asp.Tools.UFMvcTools.GetControllerName``1
+  href: UltraForce.Library.Core.Asp.Tools.UFMvcTools.html#UltraForce_Library_Core_Asp_Tools_UFMvcTools_GetControllerName__1
+  name: GetControllerName<T>()
+  nameWithType: UFMvcTools.GetControllerName<T>()
+  fullName: UltraForce.Library.Core.Asp.Tools.UFMvcTools.GetControllerName<T>()
+  nameWithType.vb: UFMvcTools.GetControllerName(Of T)()
+  fullName.vb: UltraForce.Library.Core.Asp.Tools.UFMvcTools.GetControllerName(Of T)()
+  name.vb: GetControllerName(Of T)()
+  spec.csharp:
+  - uid: UltraForce.Library.Core.Asp.Tools.UFMvcTools.GetControllerName``1
+    name: GetControllerName
+    href: UltraForce.Library.Core.Asp.Tools.UFMvcTools.html#UltraForce_Library_Core_Asp_Tools_UFMvcTools_GetControllerName__1
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.Core.Asp.Tools.UFMvcTools.GetControllerName``1
+    name: GetControllerName
+    href: UltraForce.Library.Core.Asp.Tools.UFMvcTools.html#UltraForce_Library_Core_Asp_Tools_UFMvcTools_GetControllerName__1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: )
+- uid: UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToIndexWithId*
+  commentId: Overload:UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToIndexWithId
+  href: UltraForce.Library.Core.Asp.Controllers.UFController.html#UltraForce_Library_Core_Asp_Controllers_UFController_RedirectToIndexWithId__1___0_
+  name: RedirectToIndexWithId
+  nameWithType: UFController.RedirectToIndexWithId
+  fullName: UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToIndexWithId
+- uid: '{TId}'
+  commentId: '!:TId'
+  definition: TId
+  name: TId
+  nameWithType: TId
+  fullName: TId
+- uid: TId
+  name: TId
+  nameWithType: TId
+  fullName: TId
+- uid: UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToAction*
+  commentId: Overload:UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToAction
+  href: UltraForce.Library.Core.Asp.Controllers.UFController.html#UltraForce_Library_Core_Asp_Controllers_UFController_RedirectToAction__1_System_String_
+  name: RedirectToAction
+  nameWithType: UFController.RedirectToAction
+  fullName: UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToAction

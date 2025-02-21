@@ -161,6 +161,7 @@ public abstract class UFFlexTagHelperBase(UFFlexTypeEnum flexType) : TagHelper
       UFFlexDistributeContentEnum.SpaceAround => " uf-flex--distribute-main-around",
       UFFlexDistributeContentEnum.SpaceEvenly => " uf-flex--distribute-main-evenly",
       UFFlexDistributeContentEnum.Stretch => " uf-flex--distribute-main-stretch",
+      UFFlexDistributeContentEnum.SizeEvenly => " uf-flex--distribute-main-same-size",
       _ => " uf-flex--distribute-main-start"
     };
     if (this.FullWidth)

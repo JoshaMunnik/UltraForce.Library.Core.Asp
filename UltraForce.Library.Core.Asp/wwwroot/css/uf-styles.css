@@ -41,6 +41,10 @@
   align-items: baseline;
 }
 
+.uf-flex--align-cross-stretch {
+  align-items: stretch;
+}
+
 .uf-flex--distribute-cross-start {
   align-content: flex-start;
 }
@@ -95,6 +99,14 @@
 
 .uf-flex--distribute-main-stretch {
   justify-content: stretch;
+}
+
+.uf-flex--distribute-main-same-size {
+  justify-content: stretch;
+}
+
+.uf-flex--distribute-main-same-size > * {
+  flex: 1;
 }
 
 .uf-flex--has-full-width {

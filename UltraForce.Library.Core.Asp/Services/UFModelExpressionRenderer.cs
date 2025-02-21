@@ -86,7 +86,10 @@ public class UFModelExpressionRenderer : IUFModelExpressionRenderer
   /// <para>
   /// If the model expression uses the <see cref="EmailAddressAttribute"/> the value gets
   /// rendered using a mailto: link.
-  /// </para> 
+  /// </para>
+  /// <para>
+  /// If the value is an enum, the display name is used.
+  /// </para>
   /// </summary>
   /// <param name="output"></param>
   /// <param name="expression"></param>
@@ -137,7 +140,7 @@ public class UFModelExpressionRenderer : IUFModelExpressionRenderer
     {
       await UFTagHelperTools.SetContentToHtmlAsync(
         output,
-        expression.Model == null ? "-" : ((Enum)expression.Model).GetDisplayDescription()
+        expression.Model == null ? "-" : ((Enum)expression.Model).GetDisplayName()
       );
     }
     else

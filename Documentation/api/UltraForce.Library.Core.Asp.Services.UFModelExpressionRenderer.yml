@@ -149,7 +149,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: SetContentToValueAsync
     path: ../UltraForce.Library.Core.Asp/Services/UFModelExpressionRenderer.cs
-    startLine: 93
+    startLine: 96
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Services
@@ -165,6 +165,12 @@ items:
     If the model expression uses the <xref href="System.ComponentModel.DataAnnotations.EmailAddressAttribute" data-throw-if-not-resolved="false"></xref> the value gets
 
     rendered using a mailto: link.
+
+    </p>
+
+    <p>
+
+    If the value is an enum, the display name is used.
 
     </p>
   example: []
@@ -204,7 +210,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetName
     path: ../UltraForce.Library.Core.Asp/Services/UFModelExpressionRenderer.cs
-    startLine: 160
+    startLine: 163
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Services
@@ -244,7 +250,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetValueAsText
     path: ../UltraForce.Library.Core.Asp/Services/UFModelExpressionRenderer.cs
-    startLine: 176
+    startLine: 179
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Services
@@ -284,7 +290,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: HtmlGenerator
     path: ../UltraForce.Library.Core.Asp/Services/UFModelExpressionRenderer.cs
-    startLine: 223
+    startLine: 226
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Services
@@ -315,7 +321,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetCheckBoxHtml
     path: ../UltraForce.Library.Core.Asp/Services/UFModelExpressionRenderer.cs
-    startLine: 237
+    startLine: 240
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Services
@@ -359,7 +365,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetEmailLinkHtml
     path: ../UltraForce.Library.Core.Asp/Services/UFModelExpressionRenderer.cs
-    startLine: 253
+    startLine: 256
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Services
@@ -403,7 +409,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetDateTimeHtml
     path: ../UltraForce.Library.Core.Asp/Services/UFModelExpressionRenderer.cs
-    startLine: 266
+    startLine: 269
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Services
@@ -444,7 +450,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetDateHtml
     path: ../UltraForce.Library.Core.Asp/Services/UFModelExpressionRenderer.cs
-    startLine: 279
+    startLine: 282
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Services
@@ -482,7 +488,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetTimeHtml
     path: ../UltraForce.Library.Core.Asp/Services/UFModelExpressionRenderer.cs
-    startLine: 292
+    startLine: 295
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Services

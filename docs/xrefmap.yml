@@ -76,6 +76,96 @@ references:
   isSpec: "True"
   fullName: UltraForce.Library.Core.Asp.Controllers.UFController.Json
   nameWithType: UFController.Json
+- uid: UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToAction*
+  name: RedirectToAction
+  href: api/UltraForce.Library.Core.Asp.Controllers.UFController.html#UltraForce_Library_Core_Asp_Controllers_UFController_RedirectToAction_
+  commentId: Overload:UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToAction
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToAction
+  nameWithType: UFController.RedirectToAction
+- uid: UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToAction``1(System.String)
+  name: RedirectToAction<TController>(string)
+  href: api/UltraForce.Library.Core.Asp.Controllers.UFController.html#UltraForce_Library_Core_Asp_Controllers_UFController_RedirectToAction__1_System_String_
+  commentId: M:UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToAction``1(System.String)
+  name.vb: RedirectToAction(Of TController)(String)
+  fullName: UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToAction<TController>(string)
+  fullName.vb: UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToAction(Of TController)(String)
+  nameWithType: UFController.RedirectToAction<TController>(string)
+  nameWithType.vb: UFController.RedirectToAction(Of TController)(String)
+- uid: UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToAction``1(System.String,System.Object)
+  name: RedirectToAction<TController>(string, object)
+  href: api/UltraForce.Library.Core.Asp.Controllers.UFController.html#UltraForce_Library_Core_Asp_Controllers_UFController_RedirectToAction__1_System_String_System_Object_
+  commentId: M:UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToAction``1(System.String,System.Object)
+  name.vb: RedirectToAction(Of TController)(String, Object)
+  fullName: UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToAction<TController>(string, object)
+  fullName.vb: UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToAction(Of TController)(String, Object)
+  nameWithType: UFController.RedirectToAction<TController>(string, object)
+  nameWithType.vb: UFController.RedirectToAction(Of TController)(String, Object)
+- uid: UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToIndex
+  name: RedirectToIndex()
+  href: api/UltraForce.Library.Core.Asp.Controllers.UFController.html#UltraForce_Library_Core_Asp_Controllers_UFController_RedirectToIndex
+  commentId: M:UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToIndex
+  fullName: UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToIndex()
+  nameWithType: UFController.RedirectToIndex()
+- uid: UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToIndex(System.String)
+  name: RedirectToIndex(string)
+  href: api/UltraForce.Library.Core.Asp.Controllers.UFController.html#UltraForce_Library_Core_Asp_Controllers_UFController_RedirectToIndex_System_String_
+  commentId: M:UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToIndex(System.String)
+  name.vb: RedirectToIndex(String)
+  fullName: UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToIndex(string)
+  fullName.vb: UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToIndex(String)
+  nameWithType: UFController.RedirectToIndex(string)
+  nameWithType.vb: UFController.RedirectToIndex(String)
+- uid: UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToIndex*
+  name: RedirectToIndex
+  href: api/UltraForce.Library.Core.Asp.Controllers.UFController.html#UltraForce_Library_Core_Asp_Controllers_UFController_RedirectToIndex_
+  commentId: Overload:UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToIndex
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToIndex
+  nameWithType: UFController.RedirectToIndex
+- uid: UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToIndexWithId*
+  name: RedirectToIndexWithId
+  href: api/UltraForce.Library.Core.Asp.Controllers.UFController.html#UltraForce_Library_Core_Asp_Controllers_UFController_RedirectToIndexWithId_
+  commentId: Overload:UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToIndexWithId
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToIndexWithId
+  nameWithType: UFController.RedirectToIndexWithId
+- uid: UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToIndexWithId``1(System.String,``0)
+  name: RedirectToIndexWithId<TId>(string, TId)
+  href: api/UltraForce.Library.Core.Asp.Controllers.UFController.html#UltraForce_Library_Core_Asp_Controllers_UFController_RedirectToIndexWithId__1_System_String___0_
+  commentId: M:UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToIndexWithId``1(System.String,``0)
+  name.vb: RedirectToIndexWithId(Of TId)(String, TId)
+  fullName: UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToIndexWithId<TId>(string, TId)
+  fullName.vb: UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToIndexWithId(Of TId)(String, TId)
+  nameWithType: UFController.RedirectToIndexWithId<TId>(string, TId)
+  nameWithType.vb: UFController.RedirectToIndexWithId(Of TId)(String, TId)
+- uid: UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToIndexWithId``1(``0)
+  name: RedirectToIndexWithId<TId>(TId)
+  href: api/UltraForce.Library.Core.Asp.Controllers.UFController.html#UltraForce_Library_Core_Asp_Controllers_UFController_RedirectToIndexWithId__1___0_
+  commentId: M:UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToIndexWithId``1(``0)
+  name.vb: RedirectToIndexWithId(Of TId)(TId)
+  fullName: UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToIndexWithId<TId>(TId)
+  fullName.vb: UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToIndexWithId(Of TId)(TId)
+  nameWithType: UFController.RedirectToIndexWithId<TId>(TId)
+  nameWithType.vb: UFController.RedirectToIndexWithId(Of TId)(TId)
+- uid: UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToIndexWithId``2(``1)
+  name: RedirectToIndexWithId<TController, TId>(TId)
+  href: api/UltraForce.Library.Core.Asp.Controllers.UFController.html#UltraForce_Library_Core_Asp_Controllers_UFController_RedirectToIndexWithId__2___1_
+  commentId: M:UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToIndexWithId``2(``1)
+  name.vb: RedirectToIndexWithId(Of TController, TId)(TId)
+  fullName: UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToIndexWithId<TController, TId>(TId)
+  fullName.vb: UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToIndexWithId(Of TController, TId)(TId)
+  nameWithType: UFController.RedirectToIndexWithId<TController, TId>(TId)
+  nameWithType.vb: UFController.RedirectToIndexWithId(Of TController, TId)(TId)
+- uid: UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToIndex``1
+  name: RedirectToIndex<TController>()
+  href: api/UltraForce.Library.Core.Asp.Controllers.UFController.html#UltraForce_Library_Core_Asp_Controllers_UFController_RedirectToIndex__1
+  commentId: M:UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToIndex``1
+  name.vb: RedirectToIndex(Of TController)()
+  fullName: UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToIndex<TController>()
+  fullName.vb: UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToIndex(Of TController)()
+  nameWithType: UFController.RedirectToIndex<TController>()
+  nameWithType.vb: UFController.RedirectToIndex(Of TController)()
 - uid: UltraForce.Library.Core.Asp.Controllers.UFController.SessionStorage
   name: SessionStorage
   href: api/UltraForce.Library.Core.Asp.Controllers.UFController.html#UltraForce_Library_Core_Asp_Controllers_UFController_SessionStorage
@@ -11634,32 +11724,74 @@ references:
   commentId: T:UltraForce.Library.Core.Asp.Tools.UFModelExpressionTools
   fullName: UltraForce.Library.Core.Asp.Tools.UFModelExpressionTools
   nameWithType: UFModelExpressionTools
-- uid: UltraForce.Library.Core.Asp.Tools.UFModelExpressionTools.IsGenericIEnumerable(Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression)
-  name: IsGenericIEnumerable(ModelExpression)
-  href: api/UltraForce.Library.Core.Asp.Tools.UFModelExpressionTools.html#UltraForce_Library_Core_Asp_Tools_UFModelExpressionTools_IsGenericIEnumerable_Microsoft_AspNetCore_Mvc_ViewFeatures_ModelExpression_
-  commentId: M:UltraForce.Library.Core.Asp.Tools.UFModelExpressionTools.IsGenericIEnumerable(Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression)
-  fullName: UltraForce.Library.Core.Asp.Tools.UFModelExpressionTools.IsGenericIEnumerable(Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression)
-  nameWithType: UFModelExpressionTools.IsGenericIEnumerable(ModelExpression)
-- uid: UltraForce.Library.Core.Asp.Tools.UFModelExpressionTools.IsGenericIEnumerable*
-  name: IsGenericIEnumerable
-  href: api/UltraForce.Library.Core.Asp.Tools.UFModelExpressionTools.html#UltraForce_Library_Core_Asp_Tools_UFModelExpressionTools_IsGenericIEnumerable_
-  commentId: Overload:UltraForce.Library.Core.Asp.Tools.UFModelExpressionTools.IsGenericIEnumerable
+- uid: UltraForce.Library.Core.Asp.Tools.UFModelExpressionTools.GetAttribute*
+  name: GetAttribute
+  href: api/UltraForce.Library.Core.Asp.Tools.UFModelExpressionTools.html#UltraForce_Library_Core_Asp_Tools_UFModelExpressionTools_GetAttribute_
+  commentId: Overload:UltraForce.Library.Core.Asp.Tools.UFModelExpressionTools.GetAttribute
   isSpec: "True"
-  fullName: UltraForce.Library.Core.Asp.Tools.UFModelExpressionTools.IsGenericIEnumerable
-  nameWithType: UFModelExpressionTools.IsGenericIEnumerable
-- uid: UltraForce.Library.Core.Asp.Tools.UFModelExpressionTools.IsIEnumerable(Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression)
-  name: IsIEnumerable(ModelExpression)
-  href: api/UltraForce.Library.Core.Asp.Tools.UFModelExpressionTools.html#UltraForce_Library_Core_Asp_Tools_UFModelExpressionTools_IsIEnumerable_Microsoft_AspNetCore_Mvc_ViewFeatures_ModelExpression_
-  commentId: M:UltraForce.Library.Core.Asp.Tools.UFModelExpressionTools.IsIEnumerable(Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression)
-  fullName: UltraForce.Library.Core.Asp.Tools.UFModelExpressionTools.IsIEnumerable(Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression)
-  nameWithType: UFModelExpressionTools.IsIEnumerable(ModelExpression)
-- uid: UltraForce.Library.Core.Asp.Tools.UFModelExpressionTools.IsIEnumerable*
-  name: IsIEnumerable
-  href: api/UltraForce.Library.Core.Asp.Tools.UFModelExpressionTools.html#UltraForce_Library_Core_Asp_Tools_UFModelExpressionTools_IsIEnumerable_
-  commentId: Overload:UltraForce.Library.Core.Asp.Tools.UFModelExpressionTools.IsIEnumerable
+  fullName: UltraForce.Library.Core.Asp.Tools.UFModelExpressionTools.GetAttribute
+  nameWithType: UFModelExpressionTools.GetAttribute
+- uid: UltraForce.Library.Core.Asp.Tools.UFModelExpressionTools.GetAttribute``1(Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression)
+  name: GetAttribute<TAttribute>(ModelExpression)
+  href: api/UltraForce.Library.Core.Asp.Tools.UFModelExpressionTools.html#UltraForce_Library_Core_Asp_Tools_UFModelExpressionTools_GetAttribute__1_Microsoft_AspNetCore_Mvc_ViewFeatures_ModelExpression_
+  commentId: M:UltraForce.Library.Core.Asp.Tools.UFModelExpressionTools.GetAttribute``1(Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression)
+  name.vb: GetAttribute(Of TAttribute)(ModelExpression)
+  fullName: UltraForce.Library.Core.Asp.Tools.UFModelExpressionTools.GetAttribute<TAttribute>(Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression)
+  fullName.vb: UltraForce.Library.Core.Asp.Tools.UFModelExpressionTools.GetAttribute(Of TAttribute)(Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression)
+  nameWithType: UFModelExpressionTools.GetAttribute<TAttribute>(ModelExpression)
+  nameWithType.vb: UFModelExpressionTools.GetAttribute(Of TAttribute)(ModelExpression)
+- uid: UltraForce.Library.Core.Asp.Tools.UFModelExpressionTools.GetEnumValues(Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression)
+  name: GetEnumValues(ModelExpression)
+  href: api/UltraForce.Library.Core.Asp.Tools.UFModelExpressionTools.html#UltraForce_Library_Core_Asp_Tools_UFModelExpressionTools_GetEnumValues_Microsoft_AspNetCore_Mvc_ViewFeatures_ModelExpression_
+  commentId: M:UltraForce.Library.Core.Asp.Tools.UFModelExpressionTools.GetEnumValues(Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression)
+  fullName: UltraForce.Library.Core.Asp.Tools.UFModelExpressionTools.GetEnumValues(Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression)
+  nameWithType: UFModelExpressionTools.GetEnumValues(ModelExpression)
+- uid: UltraForce.Library.Core.Asp.Tools.UFModelExpressionTools.GetEnumValues*
+  name: GetEnumValues
+  href: api/UltraForce.Library.Core.Asp.Tools.UFModelExpressionTools.html#UltraForce_Library_Core_Asp_Tools_UFModelExpressionTools_GetEnumValues_
+  commentId: Overload:UltraForce.Library.Core.Asp.Tools.UFModelExpressionTools.GetEnumValues
   isSpec: "True"
-  fullName: UltraForce.Library.Core.Asp.Tools.UFModelExpressionTools.IsIEnumerable
-  nameWithType: UFModelExpressionTools.IsIEnumerable
+  fullName: UltraForce.Library.Core.Asp.Tools.UFModelExpressionTools.GetEnumValues
+  nameWithType: UFModelExpressionTools.GetEnumValues
+- uid: UltraForce.Library.Core.Asp.Tools.UFModelExpressionTools.IsEnumType(Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression)
+  name: IsEnumType(ModelExpression)
+  href: api/UltraForce.Library.Core.Asp.Tools.UFModelExpressionTools.html#UltraForce_Library_Core_Asp_Tools_UFModelExpressionTools_IsEnumType_Microsoft_AspNetCore_Mvc_ViewFeatures_ModelExpression_
+  commentId: M:UltraForce.Library.Core.Asp.Tools.UFModelExpressionTools.IsEnumType(Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression)
+  fullName: UltraForce.Library.Core.Asp.Tools.UFModelExpressionTools.IsEnumType(Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression)
+  nameWithType: UFModelExpressionTools.IsEnumType(ModelExpression)
+- uid: UltraForce.Library.Core.Asp.Tools.UFModelExpressionTools.IsEnumType*
+  name: IsEnumType
+  href: api/UltraForce.Library.Core.Asp.Tools.UFModelExpressionTools.html#UltraForce_Library_Core_Asp_Tools_UFModelExpressionTools_IsEnumType_
+  commentId: Overload:UltraForce.Library.Core.Asp.Tools.UFModelExpressionTools.IsEnumType
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Asp.Tools.UFModelExpressionTools.IsEnumType
+  nameWithType: UFModelExpressionTools.IsEnumType
+- uid: UltraForce.Library.Core.Asp.Tools.UFModelExpressionTools.IsEnumerable(Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression)
+  name: IsEnumerable(ModelExpression)
+  href: api/UltraForce.Library.Core.Asp.Tools.UFModelExpressionTools.html#UltraForce_Library_Core_Asp_Tools_UFModelExpressionTools_IsEnumerable_Microsoft_AspNetCore_Mvc_ViewFeatures_ModelExpression_
+  commentId: M:UltraForce.Library.Core.Asp.Tools.UFModelExpressionTools.IsEnumerable(Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression)
+  fullName: UltraForce.Library.Core.Asp.Tools.UFModelExpressionTools.IsEnumerable(Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression)
+  nameWithType: UFModelExpressionTools.IsEnumerable(ModelExpression)
+- uid: UltraForce.Library.Core.Asp.Tools.UFModelExpressionTools.IsEnumerable*
+  name: IsEnumerable
+  href: api/UltraForce.Library.Core.Asp.Tools.UFModelExpressionTools.html#UltraForce_Library_Core_Asp_Tools_UFModelExpressionTools_IsEnumerable_
+  commentId: Overload:UltraForce.Library.Core.Asp.Tools.UFModelExpressionTools.IsEnumerable
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Asp.Tools.UFModelExpressionTools.IsEnumerable
+  nameWithType: UFModelExpressionTools.IsEnumerable
+- uid: UltraForce.Library.Core.Asp.Tools.UFModelExpressionTools.IsGenericEnumerable(Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression)
+  name: IsGenericEnumerable(ModelExpression)
+  href: api/UltraForce.Library.Core.Asp.Tools.UFModelExpressionTools.html#UltraForce_Library_Core_Asp_Tools_UFModelExpressionTools_IsGenericEnumerable_Microsoft_AspNetCore_Mvc_ViewFeatures_ModelExpression_
+  commentId: M:UltraForce.Library.Core.Asp.Tools.UFModelExpressionTools.IsGenericEnumerable(Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression)
+  fullName: UltraForce.Library.Core.Asp.Tools.UFModelExpressionTools.IsGenericEnumerable(Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression)
+  nameWithType: UFModelExpressionTools.IsGenericEnumerable(ModelExpression)
+- uid: UltraForce.Library.Core.Asp.Tools.UFModelExpressionTools.IsGenericEnumerable*
+  name: IsGenericEnumerable
+  href: api/UltraForce.Library.Core.Asp.Tools.UFModelExpressionTools.html#UltraForce_Library_Core_Asp_Tools_UFModelExpressionTools_IsGenericEnumerable_
+  commentId: Overload:UltraForce.Library.Core.Asp.Tools.UFModelExpressionTools.IsGenericEnumerable
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Asp.Tools.UFModelExpressionTools.IsGenericEnumerable
+  nameWithType: UFModelExpressionTools.IsGenericEnumerable
 - uid: UltraForce.Library.Core.Asp.Tools.UFMvcTools
   name: UFMvcTools
   href: api/UltraForce.Library.Core.Asp.Tools.UFMvcTools.html
@@ -36746,6 +36878,12 @@ references:
   commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContentEnum.End
   fullName: UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContentEnum.End
   nameWithType: UFFlexDistributeContentEnum.End
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContentEnum.SizeEvenly
+  name: SizeEvenly
+  href: api/UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContentEnum.html#UltraForce_Library_Core_Asp_Types_Enums_UFFlexDistributeContentEnum_SizeEvenly
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContentEnum.SizeEvenly
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContentEnum.SizeEvenly
+  nameWithType: UFFlexDistributeContentEnum.SizeEvenly
 - uid: UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContentEnum.SpaceAround
   name: SpaceAround
   href: api/UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContentEnum.html#UltraForce_Library_Core_Asp_Types_Enums_UFFlexDistributeContentEnum_SpaceAround

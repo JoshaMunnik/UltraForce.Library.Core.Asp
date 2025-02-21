@@ -28,6 +28,8 @@
 // </license>
 
 using System.Collections;
+using System.Reflection;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Microsoft.AspNetCore.Mvc.ViewFeatures;
 
 namespace UltraForce.Library.Core.Asp.Tools;
@@ -42,21 +44,72 @@ public static class UFModelExpressionTools
   /// </summary>
   /// <param name="modelExpression"></param>
   /// <returns></returns>
-  public static bool IsIEnumerable(ModelExpression modelExpression)
+  public static bool IsEnumerable(
+    ModelExpression modelExpression
+  )
   {
     Type modelType = modelExpression.Model.GetType();
     return typeof(IEnumerable).IsAssignableFrom(modelType);
   }
-  
+
   /// <summary>
   /// Checks if a model expression represents a generic IEnumerable.
   /// </summary>
   /// <param name="modelExpression"></param>
   /// <returns></returns>
-  public static bool IsGenericIEnumerable(ModelExpression modelExpression)
+  public static bool IsGenericEnumerable(
+    ModelExpression modelExpression
+  )
   {
     Type modelType = modelExpression.Model.GetType();
     return modelType.IsGenericType && modelType.GetGenericTypeDefinition() == typeof(IEnumerable<>);
   }
+
+  /// <summary>
+  /// Tries to get an attribute from the property in a model expression.
+  /// </summary>
+  /// <param name="modelExpression">Expression to check</param>
+  /// <typeparam name="TAttribute">Attribute type to find</typeparam>
+  /// <returns>Attribute instance or null if none can be found</returns>
+  public static TAttribute? GetAttribute<TAttribute>(
+    ModelExpression modelExpression
+  )
+    where TAttribute : Attribute
+  {
+    ModelMetadata? metadata = modelExpression.Metadata;
+    if ((metadata?.ContainerType == null) || (metadata.PropertyName == null))
+    {
+      return null;
+    }
+    return metadata.ContainerType
+      .GetProperty(metadata.PropertyName)?
+      .GetCustomAttribute<TAttribute>();
+  }
   
+  /// <summary>
+  /// Checks if a model expression represents an enum type.
+  /// </summary>
+  /// <param name="modelExpression">Model expression to check</param>
+  /// <returns>True if type is an enum type</returns>
+  public static bool IsEnumType(ModelExpression modelExpression)
+  {
+    return modelExpression.Metadata.ModelType.IsEnum;
+  }
+
+  /// <summary>
+  /// Gets all enum values from a model expression.
+  /// </summary>
+  /// <param name="modelExpression">Model expression to get the values from</param>
+  /// <returns>A list of enum values</returns>
+  /// <exception cref="InvalidOperationException">
+  /// If the model expression does not contain an enumeration type.
+  /// </exception>
+  public static Array GetEnumValues(ModelExpression modelExpression)
+  {
+    if (modelExpression.Metadata.ModelType.IsEnum)
+    {
+      return Enum.GetValues(modelExpression.Metadata.ModelType);
+    }
+    throw new InvalidOperationException("The model expression is not an enum type.");
+  }
 }

@@ -7,6 +7,7 @@ items:
   children:
   - UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContentEnum.Center
   - UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContentEnum.End
+  - UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContentEnum.SizeEvenly
   - UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContentEnum.SpaceAround
   - UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContentEnum.SpaceBetween
   - UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContentEnum.SpaceEvenly
@@ -225,10 +226,38 @@ items:
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Enums
-  summary: Distribute space evenly between children
+  summary: Distribute space evenly between children and the edge
   example: []
   syntax:
     content: SpaceEvenly = 6
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContentEnum
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContentEnum.SizeEvenly
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContentEnum.SizeEvenly
+  id: SizeEvenly
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContentEnum
+  langs:
+  - csharp
+  - vb
+  name: SizeEvenly
+  nameWithType: UFFlexDistributeContentEnum.SizeEvenly
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContentEnum.SizeEvenly
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFFlexDistributeContentEnum.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: SizeEvenly
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFFlexDistributeContentEnum.cs
+    startLine: 74
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Size each child equally. This only works in the direction of the main axis.
+  example: []
+  syntax:
+    content: SizeEvenly = 7
     return:
       type: UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContentEnum
 references:

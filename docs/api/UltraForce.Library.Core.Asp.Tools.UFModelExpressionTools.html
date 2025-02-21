@@ -89,7 +89,7 @@
 
 
   <h1 id="UltraForce_Library_Core_Asp_Tools_UFModelExpressionTools" data-uid="UltraForce.Library.Core.Asp.Tools.UFModelExpressionTools" class="text-break">
-Class UFModelExpressionTools  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Tools/UFModelExpressionTools.cs/#L38"><i class="bi bi-code-slash"></i></a>
+Class UFModelExpressionTools  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Tools/UFModelExpressionTools.cs/#L40"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -153,19 +153,148 @@ Class UFModelExpressionTools  <a class="header-action link-secondary" title="Vie
 </h2>
 
 
-  <a id="UltraForce_Library_Core_Asp_Tools_UFModelExpressionTools_IsGenericIEnumerable_" data-uid="UltraForce.Library.Core.Asp.Tools.UFModelExpressionTools.IsGenericIEnumerable*"></a>
+  <a id="UltraForce_Library_Core_Asp_Tools_UFModelExpressionTools_GetAttribute_" data-uid="UltraForce.Library.Core.Asp.Tools.UFModelExpressionTools.GetAttribute*"></a>
 
-  <h3 id="UltraForce_Library_Core_Asp_Tools_UFModelExpressionTools_IsGenericIEnumerable_Microsoft_AspNetCore_Mvc_ViewFeatures_ModelExpression_" data-uid="UltraForce.Library.Core.Asp.Tools.UFModelExpressionTools.IsGenericIEnumerable(Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression)">
-  IsGenericIEnumerable(ModelExpression)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Tools/UFModelExpressionTools.cs/#L56"><i class="bi bi-code-slash"></i></a>
+  <h3 id="UltraForce_Library_Core_Asp_Tools_UFModelExpressionTools_GetAttribute__1_Microsoft_AspNetCore_Mvc_ViewFeatures_ModelExpression_" data-uid="UltraForce.Library.Core.Asp.Tools.UFModelExpressionTools.GetAttribute``1(Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression)">
+  GetAttribute&lt;TAttribute&gt;(ModelExpression)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Tools/UFModelExpressionTools.cs/#L74"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Checks if a model expression represents a generic IEnumerable.</p>
+  <div class="markdown level1 summary"><p>Tries to get an attribute from the property in a model expression.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool IsGenericIEnumerable(ModelExpression modelExpression)</code></pre>
+    <pre><code class="lang-csharp hljs">public static TAttribute? GetAttribute&lt;TAttribute&gt;(ModelExpression modelExpression) where TAttribute : Attribute</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>modelExpression</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.viewfeatures.modelexpression">ModelExpression</a></dt>
+    <dd><p>Expression to check</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><span class="xref">TAttribute</span></dt>
+    <dd><p>Attribute instance or null if none can be found</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TAttribute</code></dt>
+    <dd><p>Attribute type to find</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_Tools_UFModelExpressionTools_GetEnumValues_" data-uid="UltraForce.Library.Core.Asp.Tools.UFModelExpressionTools.GetEnumValues*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Tools_UFModelExpressionTools_GetEnumValues_Microsoft_AspNetCore_Mvc_ViewFeatures_ModelExpression_" data-uid="UltraForce.Library.Core.Asp.Tools.UFModelExpressionTools.GetEnumValues(Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression)">
+  GetEnumValues(ModelExpression)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Tools/UFModelExpressionTools.cs/#L107"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets all enum values from a model expression.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Array GetEnumValues(ModelExpression modelExpression)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>modelExpression</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.viewfeatures.modelexpression">ModelExpression</a></dt>
+    <dd><p>Model expression to get the values from</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.array">Array</a></dt>
+    <dd><p>A list of enum values</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.invalidoperationexception">InvalidOperationException</a></dt>
+    <dd><p>If the model expression does not contain an enumeration type.</p>
+</dd>
+  </dl>
+
+
+
+  <a id="UltraForce_Library_Core_Asp_Tools_UFModelExpressionTools_IsEnumType_" data-uid="UltraForce.Library.Core.Asp.Tools.UFModelExpressionTools.IsEnumType*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Tools_UFModelExpressionTools_IsEnumType_Microsoft_AspNetCore_Mvc_ViewFeatures_ModelExpression_" data-uid="UltraForce.Library.Core.Asp.Tools.UFModelExpressionTools.IsEnumType(Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression)">
+  IsEnumType(ModelExpression)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Tools/UFModelExpressionTools.cs/#L94"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Checks if a model expression represents an enum type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsEnumType(ModelExpression modelExpression)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>modelExpression</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.viewfeatures.modelexpression">ModelExpression</a></dt>
+    <dd><p>Model expression to check</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>True if type is an enum type</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_Tools_UFModelExpressionTools_IsEnumerable_" data-uid="UltraForce.Library.Core.Asp.Tools.UFModelExpressionTools.IsEnumerable*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Tools_UFModelExpressionTools_IsEnumerable_Microsoft_AspNetCore_Mvc_ViewFeatures_ModelExpression_" data-uid="UltraForce.Library.Core.Asp.Tools.UFModelExpressionTools.IsEnumerable(Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression)">
+  IsEnumerable(ModelExpression)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Tools/UFModelExpressionTools.cs/#L47"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Checks if a model expression represents an IEnumerable.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsEnumerable(ModelExpression modelExpression)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -190,19 +319,19 @@ Class UFModelExpressionTools  <a class="header-action link-secondary" title="Vie
 
 
 
-  <a id="UltraForce_Library_Core_Asp_Tools_UFModelExpressionTools_IsIEnumerable_" data-uid="UltraForce.Library.Core.Asp.Tools.UFModelExpressionTools.IsIEnumerable*"></a>
+  <a id="UltraForce_Library_Core_Asp_Tools_UFModelExpressionTools_IsGenericEnumerable_" data-uid="UltraForce.Library.Core.Asp.Tools.UFModelExpressionTools.IsGenericEnumerable*"></a>
 
-  <h3 id="UltraForce_Library_Core_Asp_Tools_UFModelExpressionTools_IsIEnumerable_Microsoft_AspNetCore_Mvc_ViewFeatures_ModelExpression_" data-uid="UltraForce.Library.Core.Asp.Tools.UFModelExpressionTools.IsIEnumerable(Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression)">
-  IsIEnumerable(ModelExpression)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Tools/UFModelExpressionTools.cs/#L45"><i class="bi bi-code-slash"></i></a>
+  <h3 id="UltraForce_Library_Core_Asp_Tools_UFModelExpressionTools_IsGenericEnumerable_Microsoft_AspNetCore_Mvc_ViewFeatures_ModelExpression_" data-uid="UltraForce.Library.Core.Asp.Tools.UFModelExpressionTools.IsGenericEnumerable(Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression)">
+  IsGenericEnumerable(ModelExpression)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Tools/UFModelExpressionTools.cs/#L60"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Checks if a model expression represents an IEnumerable.</p>
+  <div class="markdown level1 summary"><p>Checks if a model expression represents a generic IEnumerable.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static bool IsIEnumerable(ModelExpression modelExpression)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool IsGenericEnumerable(ModelExpression modelExpression)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -231,7 +360,7 @@ Class UFModelExpressionTools  <a class="header-action link-secondary" title="Vie
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Tools/UFModelExpressionTools.cs/#L38" class="edit-link">Edit this page</a>
+          <a href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Tools/UFModelExpressionTools.cs/#L40" class="edit-link">Edit this page</a>
         </div>
 
 

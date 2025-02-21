@@ -10,6 +10,24 @@ Include the styles in your html using (for example `Shared\_Layout.cshtml`):
 <link rel="stylesheet" href="/_content/UltraForce.Library.Core.Asp/css/uf-styles.css" />
 ````
 ## Version history
+1.0.83
+- added RedirectToIndex, RedirectToIndexWithId, RedirectToAction to UFController
+
+1.0.82
+- UFModelExpressionRenderer uses the display name and not description with enum values.
+
+1.0.80
+- fixed bug in uf-styles.css
+
+1.0.79
+- added SizeEvenly to UFFlexDistributeContentEnum
+
+1.0.78
+- added IsEnumType and GetEnumValues to UFModelExpressionTools
+
+1.0.77
+- added GetAttribute to UFModelExpressionTools
+
 1.0.75
 - added UFTableButtonTagHelperBase
 - added UFTableChildTagHelperBase

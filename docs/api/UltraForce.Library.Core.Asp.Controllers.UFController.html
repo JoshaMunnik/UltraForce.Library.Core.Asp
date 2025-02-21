@@ -89,7 +89,7 @@
 
 
   <h1 id="UltraForce_Library_Core_Asp_Controllers_UFController" data-uid="UltraForce.Library.Core.Asp.Controllers.UFController" class="text-break">
-Class UFController  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Controllers/UFController.cs/#L42"><i class="bi bi-code-slash"></i></a>
+Class UFController  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Controllers/UFController.cs/#L43"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -753,7 +753,7 @@ Class UFController  <a class="header-action link-secondary" title="View source" 
 
   <h3 id="UltraForce_Library_Core_Asp_Controllers_UFController_SessionStorage" data-uid="UltraForce.Library.Core.Asp.Controllers.UFController.SessionStorage">
   SessionStorage
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Controllers/UFController.cs/#L56"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Controllers/UFController.cs/#L57"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>This property can be used to store data in the session using various types. The first
@@ -790,7 +790,7 @@ time the property is accessed the instance is created.</p>
 
   <h3 id="UltraForce_Library_Core_Asp_Controllers_UFController_BadRequest__1___0_" data-uid="UltraForce.Library.Core.Asp.Controllers.UFController.BadRequest``1(``0)">
   BadRequest&lt;TEnum&gt;(TEnum)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Controllers/UFController.cs/#L82"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Controllers/UFController.cs/#L83"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Generate a bad request using
@@ -840,7 +840,7 @@ time the property is accessed the instance is created.</p>
 
   <h3 id="UltraForce_Library_Core_Asp_Controllers_UFController_Json_Microsoft_Extensions_Logging_ILogger_System_Object_" data-uid="UltraForce.Library.Core.Asp.Controllers.UFController.Json(Microsoft.Extensions.Logging.ILogger,System.Object)">
   Json(ILogger, object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Controllers/UFController.cs/#L98"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Controllers/UFController.cs/#L104"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Writes the json response first to the logger before sending it back
@@ -879,11 +879,361 @@ to the server.</p>
 
 
 
+  <a id="UltraForce_Library_Core_Asp_Controllers_UFController_RedirectToAction_" data-uid="UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToAction*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Controllers_UFController_RedirectToAction__1_System_String_" data-uid="UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToAction``1(System.String)">
+  RedirectToAction&lt;TController&gt;(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Controllers/UFController.cs/#L232"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Redirect to an action of some controller.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IActionResult RedirectToAction&lt;TController&gt;(string action) where TController : Controller</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>action</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Action to redirect to.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.iactionresult">IActionResult</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TController</code></dt>
+    <dd><p>Some controller type. The method uses <a class="xref" href="UltraForce.Library.Core.Asp.Tools.UFMvcTools.html#UltraForce_Library_Core_Asp_Tools_UFMvcTools_GetControllerName__1">GetControllerName&lt;T&gt;()</a> to
+get the controller name.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_Controllers_UFController_RedirectToAction_" data-uid="UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToAction*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Controllers_UFController_RedirectToAction__1_System_String_System_Object_" data-uid="UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToAction``1(System.String,System.Object)">
+  RedirectToAction&lt;TController&gt;(string, object)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Controllers/UFController.cs/#L254"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Redirect to an action of some controller.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IActionResult RedirectToAction&lt;TController&gt;(string action, object routeValues) where TController : Controller</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>action</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Action to redirect to.</p>
+</dd>
+    <dt><code>routeValues</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></dt>
+    <dd><p>Values to pass to the action.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.iactionresult">IActionResult</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TController</code></dt>
+    <dd><p>Some controller type. The method uses <a class="xref" href="UltraForce.Library.Core.Asp.Tools.UFMvcTools.html#UltraForce_Library_Core_Asp_Tools_UFMvcTools_GetControllerName__1">GetControllerName&lt;T&gt;()</a> to
+get the controller name.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_Controllers_UFController_RedirectToIndex_" data-uid="UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToIndex*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Controllers_UFController_RedirectToIndex" data-uid="UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToIndex">
+  RedirectToIndex()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Controllers/UFController.cs/#L120"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>A helper method that redirects to the index action of the current controller.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IActionResult RedirectToIndex()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.iactionresult">IActionResult</a></dt>
+    <dd><p>A <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.redirectresult">RedirectResult</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_Controllers_UFController_RedirectToIndex_" data-uid="UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToIndex*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Controllers_UFController_RedirectToIndex_System_String_" data-uid="UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToIndex(System.String)">
+  RedirectToIndex(string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Controllers/UFController.cs/#L133"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>A helper method that redirects to the index action of some controller.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IActionResult RedirectToIndex(string controller)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>controller</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Name of controller</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.iactionresult">IActionResult</a></dt>
+    <dd><p>A <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.redirectresult">RedirectResult</a></p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_Controllers_UFController_RedirectToIndexWithId_" data-uid="UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToIndexWithId*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Controllers_UFController_RedirectToIndexWithId__1_System_String___0_" data-uid="UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToIndexWithId``1(System.String,``0)">
+  RedirectToIndexWithId&lt;TId&gt;(string, TId)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Controllers/UFController.cs/#L189"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>A helper method that redirects to the index action of some controller passing a
+single id parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IActionResult RedirectToIndexWithId&lt;TId&gt;(string controller, TId id)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>controller</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Name of controller</p>
+</dd>
+    <dt><code>id</code> <span class="xref">TId</span></dt>
+    <dd><p>The id to pass on to the index action.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.iactionresult">IActionResult</a></dt>
+    <dd><p>A <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.redirectresult">RedirectResult</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TId</code></dt>
+    <dd><p>Type of id.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_Controllers_UFController_RedirectToIndexWithId_" data-uid="UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToIndexWithId*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Controllers_UFController_RedirectToIndexWithId__1___0_" data-uid="UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToIndexWithId``1(``0)">
+  RedirectToIndexWithId&lt;TId&gt;(TId)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Controllers/UFController.cs/#L167"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>A helper method that redirects to the index action of the current controller passing a
+single id parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IActionResult RedirectToIndexWithId&lt;TId&gt;(TId id)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <span class="xref">TId</span></dt>
+    <dd><p>The id to pass on to the index action.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.iactionresult">IActionResult</a></dt>
+    <dd><p>A <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.redirectresult">RedirectResult</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TId</code></dt>
+    <dd><p>Type of id.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_Controllers_UFController_RedirectToIndexWithId_" data-uid="UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToIndexWithId*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Controllers_UFController_RedirectToIndexWithId__2___1_" data-uid="UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToIndexWithId``2(``1)">
+  RedirectToIndexWithId&lt;TController, TId&gt;(TId)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Controllers/UFController.cs/#L213"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>A helper method that redirects to the index action of some controller passing a
+single id parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IActionResult RedirectToIndexWithId&lt;TController, TId&gt;(TId id) where TController : Controller</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>id</code> <span class="xref">TId</span></dt>
+    <dd><p>The id to pass on to the index action.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.iactionresult">IActionResult</a></dt>
+    <dd><p>A <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.redirectresult">RedirectResult</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TController</code></dt>
+    <dd><p>Some controller type. The method uses <a class="xref" href="UltraForce.Library.Core.Asp.Tools.UFMvcTools.html#UltraForce_Library_Core_Asp_Tools_UFMvcTools_GetControllerName__1">GetControllerName&lt;T&gt;()</a> to
+get the controller name.</p>
+</dd>
+    <dt><code>TId</code></dt>
+    <dd><p>Type of id.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_Controllers_UFController_RedirectToIndex_" data-uid="UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToIndex*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Controllers_UFController_RedirectToIndex__1" data-uid="UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToIndex``1">
+  RedirectToIndex&lt;TController&gt;()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Controllers/UFController.cs/#L149"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>A helper method that redirects to the index action of some controller.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IActionResult RedirectToIndex&lt;TController&gt;() where TController : Controller</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.iactionresult">IActionResult</a></dt>
+    <dd><p>A <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.redirectresult">RedirectResult</a></p>
+</dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TController</code></dt>
+    <dd><p>Some controller type. The method uses <a class="xref" href="UltraForce.Library.Core.Asp.Tools.UFMvcTools.html#UltraForce_Library_Core_Asp_Tools_UFMvcTools_GetControllerName__1">GetControllerName&lt;T&gt;()</a> to
+get the controller name.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
 
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Controllers/UFController.cs/#L42" class="edit-link">Edit this page</a>
+          <a href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Controllers/UFController.cs/#L43" class="edit-link">Edit this page</a>
         </div>
 
 
