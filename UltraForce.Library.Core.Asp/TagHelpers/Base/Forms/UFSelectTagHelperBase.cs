@@ -123,6 +123,9 @@ public abstract class UFSelectTagHelperBase(
       output.Attributes.SetAttribute("id", Guid.NewGuid().ToString());
     }
     string id = (output.Attributes["id"] == null) ? "" : output.Attributes["id"].Value.ToString()!;
+    string name = output.Attributes["name"] == null
+      ? id
+      : output.Attributes["name"].Value.ToString()!;
     string errorMessage = this.GetFieldErrorsHtml(
       this.ViewContext.ModelState,
       output.Attributes["name"]?.Value?.ToString() ?? ""
@@ -133,7 +136,7 @@ public abstract class UFSelectTagHelperBase(
     }
     else
     {
-      this.WrapInput(output, id, label, errorMessage);
+      this.WrapInput(output, id, name, label, errorMessage);
     }
   }
 
@@ -177,10 +180,11 @@ public abstract class UFSelectTagHelperBase(
   /// <summary>
   /// Returns the html for the validation feedback container.
   /// </summary>
-  /// <param name="id"></param>
+  /// <param name="id">id of element or empty string if no id is set</param>
+  /// <param name="name">name of field</param>
   /// <returns></returns>
   protected virtual string GetValidationFeedbackContainerHtml(
-    string id
+    string id, string name
   )
   {
     return string.Empty;
@@ -218,11 +222,13 @@ public abstract class UFSelectTagHelperBase(
   /// </summary>
   /// <param name="output">Output to wrap</param>
   /// <param name="id">Id of input element</param>
+  /// <param name="name">Name of input element</param>
   /// <param name="label">Label text to use</param>
   /// <param name="errorMessage">Error message to show</param>
   private void WrapInput(
     TagHelperOutput output,
     string id,
+    string name,
     string label,
     string errorMessage
   )
@@ -238,7 +244,7 @@ public abstract class UFSelectTagHelperBase(
       $"<div class=\"{this.GetTextWrapperClasses("select")}\">{labelHtml}"
     );
     output.PostElement.SetHtmlContent(
-      $"{this.GetValidationFeedbackContainerHtml(id)}{errorMessageHtml}</div>"
+      $"{this.GetValidationFeedbackContainerHtml(id, name)}{errorMessageHtml}</div>"
     );
   }
 

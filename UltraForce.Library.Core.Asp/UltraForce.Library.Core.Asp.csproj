@@ -15,8 +15,9 @@
         <RepositoryUrl>https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp</RepositoryUrl>
         <PackageReadmeFile>README.md</PackageReadmeFile>
         <AssemblyVersion></AssemblyVersion>
-        <Version>1.0.84</Version>
-        <PackageReleaseNotes>- added UFAttributesTagHelper
+        <Version>1.0.85</Version>
+        <PackageReleaseNotes>- added name parameter to GetValidationFeedbackContainerHtml in FInputTagHelperBase and 
+  UFSelectTagHelperBase
 </PackageReleaseNotes>
         <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
     </PropertyGroup>

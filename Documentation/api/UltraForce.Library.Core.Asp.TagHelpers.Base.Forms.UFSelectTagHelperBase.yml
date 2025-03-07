@@ -12,7 +12,7 @@ items:
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetSelectClasses
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetTextLabelClasses(System.String)
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetTextWrapperClasses(System.String)
-  - UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetValidationFeedbackContainerHtml(System.String)
+  - UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetValidationFeedbackContainerHtml(System.String,System.String)
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.Label
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.NoLabel
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.NoWrap
@@ -413,7 +413,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetSelectClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFSelectTagHelperBase.cs
-    startLine: 147
+    startLine: 150
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -444,7 +444,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetTextLabelClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFSelectTagHelperBase.cs
-    startLine: 156
+    startLine: 159
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -481,7 +481,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetTextWrapperClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFSelectTagHelperBase.cs
-    startLine: 169
+    startLine: 172
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -501,16 +501,16 @@ items:
   nameWithType.vb: UFSelectTagHelperBase.GetTextWrapperClasses(String)
   fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetTextWrapperClasses(String)
   name.vb: GetTextWrapperClasses(String)
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetValidationFeedbackContainerHtml(System.String)
-  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetValidationFeedbackContainerHtml(System.String)
-  id: GetValidationFeedbackContainerHtml(System.String)
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetValidationFeedbackContainerHtml(System.String,System.String)
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetValidationFeedbackContainerHtml(System.String,System.String)
+  id: GetValidationFeedbackContainerHtml(System.String,System.String)
   parent: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase
   langs:
   - csharp
   - vb
-  name: GetValidationFeedbackContainerHtml(string)
-  nameWithType: UFSelectTagHelperBase.GetValidationFeedbackContainerHtml(string)
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetValidationFeedbackContainerHtml(string)
+  name: GetValidationFeedbackContainerHtml(string, string)
+  nameWithType: UFSelectTagHelperBase.GetValidationFeedbackContainerHtml(string, string)
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetValidationFeedbackContainerHtml(string, string)
   type: Method
   source:
     remote:
@@ -519,26 +519,29 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetValidationFeedbackContainerHtml
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFSelectTagHelperBase.cs
-    startLine: 181
+    startLine: 185
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
   summary: Returns the html for the validation feedback container.
   example: []
   syntax:
-    content: protected virtual string GetValidationFeedbackContainerHtml(string id)
+    content: protected virtual string GetValidationFeedbackContainerHtml(string id, string name)
     parameters:
     - id: id
       type: System.String
-      description: ''
+      description: id of element or empty string if no id is set
+    - id: name
+      type: System.String
+      description: name of field
     return:
       type: System.String
       description: ''
-    content.vb: Protected Overridable Function GetValidationFeedbackContainerHtml(id As String) As String
+    content.vb: Protected Overridable Function GetValidationFeedbackContainerHtml(id As String, name As String) As String
   overload: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetValidationFeedbackContainerHtml*
-  nameWithType.vb: UFSelectTagHelperBase.GetValidationFeedbackContainerHtml(String)
-  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetValidationFeedbackContainerHtml(String)
-  name.vb: GetValidationFeedbackContainerHtml(String)
+  nameWithType.vb: UFSelectTagHelperBase.GetValidationFeedbackContainerHtml(String, String)
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetValidationFeedbackContainerHtml(String, String)
+  name.vb: GetValidationFeedbackContainerHtml(String, String)
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetFieldErrorsClasses
   commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetFieldErrorsClasses
   id: GetFieldErrorsClasses
@@ -557,7 +560,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetFieldErrorsClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFSelectTagHelperBase.cs
-    startLine: 192
+    startLine: 196
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -588,7 +591,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetFieldErrorsHtml
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFSelectTagHelperBase.cs
-    startLine: 203
+    startLine: 207
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -1373,7 +1376,7 @@ references:
   fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetTextWrapperClasses
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetValidationFeedbackContainerHtml*
   commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetValidationFeedbackContainerHtml
-  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFSelectTagHelperBase_GetValidationFeedbackContainerHtml_System_String_
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFSelectTagHelperBase_GetValidationFeedbackContainerHtml_System_String_System_String_
   name: GetValidationFeedbackContainerHtml
   nameWithType: UFSelectTagHelperBase.GetValidationFeedbackContainerHtml
   fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetValidationFeedbackContainerHtml

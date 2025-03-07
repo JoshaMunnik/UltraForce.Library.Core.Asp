@@ -10,6 +10,10 @@ Include the styles in your html using (for example `Shared\_Layout.cshtml`):
 <link rel="stylesheet" href="/_content/UltraForce.Library.Core.Asp/css/uf-styles.css" />
 ````
 ## Version history
+1.0.85
+- added name parameter to GetValidationFeedbackContainerHtml in UFInputTagHelperBase and 
+  UFSelectTagHelperBase
+
 1.0.84
 - added UFAttributesTagHelper
  

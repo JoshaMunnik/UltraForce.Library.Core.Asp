@@ -305,8 +305,11 @@ public abstract class UFInputTagHelperBase(
     {
       output.Attributes.SetAttribute("id", Guid.NewGuid().ToString());
     }
-    string id = (output.Attributes["id"] == null) ? "" : output.Attributes["id"].Value.ToString()!;
+    string id = output.Attributes["id"] == null ? "" : output.Attributes["id"].Value.ToString()!;
     string type = output.Attributes["type"]?.Value?.ToString()?.ToLowerInvariant() ?? "";
+    string name = output.Attributes["name"] == null
+      ? id
+      : output.Attributes["name"].Value.ToString()!;
     string errorMessage = this.GetFieldErrorsHtml(
       this.ViewContext.ModelState,
       output.Attributes["name"]?.Value?.ToString() ?? ""
@@ -314,10 +317,10 @@ public abstract class UFInputTagHelperBase(
     switch (type)
     {
       case "checkbox":
-        this.RenderCheckbox(output, id, label, errorMessage);
+        this.RenderCheckbox(output, id, name, label, errorMessage);
         break;
       case "radio":
-        this.RenderRadio(output, id, label, errorMessage);
+        this.RenderRadio(output, id, name, label, errorMessage);
         break;
       default:
         if (this.NoWrap)
@@ -326,7 +329,7 @@ public abstract class UFInputTagHelperBase(
         }
         else
         {
-          this.RenderWrappedInput(output, id, label, type, errorMessage);
+          this.RenderWrappedInput(output, id, name, label, type, errorMessage);
         }
         break;
     }
@@ -455,10 +458,12 @@ public abstract class UFInputTagHelperBase(
   /// <summary>
   /// Returns the classes to use for the validation feedback container.
   /// </summary>
-  /// <param name="id"></param>
+  /// <param name="id">id of element or empty string if no id is used</param>
+  /// <param name="name">name of form field</param>
   /// <returns></returns>
   protected virtual string GetValidationFeedbackContainerHtml(
-    string id
+    string id,
+    string name
   )
   {
     return string.Empty;
@@ -618,12 +623,14 @@ public abstract class UFInputTagHelperBase(
   /// </summary>
   /// <param name="output">Output to wrap</param>
   /// <param name="id">Id of input element</param>
+  /// <param name="name"></param>
   /// <param name="label">Label text to use</param>
   /// <param name="type">Input type</param>
   /// <param name="errorMessage">Error message to show</param>
   private void RenderWrappedInput(
     TagHelperOutput output,
     string id,
+    string name,
     string label,
     string type,
     string errorMessage
@@ -650,13 +657,14 @@ public abstract class UFInputTagHelperBase(
       $"<div class=\"{this.GetTextInputWrapperClasses(type)}\">{labelHtml}{preHtml}"
     );
     output.PostElement.SetHtmlContent(
-      $"{postHtml}{this.GetValidationFeedbackContainerHtml(id)}{errorMessageHtml}</div>"
+      $"{postHtml}{this.GetValidationFeedbackContainerHtml(id, name)}{errorMessageHtml}</div>"
     );
   }
 
   private void RenderRadio(
     TagHelperOutput anOutput,
     string id,
+    string name,
     string label,
     string errorMessage
   )
@@ -665,7 +673,7 @@ public abstract class UFInputTagHelperBase(
     UFTagHelperTools.AddClasses(anOutput, this.GetRadioInputClasses());
     string pre = !this.NoWrap ? $"<div class=\"{this.GetRadioWrapperClasses()}\">" : "";
     string post = !this.NoWrap
-      ? $"{this.GetValidationFeedbackContainerHtml(id)}{errorMessageHtml}</div>"
+      ? $"{this.GetValidationFeedbackContainerHtml(id, name)}{errorMessageHtml}</div>"
       //? $"{errorMessage}</div>"
       : "";
     string preLabel = string.IsNullOrEmpty(label)
@@ -696,6 +704,7 @@ public abstract class UFInputTagHelperBase(
   private void RenderCheckbox(
     TagHelperOutput anOutput,
     string id,
+    string name,
     string label,
     string errorMessage
   )
@@ -704,7 +713,7 @@ public abstract class UFInputTagHelperBase(
     UFTagHelperTools.AddClasses(anOutput, this.GetCheckboxInputClasses());
     string pre = !this.NoWrap ? $"<div class=\"{this.GetCheckboxWrapperClasses()}\">" : "";
     string post = !this.NoWrap
-      ? $"{this.GetValidationFeedbackContainerHtml(id)}{errorMessageHtml}</div>"
+      ? $"{this.GetValidationFeedbackContainerHtml(id, name)}{errorMessageHtml}</div>"
       //? $"{errorMessage}</div>"
       : "";
     string preLabel = string.IsNullOrEmpty(label)
