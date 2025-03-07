@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class UFNotConditionTagHelper | UltraForce.Library.Core.Asp </title>
+      <title>Class UFAttributesTagHelper | UltraForce.Library.Core.Asp </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class UFNotConditionTagHelper | UltraForce.Library.Core.Asp ">
+      <meta name="title" content="Class UFAttributesTagHelper | UltraForce.Library.Core.Asp ">
       
-      <meta name="description" content="This tag helper adds support for uf-not-condition attribute. When specified the tag and its children are only processed if the value is false.  This tag has the opposite effect of .">
+      <meta name="description" content="This tag helper adds support for uf-attributes attribute. The value is a list of tag helper attributes which get added to the attributes of the tag.">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/new/master/apiSpec/new?filename=UltraForce_Library_Core_Asp_TagHelpers_UFNotConditionTagHelper.md&amp;value=---%0Auid%3A%20UltraForce.Library.Core.Asp.TagHelpers.UFNotConditionTagHelper%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/new/master/apiSpec/new?filename=UltraForce_Library_Core_Asp_TagHelpers_UFAttributesTagHelper.md&amp;value=---%0Auid%3A%20UltraForce.Library.Core.Asp.TagHelpers.UFAttributesTagHelper%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -84,12 +84,12 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="UltraForce.Library.Core.Asp.TagHelpers.UFNotConditionTagHelper">
+        <article data-uid="UltraForce.Library.Core.Asp.TagHelpers.UFAttributesTagHelper">
 
 
 
-  <h1 id="UltraForce_Library_Core_Asp_TagHelpers_UFNotConditionTagHelper" data-uid="UltraForce.Library.Core.Asp.TagHelpers.UFNotConditionTagHelper" class="text-break">
-Class UFNotConditionTagHelper  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/UFNotConditionTagHelper.cs/#L46"><i class="bi bi-code-slash"></i></a>
+  <h1 id="UltraForce_Library_Core_Asp_TagHelpers_UFAttributesTagHelper" data-uid="UltraForce.Library.Core.Asp.TagHelpers.UFAttributesTagHelper" class="text-break">
+Class UFAttributesTagHelper  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/UFAttributesTagHelper.cs/#L45"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,17 +97,14 @@ Class UFNotConditionTagHelper  <a class="header-action link-secondary" title="Vi
   <dl><dt>Assembly</dt><dd>UltraForce.Library.Core.Asp.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>This tag helper adds support for <code>uf-not-condition</code> attribute. When specified
-the tag and its children are only processed if the value is <code>false</code>.</p>
-<p>
-This tag has the opposite effect of <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.UFConditionTagHelper.html">UFConditionTagHelper</a>.
-</p>
+  <div class="markdown summary"><p>This tag helper adds support for <code>uf-attributes</code> attribute. The value is a list
+of tag helper attributes which get added to the attributes of the tag.</p>
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[HtmlTargetElement(Attributes = &quot;uf-not-condition&quot;)]
-public class UFNotConditionTagHelper : TagHelper, ITagHelper, ITagHelperComponent</code></pre>
+    <pre><code class="lang-csharp hljs">[HtmlTargetElement(Attributes = &quot;uf-attributes&quot;)]
+public class UFAttributesTagHelper : TagHelper, ITagHelper, ITagHelperComponent</code></pre>
   </div>
 
 
@@ -118,7 +115,7 @@ public class UFNotConditionTagHelper : TagHelper, ITagHelper, ITagHelperComponen
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper">TagHelper</a></div>
-      <div><span class="xref">UFNotConditionTagHelper</span></div>
+      <div><span class="xref">UFAttributesTagHelper</span></div>
     </dd>
   </dl>
 
@@ -169,21 +166,17 @@ public class UFNotConditionTagHelper : TagHelper, ITagHelper, ITagHelperComponen
 
 
 
-  <h2 id="UltraForce_Library_Core_Asp_TagHelpers_UFNotConditionTagHelper_remarks">Remarks</h2>
-  <div class="markdown level0 remarks"><p>Based on the example code of:
-<a href="https://docs.microsoft.com/en-us/aspnet/core/mvc/views/tag-helpers/authoring">https://docs.microsoft.com/en-us/aspnet/core/mvc/views/tag-helpers/authoring</a></p>
-</div>
 
 
   <h2 class="section" id="properties">Properties
 </h2>
 
 
-  <a id="UltraForce_Library_Core_Asp_TagHelpers_UFNotConditionTagHelper_NotCondition_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.UFNotConditionTagHelper.NotCondition*"></a>
+  <a id="UltraForce_Library_Core_Asp_TagHelpers_UFAttributesTagHelper_Attributes_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.UFAttributesTagHelper.Attributes*"></a>
 
-  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_UFNotConditionTagHelper_NotCondition" data-uid="UltraForce.Library.Core.Asp.TagHelpers.UFNotConditionTagHelper.NotCondition">
-  NotCondition
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/UFNotConditionTagHelper.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_UFAttributesTagHelper_Attributes" data-uid="UltraForce.Library.Core.Asp.TagHelpers.UFAttributesTagHelper.Attributes">
+  Attributes
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/UFAttributesTagHelper.cs/#L55"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Condition that will be set via the attribute</p>
@@ -191,8 +184,8 @@ public class UFNotConditionTagHelper : TagHelper, ITagHelper, ITagHelperComponen
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[HtmlAttributeName(&quot;uf-not-condition&quot;)]
-public bool NotCondition { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[HtmlAttributeName(&quot;uf-attributes&quot;)]
+public IList&lt;TagHelperAttribute&gt;? Attributes { get; set; }</code></pre>
   </div>
 
 
@@ -201,7 +194,7 @@ public bool NotCondition { get; set; }</code></pre>
 
   <h4 class="section">Property Value</h4>
   <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelperattribute">TagHelperAttribute</a>&gt;</dt>
     <dd></dd>
   </dl>
 
@@ -216,11 +209,11 @@ public bool NotCondition { get; set; }</code></pre>
 </h2>
 
 
-  <a id="UltraForce_Library_Core_Asp_TagHelpers_UFNotConditionTagHelper_Process_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.UFNotConditionTagHelper.Process*"></a>
+  <a id="UltraForce_Library_Core_Asp_TagHelpers_UFAttributesTagHelper_Process_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.UFAttributesTagHelper.Process*"></a>
 
-  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_UFNotConditionTagHelper_Process_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContext_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.UFNotConditionTagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)">
+  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_UFAttributesTagHelper_Process_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContext_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.UFAttributesTagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)">
   Process(TagHelperContext, TagHelperOutput)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/UFNotConditionTagHelper.cs/#L58"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/UFAttributesTagHelper.cs/#L63"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Synchronously executes the <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper">TagHelper</a> with the given <code class="paramref">context</code> and
@@ -257,7 +250,7 @@ public bool NotCondition { get; set; }</code></pre>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/UFNotConditionTagHelper.cs/#L46" class="edit-link">Edit this page</a>
+          <a href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/UFAttributesTagHelper.cs/#L45" class="edit-link">Edit this page</a>
         </div>
 
 

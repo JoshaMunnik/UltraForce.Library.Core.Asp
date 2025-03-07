@@ -33,7 +33,7 @@ using Microsoft.AspNetCore.Razor.TagHelpers;
 namespace UltraForce.Library.Core.Asp.TagHelpers
 {
   /// <summary>
-  /// This tag helper adds support for not-condition attribute. When specified
+  /// This tag helper adds support for <c>uf-not-condition</c> attribute. When specified
   /// the tag and its children are only processed if the value is <c>false</c>.
   /// <para>
   /// This tag has the opposite effect of <see cref="UFConditionTagHelper"/>.

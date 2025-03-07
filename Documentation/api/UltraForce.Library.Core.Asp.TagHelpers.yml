@@ -4,6 +4,7 @@ items:
   commentId: N:UltraForce.Library.Core.Asp.TagHelpers
   id: UltraForce.Library.Core.Asp.TagHelpers
   children:
+  - UltraForce.Library.Core.Asp.TagHelpers.UFAttributesTagHelper
   - UltraForce.Library.Core.Asp.TagHelpers.UFConditionTagHelper
   - UltraForce.Library.Core.Asp.TagHelpers.UFDataTitleTagHelper
   - UltraForce.Library.Core.Asp.TagHelpers.UFNotConditionTagHelper
@@ -17,6 +18,12 @@ items:
   assemblies:
   - UltraForce.Library.Core.Asp
 references:
+- uid: UltraForce.Library.Core.Asp.TagHelpers.UFAttributesTagHelper
+  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.UFAttributesTagHelper
+  href: UltraForce.Library.Core.Asp.TagHelpers.UFAttributesTagHelper.html
+  name: UFAttributesTagHelper
+  nameWithType: UFAttributesTagHelper
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.UFAttributesTagHelper
 - uid: UltraForce.Library.Core.Asp.TagHelpers.UFConditionTagHelper
   commentId: T:UltraForce.Library.Core.Asp.TagHelpers.UFConditionTagHelper
   href: UltraForce.Library.Core.Asp.TagHelpers.UFConditionTagHelper.html

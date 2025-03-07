@@ -1,12 +1,12 @@
-﻿// <copyright file="UFConditionTagHelper.cs" company="Ultra Force Development">
-// Ultra Force Library - Copyright (C) 2018 Ultra Force Development
+﻿// <copyright file="UFAttributesTagHelper.cs" company="Ultra Force Development">
+// Ultra Force Library - Copyright (C) 2025 Ultra Force Development
 // </copyright>
 // <author>Josha Munnik</author>
 // <email>josha@ultraforce.com</email>
 // <license>
 // The MIT License (MIT)
 //
-// Copyright (C) 2018 Ultra Force Development
+// Copyright (C) 2025 Ultra Force Development
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to 
@@ -33,23 +33,31 @@ using Microsoft.AspNetCore.Razor.TagHelpers;
 namespace UltraForce.Library.Core.Asp.TagHelpers
 {
   /// <summary>
-  /// This tag helper adds support for <c>uf-condition</c> attribute. When specified the tag and
-  /// its children are only processed if the value is <c>true</c>.
+  /// This tag helper adds support for <c>uf-attributes</c> attribute. The value is a list
+  /// of tag helper attributes which get added to the attributes of the tag.
   /// </summary>
-  /// <remarks>
-  /// Based on the example code of: 
-  /// https://docs.microsoft.com/en-us/aspnet/core/mvc/views/tag-helpers/authoring
-  /// </remarks>
-  [HtmlTargetElement(Attributes = "uf-condition")]
+  /// <code>
+  /// ...
+  /// // uses c# 9.0 shorthand (for list and new)
+  /// &lt;div uf-attributes="[new("data-test", "1"), new("data-parameter", "2")]"&gt;
+  /// ...
+  /// </code>
+  [HtmlTargetElement(Attributes = "uf-attributes")]
   [SuppressMessage("ReSharper", "UnusedAutoPropertyAccessor.Global")]
   [SuppressMessage("ReSharper", "UnusedType.Global")]
-  public class UFConditionTagHelper : TagHelper
+  public class UFAttributesTagHelper : TagHelper
   {
+    #region public properties
+    
     /// <summary>
     /// Condition that will be set via the attribute
     /// </summary>
-    [HtmlAttributeName("uf-condition")]
-    public bool Condition { get; set; }
+    [HtmlAttributeName("uf-attributes")]
+    public IList<TagHelperAttribute>? Attributes { get; set; }
+    
+    #endregion
+    
+    #region public methods
 
     /// <inheritdoc />
     public override void Process(
@@ -57,10 +65,16 @@ namespace UltraForce.Library.Core.Asp.TagHelpers
       TagHelperOutput output
     )
     {
-      if (!this.Condition)
+      if (this.Attributes == null)
       {
-        output.SuppressOutput();
+        return;
+      }
+      foreach (TagHelperAttribute attribute in this.Attributes)
+      {
+        output.Attributes.Add(attribute);
       }
     }
+    
+    #endregion
   }
 }
