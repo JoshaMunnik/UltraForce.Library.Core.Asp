@@ -89,7 +89,7 @@
 
 
   <h1 id="UltraForce_Library_Core_Asp_Tools_UFMvcTools" data-uid="UltraForce.Library.Core.Asp.Tools.UFMvcTools" class="text-break">
-Class UFMvcTools  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Tools/UFMvcTools.cs/#L44"><i class="bi bi-code-slash"></i></a>
+Class UFMvcTools  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Tools/UFMvcTools.cs/#L47"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -157,7 +157,7 @@ Class UFMvcTools  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="UltraForce_Library_Core_Asp_Tools_UFMvcTools_AddFirstItem_Microsoft_AspNetCore_Mvc_Rendering_SelectList_Microsoft_AspNetCore_Mvc_Rendering_SelectListItem_" data-uid="UltraForce.Library.Core.Asp.Tools.UFMvcTools.AddFirstItem(Microsoft.AspNetCore.Mvc.Rendering.SelectList,Microsoft.AspNetCore.Mvc.Rendering.SelectListItem)">
   AddFirstItem(SelectList, SelectListItem)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Tools/UFMvcTools.cs/#L143"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Tools/UFMvcTools.cs/#L146"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Adds an item at the start of a select list. Preserves the selected state.</p>
@@ -199,10 +199,12 @@ Class UFMvcTools  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="UltraForce_Library_Core_Asp_Tools_UFMvcTools_CreateListFromEnum__1_System_String_" data-uid="UltraForce.Library.Core.Asp.Tools.UFMvcTools.CreateListFromEnum``1(System.String)">
   CreateListFromEnum&lt;T&gt;(string?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Tools/UFMvcTools.cs/#L168"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Tools/UFMvcTools.cs/#L173"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Creates a <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.rendering.selectlist">SelectList</a> from an enum type.</p>
+  <div class="markdown level1 summary"><p>Creates a <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.rendering.selectlist">SelectList</a> from an enum type. The methods tries to obtain the text
+from either the display name or the value from <span class="xref">UltraForce.Library.NetStandard.Annotations.UFDescriptionAttribute</span>
+attribute. If both are missing the value is used.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
@@ -243,7 +245,7 @@ Class UFMvcTools  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="UltraForce_Library_Core_Asp_Tools_UFMvcTools_GetControllerName_System_String_" data-uid="UltraForce.Library.Core.Asp.Tools.UFMvcTools.GetControllerName(System.String)">
   GetControllerName(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Tools/UFMvcTools.cs/#L68"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Tools/UFMvcTools.cs/#L71"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Checks if the name ends with 'Controller', if it does remove it.</p>
@@ -282,7 +284,7 @@ Class UFMvcTools  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="UltraForce_Library_Core_Asp_Tools_UFMvcTools_GetControllerName__1" data-uid="UltraForce.Library.Core.Asp.Tools.UFMvcTools.GetControllerName``1">
   GetControllerName&lt;T&gt;()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Tools/UFMvcTools.cs/#L82"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Tools/UFMvcTools.cs/#L85"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Checks if the type name ends with 'Controller', if it does remove it.</p>
@@ -320,7 +322,7 @@ Class UFMvcTools  <a class="header-action link-secondary" title="View source" hr
 
   <h3 id="UltraForce_Library_Core_Asp_Tools_UFMvcTools_GetErrors_Microsoft_AspNetCore_Mvc_ModelBinding_ModelStateDictionary_System_String_System_String_System_String_System_String_" data-uid="UltraForce.Library.Core.Asp.Tools.UFMvcTools.GetErrors(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary,System.String,System.String,System.String,System.String)">
   GetErrors(ModelStateDictionary, string, string, string, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Tools/UFMvcTools.cs/#L210"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Tools/UFMvcTools.cs/#L218"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the errors for a field as a single string</p>
@@ -372,7 +374,7 @@ or no field with the specified name can be found</p>
 
   <h3 id="UltraForce_Library_Core_Asp_Tools_UFMvcTools_GetJsonName_System_Object_System_String_" data-uid="UltraForce.Library.Core.Asp.Tools.UFMvcTools.GetJsonName(System.Object,System.String)">
   GetJsonName(object, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Tools/UFMvcTools.cs/#L265"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Tools/UFMvcTools.cs/#L273"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the json name for a property in an object. The method checks if a property has
@@ -422,7 +424,7 @@ If no attribute can be found the property name is returned.</p>
 
   <h3 id="UltraForce_Library_Core_Asp_Tools_UFMvcTools_GetViewComponentName_System_String_" data-uid="UltraForce.Library.Core.Asp.Tools.UFMvcTools.GetViewComponentName(System.String)">
   GetViewComponentName(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Tools/UFMvcTools.cs/#L92"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Tools/UFMvcTools.cs/#L95"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Checks if the name ends with 'ViewComponent', if it does remove it.</p>
@@ -461,7 +463,7 @@ If no attribute can be found the property name is returned.</p>
 
   <h3 id="UltraForce_Library_Core_Asp_Tools_UFMvcTools_Normalize_System_String_" data-uid="UltraForce.Library.Core.Asp.Tools.UFMvcTools.Normalize(System.String)">
   Normalize(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Tools/UFMvcTools.cs/#L106"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Tools/UFMvcTools.cs/#L109"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns a normalized value of a string.</p>
@@ -500,7 +502,7 @@ If no attribute can be found the property name is returned.</p>
 
   <h3 id="UltraForce_Library_Core_Asp_Tools_UFMvcTools_ReplaceMacros_System_String_System_Security_Principal_IPrincipal_" data-uid="UltraForce.Library.Core.Asp.Tools.UFMvcTools.ReplaceMacros(System.String,System.Security.Principal.IPrincipal)">
   ReplaceMacros(string, IPrincipal?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Tools/UFMvcTools.cs/#L122"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Tools/UFMvcTools.cs/#L125"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Replace macro texts with values.</p>
@@ -545,7 +547,7 @@ The method replaces the following macro's: {copy}, {year} and {user}
 
   <h3 id="UltraForce_Library_Core_Asp_Tools_UFMvcTools_Validate_System_Object_" data-uid="UltraForce.Library.Core.Asp.Tools.UFMvcTools.Validate(System.Object)">
   Validate(object)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Tools/UFMvcTools.cs/#L243"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Tools/UFMvcTools.cs/#L251"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Validates an object using their validation attributes.</p>
@@ -582,7 +584,7 @@ The method replaces the following macro's: {copy}, {year} and {user}
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Tools/UFMvcTools.cs/#L44" class="edit-link">Edit this page</a>
+          <a href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Tools/UFMvcTools.cs/#L47" class="edit-link">Edit this page</a>
         </div>
 
 

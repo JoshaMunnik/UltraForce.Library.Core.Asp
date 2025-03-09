@@ -35,6 +35,9 @@ using System.Text.Json.Serialization;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using UltraForce.Library.Core.Extensions;
+using UltraForce.Library.NetStandard.Annotations;
+using UltraForce.Library.NetStandard.Extensions;
+using UltraForce.Library.NetStandard.Tools;
 
 namespace UltraForce.Library.Core.Asp.Tools
 {
@@ -160,7 +163,9 @@ namespace UltraForce.Library.Core.Asp.Tools
     }
 
     /// <summary>
-    /// Creates a <see cref="SelectList"/> from an enum type.
+    /// Creates a <see cref="SelectList"/> from an enum type. The methods tries to obtain the text
+    /// from either the display name or the value from <see cref="UFDescriptionAttribute"/>
+    /// attribute. If both are missing the value is used.
     /// </summary>
     /// <param name="emptyChoice"></param>
     /// <typeparam name="T">Enum type</typeparam>
@@ -175,7 +180,10 @@ namespace UltraForce.Library.Core.Asp.Tools
         .Select(
           value => new SelectListItem(
             //value.GetDisplayDescription(), System.Convert.ToInt32(value).ToString()
-            value.GetDisplayDescription(), value.ToString()
+            UFStringTools.SelectString(
+              value.GetDisplayName(), value.GetDescription(), value.ToString()
+            ),
+            value.ToString()
           )
         )
         .ToList();
@@ -227,7 +235,7 @@ namespace UltraForce.Library.Core.Asp.Tools
         return string.Empty;
       }
       return errors.Aggregate(
-        head, 
+        head,
         (
           current,
           error

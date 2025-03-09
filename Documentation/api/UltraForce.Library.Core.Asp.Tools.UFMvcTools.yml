@@ -29,7 +29,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: UFMvcTools
     path: ../UltraForce.Library.Core.Asp/Tools/UFMvcTools.cs
-    startLine: 43
+    startLine: 46
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Tools
@@ -66,7 +66,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetControllerName
     path: ../UltraForce.Library.Core.Asp/Tools/UFMvcTools.cs
-    startLine: 67
+    startLine: 70
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Tools
@@ -104,7 +104,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetControllerName
     path: ../UltraForce.Library.Core.Asp/Tools/UFMvcTools.cs
-    startLine: 81
+    startLine: 84
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Tools
@@ -141,7 +141,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetViewComponentName
     path: ../UltraForce.Library.Core.Asp/Tools/UFMvcTools.cs
-    startLine: 91
+    startLine: 94
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Tools
@@ -179,7 +179,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Normalize
     path: ../UltraForce.Library.Core.Asp/Tools/UFMvcTools.cs
-    startLine: 105
+    startLine: 108
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Tools
@@ -217,7 +217,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: ReplaceMacros
     path: ../UltraForce.Library.Core.Asp/Tools/UFMvcTools.cs
-    startLine: 121
+    startLine: 124
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Tools
@@ -265,7 +265,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: AddFirstItem
     path: ../UltraForce.Library.Core.Asp/Tools/UFMvcTools.cs
-    startLine: 142
+    startLine: 145
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Tools
@@ -303,11 +303,16 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: CreateListFromEnum
     path: ../UltraForce.Library.Core.Asp/Tools/UFMvcTools.cs
-    startLine: 167
+    startLine: 172
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Tools
-  summary: Creates a <xref href="Microsoft.AspNetCore.Mvc.Rendering.SelectList" data-throw-if-not-resolved="false"></xref> from an enum type.
+  summary: >-
+    Creates a <xref href="Microsoft.AspNetCore.Mvc.Rendering.SelectList" data-throw-if-not-resolved="false"></xref> from an enum type. The methods tries to obtain the text
+
+    from either the display name or the value from <xref href="UltraForce.Library.NetStandard.Annotations.UFDescriptionAttribute" data-throw-if-not-resolved="false"></xref>
+
+    attribute. If both are missing the value is used.
   example: []
   syntax:
     content: 'public static SelectList CreateListFromEnum<T>(string? emptyChoice = null) where T : struct, Enum'
@@ -344,7 +349,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetErrors
     path: ../UltraForce.Library.Core.Asp/Tools/UFMvcTools.cs
-    startLine: 209
+    startLine: 217
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Tools
@@ -397,7 +402,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Validate
     path: ../UltraForce.Library.Core.Asp/Tools/UFMvcTools.cs
-    startLine: 242
+    startLine: 250
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Tools
@@ -435,7 +440,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetJsonName
     path: ../UltraForce.Library.Core.Asp/Tools/UFMvcTools.cs
-    startLine: 264
+    startLine: 272
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Tools
@@ -906,6 +911,12 @@ references:
     name: Rendering
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.rendering
+- uid: UltraForce.Library.NetStandard.Annotations.UFDescriptionAttribute
+  commentId: T:UltraForce.Library.NetStandard.Annotations.UFDescriptionAttribute
+  isExternal: true
+  name: UFDescriptionAttribute
+  nameWithType: UFDescriptionAttribute
+  fullName: UltraForce.Library.NetStandard.Annotations.UFDescriptionAttribute
 - uid: UltraForce.Library.Core.Asp.Tools.UFMvcTools.CreateListFromEnum*
   commentId: Overload:UltraForce.Library.Core.Asp.Tools.UFMvcTools.CreateListFromEnum
   href: UltraForce.Library.Core.Asp.Tools.UFMvcTools.html#UltraForce_Library_Core_Asp_Tools_UFMvcTools_CreateListFromEnum__1_System_String_

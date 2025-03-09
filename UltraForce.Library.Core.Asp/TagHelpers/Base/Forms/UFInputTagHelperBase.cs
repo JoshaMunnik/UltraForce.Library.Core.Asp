@@ -653,10 +653,10 @@ public abstract class UFInputTagHelperBase(
       "</label>";
     string preHtml = this.GetTextInputPreHtml(type);
     string postHtml = this.GetTextInputPostHtml(type);
-    output.PreElement.SetHtmlContent(
+    output.PreElement.AppendHtml(
       $"<div class=\"{this.GetTextInputWrapperClasses(type)}\">{labelHtml}{preHtml}"
     );
-    output.PostElement.SetHtmlContent(
+    output.PostElement.AppendHtml(
       $"{postHtml}{this.GetValidationFeedbackContainerHtml(id, name)}{errorMessageHtml}</div>"
     );
   }
@@ -692,12 +692,12 @@ public abstract class UFInputTagHelperBase(
       "</label>";
     if (pre.Length + preLabel.Length > 0)
     {
-      anOutput.PreElement.SetHtmlContent(pre + preLabel);
-      anOutput.PostElement.SetHtmlContent(this.GetRadioExtraHtml() + postLabel + post);
+      anOutput.PreElement.AppendHtml(pre + preLabel);
+      anOutput.PostElement.AppendHtml(this.GetRadioExtraHtml() + postLabel + post);
     }
     else
     {
-      anOutput.PostElement.SetHtmlContent(this.GetRadioExtraHtml());
+      anOutput.PostElement.AppendHtml(this.GetRadioExtraHtml());
     }
   }
 
@@ -732,12 +732,12 @@ public abstract class UFInputTagHelperBase(
       "</label>";
     if (pre.Length + preLabel.Length > 0)
     {
-      anOutput.PreElement.SetHtmlContent(pre + preLabel);
-      anOutput.PostElement.SetHtmlContent(this.GetCheckboxExtraHtml() + postLabel + post);
+      anOutput.PreElement.AppendHtml(pre + preLabel);
+      anOutput.PostElement.AppendHtml(this.GetCheckboxExtraHtml() + postLabel + post);
     }
     else
     {
-      anOutput.PostElement.SetHtmlContent(this.GetCheckboxExtraHtml());
+      anOutput.PostElement.AppendHtml(this.GetCheckboxExtraHtml());
     }
   }
 

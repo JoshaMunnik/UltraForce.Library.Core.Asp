@@ -108,15 +108,15 @@ The generated td or th element always uses an opening and closing tag.
 </p>
 <p>
 Rendered html for header:
-<pre><code class="lang-csharp">&lt;th class="{GetTableCellClasses()}}" [style="width: {Width}"]&gt;{children}&lt;/th&gt;</code></pre>
+<pre><code class="lang-csharp">&lt;th class="{GetTableCellClasses()}}" [style="min-width: {MinWidth}; max-width: {MaxWidth}"]&gt;{children}&lt;/th&gt;</code></pre>
 
 <p>
 Rendered html for data:
-<pre><code class="lang-csharp">&lt;td class="{GetTableCellClasses()}}" [style="width: {Width}"]&gt;{children}&lt;/td&gt;</code></pre>
+<pre><code class="lang-csharp">&lt;td class="{GetTableCellClasses()}}" [style="width: {MinWidth}; max-width: {MaxWidth}"]&gt;{children}&lt;/td&gt;</code></pre>
 
 <p>
 Rendered html for buttons (a div is used so that flex or grid styling can be used):
-<pre><code class="lang-csharp">&lt;td class="{GetTableCellClasses()}}" [style="width: {Width}"]&gt;
+<pre><code class="lang-csharp">&lt;td class="{GetTableCellClasses()}}" [style="width: {MinWidth}; max-width: {MaxWidth}"]&gt;
   &lt;div class="{GetTableHeaderButtonClasses()} &gt;
     {children}
   &lt;/div&gt;

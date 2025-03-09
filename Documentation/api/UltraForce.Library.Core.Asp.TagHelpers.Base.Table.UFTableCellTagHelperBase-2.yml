@@ -10,12 +10,11 @@ items:
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase`2.GetTableCellClasses(UltraForce.Library.Core.Asp.Types.Enums.UFTableCellTypeEnum,`0,`1)
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase`2.GetTableHeaderButtonClasses(`0,`1)
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase`2.MaxWidth
-  - UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase`2.NoCaching
+  - UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase`2.MinWidth
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase`2.NoFilter
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase`2.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase`2.SortType
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase`2.Type
-  - UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase`2.Width
   langs:
   - csharp
   - vb
@@ -49,7 +48,7 @@ items:
 
     Rendered html for header:
 
-    <pre><code class="lang-csharp">&lt;th class="{GetTableCellClasses()}}" [style="width: {Width}"]&gt;{children}&lt;/th&gt;</code></pre>
+    <pre><code class="lang-csharp">&lt;th class="{GetTableCellClasses()}}" [style="min-width: {MinWidth}; max-width: {MaxWidth}"]&gt;{children}&lt;/th&gt;</code></pre>
 
     </p>
 
@@ -57,7 +56,7 @@ items:
 
     Rendered html for data:
 
-    <pre><code class="lang-csharp">&lt;td class="{GetTableCellClasses()}}" [style="width: {Width}"]&gt;{children}&lt;/td&gt;</code></pre>
+    <pre><code class="lang-csharp">&lt;td class="{GetTableCellClasses()}}" [style="width: {MinWidth}; max-width: {MaxWidth}"]&gt;{children}&lt;/td&gt;</code></pre>
 
     </p>
 
@@ -65,7 +64,7 @@ items:
 
     Rendered html for buttons (a div is used so that flex or grid styling can be used):
 
-    <pre><code class="lang-csharp">&lt;td class="{GetTableCellClasses()}}" [style="width: {Width}"]&gt;
+    <pre><code class="lang-csharp">&lt;td class="{GetTableCellClasses()}}" [style="width: {MinWidth}; max-width: {MaxWidth}"]&gt;
       &lt;div class="{GetTableHeaderButtonClasses()} &gt;
         {children}
       &lt;/div&gt;
@@ -140,7 +139,7 @@ items:
 
     Rendered html for header:
 
-    <pre><code class="lang-csharp">&lt;th class="{GetTableCellClasses()}}" [style="width: {Width}"]&gt;{children}&lt;/th&gt;</code></pre>
+    <pre><code class="lang-csharp">&lt;th class="{GetTableCellClasses()}}" [style="min-width: {MinWidth}; max-width: {MaxWidth}"]&gt;{children}&lt;/th&gt;</code></pre>
 
     </p>
 
@@ -148,7 +147,7 @@ items:
 
     Rendered html for data:
 
-    <pre><code class="lang-csharp">&lt;td class="{GetTableCellClasses()}}" [style="width: {Width}"]&gt;{children}&lt;/td&gt;</code></pre>
+    <pre><code class="lang-csharp">&lt;td class="{GetTableCellClasses()}}" [style="width: {MinWidth}; max-width: {MaxWidth}"]&gt;{children}&lt;/td&gt;</code></pre>
 
     </p>
 
@@ -156,7 +155,7 @@ items:
 
     Rendered html for buttons (a div is used so that flex or grid styling can be used):
 
-    <pre><code class="lang-csharp">&lt;td class="{GetTableCellClasses()}}" [style="width: {Width}"]&gt;
+    <pre><code class="lang-csharp">&lt;td class="{GetTableCellClasses()}}" [style="width: {MinWidth}; max-width: {MaxWidth}"]&gt;
       &lt;div class="{GetTableHeaderButtonClasses()} &gt;
         {children}
       &lt;/div&gt;
@@ -219,51 +218,51 @@ items:
       value: type
   nameWithType.vb: UFTableCellTagHelperBase(Of TTable, TTableRow).Type
   fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase(Of TTable, TTableRow).Type
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase`2.Width
-  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase`2.Width
-  id: Width
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase`2.MinWidth
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase`2.MinWidth
+  id: MinWidth
   parent: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase`2
   langs:
   - csharp
   - vb
-  name: Width
-  nameWithType: UFTableCellTagHelperBase<TTable, TTableRow>.Width
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase<TTable, TTableRow>.Width
+  name: MinWidth
+  nameWithType: UFTableCellTagHelperBase<TTable, TTableRow>.MinWidth
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase<TTable, TTableRow>.MinWidth
   type: Property
   source:
     remote:
       path: UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableCellTagHelperBase.cs
       branch: master
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
-    id: Width
+    id: MinWidth
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableCellTagHelperBase.cs
     startLine: 90
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Table
-  summary: When not empty, set this value as width value via the style tag.
+  summary: When not empty, set this value as min-width value via the style tag.
   example: []
   syntax:
     content: >-
-      [HtmlAttributeName("width")]
+      [HtmlAttributeName("min-width")]
 
-      public string Width { get; set; }
+      public string MinWidth { get; set; }
     parameters: []
     return:
       type: System.String
     content.vb: >-
-      <HtmlAttributeName("width")>
+      <HtmlAttributeName("min-width")>
 
-      Public Property Width As String
-  overload: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase`2.Width*
+      Public Property MinWidth As String
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase`2.MinWidth*
   attributes:
   - type: Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute
     ctor: Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute.#ctor(System.String)
     arguments:
     - type: System.String
-      value: width
-  nameWithType.vb: UFTableCellTagHelperBase(Of TTable, TTableRow).Width
-  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase(Of TTable, TTableRow).Width
+      value: min-width
+  nameWithType.vb: UFTableCellTagHelperBase(Of TTable, TTableRow).MinWidth
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase(Of TTable, TTableRow).MinWidth
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase`2.MaxWidth
   commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase`2.MaxWidth
   id: MaxWidth
@@ -377,54 +376,6 @@ items:
       value: sort-type
   nameWithType.vb: UFTableCellTagHelperBase(Of TTable, TTableRow).SortType
   fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase(Of TTable, TTableRow).SortType
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase`2.NoCaching
-  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase`2.NoCaching
-  id: NoCaching
-  parent: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase`2
-  langs:
-  - csharp
-  - vb
-  name: NoCaching
-  nameWithType: UFTableCellTagHelperBase<TTable, TTableRow>.NoCaching
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase<TTable, TTableRow>.NoCaching
-  type: Property
-  source:
-    remote:
-      path: UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableCellTagHelperBase.cs
-      branch: master
-      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
-    id: NoCaching
-    path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableCellTagHelperBase.cs
-    startLine: 120
-  assemblies:
-  - UltraForce.Library.Core.Asp
-  namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Table
-  summary: >-
-    When true the cell contents will not be cached with sorting. This is useful when the cell
-
-    contents will be changed while using a sorted table.
-  example: []
-  syntax:
-    content: >-
-      [HtmlAttributeName("no-caching")]
-
-      public bool NoCaching { get; set; }
-    parameters: []
-    return:
-      type: System.Boolean
-    content.vb: >-
-      <HtmlAttributeName("no-caching")>
-
-      Public Property NoCaching As Boolean
-  overload: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase`2.NoCaching*
-  attributes:
-  - type: Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute
-    ctor: Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute.#ctor(System.String)
-    arguments:
-    - type: System.String
-      value: no-caching
-  nameWithType.vb: UFTableCellTagHelperBase(Of TTable, TTableRow).NoCaching
-  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase(Of TTable, TTableRow).NoCaching
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase`2.For
   commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase`2.For
   id: For
@@ -443,7 +394,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: For
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableCellTagHelperBase.cs
-    startLine: 143
+    startLine: 136
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Table
@@ -523,7 +474,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: NoFilter
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableCellTagHelperBase.cs
-    startLine: 151
+    startLine: 144
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Table
@@ -573,7 +524,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: ProcessAsync
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableCellTagHelperBase.cs
-    startLine: 159
+    startLine: 152
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Table
@@ -618,7 +569,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetTableCellClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableCellTagHelperBase.cs
-    startLine: 209
+    startLine: 198
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Table
@@ -661,7 +612,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetTableHeaderButtonClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableCellTagHelperBase.cs
-    startLine: 224
+    startLine: 213
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Table
@@ -1347,14 +1298,14 @@ references:
   - uid: UltraForce.Library.Core.Asp.Types.Enums
     name: Enums
     href: UltraForce.Library.Core.Asp.Types.Enums.html
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase`2.Width*
-  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase`2.Width
-  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase-2.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableCellTagHelperBase_2_Width
-  name: Width
-  nameWithType: UFTableCellTagHelperBase<TTable, TTableRow>.Width
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase<TTable, TTableRow>.Width
-  nameWithType.vb: UFTableCellTagHelperBase(Of TTable, TTableRow).Width
-  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase(Of TTable, TTableRow).Width
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase`2.MinWidth*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase`2.MinWidth
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase-2.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableCellTagHelperBase_2_MinWidth
+  name: MinWidth
+  nameWithType: UFTableCellTagHelperBase<TTable, TTableRow>.MinWidth
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase<TTable, TTableRow>.MinWidth
+  nameWithType.vb: UFTableCellTagHelperBase(Of TTable, TTableRow).MinWidth
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase(Of TTable, TTableRow).MinWidth
 - uid: System.String
   commentId: T:System.String
   parent: System
@@ -1409,25 +1360,6 @@ references:
   name: UFTableSortTypeEnum
   nameWithType: UFTableSortTypeEnum
   fullName: UltraForce.Library.Core.Asp.Types.Enums.UFTableSortTypeEnum
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase`2.NoCaching*
-  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase`2.NoCaching
-  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase-2.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableCellTagHelperBase_2_NoCaching
-  name: NoCaching
-  nameWithType: UFTableCellTagHelperBase<TTable, TTableRow>.NoCaching
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase<TTable, TTableRow>.NoCaching
-  nameWithType.vb: UFTableCellTagHelperBase(Of TTable, TTableRow).NoCaching
-  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase(Of TTable, TTableRow).NoCaching
-- uid: System.Boolean
-  commentId: T:System.Boolean
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.boolean
-  name: bool
-  nameWithType: bool
-  fullName: bool
-  nameWithType.vb: Boolean
-  fullName.vb: Boolean
-  name.vb: Boolean
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase`2.SortType
   commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase`2.SortType
   href: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase-2.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableCellTagHelperBase_2_SortType
@@ -1521,6 +1453,17 @@ references:
   fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase<TTable, TTableRow>.NoFilter
   nameWithType.vb: UFTableCellTagHelperBase(Of TTable, TTableRow).NoFilter
   fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase(Of TTable, TTableRow).NoFilter
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
 - uid: System.Threading.Tasks.Task
   commentId: T:System.Threading.Tasks.Task
   parent: System.Threading.Tasks

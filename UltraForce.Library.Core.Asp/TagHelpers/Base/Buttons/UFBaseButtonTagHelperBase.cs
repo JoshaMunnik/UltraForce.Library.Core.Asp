@@ -147,17 +147,17 @@ public abstract class UFBaseButtonTagHelperBase(
     {
       string beforeHtml = this.GetBeforeCaptionHtml(context, output, true, isStatic);
       string afterHtml = this.GetAfterCaptionHtml(context, output, true, isStatic);
-      output.PreContent.SetHtmlContent(
+      output.PreContent.AppendHtml(
         $"{beforeHtml}<span class=\"{this.GetButtonCaptionClasses(context, output, isStatic)}\">"
       );
-      output.PostContent.SetHtmlContent($"</span>{afterHtml}");
+      output.PostContent.AppendHtml($"</span>{afterHtml}");
       UFTagHelperTools.AddClasses(output, this.GetButtonClasses(context, output, true, isStatic));
     }
     else
     {
       string beforeHtml = this.GetBeforeCaptionHtml(context, output, false, isStatic);
       string afterHtml = this.GetAfterCaptionHtml(context, output, false, isStatic);
-      output.PreContent.SetHtmlContent(beforeHtml + afterHtml);
+      output.PreContent.AppendHtml(beforeHtml + afterHtml);
       UFTagHelperTools.AddClasses(
         output, this.GetButtonClasses(context, output, false, isStatic)
       );

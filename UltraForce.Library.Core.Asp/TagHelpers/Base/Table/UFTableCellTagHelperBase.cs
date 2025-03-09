@@ -48,19 +48,19 @@ namespace UltraForce.Library.Core.Asp.TagHelpers.Base.Table;
 /// <para>
 /// Rendered html for header:
 /// <code>
-/// &lt;th class="{GetTableCellClasses()}}" [style="width: {Width}"]&gt;{children}&lt;/th&gt;
+/// &lt;th class="{GetTableCellClasses()}}" [style="min-width: {MinWidth}; max-width: {MaxWidth}"]&gt;{children}&lt;/th&gt;
 /// </code>
 /// </para>
 /// <para>
 /// Rendered html for data:
 /// <code>
-/// &lt;td class="{GetTableCellClasses()}}" [style="width: {Width}"]&gt;{children}&lt;/td&gt;
+/// &lt;td class="{GetTableCellClasses()}}" [style="width: {MinWidth}; max-width: {MaxWidth}"]&gt;{children}&lt;/td&gt;
 /// </code>
 /// </para>
 /// <para>
 /// Rendered html for buttons (a div is used so that flex or grid styling can be used):
 /// <code>
-/// &lt;td class="{GetTableCellClasses()}}" [style="width: {Width}"]&gt;<br/>
+/// &lt;td class="{GetTableCellClasses()}}" [style="width: {MinWidth}; max-width: {MaxWidth}"]&gt;<br/>
 ///   &lt;div class="{GetTableHeaderButtonClasses()} &gt;<br/>
 ///     {children}<br/>
 ///   &lt;/div&gt;<br/>
@@ -86,10 +86,10 @@ public abstract class UFTableCellTagHelperBase<TTable, TTableRow>(
   public UFTableCellTypeEnum Type { get; set; } = UFTableCellTypeEnum.Auto;
 
   /// <summary>
-  /// When not empty, set this value as width value via the style tag. 
+  /// When not empty, set this value as min-width value via the style tag. 
   /// </summary>
-  [HtmlAttributeName("width")]
-  public string Width { get; set; } = "";
+  [HtmlAttributeName("min-width")]
+  public string MinWidth { get; set; } = "";
 
   /// <summary>
   /// When not empty, set this value as max-width value via the style tag. 
@@ -113,13 +113,6 @@ public abstract class UFTableCellTagHelperBase<TTable, TTableRow>(
   /// </summary>
   [HtmlAttributeName("sort-type")]
   public UFTableSortTypeEnum SortType { get; set; } = UFTableSortTypeEnum.Auto;
-
-  /// <summary>
-  /// When true the cell contents will not be cached with sorting. This is useful when the cell
-  /// contents will be changed while using a sorted table.
-  /// </summary>
-  [HtmlAttributeName("no-caching")]
-  public bool NoCaching { get; set; } = false;
 
   /// <summary>
   /// An expression to be evaluated against the current model. When set, the method will use the
@@ -189,10 +182,6 @@ public abstract class UFTableCellTagHelperBase<TTable, TTableRow>(
     )
     {
       this.AddButtonWrapper(output, table, tableRow);
-    }
-    if (this.NoCaching)
-    {
-      output.Attributes.SetAttribute(UFDataAttribute.NoCaching, "1");
     }
   }
 
@@ -303,7 +292,7 @@ public abstract class UFTableCellTagHelperBase<TTable, TTableRow>(
   }
 
   /// <summary>
-  /// Adds css classes to the classes attribute and process the <see cref="Width"/> property.
+  /// Adds css classes to the classes attribute and process the <see cref="MinWidth"/> property.
   /// </summary>
   /// <param name="output"></param>
   /// <param name="cellType"></param>
@@ -319,9 +308,9 @@ public abstract class UFTableCellTagHelperBase<TTable, TTableRow>(
     string classValue = this.GetTableCellClasses(cellType, table, tableRow);
     UFTagHelperTools.AddClasses(output, classValue);
     string style = "";
-    if (!string.IsNullOrEmpty(this.Width))
+    if (!string.IsNullOrEmpty(this.MinWidth))
     {
-      style = " width: " + this.Width + ";";
+      style = " min-width: " + this.MinWidth + ";";
     }
     if (!string.IsNullOrEmpty(this.MaxWidth))
     {
@@ -329,6 +318,7 @@ public abstract class UFTableCellTagHelperBase<TTable, TTableRow>(
     }
     if (!string.IsNullOrEmpty(style))
     {
+      style += " width: 1px;";
       output.Attributes.SetAttribute("style", style);
     }
   }
@@ -388,12 +378,12 @@ public abstract class UFTableCellTagHelperBase<TTable, TTableRow>(
     TTableRow tableRow
   )
   {
-    output.PreContent.SetHtmlContent(
+    output.PreContent.AppendHtml(
       $"<button" +
       $" class=\"{this.GetTableHeaderButtonClasses(table, tableRow)}\"" +
       $">"
     );
-    output.PostContent.SetHtmlContent("</button>");
+    output.PostContent.AppendHtml("</button>");
   }
 
   #endregion

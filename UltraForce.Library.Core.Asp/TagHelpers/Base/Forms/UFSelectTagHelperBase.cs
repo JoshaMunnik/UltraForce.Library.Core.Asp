@@ -240,10 +240,10 @@ public abstract class UFSelectTagHelperBase(
     string labelHtml = string.IsNullOrEmpty(label)
       ? ""
       : $"<label class=\"{this.GetTextLabelClasses("select")}\" for=\"{id}\">{label}</label>";
-    output.PreElement.SetHtmlContent(
+    output.PreElement.AppendHtml(
       $"<div class=\"{this.GetTextWrapperClasses("select")}\">{labelHtml}"
     );
-    output.PostElement.SetHtmlContent(
+    output.PostElement.AppendHtml(
       $"{this.GetValidationFeedbackContainerHtml(id, name)}{errorMessageHtml}</div>"
     );
   }

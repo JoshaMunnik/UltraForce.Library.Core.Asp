@@ -10,6 +10,21 @@ Include the styles in your html using (for example `Shared\_Layout.cshtml`):
 <link rel="stylesheet" href="/_content/UltraForce.Library.Core.Asp/css/uf-styles.css" />
 ````
 ## Version history
+1.0.89
+- UFMvcTools.CreateListFromEnum now uses the display name and not the description
+ 
+1.0.88
+- setting width to 1px when specifying min-width or max-width in UFTableCellTagHelperBase
+
+1.0.87
+- Renamed UFTableCelLTagHelperBase.Width to UFTableCellTagHelperBase.MinWidth and it sets
+  the min-width style attribute.
+
+1.0.86
+- Replaced SetHtmlContent with AppendHtml on all PreContent, PostContent, PreElement and 
+  PostElement calls.
+- Removed no caching option from UFTableCellTagHelperBase
+
 1.0.85
 - added name parameter to GetValidationFeedbackContainerHtml in UFInputTagHelperBase and 
   UFSelectTagHelperBase
