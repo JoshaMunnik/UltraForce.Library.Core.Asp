@@ -2,11 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-      <title>Class UFFlexTagHelperBase | UltraForce.Library.Core.Asp </title>
+      <title>Class UFBasicFlexTagHelperBase | UltraForce.Library.Core.Asp </title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="title" content="Class UFFlexTagHelperBase | UltraForce.Library.Core.Asp ">
+      <meta name="title" content="Class UFBasicFlexTagHelperBase | UltraForce.Library.Core.Asp ">
       
-      <meta name="description" content="This class adds additional properties to the  class.  When using this tag helper, make sure to include the stylesheet in the html: &amp;lt;link rel=&quot;stylesheet&quot; href=&quot;/_content/UltraForce.Library.Core.Asp/css/uf-styles.css&quot;/&amp;gt;   Renders: &amp;lt;div class=&quot;{GetClasses()}&quot;&amp;gt;   {children} &amp;lt;/div&amp;gt;">
+      <meta name="description" content="Abstract class for basic flex containers. It only offers properties to position the contents.  When using this tag helper, make sure to include the stylesheet in the html: &amp;lt;link rel=&quot;stylesheet&quot; href=&quot;/_content/UltraForce.Library.Core.Asp/css/uf-styles.css&quot;/&amp;gt;   Renders: &amp;lt;div class=&quot;{GetClasses()}&quot;&amp;gt;   {children} &amp;lt;/div&amp;gt;">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -16,7 +16,7 @@
       <meta name="docfx:rel" content="../">
       
       
-      <meta name="docfx:docurl" content="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/new/master/apiSpec/new?filename=UltraForce_Library_Core_Asp_TagHelpers_Layout_Base_UFFlexTagHelperBase.md&amp;value=---%0Auid%3A%20UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="docfx:docurl" content="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/new/master/apiSpec/new?filename=UltraForce_Library_Core_Asp_TagHelpers_Layout_Base_UFBasicFlexTagHelperBase.md&amp;value=---%0Auid%3A%20UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
       <meta name="loc:inThisArticle" content="In this article">
       <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
       <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
@@ -84,12 +84,12 @@
           <nav id="breadcrumb"></nav>
         </div>
 
-        <article data-uid="UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase">
+        <article data-uid="UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase">
 
 
 
-  <h1 id="UltraForce_Library_Core_Asp_TagHelpers_Layout_Base_UFFlexTagHelperBase" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase" class="text-break">
-Class UFFlexTagHelperBase  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Layout/Base/UFFlexTagHelperBase.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  <h1 id="UltraForce_Library_Core_Asp_TagHelpers_Layout_Base_UFBasicFlexTagHelperBase" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase" class="text-break">
+Class UFBasicFlexTagHelperBase  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Layout/Base/UFBasicFlexTagHelperBase.cs/#L55"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -97,7 +97,7 @@ Class UFFlexTagHelperBase  <a class="header-action link-secondary" title="View s
   <dl><dt>Assembly</dt><dd>UltraForce.Library.Core.Asp.dll</dd></dl>
   </div>
 
-  <div class="markdown summary"><p>This class adds additional properties to the <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.html">UFBasicFlexTagHelperBase</a> class.</p>
+  <div class="markdown summary"><p>Abstract class for basic flex containers. It only offers properties to position the contents.</p>
 <p>
 When using this tag helper, make sure to include the stylesheet in the html:
 <pre><code class="lang-csharp">&lt;link rel="stylesheet" href="/_content/UltraForce.Library.Core.Asp/css/uf-styles.css"/&gt;</code></pre>
@@ -112,7 +112,7 @@ Renders:
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class UFFlexTagHelperBase : UFBasicFlexTagHelperBase, ITagHelper, ITagHelperComponent</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class UFBasicFlexTagHelperBase : UFStyledTagHelperBase, ITagHelper, ITagHelperComponent</code></pre>
   </div>
 
 
@@ -124,8 +124,7 @@ Renders:
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper">TagHelper</a></div>
       <div><a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.UFStyledTagHelperBase.html">UFStyledTagHelperBase</a></div>
-      <div><a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.html">UFBasicFlexTagHelperBase</a></div>
-      <div><span class="xref">UFFlexTagHelperBase</span></div>
+      <div><span class="xref">UFBasicFlexTagHelperBase</span></div>
     </dd>
   </dl>
 
@@ -140,23 +139,13 @@ Renders:
   <dl class="typelist derived">
     <dt>Derived</dt>
     <dd>
-      <div><a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Layout.UFColumnTagHelper.html">UFColumnTagHelper</a></div>
-      <div><a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Layout.UFRowTagHelper.html">UFRowTagHelper</a></div>
+      <div><a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.html">UFFlexTagHelperBase</a></div>
     </dd>
   </dl>
 
   <dl class="typelist inheritedMembers">
     <dt>Inherited Members</dt>
     <dd>
-    <div>
-      <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Layout_Base_UFBasicFlexTagHelperBase_AlignCrossAxis">UFBasicFlexTagHelperBase.AlignCrossAxis</a>
-    </div>
-    <div>
-      <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Layout_Base_UFBasicFlexTagHelperBase_DistributeCrossAxis">UFBasicFlexTagHelperBase.DistributeCrossAxis</a>
-    </div>
-    <div>
-      <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Layout_Base_UFBasicFlexTagHelperBase_Reverse">UFBasicFlexTagHelperBase.Reverse</a>
-    </div>
     <div>
       <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.UFStyledTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_UFStyledTagHelperBase_Process_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContext_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_">UFStyledTagHelperBase.Process(TagHelperContext, TagHelperOutput)</a>
     </div>
@@ -201,14 +190,14 @@ Renders:
 </h2>
 
 
-  <a id="UltraForce_Library_Core_Asp_TagHelpers_Layout_Base_UFFlexTagHelperBase__ctor_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.#ctor*"></a>
+  <a id="UltraForce_Library_Core_Asp_TagHelpers_Layout_Base_UFBasicFlexTagHelperBase__ctor_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.#ctor*"></a>
 
-  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Layout_Base_UFFlexTagHelperBase__ctor_UltraForce_Library_Core_Asp_Types_Enums_UFFlexTypeEnum_System_String_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.#ctor(UltraForce.Library.Core.Asp.Types.Enums.UFFlexTypeEnum,System.String)">
-  UFFlexTagHelperBase(UFFlexTypeEnum, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Layout/Base/UFFlexTagHelperBase.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Layout_Base_UFBasicFlexTagHelperBase__ctor_UltraForce_Library_Core_Asp_Types_Enums_UFFlexTypeEnum_System_String_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.#ctor(UltraForce.Library.Core.Asp.Types.Enums.UFFlexTypeEnum,System.String)">
+  UFBasicFlexTagHelperBase(UFFlexTypeEnum, string)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Layout/Base/UFBasicFlexTagHelperBase.cs/#L55"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>This class adds additional properties to the <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.html">UFBasicFlexTagHelperBase</a> class.</p>
+  <div class="markdown level1 summary"><p>Abstract class for basic flex containers. It only offers properties to position the contents.</p>
 <p>
 When using this tag helper, make sure to include the stylesheet in the html:
 <pre><code class="lang-csharp">&lt;link rel="stylesheet" href="/_content/UltraForce.Library.Core.Asp/css/uf-styles.css"/&gt;</code></pre>
@@ -223,7 +212,7 @@ Renders:
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected UFFlexTagHelperBase(UFFlexTypeEnum flexType, string tag = &quot;div&quot;)</code></pre>
+    <pre><code class="lang-csharp hljs">protected UFBasicFlexTagHelperBase(UFFlexTypeEnum flexType, string tag = &quot;div&quot;)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -249,20 +238,53 @@ Renders:
 </h2>
 
 
-  <a id="UltraForce_Library_Core_Asp_TagHelpers_Layout_Base_UFFlexTagHelperBase_DistributeMainAxis_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.DistributeMainAxis*"></a>
+  <a id="UltraForce_Library_Core_Asp_TagHelpers_Layout_Base_UFBasicFlexTagHelperBase_AlignCrossAxis_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.AlignCrossAxis*"></a>
 
-  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Layout_Base_UFFlexTagHelperBase_DistributeMainAxis" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.DistributeMainAxis">
-  DistributeMainAxis
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Layout/Base/UFFlexTagHelperBase.cs/#L62"><i class="bi bi-code-slash"></i></a>
+  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Layout_Base_UFBasicFlexTagHelperBase_AlignCrossAxis" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.AlignCrossAxis">
+  AlignCrossAxis
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Layout/Base/UFBasicFlexTagHelperBase.cs/#L63"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>How to distribute the items in the direction of the main axis.</p>
+  <div class="markdown level1 summary"><p>How to align the items in the opposite direction.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[HtmlAttributeName(&quot;distribute-main-axis&quot;)]
-public UFFlexDistributeContentEnum DistributeMainAxis { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public UFFlexAlignItemsEnum AlignCrossAxis { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignItemsEnum.html">UFFlexAlignItemsEnum</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_TagHelpers_Layout_Base_UFBasicFlexTagHelperBase_DistributeCrossAxis_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.DistributeCrossAxis*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Layout_Base_UFBasicFlexTagHelperBase_DistributeCrossAxis" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.DistributeCrossAxis">
+  DistributeCrossAxis
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Layout/Base/UFBasicFlexTagHelperBase.cs/#L69"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>How to distribute the items in the opposite direction. This property is only of use
+when Wrap is true and there are multiple rows or columns.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HtmlAttributeName(&quot;distribute-cross-axis&quot;)]
+public UFFlexDistributeContentEnum DistributeCrossAxis { get; set; }</code></pre>
   </div>
 
 
@@ -282,86 +304,20 @@ public UFFlexDistributeContentEnum DistributeMainAxis { get; set; }</code></pre>
 
 
 
-  <a id="UltraForce_Library_Core_Asp_TagHelpers_Layout_Base_UFFlexTagHelperBase_FullHeight_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.FullHeight*"></a>
+  <a id="UltraForce_Library_Core_Asp_TagHelpers_Layout_Base_UFBasicFlexTagHelperBase_Reverse_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.Reverse*"></a>
 
-  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Layout_Base_UFFlexTagHelperBase_FullHeight" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.FullHeight">
-  FullHeight
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Layout/Base/UFFlexTagHelperBase.cs/#L74"><i class="bi bi-code-slash"></i></a>
+  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Layout_Base_UFBasicFlexTagHelperBase_Reverse" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.Reverse">
+  Reverse
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Layout/Base/UFBasicFlexTagHelperBase.cs/#L75"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>When true use all available vertical space in the parent.</p>
+  <div class="markdown level1 summary"><p>When true, reverse the order of the items.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[HtmlAttributeName(&quot;full-height&quot;)]
-public bool FullHeight { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="UltraForce_Library_Core_Asp_TagHelpers_Layout_Base_UFFlexTagHelperBase_FullWidth_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.FullWidth*"></a>
-
-  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Layout_Base_UFFlexTagHelperBase_FullWidth" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.FullWidth">
-  FullWidth
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Layout/Base/UFFlexTagHelperBase.cs/#L68"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>When true use all available horizontal space in the parent.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[HtmlAttributeName(&quot;full-width&quot;)]
-public bool FullWidth { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="UltraForce_Library_Core_Asp_TagHelpers_Layout_Base_UFFlexTagHelperBase_Wrap_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.Wrap*"></a>
-
-  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Layout_Base_UFFlexTagHelperBase_Wrap" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.Wrap">
-  Wrap
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Layout/Base/UFFlexTagHelperBase.cs/#L80"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>When true wrap children across multiple rows or columns when they don&quot;t fit.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[HtmlAttributeName(&quot;wrap&quot;)]
-public bool Wrap { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[HtmlAttributeName(&quot;reverse&quot;)]
+public bool Reverse { get; set; }</code></pre>
   </div>
 
 
@@ -385,11 +341,11 @@ public bool Wrap { get; set; }</code></pre>
 </h2>
 
 
-  <a id="UltraForce_Library_Core_Asp_TagHelpers_Layout_Base_UFFlexTagHelperBase_GetClasses_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.GetClasses*"></a>
+  <a id="UltraForce_Library_Core_Asp_TagHelpers_Layout_Base_UFBasicFlexTagHelperBase_GetClasses_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.GetClasses*"></a>
 
-  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Layout_Base_UFFlexTagHelperBase_GetClasses" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.GetClasses">
+  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Layout_Base_UFBasicFlexTagHelperBase_GetClasses" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.GetClasses">
   GetClasses()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Layout/Base/UFFlexTagHelperBase.cs/#L88"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Layout/Base/UFBasicFlexTagHelperBase.cs/#L86"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The default implementation uses styles from 'uf-styles.css'.</p>
@@ -421,7 +377,7 @@ public bool Wrap { get; set; }</code></pre>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Layout/Base/UFFlexTagHelperBase.cs/#L54" class="edit-link">Edit this page</a>
+          <a href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Layout/Base/UFBasicFlexTagHelperBase.cs/#L55" class="edit-link">Edit this page</a>
         </div>
 
 

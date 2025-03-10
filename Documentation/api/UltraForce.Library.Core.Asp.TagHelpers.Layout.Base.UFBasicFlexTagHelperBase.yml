@@ -1,31 +1,35 @@
 ### YamlMime:ManagedReference
 items:
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Layout.UFRowTagHelper
-  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Layout.UFRowTagHelper
-  id: UFRowTagHelper
-  parent: UltraForce.Library.Core.Asp.TagHelpers.Layout
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase
+  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase
+  id: UFBasicFlexTagHelperBase
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base
   children:
-  - UltraForce.Library.Core.Asp.TagHelpers.Layout.UFRowTagHelper.#ctor
+  - UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.#ctor(UltraForce.Library.Core.Asp.Types.Enums.UFFlexTypeEnum,System.String)
+  - UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.AlignCrossAxis
+  - UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.DistributeCrossAxis
+  - UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.GetClasses
+  - UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.Reverse
   langs:
   - csharp
   - vb
-  name: UFRowTagHelper
-  nameWithType: UFRowTagHelper
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Layout.UFRowTagHelper
+  name: UFBasicFlexTagHelperBase
+  nameWithType: UFBasicFlexTagHelperBase
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase
   type: Class
   source:
     remote:
-      path: UltraForce.Library.Core.Asp/TagHelpers/Layout/UFRowTagHelper.cs
+      path: UltraForce.Library.Core.Asp/TagHelpers/Layout/Base/UFBasicFlexTagHelperBase.cs
       branch: master
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
-    id: UFRowTagHelper
-    path: ../UltraForce.Library.Core.Asp/TagHelpers/Layout/UFRowTagHelper.cs
-    startLine: 45
+    id: UFBasicFlexTagHelperBase
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Layout/Base/UFBasicFlexTagHelperBase.cs
+    startLine: 54
   assemblies:
   - UltraForce.Library.Core.Asp
-  namespace: UltraForce.Library.Core.Asp.TagHelpers.Layout
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base
   summary: >-
-    A <xref href="UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase" data-throw-if-not-resolved="false"></xref> subclass to place the children in a column.
+    Abstract class for basic flex containers. It only offers properties to position the contents.
 
     <p>
 
@@ -34,34 +38,30 @@ items:
     <pre><code class="lang-csharp">&lt;link rel="stylesheet" href="/_content/UltraForce.Library.Core.Asp/css/uf-styles.css"/&gt;</code></pre>
 
     </p>
+
+    <p>
+
+    Renders:
+
+    <pre><code class="lang-csharp">&lt;div class="{GetClasses()}"&gt;
+      {children}
+    &lt;/div&gt;</code></pre>
+
+    </p>
   example: []
   syntax:
-    content: >-
-      [HtmlTargetElement("uf-row", TagStructure = TagStructure.NormalOrSelfClosing)]
-
-      public class UFRowTagHelper : UFFlexTagHelperBase, ITagHelper, ITagHelperComponent
-    content.vb: >-
-      <HtmlTargetElement("uf-row", TagStructure:=TagStructure.NormalOrSelfClosing)>
-
-      Public Class UFRowTagHelper Inherits UFFlexTagHelperBase Implements ITagHelper, ITagHelperComponent
+    content: 'public abstract class UFBasicFlexTagHelperBase : UFStyledTagHelperBase, ITagHelper, ITagHelperComponent'
+    content.vb: Public MustInherit Class UFBasicFlexTagHelperBase Inherits UFStyledTagHelperBase Implements ITagHelper, ITagHelperComponent
   inheritance:
   - System.Object
   - Microsoft.AspNetCore.Razor.TagHelpers.TagHelper
   - UltraForce.Library.Core.Asp.TagHelpers.Base.UFStyledTagHelperBase
-  - UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase
+  derivedClasses:
   - UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase
   implements:
   - Microsoft.AspNetCore.Razor.TagHelpers.ITagHelper
   - Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent
   inheritedMembers:
-  - UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.DistributeMainAxis
-  - UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.FullWidth
-  - UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.FullHeight
-  - UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.Wrap
-  - UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.GetClasses
-  - UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.AlignCrossAxis
-  - UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.DistributeCrossAxis
-  - UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.Reverse
   - UltraForce.Library.Core.Asp.TagHelpers.Base.UFStyledTagHelperBase.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
   - Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Init(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext)
   - Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
@@ -73,40 +73,30 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-  attributes:
-  - type: Microsoft.AspNetCore.Razor.TagHelpers.HtmlTargetElementAttribute
-    ctor: Microsoft.AspNetCore.Razor.TagHelpers.HtmlTargetElementAttribute.#ctor(System.String)
-    arguments:
-    - type: System.String
-      value: uf-row
-    namedArguments:
-    - name: TagStructure
-      type: Microsoft.AspNetCore.Razor.TagHelpers.TagStructure
-      value: 1
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Layout.UFRowTagHelper.#ctor
-  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Layout.UFRowTagHelper.#ctor
-  id: '#ctor'
-  parent: UltraForce.Library.Core.Asp.TagHelpers.Layout.UFRowTagHelper
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.#ctor(UltraForce.Library.Core.Asp.Types.Enums.UFFlexTypeEnum,System.String)
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.#ctor(UltraForce.Library.Core.Asp.Types.Enums.UFFlexTypeEnum,System.String)
+  id: '#ctor(UltraForce.Library.Core.Asp.Types.Enums.UFFlexTypeEnum,System.String)'
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase
   langs:
   - csharp
   - vb
-  name: UFRowTagHelper()
-  nameWithType: UFRowTagHelper.UFRowTagHelper()
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Layout.UFRowTagHelper.UFRowTagHelper()
+  name: UFBasicFlexTagHelperBase(UFFlexTypeEnum, string)
+  nameWithType: UFBasicFlexTagHelperBase.UFBasicFlexTagHelperBase(UFFlexTypeEnum, string)
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.UFBasicFlexTagHelperBase(UltraForce.Library.Core.Asp.Types.Enums.UFFlexTypeEnum, string)
   type: Constructor
   source:
     remote:
-      path: UltraForce.Library.Core.Asp/TagHelpers/Layout/UFRowTagHelper.cs
+      path: UltraForce.Library.Core.Asp/TagHelpers/Layout/Base/UFBasicFlexTagHelperBase.cs
       branch: master
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: .ctor
-    path: ../UltraForce.Library.Core.Asp/TagHelpers/Layout/UFRowTagHelper.cs
-    startLine: 45
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Layout/Base/UFBasicFlexTagHelperBase.cs
+    startLine: 54
   assemblies:
   - UltraForce.Library.Core.Asp
-  namespace: UltraForce.Library.Core.Asp.TagHelpers.Layout
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base
   summary: >-
-    A <xref href="UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase" data-throw-if-not-resolved="false"></xref> subclass to place the children in a column.
+    Abstract class for basic flex containers. It only offers properties to position the contents.
 
     <p>
 
@@ -115,28 +105,190 @@ items:
     <pre><code class="lang-csharp">&lt;link rel="stylesheet" href="/_content/UltraForce.Library.Core.Asp/css/uf-styles.css"/&gt;</code></pre>
 
     </p>
+
+    <p>
+
+    Renders:
+
+    <pre><code class="lang-csharp">&lt;div class="{GetClasses()}"&gt;
+      {children}
+    &lt;/div&gt;</code></pre>
+
+    </p>
   example: []
   syntax:
-    content: public UFRowTagHelper()
-    content.vb: Public Sub New()
-  overload: UltraForce.Library.Core.Asp.TagHelpers.Layout.UFRowTagHelper.#ctor*
-  nameWithType.vb: UFRowTagHelper.New()
-  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Layout.UFRowTagHelper.New()
-  name.vb: New()
+    content: protected UFBasicFlexTagHelperBase(UFFlexTypeEnum flexType, string tag = "div")
+    parameters:
+    - id: flexType
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFFlexTypeEnum
+      description: ''
+    - id: tag
+      type: System.String
+      description: ''
+    content.vb: Protected Sub New(flexType As UFFlexTypeEnum, tag As String = "div")
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.#ctor*
+  nameWithType.vb: UFBasicFlexTagHelperBase.New(UFFlexTypeEnum, String)
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.New(UltraForce.Library.Core.Asp.Types.Enums.UFFlexTypeEnum, String)
+  name.vb: New(UFFlexTypeEnum, String)
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.AlignCrossAxis
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.AlignCrossAxis
+  id: AlignCrossAxis
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase
+  langs:
+  - csharp
+  - vb
+  name: AlignCrossAxis
+  nameWithType: UFBasicFlexTagHelperBase.AlignCrossAxis
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.AlignCrossAxis
+  type: Property
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Layout/Base/UFBasicFlexTagHelperBase.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: AlignCrossAxis
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Layout/Base/UFBasicFlexTagHelperBase.cs
+    startLine: 62
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base
+  summary: How to align the items in the opposite direction.
+  example: []
+  syntax:
+    content: public UFFlexAlignItemsEnum AlignCrossAxis { get; set; }
+    parameters: []
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignItemsEnum
+    content.vb: Public Property AlignCrossAxis As UFFlexAlignItemsEnum
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.AlignCrossAxis*
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.DistributeCrossAxis
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.DistributeCrossAxis
+  id: DistributeCrossAxis
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase
+  langs:
+  - csharp
+  - vb
+  name: DistributeCrossAxis
+  nameWithType: UFBasicFlexTagHelperBase.DistributeCrossAxis
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.DistributeCrossAxis
+  type: Property
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Layout/Base/UFBasicFlexTagHelperBase.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: DistributeCrossAxis
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Layout/Base/UFBasicFlexTagHelperBase.cs
+    startLine: 68
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base
+  summary: >-
+    How to distribute the items in the opposite direction. This property is only of use
+
+    when Wrap is true and there are multiple rows or columns.
+  example: []
+  syntax:
+    content: >-
+      [HtmlAttributeName("distribute-cross-axis")]
+
+      public UFFlexDistributeContentEnum DistributeCrossAxis { get; set; }
+    parameters: []
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContentEnum
+    content.vb: >-
+      <HtmlAttributeName("distribute-cross-axis")>
+
+      Public Property DistributeCrossAxis As UFFlexDistributeContentEnum
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.DistributeCrossAxis*
+  attributes:
+  - type: Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute
+    ctor: Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: distribute-cross-axis
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.Reverse
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.Reverse
+  id: Reverse
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase
+  langs:
+  - csharp
+  - vb
+  name: Reverse
+  nameWithType: UFBasicFlexTagHelperBase.Reverse
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.Reverse
+  type: Property
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Layout/Base/UFBasicFlexTagHelperBase.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: Reverse
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Layout/Base/UFBasicFlexTagHelperBase.cs
+    startLine: 74
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base
+  summary: When true, reverse the order of the items.
+  example: []
+  syntax:
+    content: >-
+      [HtmlAttributeName("reverse")]
+
+      public bool Reverse { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <HtmlAttributeName("reverse")>
+
+      Public Property Reverse As Boolean
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.Reverse*
+  attributes:
+  - type: Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute
+    ctor: Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: reverse
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.GetClasses
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.GetClasses
+  id: GetClasses
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase
+  langs:
+  - csharp
+  - vb
+  name: GetClasses()
+  nameWithType: UFBasicFlexTagHelperBase.GetClasses()
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.GetClasses()
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Layout/Base/UFBasicFlexTagHelperBase.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: GetClasses
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Layout/Base/UFBasicFlexTagHelperBase.cs
+    startLine: 85
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base
+  summary: The default implementation uses styles from 'uf-styles.css'.
+  example: []
+  syntax:
+    content: protected override string GetClasses()
+    return:
+      type: System.String
+      description: ''
+    content.vb: Protected Overrides Function GetClasses() As String
+  overridden: UltraForce.Library.Core.Asp.TagHelpers.Base.UFStyledTagHelperBase.GetClasses
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.GetClasses*
 references:
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase
-  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase
-  parent: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base
-  href: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.html
-  name: UFFlexTagHelperBase
-  nameWithType: UFFlexTagHelperBase
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Layout
-  commentId: N:UltraForce.Library.Core.Asp.TagHelpers.Layout
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base
+  commentId: N:UltraForce.Library.Core.Asp.TagHelpers.Layout.Base
   href: UltraForce.html
-  name: UltraForce.Library.Core.Asp.TagHelpers.Layout
-  nameWithType: UltraForce.Library.Core.Asp.TagHelpers.Layout
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Layout
+  name: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base
+  nameWithType: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base
   spec.csharp:
   - uid: UltraForce
     name: UltraForce
@@ -161,6 +313,10 @@ references:
   - uid: UltraForce.Library.Core.Asp.TagHelpers.Layout
     name: Layout
     href: UltraForce.Library.Core.Asp.TagHelpers.Layout.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base
+    name: Base
+    href: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.html
   spec.vb:
   - uid: UltraForce
     name: UltraForce
@@ -185,6 +341,10 @@ references:
   - uid: UltraForce.Library.Core.Asp.TagHelpers.Layout
     name: Layout
     href: UltraForce.Library.Core.Asp.TagHelpers.Layout.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base
+    name: Base
+    href: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.html
 - uid: System.Object
   commentId: T:System.Object
   parent: System
@@ -211,13 +371,6 @@ references:
   name: UFStyledTagHelperBase
   nameWithType: UFStyledTagHelperBase
   fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.UFStyledTagHelperBase
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase
-  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase
-  parent: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base
-  href: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.html
-  name: UFBasicFlexTagHelperBase
-  nameWithType: UFBasicFlexTagHelperBase
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase
 - uid: Microsoft.AspNetCore.Razor.TagHelpers.ITagHelper
   commentId: T:Microsoft.AspNetCore.Razor.TagHelpers.ITagHelper
   parent: Microsoft.AspNetCore.Razor.TagHelpers
@@ -234,74 +387,6 @@ references:
   name: ITagHelperComponent
   nameWithType: ITagHelperComponent
   fullName: Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.DistributeMainAxis
-  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.DistributeMainAxis
-  parent: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase
-  href: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Layout_Base_UFFlexTagHelperBase_DistributeMainAxis
-  name: DistributeMainAxis
-  nameWithType: UFFlexTagHelperBase.DistributeMainAxis
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.DistributeMainAxis
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.FullWidth
-  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.FullWidth
-  parent: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase
-  href: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Layout_Base_UFFlexTagHelperBase_FullWidth
-  name: FullWidth
-  nameWithType: UFFlexTagHelperBase.FullWidth
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.FullWidth
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.FullHeight
-  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.FullHeight
-  parent: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase
-  href: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Layout_Base_UFFlexTagHelperBase_FullHeight
-  name: FullHeight
-  nameWithType: UFFlexTagHelperBase.FullHeight
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.FullHeight
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.Wrap
-  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.Wrap
-  parent: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase
-  href: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Layout_Base_UFFlexTagHelperBase_Wrap
-  name: Wrap
-  nameWithType: UFFlexTagHelperBase.Wrap
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.Wrap
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.GetClasses
-  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.GetClasses
-  parent: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase
-  href: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Layout_Base_UFFlexTagHelperBase_GetClasses
-  name: GetClasses()
-  nameWithType: UFFlexTagHelperBase.GetClasses()
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.GetClasses()
-  spec.csharp:
-  - uid: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.GetClasses
-    name: GetClasses
-    href: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Layout_Base_UFFlexTagHelperBase_GetClasses
-  - name: (
-  - name: )
-  spec.vb:
-  - uid: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.GetClasses
-    name: GetClasses
-    href: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Layout_Base_UFFlexTagHelperBase_GetClasses
-  - name: (
-  - name: )
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.AlignCrossAxis
-  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.AlignCrossAxis
-  parent: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase
-  href: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Layout_Base_UFBasicFlexTagHelperBase_AlignCrossAxis
-  name: AlignCrossAxis
-  nameWithType: UFBasicFlexTagHelperBase.AlignCrossAxis
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.AlignCrossAxis
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.DistributeCrossAxis
-  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.DistributeCrossAxis
-  parent: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase
-  href: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Layout_Base_UFBasicFlexTagHelperBase_DistributeCrossAxis
-  name: DistributeCrossAxis
-  nameWithType: UFBasicFlexTagHelperBase.DistributeCrossAxis
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.DistributeCrossAxis
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.Reverse
-  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.Reverse
-  parent: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase
-  href: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Layout_Base_UFBasicFlexTagHelperBase_Reverse
-  name: Reverse
-  nameWithType: UFBasicFlexTagHelperBase.Reverse
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.Reverse
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.UFStyledTagHelperBase.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
   commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.UFStyledTagHelperBase.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
   parent: UltraForce.Library.Core.Asp.TagHelpers.Base.UFStyledTagHelperBase
@@ -641,68 +726,6 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.object.tostring
   - name: (
   - name: )
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base
-  commentId: N:UltraForce.Library.Core.Asp.TagHelpers.Layout.Base
-  href: UltraForce.html
-  name: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base
-  nameWithType: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base
-  spec.csharp:
-  - uid: UltraForce
-    name: UltraForce
-    href: UltraForce.html
-  - name: .
-  - uid: UltraForce.Library
-    name: Library
-    href: UltraForce.Library.html
-  - name: .
-  - uid: UltraForce.Library.Core
-    name: Core
-    href: UltraForce.Library.Core.html
-  - name: .
-  - uid: UltraForce.Library.Core.Asp
-    name: Asp
-    href: UltraForce.Library.Core.Asp.html
-  - name: .
-  - uid: UltraForce.Library.Core.Asp.TagHelpers
-    name: TagHelpers
-    href: UltraForce.Library.Core.Asp.TagHelpers.html
-  - name: .
-  - uid: UltraForce.Library.Core.Asp.TagHelpers.Layout
-    name: Layout
-    href: UltraForce.Library.Core.Asp.TagHelpers.Layout.html
-  - name: .
-  - uid: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base
-    name: Base
-    href: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.html
-  spec.vb:
-  - uid: UltraForce
-    name: UltraForce
-    href: UltraForce.html
-  - name: .
-  - uid: UltraForce.Library
-    name: Library
-    href: UltraForce.Library.html
-  - name: .
-  - uid: UltraForce.Library.Core
-    name: Core
-    href: UltraForce.Library.Core.html
-  - name: .
-  - uid: UltraForce.Library.Core.Asp
-    name: Asp
-    href: UltraForce.Library.Core.Asp.html
-  - name: .
-  - uid: UltraForce.Library.Core.Asp.TagHelpers
-    name: TagHelpers
-    href: UltraForce.Library.Core.Asp.TagHelpers.html
-  - name: .
-  - uid: UltraForce.Library.Core.Asp.TagHelpers.Layout
-    name: Layout
-    href: UltraForce.Library.Core.Asp.TagHelpers.Layout.html
-  - name: .
-  - uid: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base
-    name: Base
-    href: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.html
 - uid: System
   commentId: N:System
   isExternal: true
@@ -811,12 +834,152 @@ references:
   - uid: UltraForce.Library.Core.Asp.TagHelpers.Base
     name: Base
     href: UltraForce.Library.Core.Asp.TagHelpers.Base.html
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Layout.UFRowTagHelper.#ctor*
-  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Layout.UFRowTagHelper.#ctor
-  href: UltraForce.Library.Core.Asp.TagHelpers.Layout.UFRowTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Layout_UFRowTagHelper__ctor
-  name: UFRowTagHelper
-  nameWithType: UFRowTagHelper.UFRowTagHelper
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Layout.UFRowTagHelper.UFRowTagHelper
-  nameWithType.vb: UFRowTagHelper.New
-  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Layout.UFRowTagHelper.New
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.#ctor*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.#ctor
+  href: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Layout_Base_UFBasicFlexTagHelperBase__ctor_UltraForce_Library_Core_Asp_Types_Enums_UFFlexTypeEnum_System_String_
+  name: UFBasicFlexTagHelperBase
+  nameWithType: UFBasicFlexTagHelperBase.UFBasicFlexTagHelperBase
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.UFBasicFlexTagHelperBase
+  nameWithType.vb: UFBasicFlexTagHelperBase.New
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.New
   name.vb: New
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFFlexTypeEnum
+  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFFlexTypeEnum
+  parent: UltraForce.Library.Core.Asp.Types.Enums
+  href: UltraForce.Library.Core.Asp.Types.Enums.UFFlexTypeEnum.html
+  name: UFFlexTypeEnum
+  nameWithType: UFFlexTypeEnum
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFFlexTypeEnum
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: UltraForce.Library.Core.Asp.Types.Enums
+  commentId: N:UltraForce.Library.Core.Asp.Types.Enums
+  href: UltraForce.html
+  name: UltraForce.Library.Core.Asp.Types.Enums
+  nameWithType: UltraForce.Library.Core.Asp.Types.Enums
+  fullName: UltraForce.Library.Core.Asp.Types.Enums
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types
+    name: Types
+    href: UltraForce.Library.Core.Asp.Types.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types.Enums
+    name: Enums
+    href: UltraForce.Library.Core.Asp.Types.Enums.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types
+    name: Types
+    href: UltraForce.Library.Core.Asp.Types.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types.Enums
+    name: Enums
+    href: UltraForce.Library.Core.Asp.Types.Enums.html
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.AlignCrossAxis*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.AlignCrossAxis
+  href: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Layout_Base_UFBasicFlexTagHelperBase_AlignCrossAxis
+  name: AlignCrossAxis
+  nameWithType: UFBasicFlexTagHelperBase.AlignCrossAxis
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.AlignCrossAxis
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignItemsEnum
+  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignItemsEnum
+  parent: UltraForce.Library.Core.Asp.Types.Enums
+  href: UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignItemsEnum.html
+  name: UFFlexAlignItemsEnum
+  nameWithType: UFFlexAlignItemsEnum
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignItemsEnum
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.DistributeCrossAxis*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.DistributeCrossAxis
+  href: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Layout_Base_UFBasicFlexTagHelperBase_DistributeCrossAxis
+  name: DistributeCrossAxis
+  nameWithType: UFBasicFlexTagHelperBase.DistributeCrossAxis
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.DistributeCrossAxis
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContentEnum
+  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContentEnum
+  parent: UltraForce.Library.Core.Asp.Types.Enums
+  href: UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContentEnum.html
+  name: UFFlexDistributeContentEnum
+  nameWithType: UFFlexDistributeContentEnum
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContentEnum
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.Reverse*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.Reverse
+  href: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Layout_Base_UFBasicFlexTagHelperBase_Reverse
+  name: Reverse
+  nameWithType: UFBasicFlexTagHelperBase.Reverse
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.Reverse
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.UFStyledTagHelperBase.GetClasses
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.UFStyledTagHelperBase.GetClasses
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Base.UFStyledTagHelperBase
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.UFStyledTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_UFStyledTagHelperBase_GetClasses
+  name: GetClasses()
+  nameWithType: UFStyledTagHelperBase.GetClasses()
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.UFStyledTagHelperBase.GetClasses()
+  spec.csharp:
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.UFStyledTagHelperBase.GetClasses
+    name: GetClasses
+    href: UltraForce.Library.Core.Asp.TagHelpers.Base.UFStyledTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_UFStyledTagHelperBase_GetClasses
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.UFStyledTagHelperBase.GetClasses
+    name: GetClasses
+    href: UltraForce.Library.Core.Asp.TagHelpers.Base.UFStyledTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_UFStyledTagHelperBase_GetClasses
+  - name: (
+  - name: )
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.GetClasses*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.GetClasses
+  href: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Layout_Base_UFBasicFlexTagHelperBase_GetClasses
+  name: GetClasses
+  nameWithType: UFBasicFlexTagHelperBase.GetClasses
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.GetClasses

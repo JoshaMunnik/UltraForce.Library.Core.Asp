@@ -4,6 +4,7 @@ items:
   commentId: N:UltraForce.Library.Core.Asp.TagHelpers.Layout.Base
   id: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base
   children:
+  - UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase
   - UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFDataTagHelperBase
   - UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase
   langs:
@@ -16,6 +17,13 @@ items:
   assemblies:
   - UltraForce.Library.Core.Asp
 references:
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase
+  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base
+  href: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.html
+  name: UFBasicFlexTagHelperBase
+  nameWithType: UFBasicFlexTagHelperBase
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFDataTagHelperBase
   commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFDataTagHelperBase
   parent: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base

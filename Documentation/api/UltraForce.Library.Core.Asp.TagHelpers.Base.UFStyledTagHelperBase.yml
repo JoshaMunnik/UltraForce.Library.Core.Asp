@@ -51,6 +51,8 @@ items:
   inheritance:
   - System.Object
   - Microsoft.AspNetCore.Razor.TagHelpers.TagHelper
+  derivedClasses:
+  - UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase
   implements:
   - Microsoft.AspNetCore.Razor.TagHelpers.ITagHelper
   - Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent
@@ -205,6 +207,7 @@ items:
 references:
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.UFStyledTagHelperBase.GetClasses
   commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.UFStyledTagHelperBase.GetClasses
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Base.UFStyledTagHelperBase
   href: UltraForce.Library.Core.Asp.TagHelpers.Base.UFStyledTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_UFStyledTagHelperBase_GetClasses
   name: GetClasses()
   nameWithType: UFStyledTagHelperBase.GetClasses()
@@ -609,6 +612,13 @@ references:
     href: https://learn.microsoft.com/dotnet/api/system.object.tostring
   - name: (
   - name: )
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.UFStyledTagHelperBase
+  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Base.UFStyledTagHelperBase
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Base
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.UFStyledTagHelperBase.html
+  name: UFStyledTagHelperBase
+  nameWithType: UFStyledTagHelperBase
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.UFStyledTagHelperBase
 - uid: System
   commentId: N:System
   isExternal: true

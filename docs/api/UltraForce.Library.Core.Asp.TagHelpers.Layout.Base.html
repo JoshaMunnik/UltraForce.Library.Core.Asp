@@ -95,6 +95,21 @@
 Classes
 </h3>
     <dl class="jumplist">
+      <dt><a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.html">UFBasicFlexTagHelperBase</a></dt>
+      <dd><p>Abstract class for basic flex containers. It only offers properties to position the contents.</p>
+<p>
+When using this tag helper, make sure to include the stylesheet in the html:
+<pre><code class="lang-csharp">&lt;link rel="stylesheet" href="/_content/UltraForce.Library.Core.Asp/css/uf-styles.css"/&gt;</code></pre>
+
+<p>
+Renders:
+<pre><code class="lang-csharp">&lt;div class="{GetClasses()}"&gt;
+  {children}
+&lt;/div&gt;</code></pre>
+
+</dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFDataTagHelperBase.html">UFDataTagHelperBase</a></dt>
       <dd><p>This base class can be used to store or retrieve data.</p>
 <p>
@@ -109,14 +124,14 @@ as a parameter for <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.
     </dl>
     <dl class="jumplist">
       <dt><a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.html">UFFlexTagHelperBase</a></dt>
-      <dd><p>Abstract class for flex containers.</p>
+      <dd><p>This class adds additional properties to the <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.html">UFBasicFlexTagHelperBase</a> class.</p>
 <p>
 When using this tag helper, make sure to include the stylesheet in the html:
 <pre><code class="lang-csharp">&lt;link rel="stylesheet" href="/_content/UltraForce.Library.Core.Asp/css/uf-styles.css"/&gt;</code></pre>
 
 <p>
 Renders:
-<pre><code class="lang-csharp">&lt;div class="{GetFlexClasses()}"&gt;
+<pre><code class="lang-csharp">&lt;div class="{GetClasses()}"&gt;
   {children}
 &lt;/div&gt;</code></pre>
 

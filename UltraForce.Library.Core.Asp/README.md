@@ -10,6 +10,9 @@ Include the styles in your html using (for example `Shared\_Layout.cshtml`):
 <link rel="stylesheet" href="/_content/UltraForce.Library.Core.Asp/css/uf-styles.css" />
 ````
 ## Version history
+1.0.90
+- added UFBasicFlexTagHelperBase  
+
 1.0.89
 - UFMvcTools.CreateListFromEnum now uses the display name and not the description
  

@@ -5,15 +5,11 @@ items:
   id: UFFlexTagHelperBase
   parent: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base
   children:
-  - UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.#ctor(UltraForce.Library.Core.Asp.Types.Enums.UFFlexTypeEnum)
-  - UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.AlignCrossAxis
-  - UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.DistributeCrossAxis
+  - UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.#ctor(UltraForce.Library.Core.Asp.Types.Enums.UFFlexTypeEnum,System.String)
   - UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.DistributeMainAxis
   - UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.FullHeight
   - UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.FullWidth
-  - UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.GetFlexClasses
-  - UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
-  - UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.Reverse
+  - UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.GetClasses
   - UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.Wrap
   langs:
   - csharp
@@ -34,7 +30,7 @@ items:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base
   summary: >-
-    Abstract class for flex containers.
+    This class adds additional properties to the <xref href="UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase" data-throw-if-not-resolved="false"></xref> class.
 
     <p>
 
@@ -48,18 +44,20 @@ items:
 
     Renders:
 
-    <pre><code class="lang-csharp">&lt;div class="{GetFlexClasses()}"&gt;
+    <pre><code class="lang-csharp">&lt;div class="{GetClasses()}"&gt;
       {children}
     &lt;/div&gt;</code></pre>
 
     </p>
   example: []
   syntax:
-    content: 'public abstract class UFFlexTagHelperBase : TagHelper, ITagHelper, ITagHelperComponent'
-    content.vb: Public MustInherit Class UFFlexTagHelperBase Inherits TagHelper Implements ITagHelper, ITagHelperComponent
+    content: 'public abstract class UFFlexTagHelperBase : UFBasicFlexTagHelperBase, ITagHelper, ITagHelperComponent'
+    content.vb: Public MustInherit Class UFFlexTagHelperBase Inherits UFBasicFlexTagHelperBase Implements ITagHelper, ITagHelperComponent
   inheritance:
   - System.Object
   - Microsoft.AspNetCore.Razor.TagHelpers.TagHelper
+  - UltraForce.Library.Core.Asp.TagHelpers.Base.UFStyledTagHelperBase
+  - UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase
   derivedClasses:
   - UltraForce.Library.Core.Asp.TagHelpers.Layout.UFColumnTagHelper
   - UltraForce.Library.Core.Asp.TagHelpers.Layout.UFRowTagHelper
@@ -67,6 +65,10 @@ items:
   - Microsoft.AspNetCore.Razor.TagHelpers.ITagHelper
   - Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent
   inheritedMembers:
+  - UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.AlignCrossAxis
+  - UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.DistributeCrossAxis
+  - UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.Reverse
+  - UltraForce.Library.Core.Asp.TagHelpers.Base.UFStyledTagHelperBase.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
   - Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Init(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext)
   - Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
   - Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Order
@@ -77,16 +79,16 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.#ctor(UltraForce.Library.Core.Asp.Types.Enums.UFFlexTypeEnum)
-  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.#ctor(UltraForce.Library.Core.Asp.Types.Enums.UFFlexTypeEnum)
-  id: '#ctor(UltraForce.Library.Core.Asp.Types.Enums.UFFlexTypeEnum)'
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.#ctor(UltraForce.Library.Core.Asp.Types.Enums.UFFlexTypeEnum,System.String)
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.#ctor(UltraForce.Library.Core.Asp.Types.Enums.UFFlexTypeEnum,System.String)
+  id: '#ctor(UltraForce.Library.Core.Asp.Types.Enums.UFFlexTypeEnum,System.String)'
   parent: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase
   langs:
   - csharp
   - vb
-  name: UFFlexTagHelperBase(UFFlexTypeEnum)
-  nameWithType: UFFlexTagHelperBase.UFFlexTagHelperBase(UFFlexTypeEnum)
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.UFFlexTagHelperBase(UltraForce.Library.Core.Asp.Types.Enums.UFFlexTypeEnum)
+  name: UFFlexTagHelperBase(UFFlexTypeEnum, string)
+  nameWithType: UFFlexTagHelperBase.UFFlexTagHelperBase(UFFlexTypeEnum, string)
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.UFFlexTagHelperBase(UltraForce.Library.Core.Asp.Types.Enums.UFFlexTypeEnum, string)
   type: Constructor
   source:
     remote:
@@ -100,7 +102,7 @@ items:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base
   summary: >-
-    Abstract class for flex containers.
+    This class adds additional properties to the <xref href="UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase" data-throw-if-not-resolved="false"></xref> class.
 
     <p>
 
@@ -114,100 +116,26 @@ items:
 
     Renders:
 
-    <pre><code class="lang-csharp">&lt;div class="{GetFlexClasses()}"&gt;
+    <pre><code class="lang-csharp">&lt;div class="{GetClasses()}"&gt;
       {children}
     &lt;/div&gt;</code></pre>
 
     </p>
   example: []
   syntax:
-    content: protected UFFlexTagHelperBase(UFFlexTypeEnum flexType)
+    content: protected UFFlexTagHelperBase(UFFlexTypeEnum flexType, string tag = "div")
     parameters:
     - id: flexType
       type: UltraForce.Library.Core.Asp.Types.Enums.UFFlexTypeEnum
       description: ''
-    content.vb: Protected Sub New(flexType As UFFlexTypeEnum)
+    - id: tag
+      type: System.String
+      description: ''
+    content.vb: Protected Sub New(flexType As UFFlexTypeEnum, tag As String = "div")
   overload: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.#ctor*
-  nameWithType.vb: UFFlexTagHelperBase.New(UFFlexTypeEnum)
-  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.New(UltraForce.Library.Core.Asp.Types.Enums.UFFlexTypeEnum)
-  name.vb: New(UFFlexTypeEnum)
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.AlignCrossAxis
-  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.AlignCrossAxis
-  id: AlignCrossAxis
-  parent: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase
-  langs:
-  - csharp
-  - vb
-  name: AlignCrossAxis
-  nameWithType: UFFlexTagHelperBase.AlignCrossAxis
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.AlignCrossAxis
-  type: Property
-  source:
-    remote:
-      path: UltraForce.Library.Core.Asp/TagHelpers/Layout/Base/UFFlexTagHelperBase.cs
-      branch: master
-      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
-    id: AlignCrossAxis
-    path: ../UltraForce.Library.Core.Asp/TagHelpers/Layout/Base/UFFlexTagHelperBase.cs
-    startLine: 60
-  assemblies:
-  - UltraForce.Library.Core.Asp
-  namespace: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base
-  summary: How to align the items in the opposite direction.
-  example: []
-  syntax:
-    content: public UFFlexAlignItemsEnum AlignCrossAxis { get; set; }
-    parameters: []
-    return:
-      type: UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignItemsEnum
-    content.vb: Public Property AlignCrossAxis As UFFlexAlignItemsEnum
-  overload: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.AlignCrossAxis*
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.DistributeCrossAxis
-  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.DistributeCrossAxis
-  id: DistributeCrossAxis
-  parent: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase
-  langs:
-  - csharp
-  - vb
-  name: DistributeCrossAxis
-  nameWithType: UFFlexTagHelperBase.DistributeCrossAxis
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.DistributeCrossAxis
-  type: Property
-  source:
-    remote:
-      path: UltraForce.Library.Core.Asp/TagHelpers/Layout/Base/UFFlexTagHelperBase.cs
-      branch: master
-      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
-    id: DistributeCrossAxis
-    path: ../UltraForce.Library.Core.Asp/TagHelpers/Layout/Base/UFFlexTagHelperBase.cs
-    startLine: 66
-  assemblies:
-  - UltraForce.Library.Core.Asp
-  namespace: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base
-  summary: >-
-    How to distribute the items in the opposite direction. This property is only of use
-
-    when <xref href="UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.Wrap" data-throw-if-not-resolved="false"></xref> is true and there are multiple rows or columns.
-  example: []
-  syntax:
-    content: >-
-      [HtmlAttributeName("distribute-cross-axis")]
-
-      public UFFlexDistributeContentEnum DistributeCrossAxis { get; set; }
-    parameters: []
-    return:
-      type: UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContentEnum
-    content.vb: >-
-      <HtmlAttributeName("distribute-cross-axis")>
-
-      Public Property DistributeCrossAxis As UFFlexDistributeContentEnum
-  overload: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.DistributeCrossAxis*
-  attributes:
-  - type: Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute
-    ctor: Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute.#ctor(System.String)
-    arguments:
-    - type: System.String
-      value: distribute-cross-axis
+  nameWithType.vb: UFFlexTagHelperBase.New(UFFlexTypeEnum, String)
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.New(UltraForce.Library.Core.Asp.Types.Enums.UFFlexTypeEnum, String)
+  name.vb: New(UFFlexTypeEnum, String)
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.DistributeMainAxis
   commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.DistributeMainAxis
   id: DistributeMainAxis
@@ -226,7 +154,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: DistributeMainAxis
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Layout/Base/UFFlexTagHelperBase.cs
-    startLine: 72
+    startLine: 61
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base
@@ -269,7 +197,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: FullWidth
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Layout/Base/UFFlexTagHelperBase.cs
-    startLine: 78
+    startLine: 67
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base
@@ -312,7 +240,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: FullHeight
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Layout/Base/UFFlexTagHelperBase.cs
-    startLine: 84
+    startLine: 73
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base
@@ -355,7 +283,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Wrap
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Layout/Base/UFFlexTagHelperBase.cs
-    startLine: 90
+    startLine: 79
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base
@@ -380,120 +308,46 @@ items:
     arguments:
     - type: System.String
       value: wrap
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.Reverse
-  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.Reverse
-  id: Reverse
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.GetClasses
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.GetClasses
+  id: GetClasses
   parent: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase
   langs:
   - csharp
   - vb
-  name: Reverse
-  nameWithType: UFFlexTagHelperBase.Reverse
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.Reverse
-  type: Property
-  source:
-    remote:
-      path: UltraForce.Library.Core.Asp/TagHelpers/Layout/Base/UFFlexTagHelperBase.cs
-      branch: master
-      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
-    id: Reverse
-    path: ../UltraForce.Library.Core.Asp/TagHelpers/Layout/Base/UFFlexTagHelperBase.cs
-    startLine: 96
-  assemblies:
-  - UltraForce.Library.Core.Asp
-  namespace: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base
-  summary: When true, reverse the order of the items.
-  example: []
-  syntax:
-    content: >-
-      [HtmlAttributeName("reverse")]
-
-      public bool Reverse { get; set; }
-    parameters: []
-    return:
-      type: System.Boolean
-    content.vb: >-
-      <HtmlAttributeName("reverse")>
-
-      Public Property Reverse As Boolean
-  overload: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.Reverse*
-  attributes:
-  - type: Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute
-    ctor: Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute.#ctor(System.String)
-    arguments:
-    - type: System.String
-      value: reverse
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
-  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
-  id: Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
-  parent: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase
-  langs:
-  - csharp
-  - vb
-  name: Process(TagHelperContext, TagHelperOutput)
-  nameWithType: UFFlexTagHelperBase.Process(TagHelperContext, TagHelperOutput)
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  name: GetClasses()
+  nameWithType: UFFlexTagHelperBase.GetClasses()
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.GetClasses()
   type: Method
   source:
     remote:
       path: UltraForce.Library.Core.Asp/TagHelpers/Layout/Base/UFFlexTagHelperBase.cs
       branch: master
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
-    id: Process
+    id: GetClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Layout/Base/UFFlexTagHelperBase.cs
-    startLine: 104
-  assemblies:
-  - UltraForce.Library.Core.Asp
-  namespace: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base
-  summary: >-
-    Synchronously executes the <xref href="Microsoft.AspNetCore.Razor.TagHelpers.TagHelper" data-throw-if-not-resolved="false"></xref> with the given <code class="paramref">context</code> and
-
-    <code class="paramref">output</code>.
-  example: []
-  syntax:
-    content: public override void Process(TagHelperContext context, TagHelperOutput output)
-    parameters:
-    - id: context
-      type: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext
-      description: Contains information associated with the current HTML tag.
-    - id: output
-      type: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput
-      description: A stateful HTML element used to generate an HTML tag.
-    content.vb: Public Overrides Sub Process(context As TagHelperContext, output As TagHelperOutput)
-  overridden: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
-  overload: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.Process*
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.GetFlexClasses
-  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.GetFlexClasses
-  id: GetFlexClasses
-  parent: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase
-  langs:
-  - csharp
-  - vb
-  name: GetFlexClasses()
-  nameWithType: UFFlexTagHelperBase.GetFlexClasses()
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.GetFlexClasses()
-  type: Method
-  source:
-    remote:
-      path: UltraForce.Library.Core.Asp/TagHelpers/Layout/Base/UFFlexTagHelperBase.cs
-      branch: master
-      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
-    id: GetFlexClasses
-    path: ../UltraForce.Library.Core.Asp/TagHelpers/Layout/Base/UFFlexTagHelperBase.cs
-    startLine: 119
+    startLine: 87
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base
   summary: The default implementation uses styles from 'uf-styles.css'.
   example: []
   syntax:
-    content: protected virtual string GetFlexClasses()
+    content: protected override string GetClasses()
     return:
       type: System.String
       description: ''
-    content.vb: Protected Overridable Function GetFlexClasses() As String
-  overload: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.GetFlexClasses*
+    content.vb: Protected Overrides Function GetClasses() As String
+  overridden: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.GetClasses
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.GetClasses*
 references:
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase
+  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base
+  href: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.html
+  name: UFBasicFlexTagHelperBase
+  nameWithType: UFBasicFlexTagHelperBase
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base
   commentId: N:UltraForce.Library.Core.Asp.TagHelpers.Layout.Base
   href: UltraForce.html
@@ -575,6 +429,13 @@ references:
   name: TagHelper
   nameWithType: TagHelper
   fullName: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.UFStyledTagHelperBase
+  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Base.UFStyledTagHelperBase
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Base
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.UFStyledTagHelperBase.html
+  name: UFStyledTagHelperBase
+  nameWithType: UFStyledTagHelperBase
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.UFStyledTagHelperBase
 - uid: Microsoft.AspNetCore.Razor.TagHelpers.ITagHelper
   commentId: T:Microsoft.AspNetCore.Razor.TagHelpers.ITagHelper
   parent: Microsoft.AspNetCore.Razor.TagHelpers
@@ -591,6 +452,67 @@ references:
   name: ITagHelperComponent
   nameWithType: ITagHelperComponent
   fullName: Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.AlignCrossAxis
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.AlignCrossAxis
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase
+  href: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Layout_Base_UFBasicFlexTagHelperBase_AlignCrossAxis
+  name: AlignCrossAxis
+  nameWithType: UFBasicFlexTagHelperBase.AlignCrossAxis
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.AlignCrossAxis
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.DistributeCrossAxis
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.DistributeCrossAxis
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase
+  href: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Layout_Base_UFBasicFlexTagHelperBase_DistributeCrossAxis
+  name: DistributeCrossAxis
+  nameWithType: UFBasicFlexTagHelperBase.DistributeCrossAxis
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.DistributeCrossAxis
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.Reverse
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.Reverse
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase
+  href: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Layout_Base_UFBasicFlexTagHelperBase_Reverse
+  name: Reverse
+  nameWithType: UFBasicFlexTagHelperBase.Reverse
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.Reverse
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.UFStyledTagHelperBase.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.UFStyledTagHelperBase.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Base.UFStyledTagHelperBase
+  isExternal: true
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.UFStyledTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_UFStyledTagHelperBase_Process_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContext_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_
+  name: Process(TagHelperContext, TagHelperOutput)
+  nameWithType: UFStyledTagHelperBase.Process(TagHelperContext, TagHelperOutput)
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.UFStyledTagHelperBase.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  spec.csharp:
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.UFStyledTagHelperBase.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+    name: Process
+    href: UltraForce.Library.Core.Asp.TagHelpers.Base.UFStyledTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_UFStyledTagHelperBase_Process_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContext_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_
+  - name: (
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext
+    name: TagHelperContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelpercontext
+  - name: ','
+  - name: " "
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput
+    name: TagHelperOutput
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelperoutput
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.UFStyledTagHelperBase.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+    name: Process
+    href: UltraForce.Library.Core.Asp.TagHelpers.Base.UFStyledTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_UFStyledTagHelperBase_Process_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContext_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_
+  - name: (
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext
+    name: TagHelperContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelpercontext
+  - name: ','
+  - name: " "
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput
+    name: TagHelperOutput
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelperoutput
+  - name: )
 - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Init(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext)
   commentId: M:Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Init(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext)
   parent: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper
@@ -944,9 +866,63 @@ references:
     name: TagHelpers
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base
+  commentId: N:UltraForce.Library.Core.Asp.TagHelpers.Base
+  href: UltraForce.html
+  name: UltraForce.Library.Core.Asp.TagHelpers.Base
+  nameWithType: UltraForce.Library.Core.Asp.TagHelpers.Base
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers
+    name: TagHelpers
+    href: UltraForce.Library.Core.Asp.TagHelpers.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Base
+    name: Base
+    href: UltraForce.Library.Core.Asp.TagHelpers.Base.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers
+    name: TagHelpers
+    href: UltraForce.Library.Core.Asp.TagHelpers.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Base
+    name: Base
+    href: UltraForce.Library.Core.Asp.TagHelpers.Base.html
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.#ctor*
   commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.#ctor
-  href: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Layout_Base_UFFlexTagHelperBase__ctor_UltraForce_Library_Core_Asp_Types_Enums_UFFlexTypeEnum_
+  href: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Layout_Base_UFFlexTagHelperBase__ctor_UltraForce_Library_Core_Asp_Types_Enums_UFFlexTypeEnum_System_String_
   name: UFFlexTagHelperBase
   nameWithType: UFFlexTagHelperBase.UFFlexTagHelperBase
   fullName: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.UFFlexTagHelperBase
@@ -960,6 +936,17 @@ references:
   name: UFFlexTypeEnum
   nameWithType: UFFlexTypeEnum
   fullName: UltraForce.Library.Core.Asp.Types.Enums.UFFlexTypeEnum
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
 - uid: UltraForce.Library.Core.Asp.Types.Enums
   commentId: N:UltraForce.Library.Core.Asp.Types.Enums
   href: UltraForce.html
@@ -1014,32 +1001,12 @@ references:
   - uid: UltraForce.Library.Core.Asp.Types.Enums
     name: Enums
     href: UltraForce.Library.Core.Asp.Types.Enums.html
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.AlignCrossAxis*
-  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.AlignCrossAxis
-  href: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Layout_Base_UFFlexTagHelperBase_AlignCrossAxis
-  name: AlignCrossAxis
-  nameWithType: UFFlexTagHelperBase.AlignCrossAxis
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.AlignCrossAxis
-- uid: UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignItemsEnum
-  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignItemsEnum
-  parent: UltraForce.Library.Core.Asp.Types.Enums
-  href: UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignItemsEnum.html
-  name: UFFlexAlignItemsEnum
-  nameWithType: UFFlexAlignItemsEnum
-  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignItemsEnum
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.Wrap
-  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.Wrap
-  parent: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase
-  href: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Layout_Base_UFFlexTagHelperBase_Wrap
-  name: Wrap
-  nameWithType: UFFlexTagHelperBase.Wrap
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.Wrap
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.DistributeCrossAxis*
-  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.DistributeCrossAxis
-  href: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Layout_Base_UFFlexTagHelperBase_DistributeCrossAxis
-  name: DistributeCrossAxis
-  nameWithType: UFFlexTagHelperBase.DistributeCrossAxis
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.DistributeCrossAxis
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.DistributeMainAxis*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.DistributeMainAxis
+  href: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Layout_Base_UFFlexTagHelperBase_DistributeMainAxis
+  name: DistributeMainAxis
+  nameWithType: UFFlexTagHelperBase.DistributeMainAxis
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.DistributeMainAxis
 - uid: UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContentEnum
   commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContentEnum
   parent: UltraForce.Library.Core.Asp.Types.Enums
@@ -1047,19 +1014,6 @@ references:
   name: UFFlexDistributeContentEnum
   nameWithType: UFFlexDistributeContentEnum
   fullName: UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContentEnum
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase
-  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase
-  parent: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base
-  href: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.html
-  name: UFFlexTagHelperBase
-  nameWithType: UFFlexTagHelperBase
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.DistributeMainAxis*
-  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.DistributeMainAxis
-  href: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Layout_Base_UFFlexTagHelperBase_DistributeMainAxis
-  name: DistributeMainAxis
-  nameWithType: UFFlexTagHelperBase.DistributeMainAxis
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.DistributeMainAxis
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.FullWidth*
   commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.FullWidth
   href: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Layout_Base_UFFlexTagHelperBase_FullWidth
@@ -1089,90 +1043,28 @@ references:
   name: Wrap
   nameWithType: UFFlexTagHelperBase.Wrap
   fullName: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.Wrap
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.Reverse*
-  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.Reverse
-  href: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Layout_Base_UFFlexTagHelperBase_Reverse
-  name: Reverse
-  nameWithType: UFFlexTagHelperBase.Reverse
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.Reverse
-- uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
-  commentId: M:Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
-  parent: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper.process
-  name: Process(TagHelperContext, TagHelperOutput)
-  nameWithType: TagHelper.Process(TagHelperContext, TagHelperOutput)
-  fullName: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.GetClasses
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.GetClasses
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase
+  href: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Layout_Base_UFBasicFlexTagHelperBase_GetClasses
+  name: GetClasses()
+  nameWithType: UFBasicFlexTagHelperBase.GetClasses()
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.GetClasses()
   spec.csharp:
-  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
-    name: Process
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper.process
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.GetClasses
+    name: GetClasses
+    href: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Layout_Base_UFBasicFlexTagHelperBase_GetClasses
   - name: (
-  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext
-    name: TagHelperContext
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelpercontext
-  - name: ','
-  - name: " "
-  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput
-    name: TagHelperOutput
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelperoutput
   - name: )
   spec.vb:
-  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
-    name: Process
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper.process
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.GetClasses
+    name: GetClasses
+    href: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Layout_Base_UFBasicFlexTagHelperBase_GetClasses
   - name: (
-  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext
-    name: TagHelperContext
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelpercontext
-  - name: ','
-  - name: " "
-  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput
-    name: TagHelperOutput
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelperoutput
   - name: )
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.Process*
-  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.Process
-  href: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Layout_Base_UFFlexTagHelperBase_Process_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContext_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_
-  name: Process
-  nameWithType: UFFlexTagHelperBase.Process
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.Process
-- uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext
-  commentId: T:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext
-  parent: Microsoft.AspNetCore.Razor.TagHelpers
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelpercontext
-  name: TagHelperContext
-  nameWithType: TagHelperContext
-  fullName: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext
-- uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput
-  commentId: T:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput
-  parent: Microsoft.AspNetCore.Razor.TagHelpers
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelperoutput
-  name: TagHelperOutput
-  nameWithType: TagHelperOutput
-  fullName: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.GetFlexClasses*
-  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.GetFlexClasses
-  href: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Layout_Base_UFFlexTagHelperBase_GetFlexClasses
-  name: GetFlexClasses
-  nameWithType: UFFlexTagHelperBase.GetFlexClasses
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.GetFlexClasses
-- uid: System.String
-  commentId: T:System.String
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.string
-  name: string
-  nameWithType: string
-  fullName: string
-  nameWithType.vb: String
-  fullName.vb: String
-  name.vb: String
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.GetClasses*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.GetClasses
+  href: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Layout_Base_UFFlexTagHelperBase_GetClasses
+  name: GetClasses
+  nameWithType: UFFlexTagHelperBase.GetClasses
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.GetClasses
