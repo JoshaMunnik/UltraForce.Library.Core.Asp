@@ -7,7 +7,7 @@ items:
   children:
   - UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.#ctor(UltraForce.Library.Core.Asp.Types.Enums.UFFlexTypeEnum,System.String)
   - UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.AlignCrossAxis
-  - UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.DistributeCrossAxis
+  - UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.DistributeMainAxis
   - UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.GetClasses
   - UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.Reverse
   langs:
@@ -161,52 +161,49 @@ items:
       type: UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignItemsEnum
     content.vb: Public Property AlignCrossAxis As UFFlexAlignItemsEnum
   overload: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.AlignCrossAxis*
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.DistributeCrossAxis
-  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.DistributeCrossAxis
-  id: DistributeCrossAxis
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.DistributeMainAxis
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.DistributeMainAxis
+  id: DistributeMainAxis
   parent: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase
   langs:
   - csharp
   - vb
-  name: DistributeCrossAxis
-  nameWithType: UFBasicFlexTagHelperBase.DistributeCrossAxis
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.DistributeCrossAxis
+  name: DistributeMainAxis
+  nameWithType: UFBasicFlexTagHelperBase.DistributeMainAxis
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.DistributeMainAxis
   type: Property
   source:
     remote:
       path: UltraForce.Library.Core.Asp/TagHelpers/Layout/Base/UFBasicFlexTagHelperBase.cs
       branch: master
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
-    id: DistributeCrossAxis
+    id: DistributeMainAxis
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Layout/Base/UFBasicFlexTagHelperBase.cs
-    startLine: 68
+    startLine: 67
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base
-  summary: >-
-    How to distribute the items in the opposite direction. This property is only of use
-
-    when Wrap is true and there are multiple rows or columns.
+  summary: How to distribute the items in the direction of the main axis.
   example: []
   syntax:
     content: >-
-      [HtmlAttributeName("distribute-cross-axis")]
+      [HtmlAttributeName("distribute-main-axis")]
 
-      public UFFlexDistributeContentEnum DistributeCrossAxis { get; set; }
+      public UFFlexDistributeContentEnum DistributeMainAxis { get; set; }
     parameters: []
     return:
       type: UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContentEnum
     content.vb: >-
-      <HtmlAttributeName("distribute-cross-axis")>
+      <HtmlAttributeName("distribute-main-axis")>
 
-      Public Property DistributeCrossAxis As UFFlexDistributeContentEnum
-  overload: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.DistributeCrossAxis*
+      Public Property DistributeMainAxis As UFFlexDistributeContentEnum
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.DistributeMainAxis*
   attributes:
   - type: Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute
     ctor: Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute.#ctor(System.String)
     arguments:
     - type: System.String
-      value: distribute-cross-axis
+      value: distribute-main-axis
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.Reverse
   commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.Reverse
   id: Reverse
@@ -225,7 +222,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Reverse
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Layout/Base/UFBasicFlexTagHelperBase.cs
-    startLine: 74
+    startLine: 73
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base
@@ -268,7 +265,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Layout/Base/UFBasicFlexTagHelperBase.cs
-    startLine: 85
+    startLine: 84
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base
@@ -928,12 +925,12 @@ references:
   name: UFFlexAlignItemsEnum
   nameWithType: UFFlexAlignItemsEnum
   fullName: UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignItemsEnum
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.DistributeCrossAxis*
-  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.DistributeCrossAxis
-  href: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Layout_Base_UFBasicFlexTagHelperBase_DistributeCrossAxis
-  name: DistributeCrossAxis
-  nameWithType: UFBasicFlexTagHelperBase.DistributeCrossAxis
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.DistributeCrossAxis
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.DistributeMainAxis*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.DistributeMainAxis
+  href: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Layout_Base_UFBasicFlexTagHelperBase_DistributeMainAxis
+  name: DistributeMainAxis
+  nameWithType: UFBasicFlexTagHelperBase.DistributeMainAxis
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.DistributeMainAxis
 - uid: UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContentEnum
   commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContentEnum
   parent: UltraForce.Library.Core.Asp.Types.Enums

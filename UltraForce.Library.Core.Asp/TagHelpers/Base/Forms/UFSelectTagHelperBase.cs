@@ -122,13 +122,10 @@ public abstract class UFSelectTagHelperBase(
     {
       output.Attributes.SetAttribute("id", Guid.NewGuid().ToString());
     }
-    string id = (output.Attributes["id"] == null) ? "" : output.Attributes["id"].Value.ToString()!;
-    string name = output.Attributes["name"] == null
-      ? id
-      : output.Attributes["name"].Value.ToString()!;
+    string id = output.Attributes["id"]?.Value?.ToString() ?? "";
+    string name = output.Attributes["name"]?.Value?.ToString() ?? id;
     string errorMessage = this.GetFieldErrorsHtml(
-      this.ViewContext.ModelState,
-      output.Attributes["name"]?.Value?.ToString() ?? ""
+      this.ViewContext.ModelState, output.Attributes["name"]?.Value?.ToString() ?? ""
     );
     if (this.NoWrap)
     {

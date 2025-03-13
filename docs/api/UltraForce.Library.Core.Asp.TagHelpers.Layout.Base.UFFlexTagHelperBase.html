@@ -152,7 +152,7 @@ Renders:
       <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Layout_Base_UFBasicFlexTagHelperBase_AlignCrossAxis">UFBasicFlexTagHelperBase.AlignCrossAxis</a>
     </div>
     <div>
-      <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Layout_Base_UFBasicFlexTagHelperBase_DistributeCrossAxis">UFBasicFlexTagHelperBase.DistributeCrossAxis</a>
+      <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Layout_Base_UFBasicFlexTagHelperBase_DistributeMainAxis">UFBasicFlexTagHelperBase.DistributeMainAxis</a>
     </div>
     <div>
       <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFBasicFlexTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Layout_Base_UFBasicFlexTagHelperBase_Reverse">UFBasicFlexTagHelperBase.Reverse</a>
@@ -249,20 +249,21 @@ Renders:
 </h2>
 
 
-  <a id="UltraForce_Library_Core_Asp_TagHelpers_Layout_Base_UFFlexTagHelperBase_DistributeMainAxis_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.DistributeMainAxis*"></a>
+  <a id="UltraForce_Library_Core_Asp_TagHelpers_Layout_Base_UFFlexTagHelperBase_DistributeCrossAxis_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.DistributeCrossAxis*"></a>
 
-  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Layout_Base_UFFlexTagHelperBase_DistributeMainAxis" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.DistributeMainAxis">
-  DistributeMainAxis
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Layout/Base/UFFlexTagHelperBase.cs/#L62"><i class="bi bi-code-slash"></i></a>
+  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Layout_Base_UFFlexTagHelperBase_DistributeCrossAxis" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.DistributeCrossAxis">
+  DistributeCrossAxis
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Layout/Base/UFFlexTagHelperBase.cs/#L63"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>How to distribute the items in the direction of the main axis.</p>
+  <div class="markdown level1 summary"><p>How to distribute the items in the opposite direction. This property is only of use
+when <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Layout_Base_UFFlexTagHelperBase_Wrap">Wrap</a> is true and there are multiple rows or columns.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[HtmlAttributeName(&quot;distribute-main-axis&quot;)]
-public UFFlexDistributeContentEnum DistributeMainAxis { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[HtmlAttributeName(&quot;distribute-cross-axis&quot;)]
+public UFFlexDistributeContentEnum DistributeCrossAxis { get; set; }</code></pre>
   </div>
 
 
@@ -286,7 +287,7 @@ public UFFlexDistributeContentEnum DistributeMainAxis { get; set; }</code></pre>
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Layout_Base_UFFlexTagHelperBase_FullHeight" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.FullHeight">
   FullHeight
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Layout/Base/UFFlexTagHelperBase.cs/#L74"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Layout/Base/UFFlexTagHelperBase.cs/#L75"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>When true use all available vertical space in the parent.</p>
@@ -319,7 +320,7 @@ public bool FullHeight { get; set; }</code></pre>
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Layout_Base_UFFlexTagHelperBase_FullWidth" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.FullWidth">
   FullWidth
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Layout/Base/UFFlexTagHelperBase.cs/#L68"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Layout/Base/UFFlexTagHelperBase.cs/#L69"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>When true use all available horizontal space in the parent.</p>
@@ -352,7 +353,7 @@ public bool FullWidth { get; set; }</code></pre>
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Layout_Base_UFFlexTagHelperBase_Wrap" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.Wrap">
   Wrap
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Layout/Base/UFFlexTagHelperBase.cs/#L80"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Layout/Base/UFFlexTagHelperBase.cs/#L81"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>When true wrap children across multiple rows or columns when they don&quot;t fit.</p>
@@ -389,7 +390,7 @@ public bool Wrap { get; set; }</code></pre>
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Layout_Base_UFFlexTagHelperBase_GetClasses" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Layout.Base.UFFlexTagHelperBase.GetClasses">
   GetClasses()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Layout/Base/UFFlexTagHelperBase.cs/#L88"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Layout/Base/UFFlexTagHelperBase.cs/#L89"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The default implementation uses styles from 'uf-styles.css'.</p>

@@ -57,10 +57,11 @@ public abstract class UFFlexTagHelperBase(UFFlexTypeEnum flexType, string tag = 
   #region public properties
 
   /// <summary>
-  /// How to distribute the items in the direction of the main axis.
+  /// How to distribute the items in the opposite direction. This property is only of use
+  /// when <see cref="Wrap"/> is true and there are multiple rows or columns.
   /// </summary>
-  [HtmlAttributeName("distribute-main-axis")]
-  public UFFlexDistributeContentEnum DistributeMainAxis { get; set; } = UFFlexDistributeContentEnum.Start;
+  [HtmlAttributeName("distribute-cross-axis")]
+  public UFFlexDistributeContentEnum DistributeCrossAxis { get; set; } = UFFlexDistributeContentEnum.Start;
   
   /// <summary>
   /// When true use all available horizontal space in the parent.
@@ -88,16 +89,15 @@ public abstract class UFFlexTagHelperBase(UFFlexTypeEnum flexType, string tag = 
   protected override string GetClasses()
   {
     string classes = base.GetClasses();
-    classes += this.DistributeMainAxis switch
+    classes += this.DistributeCrossAxis switch
     {
-      UFFlexDistributeContentEnum.End => " uf-flex--distribute-main-end",
-      UFFlexDistributeContentEnum.Center => " uf-flex--distribute-main-center",
-      UFFlexDistributeContentEnum.SpaceBetween => " uf-flex--distribute-main-between",
-      UFFlexDistributeContentEnum.SpaceAround => " uf-flex--distribute-main-around",
-      UFFlexDistributeContentEnum.SpaceEvenly => " uf-flex--distribute-main-evenly",
-      UFFlexDistributeContentEnum.Stretch => " uf-flex--distribute-main-stretch",
-      UFFlexDistributeContentEnum.SizeEvenly => " uf-flex--distribute-main-same-size",
-      _ => " uf-flex--distribute-main-start"
+      UFFlexDistributeContentEnum.End => " uf-flex--distribute-cross-end",
+      UFFlexDistributeContentEnum.Center => " uf-flex--distribute-cross-center",
+      UFFlexDistributeContentEnum.SpaceAround => " uf-flex--distribute-cross-around",
+      UFFlexDistributeContentEnum.SpaceBetween => " uf-flex--distribute-cross-between",
+      UFFlexDistributeContentEnum.SpaceEvenly => " uf-flex--distribute-cross-evenly",
+      UFFlexDistributeContentEnum.Stretch => " uf-flex--distribute-cross-stretch",
+      _ => " uf-flex--distribute-cross-start"
     };
     if (this.FullWidth)
     {

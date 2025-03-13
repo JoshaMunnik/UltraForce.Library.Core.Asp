@@ -10,6 +10,12 @@ Include the styles in your html using (for example `Shared\_Layout.cshtml`):
 <link rel="stylesheet" href="/_content/UltraForce.Library.Core.Asp/css/uf-styles.css" />
 ````
 ## Version history
+1.0.92
+- fixed bug in UFInputTagHelperBase, it will only copy type, name and value if a value has been set
+ 
+1.0.91
+- fixed bug in UFBasicFlexTagHelperBase
+
 1.0.90
 - added UFBasicFlexTagHelperBase  
 

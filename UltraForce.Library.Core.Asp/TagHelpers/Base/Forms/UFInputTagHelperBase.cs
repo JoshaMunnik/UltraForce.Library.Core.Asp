@@ -292,9 +292,18 @@ public abstract class UFInputTagHelperBase(
     }
     else
     {
-      output.Attributes.SetAttribute("type", this.InputTypeName);
-      output.Attributes.SetAttribute("name", this.Name);
-      output.Attributes.SetAttribute("value", this.Value);
+      if (this.InputTypeName != null)
+      {
+        output.Attributes.SetAttribute("type", this.InputTypeName);
+      }
+      if (this.Name != null)
+      {
+        output.Attributes.SetAttribute("name", this.Name);
+      }
+      if (this.Value != null)
+      {
+        output.Attributes.SetAttribute("value", this.Value);
+      }
     }
     if (this.Multiline)
     {
@@ -305,11 +314,9 @@ public abstract class UFInputTagHelperBase(
     {
       output.Attributes.SetAttribute("id", Guid.NewGuid().ToString());
     }
-    string id = output.Attributes["id"] == null ? "" : output.Attributes["id"].Value.ToString()!;
+    string id = output.Attributes["id"]?.Value?.ToString() ?? "";
     string type = output.Attributes["type"]?.Value?.ToString()?.ToLowerInvariant() ?? "";
-    string name = output.Attributes["name"] == null
-      ? id
-      : output.Attributes["name"].Value.ToString()!;
+    string name = output.Attributes["name"]?.Value?.ToString() ?? id;
     string errorMessage = this.GetFieldErrorsHtml(
       this.ViewContext.ModelState,
       output.Attributes["name"]?.Value?.ToString() ?? ""
