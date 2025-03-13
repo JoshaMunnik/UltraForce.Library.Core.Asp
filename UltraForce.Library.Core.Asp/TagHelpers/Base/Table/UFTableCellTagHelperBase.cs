@@ -48,19 +48,19 @@ namespace UltraForce.Library.Core.Asp.TagHelpers.Base.Table;
 /// <para>
 /// Rendered html for header:
 /// <code>
-/// &lt;th class="{GetTableCellClasses()}}" [style="min-width: {MinWidth}; max-width: {MaxWidth}"]&gt;{children}&lt;/th&gt;
+/// &lt;th class="{GetTableCellClasses()}}" [style="min-width: {MinWidth}; max-width: {MaxWidth}; box-sizing: content-box"]&gt;{children}&lt;/th&gt;
 /// </code>
 /// </para>
 /// <para>
 /// Rendered html for data:
 /// <code>
-/// &lt;td class="{GetTableCellClasses()}}" [style="width: {MinWidth}; max-width: {MaxWidth}"]&gt;{children}&lt;/td&gt;
+/// &lt;td class="{GetTableCellClasses()}}" [style="width: {MinWidth}; max-width: {MaxWidth}; box-sizing: content-box"]&gt;{children}&lt;/td&gt;
 /// </code>
 /// </para>
 /// <para>
 /// Rendered html for buttons (a div is used so that flex or grid styling can be used):
 /// <code>
-/// &lt;td class="{GetTableCellClasses()}}" [style="width: {MinWidth}; max-width: {MaxWidth}"]&gt;<br/>
+/// &lt;td class="{GetTableCellClasses()}}" [style="width: {MinWidth}; max-width: {MaxWidth}; box-sizing: content-box"]&gt;<br/>
 ///   &lt;div class="{GetTableHeaderButtonClasses()} &gt;<br/>
 ///     {children}<br/>
 ///   &lt;/div&gt;<br/>
@@ -318,7 +318,7 @@ public abstract class UFTableCellTagHelperBase<TTable, TTableRow>(
     }
     if (!string.IsNullOrEmpty(style))
     {
-      style += " width: 1px;";
+      style += " width: 1px; box-sizing: content-box;";
       output.Attributes.SetAttribute("style", style);
     }
   }

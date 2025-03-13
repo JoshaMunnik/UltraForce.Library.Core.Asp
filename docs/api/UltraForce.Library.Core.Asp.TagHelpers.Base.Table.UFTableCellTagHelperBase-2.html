@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class UFTableCellTagHelperBase&lt;TTable, TTableRow&gt; | UltraForce.Library.Core.Asp ">
       
-      <meta name="description" content="Creates a table cell. The cell can be self-closing or can contain content with a separate closing tag.  The generated td or th element always uses an opening and closing tag.   Rendered html for header: &amp;lt;th class=&quot;{GetTableCellClasses()}}&quot; [style=&quot;min-width: {MinWidth}; max-width: {MaxWidth}&quot;]&amp;gt;{children}&amp;lt;/th&amp;gt;   Rendered html for data: &amp;lt;td class=&quot;{GetTableCellClasses()}}&quot; [style=&quot;width: {MinWidth}; max-width: {MaxWidth}&quot;]&amp;gt;{children}&amp;lt;/td&amp;gt;   Rendered html for buttons (a div is used so that flex or grid styling can be used): &amp;lt;td class=&quot;{GetTableCellClasses()}}&quot; [style=&quot;width: {MinWidth}; max-width: {MaxWidth}&quot;]&amp;gt;   &amp;lt;div class=&quot;{GetTableHeaderButtonClasses()} &amp;gt;     {children}   &amp;lt;/div&amp;gt; &amp;lt;/td&amp;gt;">
+      <meta name="description" content="Creates a table cell. The cell can be self-closing or can contain content with a separate closing tag.  The generated td or th element always uses an opening and closing tag.   Rendered html for header: &amp;lt;th class=&quot;{GetTableCellClasses()}}&quot; [style=&quot;min-width: {MinWidth}; max-width: {MaxWidth}; box-sizing: content-box&quot;]&amp;gt;{children}&amp;lt;/th&amp;gt;   Rendered html for data: &amp;lt;td class=&quot;{GetTableCellClasses()}}&quot; [style=&quot;width: {MinWidth}; max-width: {MaxWidth}; box-sizing: content-box&quot;]&amp;gt;{children}&amp;lt;/td&amp;gt;   Rendered html for buttons (a div is used so that flex or grid styling can be used): &amp;lt;td class=&quot;{GetTableCellClasses()}}&quot; [style=&quot;width: {MinWidth}; max-width: {MaxWidth}; box-sizing: content-box&quot;]&amp;gt;   &amp;lt;div class=&quot;{GetTableHeaderButtonClasses()} &amp;gt;     {children}   &amp;lt;/div&amp;gt; &amp;lt;/td&amp;gt;">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -104,15 +104,15 @@ The generated td or th element always uses an opening and closing tag.
 </p>
 <p>
 Rendered html for header:
-<pre><code class="lang-csharp">&lt;th class="{GetTableCellClasses()}}" [style="min-width: {MinWidth}; max-width: {MaxWidth}"]&gt;{children}&lt;/th&gt;</code></pre>
+<pre><code class="lang-csharp">&lt;th class="{GetTableCellClasses()}}" [style="min-width: {MinWidth}; max-width: {MaxWidth}; box-sizing: content-box"]&gt;{children}&lt;/th&gt;</code></pre>
 
 <p>
 Rendered html for data:
-<pre><code class="lang-csharp">&lt;td class="{GetTableCellClasses()}}" [style="width: {MinWidth}; max-width: {MaxWidth}"]&gt;{children}&lt;/td&gt;</code></pre>
+<pre><code class="lang-csharp">&lt;td class="{GetTableCellClasses()}}" [style="width: {MinWidth}; max-width: {MaxWidth}; box-sizing: content-box"]&gt;{children}&lt;/td&gt;</code></pre>
 
 <p>
 Rendered html for buttons (a div is used so that flex or grid styling can be used):
-<pre><code class="lang-csharp">&lt;td class="{GetTableCellClasses()}}" [style="width: {MinWidth}; max-width: {MaxWidth}"]&gt;
+<pre><code class="lang-csharp">&lt;td class="{GetTableCellClasses()}}" [style="width: {MinWidth}; max-width: {MaxWidth}; box-sizing: content-box"]&gt;
   &lt;div class="{GetTableHeaderButtonClasses()} &gt;
     {children}
   &lt;/div&gt;
@@ -130,9 +130,9 @@ Rendered html for buttons (a div is used so that flex or grid styling can be use
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>TTable</code></dt>
-    <dd>Creates a table cell. The cell can be self-closing or can contain content with a separate closing tag.  The generated td or th element always uses an opening and closing tag.   Rendered html for header: &lt;th class="{GetTableCellClasses()}}" [style="min-width: {MinWidth}; max-width: {MaxWidth}"]&gt;{children}&lt;/th&gt;   Rendered html for data: &lt;td class="{GetTableCellClasses()}}" [style="width: {MinWidth}; max-width: {MaxWidth}"]&gt;{children}&lt;/td&gt;   Rendered html for buttons (a div is used so that flex or grid styling can be used): &lt;td class="{GetTableCellClasses()}}" [style="width: {MinWidth}; max-width: {MaxWidth}"]&gt;   &lt;div class="{GetTableHeaderButtonClasses()} &gt;     {children}   &lt;/div&gt; &lt;/td&gt;</dd>
+    <dd>Creates a table cell. The cell can be self-closing or can contain content with a separate closing tag.  The generated td or th element always uses an opening and closing tag.   Rendered html for header: &lt;th class="{GetTableCellClasses()}}" [style="min-width: {MinWidth}; max-width: {MaxWidth}; box-sizing: content-box"]&gt;{children}&lt;/th&gt;   Rendered html for data: &lt;td class="{GetTableCellClasses()}}" [style="width: {MinWidth}; max-width: {MaxWidth}; box-sizing: content-box"]&gt;{children}&lt;/td&gt;   Rendered html for buttons (a div is used so that flex or grid styling can be used): &lt;td class="{GetTableCellClasses()}}" [style="width: {MinWidth}; max-width: {MaxWidth}; box-sizing: content-box"]&gt;   &lt;div class="{GetTableHeaderButtonClasses()} &gt;     {children}   &lt;/div&gt; &lt;/td&gt;</dd>
     <dt><code>TTableRow</code></dt>
-    <dd>Creates a table cell. The cell can be self-closing or can contain content with a separate closing tag.  The generated td or th element always uses an opening and closing tag.   Rendered html for header: &lt;th class="{GetTableCellClasses()}}" [style="min-width: {MinWidth}; max-width: {MaxWidth}"]&gt;{children}&lt;/th&gt;   Rendered html for data: &lt;td class="{GetTableCellClasses()}}" [style="width: {MinWidth}; max-width: {MaxWidth}"]&gt;{children}&lt;/td&gt;   Rendered html for buttons (a div is used so that flex or grid styling can be used): &lt;td class="{GetTableCellClasses()}}" [style="width: {MinWidth}; max-width: {MaxWidth}"]&gt;   &lt;div class="{GetTableHeaderButtonClasses()} &gt;     {children}   &lt;/div&gt; &lt;/td&gt;</dd>
+    <dd>Creates a table cell. The cell can be self-closing or can contain content with a separate closing tag.  The generated td or th element always uses an opening and closing tag.   Rendered html for header: &lt;th class="{GetTableCellClasses()}}" [style="min-width: {MinWidth}; max-width: {MaxWidth}; box-sizing: content-box"]&gt;{children}&lt;/th&gt;   Rendered html for data: &lt;td class="{GetTableCellClasses()}}" [style="width: {MinWidth}; max-width: {MaxWidth}; box-sizing: content-box"]&gt;{children}&lt;/td&gt;   Rendered html for buttons (a div is used so that flex or grid styling can be used): &lt;td class="{GetTableCellClasses()}}" [style="width: {MinWidth}; max-width: {MaxWidth}; box-sizing: content-box"]&gt;   &lt;div class="{GetTableHeaderButtonClasses()} &gt;     {children}   &lt;/div&gt; &lt;/td&gt;</dd>
   </dl>
 
   <dl class="typelist inheritance">
@@ -219,15 +219,15 @@ The generated td or th element always uses an opening and closing tag.
 </p>
 <p>
 Rendered html for header:
-<pre><code class="lang-csharp">&lt;th class="{GetTableCellClasses()}}" [style="min-width: {MinWidth}; max-width: {MaxWidth}"]&gt;{children}&lt;/th&gt;</code></pre>
+<pre><code class="lang-csharp">&lt;th class="{GetTableCellClasses()}}" [style="min-width: {MinWidth}; max-width: {MaxWidth}; box-sizing: content-box"]&gt;{children}&lt;/th&gt;</code></pre>
 
 <p>
 Rendered html for data:
-<pre><code class="lang-csharp">&lt;td class="{GetTableCellClasses()}}" [style="width: {MinWidth}; max-width: {MaxWidth}"]&gt;{children}&lt;/td&gt;</code></pre>
+<pre><code class="lang-csharp">&lt;td class="{GetTableCellClasses()}}" [style="width: {MinWidth}; max-width: {MaxWidth}; box-sizing: content-box"]&gt;{children}&lt;/td&gt;</code></pre>
 
 <p>
 Rendered html for buttons (a div is used so that flex or grid styling can be used):
-<pre><code class="lang-csharp">&lt;td class="{GetTableCellClasses()}}" [style="width: {MinWidth}; max-width: {MaxWidth}"]&gt;
+<pre><code class="lang-csharp">&lt;td class="{GetTableCellClasses()}}" [style="width: {MinWidth}; max-width: {MaxWidth}; box-sizing: content-box"]&gt;
   &lt;div class="{GetTableHeaderButtonClasses()} &gt;
     {children}
   &lt;/div&gt;

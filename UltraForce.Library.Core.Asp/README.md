@@ -10,6 +10,9 @@ Include the styles in your html using (for example `Shared\_Layout.cshtml`):
 <link rel="stylesheet" href="/_content/UltraForce.Library.Core.Asp/css/uf-styles.css" />
 ````
 ## Version history
+1.0.93
+- added 'box-sizing: content-box' to table cells with min and/or max widths.
+ 
 1.0.92
 - fixed bug in UFInputTagHelperBase, it will only copy type, name and value if a value has been set
  
