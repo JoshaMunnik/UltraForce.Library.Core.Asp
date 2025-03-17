@@ -379,7 +379,7 @@ public abstract class UFTableCellTagHelperBase<TTable, TTableRow>(
   )
   {
     output.PreContent.AppendHtml(
-      $"<button" +
+      $"<button type=\"button\"" +
       $" class=\"{this.GetTableHeaderButtonClasses(table, tableRow)}\"" +
       $">"
     );

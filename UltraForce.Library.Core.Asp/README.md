@@ -10,6 +10,9 @@ Include the styles in your html using (for example `Shared\_Layout.cshtml`):
 <link rel="stylesheet" href="/_content/UltraForce.Library.Core.Asp/css/uf-styles.css" />
 ````
 ## Version history
+1.0.94
+- when wrapping a table header cell with a button, set the button type.
+
 1.0.93
 - added 'box-sizing: content-box' to table cells with min and/or max widths.
  
