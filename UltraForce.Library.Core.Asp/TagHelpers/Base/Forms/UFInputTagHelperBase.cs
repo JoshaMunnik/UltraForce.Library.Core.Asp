@@ -69,7 +69,7 @@ namespace UltraForce.Library.Core.Asp.TagHelpers.Base.Forms;
 ///     &lt;span class="{GetTextInputLabelSpanClasses(type)}"&gt;
 ///      {GetLabelAsync(context,output)}
 ///     &lt;/span&gt;
-///     &lt;span class="{GetTextInputLabelDescriptionClasses(type)}"&gt;{description}&lt;/span&gt;
+///     &lt;span class="{GetTextInputLabelDescriptionClasses(type)}"&gt;{GetDescription()}&lt;/span&gt;
 ///   &lt;/label&gt;
 ///   {GetTextInputPreHtml()}
 ///     &lt;input class="{GetTextInputClasses(type)}" id={} .../&gt;
@@ -263,7 +263,7 @@ public abstract class UFInputTagHelperBase(
 
   /// <summary>
   /// Additional text that is shown below the label. It is only used if <see cref="NoWrap"/> is
-  /// not true.
+  /// not true and there is a label being shown.
   /// </summary>
   [HtmlAttributeName("description")]
   public string Description { get; set; } = "";
@@ -402,6 +402,31 @@ public abstract class UFInputTagHelperBase(
     return UFTagHelperTools.GetLabel(this.Generator, this.ViewContext, this.For, "");
   }
 
+  /// <summary>
+  /// Gets a description string either from the <see cref="Description"/> property or from
+  /// one of the known description providing attributes.
+  /// </summary>
+  /// <returns></returns>
+  protected virtual string GetDescription()
+  {
+    if (!string.IsNullOrEmpty(this.Description))
+    {
+      return this.Description;
+    }
+    PropertyInfo? propertyInfo = this.For?.Metadata.ContainerMetadata?.ModelType.GetProperty(
+      this.For?.Metadata.PropertyName ?? ""
+    );
+    if (propertyInfo == null)
+    {
+      return "";
+    }
+    return
+      UFAttributeTools.Find<DisplayAttribute>(propertyInfo)?.Description ??
+      UFAttributeTools.Find<UFDescriptionAttribute>(propertyInfo)?.Description ??
+      UFAttributeTools.Find<DescriptionAttribute>(propertyInfo)?.Description ??
+      "";
+  }
+  
   /// <summary>
   /// Returns the classes to use for the span element inside the label.
   /// </summary>
@@ -746,31 +771,6 @@ public abstract class UFInputTagHelperBase(
     {
       anOutput.PostElement.AppendHtml(this.GetCheckboxExtraHtml());
     }
-  }
-
-  /// <summary>
-  /// Gets a description string either from the property or from one of the known description
-  /// providing attributes.
-  /// </summary>
-  /// <returns></returns>
-  private string GetDescription()
-  {
-    if (!string.IsNullOrEmpty(this.Description))
-    {
-      return this.Description;
-    }
-    PropertyInfo? propertyInfo = this.For?.Metadata.ContainerMetadata?.ModelType.GetProperty(
-      this.For?.Metadata.PropertyName ?? ""
-    );
-    if (propertyInfo == null)
-    {
-      return "";
-    }
-    return
-      UFAttributeTools.Find<DisplayAttribute>(propertyInfo)?.Description ??
-      UFAttributeTools.Find<UFDescriptionAttribute>(propertyInfo)?.Description ??
-      UFAttributeTools.Find<DescriptionAttribute>(propertyInfo)?.Description ??
-      "";
   }
 
   #endregion

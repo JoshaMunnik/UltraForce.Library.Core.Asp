@@ -27,12 +27,17 @@
 // IN THE SOFTWARE.
 // </license>
 
+using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 using System.Diagnostics.CodeAnalysis;
+using System.Reflection;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
 using Microsoft.AspNetCore.Mvc.TagHelpers;
 using Microsoft.AspNetCore.Mvc.ViewFeatures;
 using Microsoft.AspNetCore.Razor.TagHelpers;
 using UltraForce.Library.Core.Asp.Tools;
+using UltraForce.Library.NetStandard.Annotations;
+using UltraForce.Library.NetStandard.Tools;
 
 namespace UltraForce.Library.Core.Asp.TagHelpers.Base.Forms;
 
@@ -47,7 +52,12 @@ namespace UltraForce.Library.Core.Asp.TagHelpers.Base.Forms;
 /// Renders with wrapping:
 /// <code>
 /// &lt;div class="{GetInputWrapperClasses()}"&gt;<br/>
-///   &lt;label class="{GetInputLabelClasses()}" for="{id}"&gt;{label}&lt;/label&gt;<br/>
+///   &lt;label class="{GetSelectLabelClasses()}" for="{id}"&gt;
+///     &lt;span class="{GetSelectLabelSpanClasses()}"&gt;
+///      {GetLabelAsync(context,output)}
+///     &lt;/span&gt;
+///     &lt;span class="{GetSelectLabelDescriptionClasses()}"&gt;{GetDescription()}&lt;/span&gt;
+///   &lt;/label&gt;
 ///   &lt;select class="{GetSelectClasses() id={} ..." &gt;<br/>
 ///     {children}<br/>
 ///   &lt;/select&gt;<br/>
@@ -133,7 +143,7 @@ public abstract class UFSelectTagHelperBase(
     }
     else
     {
-      this.WrapInput(output, id, name, label, errorMessage);
+      this.WrapSelect(output, id, name, label, errorMessage);
     }
   }
 
@@ -154,22 +164,34 @@ public abstract class UFSelectTagHelperBase(
   /// Returns css classes for the label element.
   /// </summary>
   /// <returns></returns>
-  protected virtual string GetTextLabelClasses(
-    string type
-  )
+  protected virtual string GetSelectLabelClasses()
+  {
+    return string.Empty;
+  }
+  
+  /// <summary>
+  /// Returns the classes to use for the span element inside the label.
+  /// </summary>
+  /// <returns></returns>
+  protected virtual string GetSelectLabelSpanClasses()
   {
     return string.Empty;
   }
 
+  /// <summary>
+  /// Returns the classes to use for the description span element inside the label.
+  /// </summary>
+  /// <returns></returns>
+  protected virtual string GetSelectLabelDescriptionClasses()
+  {
+    return string.Empty;
+  }
 
   /// <summary>
   /// Returns css classes for the wrapper element.
   /// </summary>
-  /// <param name="type"></param>
   /// <returns></returns>
-  protected virtual string GetTextWrapperClasses(
-    string type
-  )
+  protected virtual string GetSelectWrapperClasses()
   {
     return string.Empty;
   }
@@ -210,6 +232,31 @@ public abstract class UFSelectTagHelperBase(
     return string.Empty;
   }
 
+  /// <summary>
+  /// Gets a description string either from the <see cref="Description"/> property or from
+  /// one of the known description providing attributes.
+  /// </summary>
+  /// <returns></returns>
+  protected virtual string GetDescription()
+  {
+    if (!string.IsNullOrEmpty(this.Description))
+    {
+      return this.Description;
+    }
+    PropertyInfo? propertyInfo = this.For?.Metadata.ContainerMetadata?.ModelType.GetProperty(
+      this.For?.Metadata.PropertyName ?? ""
+    );
+    if (propertyInfo == null)
+    {
+      return "";
+    }
+    return
+      UFAttributeTools.Find<DisplayAttribute>(propertyInfo)?.Description ??
+      UFAttributeTools.Find<UFDescriptionAttribute>(propertyInfo)?.Description ??
+      UFAttributeTools.Find<DescriptionAttribute>(propertyInfo)?.Description ??
+      "";
+  }
+  
   #endregion
 
   #region private methods
@@ -222,7 +269,7 @@ public abstract class UFSelectTagHelperBase(
   /// <param name="name">Name of input element</param>
   /// <param name="label">Label text to use</param>
   /// <param name="errorMessage">Error message to show</param>
-  private void WrapInput(
+  private void WrapSelect(
     TagHelperOutput output,
     string id,
     string name,
@@ -234,11 +281,19 @@ public abstract class UFSelectTagHelperBase(
       ? $"<div class=\"{this.GetFieldErrorsClasses()}\">{errorMessage}</div>"
       : "";
     UFTagHelperTools.AddClasses(output, this.GetSelectClasses());
+    string description = this.GetDescription();
+    string descriptionHtml = string.IsNullOrEmpty(description) || string.IsNullOrEmpty(label)
+      ? ""
+      : $"<span class=\"{this.GetSelectLabelDescriptionClasses()}\">" +
+      $"{description}</span>";
     string labelHtml = string.IsNullOrEmpty(label)
       ? ""
-      : $"<label class=\"{this.GetTextLabelClasses("select")}\" for=\"{id}\">{label}</label>";
+      : $"<label class=\"{this.GetSelectLabelClasses()}\" for=\"{id}\">" +
+      $"<span class=\"{this.GetSelectLabelSpanClasses()}\">{label}</span>" +
+      descriptionHtml +
+      "</label>";
     output.PreElement.AppendHtml(
-      $"<div class=\"{this.GetTextWrapperClasses("select")}\">{labelHtml}"
+      $"<div class=\"{this.GetSelectWrapperClasses()}\">{labelHtml}"
     );
     output.PostElement.AppendHtml(
       $"{this.GetValidationFeedbackContainerHtml(id, name)}{errorMessageHtml}</div>"
