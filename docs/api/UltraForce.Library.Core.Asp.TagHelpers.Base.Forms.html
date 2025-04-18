@@ -95,6 +95,25 @@
 Classes
 </h3>
     <dl class="jumplist">
+      <dt><a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.html">UFFormButtonTagHelperBase</a></dt>
+      <dd><p>Renders a button using form field styling.</p>
+<p>
+Renders button with wrapping and label, similar to other form field elements:
+<pre><code class="lang-csharp">&lt;div class="{GetButtonWrapperClasses()}"&gt;
+  &lt;label class="{GetButtonLabelClasses()}" for="{id}"&gt;
+    &lt;span class="{GetButtonLabelSpanClasses()}"&gt;
+     {GetLabelAsync(context,output)}
+    &lt;/span&gt;
+    &lt;span class="{GetButtonLabelDescriptionClasses()}"&gt;{GetDescription()}&lt;/span&gt;
+  &lt;/label&gt;
+    &lt;button class="{GetButtonClasses()}" ...&gt;
+    ...children... or value from "For" property
+    &lt;/button&gt;
+&lt;/div&gt;</code></pre>
+
+</dd>
+    </dl>
+    <dl class="jumplist">
       <dt><a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.html">UFInputTagHelperBase</a></dt>
       <dd><p>Renders either a text input, a checkbox or a radio button. If no <code>id</code> is set and
 <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFInputTagHelperBase_NoWrap">NoWrap</a> is <code>true</code> the class will generate an id so the label can reference the
@@ -122,7 +141,7 @@ Renders text input with wrapping and label:
     &lt;span class="{GetTextInputLabelSpanClasses(type)}"&gt;
      {GetLabelAsync(context,output)}
     &lt;/span&gt;
-    &lt;span class="{GetTextInputLabelDescriptionClasses(type)}"&gt;{description}&lt;/span&gt;
+    &lt;span class="{GetTextInputLabelDescriptionClasses(type)}"&gt;{GetDescription()}&lt;/span&gt;
   &lt;/label&gt;
   {GetTextInputPreHtml()}
     &lt;input class="{GetTextInputClasses(type)}" id={} .../&gt;
@@ -268,7 +287,12 @@ If there are no field errors, the field error block is not rendered.
 <p>
 Renders with wrapping:
 <pre><code class="lang-csharp">&lt;div class="{GetInputWrapperClasses()}"&gt;
-  &lt;label class="{GetInputLabelClasses()}" for="{id}"&gt;{label}&lt;/label&gt;
+  &lt;label class="{GetSelectLabelClasses()}" for="{id}"&gt;
+    &lt;span class="{GetSelectLabelSpanClasses()}"&gt;
+     {GetLabelAsync(context,output)}
+    &lt;/span&gt;
+    &lt;span class="{GetSelectLabelDescriptionClasses()}"&gt;{GetDescription()}&lt;/span&gt;
+  &lt;/label&gt;
   &lt;select class="{GetSelectClasses() id={} ..." &gt;
     {children}
   &lt;/select&gt;

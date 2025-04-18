@@ -231,6 +231,7 @@ namespace UltraForce.Library.Core.Asp.TagHelpers.Base.Forms;
 /// </para>
 /// </summary>
 [SuppressMessage("ReSharper", "ClassWithVirtualMembersNeverInherited.Global")]
+[SuppressMessage("ReSharper", "MemberCanBePrivate.Global")]
 public abstract class UFInputTagHelperBase(
   IHtmlGenerator generator
 )
@@ -273,6 +274,11 @@ public abstract class UFInputTagHelperBase(
   /// </summary>
   [HtmlAttributeName("multiline")]
   public bool Multiline { get; set; } = false;
+  
+  /// <summary>
+  /// When true do not include error block below the input element.
+  /// </summary>
+  public bool NoError { get; set; } = false;
 
   #endregion
 
@@ -645,9 +651,27 @@ public abstract class UFInputTagHelperBase(
     string errorMessage
   )
   {
-    return errorMessage != ""
+    return (errorMessage != "") && !this.NoError
       ? $"<div class=\"{this.GetFieldErrorsClasses()}\">{errorMessage}</div>"
       : "";
+  }
+
+  /// <summary>
+  /// Gets the html block containing error container and additional error message (if any).
+  /// </summary>
+  /// <param name="id"></param>
+  /// <param name="name"></param>
+  /// <param name="errorMessage"></param>
+  /// <returns></returns>
+  private string GetErrorBlock(
+    string id,
+    string name,
+    string errorMessage
+  )
+  {
+    return this.NoError
+      ? ""
+      : $"{this.GetValidationFeedbackContainerHtml(id, name)}{this.GetErrorMessageHtml(errorMessage)}";
   }
 
   /// <summary>
@@ -668,7 +692,6 @@ public abstract class UFInputTagHelperBase(
     string errorMessage
   )
   {
-    string errorMessageHtml = this.GetErrorMessageHtml(errorMessage);
     UFTagHelperTools.AddClasses(
       output, this.GetTextInputClasses(type)
     );
@@ -689,7 +712,7 @@ public abstract class UFInputTagHelperBase(
       $"<div class=\"{this.GetTextInputWrapperClasses(type)}\">{labelHtml}{preHtml}"
     );
     output.PostElement.AppendHtml(
-      $"{postHtml}{this.GetValidationFeedbackContainerHtml(id, name)}{errorMessageHtml}</div>"
+      $"{postHtml}{this.GetErrorBlock(id, name, errorMessage)}</div>"
     );
   }
 
@@ -701,11 +724,10 @@ public abstract class UFInputTagHelperBase(
     string errorMessage
   )
   {
-    string errorMessageHtml = this.GetErrorMessageHtml(errorMessage);
     UFTagHelperTools.AddClasses(anOutput, this.GetRadioInputClasses());
     string pre = !this.NoWrap ? $"<div class=\"{this.GetRadioWrapperClasses()}\">" : "";
     string post = !this.NoWrap
-      ? $"{this.GetValidationFeedbackContainerHtml(id, name)}{errorMessageHtml}</div>"
+      ? $"{this.GetErrorBlock(id, name, errorMessage)}</div>"
       //? $"{errorMessage}</div>"
       : "";
     string preLabel = string.IsNullOrEmpty(label)
@@ -741,11 +763,10 @@ public abstract class UFInputTagHelperBase(
     string errorMessage
   )
   {
-    string errorMessageHtml = this.GetErrorMessageHtml(errorMessage);
     UFTagHelperTools.AddClasses(anOutput, this.GetCheckboxInputClasses());
     string pre = !this.NoWrap ? $"<div class=\"{this.GetCheckboxWrapperClasses()}\">" : "";
     string post = !this.NoWrap
-      ? $"{this.GetValidationFeedbackContainerHtml(id, name)}{errorMessageHtml}</div>"
+      ? $"{this.GetErrorBlock(id, name, errorMessage)}</div>"
       //? $"{errorMessage}</div>"
       : "";
     string preLabel = string.IsNullOrEmpty(label)

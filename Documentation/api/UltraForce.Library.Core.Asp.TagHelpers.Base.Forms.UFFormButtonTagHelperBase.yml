@@ -1,0 +1,1671 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase
+  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase
+  id: UFFormButtonTagHelperBase
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
+  children:
+  - UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.#ctor(Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator,UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer)
+  - UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.Description
+  - UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.For
+  - UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.GetButtonClasses
+  - UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.GetButtonLabelClasses
+  - UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.GetButtonLabelDescriptionClasses
+  - UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.GetButtonLabelSpanClasses
+  - UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.GetButtonWrapperClasses
+  - UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.GetDescription
+  - UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.GetLabelHtmlAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  - UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.Label
+  - UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.NoLabel
+  - UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.NoWrap
+  - UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  langs:
+  - csharp
+  - vb
+  name: UFFormButtonTagHelperBase
+  nameWithType: UFFormButtonTagHelperBase
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase
+  type: Class
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFFormButtonTagHelperBase.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: UFFormButtonTagHelperBase
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFFormButtonTagHelperBase.cs
+    startLine: 62
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
+  summary: >-
+    Renders a button using form field styling.
+
+    <p>
+
+    Renders button with wrapping and label, similar to other form field elements:
+
+    <pre><code class="lang-csharp">&lt;div class="{GetButtonWrapperClasses()}"&gt;
+      &lt;label class="{GetButtonLabelClasses()}" for="{id}"&gt;
+        &lt;span class="{GetButtonLabelSpanClasses()}"&gt;
+         {GetLabelAsync(context,output)}
+        &lt;/span&gt;
+        &lt;span class="{GetButtonLabelDescriptionClasses()}"&gt;{GetDescription()}&lt;/span&gt;
+      &lt;/label&gt;
+        &lt;button class="{GetButtonClasses()}" ...&gt;
+        ...children... or value from "For" property
+        &lt;/button&gt;
+    &lt;/div&gt;</code></pre>
+
+    </p>
+  example: []
+  syntax:
+    content: 'public abstract class UFFormButtonTagHelperBase : UFTagHelperWithModelExpressionRenderer, ITagHelper, ITagHelperComponent'
+    content.vb: Public MustInherit Class UFFormButtonTagHelperBase Inherits UFTagHelperWithModelExpressionRenderer Implements ITagHelper, ITagHelperComponent
+  inheritance:
+  - System.Object
+  - Microsoft.AspNetCore.Razor.TagHelpers.TagHelper
+  - UltraForce.Library.Core.Asp.TagHelpers.Base.UFTagHelperWithViewContext
+  - UltraForce.Library.Core.Asp.TagHelpers.Base.UFTagHelperWithModelExpressionRenderer
+  implements:
+  - Microsoft.AspNetCore.Razor.TagHelpers.ITagHelper
+  - Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent
+  inheritedMembers:
+  - UltraForce.Library.Core.Asp.TagHelpers.Base.UFTagHelperWithModelExpressionRenderer.ModelExpressionRenderer
+  - UltraForce.Library.Core.Asp.TagHelpers.Base.UFTagHelperWithViewContext.ViewContext
+  - Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Init(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext)
+  - Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  - Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Order
+  - System.Object.Equals(System.Object)
+  - System.Object.Equals(System.Object,System.Object)
+  - System.Object.GetHashCode
+  - System.Object.GetType
+  - System.Object.MemberwiseClone
+  - System.Object.ReferenceEquals(System.Object,System.Object)
+  - System.Object.ToString
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.#ctor(Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator,UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer)
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.#ctor(Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator,UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer)
+  id: '#ctor(Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator,UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer)'
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase
+  langs:
+  - csharp
+  - vb
+  name: UFFormButtonTagHelperBase(IHtmlGenerator, IUFModelExpressionRenderer)
+  nameWithType: UFFormButtonTagHelperBase.UFFormButtonTagHelperBase(IHtmlGenerator, IUFModelExpressionRenderer)
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.UFFormButtonTagHelperBase(Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator, UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer)
+  type: Constructor
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFFormButtonTagHelperBase.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: .ctor
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFFormButtonTagHelperBase.cs
+    startLine: 62
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
+  summary: >-
+    Renders a button using form field styling.
+
+    <p>
+
+    Renders button with wrapping and label, similar to other form field elements:
+
+    <pre><code class="lang-csharp">&lt;div class="{GetButtonWrapperClasses()}"&gt;
+      &lt;label class="{GetButtonLabelClasses()}" for="{id}"&gt;
+        &lt;span class="{GetButtonLabelSpanClasses()}"&gt;
+         {GetLabelAsync(context,output)}
+        &lt;/span&gt;
+        &lt;span class="{GetButtonLabelDescriptionClasses()}"&gt;{GetDescription()}&lt;/span&gt;
+      &lt;/label&gt;
+        &lt;button class="{GetButtonClasses()}" ...&gt;
+        ...children... or value from "For" property
+        &lt;/button&gt;
+    &lt;/div&gt;</code></pre>
+
+    </p>
+  example: []
+  syntax:
+    content: protected UFFormButtonTagHelperBase(IHtmlGenerator generator, IUFModelExpressionRenderer modelExpressionRenderer)
+    parameters:
+    - id: generator
+      type: Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator
+    - id: modelExpressionRenderer
+      type: UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer
+    content.vb: Protected Sub New(generator As IHtmlGenerator, modelExpressionRenderer As IUFModelExpressionRenderer)
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.#ctor*
+  nameWithType.vb: UFFormButtonTagHelperBase.New(IHtmlGenerator, IUFModelExpressionRenderer)
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.New(Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator, UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer)
+  name.vb: New(IHtmlGenerator, IUFModelExpressionRenderer)
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.Label
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.Label
+  id: Label
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase
+  langs:
+  - csharp
+  - vb
+  name: Label
+  nameWithType: UFFormButtonTagHelperBase.Label
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.Label
+  type: Property
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFFormButtonTagHelperBase.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: Label
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFFormButtonTagHelperBase.cs
+    startLine: 78
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
+  summary: >-
+    When set, use this value for label instead of getting from the
+
+    <xref href="Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper.For" data-throw-if-not-resolved="false"></xref> property.
+
+    <p>
+
+    When <xref href="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.NoWrap" data-throw-if-not-resolved="false"></xref> is false, this property is not used.
+
+    </p>
+  example: []
+  syntax:
+    content: >-
+      [HtmlAttributeName("label")]
+
+      public string Label { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <HtmlAttributeName("label")>
+
+      Public Property Label As String
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.Label*
+  attributes:
+  - type: Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute
+    ctor: Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: label
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.NoLabel
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.NoLabel
+  id: NoLabel
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase
+  langs:
+  - csharp
+  - vb
+  name: NoLabel
+  nameWithType: UFFormButtonTagHelperBase.NoLabel
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.NoLabel
+  type: Property
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFFormButtonTagHelperBase.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: NoLabel
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFFormButtonTagHelperBase.cs
+    startLine: 84
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
+  summary: When true do not render a label element.
+  example: []
+  syntax:
+    content: >-
+      [HtmlAttributeName("no-label")]
+
+      public bool NoLabel { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <HtmlAttributeName("no-label")>
+
+      Public Property NoLabel As Boolean
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.NoLabel*
+  attributes:
+  - type: Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute
+    ctor: Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: no-label
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.NoWrap
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.NoWrap
+  id: NoWrap
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase
+  langs:
+  - csharp
+  - vb
+  name: NoWrap
+  nameWithType: UFFormButtonTagHelperBase.NoWrap
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.NoWrap
+  type: Property
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFFormButtonTagHelperBase.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: NoWrap
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFFormButtonTagHelperBase.cs
+    startLine: 90
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
+  summary: When true, do not the wrap button element in a div.
+  example: []
+  syntax:
+    content: >-
+      [HtmlAttributeName("no-wrap")]
+
+      public bool NoWrap { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <HtmlAttributeName("no-wrap")>
+
+      Public Property NoWrap As Boolean
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.NoWrap*
+  attributes:
+  - type: Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute
+    ctor: Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: no-wrap
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.For
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.For
+  id: For
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase
+  langs:
+  - csharp
+  - vb
+  name: For
+  nameWithType: UFFormButtonTagHelperBase.For
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.For
+  type: Property
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFFormButtonTagHelperBase.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: For
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFFormButtonTagHelperBase.cs
+    startLine: 103
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
+  summary: >-
+    An expression to be evaluated against the current model. The contents of the button is
+
+    set to the value of this expression. The label is set to the name of this expression.
+
+    If there is a description attribute on the property, it is used as the description.
+
+    <p>
+
+    Date values are formatted using mysql format (so there is no confusion on month and
+
+    day positions):
+
+    "yyyy-mm-dd hh:mm:ss"
+
+    </p>
+  example: []
+  syntax:
+    content: >-
+      [HtmlAttributeName("for")]
+
+      public ModelExpression? For { get; set; }
+    parameters: []
+    return:
+      type: Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression
+    content.vb: >-
+      <HtmlAttributeName("for")>
+
+      Public Property [For] As ModelExpression
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.For*
+  attributes:
+  - type: Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute
+    ctor: Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: for
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.Description
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.Description
+  id: Description
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase
+  langs:
+  - csharp
+  - vb
+  name: Description
+  nameWithType: UFFormButtonTagHelperBase.Description
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.Description
+  type: Property
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFFormButtonTagHelperBase.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: Description
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFFormButtonTagHelperBase.cs
+    startLine: 111
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
+  summary: >-
+    Additional text that is shown below the label. It is only used if <xref href="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.NoWrap" data-throw-if-not-resolved="false"></xref> is
+
+    not true and there is a label being shown. Leave empty to use the description from the
+
+    <xref href="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.For" data-throw-if-not-resolved="false"></xref> property.
+  example: []
+  syntax:
+    content: >-
+      [HtmlAttributeName("description")]
+
+      public string Description { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <HtmlAttributeName("description")>
+
+      Public Property Description As String
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.Description*
+  attributes:
+  - type: Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute
+    ctor: Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: description
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  id: ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase
+  langs:
+  - csharp
+  - vb
+  name: ProcessAsync(TagHelperContext, TagHelperOutput)
+  nameWithType: UFFormButtonTagHelperBase.ProcessAsync(TagHelperContext, TagHelperOutput)
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFFormButtonTagHelperBase.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: ProcessAsync
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFFormButtonTagHelperBase.cs
+    startLine: 119
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
+  summary: >-
+    Asynchronously executes the <xref href="Microsoft.AspNetCore.Razor.TagHelpers.TagHelper" data-throw-if-not-resolved="false"></xref> with the given <code class="paramref">context</code> and
+
+    <code class="paramref">output</code>.
+  remarks: By default this calls into <xref href="Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext%2cMicrosoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public override Task ProcessAsync(TagHelperContext context, TagHelperOutput output)
+    parameters:
+    - id: context
+      type: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext
+      description: Contains information associated with the current HTML tag.
+    - id: output
+      type: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput
+      description: A stateful HTML element used to generate an HTML tag.
+    return:
+      type: System.Threading.Tasks.Task
+      description: A <xref href="System.Threading.Tasks.Task" data-throw-if-not-resolved="false"></xref> that on completion updates the <code class="paramref">output</code>.
+    content.vb: Public Overrides Function ProcessAsync(context As TagHelperContext, output As TagHelperOutput) As Task
+  overridden: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.ProcessAsync*
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.GetButtonClasses
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.GetButtonClasses
+  id: GetButtonClasses
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase
+  langs:
+  - csharp
+  - vb
+  name: GetButtonClasses()
+  nameWithType: UFFormButtonTagHelperBase.GetButtonClasses()
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.GetButtonClasses()
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFFormButtonTagHelperBase.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: GetButtonClasses
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFFormButtonTagHelperBase.cs
+    startLine: 151
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
+  summary: Returns the classes to use for the button.
+  example: []
+  syntax:
+    content: protected virtual string GetButtonClasses()
+    return:
+      type: System.String
+      description: ''
+    content.vb: Protected Overridable Function GetButtonClasses() As String
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.GetButtonClasses*
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.GetButtonLabelClasses
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.GetButtonLabelClasses
+  id: GetButtonLabelClasses
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase
+  langs:
+  - csharp
+  - vb
+  name: GetButtonLabelClasses()
+  nameWithType: UFFormButtonTagHelperBase.GetButtonLabelClasses()
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.GetButtonLabelClasses()
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFFormButtonTagHelperBase.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: GetButtonLabelClasses
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFFormButtonTagHelperBase.cs
+    startLine: 160
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
+  summary: Returns the classes to use for the label element.
+  example: []
+  syntax:
+    content: protected virtual string GetButtonLabelClasses()
+    return:
+      type: System.String
+      description: ''
+    content.vb: Protected Overridable Function GetButtonLabelClasses() As String
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.GetButtonLabelClasses*
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.GetLabelHtmlAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.GetLabelHtmlAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  id: GetLabelHtmlAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase
+  langs:
+  - csharp
+  - vb
+  name: GetLabelHtmlAsync(TagHelperContext, TagHelperOutput)
+  nameWithType: UFFormButtonTagHelperBase.GetLabelHtmlAsync(TagHelperContext, TagHelperOutput)
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.GetLabelHtmlAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFFormButtonTagHelperBase.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: GetLabelHtmlAsync
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFFormButtonTagHelperBase.cs
+    startLine: 174
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
+  summary: >-
+    Returns the label html. The default implementation checks if <xref href="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.Label" data-throw-if-not-resolved="false"></xref> has a value,
+
+    if it does return that value.
+
+    If <xref href="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.Label" data-throw-if-not-resolved="false"></xref> is empty, try to determine the value from the
+
+    <xref href="Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper.For" data-throw-if-not-resolved="false"></xref> property.
+  example: []
+  syntax:
+    content: protected virtual Task<string> GetLabelHtmlAsync(TagHelperContext context, TagHelperOutput output)
+    parameters:
+    - id: context
+      type: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext
+      description: ''
+    - id: output
+      type: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput
+      description: ''
+    return:
+      type: System.Threading.Tasks.Task{System.String}
+      description: ''
+    content.vb: Protected Overridable Function GetLabelHtmlAsync(context As TagHelperContext, output As TagHelperOutput) As Task(Of String)
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.GetLabelHtmlAsync*
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.GetDescription
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.GetDescription
+  id: GetDescription
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase
+  langs:
+  - csharp
+  - vb
+  name: GetDescription()
+  nameWithType: UFFormButtonTagHelperBase.GetDescription()
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.GetDescription()
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFFormButtonTagHelperBase.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: GetDescription
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFFormButtonTagHelperBase.cs
+    startLine: 195
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
+  summary: >-
+    Gets a description string either from the <xref href="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.Description" data-throw-if-not-resolved="false"></xref> property or from
+
+    one of the known description providing attributes if <xref href="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.For" data-throw-if-not-resolved="false"></xref> has been set.
+  example: []
+  syntax:
+    content: protected virtual string GetDescription()
+    return:
+      type: System.String
+      description: ''
+    content.vb: Protected Overridable Function GetDescription() As String
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.GetDescription*
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.GetButtonLabelSpanClasses
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.GetButtonLabelSpanClasses
+  id: GetButtonLabelSpanClasses
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase
+  langs:
+  - csharp
+  - vb
+  name: GetButtonLabelSpanClasses()
+  nameWithType: UFFormButtonTagHelperBase.GetButtonLabelSpanClasses()
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.GetButtonLabelSpanClasses()
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFFormButtonTagHelperBase.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: GetButtonLabelSpanClasses
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFFormButtonTagHelperBase.cs
+    startLine: 219
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
+  summary: Returns the classes to use for the span element inside the label.
+  example: []
+  syntax:
+    content: protected virtual string GetButtonLabelSpanClasses()
+    return:
+      type: System.String
+      description: ''
+    content.vb: Protected Overridable Function GetButtonLabelSpanClasses() As String
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.GetButtonLabelSpanClasses*
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.GetButtonLabelDescriptionClasses
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.GetButtonLabelDescriptionClasses
+  id: GetButtonLabelDescriptionClasses
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase
+  langs:
+  - csharp
+  - vb
+  name: GetButtonLabelDescriptionClasses()
+  nameWithType: UFFormButtonTagHelperBase.GetButtonLabelDescriptionClasses()
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.GetButtonLabelDescriptionClasses()
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFFormButtonTagHelperBase.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: GetButtonLabelDescriptionClasses
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFFormButtonTagHelperBase.cs
+    startLine: 228
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
+  summary: Returns the classes to use for the description span element inside the label.
+  example: []
+  syntax:
+    content: protected virtual string GetButtonLabelDescriptionClasses()
+    return:
+      type: System.String
+      description: ''
+    content.vb: Protected Overridable Function GetButtonLabelDescriptionClasses() As String
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.GetButtonLabelDescriptionClasses*
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.GetButtonWrapperClasses
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.GetButtonWrapperClasses
+  id: GetButtonWrapperClasses
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase
+  langs:
+  - csharp
+  - vb
+  name: GetButtonWrapperClasses()
+  nameWithType: UFFormButtonTagHelperBase.GetButtonWrapperClasses()
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.GetButtonWrapperClasses()
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFFormButtonTagHelperBase.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: GetButtonWrapperClasses
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFFormButtonTagHelperBase.cs
+    startLine: 237
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
+  summary: Returns the classes to use for the wrapper div element.
+  example: []
+  syntax:
+    content: protected virtual string GetButtonWrapperClasses()
+    return:
+      type: System.String
+      description: ''
+    content.vb: Protected Overridable Function GetButtonWrapperClasses() As String
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.GetButtonWrapperClasses*
+references:
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
+  commentId: N:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
+  href: UltraForce.html
+  name: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
+  nameWithType: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers
+    name: TagHelpers
+    href: UltraForce.Library.Core.Asp.TagHelpers.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Base
+    name: Base
+    href: UltraForce.Library.Core.Asp.TagHelpers.Base.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
+    name: Forms
+    href: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers
+    name: TagHelpers
+    href: UltraForce.Library.Core.Asp.TagHelpers.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Base
+    name: Base
+    href: UltraForce.Library.Core.Asp.TagHelpers.Base.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
+    name: Forms
+    href: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper
+  commentId: T:Microsoft.AspNetCore.Razor.TagHelpers.TagHelper
+  parent: Microsoft.AspNetCore.Razor.TagHelpers
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper
+  name: TagHelper
+  nameWithType: TagHelper
+  fullName: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.UFTagHelperWithViewContext
+  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Base.UFTagHelperWithViewContext
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Base
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.UFTagHelperWithViewContext.html
+  name: UFTagHelperWithViewContext
+  nameWithType: UFTagHelperWithViewContext
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.UFTagHelperWithViewContext
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.UFTagHelperWithModelExpressionRenderer
+  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Base.UFTagHelperWithModelExpressionRenderer
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Base
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.UFTagHelperWithModelExpressionRenderer.html
+  name: UFTagHelperWithModelExpressionRenderer
+  nameWithType: UFTagHelperWithModelExpressionRenderer
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.UFTagHelperWithModelExpressionRenderer
+- uid: Microsoft.AspNetCore.Razor.TagHelpers.ITagHelper
+  commentId: T:Microsoft.AspNetCore.Razor.TagHelpers.ITagHelper
+  parent: Microsoft.AspNetCore.Razor.TagHelpers
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.itaghelper
+  name: ITagHelper
+  nameWithType: ITagHelper
+  fullName: Microsoft.AspNetCore.Razor.TagHelpers.ITagHelper
+- uid: Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent
+  commentId: T:Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent
+  parent: Microsoft.AspNetCore.Razor.TagHelpers
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.itaghelpercomponent
+  name: ITagHelperComponent
+  nameWithType: ITagHelperComponent
+  fullName: Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.UFTagHelperWithModelExpressionRenderer.ModelExpressionRenderer
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Base.UFTagHelperWithModelExpressionRenderer.ModelExpressionRenderer
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Base.UFTagHelperWithModelExpressionRenderer
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.UFTagHelperWithModelExpressionRenderer.html#UltraForce_Library_Core_Asp_TagHelpers_Base_UFTagHelperWithModelExpressionRenderer_ModelExpressionRenderer
+  name: ModelExpressionRenderer
+  nameWithType: UFTagHelperWithModelExpressionRenderer.ModelExpressionRenderer
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.UFTagHelperWithModelExpressionRenderer.ModelExpressionRenderer
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.UFTagHelperWithViewContext.ViewContext
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Base.UFTagHelperWithViewContext.ViewContext
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Base.UFTagHelperWithViewContext
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.UFTagHelperWithViewContext.html#UltraForce_Library_Core_Asp_TagHelpers_Base_UFTagHelperWithViewContext_ViewContext
+  name: ViewContext
+  nameWithType: UFTagHelperWithViewContext.ViewContext
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.UFTagHelperWithViewContext.ViewContext
+- uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Init(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext)
+  commentId: M:Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Init(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext)
+  parent: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper.init
+  name: Init(TagHelperContext)
+  nameWithType: TagHelper.Init(TagHelperContext)
+  fullName: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Init(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Init(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext)
+    name: Init
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper.init
+  - name: (
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext
+    name: TagHelperContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelpercontext
+  - name: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Init(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext)
+    name: Init
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper.init
+  - name: (
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext
+    name: TagHelperContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelpercontext
+  - name: )
+- uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  commentId: M:Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  parent: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper.process
+  name: Process(TagHelperContext, TagHelperOutput)
+  nameWithType: TagHelper.Process(TagHelperContext, TagHelperOutput)
+  fullName: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+    name: Process
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper.process
+  - name: (
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext
+    name: TagHelperContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelpercontext
+  - name: ','
+  - name: " "
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput
+    name: TagHelperOutput
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelperoutput
+  - name: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+    name: Process
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper.process
+  - name: (
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext
+    name: TagHelperContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelpercontext
+  - name: ','
+  - name: " "
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput
+    name: TagHelperOutput
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelperoutput
+  - name: )
+- uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Order
+  commentId: P:Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Order
+  parent: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper.order
+  name: Order
+  nameWithType: TagHelper.Order
+  fullName: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Order
+- uid: System.Object.Equals(System.Object)
+  commentId: M:System.Object.Equals(System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  name: Equals(object)
+  nameWithType: object.Equals(object)
+  fullName: object.Equals(object)
+  nameWithType.vb: Object.Equals(Object)
+  fullName.vb: Object.Equals(Object)
+  name.vb: Equals(Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.Equals(System.Object,System.Object)
+  commentId: M:System.Object.Equals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  name: Equals(object, object)
+  nameWithType: object.Equals(object, object)
+  fullName: object.Equals(object, object)
+  nameWithType.vb: Object.Equals(Object, Object)
+  fullName.vb: Object.Equals(Object, Object)
+  name.vb: Equals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.Equals(System.Object,System.Object)
+    name: Equals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.GetHashCode
+  commentId: M:System.Object.GetHashCode
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  name: GetHashCode()
+  nameWithType: object.GetHashCode()
+  fullName: object.GetHashCode()
+  nameWithType.vb: Object.GetHashCode()
+  fullName.vb: Object.GetHashCode()
+  spec.csharp:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetHashCode
+    name: GetHashCode
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gethashcode
+  - name: (
+  - name: )
+- uid: System.Object.GetType
+  commentId: M:System.Object.GetType
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  name: GetType()
+  nameWithType: object.GetType()
+  fullName: object.GetType()
+  nameWithType.vb: Object.GetType()
+  fullName.vb: Object.GetType()
+  spec.csharp:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.GetType
+    name: GetType
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.gettype
+  - name: (
+  - name: )
+- uid: System.Object.MemberwiseClone
+  commentId: M:System.Object.MemberwiseClone
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  name: MemberwiseClone()
+  nameWithType: object.MemberwiseClone()
+  fullName: object.MemberwiseClone()
+  nameWithType.vb: Object.MemberwiseClone()
+  fullName.vb: Object.MemberwiseClone()
+  spec.csharp:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.MemberwiseClone
+    name: MemberwiseClone
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone
+  - name: (
+  - name: )
+- uid: System.Object.ReferenceEquals(System.Object,System.Object)
+  commentId: M:System.Object.ReferenceEquals(System.Object,System.Object)
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  name: ReferenceEquals(object, object)
+  nameWithType: object.ReferenceEquals(object, object)
+  fullName: object.ReferenceEquals(object, object)
+  nameWithType.vb: Object.ReferenceEquals(Object, Object)
+  fullName.vb: Object.ReferenceEquals(Object, Object)
+  name.vb: ReferenceEquals(Object, Object)
+  spec.csharp:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+  spec.vb:
+  - uid: System.Object.ReferenceEquals(System.Object,System.Object)
+    name: ReferenceEquals
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.referenceequals
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: ','
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object
+  - name: )
+- uid: System.Object.ToString
+  commentId: M:System.Object.ToString
+  parent: System.Object
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  name: ToString()
+  nameWithType: object.ToString()
+  fullName: object.ToString()
+  nameWithType.vb: Object.ToString()
+  fullName.vb: Object.ToString()
+  spec.csharp:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: System.Object.ToString
+    name: ToString
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.object.tostring
+  - name: (
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Microsoft.AspNetCore.Razor.TagHelpers
+  commentId: N:Microsoft.AspNetCore.Razor.TagHelpers
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.AspNetCore.Razor.TagHelpers
+  nameWithType: Microsoft.AspNetCore.Razor.TagHelpers
+  fullName: Microsoft.AspNetCore.Razor.TagHelpers
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Razor
+    name: Razor
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor
+  - name: .
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers
+    name: TagHelpers
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Razor
+    name: Razor
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor
+  - name: .
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers
+    name: TagHelpers
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base
+  commentId: N:UltraForce.Library.Core.Asp.TagHelpers.Base
+  href: UltraForce.html
+  name: UltraForce.Library.Core.Asp.TagHelpers.Base
+  nameWithType: UltraForce.Library.Core.Asp.TagHelpers.Base
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers
+    name: TagHelpers
+    href: UltraForce.Library.Core.Asp.TagHelpers.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Base
+    name: Base
+    href: UltraForce.Library.Core.Asp.TagHelpers.Base.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers
+    name: TagHelpers
+    href: UltraForce.Library.Core.Asp.TagHelpers.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Base
+    name: Base
+    href: UltraForce.Library.Core.Asp.TagHelpers.Base.html
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.#ctor*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.#ctor
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFFormButtonTagHelperBase__ctor_Microsoft_AspNetCore_Mvc_ViewFeatures_IHtmlGenerator_UltraForce_Library_Core_Asp_Services_IUFModelExpressionRenderer_
+  name: UFFormButtonTagHelperBase
+  nameWithType: UFFormButtonTagHelperBase.UFFormButtonTagHelperBase
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.UFFormButtonTagHelperBase
+  nameWithType.vb: UFFormButtonTagHelperBase.New
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.New
+  name.vb: New
+- uid: Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator
+  commentId: T:Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator
+  parent: Microsoft.AspNetCore.Mvc.ViewFeatures
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.viewfeatures.ihtmlgenerator
+  name: IHtmlGenerator
+  nameWithType: IHtmlGenerator
+  fullName: Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator
+- uid: UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer
+  commentId: T:UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer
+  parent: UltraForce.Library.Core.Asp.Services
+  href: UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.html
+  name: IUFModelExpressionRenderer
+  nameWithType: IUFModelExpressionRenderer
+  fullName: UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer
+- uid: Microsoft.AspNetCore.Mvc.ViewFeatures
+  commentId: N:Microsoft.AspNetCore.Mvc.ViewFeatures
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.AspNetCore.Mvc.ViewFeatures
+  nameWithType: Microsoft.AspNetCore.Mvc.ViewFeatures
+  fullName: Microsoft.AspNetCore.Mvc.ViewFeatures
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Mvc
+    name: Mvc
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc
+  - name: .
+  - uid: Microsoft.AspNetCore.Mvc.ViewFeatures
+    name: ViewFeatures
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.viewfeatures
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Mvc
+    name: Mvc
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc
+  - name: .
+  - uid: Microsoft.AspNetCore.Mvc.ViewFeatures
+    name: ViewFeatures
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.viewfeatures
+- uid: UltraForce.Library.Core.Asp.Services
+  commentId: N:UltraForce.Library.Core.Asp.Services
+  href: UltraForce.html
+  name: UltraForce.Library.Core.Asp.Services
+  nameWithType: UltraForce.Library.Core.Asp.Services
+  fullName: UltraForce.Library.Core.Asp.Services
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Services
+    name: Services
+    href: UltraForce.Library.Core.Asp.Services.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Services
+    name: Services
+    href: UltraForce.Library.Core.Asp.Services.html
+- uid: Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper.For
+  commentId: P:Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper.For
+  parent: Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers.inputtaghelper.for
+  name: For
+  nameWithType: InputTagHelper.For
+  fullName: Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper.For
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.NoWrap
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.NoWrap
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFFormButtonTagHelperBase_NoWrap
+  name: NoWrap
+  nameWithType: UFFormButtonTagHelperBase.NoWrap
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.NoWrap
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.Label*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.Label
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFFormButtonTagHelperBase_Label
+  name: Label
+  nameWithType: UFFormButtonTagHelperBase.Label
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.Label
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper
+  commentId: T:Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper
+  parent: Microsoft.AspNetCore.Mvc.TagHelpers
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers.inputtaghelper
+  name: InputTagHelper
+  nameWithType: InputTagHelper
+  fullName: Microsoft.AspNetCore.Mvc.TagHelpers.InputTagHelper
+- uid: Microsoft.AspNetCore.Mvc.TagHelpers
+  commentId: N:Microsoft.AspNetCore.Mvc.TagHelpers
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft
+  name: Microsoft.AspNetCore.Mvc.TagHelpers
+  nameWithType: Microsoft.AspNetCore.Mvc.TagHelpers
+  fullName: Microsoft.AspNetCore.Mvc.TagHelpers
+  spec.csharp:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Mvc
+    name: Mvc
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc
+  - name: .
+  - uid: Microsoft.AspNetCore.Mvc.TagHelpers
+    name: TagHelpers
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers
+  spec.vb:
+  - uid: Microsoft
+    name: Microsoft
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft
+  - name: .
+  - uid: Microsoft.AspNetCore
+    name: AspNetCore
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore
+  - name: .
+  - uid: Microsoft.AspNetCore.Mvc
+    name: Mvc
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc
+  - name: .
+  - uid: Microsoft.AspNetCore.Mvc.TagHelpers
+    name: TagHelpers
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.NoLabel*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.NoLabel
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFFormButtonTagHelperBase_NoLabel
+  name: NoLabel
+  nameWithType: UFFormButtonTagHelperBase.NoLabel
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.NoLabel
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.NoWrap*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.NoWrap
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFFormButtonTagHelperBase_NoWrap
+  name: NoWrap
+  nameWithType: UFFormButtonTagHelperBase.NoWrap
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.NoWrap
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.For*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.For
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFFormButtonTagHelperBase_For
+  name: For
+  nameWithType: UFFormButtonTagHelperBase.For
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.For
+- uid: Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression
+  commentId: T:Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression
+  parent: Microsoft.AspNetCore.Mvc.ViewFeatures
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.viewfeatures.modelexpression
+  name: ModelExpression
+  nameWithType: ModelExpression
+  fullName: Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.For
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.For
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFFormButtonTagHelperBase_For
+  name: For
+  nameWithType: UFFormButtonTagHelperBase.For
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.For
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.Description*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.Description
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFFormButtonTagHelperBase_Description
+  name: Description
+  nameWithType: UFFormButtonTagHelperBase.Description
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.Description
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  commentId: M:Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  parent: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper.processasync
+  name: ProcessAsync(TagHelperContext, TagHelperOutput)
+  nameWithType: TagHelper.ProcessAsync(TagHelperContext, TagHelperOutput)
+  fullName: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  spec.csharp:
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+    name: ProcessAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper.processasync
+  - name: (
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext
+    name: TagHelperContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelpercontext
+  - name: ','
+  - name: " "
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput
+    name: TagHelperOutput
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelperoutput
+  - name: )
+  spec.vb:
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+    name: ProcessAsync
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper.processasync
+  - name: (
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext
+    name: TagHelperContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelpercontext
+  - name: ','
+  - name: " "
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput
+    name: TagHelperOutput
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelperoutput
+  - name: )
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.ProcessAsync*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.ProcessAsync
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFFormButtonTagHelperBase_ProcessAsync_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContext_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_
+  name: ProcessAsync
+  nameWithType: UFFormButtonTagHelperBase.ProcessAsync
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.ProcessAsync
+- uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext
+  commentId: T:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext
+  parent: Microsoft.AspNetCore.Razor.TagHelpers
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelpercontext
+  name: TagHelperContext
+  nameWithType: TagHelperContext
+  fullName: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext
+- uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput
+  commentId: T:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput
+  parent: Microsoft.AspNetCore.Razor.TagHelpers
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelperoutput
+  name: TagHelperOutput
+  nameWithType: TagHelperOutput
+  fullName: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.GetButtonClasses*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.GetButtonClasses
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFFormButtonTagHelperBase_GetButtonClasses
+  name: GetButtonClasses
+  nameWithType: UFFormButtonTagHelperBase.GetButtonClasses
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.GetButtonClasses
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.GetButtonLabelClasses*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.GetButtonLabelClasses
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFFormButtonTagHelperBase_GetButtonLabelClasses
+  name: GetButtonLabelClasses
+  nameWithType: UFFormButtonTagHelperBase.GetButtonLabelClasses
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.GetButtonLabelClasses
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.Label
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.Label
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFFormButtonTagHelperBase_Label
+  name: Label
+  nameWithType: UFFormButtonTagHelperBase.Label
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.Label
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.GetLabelHtmlAsync*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.GetLabelHtmlAsync
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFFormButtonTagHelperBase_GetLabelHtmlAsync_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContext_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_
+  name: GetLabelHtmlAsync
+  nameWithType: UFFormButtonTagHelperBase.GetLabelHtmlAsync
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.GetLabelHtmlAsync
+- uid: System.Threading.Tasks.Task{System.String}
+  commentId: T:System.Threading.Tasks.Task{System.String}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<string>
+  nameWithType: Task<string>
+  fullName: System.Threading.Tasks.Task<string>
+  nameWithType.vb: Task(Of String)
+  fullName.vb: System.Threading.Tasks.Task(Of String)
+  name.vb: Task(Of String)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.Description
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.Description
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFFormButtonTagHelperBase_Description
+  name: Description
+  nameWithType: UFFormButtonTagHelperBase.Description
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.Description
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.GetDescription*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.GetDescription
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFFormButtonTagHelperBase_GetDescription
+  name: GetDescription
+  nameWithType: UFFormButtonTagHelperBase.GetDescription
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.GetDescription
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.GetButtonLabelSpanClasses*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.GetButtonLabelSpanClasses
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFFormButtonTagHelperBase_GetButtonLabelSpanClasses
+  name: GetButtonLabelSpanClasses
+  nameWithType: UFFormButtonTagHelperBase.GetButtonLabelSpanClasses
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.GetButtonLabelSpanClasses
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.GetButtonLabelDescriptionClasses*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.GetButtonLabelDescriptionClasses
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFFormButtonTagHelperBase_GetButtonLabelDescriptionClasses
+  name: GetButtonLabelDescriptionClasses
+  nameWithType: UFFormButtonTagHelperBase.GetButtonLabelDescriptionClasses
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.GetButtonLabelDescriptionClasses
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.GetButtonWrapperClasses*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.GetButtonWrapperClasses
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFFormButtonTagHelperBase_GetButtonWrapperClasses
+  name: GetButtonWrapperClasses
+  nameWithType: UFFormButtonTagHelperBase.GetButtonWrapperClasses
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.GetButtonWrapperClasses

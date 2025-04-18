@@ -1,0 +1,735 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+      <title>Class UFFormButtonTagHelperBase | UltraForce.Library.Core.Asp </title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="title" content="Class UFFormButtonTagHelperBase | UltraForce.Library.Core.Asp ">
+      
+      <meta name="description" content="Renders a button using form field styling.  Renders button with wrapping and label, similar to other form field elements: &amp;lt;div class=&quot;{GetButtonWrapperClasses()}&quot;&amp;gt;   &amp;lt;label class=&quot;{GetButtonLabelClasses()}&quot; for=&quot;{id}&quot;&amp;gt;     &amp;lt;span class=&quot;{GetButtonLabelSpanClasses()}&quot;&amp;gt;      {GetLabelAsync(context,output)}     &amp;lt;/span&amp;gt;     &amp;lt;span class=&quot;{GetButtonLabelDescriptionClasses()}&quot;&amp;gt;{GetDescription()}&amp;lt;/span&amp;gt;   &amp;lt;/label&amp;gt;     &amp;lt;button class=&quot;{GetButtonClasses()}&quot; ...&amp;gt;     ...children... or value from &quot;For&quot; property     &amp;lt;/button&amp;gt; &amp;lt;/div&amp;gt;">
+      <link rel="icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../public/docfx.min.css">
+      <link rel="stylesheet" href="../public/main.css">
+      <meta name="docfx:navrel" content="../toc.html">
+      <meta name="docfx:tocrel" content="toc.html">
+      
+      <meta name="docfx:rel" content="../">
+      
+      
+      <meta name="docfx:docurl" content="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/new/master/apiSpec/new?filename=UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFFormButtonTagHelperBase.md&amp;value=---%0Auid%3A%20UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">
+      <meta name="loc:inThisArticle" content="In this article">
+      <meta name="loc:searchResultsCount" content="{count} results for &quot;{query}&quot;">
+      <meta name="loc:searchNoResults" content="No results for &quot;{query}&quot;">
+      <meta name="loc:tocFilter" content="Filter by title">
+      <meta name="loc:nextArticle" content="Next">
+      <meta name="loc:prevArticle" content="Previous">
+      <meta name="loc:themeLight" content="Light">
+      <meta name="loc:themeDark" content="Dark">
+      <meta name="loc:themeAuto" content="Auto">
+      <meta name="loc:changeTheme" content="Change theme">
+      <meta name="loc:copy" content="Copy">
+      <meta name="loc:downloadPdf" content="Download PDF">
+  </head>
+
+  <script type="module" src="./../public/docfx.min.js"></script>
+
+  <script>
+    const theme = localStorage.getItem('theme') || 'auto'
+    document.documentElement.setAttribute('data-bs-theme', theme === 'auto' ? (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light') : theme)
+  </script>
+
+
+  <body class="tex2jax_ignore" data-layout="" data-yaml-mime="ManagedReference">
+    <header class="bg-body border-bottom">
+      <nav id="autocollapse" class="navbar navbar-expand-md" role="navigation">
+        <div class="container-xxl flex-nowrap">
+          <a class="navbar-brand" href="../index.html">
+            <img id="logo" class="svg" src="../logo.svg" alt="UltraForce.Library.Core.Asp">
+            UltraForce.Library.Core.Asp
+          </a>
+          <button class="btn btn-lg d-md-none border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navpanel" aria-controls="navpanel" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="bi bi-three-dots"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navpanel">
+            <div id="navbar">
+              <form class="search" role="search" id="search">
+                <i class="bi bi-search"></i>
+                <input class="form-control" id="search-query" type="search" disabled="" placeholder="Search" autocomplete="off" aria-label="Search">
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-xxl">
+      <div class="toc-offcanvas">
+        <div class="offcanvas-md offcanvas-start" tabindex="-1" id="tocOffcanvas" aria-labelledby="tocOffcanvasLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="tocOffcanvasLabel">Table of Contents</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#tocOffcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <nav class="toc" id="toc"></nav>
+          </div>
+        </div>
+      </div>
+
+      <div class="content">
+        <div class="actionbar">
+          <button class="btn btn-lg border-0 d-md-none" style="margin-top: -.65em; margin-left: -.8em" type="button" data-bs-toggle="offcanvas" data-bs-target="#tocOffcanvas" aria-controls="tocOffcanvas" aria-expanded="false" aria-label="Show table of contents">
+            <i class="bi bi-list"></i>
+          </button>
+
+          <nav id="breadcrumb"></nav>
+        </div>
+
+        <article data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase">
+
+
+
+  <h1 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFFormButtonTagHelperBase" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase" class="text-break">
+Class UFFormButtonTagHelperBase  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFFormButtonTagHelperBase.cs/#L63"><i class="bi bi-code-slash"></i></a>
+  </h1>
+
+  <div class="facts text-secondary">
+    <dl><dt>Namespace</dt><dd><a class="xref" href="UltraForce.html">UltraForce</a>.<a class="xref" href="UltraForce.Library.html">Library</a>.<a class="xref" href="UltraForce.Library.Core.html">Core</a>.<a class="xref" href="UltraForce.Library.Core.Asp.html">Asp</a>.<a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.html">TagHelpers</a>.<a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.html">Base</a>.<a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.html">Forms</a></dd></dl>
+  <dl><dt>Assembly</dt><dd>UltraForce.Library.Core.Asp.dll</dd></dl>
+  </div>
+
+  <div class="markdown summary"><p>Renders a button using form field styling.</p>
+<p>
+Renders button with wrapping and label, similar to other form field elements:
+<pre><code class="lang-csharp">&lt;div class="{GetButtonWrapperClasses()}"&gt;
+  &lt;label class="{GetButtonLabelClasses()}" for="{id}"&gt;
+    &lt;span class="{GetButtonLabelSpanClasses()}"&gt;
+     {GetLabelAsync(context,output)}
+    &lt;/span&gt;
+    &lt;span class="{GetButtonLabelDescriptionClasses()}"&gt;{GetDescription()}&lt;/span&gt;
+  &lt;/label&gt;
+    &lt;button class="{GetButtonClasses()}" ...&gt;
+    ...children... or value from "For" property
+    &lt;/button&gt;
+&lt;/div&gt;</code></pre>
+
+</div>
+  <div class="markdown conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class UFFormButtonTagHelperBase : UFTagHelperWithModelExpressionRenderer, ITagHelper, ITagHelperComponent</code></pre>
+  </div>
+
+
+
+
+  <dl class="typelist inheritance">
+    <dt>Inheritance</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object">object</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper">TagHelper</a></div>
+      <div><a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.UFTagHelperWithViewContext.html">UFTagHelperWithViewContext</a></div>
+      <div><a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.UFTagHelperWithModelExpressionRenderer.html">UFTagHelperWithModelExpressionRenderer</a></div>
+      <div><span class="xref">UFFormButtonTagHelperBase</span></div>
+    </dd>
+  </dl>
+
+  <dl class="typelist implements">
+    <dt>Implements</dt>
+    <dd>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.itaghelper">ITagHelper</a></div>
+      <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.itaghelpercomponent">ITagHelperComponent</a></div>
+    </dd>
+  </dl>
+
+
+  <dl class="typelist inheritedMembers">
+    <dt>Inherited Members</dt>
+    <dd>
+    <div>
+      <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.UFTagHelperWithModelExpressionRenderer.html#UltraForce_Library_Core_Asp_TagHelpers_Base_UFTagHelperWithModelExpressionRenderer_ModelExpressionRenderer">UFTagHelperWithModelExpressionRenderer.ModelExpressionRenderer</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.UFTagHelperWithViewContext.html#UltraForce_Library_Core_Asp_TagHelpers_Base_UFTagHelperWithViewContext_ViewContext">UFTagHelperWithViewContext.ViewContext</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper.init">TagHelper.Init(TagHelperContext)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper.process">TagHelper.Process(TagHelperContext, TagHelperOutput)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper.order">TagHelper.Order</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">object.Equals(object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">object.Equals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode">object.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype">object.GetType()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone">object.MemberwiseClone()</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals">object.ReferenceEquals(object, object)</a>
+    </div>
+    <div>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring">object.ToString()</a>
+    </div>
+  </dd></dl>
+
+
+
+
+
+
+  <h2 class="section" id="constructors">Constructors
+</h2>
+
+
+  <a id="UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFFormButtonTagHelperBase__ctor_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.#ctor*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFFormButtonTagHelperBase__ctor_Microsoft_AspNetCore_Mvc_ViewFeatures_IHtmlGenerator_UltraForce_Library_Core_Asp_Services_IUFModelExpressionRenderer_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.#ctor(Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator,UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer)">
+  UFFormButtonTagHelperBase(IHtmlGenerator, IUFModelExpressionRenderer)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFFormButtonTagHelperBase.cs/#L63"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Renders a button using form field styling.</p>
+<p>
+Renders button with wrapping and label, similar to other form field elements:
+<pre><code class="lang-csharp">&lt;div class="{GetButtonWrapperClasses()}"&gt;
+  &lt;label class="{GetButtonLabelClasses()}" for="{id}"&gt;
+    &lt;span class="{GetButtonLabelSpanClasses()}"&gt;
+     {GetLabelAsync(context,output)}
+    &lt;/span&gt;
+    &lt;span class="{GetButtonLabelDescriptionClasses()}"&gt;{GetDescription()}&lt;/span&gt;
+  &lt;/label&gt;
+    &lt;button class="{GetButtonClasses()}" ...&gt;
+    ...children... or value from "For" property
+    &lt;/button&gt;
+&lt;/div&gt;</code></pre>
+
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected UFFormButtonTagHelperBase(IHtmlGenerator generator, IUFModelExpressionRenderer modelExpressionRenderer)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>generator</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.viewfeatures.ihtmlgenerator">IHtmlGenerator</a></dt>
+    <dd></dd>
+    <dt><code>modelExpressionRenderer</code> <a class="xref" href="UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer.html">IUFModelExpressionRenderer</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+
+  <h2 class="section" id="properties">Properties
+</h2>
+
+
+  <a id="UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFFormButtonTagHelperBase_Description_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.Description*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFFormButtonTagHelperBase_Description" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.Description">
+  Description
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFFormButtonTagHelperBase.cs/#L112"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Additional text that is shown below the label. It is only used if <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFFormButtonTagHelperBase_NoWrap">NoWrap</a> is
+not true and there is a label being shown. Leave empty to use the description from the
+<a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFFormButtonTagHelperBase_For">For</a> property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HtmlAttributeName(&quot;description&quot;)]
+public string Description { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFFormButtonTagHelperBase_For_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.For*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFFormButtonTagHelperBase_For" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.For">
+  For
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFFormButtonTagHelperBase.cs/#L104"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>An expression to be evaluated against the current model. The contents of the button is
+set to the value of this expression. The label is set to the name of this expression.
+If there is a description attribute on the property, it is used as the description.</p>
+<p>
+Date values are formatted using mysql format (so there is no confusion on month and
+day positions):
+"yyyy-mm-dd hh:mm:ss"
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HtmlAttributeName(&quot;for&quot;)]
+public ModelExpression? For { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.viewfeatures.modelexpression">ModelExpression</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFFormButtonTagHelperBase_Label_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.Label*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFFormButtonTagHelperBase_Label" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.Label">
+  Label
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFFormButtonTagHelperBase.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>When set, use this value for label instead of getting from the
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers.inputtaghelper.for">For</a> property.</p>
+<p>
+When <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFFormButtonTagHelperBase_NoWrap">NoWrap</a> is false, this property is not used.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HtmlAttributeName(&quot;label&quot;)]
+public string Label { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFFormButtonTagHelperBase_NoLabel_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.NoLabel*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFFormButtonTagHelperBase_NoLabel" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.NoLabel">
+  NoLabel
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFFormButtonTagHelperBase.cs/#L85"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>When true do not render a label element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HtmlAttributeName(&quot;no-label&quot;)]
+public bool NoLabel { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFFormButtonTagHelperBase_NoWrap_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.NoWrap*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFFormButtonTagHelperBase_NoWrap" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.NoWrap">
+  NoWrap
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFFormButtonTagHelperBase.cs/#L91"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>When true, do not the wrap button element in a div.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HtmlAttributeName(&quot;no-wrap&quot;)]
+public bool NoWrap { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h2 class="section" id="methods">Methods
+</h2>
+
+
+  <a id="UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFFormButtonTagHelperBase_GetButtonClasses_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.GetButtonClasses*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFFormButtonTagHelperBase_GetButtonClasses" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.GetButtonClasses">
+  GetButtonClasses()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFFormButtonTagHelperBase.cs/#L152"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the classes to use for the button.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual string GetButtonClasses()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFFormButtonTagHelperBase_GetButtonLabelClasses_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.GetButtonLabelClasses*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFFormButtonTagHelperBase_GetButtonLabelClasses" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.GetButtonLabelClasses">
+  GetButtonLabelClasses()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFFormButtonTagHelperBase.cs/#L161"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the classes to use for the label element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual string GetButtonLabelClasses()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFFormButtonTagHelperBase_GetButtonLabelDescriptionClasses_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.GetButtonLabelDescriptionClasses*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFFormButtonTagHelperBase_GetButtonLabelDescriptionClasses" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.GetButtonLabelDescriptionClasses">
+  GetButtonLabelDescriptionClasses()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFFormButtonTagHelperBase.cs/#L229"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the classes to use for the description span element inside the label.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual string GetButtonLabelDescriptionClasses()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFFormButtonTagHelperBase_GetButtonLabelSpanClasses_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.GetButtonLabelSpanClasses*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFFormButtonTagHelperBase_GetButtonLabelSpanClasses" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.GetButtonLabelSpanClasses">
+  GetButtonLabelSpanClasses()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFFormButtonTagHelperBase.cs/#L220"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the classes to use for the span element inside the label.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual string GetButtonLabelSpanClasses()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFFormButtonTagHelperBase_GetButtonWrapperClasses_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.GetButtonWrapperClasses*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFFormButtonTagHelperBase_GetButtonWrapperClasses" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.GetButtonWrapperClasses">
+  GetButtonWrapperClasses()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFFormButtonTagHelperBase.cs/#L238"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the classes to use for the wrapper div element.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual string GetButtonWrapperClasses()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFFormButtonTagHelperBase_GetDescription_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.GetDescription*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFFormButtonTagHelperBase_GetDescription" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.GetDescription">
+  GetDescription()
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFFormButtonTagHelperBase.cs/#L196"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets a description string either from the <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFFormButtonTagHelperBase_Description">Description</a> property or from
+one of the known description providing attributes if <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFFormButtonTagHelperBase_For">For</a> has been set.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual string GetDescription()</code></pre>
+  </div>
+
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFFormButtonTagHelperBase_GetLabelHtmlAsync_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.GetLabelHtmlAsync*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFFormButtonTagHelperBase_GetLabelHtmlAsync_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContext_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.GetLabelHtmlAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)">
+  GetLabelHtmlAsync(TagHelperContext, TagHelperOutput)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFFormButtonTagHelperBase.cs/#L175"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Returns the label html. The default implementation checks if <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFFormButtonTagHelperBase_Label">Label</a> has a value,
+if it does return that value.
+If <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFFormButtonTagHelperBase_Label">Label</a> is empty, try to determine the value from the
+<a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.taghelpers.inputtaghelper.for">For</a> property.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task&lt;string&gt; GetLabelHtmlAsync(TagHelperContext context, TagHelperOutput output)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>context</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelpercontext">TagHelperContext</a></dt>
+    <dd></dd>
+    <dt><code>output</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelperoutput">TagHelperOutput</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task-1">Task</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFFormButtonTagHelperBase_ProcessAsync_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.ProcessAsync*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFFormButtonTagHelperBase_ProcessAsync_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContext_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)">
+  ProcessAsync(TagHelperContext, TagHelperOutput)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFFormButtonTagHelperBase.cs/#L120"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Asynchronously executes the <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper">TagHelper</a> with the given <code class="paramref">context</code> and
+<code class="paramref">output</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task ProcessAsync(TagHelperContext context, TagHelperOutput output)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>context</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelpercontext">TagHelperContext</a></dt>
+    <dd><p>Contains information associated with the current HTML tag.</p>
+</dd>
+    <dt><code>output</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelperoutput">TagHelperOutput</a></dt>
+    <dd><p>A stateful HTML element used to generate an HTML tag.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd><p>A <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a> that on completion updates the <code class="paramref">output</code>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFFormButtonTagHelperBase_ProcessAsync_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContext_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>By default this calls into <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper.process">Process(TagHelperContext, TagHelperOutput)</a>.</p>
+</div>
+
+
+
+
+
+</article>
+
+        <div class="contribution d-print-none">
+          <a href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFFormButtonTagHelperBase.cs/#L63" class="edit-link">Edit this page</a>
+        </div>
+
+
+      </div>
+
+      <div class="affix">
+        <nav id="affix"></nav>
+      </div>
+    </main>
+
+    <div class="container-xxl search-results" id="search-results"></div>
+
+    <footer class="border-top text-secondary">
+      <div class="container-xxl">
+        <div class="flex-fill">
+          <span>Made with <a href="https://dotnet.github.io/docfx">docfx</a></span>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

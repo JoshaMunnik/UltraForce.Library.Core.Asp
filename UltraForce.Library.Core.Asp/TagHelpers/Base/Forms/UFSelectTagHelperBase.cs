@@ -76,6 +76,7 @@ namespace UltraForce.Library.Core.Asp.TagHelpers.Base.Forms;
 /// </para>
 /// </summary>
 [SuppressMessage("ReSharper", "ClassWithVirtualMembersNeverInherited.Global")]
+[SuppressMessage("ReSharper", "MemberCanBePrivate.Global")]
 public abstract class UFSelectTagHelperBase(
   IHtmlGenerator generator
 ) : SelectTagHelper(generator)
@@ -111,6 +112,11 @@ public abstract class UFSelectTagHelperBase(
   /// </summary>
   [HtmlAttributeName("description")]
   public string Description { get; set; } = "";
+
+  /// <summary>
+  /// When true do not include error block below the input element.
+  /// </summary>
+  public bool NoError { get; set; } = false;
 
   #endregion
 
@@ -262,6 +268,29 @@ public abstract class UFSelectTagHelperBase(
   #region private methods
 
   /// <summary>
+  /// Renders the error block, shown below the select element.
+  /// </summary>
+  /// <param name="id"></param>
+  /// <param name="name"></param>
+  /// <param name="errorMessage"></param>
+  /// <returns></returns>
+  private string GetErrorBlock(
+    string id,
+    string name,
+    string errorMessage
+  )
+  {
+    if (this.NoError)
+    {
+      return "";
+    }
+    string errorMessageHtml = errorMessage != ""
+      ? $"<div class=\"{this.GetFieldErrorsClasses()}\">{errorMessage}</div>"
+      : "";
+    return this.GetValidationFeedbackContainerHtml(id, name) + errorMessageHtml;
+  }
+
+  /// <summary>
   /// Wraps an element The elements gets wrapped in a div, a label and an error info block.
   /// </summary>
   /// <param name="output">Output to wrap</param>
@@ -277,9 +306,6 @@ public abstract class UFSelectTagHelperBase(
     string errorMessage
   )
   {
-    string errorMessageHtml = errorMessage != ""
-      ? $"<div class=\"{this.GetFieldErrorsClasses()}\">{errorMessage}</div>"
-      : "";
     UFTagHelperTools.AddClasses(output, this.GetSelectClasses());
     string description = this.GetDescription();
     string descriptionHtml = string.IsNullOrEmpty(description) || string.IsNullOrEmpty(label)
@@ -296,7 +322,7 @@ public abstract class UFSelectTagHelperBase(
       $"<div class=\"{this.GetSelectWrapperClasses()}\">{labelHtml}"
     );
     output.PostElement.AppendHtml(
-      $"{this.GetValidationFeedbackContainerHtml(id, name)}{errorMessageHtml}</div>"
+      $"{this.GetErrorBlock(id, name, errorMessage)}</div>"
     );
   }
 

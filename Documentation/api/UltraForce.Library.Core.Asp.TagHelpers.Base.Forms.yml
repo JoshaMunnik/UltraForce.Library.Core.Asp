@@ -4,6 +4,7 @@ items:
   commentId: N:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
   id: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
   children:
+  - UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase
   langs:
@@ -16,6 +17,12 @@ items:
   assemblies:
   - UltraForce.Library.Core.Asp
 references:
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase
+  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase.html
+  name: UFFormButtonTagHelperBase
+  nameWithType: UFFormButtonTagHelperBase
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase
   commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase
   href: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.html

@@ -7,13 +7,17 @@ items:
   children:
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.#ctor(Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator)
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.Description
+  - UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetDescription
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetFieldErrorsClasses
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetFieldErrorsHtml(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary,System.String)
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetSelectClasses
-  - UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetTextLabelClasses(System.String)
-  - UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetTextWrapperClasses(System.String)
+  - UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetSelectLabelClasses
+  - UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetSelectLabelDescriptionClasses
+  - UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetSelectLabelSpanClasses
+  - UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetSelectWrapperClasses
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetValidationFeedbackContainerHtml(System.String,System.String)
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.Label
+  - UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.NoError
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.NoLabel
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.NoWrap
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
@@ -31,7 +35,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: UFSelectTagHelperBase
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFSelectTagHelperBase.cs
-    startLine: 67
+    startLine: 77
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -53,7 +57,12 @@ items:
     Renders with wrapping:
 
     <pre><code class="lang-csharp">&lt;div class="{GetInputWrapperClasses()}"&gt;
-      &lt;label class="{GetInputLabelClasses()}" for="{id}"&gt;{label}&lt;/label&gt;
+      &lt;label class="{GetSelectLabelClasses()}" for="{id}"&gt;
+        &lt;span class="{GetSelectLabelSpanClasses()}"&gt;
+         {GetLabelAsync(context,output)}
+        &lt;/span&gt;
+        &lt;span class="{GetSelectLabelDescriptionClasses()}"&gt;{GetDescription()}&lt;/span&gt;
+      &lt;/label&gt;
       &lt;select class="{GetSelectClasses() id={} ..." &gt;
         {children}
       &lt;/select&gt;
@@ -117,7 +126,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: .ctor
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFSelectTagHelperBase.cs
-    startLine: 67
+    startLine: 77
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -139,7 +148,12 @@ items:
     Renders with wrapping:
 
     <pre><code class="lang-csharp">&lt;div class="{GetInputWrapperClasses()}"&gt;
-      &lt;label class="{GetInputLabelClasses()}" for="{id}"&gt;{label}&lt;/label&gt;
+      &lt;label class="{GetSelectLabelClasses()}" for="{id}"&gt;
+        &lt;span class="{GetSelectLabelSpanClasses()}"&gt;
+         {GetLabelAsync(context,output)}
+        &lt;/span&gt;
+        &lt;span class="{GetSelectLabelDescriptionClasses()}"&gt;{GetDescription()}&lt;/span&gt;
+      &lt;/label&gt;
       &lt;select class="{GetSelectClasses() id={} ..." &gt;
         {children}
       &lt;/select&gt;
@@ -187,7 +201,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Label
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFSelectTagHelperBase.cs
-    startLine: 82
+    startLine: 93
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -241,7 +255,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: NoLabel
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFSelectTagHelperBase.cs
-    startLine: 88
+    startLine: 99
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -284,7 +298,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: NoWrap
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFSelectTagHelperBase.cs
-    startLine: 94
+    startLine: 105
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -327,7 +341,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Description
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFSelectTagHelperBase.cs
-    startLine: 101
+    startLine: 112
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -355,6 +369,37 @@ items:
     arguments:
     - type: System.String
       value: description
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.NoError
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.NoError
+  id: NoError
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase
+  langs:
+  - csharp
+  - vb
+  name: NoError
+  nameWithType: UFSelectTagHelperBase.NoError
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.NoError
+  type: Property
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFSelectTagHelperBase.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: NoError
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFSelectTagHelperBase.cs
+    startLine: 118
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
+  summary: When true do not include error block below the input element.
+  example: []
+  syntax:
+    content: public bool NoError { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property NoError As Boolean
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.NoError*
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
   commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
   id: Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
@@ -373,7 +418,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Process
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFSelectTagHelperBase.cs
-    startLine: 109
+    startLine: 125
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -413,7 +458,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetSelectClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFSelectTagHelperBase.cs
-    startLine: 147
+    startLine: 163
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -426,81 +471,130 @@ items:
       description: ''
     content.vb: Protected Overridable Function GetSelectClasses() As String
   overload: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetSelectClasses*
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetTextLabelClasses(System.String)
-  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetTextLabelClasses(System.String)
-  id: GetTextLabelClasses(System.String)
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetSelectLabelClasses
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetSelectLabelClasses
+  id: GetSelectLabelClasses
   parent: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase
   langs:
   - csharp
   - vb
-  name: GetTextLabelClasses(string)
-  nameWithType: UFSelectTagHelperBase.GetTextLabelClasses(string)
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetTextLabelClasses(string)
+  name: GetSelectLabelClasses()
+  nameWithType: UFSelectTagHelperBase.GetSelectLabelClasses()
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetSelectLabelClasses()
   type: Method
   source:
     remote:
       path: UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFSelectTagHelperBase.cs
       branch: master
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
-    id: GetTextLabelClasses
+    id: GetSelectLabelClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFSelectTagHelperBase.cs
-    startLine: 156
+    startLine: 172
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
   summary: Returns css classes for the label element.
   example: []
   syntax:
-    content: protected virtual string GetTextLabelClasses(string type)
-    parameters:
-    - id: type
-      type: System.String
+    content: protected virtual string GetSelectLabelClasses()
     return:
       type: System.String
       description: ''
-    content.vb: Protected Overridable Function GetTextLabelClasses(type As String) As String
-  overload: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetTextLabelClasses*
-  nameWithType.vb: UFSelectTagHelperBase.GetTextLabelClasses(String)
-  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetTextLabelClasses(String)
-  name.vb: GetTextLabelClasses(String)
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetTextWrapperClasses(System.String)
-  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetTextWrapperClasses(System.String)
-  id: GetTextWrapperClasses(System.String)
+    content.vb: Protected Overridable Function GetSelectLabelClasses() As String
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetSelectLabelClasses*
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetSelectLabelSpanClasses
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetSelectLabelSpanClasses
+  id: GetSelectLabelSpanClasses
   parent: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase
   langs:
   - csharp
   - vb
-  name: GetTextWrapperClasses(string)
-  nameWithType: UFSelectTagHelperBase.GetTextWrapperClasses(string)
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetTextWrapperClasses(string)
+  name: GetSelectLabelSpanClasses()
+  nameWithType: UFSelectTagHelperBase.GetSelectLabelSpanClasses()
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetSelectLabelSpanClasses()
   type: Method
   source:
     remote:
       path: UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFSelectTagHelperBase.cs
       branch: master
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
-    id: GetTextWrapperClasses
+    id: GetSelectLabelSpanClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFSelectTagHelperBase.cs
-    startLine: 169
+    startLine: 181
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
+  summary: Returns the classes to use for the span element inside the label.
+  example: []
+  syntax:
+    content: protected virtual string GetSelectLabelSpanClasses()
+    return:
+      type: System.String
+      description: ''
+    content.vb: Protected Overridable Function GetSelectLabelSpanClasses() As String
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetSelectLabelSpanClasses*
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetSelectLabelDescriptionClasses
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetSelectLabelDescriptionClasses
+  id: GetSelectLabelDescriptionClasses
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase
+  langs:
+  - csharp
+  - vb
+  name: GetSelectLabelDescriptionClasses()
+  nameWithType: UFSelectTagHelperBase.GetSelectLabelDescriptionClasses()
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetSelectLabelDescriptionClasses()
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFSelectTagHelperBase.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: GetSelectLabelDescriptionClasses
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFSelectTagHelperBase.cs
+    startLine: 190
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
+  summary: Returns the classes to use for the description span element inside the label.
+  example: []
+  syntax:
+    content: protected virtual string GetSelectLabelDescriptionClasses()
+    return:
+      type: System.String
+      description: ''
+    content.vb: Protected Overridable Function GetSelectLabelDescriptionClasses() As String
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetSelectLabelDescriptionClasses*
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetSelectWrapperClasses
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetSelectWrapperClasses
+  id: GetSelectWrapperClasses
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase
+  langs:
+  - csharp
+  - vb
+  name: GetSelectWrapperClasses()
+  nameWithType: UFSelectTagHelperBase.GetSelectWrapperClasses()
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetSelectWrapperClasses()
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFSelectTagHelperBase.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: GetSelectWrapperClasses
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFSelectTagHelperBase.cs
+    startLine: 199
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
   summary: Returns css classes for the wrapper element.
   example: []
   syntax:
-    content: protected virtual string GetTextWrapperClasses(string type)
-    parameters:
-    - id: type
-      type: System.String
-      description: ''
+    content: protected virtual string GetSelectWrapperClasses()
     return:
       type: System.String
       description: ''
-    content.vb: Protected Overridable Function GetTextWrapperClasses(type As String) As String
-  overload: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetTextWrapperClasses*
-  nameWithType.vb: UFSelectTagHelperBase.GetTextWrapperClasses(String)
-  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetTextWrapperClasses(String)
-  name.vb: GetTextWrapperClasses(String)
+    content.vb: Protected Overridable Function GetSelectWrapperClasses() As String
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetSelectWrapperClasses*
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetValidationFeedbackContainerHtml(System.String,System.String)
   commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetValidationFeedbackContainerHtml(System.String,System.String)
   id: GetValidationFeedbackContainerHtml(System.String,System.String)
@@ -519,7 +613,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetValidationFeedbackContainerHtml
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFSelectTagHelperBase.cs
-    startLine: 182
+    startLine: 210
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -560,7 +654,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetFieldErrorsClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFSelectTagHelperBase.cs
-    startLine: 193
+    startLine: 221
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -591,7 +685,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetFieldErrorsHtml
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFSelectTagHelperBase.cs
-    startLine: 204
+    startLine: 232
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -614,6 +708,40 @@ items:
   nameWithType.vb: UFSelectTagHelperBase.GetFieldErrorsHtml(ModelStateDictionary, String)
   fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetFieldErrorsHtml(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary, String)
   name.vb: GetFieldErrorsHtml(ModelStateDictionary, String)
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetDescription
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetDescription
+  id: GetDescription
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase
+  langs:
+  - csharp
+  - vb
+  name: GetDescription()
+  nameWithType: UFSelectTagHelperBase.GetDescription()
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetDescription()
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFSelectTagHelperBase.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: GetDescription
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFSelectTagHelperBase.cs
+    startLine: 245
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
+  summary: >-
+    Gets a description string either from the <xref href="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.Description" data-throw-if-not-resolved="false"></xref> property or from
+
+    one of the known description providing attributes.
+  example: []
+  syntax:
+    content: protected virtual string GetDescription()
+    return:
+      type: System.String
+      description: ''
+    content.vb: Protected Overridable Function GetDescription() As String
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetDescription*
 references:
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.NoWrap
   commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.NoWrap
@@ -1292,6 +1420,12 @@ references:
   name: Description
   nameWithType: UFSelectTagHelperBase.Description
   fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.Description
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.NoError*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.NoError
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFSelectTagHelperBase_NoError
+  name: NoError
+  nameWithType: UFSelectTagHelperBase.NoError
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.NoError
 - uid: Microsoft.AspNetCore.Mvc.TagHelpers.SelectTagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
   commentId: M:Microsoft.AspNetCore.Mvc.TagHelpers.SelectTagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
   parent: Microsoft.AspNetCore.Mvc.TagHelpers.SelectTagHelper
@@ -1362,18 +1496,30 @@ references:
   name: GetSelectClasses
   nameWithType: UFSelectTagHelperBase.GetSelectClasses
   fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetSelectClasses
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetTextLabelClasses*
-  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetTextLabelClasses
-  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFSelectTagHelperBase_GetTextLabelClasses_System_String_
-  name: GetTextLabelClasses
-  nameWithType: UFSelectTagHelperBase.GetTextLabelClasses
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetTextLabelClasses
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetTextWrapperClasses*
-  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetTextWrapperClasses
-  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFSelectTagHelperBase_GetTextWrapperClasses_System_String_
-  name: GetTextWrapperClasses
-  nameWithType: UFSelectTagHelperBase.GetTextWrapperClasses
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetTextWrapperClasses
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetSelectLabelClasses*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetSelectLabelClasses
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFSelectTagHelperBase_GetSelectLabelClasses
+  name: GetSelectLabelClasses
+  nameWithType: UFSelectTagHelperBase.GetSelectLabelClasses
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetSelectLabelClasses
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetSelectLabelSpanClasses*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetSelectLabelSpanClasses
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFSelectTagHelperBase_GetSelectLabelSpanClasses
+  name: GetSelectLabelSpanClasses
+  nameWithType: UFSelectTagHelperBase.GetSelectLabelSpanClasses
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetSelectLabelSpanClasses
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetSelectLabelDescriptionClasses*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetSelectLabelDescriptionClasses
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFSelectTagHelperBase_GetSelectLabelDescriptionClasses
+  name: GetSelectLabelDescriptionClasses
+  nameWithType: UFSelectTagHelperBase.GetSelectLabelDescriptionClasses
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetSelectLabelDescriptionClasses
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetSelectWrapperClasses*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetSelectWrapperClasses
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFSelectTagHelperBase_GetSelectWrapperClasses
+  name: GetSelectWrapperClasses
+  nameWithType: UFSelectTagHelperBase.GetSelectWrapperClasses
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetSelectWrapperClasses
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetValidationFeedbackContainerHtml*
   commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetValidationFeedbackContainerHtml
   href: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFSelectTagHelperBase_GetValidationFeedbackContainerHtml_System_String_System_String_
@@ -1447,3 +1593,15 @@ references:
     name: ModelBinding
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.modelbinding
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.Description
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.Description
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFSelectTagHelperBase_Description
+  name: Description
+  nameWithType: UFSelectTagHelperBase.Description
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.Description
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetDescription*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetDescription
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFSelectTagHelperBase_GetDescription
+  name: GetDescription
+  nameWithType: UFSelectTagHelperBase.GetDescription
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetDescription
