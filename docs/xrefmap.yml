@@ -83,6 +83,31 @@ references:
   isSpec: "True"
   fullName: UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToAction
   nameWithType: UFController.RedirectToAction
+- uid: UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToActionWithId*
+  name: RedirectToActionWithId
+  href: api/UltraForce.Library.Core.Asp.Controllers.UFController.html#UltraForce_Library_Core_Asp_Controllers_UFController_RedirectToActionWithId_
+  commentId: Overload:UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToActionWithId
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToActionWithId
+  nameWithType: UFController.RedirectToActionWithId
+- uid: UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToActionWithId``1(System.String,System.String,``0)
+  name: RedirectToActionWithId<TId>(string, string, TId)
+  href: api/UltraForce.Library.Core.Asp.Controllers.UFController.html#UltraForce_Library_Core_Asp_Controllers_UFController_RedirectToActionWithId__1_System_String_System_String___0_
+  commentId: M:UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToActionWithId``1(System.String,System.String,``0)
+  name.vb: RedirectToActionWithId(Of TId)(String, String, TId)
+  fullName: UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToActionWithId<TId>(string, string, TId)
+  fullName.vb: UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToActionWithId(Of TId)(String, String, TId)
+  nameWithType: UFController.RedirectToActionWithId<TId>(string, string, TId)
+  nameWithType.vb: UFController.RedirectToActionWithId(Of TId)(String, String, TId)
+- uid: UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToActionWithId``2(System.String,``1)
+  name: RedirectToActionWithId<TController, TId>(string, TId)
+  href: api/UltraForce.Library.Core.Asp.Controllers.UFController.html#UltraForce_Library_Core_Asp_Controllers_UFController_RedirectToActionWithId__2_System_String___1_
+  commentId: M:UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToActionWithId``2(System.String,``1)
+  name.vb: RedirectToActionWithId(Of TController, TId)(String, TId)
+  fullName: UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToActionWithId<TController, TId>(string, TId)
+  fullName.vb: UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToActionWithId(Of TController, TId)(String, TId)
+  nameWithType: UFController.RedirectToActionWithId<TController, TId>(string, TId)
+  nameWithType.vb: UFController.RedirectToActionWithId(Of TController, TId)(String, TId)
 - uid: UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToAction``1(System.String)
   name: RedirectToAction<TController>(string)
   href: api/UltraForce.Library.Core.Asp.Controllers.UFController.html#UltraForce_Library_Core_Asp_Controllers_UFController_RedirectToAction__1_System_String_

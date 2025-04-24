@@ -10,6 +10,12 @@ Include the styles in your html using (for example `Shared\_Layout.cshtml`):
 <link rel="stylesheet" href="/_content/UltraForce.Library.Core.Asp/css/uf-styles.css" />
 ````
 ## Version history
+1.0.99
+- added UFController.RedirectToActionWithId
+
+1.0.98
+- fixed bug, setting max-width would ignore min-width with UFTableCellTagHelperBase
+
 1.0.97
 - added NoError property to UFInputTagHelperBase and UFSelectTagHelperBase
  

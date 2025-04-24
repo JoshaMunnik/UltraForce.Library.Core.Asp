@@ -879,6 +879,107 @@ to the server.</p>
 
 
 
+  <a id="UltraForce_Library_Core_Asp_Controllers_UFController_RedirectToActionWithId_" data-uid="UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToActionWithId*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Controllers_UFController_RedirectToActionWithId__1_System_String_System_String___0_" data-uid="UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToActionWithId``1(System.String,System.String,``0)">
+  RedirectToActionWithId&lt;TId&gt;(string, string, TId)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Controllers/UFController.cs/#L307"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Redirect to an action of some controller passing a single id parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IActionResult RedirectToActionWithId&lt;TId&gt;(string action, string controller, TId id)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>action</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Action to redirect to.</p>
+</dd>
+    <dt><code>controller</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Controller to redirect to.</p>
+</dd>
+    <dt><code>id</code> <span class="xref">TId</span></dt>
+    <dd><p>The id to pass on to the action.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.iactionresult">IActionResult</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TId</code></dt>
+    <dd><p>Type of id.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_Controllers_UFController_RedirectToActionWithId_" data-uid="UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToActionWithId*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Controllers_UFController_RedirectToActionWithId__2_System_String___1_" data-uid="UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToActionWithId``2(System.String,``1)">
+  RedirectToActionWithId&lt;TController, TId&gt;(string, TId)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Controllers/UFController.cs/#L282"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Redirect to an action of some controller passing a single id parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IActionResult RedirectToActionWithId&lt;TController, TId&gt;(string action, TId id) where TController : Controller</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>action</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd><p>Action to redirect to.</p>
+</dd>
+    <dt><code>id</code> <span class="xref">TId</span></dt>
+    <dd><p>The id to pass on to the action.</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.iactionresult">IActionResult</a></dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Type Parameters</h4>
+  <dl class="parameters">
+    <dt><code>TController</code></dt>
+    <dd><p>Some controller type. The method uses <a class="xref" href="UltraForce.Library.Core.Asp.Tools.UFMvcTools.html#UltraForce_Library_Core_Asp_Tools_UFMvcTools_GetControllerName__1">GetControllerName&lt;T&gt;()</a> to
+get the controller name.</p>
+</dd>
+    <dt><code>TId</code></dt>
+    <dd><p>Type of id.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
   <a id="UltraForce_Library_Core_Asp_Controllers_UFController_RedirectToAction_" data-uid="UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToAction*"></a>
 
   <h3 id="UltraForce_Library_Core_Asp_Controllers_UFController_RedirectToAction__1_System_String_" data-uid="UltraForce.Library.Core.Asp.Controllers.UFController.RedirectToAction``1(System.String)">

@@ -262,6 +262,57 @@ namespace UltraForce.Library.Core.Asp.Controllers
       );
     }
 
+    /// <summary>
+    /// Redirect to an action of some controller passing a single id parameter.
+    /// </summary>
+    /// <param name="action">
+    /// Action to redirect to.
+    /// </param>
+    /// <param name="id">
+    /// The id to pass on to the action.
+    /// </param>
+    /// <typeparam name="TId">
+    /// Type of id.
+    /// </typeparam>
+    /// <typeparam name="TController">
+    /// Some controller type. The method uses <see cref="UFMvcTools.GetControllerName{T}"/> to
+    /// get the controller name.
+    /// </typeparam>
+    /// <returns></returns>
+    protected IActionResult RedirectToActionWithId<TController, TId>(
+      string action,
+      TId id
+    )
+      where TController : Controller
+    {
+      return this.RedirectToAction(action, UFMvcTools.GetControllerName<TController>(), new { id });
+    }
+
+    /// <summary>
+    /// Redirect to an action of some controller passing a single id parameter.
+    /// </summary>
+    /// <param name="action">
+    /// Action to redirect to.
+    /// </param>
+    /// <param name="controller">
+    /// Controller to redirect to.
+    /// </param>
+    /// <param name="id">
+    /// The id to pass on to the action.
+    /// </param>
+    /// <typeparam name="TId">
+    /// Type of id.
+    /// </typeparam>
+    /// <returns></returns>
+    protected IActionResult RedirectToActionWithId<TId>(
+      string action,
+      string controller,
+      TId id
+    )
+    {
+      return this.RedirectToAction(action, controller, new { id });
+    }
+
     #endregion
   }
 }

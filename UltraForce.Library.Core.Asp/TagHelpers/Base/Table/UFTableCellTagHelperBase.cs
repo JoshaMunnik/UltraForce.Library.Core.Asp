@@ -310,11 +310,11 @@ public abstract class UFTableCellTagHelperBase<TTable, TTableRow>(
     string style = "";
     if (!string.IsNullOrEmpty(this.MinWidth))
     {
-      style = " min-width: " + this.MinWidth + ";";
+      style += " min-width: " + this.MinWidth + ";";
     }
     if (!string.IsNullOrEmpty(this.MaxWidth))
     {
-      style = " max-width: " + this.MaxWidth + ";";
+      style += " max-width: " + this.MaxWidth + ";";
     }
     if (!string.IsNullOrEmpty(style))
     {
