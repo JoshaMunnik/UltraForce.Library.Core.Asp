@@ -313,6 +313,27 @@ namespace UltraForce.Library.Core.Asp.Controllers
       return this.RedirectToAction(action, controller, new { id });
     }
 
+    /// <summary>
+    /// Redirect to an action of the current controller passing a single id parameter.
+    /// </summary>
+    /// <param name="action">
+    /// Action to redirect to.
+    /// </param>
+    /// <param name="id">
+    /// The id to pass on to the action.
+    /// </param>
+    /// <typeparam name="TId">
+    /// Type of id.
+    /// </typeparam>
+    /// <returns></returns>
+    protected IActionResult RedirectToActionWithId<TId>(
+      string action,
+      TId id
+    )
+    {
+      return this.RedirectToAction(action, new { id });
+    }
+
     #endregion
   }
 }
