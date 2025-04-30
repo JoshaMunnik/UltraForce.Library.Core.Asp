@@ -66,12 +66,12 @@ public class UFGridTagHelperBase : UFGridTagHelperBaseBase
     await base.ProcessAsync(context, output);
     output.TagName = "div";
     output.TagMode = TagMode.StartTagAndEndTag;
-    UFTagHelperTools.AddClasses(output, this.GetGridClasses());
     // process the child content explicitly
     TagHelperContent? childContent = await output.GetChildContentAsync();
     if (childContent != null) {
       output.Content.SetHtmlContent(childContent);
     }
+    UFTagHelperTools.AddClasses(output, this.GetGridClasses(this.ItemCount ?? this.GridControlCount));
     if (!this.Sorting)
     {
       return;
@@ -104,8 +104,12 @@ public class UFGridTagHelperBase : UFGridTagHelperBaseBase
   /// <summary>
   /// Classes for the grid itself.
   /// </summary>
+  /// <param name="itemCount">
+  /// The number of items per group in the grid. It is 0 when the <see cref="ItemCount"/> was not
+  /// set and there were no grid control elements.
+  /// </param>
   /// <returns></returns>
-  protected virtual string GetGridClasses()
+  protected virtual string GetGridClasses(int itemCount)
   {
     return "";
   }

@@ -10,6 +10,9 @@ Include the styles in your html using (for example `Shared\_Layout.cshtml`):
 <link rel="stylesheet" href="/_content/UltraForce.Library.Core.Asp/css/uf-styles.css" />
 ````
 ## Version history
+1.0.102
+- added itemCount parameter to `UFGridTagHelperBase.GetGridClasses`
+
 1.0.101
 - [BREAKING CHANGE] split `UFTableCellTagHelperBase` into `UFTableDataCellTagHelperBase` and 
   `UFTableHeaderCellTagHelperBase`

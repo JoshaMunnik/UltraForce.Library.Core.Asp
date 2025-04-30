@@ -15,14 +15,8 @@
         <RepositoryUrl>https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp</RepositoryUrl>
         <PackageReadmeFile>README.md</PackageReadmeFile>
         <AssemblyVersion></AssemblyVersion>
-        <Version>1.0.101</Version>
-        <PackageReleaseNotes>- [BREAKING CHANGE] split `UFTableCellTagHelperBase` into `UFTableDataCellTagHelperBase` and 
-  `UFTableHeaderCellTagHelperBase`
-- [BREAKING CHANGE] split `UFTableRowTagHelperBase` into `UFTableBodyRowTagHelperBase` and 
-  `UFTableHeaderRowTagHelperBase`
-- added bases classes for grid support
-- `UFDataAttribute` now defines `TagHelperAttribute` instead of string constants
-- add all attributes used by the Ultra Force TypeScript DOM library to `UFDataAttribute`
+        <Version>1.0.102</Version>
+        <PackageReleaseNotes>- added itemCount parameter to `UFGridTagHelperBase.GetGridClasses`
 </PackageReleaseNotes>
         <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
     </PropertyGroup>

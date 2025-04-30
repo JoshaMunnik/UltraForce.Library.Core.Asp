@@ -8,7 +8,7 @@ public class TestGridTagHelper : UFGridTagHelperBase
 {
   #region protected methods
 
-  protected override string GetGridClasses()
+  protected override string GetGridClasses(int itemCount)
   {
     return "test-grid";
   }
