@@ -15,8 +15,8 @@
         <RepositoryUrl>https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp</RepositoryUrl>
         <PackageReadmeFile>README.md</PackageReadmeFile>
         <AssemblyVersion></AssemblyVersion>
-        <Version>1.0.104</Version>
-        <PackageReleaseNotes>- added `UFGridHeaderTagHelperBase`
+        <Version>1.0.105</Version>
+        <PackageReleaseNotes>- fixed bug: `UFSortTypeEnum.None` now correctly sets the sort type to none
 </PackageReleaseNotes>
         <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
     </PropertyGroup>

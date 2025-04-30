@@ -64,5 +64,6 @@ public enum UFSortTypeEnum
   /// <summary>
   /// No sorting
   /// </summary>
+  [Description("none")]
   None
 }
