@@ -4837,23 +4837,31 @@ references:
   fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridBodyTagHelperBase(Of TGrid).GetBodyClasses
   nameWithType: UFGridBodyTagHelperBase<TGrid>.GetBodyClasses
   nameWithType.vb: UFGridBodyTagHelperBase(Of TGrid).GetBodyClasses
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridBodyTagHelperBase`1.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
-  name: Process(TagHelperContext, TagHelperOutput)
-  href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridBodyTagHelperBase-1.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_UFGridBodyTagHelperBase_1_Process_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContext_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_
-  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridBodyTagHelperBase`1.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridBodyTagHelperBase<TGrid>.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
-  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridBodyTagHelperBase(Of TGrid).Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
-  nameWithType: UFGridBodyTagHelperBase<TGrid>.Process(TagHelperContext, TagHelperOutput)
-  nameWithType.vb: UFGridBodyTagHelperBase(Of TGrid).Process(TagHelperContext, TagHelperOutput)
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridBodyTagHelperBase`1.Process*
-  name: Process
-  href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridBodyTagHelperBase-1.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_UFGridBodyTagHelperBase_1_Process_
-  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridBodyTagHelperBase`1.Process
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridBodyTagHelperBase`1.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  name: ProcessAsync(TagHelperContext, TagHelperOutput)
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridBodyTagHelperBase-1.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_UFGridBodyTagHelperBase_1_ProcessAsync_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContext_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridBodyTagHelperBase`1.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridBodyTagHelperBase<TGrid>.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridBodyTagHelperBase(Of TGrid).ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  nameWithType: UFGridBodyTagHelperBase<TGrid>.ProcessAsync(TagHelperContext, TagHelperOutput)
+  nameWithType.vb: UFGridBodyTagHelperBase(Of TGrid).ProcessAsync(TagHelperContext, TagHelperOutput)
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridBodyTagHelperBase`1.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,`0)
+  name: ProcessAsync(TagHelperContext, TagHelperOutput, TGrid)
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridBodyTagHelperBase-1.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_UFGridBodyTagHelperBase_1_ProcessAsync_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContext_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput__0_
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridBodyTagHelperBase`1.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,`0)
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridBodyTagHelperBase<TGrid>.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput, TGrid)
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridBodyTagHelperBase(Of TGrid).ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput, TGrid)
+  nameWithType: UFGridBodyTagHelperBase<TGrid>.ProcessAsync(TagHelperContext, TagHelperOutput, TGrid)
+  nameWithType.vb: UFGridBodyTagHelperBase(Of TGrid).ProcessAsync(TagHelperContext, TagHelperOutput, TGrid)
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridBodyTagHelperBase`1.ProcessAsync*
+  name: ProcessAsync
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridBodyTagHelperBase-1.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_UFGridBodyTagHelperBase_1_ProcessAsync_
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridBodyTagHelperBase`1.ProcessAsync
   isSpec: "True"
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridBodyTagHelperBase<TGrid>.Process
-  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridBodyTagHelperBase(Of TGrid).Process
-  nameWithType: UFGridBodyTagHelperBase<TGrid>.Process
-  nameWithType.vb: UFGridBodyTagHelperBase(Of TGrid).Process
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridBodyTagHelperBase<TGrid>.ProcessAsync
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridBodyTagHelperBase(Of TGrid).ProcessAsync
+  nameWithType: UFGridBodyTagHelperBase<TGrid>.ProcessAsync
+  nameWithType.vb: UFGridBodyTagHelperBase(Of TGrid).ProcessAsync
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridControlTagHelperBase`1
   name: UFGridControlTagHelperBase<TGrid>
   href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridControlTagHelperBase-1.html
@@ -4907,6 +4915,15 @@ references:
   fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridControlTagHelperBase(Of TGrid).ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
   nameWithType: UFGridControlTagHelperBase<TGrid>.ProcessAsync(TagHelperContext, TagHelperOutput)
   nameWithType.vb: UFGridControlTagHelperBase(Of TGrid).ProcessAsync(TagHelperContext, TagHelperOutput)
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridControlTagHelperBase`1.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,`0,System.Int32)
+  name: ProcessAsync(TagHelperContext, TagHelperOutput, TGrid, int)
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridControlTagHelperBase-1.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_UFGridControlTagHelperBase_1_ProcessAsync_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContext_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput__0_System_Int32_
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridControlTagHelperBase`1.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,`0,System.Int32)
+  name.vb: ProcessAsync(TagHelperContext, TagHelperOutput, TGrid, Integer)
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridControlTagHelperBase<TGrid>.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput, TGrid, int)
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridControlTagHelperBase(Of TGrid).ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput, TGrid, Integer)
+  nameWithType: UFGridControlTagHelperBase<TGrid>.ProcessAsync(TagHelperContext, TagHelperOutput, TGrid, int)
+  nameWithType.vb: UFGridControlTagHelperBase(Of TGrid).ProcessAsync(TagHelperContext, TagHelperOutput, TGrid, Integer)
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridControlTagHelperBase`1.ProcessAsync*
   name: ProcessAsync
   href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridControlTagHelperBase-1.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_UFGridControlTagHelperBase_1_ProcessAsync_
@@ -4942,23 +4959,32 @@ references:
   fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridGroupTagHelperBase(Of TGrid).GetGroupClasses
   nameWithType: UFGridGroupTagHelperBase<TGrid>.GetGroupClasses
   nameWithType.vb: UFGridGroupTagHelperBase(Of TGrid).GetGroupClasses
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridGroupTagHelperBase`1.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
-  name: Process(TagHelperContext, TagHelperOutput)
-  href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridGroupTagHelperBase-1.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_UFGridGroupTagHelperBase_1_Process_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContext_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_
-  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridGroupTagHelperBase`1.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridGroupTagHelperBase<TGrid>.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
-  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridGroupTagHelperBase(Of TGrid).Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
-  nameWithType: UFGridGroupTagHelperBase<TGrid>.Process(TagHelperContext, TagHelperOutput)
-  nameWithType.vb: UFGridGroupTagHelperBase(Of TGrid).Process(TagHelperContext, TagHelperOutput)
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridGroupTagHelperBase`1.Process*
-  name: Process
-  href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridGroupTagHelperBase-1.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_UFGridGroupTagHelperBase_1_Process_
-  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridGroupTagHelperBase`1.Process
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridGroupTagHelperBase`1.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  name: ProcessAsync(TagHelperContext, TagHelperOutput)
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridGroupTagHelperBase-1.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_UFGridGroupTagHelperBase_1_ProcessAsync_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContext_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridGroupTagHelperBase`1.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridGroupTagHelperBase<TGrid>.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridGroupTagHelperBase(Of TGrid).ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  nameWithType: UFGridGroupTagHelperBase<TGrid>.ProcessAsync(TagHelperContext, TagHelperOutput)
+  nameWithType.vb: UFGridGroupTagHelperBase(Of TGrid).ProcessAsync(TagHelperContext, TagHelperOutput)
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridGroupTagHelperBase`1.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,`0,System.Int32)
+  name: ProcessAsync(TagHelperContext, TagHelperOutput, TGrid, int)
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridGroupTagHelperBase-1.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_UFGridGroupTagHelperBase_1_ProcessAsync_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContext_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput__0_System_Int32_
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridGroupTagHelperBase`1.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,`0,System.Int32)
+  name.vb: ProcessAsync(TagHelperContext, TagHelperOutput, TGrid, Integer)
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridGroupTagHelperBase<TGrid>.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput, TGrid, int)
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridGroupTagHelperBase(Of TGrid).ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput, TGrid, Integer)
+  nameWithType: UFGridGroupTagHelperBase<TGrid>.ProcessAsync(TagHelperContext, TagHelperOutput, TGrid, int)
+  nameWithType.vb: UFGridGroupTagHelperBase(Of TGrid).ProcessAsync(TagHelperContext, TagHelperOutput, TGrid, Integer)
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridGroupTagHelperBase`1.ProcessAsync*
+  name: ProcessAsync
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridGroupTagHelperBase-1.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_UFGridGroupTagHelperBase_1_ProcessAsync_
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridGroupTagHelperBase`1.ProcessAsync
   isSpec: "True"
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridGroupTagHelperBase<TGrid>.Process
-  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridGroupTagHelperBase(Of TGrid).Process
-  nameWithType: UFGridGroupTagHelperBase<TGrid>.Process
-  nameWithType.vb: UFGridGroupTagHelperBase(Of TGrid).Process
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridGroupTagHelperBase<TGrid>.ProcessAsync
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridGroupTagHelperBase(Of TGrid).ProcessAsync
+  nameWithType: UFGridGroupTagHelperBase<TGrid>.ProcessAsync
+  nameWithType.vb: UFGridGroupTagHelperBase(Of TGrid).ProcessAsync
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridItemTagHelperBase`1
   name: UFGridItemTagHelperBase<TGrid>
   href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridItemTagHelperBase-1.html
@@ -5012,6 +5038,15 @@ references:
   fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridItemTagHelperBase(Of TGrid).ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
   nameWithType: UFGridItemTagHelperBase<TGrid>.ProcessAsync(TagHelperContext, TagHelperOutput)
   nameWithType.vb: UFGridItemTagHelperBase(Of TGrid).ProcessAsync(TagHelperContext, TagHelperOutput)
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridItemTagHelperBase`1.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,`0,System.Int32,System.Int32)
+  name: ProcessAsync(TagHelperContext, TagHelperOutput, TGrid, int, int)
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridItemTagHelperBase-1.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_UFGridItemTagHelperBase_1_ProcessAsync_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContext_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput__0_System_Int32_System_Int32_
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridItemTagHelperBase`1.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,`0,System.Int32,System.Int32)
+  name.vb: ProcessAsync(TagHelperContext, TagHelperOutput, TGrid, Integer, Integer)
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridItemTagHelperBase<TGrid>.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput, TGrid, int, int)
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridItemTagHelperBase(Of TGrid).ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput, TGrid, Integer, Integer)
+  nameWithType: UFGridItemTagHelperBase<TGrid>.ProcessAsync(TagHelperContext, TagHelperOutput, TGrid, int, int)
+  nameWithType.vb: UFGridItemTagHelperBase(Of TGrid).ProcessAsync(TagHelperContext, TagHelperOutput, TGrid, Integer, Integer)
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridItemTagHelperBase`1.ProcessAsync*
   name: ProcessAsync
   href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridItemTagHelperBase-1.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_UFGridItemTagHelperBase_1_ProcessAsync_
@@ -5056,19 +5091,32 @@ references:
   isSpec: "True"
   fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.GetGridContainerClasses
   nameWithType: UFGridTagHelperBase.GetGridContainerClasses
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.ItemCount
-  name: ItemCount
-  href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_UFGridTagHelperBase_ItemCount
-  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.ItemCount
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.ItemCount
-  nameWithType: UFGridTagHelperBase.ItemCount
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.ItemCount*
-  name: ItemCount
-  href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_UFGridTagHelperBase_ItemCount_
-  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.ItemCount
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.GetGroupSize
+  name: GetGroupSize()
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_UFGridTagHelperBase_GetGroupSize
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.GetGroupSize
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.GetGroupSize()
+  nameWithType: UFGridTagHelperBase.GetGroupSize()
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.GetGroupSize*
+  name: GetGroupSize
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_UFGridTagHelperBase_GetGroupSize_
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.GetGroupSize
   isSpec: "True"
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.ItemCount
-  nameWithType: UFGridTagHelperBase.ItemCount
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.GetGroupSize
+  nameWithType: UFGridTagHelperBase.GetGroupSize
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.GroupSize
+  name: GroupSize
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_UFGridTagHelperBase_GroupSize
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.GroupSize
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.GroupSize
+  nameWithType: UFGridTagHelperBase.GroupSize
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.GroupSize*
+  name: GroupSize
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_UFGridTagHelperBase_GroupSize_
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.GroupSize
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.GroupSize
+  nameWithType: UFGridTagHelperBase.GroupSize
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
   name: ProcessAsync(TagHelperContext, TagHelperOutput)
   href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_UFGridTagHelperBase_ProcessAsync_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContext_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_

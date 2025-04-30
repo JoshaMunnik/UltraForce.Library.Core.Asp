@@ -7,7 +7,8 @@ items:
   children:
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.GetGridClasses(System.Int32)
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.GetGridContainerClasses
-  - UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.ItemCount
+  - UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.GetGroupSize
+  - UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.GroupSize
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.RenderGroups
   langs:
@@ -97,23 +98,23 @@ items:
       type: System.Boolean
     content.vb: Public Property RenderGroups As Boolean
   overload: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.RenderGroups*
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.ItemCount
-  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.ItemCount
-  id: ItemCount
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.GroupSize
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.GroupSize
+  id: GroupSize
   parent: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase
   langs:
   - csharp
   - vb
-  name: ItemCount
-  nameWithType: UFGridTagHelperBase.ItemCount
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.ItemCount
+  name: GroupSize
+  nameWithType: UFGridTagHelperBase.GroupSize
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.GroupSize
   type: Property
   source:
     remote:
       path: UltraForce.Library.Core.Asp/TagHelpers/Base/Grid/UFGridTagHelperBase.cs
       branch: master
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
-    id: ItemCount
+    id: GroupSize
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Grid/UFGridTagHelperBase.cs
     startLine: 53
   assemblies:
@@ -125,12 +126,12 @@ items:
     to determine the number of items from.
   example: []
   syntax:
-    content: public int? ItemCount { get; set; }
+    content: public int? GroupSize { get; set; }
     parameters: []
     return:
       type: System.Nullable{System.Int32}
-    content.vb: Public Property ItemCount As Integer?
-  overload: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.ItemCount*
+    content.vb: Public Property GroupSize As Integer?
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.GroupSize*
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
   commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
   id: ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
@@ -174,6 +175,46 @@ items:
     content.vb: Public Overrides Function ProcessAsync(context As TagHelperContext, output As TagHelperOutput) As Task
   overridden: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridTagHelperBaseBase.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
   overload: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.ProcessAsync*
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.GetGroupSize
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.GetGroupSize
+  id: GetGroupSize
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase
+  langs:
+  - csharp
+  - vb
+  name: GetGroupSize()
+  nameWithType: UFGridTagHelperBase.GetGroupSize()
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.GetGroupSize()
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Base/Grid/UFGridTagHelperBase.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: GetGroupSize
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Grid/UFGridTagHelperBase.cs
+    startLine: 97
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid
+  summary: >-
+    Returns the number of items per group. This is either based on <xref href="UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.GroupSize" data-throw-if-not-resolved="false"></xref> or
+
+    the number of grid controls.
+
+    <p>
+
+    This value is only valid after the controls have been processed.
+
+    </p>
+  example: []
+  syntax:
+    content: public int GetGroupSize()
+    return:
+      type: System.Int32
+      description: ''
+    content.vb: Public Function GetGroupSize() As Integer
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.GetGroupSize*
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.GetGridContainerClasses
   commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.GetGridContainerClasses
   id: GetGridContainerClasses
@@ -192,7 +233,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetGridContainerClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Grid/UFGridTagHelperBase.cs
-    startLine: 98
+    startLine: 111
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid
@@ -226,7 +267,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetGridClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Grid/UFGridTagHelperBase.cs
-    startLine: 111
+    startLine: 124
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid
@@ -238,7 +279,7 @@ items:
     - id: itemCount
       type: System.Int32
       description: >-
-        The number of items per group in the grid. It is 0 when the <xref href="UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.ItemCount" data-throw-if-not-resolved="false"></xref> was not
+        The number of items per group in the grid. It is 0 when the <xref href="UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.GroupSize" data-throw-if-not-resolved="false"></xref> was not
 
         set and there were no grid control elements.
     return:
@@ -987,12 +1028,12 @@ references:
   nameWithType.vb: Boolean
   fullName.vb: Boolean
   name.vb: Boolean
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.ItemCount*
-  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.ItemCount
-  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_UFGridTagHelperBase_ItemCount
-  name: ItemCount
-  nameWithType: UFGridTagHelperBase.ItemCount
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.ItemCount
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.GroupSize*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.GroupSize
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_UFGridTagHelperBase_GroupSize
+  name: GroupSize
+  nameWithType: UFGridTagHelperBase.GroupSize
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.GroupSize
 - uid: System.Nullable{System.Int32}
   commentId: T:System.Nullable{System.Int32}
   parent: System
@@ -1151,6 +1192,29 @@ references:
     name: Tasks
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.GroupSize
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.GroupSize
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_UFGridTagHelperBase_GroupSize
+  name: GroupSize
+  nameWithType: UFGridTagHelperBase.GroupSize
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.GroupSize
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.GetGroupSize*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.GetGroupSize
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_UFGridTagHelperBase_GetGroupSize
+  name: GetGroupSize
+  nameWithType: UFGridTagHelperBase.GetGroupSize
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.GetGroupSize
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.GetGridContainerClasses*
   commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.GetGridContainerClasses
   href: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_UFGridTagHelperBase_GetGridContainerClasses
@@ -1168,26 +1232,9 @@ references:
   nameWithType.vb: String
   fullName.vb: String
   name.vb: String
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.ItemCount
-  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.ItemCount
-  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_UFGridTagHelperBase_ItemCount
-  name: ItemCount
-  nameWithType: UFGridTagHelperBase.ItemCount
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.ItemCount
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.GetGridClasses*
   commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.GetGridClasses
   href: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_UFGridTagHelperBase_GetGridClasses_System_Int32_
   name: GetGridClasses
   nameWithType: UFGridTagHelperBase.GetGridClasses
   fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.GetGridClasses
-- uid: System.Int32
-  commentId: T:System.Int32
-  parent: System
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.int32
-  name: int
-  nameWithType: int
-  fullName: int
-  nameWithType.vb: Integer
-  fullName.vb: Integer
-  name.vb: Integer

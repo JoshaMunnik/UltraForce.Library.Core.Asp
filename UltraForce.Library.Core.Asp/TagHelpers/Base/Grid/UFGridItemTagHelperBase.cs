@@ -45,7 +45,7 @@ namespace UltraForce.Library.Core.Asp.TagHelpers.Base.Grid;
 public class UFGridItemTagHelperBase<TGrid>(
   IUFModelExpressionRenderer modelExpressionRenderer
 ) : UFGridItemTagHelperBaseBase(modelExpressionRenderer)
-where TGrid : UFGridTagHelperBase
+  where TGrid : UFGridTagHelperBase
 {
   #region public methods
 
@@ -57,37 +57,60 @@ where TGrid : UFGridTagHelperBase
   {
     await base.ProcessAsync(context, output);
     TGrid grid = UFTagHelperTools.GetItem<TGrid>(context, UFGridTagHelperBaseBase.Grid);
+    int itemIndex = grid.GridItemIndex;
+    grid.GridItemIndex++;
+    await this.ProcessAsync(context, output, grid, itemIndex, grid.GridGroupIndex);
+  }
+
+  #endregion
+
+  #region protected methods
+
+  /// <summary>
+  /// Processes the tag helper and sets the output.
+  /// <para>
+  /// The default implementation sets the tag and some attributes.
+  /// </para>
+  /// </summary>
+  /// <param name="context"></param>
+  /// <param name="output"></param>
+  /// <param name="grid"></param>
+  /// <param name="itemIndex">Index of item in group (0 based)</param>
+  /// <param name="groupIndex">The index of the group (1 based) or 0 if there are no groups</param>
+  protected virtual Task ProcessAsync(
+    TagHelperContext context,
+    TagHelperOutput output,
+    TGrid grid,
+    int itemIndex,
+    int groupIndex
+  )
+  {
     output.TagName = "div";
     output.TagMode = TagMode.StartTagAndEndTag;
     UFTagHelperTools.AddClasses(output, this.GetItemClasses(grid));
-    int groupIndex = grid.GridGroupIndex;
-    int itemIndex = grid.GridItemIndex;
-    grid.GridItemIndex++;
     if (!grid.RenderGroups && (groupIndex > 0))
     {
       output.Attributes.SetAttribute(UFDataAttribute.ItemGroup(groupIndex));
     }
     if (!grid.Filter)
     {
-      return;
+      return Task.CompletedTask;
     }
     if (groupIndex > 0)
     {
-      if (!grid.RenderGroups) {
+      if (!grid.RenderGroups)
+      {
         output.Attributes.SetAttribute(UFDataAttribute.FilterGroup(groupIndex));
       }
-      return;
+      return Task.CompletedTask;
     }
-    int groupSize = grid.ItemCount ?? grid.GridControlCount;
+    int groupSize = grid.GetGroupSize();
     if (groupSize > 0)
     {
       output.Attributes.SetAttribute(UFDataAttribute.FilterGroup(itemIndex / groupSize));
     }
+    return Task.CompletedTask;
   }
-  
-  #endregion
-  
-  #region protected methods
 
   /// <summary>
   /// Gets the css classes for the control element.
@@ -100,6 +123,6 @@ where TGrid : UFGridTagHelperBase
   {
     return "";
   }
-  
+
   #endregion
 }

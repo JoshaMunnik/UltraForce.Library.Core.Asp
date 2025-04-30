@@ -51,7 +51,7 @@ public class UFGridTagHelperBase : UFGridTagHelperBaseBase
   /// The number of items per group. Required if the items are not grouped and there are no controls
   /// to determine the number of items from.
   /// </summary>
-  public int? ItemCount { get; set; } = null;
+  public int? GroupSize { get; set; } = null;
   
   #endregion
   
@@ -71,7 +71,7 @@ public class UFGridTagHelperBase : UFGridTagHelperBaseBase
     if (childContent != null) {
       output.Content.SetHtmlContent(childContent);
     }
-    UFTagHelperTools.AddClasses(output, this.GetGridClasses(this.ItemCount ?? this.GridControlCount));
+    UFTagHelperTools.AddClasses(output, this.GetGridClasses(this.GroupSize ?? this.GridControlCount));
     if (!this.Sorting)
     {
       return;
@@ -81,10 +81,23 @@ public class UFGridTagHelperBase : UFGridTagHelperBaseBase
       throw new Exception("Sorting requires grid controls.");
     }
     output.Attributes.Add(UFDataAttribute.GridSorting());
-    if (this.ItemCount != null)
+    if (this.GroupSize != null)
     {
-      output.Attributes.Add(UFDataAttribute.GroupSize(this.ItemCount));
+      output.Attributes.Add(UFDataAttribute.GroupSize(this.GroupSize));
     }
+  }
+
+  /// <summary>
+  /// Returns the number of items per group. This is either based on <see cref="GroupSize"/> or
+  /// the number of grid controls.
+  /// <para>
+  /// This value is only valid after the controls have been processed.
+  /// </para>
+  /// </summary>
+  /// <returns></returns>
+  public int GetGroupSize()
+  {
+    return this.GroupSize ?? this.GridControlCount;
   }
 
   #endregion
@@ -105,7 +118,7 @@ public class UFGridTagHelperBase : UFGridTagHelperBaseBase
   /// Classes for the grid itself.
   /// </summary>
   /// <param name="itemCount">
-  /// The number of items per group in the grid. It is 0 when the <see cref="ItemCount"/> was not
+  /// The number of items per group in the grid. It is 0 when the <see cref="GroupSize"/> was not
   /// set and there were no grid control elements.
   /// </param>
   /// <returns></returns>

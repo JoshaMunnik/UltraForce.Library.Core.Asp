@@ -10,6 +10,9 @@ Include the styles in your html using (for example `Shared\_Layout.cshtml`):
 <link rel="stylesheet" href="/_content/UltraForce.Library.Core.Asp/css/uf-styles.css" />
 ````
 ## Version history
+1.0.103
+- added virtual protected `ProcessAsync` to the grid tag helpers that includes additional parameters
+
 1.0.102
 - added itemCount parameter to `UFGridTagHelperBase.GetGridClasses`
 

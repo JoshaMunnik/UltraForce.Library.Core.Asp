@@ -58,7 +58,32 @@ where TGrid : UFGridTagHelperBase
   {
     await base.ProcessAsync(context, output);
     TGrid grid = UFTagHelperTools.GetItem<TGrid>(context, UFGridTagHelperBaseBase.Grid);
+    int itemIndex = grid.GridControlCount;
     grid.GridControlCount++;
+    await this.ProcessAsync(context, output, grid, itemIndex);
+  }
+  
+  #endregion
+  
+  #region protected methods
+
+  /// <summary>
+  /// Processes the tag helper and sets the output.
+  /// <para>
+  /// The default implementation sets the tag and some attributes.
+  /// </para>
+  /// </summary>
+  /// <param name="context"></param>
+  /// <param name="output"></param>
+  /// <param name="grid"></param>
+  /// <param name="itemIndex">Index of control item</param>
+  protected virtual Task ProcessAsync(
+    TagHelperContext context,
+    TagHelperOutput output,
+    TGrid grid,
+    int itemIndex
+  )
+  {
     UFSortTypeEnum sortType = this.GetSortType();
     output.TagName = sortType == UFSortTypeEnum.None ? "div" : "button";
     output.TagMode = TagMode.StartTagAndEndTag;
@@ -68,11 +93,8 @@ where TGrid : UFGridTagHelperBase
     {
       output.Attributes.SetAttribute(UFDataAttribute.NoFilter());
     }
-  }
-  
-  #endregion
-  
-  #region protected methods
+    return Task.CompletedTask;
+  } 
 
   /// <summary>
   /// Gets the css classes for the control element.

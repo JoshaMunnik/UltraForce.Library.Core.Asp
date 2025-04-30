@@ -235,7 +235,7 @@ filtering and if the grid contains <a class="xref" href="UltraForce.Library.Core
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_UFGridItemTagHelperBase_1_GetItemClasses__0_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridItemTagHelperBase`1.GetItemClasses(`0)">
   GetItemClasses(TGrid)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Grid/UFGridItemTagHelperBase.cs/#L97"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Grid/UFGridItemTagHelperBase.cs/#L120"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the css classes for the control element.</p>
@@ -310,6 +310,56 @@ filtering and if the grid contains <a class="xref" href="UltraForce.Library.Core
   <h4 class="section" id="UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_UFGridItemTagHelperBase_1_ProcessAsync_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContext_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput__remarks">Remarks</h4>
   <div class="markdown level1 remarks"><p>By default this calls into <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper.process">Process(TagHelperContext, TagHelperOutput)</a>.</p>
 </div>
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_UFGridItemTagHelperBase_1_ProcessAsync_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridItemTagHelperBase`1.ProcessAsync*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_UFGridItemTagHelperBase_1_ProcessAsync_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContext_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput__0_System_Int32_System_Int32_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridItemTagHelperBase`1.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,`0,System.Int32,System.Int32)">
+  ProcessAsync(TagHelperContext, TagHelperOutput, TGrid, int, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Grid/UFGridItemTagHelperBase.cs/#L80"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Processes the tag helper and sets the output.</p>
+<p>
+The default implementation sets the tag and some attributes.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task ProcessAsync(TagHelperContext context, TagHelperOutput output, TGrid grid, int itemIndex, int groupIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>context</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelpercontext">TagHelperContext</a></dt>
+    <dd></dd>
+    <dt><code>output</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelperoutput">TagHelperOutput</a></dt>
+    <dd></dd>
+    <dt><code>grid</code> <span class="xref">TGrid</span></dt>
+    <dd></dd>
+    <dt><code>itemIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Index of item in group (0 based)</p>
+</dd>
+    <dt><code>groupIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>The index of the group (1 based) or 0 if there are no groups</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
 
 
 

@@ -48,19 +48,44 @@ public class UFGridGroupTagHelperBase<TGrid> : TagHelper
   #region public methods
 
   /// <inheritdoc />
-  public override void Process(
+  public override async Task ProcessAsync(
     TagHelperContext context,
     TagHelperOutput output
   )
   {
-    base.Process(context, output);
+    await base.ProcessAsync(context, output);
     TGrid? grid = UFTagHelperTools.GetItem<TGrid>(context, UFGridTagHelperBaseBase.Grid);
-    context.Items[UFGridTagHelperBaseBase.Row] = this;
     grid.GridGroupIndex++;
+    int groupIndex = grid.GridGroupIndex;
+    context.Items[UFGridTagHelperBaseBase.Row] = this;
+    await this.ProcessAsync(context, output, grid, groupIndex);
+  }
+  
+  #endregion
+  
+  #region protected methods
+
+  /// <summary>
+  /// Processes the tag helper and sets the output.
+  /// <para>
+  /// The default implementation sets the tag and some attributes.
+  /// </para>
+  /// </summary>
+  /// <param name="context"></param>
+  /// <param name="output"></param>
+  /// <param name="grid"></param>
+  /// <param name="groupIndex">Index of group (0 based)</param>
+  protected virtual Task ProcessAsync(
+    TagHelperContext context,
+    TagHelperOutput output,
+    TGrid grid,
+    int groupIndex
+  )
+  {
     if (!grid.RenderGroups)
     {
       output.TagName = null;
-      return;
+      return Task.CompletedTask;
     }
     output.TagName = "div";
     output.TagMode = TagMode.StartTagAndEndTag;
@@ -73,12 +98,9 @@ public class UFGridGroupTagHelperBase<TGrid> : TagHelper
     {
       output.Attributes.Add(UFDataAttribute.FilterContainer());
     }
+    return Task.CompletedTask;
   }
-  
-  #endregion
-  
-  #region protected methods
-  
+
   /// <summary>
   /// Returns the css classes to use for the group container. This method will only be called if
   /// <see cref="UFGridTagHelperBase.RenderGroups"/> is <c>true</c>.

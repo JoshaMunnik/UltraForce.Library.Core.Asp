@@ -235,7 +235,7 @@ sorting.</p>
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_UFGridControlTagHelperBase_1_GetControlClasses__0_UltraForce_Library_Core_Asp_Types_Enums_UFSortTypeEnum_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridControlTagHelperBase`1.GetControlClasses(`0,UltraForce.Library.Core.Asp.Types.Enums.UFSortTypeEnum)">
   GetControlClasses(TGrid, UFSortTypeEnum)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Grid/UFGridControlTagHelperBase.cs/#L83"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Grid/UFGridControlTagHelperBase.cs/#L105"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the css classes for the control element.</p>
@@ -312,6 +312,53 @@ sorting.</p>
   <h4 class="section" id="UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_UFGridControlTagHelperBase_1_ProcessAsync_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContext_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput__remarks">Remarks</h4>
   <div class="markdown level1 remarks"><p>By default this calls into <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper.process">Process(TagHelperContext, TagHelperOutput)</a>.</p>
 </div>
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_UFGridControlTagHelperBase_1_ProcessAsync_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridControlTagHelperBase`1.ProcessAsync*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_UFGridControlTagHelperBase_1_ProcessAsync_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContext_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput__0_System_Int32_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridControlTagHelperBase`1.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,`0,System.Int32)">
+  ProcessAsync(TagHelperContext, TagHelperOutput, TGrid, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Grid/UFGridControlTagHelperBase.cs/#L80"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Processes the tag helper and sets the output.</p>
+<p>
+The default implementation sets the tag and some attributes.
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task ProcessAsync(TagHelperContext context, TagHelperOutput output, TGrid grid, int itemIndex)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>context</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelpercontext">TagHelperContext</a></dt>
+    <dd></dd>
+    <dt><code>output</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelperoutput">TagHelperOutput</a></dt>
+    <dd></dd>
+    <dt><code>grid</code> <span class="xref">TGrid</span></dt>
+    <dd></dd>
+    <dt><code>itemIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Index of control item</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
 
 
 

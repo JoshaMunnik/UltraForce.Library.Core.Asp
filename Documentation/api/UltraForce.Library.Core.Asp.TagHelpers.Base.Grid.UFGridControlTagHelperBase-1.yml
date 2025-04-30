@@ -8,6 +8,7 @@ items:
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridControlTagHelperBase`1.#ctor(UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer)
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridControlTagHelperBase`1.GetControlClasses(`0,UltraForce.Library.Core.Asp.Types.Enums.UFSortTypeEnum)
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridControlTagHelperBase`1.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  - UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridControlTagHelperBase`1.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,`0,System.Int32)
   langs:
   - csharp
   - vb
@@ -148,6 +149,59 @@ items:
   overload: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridControlTagHelperBase`1.ProcessAsync*
   nameWithType.vb: UFGridControlTagHelperBase(Of TGrid).ProcessAsync(TagHelperContext, TagHelperOutput)
   fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridControlTagHelperBase(Of TGrid).ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridControlTagHelperBase`1.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,`0,System.Int32)
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridControlTagHelperBase`1.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,`0,System.Int32)
+  id: ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,`0,System.Int32)
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridControlTagHelperBase`1
+  langs:
+  - csharp
+  - vb
+  name: ProcessAsync(TagHelperContext, TagHelperOutput, TGrid, int)
+  nameWithType: UFGridControlTagHelperBase<TGrid>.ProcessAsync(TagHelperContext, TagHelperOutput, TGrid, int)
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridControlTagHelperBase<TGrid>.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput, TGrid, int)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Base/Grid/UFGridControlTagHelperBase.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: ProcessAsync
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Grid/UFGridControlTagHelperBase.cs
+    startLine: 79
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid
+  summary: >-
+    Processes the tag helper and sets the output.
+
+    <p>
+
+    The default implementation sets the tag and some attributes.
+
+    </p>
+  example: []
+  syntax:
+    content: protected virtual Task ProcessAsync(TagHelperContext context, TagHelperOutput output, TGrid grid, int itemIndex)
+    parameters:
+    - id: context
+      type: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext
+      description: ''
+    - id: output
+      type: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput
+      description: ''
+    - id: grid
+      type: '{TGrid}'
+      description: ''
+    - id: itemIndex
+      type: System.Int32
+      description: Index of control item
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Protected Overridable Function ProcessAsync(context As TagHelperContext, output As TagHelperOutput, grid As TGrid, itemIndex As Integer) As Task
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridControlTagHelperBase`1.ProcessAsync*
+  nameWithType.vb: UFGridControlTagHelperBase(Of TGrid).ProcessAsync(TagHelperContext, TagHelperOutput, TGrid, Integer)
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridControlTagHelperBase(Of TGrid).ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput, TGrid, Integer)
+  name.vb: ProcessAsync(TagHelperContext, TagHelperOutput, TGrid, Integer)
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridControlTagHelperBase`1.GetControlClasses(`0,UltraForce.Library.Core.Asp.Types.Enums.UFSortTypeEnum)
   commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridControlTagHelperBase`1.GetControlClasses(`0,UltraForce.Library.Core.Asp.Types.Enums.UFSortTypeEnum)
   id: GetControlClasses(`0,UltraForce.Library.Core.Asp.Types.Enums.UFSortTypeEnum)
@@ -166,7 +220,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetControlClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Grid/UFGridControlTagHelperBase.cs
-    startLine: 82
+    startLine: 104
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid
@@ -1002,6 +1056,27 @@ references:
     name: Tasks
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: '{TGrid}'
+  commentId: '!:TGrid'
+  definition: TGrid
+  name: TGrid
+  nameWithType: TGrid
+  fullName: TGrid
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.int32
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: TGrid
+  name: TGrid
+  nameWithType: TGrid
+  fullName: TGrid
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridControlTagHelperBase`1.GetControlClasses*
   commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridControlTagHelperBase`1.GetControlClasses
   href: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridControlTagHelperBase-1.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_UFGridControlTagHelperBase_1_GetControlClasses__0_UltraForce_Library_Core_Asp_Types_Enums_UFSortTypeEnum_
@@ -1010,12 +1085,6 @@ references:
   fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridControlTagHelperBase<TGrid>.GetControlClasses
   nameWithType.vb: UFGridControlTagHelperBase(Of TGrid).GetControlClasses
   fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridControlTagHelperBase(Of TGrid).GetControlClasses
-- uid: '{TGrid}'
-  commentId: '!:TGrid'
-  definition: TGrid
-  name: TGrid
-  nameWithType: TGrid
-  fullName: TGrid
 - uid: UltraForce.Library.Core.Asp.Types.Enums.UFSortTypeEnum
   commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFSortTypeEnum
   parent: UltraForce.Library.Core.Asp.Types.Enums
@@ -1034,10 +1103,6 @@ references:
   nameWithType.vb: String
   fullName.vb: String
   name.vb: String
-- uid: TGrid
-  name: TGrid
-  nameWithType: TGrid
-  fullName: TGrid
 - uid: UltraForce.Library.Core.Asp.Types.Enums
   commentId: N:UltraForce.Library.Core.Asp.Types.Enums
   href: UltraForce.html

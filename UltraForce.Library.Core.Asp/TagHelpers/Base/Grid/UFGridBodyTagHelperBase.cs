@@ -44,22 +44,41 @@ where TGrid: UFGridTagHelperBase
   #region public methods
 
   /// <inheritdoc />
-  public override void Process(
+  public override async Task ProcessAsync(
     TagHelperContext context,
     TagHelperOutput output
   )
   {
-    base.Process(context, output);
+    await base.ProcessAsync(context, output);
     TGrid grid = UFTagHelperTools.GetItem<TGrid>(context, UFGridTagHelperBaseBase.Grid);
-    output.TagName = "div";
-    output.TagMode = TagMode.StartTagAndEndTag;
-    UFTagHelperTools.AddClasses(output, this.GetBodyClasses(grid));
-    output.Attributes.SetAttribute(UFDataAttribute.GridBody());
+    await this.ProcessAsync(context, output, grid);
   }
 
   #endregion
   
   #region protected methods
+
+  /// <summary>
+  /// Processes the tag helper and sets the output.
+  /// <para>
+  /// The default implementation sets the tag and some attributes.
+  /// </para>
+  /// </summary>
+  /// <param name="context"></param>
+  /// <param name="output"></param>
+  /// <param name="grid"></param>
+  protected virtual Task ProcessAsync(
+    TagHelperContext context,
+    TagHelperOutput output,
+    TGrid grid
+  )
+  {
+    output.TagName = "div";
+    output.TagMode = TagMode.StartTagAndEndTag;
+    UFTagHelperTools.AddClasses(output, this.GetBodyClasses(grid));
+    output.Attributes.SetAttribute(UFDataAttribute.GridBody());
+    return Task.CompletedTask;
+  }
 
   /// <summary>
   /// Returns the css classes to use for a body.

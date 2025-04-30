@@ -6,7 +6,8 @@ items:
   parent: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid
   children:
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridBodyTagHelperBase`1.GetBodyClasses(`0)
-  - UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridBodyTagHelperBase`1.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  - UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridBodyTagHelperBase`1.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  - UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridBodyTagHelperBase`1.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,`0)
   langs:
   - csharp
   - vb
@@ -41,7 +42,7 @@ items:
   - Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent
   inheritedMembers:
   - Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Init(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext)
-  - Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  - Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
   - Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Order
   - System.Object.Equals(System.Object)
   - System.Object.Equals(System.Object,System.Object)
@@ -53,35 +54,36 @@ items:
   nameWithType.vb: UFGridBodyTagHelperBase(Of TGrid)
   fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridBodyTagHelperBase(Of TGrid)
   name.vb: UFGridBodyTagHelperBase(Of TGrid)
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridBodyTagHelperBase`1.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
-  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridBodyTagHelperBase`1.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
-  id: Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridBodyTagHelperBase`1.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridBodyTagHelperBase`1.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  id: ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
   parent: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridBodyTagHelperBase`1
   langs:
   - csharp
   - vb
-  name: Process(TagHelperContext, TagHelperOutput)
-  nameWithType: UFGridBodyTagHelperBase<TGrid>.Process(TagHelperContext, TagHelperOutput)
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridBodyTagHelperBase<TGrid>.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  name: ProcessAsync(TagHelperContext, TagHelperOutput)
+  nameWithType: UFGridBodyTagHelperBase<TGrid>.ProcessAsync(TagHelperContext, TagHelperOutput)
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridBodyTagHelperBase<TGrid>.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
   type: Method
   source:
     remote:
       path: UltraForce.Library.Core.Asp/TagHelpers/Base/Grid/UFGridBodyTagHelperBase.cs
       branch: master
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
-    id: Process
+    id: ProcessAsync
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Grid/UFGridBodyTagHelperBase.cs
     startLine: 46
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid
   summary: >-
-    Synchronously executes the <xref href="Microsoft.AspNetCore.Razor.TagHelpers.TagHelper" data-throw-if-not-resolved="false"></xref> with the given <code class="paramref">context</code> and
+    Asynchronously executes the <xref href="Microsoft.AspNetCore.Razor.TagHelpers.TagHelper" data-throw-if-not-resolved="false"></xref> with the given <code class="paramref">context</code> and
 
     <code class="paramref">output</code>.
+  remarks: By default this calls into <xref href="Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext%2cMicrosoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)" data-throw-if-not-resolved="false"></xref>.
   example: []
   syntax:
-    content: public override void Process(TagHelperContext context, TagHelperOutput output)
+    content: public override Task ProcessAsync(TagHelperContext context, TagHelperOutput output)
     parameters:
     - id: context
       type: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext
@@ -89,11 +91,63 @@ items:
     - id: output
       type: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput
       description: A stateful HTML element used to generate an HTML tag.
-    content.vb: Public Overrides Sub Process(context As TagHelperContext, output As TagHelperOutput)
-  overridden: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
-  overload: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridBodyTagHelperBase`1.Process*
-  nameWithType.vb: UFGridBodyTagHelperBase(Of TGrid).Process(TagHelperContext, TagHelperOutput)
-  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridBodyTagHelperBase(Of TGrid).Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+    return:
+      type: System.Threading.Tasks.Task
+      description: A <xref href="System.Threading.Tasks.Task" data-throw-if-not-resolved="false"></xref> that on completion updates the <code class="paramref">output</code>.
+    content.vb: Public Overrides Function ProcessAsync(context As TagHelperContext, output As TagHelperOutput) As Task
+  overridden: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridBodyTagHelperBase`1.ProcessAsync*
+  nameWithType.vb: UFGridBodyTagHelperBase(Of TGrid).ProcessAsync(TagHelperContext, TagHelperOutput)
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridBodyTagHelperBase(Of TGrid).ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridBodyTagHelperBase`1.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,`0)
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridBodyTagHelperBase`1.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,`0)
+  id: ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,`0)
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridBodyTagHelperBase`1
+  langs:
+  - csharp
+  - vb
+  name: ProcessAsync(TagHelperContext, TagHelperOutput, TGrid)
+  nameWithType: UFGridBodyTagHelperBase<TGrid>.ProcessAsync(TagHelperContext, TagHelperOutput, TGrid)
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridBodyTagHelperBase<TGrid>.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput, TGrid)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Base/Grid/UFGridBodyTagHelperBase.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: ProcessAsync
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Grid/UFGridBodyTagHelperBase.cs
+    startLine: 69
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid
+  summary: >-
+    Processes the tag helper and sets the output.
+
+    <p>
+
+    The default implementation sets the tag and some attributes.
+
+    </p>
+  example: []
+  syntax:
+    content: protected virtual Task ProcessAsync(TagHelperContext context, TagHelperOutput output, TGrid grid)
+    parameters:
+    - id: context
+      type: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext
+      description: ''
+    - id: output
+      type: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput
+      description: ''
+    - id: grid
+      type: '{TGrid}'
+      description: ''
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Protected Overridable Function ProcessAsync(context As TagHelperContext, output As TagHelperOutput, grid As TGrid) As Task
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridBodyTagHelperBase`1.ProcessAsync*
+  nameWithType.vb: UFGridBodyTagHelperBase(Of TGrid).ProcessAsync(TagHelperContext, TagHelperOutput, TGrid)
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridBodyTagHelperBase(Of TGrid).ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput, TGrid)
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridBodyTagHelperBase`1.GetBodyClasses(`0)
   commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridBodyTagHelperBase`1.GetBodyClasses(`0)
   id: GetBodyClasses(`0)
@@ -112,7 +166,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetBodyClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Grid/UFGridBodyTagHelperBase.cs
-    startLine: 68
+    startLine: 87
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid
@@ -259,19 +313,19 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelpercontext
   - name: )
-- uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
-  commentId: M:Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+- uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  commentId: M:Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
   parent: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper.processasync
-  name: ProcessAsync(TagHelperContext, TagHelperOutput)
-  nameWithType: TagHelper.ProcessAsync(TagHelperContext, TagHelperOutput)
-  fullName: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper.process
+  name: Process(TagHelperContext, TagHelperOutput)
+  nameWithType: TagHelper.Process(TagHelperContext, TagHelperOutput)
+  fullName: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
   spec.csharp:
-  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
-    name: ProcessAsync
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+    name: Process
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper.processasync
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper.process
   - name: (
   - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext
     name: TagHelperContext
@@ -285,10 +339,10 @@ references:
     href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelperoutput
   - name: )
   spec.vb:
-  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
-    name: ProcessAsync
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+    name: Process
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper.processasync
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper.process
   - name: (
   - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext
     name: TagHelperContext
@@ -582,19 +636,27 @@ references:
     name: TagHelpers
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers
-- uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
-  commentId: M:Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.threading.tasks.task
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  commentId: M:Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
   parent: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper
   isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper.process
-  name: Process(TagHelperContext, TagHelperOutput)
-  nameWithType: TagHelper.Process(TagHelperContext, TagHelperOutput)
-  fullName: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper.processasync
+  name: ProcessAsync(TagHelperContext, TagHelperOutput)
+  nameWithType: TagHelper.ProcessAsync(TagHelperContext, TagHelperOutput)
+  fullName: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
   spec.csharp:
-  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
-    name: Process
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+    name: ProcessAsync
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper.process
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper.processasync
   - name: (
   - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext
     name: TagHelperContext
@@ -608,10 +670,10 @@ references:
     href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelperoutput
   - name: )
   spec.vb:
-  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
-    name: Process
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+    name: ProcessAsync
     isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper.process
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper.processasync
   - name: (
   - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext
     name: TagHelperContext
@@ -624,14 +686,14 @@ references:
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelperoutput
   - name: )
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridBodyTagHelperBase`1.Process*
-  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridBodyTagHelperBase`1.Process
-  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridBodyTagHelperBase-1.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_UFGridBodyTagHelperBase_1_Process_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContext_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_
-  name: Process
-  nameWithType: UFGridBodyTagHelperBase<TGrid>.Process
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridBodyTagHelperBase<TGrid>.Process
-  nameWithType.vb: UFGridBodyTagHelperBase(Of TGrid).Process
-  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridBodyTagHelperBase(Of TGrid).Process
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridBodyTagHelperBase`1.ProcessAsync*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridBodyTagHelperBase`1.ProcessAsync
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridBodyTagHelperBase-1.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_UFGridBodyTagHelperBase_1_ProcessAsync_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContext_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_
+  name: ProcessAsync
+  nameWithType: UFGridBodyTagHelperBase<TGrid>.ProcessAsync
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridBodyTagHelperBase<TGrid>.ProcessAsync
+  nameWithType.vb: UFGridBodyTagHelperBase(Of TGrid).ProcessAsync
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridBodyTagHelperBase(Of TGrid).ProcessAsync
 - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext
   commentId: T:Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext
   parent: Microsoft.AspNetCore.Razor.TagHelpers
@@ -648,6 +710,53 @@ references:
   name: TagHelperOutput
   nameWithType: TagHelperOutput
   fullName: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
+- uid: '{TGrid}'
+  commentId: '!:TGrid'
+  definition: TGrid
+  name: TGrid
+  nameWithType: TGrid
+  fullName: TGrid
+- uid: TGrid
+  name: TGrid
+  nameWithType: TGrid
+  fullName: TGrid
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridBodyTagHelperBase`1.GetBodyClasses*
   commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridBodyTagHelperBase`1.GetBodyClasses
   href: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridBodyTagHelperBase-1.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_UFGridBodyTagHelperBase_1_GetBodyClasses__0_
@@ -656,12 +765,6 @@ references:
   fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridBodyTagHelperBase<TGrid>.GetBodyClasses
   nameWithType.vb: UFGridBodyTagHelperBase(Of TGrid).GetBodyClasses
   fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridBodyTagHelperBase(Of TGrid).GetBodyClasses
-- uid: '{TGrid}'
-  commentId: '!:TGrid'
-  definition: TGrid
-  name: TGrid
-  nameWithType: TGrid
-  fullName: TGrid
 - uid: System.String
   commentId: T:System.String
   parent: System
@@ -673,7 +776,3 @@ references:
   nameWithType.vb: String
   fullName.vb: String
   name.vb: String
-- uid: TGrid
-  name: TGrid
-  nameWithType: TGrid
-  fullName: TGrid
