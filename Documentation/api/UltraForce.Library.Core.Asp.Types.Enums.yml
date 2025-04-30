@@ -5,13 +5,20 @@ items:
   id: UltraForce.Library.Core.Asp.Types.Enums
   children:
   - UltraForce.Library.Core.Asp.Types.Enums.UFContentPositionEnum
+  - UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum
   - UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignItemsEnum
   - UltraForce.Library.Core.Asp.Types.Enums.UFFlexDistributeContentEnum
   - UltraForce.Library.Core.Asp.Types.Enums.UFFlexTypeEnum
-  - UltraForce.Library.Core.Asp.Types.Enums.UFTableCellTypeEnum
-  - UltraForce.Library.Core.Asp.Types.Enums.UFTableRowTypeEnum
+  - UltraForce.Library.Core.Asp.Types.Enums.UFPopupHideEnum
+  - UltraForce.Library.Core.Asp.Types.Enums.UFPopupPositionEnum
+  - UltraForce.Library.Core.Asp.Types.Enums.UFPopupTransitionEnum
+  - UltraForce.Library.Core.Asp.Types.Enums.UFSortTypeEnum
   - UltraForce.Library.Core.Asp.Types.Enums.UFTableSortLocationEnum
-  - UltraForce.Library.Core.Asp.Types.Enums.UFTableSortTypeEnum
+  - UltraForce.Library.Core.Asp.Types.Enums.UFToggleChangeEnum
+  - UltraForce.Library.Core.Asp.Types.Enums.UFToggleCompareEnum
+  - UltraForce.Library.Core.Asp.Types.Enums.UFToggleConditionEnum
+  - UltraForce.Library.Core.Asp.Types.Enums.UFToggleRequiredEnum
+  - UltraForce.Library.Core.Asp.Types.Enums.UFToggleTypeEnum
   langs:
   - csharp
   - vb
@@ -29,6 +36,13 @@ references:
   name: UFContentPositionEnum
   nameWithType: UFContentPositionEnum
   fullName: UltraForce.Library.Core.Asp.Types.Enums.UFContentPositionEnum
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum
+  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum
+  parent: UltraForce.Library.Core.Asp.Types.Enums
+  href: UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum.html
+  name: UFEventActionEnum
+  nameWithType: UFEventActionEnum
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum
 - uid: UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignItemsEnum
   commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFFlexAlignItemsEnum
   parent: UltraForce.Library.Core.Asp.Types.Enums
@@ -50,20 +64,34 @@ references:
   name: UFFlexTypeEnum
   nameWithType: UFFlexTypeEnum
   fullName: UltraForce.Library.Core.Asp.Types.Enums.UFFlexTypeEnum
-- uid: UltraForce.Library.Core.Asp.Types.Enums.UFTableCellTypeEnum
-  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFTableCellTypeEnum
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFPopupHideEnum
+  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFPopupHideEnum
   parent: UltraForce.Library.Core.Asp.Types.Enums
-  href: UltraForce.Library.Core.Asp.Types.Enums.UFTableCellTypeEnum.html
-  name: UFTableCellTypeEnum
-  nameWithType: UFTableCellTypeEnum
-  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFTableCellTypeEnum
-- uid: UltraForce.Library.Core.Asp.Types.Enums.UFTableRowTypeEnum
-  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFTableRowTypeEnum
+  href: UltraForce.Library.Core.Asp.Types.Enums.UFPopupHideEnum.html
+  name: UFPopupHideEnum
+  nameWithType: UFPopupHideEnum
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFPopupHideEnum
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFPopupPositionEnum
+  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFPopupPositionEnum
   parent: UltraForce.Library.Core.Asp.Types.Enums
-  href: UltraForce.Library.Core.Asp.Types.Enums.UFTableRowTypeEnum.html
-  name: UFTableRowTypeEnum
-  nameWithType: UFTableRowTypeEnum
-  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFTableRowTypeEnum
+  href: UltraForce.Library.Core.Asp.Types.Enums.UFPopupPositionEnum.html
+  name: UFPopupPositionEnum
+  nameWithType: UFPopupPositionEnum
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFPopupPositionEnum
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFPopupTransitionEnum
+  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFPopupTransitionEnum
+  parent: UltraForce.Library.Core.Asp.Types.Enums
+  href: UltraForce.Library.Core.Asp.Types.Enums.UFPopupTransitionEnum.html
+  name: UFPopupTransitionEnum
+  nameWithType: UFPopupTransitionEnum
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFPopupTransitionEnum
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFSortTypeEnum
+  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFSortTypeEnum
+  parent: UltraForce.Library.Core.Asp.Types.Enums
+  href: UltraForce.Library.Core.Asp.Types.Enums.UFSortTypeEnum.html
+  name: UFSortTypeEnum
+  nameWithType: UFSortTypeEnum
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFSortTypeEnum
 - uid: UltraForce.Library.Core.Asp.Types.Enums.UFTableSortLocationEnum
   commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFTableSortLocationEnum
   parent: UltraForce.Library.Core.Asp.Types.Enums
@@ -71,13 +99,41 @@ references:
   name: UFTableSortLocationEnum
   nameWithType: UFTableSortLocationEnum
   fullName: UltraForce.Library.Core.Asp.Types.Enums.UFTableSortLocationEnum
-- uid: UltraForce.Library.Core.Asp.Types.Enums.UFTableSortTypeEnum
-  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFTableSortTypeEnum
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFToggleChangeEnum
+  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFToggleChangeEnum
   parent: UltraForce.Library.Core.Asp.Types.Enums
-  href: UltraForce.Library.Core.Asp.Types.Enums.UFTableSortTypeEnum.html
-  name: UFTableSortTypeEnum
-  nameWithType: UFTableSortTypeEnum
-  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFTableSortTypeEnum
+  href: UltraForce.Library.Core.Asp.Types.Enums.UFToggleChangeEnum.html
+  name: UFToggleChangeEnum
+  nameWithType: UFToggleChangeEnum
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFToggleChangeEnum
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFToggleCompareEnum
+  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFToggleCompareEnum
+  parent: UltraForce.Library.Core.Asp.Types.Enums
+  href: UltraForce.Library.Core.Asp.Types.Enums.UFToggleCompareEnum.html
+  name: UFToggleCompareEnum
+  nameWithType: UFToggleCompareEnum
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFToggleCompareEnum
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFToggleConditionEnum
+  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFToggleConditionEnum
+  parent: UltraForce.Library.Core.Asp.Types.Enums
+  href: UltraForce.Library.Core.Asp.Types.Enums.UFToggleConditionEnum.html
+  name: UFToggleConditionEnum
+  nameWithType: UFToggleConditionEnum
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFToggleConditionEnum
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFToggleRequiredEnum
+  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFToggleRequiredEnum
+  parent: UltraForce.Library.Core.Asp.Types.Enums
+  href: UltraForce.Library.Core.Asp.Types.Enums.UFToggleRequiredEnum.html
+  name: UFToggleRequiredEnum
+  nameWithType: UFToggleRequiredEnum
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFToggleRequiredEnum
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFToggleTypeEnum
+  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFToggleTypeEnum
+  parent: UltraForce.Library.Core.Asp.Types.Enums
+  href: UltraForce.Library.Core.Asp.Types.Enums.UFToggleTypeEnum.html
+  name: UFToggleTypeEnum
+  nameWithType: UFToggleTypeEnum
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFToggleTypeEnum
 - uid: UltraForce.Library.Core.Asp.Types.Enums
   commentId: N:UltraForce.Library.Core.Asp.Types.Enums
   href: UltraForce.html

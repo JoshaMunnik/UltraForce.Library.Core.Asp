@@ -1,0 +1,527 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum
+  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum
+  id: UFEventActionEnum
+  parent: UltraForce.Library.Core.Asp.Types.Enums
+  children:
+  - UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum.AddToClass
+  - UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum.Close
+  - UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum.Hide
+  - UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum.Reload
+  - UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum.RemoveFromClass
+  - UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum.RemoveFromDom
+  - UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum.SetAttribute
+  - UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum.SetHtml
+  - UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum.SetText
+  - UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum.SetValue
+  - UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum.Show
+  - UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum.ShowModal
+  - UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum.ShowNonModal
+  - UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum.Toggle
+  - UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum.ToggleClass
+  langs:
+  - csharp
+  - vb
+  name: UFEventActionEnum
+  nameWithType: UFEventActionEnum
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum
+  type: Enum
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFEventActionEnum.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: UFEventActionEnum
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFEventActionEnum.cs
+    startLine: 36
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: All possible actions that can be set for `data-uf-event-action`.
+  example: []
+  syntax:
+    content: public enum UFEventActionEnum
+    content.vb: Public Enum UFEventActionEnum
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum.RemoveFromDom
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum.RemoveFromDom
+  id: RemoveFromDom
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum
+  langs:
+  - csharp
+  - vb
+  name: RemoveFromDom
+  nameWithType: UFEventActionEnum.RemoveFromDom
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum.RemoveFromDom
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFEventActionEnum.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: RemoveFromDom
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFEventActionEnum.cs
+    startLine: 41
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Removes the target(s) from the DOM.
+  example: []
+  syntax:
+    content: RemoveFromDom = 0
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum.Hide
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum.Hide
+  id: Hide
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum
+  langs:
+  - csharp
+  - vb
+  name: Hide
+  nameWithType: UFEventActionEnum.Hide
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum.Hide
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFEventActionEnum.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: Hide
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFEventActionEnum.cs
+    startLine: 47
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Hides the target(s).
+  example: []
+  syntax:
+    content: Hide = 1
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum.Show
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum.Show
+  id: Show
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum
+  langs:
+  - csharp
+  - vb
+  name: Show
+  nameWithType: UFEventActionEnum.Show
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum.Show
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFEventActionEnum.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: Show
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFEventActionEnum.cs
+    startLine: 53
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Shows the target(s).
+  example: []
+  syntax:
+    content: Show = 2
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum.Toggle
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum.Toggle
+  id: Toggle
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum
+  langs:
+  - csharp
+  - vb
+  name: Toggle
+  nameWithType: UFEventActionEnum.Toggle
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum.Toggle
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFEventActionEnum.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: Toggle
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFEventActionEnum.cs
+    startLine: 59
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Toggles visibility state of the target(s).
+  example: []
+  syntax:
+    content: Toggle = 3
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum.ToggleClass
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum.ToggleClass
+  id: ToggleClass
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum
+  langs:
+  - csharp
+  - vb
+  name: ToggleClass
+  nameWithType: UFEventActionEnum.ToggleClass
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum.ToggleClass
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFEventActionEnum.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: ToggleClass
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFEventActionEnum.cs
+    startLine: 65
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Toggles the css class of the target(s).
+  example: []
+  syntax:
+    content: ToggleClass = 4
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum.RemoveFromClass
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum.RemoveFromClass
+  id: RemoveFromClass
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum
+  langs:
+  - csharp
+  - vb
+  name: RemoveFromClass
+  nameWithType: UFEventActionEnum.RemoveFromClass
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum.RemoveFromClass
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFEventActionEnum.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: RemoveFromClass
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFEventActionEnum.cs
+    startLine: 71
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Removes from the class of the target(s).
+  example: []
+  syntax:
+    content: RemoveFromClass = 5
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum.AddToClass
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum.AddToClass
+  id: AddToClass
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum
+  langs:
+  - csharp
+  - vb
+  name: AddToClass
+  nameWithType: UFEventActionEnum.AddToClass
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum.AddToClass
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFEventActionEnum.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: AddToClass
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFEventActionEnum.cs
+    startLine: 77
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Adds to the class of the target(s).
+  example: []
+  syntax:
+    content: AddToClass = 6
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum.ShowModal
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum.ShowModal
+  id: ShowModal
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum
+  langs:
+  - csharp
+  - vb
+  name: ShowModal
+  nameWithType: UFEventActionEnum.ShowModal
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum.ShowModal
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFEventActionEnum.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: ShowModal
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFEventActionEnum.cs
+    startLine: 83
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Shows the target(s) as a modal dialog.
+  example: []
+  syntax:
+    content: ShowModal = 7
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum.ShowNonModal
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum.ShowNonModal
+  id: ShowNonModal
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum
+  langs:
+  - csharp
+  - vb
+  name: ShowNonModal
+  nameWithType: UFEventActionEnum.ShowNonModal
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum.ShowNonModal
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFEventActionEnum.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: ShowNonModal
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFEventActionEnum.cs
+    startLine: 89
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Shows the target(s) as a non-modal dialog.
+  example: []
+  syntax:
+    content: ShowNonModal = 8
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum.Close
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum.Close
+  id: Close
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum
+  langs:
+  - csharp
+  - vb
+  name: Close
+  nameWithType: UFEventActionEnum.Close
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum.Close
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFEventActionEnum.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: Close
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFEventActionEnum.cs
+    startLine: 95
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Closes the target(s).
+  example: []
+  syntax:
+    content: Close = 9
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum.SetAttribute
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum.SetAttribute
+  id: SetAttribute
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum
+  langs:
+  - csharp
+  - vb
+  name: SetAttribute
+  nameWithType: UFEventActionEnum.SetAttribute
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum.SetAttribute
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFEventActionEnum.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: SetAttribute
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFEventActionEnum.cs
+    startLine: 101
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Sets the attribute at the target(s).
+  example: []
+  syntax:
+    content: SetAttribute = 10
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum.Reload
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum.Reload
+  id: Reload
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum
+  langs:
+  - csharp
+  - vb
+  name: Reload
+  nameWithType: UFEventActionEnum.Reload
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum.Reload
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFEventActionEnum.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: Reload
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFEventActionEnum.cs
+    startLine: 107
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Reloads the page.
+  example: []
+  syntax:
+    content: Reload = 11
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum.SetValue
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum.SetValue
+  id: SetValue
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum
+  langs:
+  - csharp
+  - vb
+  name: SetValue
+  nameWithType: UFEventActionEnum.SetValue
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum.SetValue
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFEventActionEnum.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: SetValue
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFEventActionEnum.cs
+    startLine: 113
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Sets the value of the target(s).
+  example: []
+  syntax:
+    content: SetValue = 12
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum.SetText
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum.SetText
+  id: SetText
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum
+  langs:
+  - csharp
+  - vb
+  name: SetText
+  nameWithType: UFEventActionEnum.SetText
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum.SetText
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFEventActionEnum.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: SetText
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFEventActionEnum.cs
+    startLine: 119
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Sets the innerText of the target(s).
+  example: []
+  syntax:
+    content: SetText = 13
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum.SetHtml
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum.SetHtml
+  id: SetHtml
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum
+  langs:
+  - csharp
+  - vb
+  name: SetHtml
+  nameWithType: UFEventActionEnum.SetHtml
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum.SetHtml
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFEventActionEnum.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: SetHtml
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFEventActionEnum.cs
+    startLine: 125
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Sets the innerHtml of
+  example: []
+  syntax:
+    content: SetHtml = 14
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum
+references:
+- uid: UltraForce.Library.Core.Asp.Types.Enums
+  commentId: N:UltraForce.Library.Core.Asp.Types.Enums
+  href: UltraForce.html
+  name: UltraForce.Library.Core.Asp.Types.Enums
+  nameWithType: UltraForce.Library.Core.Asp.Types.Enums
+  fullName: UltraForce.Library.Core.Asp.Types.Enums
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types
+    name: Types
+    href: UltraForce.Library.Core.Asp.Types.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types.Enums
+    name: Enums
+    href: UltraForce.Library.Core.Asp.Types.Enums.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types
+    name: Types
+    href: UltraForce.Library.Core.Asp.Types.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types.Enums
+    name: Enums
+    href: UltraForce.Library.Core.Asp.Types.Enums.html
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum
+  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum
+  parent: UltraForce.Library.Core.Asp.Types.Enums
+  href: UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum.html
+  name: UFEventActionEnum
+  nameWithType: UFEventActionEnum
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum

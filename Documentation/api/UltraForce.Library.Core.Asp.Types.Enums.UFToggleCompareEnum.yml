@@ -1,0 +1,295 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFToggleCompareEnum
+  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFToggleCompareEnum
+  id: UFToggleCompareEnum
+  parent: UltraForce.Library.Core.Asp.Types.Enums
+  children:
+  - UltraForce.Library.Core.Asp.Types.Enums.UFToggleCompareEnum.Contain
+  - UltraForce.Library.Core.Asp.Types.Enums.UFToggleCompareEnum.Equal
+  - UltraForce.Library.Core.Asp.Types.Enums.UFToggleCompareEnum.GreaterThan
+  - UltraForce.Library.Core.Asp.Types.Enums.UFToggleCompareEnum.GreaterThanOrEqual
+  - UltraForce.Library.Core.Asp.Types.Enums.UFToggleCompareEnum.Inside
+  - UltraForce.Library.Core.Asp.Types.Enums.UFToggleCompareEnum.LessThan
+  - UltraForce.Library.Core.Asp.Types.Enums.UFToggleCompareEnum.LessThanOrEqual
+  langs:
+  - csharp
+  - vb
+  name: UFToggleCompareEnum
+  nameWithType: UFToggleCompareEnum
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFToggleCompareEnum
+  type: Enum
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFToggleCompareEnum.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: UFToggleCompareEnum
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFToggleCompareEnum.cs
+    startLine: 36
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: How to compare the value
+  example: []
+  syntax:
+    content: public enum UFToggleCompareEnum
+    content.vb: Public Enum UFToggleCompareEnum
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFToggleCompareEnum.Equal
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFToggleCompareEnum.Equal
+  id: Equal
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFToggleCompareEnum
+  langs:
+  - csharp
+  - vb
+  name: Equal
+  nameWithType: UFToggleCompareEnum.Equal
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFToggleCompareEnum.Equal
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFToggleCompareEnum.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: Equal
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFToggleCompareEnum.cs
+    startLine: 41
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Value must be equal to one of the values
+  example: []
+  syntax:
+    content: Equal = 0
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFToggleCompareEnum
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFToggleCompareEnum.Contain
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFToggleCompareEnum.Contain
+  id: Contain
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFToggleCompareEnum
+  langs:
+  - csharp
+  - vb
+  name: Contain
+  nameWithType: UFToggleCompareEnum.Contain
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFToggleCompareEnum.Contain
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFToggleCompareEnum.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: Contain
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFToggleCompareEnum.cs
+    startLine: 47
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Part of the value must be equal to one of the values
+  example: []
+  syntax:
+    content: Contain = 1
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFToggleCompareEnum
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFToggleCompareEnum.Inside
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFToggleCompareEnum.Inside
+  id: Inside
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFToggleCompareEnum
+  langs:
+  - csharp
+  - vb
+  name: Inside
+  nameWithType: UFToggleCompareEnum.Inside
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFToggleCompareEnum.Inside
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFToggleCompareEnum.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: Inside
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFToggleCompareEnum.cs
+    startLine: 53
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Part of one of the values must equal to the value
+  example: []
+  syntax:
+    content: Inside = 2
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFToggleCompareEnum
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFToggleCompareEnum.LessThan
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFToggleCompareEnum.LessThan
+  id: LessThan
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFToggleCompareEnum
+  langs:
+  - csharp
+  - vb
+  name: LessThan
+  nameWithType: UFToggleCompareEnum.LessThan
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFToggleCompareEnum.LessThan
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFToggleCompareEnum.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: LessThan
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFToggleCompareEnum.cs
+    startLine: 59
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: The value must be less than one of the values
+  example: []
+  syntax:
+    content: LessThan = 3
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFToggleCompareEnum
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFToggleCompareEnum.LessThanOrEqual
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFToggleCompareEnum.LessThanOrEqual
+  id: LessThanOrEqual
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFToggleCompareEnum
+  langs:
+  - csharp
+  - vb
+  name: LessThanOrEqual
+  nameWithType: UFToggleCompareEnum.LessThanOrEqual
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFToggleCompareEnum.LessThanOrEqual
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFToggleCompareEnum.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: LessThanOrEqual
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFToggleCompareEnum.cs
+    startLine: 65
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: The value must be less than or equal to one of the values
+  example: []
+  syntax:
+    content: LessThanOrEqual = 4
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFToggleCompareEnum
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFToggleCompareEnum.GreaterThan
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFToggleCompareEnum.GreaterThan
+  id: GreaterThan
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFToggleCompareEnum
+  langs:
+  - csharp
+  - vb
+  name: GreaterThan
+  nameWithType: UFToggleCompareEnum.GreaterThan
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFToggleCompareEnum.GreaterThan
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFToggleCompareEnum.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: GreaterThan
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFToggleCompareEnum.cs
+    startLine: 71
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: The value must be greater than one of the values
+  example: []
+  syntax:
+    content: GreaterThan = 5
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFToggleCompareEnum
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFToggleCompareEnum.GreaterThanOrEqual
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFToggleCompareEnum.GreaterThanOrEqual
+  id: GreaterThanOrEqual
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFToggleCompareEnum
+  langs:
+  - csharp
+  - vb
+  name: GreaterThanOrEqual
+  nameWithType: UFToggleCompareEnum.GreaterThanOrEqual
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFToggleCompareEnum.GreaterThanOrEqual
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFToggleCompareEnum.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: GreaterThanOrEqual
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFToggleCompareEnum.cs
+    startLine: 77
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: The value must be greater than or equal to one of the values
+  example: []
+  syntax:
+    content: GreaterThanOrEqual = 6
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFToggleCompareEnum
+references:
+- uid: UltraForce.Library.Core.Asp.Types.Enums
+  commentId: N:UltraForce.Library.Core.Asp.Types.Enums
+  href: UltraForce.html
+  name: UltraForce.Library.Core.Asp.Types.Enums
+  nameWithType: UltraForce.Library.Core.Asp.Types.Enums
+  fullName: UltraForce.Library.Core.Asp.Types.Enums
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types
+    name: Types
+    href: UltraForce.Library.Core.Asp.Types.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types.Enums
+    name: Enums
+    href: UltraForce.Library.Core.Asp.Types.Enums.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types
+    name: Types
+    href: UltraForce.Library.Core.Asp.Types.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types.Enums
+    name: Enums
+    href: UltraForce.Library.Core.Asp.Types.Enums.html
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFToggleCompareEnum
+  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFToggleCompareEnum
+  parent: UltraForce.Library.Core.Asp.Types.Enums
+  href: UltraForce.Library.Core.Asp.Types.Enums.UFToggleCompareEnum.html
+  name: UFToggleCompareEnum
+  nameWithType: UFToggleCompareEnum
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFToggleCompareEnum

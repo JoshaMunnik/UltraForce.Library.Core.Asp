@@ -1,12 +1,12 @@
-// <copyright file="UFTableSortTypeEnum.cs" company="Ultra Force Development">
-// Ultra Force Library - Copyright (C) 2024 Ultra Force Development
+// <copyright file="UFPopupHideEnum.cs" company="Ultra Force Development">
+// Ultra Force Library - Copyright (C) 2025 Ultra Force Development
 // </copyright>
 // <author>Josha Munnik</author>
 // <email>josha@ultraforce.com</email>
 // <license>
 // The MIT License (MIT)
 //
-// Copyright (C) 2024 Ultra Force Development
+// Copyright (C) 2025 Ultra Force Development
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to 
@@ -28,41 +28,23 @@
 // </license>
 
 using System.ComponentModel;
-using UltraForce.Library.Core.Asp.TagHelpers.Base.Table;
 
 namespace UltraForce.Library.Core.Asp.Types.Enums;
 
 /// <summary>
-/// Determines how a column is sorted in a table.
+/// When to hide the popup.
 /// </summary>
-public enum UFTableSortTypeEnum
+public enum UFPopupHideEnum
 {
   /// <summary>
-  /// Determine type from <see cref="UFTableCellTagHelperBase{TTable,TTableRow}.For"/> (if any), else defaults to
-  /// text
+  /// Hide the popup when the user clicks outside the popup and any child popups.
   /// </summary>
-  Auto,
-
+  [Description("tree")]
+  Tree,
+  
   /// <summary>
-  /// Sort values as text
+  /// Hide the popup whenever the user clicks outside the popup.
   /// </summary>
-  [Description("text")]
-  Text,
-
-  /// <summary>
-  /// Sort values as number
-  /// </summary>
-  [Description("number")]
-  Number,
-
-  /// <summary>
-  /// Sort values as dates
-  /// </summary>
-  [Description("date")]
-  Date,
-
-  /// <summary>
-  /// No sorting
-  /// </summary>
-  None
+  [Description("always")]
+  Always,
 }

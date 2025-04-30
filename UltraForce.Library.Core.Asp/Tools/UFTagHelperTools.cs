@@ -436,6 +436,26 @@ namespace UltraForce.Library.Core.Asp.Tools
       }
       throw new InvalidOperationException($"Item with key {key} not found in context.");
     }
+    
+    /// <summary>
+    /// Creates a tag helper attribute with a name and value. The value style is set to minimized
+    /// if the value is null.
+    /// </summary>
+    /// <param name="name">
+    /// The attribute name
+    /// </param>
+    /// <param name="value">
+    /// Optional value, when null use minimized style.
+    /// </param>
+    /// <returns>Tag helper attribute instance</returns>
+    public static TagHelperAttribute Attribute(
+      string name,
+      object? value = null
+    ) => new(
+      name, 
+      value,
+      value == null ? HtmlAttributeValueStyle.Minimized : HtmlAttributeValueStyle.DoubleQuotes
+    );
 
     #endregion
   }

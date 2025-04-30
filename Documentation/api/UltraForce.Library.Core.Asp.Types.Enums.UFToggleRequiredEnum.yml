@@ -1,0 +1,179 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFToggleRequiredEnum
+  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFToggleRequiredEnum
+  id: UFToggleRequiredEnum
+  parent: UltraForce.Library.Core.Asp.Types.Enums
+  children:
+  - UltraForce.Library.Core.Asp.Types.Enums.UFToggleRequiredEnum.Match
+  - UltraForce.Library.Core.Asp.Types.Enums.UFToggleRequiredEnum.NoChange
+  - UltraForce.Library.Core.Asp.Types.Enums.UFToggleRequiredEnum.NoMatch
+  langs:
+  - csharp
+  - vb
+  name: UFToggleRequiredEnum
+  nameWithType: UFToggleRequiredEnum
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFToggleRequiredEnum
+  type: Enum
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFToggleRequiredEnum.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: UFToggleRequiredEnum
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFToggleRequiredEnum.cs
+    startLine: 36
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: How to change the required state of an element.
+  example: []
+  syntax:
+    content: public enum UFToggleRequiredEnum
+    content.vb: Public Enum UFToggleRequiredEnum
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFToggleRequiredEnum.NoChange
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFToggleRequiredEnum.NoChange
+  id: NoChange
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFToggleRequiredEnum
+  langs:
+  - csharp
+  - vb
+  name: NoChange
+  nameWithType: UFToggleRequiredEnum.NoChange
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFToggleRequiredEnum.NoChange
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFToggleRequiredEnum.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: NoChange
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFToggleRequiredEnum.cs
+    startLine: 41
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Do not change required state.
+  example: []
+  syntax:
+    content: NoChange = 0
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFToggleRequiredEnum
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFToggleRequiredEnum.Match
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFToggleRequiredEnum.Match
+  id: Match
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFToggleRequiredEnum
+  langs:
+  - csharp
+  - vb
+  name: Match
+  nameWithType: UFToggleRequiredEnum.Match
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFToggleRequiredEnum.Match
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFToggleRequiredEnum.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: Match
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFToggleRequiredEnum.cs
+    startLine: 47
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Required state if there is a match.
+  example: []
+  syntax:
+    content: Match = 1
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFToggleRequiredEnum
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFToggleRequiredEnum.NoMatch
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFToggleRequiredEnum.NoMatch
+  id: NoMatch
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFToggleRequiredEnum
+  langs:
+  - csharp
+  - vb
+  name: NoMatch
+  nameWithType: UFToggleRequiredEnum.NoMatch
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFToggleRequiredEnum.NoMatch
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFToggleRequiredEnum.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: NoMatch
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFToggleRequiredEnum.cs
+    startLine: 53
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Required state if there is not a match.
+  example: []
+  syntax:
+    content: NoMatch = 2
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFToggleRequiredEnum
+references:
+- uid: UltraForce.Library.Core.Asp.Types.Enums
+  commentId: N:UltraForce.Library.Core.Asp.Types.Enums
+  href: UltraForce.html
+  name: UltraForce.Library.Core.Asp.Types.Enums
+  nameWithType: UltraForce.Library.Core.Asp.Types.Enums
+  fullName: UltraForce.Library.Core.Asp.Types.Enums
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types
+    name: Types
+    href: UltraForce.Library.Core.Asp.Types.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types.Enums
+    name: Enums
+    href: UltraForce.Library.Core.Asp.Types.Enums.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types
+    name: Types
+    href: UltraForce.Library.Core.Asp.Types.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types.Enums
+    name: Enums
+    href: UltraForce.Library.Core.Asp.Types.Enums.html
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFToggleRequiredEnum
+  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFToggleRequiredEnum
+  parent: UltraForce.Library.Core.Asp.Types.Enums
+  href: UltraForce.Library.Core.Asp.Types.Enums.UFToggleRequiredEnum.html
+  name: UFToggleRequiredEnum
+  nameWithType: UFToggleRequiredEnum
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFToggleRequiredEnum

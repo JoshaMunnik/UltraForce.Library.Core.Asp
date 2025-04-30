@@ -7,6 +7,7 @@ items:
   children:
   - UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.AddAttribute(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttributeList,System.String,System.String,System.String)
   - UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.AddClasses(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,System.String)
+  - UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.Attribute(System.String,System.Object)
   - UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.CreateAttributeList(System.Collections.Generic.Dictionary{System.String,System.String})
   - UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.FindAttribute(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttributeList,System.String)
   - UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.GetItem``1(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,System.Object,``0)
@@ -752,6 +753,50 @@ items:
   nameWithType.vb: UFTagHelperTools.GetItem(Of T)(TagHelperContext, Object, T)
   fullName.vb: UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.GetItem(Of T)(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Object, T)
   name.vb: GetItem(Of T)(TagHelperContext, Object, T)
+- uid: UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.Attribute(System.String,System.Object)
+  commentId: M:UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.Attribute(System.String,System.Object)
+  id: Attribute(System.String,System.Object)
+  parent: UltraForce.Library.Core.Asp.Tools.UFTagHelperTools
+  langs:
+  - csharp
+  - vb
+  name: Attribute(string, object?)
+  nameWithType: UFTagHelperTools.Attribute(string, object?)
+  fullName: UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.Attribute(string, object?)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Tools/UFTagHelperTools.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: Attribute
+    path: ../UltraForce.Library.Core.Asp/Tools/UFTagHelperTools.cs
+    startLine: 450
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Tools
+  summary: >-
+    Creates a tag helper attribute with a name and value. The value style is set to minimized
+
+    if the value is null.
+  example: []
+  syntax:
+    content: public static TagHelperAttribute Attribute(string name, object? value = null)
+    parameters:
+    - id: name
+      type: System.String
+      description: The attribute name
+    - id: value
+      type: System.Object
+      description: Optional value, when null use minimized style.
+    return:
+      type: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute
+      description: Tag helper attribute instance
+    content.vb: Public Shared Function Attribute(name As String, value As Object = Nothing) As TagHelperAttribute
+  overload: UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.Attribute*
+  nameWithType.vb: UFTagHelperTools.Attribute(String, Object)
+  fullName.vb: UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.Attribute(String, Object)
+  name.vb: Attribute(String, Object)
 references:
 - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper
   commentId: T:Microsoft.AspNetCore.Razor.TagHelpers.TagHelper
@@ -1707,3 +1752,9 @@ references:
   name: T
   nameWithType: T
   fullName: T
+- uid: UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.Attribute*
+  commentId: Overload:UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.Attribute
+  href: UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.html#UltraForce_Library_Core_Asp_Tools_UFTagHelperTools_Attribute_System_String_System_Object_
+  name: Attribute
+  nameWithType: UFTagHelperTools.Attribute
+  fullName: UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.Attribute

@@ -10,6 +10,15 @@ Include the styles in your html using (for example `Shared\_Layout.cshtml`):
 <link rel="stylesheet" href="/_content/UltraForce.Library.Core.Asp/css/uf-styles.css" />
 ````
 ## Version history
+1.0.101
+- [BREAKING CHANGE] split `UFTableCellTagHelperBase` into `UFTableDataCellTagHelperBase` and 
+  `UFTableHeaderCellTagHelperBase`
+- [BREAKING CHANGE] split `UFTableRowTagHelperBase` into `UFTableBodyRowTagHelperBase` and 
+  `UFTableHeaderRowTagHelperBase`
+- added bases classes for grid support
+- `UFDataAttribute` now defines `TagHelperAttribute` instead of string constants
+- add all attributes used by the Ultra Force TypeScript DOM library to `UFDataAttribute`
+ 
 1.0.100
 - added UFController.RedirectToActionWithId for current controller
  

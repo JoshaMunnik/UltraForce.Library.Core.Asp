@@ -29,9 +29,10 @@
 
 using System.Diagnostics.CodeAnalysis;
 using Microsoft.AspNetCore.Razor.TagHelpers;
+using UltraForce.Library.Core.Asp.TagHelpers.Base.Grid;
+using UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base;
 using UltraForce.Library.Core.Asp.Tools;
 using UltraForce.Library.Core.Asp.Types.Constants;
-using UltraForce.Library.NetStandard.Tools;
 
 namespace UltraForce.Library.Core.Asp.TagHelpers.Base.Table;
 
@@ -82,62 +83,8 @@ namespace UltraForce.Library.Core.Asp.TagHelpers.Base.Table;
 /// <see cref="GetBodyClasses"/> and <see cref="GetHeadClasses"/>.
 /// </param>
 [SuppressMessage("ReSharper", "AutoPropertyCanBeMadeGetOnly.Global")]
-public abstract class UFTableTagHelperBase(bool skipHeadBody = false) : TagHelper
+public abstract class UFTableTagHelperBase(bool skipHeadBody = false) : UFGridTagHelperBaseBase
 {
-  #region internal constants
-
-  /// <summary>
-  /// The key that children can use to access this (the table) instance.
-  /// </summary>
-  internal const string Table = "uf_table";
-
-  /// <summary>
-  /// The key that children can use to access the row instance.
-  /// </summary>
-  internal const string Row = "uf_row";
-  
-  /// <summary>
-  /// The key that children can use to access the cell instance.
-  /// </summary>
-  internal const string Cell = "uf_cell";
-  
-  #endregion
-
-  #region public properties
-
-  /// <summary>
-  /// When true add a `data-filter` attribute with the value "1" to the table.
-  /// </summary>
-  [HtmlAttributeName("filter")]
-  public bool Filter { get; set; } = false;
-
-  /// <summary>
-  /// When true add a `data-paging` attribute with the value "1" to the table.
-  /// </summary>
-  [HtmlAttributeName("paging")]
-  public bool Paging { get; set; } = false;
-
-  /// <summary>
-  /// Number of rows per page (only used if <see cref="Paging"/> is true). It will set
-  /// `data-page-size` attribute on the table. 
-  /// </summary>
-  [HtmlAttributeName("page-size")]
-  public int PageSize { get; set; } = 15;
-
-  /// <summary>
-  /// When true add `data-sorting` attribute with the value "1" to the table. 
-  /// </summary>
-  [HtmlAttributeName("sorting")]
-  public bool Sorting { get; set; } = false;
-
-  /// <summary>
-  /// Assign a value to preserve the sorting and paging state of the table between sessions. When
-  /// set the state is stored in a local storage of the browser. 
-  /// </summary>
-  public string StorageId { get; set; } = "";
-  
-  #endregion
-
   #region public methods
 
   /// <inheritdoc />
@@ -145,30 +92,7 @@ public abstract class UFTableTagHelperBase(bool skipHeadBody = false) : TagHelpe
   {
     this.ProcessedFirstHeaderRow = null;
     this.ProcessedFirstDataRow = null;
-    context.Items[Table] = this;
-    output.TagName = "table";
-    string id = output.Attributes["id"]?.Value?.ToString() ?? UFHtmlTools.NewDomId();
-    if (this.Filter)
-    {
-      this.AddFilter(output, id);
-    }
-    if (this.Paging)
-    {
-      output.Attributes.SetAttribute(UFDataAttribute.Paging, "1");
-      output.Attributes.SetAttribute(UFDataAttribute.PageSize, this.PageSize.ToString());
-    }
-    if (this.Sorting)
-    {
-      this.AddSorting(output);
-    }
-    if ((this.Paging || this.Sorting) && !string.IsNullOrWhiteSpace(this.StorageId))
-    {
-      output.Attributes.SetAttribute(UFDataAttribute.StorageId, this.StorageId);
-    }
-    if (this.Filter || this.Paging || this.Sorting)
-    {
-      output.Attributes.SetAttribute("id", id);
-    }
+    await base.ProcessAsync(context, output);
     UFTagHelperTools.AddClasses(output, this.GetTableClasses());
     // process children (these might set ProcessedFirstHeaderRow and ProcessedFirstDataRow)
     TagHelperContent? childContent = await output.GetChildContentAsync();
@@ -202,7 +126,7 @@ public abstract class UFTableTagHelperBase(bool skipHeadBody = false) : TagHelpe
 
   #endregion
   
-  #region protected overridable methods
+  #region protected methods
   
   /// <summary>
   /// Returns the classes for the table. 
@@ -223,72 +147,6 @@ public abstract class UFTableTagHelperBase(bool skipHeadBody = false) : TagHelpe
     return string.Empty;
   }
   
-  /// <summary>
-  /// Returns the classes for the filter input.
-  /// </summary>
-  /// <returns></returns>
-  protected virtual string GetFilterInputClasses()
-  {
-    return string.Empty;
-  }
-
-  /// <summary>
-  /// Returns the text to be used as the place-holder for the filter input.
-  /// </summary>
-  /// <returns></returns>
-  protected virtual string GetFilterPlaceholder()
-  {
-    return "filter...";
-  }
-  
-  /// <summary>
-  /// Returns the classes for the filter button.
-  /// </summary>
-  /// <returns></returns>
-  protected virtual string GetFilterButtonClasses()
-  {
-    return string.Empty;
-  }
-
-  /// <summary>
-  /// Returns the html to use for the filter button caption (the child of the button tag).
-  /// <para>
-  /// The default implementation returns "clear".
-  /// </para>
-  /// </summary>
-  /// <returns></returns>
-  protected virtual string GetFilterCaptionHtml()
-  {
-    return "clear";
-  }
-  
-  /// <summary>
-  /// Returns the classes for the filter container.
-  /// </summary>
-  /// <returns></returns>
-  protected virtual string GetFilterContainerClasses()
-  {
-    return string.Empty;
-  }
-  
-  /// <summary>
-  /// Returns the classes for the sort ascending icon.
-  /// </summary>
-  /// <returns></returns>
-  protected virtual string GetSortAscendingClasses()
-  {
-    return string.Empty;
-  }
-  
-  /// <summary>
-  /// Returns the classes for the sort descending icon.
-  /// </summary>
-  /// <returns></returns>
-  protected virtual string GetSortDescendingClasses()
-  {
-    return string.Empty;
-  }
-
   /// <summary>
   /// Returns the classes to use with the tbody tag. 
   /// </summary>
@@ -313,13 +171,13 @@ public abstract class UFTableTagHelperBase(bool skipHeadBody = false) : TagHelpe
 
   /// <summary>
   /// Will be set to true by the first header row. Will be set by
-  /// <see cref="UFTableRowTagHelperBase{TTable}"/>.
+  /// <see cref="UFTableDataRowTagHelperBase{TTable}"/>.
   /// </summary>
   internal object? ProcessedFirstHeaderRow { get; set; }
   
   /// <summary>
   /// Will be set to true by the first header row. Will be set by
-  /// <see cref="UFTableRowTagHelperBase{TTable}"/>.
+  /// <see cref="UFTableDataRowTagHelperBase{TTable}"/>.
   /// </summary>
   internal object? ProcessedFirstDataRow { get; set; }
 
@@ -334,50 +192,23 @@ public abstract class UFTableTagHelperBase(bool skipHeadBody = false) : TagHelpe
   
   /// <summary>
   /// Gets the classes for the table body. Will be called by
-  /// <see cref="UFTableRowTagHelperBase{TTable}"/>.
+  /// <see cref="UFTableDataRowTagHelperBase{TTable}"/>.
   /// </summary>
   /// <returns></returns>
   internal string GetTableBodyClasses() => this.GetBodyClasses();
-  
-  #endregion
 
-  #region private methods
+  /// <inheritdoc />
+  internal override string GetContainerClasses() => this.GetTableContainerClasses();
 
-  private void AddFilter(TagHelperOutput output, string tableId)
-  {
-    output.Attributes.SetAttribute(UFDataAttribute.Filter, "1");
-    string inputId = UFHtmlTools.NewDomId();
-    string input =
-      $"<input id=\"{inputId}\"" +
-      $" class=\"{this.GetFilterInputClasses()}\"" +
-      $" placeholder=\"{this.GetFilterPlaceholder()}\"" +
-      $" type=\"text\" {UFDataAttribute.FilterTable}=\"#{tableId}\"" +
-      $" autocomplete=\"off\"" +
-      $"/>";
-    string button =
-      $"<button" +
-      $" class=\"{this.GetFilterButtonClasses()}\"" +
-      $" {UFDataAttribute.SetFieldSelector}=\"#{inputId}\"" +
-      $">" +
-      this.GetFilterCaptionHtml() +
-      "</button>";
-    output.PreElement.AppendHtml(
-      $"<div class=\"{this.GetTableContainerClasses()}\">" +
-      $"<div class=\"{this.GetFilterContainerClasses()}\">{input}{button}</div>"
-    );
-    output.PostElement.AppendHtml("</div>");
-  }
+  /// <inheritdoc />
+  internal override TagHelperAttribute GetFilterAttribute(
+    string value
+  ) => UFDataAttribute.FilterTable(value);
 
-  private void AddSorting(TagHelperOutput output)
-  {
-    output.Attributes.SetAttribute(UFDataAttribute.Sorting, "1");
-    output.Attributes.SetAttribute(
-      UFDataAttribute.SortAscending, this.GetSortAscendingClasses()
-    );
-    output.Attributes.SetAttribute(
-      UFDataAttribute.SortDescending, this.GetSortDescendingClasses()
-    );
-  }
+  /// <inheritdoc />
+  internal override TagHelperAttribute GetSortingAttribute(
+    string value
+  ) => UFDataAttribute.TableSorting(value);
 
   #endregion
 }

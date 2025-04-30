@@ -5,6 +5,7 @@ items:
   id: UltraForce.Library.Core.Asp.Types.Constants
   children:
   - UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute
+  - UltraForce.Library.Core.Asp.Types.Constants.UFEventTarget
   - UltraForce.Library.Core.Asp.Types.Constants.UFFontAwesome
   langs:
   - csharp
@@ -22,6 +23,12 @@ references:
   name: UFDataAttribute
   nameWithType: UFDataAttribute
   fullName: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute
+- uid: UltraForce.Library.Core.Asp.Types.Constants.UFEventTarget
+  commentId: T:UltraForce.Library.Core.Asp.Types.Constants.UFEventTarget
+  href: UltraForce.Library.Core.Asp.Types.Constants.UFEventTarget.html
+  name: UFEventTarget
+  nameWithType: UFEventTarget
+  fullName: UltraForce.Library.Core.Asp.Types.Constants.UFEventTarget
 - uid: UltraForce.Library.Core.Asp.Types.Constants.UFFontAwesome
   commentId: T:UltraForce.Library.Core.Asp.Types.Constants.UFFontAwesome
   href: UltraForce.Library.Core.Asp.Types.Constants.UFFontAwesome.html

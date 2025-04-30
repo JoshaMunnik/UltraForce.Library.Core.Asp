@@ -1,0 +1,208 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFPopupTransitionEnum
+  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFPopupTransitionEnum
+  id: UFPopupTransitionEnum
+  parent: UltraForce.Library.Core.Asp.Types.Enums
+  children:
+  - UltraForce.Library.Core.Asp.Types.Enums.UFPopupTransitionEnum.Fade
+  - UltraForce.Library.Core.Asp.Types.Enums.UFPopupTransitionEnum.None
+  - UltraForce.Library.Core.Asp.Types.Enums.UFPopupTransitionEnum.SlideHorizontally
+  - UltraForce.Library.Core.Asp.Types.Enums.UFPopupTransitionEnum.SlideVertically
+  langs:
+  - csharp
+  - vb
+  name: UFPopupTransitionEnum
+  nameWithType: UFPopupTransitionEnum
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFPopupTransitionEnum
+  type: Enum
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFPopupTransitionEnum.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: UFPopupTransitionEnum
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFPopupTransitionEnum.cs
+    startLine: 36
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: How to show and hide the popup.
+  example: []
+  syntax:
+    content: public enum UFPopupTransitionEnum
+    content.vb: Public Enum UFPopupTransitionEnum
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFPopupTransitionEnum.None
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFPopupTransitionEnum.None
+  id: None
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFPopupTransitionEnum
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: UFPopupTransitionEnum.None
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFPopupTransitionEnum.None
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFPopupTransitionEnum.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: None
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFPopupTransitionEnum.cs
+    startLine: 41
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Just show and hide the popup.
+  example: []
+  syntax:
+    content: None = 0
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFPopupTransitionEnum
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFPopupTransitionEnum.Fade
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFPopupTransitionEnum.Fade
+  id: Fade
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFPopupTransitionEnum
+  langs:
+  - csharp
+  - vb
+  name: Fade
+  nameWithType: UFPopupTransitionEnum.Fade
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFPopupTransitionEnum.Fade
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFPopupTransitionEnum.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: Fade
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFPopupTransitionEnum.cs
+    startLine: 47
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Show and hide the popup with a fade effect.
+  example: []
+  syntax:
+    content: Fade = 1
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFPopupTransitionEnum
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFPopupTransitionEnum.SlideVertically
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFPopupTransitionEnum.SlideVertically
+  id: SlideVertically
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFPopupTransitionEnum
+  langs:
+  - csharp
+  - vb
+  name: SlideVertically
+  nameWithType: UFPopupTransitionEnum.SlideVertically
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFPopupTransitionEnum.SlideVertically
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFPopupTransitionEnum.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: SlideVertically
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFPopupTransitionEnum.cs
+    startLine: 53
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Show and hide the popup with a slide effect.
+  example: []
+  syntax:
+    content: SlideVertically = 2
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFPopupTransitionEnum
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFPopupTransitionEnum.SlideHorizontally
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFPopupTransitionEnum.SlideHorizontally
+  id: SlideHorizontally
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFPopupTransitionEnum
+  langs:
+  - csharp
+  - vb
+  name: SlideHorizontally
+  nameWithType: UFPopupTransitionEnum.SlideHorizontally
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFPopupTransitionEnum.SlideHorizontally
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFPopupTransitionEnum.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: SlideHorizontally
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFPopupTransitionEnum.cs
+    startLine: 59
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Show and hide the popup with a slide effect.
+  example: []
+  syntax:
+    content: SlideHorizontally = 3
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFPopupTransitionEnum
+references:
+- uid: UltraForce.Library.Core.Asp.Types.Enums
+  commentId: N:UltraForce.Library.Core.Asp.Types.Enums
+  href: UltraForce.html
+  name: UltraForce.Library.Core.Asp.Types.Enums
+  nameWithType: UltraForce.Library.Core.Asp.Types.Enums
+  fullName: UltraForce.Library.Core.Asp.Types.Enums
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types
+    name: Types
+    href: UltraForce.Library.Core.Asp.Types.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types.Enums
+    name: Enums
+    href: UltraForce.Library.Core.Asp.Types.Enums.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types
+    name: Types
+    href: UltraForce.Library.Core.Asp.Types.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types.Enums
+    name: Enums
+    href: UltraForce.Library.Core.Asp.Types.Enums.html
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFPopupTransitionEnum
+  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFPopupTransitionEnum
+  parent: UltraForce.Library.Core.Asp.Types.Enums
+  href: UltraForce.Library.Core.Asp.Types.Enums.UFPopupTransitionEnum.html
+  name: UFPopupTransitionEnum
+  nameWithType: UFPopupTransitionEnum
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFPopupTransitionEnum

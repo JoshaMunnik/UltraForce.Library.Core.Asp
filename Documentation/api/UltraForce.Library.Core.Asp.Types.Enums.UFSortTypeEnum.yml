@@ -1,0 +1,240 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFSortTypeEnum
+  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFSortTypeEnum
+  id: UFSortTypeEnum
+  parent: UltraForce.Library.Core.Asp.Types.Enums
+  children:
+  - UltraForce.Library.Core.Asp.Types.Enums.UFSortTypeEnum.Auto
+  - UltraForce.Library.Core.Asp.Types.Enums.UFSortTypeEnum.Date
+  - UltraForce.Library.Core.Asp.Types.Enums.UFSortTypeEnum.None
+  - UltraForce.Library.Core.Asp.Types.Enums.UFSortTypeEnum.Number
+  - UltraForce.Library.Core.Asp.Types.Enums.UFSortTypeEnum.Text
+  langs:
+  - csharp
+  - vb
+  name: UFSortTypeEnum
+  nameWithType: UFSortTypeEnum
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFSortTypeEnum
+  type: Enum
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFSortTypeEnum.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: UFSortTypeEnum
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFSortTypeEnum.cs
+    startLine: 37
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Determines how a column is sorted in a table.
+  example: []
+  syntax:
+    content: public enum UFSortTypeEnum
+    content.vb: Public Enum UFSortTypeEnum
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFSortTypeEnum.Auto
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFSortTypeEnum.Auto
+  id: Auto
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFSortTypeEnum
+  langs:
+  - csharp
+  - vb
+  name: Auto
+  nameWithType: UFSortTypeEnum.Auto
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFSortTypeEnum.Auto
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFSortTypeEnum.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: Auto
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFSortTypeEnum.cs
+    startLine: 43
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: >-
+    Determine type from UFTableHeaderCellTagHelperBase&lt;TTable,TTableRow&gt;.For (if any), else defaults to
+
+    text
+  example: []
+  syntax:
+    content: Auto = 0
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFSortTypeEnum
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFSortTypeEnum.Text
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFSortTypeEnum.Text
+  id: Text
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFSortTypeEnum
+  langs:
+  - csharp
+  - vb
+  name: Text
+  nameWithType: UFSortTypeEnum.Text
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFSortTypeEnum.Text
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFSortTypeEnum.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: Text
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFSortTypeEnum.cs
+    startLine: 48
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Sort values as text
+  example: []
+  syntax:
+    content: Text = 1
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFSortTypeEnum
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFSortTypeEnum.Number
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFSortTypeEnum.Number
+  id: Number
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFSortTypeEnum
+  langs:
+  - csharp
+  - vb
+  name: Number
+  nameWithType: UFSortTypeEnum.Number
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFSortTypeEnum.Number
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFSortTypeEnum.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: Number
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFSortTypeEnum.cs
+    startLine: 54
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Sort values as number
+  example: []
+  syntax:
+    content: Number = 2
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFSortTypeEnum
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFSortTypeEnum.Date
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFSortTypeEnum.Date
+  id: Date
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFSortTypeEnum
+  langs:
+  - csharp
+  - vb
+  name: Date
+  nameWithType: UFSortTypeEnum.Date
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFSortTypeEnum.Date
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFSortTypeEnum.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: Date
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFSortTypeEnum.cs
+    startLine: 60
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Sort values as dates
+  example: []
+  syntax:
+    content: Date = 3
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFSortTypeEnum
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFSortTypeEnum.None
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFSortTypeEnum.None
+  id: None
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFSortTypeEnum
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: UFSortTypeEnum.None
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFSortTypeEnum.None
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFSortTypeEnum.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: None
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFSortTypeEnum.cs
+    startLine: 66
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: No sorting
+  example: []
+  syntax:
+    content: None = 4
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFSortTypeEnum
+references:
+- uid: UltraForce.Library.Core.Asp.Types.Enums
+  commentId: N:UltraForce.Library.Core.Asp.Types.Enums
+  href: UltraForce.html
+  name: UltraForce.Library.Core.Asp.Types.Enums
+  nameWithType: UltraForce.Library.Core.Asp.Types.Enums
+  fullName: UltraForce.Library.Core.Asp.Types.Enums
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types
+    name: Types
+    href: UltraForce.Library.Core.Asp.Types.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types.Enums
+    name: Enums
+    href: UltraForce.Library.Core.Asp.Types.Enums.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types
+    name: Types
+    href: UltraForce.Library.Core.Asp.Types.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types.Enums
+    name: Enums
+    href: UltraForce.Library.Core.Asp.Types.Enums.html
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFSortTypeEnum
+  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFSortTypeEnum
+  parent: UltraForce.Library.Core.Asp.Types.Enums
+  href: UltraForce.Library.Core.Asp.Types.Enums.UFSortTypeEnum.html
+  name: UFSortTypeEnum
+  nameWithType: UFSortTypeEnum
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFSortTypeEnum

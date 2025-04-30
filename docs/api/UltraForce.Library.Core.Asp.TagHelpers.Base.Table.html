@@ -100,19 +100,43 @@ Classes
 </dd>
     </dl>
     <dl class="jumplist">
-      <dt><a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase-2.html">UFTableCellTagHelperBase&lt;TTable, TTableRow&gt;</a></dt>
-      <dd><p>Creates a table cell. The cell can be self-closing or can contain content with a separate
+      <dt><a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableChildTagHelperBase-3.html">UFTableChildTagHelperBase&lt;TTable, TRow, TCell&gt;</a></dt>
+      <dd><p>This base class can be used for tag helpers that are placed with a
+<a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.html">UFTableTagHelperBase</a>. The class defines protected methods to get a reference
+to the table, row and cell instance.</p>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataCellTagHelperBase-2.html">UFTableDataCellTagHelperBase&lt;TTable, TTableRow&gt;</a></dt>
+      <dd><p>Creates a table data cell. The cell can be self-closing or can contain content with a separate
 closing tag.</p>
 <p>
-The generated td or th element always uses an opening and closing tag.
+The generated td element always uses an opening and closing tag.
 </p>
 <p>
-Rendered html for header:
-<pre><code class="lang-csharp">&lt;th class="{GetTableCellClasses()}}" [style="min-width: {MinWidth}; max-width: {MaxWidth}; box-sizing: content-box"]&gt;{children}&lt;/th&gt;</code></pre>
-
-<p>
-Rendered html for data:
+Rendered html:
 <pre><code class="lang-csharp">&lt;td class="{GetTableCellClasses()}}" [style="width: {MinWidth}; max-width: {MaxWidth}; box-sizing: content-box"]&gt;{children}&lt;/td&gt;</code></pre>
+
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataRowTagHelperBase-1.html">UFTableDataRowTagHelperBase&lt;TTable&gt;</a></dt>
+      <dd><p>Creates a table row. Renders:</p>
+<pre><code class="lang-csharp">&lt;tr class="{GetTableRowClasses()}&gt;
+  {children}
+&lt;/tr&gt;</code></pre>
+</dd>
+    </dl>
+    <dl class="jumplist">
+      <dt><a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableHeaderCellTagHelperBase-2.html">UFTableHeaderCellTagHelperBase&lt;TTable, TTableRow&gt;</a></dt>
+      <dd><p>Creates a table header cell. The cell can be self-closing or can contain content with a separate
+closing tag.</p>
+<p>
+The generated th element always uses an opening and closing tag.
+</p>
+<p>
+Rendered html:
+<pre><code class="lang-csharp">&lt;th class="{GetTableCellClasses()}}" [style="min-width: {MinWidth}; max-width: {MaxWidth}; box-sizing: content-box"]&gt;{children}&lt;/th&gt;</code></pre>
 
 <p>
 Rendered html for buttons (a div is used so that flex or grid styling can be used):
@@ -125,14 +149,7 @@ Rendered html for buttons (a div is used so that flex or grid styling can be use
 </dd>
     </dl>
     <dl class="jumplist">
-      <dt><a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableChildTagHelperBase-3.html">UFTableChildTagHelperBase&lt;TTable, TRow, TCell&gt;</a></dt>
-      <dd><p>This base class can be used for tag helpers that are placed with a
-<a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.html">UFTableTagHelperBase</a>. The class defines protected methods to get a reference
-to the table, row and cell instance.</p>
-</dd>
-    </dl>
-    <dl class="jumplist">
-      <dt><a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableRowTagHelperBase-1.html">UFTableRowTagHelperBase&lt;TTable&gt;</a></dt>
+      <dt><a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableHeaderRowTagHelperBase-1.html">UFTableHeaderRowTagHelperBase&lt;TTable&gt;</a></dt>
       <dd><p>Creates a table row. Renders:</p>
 <pre><code class="lang-csharp">&lt;tr class="{GetTableRowClasses()}&gt;
   {children}

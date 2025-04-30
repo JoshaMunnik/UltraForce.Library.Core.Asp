@@ -20,3 +20,65 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+/**
+ GRID
+ */
+
+.test-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.test-filter-button {
+  
+}
+   
+.test-filter-input {
+  
+}
+
+.test-filter-container {
+  
+}
+
+.test-grid-container {
+  
+}
+
+.test-grid-sort-ascending {
+  &:after {
+    content: '(down)'
+  }
+}
+
+.test-grid-sort-descending {
+  &:after {
+    content: '(up)'
+  }
+}
+
+.test-grid-body {
+  padding: 1rem 0;
+  background: yellow;
+  display: grid;
+  grid-template-columns: subgrid;
+  grid-column: 1 / -1;
+}
+
+.test-grid-group {
+  
+}
+
+.test-grid-control {
+  font-weight: 600;
+}
+
+.test-grid--is-button {
+  
+}
+
+.test-grid-item {
+  
+}

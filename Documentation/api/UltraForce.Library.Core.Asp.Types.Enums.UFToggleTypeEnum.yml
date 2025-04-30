@@ -1,0 +1,208 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFToggleTypeEnum
+  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFToggleTypeEnum
+  id: UFToggleTypeEnum
+  parent: UltraForce.Library.Core.Asp.Types.Enums
+  children:
+  - UltraForce.Library.Core.Asp.Types.Enums.UFToggleTypeEnum.Auto
+  - UltraForce.Library.Core.Asp.Types.Enums.UFToggleTypeEnum.Property
+  - UltraForce.Library.Core.Asp.Types.Enums.UFToggleTypeEnum.Valid
+  - UltraForce.Library.Core.Asp.Types.Enums.UFToggleTypeEnum.Value
+  langs:
+  - csharp
+  - vb
+  name: UFToggleTypeEnum
+  nameWithType: UFToggleTypeEnum
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFToggleTypeEnum
+  type: Enum
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFToggleTypeEnum.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: UFToggleTypeEnum
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFToggleTypeEnum.cs
+    startLine: 36
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Possible toggle types.
+  example: []
+  syntax:
+    content: public enum UFToggleTypeEnum
+    content.vb: Public Enum UFToggleTypeEnum
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFToggleTypeEnum.Value
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFToggleTypeEnum.Value
+  id: Value
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFToggleTypeEnum
+  langs:
+  - csharp
+  - vb
+  name: Value
+  nameWithType: UFToggleTypeEnum.Value
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFToggleTypeEnum.Value
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFToggleTypeEnum.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: Value
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFToggleTypeEnum.cs
+    startLine: 41
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Toggle on value
+  example: []
+  syntax:
+    content: Value = 0
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFToggleTypeEnum
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFToggleTypeEnum.Valid
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFToggleTypeEnum.Valid
+  id: Valid
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFToggleTypeEnum
+  langs:
+  - csharp
+  - vb
+  name: Valid
+  nameWithType: UFToggleTypeEnum.Valid
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFToggleTypeEnum.Valid
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFToggleTypeEnum.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: Valid
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFToggleTypeEnum.cs
+    startLine: 47
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Toggle on valid state
+  example: []
+  syntax:
+    content: Valid = 1
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFToggleTypeEnum
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFToggleTypeEnum.Property
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFToggleTypeEnum.Property
+  id: Property
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFToggleTypeEnum
+  langs:
+  - csharp
+  - vb
+  name: Property
+  nameWithType: UFToggleTypeEnum.Property
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFToggleTypeEnum.Property
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFToggleTypeEnum.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: Property
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFToggleTypeEnum.cs
+    startLine: 53
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Toggle on property value
+  example: []
+  syntax:
+    content: Property = 2
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFToggleTypeEnum
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFToggleTypeEnum.Auto
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFToggleTypeEnum.Auto
+  id: Auto
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFToggleTypeEnum
+  langs:
+  - csharp
+  - vb
+  name: Auto
+  nameWithType: UFToggleTypeEnum.Auto
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFToggleTypeEnum.Auto
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFToggleTypeEnum.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: Auto
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFToggleTypeEnum.cs
+    startLine: 59
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Choose toggle based on other data attributes
+  example: []
+  syntax:
+    content: Auto = 3
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFToggleTypeEnum
+references:
+- uid: UltraForce.Library.Core.Asp.Types.Enums
+  commentId: N:UltraForce.Library.Core.Asp.Types.Enums
+  href: UltraForce.html
+  name: UltraForce.Library.Core.Asp.Types.Enums
+  nameWithType: UltraForce.Library.Core.Asp.Types.Enums
+  fullName: UltraForce.Library.Core.Asp.Types.Enums
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types
+    name: Types
+    href: UltraForce.Library.Core.Asp.Types.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types.Enums
+    name: Enums
+    href: UltraForce.Library.Core.Asp.Types.Enums.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types
+    name: Types
+    href: UltraForce.Library.Core.Asp.Types.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types.Enums
+    name: Enums
+    href: UltraForce.Library.Core.Asp.Types.Enums.html
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFToggleTypeEnum
+  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFToggleTypeEnum
+  parent: UltraForce.Library.Core.Asp.Types.Enums
+  href: UltraForce.Library.Core.Asp.Types.Enums.UFToggleTypeEnum.html
+  name: UFToggleTypeEnum
+  nameWithType: UFToggleTypeEnum
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFToggleTypeEnum

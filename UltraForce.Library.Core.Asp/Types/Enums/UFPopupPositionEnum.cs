@@ -1,12 +1,12 @@
-// <copyright file="UFTableRowTypeEnum.cs" company="Ultra Force Development">
-// Ultra Force Library - Copyright (C) 2024 Ultra Force Development
+// <copyright file="UFPopupPositionEnum.cs" company="Ultra Force Development">
+// Ultra Force Library - Copyright (C) 2025 Ultra Force Development
 // </copyright>
 // <author>Josha Munnik</author>
 // <email>josha@ultraforce.com</email>
 // <license>
 // The MIT License (MIT)
 //
-// Copyright (C) 2024 Ultra Force Development
+// Copyright (C) 2025 Ultra Force Development
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to 
@@ -27,20 +27,30 @@
 // IN THE SOFTWARE.
 // </license>
 
+using System.ComponentModel;
+
 namespace UltraForce.Library.Core.Asp.Types.Enums;
 
 /// <summary>
-/// The row types for a row
+/// How to position the popup relative to the clicked element.
 /// </summary>
-public enum UFTableRowTypeEnum
+public enum UFPopupPositionEnum
 {
   /// <summary>
-  /// Row is a header row
+  /// Vertical placement before or after the target element.
   /// </summary>
-  Header,
-
+  [Description("vertical")]
+  Vertical,
+  
   /// <summary>
-  /// Row is a data row
+  /// Horizontal placement before or after the target element.
   /// </summary>
-  Data
+  [Description("horizontal")]
+  Horizontal,
+  
+  /// <summary>
+  /// Overlaps the target element.
+  /// </summary>
+  [Description("overlap")]
+  Overlap,
 }

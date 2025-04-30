@@ -48,7 +48,8 @@ items:
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataNameTagHelperBase
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataValueTagHelperBase
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase
-  - UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase`2
+  - UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridHeaderTagHelperBaseBase
+  - UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridItemTagHelperBaseBase
   implements:
   - Microsoft.AspNetCore.Razor.TagHelpers.ITagHelper
   - Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent

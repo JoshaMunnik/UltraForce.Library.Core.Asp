@@ -1,12 +1,12 @@
-// <copyright file="UFTableCellTypeEnum.cs" company="Ultra Force Development">
-// Ultra Force Library - Copyright (C) 2024 Ultra Force Development
+// <copyright file="UFEventTarget.cs" company="Ultra Force Development">
+// Ultra Force Library - Copyright (C) 2025 Ultra Force Development
 // </copyright>
 // <author>Josha Munnik</author>
 // <email>josha@ultraforce.com</email>
 // <license>
 // The MIT License (MIT)
 //
-// Copyright (C) 2024 Ultra Force Development
+// Copyright (C) 2025 Ultra Force Development
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
 // of this software and associated documentation files (the "Software"), to 
@@ -27,26 +27,40 @@
 // IN THE SOFTWARE.
 // </license>
 
-namespace UltraForce.Library.Core.Asp.Types.Enums;
+namespace UltraForce.Library.Core.Asp.Types.Constants;
 
 /// <summary>
-/// The type of cell generated.
+/// Predefined targets for the `data-uf-event-target` attribute.
 /// </summary>
-public enum UFTableCellTypeEnum
+public static class UFEventTarget
 {
   /// <summary>
-  /// Determine the type of cell automatically. If the cell is in the header row it will be a
-  /// <see cref="Header"/> cell, else it will be a <see cref="Data"/> cell.
+  /// Target is the own element
   /// </summary>
-  Auto,
+  public const string Self = "_self";
   
   /// <summary>
-  /// Cell is a data cell
+  /// Target is the parent of the element
   /// </summary>
-  Data,
-
+  public const string Parent = "_parent";
+  
   /// <summary>
-  /// Cell is a header cell
+  /// Target is the next sibling
   /// </summary>
-  Header
+  public const string Next = "_next";
+  
+  /// <summary>
+  /// Target is the previous sibling
+  /// </summary>
+  public const string Previous = "_previous";
+  
+  /// <summary>
+  /// Target is the parent of the parent of the element.
+  /// </summary>
+  public const string Grandparent = "_grandparent";
+  
+  /// <summary>
+  /// Target is the nearest parent that is a dialog tag.
+  /// </summary>
+  public const string Dialog = "_dialog";
 }

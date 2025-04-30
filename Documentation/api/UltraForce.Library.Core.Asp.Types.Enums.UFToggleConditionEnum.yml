@@ -1,0 +1,179 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFToggleConditionEnum
+  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFToggleConditionEnum
+  id: UFToggleConditionEnum
+  parent: UltraForce.Library.Core.Asp.Types.Enums
+  children:
+  - UltraForce.Library.Core.Asp.Types.Enums.UFToggleConditionEnum.All
+  - UltraForce.Library.Core.Asp.Types.Enums.UFToggleConditionEnum.Any
+  - UltraForce.Library.Core.Asp.Types.Enums.UFToggleConditionEnum.None
+  langs:
+  - csharp
+  - vb
+  name: UFToggleConditionEnum
+  nameWithType: UFToggleConditionEnum
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFToggleConditionEnum
+  type: Enum
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFToggleConditionEnum.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: UFToggleConditionEnum
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFToggleConditionEnum.cs
+    startLine: 36
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: When the condition is true.
+  example: []
+  syntax:
+    content: public enum UFToggleConditionEnum
+    content.vb: Public Enum UFToggleConditionEnum
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFToggleConditionEnum.Any
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFToggleConditionEnum.Any
+  id: Any
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFToggleConditionEnum
+  langs:
+  - csharp
+  - vb
+  name: Any
+  nameWithType: UFToggleConditionEnum.Any
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFToggleConditionEnum.Any
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFToggleConditionEnum.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: Any
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFToggleConditionEnum.cs
+    startLine: 41
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: True if any matches.
+  example: []
+  syntax:
+    content: Any = 0
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFToggleConditionEnum
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFToggleConditionEnum.All
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFToggleConditionEnum.All
+  id: All
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFToggleConditionEnum
+  langs:
+  - csharp
+  - vb
+  name: All
+  nameWithType: UFToggleConditionEnum.All
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFToggleConditionEnum.All
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFToggleConditionEnum.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: All
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFToggleConditionEnum.cs
+    startLine: 47
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: True if all matches.
+  example: []
+  syntax:
+    content: All = 1
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFToggleConditionEnum
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFToggleConditionEnum.None
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFToggleConditionEnum.None
+  id: None
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFToggleConditionEnum
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: UFToggleConditionEnum.None
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFToggleConditionEnum.None
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFToggleConditionEnum.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: None
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFToggleConditionEnum.cs
+    startLine: 53
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: True if none matches.
+  example: []
+  syntax:
+    content: None = 2
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFToggleConditionEnum
+references:
+- uid: UltraForce.Library.Core.Asp.Types.Enums
+  commentId: N:UltraForce.Library.Core.Asp.Types.Enums
+  href: UltraForce.html
+  name: UltraForce.Library.Core.Asp.Types.Enums
+  nameWithType: UltraForce.Library.Core.Asp.Types.Enums
+  fullName: UltraForce.Library.Core.Asp.Types.Enums
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types
+    name: Types
+    href: UltraForce.Library.Core.Asp.Types.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types.Enums
+    name: Enums
+    href: UltraForce.Library.Core.Asp.Types.Enums.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types
+    name: Types
+    href: UltraForce.Library.Core.Asp.Types.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types.Enums
+    name: Enums
+    href: UltraForce.Library.Core.Asp.Types.Enums.html
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFToggleConditionEnum
+  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFToggleConditionEnum
+  parent: UltraForce.Library.Core.Asp.Types.Enums
+  href: UltraForce.Library.Core.Asp.Types.Enums.UFToggleConditionEnum.html
+  name: UFToggleConditionEnum
+  nameWithType: UFToggleConditionEnum
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFToggleConditionEnum

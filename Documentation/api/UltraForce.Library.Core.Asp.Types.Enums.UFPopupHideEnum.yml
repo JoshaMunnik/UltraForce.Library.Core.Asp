@@ -1,0 +1,150 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFPopupHideEnum
+  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFPopupHideEnum
+  id: UFPopupHideEnum
+  parent: UltraForce.Library.Core.Asp.Types.Enums
+  children:
+  - UltraForce.Library.Core.Asp.Types.Enums.UFPopupHideEnum.Always
+  - UltraForce.Library.Core.Asp.Types.Enums.UFPopupHideEnum.Tree
+  langs:
+  - csharp
+  - vb
+  name: UFPopupHideEnum
+  nameWithType: UFPopupHideEnum
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFPopupHideEnum
+  type: Enum
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFPopupHideEnum.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: UFPopupHideEnum
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFPopupHideEnum.cs
+    startLine: 36
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: When to hide the popup.
+  example: []
+  syntax:
+    content: public enum UFPopupHideEnum
+    content.vb: Public Enum UFPopupHideEnum
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFPopupHideEnum.Tree
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFPopupHideEnum.Tree
+  id: Tree
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFPopupHideEnum
+  langs:
+  - csharp
+  - vb
+  name: Tree
+  nameWithType: UFPopupHideEnum.Tree
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFPopupHideEnum.Tree
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFPopupHideEnum.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: Tree
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFPopupHideEnum.cs
+    startLine: 41
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Hide the popup when the user clicks outside the popup and any child popups.
+  example: []
+  syntax:
+    content: Tree = 0
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFPopupHideEnum
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFPopupHideEnum.Always
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFPopupHideEnum.Always
+  id: Always
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFPopupHideEnum
+  langs:
+  - csharp
+  - vb
+  name: Always
+  nameWithType: UFPopupHideEnum.Always
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFPopupHideEnum.Always
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFPopupHideEnum.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: Always
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFPopupHideEnum.cs
+    startLine: 47
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Hide the popup whenever the user clicks outside the popup.
+  example: []
+  syntax:
+    content: Always = 1
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFPopupHideEnum
+references:
+- uid: UltraForce.Library.Core.Asp.Types.Enums
+  commentId: N:UltraForce.Library.Core.Asp.Types.Enums
+  href: UltraForce.html
+  name: UltraForce.Library.Core.Asp.Types.Enums
+  nameWithType: UltraForce.Library.Core.Asp.Types.Enums
+  fullName: UltraForce.Library.Core.Asp.Types.Enums
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types
+    name: Types
+    href: UltraForce.Library.Core.Asp.Types.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types.Enums
+    name: Enums
+    href: UltraForce.Library.Core.Asp.Types.Enums.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types
+    name: Types
+    href: UltraForce.Library.Core.Asp.Types.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types.Enums
+    name: Enums
+    href: UltraForce.Library.Core.Asp.Types.Enums.html
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFPopupHideEnum
+  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFPopupHideEnum
+  parent: UltraForce.Library.Core.Asp.Types.Enums
+  href: UltraForce.Library.Core.Asp.Types.Enums.UFPopupHideEnum.html
+  name: UFPopupHideEnum
+  nameWithType: UFPopupHideEnum
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFPopupHideEnum

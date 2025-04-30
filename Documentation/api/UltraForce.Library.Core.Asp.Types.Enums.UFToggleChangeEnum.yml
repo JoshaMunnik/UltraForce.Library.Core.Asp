@@ -1,0 +1,208 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFToggleChangeEnum
+  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFToggleChangeEnum
+  id: UFToggleChangeEnum
+  parent: UltraForce.Library.Core.Asp.Types.Enums
+  children:
+  - UltraForce.Library.Core.Asp.Types.Enums.UFToggleChangeEnum.Auto
+  - UltraForce.Library.Core.Asp.Types.Enums.UFToggleChangeEnum.Enable
+  - UltraForce.Library.Core.Asp.Types.Enums.UFToggleChangeEnum.None
+  - UltraForce.Library.Core.Asp.Types.Enums.UFToggleChangeEnum.Visible
+  langs:
+  - csharp
+  - vb
+  name: UFToggleChangeEnum
+  nameWithType: UFToggleChangeEnum
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFToggleChangeEnum
+  type: Enum
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFToggleChangeEnum.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: UFToggleChangeEnum
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFToggleChangeEnum.cs
+    startLine: 36
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: How to change an element.
+  example: []
+  syntax:
+    content: public enum UFToggleChangeEnum
+    content.vb: Public Enum UFToggleChangeEnum
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFToggleChangeEnum.Enable
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFToggleChangeEnum.Enable
+  id: Enable
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFToggleChangeEnum
+  langs:
+  - csharp
+  - vb
+  name: Enable
+  nameWithType: UFToggleChangeEnum.Enable
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFToggleChangeEnum.Enable
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFToggleChangeEnum.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: Enable
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFToggleChangeEnum.cs
+    startLine: 41
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Enables or disables the element.
+  example: []
+  syntax:
+    content: Enable = 0
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFToggleChangeEnum
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFToggleChangeEnum.Visible
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFToggleChangeEnum.Visible
+  id: Visible
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFToggleChangeEnum
+  langs:
+  - csharp
+  - vb
+  name: Visible
+  nameWithType: UFToggleChangeEnum.Visible
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFToggleChangeEnum.Visible
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFToggleChangeEnum.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: Visible
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFToggleChangeEnum.cs
+    startLine: 47
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Shows or hides the element.
+  example: []
+  syntax:
+    content: Visible = 1
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFToggleChangeEnum
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFToggleChangeEnum.None
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFToggleChangeEnum.None
+  id: None
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFToggleChangeEnum
+  langs:
+  - csharp
+  - vb
+  name: None
+  nameWithType: UFToggleChangeEnum.None
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFToggleChangeEnum.None
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFToggleChangeEnum.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: None
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFToggleChangeEnum.cs
+    startLine: 53
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: No change.
+  example: []
+  syntax:
+    content: None = 2
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFToggleChangeEnum
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFToggleChangeEnum.Auto
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFToggleChangeEnum.Auto
+  id: Auto
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFToggleChangeEnum
+  langs:
+  - csharp
+  - vb
+  name: Auto
+  nameWithType: UFToggleChangeEnum.Auto
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFToggleChangeEnum.Auto
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFToggleChangeEnum.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: Auto
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFToggleChangeEnum.cs
+    startLine: 59
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Depends on the type of element
+  example: []
+  syntax:
+    content: Auto = 3
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFToggleChangeEnum
+references:
+- uid: UltraForce.Library.Core.Asp.Types.Enums
+  commentId: N:UltraForce.Library.Core.Asp.Types.Enums
+  href: UltraForce.html
+  name: UltraForce.Library.Core.Asp.Types.Enums
+  nameWithType: UltraForce.Library.Core.Asp.Types.Enums
+  fullName: UltraForce.Library.Core.Asp.Types.Enums
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types
+    name: Types
+    href: UltraForce.Library.Core.Asp.Types.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types.Enums
+    name: Enums
+    href: UltraForce.Library.Core.Asp.Types.Enums.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types
+    name: Types
+    href: UltraForce.Library.Core.Asp.Types.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types.Enums
+    name: Enums
+    href: UltraForce.Library.Core.Asp.Types.Enums.html
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFToggleChangeEnum
+  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFToggleChangeEnum
+  parent: UltraForce.Library.Core.Asp.Types.Enums
+  href: UltraForce.Library.Core.Asp.Types.Enums.UFToggleChangeEnum.html
+  name: UFToggleChangeEnum
+  nameWithType: UFToggleChangeEnum
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFToggleChangeEnum

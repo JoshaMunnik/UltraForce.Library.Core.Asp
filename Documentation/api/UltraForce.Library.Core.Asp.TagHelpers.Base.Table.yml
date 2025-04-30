@@ -5,9 +5,11 @@ items:
   id: UltraForce.Library.Core.Asp.TagHelpers.Base.Table
   children:
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableButtonTagHelperBase`3
-  - UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase`2
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableChildTagHelperBase`3
-  - UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableRowTagHelperBase`1
+  - UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataCellTagHelperBase`2
+  - UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataRowTagHelperBase`1
+  - UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableHeaderCellTagHelperBase`2
+  - UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableHeaderRowTagHelperBase`1
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase
   langs:
   - csharp
@@ -56,37 +58,6 @@ references:
   - name: " "
   - name: TCell
   - name: )
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase`2
-  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase`2
-  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase-2.html
-  name: UFTableCellTagHelperBase<TTable, TTableRow>
-  nameWithType: UFTableCellTagHelperBase<TTable, TTableRow>
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase<TTable, TTableRow>
-  nameWithType.vb: UFTableCellTagHelperBase(Of TTable, TTableRow)
-  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase(Of TTable, TTableRow)
-  name.vb: UFTableCellTagHelperBase(Of TTable, TTableRow)
-  spec.csharp:
-  - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase`2
-    name: UFTableCellTagHelperBase
-    href: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase-2.html
-  - name: <
-  - name: TTable
-  - name: ','
-  - name: " "
-  - name: TTableRow
-  - name: '>'
-  spec.vb:
-  - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase`2
-    name: UFTableCellTagHelperBase
-    href: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableCellTagHelperBase-2.html
-  - name: (
-  - name: Of
-  - name: " "
-  - name: TTable
-  - name: ','
-  - name: " "
-  - name: TTableRow
-  - name: )
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableChildTagHelperBase`3
   commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableChildTagHelperBase`3
   href: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableChildTagHelperBase-3.html
@@ -124,26 +95,113 @@ references:
   - name: " "
   - name: TCell
   - name: )
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableRowTagHelperBase`1
-  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableRowTagHelperBase`1
-  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableRowTagHelperBase-1.html
-  name: UFTableRowTagHelperBase<TTable>
-  nameWithType: UFTableRowTagHelperBase<TTable>
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableRowTagHelperBase<TTable>
-  nameWithType.vb: UFTableRowTagHelperBase(Of TTable)
-  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableRowTagHelperBase(Of TTable)
-  name.vb: UFTableRowTagHelperBase(Of TTable)
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataCellTagHelperBase`2
+  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataCellTagHelperBase`2
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataCellTagHelperBase-2.html
+  name: UFTableDataCellTagHelperBase<TTable, TTableRow>
+  nameWithType: UFTableDataCellTagHelperBase<TTable, TTableRow>
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataCellTagHelperBase<TTable, TTableRow>
+  nameWithType.vb: UFTableDataCellTagHelperBase(Of TTable, TTableRow)
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataCellTagHelperBase(Of TTable, TTableRow)
+  name.vb: UFTableDataCellTagHelperBase(Of TTable, TTableRow)
   spec.csharp:
-  - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableRowTagHelperBase`1
-    name: UFTableRowTagHelperBase
-    href: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableRowTagHelperBase-1.html
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataCellTagHelperBase`2
+    name: UFTableDataCellTagHelperBase
+    href: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataCellTagHelperBase-2.html
+  - name: <
+  - name: TTable
+  - name: ','
+  - name: " "
+  - name: TTableRow
+  - name: '>'
+  spec.vb:
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataCellTagHelperBase`2
+    name: UFTableDataCellTagHelperBase
+    href: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataCellTagHelperBase-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TTable
+  - name: ','
+  - name: " "
+  - name: TTableRow
+  - name: )
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataRowTagHelperBase`1
+  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataRowTagHelperBase`1
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataRowTagHelperBase-1.html
+  name: UFTableDataRowTagHelperBase<TTable>
+  nameWithType: UFTableDataRowTagHelperBase<TTable>
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataRowTagHelperBase<TTable>
+  nameWithType.vb: UFTableDataRowTagHelperBase(Of TTable)
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataRowTagHelperBase(Of TTable)
+  name.vb: UFTableDataRowTagHelperBase(Of TTable)
+  spec.csharp:
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataRowTagHelperBase`1
+    name: UFTableDataRowTagHelperBase
+    href: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataRowTagHelperBase-1.html
   - name: <
   - name: TTable
   - name: '>'
   spec.vb:
-  - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableRowTagHelperBase`1
-    name: UFTableRowTagHelperBase
-    href: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableRowTagHelperBase-1.html
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataRowTagHelperBase`1
+    name: UFTableDataRowTagHelperBase
+    href: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataRowTagHelperBase-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TTable
+  - name: )
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableHeaderCellTagHelperBase`2
+  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableHeaderCellTagHelperBase`2
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableHeaderCellTagHelperBase-2.html
+  name: UFTableHeaderCellTagHelperBase<TTable, TTableRow>
+  nameWithType: UFTableHeaderCellTagHelperBase<TTable, TTableRow>
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableHeaderCellTagHelperBase<TTable, TTableRow>
+  nameWithType.vb: UFTableHeaderCellTagHelperBase(Of TTable, TTableRow)
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableHeaderCellTagHelperBase(Of TTable, TTableRow)
+  name.vb: UFTableHeaderCellTagHelperBase(Of TTable, TTableRow)
+  spec.csharp:
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableHeaderCellTagHelperBase`2
+    name: UFTableHeaderCellTagHelperBase
+    href: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableHeaderCellTagHelperBase-2.html
+  - name: <
+  - name: TTable
+  - name: ','
+  - name: " "
+  - name: TTableRow
+  - name: '>'
+  spec.vb:
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableHeaderCellTagHelperBase`2
+    name: UFTableHeaderCellTagHelperBase
+    href: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableHeaderCellTagHelperBase-2.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TTable
+  - name: ','
+  - name: " "
+  - name: TTableRow
+  - name: )
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableHeaderRowTagHelperBase`1
+  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableHeaderRowTagHelperBase`1
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableHeaderRowTagHelperBase-1.html
+  name: UFTableHeaderRowTagHelperBase<TTable>
+  nameWithType: UFTableHeaderRowTagHelperBase<TTable>
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableHeaderRowTagHelperBase<TTable>
+  nameWithType.vb: UFTableHeaderRowTagHelperBase(Of TTable)
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableHeaderRowTagHelperBase(Of TTable)
+  name.vb: UFTableHeaderRowTagHelperBase(Of TTable)
+  spec.csharp:
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableHeaderRowTagHelperBase`1
+    name: UFTableHeaderRowTagHelperBase
+    href: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableHeaderRowTagHelperBase-1.html
+  - name: <
+  - name: TTable
+  - name: '>'
+  spec.vb:
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableHeaderRowTagHelperBase`1
+    name: UFTableHeaderRowTagHelperBase
+    href: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableHeaderRowTagHelperBase-1.html
   - name: (
   - name: Of
   - name: " "

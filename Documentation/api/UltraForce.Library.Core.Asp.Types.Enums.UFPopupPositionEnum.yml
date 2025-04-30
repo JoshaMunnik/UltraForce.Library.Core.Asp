@@ -1,0 +1,179 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFPopupPositionEnum
+  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFPopupPositionEnum
+  id: UFPopupPositionEnum
+  parent: UltraForce.Library.Core.Asp.Types.Enums
+  children:
+  - UltraForce.Library.Core.Asp.Types.Enums.UFPopupPositionEnum.Horizontal
+  - UltraForce.Library.Core.Asp.Types.Enums.UFPopupPositionEnum.Overlap
+  - UltraForce.Library.Core.Asp.Types.Enums.UFPopupPositionEnum.Vertical
+  langs:
+  - csharp
+  - vb
+  name: UFPopupPositionEnum
+  nameWithType: UFPopupPositionEnum
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFPopupPositionEnum
+  type: Enum
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFPopupPositionEnum.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: UFPopupPositionEnum
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFPopupPositionEnum.cs
+    startLine: 36
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: How to position the popup relative to the clicked element.
+  example: []
+  syntax:
+    content: public enum UFPopupPositionEnum
+    content.vb: Public Enum UFPopupPositionEnum
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFPopupPositionEnum.Vertical
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFPopupPositionEnum.Vertical
+  id: Vertical
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFPopupPositionEnum
+  langs:
+  - csharp
+  - vb
+  name: Vertical
+  nameWithType: UFPopupPositionEnum.Vertical
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFPopupPositionEnum.Vertical
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFPopupPositionEnum.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: Vertical
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFPopupPositionEnum.cs
+    startLine: 41
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Vertical placement before or after the target element.
+  example: []
+  syntax:
+    content: Vertical = 0
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFPopupPositionEnum
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFPopupPositionEnum.Horizontal
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFPopupPositionEnum.Horizontal
+  id: Horizontal
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFPopupPositionEnum
+  langs:
+  - csharp
+  - vb
+  name: Horizontal
+  nameWithType: UFPopupPositionEnum.Horizontal
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFPopupPositionEnum.Horizontal
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFPopupPositionEnum.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: Horizontal
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFPopupPositionEnum.cs
+    startLine: 47
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Horizontal placement before or after the target element.
+  example: []
+  syntax:
+    content: Horizontal = 1
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFPopupPositionEnum
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFPopupPositionEnum.Overlap
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFPopupPositionEnum.Overlap
+  id: Overlap
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFPopupPositionEnum
+  langs:
+  - csharp
+  - vb
+  name: Overlap
+  nameWithType: UFPopupPositionEnum.Overlap
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFPopupPositionEnum.Overlap
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFPopupPositionEnum.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: Overlap
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFPopupPositionEnum.cs
+    startLine: 53
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Overlaps the target element.
+  example: []
+  syntax:
+    content: Overlap = 2
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFPopupPositionEnum
+references:
+- uid: UltraForce.Library.Core.Asp.Types.Enums
+  commentId: N:UltraForce.Library.Core.Asp.Types.Enums
+  href: UltraForce.html
+  name: UltraForce.Library.Core.Asp.Types.Enums
+  nameWithType: UltraForce.Library.Core.Asp.Types.Enums
+  fullName: UltraForce.Library.Core.Asp.Types.Enums
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types
+    name: Types
+    href: UltraForce.Library.Core.Asp.Types.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types.Enums
+    name: Enums
+    href: UltraForce.Library.Core.Asp.Types.Enums.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types
+    name: Types
+    href: UltraForce.Library.Core.Asp.Types.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types.Enums
+    name: Enums
+    href: UltraForce.Library.Core.Asp.Types.Enums.html
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFPopupPositionEnum
+  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFPopupPositionEnum
+  parent: UltraForce.Library.Core.Asp.Types.Enums
+  href: UltraForce.Library.Core.Asp.Types.Enums.UFPopupPositionEnum.html
+  name: UFPopupPositionEnum
+  nameWithType: UFPopupPositionEnum
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFPopupPositionEnum
