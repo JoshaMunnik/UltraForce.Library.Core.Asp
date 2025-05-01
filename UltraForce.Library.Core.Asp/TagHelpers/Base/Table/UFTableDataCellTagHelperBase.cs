@@ -42,9 +42,15 @@ namespace UltraForce.Library.Core.Asp.TagHelpers.Base.Table;
 /// The generated td element always uses an opening and closing tag.
 /// </para>
 /// <para>
+/// When <see cref="UFGridItemTagHelperBaseBase.MinSize"/>,
+/// <see cref="UFGridItemTagHelperBaseBase.MaxSize"/> or
+/// <see cref="UFGridItemTagHelperBaseBase.Size"/> has been set and the table is not using grid
+/// styling a style attribute is added to the td element.
+/// </para>
+/// <para>
 /// Rendered html:
 /// <code>
-/// &lt;td class="{GetTableCellClasses()}}" [style="width: {MinWidth}; max-width: {MaxWidth}; box-sizing: content-box"]&gt;{children}&lt;/td&gt;
+/// &lt;td class="{GetTableCellClasses()}" [style="width: {MinSize}; max-width: {MaxSize}; width: {Size}, box-sizing: content-box"]&gt;{children}&lt;/td&gt;
 /// </code>
 /// </para>
 /// </summary>
@@ -57,22 +63,6 @@ public abstract class UFTableDataCellTagHelperBase<TTable, TTableRow>(
   where TTable : UFTableTagHelperBase
   where TTableRow : UFTableDataRowTagHelperBase<TTable>
 {
-  #region public properties
-
-  /// <summary>
-  /// When not empty, set this value as min-width value via the style tag. 
-  /// </summary>
-  [HtmlAttributeName("min-width")]
-  public string MinWidth { get; set; } = "";
-
-  /// <summary>
-  /// When not empty, set this value as max-width value via the style tag. 
-  /// </summary>
-  [HtmlAttributeName("max-width")]
-  public string MaxWidth { get; set; } = "";
-
-  #endregion
-
   #region public methods
 
   /// <inheritdoc />
@@ -85,13 +75,15 @@ public abstract class UFTableDataCellTagHelperBase<TTable, TTableRow>(
     context.Items[UFGridTagHelperBaseBase.Cell] = this;
     TTable table = UFTagHelperTools.GetItem<TTable>(context, UFGridTagHelperBaseBase.Grid); 
     TTableRow tableRow = UFTagHelperTools.GetItem<TTableRow>(context, UFGridTagHelperBaseBase.Row);
-    await this.ProcessAsync(context, output, table, tableRow);
+    int cellIndex = table.CellIndex;
+    table.CellIndex++;
+    await this.ProcessAsync(context, output, table, tableRow, cellIndex);
   }
 
   #endregion
 
   #region protected methods
-  
+
   /// <summary>
   /// Executes the tag helper.
   /// </summary>
@@ -99,17 +91,25 @@ public abstract class UFTableDataCellTagHelperBase<TTable, TTableRow>(
   /// <param name="output"></param>
   /// <param name="table">Table the cell is created within</param>
   /// <param name="tableRow">Row the cell is created within</param>
+  /// <param name="cellIndex">Index of cell in the row (0 based)</param>
   /// <returns></returns>
   protected virtual Task ProcessAsync(
     TagHelperContext context,
     TagHelperOutput output,
     TTable table,
-    TTableRow tableRow
+    TTableRow tableRow,
+    int cellIndex
   )
   {
     output.TagMode = TagMode.StartTagAndEndTag;
     output.TagName = "td";
-    this.UpdateClasses(output, table, tableRow);
+    if ((table.ProcessedFirstHeaderRow == null) && (table.ProcessedFirstDataRow == tableRow))
+    {
+      table.CellSizes.Add(this);
+    }
+    string classValue = this.GetTableCellClasses(table, tableRow);
+    UFTagHelperTools.AddClasses(output, classValue);
+    table.SetCellStyle(output, this);
     return Task.CompletedTask;
   }
    
@@ -127,45 +127,6 @@ public abstract class UFTableDataCellTagHelperBase<TTable, TTableRow>(
   )
   {
     return string.Empty;
-  }
-
-  #endregion
-
-  #region private methods
-
-  /// <summary>
-  /// Adds css classes to the classes attribute and process the <see cref="MinWidth"/> and
-  /// <see cref="MaxWidth"/> properties.
-  /// </summary>
-  /// <param name="output"></param>
-  /// <param name="table"></param>
-  /// <param name="tableRow"></param>
-  private void UpdateClasses(
-    TagHelperOutput output,
-    TTable table,
-    TTableRow tableRow
-  )
-  {
-    if ((table.ProcessedFirstHeaderRow == null) && (table.ProcessedFirstDataRow == tableRow))
-    {
-      table.CellCount++;
-    }
-    string classValue = this.GetTableCellClasses(table, tableRow);
-    UFTagHelperTools.AddClasses(output, classValue);
-    string style = "";
-    if (!string.IsNullOrEmpty(this.MinWidth))
-    {
-      style += " min-width: " + this.MinWidth + ";";
-    }
-    if (!string.IsNullOrEmpty(this.MaxWidth))
-    {
-      style += " max-width: " + this.MaxWidth + ";";
-    }
-    if (!string.IsNullOrEmpty(style))
-    {
-      style += " width: 1px; box-sizing: content-box;";
-      output.Attributes.SetAttribute("style", style);
-    }
   }
 
   #endregion

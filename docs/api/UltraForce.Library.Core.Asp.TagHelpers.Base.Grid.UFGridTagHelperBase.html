@@ -89,7 +89,7 @@
 
 
   <h1 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_UFGridTagHelperBase" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase" class="text-break">
-Class UFGridTagHelperBase  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Grid/UFGridTagHelperBase.cs/#L40"><i class="bi bi-code-slash"></i></a>
+Class UFGridTagHelperBase  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Grid/UFGridTagHelperBase.cs/#L41"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -211,7 +211,7 @@ Class UFGridTagHelperBase  <a class="header-action link-secondary" title="View s
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_UFGridTagHelperBase_GroupSize" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.GroupSize">
   GroupSize
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Grid/UFGridTagHelperBase.cs/#L54"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Grid/UFGridTagHelperBase.cs/#L55"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>The number of items per group. Required if the items are not grouped and there are no controls
@@ -244,7 +244,7 @@ to determine the number of items from.</p>
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_UFGridTagHelperBase_RenderGroups" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.RenderGroups">
   RenderGroups
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Grid/UFGridTagHelperBase.cs/#L48"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Grid/UFGridTagHelperBase.cs/#L49"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>When true, any <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridGroupTagHelperBase-1.html">UFGridGroupTagHelperBase&lt;TGrid&gt;</a> within the grid will render itself.
@@ -279,9 +279,9 @@ Else only the children within each group are rendered.</p>
 
   <a id="UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_UFGridTagHelperBase_GetGridClasses_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.GetGridClasses*"></a>
 
-  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_UFGridTagHelperBase_GetGridClasses_System_Int32_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.GetGridClasses(System.Int32)">
-  GetGridClasses(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Grid/UFGridTagHelperBase.cs/#L125"><i class="bi bi-code-slash"></i></a>
+  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_UFGridTagHelperBase_GetGridClasses_System_Collections_Generic_IList_UltraForce_Library_Core_Asp_Types_Interfaces_IUFGridItemSize__" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.GetGridClasses(System.Collections.Generic.IList{UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize})">
+  GetGridClasses(IList&lt;IUFGridItemSize&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Grid/UFGridTagHelperBase.cs/#L131"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Classes for the grid itself.</p>
@@ -289,14 +289,15 @@ Else only the children within each group are rendered.</p>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected virtual string GetGridClasses(int itemCount)</code></pre>
+    <pre><code class="lang-csharp hljs">protected virtual string GetGridClasses(IList&lt;IUFGridItemSize&gt; itemSizes)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
   <dl class="parameters">
-    <dt><code>itemCount</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
-    <dd><p>The number of items per group in the grid. It is 0 when the <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_UFGridTagHelperBase_GroupSize">GroupSize</a> was not
-set and there were no grid control elements.</p>
+    <dt><code>itemSizes</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize.html">IUFGridItemSize</a>&gt;</dt>
+    <dd><p>The sizes determined by either controls or first row of items. If no controls could be
+detected and <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_UFGridTagHelperBase_GroupSize">GroupSize</a> is not set, this list will be empty; since the class
+can not determine the group size.</p>
 </dd>
   </dl>
 
@@ -320,7 +321,7 @@ set and there were no grid control elements.</p>
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_UFGridTagHelperBase_GetGridContainerClasses" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.GetGridContainerClasses">
   GetGridContainerClasses()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Grid/UFGridTagHelperBase.cs/#L112"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Grid/UFGridTagHelperBase.cs/#L117"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns the css classes to use for the grid container. The grid container is only used
@@ -353,7 +354,7 @@ if <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.U
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_UFGridTagHelperBase_GetGroupSize" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.GetGroupSize">
   GetGroupSize()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Grid/UFGridTagHelperBase.cs/#L98"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Grid/UFGridTagHelperBase.cs/#L103"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns the number of items per group. This is either based on <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_UFGridTagHelperBase_GroupSize">GroupSize</a> or
@@ -389,7 +390,7 @@ This value is only valid after the controls have been processed.
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_UFGridTagHelperBase_ProcessAsync_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContext_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)">
   ProcessAsync(TagHelperContext, TagHelperOutput)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Grid/UFGridTagHelperBase.cs/#L61"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Grid/UFGridTagHelperBase.cs/#L62"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Asynchronously executes the <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper">TagHelper</a> with the given <code class="paramref">context</code> and
@@ -435,7 +436,7 @@ This value is only valid after the controls have been processed.
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Grid/UFGridTagHelperBase.cs/#L40" class="edit-link">Edit this page</a>
+          <a href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Grid/UFGridTagHelperBase.cs/#L41" class="edit-link">Edit this page</a>
         </div>
 
 

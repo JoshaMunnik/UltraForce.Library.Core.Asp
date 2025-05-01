@@ -31,6 +31,7 @@ using Microsoft.AspNetCore.Razor.TagHelpers;
 using UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base;
 using UltraForce.Library.Core.Asp.Tools;
 using UltraForce.Library.Core.Asp.Types.Constants;
+using UltraForce.Library.Core.Asp.Types.Interfaces;
 
 namespace UltraForce.Library.Core.Asp.TagHelpers.Base.Grid;
 
@@ -64,14 +65,18 @@ public class UFGridTagHelperBase : UFGridTagHelperBaseBase
   )
   {
     await base.ProcessAsync(context, output);
-    output.TagName = "div";
-    output.TagMode = TagMode.StartTagAndEndTag;
+    this.GridControlCount = 0;
+    this.GridGroupIndex = 0;
+    this.GridItemIndex = 0;
+    this.GridItemSizes.Clear();
     // process the child content explicitly
     TagHelperContent? childContent = await output.GetChildContentAsync();
     if (childContent != null) {
       output.Content.SetHtmlContent(childContent);
     }
-    UFTagHelperTools.AddClasses(output, this.GetGridClasses(this.GroupSize ?? this.GridControlCount));
+    output.TagName = "div";
+    output.TagMode = TagMode.StartTagAndEndTag;
+    UFTagHelperTools.AddClasses(output, this.GetGridClasses(this.GridItemSizes));
     if (!this.Sorting)
     {
       return;
@@ -117,12 +122,13 @@ public class UFGridTagHelperBase : UFGridTagHelperBaseBase
   /// <summary>
   /// Classes for the grid itself.
   /// </summary>
-  /// <param name="itemCount">
-  /// The number of items per group in the grid. It is 0 when the <see cref="GroupSize"/> was not
-  /// set and there were no grid control elements.
+  /// <param name="itemSizes">
+  /// The sizes determined by either controls or first row of items. If no controls could be
+  /// detected and <see cref="GroupSize"/> is not set, this list will be empty; since the class
+  /// can not determine the group size.
   /// </param>
   /// <returns></returns>
-  protected virtual string GetGridClasses(int itemCount)
+  protected virtual string GetGridClasses(IList<IUFGridItemSize> itemSizes)
   {
     return "";
   }
@@ -159,6 +165,11 @@ public class UFGridTagHelperBase : UFGridTagHelperBaseBase
   /// Updated by items inside the grid.
   /// </summary>
   internal int GridItemIndex { get; set; }
+
+  /// <summary>
+  /// Updated by either controls or items in the grid.
+  /// </summary>
+  internal List<IUFGridItemSize> GridItemSizes { get; } = [];
   
   #endregion
 }

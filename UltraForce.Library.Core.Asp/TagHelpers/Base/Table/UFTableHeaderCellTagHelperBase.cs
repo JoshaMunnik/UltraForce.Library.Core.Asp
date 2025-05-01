@@ -28,15 +28,11 @@
 // </license>
 
 using System.Diagnostics.CodeAnalysis;
-using Microsoft.AspNetCore.Mvc.ViewFeatures;
 using Microsoft.AspNetCore.Razor.TagHelpers;
 using UltraForce.Library.Core.Asp.Services;
 using UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base;
 using UltraForce.Library.Core.Asp.Tools;
-using UltraForce.Library.Core.Asp.Types.Constants;
 using UltraForce.Library.Core.Asp.Types.Enums;
-using UltraForce.Library.NetStandard.Extensions;
-using UltraForce.Library.NetStandard.Tools;
 
 namespace UltraForce.Library.Core.Asp.TagHelpers.Base.Table;
 
@@ -47,18 +43,24 @@ namespace UltraForce.Library.Core.Asp.TagHelpers.Base.Table;
 /// The generated th element always uses an opening and closing tag.
 /// </para>
 /// <para>
+/// When <see cref="UFGridItemTagHelperBaseBase.MinSize"/>,
+/// <see cref="UFGridItemTagHelperBaseBase.MaxSize"/> or
+/// <see cref="UFGridItemTagHelperBaseBase.Size"/> has been set and the table is not using grid
+/// styling a style attribute is added to the td element.
+/// </para>
+/// <para>
 /// Rendered html:
 /// <code>
-/// &lt;th class="{GetTableCellClasses()}}" [style="min-width: {MinWidth}; max-width: {MaxWidth}; box-sizing: content-box"]&gt;{children}&lt;/th&gt;
+/// &lt;th class="{GetTableCellClasses()}" [style="min-width: {MinSize}; max-width: {MaxSize}; width: {Size}; box-sizing: content-box"]&gt;{children}&lt;/th&gt;
 /// </code>
 /// </para>
 /// <para>
-/// Rendered html for buttons (a div is used so that flex or grid styling can be used):
+/// Rendered html for buttons (a button is used so that flex or grid styling can be used):
 /// <code>
-/// &lt;td class="{GetTableCellClasses()}}" [style="width: {MinWidth}; max-width: {MaxWidth}; box-sizing: content-box"]&gt;<br/>
-///   &lt;div class="{GetTableHeaderButtonClasses()} &gt;<br/>
+/// &lt;td class="{GetTableCellClasses()}" [style="width: {MinSize}; max-width: {MaxSize}; width: {Size}; box-sizing: content-box"]&gt;<br/>
+///   &lt;button class="{GetTableHeaderButtonClasses()} &gt;<br/>
 ///     {children}<br/>
-///   &lt;/div&gt;<br/>
+///   &lt;/button&gt;<br/>
 /// &lt;/td&gt;
 /// </code>
 /// </para>
@@ -72,22 +74,6 @@ public abstract class UFTableHeaderCellTagHelperBase<TTable, TTableRow>(
   where TTable : UFTableTagHelperBase
   where TTableRow : UFTableHeaderRowTagHelperBase<TTable>
 {
-  #region public properties
-
-  /// <summary>
-  /// When not empty, set this value as min-width value via the style tag. 
-  /// </summary>
-  [HtmlAttributeName("min-width")]
-  public string MinWidth { get; set; } = "";
-
-  /// <summary>
-  /// When not empty, set this value as max-width value via the style tag. 
-  /// </summary>
-  [HtmlAttributeName("max-width")]
-  public string MaxWidth { get; set; } = "";
-
-  #endregion
-
   #region public methods
 
   /// <inheritdoc />
@@ -100,7 +86,9 @@ public abstract class UFTableHeaderCellTagHelperBase<TTable, TTableRow>(
     context.Items[UFGridTagHelperBaseBase.Cell] = this;
     TTable table = UFTagHelperTools.GetItem<TTable>(context, UFGridTagHelperBaseBase.Grid); 
     TTableRow tableRow = UFTagHelperTools.GetItem<TTableRow>(context, UFGridTagHelperBaseBase.Row);
-    await this.ProcessAsync(context, output, table, tableRow);
+    int cellIndex = table.CellIndex;
+    table.CellIndex++;
+    await this.ProcessAsync(context, output, table, tableRow, cellIndex);
   }
 
   #endregion
@@ -113,22 +101,26 @@ public abstract class UFTableHeaderCellTagHelperBase<TTable, TTableRow>(
   /// <param name="context"></param>
   /// <param name="output"></param>
   /// <param name="table">Table the cell is created inside in</param>
+  /// <param name="cellIndex">Index of cell in the row (0 based)</param>
   /// <param name="tableRow">Row the cell is created inside in</param>
   protected virtual Task ProcessAsync(
     TagHelperContext context,
     TagHelperOutput output,
     TTable table,
-    TTableRow tableRow
+    TTableRow tableRow,
+    int cellIndex
   )
   {
     output.TagMode = TagMode.StartTagAndEndTag;
     output.TagName = "th";
-    this.UpdateClasses(output, table, tableRow);
-    UFSortTypeEnum sortType = this.GetSortType();
+    string classValue = this.GetTableCellClasses(table, tableRow);
+    UFTagHelperTools.AddClasses(output, classValue);
+    table.SetCellStyle(output, this);
     if (tableRow == table.ProcessedFirstHeaderRow)
     {
-      table.CellCount++;
+      table.CellSizes.Add(this);
     }
+    UFSortTypeEnum sortType = this.GetSortType();
     if (
       (tableRow == table.ProcessedFirstHeaderRow) && table.Sorting &&
       (sortType != UFSortTypeEnum.None) 
@@ -170,36 +162,6 @@ public abstract class UFTableHeaderCellTagHelperBase<TTable, TTableRow>(
   #endregion
 
   #region private methods
-
-  /// <summary>
-  /// Adds css classes to the classes attribute and process the <see cref="MinWidth"/> property.
-  /// </summary>
-  /// <param name="output"></param>
-  /// <param name="table"></param>
-  /// <param name="tableRow"></param>
-  private void UpdateClasses(
-    TagHelperOutput output,
-    TTable table,
-    TTableRow tableRow
-  )
-  {
-    string classValue = this.GetTableCellClasses(table, tableRow);
-    UFTagHelperTools.AddClasses(output, classValue);
-    string style = "";
-    if (!string.IsNullOrEmpty(this.MinWidth))
-    {
-      style += " min-width: " + this.MinWidth + ";";
-    }
-    if (!string.IsNullOrEmpty(this.MaxWidth))
-    {
-      style += " max-width: " + this.MaxWidth + ";";
-    }
-    if (!string.IsNullOrEmpty(style))
-    {
-      style += " width: 1px; box-sizing: content-box;";
-      output.Attributes.SetAttribute("style", style);
-    }
-  }
 
   /// <summary>
   /// Adds a wrapper for the content of a cell that is clickable for sorting.

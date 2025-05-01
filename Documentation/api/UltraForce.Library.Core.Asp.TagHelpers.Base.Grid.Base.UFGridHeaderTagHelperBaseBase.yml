@@ -8,8 +8,12 @@ items:
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridHeaderTagHelperBaseBase.#ctor(UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer)
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridHeaderTagHelperBaseBase.For
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridHeaderTagHelperBaseBase.GetSortType
+  - UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridHeaderTagHelperBaseBase.MaxSize
+  - UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridHeaderTagHelperBaseBase.MinSize
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridHeaderTagHelperBaseBase.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  - UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridHeaderTagHelperBaseBase.Size
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridHeaderTagHelperBaseBase.SortType
+  - UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridHeaderTagHelperBaseBase.UFGridItemSize
   langs:
   - csharp
   - vb
@@ -24,15 +28,15 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: UFGridHeaderTagHelperBaseBase
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Grid/Base/UFGridHeaderTagHelperBaseBase.cs
-    startLine: 43
+    startLine: 44
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base
   summary: Base class for header items within a grid or table.
   example: []
   syntax:
-    content: 'public abstract class UFGridHeaderTagHelperBaseBase : UFTagHelperWithModelExpressionRenderer, ITagHelper, ITagHelperComponent'
-    content.vb: Public MustInherit Class UFGridHeaderTagHelperBaseBase Inherits UFTagHelperWithModelExpressionRenderer Implements ITagHelper, ITagHelperComponent
+    content: 'public abstract class UFGridHeaderTagHelperBaseBase : UFTagHelperWithModelExpressionRenderer, ITagHelper, ITagHelperComponent, IUFGridItemSize'
+    content.vb: Public MustInherit Class UFGridHeaderTagHelperBaseBase Inherits UFTagHelperWithModelExpressionRenderer Implements ITagHelper, ITagHelperComponent, IUFGridItemSize
   inheritance:
   - System.Object
   - Microsoft.AspNetCore.Razor.TagHelpers.TagHelper
@@ -44,6 +48,7 @@ items:
   implements:
   - Microsoft.AspNetCore.Razor.TagHelpers.ITagHelper
   - Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent
+  - UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize
   inheritedMembers:
   - UltraForce.Library.Core.Asp.TagHelpers.Base.UFTagHelperWithModelExpressionRenderer.ModelExpressionRenderer
   - UltraForce.Library.Core.Asp.TagHelpers.Base.UFTagHelperWithViewContext.ViewContext
@@ -75,7 +80,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: .ctor
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Grid/Base/UFGridHeaderTagHelperBaseBase.cs
-    startLine: 43
+    startLine: 44
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base
@@ -110,7 +115,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: SortType
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Grid/Base/UFGridHeaderTagHelperBaseBase.cs
-    startLine: 54
+    startLine: 55
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base
@@ -156,7 +161,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: For
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Grid/Base/UFGridHeaderTagHelperBaseBase.cs
-    startLine: 65
+    startLine: 66
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base
@@ -192,6 +197,186 @@ items:
     arguments:
     - type: System.String
       value: for
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridHeaderTagHelperBaseBase.UFGridItemSize
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridHeaderTagHelperBaseBase.UFGridItemSize
+  id: UFGridItemSize
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridHeaderTagHelperBaseBase
+  langs:
+  - csharp
+  - vb
+  name: UFGridItemSize
+  nameWithType: UFGridHeaderTagHelperBaseBase.UFGridItemSize
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridHeaderTagHelperBaseBase.UFGridItemSize
+  type: Property
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Base/Grid/Base/UFGridHeaderTagHelperBaseBase.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: UFGridItemSize
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Grid/Base/UFGridHeaderTagHelperBaseBase.cs
+    startLine: 70
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base
+  summary: One of the predefined sizes.
+  example: []
+  syntax:
+    content: >-
+      [HtmlAttributeName("item-size")]
+
+      public UFGridItemSizeEnum UFGridItemSize { get; set; }
+    parameters: []
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFGridItemSizeEnum
+    content.vb: >-
+      <HtmlAttributeName("item-size")>
+
+      Public Property UFGridItemSize As UFGridItemSizeEnum
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridHeaderTagHelperBaseBase.UFGridItemSize*
+  implements:
+  - UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize.UFGridItemSize
+  attributes:
+  - type: Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute
+    ctor: Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: item-size
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridHeaderTagHelperBaseBase.MinSize
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridHeaderTagHelperBaseBase.MinSize
+  id: MinSize
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridHeaderTagHelperBaseBase
+  langs:
+  - csharp
+  - vb
+  name: MinSize
+  nameWithType: UFGridHeaderTagHelperBaseBase.MinSize
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridHeaderTagHelperBaseBase.MinSize
+  type: Property
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Base/Grid/Base/UFGridHeaderTagHelperBaseBase.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: MinSize
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Grid/Base/UFGridHeaderTagHelperBaseBase.cs
+    startLine: 74
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base
+  summary: Minimum size.
+  example: []
+  syntax:
+    content: >-
+      [HtmlAttributeName("min-size")]
+
+      public string? MinSize { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <HtmlAttributeName("min-size")>
+
+      Public Property MinSize As String
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridHeaderTagHelperBaseBase.MinSize*
+  implements:
+  - UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize.MinSize
+  attributes:
+  - type: Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute
+    ctor: Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: min-size
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridHeaderTagHelperBaseBase.MaxSize
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridHeaderTagHelperBaseBase.MaxSize
+  id: MaxSize
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridHeaderTagHelperBaseBase
+  langs:
+  - csharp
+  - vb
+  name: MaxSize
+  nameWithType: UFGridHeaderTagHelperBaseBase.MaxSize
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridHeaderTagHelperBaseBase.MaxSize
+  type: Property
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Base/Grid/Base/UFGridHeaderTagHelperBaseBase.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: MaxSize
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Grid/Base/UFGridHeaderTagHelperBaseBase.cs
+    startLine: 78
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base
+  summary: Maximum size.
+  example: []
+  syntax:
+    content: >-
+      [HtmlAttributeName("max-size")]
+
+      public string? MaxSize { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <HtmlAttributeName("max-size")>
+
+      Public Property MaxSize As String
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridHeaderTagHelperBaseBase.MaxSize*
+  implements:
+  - UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize.MaxSize
+  attributes:
+  - type: Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute
+    ctor: Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: max-size
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridHeaderTagHelperBaseBase.Size
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridHeaderTagHelperBaseBase.Size
+  id: Size
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridHeaderTagHelperBaseBase
+  langs:
+  - csharp
+  - vb
+  name: Size
+  nameWithType: UFGridHeaderTagHelperBaseBase.Size
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridHeaderTagHelperBaseBase.Size
+  type: Property
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Base/Grid/Base/UFGridHeaderTagHelperBaseBase.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: Size
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Grid/Base/UFGridHeaderTagHelperBaseBase.cs
+    startLine: 82
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base
+  summary: Fixed size.
+  example: []
+  syntax:
+    content: >-
+      [HtmlAttributeName("size")]
+
+      public string? Size { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <HtmlAttributeName("size")>
+
+      Public Property Size As String
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridHeaderTagHelperBaseBase.Size*
+  implements:
+  - UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize.Size
+  attributes:
+  - type: Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute
+    ctor: Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: size
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridHeaderTagHelperBaseBase.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
   commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridHeaderTagHelperBaseBase.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
   id: ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
@@ -210,7 +395,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: ProcessAsync
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Grid/Base/UFGridHeaderTagHelperBaseBase.cs
-    startLine: 73
+    startLine: 90
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base
@@ -253,7 +438,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetSortType
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Grid/Base/UFGridHeaderTagHelperBaseBase.cs
-    startLine: 98
+    startLine: 115
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base
@@ -386,6 +571,13 @@ references:
   name: ITagHelperComponent
   nameWithType: ITagHelperComponent
   fullName: Microsoft.AspNetCore.Razor.TagHelpers.ITagHelperComponent
+- uid: UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize
+  commentId: T:UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize
+  parent: UltraForce.Library.Core.Asp.Types.Interfaces
+  href: UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize.html
+  name: IUFGridItemSize
+  nameWithType: IUFGridItemSize
+  fullName: UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.UFTagHelperWithModelExpressionRenderer.ModelExpressionRenderer
   commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Base.UFTagHelperWithModelExpressionRenderer.ModelExpressionRenderer
   parent: UltraForce.Library.Core.Asp.TagHelpers.Base.UFTagHelperWithModelExpressionRenderer
@@ -807,6 +999,60 @@ references:
   - uid: UltraForce.Library.Core.Asp.TagHelpers.Base
     name: Base
     href: UltraForce.Library.Core.Asp.TagHelpers.Base.html
+- uid: UltraForce.Library.Core.Asp.Types.Interfaces
+  commentId: N:UltraForce.Library.Core.Asp.Types.Interfaces
+  href: UltraForce.html
+  name: UltraForce.Library.Core.Asp.Types.Interfaces
+  nameWithType: UltraForce.Library.Core.Asp.Types.Interfaces
+  fullName: UltraForce.Library.Core.Asp.Types.Interfaces
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types
+    name: Types
+    href: UltraForce.Library.Core.Asp.Types.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types.Interfaces
+    name: Interfaces
+    href: UltraForce.Library.Core.Asp.Types.Interfaces.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types
+    name: Types
+    href: UltraForce.Library.Core.Asp.Types.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types.Interfaces
+    name: Interfaces
+    href: UltraForce.Library.Core.Asp.Types.Interfaces.html
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridHeaderTagHelperBaseBase.#ctor*
   commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridHeaderTagHelperBaseBase.#ctor
   href: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridHeaderTagHelperBaseBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_Base_UFGridHeaderTagHelperBaseBase__ctor_UltraForce_Library_Core_Asp_Services_IUFModelExpressionRenderer_
@@ -1024,6 +1270,76 @@ references:
     name: ViewFeatures
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.viewfeatures
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridHeaderTagHelperBaseBase.UFGridItemSize*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridHeaderTagHelperBaseBase.UFGridItemSize
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridHeaderTagHelperBaseBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_Base_UFGridHeaderTagHelperBaseBase_UFGridItemSize
+  name: UFGridItemSize
+  nameWithType: UFGridHeaderTagHelperBaseBase.UFGridItemSize
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridHeaderTagHelperBaseBase.UFGridItemSize
+- uid: UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize.UFGridItemSize
+  commentId: P:UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize.UFGridItemSize
+  parent: UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize
+  href: UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize.html#UltraForce_Library_Core_Asp_Types_Interfaces_IUFGridItemSize_UFGridItemSize
+  name: UFGridItemSize
+  nameWithType: IUFGridItemSize.UFGridItemSize
+  fullName: UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize.UFGridItemSize
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFGridItemSizeEnum
+  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFGridItemSizeEnum
+  parent: UltraForce.Library.Core.Asp.Types.Enums
+  href: UltraForce.Library.Core.Asp.Types.Enums.UFGridItemSizeEnum.html
+  name: UFGridItemSizeEnum
+  nameWithType: UFGridItemSizeEnum
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFGridItemSizeEnum
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridHeaderTagHelperBaseBase.MinSize*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridHeaderTagHelperBaseBase.MinSize
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridHeaderTagHelperBaseBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_Base_UFGridHeaderTagHelperBaseBase_MinSize
+  name: MinSize
+  nameWithType: UFGridHeaderTagHelperBaseBase.MinSize
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridHeaderTagHelperBaseBase.MinSize
+- uid: UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize.MinSize
+  commentId: P:UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize.MinSize
+  parent: UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize
+  href: UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize.html#UltraForce_Library_Core_Asp_Types_Interfaces_IUFGridItemSize_MinSize
+  name: MinSize
+  nameWithType: IUFGridItemSize.MinSize
+  fullName: UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize.MinSize
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridHeaderTagHelperBaseBase.MaxSize*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridHeaderTagHelperBaseBase.MaxSize
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridHeaderTagHelperBaseBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_Base_UFGridHeaderTagHelperBaseBase_MaxSize
+  name: MaxSize
+  nameWithType: UFGridHeaderTagHelperBaseBase.MaxSize
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridHeaderTagHelperBaseBase.MaxSize
+- uid: UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize.MaxSize
+  commentId: P:UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize.MaxSize
+  parent: UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize
+  href: UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize.html#UltraForce_Library_Core_Asp_Types_Interfaces_IUFGridItemSize_MaxSize
+  name: MaxSize
+  nameWithType: IUFGridItemSize.MaxSize
+  fullName: UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize.MaxSize
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridHeaderTagHelperBaseBase.Size*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridHeaderTagHelperBaseBase.Size
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridHeaderTagHelperBaseBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_Base_UFGridHeaderTagHelperBaseBase_Size
+  name: Size
+  nameWithType: UFGridHeaderTagHelperBaseBase.Size
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridHeaderTagHelperBaseBase.Size
+- uid: UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize.Size
+  commentId: P:UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize.Size
+  parent: UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize
+  href: UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize.html#UltraForce_Library_Core_Asp_Types_Interfaces_IUFGridItemSize_Size
+  name: Size
+  nameWithType: IUFGridItemSize.Size
+  fullName: UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize.Size
 - uid: System.Threading.Tasks.Task
   commentId: T:System.Threading.Tasks.Task
   parent: System.Threading.Tasks

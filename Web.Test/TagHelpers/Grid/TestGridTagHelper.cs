@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Razor.TagHelpers;
 using UltraForce.Library.Core.Asp.TagHelpers.Base.Grid;
+using UltraForce.Library.Core.Asp.Types.Interfaces;
 
 namespace Web.Test.TagHelpers.Grid;
 
@@ -8,7 +9,7 @@ public class TestGridTagHelper : UFGridTagHelperBase
 {
   #region protected methods
 
-  protected override string GetGridClasses(int itemCount)
+  protected override string GetGridClasses(IList<IUFGridItemSize> items)
   {
     return "test-grid";
   }

@@ -114,8 +114,14 @@ closing tag.</p>
 The generated td element always uses an opening and closing tag.
 </p>
 <p>
+When <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridItemTagHelperBaseBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_Base_UFGridItemTagHelperBaseBase_MinSize">MinSize</a>,
+<a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridItemTagHelperBaseBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_Base_UFGridItemTagHelperBaseBase_MaxSize">MaxSize</a> or
+<a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridItemTagHelperBaseBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_Base_UFGridItemTagHelperBaseBase_Size">Size</a> has been set and the table is not using grid
+styling a style attribute is added to the td element.
+</p>
+<p>
 Rendered html:
-<pre><code class="lang-csharp">&lt;td class="{GetTableCellClasses()}}" [style="width: {MinWidth}; max-width: {MaxWidth}; box-sizing: content-box"]&gt;{children}&lt;/td&gt;</code></pre>
+<pre><code class="lang-csharp">&lt;td class="{GetTableCellClasses()}" [style="width: {MinSize}; max-width: {MaxSize}; width: {Size}, box-sizing: content-box"]&gt;{children}&lt;/td&gt;</code></pre>
 
 </dd>
     </dl>
@@ -135,15 +141,21 @@ closing tag.</p>
 The generated th element always uses an opening and closing tag.
 </p>
 <p>
+When <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridItemTagHelperBaseBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_Base_UFGridItemTagHelperBaseBase_MinSize">MinSize</a>,
+<a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridItemTagHelperBaseBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_Base_UFGridItemTagHelperBaseBase_MaxSize">MaxSize</a> or
+<a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridItemTagHelperBaseBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_Base_UFGridItemTagHelperBaseBase_Size">Size</a> has been set and the table is not using grid
+styling a style attribute is added to the td element.
+</p>
+<p>
 Rendered html:
-<pre><code class="lang-csharp">&lt;th class="{GetTableCellClasses()}}" [style="min-width: {MinWidth}; max-width: {MaxWidth}; box-sizing: content-box"]&gt;{children}&lt;/th&gt;</code></pre>
+<pre><code class="lang-csharp">&lt;th class="{GetTableCellClasses()}" [style="min-width: {MinSize}; max-width: {MaxSize}; width: {Size}; box-sizing: content-box"]&gt;{children}&lt;/th&gt;</code></pre>
 
 <p>
-Rendered html for buttons (a div is used so that flex or grid styling can be used):
-<pre><code class="lang-csharp">&lt;td class="{GetTableCellClasses()}}" [style="width: {MinWidth}; max-width: {MaxWidth}; box-sizing: content-box"]&gt;
-  &lt;div class="{GetTableHeaderButtonClasses()} &gt;
+Rendered html for buttons (a button is used so that flex or grid styling can be used):
+<pre><code class="lang-csharp">&lt;td class="{GetTableCellClasses()}" [style="width: {MinSize}; max-width: {MaxSize}; width: {Size}; box-sizing: content-box"]&gt;
+  &lt;button class="{GetTableHeaderButtonClasses()} &gt;
     {children}
-  &lt;/div&gt;
+  &lt;/button&gt;
 &lt;/td&gt;</code></pre>
 
 </dd>
@@ -162,8 +174,14 @@ Rendered html for buttons (a div is used so that flex or grid styling can be use
 and are grouped together. The tag helper will insert thead and tbody tags if there are header
 and data rows. To skip this, call the constructor with <code>skipHeadBody</code> set to true.</p>
 <p>
+If the styling of the table will use a grid styling, set the `useGrid` parameter to true. This
+will add a style attribute setting the `grid-template-columns` property. The template will be
+built from the sizes of the first row of header cells or the first row of data cells if there
+are no header cells.
+</p>
+<p>
 Table without filter and sorting:
-<pre><code class="lang-csharp">&lt;table class="GetTableClasses()"&gt;
+<pre><code class="lang-csharp">&lt;table class="GetTableClasses()" [style="grid-template-columns: GetTemplateColumns()"]&gt;
   {children}
 &lt;/table&gt;</code></pre>
 
@@ -176,7 +194,7 @@ Table with a filter:
       GetFilterCaptionHtml()
     &lt;/button&gt;
   &lt;/div&gt;
-  &lt;table class="GetTableClasses()"&gt;
+  &lt;table class="GetTableClasses()" [style="grid-template-columns: GetTemplateColumns()"]&gt;
     {children}
   &lt;/table&gt;
 &lt;/div&gt;</code></pre>
@@ -184,8 +202,8 @@ Table with a filter:
 <p>
 Table with sorting:
 <pre><code class="lang-csharp">&lt;table
-  class="GetTableClasses()"
-  data-uf-sorting="1"
+  &lt;table class="GetTableClasses()" [style="grid-template-columns: GetTemplateColumns()"]&gt;
+  data-uf-table-sorting="1"
   data-uf-sort-ascending="GetSortAscendingClasses()"
   data-uf-sort-descending="GetSortDescendingClasses()"
   >

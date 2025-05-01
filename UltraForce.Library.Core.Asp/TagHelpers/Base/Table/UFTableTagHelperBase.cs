@@ -29,10 +29,10 @@
 
 using System.Diagnostics.CodeAnalysis;
 using Microsoft.AspNetCore.Razor.TagHelpers;
-using UltraForce.Library.Core.Asp.TagHelpers.Base.Grid;
 using UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base;
 using UltraForce.Library.Core.Asp.Tools;
 using UltraForce.Library.Core.Asp.Types.Constants;
+using UltraForce.Library.Core.Asp.Types.Interfaces;
 
 namespace UltraForce.Library.Core.Asp.TagHelpers.Base.Table;
 
@@ -41,9 +41,15 @@ namespace UltraForce.Library.Core.Asp.TagHelpers.Base.Table;
 /// and are grouped together. The tag helper will insert thead and tbody tags if there are header
 /// and data rows. To skip this, call the constructor with `skipHeadBody` set to true.
 /// <para>
+/// If the styling of the table will use a grid styling, set the `useGrid` parameter to true. This
+/// will add a style attribute setting the `grid-template-columns` property. The template will be
+/// built from the sizes of the first row of header cells or the first row of data cells if there
+/// are no header cells.
+/// </para>
+/// <para>
 /// Table without filter and sorting:
 /// <code>
-/// &lt;table class="GetTableClasses()"&gt;
+/// &lt;table class="GetTableClasses()" [style="grid-template-columns: GetTemplateColumns()"]&gt;
 ///   {children}
 /// &lt;/table&gt;
 /// </code>
@@ -58,7 +64,7 @@ namespace UltraForce.Library.Core.Asp.TagHelpers.Base.Table;
 ///       GetFilterCaptionHtml()
 ///     &lt;/button&gt;
 ///   &lt;/div&gt;
-///   &lt;table class="GetTableClasses()"&gt;
+///   &lt;table class="GetTableClasses()" [style="grid-template-columns: GetTemplateColumns()"]&gt;
 ///     {children}
 ///   &lt;/table&gt;
 /// &lt;/div&gt;
@@ -68,8 +74,8 @@ namespace UltraForce.Library.Core.Asp.TagHelpers.Base.Table;
 /// Table with sorting:
 /// <code>
 /// &lt;table
-///   class="GetTableClasses()"
-///   data-uf-sorting="1"
+///   &lt;table class="GetTableClasses()" [style="grid-template-columns: GetTemplateColumns()"]&gt;
+///   data-uf-table-sorting="1"
 ///   data-uf-sort-ascending="GetSortAscendingClasses()"
 ///   data-uf-sort-descending="GetSortDescendingClasses()"
 ///   &gt;
@@ -82,22 +88,43 @@ namespace UltraForce.Library.Core.Asp.TagHelpers.Base.Table;
 /// When true do not insert thead and tbody tags. The class will not call
 /// <see cref="GetBodyClasses"/> and <see cref="GetHeadClasses"/>.
 /// </param>
+/// <param name="useGrid">
+/// Set to true to indicate the table will be styled using `display: grid`. When true, the cell
+/// instances will not set a style attribute with widths.
+/// </param>
 [SuppressMessage("ReSharper", "AutoPropertyCanBeMadeGetOnly.Global")]
-public abstract class UFTableTagHelperBase(bool skipHeadBody = false) : UFGridTagHelperBaseBase
+public abstract class UFTableTagHelperBase(
+  bool skipHeadBody = false,
+  bool useGrid = false
+) : UFGridTagHelperBaseBase
 {
   #region public methods
 
   /// <inheritdoc />
-  public override async Task ProcessAsync(TagHelperContext context, TagHelperOutput output)
+  public override async Task ProcessAsync(
+    TagHelperContext context,
+    TagHelperOutput output
+  )
   {
     this.ProcessedFirstHeaderRow = null;
     this.ProcessedFirstDataRow = null;
-    this.CellCount = 0;
+    this.CellSizes.Clear();
+    this.CellIndex = 0;
     await base.ProcessAsync(context, output);
+    output.TagName = "table";
+    output.TagMode = TagMode.StartTagAndEndTag;
     // process children (these might set ProcessedFirstHeaderRow and ProcessedFirstDataRow)
     TagHelperContent? childContent = await output.GetChildContentAsync();
     output.Content.SetHtmlContent(childContent);
-    UFTagHelperTools.AddClasses(output, this.GetTableClasses(this.CellCount));
+    UFTagHelperTools.AddClasses(output, this.GetTableClasses(this.CellSizes.Count));
+    if (useGrid)
+    {
+      output.Attributes.SetAttribute(
+        new TagHelperAttribute(
+          "style", "grid-template-columns: " + this.GetTemplateColumns(this.CellSizes)
+        )
+      );
+    }
     // skip adding thead and tbody tags?
     if (this.SkipHeadBody)
     {
@@ -106,7 +133,9 @@ public abstract class UFTableTagHelperBase(bool skipHeadBody = false) : UFGridTa
     // add thead tag if there was at least one header row
     if (this.ProcessedFirstHeaderRow != null)
     {
-      output.PreContent.AppendHtml($"<thead class=\"{this.GetHeadClasses(this.CellCount)}\">");
+      output.PreContent.AppendHtml(
+        $"<thead class=\"{this.GetHeadClasses(this.CellSizes.Count)}\">"
+      );
       // if there are only header rows add also closing thead tag
       if (this.ProcessedFirstDataRow == null)
       {
@@ -120,13 +149,15 @@ public abstract class UFTableTagHelperBase(bool skipHeadBody = false) : UFGridTa
       // no header rows, then add starting tbody tag as well
       if (this.ProcessedFirstHeaderRow == null)
       {
-        output.PreContent.AppendHtml($"<tbody class=\"{this.GetBodyClasses(this.CellCount)}\">");
+        output.PreContent.AppendHtml(
+          $"<tbody class=\"{this.GetBodyClasses(this.CellSizes.Count)}\">"
+        );
       }
     }
   }
 
   #endregion
-  
+
   #region protected methods
 
   /// <summary>
@@ -135,7 +166,9 @@ public abstract class UFTableTagHelperBase(bool skipHeadBody = false) : UFGridTa
   /// </summary>
   /// <param name="cellCount">Number of cells</param>
   /// <returns></returns>
-  protected virtual string GetTableClasses(int cellCount)
+  protected virtual string GetTableClasses(
+    int cellCount
+  )
   {
     return string.Empty;
   }
@@ -149,13 +182,15 @@ public abstract class UFTableTagHelperBase(bool skipHeadBody = false) : UFGridTa
   {
     return string.Empty;
   }
-  
+
   /// <summary>
   /// Returns the classes to use with the tbody tag. 
   /// </summary>
   /// <param name="cellCount">Number of cells</param>
   /// <returns></returns>
-  protected virtual string GetBodyClasses(int cellCount)
+  protected virtual string GetBodyClasses(
+    int cellCount
+  )
   {
     return string.Empty;
   }
@@ -165,13 +200,31 @@ public abstract class UFTableTagHelperBase(bool skipHeadBody = false) : UFGridTa
   /// </summary>
   /// <param name="cellCount">Number of cells</param>
   /// <returns></returns>
-  protected virtual string GetHeadClasses(int cellCount)
+  protected virtual string GetHeadClasses(
+    int cellCount
+  )
   {
     return string.Empty;
   }
-  
+
+  /// <summary>
+  /// Gets the template columns for the table. This method is only used when <see cref="useGrid"/>
+  /// is true.
+  /// <para>
+  /// The default implementation calls <see cref="UFTagHelperTools.BuildGridTemplateSizes"/>
+  /// </para>
+  /// </summary>
+  /// <param name="sizes"></param>
+  /// <returns></returns>
+  protected virtual string GetTemplateColumns(
+    IList<IUFGridItemSize> sizes
+  )
+  {
+    return UFTagHelperTools.BuildGridTemplateSizes(sizes);
+  }
+
   #endregion
-  
+
   #region internal properties
 
   /// <summary>
@@ -179,7 +232,7 @@ public abstract class UFTableTagHelperBase(bool skipHeadBody = false) : UFGridTa
   /// <see cref="UFTableDataRowTagHelperBase{TTable}"/>.
   /// </summary>
   internal object? ProcessedFirstHeaderRow { get; set; }
-  
+
   /// <summary>
   /// Will be set to true by the first header row. Will be set by
   /// <see cref="UFTableDataRowTagHelperBase{TTable}"/>.
@@ -189,24 +242,28 @@ public abstract class UFTableTagHelperBase(bool skipHeadBody = false) : UFGridTa
   /// <summary>
   /// True to not insert thead and tbody tags.
   /// </summary>
-  internal bool SkipHeadBody { get;  } = skipHeadBody;
+  internal bool SkipHeadBody { get; } = skipHeadBody;
+
+  /// <summary>
+  /// Updated by either header cells or data cells in the table.
+  /// </summary>
+  internal List<IUFGridItemSize> CellSizes { get; } = [];
   
   /// <summary>
-  /// Number of header cells in the table. Will be set by
-  /// <see cref="UFTableHeaderCellTagHelperBase{TTable,TTableRow}"/>.
+  /// To keep track of the current cell. 
   /// </summary>
-  internal int CellCount { get; set; }
-  
+  internal int CellIndex { get; set; } = 0;
+
   #endregion
-  
+
   #region internal methods
-  
+
   /// <summary>
   /// Gets the classes for the table body. Will be called by
   /// <see cref="UFTableDataRowTagHelperBase{TTable}"/>.
   /// </summary>
   /// <returns></returns>
-  internal string GetTableBodyClasses() => this.GetBodyClasses(this.CellCount);
+  internal string GetTableBodyClasses() => this.GetBodyClasses(this.CellSizes.Count);
 
   /// <inheritdoc />
   internal override string GetContainerClasses() => this.GetTableContainerClasses();
@@ -220,6 +277,45 @@ public abstract class UFTableTagHelperBase(bool skipHeadBody = false) : UFGridTa
   internal override TagHelperAttribute GetSortingAttribute(
     string value
   ) => UFDataAttribute.TableSorting(value);
+
+  /// <summary>
+  /// Sets the size of a cell via the style attribute. If the table uses a grid, the style is not
+  /// set.
+  /// </summary>
+  /// <param name="output"></param>
+  /// <param name="size"></param>
+  internal void SetCellStyle(
+    TagHelperOutput output,
+    IUFGridItemSize size
+  )
+  {
+    if (useGrid)
+    {
+      return;
+    }
+    string style = "";
+    if (!string.IsNullOrEmpty(size.MinSize))
+    {
+      style += " min-width: " + size.MinSize + ";";
+    }
+    if (!string.IsNullOrEmpty(size.MaxSize))
+    {
+      style += " max-width: " + size.MaxSize + ";";
+    }
+    if (!string.IsNullOrEmpty(size.Size))
+    {
+      style += " width: " + size.Size + ";";
+    }
+    else if (!string.IsNullOrEmpty(style))
+    {
+      style += " width: 1px;";
+    }
+    if (!string.IsNullOrEmpty(style))
+    {
+      style += " box-sizing: content-box;";
+      output.Attributes.SetAttribute("style", style);
+    }
+  }
 
   #endregion
 }

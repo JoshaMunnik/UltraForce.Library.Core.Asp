@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class UFTableDataCellTagHelperBase&lt;TTable, TTableRow&gt; | UltraForce.Library.Core.Asp ">
       
-      <meta name="description" content="Creates a table data cell. The cell can be self-closing or can contain content with a separate closing tag.  The generated td element always uses an opening and closing tag.   Rendered html: &amp;lt;td class=&quot;{GetTableCellClasses()}}&quot; [style=&quot;width: {MinWidth}; max-width: {MaxWidth}; box-sizing: content-box&quot;]&amp;gt;{children}&amp;lt;/td&amp;gt;">
+      <meta name="description" content="Creates a table data cell. The cell can be self-closing or can contain content with a separate closing tag.  The generated td element always uses an opening and closing tag.   When ,  or  has been set and the table is not using grid styling a style attribute is added to the td element.   Rendered html: &amp;lt;td class=&quot;{GetTableCellClasses()}&quot; [style=&quot;width: {MinSize}; max-width: {MaxSize}; width: {Size}, box-sizing: content-box&quot;]&amp;gt;{children}&amp;lt;/td&amp;gt;">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableDataCellTagHelperBase_2" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataCellTagHelperBase`2" class="text-break">
-Class UFTableDataCellTagHelperBase&lt;TTable, TTableRow&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableDataCellTagHelperBase.cs/#L51"><i class="bi bi-code-slash"></i></a>
+Class UFTableDataCellTagHelperBase&lt;TTable, TTableRow&gt;  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableDataCellTagHelperBase.cs/#L57"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -103,14 +103,20 @@ closing tag.</p>
 The generated td element always uses an opening and closing tag.
 </p>
 <p>
+When <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridItemTagHelperBaseBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_Base_UFGridItemTagHelperBaseBase_MinSize">MinSize</a>,
+<a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridItemTagHelperBaseBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_Base_UFGridItemTagHelperBaseBase_MaxSize">MaxSize</a> or
+<a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridItemTagHelperBaseBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_Base_UFGridItemTagHelperBaseBase_Size">Size</a> has been set and the table is not using grid
+styling a style attribute is added to the td element.
+</p>
+<p>
 Rendered html:
-<pre><code class="lang-csharp">&lt;td class="{GetTableCellClasses()}}" [style="width: {MinWidth}; max-width: {MaxWidth}; box-sizing: content-box"]&gt;{children}&lt;/td&gt;</code></pre>
+<pre><code class="lang-csharp">&lt;td class="{GetTableCellClasses()}" [style="width: {MinSize}; max-width: {MaxSize}; width: {Size}, box-sizing: content-box"]&gt;{children}&lt;/td&gt;</code></pre>
 
 </div>
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class UFTableDataCellTagHelperBase&lt;TTable, TTableRow&gt; : UFGridItemTagHelperBaseBase, ITagHelper, ITagHelperComponent where TTable : UFTableTagHelperBase where TTableRow : UFTableDataRowTagHelperBase&lt;TTable&gt;</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class UFTableDataCellTagHelperBase&lt;TTable, TTableRow&gt; : UFGridItemTagHelperBaseBase, ITagHelper, ITagHelperComponent, IUFGridItemSize where TTable : UFTableTagHelperBase where TTableRow : UFTableDataRowTagHelperBase&lt;TTable&gt;</code></pre>
   </div>
 
 
@@ -118,9 +124,9 @@ Rendered html:
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>TTable</code></dt>
-    <dd>Creates a table data cell. The cell can be self-closing or can contain content with a separate closing tag.  The generated td element always uses an opening and closing tag.   Rendered html: &lt;td class="{GetTableCellClasses()}}" [style="width: {MinWidth}; max-width: {MaxWidth}; box-sizing: content-box"]&gt;{children}&lt;/td&gt;</dd>
+    <dd>Creates a table data cell. The cell can be self-closing or can contain content with a separate closing tag.  The generated td element always uses an opening and closing tag.   When ,  or  has been set and the table is not using grid styling a style attribute is added to the td element.   Rendered html: &lt;td class="{GetTableCellClasses()}" [style="width: {MinSize}; max-width: {MaxSize}; width: {Size}, box-sizing: content-box"]&gt;{children}&lt;/td&gt;</dd>
     <dt><code>TTableRow</code></dt>
-    <dd>Creates a table data cell. The cell can be self-closing or can contain content with a separate closing tag.  The generated td element always uses an opening and closing tag.   Rendered html: &lt;td class="{GetTableCellClasses()}}" [style="width: {MinWidth}; max-width: {MaxWidth}; box-sizing: content-box"]&gt;{children}&lt;/td&gt;</dd>
+    <dd>Creates a table data cell. The cell can be self-closing or can contain content with a separate closing tag.  The generated td element always uses an opening and closing tag.   When ,  or  has been set and the table is not using grid styling a style attribute is added to the td element.   Rendered html: &lt;td class="{GetTableCellClasses()}" [style="width: {MinSize}; max-width: {MaxSize}; width: {Size}, box-sizing: content-box"]&gt;{children}&lt;/td&gt;</dd>
   </dl>
 
   <dl class="typelist inheritance">
@@ -140,6 +146,7 @@ Rendered html:
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.itaghelper">ITagHelper</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.itaghelpercomponent">ITagHelperComponent</a></div>
+      <div><a class="xref" href="UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize.html">IUFGridItemSize</a></div>
     </dd>
   </dl>
 
@@ -155,6 +162,18 @@ Rendered html:
     </div>
     <div>
       <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridItemTagHelperBaseBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_Base_UFGridItemTagHelperBaseBase_NoFilter">UFGridItemTagHelperBaseBase.NoFilter</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridItemTagHelperBaseBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_Base_UFGridItemTagHelperBaseBase_UFGridItemSize">UFGridItemTagHelperBaseBase.UFGridItemSize</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridItemTagHelperBaseBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_Base_UFGridItemTagHelperBaseBase_MinSize">UFGridItemTagHelperBaseBase.MinSize</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridItemTagHelperBaseBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_Base_UFGridItemTagHelperBaseBase_MaxSize">UFGridItemTagHelperBaseBase.MaxSize</a>
+    </div>
+    <div>
+      <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridItemTagHelperBaseBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_Base_UFGridItemTagHelperBaseBase_Size">UFGridItemTagHelperBaseBase.Size</a>
     </div>
     <div>
       <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.UFTagHelperWithModelExpressionRenderer.html#UltraForce_Library_Core_Asp_TagHelpers_Base_UFTagHelperWithModelExpressionRenderer_ModelExpressionRenderer">UFTagHelperWithModelExpressionRenderer.ModelExpressionRenderer</a>
@@ -207,7 +226,7 @@ Rendered html:
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableDataCellTagHelperBase_2__ctor_UltraForce_Library_Core_Asp_Services_IUFModelExpressionRenderer_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataCellTagHelperBase`2.#ctor(UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer)">
   UFTableDataCellTagHelperBase(IUFModelExpressionRenderer)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableDataCellTagHelperBase.cs/#L51"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableDataCellTagHelperBase.cs/#L57"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Creates a table data cell. The cell can be self-closing or can contain content with a separate
@@ -216,8 +235,14 @@ closing tag.</p>
 The generated td element always uses an opening and closing tag.
 </p>
 <p>
+When <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridItemTagHelperBaseBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_Base_UFGridItemTagHelperBaseBase_MinSize">MinSize</a>,
+<a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridItemTagHelperBaseBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_Base_UFGridItemTagHelperBaseBase_MaxSize">MaxSize</a> or
+<a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridItemTagHelperBaseBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_Base_UFGridItemTagHelperBaseBase_Size">Size</a> has been set and the table is not using grid
+styling a style attribute is added to the td element.
+</p>
+<p>
 Rendered html:
-<pre><code class="lang-csharp">&lt;td class="{GetTableCellClasses()}}" [style="width: {MinWidth}; max-width: {MaxWidth}; box-sizing: content-box"]&gt;{children}&lt;/td&gt;</code></pre>
+<pre><code class="lang-csharp">&lt;td class="{GetTableCellClasses()}" [style="width: {MinSize}; max-width: {MaxSize}; width: {Size}, box-sizing: content-box"]&gt;{children}&lt;/td&gt;</code></pre>
 
 </div>
   <div class="markdown level1 conceptual"></div>
@@ -235,76 +260,6 @@ Rendered html:
 
 
 
-
-
-
-
-
-
-
-
-  <h2 class="section" id="properties">Properties
-</h2>
-
-
-  <a id="UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableDataCellTagHelperBase_2_MaxWidth_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataCellTagHelperBase`2.MaxWidth*"></a>
-
-  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableDataCellTagHelperBase_2_MaxWidth" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataCellTagHelperBase`2.MaxWidth">
-  MaxWidth
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableDataCellTagHelperBase.cs/#L71"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>When not empty, set this value as max-width value via the style tag.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[HtmlAttributeName(&quot;max-width&quot;)]
-public string MaxWidth { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
-
-
-
-
-
-
-
-
-  <a id="UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableDataCellTagHelperBase_2_MinWidth_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataCellTagHelperBase`2.MinWidth*"></a>
-
-  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableDataCellTagHelperBase_2_MinWidth" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataCellTagHelperBase`2.MinWidth">
-  MinWidth
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableDataCellTagHelperBase.cs/#L65"><i class="bi bi-code-slash"></i></a>
-  </h3>
-
-  <div class="markdown level1 summary"><p>When not empty, set this value as min-width value via the style tag.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[HtmlAttributeName(&quot;min-width&quot;)]
-public string MinWidth { get; set; }</code></pre>
-  </div>
-
-
-
-
-
-  <h4 class="section">Property Value</h4>
-  <dl class="parameters">
-    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
-    <dd></dd>
-  </dl>
 
 
 
@@ -360,7 +315,7 @@ public string MinWidth { get; set; }</code></pre>
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableDataCellTagHelperBase_2_ProcessAsync_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContext_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataCellTagHelperBase`2.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)">
   ProcessAsync(TagHelperContext, TagHelperOutput)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableDataCellTagHelperBase.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableDataCellTagHelperBase.cs/#L69"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Asynchronously executes the <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper">TagHelper</a> with the given <code class="paramref">context</code> and
@@ -404,9 +359,9 @@ public string MinWidth { get; set; }</code></pre>
 
   <a id="UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableDataCellTagHelperBase_2_ProcessAsync_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataCellTagHelperBase`2.ProcessAsync*"></a>
 
-  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableDataCellTagHelperBase_2_ProcessAsync_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContext_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput__0__1_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataCellTagHelperBase`2.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,`0,`1)">
-  ProcessAsync(TagHelperContext, TagHelperOutput, TTable, TTableRow)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableDataCellTagHelperBase.cs/#L103"><i class="bi bi-code-slash"></i></a>
+  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableDataCellTagHelperBase_2_ProcessAsync_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContext_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput__0__1_System_Int32_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataCellTagHelperBase`2.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,`0,`1,System.Int32)">
+  ProcessAsync(TagHelperContext, TagHelperOutput, TTable, TTableRow, int)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableDataCellTagHelperBase.cs/#L96"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Executes the tag helper.</p>
@@ -414,7 +369,7 @@ public string MinWidth { get; set; }</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected virtual Task ProcessAsync(TagHelperContext context, TagHelperOutput output, TTable table, TTableRow tableRow)</code></pre>
+    <pre><code class="lang-csharp hljs">protected virtual Task ProcessAsync(TagHelperContext context, TagHelperOutput output, TTable table, TTableRow tableRow, int cellIndex)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -428,6 +383,9 @@ public string MinWidth { get; set; }</code></pre>
 </dd>
     <dt><code>tableRow</code> <span class="xref">TTableRow</span></dt>
     <dd><p>Row the cell is created within</p>
+</dd>
+    <dt><code>cellIndex</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.int32">int</a></dt>
+    <dd><p>Index of cell in the row (0 based)</p>
 </dd>
   </dl>
 
@@ -451,7 +409,7 @@ public string MinWidth { get; set; }</code></pre>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableDataCellTagHelperBase.cs/#L51" class="edit-link">Edit this page</a>
+          <a href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableDataCellTagHelperBase.cs/#L57" class="edit-link">Edit this page</a>
         </div>
 
 

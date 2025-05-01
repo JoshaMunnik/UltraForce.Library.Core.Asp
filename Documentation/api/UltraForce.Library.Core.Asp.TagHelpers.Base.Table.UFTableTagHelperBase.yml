@@ -5,11 +5,12 @@ items:
   id: UFTableTagHelperBase
   parent: UltraForce.Library.Core.Asp.TagHelpers.Base.Table
   children:
-  - UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.#ctor(System.Boolean)
+  - UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.#ctor(System.Boolean,System.Boolean)
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetBodyClasses(System.Int32)
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetHeadClasses(System.Int32)
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetTableClasses(System.Int32)
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetTableContainerClasses
+  - UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetTemplateColumns(System.Collections.Generic.IList{UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize})
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
   langs:
   - csharp
@@ -25,7 +26,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: UFTableTagHelperBase
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs
-    startLine: 84
+    startLine: 94
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Table
@@ -38,9 +39,21 @@ items:
 
     <p>
 
+    If the styling of the table will use a grid styling, set the `useGrid` parameter to true. This
+
+    will add a style attribute setting the `grid-template-columns` property. The template will be
+
+    built from the sizes of the first row of header cells or the first row of data cells if there
+
+    are no header cells.
+
+    </p>
+
+    <p>
+
     Table without filter and sorting:
 
-    <pre><code class="lang-csharp">&lt;table class="GetTableClasses()"&gt;
+    <pre><code class="lang-csharp">&lt;table class="GetTableClasses()" [style="grid-template-columns: GetTemplateColumns()"]&gt;
       {children}
     &lt;/table&gt;</code></pre>
 
@@ -57,7 +70,7 @@ items:
           GetFilterCaptionHtml()
         &lt;/button&gt;
       &lt;/div&gt;
-      &lt;table class="GetTableClasses()"&gt;
+      &lt;table class="GetTableClasses()" [style="grid-template-columns: GetTemplateColumns()"]&gt;
         {children}
       &lt;/table&gt;
     &lt;/div&gt;</code></pre>
@@ -69,8 +82,8 @@ items:
     Table with sorting:
 
     <pre><code class="lang-csharp">&lt;table
-      class="GetTableClasses()"
-      data-uf-sorting="1"
+      &lt;table class="GetTableClasses()" [style="grid-template-columns: GetTemplateColumns()"]&gt;
+      data-uf-table-sorting="1"
       data-uf-sort-ascending="GetSortAscendingClasses()"
       data-uf-sort-descending="GetSortDescendingClasses()"
       >
@@ -112,16 +125,16 @@ items:
   - System.Object.MemberwiseClone
   - System.Object.ReferenceEquals(System.Object,System.Object)
   - System.Object.ToString
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.#ctor(System.Boolean)
-  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.#ctor(System.Boolean)
-  id: '#ctor(System.Boolean)'
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.#ctor(System.Boolean,System.Boolean)
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.#ctor(System.Boolean,System.Boolean)
+  id: '#ctor(System.Boolean,System.Boolean)'
   parent: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase
   langs:
   - csharp
   - vb
-  name: UFTableTagHelperBase(bool)
-  nameWithType: UFTableTagHelperBase.UFTableTagHelperBase(bool)
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.UFTableTagHelperBase(bool)
+  name: UFTableTagHelperBase(bool, bool)
+  nameWithType: UFTableTagHelperBase.UFTableTagHelperBase(bool, bool)
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.UFTableTagHelperBase(bool, bool)
   type: Constructor
   source:
     remote:
@@ -130,7 +143,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: .ctor
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs
-    startLine: 84
+    startLine: 94
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Table
@@ -143,9 +156,21 @@ items:
 
     <p>
 
+    If the styling of the table will use a grid styling, set the `useGrid` parameter to true. This
+
+    will add a style attribute setting the `grid-template-columns` property. The template will be
+
+    built from the sizes of the first row of header cells or the first row of data cells if there
+
+    are no header cells.
+
+    </p>
+
+    <p>
+
     Table without filter and sorting:
 
-    <pre><code class="lang-csharp">&lt;table class="GetTableClasses()"&gt;
+    <pre><code class="lang-csharp">&lt;table class="GetTableClasses()" [style="grid-template-columns: GetTemplateColumns()"]&gt;
       {children}
     &lt;/table&gt;</code></pre>
 
@@ -162,7 +187,7 @@ items:
           GetFilterCaptionHtml()
         &lt;/button&gt;
       &lt;/div&gt;
-      &lt;table class="GetTableClasses()"&gt;
+      &lt;table class="GetTableClasses()" [style="grid-template-columns: GetTemplateColumns()"]&gt;
         {children}
       &lt;/table&gt;
     &lt;/div&gt;</code></pre>
@@ -174,8 +199,8 @@ items:
     Table with sorting:
 
     <pre><code class="lang-csharp">&lt;table
-      class="GetTableClasses()"
-      data-uf-sorting="1"
+      &lt;table class="GetTableClasses()" [style="grid-template-columns: GetTemplateColumns()"]&gt;
+      data-uf-table-sorting="1"
       data-uf-sort-ascending="GetSortAscendingClasses()"
       data-uf-sort-descending="GetSortDescendingClasses()"
       >
@@ -185,7 +210,7 @@ items:
     </p>
   example: []
   syntax:
-    content: protected UFTableTagHelperBase(bool skipHeadBody = false)
+    content: protected UFTableTagHelperBase(bool skipHeadBody = false, bool useGrid = false)
     parameters:
     - id: skipHeadBody
       type: System.Boolean
@@ -193,11 +218,17 @@ items:
         When true do not insert thead and tbody tags. The class will not call
 
         <xref href="UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetBodyClasses(System.Int32)" data-throw-if-not-resolved="false"></xref> and <xref href="UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetHeadClasses(System.Int32)" data-throw-if-not-resolved="false"></xref>.
-    content.vb: Protected Sub New(skipHeadBody As Boolean = False)
+    - id: useGrid
+      type: System.Boolean
+      description: >-
+        Set to true to indicate the table will be styled using `display: grid`. When true, the cell
+
+        instances will not set a style attribute with widths.
+    content.vb: Protected Sub New(skipHeadBody As Boolean = False, useGrid As Boolean = False)
   overload: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.#ctor*
-  nameWithType.vb: UFTableTagHelperBase.New(Boolean)
-  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.New(Boolean)
-  name.vb: New(Boolean)
+  nameWithType.vb: UFTableTagHelperBase.New(Boolean, Boolean)
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.New(Boolean, Boolean)
+  name.vb: New(Boolean, Boolean)
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
   commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
   id: ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
@@ -216,7 +247,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: ProcessAsync
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs
-    startLine: 90
+    startLine: 103
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Table
@@ -259,7 +290,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetTableClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs
-    startLine: 137
+    startLine: 168
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Table
@@ -300,7 +331,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetTableContainerClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs
-    startLine: 147
+    startLine: 180
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Table
@@ -334,7 +365,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetBodyClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs
-    startLine: 157
+    startLine: 190
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Table
@@ -372,7 +403,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetHeadClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs
-    startLine: 167
+    startLine: 202
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Table
@@ -392,6 +423,53 @@ items:
   nameWithType.vb: UFTableTagHelperBase.GetHeadClasses(Integer)
   fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetHeadClasses(Integer)
   name.vb: GetHeadClasses(Integer)
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetTemplateColumns(System.Collections.Generic.IList{UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize})
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetTemplateColumns(System.Collections.Generic.IList{UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize})
+  id: GetTemplateColumns(System.Collections.Generic.IList{UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize})
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase
+  langs:
+  - csharp
+  - vb
+  name: GetTemplateColumns(IList<IUFGridItemSize>)
+  nameWithType: UFTableTagHelperBase.GetTemplateColumns(IList<IUFGridItemSize>)
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetTemplateColumns(System.Collections.Generic.IList<UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize>)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: GetTemplateColumns
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs
+    startLine: 218
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Table
+  summary: >-
+    Gets the template columns for the table. This method is only used when useGrid
+
+    is true.
+
+    <p>
+
+    The default implementation calls <xref href="UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.BuildGridTemplateSizes(System.Collections.Generic.IList%7bUltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize%7d)" data-throw-if-not-resolved="false"></xref>
+
+    </p>
+  example: []
+  syntax:
+    content: protected virtual string GetTemplateColumns(IList<IUFGridItemSize> sizes)
+    parameters:
+    - id: sizes
+      type: System.Collections.Generic.IList{UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize}
+      description: ''
+    return:
+      type: System.String
+      description: ''
+    content.vb: Protected Overridable Function GetTemplateColumns(sizes As IList(Of IUFGridItemSize)) As String
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetTemplateColumns*
+  nameWithType.vb: UFTableTagHelperBase.GetTemplateColumns(IList(Of IUFGridItemSize))
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetTemplateColumns(System.Collections.Generic.IList(Of UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize))
+  name.vb: GetTemplateColumns(IList(Of IUFGridItemSize))
 references:
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetBodyClasses(System.Int32)
   commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetBodyClasses(System.Int32)
@@ -1150,7 +1228,7 @@ references:
     href: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.html
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.#ctor*
   commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.#ctor
-  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableTagHelperBase__ctor_System_Boolean_
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableTagHelperBase__ctor_System_Boolean_System_Boolean_
   name: UFTableTagHelperBase
   nameWithType: UFTableTagHelperBase.UFTableTagHelperBase
   fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.UFTableTagHelperBase
@@ -1321,3 +1399,149 @@ references:
   name: GetHeadClasses
   nameWithType: UFTableTagHelperBase.GetHeadClasses
   fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetHeadClasses
+- uid: UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.BuildGridTemplateSizes(System.Collections.Generic.IList{UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize})
+  commentId: M:UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.BuildGridTemplateSizes(System.Collections.Generic.IList{UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize})
+  isExternal: true
+  href: UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.html#UltraForce_Library_Core_Asp_Tools_UFTagHelperTools_BuildGridTemplateSizes_System_Collections_Generic_IList_UltraForce_Library_Core_Asp_Types_Interfaces_IUFGridItemSize__
+  name: BuildGridTemplateSizes(IList<IUFGridItemSize>)
+  nameWithType: UFTagHelperTools.BuildGridTemplateSizes(IList<IUFGridItemSize>)
+  fullName: UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.BuildGridTemplateSizes(System.Collections.Generic.IList<UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize>)
+  nameWithType.vb: UFTagHelperTools.BuildGridTemplateSizes(IList(Of IUFGridItemSize))
+  fullName.vb: UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.BuildGridTemplateSizes(System.Collections.Generic.IList(Of UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize))
+  name.vb: BuildGridTemplateSizes(IList(Of IUFGridItemSize))
+  spec.csharp:
+  - uid: UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.BuildGridTemplateSizes(System.Collections.Generic.IList{UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize})
+    name: BuildGridTemplateSizes
+    href: UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.html#UltraForce_Library_Core_Asp_Tools_UFTagHelperTools_BuildGridTemplateSizes_System_Collections_Generic_IList_UltraForce_Library_Core_Asp_Types_Interfaces_IUFGridItemSize__
+  - name: (
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: <
+  - uid: UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize
+    name: IUFGridItemSize
+    href: UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize.html
+  - name: '>'
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.BuildGridTemplateSizes(System.Collections.Generic.IList{UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize})
+    name: BuildGridTemplateSizes
+    href: UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.html#UltraForce_Library_Core_Asp_Tools_UFTagHelperTools_BuildGridTemplateSizes_System_Collections_Generic_IList_UltraForce_Library_Core_Asp_Types_Interfaces_IUFGridItemSize__
+  - name: (
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize
+    name: IUFGridItemSize
+    href: UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize.html
+  - name: )
+  - name: )
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetTemplateColumns*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetTemplateColumns
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableTagHelperBase_GetTemplateColumns_System_Collections_Generic_IList_UltraForce_Library_Core_Asp_Types_Interfaces_IUFGridItemSize__
+  name: GetTemplateColumns
+  nameWithType: UFTableTagHelperBase.GetTemplateColumns
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetTemplateColumns
+- uid: System.Collections.Generic.IList{UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize}
+  commentId: T:System.Collections.Generic.IList{UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  name: IList<IUFGridItemSize>
+  nameWithType: IList<IUFGridItemSize>
+  fullName: System.Collections.Generic.IList<UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize>
+  nameWithType.vb: IList(Of IUFGridItemSize)
+  fullName.vb: System.Collections.Generic.IList(Of UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize)
+  name.vb: IList(Of IUFGridItemSize)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: <
+  - uid: UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize
+    name: IUFGridItemSize
+    href: UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize
+    name: IUFGridItemSize
+    href: UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize.html
+  - name: )
+- uid: System.Collections.Generic.IList`1
+  commentId: T:System.Collections.Generic.IList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  name: IList<T>
+  nameWithType: IList<T>
+  fullName: System.Collections.Generic.IList<T>
+  nameWithType.vb: IList(Of T)
+  fullName.vb: System.Collections.Generic.IList(Of T)
+  name.vb: IList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic

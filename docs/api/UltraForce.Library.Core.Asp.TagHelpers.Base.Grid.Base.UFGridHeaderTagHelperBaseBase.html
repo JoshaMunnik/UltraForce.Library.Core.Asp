@@ -89,7 +89,7 @@
 
 
   <h1 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_Base_UFGridHeaderTagHelperBaseBase" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridHeaderTagHelperBaseBase" class="text-break">
-Class UFGridHeaderTagHelperBaseBase  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Grid/Base/UFGridHeaderTagHelperBaseBase.cs/#L44"><i class="bi bi-code-slash"></i></a>
+Class UFGridHeaderTagHelperBaseBase  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Grid/Base/UFGridHeaderTagHelperBaseBase.cs/#L45"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -102,7 +102,7 @@ Class UFGridHeaderTagHelperBaseBase  <a class="header-action link-secondary" tit
   <div class="markdown conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public abstract class UFGridHeaderTagHelperBaseBase : UFTagHelperWithModelExpressionRenderer, ITagHelper, ITagHelperComponent</code></pre>
+    <pre><code class="lang-csharp hljs">public abstract class UFGridHeaderTagHelperBaseBase : UFTagHelperWithModelExpressionRenderer, ITagHelper, ITagHelperComponent, IUFGridItemSize</code></pre>
   </div>
 
 
@@ -124,6 +124,7 @@ Class UFGridHeaderTagHelperBaseBase  <a class="header-action link-secondary" tit
     <dd>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.itaghelper">ITagHelper</a></div>
       <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.itaghelpercomponent">ITagHelperComponent</a></div>
+      <div><a class="xref" href="UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize.html">IUFGridItemSize</a></div>
     </dd>
   </dl>
 
@@ -189,7 +190,7 @@ Class UFGridHeaderTagHelperBaseBase  <a class="header-action link-secondary" tit
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_Base_UFGridHeaderTagHelperBaseBase__ctor_UltraForce_Library_Core_Asp_Services_IUFModelExpressionRenderer_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridHeaderTagHelperBaseBase.#ctor(UltraForce.Library.Core.Asp.Services.IUFModelExpressionRenderer)">
   UFGridHeaderTagHelperBaseBase(IUFModelExpressionRenderer)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Grid/Base/UFGridHeaderTagHelperBaseBase.cs/#L44"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Grid/Base/UFGridHeaderTagHelperBaseBase.cs/#L45"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Base class for header items within a grid or table.</p>
@@ -225,7 +226,7 @@ Class UFGridHeaderTagHelperBaseBase  <a class="header-action link-secondary" tit
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_Base_UFGridHeaderTagHelperBaseBase_For" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridHeaderTagHelperBaseBase.For">
   For
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Grid/Base/UFGridHeaderTagHelperBaseBase.cs/#L66"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Grid/Base/UFGridHeaderTagHelperBaseBase.cs/#L67"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>An expression to be evaluated against the current model. When set, the method will use the
@@ -259,11 +260,110 @@ public ModelExpression? For { get; set; }</code></pre>
 
 
 
+  <a id="UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_Base_UFGridHeaderTagHelperBaseBase_MaxSize_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridHeaderTagHelperBaseBase.MaxSize*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_Base_UFGridHeaderTagHelperBaseBase_MaxSize" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridHeaderTagHelperBaseBase.MaxSize">
+  MaxSize
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Grid/Base/UFGridHeaderTagHelperBaseBase.cs/#L79"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Maximum size.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HtmlAttributeName(&quot;max-size&quot;)]
+public string? MaxSize { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_Base_UFGridHeaderTagHelperBaseBase_MinSize_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridHeaderTagHelperBaseBase.MinSize*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_Base_UFGridHeaderTagHelperBaseBase_MinSize" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridHeaderTagHelperBaseBase.MinSize">
+  MinSize
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Grid/Base/UFGridHeaderTagHelperBaseBase.cs/#L75"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Minimum size.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HtmlAttributeName(&quot;min-size&quot;)]
+public string? MinSize { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_Base_UFGridHeaderTagHelperBaseBase_Size_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridHeaderTagHelperBaseBase.Size*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_Base_UFGridHeaderTagHelperBaseBase_Size" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridHeaderTagHelperBaseBase.Size">
+  Size
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Grid/Base/UFGridHeaderTagHelperBaseBase.cs/#L83"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Fixed size.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HtmlAttributeName(&quot;size&quot;)]
+public string? Size { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_Base_UFGridHeaderTagHelperBaseBase_SortType_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridHeaderTagHelperBaseBase.SortType*"></a>
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_Base_UFGridHeaderTagHelperBaseBase_SortType" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridHeaderTagHelperBaseBase.SortType">
   SortType
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Grid/Base/UFGridHeaderTagHelperBaseBase.cs/#L55"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Grid/Base/UFGridHeaderTagHelperBaseBase.cs/#L56"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Type of sorting. If type is set to <a class="xref" href="UltraForce.Library.Core.Asp.Types.Enums.UFSortTypeEnum.html#UltraForce_Library_Core_Asp_Types_Enums_UFSortTypeEnum_Auto">Auto</a> (default) the
@@ -293,6 +393,39 @@ public UFSortTypeEnum SortType { get; set; }</code></pre>
 
 
 
+  <a id="UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_Base_UFGridHeaderTagHelperBaseBase_UFGridItemSize_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridHeaderTagHelperBaseBase.UFGridItemSize*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_Base_UFGridHeaderTagHelperBaseBase_UFGridItemSize" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridHeaderTagHelperBaseBase.UFGridItemSize">
+  UFGridItemSize
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Grid/Base/UFGridHeaderTagHelperBaseBase.cs/#L71"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>One of the predefined sizes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HtmlAttributeName(&quot;item-size&quot;)]
+public UFGridItemSizeEnum UFGridItemSize { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="UltraForce.Library.Core.Asp.Types.Enums.UFGridItemSizeEnum.html">UFGridItemSizeEnum</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <h2 class="section" id="methods">Methods
 </h2>
 
@@ -301,7 +434,7 @@ public UFSortTypeEnum SortType { get; set; }</code></pre>
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_Base_UFGridHeaderTagHelperBaseBase_GetSortType" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridHeaderTagHelperBaseBase.GetSortType">
   GetSortType()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Grid/Base/UFGridHeaderTagHelperBaseBase.cs/#L99"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Grid/Base/UFGridHeaderTagHelperBaseBase.cs/#L116"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the sort type. Handles <a class="xref" href="UltraForce.Library.Core.Asp.Types.Enums.UFSortTypeEnum.html#UltraForce_Library_Core_Asp_Types_Enums_UFSortTypeEnum_Auto">Auto</a> and <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridHeaderTagHelperBaseBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_Base_UFGridHeaderTagHelperBaseBase_For">For</a>.</p>
@@ -333,7 +466,7 @@ public UFSortTypeEnum SortType { get; set; }</code></pre>
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_Base_UFGridHeaderTagHelperBaseBase_ProcessAsync_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContext_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridHeaderTagHelperBaseBase.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)">
   ProcessAsync(TagHelperContext, TagHelperOutput)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Grid/Base/UFGridHeaderTagHelperBaseBase.cs/#L74"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Grid/Base/UFGridHeaderTagHelperBaseBase.cs/#L91"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Asynchronously executes the <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper">TagHelper</a> with the given <code class="paramref">context</code> and
@@ -379,7 +512,7 @@ public UFSortTypeEnum SortType { get; set; }</code></pre>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Grid/Base/UFGridHeaderTagHelperBaseBase.cs/#L44" class="edit-link">Edit this page</a>
+          <a href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Grid/Base/UFGridHeaderTagHelperBaseBase.cs/#L45" class="edit-link">Edit this page</a>
         </div>
 
 

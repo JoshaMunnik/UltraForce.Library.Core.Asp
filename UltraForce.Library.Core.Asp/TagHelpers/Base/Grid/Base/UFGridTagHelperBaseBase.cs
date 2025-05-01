@@ -103,6 +103,7 @@ public abstract class UFGridTagHelperBaseBase : TagHelper
     TagHelperOutput output
   )
   {
+    await base.ProcessAsync(context, output);
     context.Items[Grid] = this;
     string id = output.Attributes["id"]?.Value?.ToString() ?? UFHtmlTools.NewDomId();
     if (this.Filter)
@@ -197,7 +198,7 @@ public abstract class UFGridTagHelperBaseBase : TagHelper
   {
     return string.Empty;
   }
-
+  
   #endregion
 
   #region internal methods

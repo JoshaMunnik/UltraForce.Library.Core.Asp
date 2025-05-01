@@ -1,0 +1,316 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize
+  commentId: T:UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize
+  id: IUFGridItemSize
+  parent: UltraForce.Library.Core.Asp.Types.Interfaces
+  children:
+  - UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize.MaxSize
+  - UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize.MinSize
+  - UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize.Size
+  - UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize.UFGridItemSize
+  langs:
+  - csharp
+  - vb
+  name: IUFGridItemSize
+  nameWithType: IUFGridItemSize
+  fullName: UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize
+  type: Interface
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Interfaces/IUFGridItemSize.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: IUFGridItemSize
+    path: ../UltraForce.Library.Core.Asp/Types/Interfaces/IUFGridItemSize.cs
+    startLine: 36
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Interfaces
+  summary: Defines the size for a grid item.
+  example: []
+  syntax:
+    content: public interface IUFGridItemSize
+    content.vb: Public Interface IUFGridItemSize
+- uid: UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize.UFGridItemSize
+  commentId: P:UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize.UFGridItemSize
+  id: UFGridItemSize
+  parent: UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize
+  langs:
+  - csharp
+  - vb
+  name: UFGridItemSize
+  nameWithType: IUFGridItemSize.UFGridItemSize
+  fullName: UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize.UFGridItemSize
+  type: Property
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Interfaces/IUFGridItemSize.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: UFGridItemSize
+    path: ../UltraForce.Library.Core.Asp/Types/Interfaces/IUFGridItemSize.cs
+    startLine: 41
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Interfaces
+  summary: One of the predefined sizes.
+  example: []
+  syntax:
+    content: UFGridItemSizeEnum UFGridItemSize { get; }
+    parameters: []
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFGridItemSizeEnum
+    content.vb: ReadOnly Property UFGridItemSize As UFGridItemSizeEnum
+  overload: UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize.UFGridItemSize*
+- uid: UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize.MinSize
+  commentId: P:UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize.MinSize
+  id: MinSize
+  parent: UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize
+  langs:
+  - csharp
+  - vb
+  name: MinSize
+  nameWithType: IUFGridItemSize.MinSize
+  fullName: UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize.MinSize
+  type: Property
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Interfaces/IUFGridItemSize.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: MinSize
+    path: ../UltraForce.Library.Core.Asp/Types/Interfaces/IUFGridItemSize.cs
+    startLine: 46
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Interfaces
+  summary: Minimum size.
+  example: []
+  syntax:
+    content: string? MinSize { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property MinSize As String
+  overload: UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize.MinSize*
+- uid: UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize.MaxSize
+  commentId: P:UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize.MaxSize
+  id: MaxSize
+  parent: UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize
+  langs:
+  - csharp
+  - vb
+  name: MaxSize
+  nameWithType: IUFGridItemSize.MaxSize
+  fullName: UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize.MaxSize
+  type: Property
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Interfaces/IUFGridItemSize.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: MaxSize
+    path: ../UltraForce.Library.Core.Asp/Types/Interfaces/IUFGridItemSize.cs
+    startLine: 51
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Interfaces
+  summary: Maximum size.
+  example: []
+  syntax:
+    content: string? MaxSize { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property MaxSize As String
+  overload: UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize.MaxSize*
+- uid: UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize.Size
+  commentId: P:UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize.Size
+  id: Size
+  parent: UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize
+  langs:
+  - csharp
+  - vb
+  name: Size
+  nameWithType: IUFGridItemSize.Size
+  fullName: UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize.Size
+  type: Property
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Interfaces/IUFGridItemSize.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: Size
+    path: ../UltraForce.Library.Core.Asp/Types/Interfaces/IUFGridItemSize.cs
+    startLine: 56
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Interfaces
+  summary: Fixed size.
+  example: []
+  syntax:
+    content: string? Size { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: ReadOnly Property Size As String
+  overload: UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize.Size*
+references:
+- uid: UltraForce.Library.Core.Asp.Types.Interfaces
+  commentId: N:UltraForce.Library.Core.Asp.Types.Interfaces
+  href: UltraForce.html
+  name: UltraForce.Library.Core.Asp.Types.Interfaces
+  nameWithType: UltraForce.Library.Core.Asp.Types.Interfaces
+  fullName: UltraForce.Library.Core.Asp.Types.Interfaces
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types
+    name: Types
+    href: UltraForce.Library.Core.Asp.Types.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types.Interfaces
+    name: Interfaces
+    href: UltraForce.Library.Core.Asp.Types.Interfaces.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types
+    name: Types
+    href: UltraForce.Library.Core.Asp.Types.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types.Interfaces
+    name: Interfaces
+    href: UltraForce.Library.Core.Asp.Types.Interfaces.html
+- uid: UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize.UFGridItemSize*
+  commentId: Overload:UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize.UFGridItemSize
+  href: UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize.html#UltraForce_Library_Core_Asp_Types_Interfaces_IUFGridItemSize_UFGridItemSize
+  name: UFGridItemSize
+  nameWithType: IUFGridItemSize.UFGridItemSize
+  fullName: UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize.UFGridItemSize
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFGridItemSizeEnum
+  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFGridItemSizeEnum
+  parent: UltraForce.Library.Core.Asp.Types.Enums
+  href: UltraForce.Library.Core.Asp.Types.Enums.UFGridItemSizeEnum.html
+  name: UFGridItemSizeEnum
+  nameWithType: UFGridItemSizeEnum
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFGridItemSizeEnum
+- uid: UltraForce.Library.Core.Asp.Types.Enums
+  commentId: N:UltraForce.Library.Core.Asp.Types.Enums
+  href: UltraForce.html
+  name: UltraForce.Library.Core.Asp.Types.Enums
+  nameWithType: UltraForce.Library.Core.Asp.Types.Enums
+  fullName: UltraForce.Library.Core.Asp.Types.Enums
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types
+    name: Types
+    href: UltraForce.Library.Core.Asp.Types.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types.Enums
+    name: Enums
+    href: UltraForce.Library.Core.Asp.Types.Enums.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types
+    name: Types
+    href: UltraForce.Library.Core.Asp.Types.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types.Enums
+    name: Enums
+    href: UltraForce.Library.Core.Asp.Types.Enums.html
+- uid: UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize.MinSize*
+  commentId: Overload:UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize.MinSize
+  href: UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize.html#UltraForce_Library_Core_Asp_Types_Interfaces_IUFGridItemSize_MinSize
+  name: MinSize
+  nameWithType: IUFGridItemSize.MinSize
+  fullName: UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize.MinSize
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.string
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System
+  commentId: N:System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize.MaxSize*
+  commentId: Overload:UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize.MaxSize
+  href: UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize.html#UltraForce_Library_Core_Asp_Types_Interfaces_IUFGridItemSize_MaxSize
+  name: MaxSize
+  nameWithType: IUFGridItemSize.MaxSize
+  fullName: UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize.MaxSize
+- uid: UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize.Size*
+  commentId: Overload:UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize.Size
+  href: UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize.html#UltraForce_Library_Core_Asp_Types_Interfaces_IUFGridItemSize_Size
+  name: Size
+  nameWithType: IUFGridItemSize.Size
+  fullName: UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize.Size

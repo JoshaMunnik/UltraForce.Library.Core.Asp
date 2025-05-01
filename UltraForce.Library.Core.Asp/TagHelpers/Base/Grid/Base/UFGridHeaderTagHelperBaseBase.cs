@@ -32,6 +32,7 @@ using Microsoft.AspNetCore.Razor.TagHelpers;
 using UltraForce.Library.Core.Asp.Services;
 using UltraForce.Library.Core.Asp.Types.Constants;
 using UltraForce.Library.Core.Asp.Types.Enums;
+using UltraForce.Library.Core.Asp.Types.Interfaces;
 using UltraForce.Library.NetStandard.Extensions;
 using UltraForce.Library.NetStandard.Tools;
 
@@ -44,7 +45,7 @@ namespace UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base;
 public abstract class UFGridHeaderTagHelperBaseBase(
   IUFModelExpressionRenderer modelExpressionRenderer
 )
-  : UFTagHelperWithModelExpressionRenderer(modelExpressionRenderer)
+  : UFTagHelperWithModelExpressionRenderer(modelExpressionRenderer), IUFGridItemSize
 {
   #region public properties
 
@@ -66,6 +67,22 @@ public abstract class UFGridHeaderTagHelperBaseBase(
   [HtmlAttributeName("for")]
   public ModelExpression? For { get; set; } = null;
 
+  /// <inheritdoc />
+  [HtmlAttributeName("item-size")]
+  public UFGridItemSizeEnum UFGridItemSize { get; set; } = UFGridItemSizeEnum.Auto;
+
+  /// <inheritdoc />
+  [HtmlAttributeName("min-size")]
+  public string? MinSize { get; set; } = null;
+
+  /// <inheritdoc />
+  [HtmlAttributeName("max-size")]
+  public string? MaxSize { get; set; } = null;
+
+  /// <inheritdoc />
+  [HtmlAttributeName("size")]
+  public string? Size { get; set; } = null;
+  
   #endregion
 
   #region public methods

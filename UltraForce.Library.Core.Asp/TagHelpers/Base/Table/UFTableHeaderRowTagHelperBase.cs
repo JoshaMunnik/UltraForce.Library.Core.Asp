@@ -73,6 +73,7 @@ public abstract class UFTableHeaderRowTagHelperBase<TTable> : UFTableRowTagHelpe
     TTable table
   )
   {
+    table.CellIndex = 0;
     if (table is { ProcessedFirstHeaderRow: null })
     {
       table.ProcessedFirstHeaderRow = this;

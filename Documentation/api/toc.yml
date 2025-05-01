@@ -210,6 +210,8 @@ items:
     name: UFFlexDistributeContentEnum
   - uid: UltraForce.Library.Core.Asp.Types.Enums.UFFlexTypeEnum
     name: UFFlexTypeEnum
+  - uid: UltraForce.Library.Core.Asp.Types.Enums.UFGridItemSizeEnum
+    name: UFGridItemSizeEnum
   - uid: UltraForce.Library.Core.Asp.Types.Enums.UFPopupHideEnum
     name: UFPopupHideEnum
   - uid: UltraForce.Library.Core.Asp.Types.Enums.UFPopupPositionEnum
@@ -235,6 +237,11 @@ items:
   items:
   - uid: UltraForce.Library.Core.Asp.Types.Exceptions.UFUseActionException
     name: UFUseActionException
+- uid: UltraForce.Library.Core.Asp.Types.Interfaces
+  name: UltraForce.Library.Core.Asp.Types.Interfaces
+  items:
+  - uid: UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize
+    name: IUFGridItemSize
 - uid: UltraForce.Library.Core.Asp.ViewModels
   name: UltraForce.Library.Core.Asp.ViewModels
   items:

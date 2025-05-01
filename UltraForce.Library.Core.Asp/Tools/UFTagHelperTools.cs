@@ -33,6 +33,8 @@ using System.Text.RegularExpressions;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.AspNetCore.Mvc.ViewFeatures;
 using Microsoft.AspNetCore.Razor.TagHelpers;
+using UltraForce.Library.Core.Asp.Types.Enums;
+using UltraForce.Library.Core.Asp.Types.Interfaces;
 
 namespace UltraForce.Library.Core.Asp.Tools
 {
@@ -456,6 +458,46 @@ namespace UltraForce.Library.Core.Asp.Tools
       value,
       value == null ? HtmlAttributeValueStyle.Minimized : HtmlAttributeValueStyle.DoubleQuotes
     );
+
+    /// <summary>
+    /// Builds a grid template size string from a list of sizes. It can be used with
+    /// <c>grid-template-columns</c> or <c>grid-template-rows</c>.
+    /// </summary>
+    /// <param name="sizes"></param>
+    /// <returns></returns>
+    /// <exception cref="ArgumentOutOfRangeException"></exception>
+    public static string BuildGridTemplateSizes(
+      IList<IUFGridItemSize> sizes
+    )
+    {
+      string result = "";
+      foreach (IUFGridItemSize size in sizes)
+      {
+        if (!string.IsNullOrEmpty(result))
+        {
+          result += " ";
+        }
+        if (size.Size != null)
+        {
+          result += size.Size;
+        }
+        else if ((size.MinSize != null) && (size.MaxSize != null))
+        {
+          result += $"minmax({size.MinSize},{size.MaxSize})";
+        }
+        else 
+        {
+          result += size.UFGridItemSize switch
+          {
+            UFGridItemSizeEnum.Auto => "auto",
+            UFGridItemSizeEnum.Min => "min-content",
+            UFGridItemSizeEnum.Max => "max-content",
+            _ => ""
+          };
+        }
+      }
+      return result;
+    }
 
     #endregion
   }

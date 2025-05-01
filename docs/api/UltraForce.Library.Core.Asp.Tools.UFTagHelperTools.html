@@ -157,7 +157,7 @@ Class UFTagHelperTools
 
   <h3 id="UltraForce_Library_Core_Asp_Tools_UFTagHelperTools_AddAttribute_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperAttributeList_System_String_System_String_System_String_" data-uid="UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.AddAttribute(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttributeList,System.String,System.String,System.String)">
   AddAttribute(TagHelperAttributeList, string, string, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Tools/UFTagHelperTools.cs/#L345"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Tools/UFTagHelperTools.cs/#L347"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Adds a value for an attribute. If the attribute exists, the value gets inserted before
@@ -197,7 +197,7 @@ the attributes original value.</p>
 
   <h3 id="UltraForce_Library_Core_Asp_Tools_UFTagHelperTools_AddClasses_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_System_String_" data-uid="UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.AddClasses(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,System.String)">
   AddClasses(TagHelperOutput, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Tools/UFTagHelperTools.cs/#L371"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Tools/UFTagHelperTools.cs/#L373"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Shortcut to add css classes to an output. The method calls <a class="xref" href="UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.html#UltraForce_Library_Core_Asp_Tools_UFTagHelperTools_AddAttribute_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperAttributeList_System_String_System_String_System_String_">AddAttribute(TagHelperAttributeList, string, string, string)</a> with
@@ -234,7 +234,7 @@ the correct parameters.</p>
 
   <h3 id="UltraForce_Library_Core_Asp_Tools_UFTagHelperTools_Attribute_System_String_System_Object_" data-uid="UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.Attribute(System.String,System.Object)">
   Attribute(string, object?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Tools/UFTagHelperTools.cs/#L451"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Tools/UFTagHelperTools.cs/#L453"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Creates a tag helper attribute with a name and value. The value style is set to minimized
@@ -273,11 +273,54 @@ if the value is null.</p>
 
 
 
+  <a id="UltraForce_Library_Core_Asp_Tools_UFTagHelperTools_BuildGridTemplateSizes_" data-uid="UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.BuildGridTemplateSizes*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_Tools_UFTagHelperTools_BuildGridTemplateSizes_System_Collections_Generic_IList_UltraForce_Library_Core_Asp_Types_Interfaces_IUFGridItemSize__" data-uid="UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.BuildGridTemplateSizes(System.Collections.Generic.IList{UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize})">
+  BuildGridTemplateSizes(IList&lt;IUFGridItemSize&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Tools/UFTagHelperTools.cs/#L469"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Builds a grid template size string from a list of sizes. It can be used with
+<code>grid-template-columns</code> or <code>grid-template-rows</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string BuildGridTemplateSizes(IList&lt;IUFGridItemSize&gt; sizes)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sizes</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize.html">IUFGridItemSize</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+  <h4 class="section">Exceptions</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception">ArgumentOutOfRangeException</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
   <a id="UltraForce_Library_Core_Asp_Tools_UFTagHelperTools_CreateAttributeList_" data-uid="UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.CreateAttributeList*"></a>
 
   <h3 id="UltraForce_Library_Core_Asp_Tools_UFTagHelperTools_CreateAttributeList_System_Collections_Generic_Dictionary_System_String_System_String__" data-uid="UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.CreateAttributeList(System.Collections.Generic.Dictionary{System.String,System.String})">
   CreateAttributeList(Dictionary&lt;string, string&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Tools/UFTagHelperTools.cs/#L190"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Tools/UFTagHelperTools.cs/#L192"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Builds a tag helper attribute list from a dictionary.</p>
@@ -314,7 +357,7 @@ if the value is null.</p>
 
   <h3 id="UltraForce_Library_Core_Asp_Tools_UFTagHelperTools_FindAttribute_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperAttributeList_System_String_" data-uid="UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.FindAttribute(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttributeList,System.String)">
   FindAttribute(TagHelperAttributeList, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Tools/UFTagHelperTools.cs/#L327"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Tools/UFTagHelperTools.cs/#L329"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Tries to find an attribute with a certain name.</p>
@@ -353,7 +396,7 @@ if the value is null.</p>
 
   <h3 id="UltraForce_Library_Core_Asp_Tools_UFTagHelperTools_GetItem__1_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContext_System_Object___0_" data-uid="UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.GetItem``1(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,System.Object,``0)">
   GetItem&lt;T&gt;(TagHelperContext, object, T?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Tools/UFTagHelperTools.cs/#L421"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Tools/UFTagHelperTools.cs/#L423"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets an item from the context and typecast it to a certain class type.</p>
@@ -408,7 +451,7 @@ if the value is null.</p>
 
   <h3 id="UltraForce_Library_Core_Asp_Tools_UFTagHelperTools_GetLabel_Microsoft_AspNetCore_Mvc_ViewFeatures_IHtmlGenerator_Microsoft_AspNetCore_Mvc_Rendering_ViewContext_Microsoft_AspNetCore_Mvc_ViewFeatures_ModelExpression_System_String_" data-uid="UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.GetLabel(Microsoft.AspNetCore.Mvc.ViewFeatures.IHtmlGenerator,Microsoft.AspNetCore.Mvc.Rendering.ViewContext,Microsoft.AspNetCore.Mvc.ViewFeatures.ModelExpression,System.String)">
   GetLabel(IHtmlGenerator, ViewContext, ModelExpression?, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Tools/UFTagHelperTools.cs/#L162"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Tools/UFTagHelperTools.cs/#L164"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets the label from a model expression, by building label with <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.viewfeatures.ihtmlgenerator">IHtmlGenerator</a>
@@ -457,7 +500,7 @@ and getting its inner html contents.</p>
 
   <h3 id="UltraForce_Library_Core_Asp_Tools_UFTagHelperTools_IsCssValue_System_String_" data-uid="UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.IsCssValue(System.String)">
   IsCssValue(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Tools/UFTagHelperTools.cs/#L384"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Tools/UFTagHelperTools.cs/#L386"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Checks if a value is a floating number with an optional unit like px, em, rem, %, etc.</p>
@@ -494,7 +537,7 @@ and getting its inner html contents.</p>
 
   <h3 id="UltraForce_Library_Core_Asp_Tools_UFTagHelperTools_RenderTagHelperOutput_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_System_Text_Encodings_Web_HtmlEncoder_" data-uid="UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.RenderTagHelperOutput(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,System.Text.Encodings.Web.HtmlEncoder)">
   RenderTagHelperOutput(TagHelperOutput, HtmlEncoder?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Tools/UFTagHelperTools.cs/#L311"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Tools/UFTagHelperTools.cs/#L313"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Renders the output of a tag helper to a string.</p>
@@ -535,7 +578,7 @@ and getting its inner html contents.</p>
 
   <h3 id="UltraForce_Library_Core_Asp_Tools_UFTagHelperTools_RenderTagHelper__1_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperAttributeList_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContent_" data-uid="UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.RenderTagHelper``1(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttributeList,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent)">
   RenderTagHelper&lt;T&gt;(TagHelperAttributeList, TagHelperContent?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Tools/UFTagHelperTools.cs/#L274"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Tools/UFTagHelperTools.cs/#L276"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Renders a tag helper to a string.</p>
@@ -582,7 +625,7 @@ and getting its inner html contents.</p>
 
   <h3 id="UltraForce_Library_Core_Asp_Tools_UFTagHelperTools_RenderTagHelper__1_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContent_" data-uid="UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.RenderTagHelper``1(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent)">
   RenderTagHelper&lt;T&gt;(TagHelperContent?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Tools/UFTagHelperTools.cs/#L242"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Tools/UFTagHelperTools.cs/#L244"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Renders a tag helper that does not use any attributes to a string.</p>
@@ -625,7 +668,7 @@ and getting its inner html contents.</p>
 
   <h3 id="UltraForce_Library_Core_Asp_Tools_UFTagHelperTools_RenderTagHelper__1_System_Collections_Generic_Dictionary_System_String_System_String__Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContent_" data-uid="UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.RenderTagHelper``1(System.Collections.Generic.Dictionary{System.String,System.String},Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContent)">
   RenderTagHelper&lt;T&gt;(Dictionary&lt;string, string&gt;, TagHelperContent?)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Tools/UFTagHelperTools.cs/#L256"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Tools/UFTagHelperTools.cs/#L258"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Renders a tag helper to a string.</p>
@@ -670,7 +713,7 @@ and getting its inner html contents.</p>
 
   <h3 id="UltraForce_Library_Core_Asp_Tools_UFTagHelperTools_RenderTagHelper__1_System_Collections_Generic_Dictionary_System_String_System_String__System_String_" data-uid="UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.RenderTagHelper``1(System.Collections.Generic.Dictionary{System.String,System.String},System.String)">
   RenderTagHelper&lt;T&gt;(Dictionary&lt;string, string&gt;, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Tools/UFTagHelperTools.cs/#L227"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Tools/UFTagHelperTools.cs/#L229"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Renders a tag helper that does not use any attributes to a string.</p>
@@ -715,7 +758,7 @@ and getting its inner html contents.</p>
 
   <h3 id="UltraForce_Library_Core_Asp_Tools_UFTagHelperTools_RenderTagHelper__1_System_String_" data-uid="UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.RenderTagHelper``1(System.String)">
   RenderTagHelper&lt;T&gt;(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Tools/UFTagHelperTools.cs/#L212"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Tools/UFTagHelperTools.cs/#L214"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Renders a tag helper that does not use any attributes to a string.</p>
@@ -758,7 +801,7 @@ and getting its inner html contents.</p>
 
   <h3 id="UltraForce_Library_Core_Asp_Tools_UFTagHelperTools_SetContentToHtmlAsync_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_System_String_" data-uid="UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.SetContentToHtmlAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,System.String)">
   SetContentToHtmlAsync(TagHelperOutput, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Tools/UFTagHelperTools.cs/#L132"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Tools/UFTagHelperTools.cs/#L134"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Sets the content to a specific html. The html is only set if there is not another tag helper
@@ -800,7 +843,7 @@ and the content is empty.</p>
 
   <h3 id="UltraForce_Library_Core_Asp_Tools_UFTagHelperTools_SetContentToTagBuilderAsync_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_System_Func_Microsoft_AspNetCore_Mvc_Rendering_TagBuilder__" data-uid="UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.SetContentToTagBuilderAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,System.Func{Microsoft.AspNetCore.Mvc.Rendering.TagBuilder})">
   SetContentToTagBuilderAsync(TagHelperOutput, Func&lt;TagBuilder&gt;)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Tools/UFTagHelperTools.cs/#L73"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Tools/UFTagHelperTools.cs/#L75"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Sets the content to the inner html of a tag. The content is only set if there is no current
@@ -842,7 +885,7 @@ content and no other tag helper as adjusted the content already.</p>
 
   <h3 id="UltraForce_Library_Core_Asp_Tools_UFTagHelperTools_SetContentToText_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_System_String_" data-uid="UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.SetContentToText(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,System.String)">
   SetContentToText(TagHelperOutput, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Tools/UFTagHelperTools.cs/#L105"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/Tools/UFTagHelperTools.cs/#L107"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Sets the content to a specific text. The text is only set if there is not another tag helper

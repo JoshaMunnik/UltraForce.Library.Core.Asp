@@ -93,6 +93,7 @@ public abstract class UFTableDataRowTagHelperBase<TTable> : UFTableRowTagHelperB
     TTable table
   )
   {
+    table.CellIndex = 0;
     if (table is { ProcessedFirstDataRow: null })
     {
       table.ProcessedFirstDataRow = this;

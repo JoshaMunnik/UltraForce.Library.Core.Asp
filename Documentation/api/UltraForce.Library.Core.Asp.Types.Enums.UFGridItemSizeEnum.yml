@@ -1,0 +1,179 @@
+### YamlMime:ManagedReference
+items:
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFGridItemSizeEnum
+  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFGridItemSizeEnum
+  id: UFGridItemSizeEnum
+  parent: UltraForce.Library.Core.Asp.Types.Enums
+  children:
+  - UltraForce.Library.Core.Asp.Types.Enums.UFGridItemSizeEnum.Auto
+  - UltraForce.Library.Core.Asp.Types.Enums.UFGridItemSizeEnum.Max
+  - UltraForce.Library.Core.Asp.Types.Enums.UFGridItemSizeEnum.Min
+  langs:
+  - csharp
+  - vb
+  name: UFGridItemSizeEnum
+  nameWithType: UFGridItemSizeEnum
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFGridItemSizeEnum
+  type: Enum
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFGridItemSizeEnum.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: UFGridItemSizeEnum
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFGridItemSizeEnum.cs
+    startLine: 34
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Possible widths for a grid item.
+  example: []
+  syntax:
+    content: public enum UFGridItemSizeEnum
+    content.vb: Public Enum UFGridItemSizeEnum
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFGridItemSizeEnum.Auto
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFGridItemSizeEnum.Auto
+  id: Auto
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFGridItemSizeEnum
+  langs:
+  - csharp
+  - vb
+  name: Auto
+  nameWithType: UFGridItemSizeEnum.Auto
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFGridItemSizeEnum.Auto
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFGridItemSizeEnum.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: Auto
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFGridItemSizeEnum.cs
+    startLine: 39
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Auto size. The size is set to the minimum required to display the content.
+  example: []
+  syntax:
+    content: Auto = 0
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFGridItemSizeEnum
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFGridItemSizeEnum.Min
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFGridItemSizeEnum.Min
+  id: Min
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFGridItemSizeEnum
+  langs:
+  - csharp
+  - vb
+  name: Min
+  nameWithType: UFGridItemSizeEnum.Min
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFGridItemSizeEnum.Min
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFGridItemSizeEnum.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: Min
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFGridItemSizeEnum.cs
+    startLine: 44
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Minimum size. The size is set to the minimum required to display the content.
+  example: []
+  syntax:
+    content: Min = 1
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFGridItemSizeEnum
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFGridItemSizeEnum.Max
+  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFGridItemSizeEnum.Max
+  id: Max
+  parent: UltraForce.Library.Core.Asp.Types.Enums.UFGridItemSizeEnum
+  langs:
+  - csharp
+  - vb
+  name: Max
+  nameWithType: UFGridItemSizeEnum.Max
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFGridItemSizeEnum.Max
+  type: Field
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Enums/UFGridItemSizeEnum.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: Max
+    path: ../UltraForce.Library.Core.Asp/Types/Enums/UFGridItemSizeEnum.cs
+    startLine: 49
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Enums
+  summary: Maximum size. The size is set to the maximum required to display the content.
+  example: []
+  syntax:
+    content: Max = 2
+    return:
+      type: UltraForce.Library.Core.Asp.Types.Enums.UFGridItemSizeEnum
+references:
+- uid: UltraForce.Library.Core.Asp.Types.Enums
+  commentId: N:UltraForce.Library.Core.Asp.Types.Enums
+  href: UltraForce.html
+  name: UltraForce.Library.Core.Asp.Types.Enums
+  nameWithType: UltraForce.Library.Core.Asp.Types.Enums
+  fullName: UltraForce.Library.Core.Asp.Types.Enums
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types
+    name: Types
+    href: UltraForce.Library.Core.Asp.Types.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types.Enums
+    name: Enums
+    href: UltraForce.Library.Core.Asp.Types.Enums.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types
+    name: Types
+    href: UltraForce.Library.Core.Asp.Types.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.Types.Enums
+    name: Enums
+    href: UltraForce.Library.Core.Asp.Types.Enums.html
+- uid: UltraForce.Library.Core.Asp.Types.Enums.UFGridItemSizeEnum
+  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFGridItemSizeEnum
+  parent: UltraForce.Library.Core.Asp.Types.Enums
+  href: UltraForce.Library.Core.Asp.Types.Enums.UFGridItemSizeEnum.html
+  name: UFGridItemSizeEnum
+  nameWithType: UFGridItemSizeEnum
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFGridItemSizeEnum

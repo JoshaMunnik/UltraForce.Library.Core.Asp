@@ -5,7 +5,7 @@ items:
   id: UFGridTagHelperBase
   parent: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid
   children:
-  - UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.GetGridClasses(System.Int32)
+  - UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.GetGridClasses(System.Collections.Generic.IList{UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize})
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.GetGridContainerClasses
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.GetGroupSize
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.GroupSize
@@ -25,7 +25,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: UFGridTagHelperBase
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Grid/UFGridTagHelperBase.cs
-    startLine: 39
+    startLine: 40
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid
@@ -82,7 +82,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: RenderGroups
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Grid/UFGridTagHelperBase.cs
-    startLine: 47
+    startLine: 48
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid
@@ -116,7 +116,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GroupSize
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Grid/UFGridTagHelperBase.cs
-    startLine: 53
+    startLine: 54
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid
@@ -150,7 +150,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: ProcessAsync
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Grid/UFGridTagHelperBase.cs
-    startLine: 60
+    startLine: 61
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid
@@ -193,7 +193,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetGroupSize
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Grid/UFGridTagHelperBase.cs
-    startLine: 97
+    startLine: 102
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid
@@ -233,7 +233,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetGridContainerClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Grid/UFGridTagHelperBase.cs
-    startLine: 111
+    startLine: 116
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid
@@ -249,16 +249,16 @@ items:
       description: ''
     content.vb: Protected Overridable Function GetGridContainerClasses() As String
   overload: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.GetGridContainerClasses*
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.GetGridClasses(System.Int32)
-  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.GetGridClasses(System.Int32)
-  id: GetGridClasses(System.Int32)
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.GetGridClasses(System.Collections.Generic.IList{UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize})
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.GetGridClasses(System.Collections.Generic.IList{UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize})
+  id: GetGridClasses(System.Collections.Generic.IList{UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize})
   parent: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase
   langs:
   - csharp
   - vb
-  name: GetGridClasses(int)
-  nameWithType: UFGridTagHelperBase.GetGridClasses(int)
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.GetGridClasses(int)
+  name: GetGridClasses(IList<IUFGridItemSize>)
+  nameWithType: UFGridTagHelperBase.GetGridClasses(IList<IUFGridItemSize>)
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.GetGridClasses(System.Collections.Generic.IList<UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize>)
   type: Method
   source:
     remote:
@@ -267,29 +267,31 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetGridClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Grid/UFGridTagHelperBase.cs
-    startLine: 124
+    startLine: 130
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid
   summary: Classes for the grid itself.
   example: []
   syntax:
-    content: protected virtual string GetGridClasses(int itemCount)
+    content: protected virtual string GetGridClasses(IList<IUFGridItemSize> itemSizes)
     parameters:
-    - id: itemCount
-      type: System.Int32
+    - id: itemSizes
+      type: System.Collections.Generic.IList{UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize}
       description: >-
-        The number of items per group in the grid. It is 0 when the <xref href="UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.GroupSize" data-throw-if-not-resolved="false"></xref> was not
+        The sizes determined by either controls or first row of items. If no controls could be
 
-        set and there were no grid control elements.
+        detected and <xref href="UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.GroupSize" data-throw-if-not-resolved="false"></xref> is not set, this list will be empty; since the class
+
+        can not determine the group size.
     return:
       type: System.String
       description: ''
-    content.vb: Protected Overridable Function GetGridClasses(itemCount As Integer) As String
+    content.vb: Protected Overridable Function GetGridClasses(itemSizes As IList(Of IUFGridItemSize)) As String
   overload: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.GetGridClasses*
-  nameWithType.vb: UFGridTagHelperBase.GetGridClasses(Integer)
-  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.GetGridClasses(Integer)
-  name.vb: GetGridClasses(Integer)
+  nameWithType.vb: UFGridTagHelperBase.GetGridClasses(IList(Of IUFGridItemSize))
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.GetGridClasses(System.Collections.Generic.IList(Of UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize))
+  name.vb: GetGridClasses(IList(Of IUFGridItemSize))
 references:
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid
   commentId: N:UltraForce.Library.Core.Asp.TagHelpers.Base.Grid
@@ -1234,7 +1236,105 @@ references:
   name.vb: String
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.GetGridClasses*
   commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.GetGridClasses
-  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_UFGridTagHelperBase_GetGridClasses_System_Int32_
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_UFGridTagHelperBase_GetGridClasses_System_Collections_Generic_IList_UltraForce_Library_Core_Asp_Types_Interfaces_IUFGridItemSize__
   name: GetGridClasses
   nameWithType: UFGridTagHelperBase.GetGridClasses
   fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.UFGridTagHelperBase.GetGridClasses
+- uid: System.Collections.Generic.IList{UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize}
+  commentId: T:System.Collections.Generic.IList{UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  name: IList<IUFGridItemSize>
+  nameWithType: IList<IUFGridItemSize>
+  fullName: System.Collections.Generic.IList<UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize>
+  nameWithType.vb: IList(Of IUFGridItemSize)
+  fullName.vb: System.Collections.Generic.IList(Of UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize)
+  name.vb: IList(Of IUFGridItemSize)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: <
+  - uid: UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize
+    name: IUFGridItemSize
+    href: UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize
+    name: IUFGridItemSize
+    href: UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize.html
+  - name: )
+- uid: System.Collections.Generic.IList`1
+  commentId: T:System.Collections.Generic.IList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  name: IList<T>
+  nameWithType: IList<T>
+  fullName: System.Collections.Generic.IList<T>
+  nameWithType.vb: IList(Of T)
+  fullName.vb: System.Collections.Generic.IList(Of T)
+  name.vb: IList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic

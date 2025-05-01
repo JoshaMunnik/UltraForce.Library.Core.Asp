@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class UFTableTagHelperBase | UltraForce.Library.Core.Asp ">
       
-      <meta name="description" content="Tag helper to render a table. The table assumes all header rows are the first rows in the table and are grouped together. The tag helper will insert thead and tbody tags if there are header and data rows. To skip this, call the constructor with skipHeadBody set to true.  Table without filter and sorting: &amp;lt;table class=&quot;GetTableClasses()&quot;&amp;gt;   {children} &amp;lt;/table&amp;gt;   Table with a filter: &amp;lt;div class=&quot;GetTableContainerClasses()&quot;&amp;gt;   &amp;lt;div class=&quot;GetFilterContainerClasses()&quot;&amp;gt;     &amp;lt;input {id} class=&quot;GetFilterInputClasses()&quot; placeholder=&quot;GetFilterPlaceholder()&quot; data-uf-filter-table=&quot;{id}&quot; /&amp;gt;     &amp;lt;button class=&quot;GetFilterButtonClasses()&quot; data-uf-set-field-selector=&quot;#{id}&quot;&amp;gt;       GetFilterCaptionHtml()     &amp;lt;/button&amp;gt;   &amp;lt;/div&amp;gt;   &amp;lt;table class=&quot;GetTableClasses()&quot;&amp;gt;     {children}   &amp;lt;/table&amp;gt; &amp;lt;/div&amp;gt;   Table with sorting: &amp;lt;table   class=&quot;GetTableClasses()&quot;   data-uf-sorting=&quot;1&quot;   data-uf-sort-ascending=&quot;GetSortAscendingClasses()&quot;   data-uf-sort-descending=&quot;GetSortDescendingClasses()&quot;   &gt;   {children} &amp;lt;/table&amp;gt;">
+      <meta name="description" content="Tag helper to render a table. The table assumes all header rows are the first rows in the table and are grouped together. The tag helper will insert thead and tbody tags if there are header and data rows. To skip this, call the constructor with skipHeadBody set to true.  If the styling of the table will use a grid styling, set the `useGrid` parameter to true. This will add a style attribute setting the `grid-template-columns` property. The template will be built from the sizes of the first row of header cells or the first row of data cells if there are no header cells.   Table without filter and sorting: &amp;lt;table class=&quot;GetTableClasses()&quot; [style=&quot;grid-template-columns: GetTemplateColumns()&quot;]&amp;gt;   {children} &amp;lt;/table&amp;gt;   Table with a filter: &amp;lt;div class=&quot;GetTableContainerClasses()&quot;&amp;gt;   &amp;lt;div class=&quot;GetFilterContainerClasses()&quot;&amp;gt;     &amp;lt;input {id} class=&quot;GetFilterInputClasses()&quot; placeholder=&quot;GetFilterPlaceholder()&quot; data-uf-filter-table=&quot;{id}&quot; /&amp;gt;     &amp;lt;button class=&quot;GetFilterButtonClasses()&quot; data-uf-set-field-selector=&quot;#{id}&quot;&amp;gt;       GetFilterCaptionHtml()     &amp;lt;/button&amp;gt;   &amp;lt;/div&amp;gt;   &amp;lt;table class=&quot;GetTableClasses()&quot; [style=&quot;grid-template-columns: GetTemplateColumns()&quot;]&amp;gt;     {children}   &amp;lt;/table&amp;gt; &amp;lt;/div&amp;gt;   Table with sorting: &amp;lt;table   &amp;lt;table class=&quot;GetTableClasses()&quot; [style=&quot;grid-template-columns: GetTemplateColumns()&quot;]&amp;gt;   data-uf-table-sorting=&quot;1&quot;   data-uf-sort-ascending=&quot;GetSortAscendingClasses()&quot;   data-uf-sort-descending=&quot;GetSortDescendingClasses()&quot;   &gt;   {children} &amp;lt;/table&amp;gt;">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -89,7 +89,7 @@
 
 
   <h1 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableTagHelperBase" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase" class="text-break">
-Class UFTableTagHelperBase  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs/#L85"><i class="bi bi-code-slash"></i></a>
+Class UFTableTagHelperBase  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs/#L95"><i class="bi bi-code-slash"></i></a>
   </h1>
 
   <div class="facts text-secondary">
@@ -101,8 +101,14 @@ Class UFTableTagHelperBase  <a class="header-action link-secondary" title="View 
 and are grouped together. The tag helper will insert thead and tbody tags if there are header
 and data rows. To skip this, call the constructor with <code>skipHeadBody</code> set to true.</p>
 <p>
+If the styling of the table will use a grid styling, set the `useGrid` parameter to true. This
+will add a style attribute setting the `grid-template-columns` property. The template will be
+built from the sizes of the first row of header cells or the first row of data cells if there
+are no header cells.
+</p>
+<p>
 Table without filter and sorting:
-<pre><code class="lang-csharp">&lt;table class="GetTableClasses()"&gt;
+<pre><code class="lang-csharp">&lt;table class="GetTableClasses()" [style="grid-template-columns: GetTemplateColumns()"]&gt;
   {children}
 &lt;/table&gt;</code></pre>
 
@@ -115,7 +121,7 @@ Table with a filter:
       GetFilterCaptionHtml()
     &lt;/button&gt;
   &lt;/div&gt;
-  &lt;table class="GetTableClasses()"&gt;
+  &lt;table class="GetTableClasses()" [style="grid-template-columns: GetTemplateColumns()"]&gt;
     {children}
   &lt;/table&gt;
 &lt;/div&gt;</code></pre>
@@ -123,8 +129,8 @@ Table with a filter:
 <p>
 Table with sorting:
 <pre><code class="lang-csharp">&lt;table
-  class="GetTableClasses()"
-  data-uf-sorting="1"
+  &lt;table class="GetTableClasses()" [style="grid-template-columns: GetTemplateColumns()"]&gt;
+  data-uf-table-sorting="1"
   data-uf-sort-ascending="GetSortAscendingClasses()"
   data-uf-sort-descending="GetSortDescendingClasses()"
   >
@@ -242,17 +248,23 @@ Table with sorting:
 
   <a id="UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableTagHelperBase__ctor_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.#ctor*"></a>
 
-  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableTagHelperBase__ctor_System_Boolean_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.#ctor(System.Boolean)">
-  UFTableTagHelperBase(bool)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs/#L85"><i class="bi bi-code-slash"></i></a>
+  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableTagHelperBase__ctor_System_Boolean_System_Boolean_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.#ctor(System.Boolean,System.Boolean)">
+  UFTableTagHelperBase(bool, bool)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs/#L95"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Tag helper to render a table. The table assumes all header rows are the first rows in the table
 and are grouped together. The tag helper will insert thead and tbody tags if there are header
 and data rows. To skip this, call the constructor with <code>skipHeadBody</code> set to true.</p>
 <p>
+If the styling of the table will use a grid styling, set the `useGrid` parameter to true. This
+will add a style attribute setting the `grid-template-columns` property. The template will be
+built from the sizes of the first row of header cells or the first row of data cells if there
+are no header cells.
+</p>
+<p>
 Table without filter and sorting:
-<pre><code class="lang-csharp">&lt;table class="GetTableClasses()"&gt;
+<pre><code class="lang-csharp">&lt;table class="GetTableClasses()" [style="grid-template-columns: GetTemplateColumns()"]&gt;
   {children}
 &lt;/table&gt;</code></pre>
 
@@ -265,7 +277,7 @@ Table with a filter:
       GetFilterCaptionHtml()
     &lt;/button&gt;
   &lt;/div&gt;
-  &lt;table class="GetTableClasses()"&gt;
+  &lt;table class="GetTableClasses()" [style="grid-template-columns: GetTemplateColumns()"]&gt;
     {children}
   &lt;/table&gt;
 &lt;/div&gt;</code></pre>
@@ -273,8 +285,8 @@ Table with a filter:
 <p>
 Table with sorting:
 <pre><code class="lang-csharp">&lt;table
-  class="GetTableClasses()"
-  data-uf-sorting="1"
+  &lt;table class="GetTableClasses()" [style="grid-template-columns: GetTemplateColumns()"]&gt;
+  data-uf-table-sorting="1"
   data-uf-sort-ascending="GetSortAscendingClasses()"
   data-uf-sort-descending="GetSortDescendingClasses()"
   >
@@ -285,7 +297,7 @@ Table with sorting:
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected UFTableTagHelperBase(bool skipHeadBody = false)</code></pre>
+    <pre><code class="lang-csharp hljs">protected UFTableTagHelperBase(bool skipHeadBody = false, bool useGrid = false)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -293,6 +305,10 @@ Table with sorting:
     <dt><code>skipHeadBody</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
     <dd><p>When true do not insert thead and tbody tags. The class will not call
 <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableTagHelperBase_GetBodyClasses_System_Int32_">GetBodyClasses(int)</a> and <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableTagHelperBase_GetHeadClasses_System_Int32_">GetHeadClasses(int)</a>.</p>
+</dd>
+    <dt><code>useGrid</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.boolean">bool</a></dt>
+    <dd><p>Set to true to indicate the table will be styled using <code>display: grid</code>. When true, the cell
+instances will not set a style attribute with widths.</p>
 </dd>
   </dl>
 
@@ -315,7 +331,7 @@ Table with sorting:
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableTagHelperBase_GetBodyClasses_System_Int32_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetBodyClasses(System.Int32)">
   GetBodyClasses(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs/#L158"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs/#L191"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns the classes to use with the tbody tag.</p>
@@ -353,7 +369,7 @@ Table with sorting:
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableTagHelperBase_GetHeadClasses_System_Int32_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetHeadClasses(System.Int32)">
   GetHeadClasses(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs/#L168"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs/#L203"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns the classes to use with the thead tag.</p>
@@ -391,7 +407,7 @@ Table with sorting:
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableTagHelperBase_GetTableClasses_System_Int32_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetTableClasses(System.Int32)">
   GetTableClasses(int)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs/#L138"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs/#L169"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns the classes for the table. The number of cells is determined by counting the number
@@ -430,7 +446,7 @@ of header cells in the first header row or the number of data cells in the first
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableTagHelperBase_GetTableContainerClasses" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetTableContainerClasses">
   GetTableContainerClasses()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs/#L148"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs/#L181"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns the classes for the element containing the table. This method is only used when
@@ -459,11 +475,52 @@ Filter is <code>true</code>.</p>
 
 
 
+  <a id="UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableTagHelperBase_GetTemplateColumns_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetTemplateColumns*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableTagHelperBase_GetTemplateColumns_System_Collections_Generic_IList_UltraForce_Library_Core_Asp_Types_Interfaces_IUFGridItemSize__" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetTemplateColumns(System.Collections.Generic.IList{UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize})">
+  GetTemplateColumns(IList&lt;IUFGridItemSize&gt;)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs/#L219"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Gets the template columns for the table. This method is only used when useGrid
+is true.</p>
+<p>
+The default implementation calls <a class="xref" href="UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.html#UltraForce_Library_Core_Asp_Tools_UFTagHelperTools_BuildGridTemplateSizes_System_Collections_Generic_IList_UltraForce_Library_Core_Asp_Types_Interfaces_IUFGridItemSize__">BuildGridTemplateSizes(IList&lt;IUFGridItemSize&gt;)</a>
+</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual string GetTemplateColumns(IList&lt;IUFGridItemSize&gt; sizes)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>sizes</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1">IList</a>&lt;<a class="xref" href="UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize.html">IUFGridItemSize</a>&gt;</dt>
+    <dd></dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
+
+
+
   <a id="UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableTagHelperBase_ProcessAsync_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.ProcessAsync*"></a>
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableTagHelperBase_ProcessAsync_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContext_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)">
   ProcessAsync(TagHelperContext, TagHelperOutput)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs/#L91"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs/#L104"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Asynchronously executes the <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper">TagHelper</a> with the given <code class="paramref">context</code> and
@@ -509,7 +566,7 @@ Filter is <code>true</code>.</p>
 </article>
 
         <div class="contribution d-print-none">
-          <a href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs/#L85" class="edit-link">Edit this page</a>
+          <a href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableTagHelperBase.cs/#L95" class="edit-link">Edit this page</a>
         </div>
 
 

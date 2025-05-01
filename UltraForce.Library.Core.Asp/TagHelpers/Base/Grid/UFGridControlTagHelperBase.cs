@@ -84,6 +84,7 @@ where TGrid : UFGridTagHelperBase
     int itemIndex
   )
   {
+    grid.GridItemSizes.Add(this);
     UFSortTypeEnum sortType = this.GetSortType();
     output.TagName = sortType == UFSortTypeEnum.None ? "div" : "button";
     output.TagMode = TagMode.StartTagAndEndTag;

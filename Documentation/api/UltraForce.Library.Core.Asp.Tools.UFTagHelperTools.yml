@@ -8,6 +8,7 @@ items:
   - UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.AddAttribute(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttributeList,System.String,System.String,System.String)
   - UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.AddClasses(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,System.String)
   - UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.Attribute(System.String,System.Object)
+  - UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.BuildGridTemplateSizes(System.Collections.Generic.IList{UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize})
   - UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.CreateAttributeList(System.Collections.Generic.Dictionary{System.String,System.String})
   - UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.FindAttribute(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttributeList,System.String)
   - UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.GetItem``1(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,System.Object,``0)
@@ -69,7 +70,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: SetContentToTagBuilderAsync
     path: ../UltraForce.Library.Core.Asp/Tools/UFTagHelperTools.cs
-    startLine: 72
+    startLine: 74
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Tools
@@ -112,7 +113,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: SetContentToText
     path: ../UltraForce.Library.Core.Asp/Tools/UFTagHelperTools.cs
-    startLine: 104
+    startLine: 106
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Tools
@@ -155,7 +156,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: SetContentToHtmlAsync
     path: ../UltraForce.Library.Core.Asp/Tools/UFTagHelperTools.cs
-    startLine: 131
+    startLine: 133
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Tools
@@ -198,7 +199,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetLabel
     path: ../UltraForce.Library.Core.Asp/Tools/UFTagHelperTools.cs
-    startLine: 161
+    startLine: 163
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Tools
@@ -248,7 +249,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: CreateAttributeList
     path: ../UltraForce.Library.Core.Asp/Tools/UFTagHelperTools.cs
-    startLine: 189
+    startLine: 191
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Tools
@@ -286,7 +287,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: RenderTagHelper
     path: ../UltraForce.Library.Core.Asp/Tools/UFTagHelperTools.cs
-    startLine: 211
+    startLine: 213
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Tools
@@ -327,7 +328,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: RenderTagHelper
     path: ../UltraForce.Library.Core.Asp/Tools/UFTagHelperTools.cs
-    startLine: 226
+    startLine: 228
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Tools
@@ -371,7 +372,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: RenderTagHelper
     path: ../UltraForce.Library.Core.Asp/Tools/UFTagHelperTools.cs
-    startLine: 241
+    startLine: 243
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Tools
@@ -412,7 +413,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: RenderTagHelper
     path: ../UltraForce.Library.Core.Asp/Tools/UFTagHelperTools.cs
-    startLine: 255
+    startLine: 257
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Tools
@@ -456,7 +457,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: RenderTagHelper
     path: ../UltraForce.Library.Core.Asp/Tools/UFTagHelperTools.cs
-    startLine: 273
+    startLine: 275
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Tools
@@ -506,7 +507,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: RenderTagHelperOutput
     path: ../UltraForce.Library.Core.Asp/Tools/UFTagHelperTools.cs
-    startLine: 310
+    startLine: 312
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Tools
@@ -553,7 +554,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: FindAttribute
     path: ../UltraForce.Library.Core.Asp/Tools/UFTagHelperTools.cs
-    startLine: 326
+    startLine: 328
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Tools
@@ -594,7 +595,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: AddAttribute
     path: ../UltraForce.Library.Core.Asp/Tools/UFTagHelperTools.cs
-    startLine: 344
+    startLine: 346
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Tools
@@ -641,7 +642,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: AddClasses
     path: ../UltraForce.Library.Core.Asp/Tools/UFTagHelperTools.cs
-    startLine: 370
+    startLine: 372
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Tools
@@ -682,7 +683,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: IsCssValue
     path: ../UltraForce.Library.Core.Asp/Tools/UFTagHelperTools.cs
-    startLine: 383
+    startLine: 385
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Tools
@@ -720,7 +721,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetItem
     path: ../UltraForce.Library.Core.Asp/Tools/UFTagHelperTools.cs
-    startLine: 420
+    startLine: 422
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Tools
@@ -771,7 +772,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Attribute
     path: ../UltraForce.Library.Core.Asp/Tools/UFTagHelperTools.cs
-    startLine: 450
+    startLine: 452
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Tools
@@ -797,6 +798,51 @@ items:
   nameWithType.vb: UFTagHelperTools.Attribute(String, Object)
   fullName.vb: UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.Attribute(String, Object)
   name.vb: Attribute(String, Object)
+- uid: UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.BuildGridTemplateSizes(System.Collections.Generic.IList{UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize})
+  commentId: M:UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.BuildGridTemplateSizes(System.Collections.Generic.IList{UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize})
+  id: BuildGridTemplateSizes(System.Collections.Generic.IList{UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize})
+  parent: UltraForce.Library.Core.Asp.Tools.UFTagHelperTools
+  langs:
+  - csharp
+  - vb
+  name: BuildGridTemplateSizes(IList<IUFGridItemSize>)
+  nameWithType: UFTagHelperTools.BuildGridTemplateSizes(IList<IUFGridItemSize>)
+  fullName: UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.BuildGridTemplateSizes(System.Collections.Generic.IList<UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize>)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Tools/UFTagHelperTools.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: BuildGridTemplateSizes
+    path: ../UltraForce.Library.Core.Asp/Tools/UFTagHelperTools.cs
+    startLine: 468
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Tools
+  summary: >-
+    Builds a grid template size string from a list of sizes. It can be used with
+
+    <code>grid-template-columns</code> or <code>grid-template-rows</code>.
+  example: []
+  syntax:
+    content: public static string BuildGridTemplateSizes(IList<IUFGridItemSize> sizes)
+    parameters:
+    - id: sizes
+      type: System.Collections.Generic.IList{UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize}
+      description: ''
+    return:
+      type: System.String
+      description: ''
+    content.vb: Public Shared Function BuildGridTemplateSizes(sizes As IList(Of IUFGridItemSize)) As String
+  overload: UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.BuildGridTemplateSizes*
+  exceptions:
+  - type: System.ArgumentOutOfRangeException
+    commentId: T:System.ArgumentOutOfRangeException
+    description: ''
+  nameWithType.vb: UFTagHelperTools.BuildGridTemplateSizes(IList(Of IUFGridItemSize))
+  fullName.vb: UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.BuildGridTemplateSizes(System.Collections.Generic.IList(Of UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize))
+  name.vb: BuildGridTemplateSizes(IList(Of IUFGridItemSize))
 references:
 - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelper
   commentId: T:Microsoft.AspNetCore.Razor.TagHelpers.TagHelper
@@ -1758,3 +1804,77 @@ references:
   name: Attribute
   nameWithType: UFTagHelperTools.Attribute
   fullName: UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.Attribute
+- uid: System.ArgumentOutOfRangeException
+  commentId: T:System.ArgumentOutOfRangeException
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.argumentoutofrangeexception
+  name: ArgumentOutOfRangeException
+  nameWithType: ArgumentOutOfRangeException
+  fullName: System.ArgumentOutOfRangeException
+- uid: UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.BuildGridTemplateSizes*
+  commentId: Overload:UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.BuildGridTemplateSizes
+  href: UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.html#UltraForce_Library_Core_Asp_Tools_UFTagHelperTools_BuildGridTemplateSizes_System_Collections_Generic_IList_UltraForce_Library_Core_Asp_Types_Interfaces_IUFGridItemSize__
+  name: BuildGridTemplateSizes
+  nameWithType: UFTagHelperTools.BuildGridTemplateSizes
+  fullName: UltraForce.Library.Core.Asp.Tools.UFTagHelperTools.BuildGridTemplateSizes
+- uid: System.Collections.Generic.IList{UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize}
+  commentId: T:System.Collections.Generic.IList{UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IList`1
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  name: IList<IUFGridItemSize>
+  nameWithType: IList<IUFGridItemSize>
+  fullName: System.Collections.Generic.IList<UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize>
+  nameWithType.vb: IList(Of IUFGridItemSize)
+  fullName.vb: System.Collections.Generic.IList(Of UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize)
+  name.vb: IList(Of IUFGridItemSize)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: <
+  - uid: UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize
+    name: IUFGridItemSize
+    href: UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize
+    name: IUFGridItemSize
+    href: UltraForce.Library.Core.Asp.Types.Interfaces.IUFGridItemSize.html
+  - name: )
+- uid: System.Collections.Generic.IList`1
+  commentId: T:System.Collections.Generic.IList`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  name: IList<T>
+  nameWithType: IList<T>
+  fullName: System.Collections.Generic.IList<T>
+  nameWithType.vb: IList(Of T)
+  fullName.vb: System.Collections.Generic.IList(Of T)
+  name.vb: IList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.collections.generic.ilist-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )

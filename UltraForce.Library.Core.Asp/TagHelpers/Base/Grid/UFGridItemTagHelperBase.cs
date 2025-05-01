@@ -32,7 +32,6 @@ using UltraForce.Library.Core.Asp.Services;
 using UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base;
 using UltraForce.Library.Core.Asp.Tools;
 using UltraForce.Library.Core.Asp.Types.Constants;
-using UltraForce.Library.Core.Asp.Types.Enums;
 
 namespace UltraForce.Library.Core.Asp.TagHelpers.Base.Grid;
 
@@ -88,6 +87,10 @@ public class UFGridItemTagHelperBase<TGrid>(
     output.TagName = "div";
     output.TagMode = TagMode.StartTagAndEndTag;
     UFTagHelperTools.AddClasses(output, this.GetItemClasses(grid));
+    if (grid.GridItemSizes.Count < grid.GetGroupSize())
+    {
+      grid.GridItemSizes.Add(this);
+    }
     if (!grid.RenderGroups && (groupIndex > 0))
     {
       output.Attributes.SetAttribute(UFDataAttribute.ItemGroup(groupIndex));

@@ -10,6 +10,17 @@ Include the styles in your html using (for example `Shared\_Layout.cshtml`):
 <link rel="stylesheet" href="/_content/UltraForce.Library.Core.Asp/css/uf-styles.css" />
 ````
 ## Version history
+1.0.109
+- bug fix: `UFTableTagHelperBase` now sets tag name and tag mode.
+
+1.0.108
+- added cellIndex to `UFTableDataCellTagHelperBase` and `UFTableHeaderCellTagHelperBase`
+ 
+1.0.107
+- added support for grid styling to `UFTableTagHelperBase`
+- [BREAKING-CHANGE] renamed `MaxWidth` to `MaxSize` and `MinWidth` to `MinSize` in 
+  `UFTableDataCellTagHelperBase` and `UFTableHeaderCellTagHelperBase`
+ 
 1.0.106
 - added `ProcessAsync` with parameters referencing table and rows to `UFTableXXXXTagHelperBase`
 - added column count parameter to various get css classes methods in `UFTableTagHelperBase`
