@@ -32,6 +32,7 @@ using Microsoft.AspNetCore.Razor.TagHelpers;
 using UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base;
 using UltraForce.Library.Core.Asp.TagHelpers.Base.Table.Base;
 using UltraForce.Library.Core.Asp.Tools;
+using UltraForce.Library.Core.Asp.Types.Constants;
 
 namespace UltraForce.Library.Core.Asp.TagHelpers.Base.Table;
 
@@ -79,6 +80,7 @@ public abstract class UFTableHeaderRowTagHelperBase<TTable> : UFTableRowTagHelpe
       table.ProcessedFirstHeaderRow = this;
     }
     UFTagHelperTools.AddClasses(output, this.GetTableRowClasses(table));
+    output.Attributes.SetAttribute(UFDataAttribute.HeaderRow());
     return Task.CompletedTask;
   }
 

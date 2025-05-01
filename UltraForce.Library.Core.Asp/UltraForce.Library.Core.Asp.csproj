@@ -15,8 +15,8 @@
         <RepositoryUrl>https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp</RepositoryUrl>
         <PackageReadmeFile>README.md</PackageReadmeFile>
         <AssemblyVersion></AssemblyVersion>
-        <Version>1.0.109</Version>
-        <PackageReleaseNotes>- bug fix: `UFTableTagHelperBase` now sets tag name and tag mode.
+        <Version>1.0.110</Version>
+        <PackageReleaseNotes>- bug fix: `UFTableHeaderRowTagHelperBase` now sets the `data-uf-header-row` attribute
 </PackageReleaseNotes>
         <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
     </PropertyGroup>
