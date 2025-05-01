@@ -50,20 +50,36 @@ public abstract class UFTableHeaderRowTagHelperBase<TTable> : UFTableRowTagHelpe
   #region public methods
 
   /// <inheritdoc />
-  public override void Process(TagHelperContext context, TagHelperOutput output)
+  public override async Task ProcessAsync(TagHelperContext context, TagHelperOutput output)
   {
-    base.Process(context, output);
-    TTable table = UFTagHelperTools.GetItem<TTable>(context, UFGridTagHelperBaseBase.Grid); 
+    await base.ProcessAsync(context, output);
+    TTable table = UFTagHelperTools.GetItem<TTable>(context, UFGridTagHelperBaseBase.Grid);
+    await this.ProcessAsync(context, output, table);
+  }
+
+  #endregion
+  
+  #region protected methods
+
+  /// <summary>
+  /// Executes the tag helper.
+  /// </summary>
+  /// <param name="context"></param>
+  /// <param name="output"></param>
+  /// <param name="table">Table the row is created inside in</param>
+  protected virtual Task ProcessAsync(
+    TagHelperContext context,
+    TagHelperOutput output,
+    TTable table
+  )
+  {
     if (table is { ProcessedFirstHeaderRow: null })
     {
       table.ProcessedFirstHeaderRow = this;
     }
     UFTagHelperTools.AddClasses(output, this.GetTableRowClasses(table));
+    return Task.CompletedTask;
   }
-
-  #endregion
-  
-  #region protected overridable methods
 
   /// <summary>
   /// Returns the classes for the table row.

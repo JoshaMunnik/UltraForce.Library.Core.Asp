@@ -11,6 +11,7 @@ items:
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableHeaderCellTagHelperBase`2.MaxWidth
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableHeaderCellTagHelperBase`2.MinWidth
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableHeaderCellTagHelperBase`2.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  - UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableHeaderCellTagHelperBase`2.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,`0,`1)
   langs:
   - csharp
   - vb
@@ -292,6 +293,51 @@ items:
   overload: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableHeaderCellTagHelperBase`2.ProcessAsync*
   nameWithType.vb: UFTableHeaderCellTagHelperBase(Of TTable, TTableRow).ProcessAsync(TagHelperContext, TagHelperOutput)
   fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableHeaderCellTagHelperBase(Of TTable, TTableRow).ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableHeaderCellTagHelperBase`2.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,`0,`1)
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableHeaderCellTagHelperBase`2.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,`0,`1)
+  id: ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,`0,`1)
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableHeaderCellTagHelperBase`2
+  langs:
+  - csharp
+  - vb
+  name: ProcessAsync(TagHelperContext, TagHelperOutput, TTable, TTableRow)
+  nameWithType: UFTableHeaderCellTagHelperBase<TTable, TTableRow>.ProcessAsync(TagHelperContext, TagHelperOutput, TTable, TTableRow)
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableHeaderCellTagHelperBase<TTable, TTableRow>.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput, TTable, TTableRow)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableHeaderCellTagHelperBase.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: ProcessAsync
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableHeaderCellTagHelperBase.cs
+    startLine: 116
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Table
+  summary: Executes the tag helper.
+  example: []
+  syntax:
+    content: protected virtual Task ProcessAsync(TagHelperContext context, TagHelperOutput output, TTable table, TTableRow tableRow)
+    parameters:
+    - id: context
+      type: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext
+      description: ''
+    - id: output
+      type: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput
+      description: ''
+    - id: table
+      type: '{TTable}'
+      description: Table the cell is created inside in
+    - id: tableRow
+      type: '{TTableRow}'
+      description: Row the cell is created inside in
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Protected Overridable Function ProcessAsync(context As TagHelperContext, output As TagHelperOutput, table As TTable, tableRow As TTableRow) As Task
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableHeaderCellTagHelperBase`2.ProcessAsync*
+  nameWithType.vb: UFTableHeaderCellTagHelperBase(Of TTable, TTableRow).ProcessAsync(TagHelperContext, TagHelperOutput, TTable, TTableRow)
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableHeaderCellTagHelperBase(Of TTable, TTableRow).ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput, TTable, TTableRow)
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableHeaderCellTagHelperBase`2.GetTableCellClasses(`0,`1)
   commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableHeaderCellTagHelperBase`2.GetTableCellClasses(`0,`1)
   id: GetTableCellClasses(`0,`1)
@@ -310,7 +356,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetTableCellClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableHeaderCellTagHelperBase.cs
-    startLine: 125
+    startLine: 147
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Table
@@ -350,7 +396,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetTableHeaderButtonClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableHeaderCellTagHelperBase.cs
-    startLine: 139
+    startLine: 161
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Table
@@ -1213,14 +1259,6 @@ references:
     name: Tasks
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.threading.tasks
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableHeaderCellTagHelperBase`2.GetTableCellClasses*
-  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableHeaderCellTagHelperBase`2.GetTableCellClasses
-  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableHeaderCellTagHelperBase-2.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableHeaderCellTagHelperBase_2_GetTableCellClasses__0__1_
-  name: GetTableCellClasses
-  nameWithType: UFTableHeaderCellTagHelperBase<TTable, TTableRow>.GetTableCellClasses
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableHeaderCellTagHelperBase<TTable, TTableRow>.GetTableCellClasses
-  nameWithType.vb: UFTableHeaderCellTagHelperBase(Of TTable, TTableRow).GetTableCellClasses
-  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableHeaderCellTagHelperBase(Of TTable, TTableRow).GetTableCellClasses
 - uid: '{TTable}'
   commentId: '!:TTable'
   definition: TTable
@@ -1241,6 +1279,14 @@ references:
   name: TTableRow
   nameWithType: TTableRow
   fullName: TTableRow
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableHeaderCellTagHelperBase`2.GetTableCellClasses*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableHeaderCellTagHelperBase`2.GetTableCellClasses
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableHeaderCellTagHelperBase-2.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableHeaderCellTagHelperBase_2_GetTableCellClasses__0__1_
+  name: GetTableCellClasses
+  nameWithType: UFTableHeaderCellTagHelperBase<TTable, TTableRow>.GetTableCellClasses
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableHeaderCellTagHelperBase<TTable, TTableRow>.GetTableCellClasses
+  nameWithType.vb: UFTableHeaderCellTagHelperBase(Of TTable, TTableRow).GetTableCellClasses
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableHeaderCellTagHelperBase(Of TTable, TTableRow).GetTableCellClasses
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableHeaderCellTagHelperBase`2.GetTableHeaderButtonClasses*
   commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableHeaderCellTagHelperBase`2.GetTableHeaderButtonClasses
   href: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableHeaderCellTagHelperBase-2.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableHeaderCellTagHelperBase_2_GetTableHeaderButtonClasses__0__1_

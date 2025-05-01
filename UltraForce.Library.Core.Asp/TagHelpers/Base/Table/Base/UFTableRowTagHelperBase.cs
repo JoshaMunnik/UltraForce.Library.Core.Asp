@@ -41,11 +41,13 @@ public abstract class UFTableRowTagHelperBase : TagHelper
   #region public methods
 
   /// <inheritdoc />
-  public override void Process(TagHelperContext context, TagHelperOutput output)
+  public override Task ProcessAsync(TagHelperContext context, TagHelperOutput output)
   {
-    base.Process(context, output);
+    base.ProcessAsync(context, output);
     context.Items[UFGridTagHelperBaseBase.Row] = this;
     output.TagName = "tr";
+    output.TagMode = TagMode.StartTagAndEndTag;
+    return Task.CompletedTask;
   }
 
   #endregion

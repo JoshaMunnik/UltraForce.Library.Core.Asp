@@ -92,11 +92,12 @@ public abstract class UFTableTagHelperBase(bool skipHeadBody = false) : UFGridTa
   {
     this.ProcessedFirstHeaderRow = null;
     this.ProcessedFirstDataRow = null;
+    this.CellCount = 0;
     await base.ProcessAsync(context, output);
-    UFTagHelperTools.AddClasses(output, this.GetTableClasses());
     // process children (these might set ProcessedFirstHeaderRow and ProcessedFirstDataRow)
     TagHelperContent? childContent = await output.GetChildContentAsync();
     output.Content.SetHtmlContent(childContent);
+    UFTagHelperTools.AddClasses(output, this.GetTableClasses(this.CellCount));
     // skip adding thead and tbody tags?
     if (this.SkipHeadBody)
     {
@@ -105,7 +106,7 @@ public abstract class UFTableTagHelperBase(bool skipHeadBody = false) : UFGridTa
     // add thead tag if there was at least one header row
     if (this.ProcessedFirstHeaderRow != null)
     {
-      output.PreContent.AppendHtml($"<thead class=\"{this.GetHeadClasses()}\">");
+      output.PreContent.AppendHtml($"<thead class=\"{this.GetHeadClasses(this.CellCount)}\">");
       // if there are only header rows add also closing thead tag
       if (this.ProcessedFirstDataRow == null)
       {
@@ -119,7 +120,7 @@ public abstract class UFTableTagHelperBase(bool skipHeadBody = false) : UFGridTa
       // no header rows, then add starting tbody tag as well
       if (this.ProcessedFirstHeaderRow == null)
       {
-        output.PreContent.AppendHtml($"<tbody class=\"{this.GetBodyClasses()}\">");
+        output.PreContent.AppendHtml($"<tbody class=\"{this.GetBodyClasses(this.CellCount)}\">");
       }
     }
   }
@@ -127,12 +128,14 @@ public abstract class UFTableTagHelperBase(bool skipHeadBody = false) : UFGridTa
   #endregion
   
   #region protected methods
-  
+
   /// <summary>
-  /// Returns the classes for the table. 
+  /// Returns the classes for the table. The number of cells is determined by counting the number
+  /// of header cells in the first header row or the number of data cells in the first data row.
   /// </summary>
+  /// <param name="cellCount">Number of cells</param>
   /// <returns></returns>
-  protected virtual string GetTableClasses()
+  protected virtual string GetTableClasses(int cellCount)
   {
     return string.Empty;
   }
@@ -150,8 +153,9 @@ public abstract class UFTableTagHelperBase(bool skipHeadBody = false) : UFGridTa
   /// <summary>
   /// Returns the classes to use with the tbody tag. 
   /// </summary>
+  /// <param name="cellCount">Number of cells</param>
   /// <returns></returns>
-  protected virtual string GetBodyClasses()
+  protected virtual string GetBodyClasses(int cellCount)
   {
     return string.Empty;
   }
@@ -159,8 +163,9 @@ public abstract class UFTableTagHelperBase(bool skipHeadBody = false) : UFGridTa
   /// <summary>
   /// Returns the classes to use with the thead tag. 
   /// </summary>
+  /// <param name="cellCount">Number of cells</param>
   /// <returns></returns>
-  protected virtual string GetHeadClasses()
+  protected virtual string GetHeadClasses(int cellCount)
   {
     return string.Empty;
   }
@@ -186,6 +191,12 @@ public abstract class UFTableTagHelperBase(bool skipHeadBody = false) : UFGridTa
   /// </summary>
   internal bool SkipHeadBody { get;  } = skipHeadBody;
   
+  /// <summary>
+  /// Number of header cells in the table. Will be set by
+  /// <see cref="UFTableHeaderCellTagHelperBase{TTable,TTableRow}"/>.
+  /// </summary>
+  internal int CellCount { get; set; }
+  
   #endregion
   
   #region internal methods
@@ -195,7 +206,7 @@ public abstract class UFTableTagHelperBase(bool skipHeadBody = false) : UFGridTa
   /// <see cref="UFTableDataRowTagHelperBase{TTable}"/>.
   /// </summary>
   /// <returns></returns>
-  internal string GetTableBodyClasses() => this.GetBodyClasses();
+  internal string GetTableBodyClasses() => this.GetBodyClasses(this.CellCount);
 
   /// <inheritdoc />
   internal override string GetContainerClasses() => this.GetTableContainerClasses();

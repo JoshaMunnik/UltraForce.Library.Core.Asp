@@ -10,6 +10,10 @@ Include the styles in your html using (for example `Shared\_Layout.cshtml`):
 <link rel="stylesheet" href="/_content/UltraForce.Library.Core.Asp/css/uf-styles.css" />
 ````
 ## Version history
+1.0.106
+- added `ProcessAsync` with parameters referencing table and rows to `UFTableXXXXTagHelperBase`
+- added column count parameter to various get css classes methods in `UFTableTagHelperBase`
+
 1.0.105
 - fixed bug: `UFSortTypeEnum.None` now correctly sets the sort type to none
 

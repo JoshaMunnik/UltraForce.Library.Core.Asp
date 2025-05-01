@@ -5212,19 +5212,19 @@ references:
   commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.Base.UFTableRowTagHelperBase
   fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.Base.UFTableRowTagHelperBase
   nameWithType: UFTableRowTagHelperBase
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.Base.UFTableRowTagHelperBase.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
-  name: Process(TagHelperContext, TagHelperOutput)
-  href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Table.Base.UFTableRowTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_Base_UFTableRowTagHelperBase_Process_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContext_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_
-  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.Base.UFTableRowTagHelperBase.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.Base.UFTableRowTagHelperBase.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
-  nameWithType: UFTableRowTagHelperBase.Process(TagHelperContext, TagHelperOutput)
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.Base.UFTableRowTagHelperBase.Process*
-  name: Process
-  href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Table.Base.UFTableRowTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_Base_UFTableRowTagHelperBase_Process_
-  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.Base.UFTableRowTagHelperBase.Process
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.Base.UFTableRowTagHelperBase.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  name: ProcessAsync(TagHelperContext, TagHelperOutput)
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Table.Base.UFTableRowTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_Base_UFTableRowTagHelperBase_ProcessAsync_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContext_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.Base.UFTableRowTagHelperBase.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.Base.UFTableRowTagHelperBase.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  nameWithType: UFTableRowTagHelperBase.ProcessAsync(TagHelperContext, TagHelperOutput)
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.Base.UFTableRowTagHelperBase.ProcessAsync*
+  name: ProcessAsync
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Table.Base.UFTableRowTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_Base_UFTableRowTagHelperBase_ProcessAsync_
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.Base.UFTableRowTagHelperBase.ProcessAsync
   isSpec: "True"
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.Base.UFTableRowTagHelperBase.Process
-  nameWithType: UFTableRowTagHelperBase.Process
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.Base.UFTableRowTagHelperBase.ProcessAsync
+  nameWithType: UFTableRowTagHelperBase.ProcessAsync
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFCellTagHelperBase
   name: UFCellTagHelperBase
   href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFCellTagHelperBase.html
@@ -5831,6 +5831,14 @@ references:
   fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataCellTagHelperBase(Of TTable, TTableRow).ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
   nameWithType: UFTableDataCellTagHelperBase<TTable, TTableRow>.ProcessAsync(TagHelperContext, TagHelperOutput)
   nameWithType.vb: UFTableDataCellTagHelperBase(Of TTable, TTableRow).ProcessAsync(TagHelperContext, TagHelperOutput)
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataCellTagHelperBase`2.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,`0,`1)
+  name: ProcessAsync(TagHelperContext, TagHelperOutput, TTable, TTableRow)
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataCellTagHelperBase-2.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableDataCellTagHelperBase_2_ProcessAsync_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContext_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput__0__1_
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataCellTagHelperBase`2.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,`0,`1)
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataCellTagHelperBase<TTable, TTableRow>.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput, TTable, TTableRow)
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataCellTagHelperBase(Of TTable, TTableRow).ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput, TTable, TTableRow)
+  nameWithType: UFTableDataCellTagHelperBase<TTable, TTableRow>.ProcessAsync(TagHelperContext, TagHelperOutput, TTable, TTableRow)
+  nameWithType.vb: UFTableDataCellTagHelperBase(Of TTable, TTableRow).ProcessAsync(TagHelperContext, TagHelperOutput, TTable, TTableRow)
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataCellTagHelperBase`2.ProcessAsync*
   name: ProcessAsync
   href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataCellTagHelperBase-2.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableDataCellTagHelperBase_2_ProcessAsync_
@@ -5866,23 +5874,31 @@ references:
   fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataRowTagHelperBase(Of TTable).GetTableRowClasses
   nameWithType: UFTableDataRowTagHelperBase<TTable>.GetTableRowClasses
   nameWithType.vb: UFTableDataRowTagHelperBase(Of TTable).GetTableRowClasses
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataRowTagHelperBase`1.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
-  name: Process(TagHelperContext, TagHelperOutput)
-  href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataRowTagHelperBase-1.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableDataRowTagHelperBase_1_Process_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContext_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_
-  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataRowTagHelperBase`1.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataRowTagHelperBase<TTable>.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
-  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataRowTagHelperBase(Of TTable).Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
-  nameWithType: UFTableDataRowTagHelperBase<TTable>.Process(TagHelperContext, TagHelperOutput)
-  nameWithType.vb: UFTableDataRowTagHelperBase(Of TTable).Process(TagHelperContext, TagHelperOutput)
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataRowTagHelperBase`1.Process*
-  name: Process
-  href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataRowTagHelperBase-1.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableDataRowTagHelperBase_1_Process_
-  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataRowTagHelperBase`1.Process
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataRowTagHelperBase`1.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  name: ProcessAsync(TagHelperContext, TagHelperOutput)
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataRowTagHelperBase-1.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableDataRowTagHelperBase_1_ProcessAsync_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContext_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataRowTagHelperBase`1.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataRowTagHelperBase<TTable>.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataRowTagHelperBase(Of TTable).ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  nameWithType: UFTableDataRowTagHelperBase<TTable>.ProcessAsync(TagHelperContext, TagHelperOutput)
+  nameWithType.vb: UFTableDataRowTagHelperBase(Of TTable).ProcessAsync(TagHelperContext, TagHelperOutput)
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataRowTagHelperBase`1.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,`0)
+  name: ProcessAsync(TagHelperContext, TagHelperOutput, TTable)
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataRowTagHelperBase-1.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableDataRowTagHelperBase_1_ProcessAsync_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContext_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput__0_
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataRowTagHelperBase`1.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,`0)
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataRowTagHelperBase<TTable>.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput, TTable)
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataRowTagHelperBase(Of TTable).ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput, TTable)
+  nameWithType: UFTableDataRowTagHelperBase<TTable>.ProcessAsync(TagHelperContext, TagHelperOutput, TTable)
+  nameWithType.vb: UFTableDataRowTagHelperBase(Of TTable).ProcessAsync(TagHelperContext, TagHelperOutput, TTable)
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataRowTagHelperBase`1.ProcessAsync*
+  name: ProcessAsync
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataRowTagHelperBase-1.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableDataRowTagHelperBase_1_ProcessAsync_
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataRowTagHelperBase`1.ProcessAsync
   isSpec: "True"
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataRowTagHelperBase<TTable>.Process
-  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataRowTagHelperBase(Of TTable).Process
-  nameWithType: UFTableDataRowTagHelperBase<TTable>.Process
-  nameWithType.vb: UFTableDataRowTagHelperBase(Of TTable).Process
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataRowTagHelperBase<TTable>.ProcessAsync
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataRowTagHelperBase(Of TTable).ProcessAsync
+  nameWithType: UFTableDataRowTagHelperBase<TTable>.ProcessAsync
+  nameWithType.vb: UFTableDataRowTagHelperBase(Of TTable).ProcessAsync
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataRowTagHelperBase`1.SortLocation
   name: SortLocation
   href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataRowTagHelperBase-1.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableDataRowTagHelperBase_1_SortLocation
@@ -6004,6 +6020,14 @@ references:
   fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableHeaderCellTagHelperBase(Of TTable, TTableRow).ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
   nameWithType: UFTableHeaderCellTagHelperBase<TTable, TTableRow>.ProcessAsync(TagHelperContext, TagHelperOutput)
   nameWithType.vb: UFTableHeaderCellTagHelperBase(Of TTable, TTableRow).ProcessAsync(TagHelperContext, TagHelperOutput)
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableHeaderCellTagHelperBase`2.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,`0,`1)
+  name: ProcessAsync(TagHelperContext, TagHelperOutput, TTable, TTableRow)
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableHeaderCellTagHelperBase-2.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableHeaderCellTagHelperBase_2_ProcessAsync_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContext_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput__0__1_
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableHeaderCellTagHelperBase`2.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,`0,`1)
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableHeaderCellTagHelperBase<TTable, TTableRow>.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput, TTable, TTableRow)
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableHeaderCellTagHelperBase(Of TTable, TTableRow).ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput, TTable, TTableRow)
+  nameWithType: UFTableHeaderCellTagHelperBase<TTable, TTableRow>.ProcessAsync(TagHelperContext, TagHelperOutput, TTable, TTableRow)
+  nameWithType.vb: UFTableHeaderCellTagHelperBase(Of TTable, TTableRow).ProcessAsync(TagHelperContext, TagHelperOutput, TTable, TTableRow)
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableHeaderCellTagHelperBase`2.ProcessAsync*
   name: ProcessAsync
   href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableHeaderCellTagHelperBase-2.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableHeaderCellTagHelperBase_2_ProcessAsync_
@@ -6039,23 +6063,31 @@ references:
   fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableHeaderRowTagHelperBase(Of TTable).GetTableRowClasses
   nameWithType: UFTableHeaderRowTagHelperBase<TTable>.GetTableRowClasses
   nameWithType.vb: UFTableHeaderRowTagHelperBase(Of TTable).GetTableRowClasses
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableHeaderRowTagHelperBase`1.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
-  name: Process(TagHelperContext, TagHelperOutput)
-  href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableHeaderRowTagHelperBase-1.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableHeaderRowTagHelperBase_1_Process_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContext_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_
-  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableHeaderRowTagHelperBase`1.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableHeaderRowTagHelperBase<TTable>.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
-  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableHeaderRowTagHelperBase(Of TTable).Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
-  nameWithType: UFTableHeaderRowTagHelperBase<TTable>.Process(TagHelperContext, TagHelperOutput)
-  nameWithType.vb: UFTableHeaderRowTagHelperBase(Of TTable).Process(TagHelperContext, TagHelperOutput)
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableHeaderRowTagHelperBase`1.Process*
-  name: Process
-  href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableHeaderRowTagHelperBase-1.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableHeaderRowTagHelperBase_1_Process_
-  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableHeaderRowTagHelperBase`1.Process
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableHeaderRowTagHelperBase`1.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  name: ProcessAsync(TagHelperContext, TagHelperOutput)
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableHeaderRowTagHelperBase-1.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableHeaderRowTagHelperBase_1_ProcessAsync_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContext_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableHeaderRowTagHelperBase`1.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableHeaderRowTagHelperBase<TTable>.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableHeaderRowTagHelperBase(Of TTable).ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  nameWithType: UFTableHeaderRowTagHelperBase<TTable>.ProcessAsync(TagHelperContext, TagHelperOutput)
+  nameWithType.vb: UFTableHeaderRowTagHelperBase(Of TTable).ProcessAsync(TagHelperContext, TagHelperOutput)
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableHeaderRowTagHelperBase`1.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,`0)
+  name: ProcessAsync(TagHelperContext, TagHelperOutput, TTable)
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableHeaderRowTagHelperBase-1.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableHeaderRowTagHelperBase_1_ProcessAsync_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContext_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput__0_
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableHeaderRowTagHelperBase`1.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,`0)
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableHeaderRowTagHelperBase<TTable>.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput, TTable)
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableHeaderRowTagHelperBase(Of TTable).ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput, TTable)
+  nameWithType: UFTableHeaderRowTagHelperBase<TTable>.ProcessAsync(TagHelperContext, TagHelperOutput, TTable)
+  nameWithType.vb: UFTableHeaderRowTagHelperBase(Of TTable).ProcessAsync(TagHelperContext, TagHelperOutput, TTable)
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableHeaderRowTagHelperBase`1.ProcessAsync*
+  name: ProcessAsync
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableHeaderRowTagHelperBase-1.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableHeaderRowTagHelperBase_1_ProcessAsync_
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableHeaderRowTagHelperBase`1.ProcessAsync
   isSpec: "True"
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableHeaderRowTagHelperBase<TTable>.Process
-  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableHeaderRowTagHelperBase(Of TTable).Process
-  nameWithType: UFTableHeaderRowTagHelperBase<TTable>.Process
-  nameWithType.vb: UFTableHeaderRowTagHelperBase(Of TTable).Process
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableHeaderRowTagHelperBase<TTable>.ProcessAsync
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableHeaderRowTagHelperBase(Of TTable).ProcessAsync
+  nameWithType: UFTableHeaderRowTagHelperBase<TTable>.ProcessAsync
+  nameWithType.vb: UFTableHeaderRowTagHelperBase(Of TTable).ProcessAsync
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableRowTagHelperBase
   name: UFTableRowTagHelperBase
   href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableRowTagHelperBase.html
@@ -6241,12 +6273,15 @@ references:
   fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.New
   nameWithType: UFTableTagHelperBase.UFTableTagHelperBase
   nameWithType.vb: UFTableTagHelperBase.New
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetBodyClasses
-  name: GetBodyClasses()
-  href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableTagHelperBase_GetBodyClasses
-  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetBodyClasses
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetBodyClasses()
-  nameWithType: UFTableTagHelperBase.GetBodyClasses()
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetBodyClasses(System.Int32)
+  name: GetBodyClasses(int)
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableTagHelperBase_GetBodyClasses_System_Int32_
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetBodyClasses(System.Int32)
+  name.vb: GetBodyClasses(Integer)
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetBodyClasses(int)
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetBodyClasses(Integer)
+  nameWithType: UFTableTagHelperBase.GetBodyClasses(int)
+  nameWithType.vb: UFTableTagHelperBase.GetBodyClasses(Integer)
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetBodyClasses*
   name: GetBodyClasses
   href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableTagHelperBase_GetBodyClasses_
@@ -6254,12 +6289,15 @@ references:
   isSpec: "True"
   fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetBodyClasses
   nameWithType: UFTableTagHelperBase.GetBodyClasses
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetHeadClasses
-  name: GetHeadClasses()
-  href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableTagHelperBase_GetHeadClasses
-  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetHeadClasses
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetHeadClasses()
-  nameWithType: UFTableTagHelperBase.GetHeadClasses()
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetHeadClasses(System.Int32)
+  name: GetHeadClasses(int)
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableTagHelperBase_GetHeadClasses_System_Int32_
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetHeadClasses(System.Int32)
+  name.vb: GetHeadClasses(Integer)
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetHeadClasses(int)
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetHeadClasses(Integer)
+  nameWithType: UFTableTagHelperBase.GetHeadClasses(int)
+  nameWithType.vb: UFTableTagHelperBase.GetHeadClasses(Integer)
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetHeadClasses*
   name: GetHeadClasses
   href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableTagHelperBase_GetHeadClasses_
@@ -6267,12 +6305,15 @@ references:
   isSpec: "True"
   fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetHeadClasses
   nameWithType: UFTableTagHelperBase.GetHeadClasses
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetTableClasses
-  name: GetTableClasses()
-  href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableTagHelperBase_GetTableClasses
-  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetTableClasses
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetTableClasses()
-  nameWithType: UFTableTagHelperBase.GetTableClasses()
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetTableClasses(System.Int32)
+  name: GetTableClasses(int)
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableTagHelperBase_GetTableClasses_System_Int32_
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetTableClasses(System.Int32)
+  name.vb: GetTableClasses(Integer)
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetTableClasses(int)
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetTableClasses(Integer)
+  nameWithType: UFTableTagHelperBase.GetTableClasses(int)
+  nameWithType.vb: UFTableTagHelperBase.GetTableClasses(Integer)
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.GetTableClasses*
   name: GetTableClasses
   href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableTagHelperBase_GetTableClasses_

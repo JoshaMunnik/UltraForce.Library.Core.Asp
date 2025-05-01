@@ -142,7 +142,7 @@ Class UFTableDataRowTagHelperBase&lt;TTable&gt;  <a class="header-action link-se
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper.init">TagHelper.Init(TagHelperContext)</a>
     </div>
     <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper.processasync">TagHelper.ProcessAsync(TagHelperContext, TagHelperOutput)</a>
+      <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper.process">TagHelper.Process(TagHelperContext, TagHelperOutput)</a>
     </div>
     <div>
       <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper.order">TagHelper.Order</a>
@@ -225,7 +225,7 @@ public UFTableSortLocationEnum SortLocation { get; set; }</code></pre>
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableDataRowTagHelperBase_1_GetTableRowClasses__0_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataRowTagHelperBase`1.GetTableRowClasses(`0)">
   GetTableRowClasses(TTable)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableDataRowTagHelperBase.cs/#L103"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableDataRowTagHelperBase.cs/#L122"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns the classes for the table row.</p>
@@ -258,20 +258,20 @@ public UFTableSortLocationEnum SortLocation { get; set; }</code></pre>
 
 
 
-  <a id="UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableDataRowTagHelperBase_1_Process_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataRowTagHelperBase`1.Process*"></a>
+  <a id="UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableDataRowTagHelperBase_1_ProcessAsync_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataRowTagHelperBase`1.ProcessAsync*"></a>
 
-  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableDataRowTagHelperBase_1_Process_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContext_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataRowTagHelperBase`1.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)">
-  Process(TagHelperContext, TagHelperOutput)
+  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableDataRowTagHelperBase_1_ProcessAsync_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContext_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataRowTagHelperBase`1.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)">
+  ProcessAsync(TagHelperContext, TagHelperOutput)
   <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableDataRowTagHelperBase.cs/#L70"><i class="bi bi-code-slash"></i></a>
   </h3>
 
-  <div class="markdown level1 summary"><p>Synchronously executes the <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper">TagHelper</a> with the given <code class="paramref">context</code> and
+  <div class="markdown level1 summary"><p>Asynchronously executes the <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper">TagHelper</a> with the given <code class="paramref">context</code> and
 <code class="paramref">output</code>.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public override void Process(TagHelperContext context, TagHelperOutput output)</code></pre>
+    <pre><code class="lang-csharp hljs">public override Task ProcessAsync(TagHelperContext context, TagHelperOutput output)</code></pre>
   </div>
 
   <h4 class="section">Parameters</h4>
@@ -284,6 +284,57 @@ public UFTableSortLocationEnum SortLocation { get; set; }</code></pre>
 </dd>
   </dl>
 
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd><p>A <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a> that on completion updates the <code class="paramref">output</code>.</p>
+</dd>
+  </dl>
+
+
+
+
+
+
+
+  <h4 class="section" id="UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableDataRowTagHelperBase_1_ProcessAsync_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContext_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput__remarks">Remarks</h4>
+  <div class="markdown level1 remarks"><p>By default this calls into <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper.process">Process(TagHelperContext, TagHelperOutput)</a>.</p>
+</div>
+
+
+
+
+  <a id="UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableDataRowTagHelperBase_1_ProcessAsync_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataRowTagHelperBase`1.ProcessAsync*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableDataRowTagHelperBase_1_ProcessAsync_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContext_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput__0_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataRowTagHelperBase`1.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,`0)">
+  ProcessAsync(TagHelperContext, TagHelperOutput, TTable)
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableDataRowTagHelperBase.cs/#L90"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>Executes the tag helper.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual Task ProcessAsync(TagHelperContext context, TagHelperOutput output, TTable table)</code></pre>
+  </div>
+
+  <h4 class="section">Parameters</h4>
+  <dl class="parameters">
+    <dt><code>context</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelpercontext">TagHelperContext</a></dt>
+    <dd></dd>
+    <dt><code>output</code> <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelperoutput">TagHelperOutput</a></dt>
+    <dd></dd>
+    <dt><code>table</code> <span class="xref">TTable</span></dt>
+    <dd><p>Table the row is created within</p>
+</dd>
+  </dl>
+
+  <h4 class="section">Returns</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.threading.tasks.task">Task</a></dt>
+    <dd></dd>
+  </dl>
 
 
 

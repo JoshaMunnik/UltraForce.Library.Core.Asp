@@ -100,10 +100,35 @@ public abstract class UFTableHeaderCellTagHelperBase<TTable, TTableRow>(
     context.Items[UFGridTagHelperBaseBase.Cell] = this;
     TTable table = UFTagHelperTools.GetItem<TTable>(context, UFGridTagHelperBaseBase.Grid); 
     TTableRow tableRow = UFTagHelperTools.GetItem<TTableRow>(context, UFGridTagHelperBaseBase.Row);
+    await this.ProcessAsync(context, output, table, tableRow);
+  }
+
+  #endregion
+
+  #region protected methods
+  
+  /// <summary>
+  /// Executes the tag helper.
+  /// </summary>
+  /// <param name="context"></param>
+  /// <param name="output"></param>
+  /// <param name="table">Table the cell is created inside in</param>
+  /// <param name="tableRow">Row the cell is created inside in</param>
+  protected virtual Task ProcessAsync(
+    TagHelperContext context,
+    TagHelperOutput output,
+    TTable table,
+    TTableRow tableRow
+  )
+  {
     output.TagMode = TagMode.StartTagAndEndTag;
     output.TagName = "th";
     this.UpdateClasses(output, table, tableRow);
     UFSortTypeEnum sortType = this.GetSortType();
+    if (tableRow == table.ProcessedFirstHeaderRow)
+    {
+      table.CellCount++;
+    }
     if (
       (tableRow == table.ProcessedFirstHeaderRow) && table.Sorting &&
       (sortType != UFSortTypeEnum.None) 
@@ -111,11 +136,8 @@ public abstract class UFTableHeaderCellTagHelperBase<TTable, TTableRow>(
     {
       this.AddButtonWrapper(output, table, tableRow);
     }
+    return Task.CompletedTask;
   }
-
-  #endregion
-
-  #region protected methods
 
   /// <summary>
   /// Returns the css classes for the cell.

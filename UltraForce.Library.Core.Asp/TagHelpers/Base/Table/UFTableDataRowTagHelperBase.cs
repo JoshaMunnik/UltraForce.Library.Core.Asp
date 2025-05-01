@@ -67,10 +67,32 @@ public abstract class UFTableDataRowTagHelperBase<TTable> : UFTableRowTagHelperB
   #region public methods
 
   /// <inheritdoc />
-  public override void Process(TagHelperContext context, TagHelperOutput output)
+  public override async Task ProcessAsync(
+    TagHelperContext context,
+    TagHelperOutput output
+  )
   {
-    base.Process(context, output);
-    TTable table = UFTagHelperTools.GetItem<TTable>(context, UFGridTagHelperBaseBase.Grid); 
+    await base.ProcessAsync(context, output);
+    TTable table = UFTagHelperTools.GetItem<TTable>(context, UFGridTagHelperBaseBase.Grid);
+    await this.ProcessAsync(context, output, table);
+  }
+
+  #endregion
+
+  #region protected methods
+
+  /// <summary>
+  /// Executes the tag helper.
+  /// </summary>
+  /// <param name="context"></param>
+  /// <param name="output"></param>
+  /// <param name="table">Table the row is created within</param>
+  protected virtual Task ProcessAsync(
+    TagHelperContext context,
+    TagHelperOutput output,
+    TTable table
+  )
+  {
     if (table is { ProcessedFirstDataRow: null })
     {
       table.ProcessedFirstDataRow = this;
@@ -84,26 +106,25 @@ public abstract class UFTableDataRowTagHelperBase<TTable> : UFTableRowTagHelperB
       case UFTableSortLocationEnum.Top:
         output.Attributes.SetAttribute(UFDataAttribute.SortLocation("top"));
         break;
-      case UFTableSortLocationEnum.Bottom: 
+      case UFTableSortLocationEnum.Bottom:
         output.Attributes.SetAttribute(UFDataAttribute.SortLocation("bottom"));
         break;
     }
     UFTagHelperTools.AddClasses(output, this.GetTableRowClasses(table));
+    return Task.CompletedTask;
   }
-
-  #endregion
-  
-  #region protected overridable methods
 
   /// <summary>
   /// Returns the classes for the table row.
   /// </summary>
   /// <param name="table"></param>
   /// <returns></returns>
-  protected virtual string GetTableRowClasses(TTable table)
+  protected virtual string GetTableRowClasses(
+    TTable table
+  )
   {
     return string.Empty;
   }
-  
+
   #endregion
 }

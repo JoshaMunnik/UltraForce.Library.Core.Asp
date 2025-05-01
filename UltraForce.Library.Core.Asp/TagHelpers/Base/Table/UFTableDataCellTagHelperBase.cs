@@ -85,14 +85,34 @@ public abstract class UFTableDataCellTagHelperBase<TTable, TTableRow>(
     context.Items[UFGridTagHelperBaseBase.Cell] = this;
     TTable table = UFTagHelperTools.GetItem<TTable>(context, UFGridTagHelperBaseBase.Grid); 
     TTableRow tableRow = UFTagHelperTools.GetItem<TTableRow>(context, UFGridTagHelperBaseBase.Row);
-    output.TagMode = TagMode.StartTagAndEndTag;
-    output.TagName = "td";
-    this.UpdateClasses(output, table, tableRow);
+    await this.ProcessAsync(context, output, table, tableRow);
   }
 
   #endregion
 
   #region protected methods
+  
+  /// <summary>
+  /// Executes the tag helper.
+  /// </summary>
+  /// <param name="context"></param>
+  /// <param name="output"></param>
+  /// <param name="table">Table the cell is created within</param>
+  /// <param name="tableRow">Row the cell is created within</param>
+  /// <returns></returns>
+  protected virtual Task ProcessAsync(
+    TagHelperContext context,
+    TagHelperOutput output,
+    TTable table,
+    TTableRow tableRow
+  )
+  {
+    output.TagMode = TagMode.StartTagAndEndTag;
+    output.TagName = "td";
+    this.UpdateClasses(output, table, tableRow);
+    return Task.CompletedTask;
+  }
+   
 
   /// <summary>
   /// Returns the css classes for the cell.
@@ -126,6 +146,10 @@ public abstract class UFTableDataCellTagHelperBase<TTable, TTableRow>(
     TTableRow tableRow
   )
   {
+    if ((table.ProcessedFirstHeaderRow == null) && (table.ProcessedFirstDataRow == tableRow))
+    {
+      table.CellCount++;
+    }
     string classValue = this.GetTableCellClasses(table, tableRow);
     UFTagHelperTools.AddClasses(output, classValue);
     string style = "";
