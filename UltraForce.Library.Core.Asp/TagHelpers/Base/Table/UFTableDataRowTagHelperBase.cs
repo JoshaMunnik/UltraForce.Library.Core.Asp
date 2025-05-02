@@ -59,8 +59,13 @@ public abstract class UFTableDataRowTagHelperBase<TTable> : UFTableRowTagHelperB
   /// with either "top" or "bottom" as value.
   /// </para>
   /// </summary>
-  [HtmlAttributeName("sort-location")]
-  public UFTableSortLocationEnum SortLocation { get; set; } = UFTableSortLocationEnum.Middle;
+  //[HtmlAttributeName("sort-location")]
+  //public UFTableSortLocationEnum SortLocation { get; set; } = UFTableSortLocationEnum.Middle;
+  
+  /// <summary>
+  /// When true, do not include this row when sorting.
+  /// </summary>
+  public bool SkipSort { get; set; } = false;
 
   #endregion
 
@@ -102,6 +107,7 @@ public abstract class UFTableDataRowTagHelperBase<TTable> : UFTableRowTagHelperB
         output.PreElement.AppendHtml($"</thead><tbody class=\"{table.GetTableBodyClasses()}\">");
       }
     }
+    /*
     switch (this.SortLocation)
     {
       case UFTableSortLocationEnum.Top:
@@ -110,6 +116,11 @@ public abstract class UFTableDataRowTagHelperBase<TTable> : UFTableRowTagHelperB
       case UFTableSortLocationEnum.Bottom:
         output.Attributes.SetAttribute(UFDataAttribute.SortLocation("bottom"));
         break;
+    }
+    */
+    if (table.Sorting && !this.SkipSort)
+    {
+      output.Attributes.SetAttribute(UFDataAttribute.ItemContainer());
     }
     UFTagHelperTools.AddClasses(output, this.GetTableRowClasses(table));
     return Task.CompletedTask;

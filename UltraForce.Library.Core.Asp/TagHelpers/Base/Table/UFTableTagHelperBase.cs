@@ -276,7 +276,7 @@ public abstract class UFTableTagHelperBase(
   /// <inheritdoc />
   internal override TagHelperAttribute GetSortingAttribute(
     string value
-  ) => UFDataAttribute.TableSorting(value);
+  ) => UFDataAttribute.GridSorting(value);
 
   /// <summary>
   /// Sets the size of a cell via the style attribute. If the table uses a grid, the style is not

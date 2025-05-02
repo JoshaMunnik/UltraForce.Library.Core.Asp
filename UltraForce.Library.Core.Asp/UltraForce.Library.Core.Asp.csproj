@@ -15,8 +15,8 @@
         <RepositoryUrl>https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp</RepositoryUrl>
         <PackageReadmeFile>README.md</PackageReadmeFile>
         <AssemblyVersion></AssemblyVersion>
-        <Version>1.0.110</Version>
-        <PackageReleaseNotes>- bug fix: `UFTableHeaderRowTagHelperBase` now sets the `data-uf-header-row` attribute
+        <Version>1.0.111</Version>
+        <PackageReleaseNotes>- table sorting now uses data attributes for the grid sorting helper from Ultra Force DOM library.
 </PackageReleaseNotes>
         <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
     </PropertyGroup>

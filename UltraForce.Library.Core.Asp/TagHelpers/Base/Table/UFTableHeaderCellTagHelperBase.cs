@@ -32,7 +32,9 @@ using Microsoft.AspNetCore.Razor.TagHelpers;
 using UltraForce.Library.Core.Asp.Services;
 using UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base;
 using UltraForce.Library.Core.Asp.Tools;
+using UltraForce.Library.Core.Asp.Types.Constants;
 using UltraForce.Library.Core.Asp.Types.Enums;
+using UltraForce.Library.NetStandard.Extensions;
 
 namespace UltraForce.Library.Core.Asp.TagHelpers.Base.Table;
 
@@ -122,11 +124,14 @@ public abstract class UFTableHeaderCellTagHelperBase<TTable, TTableRow>(
     }
     UFSortTypeEnum sortType = this.GetSortType();
     if (
-      (tableRow == table.ProcessedFirstHeaderRow) && table.Sorting &&
-      (sortType != UFSortTypeEnum.None) 
+      (tableRow == table.ProcessedFirstHeaderRow) && table.Sorting
     )
     {
-      this.AddButtonWrapper(output, table, tableRow);
+      output.Attributes.SetAttribute(UFDataAttribute.SortControl(sortType.GetDescription()));
+      if (sortType != UFSortTypeEnum.None)
+      {
+        this.AddButtonWrapper(output, table, tableRow);
+      }
     }
     return Task.CompletedTask;
   }
@@ -176,7 +181,7 @@ public abstract class UFTableHeaderCellTagHelperBase<TTable, TTableRow>(
   )
   {
     output.PreContent.AppendHtml(
-      $"<button type=\"button\"" +
+      $"<button type=\"button\" {UFDataAttribute.SortButton().Name}" +
       $" class=\"{this.GetTableHeaderButtonClasses(table, tableRow)}\"" +
       $">"
     );

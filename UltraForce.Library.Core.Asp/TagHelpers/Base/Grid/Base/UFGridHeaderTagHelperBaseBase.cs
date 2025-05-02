@@ -95,14 +95,7 @@ public abstract class UFGridHeaderTagHelperBaseBase(
   {
     await base.ProcessAsync(context, output);
     context.Items[UFGridTagHelperBaseBase.Cell] = this;
-    UFGridTagHelperBaseBase grid =
-      (context.Items[UFGridTagHelperBaseBase.Grid] as UFGridTagHelperBaseBase)!;
-    UFSortTypeEnum sortType = this.GetSortType();
     await this.ProcessForAsync(output);
-    if (grid.Sorting)
-    {
-      SetDataSortType(output, sortType);
-    }
   }
 
   #endregion
@@ -162,31 +155,6 @@ public abstract class UFGridHeaderTagHelperBaseBase(
     await this.ModelExpressionRenderer.SetContentToNameAsync(
       output, this.For, this.ViewContext
     );
-  }
-
-  /// <summary>
-  /// Sets the `data-uf-sort-type` attribute based on the sort type.
-  /// </summary>
-  /// <param name="output"></param>
-  /// <param name="sortType"></param>
-  private static void SetDataSortType(
-    TagHelperOutput output,
-    UFSortTypeEnum sortType
-  )
-  {
-    switch (sortType)
-    {
-      case UFSortTypeEnum.Number:
-      case UFSortTypeEnum.Date:
-      case UFSortTypeEnum.Text:
-        output.Attributes.SetAttribute(UFDataAttribute.SortType(sortType.GetDescription()));
-        break;
-      case UFSortTypeEnum.Auto:
-      case UFSortTypeEnum.None:
-        break;
-      default:
-        throw new ArgumentOutOfRangeException(nameof(sortType), sortType, null);
-    }
   }
 
   #endregion

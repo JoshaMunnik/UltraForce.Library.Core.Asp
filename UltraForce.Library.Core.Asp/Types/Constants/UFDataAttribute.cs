@@ -140,13 +140,6 @@ public static class UFDataAttribute
   ) => UFTagHelperTools.Attribute("data-uf-grid-body", value);
   
   /// <summary>
-  /// The type of data in a table column to sort on.
-  /// </summary>
-  public static TagHelperAttribute SortType(
-    object? value = null
-  ) => UFTagHelperTools.Attribute("data-uf-sort-type", value);
-
-  /// <summary>
   /// Value to sort on.
   /// </summary>
   public static TagHelperAttribute SortValue(
@@ -175,13 +168,6 @@ public static class UFDataAttribute
   ) => UFTagHelperTools.Attribute("data-uf-filter-no-match", value);
   
   /// <summary>
-  /// In which location to place the sorted row.
-  /// </summary>
-  public static TagHelperAttribute SortLocation(
-    object? value = null
-  ) => UFTagHelperTools.Attribute("data-uf-sort-location", value);
-
-  /// <summary>
   /// Add filter support to a table.
   /// </summary>
   public static TagHelperAttribute FilterTable(
@@ -208,13 +194,6 @@ public static class UFDataAttribute
   public static TagHelperAttribute FilterContainer(
     object? value = null
   ) => UFTagHelperTools.Attribute("data-uf-filter-container", value);
-
-  /// <summary>
-  /// Defines a table row as a header row containing clickable elements.
-  /// </summary>
-  public static TagHelperAttribute HeaderRow(
-    object? value = null
-  ) => UFTagHelperTools.Attribute("data-uf-header-row", value);
 
   /// <summary>
   /// Css classes to add the header element or grid control element.

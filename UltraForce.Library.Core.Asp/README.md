@@ -10,6 +10,9 @@ Include the styles in your html using (for example `Shared\_Layout.cshtml`):
 <link rel="stylesheet" href="/_content/UltraForce.Library.Core.Asp/css/uf-styles.css" />
 ````
 ## Version history
+1.0.111
+- table sorting now uses data attributes for the grid sorting helper from Ultra Force DOM library.
+
 1.0.110
 - bug fix: `UFTableHeaderRowTagHelperBase` now sets the `data-uf-header-row` attribute
  

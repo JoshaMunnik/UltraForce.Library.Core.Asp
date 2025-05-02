@@ -80,7 +80,7 @@ public abstract class UFTableHeaderRowTagHelperBase<TTable> : UFTableRowTagHelpe
       table.ProcessedFirstHeaderRow = this;
     }
     UFTagHelperTools.AddClasses(output, this.GetTableRowClasses(table));
-    output.Attributes.SetAttribute(UFDataAttribute.HeaderRow());
+    //output.Attributes.SetAttribute(UFDataAttribute.HeaderRow());
     return Task.CompletedTask;
   }
 
