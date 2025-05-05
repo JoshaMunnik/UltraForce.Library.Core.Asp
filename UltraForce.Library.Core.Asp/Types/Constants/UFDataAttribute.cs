@@ -47,21 +47,21 @@ public static class UFDataAttribute
   public static TagHelperAttribute ShowClasses(
     object? value = null
   ) => UFTagHelperTools.Attribute("data-uf-show-classes", value);
-  
+
   /// <summary>
   /// Css classes to add to hide an element
   /// </summary>
   public static TagHelperAttribute HideClasses(
     object? value = null
   ) => UFTagHelperTools.Attribute("data-uf-hide-classes", value);
-  
+
   /// <summary>
   /// Value to use for the display style.
   /// </summary>
   public static TagHelperAttribute DisplayValue(
     object? value = null
   ) => UFTagHelperTools.Attribute("data-uf-display-value", value);
-  
+
   /// <summary>
   /// Add paging support to a table or a grid.
   /// </summary>
@@ -138,7 +138,7 @@ public static class UFDataAttribute
   public static TagHelperAttribute GridBody(
     object? value = null
   ) => UFTagHelperTools.Attribute("data-uf-grid-body", value);
-  
+
   /// <summary>
   /// Value to sort on.
   /// </summary>
@@ -159,14 +159,14 @@ public static class UFDataAttribute
   public static TagHelperAttribute RowNoMatch(
     object? value = null
   ) => UFTagHelperTools.Attribute("data-uf-row-no-match", value);
-  
+
   /// <summary>
   /// This attribute is added to element that contain all data elements that don't match the filter.
   /// </summary>
   public static TagHelperAttribute FilterNoMatch(
     object? value = null
   ) => UFTagHelperTools.Attribute("data-uf-filter-no-match", value);
-  
+
   /// <summary>
   /// Add filter support to a table.
   /// </summary>
@@ -299,38 +299,40 @@ public static class UFDataAttribute
   public static TagHelperAttribute FieldValue(
     object? value = null
   ) => UFTagHelperTools.Attribute("data-uf-field-value", value);
-  
+
   /// <summary>
   /// Action to perform for some event
   /// </summary>
   public static TagHelperAttribute EventAction(
-    object? value = null,
+    UFEventActionEnum? value = null,
     int index = 0
-  ) => UFTagHelperTools.Attribute("data-uf-event-action" + (index > 0 ? "-" + index : ""), value);
-  
+  ) => UFTagHelperTools.Attribute(
+    "data-uf-event-action" + (index > 0 ? "-" + index : ""), value?.GetDescription()
+  );
+
   /// <summary>
   /// Events to perform action for
   /// </summary>
   public static TagHelperAttribute EventEvents(
     object? value = null,
     int index = 0
-  ) => UFTagHelperTools.Attribute("data-uf-event-events"+ (index > 0 ? "-" + index : ""), value);
-  
+  ) => UFTagHelperTools.Attribute("data-uf-event-events" + (index > 0 ? "-" + index : ""), value);
+
   /// <summary>
   /// Css classes to add to show an element
   /// </summary>
   public static TagHelperAttribute EventTarget(
     object? value = null,
     int index = 0
-  ) => UFTagHelperTools.Attribute("data-uf-event-target"+ (index > 0 ? "-" + index : ""), value);
-  
+  ) => UFTagHelperTools.Attribute("data-uf-event-target" + (index > 0 ? "-" + index : ""), value);
+
   /// <summary>
   /// Data to use for some of the event actions.
   /// </summary>
   public static TagHelperAttribute EventData(
     object? value = null,
     int index = 0
-  ) => UFTagHelperTools.Attribute("data-uf-event-data"+ (index > 0 ? "-" + index : ""), value);
+  ) => UFTagHelperTools.Attribute("data-uf-event-data" + (index > 0 ? "-" + index : ""), value);
 
   /// <summary>
   /// Attribute to use for the event action.
@@ -338,7 +340,9 @@ public static class UFDataAttribute
   public static TagHelperAttribute EventAttribute(
     object? value = null,
     int index = 0
-  ) => UFTagHelperTools.Attribute("data-uf-event-attribute"+ (index > 0 ? "-" + index : ""), value);
+  ) => UFTagHelperTools.Attribute(
+    "data-uf-event-attribute" + (index > 0 ? "-" + index : ""), value
+  );
 
   /// <summary>
   /// State to check for with the events.
@@ -346,7 +350,7 @@ public static class UFDataAttribute
   public static TagHelperAttribute EventState(
     object? value = null,
     int index = 0
-  ) => UFTagHelperTools.Attribute("data-uf-event-state"+ (index > 0 ? "-" + index : ""), value);
+  ) => UFTagHelperTools.Attribute("data-uf-event-state" + (index > 0 ? "-" + index : ""), value);
 
   /// <summary>
   /// Keyboard key to check for with the events.
@@ -356,7 +360,7 @@ public static class UFDataAttribute
   public static TagHelperAttribute EventKey(
     object? value = null,
     int index = 0
-  ) => UFTagHelperTools.Attribute("data-uf-event-key"+ (index > 0 ? "-" + index : ""), value);
+  ) => UFTagHelperTools.Attribute("data-uf-event-key" + (index > 0 ? "-" + index : ""), value);
 
   /// <summary>
   /// Prevent default processing of the events.
@@ -364,15 +368,19 @@ public static class UFDataAttribute
   public static TagHelperAttribute EventPreventDefault(
     object? value = null,
     int index = 0
-  ) => UFTagHelperTools.Attribute("data-uf-event-prevent-default"+ (index > 0 ? "-" + index : ""), value);
+  ) => UFTagHelperTools.Attribute(
+    "data-uf-event-prevent-default" + (index > 0 ? "-" + index : ""), value
+  );
 
   /// <summary>
   /// Event that is a click action.
   /// </summary>
   public static TagHelperAttribute ClickAction(
-    object? value = null,
+    UFEventActionEnum? value = null,
     int index = 0
-  ) => UFTagHelperTools.Attribute("data-uf-click-action"+ (index > 0 ? "-" + index : ""), value);
+  ) => UFTagHelperTools.Attribute(
+    "data-uf-click-action" + (index > 0 ? "-" + index : ""), value?.GetDescription()
+  );
 
   /// <summary>
   /// Target to use for the click action.
@@ -380,7 +388,7 @@ public static class UFDataAttribute
   public static TagHelperAttribute ClickTarget(
     object? value = null,
     int index = 0
-  ) => UFTagHelperTools.Attribute("data-uf-click-target"+ (index > 0 ? "-" + index : ""), value);
+  ) => UFTagHelperTools.Attribute("data-uf-click-target" + (index > 0 ? "-" + index : ""), value);
 
   /// <summary>
   /// Data to use for the click action.
@@ -388,7 +396,7 @@ public static class UFDataAttribute
   public static TagHelperAttribute ClickData(
     object? value = null,
     int index = 0
-  ) => UFTagHelperTools.Attribute("data-uf-click-data"+ (index > 0 ? "-" + index : ""), value);
+  ) => UFTagHelperTools.Attribute("data-uf-click-data" + (index > 0 ? "-" + index : ""), value);
 
   /// <summary>
   /// Attribute to use for the load action.
@@ -396,15 +404,17 @@ public static class UFDataAttribute
   public static TagHelperAttribute ClickAttribute(
     object? value = null,
     int index = 0
-  ) => UFTagHelperTools.Attribute("data-uf-load-attribute"+ (index > 0 ? "-" + index : ""), value);
+  ) => UFTagHelperTools.Attribute("data-uf-load-attribute" + (index > 0 ? "-" + index : ""), value);
 
   /// <summary>
   /// Event that is a load action.
   /// </summary>
   public static TagHelperAttribute LoadAction(
-    object? value = null,
+    UFEventActionEnum? value = null,
     int index = 0
-  ) => UFTagHelperTools.Attribute("data-uf-load-action"+ (index > 0 ? "-" + index : ""), value);
+  ) => UFTagHelperTools.Attribute(
+    "data-uf-load-action" + (index > 0 ? "-" + index : ""), value?.GetDescription()
+  );
 
   /// <summary>
   /// Target to use for the load action.
@@ -412,7 +422,7 @@ public static class UFDataAttribute
   public static TagHelperAttribute LoadTarget(
     object? value = null,
     int index = 0
-  ) => UFTagHelperTools.Attribute("data-uf-load-target"+ (index > 0 ? "-" + index : ""), value);
+  ) => UFTagHelperTools.Attribute("data-uf-load-target" + (index > 0 ? "-" + index : ""), value);
 
   /// <summary>
   /// Data to use for the load action.
@@ -420,7 +430,7 @@ public static class UFDataAttribute
   public static TagHelperAttribute LoadData(
     object? value = null,
     int index = 0
-  ) => UFTagHelperTools.Attribute("data-uf-load-data"+ (index > 0 ? "-" + index : ""), value);
+  ) => UFTagHelperTools.Attribute("data-uf-load-data" + (index > 0 ? "-" + index : ""), value);
 
   /// <summary>
   /// Attribute to use for the load action.
@@ -428,7 +438,7 @@ public static class UFDataAttribute
   public static TagHelperAttribute LoadAttribute(
     object? value = null,
     int index = 0
-  ) => UFTagHelperTools.Attribute("data-uf-load-attribute"+ (index > 0 ? "-" + index : ""), value);
+  ) => UFTagHelperTools.Attribute("data-uf-load-attribute" + (index > 0 ? "-" + index : ""), value);
 
   /// <summary>
   /// Toggle the css class when the target is clicked upon.

@@ -8,7 +8,7 @@ items:
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataRowTagHelperBase`1.GetTableRowClasses(`0)
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataRowTagHelperBase`1.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataRowTagHelperBase`1.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,`0)
-  - UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataRowTagHelperBase`1.SortLocation
+  - UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataRowTagHelperBase`1.SkipSort
   langs:
   - csharp
   - vb
@@ -60,62 +60,39 @@ items:
   nameWithType.vb: UFTableDataRowTagHelperBase(Of TTable)
   fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataRowTagHelperBase(Of TTable)
   name.vb: UFTableDataRowTagHelperBase(Of TTable)
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataRowTagHelperBase`1.SortLocation
-  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataRowTagHelperBase`1.SortLocation
-  id: SortLocation
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataRowTagHelperBase`1.SkipSort
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataRowTagHelperBase`1.SkipSort
+  id: SkipSort
   parent: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataRowTagHelperBase`1
   langs:
   - csharp
   - vb
-  name: SortLocation
-  nameWithType: UFTableDataRowTagHelperBase<TTable>.SortLocation
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataRowTagHelperBase<TTable>.SortLocation
+  name: SkipSort
+  nameWithType: UFTableDataRowTagHelperBase<TTable>.SkipSort
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataRowTagHelperBase<TTable>.SkipSort
   type: Property
   source:
     remote:
       path: UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableDataRowTagHelperBase.cs
       branch: master
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
-    id: SortLocation
+    id: SkipSort
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableDataRowTagHelperBase.cs
-    startLine: 61
+    startLine: 67
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Table
-  summary: >-
-    Keep the row at top or bottom if table gets sorted
-
-    <p>
-
-    Setting this value to <xref href="UltraForce.Library.Core.Asp.Types.Enums.UFTableSortLocationEnum.Top" data-throw-if-not-resolved="false"></xref> or
-
-    <xref href="UltraForce.Library.Core.Asp.Types.Enums.UFTableSortLocationEnum.Bottom" data-throw-if-not-resolved="false"></xref> will create a `data-uf-sort-location` attribute
-
-    with either "top" or "bottom" as value.
-
-    </p>
+  summary: When true, do not include this row when sorting.
   example: []
   syntax:
-    content: >-
-      [HtmlAttributeName("sort-location")]
-
-      public UFTableSortLocationEnum SortLocation { get; set; }
+    content: public bool SkipSort { get; set; }
     parameters: []
     return:
-      type: UltraForce.Library.Core.Asp.Types.Enums.UFTableSortLocationEnum
-    content.vb: >-
-      <HtmlAttributeName("sort-location")>
-
-      Public Property SortLocation As UFTableSortLocationEnum
-  overload: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataRowTagHelperBase`1.SortLocation*
-  attributes:
-  - type: Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute
-    ctor: Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute.#ctor(System.String)
-    arguments:
-    - type: System.String
-      value: sort-location
-  nameWithType.vb: UFTableDataRowTagHelperBase(Of TTable).SortLocation
-  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataRowTagHelperBase(Of TTable).SortLocation
+      type: System.Boolean
+    content.vb: Public Property SkipSort As Boolean
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataRowTagHelperBase`1.SkipSort*
+  nameWithType.vb: UFTableDataRowTagHelperBase(Of TTable).SkipSort
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataRowTagHelperBase(Of TTable).SkipSort
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataRowTagHelperBase`1.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
   commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataRowTagHelperBase`1.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
   id: ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
@@ -134,7 +111,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: ProcessAsync
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableDataRowTagHelperBase.cs
-    startLine: 69
+    startLine: 74
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Table
@@ -179,7 +156,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: ProcessAsync
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableDataRowTagHelperBase.cs
-    startLine: 89
+    startLine: 94
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Table
@@ -221,7 +198,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetTableRowClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Table/UFTableDataRowTagHelperBase.cs
-    startLine: 122
+    startLine: 133
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Table
@@ -768,87 +745,25 @@ references:
   - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.Base
     name: Base
     href: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.Base.html
-- uid: UltraForce.Library.Core.Asp.Types.Enums.UFTableSortLocationEnum.Top
-  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFTableSortLocationEnum.Top
-  href: UltraForce.Library.Core.Asp.Types.Enums.UFTableSortLocationEnum.html#UltraForce_Library_Core_Asp_Types_Enums_UFTableSortLocationEnum_Top
-  name: Top
-  nameWithType: UFTableSortLocationEnum.Top
-  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFTableSortLocationEnum.Top
-- uid: UltraForce.Library.Core.Asp.Types.Enums.UFTableSortLocationEnum.Bottom
-  commentId: F:UltraForce.Library.Core.Asp.Types.Enums.UFTableSortLocationEnum.Bottom
-  href: UltraForce.Library.Core.Asp.Types.Enums.UFTableSortLocationEnum.html#UltraForce_Library_Core_Asp_Types_Enums_UFTableSortLocationEnum_Bottom
-  name: Bottom
-  nameWithType: UFTableSortLocationEnum.Bottom
-  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFTableSortLocationEnum.Bottom
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataRowTagHelperBase`1.SortLocation*
-  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataRowTagHelperBase`1.SortLocation
-  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataRowTagHelperBase-1.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableDataRowTagHelperBase_1_SortLocation
-  name: SortLocation
-  nameWithType: UFTableDataRowTagHelperBase<TTable>.SortLocation
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataRowTagHelperBase<TTable>.SortLocation
-  nameWithType.vb: UFTableDataRowTagHelperBase(Of TTable).SortLocation
-  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataRowTagHelperBase(Of TTable).SortLocation
-- uid: UltraForce.Library.Core.Asp.Types.Enums.UFTableSortLocationEnum
-  commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFTableSortLocationEnum
-  parent: UltraForce.Library.Core.Asp.Types.Enums
-  href: UltraForce.Library.Core.Asp.Types.Enums.UFTableSortLocationEnum.html
-  name: UFTableSortLocationEnum
-  nameWithType: UFTableSortLocationEnum
-  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFTableSortLocationEnum
-- uid: UltraForce.Library.Core.Asp.Types.Enums
-  commentId: N:UltraForce.Library.Core.Asp.Types.Enums
-  href: UltraForce.html
-  name: UltraForce.Library.Core.Asp.Types.Enums
-  nameWithType: UltraForce.Library.Core.Asp.Types.Enums
-  fullName: UltraForce.Library.Core.Asp.Types.Enums
-  spec.csharp:
-  - uid: UltraForce
-    name: UltraForce
-    href: UltraForce.html
-  - name: .
-  - uid: UltraForce.Library
-    name: Library
-    href: UltraForce.Library.html
-  - name: .
-  - uid: UltraForce.Library.Core
-    name: Core
-    href: UltraForce.Library.Core.html
-  - name: .
-  - uid: UltraForce.Library.Core.Asp
-    name: Asp
-    href: UltraForce.Library.Core.Asp.html
-  - name: .
-  - uid: UltraForce.Library.Core.Asp.Types
-    name: Types
-    href: UltraForce.Library.Core.Asp.Types.html
-  - name: .
-  - uid: UltraForce.Library.Core.Asp.Types.Enums
-    name: Enums
-    href: UltraForce.Library.Core.Asp.Types.Enums.html
-  spec.vb:
-  - uid: UltraForce
-    name: UltraForce
-    href: UltraForce.html
-  - name: .
-  - uid: UltraForce.Library
-    name: Library
-    href: UltraForce.Library.html
-  - name: .
-  - uid: UltraForce.Library.Core
-    name: Core
-    href: UltraForce.Library.Core.html
-  - name: .
-  - uid: UltraForce.Library.Core.Asp
-    name: Asp
-    href: UltraForce.Library.Core.Asp.html
-  - name: .
-  - uid: UltraForce.Library.Core.Asp.Types
-    name: Types
-    href: UltraForce.Library.Core.Asp.Types.html
-  - name: .
-  - uid: UltraForce.Library.Core.Asp.Types.Enums
-    name: Enums
-    href: UltraForce.Library.Core.Asp.Types.Enums.html
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataRowTagHelperBase`1.SkipSort*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataRowTagHelperBase`1.SkipSort
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataRowTagHelperBase-1.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableDataRowTagHelperBase_1_SkipSort
+  name: SkipSort
+  nameWithType: UFTableDataRowTagHelperBase<TTable>.SkipSort
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataRowTagHelperBase<TTable>.SkipSort
+  nameWithType.vb: UFTableDataRowTagHelperBase(Of TTable).SkipSort
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataRowTagHelperBase(Of TTable).SkipSort
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
 - uid: System.Threading.Tasks.Task
   commentId: T:System.Threading.Tasks.Task
   parent: System.Threading.Tasks

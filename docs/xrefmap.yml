@@ -5970,23 +5970,23 @@ references:
   fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataRowTagHelperBase(Of TTable).ProcessAsync
   nameWithType: UFTableDataRowTagHelperBase<TTable>.ProcessAsync
   nameWithType.vb: UFTableDataRowTagHelperBase(Of TTable).ProcessAsync
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataRowTagHelperBase`1.SortLocation
-  name: SortLocation
-  href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataRowTagHelperBase-1.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableDataRowTagHelperBase_1_SortLocation
-  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataRowTagHelperBase`1.SortLocation
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataRowTagHelperBase<TTable>.SortLocation
-  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataRowTagHelperBase(Of TTable).SortLocation
-  nameWithType: UFTableDataRowTagHelperBase<TTable>.SortLocation
-  nameWithType.vb: UFTableDataRowTagHelperBase(Of TTable).SortLocation
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataRowTagHelperBase`1.SortLocation*
-  name: SortLocation
-  href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataRowTagHelperBase-1.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableDataRowTagHelperBase_1_SortLocation_
-  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataRowTagHelperBase`1.SortLocation
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataRowTagHelperBase`1.SkipSort
+  name: SkipSort
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataRowTagHelperBase-1.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableDataRowTagHelperBase_1_SkipSort
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataRowTagHelperBase`1.SkipSort
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataRowTagHelperBase<TTable>.SkipSort
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataRowTagHelperBase(Of TTable).SkipSort
+  nameWithType: UFTableDataRowTagHelperBase<TTable>.SkipSort
+  nameWithType.vb: UFTableDataRowTagHelperBase(Of TTable).SkipSort
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataRowTagHelperBase`1.SkipSort*
+  name: SkipSort
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataRowTagHelperBase-1.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Table_UFTableDataRowTagHelperBase_1_SkipSort_
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataRowTagHelperBase`1.SkipSort
   isSpec: "True"
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataRowTagHelperBase<TTable>.SortLocation
-  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataRowTagHelperBase(Of TTable).SortLocation
-  nameWithType: UFTableDataRowTagHelperBase<TTable>.SortLocation
-  nameWithType.vb: UFTableDataRowTagHelperBase(Of TTable).SortLocation
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataRowTagHelperBase<TTable>.SkipSort
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableDataRowTagHelperBase(Of TTable).SkipSort
+  nameWithType: UFTableDataRowTagHelperBase<TTable>.SkipSort
+  nameWithType.vb: UFTableDataRowTagHelperBase(Of TTable).SkipSort
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableHeaderCellTagHelperBase`2
   name: UFTableHeaderCellTagHelperBase<TTable, TTableRow>
   href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Table.UFTableHeaderCellTagHelperBase-2.html
@@ -22488,15 +22488,15 @@ references:
   commentId: T:UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute
   fullName: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute
   nameWithType: UFDataAttribute
-- uid: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ClickAction(System.Object,System.Int32)
-  name: ClickAction(object?, int)
-  href: api/UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.html#UltraForce_Library_Core_Asp_Types_Constants_UFDataAttribute_ClickAction_System_Object_System_Int32_
-  commentId: M:UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ClickAction(System.Object,System.Int32)
-  name.vb: ClickAction(Object, Integer)
-  fullName: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ClickAction(object?, int)
-  fullName.vb: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ClickAction(Object, Integer)
-  nameWithType: UFDataAttribute.ClickAction(object?, int)
-  nameWithType.vb: UFDataAttribute.ClickAction(Object, Integer)
+- uid: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ClickAction(System.Nullable{UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum},System.Int32)
+  name: ClickAction(UFEventActionEnum?, int)
+  href: api/UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.html#UltraForce_Library_Core_Asp_Types_Constants_UFDataAttribute_ClickAction_System_Nullable_UltraForce_Library_Core_Asp_Types_Enums_UFEventActionEnum__System_Int32_
+  commentId: M:UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ClickAction(System.Nullable{UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum},System.Int32)
+  name.vb: ClickAction(UFEventActionEnum?, Integer)
+  fullName: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ClickAction(UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum?, int)
+  fullName.vb: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ClickAction(UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum?, Integer)
+  nameWithType: UFDataAttribute.ClickAction(UFEventActionEnum?, int)
+  nameWithType.vb: UFDataAttribute.ClickAction(UFEventActionEnum?, Integer)
 - uid: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ClickAction*
   name: ClickAction
   href: api/UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.html#UltraForce_Library_Core_Asp_Types_Constants_UFDataAttribute_ClickAction_
@@ -22632,15 +22632,15 @@ references:
   isSpec: "True"
   fullName: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.DisplayValue
   nameWithType: UFDataAttribute.DisplayValue
-- uid: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.EventAction(System.Object,System.Int32)
-  name: EventAction(object?, int)
-  href: api/UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.html#UltraForce_Library_Core_Asp_Types_Constants_UFDataAttribute_EventAction_System_Object_System_Int32_
-  commentId: M:UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.EventAction(System.Object,System.Int32)
-  name.vb: EventAction(Object, Integer)
-  fullName: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.EventAction(object?, int)
-  fullName.vb: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.EventAction(Object, Integer)
-  nameWithType: UFDataAttribute.EventAction(object?, int)
-  nameWithType.vb: UFDataAttribute.EventAction(Object, Integer)
+- uid: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.EventAction(System.Nullable{UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum},System.Int32)
+  name: EventAction(UFEventActionEnum?, int)
+  href: api/UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.html#UltraForce_Library_Core_Asp_Types_Constants_UFDataAttribute_EventAction_System_Nullable_UltraForce_Library_Core_Asp_Types_Enums_UFEventActionEnum__System_Int32_
+  commentId: M:UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.EventAction(System.Nullable{UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum},System.Int32)
+  name.vb: EventAction(UFEventActionEnum?, Integer)
+  fullName: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.EventAction(UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum?, int)
+  fullName.vb: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.EventAction(UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum?, Integer)
+  nameWithType: UFDataAttribute.EventAction(UFEventActionEnum?, int)
+  nameWithType.vb: UFDataAttribute.EventAction(UFEventActionEnum?, Integer)
 - uid: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.EventAction*
   name: EventAction
   href: api/UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.html#UltraForce_Library_Core_Asp_Types_Constants_UFDataAttribute_EventAction_
@@ -22904,22 +22904,6 @@ references:
   isSpec: "True"
   fullName: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.GroupSize
   nameWithType: UFDataAttribute.GroupSize
-- uid: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.HeaderRow(System.Object)
-  name: HeaderRow(object?)
-  href: api/UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.html#UltraForce_Library_Core_Asp_Types_Constants_UFDataAttribute_HeaderRow_System_Object_
-  commentId: M:UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.HeaderRow(System.Object)
-  name.vb: HeaderRow(Object)
-  fullName: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.HeaderRow(object?)
-  fullName.vb: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.HeaderRow(Object)
-  nameWithType: UFDataAttribute.HeaderRow(object?)
-  nameWithType.vb: UFDataAttribute.HeaderRow(Object)
-- uid: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.HeaderRow*
-  name: HeaderRow
-  href: api/UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.html#UltraForce_Library_Core_Asp_Types_Constants_UFDataAttribute_HeaderRow_
-  commentId: Overload:UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.HeaderRow
-  isSpec: "True"
-  fullName: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.HeaderRow
-  nameWithType: UFDataAttribute.HeaderRow
 - uid: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.HideClasses(System.Object)
   name: HideClasses(object?)
   href: api/UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.html#UltraForce_Library_Core_Asp_Types_Constants_UFDataAttribute_HideClasses_System_Object_
@@ -23080,15 +23064,15 @@ references:
   isSpec: "True"
   fullName: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ItemGroup
   nameWithType: UFDataAttribute.ItemGroup
-- uid: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.LoadAction(System.Object,System.Int32)
-  name: LoadAction(object?, int)
-  href: api/UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.html#UltraForce_Library_Core_Asp_Types_Constants_UFDataAttribute_LoadAction_System_Object_System_Int32_
-  commentId: M:UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.LoadAction(System.Object,System.Int32)
-  name.vb: LoadAction(Object, Integer)
-  fullName: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.LoadAction(object?, int)
-  fullName.vb: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.LoadAction(Object, Integer)
-  nameWithType: UFDataAttribute.LoadAction(object?, int)
-  nameWithType.vb: UFDataAttribute.LoadAction(Object, Integer)
+- uid: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.LoadAction(System.Nullable{UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum},System.Int32)
+  name: LoadAction(UFEventActionEnum?, int)
+  href: api/UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.html#UltraForce_Library_Core_Asp_Types_Constants_UFDataAttribute_LoadAction_System_Nullable_UltraForce_Library_Core_Asp_Types_Enums_UFEventActionEnum__System_Int32_
+  commentId: M:UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.LoadAction(System.Nullable{UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum},System.Int32)
+  name.vb: LoadAction(UFEventActionEnum?, Integer)
+  fullName: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.LoadAction(UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum?, int)
+  fullName.vb: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.LoadAction(UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum?, Integer)
+  nameWithType: UFDataAttribute.LoadAction(UFEventActionEnum?, int)
+  nameWithType.vb: UFDataAttribute.LoadAction(UFEventActionEnum?, Integer)
 - uid: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.LoadAction*
   name: LoadAction
   href: api/UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.html#UltraForce_Library_Core_Asp_Types_Constants_UFDataAttribute_LoadAction_
@@ -23519,38 +23503,6 @@ references:
   isSpec: "True"
   fullName: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.SortKey
   nameWithType: UFDataAttribute.SortKey
-- uid: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.SortLocation(System.Object)
-  name: SortLocation(object?)
-  href: api/UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.html#UltraForce_Library_Core_Asp_Types_Constants_UFDataAttribute_SortLocation_System_Object_
-  commentId: M:UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.SortLocation(System.Object)
-  name.vb: SortLocation(Object)
-  fullName: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.SortLocation(object?)
-  fullName.vb: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.SortLocation(Object)
-  nameWithType: UFDataAttribute.SortLocation(object?)
-  nameWithType.vb: UFDataAttribute.SortLocation(Object)
-- uid: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.SortLocation*
-  name: SortLocation
-  href: api/UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.html#UltraForce_Library_Core_Asp_Types_Constants_UFDataAttribute_SortLocation_
-  commentId: Overload:UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.SortLocation
-  isSpec: "True"
-  fullName: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.SortLocation
-  nameWithType: UFDataAttribute.SortLocation
-- uid: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.SortType(System.Object)
-  name: SortType(object?)
-  href: api/UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.html#UltraForce_Library_Core_Asp_Types_Constants_UFDataAttribute_SortType_System_Object_
-  commentId: M:UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.SortType(System.Object)
-  name.vb: SortType(Object)
-  fullName: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.SortType(object?)
-  fullName.vb: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.SortType(Object)
-  nameWithType: UFDataAttribute.SortType(object?)
-  nameWithType.vb: UFDataAttribute.SortType(Object)
-- uid: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.SortType*
-  name: SortType
-  href: api/UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.html#UltraForce_Library_Core_Asp_Types_Constants_UFDataAttribute_SortType_
-  commentId: Overload:UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.SortType
-  isSpec: "True"
-  fullName: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.SortType
-  nameWithType: UFDataAttribute.SortType
 - uid: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.SortValue(System.Object)
   name: SortValue(object?)
   href: api/UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.html#UltraForce_Library_Core_Asp_Types_Constants_UFDataAttribute_SortValue_System_Object_

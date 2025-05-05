@@ -10,6 +10,10 @@ Include the styles in your html using (for example `Shared\_Layout.cshtml`):
 <link rel="stylesheet" href="/_content/UltraForce.Library.Core.Asp/css/uf-styles.css" />
 ````
 ## Version history
+1.0.112
+- `UFDataAttribute.EventAction`, `UFDataAttribute.ClickAction` and `UFDataAttribute.LoadAction` now
+  use `UFEventActionEnum` as type for the value parameter.
+ 
 1.0.111
 - table sorting now uses data attributes for the grid sorting helper from Ultra Force DOM library.
 

@@ -5,7 +5,7 @@ items:
   id: UFDataAttribute
   parent: UltraForce.Library.Core.Asp.Types.Constants
   children:
-  - UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ClickAction(System.Object,System.Int32)
+  - UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ClickAction(System.Nullable{UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum},System.Int32)
   - UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ClickAttribute(System.Object,System.Int32)
   - UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ClickData(System.Object,System.Int32)
   - UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ClickStylingClasses(System.Object)
@@ -14,7 +14,7 @@ items:
   - UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.DetailsCollapse(System.Object)
   - UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.DetailsExpand(System.Object)
   - UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.DisplayValue(System.Object)
-  - UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.EventAction(System.Object,System.Int32)
+  - UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.EventAction(System.Nullable{UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum},System.Int32)
   - UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.EventAttribute(System.Object,System.Int32)
   - UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.EventData(System.Object,System.Int32)
   - UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.EventEvents(System.Object,System.Int32)
@@ -31,7 +31,6 @@ items:
   - UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.GridBody(System.Object)
   - UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.GridSorting(System.Object)
   - UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.GroupSize(System.Object)
-  - UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.HeaderRow(System.Object)
   - UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.HideClasses(System.Object)
   - UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.HideIfField(System.Object)
   - UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ImageHeight(System.Object)
@@ -42,7 +41,7 @@ items:
   - UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ImageWidth(System.Object)
   - UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ItemContainer(System.Object)
   - UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ItemGroup(System.Object)
-  - UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.LoadAction(System.Object,System.Int32)
+  - UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.LoadAction(System.Nullable{UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum},System.Int32)
   - UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.LoadAttribute(System.Object,System.Int32)
   - UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.LoadData(System.Object,System.Int32)
   - UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.LoadTarget(System.Object,System.Int32)
@@ -70,8 +69,6 @@ items:
   - UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.SortControl(System.Object)
   - UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.SortDescending(System.Object)
   - UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.SortKey(System.Object)
-  - UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.SortLocation(System.Object)
-  - UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.SortType(System.Object)
   - UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.SortValue(System.Object)
   - UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.StorageId(System.Object)
   - UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.TableSorting(System.Object)
@@ -627,42 +624,6 @@ items:
   nameWithType.vb: UFDataAttribute.GridBody(Object)
   fullName.vb: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.GridBody(Object)
   name.vb: GridBody(Object)
-- uid: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.SortType(System.Object)
-  commentId: M:UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.SortType(System.Object)
-  id: SortType(System.Object)
-  parent: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute
-  langs:
-  - csharp
-  - vb
-  name: SortType(object?)
-  nameWithType: UFDataAttribute.SortType(object?)
-  fullName: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.SortType(object?)
-  type: Method
-  source:
-    remote:
-      path: UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-      branch: master
-      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
-    id: SortType
-    path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 144
-  assemblies:
-  - UltraForce.Library.Core.Asp
-  namespace: UltraForce.Library.Core.Asp.Types.Constants
-  summary: The type of data in a table column to sort on.
-  example: []
-  syntax:
-    content: public static TagHelperAttribute SortType(object? value = null)
-    parameters:
-    - id: value
-      type: System.Object
-    return:
-      type: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute
-    content.vb: Public Shared Function SortType(value As Object = Nothing) As TagHelperAttribute
-  overload: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.SortType*
-  nameWithType.vb: UFDataAttribute.SortType(Object)
-  fullName.vb: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.SortType(Object)
-  name.vb: SortType(Object)
 - uid: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.SortValue(System.Object)
   commentId: M:UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.SortValue(System.Object)
   id: SortValue(System.Object)
@@ -681,7 +642,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: SortValue
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 151
+    startLine: 144
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -717,7 +678,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: NoFilter
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 158
+    startLine: 151
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -753,7 +714,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: RowNoMatch
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 165
+    startLine: 158
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -789,7 +750,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: FilterNoMatch
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 172
+    startLine: 165
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -807,42 +768,6 @@ items:
   nameWithType.vb: UFDataAttribute.FilterNoMatch(Object)
   fullName.vb: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.FilterNoMatch(Object)
   name.vb: FilterNoMatch(Object)
-- uid: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.SortLocation(System.Object)
-  commentId: M:UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.SortLocation(System.Object)
-  id: SortLocation(System.Object)
-  parent: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute
-  langs:
-  - csharp
-  - vb
-  name: SortLocation(object?)
-  nameWithType: UFDataAttribute.SortLocation(object?)
-  fullName: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.SortLocation(object?)
-  type: Method
-  source:
-    remote:
-      path: UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-      branch: master
-      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
-    id: SortLocation
-    path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 179
-  assemblies:
-  - UltraForce.Library.Core.Asp
-  namespace: UltraForce.Library.Core.Asp.Types.Constants
-  summary: In which location to place the sorted row.
-  example: []
-  syntax:
-    content: public static TagHelperAttribute SortLocation(object? value = null)
-    parameters:
-    - id: value
-      type: System.Object
-    return:
-      type: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute
-    content.vb: Public Shared Function SortLocation(value As Object = Nothing) As TagHelperAttribute
-  overload: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.SortLocation*
-  nameWithType.vb: UFDataAttribute.SortLocation(Object)
-  fullName.vb: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.SortLocation(Object)
-  name.vb: SortLocation(Object)
 - uid: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.FilterTable(System.Object)
   commentId: M:UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.FilterTable(System.Object)
   id: FilterTable(System.Object)
@@ -861,7 +786,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: FilterTable
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 186
+    startLine: 172
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -897,7 +822,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: FilterInput
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 193
+    startLine: 179
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -933,7 +858,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: FilterGroup
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 200
+    startLine: 186
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -969,7 +894,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: FilterContainer
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 207
+    startLine: 193
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -987,42 +912,6 @@ items:
   nameWithType.vb: UFDataAttribute.FilterContainer(Object)
   fullName.vb: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.FilterContainer(Object)
   name.vb: FilterContainer(Object)
-- uid: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.HeaderRow(System.Object)
-  commentId: M:UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.HeaderRow(System.Object)
-  id: HeaderRow(System.Object)
-  parent: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute
-  langs:
-  - csharp
-  - vb
-  name: HeaderRow(object?)
-  nameWithType: UFDataAttribute.HeaderRow(object?)
-  fullName: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.HeaderRow(object?)
-  type: Method
-  source:
-    remote:
-      path: UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-      branch: master
-      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
-    id: HeaderRow
-    path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 214
-  assemblies:
-  - UltraForce.Library.Core.Asp
-  namespace: UltraForce.Library.Core.Asp.Types.Constants
-  summary: Defines a table row as a header row containing clickable elements.
-  example: []
-  syntax:
-    content: public static TagHelperAttribute HeaderRow(object? value = null)
-    parameters:
-    - id: value
-      type: System.Object
-    return:
-      type: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute
-    content.vb: Public Shared Function HeaderRow(value As Object = Nothing) As TagHelperAttribute
-  overload: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.HeaderRow*
-  nameWithType.vb: UFDataAttribute.HeaderRow(Object)
-  fullName.vb: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.HeaderRow(Object)
-  name.vb: HeaderRow(Object)
 - uid: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.SortAscending(System.Object)
   commentId: M:UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.SortAscending(System.Object)
   id: SortAscending(System.Object)
@@ -1041,7 +930,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: SortAscending
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 221
+    startLine: 200
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -1077,7 +966,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: SortDescending
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 228
+    startLine: 207
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -1113,7 +1002,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: StorageId
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 235
+    startLine: 214
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -1149,7 +1038,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: SetFieldSelector
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 242
+    startLine: 221
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -1185,7 +1074,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: SetFieldValue
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 249
+    startLine: 228
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -1221,7 +1110,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: NoCaching
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 256
+    startLine: 235
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -1257,7 +1146,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: ImagePreview
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 263
+    startLine: 242
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -1293,7 +1182,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: ImageWidth
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 270
+    startLine: 249
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -1329,7 +1218,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: ImageHeight
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 277
+    startLine: 256
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -1365,7 +1254,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: ImageName
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 284
+    startLine: 263
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -1401,7 +1290,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: ImageSize
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 291
+    startLine: 270
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -1437,7 +1326,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: ImageType
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 298
+    startLine: 277
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -1473,7 +1362,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: ShowIfField
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 305
+    startLine: 284
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -1509,7 +1398,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: HideIfField
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 312
+    startLine: 291
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -1545,7 +1434,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: FieldValue
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 319
+    startLine: 298
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -1563,16 +1452,16 @@ items:
   nameWithType.vb: UFDataAttribute.FieldValue(Object)
   fullName.vb: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.FieldValue(Object)
   name.vb: FieldValue(Object)
-- uid: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.EventAction(System.Object,System.Int32)
-  commentId: M:UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.EventAction(System.Object,System.Int32)
-  id: EventAction(System.Object,System.Int32)
+- uid: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.EventAction(System.Nullable{UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum},System.Int32)
+  commentId: M:UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.EventAction(System.Nullable{UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum},System.Int32)
+  id: EventAction(System.Nullable{UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum},System.Int32)
   parent: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute
   langs:
   - csharp
   - vb
-  name: EventAction(object?, int)
-  nameWithType: UFDataAttribute.EventAction(object?, int)
-  fullName: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.EventAction(object?, int)
+  name: EventAction(UFEventActionEnum?, int)
+  nameWithType: UFDataAttribute.EventAction(UFEventActionEnum?, int)
+  fullName: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.EventAction(UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum?, int)
   type: Method
   source:
     remote:
@@ -1581,26 +1470,26 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: EventAction
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 326
+    startLine: 305
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
   summary: Action to perform for some event
   example: []
   syntax:
-    content: public static TagHelperAttribute EventAction(object? value = null, int index = 0)
+    content: public static TagHelperAttribute EventAction(UFEventActionEnum? value = null, int index = 0)
     parameters:
     - id: value
-      type: System.Object
+      type: System.Nullable{UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum}
     - id: index
       type: System.Int32
     return:
       type: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute
-    content.vb: Public Shared Function EventAction(value As Object = Nothing, index As Integer = 0) As TagHelperAttribute
+    content.vb: Public Shared Function EventAction(value As UFEventActionEnum? = Nothing, index As Integer = 0) As TagHelperAttribute
   overload: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.EventAction*
-  nameWithType.vb: UFDataAttribute.EventAction(Object, Integer)
-  fullName.vb: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.EventAction(Object, Integer)
-  name.vb: EventAction(Object, Integer)
+  nameWithType.vb: UFDataAttribute.EventAction(UFEventActionEnum?, Integer)
+  fullName.vb: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.EventAction(UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum?, Integer)
+  name.vb: EventAction(UFEventActionEnum?, Integer)
 - uid: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.EventEvents(System.Object,System.Int32)
   commentId: M:UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.EventEvents(System.Object,System.Int32)
   id: EventEvents(System.Object,System.Int32)
@@ -1619,7 +1508,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: EventEvents
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 334
+    startLine: 315
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -1657,7 +1546,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: EventTarget
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 342
+    startLine: 323
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -1695,7 +1584,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: EventData
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 350
+    startLine: 331
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -1733,7 +1622,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: EventAttribute
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 358
+    startLine: 339
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -1771,7 +1660,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: EventState
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 366
+    startLine: 349
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -1809,7 +1698,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: EventKey
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 376
+    startLine: 359
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -1852,7 +1741,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: EventPreventDefault
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 384
+    startLine: 367
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -1872,16 +1761,16 @@ items:
   nameWithType.vb: UFDataAttribute.EventPreventDefault(Object, Integer)
   fullName.vb: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.EventPreventDefault(Object, Integer)
   name.vb: EventPreventDefault(Object, Integer)
-- uid: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ClickAction(System.Object,System.Int32)
-  commentId: M:UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ClickAction(System.Object,System.Int32)
-  id: ClickAction(System.Object,System.Int32)
+- uid: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ClickAction(System.Nullable{UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum},System.Int32)
+  commentId: M:UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ClickAction(System.Nullable{UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum},System.Int32)
+  id: ClickAction(System.Nullable{UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum},System.Int32)
   parent: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute
   langs:
   - csharp
   - vb
-  name: ClickAction(object?, int)
-  nameWithType: UFDataAttribute.ClickAction(object?, int)
-  fullName: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ClickAction(object?, int)
+  name: ClickAction(UFEventActionEnum?, int)
+  nameWithType: UFDataAttribute.ClickAction(UFEventActionEnum?, int)
+  fullName: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ClickAction(UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum?, int)
   type: Method
   source:
     remote:
@@ -1890,26 +1779,26 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: ClickAction
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 392
+    startLine: 377
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
   summary: Event that is a click action.
   example: []
   syntax:
-    content: public static TagHelperAttribute ClickAction(object? value = null, int index = 0)
+    content: public static TagHelperAttribute ClickAction(UFEventActionEnum? value = null, int index = 0)
     parameters:
     - id: value
-      type: System.Object
+      type: System.Nullable{UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum}
     - id: index
       type: System.Int32
     return:
       type: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute
-    content.vb: Public Shared Function ClickAction(value As Object = Nothing, index As Integer = 0) As TagHelperAttribute
+    content.vb: Public Shared Function ClickAction(value As UFEventActionEnum? = Nothing, index As Integer = 0) As TagHelperAttribute
   overload: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ClickAction*
-  nameWithType.vb: UFDataAttribute.ClickAction(Object, Integer)
-  fullName.vb: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ClickAction(Object, Integer)
-  name.vb: ClickAction(Object, Integer)
+  nameWithType.vb: UFDataAttribute.ClickAction(UFEventActionEnum?, Integer)
+  fullName.vb: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ClickAction(UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum?, Integer)
+  name.vb: ClickAction(UFEventActionEnum?, Integer)
 - uid: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ClickTarget(System.Object,System.Int32)
   commentId: M:UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ClickTarget(System.Object,System.Int32)
   id: ClickTarget(System.Object,System.Int32)
@@ -1928,7 +1817,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: ClickTarget
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 400
+    startLine: 387
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -1966,7 +1855,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: ClickData
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 408
+    startLine: 395
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -2004,7 +1893,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: ClickAttribute
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 416
+    startLine: 403
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -2024,16 +1913,16 @@ items:
   nameWithType.vb: UFDataAttribute.ClickAttribute(Object, Integer)
   fullName.vb: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ClickAttribute(Object, Integer)
   name.vb: ClickAttribute(Object, Integer)
-- uid: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.LoadAction(System.Object,System.Int32)
-  commentId: M:UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.LoadAction(System.Object,System.Int32)
-  id: LoadAction(System.Object,System.Int32)
+- uid: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.LoadAction(System.Nullable{UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum},System.Int32)
+  commentId: M:UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.LoadAction(System.Nullable{UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum},System.Int32)
+  id: LoadAction(System.Nullable{UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum},System.Int32)
   parent: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute
   langs:
   - csharp
   - vb
-  name: LoadAction(object?, int)
-  nameWithType: UFDataAttribute.LoadAction(object?, int)
-  fullName: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.LoadAction(object?, int)
+  name: LoadAction(UFEventActionEnum?, int)
+  nameWithType: UFDataAttribute.LoadAction(UFEventActionEnum?, int)
+  fullName: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.LoadAction(UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum?, int)
   type: Method
   source:
     remote:
@@ -2042,26 +1931,26 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: LoadAction
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 424
+    startLine: 411
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
   summary: Event that is a load action.
   example: []
   syntax:
-    content: public static TagHelperAttribute LoadAction(object? value = null, int index = 0)
+    content: public static TagHelperAttribute LoadAction(UFEventActionEnum? value = null, int index = 0)
     parameters:
     - id: value
-      type: System.Object
+      type: System.Nullable{UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum}
     - id: index
       type: System.Int32
     return:
       type: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute
-    content.vb: Public Shared Function LoadAction(value As Object = Nothing, index As Integer = 0) As TagHelperAttribute
+    content.vb: Public Shared Function LoadAction(value As UFEventActionEnum? = Nothing, index As Integer = 0) As TagHelperAttribute
   overload: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.LoadAction*
-  nameWithType.vb: UFDataAttribute.LoadAction(Object, Integer)
-  fullName.vb: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.LoadAction(Object, Integer)
-  name.vb: LoadAction(Object, Integer)
+  nameWithType.vb: UFDataAttribute.LoadAction(UFEventActionEnum?, Integer)
+  fullName.vb: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.LoadAction(UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum?, Integer)
+  name.vb: LoadAction(UFEventActionEnum?, Integer)
 - uid: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.LoadTarget(System.Object,System.Int32)
   commentId: M:UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.LoadTarget(System.Object,System.Int32)
   id: LoadTarget(System.Object,System.Int32)
@@ -2080,7 +1969,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: LoadTarget
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 432
+    startLine: 421
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -2118,7 +2007,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: LoadData
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 440
+    startLine: 429
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -2156,7 +2045,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: LoadAttribute
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 448
+    startLine: 437
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -2194,7 +2083,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: ClickStylingSelector
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 456
+    startLine: 445
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -2230,7 +2119,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: ClickStylingClasses
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 463
+    startLine: 452
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -2266,7 +2155,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: DetailsCollapse
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 470
+    startLine: 459
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -2302,7 +2191,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: DetailsExpand
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 477
+    startLine: 466
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -2338,7 +2227,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: ShowDialog
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 484
+    startLine: 473
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -2374,7 +2263,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: ToggleType
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 491
+    startLine: 480
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -2407,7 +2296,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: ToggleProperty
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 498
+    startLine: 487
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -2443,7 +2332,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: ToggleSelector
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 505
+    startLine: 494
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -2479,7 +2368,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: ToggleChange
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 512
+    startLine: 501
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -2512,7 +2401,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: ToggleRequired
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 519
+    startLine: 508
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -2545,7 +2434,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: ToggleClasses
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 526
+    startLine: 515
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -2581,7 +2470,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: ToggleCondition
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 533
+    startLine: 522
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -2614,7 +2503,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: ToggleCompare
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 540
+    startLine: 529
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -2647,7 +2536,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: ToggleValue
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 547
+    startLine: 536
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -2683,7 +2572,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: ToggleValues
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 554
+    startLine: 543
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -2719,7 +2608,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: ToggleTarget
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 561
+    startLine: 550
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -2755,7 +2644,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: ManageSubmit
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 568
+    startLine: 557
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -2791,7 +2680,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: PageRefresh
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 575
+    startLine: 564
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -2827,7 +2716,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: PopupContent
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 582
+    startLine: 571
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -2863,7 +2752,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: PopupPosition
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 589
+    startLine: 578
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -2896,7 +2785,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: PopupHide
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 596
+    startLine: 585
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -2929,7 +2818,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: PopupTransition
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 603
+    startLine: 592
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -2962,7 +2851,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: PopupDeltaX
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 610
+    startLine: 599
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -2998,7 +2887,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: ToggleDeltaY
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 617
+    startLine: 606
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -3034,7 +2923,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: SelectUrl
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 624
+    startLine: 613
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -3070,7 +2959,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: ShareHover
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 631
+    startLine: 620
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -3525,12 +3414,6 @@ references:
   name: GridBody
   nameWithType: UFDataAttribute.GridBody
   fullName: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.GridBody
-- uid: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.SortType*
-  commentId: Overload:UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.SortType
-  href: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.html#UltraForce_Library_Core_Asp_Types_Constants_UFDataAttribute_SortType_System_Object_
-  name: SortType
-  nameWithType: UFDataAttribute.SortType
-  fullName: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.SortType
 - uid: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.SortValue*
   commentId: Overload:UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.SortValue
   href: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.html#UltraForce_Library_Core_Asp_Types_Constants_UFDataAttribute_SortValue_System_Object_
@@ -3555,12 +3438,6 @@ references:
   name: FilterNoMatch
   nameWithType: UFDataAttribute.FilterNoMatch
   fullName: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.FilterNoMatch
-- uid: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.SortLocation*
-  commentId: Overload:UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.SortLocation
-  href: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.html#UltraForce_Library_Core_Asp_Types_Constants_UFDataAttribute_SortLocation_System_Object_
-  name: SortLocation
-  nameWithType: UFDataAttribute.SortLocation
-  fullName: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.SortLocation
 - uid: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.FilterTable*
   commentId: Overload:UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.FilterTable
   href: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.html#UltraForce_Library_Core_Asp_Types_Constants_UFDataAttribute_FilterTable_System_Object_
@@ -3585,12 +3462,6 @@ references:
   name: FilterContainer
   nameWithType: UFDataAttribute.FilterContainer
   fullName: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.FilterContainer
-- uid: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.HeaderRow*
-  commentId: Overload:UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.HeaderRow
-  href: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.html#UltraForce_Library_Core_Asp_Types_Constants_UFDataAttribute_HeaderRow_System_Object_
-  name: HeaderRow
-  nameWithType: UFDataAttribute.HeaderRow
-  fullName: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.HeaderRow
 - uid: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.SortAscending*
   commentId: Overload:UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.SortAscending
   href: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.html#UltraForce_Library_Core_Asp_Types_Constants_UFDataAttribute_SortAscending_System_Object_
@@ -3683,10 +3554,28 @@ references:
   fullName: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.FieldValue
 - uid: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.EventAction*
   commentId: Overload:UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.EventAction
-  href: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.html#UltraForce_Library_Core_Asp_Types_Constants_UFDataAttribute_EventAction_System_Object_System_Int32_
+  href: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.html#UltraForce_Library_Core_Asp_Types_Constants_UFDataAttribute_EventAction_System_Nullable_UltraForce_Library_Core_Asp_Types_Enums_UFEventActionEnum__System_Int32_
   name: EventAction
   nameWithType: UFDataAttribute.EventAction
   fullName: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.EventAction
+- uid: System.Nullable{UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum}
+  commentId: T:System.Nullable{UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum}
+  parent: System
+  definition: System.Nullable`1
+  href: UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum.html
+  name: UFEventActionEnum?
+  nameWithType: UFEventActionEnum?
+  fullName: UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum?
+  spec.csharp:
+  - uid: UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum
+    name: UFEventActionEnum
+    href: UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum.html
+  - name: '?'
+  spec.vb:
+  - uid: UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum
+    name: UFEventActionEnum
+    href: UltraForce.Library.Core.Asp.Types.Enums.UFEventActionEnum.html
+  - name: '?'
 - uid: System.Int32
   commentId: T:System.Int32
   parent: System
@@ -3698,6 +3587,34 @@ references:
   nameWithType.vb: Integer
   fullName.vb: Integer
   name.vb: Integer
+- uid: System.Nullable`1
+  commentId: T:System.Nullable`1
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  name: Nullable<T>
+  nameWithType: Nullable<T>
+  fullName: System.Nullable<T>
+  nameWithType.vb: Nullable(Of T)
+  fullName.vb: System.Nullable(Of T)
+  name.vb: Nullable(Of T)
+  spec.csharp:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Nullable`1
+    name: Nullable
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
 - uid: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.EventEvents*
   commentId: Overload:UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.EventEvents
   href: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.html#UltraForce_Library_Core_Asp_Types_Constants_UFDataAttribute_EventEvents_System_Object_System_Int32_
@@ -3742,7 +3659,7 @@ references:
   fullName: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.EventPreventDefault
 - uid: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ClickAction*
   commentId: Overload:UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ClickAction
-  href: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.html#UltraForce_Library_Core_Asp_Types_Constants_UFDataAttribute_ClickAction_System_Object_System_Int32_
+  href: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.html#UltraForce_Library_Core_Asp_Types_Constants_UFDataAttribute_ClickAction_System_Nullable_UltraForce_Library_Core_Asp_Types_Enums_UFEventActionEnum__System_Int32_
   name: ClickAction
   nameWithType: UFDataAttribute.ClickAction
   fullName: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ClickAction
@@ -3766,7 +3683,7 @@ references:
   fullName: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ClickAttribute
 - uid: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.LoadAction*
   commentId: Overload:UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.LoadAction
-  href: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.html#UltraForce_Library_Core_Asp_Types_Constants_UFDataAttribute_LoadAction_System_Object_System_Int32_
+  href: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.html#UltraForce_Library_Core_Asp_Types_Constants_UFDataAttribute_LoadAction_System_Nullable_UltraForce_Library_Core_Asp_Types_Enums_UFEventActionEnum__System_Int32_
   name: LoadAction
   nameWithType: UFDataAttribute.LoadAction
   fullName: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.LoadAction
@@ -3842,34 +3759,6 @@ references:
     name: UFToggleTypeEnum
     href: UltraForce.Library.Core.Asp.Types.Enums.UFToggleTypeEnum.html
   - name: '?'
-- uid: System.Nullable`1
-  commentId: T:System.Nullable`1
-  isExternal: true
-  href: https://learn.microsoft.com/dotnet/api/system.nullable-1
-  name: Nullable<T>
-  nameWithType: Nullable<T>
-  fullName: System.Nullable<T>
-  nameWithType.vb: Nullable(Of T)
-  fullName.vb: System.Nullable(Of T)
-  name.vb: Nullable(Of T)
-  spec.csharp:
-  - uid: System.Nullable`1
-    name: Nullable
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
-  - name: <
-  - name: T
-  - name: '>'
-  spec.vb:
-  - uid: System.Nullable`1
-    name: Nullable
-    isExternal: true
-    href: https://learn.microsoft.com/dotnet/api/system.nullable-1
-  - name: (
-  - name: Of
-  - name: " "
-  - name: T
-  - name: )
 - uid: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ToggleProperty*
   commentId: Overload:UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ToggleProperty
   href: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.html#UltraForce_Library_Core_Asp_Types_Constants_UFDataAttribute_ToggleProperty_System_Object_
