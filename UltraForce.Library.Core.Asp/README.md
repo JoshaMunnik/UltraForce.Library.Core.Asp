@@ -10,6 +10,10 @@ Include the styles in your html using (for example `Shared\_Layout.cshtml`):
 <link rel="stylesheet" href="/_content/UltraForce.Library.Core.Asp/css/uf-styles.css" />
 ````
 ## Version history
+1.0.113
+- `UFGridItemTagHelperBase` now set `data-uf-sort-value` with `DateTime` and `DateOnly` values.
+- `UFGridHeaderTagHelperBase` now also sets the sort type to `date` with te `DateOnly` type.
+
 1.0.112
 - `UFDataAttribute.EventAction`, `UFDataAttribute.ClickAction` and `UFDataAttribute.LoadAction` now
   use `UFEventActionEnum` as type for the value parameter.

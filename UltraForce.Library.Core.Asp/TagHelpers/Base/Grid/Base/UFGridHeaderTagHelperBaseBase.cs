@@ -9,9 +9,9 @@
 // Copyright (C) 2025 Ultra Force Development
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
-// of this software and associated documentation files (the "Software"), to 
-// deal in the Software without restriction, including without limitation the 
-// rights to use, copy, modify, merge, publish, distribute, sublicense, and/or 
+// of this software and associated documentation files (the "Software"), to
+// deal in the Software without restriction, including without limitation the
+// rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
 // sell copies of the Software, and to permit persons to whom the Software is
 // furnished to do so, subject to the following conditions:
 //
@@ -22,8 +22,8 @@
 // IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 // FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 // AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING 
-// FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS 
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+// FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
 // IN THE SOFTWARE.
 // </license>
 
@@ -39,7 +39,7 @@ using UltraForce.Library.NetStandard.Tools;
 namespace UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base;
 
 /// <summary>
-/// Base class for header items within a grid or table. 
+/// Base class for header items within a grid or table.
 /// </summary>
 /// <param name="modelExpressionRenderer"></param>
 public abstract class UFGridHeaderTagHelperBaseBase(
@@ -82,7 +82,7 @@ public abstract class UFGridHeaderTagHelperBaseBase(
   /// <inheritdoc />
   [HtmlAttributeName("size")]
   public string? Size { get; set; } = null;
-  
+
   #endregion
 
   #region public methods
@@ -99,7 +99,7 @@ public abstract class UFGridHeaderTagHelperBaseBase(
   }
 
   #endregion
-  
+
   #region protected methods
 
   /// <summary>
@@ -116,7 +116,12 @@ public abstract class UFGridHeaderTagHelperBaseBase(
     UFSortTypeEnum sortType = this.SortType;
     if (sortType == UFSortTypeEnum.Auto)
     {
-      if ((type == typeof(DateTime)) || (type == typeof(DateTime?)))
+      if (
+        (type == typeof(DateTime)) ||
+        (type == typeof(DateTime?)) ||
+        (type == typeof(DateOnly)) ||
+        (type == typeof(DateOnly?))
+      )
       {
         sortType = UFSortTypeEnum.Date;
       }
@@ -133,7 +138,7 @@ public abstract class UFGridHeaderTagHelperBaseBase(
     }
     return sortType;
   }
-  
+
   #endregion
 
   #region private methods

@@ -15,9 +15,9 @@
         <RepositoryUrl>https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp</RepositoryUrl>
         <PackageReadmeFile>README.md</PackageReadmeFile>
         <AssemblyVersion></AssemblyVersion>
-        <Version>1.0.112</Version>
-        <PackageReleaseNotes>- `UFDataAttribute.EventAction`, `UFDataAttribute.ClickAction` and `UFDataAttribute.LoadAction` now
-  use `UFEventActionEnum` as type for the value parameter.
+        <Version>1.0.113</Version>
+        <PackageReleaseNotes>- `UFGridItemTagHelperBase` now set `data-uf-sort-value` with `DateTime` and `DateOnly` values.
+- `UFGridHeaderTagHelperBase` now also sets the sort type to `date` with te `DateOnly` type.
 </PackageReleaseNotes>
         <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
     </PropertyGroup>

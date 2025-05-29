@@ -9,9 +9,9 @@
 // Copyright (C) 2025 Ultra Force Development
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
-// of this software and associated documentation files (the "Software"), to 
-// deal in the Software without restriction, including without limitation the 
-// rights to use, copy, modify, merge, publish, distribute, sublicense, and/or 
+// of this software and associated documentation files (the "Software"), to
+// deal in the Software without restriction, including without limitation the
+// rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
 // sell copies of the Software, and to permit persons to whom the Software is
 // furnished to do so, subject to the following conditions:
 //
@@ -22,8 +22,8 @@
 // IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 // FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 // AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING 
-// FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS 
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+// FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
 // IN THE SOFTWARE.
 // </license>
 
@@ -38,7 +38,7 @@ using UltraForce.Library.Core.Asp.Types.Interfaces;
 namespace UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base;
 
 /// <summary>
-/// Base class for items within a grid or table. 
+/// Base class for items within a grid or table.
 /// </summary>
 /// <param name="modelExpressionRenderer"></param>
 [SuppressMessage("ReSharper", "MemberCanBePrivate.Global")]
@@ -51,7 +51,7 @@ public abstract class UFGridItemTagHelperBaseBase(
   #region public properties
 
   /// <summary>
-  /// An expression to be evaluated against the current model. 
+  /// An expression to be evaluated against the current model.
   /// <para>
   /// Date values are formatted using mysql format (so there is no confusion on month and
   /// day positions):
@@ -70,7 +70,7 @@ public abstract class UFGridItemTagHelperBaseBase(
 
   /// <summary>
   /// When not null and <see cref="For"/> has not been set, create an attribute `data-uf-sort-value`
-  /// and assign this value to it. 
+  /// and assign this value to it.
   /// </summary>
   [HtmlAttributeName("value")]
   public string? Value { get; set; } = null;
@@ -96,7 +96,7 @@ public abstract class UFGridItemTagHelperBaseBase(
   /// <inheritdoc />
   [HtmlAttributeName("size")]
   public string? Size { get; set; } = null;
-  
+
   #endregion
 
   #region public methods
@@ -154,6 +154,20 @@ public abstract class UFGridItemTagHelperBaseBase(
       bool? value = (bool?)this.For.Model;
       output.Attributes.SetAttribute(
         UFDataAttribute.SortValue((value != null) && value.Value ? "1" : "0")
+      );
+    }
+    else if (
+      (this.For.Model != null) &&
+      (
+        (type == typeof(DateTime)) || (type == typeof(DateTime?)) ||
+        (type == typeof(DateOnly)) || (type == typeof(DateOnly?))
+      )
+    )
+    {
+      output.Attributes.SetAttribute(
+        UFDataAttribute.SortValue(
+          this.ModelExpressionRenderer.GetValueAsText(this.For, this.ViewContext)
+        )
       );
     }
     if (!output.Attributes.ContainsName("title") && (this.For.Model != null))
