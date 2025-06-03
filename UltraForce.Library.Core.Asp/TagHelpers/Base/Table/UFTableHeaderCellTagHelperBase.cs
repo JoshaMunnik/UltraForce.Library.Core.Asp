@@ -9,9 +9,9 @@
 // Copyright (C) 2024 Ultra Force Development
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
-// of this software and associated documentation files (the "Software"), to 
-// deal in the Software without restriction, including without limitation the 
-// rights to use, copy, modify, merge, publish, distribute, sublicense, and/or 
+// of this software and associated documentation files (the "Software"), to
+// deal in the Software without restriction, including without limitation the
+// rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
 // sell copies of the Software, and to permit persons to whom the Software is
 // furnished to do so, subject to the following conditions:
 //
@@ -22,8 +22,8 @@
 // IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 // FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 // AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING 
-// FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS 
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+// FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
 // IN THE SOFTWARE.
 // </license>
 
@@ -47,8 +47,8 @@ namespace UltraForce.Library.Core.Asp.TagHelpers.Base.Table;
 /// <para>
 /// When <see cref="UFGridItemTagHelperBaseBase.MinSize"/>,
 /// <see cref="UFGridItemTagHelperBaseBase.MaxSize"/> or
-/// <see cref="UFGridItemTagHelperBaseBase.Size"/> has been set and the table is not using grid
-/// styling a style attribute is added to the td element.
+/// <see cref="UFGridItemTagHelperBaseBase.Size"/> has been set a style attribute is added to
+/// the `td` element.
 /// </para>
 /// <para>
 /// Rendered html:
@@ -86,7 +86,7 @@ public abstract class UFTableHeaderCellTagHelperBase<TTable, TTableRow>(
   {
     await base.ProcessAsync(context, output);
     context.Items[UFGridTagHelperBaseBase.Cell] = this;
-    TTable table = UFTagHelperTools.GetItem<TTable>(context, UFGridTagHelperBaseBase.Grid); 
+    TTable table = UFTagHelperTools.GetItem<TTable>(context, UFGridTagHelperBaseBase.Grid);
     TTableRow tableRow = UFTagHelperTools.GetItem<TTableRow>(context, UFGridTagHelperBaseBase.Row);
     int cellIndex = table.CellIndex;
     table.CellIndex++;
@@ -96,7 +96,7 @@ public abstract class UFTableHeaderCellTagHelperBase<TTable, TTableRow>(
   #endregion
 
   #region protected methods
-  
+
   /// <summary>
   /// Executes the tag helper.
   /// </summary>

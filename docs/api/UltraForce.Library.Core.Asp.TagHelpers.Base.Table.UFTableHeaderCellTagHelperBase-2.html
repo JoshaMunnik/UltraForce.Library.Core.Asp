@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class UFTableHeaderCellTagHelperBase&lt;TTable, TTableRow&gt; | UltraForce.Library.Core.Asp ">
       
-      <meta name="description" content="Creates a table header cell. The cell can be self-closing or can contain content with a separate closing tag.  The generated th element always uses an opening and closing tag.   When ,  or  has been set and the table is not using grid styling a style attribute is added to the td element.   Rendered html: &amp;lt;th class=&quot;{GetTableCellClasses()}&quot; [style=&quot;min-width: {MinSize}; max-width: {MaxSize}; width: {Size}; box-sizing: content-box&quot;]&amp;gt;{children}&amp;lt;/th&amp;gt;   Rendered html for buttons (a button is used so that flex or grid styling can be used): &amp;lt;td class=&quot;{GetTableCellClasses()}&quot; [style=&quot;width: {MinSize}; max-width: {MaxSize}; width: {Size}; box-sizing: content-box&quot;]&amp;gt;   &amp;lt;button class=&quot;{GetTableHeaderButtonClasses()} &amp;gt;     {children}   &amp;lt;/button&amp;gt; &amp;lt;/td&amp;gt;">
+      <meta name="description" content="Creates a table header cell. The cell can be self-closing or can contain content with a separate closing tag.  The generated th element always uses an opening and closing tag.   When ,  or  has been set a style attribute is added to the `td` element.   Rendered html: &amp;lt;th class=&quot;{GetTableCellClasses()}&quot; [style=&quot;min-width: {MinSize}; max-width: {MaxSize}; width: {Size}; box-sizing: content-box&quot;]&amp;gt;{children}&amp;lt;/th&amp;gt;   Rendered html for buttons (a button is used so that flex or grid styling can be used): &amp;lt;td class=&quot;{GetTableCellClasses()}&quot; [style=&quot;width: {MinSize}; max-width: {MaxSize}; width: {Size}; box-sizing: content-box&quot;]&amp;gt;   &amp;lt;button class=&quot;{GetTableHeaderButtonClasses()} &amp;gt;     {children}   &amp;lt;/button&amp;gt; &amp;lt;/td&amp;gt;">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -105,8 +105,8 @@ The generated th element always uses an opening and closing tag.
 <p>
 When <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridItemTagHelperBaseBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_Base_UFGridItemTagHelperBaseBase_MinSize">MinSize</a>,
 <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridItemTagHelperBaseBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_Base_UFGridItemTagHelperBaseBase_MaxSize">MaxSize</a> or
-<a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridItemTagHelperBaseBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_Base_UFGridItemTagHelperBaseBase_Size">Size</a> has been set and the table is not using grid
-styling a style attribute is added to the td element.
+<a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridItemTagHelperBaseBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_Base_UFGridItemTagHelperBaseBase_Size">Size</a> has been set a style attribute is added to
+the `td` element.
 </p>
 <p>
 Rendered html:
@@ -132,9 +132,9 @@ Rendered html for buttons (a button is used so that flex or grid styling can be 
   <h4 class="section">Type Parameters</h4>
   <dl class="parameters">
     <dt><code>TTable</code></dt>
-    <dd>Creates a table header cell. The cell can be self-closing or can contain content with a separate closing tag.  The generated th element always uses an opening and closing tag.   When ,  or  has been set and the table is not using grid styling a style attribute is added to the td element.   Rendered html: &lt;th class="{GetTableCellClasses()}" [style="min-width: {MinSize}; max-width: {MaxSize}; width: {Size}; box-sizing: content-box"]&gt;{children}&lt;/th&gt;   Rendered html for buttons (a button is used so that flex or grid styling can be used): &lt;td class="{GetTableCellClasses()}" [style="width: {MinSize}; max-width: {MaxSize}; width: {Size}; box-sizing: content-box"]&gt;   &lt;button class="{GetTableHeaderButtonClasses()} &gt;     {children}   &lt;/button&gt; &lt;/td&gt;</dd>
+    <dd>Creates a table header cell. The cell can be self-closing or can contain content with a separate closing tag.  The generated th element always uses an opening and closing tag.   When ,  or  has been set a style attribute is added to the `td` element.   Rendered html: &lt;th class="{GetTableCellClasses()}" [style="min-width: {MinSize}; max-width: {MaxSize}; width: {Size}; box-sizing: content-box"]&gt;{children}&lt;/th&gt;   Rendered html for buttons (a button is used so that flex or grid styling can be used): &lt;td class="{GetTableCellClasses()}" [style="width: {MinSize}; max-width: {MaxSize}; width: {Size}; box-sizing: content-box"]&gt;   &lt;button class="{GetTableHeaderButtonClasses()} &gt;     {children}   &lt;/button&gt; &lt;/td&gt;</dd>
     <dt><code>TTableRow</code></dt>
-    <dd>Creates a table header cell. The cell can be self-closing or can contain content with a separate closing tag.  The generated th element always uses an opening and closing tag.   When ,  or  has been set and the table is not using grid styling a style attribute is added to the td element.   Rendered html: &lt;th class="{GetTableCellClasses()}" [style="min-width: {MinSize}; max-width: {MaxSize}; width: {Size}; box-sizing: content-box"]&gt;{children}&lt;/th&gt;   Rendered html for buttons (a button is used so that flex or grid styling can be used): &lt;td class="{GetTableCellClasses()}" [style="width: {MinSize}; max-width: {MaxSize}; width: {Size}; box-sizing: content-box"]&gt;   &lt;button class="{GetTableHeaderButtonClasses()} &gt;     {children}   &lt;/button&gt; &lt;/td&gt;</dd>
+    <dd>Creates a table header cell. The cell can be self-closing or can contain content with a separate closing tag.  The generated th element always uses an opening and closing tag.   When ,  or  has been set a style attribute is added to the `td` element.   Rendered html: &lt;th class="{GetTableCellClasses()}" [style="min-width: {MinSize}; max-width: {MaxSize}; width: {Size}; box-sizing: content-box"]&gt;{children}&lt;/th&gt;   Rendered html for buttons (a button is used so that flex or grid styling can be used): &lt;td class="{GetTableCellClasses()}" [style="width: {MinSize}; max-width: {MaxSize}; width: {Size}; box-sizing: content-box"]&gt;   &lt;button class="{GetTableHeaderButtonClasses()} &gt;     {children}   &lt;/button&gt; &lt;/td&gt;</dd>
   </dl>
 
   <dl class="typelist inheritance">
@@ -245,8 +245,8 @@ The generated th element always uses an opening and closing tag.
 <p>
 When <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridItemTagHelperBaseBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_Base_UFGridItemTagHelperBaseBase_MinSize">MinSize</a>,
 <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridItemTagHelperBaseBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_Base_UFGridItemTagHelperBaseBase_MaxSize">MaxSize</a> or
-<a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridItemTagHelperBaseBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_Base_UFGridItemTagHelperBaseBase_Size">Size</a> has been set and the table is not using grid
-styling a style attribute is added to the td element.
+<a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridItemTagHelperBaseBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_Base_UFGridItemTagHelperBaseBase_Size">Size</a> has been set a style attribute is added to
+the `td` element.
 </p>
 <p>
 Rendered html:

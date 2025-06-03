@@ -24,7 +24,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: UFSortTypeEnum
     path: ../UltraForce.Library.Core.Asp/Types/Enums/UFSortTypeEnum.cs
-    startLine: 37
+    startLine: 39
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Enums
@@ -51,12 +51,12 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Auto
     path: ../UltraForce.Library.Core.Asp/Types/Enums/UFSortTypeEnum.cs
-    startLine: 43
+    startLine: 45
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Enums
   summary: >-
-    Determine type from UFTableHeaderCellTagHelperBase&lt;TTable,TTableRow&gt;.For (if any), else defaults to
+    Determine type from <xref href="UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridHeaderTagHelperBaseBase.For" data-throw-if-not-resolved="false"></xref> (if any), else defaults to
 
     text
   example: []
@@ -82,7 +82,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Text
     path: ../UltraForce.Library.Core.Asp/Types/Enums/UFSortTypeEnum.cs
-    startLine: 48
+    startLine: 50
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Enums
@@ -110,7 +110,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Number
     path: ../UltraForce.Library.Core.Asp/Types/Enums/UFSortTypeEnum.cs
-    startLine: 54
+    startLine: 56
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Enums
@@ -138,7 +138,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Date
     path: ../UltraForce.Library.Core.Asp/Types/Enums/UFSortTypeEnum.cs
-    startLine: 60
+    startLine: 62
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Enums
@@ -166,7 +166,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: None
     path: ../UltraForce.Library.Core.Asp/Types/Enums/UFSortTypeEnum.cs
-    startLine: 66
+    startLine: 68
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Enums
@@ -231,6 +231,13 @@ references:
   - uid: UltraForce.Library.Core.Asp.Types.Enums
     name: Enums
     href: UltraForce.Library.Core.Asp.Types.Enums.html
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridHeaderTagHelperBaseBase.For
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridHeaderTagHelperBaseBase.For
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridHeaderTagHelperBaseBase
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridHeaderTagHelperBaseBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Grid_Base_UFGridHeaderTagHelperBaseBase_For
+  name: For
+  nameWithType: UFGridHeaderTagHelperBaseBase.For
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridHeaderTagHelperBaseBase.For
 - uid: UltraForce.Library.Core.Asp.Types.Enums.UFSortTypeEnum
   commentId: T:UltraForce.Library.Core.Asp.Types.Enums.UFSortTypeEnum
   parent: UltraForce.Library.Core.Asp.Types.Enums
@@ -238,3 +245,80 @@ references:
   name: UFSortTypeEnum
   nameWithType: UFSortTypeEnum
   fullName: UltraForce.Library.Core.Asp.Types.Enums.UFSortTypeEnum
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridHeaderTagHelperBaseBase
+  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridHeaderTagHelperBaseBase
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridHeaderTagHelperBaseBase.html
+  name: UFGridHeaderTagHelperBaseBase
+  nameWithType: UFGridHeaderTagHelperBaseBase
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridHeaderTagHelperBaseBase
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base
+  commentId: N:UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base
+  href: UltraForce.html
+  name: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base
+  nameWithType: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base
+  spec.csharp:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers
+    name: TagHelpers
+    href: UltraForce.Library.Core.Asp.TagHelpers.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Base
+    name: Base
+    href: UltraForce.Library.Core.Asp.TagHelpers.Base.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid
+    name: Grid
+    href: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base
+    name: Base
+    href: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.html
+  spec.vb:
+  - uid: UltraForce
+    name: UltraForce
+    href: UltraForce.html
+  - name: .
+  - uid: UltraForce.Library
+    name: Library
+    href: UltraForce.Library.html
+  - name: .
+  - uid: UltraForce.Library.Core
+    name: Core
+    href: UltraForce.Library.Core.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp
+    name: Asp
+    href: UltraForce.Library.Core.Asp.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers
+    name: TagHelpers
+    href: UltraForce.Library.Core.Asp.TagHelpers.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Base
+    name: Base
+    href: UltraForce.Library.Core.Asp.TagHelpers.Base.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid
+    name: Grid
+    href: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.html
+  - name: .
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base
+    name: Base
+    href: UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.html

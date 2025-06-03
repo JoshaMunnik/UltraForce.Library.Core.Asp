@@ -9,9 +9,9 @@
 // Copyright (C) 2024 Ultra Force Development
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
-// of this software and associated documentation files (the "Software"), to 
-// deal in the Software without restriction, including without limitation the 
-// rights to use, copy, modify, merge, publish, distribute, sublicense, and/or 
+// of this software and associated documentation files (the "Software"), to
+// deal in the Software without restriction, including without limitation the
+// rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
 // sell copies of the Software, and to permit persons to whom the Software is
 // furnished to do so, subject to the following conditions:
 //
@@ -22,8 +22,8 @@
 // IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 // FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 // AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING 
-// FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS 
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+// FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
 // IN THE SOFTWARE.
 // </license>
 
@@ -175,7 +175,7 @@ public abstract class UFTableTagHelperBase(
 
   /// <summary>
   /// Returns the classes for the element containing the table. This method is only used when
-  /// <see cref="Filter"/> is <c>true</c>.
+  /// <see cref="UFGridTagHelperBaseBase.Filter"/> is <c>true</c>.
   /// </summary>
   /// <returns></returns>
   protected virtual string GetTableContainerClasses()
@@ -184,7 +184,7 @@ public abstract class UFTableTagHelperBase(
   }
 
   /// <summary>
-  /// Returns the classes to use with the tbody tag. 
+  /// Returns the classes to use with the tbody tag.
   /// </summary>
   /// <param name="cellCount">Number of cells</param>
   /// <returns></returns>
@@ -196,7 +196,7 @@ public abstract class UFTableTagHelperBase(
   }
 
   /// <summary>
-  /// Returns the classes to use with the thead tag. 
+  /// Returns the classes to use with the thead tag.
   /// </summary>
   /// <param name="cellCount">Number of cells</param>
   /// <returns></returns>
@@ -248,9 +248,9 @@ public abstract class UFTableTagHelperBase(
   /// Updated by either header cells or data cells in the table.
   /// </summary>
   internal List<IUFGridItemSize> CellSizes { get; } = [];
-  
+
   /// <summary>
-  /// To keep track of the current cell. 
+  /// To keep track of the current cell.
   /// </summary>
   internal int CellIndex { get; set; } = 0;
 
@@ -279,8 +279,7 @@ public abstract class UFTableTagHelperBase(
   ) => UFDataAttribute.GridSorting(value);
 
   /// <summary>
-  /// Sets the size of a cell via the style attribute. If the table uses a grid, the style is not
-  /// set.
+  /// Sets the size of a cell via the style attribute.
   /// </summary>
   /// <param name="output"></param>
   /// <param name="size"></param>
@@ -289,10 +288,6 @@ public abstract class UFTableTagHelperBase(
     IUFGridItemSize size
   )
   {
-    if (useGrid)
-    {
-      return;
-    }
     string style = "";
     if (!string.IsNullOrEmpty(size.MinSize))
     {
@@ -306,7 +301,7 @@ public abstract class UFTableTagHelperBase(
     {
       style += " width: " + size.Size + ";";
     }
-    else if (!string.IsNullOrEmpty(style))
+    else if (!string.IsNullOrEmpty(style) && !useGrid)
     {
       style += " width: 1px;";
     }

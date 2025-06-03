@@ -338,7 +338,7 @@ items:
   summary: >-
     Returns the classes for the element containing the table. This method is only used when
 
-    Filter is <code>true</code>.
+    <xref href="UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridTagHelperBaseBase.Filter" data-throw-if-not-resolved="false"></xref> is <code>true</code>.
   example: []
   syntax:
     content: protected virtual string GetTableContainerClasses()
