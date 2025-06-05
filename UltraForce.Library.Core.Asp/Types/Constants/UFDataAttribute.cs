@@ -280,6 +280,13 @@ public static class UFDataAttribute
   ) => UFTagHelperTools.Attribute("data-uf-file-type", value);
 
   /// <summary>
+  /// Show the element if no file is selected.
+  /// </summary>
+  public static TagHelperAttribute FileNone(
+    object? value = null
+  ) => UFTagHelperTools.Attribute("data-uf-file-none", value);
+
+  /// <summary>
   /// Show the content of the field if some condition is met.
   /// </summary>
   public static TagHelperAttribute ShowIfField(
