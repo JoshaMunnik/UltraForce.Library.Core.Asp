@@ -15,9 +15,8 @@
         <RepositoryUrl>https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp</RepositoryUrl>
         <PackageReadmeFile>README.md</PackageReadmeFile>
         <AssemblyVersion></AssemblyVersion>
-        <Version>1.0.114</Version>
-        <PackageReleaseNotes>- `UFTableHeaderCellTagHelperBase` now always sets a `style` attribute when one or more size 
-  properties are set.
+        <Version>1.0.115</Version>
+        <PackageReleaseNotes>- updated `UFDataAttribute` to support changes to the Ultra Force Typescript Dom library.
 </PackageReleaseNotes>
         <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
     </PropertyGroup>

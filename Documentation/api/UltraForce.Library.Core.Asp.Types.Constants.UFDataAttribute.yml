@@ -23,6 +23,9 @@ items:
   - UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.EventState(System.Object,System.Int32)
   - UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.EventTarget(System.Object,System.Int32)
   - UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.FieldValue(System.Object)
+  - UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.FileName(System.Object)
+  - UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.FileSize(System.Object)
+  - UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.FileType(System.Object)
   - UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.FilterContainer(System.Object)
   - UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.FilterGroup(System.Object)
   - UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.FilterInput(System.Object)
@@ -34,10 +37,7 @@ items:
   - UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.HideClasses(System.Object)
   - UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.HideIfField(System.Object)
   - UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ImageHeight(System.Object)
-  - UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ImageName(System.Object)
   - UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ImagePreview(System.Object)
-  - UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ImageSize(System.Object)
-  - UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ImageType(System.Object)
   - UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ImageWidth(System.Object)
   - UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ItemContainer(System.Object)
   - UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ItemGroup(System.Object)
@@ -1150,7 +1150,7 @@ items:
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
-  summary: Image preview for file input.
+  summary: Set content of the image (`src`) to the selected image file.
   example: []
   syntax:
     content: public static TagHelperAttribute ImagePreview(object? value = null)
@@ -1186,7 +1186,7 @@ items:
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
-  summary: Set content to width of image.
+  summary: Set content to width of the selected image file.
   example: []
   syntax:
     content: public static TagHelperAttribute ImageWidth(object? value = null)
@@ -1222,7 +1222,7 @@ items:
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
-  summary: Set content to height of image.
+  summary: Set content to height of the selected image file.
   example: []
   syntax:
     content: public static TagHelperAttribute ImageHeight(object? value = null)
@@ -1236,114 +1236,114 @@ items:
   nameWithType.vb: UFDataAttribute.ImageHeight(Object)
   fullName.vb: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ImageHeight(Object)
   name.vb: ImageHeight(Object)
-- uid: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ImageName(System.Object)
-  commentId: M:UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ImageName(System.Object)
-  id: ImageName(System.Object)
+- uid: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.FileName(System.Object)
+  commentId: M:UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.FileName(System.Object)
+  id: FileName(System.Object)
   parent: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute
   langs:
   - csharp
   - vb
-  name: ImageName(object?)
-  nameWithType: UFDataAttribute.ImageName(object?)
-  fullName: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ImageName(object?)
+  name: FileName(object?)
+  nameWithType: UFDataAttribute.FileName(object?)
+  fullName: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.FileName(object?)
   type: Method
   source:
     remote:
       path: UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
       branch: master
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
-    id: ImageName
+    id: FileName
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
     startLine: 263
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
-  summary: Set content to name of image.
+  summary: Set content to name of the selected file.
   example: []
   syntax:
-    content: public static TagHelperAttribute ImageName(object? value = null)
+    content: public static TagHelperAttribute FileName(object? value = null)
     parameters:
     - id: value
       type: System.Object
     return:
       type: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute
-    content.vb: Public Shared Function ImageName(value As Object = Nothing) As TagHelperAttribute
-  overload: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ImageName*
-  nameWithType.vb: UFDataAttribute.ImageName(Object)
-  fullName.vb: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ImageName(Object)
-  name.vb: ImageName(Object)
-- uid: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ImageSize(System.Object)
-  commentId: M:UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ImageSize(System.Object)
-  id: ImageSize(System.Object)
+    content.vb: Public Shared Function FileName(value As Object = Nothing) As TagHelperAttribute
+  overload: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.FileName*
+  nameWithType.vb: UFDataAttribute.FileName(Object)
+  fullName.vb: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.FileName(Object)
+  name.vb: FileName(Object)
+- uid: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.FileSize(System.Object)
+  commentId: M:UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.FileSize(System.Object)
+  id: FileSize(System.Object)
   parent: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute
   langs:
   - csharp
   - vb
-  name: ImageSize(object?)
-  nameWithType: UFDataAttribute.ImageSize(object?)
-  fullName: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ImageSize(object?)
+  name: FileSize(object?)
+  nameWithType: UFDataAttribute.FileSize(object?)
+  fullName: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.FileSize(object?)
   type: Method
   source:
     remote:
       path: UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
       branch: master
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
-    id: ImageSize
+    id: FileSize
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
     startLine: 270
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
-  summary: Set content to size of image.
+  summary: Set content to size of the selected file.
   example: []
   syntax:
-    content: public static TagHelperAttribute ImageSize(object? value = null)
+    content: public static TagHelperAttribute FileSize(object? value = null)
     parameters:
     - id: value
       type: System.Object
     return:
       type: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute
-    content.vb: Public Shared Function ImageSize(value As Object = Nothing) As TagHelperAttribute
-  overload: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ImageSize*
-  nameWithType.vb: UFDataAttribute.ImageSize(Object)
-  fullName.vb: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ImageSize(Object)
-  name.vb: ImageSize(Object)
-- uid: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ImageType(System.Object)
-  commentId: M:UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ImageType(System.Object)
-  id: ImageType(System.Object)
+    content.vb: Public Shared Function FileSize(value As Object = Nothing) As TagHelperAttribute
+  overload: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.FileSize*
+  nameWithType.vb: UFDataAttribute.FileSize(Object)
+  fullName.vb: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.FileSize(Object)
+  name.vb: FileSize(Object)
+- uid: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.FileType(System.Object)
+  commentId: M:UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.FileType(System.Object)
+  id: FileType(System.Object)
   parent: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute
   langs:
   - csharp
   - vb
-  name: ImageType(object?)
-  nameWithType: UFDataAttribute.ImageType(object?)
-  fullName: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ImageType(object?)
+  name: FileType(object?)
+  nameWithType: UFDataAttribute.FileType(object?)
+  fullName: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.FileType(object?)
   type: Method
   source:
     remote:
       path: UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
       branch: master
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
-    id: ImageType
+    id: FileType
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
     startLine: 277
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
-  summary: Set content to type of image.
+  summary: Set content to type of the selected file.
   example: []
   syntax:
-    content: public static TagHelperAttribute ImageType(object? value = null)
+    content: public static TagHelperAttribute FileType(object? value = null)
     parameters:
     - id: value
       type: System.Object
     return:
       type: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute
-    content.vb: Public Shared Function ImageType(value As Object = Nothing) As TagHelperAttribute
-  overload: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ImageType*
-  nameWithType.vb: UFDataAttribute.ImageType(Object)
-  fullName.vb: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ImageType(Object)
-  name.vb: ImageType(Object)
+    content.vb: Public Shared Function FileType(value As Object = Nothing) As TagHelperAttribute
+  overload: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.FileType*
+  nameWithType.vb: UFDataAttribute.FileType(Object)
+  fullName.vb: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.FileType(Object)
+  name.vb: FileType(Object)
 - uid: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ShowIfField(System.Object)
   commentId: M:UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ShowIfField(System.Object)
   id: ShowIfField(System.Object)
@@ -3516,24 +3516,24 @@ references:
   name: ImageHeight
   nameWithType: UFDataAttribute.ImageHeight
   fullName: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ImageHeight
-- uid: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ImageName*
-  commentId: Overload:UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ImageName
-  href: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.html#UltraForce_Library_Core_Asp_Types_Constants_UFDataAttribute_ImageName_System_Object_
-  name: ImageName
-  nameWithType: UFDataAttribute.ImageName
-  fullName: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ImageName
-- uid: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ImageSize*
-  commentId: Overload:UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ImageSize
-  href: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.html#UltraForce_Library_Core_Asp_Types_Constants_UFDataAttribute_ImageSize_System_Object_
-  name: ImageSize
-  nameWithType: UFDataAttribute.ImageSize
-  fullName: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ImageSize
-- uid: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ImageType*
-  commentId: Overload:UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ImageType
-  href: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.html#UltraForce_Library_Core_Asp_Types_Constants_UFDataAttribute_ImageType_System_Object_
-  name: ImageType
-  nameWithType: UFDataAttribute.ImageType
-  fullName: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ImageType
+- uid: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.FileName*
+  commentId: Overload:UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.FileName
+  href: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.html#UltraForce_Library_Core_Asp_Types_Constants_UFDataAttribute_FileName_System_Object_
+  name: FileName
+  nameWithType: UFDataAttribute.FileName
+  fullName: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.FileName
+- uid: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.FileSize*
+  commentId: Overload:UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.FileSize
+  href: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.html#UltraForce_Library_Core_Asp_Types_Constants_UFDataAttribute_FileSize_System_Object_
+  name: FileSize
+  nameWithType: UFDataAttribute.FileSize
+  fullName: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.FileSize
+- uid: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.FileType*
+  commentId: Overload:UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.FileType
+  href: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.html#UltraForce_Library_Core_Asp_Types_Constants_UFDataAttribute_FileType_System_Object_
+  name: FileType
+  nameWithType: UFDataAttribute.FileType
+  fullName: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.FileType
 - uid: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ShowIfField*
   commentId: Overload:UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ShowIfField
   href: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.html#UltraForce_Library_Core_Asp_Types_Constants_UFDataAttribute_ShowIfField_System_Object_

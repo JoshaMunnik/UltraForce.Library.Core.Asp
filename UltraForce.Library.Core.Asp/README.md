@@ -10,6 +10,9 @@ Include the styles in your html using (for example `Shared\_Layout.cshtml`):
 <link rel="stylesheet" href="/_content/UltraForce.Library.Core.Asp/css/uf-styles.css" />
 ````
 ## Version history
+1.0.115
+- updated `UFDataAttribute` to support changes to the Ultra Force Typescript Dom library.
+ 
 1.0.114
 - `UFTableHeaderCellTagHelperBase` now always sets a `style` attribute when one or more size 
   properties are set.

@@ -9,9 +9,9 @@
 // Copyright (C) 2024 Ultra Force Development
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
-// of this software and associated documentation files (the "Software"), to 
-// deal in the Software without restriction, including without limitation the 
-// rights to use, copy, modify, merge, publish, distribute, sublicense, and/or 
+// of this software and associated documentation files (the "Software"), to
+// deal in the Software without restriction, including without limitation the
+// rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
 // sell copies of the Software, and to permit persons to whom the Software is
 // furnished to do so, subject to the following conditions:
 //
@@ -22,8 +22,8 @@
 // IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 // FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 // AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING 
-// FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS 
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+// FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
 // IN THE SOFTWARE.
 // </license>
 
@@ -238,46 +238,46 @@ public static class UFDataAttribute
   ) => UFTagHelperTools.Attribute("data-uf-no-caching", value);
 
   /// <summary>
-  /// Image preview for file input.
+  /// Set content of the image (`src`) to the selected image file.
   /// </summary>
   public static TagHelperAttribute ImagePreview(
     object? value = null
   ) => UFTagHelperTools.Attribute("data-uf-image-preview", value);
 
   /// <summary>
-  /// Set content to width of image.
+  /// Set content to width of the selected image file.
   /// </summary>
   public static TagHelperAttribute ImageWidth(
     object? value = null
   ) => UFTagHelperTools.Attribute("data-uf-image-width", value);
 
   /// <summary>
-  /// Set content to height of image.
+  /// Set content to height of the selected image file.
   /// </summary>
   public static TagHelperAttribute ImageHeight(
     object? value = null
   ) => UFTagHelperTools.Attribute("data-uf-image-height", value);
 
   /// <summary>
-  /// Set content to name of image.
+  /// Set content to name of the selected file.
   /// </summary>
-  public static TagHelperAttribute ImageName(
+  public static TagHelperAttribute FileName(
     object? value = null
-  ) => UFTagHelperTools.Attribute("data-uf-image-name", value);
+  ) => UFTagHelperTools.Attribute("data-uf-file-name", value);
 
   /// <summary>
-  /// Set content to size of image.
+  /// Set content to size of the selected file.
   /// </summary>
-  public static TagHelperAttribute ImageSize(
+  public static TagHelperAttribute FileSize(
     object? value = null
-  ) => UFTagHelperTools.Attribute("data-uf-image-size", value);
+  ) => UFTagHelperTools.Attribute("data-uf-file-size", value);
 
   /// <summary>
-  /// Set content to type of image.
+  /// Set content to type of the selected file.
   /// </summary>
-  public static TagHelperAttribute ImageType(
+  public static TagHelperAttribute FileType(
     object? value = null
-  ) => UFTagHelperTools.Attribute("data-uf-image-type", value);
+  ) => UFTagHelperTools.Attribute("data-uf-file-type", value);
 
   /// <summary>
   /// Show the content of the field if some condition is met.
@@ -567,7 +567,7 @@ public static class UFDataAttribute
   ) => UFTagHelperTools.Attribute("data-uf-page-refresh", value);
 
   /// <summary>
-  /// Converts a container to a floater.  
+  /// Converts a container to a floater.
   /// </summary>
   public static TagHelperAttribute PopupContent(
     object? value = null
