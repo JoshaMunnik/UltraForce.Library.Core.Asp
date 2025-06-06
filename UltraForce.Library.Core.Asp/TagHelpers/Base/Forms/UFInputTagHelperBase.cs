@@ -9,9 +9,9 @@
 // Copyright (C) 2024 Ultra Force Development
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
-// of this software and associated documentation files (the "Software"), to 
-// deal in the Software without restriction, including without limitation the 
-// rights to use, copy, modify, merge, publish, distribute, sublicense, and/or 
+// of this software and associated documentation files (the "Software"), to
+// deal in the Software without restriction, including without limitation the
+// rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
 // sell copies of the Software, and to permit persons to whom the Software is
 // furnished to do so, subject to the following conditions:
 //
@@ -22,8 +22,8 @@
 // IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 // FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 // AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING 
-// FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS 
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+// FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
 // IN THE SOFTWARE.
 // </license>
 
@@ -257,7 +257,7 @@ public abstract class UFInputTagHelperBase(
   public bool NoLabel { get; set; } = false;
 
   /// <summary>
-  /// When true, do not the wrap input element in a div. 
+  /// When true, do not the wrap input element in a div.
   /// </summary>
   [HtmlAttributeName("no-wrap")]
   public bool NoWrap { get; set; } = false;
@@ -274,7 +274,7 @@ public abstract class UFInputTagHelperBase(
   /// </summary>
   [HtmlAttributeName("multiline")]
   public bool Multiline { get; set; } = false;
-  
+
   /// <summary>
   /// When true do not include error block below the input element.
   /// </summary>
@@ -342,7 +342,7 @@ public abstract class UFInputTagHelperBase(
         }
         else
         {
-          this.RenderWrappedInput(output, id, name, label, type, errorMessage);
+          this.RenderWrappedInput(context, output, id, name, label, type, errorMessage);
         }
         break;
     }
@@ -432,7 +432,7 @@ public abstract class UFInputTagHelperBase(
       UFAttributeTools.Find<DescriptionAttribute>(propertyInfo)?.Description ??
       "";
   }
-  
+
   /// <summary>
   /// Returns the classes to use for the span element inside the label.
   /// </summary>
@@ -448,9 +448,13 @@ public abstract class UFInputTagHelperBase(
   /// <summary>
   /// Gets html code inserted before the input element.
   /// </summary>
+  /// <param name="context"></param>
+  /// <param name="id"></param>
   /// <param name="type"></param>
   /// <returns></returns>
   protected virtual string GetTextInputPreHtml(
+    TagHelperContext context,
+    string id,
     string type
   )
   {
@@ -460,9 +464,13 @@ public abstract class UFInputTagHelperBase(
   /// <summary>
   /// Gets html code inserted after the input element.
   /// </summary>
+  /// <param name="context"></param>
+  /// <param name="id"></param>
   /// <param name="type"></param>
   /// <returns></returns>
   protected virtual string GetTextInputPostHtml(
+    TagHelperContext context,
+    string id,
     string type
   )
   {
@@ -677,6 +685,7 @@ public abstract class UFInputTagHelperBase(
   /// <summary>
   /// Wraps an element The elements gets wrapped in a div, a label and an error info block.
   /// </summary>
+  /// <param name="context"></param>
   /// <param name="output">Output to wrap</param>
   /// <param name="id">Id of input element</param>
   /// <param name="name"></param>
@@ -684,6 +693,7 @@ public abstract class UFInputTagHelperBase(
   /// <param name="type">Input type</param>
   /// <param name="errorMessage">Error message to show</param>
   private void RenderWrappedInput(
+    TagHelperContext context,
     TagHelperOutput output,
     string id,
     string name,
@@ -706,8 +716,8 @@ public abstract class UFInputTagHelperBase(
       $"<span class=\"{this.GetTextInputLabelSpanClasses(type)}\">{label}</span>" +
       descriptionHtml +
       "</label>";
-    string preHtml = this.GetTextInputPreHtml(type);
-    string postHtml = this.GetTextInputPostHtml(type);
+    string preHtml = this.GetTextInputPreHtml(context, id, type);
+    string postHtml = this.GetTextInputPostHtml(context, id, type);
     output.PreElement.AppendHtml(
       $"<div class=\"{this.GetTextInputWrapperClasses(type)}\">{labelHtml}{preHtml}"
     );

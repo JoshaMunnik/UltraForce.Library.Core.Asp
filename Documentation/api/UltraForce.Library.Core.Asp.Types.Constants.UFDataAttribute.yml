@@ -25,6 +25,7 @@ items:
   - UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.FieldValue(System.Object)
   - UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.FileName(System.Object)
   - UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.FileNone(System.Object)
+  - UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.FileShow(System.Object)
   - UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.FileSize(System.Object)
   - UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.FileType(System.Object)
   - UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.FilterContainer(System.Object)
@@ -1381,6 +1382,42 @@ items:
   nameWithType.vb: UFDataAttribute.FileNone(Object)
   fullName.vb: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.FileNone(Object)
   name.vb: FileNone(Object)
+- uid: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.FileShow(System.Object)
+  commentId: M:UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.FileShow(System.Object)
+  id: FileShow(System.Object)
+  parent: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute
+  langs:
+  - csharp
+  - vb
+  name: FileShow(object?)
+  nameWithType: UFDataAttribute.FileShow(object?)
+  fullName: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.FileShow(object?)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: FileShow
+    path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
+    startLine: 291
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.Types.Constants
+  summary: Show the element if a file is selected.
+  example: []
+  syntax:
+    content: public static TagHelperAttribute FileShow(object? value = null)
+    parameters:
+    - id: value
+      type: System.Object
+    return:
+      type: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute
+    content.vb: Public Shared Function FileShow(value As Object = Nothing) As TagHelperAttribute
+  overload: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.FileShow*
+  nameWithType.vb: UFDataAttribute.FileShow(Object)
+  fullName.vb: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.FileShow(Object)
+  name.vb: FileShow(Object)
 - uid: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ShowIfField(System.Object)
   commentId: M:UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ShowIfField(System.Object)
   id: ShowIfField(System.Object)
@@ -1399,7 +1436,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: ShowIfField
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 291
+    startLine: 298
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -1435,7 +1472,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: HideIfField
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 298
+    startLine: 305
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -1471,7 +1508,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: FieldValue
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 305
+    startLine: 312
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -1507,7 +1544,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: EventAction
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 312
+    startLine: 319
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -1545,7 +1582,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: EventEvents
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 322
+    startLine: 329
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -1583,7 +1620,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: EventTarget
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 330
+    startLine: 337
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -1621,7 +1658,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: EventData
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 338
+    startLine: 345
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -1659,7 +1696,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: EventAttribute
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 346
+    startLine: 353
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -1697,7 +1734,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: EventState
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 356
+    startLine: 363
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -1735,7 +1772,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: EventKey
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 366
+    startLine: 373
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -1778,7 +1815,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: EventPreventDefault
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 374
+    startLine: 381
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -1816,7 +1853,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: ClickAction
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 384
+    startLine: 391
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -1854,7 +1891,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: ClickTarget
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 394
+    startLine: 401
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -1892,7 +1929,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: ClickData
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 402
+    startLine: 409
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -1930,7 +1967,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: ClickAttribute
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 410
+    startLine: 417
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -1968,7 +2005,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: LoadAction
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 418
+    startLine: 425
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -2006,7 +2043,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: LoadTarget
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 428
+    startLine: 435
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -2044,7 +2081,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: LoadData
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 436
+    startLine: 443
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -2082,7 +2119,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: LoadAttribute
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 444
+    startLine: 451
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -2120,7 +2157,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: ClickStylingSelector
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 452
+    startLine: 459
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -2156,7 +2193,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: ClickStylingClasses
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 459
+    startLine: 466
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -2192,7 +2229,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: DetailsCollapse
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 466
+    startLine: 473
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -2228,7 +2265,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: DetailsExpand
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 473
+    startLine: 480
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -2264,7 +2301,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: ShowDialog
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 480
+    startLine: 487
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -2300,7 +2337,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: ToggleType
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 487
+    startLine: 494
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -2333,7 +2370,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: ToggleProperty
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 494
+    startLine: 501
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -2369,7 +2406,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: ToggleSelector
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 501
+    startLine: 508
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -2405,7 +2442,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: ToggleChange
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 508
+    startLine: 515
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -2438,7 +2475,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: ToggleRequired
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 515
+    startLine: 522
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -2471,7 +2508,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: ToggleClasses
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 522
+    startLine: 529
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -2507,7 +2544,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: ToggleCondition
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 529
+    startLine: 536
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -2540,7 +2577,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: ToggleCompare
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 536
+    startLine: 543
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -2573,7 +2610,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: ToggleValue
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 543
+    startLine: 550
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -2609,7 +2646,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: ToggleValues
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 550
+    startLine: 557
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -2645,7 +2682,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: ToggleTarget
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 557
+    startLine: 564
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -2681,7 +2718,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: ManageSubmit
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 564
+    startLine: 571
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -2717,7 +2754,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: PageRefresh
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 571
+    startLine: 578
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -2753,7 +2790,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: PopupContent
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 578
+    startLine: 585
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -2789,7 +2826,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: PopupPosition
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 585
+    startLine: 592
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -2822,7 +2859,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: PopupHide
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 592
+    startLine: 599
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -2855,7 +2892,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: PopupTransition
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 599
+    startLine: 606
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -2888,7 +2925,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: PopupDeltaX
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 606
+    startLine: 613
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -2924,7 +2961,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: ToggleDeltaY
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 613
+    startLine: 620
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -2960,7 +2997,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: SelectUrl
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 620
+    startLine: 627
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -2996,7 +3033,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: ShareHover
     path: ../UltraForce.Library.Core.Asp/Types/Constants/UFDataAttribute.cs
-    startLine: 627
+    startLine: 634
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Types.Constants
@@ -3577,6 +3614,12 @@ references:
   name: FileNone
   nameWithType: UFDataAttribute.FileNone
   fullName: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.FileNone
+- uid: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.FileShow*
+  commentId: Overload:UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.FileShow
+  href: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.html#UltraForce_Library_Core_Asp_Types_Constants_UFDataAttribute_FileShow_System_Object_
+  name: FileShow
+  nameWithType: UFDataAttribute.FileShow
+  fullName: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.FileShow
 - uid: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ShowIfField*
   commentId: Overload:UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.ShowIfField
   href: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.html#UltraForce_Library_Core_Asp_Types_Constants_UFDataAttribute_ShowIfField_System_Object_

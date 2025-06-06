@@ -4102,15 +4102,15 @@ references:
   isSpec: "True"
   fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputLabelSpanClasses
   nameWithType: UFInputTagHelperBase.GetTextInputLabelSpanClasses
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputPostHtml(System.String)
-  name: GetTextInputPostHtml(string)
-  href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFInputTagHelperBase_GetTextInputPostHtml_System_String_
-  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputPostHtml(System.String)
-  name.vb: GetTextInputPostHtml(String)
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputPostHtml(string)
-  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputPostHtml(String)
-  nameWithType: UFInputTagHelperBase.GetTextInputPostHtml(string)
-  nameWithType.vb: UFInputTagHelperBase.GetTextInputPostHtml(String)
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputPostHtml(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,System.String,System.String)
+  name: GetTextInputPostHtml(TagHelperContext, string, string)
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFInputTagHelperBase_GetTextInputPostHtml_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContext_System_String_System_String_
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputPostHtml(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,System.String,System.String)
+  name.vb: GetTextInputPostHtml(TagHelperContext, String, String)
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputPostHtml(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, string, string)
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputPostHtml(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, String, String)
+  nameWithType: UFInputTagHelperBase.GetTextInputPostHtml(TagHelperContext, string, string)
+  nameWithType.vb: UFInputTagHelperBase.GetTextInputPostHtml(TagHelperContext, String, String)
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputPostHtml*
   name: GetTextInputPostHtml
   href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFInputTagHelperBase_GetTextInputPostHtml_
@@ -4118,15 +4118,15 @@ references:
   isSpec: "True"
   fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputPostHtml
   nameWithType: UFInputTagHelperBase.GetTextInputPostHtml
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputPreHtml(System.String)
-  name: GetTextInputPreHtml(string)
-  href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFInputTagHelperBase_GetTextInputPreHtml_System_String_
-  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputPreHtml(System.String)
-  name.vb: GetTextInputPreHtml(String)
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputPreHtml(string)
-  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputPreHtml(String)
-  nameWithType: UFInputTagHelperBase.GetTextInputPreHtml(string)
-  nameWithType.vb: UFInputTagHelperBase.GetTextInputPreHtml(String)
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputPreHtml(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,System.String,System.String)
+  name: GetTextInputPreHtml(TagHelperContext, string, string)
+  href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFInputTagHelperBase_GetTextInputPreHtml_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContext_System_String_System_String_
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputPreHtml(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,System.String,System.String)
+  name.vb: GetTextInputPreHtml(TagHelperContext, String, String)
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputPreHtml(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, string, string)
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputPreHtml(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, String, String)
+  nameWithType: UFInputTagHelperBase.GetTextInputPreHtml(TagHelperContext, string, string)
+  nameWithType.vb: UFInputTagHelperBase.GetTextInputPreHtml(TagHelperContext, String, String)
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputPreHtml*
   name: GetTextInputPreHtml
   href: api/UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFInputTagHelperBase_GetTextInputPreHtml_
@@ -22808,6 +22808,22 @@ references:
   isSpec: "True"
   fullName: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.FileNone
   nameWithType: UFDataAttribute.FileNone
+- uid: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.FileShow(System.Object)
+  name: FileShow(object?)
+  href: api/UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.html#UltraForce_Library_Core_Asp_Types_Constants_UFDataAttribute_FileShow_System_Object_
+  commentId: M:UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.FileShow(System.Object)
+  name.vb: FileShow(Object)
+  fullName: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.FileShow(object?)
+  fullName.vb: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.FileShow(Object)
+  nameWithType: UFDataAttribute.FileShow(object?)
+  nameWithType.vb: UFDataAttribute.FileShow(Object)
+- uid: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.FileShow*
+  name: FileShow
+  href: api/UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.html#UltraForce_Library_Core_Asp_Types_Constants_UFDataAttribute_FileShow_
+  commentId: Overload:UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.FileShow
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.FileShow
+  nameWithType: UFDataAttribute.FileShow
 - uid: UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.FileSize(System.Object)
   name: FileSize(object?)
   href: api/UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.html#UltraForce_Library_Core_Asp_Types_Constants_UFDataAttribute_FileSize_System_Object_

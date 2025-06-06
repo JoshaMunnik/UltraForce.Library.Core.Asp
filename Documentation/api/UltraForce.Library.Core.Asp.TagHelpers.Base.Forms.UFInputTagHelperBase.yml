@@ -27,8 +27,8 @@ items:
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputLabelClasses(System.String)
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputLabelDescriptionClasses(System.String)
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputLabelSpanClasses(System.String)
-  - UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputPostHtml(System.String)
-  - UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputPreHtml(System.String)
+  - UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputPostHtml(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,System.String,System.String)
+  - UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputPreHtml(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,System.String,System.String)
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputWrapperClasses(System.String)
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetValidationFeedbackContainerHtml(System.String,System.String)
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.Label
@@ -72,9 +72,9 @@ items:
 
     Since the pseudo selectors ::after and ::before can not be used no input and textarea elements,
 
-    it is possible to override <xref href="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputPreHtml(System.String)" data-throw-if-not-resolved="false"></xref> and
+    it is possible to override <xref href="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputPreHtml(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext%2cSystem.String%2cSystem.String)" data-throw-if-not-resolved="false"></xref> and
 
-    <xref href="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputPostHtml(System.String)" data-throw-if-not-resolved="false"></xref> to add extra html before and after the input element.
+    <xref href="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputPostHtml(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext%2cSystem.String%2cSystem.String)" data-throw-if-not-resolved="false"></xref> to add extra html before and after the input element.
 
     </p>
 
@@ -357,9 +357,9 @@ items:
 
     Since the pseudo selectors ::after and ::before can not be used no input and textarea elements,
 
-    it is possible to override <xref href="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputPreHtml(System.String)" data-throw-if-not-resolved="false"></xref> and
+    it is possible to override <xref href="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputPreHtml(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext%2cSystem.String%2cSystem.String)" data-throw-if-not-resolved="false"></xref> and
 
-    <xref href="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputPostHtml(System.String)" data-throw-if-not-resolved="false"></xref> to add extra html before and after the input element.
+    <xref href="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputPostHtml(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext%2cSystem.String%2cSystem.String)" data-throw-if-not-resolved="false"></xref> to add extra html before and after the input element.
 
     </p>
 
@@ -1081,16 +1081,16 @@ items:
   nameWithType.vb: UFInputTagHelperBase.GetTextInputLabelSpanClasses(String)
   fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputLabelSpanClasses(String)
   name.vb: GetTextInputLabelSpanClasses(String)
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputPreHtml(System.String)
-  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputPreHtml(System.String)
-  id: GetTextInputPreHtml(System.String)
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputPreHtml(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,System.String,System.String)
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputPreHtml(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,System.String,System.String)
+  id: GetTextInputPreHtml(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,System.String,System.String)
   parent: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase
   langs:
   - csharp
   - vb
-  name: GetTextInputPreHtml(string)
-  nameWithType: UFInputTagHelperBase.GetTextInputPreHtml(string)
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputPreHtml(string)
+  name: GetTextInputPreHtml(TagHelperContext, string, string)
+  nameWithType: UFInputTagHelperBase.GetTextInputPreHtml(TagHelperContext, string, string)
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputPreHtml(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, string, string)
   type: Method
   source:
     remote:
@@ -1099,36 +1099,42 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetTextInputPreHtml
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 452
+    startLine: 454
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
   summary: Gets html code inserted before the input element.
   example: []
   syntax:
-    content: protected virtual string GetTextInputPreHtml(string type)
+    content: protected virtual string GetTextInputPreHtml(TagHelperContext context, string id, string type)
     parameters:
+    - id: context
+      type: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext
+      description: ''
+    - id: id
+      type: System.String
+      description: ''
     - id: type
       type: System.String
       description: ''
     return:
       type: System.String
       description: ''
-    content.vb: Protected Overridable Function GetTextInputPreHtml(type As String) As String
+    content.vb: Protected Overridable Function GetTextInputPreHtml(context As TagHelperContext, id As String, type As String) As String
   overload: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputPreHtml*
-  nameWithType.vb: UFInputTagHelperBase.GetTextInputPreHtml(String)
-  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputPreHtml(String)
-  name.vb: GetTextInputPreHtml(String)
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputPostHtml(System.String)
-  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputPostHtml(System.String)
-  id: GetTextInputPostHtml(System.String)
+  nameWithType.vb: UFInputTagHelperBase.GetTextInputPreHtml(TagHelperContext, String, String)
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputPreHtml(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, String, String)
+  name.vb: GetTextInputPreHtml(TagHelperContext, String, String)
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputPostHtml(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,System.String,System.String)
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputPostHtml(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,System.String,System.String)
+  id: GetTextInputPostHtml(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,System.String,System.String)
   parent: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase
   langs:
   - csharp
   - vb
-  name: GetTextInputPostHtml(string)
-  nameWithType: UFInputTagHelperBase.GetTextInputPostHtml(string)
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputPostHtml(string)
+  name: GetTextInputPostHtml(TagHelperContext, string, string)
+  nameWithType: UFInputTagHelperBase.GetTextInputPostHtml(TagHelperContext, string, string)
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputPostHtml(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, string, string)
   type: Method
   source:
     remote:
@@ -1137,26 +1143,32 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetTextInputPostHtml
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 464
+    startLine: 470
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
   summary: Gets html code inserted after the input element.
   example: []
   syntax:
-    content: protected virtual string GetTextInputPostHtml(string type)
+    content: protected virtual string GetTextInputPostHtml(TagHelperContext context, string id, string type)
     parameters:
+    - id: context
+      type: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext
+      description: ''
+    - id: id
+      type: System.String
+      description: ''
     - id: type
       type: System.String
       description: ''
     return:
       type: System.String
       description: ''
-    content.vb: Protected Overridable Function GetTextInputPostHtml(type As String) As String
+    content.vb: Protected Overridable Function GetTextInputPostHtml(context As TagHelperContext, id As String, type As String) As String
   overload: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputPostHtml*
-  nameWithType.vb: UFInputTagHelperBase.GetTextInputPostHtml(String)
-  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputPostHtml(String)
-  name.vb: GetTextInputPostHtml(String)
+  nameWithType.vb: UFInputTagHelperBase.GetTextInputPostHtml(TagHelperContext, String, String)
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputPostHtml(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, String, String)
+  name.vb: GetTextInputPostHtml(TagHelperContext, String, String)
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputLabelDescriptionClasses(System.String)
   commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputLabelDescriptionClasses(System.String)
   id: GetTextInputLabelDescriptionClasses(System.String)
@@ -1175,7 +1187,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetTextInputLabelDescriptionClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 476
+    startLine: 484
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -1213,7 +1225,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetTextInputWrapperClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 488
+    startLine: 496
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -1251,7 +1263,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetValidationFeedbackContainerHtml
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 501
+    startLine: 509
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -1292,7 +1304,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetFieldErrorsClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 513
+    startLine: 521
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -1323,7 +1335,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetFieldErrorsHtml
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 524
+    startLine: 532
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -1364,7 +1376,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetRadioInputClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 536
+    startLine: 544
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -1395,7 +1407,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetRadioWrapperClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 545
+    startLine: 553
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -1426,7 +1438,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetRadioLabelClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 554
+    startLine: 562
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -1457,7 +1469,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetRadioLabelSpanClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 563
+    startLine: 571
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -1488,7 +1500,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetRadioLabelDescriptionClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 572
+    startLine: 580
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -1519,7 +1531,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetRadioExtraHtml
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 581
+    startLine: 589
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -1550,7 +1562,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetCheckboxInputClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 590
+    startLine: 598
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -1581,7 +1593,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetCheckboxWrapperClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 599
+    startLine: 607
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -1612,7 +1624,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetCheckboxLabelClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 608
+    startLine: 616
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -1643,7 +1655,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetCheckboxLabelSpanClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 617
+    startLine: 625
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -1674,7 +1686,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetCheckboxLabelDescriptionClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 626
+    startLine: 634
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -1705,7 +1717,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetCheckboxExtraHtml
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 635
+    startLine: 643
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -1725,61 +1737,109 @@ references:
   name: NoWrap
   nameWithType: UFInputTagHelperBase.NoWrap
   fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.NoWrap
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputPreHtml(System.String)
-  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputPreHtml(System.String)
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputPreHtml(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,System.String,System.String)
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputPreHtml(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,System.String,System.String)
   isExternal: true
-  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFInputTagHelperBase_GetTextInputPreHtml_System_String_
-  name: GetTextInputPreHtml(string)
-  nameWithType: UFInputTagHelperBase.GetTextInputPreHtml(string)
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputPreHtml(string)
-  nameWithType.vb: UFInputTagHelperBase.GetTextInputPreHtml(String)
-  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputPreHtml(String)
-  name.vb: GetTextInputPreHtml(String)
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFInputTagHelperBase_GetTextInputPreHtml_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContext_System_String_System_String_
+  name: GetTextInputPreHtml(TagHelperContext, string, string)
+  nameWithType: UFInputTagHelperBase.GetTextInputPreHtml(TagHelperContext, string, string)
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputPreHtml(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, string, string)
+  nameWithType.vb: UFInputTagHelperBase.GetTextInputPreHtml(TagHelperContext, String, String)
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputPreHtml(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, String, String)
+  name.vb: GetTextInputPreHtml(TagHelperContext, String, String)
   spec.csharp:
-  - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputPreHtml(System.String)
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputPreHtml(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,System.String,System.String)
     name: GetTextInputPreHtml
-    href: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFInputTagHelperBase_GetTextInputPreHtml_System_String_
+    href: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFInputTagHelperBase_GetTextInputPreHtml_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContext_System_String_System_String_
   - name: (
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext
+    name: TagHelperContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelpercontext
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
   - uid: System.String
     name: string
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
   spec.vb:
-  - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputPreHtml(System.String)
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputPreHtml(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,System.String,System.String)
     name: GetTextInputPreHtml
-    href: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFInputTagHelperBase_GetTextInputPreHtml_System_String_
+    href: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFInputTagHelperBase_GetTextInputPreHtml_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContext_System_String_System_String_
   - name: (
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext
+    name: TagHelperContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelpercontext
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
   - uid: System.String
     name: String
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputPostHtml(System.String)
-  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputPostHtml(System.String)
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputPostHtml(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,System.String,System.String)
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputPostHtml(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,System.String,System.String)
   isExternal: true
-  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFInputTagHelperBase_GetTextInputPostHtml_System_String_
-  name: GetTextInputPostHtml(string)
-  nameWithType: UFInputTagHelperBase.GetTextInputPostHtml(string)
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputPostHtml(string)
-  nameWithType.vb: UFInputTagHelperBase.GetTextInputPostHtml(String)
-  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputPostHtml(String)
-  name.vb: GetTextInputPostHtml(String)
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFInputTagHelperBase_GetTextInputPostHtml_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContext_System_String_System_String_
+  name: GetTextInputPostHtml(TagHelperContext, string, string)
+  nameWithType: UFInputTagHelperBase.GetTextInputPostHtml(TagHelperContext, string, string)
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputPostHtml(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, string, string)
+  nameWithType.vb: UFInputTagHelperBase.GetTextInputPostHtml(TagHelperContext, String, String)
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputPostHtml(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, String, String)
+  name.vb: GetTextInputPostHtml(TagHelperContext, String, String)
   spec.csharp:
-  - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputPostHtml(System.String)
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputPostHtml(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,System.String,System.String)
     name: GetTextInputPostHtml
-    href: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFInputTagHelperBase_GetTextInputPostHtml_System_String_
+    href: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFInputTagHelperBase_GetTextInputPostHtml_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContext_System_String_System_String_
   - name: (
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext
+    name: TagHelperContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelpercontext
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
   - uid: System.String
     name: string
     isExternal: true
     href: https://learn.microsoft.com/dotnet/api/system.string
   - name: )
   spec.vb:
-  - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputPostHtml(System.String)
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputPostHtml(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,System.String,System.String)
     name: GetTextInputPostHtml
-    href: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFInputTagHelperBase_GetTextInputPostHtml_System_String_
+    href: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFInputTagHelperBase_GetTextInputPostHtml_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContext_System_String_System_String_
   - name: (
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext
+    name: TagHelperContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelpercontext
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: ','
+  - name: " "
   - uid: System.String
     name: String
     isExternal: true
@@ -2781,13 +2841,13 @@ references:
   fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputLabelSpanClasses
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputPreHtml*
   commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputPreHtml
-  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFInputTagHelperBase_GetTextInputPreHtml_System_String_
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFInputTagHelperBase_GetTextInputPreHtml_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContext_System_String_System_String_
   name: GetTextInputPreHtml
   nameWithType: UFInputTagHelperBase.GetTextInputPreHtml
   fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputPreHtml
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputPostHtml*
   commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputPostHtml
-  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFInputTagHelperBase_GetTextInputPostHtml_System_String_
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFInputTagHelperBase_GetTextInputPostHtml_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContext_System_String_System_String_
   name: GetTextInputPostHtml
   nameWithType: UFInputTagHelperBase.GetTextInputPostHtml
   fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputPostHtml

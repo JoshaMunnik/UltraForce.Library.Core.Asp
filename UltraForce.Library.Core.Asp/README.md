@@ -10,6 +10,17 @@ Include the styles in your html using (for example `Shared\_Layout.cshtml`):
 <link rel="stylesheet" href="/_content/UltraForce.Library.Core.Asp/css/uf-styles.css" />
 ````
 ## Version history
+1.0.119
+- added `FileShow` to `UFDataAttribute`
+
+1.0.118
+- added `context` parameter to `UFInputTagHelperBase.GetTextInputPreHtml` and
+  `UFInputTagHelperBase.GetTextInputPostHtml`
+
+1.0.117
+- added `id` parameter to `UFInputTagHelperBase.GetTextInputPreHtml` and 
+  `UFInputTagHelperBase.GetTextInputPostHtml`
+ 
 1.0.116
 - added `FileNone` to `UFDataAttribute`
 
