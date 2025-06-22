@@ -10,6 +10,9 @@ Include the styles in your html using (for example `Shared\_Layout.cshtml`):
 <link rel="stylesheet" href="/_content/UltraForce.Library.Core.Asp/css/uf-styles.css" />
 ````
 ## Version history
+1.0.120
+- updated `.uf-stack-item` to keep content inside the parent `.uf-stack-container` 
+ 
 1.0.119
 - added `FileShow` to `UFDataAttribute`
 
