@@ -6,7 +6,7 @@ items:
   parent: UltraForce.Library.Core.Asp.Tools
   children:
   - UltraForce.Library.Core.Asp.Tools.UFMvcTools.AddFirstItem(Microsoft.AspNetCore.Mvc.Rendering.SelectList,Microsoft.AspNetCore.Mvc.Rendering.SelectListItem)
-  - UltraForce.Library.Core.Asp.Tools.UFMvcTools.CreateListFromEnum``1(System.String)
+  - UltraForce.Library.Core.Asp.Tools.UFMvcTools.CreateListFromEnum``1(System.String,System.Boolean)
   - UltraForce.Library.Core.Asp.Tools.UFMvcTools.GetControllerName(System.String)
   - UltraForce.Library.Core.Asp.Tools.UFMvcTools.GetControllerName``1
   - UltraForce.Library.Core.Asp.Tools.UFMvcTools.GetErrors(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary,System.String,System.String,System.String,System.String)
@@ -29,7 +29,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: UFMvcTools
     path: ../UltraForce.Library.Core.Asp/Tools/UFMvcTools.cs
-    startLine: 46
+    startLine: 47
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Tools
@@ -66,7 +66,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetControllerName
     path: ../UltraForce.Library.Core.Asp/Tools/UFMvcTools.cs
-    startLine: 70
+    startLine: 71
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Tools
@@ -104,7 +104,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetControllerName
     path: ../UltraForce.Library.Core.Asp/Tools/UFMvcTools.cs
-    startLine: 84
+    startLine: 85
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Tools
@@ -141,7 +141,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetViewComponentName
     path: ../UltraForce.Library.Core.Asp/Tools/UFMvcTools.cs
-    startLine: 94
+    startLine: 95
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Tools
@@ -179,7 +179,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Normalize
     path: ../UltraForce.Library.Core.Asp/Tools/UFMvcTools.cs
-    startLine: 108
+    startLine: 109
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Tools
@@ -217,7 +217,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: ReplaceMacros
     path: ../UltraForce.Library.Core.Asp/Tools/UFMvcTools.cs
-    startLine: 124
+    startLine: 125
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Tools
@@ -265,7 +265,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: AddFirstItem
     path: ../UltraForce.Library.Core.Asp/Tools/UFMvcTools.cs
-    startLine: 145
+    startLine: 146
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Tools
@@ -285,16 +285,16 @@ items:
       description: New list with item inserted
     content.vb: Public Shared Function AddFirstItem(list As SelectList, newItem As SelectListItem) As SelectList
   overload: UltraForce.Library.Core.Asp.Tools.UFMvcTools.AddFirstItem*
-- uid: UltraForce.Library.Core.Asp.Tools.UFMvcTools.CreateListFromEnum``1(System.String)
-  commentId: M:UltraForce.Library.Core.Asp.Tools.UFMvcTools.CreateListFromEnum``1(System.String)
-  id: CreateListFromEnum``1(System.String)
+- uid: UltraForce.Library.Core.Asp.Tools.UFMvcTools.CreateListFromEnum``1(System.String,System.Boolean)
+  commentId: M:UltraForce.Library.Core.Asp.Tools.UFMvcTools.CreateListFromEnum``1(System.String,System.Boolean)
+  id: CreateListFromEnum``1(System.String,System.Boolean)
   parent: UltraForce.Library.Core.Asp.Tools.UFMvcTools
   langs:
   - csharp
   - vb
-  name: CreateListFromEnum<T>(string?)
-  nameWithType: UFMvcTools.CreateListFromEnum<T>(string?)
-  fullName: UltraForce.Library.Core.Asp.Tools.UFMvcTools.CreateListFromEnum<T>(string?)
+  name: CreateListFromEnum<T>(string?, bool)
+  nameWithType: UFMvcTools.CreateListFromEnum<T>(string?, bool)
+  fullName: UltraForce.Library.Core.Asp.Tools.UFMvcTools.CreateListFromEnum<T>(string?, bool)
   type: Method
   source:
     remote:
@@ -303,7 +303,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: CreateListFromEnum
     path: ../UltraForce.Library.Core.Asp/Tools/UFMvcTools.cs
-    startLine: 172
+    startLine: 176
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Tools
@@ -315,22 +315,25 @@ items:
     attribute. If both are missing the value is used.
   example: []
   syntax:
-    content: 'public static SelectList CreateListFromEnum<T>(string? emptyChoice = null) where T : struct, Enum'
+    content: 'public static SelectList CreateListFromEnum<T>(string? emptyChoice = null, bool sort = true) where T : struct, Enum'
     parameters:
     - id: emptyChoice
       type: System.String
-      description: ''
+      description: when not empty, add this string as first entry with an empty string for value
+    - id: sort
+      type: System.Boolean
+      description: true to sort the list of values
     typeParameters:
     - id: T
       description: Enum type
     return:
       type: Microsoft.AspNetCore.Mvc.Rendering.SelectList
       description: Select list
-    content.vb: Public Shared Function CreateListFromEnum(Of T As {Structure, [Enum]})(emptyChoice As String = Nothing) As SelectList
+    content.vb: Public Shared Function CreateListFromEnum(Of T As {Structure, [Enum]})(emptyChoice As String = Nothing, sort As Boolean = True) As SelectList
   overload: UltraForce.Library.Core.Asp.Tools.UFMvcTools.CreateListFromEnum*
-  nameWithType.vb: UFMvcTools.CreateListFromEnum(Of T)(String)
-  fullName.vb: UltraForce.Library.Core.Asp.Tools.UFMvcTools.CreateListFromEnum(Of T)(String)
-  name.vb: CreateListFromEnum(Of T)(String)
+  nameWithType.vb: UFMvcTools.CreateListFromEnum(Of T)(String, Boolean)
+  fullName.vb: UltraForce.Library.Core.Asp.Tools.UFMvcTools.CreateListFromEnum(Of T)(String, Boolean)
+  name.vb: CreateListFromEnum(Of T)(String, Boolean)
 - uid: UltraForce.Library.Core.Asp.Tools.UFMvcTools.GetErrors(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary,System.String,System.String,System.String,System.String)
   commentId: M:UltraForce.Library.Core.Asp.Tools.UFMvcTools.GetErrors(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary,System.String,System.String,System.String,System.String)
   id: GetErrors(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary,System.String,System.String,System.String,System.String)
@@ -349,7 +352,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetErrors
     path: ../UltraForce.Library.Core.Asp/Tools/UFMvcTools.cs
-    startLine: 217
+    startLine: 224
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Tools
@@ -402,7 +405,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Validate
     path: ../UltraForce.Library.Core.Asp/Tools/UFMvcTools.cs
-    startLine: 250
+    startLine: 257
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Tools
@@ -440,7 +443,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetJsonName
     path: ../UltraForce.Library.Core.Asp/Tools/UFMvcTools.cs
-    startLine: 272
+    startLine: 279
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.Tools
@@ -919,10 +922,21 @@ references:
   fullName: UltraForce.Library.NetStandard.Annotations.UFDescriptionAttribute
 - uid: UltraForce.Library.Core.Asp.Tools.UFMvcTools.CreateListFromEnum*
   commentId: Overload:UltraForce.Library.Core.Asp.Tools.UFMvcTools.CreateListFromEnum
-  href: UltraForce.Library.Core.Asp.Tools.UFMvcTools.html#UltraForce_Library_Core_Asp_Tools_UFMvcTools_CreateListFromEnum__1_System_String_
+  href: UltraForce.Library.Core.Asp.Tools.UFMvcTools.html#UltraForce_Library_Core_Asp_Tools_UFMvcTools_CreateListFromEnum__1_System_String_System_Boolean_
   name: CreateListFromEnum
   nameWithType: UFMvcTools.CreateListFromEnum
   fullName: UltraForce.Library.Core.Asp.Tools.UFMvcTools.CreateListFromEnum
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  href: https://learn.microsoft.com/dotnet/api/system.boolean
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
 - uid: System.String.Empty
   commentId: F:System.String.Empty
   isExternal: true

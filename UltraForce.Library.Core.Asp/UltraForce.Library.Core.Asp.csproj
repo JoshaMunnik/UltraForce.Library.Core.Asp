@@ -15,8 +15,8 @@
         <RepositoryUrl>https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp</RepositoryUrl>
         <PackageReadmeFile>README.md</PackageReadmeFile>
         <AssemblyVersion></AssemblyVersion>
-        <Version>1.0.120</Version>
-        <PackageReleaseNotes>- updated `.uf-stack-item` to keep content inside the parent `.uf-stack-container` 
+        <Version>1.0.121</Version>
+        <PackageReleaseNotes>- added `sort` parameter to `UFMvcTools.CreateListFromEnum` 
 </PackageReleaseNotes>
         <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
     </PropertyGroup>

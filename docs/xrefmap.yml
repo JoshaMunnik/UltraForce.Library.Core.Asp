@@ -13158,15 +13158,15 @@ references:
   isSpec: "True"
   fullName: UltraForce.Library.Core.Asp.Tools.UFMvcTools.CreateListFromEnum
   nameWithType: UFMvcTools.CreateListFromEnum
-- uid: UltraForce.Library.Core.Asp.Tools.UFMvcTools.CreateListFromEnum``1(System.String)
-  name: CreateListFromEnum<T>(string?)
-  href: api/UltraForce.Library.Core.Asp.Tools.UFMvcTools.html#UltraForce_Library_Core_Asp_Tools_UFMvcTools_CreateListFromEnum__1_System_String_
-  commentId: M:UltraForce.Library.Core.Asp.Tools.UFMvcTools.CreateListFromEnum``1(System.String)
-  name.vb: CreateListFromEnum(Of T)(String)
-  fullName: UltraForce.Library.Core.Asp.Tools.UFMvcTools.CreateListFromEnum<T>(string?)
-  fullName.vb: UltraForce.Library.Core.Asp.Tools.UFMvcTools.CreateListFromEnum(Of T)(String)
-  nameWithType: UFMvcTools.CreateListFromEnum<T>(string?)
-  nameWithType.vb: UFMvcTools.CreateListFromEnum(Of T)(String)
+- uid: UltraForce.Library.Core.Asp.Tools.UFMvcTools.CreateListFromEnum``1(System.String,System.Boolean)
+  name: CreateListFromEnum<T>(string?, bool)
+  href: api/UltraForce.Library.Core.Asp.Tools.UFMvcTools.html#UltraForce_Library_Core_Asp_Tools_UFMvcTools_CreateListFromEnum__1_System_String_System_Boolean_
+  commentId: M:UltraForce.Library.Core.Asp.Tools.UFMvcTools.CreateListFromEnum``1(System.String,System.Boolean)
+  name.vb: CreateListFromEnum(Of T)(String, Boolean)
+  fullName: UltraForce.Library.Core.Asp.Tools.UFMvcTools.CreateListFromEnum<T>(string?, bool)
+  fullName.vb: UltraForce.Library.Core.Asp.Tools.UFMvcTools.CreateListFromEnum(Of T)(String, Boolean)
+  nameWithType: UFMvcTools.CreateListFromEnum<T>(string?, bool)
+  nameWithType.vb: UFMvcTools.CreateListFromEnum(Of T)(String, Boolean)
 - uid: UltraForce.Library.Core.Asp.Tools.UFMvcTools.GetControllerName(System.String)
   name: GetControllerName(string)
   href: api/UltraForce.Library.Core.Asp.Tools.UFMvcTools.html#UltraForce_Library_Core_Asp_Tools_UFMvcTools_GetControllerName_System_String_

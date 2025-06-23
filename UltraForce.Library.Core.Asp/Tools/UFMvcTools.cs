@@ -9,9 +9,9 @@
 // Copyright (C) 2024 Ultra Force Development
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
-// of this software and associated documentation files (the "Software"), to 
-// deal in the Software without restriction, including without limitation the 
-// rights to use, copy, modify, merge, publish, distribute, sublicense, and/or 
+// of this software and associated documentation files (the "Software"), to
+// deal in the Software without restriction, including without limitation the
+// rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
 // sell copies of the Software, and to permit persons to whom the Software is
 // furnished to do so, subject to the following conditions:
 //
@@ -22,14 +22,15 @@
 // IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 // FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 // AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING 
-// FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS 
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+// FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
 // IN THE SOFTWARE.
 // </license>
 
 using System.ComponentModel.DataAnnotations;
 using System.Diagnostics.CodeAnalysis;
 using System.Reflection;
+using System.Runtime.CompilerServices;
 using System.Security.Principal;
 using System.Text.Json.Serialization;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
@@ -43,7 +44,7 @@ namespace UltraForce.Library.Core.Asp.Tools
 {
   /// <summary>
   /// <see cref="UFMvcTools"/> contain static support methods for MVC.
-  /// </summary>  
+  /// </summary>
   [SuppressMessage("ReSharper", "MemberCanBePrivate.Global")]
   public static class UFMvcTools
   {
@@ -167,11 +168,15 @@ namespace UltraForce.Library.Core.Asp.Tools
     /// from either the display name or the value from <see cref="UFDescriptionAttribute"/>
     /// attribute. If both are missing the value is used.
     /// </summary>
-    /// <param name="emptyChoice"></param>
+    /// <param name="emptyChoice">
+    /// when not empty, add this string as first entry with an empty string for value
+    /// </param>
+    /// <param name="sort">true to sort the list of values</param>
     /// <typeparam name="T">Enum type</typeparam>
     /// <returns>Select list</returns>
     public static SelectList CreateListFromEnum<T>(
-      string? emptyChoice = null
+      string? emptyChoice = null,
+      bool sort = true
     )
       where T : struct, Enum
     {
@@ -187,12 +192,14 @@ namespace UltraForce.Library.Core.Asp.Tools
           )
         )
         .ToList();
-      items.Sort(
-        (
-          item1,
-          item2
-        ) => string.Compare(item1.Text, item2.Text, StringComparison.Ordinal)
-      );
+      if (sort)
+      {
+        items.Sort((
+            item1,
+            item2
+          ) => string.Compare(item1.Text, item2.Text, StringComparison.Ordinal)
+        );
+      }
       SelectList list = new(
         items,
         nameof(SelectListItem.Value),
