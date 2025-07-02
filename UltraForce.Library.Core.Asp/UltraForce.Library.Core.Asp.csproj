@@ -15,8 +15,8 @@
         <RepositoryUrl>https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp</RepositoryUrl>
         <PackageReadmeFile>README.md</PackageReadmeFile>
         <AssemblyVersion></AssemblyVersion>
-        <Version>1.0.121</Version>
-        <PackageReleaseNotes>- added `sort` parameter to `UFMvcTools.CreateListFromEnum` 
+        <Version>1.0.122</Version>
+        <PackageReleaseNotes>- added protected `ProcessClipboard` method to `UFBaseButtonTagHelperBase`
 </PackageReleaseNotes>
         <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
     </PropertyGroup>

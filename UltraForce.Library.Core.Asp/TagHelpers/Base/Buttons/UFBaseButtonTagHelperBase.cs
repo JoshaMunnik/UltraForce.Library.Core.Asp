@@ -9,9 +9,9 @@
 // Copyright (C) 2024 Ultra Force Development
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
-// of this software and associated documentation files (the "Software"), to 
-// deal in the Software without restriction, including without limitation the 
-// rights to use, copy, modify, merge, publish, distribute, sublicense, and/or 
+// of this software and associated documentation files (the "Software"), to
+// deal in the Software without restriction, including without limitation the
+// rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
 // sell copies of the Software, and to permit persons to whom the Software is
 // furnished to do so, subject to the following conditions:
 //
@@ -22,8 +22,8 @@
 // IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 // FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 // AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING 
-// FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS 
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+// FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
 // IN THE SOFTWARE.
 // </license>
 
@@ -39,7 +39,7 @@ namespace UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons;
 
 /// <summary>
 /// Renders a button or link using a button styling. This class is the base class for all button
-/// tag helpers. 
+/// tag helpers.
 /// <para>
 /// When rendering a button the default type is `button`; use the <see cref="Submit"/> property to
 /// change it to submit.
@@ -97,12 +97,12 @@ public abstract class UFBaseButtonTagHelperBase(
   public string? OnClick { get; set; }
 
   /// <summary>
-  /// When set, an onclick handler is added to copy the value to the clipboard. 
+  /// When set, an onclick handler is added to copy the value to the clipboard.
   /// </summary>
   public string? Clipboard { get; set; }
 
   /// <summary>
-  /// When set, use it to get a name for. The <see cref="Name"/> property is ignored. 
+  /// When set, use it to get a name for. The <see cref="Name"/> property is ignored.
   /// </summary>
   public ModelExpression? For { get; set; }
 
@@ -164,10 +164,7 @@ public abstract class UFBaseButtonTagHelperBase(
     }
     if (this.Clipboard != null)
     {
-      output.Attributes.SetAttribute(
-        "onclick",
-        $"navigator.clipboard.writeText('{this.Clipboard.Replace("'", "\\'")}')"
-      );
+      this.ProcessClipboard(context, output, this.Clipboard);
     }
     else if (this.OnClick != null)
     {
@@ -232,7 +229,7 @@ public abstract class UFBaseButtonTagHelperBase(
   );
 
   /// <summary>
-  /// Gets the css classes to use for the caption span. 
+  /// Gets the css classes to use for the caption span.
   /// </summary>
   /// <param name="context"></param>
   /// <param name="output"></param>
@@ -258,6 +255,26 @@ public abstract class UFBaseButtonTagHelperBase(
     bool hasCaption,
     bool isStatic
   );
+
+  /// <summary>
+  /// Processes the clipboard text. This method is called when the <see cref="Clipboard"/> property
+  /// is not empty. The default implementation sets the <c>onclick</c> attribute to copy the text to
+  /// the clipboard.
+  /// </summary>
+  /// <param name="context"></param>
+  /// <param name="output"></param>
+  /// <param name="clipboardText"></param>
+  protected virtual void ProcessClipboard(
+    TagHelperContext context,
+    TagHelperOutput output,
+    string clipboardText
+  )
+  {
+    output.Attributes.SetAttribute(
+      "onclick",
+      $"navigator.clipboard.writeText('{clipboardText.Replace("'", "\\'")}')"
+    );
+  }
 
   #endregion
 }
