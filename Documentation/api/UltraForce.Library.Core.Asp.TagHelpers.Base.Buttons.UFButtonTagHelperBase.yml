@@ -70,6 +70,7 @@ items:
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFBaseButtonTagHelperBase.Value
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFBaseButtonTagHelperBase.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFBaseButtonTagHelperBase.ModelExpressionRenderer
+  - UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFBaseButtonTagHelperBase.ProcessClipboard(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,System.String)
   - UltraForce.Library.Core.Asp.TagHelpers.Base.UFClickableTagHelperBase.Href
   - UltraForce.Library.Core.Asp.TagHelpers.Base.UFClickableTagHelperBase.NewTab
   - UltraForce.Library.Core.Asp.TagHelpers.Base.UFClickableTagHelperBase.Call
@@ -722,6 +723,61 @@ references:
   name: ModelExpressionRenderer
   nameWithType: UFBaseButtonTagHelperBase.ModelExpressionRenderer
   fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFBaseButtonTagHelperBase.ModelExpressionRenderer
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFBaseButtonTagHelperBase.ProcessClipboard(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,System.String)
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFBaseButtonTagHelperBase.ProcessClipboard(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,System.String)
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFBaseButtonTagHelperBase
+  isExternal: true
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFBaseButtonTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Buttons_UFBaseButtonTagHelperBase_ProcessClipboard_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContext_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_System_String_
+  name: ProcessClipboard(TagHelperContext, TagHelperOutput, string)
+  nameWithType: UFBaseButtonTagHelperBase.ProcessClipboard(TagHelperContext, TagHelperOutput, string)
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFBaseButtonTagHelperBase.ProcessClipboard(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput, string)
+  nameWithType.vb: UFBaseButtonTagHelperBase.ProcessClipboard(TagHelperContext, TagHelperOutput, String)
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFBaseButtonTagHelperBase.ProcessClipboard(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput, String)
+  name.vb: ProcessClipboard(TagHelperContext, TagHelperOutput, String)
+  spec.csharp:
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFBaseButtonTagHelperBase.ProcessClipboard(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,System.String)
+    name: ProcessClipboard
+    href: UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFBaseButtonTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Buttons_UFBaseButtonTagHelperBase_ProcessClipboard_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContext_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_System_String_
+  - name: (
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext
+    name: TagHelperContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelpercontext
+  - name: ','
+  - name: " "
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput
+    name: TagHelperOutput
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelperoutput
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: string
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
+  spec.vb:
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFBaseButtonTagHelperBase.ProcessClipboard(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,System.String)
+    name: ProcessClipboard
+    href: UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFBaseButtonTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Buttons_UFBaseButtonTagHelperBase_ProcessClipboard_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContext_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_System_String_
+  - name: (
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext
+    name: TagHelperContext
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelpercontext
+  - name: ','
+  - name: " "
+  - uid: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput
+    name: TagHelperOutput
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelperoutput
+  - name: ','
+  - name: " "
+  - uid: System.String
+    name: String
+    isExternal: true
+    href: https://learn.microsoft.com/dotnet/api/system.string
+  - name: )
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.UFClickableTagHelperBase.Href
   commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Base.UFClickableTagHelperBase.Href
   parent: UltraForce.Library.Core.Asp.TagHelpers.Base.UFClickableTagHelperBase

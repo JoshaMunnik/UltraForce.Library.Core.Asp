@@ -17,6 +17,7 @@ items:
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFBaseButtonTagHelperBase.Name
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFBaseButtonTagHelperBase.OnClick
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFBaseButtonTagHelperBase.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  - UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFBaseButtonTagHelperBase.ProcessClipboard(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,System.String)
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFBaseButtonTagHelperBase.Static
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFBaseButtonTagHelperBase.Submit
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFBaseButtonTagHelperBase.Value
@@ -41,7 +42,7 @@ items:
   summary: >-
     Renders a button or link using a button styling. This class is the base class for all button
 
-    tag helpers. 
+    tag helpers.
 
     <p>
 
@@ -137,7 +138,7 @@ items:
   summary: >-
     Renders a button or link using a button styling. This class is the base class for all button
 
-    tag helpers. 
+    tag helpers.
 
     <p>
 
@@ -545,7 +546,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: ModelExpressionRenderer
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Buttons/UFBaseButtonTagHelperBase.cs
-    startLine: 197
+    startLine: 194
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons
@@ -576,7 +577,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetBeforeCaptionHtml
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Buttons/UFBaseButtonTagHelperBase.cs
-    startLine: 211
+    startLine: 208
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons
@@ -623,7 +624,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetAfterCaptionHtml
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Buttons/UFBaseButtonTagHelperBase.cs
-    startLine: 226
+    startLine: 223
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons
@@ -670,7 +671,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetButtonCaptionClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Buttons/UFBaseButtonTagHelperBase.cs
-    startLine: 240
+    startLine: 237
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons
@@ -714,7 +715,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetButtonClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Buttons/UFBaseButtonTagHelperBase.cs
-    startLine: 254
+    startLine: 251
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons
@@ -743,6 +744,52 @@ items:
   nameWithType.vb: UFBaseButtonTagHelperBase.GetButtonClasses(TagHelperContext, TagHelperOutput, Boolean, Boolean)
   fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFBaseButtonTagHelperBase.GetButtonClasses(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput, Boolean, Boolean)
   name.vb: GetButtonClasses(TagHelperContext, TagHelperOutput, Boolean, Boolean)
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFBaseButtonTagHelperBase.ProcessClipboard(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,System.String)
+  commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFBaseButtonTagHelperBase.ProcessClipboard(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,System.String)
+  id: ProcessClipboard(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput,System.String)
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFBaseButtonTagHelperBase
+  langs:
+  - csharp
+  - vb
+  name: ProcessClipboard(TagHelperContext, TagHelperOutput, string)
+  nameWithType: UFBaseButtonTagHelperBase.ProcessClipboard(TagHelperContext, TagHelperOutput, string)
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFBaseButtonTagHelperBase.ProcessClipboard(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput, string)
+  type: Method
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Base/Buttons/UFBaseButtonTagHelperBase.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: ProcessClipboard
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Buttons/UFBaseButtonTagHelperBase.cs
+    startLine: 266
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons
+  summary: >-
+    Processes the clipboard text. This method is called when the <xref href="UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFBaseButtonTagHelperBase.Clipboard" data-throw-if-not-resolved="false"></xref> property
+
+    is not empty. The default implementation sets the <code>onclick</code> attribute to copy the text to
+
+    the clipboard.
+  example: []
+  syntax:
+    content: protected virtual void ProcessClipboard(TagHelperContext context, TagHelperOutput output, string clipboardText)
+    parameters:
+    - id: context
+      type: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext
+      description: ''
+    - id: output
+      type: Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput
+      description: ''
+    - id: clipboardText
+      type: System.String
+      description: ''
+    content.vb: Protected Overridable Sub ProcessClipboard(context As TagHelperContext, output As TagHelperOutput, clipboardText As String)
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFBaseButtonTagHelperBase.ProcessClipboard*
+  nameWithType.vb: UFBaseButtonTagHelperBase.ProcessClipboard(TagHelperContext, TagHelperOutput, String)
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFBaseButtonTagHelperBase.ProcessClipboard(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext, Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput, String)
+  name.vb: ProcessClipboard(TagHelperContext, TagHelperOutput, String)
 references:
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFBaseButtonTagHelperBase.Submit
   commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFBaseButtonTagHelperBase.Submit
@@ -1925,3 +1972,9 @@ references:
   name: GetButtonClasses
   nameWithType: UFBaseButtonTagHelperBase.GetButtonClasses
   fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFBaseButtonTagHelperBase.GetButtonClasses
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFBaseButtonTagHelperBase.ProcessClipboard*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFBaseButtonTagHelperBase.ProcessClipboard
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFBaseButtonTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Buttons_UFBaseButtonTagHelperBase_ProcessClipboard_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContext_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_System_String_
+  name: ProcessClipboard
+  nameWithType: UFBaseButtonTagHelperBase.ProcessClipboard
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Buttons.UFBaseButtonTagHelperBase.ProcessClipboard
