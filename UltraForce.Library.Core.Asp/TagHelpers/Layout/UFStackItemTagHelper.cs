@@ -9,9 +9,9 @@
 // Copyright (C) 2024 Ultra Force Development
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
-// of this software and associated documentation files (the "Software"), to 
-// deal in the Software without restriction, including without limitation the 
-// rights to use, copy, modify, merge, publish, distribute, sublicense, and/or 
+// of this software and associated documentation files (the "Software"), to
+// deal in the Software without restriction, including without limitation the
+// rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
 // sell copies of the Software, and to permit persons to whom the Software is
 // furnished to do so, subject to the following conditions:
 //
@@ -22,8 +22,8 @@
 // IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 // FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 // AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING 
-// FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS 
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+// FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
 // IN THE SOFTWARE.
 // </license>
 
@@ -63,7 +63,13 @@ public class UFStackItemTagHelper : TagHelper
   /// </summary>
   [HtmlAttributeName("no-interaction")]
   public bool NoInteraction { get; set; } = false;
-  
+
+  /// <summary>
+  /// When true hide overflow of the stack item.
+  /// </summary>
+  [HtmlAttributeName("no-overflow")]
+  public bool NoOverflow { get; set; } = false;
+
   /// <summary>
   /// How to position this item horizontally within the container.
   /// </summary>
@@ -77,7 +83,7 @@ public class UFStackItemTagHelper : TagHelper
   public UFContentPositionEnum Vertical { get; set; } = UFContentPositionEnum.None;
 
   #endregion
-  
+
   #region overriden public methods
 
   /// <inheritdoc />
@@ -89,11 +95,11 @@ public class UFStackItemTagHelper : TagHelper
   }
 
   #endregion
-  
+
   #region overridable protected methods
-  
+
   /// <summary>
-  /// The default implementation uses styles from 'uf-styles.css'. 
+  /// The default implementation uses styles from 'uf-styles.css'.
   /// </summary>
   /// <returns></returns>
   protected virtual string GetStackItemClasses()
@@ -119,8 +125,12 @@ public class UFStackItemTagHelper : TagHelper
     {
       classes += " uf-stack__item--has-no-interaction";
     }
+    if (this.NoOverflow)
+    {
+      classes += " uf-stack__item--has-no-overflow";
+    }
     return classes;
   }
-  
+
   #endregion
 }

@@ -8,6 +8,7 @@ items:
   - UltraForce.Library.Core.Asp.TagHelpers.Layout.UFStackItemTagHelper.GetStackItemClasses
   - UltraForce.Library.Core.Asp.TagHelpers.Layout.UFStackItemTagHelper.Horizontal
   - UltraForce.Library.Core.Asp.TagHelpers.Layout.UFStackItemTagHelper.NoInteraction
+  - UltraForce.Library.Core.Asp.TagHelpers.Layout.UFStackItemTagHelper.NoOverflow
   - UltraForce.Library.Core.Asp.TagHelpers.Layout.UFStackItemTagHelper.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
   - UltraForce.Library.Core.Asp.TagHelpers.Layout.UFStackItemTagHelper.Vertical
   langs:
@@ -130,6 +131,49 @@ items:
     arguments:
     - type: System.String
       value: no-interaction
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Layout.UFStackItemTagHelper.NoOverflow
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Layout.UFStackItemTagHelper.NoOverflow
+  id: NoOverflow
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Layout.UFStackItemTagHelper
+  langs:
+  - csharp
+  - vb
+  name: NoOverflow
+  nameWithType: UFStackItemTagHelper.NoOverflow
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Layout.UFStackItemTagHelper.NoOverflow
+  type: Property
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Layout/UFStackItemTagHelper.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: NoOverflow
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Layout/UFStackItemTagHelper.cs
+    startLine: 69
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Layout
+  summary: When true hide overflow of the stack item.
+  example: []
+  syntax:
+    content: >-
+      [HtmlAttributeName("no-overflow")]
+
+      public bool NoOverflow { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: >-
+      <HtmlAttributeName("no-overflow")>
+
+      Public Property NoOverflow As Boolean
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Layout.UFStackItemTagHelper.NoOverflow*
+  attributes:
+  - type: Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute
+    ctor: Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: no-overflow
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Layout.UFStackItemTagHelper.Horizontal
   commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Layout.UFStackItemTagHelper.Horizontal
   id: Horizontal
@@ -148,7 +192,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Horizontal
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Layout/UFStackItemTagHelper.cs
-    startLine: 69
+    startLine: 75
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Layout
@@ -191,7 +235,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Vertical
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Layout/UFStackItemTagHelper.cs
-    startLine: 75
+    startLine: 81
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Layout
@@ -234,7 +278,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: Process
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Layout/UFStackItemTagHelper.cs
-    startLine: 83
+    startLine: 89
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Layout
@@ -273,7 +317,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetStackItemClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Layout/UFStackItemTagHelper.cs
-    startLine: 98
+    startLine: 104
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Layout
@@ -752,6 +796,12 @@ references:
   nameWithType.vb: Boolean
   fullName.vb: Boolean
   name.vb: Boolean
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Layout.UFStackItemTagHelper.NoOverflow*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Layout.UFStackItemTagHelper.NoOverflow
+  href: UltraForce.Library.Core.Asp.TagHelpers.Layout.UFStackItemTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Layout_UFStackItemTagHelper_NoOverflow
+  name: NoOverflow
+  nameWithType: UFStackItemTagHelper.NoOverflow
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Layout.UFStackItemTagHelper.NoOverflow
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Layout.UFStackItemTagHelper.Horizontal*
   commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Layout.UFStackItemTagHelper.Horizontal
   href: UltraForce.Library.Core.Asp.TagHelpers.Layout.UFStackItemTagHelper.html#UltraForce_Library_Core_Asp_TagHelpers_Layout_UFStackItemTagHelper_Horizontal
