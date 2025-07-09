@@ -10,6 +10,11 @@ items:
   items:
   - uid: UltraForce.Library.Core.Asp.Controllers.UFController
     name: UFController
+- uid: UltraForce.Library.Core.Asp.Extensions
+  name: UltraForce.Library.Core.Asp.Extensions
+  items:
+  - uid: UltraForce.Library.Core.Asp.Extensions.UFAppExtensions
+    name: UFAppExtensions
 - uid: UltraForce.Library.Core.Asp.Filters
   name: UltraForce.Library.Core.Asp.Filters
   items:
@@ -188,6 +193,11 @@ items:
     name: UFMvcTools
   - uid: UltraForce.Library.Core.Asp.Tools.UFTagHelperTools
     name: UFTagHelperTools
+- uid: UltraForce.Library.Core.Asp.Types.Classes
+  name: UltraForce.Library.Core.Asp.Types.Classes
+  items:
+  - uid: UltraForce.Library.Core.Asp.Types.Classes.UFCompositeStaticFileOptionsProvider
+    name: UFCompositeStaticFileOptionsProvider
 - uid: UltraForce.Library.Core.Asp.Types.Constants
   name: UltraForce.Library.Core.Asp.Types.Constants
   items:

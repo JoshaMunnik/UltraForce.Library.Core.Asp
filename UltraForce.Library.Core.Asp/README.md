@@ -10,6 +10,10 @@ Include the styles in your html using (for example `Shared\_Layout.cshtml`):
 <link rel="stylesheet" href="/_content/UltraForce.Library.Core.Asp/css/uf-styles.css" />
 ````
 ## Version history
+1.0.124
+- update used packages
+- added `UFAppExtensions` and `UFCompositeStaticFileOptionsProvider`
+ 
 1.0.123
 - added `no-overflow` to `UFStackItemTagHelper` to prevent overflow of the stack item content.
   The overflow is allowed by default (reverted change from 1.0.120).

@@ -213,6 +213,47 @@ references:
   isSpec: "True"
   fullName: UltraForce.Library.Core.Asp.Controllers.UFController.SessionStorage
   nameWithType: UFController.SessionStorage
+- uid: UltraForce.Library.Core.Asp.Extensions
+  name: UltraForce.Library.Core.Asp.Extensions
+  href: api/UltraForce.Library.Core.Asp.Extensions.html
+  commentId: N:UltraForce.Library.Core.Asp.Extensions
+  fullName: UltraForce.Library.Core.Asp.Extensions
+  nameWithType: UltraForce.Library.Core.Asp.Extensions
+- uid: UltraForce.Library.Core.Asp.Extensions.UFAppExtensions
+  name: UFAppExtensions
+  href: api/UltraForce.Library.Core.Asp.Extensions.UFAppExtensions.html
+  commentId: T:UltraForce.Library.Core.Asp.Extensions.UFAppExtensions
+  fullName: UltraForce.Library.Core.Asp.Extensions.UFAppExtensions
+  nameWithType: UFAppExtensions
+- uid: UltraForce.Library.Core.Asp.Extensions.UFAppExtensions.UseAreaStaticFiles(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)
+  name: UseAreaStaticFiles(IApplicationBuilder, IWebHostEnvironment?)
+  href: api/UltraForce.Library.Core.Asp.Extensions.UFAppExtensions.html#UltraForce_Library_Core_Asp_Extensions_UFAppExtensions_UseAreaStaticFiles_Microsoft_AspNetCore_Builder_IApplicationBuilder_Microsoft_AspNetCore_Hosting_IWebHostEnvironment_
+  commentId: M:UltraForce.Library.Core.Asp.Extensions.UFAppExtensions.UseAreaStaticFiles(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)
+  name.vb: UseAreaStaticFiles(IApplicationBuilder, IWebHostEnvironment)
+  fullName: UltraForce.Library.Core.Asp.Extensions.UFAppExtensions.UseAreaStaticFiles(Microsoft.AspNetCore.Builder.IApplicationBuilder, Microsoft.AspNetCore.Hosting.IWebHostEnvironment?)
+  fullName.vb: UltraForce.Library.Core.Asp.Extensions.UFAppExtensions.UseAreaStaticFiles(Microsoft.AspNetCore.Builder.IApplicationBuilder, Microsoft.AspNetCore.Hosting.IWebHostEnvironment)
+  nameWithType: UFAppExtensions.UseAreaStaticFiles(IApplicationBuilder, IWebHostEnvironment?)
+  nameWithType.vb: UFAppExtensions.UseAreaStaticFiles(IApplicationBuilder, IWebHostEnvironment)
+- uid: UltraForce.Library.Core.Asp.Extensions.UFAppExtensions.UseAreaStaticFiles*
+  name: UseAreaStaticFiles
+  href: api/UltraForce.Library.Core.Asp.Extensions.UFAppExtensions.html#UltraForce_Library_Core_Asp_Extensions_UFAppExtensions_UseAreaStaticFiles_
+  commentId: Overload:UltraForce.Library.Core.Asp.Extensions.UFAppExtensions.UseAreaStaticFiles
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Asp.Extensions.UFAppExtensions.UseAreaStaticFiles
+  nameWithType: UFAppExtensions.UseAreaStaticFiles
+- uid: UltraForce.Library.Core.Asp.Extensions.UFAppExtensions.UseStaticAvifFiles(Microsoft.AspNetCore.Builder.IApplicationBuilder)
+  name: UseStaticAvifFiles(IApplicationBuilder)
+  href: api/UltraForce.Library.Core.Asp.Extensions.UFAppExtensions.html#UltraForce_Library_Core_Asp_Extensions_UFAppExtensions_UseStaticAvifFiles_Microsoft_AspNetCore_Builder_IApplicationBuilder_
+  commentId: M:UltraForce.Library.Core.Asp.Extensions.UFAppExtensions.UseStaticAvifFiles(Microsoft.AspNetCore.Builder.IApplicationBuilder)
+  fullName: UltraForce.Library.Core.Asp.Extensions.UFAppExtensions.UseStaticAvifFiles(Microsoft.AspNetCore.Builder.IApplicationBuilder)
+  nameWithType: UFAppExtensions.UseStaticAvifFiles(IApplicationBuilder)
+- uid: UltraForce.Library.Core.Asp.Extensions.UFAppExtensions.UseStaticAvifFiles*
+  name: UseStaticAvifFiles
+  href: api/UltraForce.Library.Core.Asp.Extensions.UFAppExtensions.html#UltraForce_Library_Core_Asp_Extensions_UFAppExtensions_UseStaticAvifFiles_
+  commentId: Overload:UltraForce.Library.Core.Asp.Extensions.UFAppExtensions.UseStaticAvifFiles
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Asp.Extensions.UFAppExtensions.UseStaticAvifFiles
+  nameWithType: UFAppExtensions.UseStaticAvifFiles
 - uid: UltraForce.Library.Core.Asp.Filters
   name: UltraForce.Library.Core.Asp.Filters
   href: api/UltraForce.Library.Core.Asp.Filters.html
@@ -13589,6 +13630,88 @@ references:
   commentId: N:UltraForce.Library.Core.Asp.Types.Classes
   fullName: UltraForce.Library.Core.Asp.Types.Classes
   nameWithType: UltraForce.Library.Core.Asp.Types.Classes
+- uid: UltraForce.Library.Core.Asp.Types.Classes.UFCompositeStaticFileOptionsProvider
+  name: UFCompositeStaticFileOptionsProvider
+  href: api/UltraForce.Library.Core.Asp.Types.Classes.UFCompositeStaticFileOptionsProvider.html
+  commentId: T:UltraForce.Library.Core.Asp.Types.Classes.UFCompositeStaticFileOptionsProvider
+  fullName: UltraForce.Library.Core.Asp.Types.Classes.UFCompositeStaticFileOptionsProvider
+  nameWithType: UFCompositeStaticFileOptionsProvider
+- uid: UltraForce.Library.Core.Asp.Types.Classes.UFCompositeStaticFileOptionsProvider.#ctor(Microsoft.Extensions.FileProviders.IFileProvider,Microsoft.AspNetCore.Builder.StaticFileOptions[])
+  name: UFCompositeStaticFileOptionsProvider(IFileProvider, params StaticFileOptions[])
+  href: api/UltraForce.Library.Core.Asp.Types.Classes.UFCompositeStaticFileOptionsProvider.html#UltraForce_Library_Core_Asp_Types_Classes_UFCompositeStaticFileOptionsProvider__ctor_Microsoft_Extensions_FileProviders_IFileProvider_Microsoft_AspNetCore_Builder_StaticFileOptions___
+  commentId: M:UltraForce.Library.Core.Asp.Types.Classes.UFCompositeStaticFileOptionsProvider.#ctor(Microsoft.Extensions.FileProviders.IFileProvider,Microsoft.AspNetCore.Builder.StaticFileOptions[])
+  name.vb: New(IFileProvider, ParamArray StaticFileOptions())
+  fullName: UltraForce.Library.Core.Asp.Types.Classes.UFCompositeStaticFileOptionsProvider.UFCompositeStaticFileOptionsProvider(Microsoft.Extensions.FileProviders.IFileProvider, params Microsoft.AspNetCore.Builder.StaticFileOptions[])
+  fullName.vb: UltraForce.Library.Core.Asp.Types.Classes.UFCompositeStaticFileOptionsProvider.New(Microsoft.Extensions.FileProviders.IFileProvider, ParamArray Microsoft.AspNetCore.Builder.StaticFileOptions())
+  nameWithType: UFCompositeStaticFileOptionsProvider.UFCompositeStaticFileOptionsProvider(IFileProvider, params StaticFileOptions[])
+  nameWithType.vb: UFCompositeStaticFileOptionsProvider.New(IFileProvider, ParamArray StaticFileOptions())
+- uid: UltraForce.Library.Core.Asp.Types.Classes.UFCompositeStaticFileOptionsProvider.#ctor(Microsoft.Extensions.FileProviders.IFileProvider,System.Collections.Generic.IEnumerable{Microsoft.AspNetCore.Builder.StaticFileOptions})
+  name: UFCompositeStaticFileOptionsProvider(IFileProvider, IEnumerable<StaticFileOptions>)
+  href: api/UltraForce.Library.Core.Asp.Types.Classes.UFCompositeStaticFileOptionsProvider.html#UltraForce_Library_Core_Asp_Types_Classes_UFCompositeStaticFileOptionsProvider__ctor_Microsoft_Extensions_FileProviders_IFileProvider_System_Collections_Generic_IEnumerable_Microsoft_AspNetCore_Builder_StaticFileOptions__
+  commentId: M:UltraForce.Library.Core.Asp.Types.Classes.UFCompositeStaticFileOptionsProvider.#ctor(Microsoft.Extensions.FileProviders.IFileProvider,System.Collections.Generic.IEnumerable{Microsoft.AspNetCore.Builder.StaticFileOptions})
+  name.vb: New(IFileProvider, IEnumerable(Of StaticFileOptions))
+  fullName: UltraForce.Library.Core.Asp.Types.Classes.UFCompositeStaticFileOptionsProvider.UFCompositeStaticFileOptionsProvider(Microsoft.Extensions.FileProviders.IFileProvider, System.Collections.Generic.IEnumerable<Microsoft.AspNetCore.Builder.StaticFileOptions>)
+  fullName.vb: UltraForce.Library.Core.Asp.Types.Classes.UFCompositeStaticFileOptionsProvider.New(Microsoft.Extensions.FileProviders.IFileProvider, System.Collections.Generic.IEnumerable(Of Microsoft.AspNetCore.Builder.StaticFileOptions))
+  nameWithType: UFCompositeStaticFileOptionsProvider.UFCompositeStaticFileOptionsProvider(IFileProvider, IEnumerable<StaticFileOptions>)
+  nameWithType.vb: UFCompositeStaticFileOptionsProvider.New(IFileProvider, IEnumerable(Of StaticFileOptions))
+- uid: UltraForce.Library.Core.Asp.Types.Classes.UFCompositeStaticFileOptionsProvider.#ctor*
+  name: UFCompositeStaticFileOptionsProvider
+  href: api/UltraForce.Library.Core.Asp.Types.Classes.UFCompositeStaticFileOptionsProvider.html#UltraForce_Library_Core_Asp_Types_Classes_UFCompositeStaticFileOptionsProvider__ctor_
+  commentId: Overload:UltraForce.Library.Core.Asp.Types.Classes.UFCompositeStaticFileOptionsProvider.#ctor
+  isSpec: "True"
+  name.vb: New
+  fullName: UltraForce.Library.Core.Asp.Types.Classes.UFCompositeStaticFileOptionsProvider.UFCompositeStaticFileOptionsProvider
+  fullName.vb: UltraForce.Library.Core.Asp.Types.Classes.UFCompositeStaticFileOptionsProvider.New
+  nameWithType: UFCompositeStaticFileOptionsProvider.UFCompositeStaticFileOptionsProvider
+  nameWithType.vb: UFCompositeStaticFileOptionsProvider.New
+- uid: UltraForce.Library.Core.Asp.Types.Classes.UFCompositeStaticFileOptionsProvider.GetDirectoryContents(System.String)
+  name: GetDirectoryContents(string)
+  href: api/UltraForce.Library.Core.Asp.Types.Classes.UFCompositeStaticFileOptionsProvider.html#UltraForce_Library_Core_Asp_Types_Classes_UFCompositeStaticFileOptionsProvider_GetDirectoryContents_System_String_
+  commentId: M:UltraForce.Library.Core.Asp.Types.Classes.UFCompositeStaticFileOptionsProvider.GetDirectoryContents(System.String)
+  name.vb: GetDirectoryContents(String)
+  fullName: UltraForce.Library.Core.Asp.Types.Classes.UFCompositeStaticFileOptionsProvider.GetDirectoryContents(string)
+  fullName.vb: UltraForce.Library.Core.Asp.Types.Classes.UFCompositeStaticFileOptionsProvider.GetDirectoryContents(String)
+  nameWithType: UFCompositeStaticFileOptionsProvider.GetDirectoryContents(string)
+  nameWithType.vb: UFCompositeStaticFileOptionsProvider.GetDirectoryContents(String)
+- uid: UltraForce.Library.Core.Asp.Types.Classes.UFCompositeStaticFileOptionsProvider.GetDirectoryContents*
+  name: GetDirectoryContents
+  href: api/UltraForce.Library.Core.Asp.Types.Classes.UFCompositeStaticFileOptionsProvider.html#UltraForce_Library_Core_Asp_Types_Classes_UFCompositeStaticFileOptionsProvider_GetDirectoryContents_
+  commentId: Overload:UltraForce.Library.Core.Asp.Types.Classes.UFCompositeStaticFileOptionsProvider.GetDirectoryContents
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Asp.Types.Classes.UFCompositeStaticFileOptionsProvider.GetDirectoryContents
+  nameWithType: UFCompositeStaticFileOptionsProvider.GetDirectoryContents
+- uid: UltraForce.Library.Core.Asp.Types.Classes.UFCompositeStaticFileOptionsProvider.GetFileInfo(System.String)
+  name: GetFileInfo(string)
+  href: api/UltraForce.Library.Core.Asp.Types.Classes.UFCompositeStaticFileOptionsProvider.html#UltraForce_Library_Core_Asp_Types_Classes_UFCompositeStaticFileOptionsProvider_GetFileInfo_System_String_
+  commentId: M:UltraForce.Library.Core.Asp.Types.Classes.UFCompositeStaticFileOptionsProvider.GetFileInfo(System.String)
+  name.vb: GetFileInfo(String)
+  fullName: UltraForce.Library.Core.Asp.Types.Classes.UFCompositeStaticFileOptionsProvider.GetFileInfo(string)
+  fullName.vb: UltraForce.Library.Core.Asp.Types.Classes.UFCompositeStaticFileOptionsProvider.GetFileInfo(String)
+  nameWithType: UFCompositeStaticFileOptionsProvider.GetFileInfo(string)
+  nameWithType.vb: UFCompositeStaticFileOptionsProvider.GetFileInfo(String)
+- uid: UltraForce.Library.Core.Asp.Types.Classes.UFCompositeStaticFileOptionsProvider.GetFileInfo*
+  name: GetFileInfo
+  href: api/UltraForce.Library.Core.Asp.Types.Classes.UFCompositeStaticFileOptionsProvider.html#UltraForce_Library_Core_Asp_Types_Classes_UFCompositeStaticFileOptionsProvider_GetFileInfo_
+  commentId: Overload:UltraForce.Library.Core.Asp.Types.Classes.UFCompositeStaticFileOptionsProvider.GetFileInfo
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Asp.Types.Classes.UFCompositeStaticFileOptionsProvider.GetFileInfo
+  nameWithType: UFCompositeStaticFileOptionsProvider.GetFileInfo
+- uid: UltraForce.Library.Core.Asp.Types.Classes.UFCompositeStaticFileOptionsProvider.Watch(System.String)
+  name: Watch(string)
+  href: api/UltraForce.Library.Core.Asp.Types.Classes.UFCompositeStaticFileOptionsProvider.html#UltraForce_Library_Core_Asp_Types_Classes_UFCompositeStaticFileOptionsProvider_Watch_System_String_
+  commentId: M:UltraForce.Library.Core.Asp.Types.Classes.UFCompositeStaticFileOptionsProvider.Watch(System.String)
+  name.vb: Watch(String)
+  fullName: UltraForce.Library.Core.Asp.Types.Classes.UFCompositeStaticFileOptionsProvider.Watch(string)
+  fullName.vb: UltraForce.Library.Core.Asp.Types.Classes.UFCompositeStaticFileOptionsProvider.Watch(String)
+  nameWithType: UFCompositeStaticFileOptionsProvider.Watch(string)
+  nameWithType.vb: UFCompositeStaticFileOptionsProvider.Watch(String)
+- uid: UltraForce.Library.Core.Asp.Types.Classes.UFCompositeStaticFileOptionsProvider.Watch*
+  name: Watch
+  href: api/UltraForce.Library.Core.Asp.Types.Classes.UFCompositeStaticFileOptionsProvider.html#UltraForce_Library_Core_Asp_Types_Classes_UFCompositeStaticFileOptionsProvider_Watch_
+  commentId: Overload:UltraForce.Library.Core.Asp.Types.Classes.UFCompositeStaticFileOptionsProvider.Watch
+  isSpec: "True"
+  fullName: UltraForce.Library.Core.Asp.Types.Classes.UFCompositeStaticFileOptionsProvider.Watch
+  nameWithType: UFCompositeStaticFileOptionsProvider.Watch
 - uid: UltraForce.Library.Core.Asp.Types.Classes.UFDataAttribute
   name: UFDataAttribute
   href: api/UltraForce.Library.Core.Asp.Types.Classes.UFDataAttribute.html

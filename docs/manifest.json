@@ -52,6 +52,26 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Asp.Extensions.UFAppExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Asp.Extensions.UFAppExtensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Asp.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Asp.Extensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/UltraForce.Library.Core.Asp.Filters.UFClearViewDataServiceFilter.yml",
       "output": {
         ".html": {
@@ -1556,6 +1576,16 @@
       "output": {
         ".html": {
           "relative_path": "api/UltraForce.Library.Core.Asp.Tools.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UltraForce.Library.Core.Asp.Types.Classes.UFCompositeStaticFileOptionsProvider.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UltraForce.Library.Core.Asp.Types.Classes.UFCompositeStaticFileOptionsProvider.html"
         }
       },
       "version": ""

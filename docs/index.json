@@ -19,6 +19,16 @@
     "title": "Namespace UltraForce.Library.Core.Asp.Controllers | UltraForce.Library.Core.Asp",
     "keywords": "Namespace UltraForce.Library.Core.Asp.Controllers Classes UFController This class extends Controller and adds some additional methods and properties."
   },
+  "api/UltraForce.Library.Core.Asp.Extensions.UFAppExtensions.html": {
+    "href": "api/UltraForce.Library.Core.Asp.Extensions.UFAppExtensions.html",
+    "title": "Class UFAppExtensions | UltraForce.Library.Core.Asp",
+    "keywords": "Class UFAppExtensions Namespace UltraForce.Library.Core.Asp.Extensions Assembly UltraForce.Library.Core.Asp.dll Extensions for IApplicationBuilder to be used in Program.cs public static class UFAppExtensions Inheritance object UFAppExtensions Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Methods UseAreaStaticFiles(IApplicationBuilder, IWebHostEnvironment?) Add PhysicalFileProvider for every area that has a wwwroot folder. To access files in the wwwroot folder of an area (for example in the css subfolder), use the following URL (both Areas and wwwroot are not specified in the URL): https://.../AreaName/css/... Code based on: https://stackoverflow.com/a/56919679/968451 public static void UseAreaStaticFiles(this IApplicationBuilder app, IWebHostEnvironment? environment = null) Parameters app IApplicationBuilder environment IWebHostEnvironment When set, replace the WebRootFileProvider with an instance of UFCompositeStaticFileOptionsProvider adding the static providers for each area. UseStaticAvifFiles(IApplicationBuilder) Adds support for serving static files with the .avif extension. public static void UseStaticAvifFiles(this IApplicationBuilder app) Parameters app IApplicationBuilder"
+  },
+  "api/UltraForce.Library.Core.Asp.Extensions.html": {
+    "href": "api/UltraForce.Library.Core.Asp.Extensions.html",
+    "title": "Namespace UltraForce.Library.Core.Asp.Extensions | UltraForce.Library.Core.Asp",
+    "keywords": "Namespace UltraForce.Library.Core.Asp.Extensions Classes UFAppExtensions Extensions for IApplicationBuilder to be used in Program.cs"
+  },
   "api/UltraForce.Library.Core.Asp.Filters.UFClearViewDataServiceFilter.html": {
     "href": "api/UltraForce.Library.Core.Asp.Filters.UFClearViewDataServiceFilter.html",
     "title": "Class UFClearViewDataServiceFilter | UltraForce.Library.Core.Asp",
@@ -774,6 +784,11 @@
     "title": "Namespace UltraForce.Library.Core.Asp.Tools | UltraForce.Library.Core.Asp",
     "keywords": "Namespace UltraForce.Library.Core.Asp.Tools Classes UFCoreHtmlTools Html support methods. UFCoreStringTools An utility class that adds extra string related methods. UFModelExpressionTools Support methods for ModelExpression. UFMvcTools UFMvcTools contain static support methods for MVC. UFTagHelperTools Support methods for TagHelper"
   },
+  "api/UltraForce.Library.Core.Asp.Types.Classes.UFCompositeStaticFileOptionsProvider.html": {
+    "href": "api/UltraForce.Library.Core.Asp.Types.Classes.UFCompositeStaticFileOptionsProvider.html",
+    "title": "Class UFCompositeStaticFileOptionsProvider | UltraForce.Library.Core.Asp",
+    "keywords": "Class UFCompositeStaticFileOptionsProvider Namespace UltraForce.Library.Core.Asp.Types.Classes Assembly UltraForce.Library.Core.Asp.dll This class provides a composite file provider that combines multiple static file options and reroutes to one of the static file providers if the request path matches the start of the path. Code based on: https://stackoverflow.com/a/61925004/968451 public class UFCompositeStaticFileOptionsProvider : IFileProvider Inheritance object UFCompositeStaticFileOptionsProvider Implements IFileProvider Inherited Members object.Equals(object) object.Equals(object, object) object.GetHashCode() object.GetType() object.MemberwiseClone() object.ReferenceEquals(object, object) object.ToString() Constructors UFCompositeStaticFileOptionsProvider(IFileProvider, params StaticFileOptions[]) Constructs a new instance of the UFCompositeStaticFileOptionsProvider class. public UFCompositeStaticFileOptionsProvider(IFileProvider webRootFileProvider, params StaticFileOptions[] staticFileOptions) Parameters webRootFileProvider IFileProvider Current registered file provider staticFileOptions StaticFileOptions[] Additional registered static file providers UFCompositeStaticFileOptionsProvider(IFileProvider, IEnumerable<StaticFileOptions>) Constructs a new instance of the UFCompositeStaticFileOptionsProvider class. Note that the code does not register the static file provider specified via the option, it assumes this has been done by the caller. public UFCompositeStaticFileOptionsProvider(IFileProvider webRootFileProvider, IEnumerable<StaticFileOptions> staticFileOptions) Parameters webRootFileProvider IFileProvider Current registered file provider staticFileOptions IEnumerable<StaticFileOptions> Additional registered static file providers Exceptions ArgumentNullException Methods GetDirectoryContents(string) Enumerate a directory at the given path, if any. public IDirectoryContents GetDirectoryContents(string subpath) Parameters subpath string Relative path that identifies the directory. Returns IDirectoryContents Returns the contents of the directory. GetFileInfo(string) Locate a file at the given path. public IFileInfo GetFileInfo(string subpath) Parameters subpath string Relative path that identifies the file. Returns IFileInfo The file information. Caller must check Exists property. Watch(string) Creates a IChangeToken for the specified filter. public IChangeToken Watch(string filter) Parameters filter string Filter string used to determine what files or folders to monitor. Example: /*.cs, ., subFolder//*.cshtml. Returns IChangeToken An IChangeToken that is notified when a file matching filter is added, modified or deleted."
+  },
   "api/UltraForce.Library.Core.Asp.Types.Classes.UFDataAttribute.html": {
     "href": "api/UltraForce.Library.Core.Asp.Types.Classes.UFDataAttribute.html",
     "title": "Class UFDataAttribute | UltraForce.Library.Core.Asp",
@@ -787,7 +802,7 @@
   "api/UltraForce.Library.Core.Asp.Types.Classes.html": {
     "href": "api/UltraForce.Library.Core.Asp.Types.Classes.html",
     "title": "Namespace UltraForce.Library.Core.Asp.Types.Classes | UltraForce.Library.Core.Asp",
-    "keywords": "Namespace UltraForce.Library.Core.Asp.Types.Classes Classes UFDataAttribute Constants mapping to various data attributes used by the Ultra Force DOM typescript library. UFFontAwesome A set of constants that map to font awesome icons (without 'fa-' prefix). Obtained from version 5.15.4"
+    "keywords": "Namespace UltraForce.Library.Core.Asp.Types.Classes Classes UFCompositeStaticFileOptionsProvider This class provides a composite file provider that combines multiple static file options and reroutes to one of the static file providers if the request path matches the start of the path. Code based on: https://stackoverflow.com/a/61925004/968451"
   },
   "api/UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.html": {
     "href": "api/UltraForce.Library.Core.Asp.Types.Constants.UFDataAttribute.html",
