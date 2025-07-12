@@ -182,6 +182,14 @@ public static class UFDataAttribute
   ) => UFTagHelperTools.Attribute("data-uf-filter-input", value);
 
   /// <summary>
+  /// Add this attribute to a table row to indicate its a header row. The cell filter will skip
+  /// the content of these rows.
+  /// </summary>
+  public static TagHelperAttribute HeaderRow(
+    object? value = null
+  ) => UFTagHelperTools.Attribute("data-uf-header-row", value);
+
+  /// <summary>
   /// The group a child within the container belongs to.
   /// </summary>
   public static TagHelperAttribute FilterGroup(

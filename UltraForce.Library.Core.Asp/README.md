@@ -10,6 +10,10 @@ Include the styles in your html using (for example `Shared\_Layout.cshtml`):
 <link rel="stylesheet" href="/_content/UltraForce.Library.Core.Asp/css/uf-styles.css" />
 ````
 ## Version history
+1.0.125
+- added `HeaderRow` to `UFDataAttribute`
+- fixed bug: `UFTableHeaderRowTagHelperBase` again sets the `data-uf-header-row` attribute
+ 
 1.0.124
 - update used packages
 - added `UFAppExtensions` and `UFCompositeStaticFileOptionsProvider`
