@@ -8,6 +8,7 @@ items:
   - UltraForce.Library.Core.Asp.TagHelpers.UFConditionTagHelper
   - UltraForce.Library.Core.Asp.TagHelpers.UFDataTitleTagHelper
   - UltraForce.Library.Core.Asp.TagHelpers.UFNotConditionTagHelper
+  - UltraForce.Library.Core.Asp.TagHelpers.UFWrapTagHelper
   langs:
   - csharp
   - vb
@@ -42,3 +43,9 @@ references:
   name: UFNotConditionTagHelper
   nameWithType: UFNotConditionTagHelper
   fullName: UltraForce.Library.Core.Asp.TagHelpers.UFNotConditionTagHelper
+- uid: UltraForce.Library.Core.Asp.TagHelpers.UFWrapTagHelper
+  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.UFWrapTagHelper
+  href: UltraForce.Library.Core.Asp.TagHelpers.UFWrapTagHelper.html
+  name: UFWrapTagHelper
+  nameWithType: UFWrapTagHelper
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.UFWrapTagHelper
