@@ -32,11 +32,13 @@ items:
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputWrapperClasses(System.String)
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetValidationFeedbackContainerHtml(System.String,System.String)
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.Label
+  - UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.LabelId
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.Multiline
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.NoError
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.NoLabel
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.NoWrap
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
+  - UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.WrapId
   langs:
   - csharp
   - vb
@@ -94,8 +96,8 @@ items:
 
     Renders text input with wrapping and label:
 
-    <pre><code class="lang-csharp">&lt;div class="{GetTextInputWrapperClasses(type)}"&gt;
-      &lt;label class="{GetTextInputLabelClasses(type)}" for="{id}"&gt;
+    <pre><code class="lang-csharp">&lt;div class="{GetTextInputWrapperClasses(type)}" [id="{WrapId}"]&gt;
+      &lt;label class="{GetTextInputLabelClasses(type)}" for="{id}" [id="{LabelId}"]&gt;
         &lt;span class="{GetTextInputLabelSpanClasses(type)}"&gt;
          {GetLabelAsync(context,output)}
         &lt;/span&gt;
@@ -114,7 +116,7 @@ items:
 
     Renders text input with wrapping and no label:
 
-    <pre><code class="lang-csharp">&lt;div class="{GetTextInputWrapperClasses(type)}"&gt;
+    <pre><code class="lang-csharp">&lt;div class="{GetTextInputWrapperClasses(type)}" [id="{WrapId}"]&gt;
       {GetTextInputPreHtml()}
         &lt;input class="{GetTextInputClasses(type)}" id={} .../&gt;
       {GetTextInputPostHtml()}
@@ -136,8 +138,8 @@ items:
 
     Renders multiline text input with wrapping and label:
 
-    <pre><code class="lang-csharp">&lt;div class="{GetTextInputWrapperClasses(type)}"&gt;
-      &lt;label class="{GetTextInputLabelClasses(type)}" for="{id}"&gt;
+    <pre><code class="lang-csharp">&lt;div class="{GetTextInputWrapperClasses(type)}" [id="{WrapId}"]&gt;
+      &lt;label class="{GetTextInputLabelClasses(type)}" for="{id} [id="{LabelId}"]"&gt;
         &lt;span class="{GetTextInputLabelSpanClasses(type)}"&gt;
          {GetLabelAsync(context,output)}
         &lt;/span&gt;
@@ -156,7 +158,7 @@ items:
 
     Renders multiline text input with wrapping and no label:
 
-    <pre><code class="lang-csharp">&lt;div class="{GetTextInputWrapperClasses(type)}"&gt;
+    <pre><code class="lang-csharp">&lt;div class="{GetTextInputWrapperClasses(type)}" [id="{WrapId}"]&gt;
       {GetTextInputPreHtml(type)}
         &lt;textarea class="{GetTextInputClasses(type)}" id={} ..." &gt;{value}&lt;/textarea&gt;
       {GetTextInputPostHtml()}
@@ -178,8 +180,8 @@ items:
 
     Renders radio input with wrapping and a label:
 
-    <pre><code class="lang-csharp">&lt;div class="{GetRadioWrapperClasses()}"&gt;
-      &lt;label class="{GetRadioLabelClasses()}"&gt;
+    <pre><code class="lang-csharp">&lt;div class="{GetRadioWrapperClasses()}" [id="{WrapId}"]&gt;
+      &lt;label class="{GetRadioLabelClasses()}" [id="{LabelId}"]&gt;
         {GetRadioExtraHtml()}
         &lt;input type="radio" class="{GetRadioInputClasses()}" .../&gt;
         &lt;span class="{GetRadioLabelSpanClasses()}"&gt;
@@ -197,7 +199,7 @@ items:
 
     Renders radio input with wrapping but no label:
 
-    <pre><code class="lang-csharp">&lt;div class="{GetRadioWrapperClasses()}"&gt;
+    <pre><code class="lang-csharp">&lt;div class="{GetRadioWrapperClasses()}" [id="{WrapId}"]&gt;
       &lt;input type="radio" class="{GetRadioInputClasses()}" .../&gt;
       {GetRadioExtraHtml()}
       {GetValidationFeedbackContainer(id)}
@@ -210,7 +212,7 @@ items:
 
     Renders radio input without wrapping but with a label:
 
-    <pre><code class="lang-csharp">&lt;label class="{GetRadioLabelClasses()}"&gt;
+    <pre><code class="lang-csharp">&lt;label class="{GetRadioLabelClasses()}" [id="{LabelId}"]&gt;
       &lt;input type="radio" class="{GetRadioInputClasses()}" .../&gt;
       {GetRadioExtraHtml()}
       &lt;span class="{GetRadiiLabelSpanClasses()}"&gt;
@@ -235,8 +237,8 @@ items:
 
     Renders checkbox input with wrapping and a label:
 
-    <pre><code class="lang-csharp">&lt;div class="{GetCheckboxWrapperClasses()}"&gt;
-      &lt;label class="{GetCheckboxLabelClasses()}"&gt;
+    <pre><code class="lang-csharp">&lt;div class="{GetCheckboxWrapperClasses()}" [id="{WrapId}"]&gt;
+      &lt;label class="{GetCheckboxLabelClasses()}" [id="{LabelId}"]&gt;
         &lt;input type="checkbox" class="{GetCheckboxInputClasses()}" .../&gt;
         {GetCheckboxExtraHtml()}
         &lt;span class="{GetCheckboxLabelSpanClasses()}"&gt;
@@ -254,7 +256,7 @@ items:
 
     Renders checkbox input with wrapping but no label:
 
-    <pre><code class="lang-csharp">&lt;div class="{GetCheckboxWrapperClasses()}"&gt;
+    <pre><code class="lang-csharp">&lt;div class="{GetCheckboxWrapperClasses()}" [id="{WrapId}"]&gt;
       &lt;input type="checkbox" class="{GetCheckboxInputClasses()}" .../&gt;
       {GetCheckboxExtraHtml()}
       {GetValidationFeedbackContainer(id)}
@@ -267,7 +269,7 @@ items:
 
     Renders checkbox input without wrapping but with a label:
 
-    <pre><code class="lang-csharp">&lt;label class="{GetCheckboxLabelClasses()}"&gt;
+    <pre><code class="lang-csharp">&lt;label class="{GetCheckboxLabelClasses()}" [id="{LabelId}"]&gt;
       &lt;input type="checkbox" class="{GetCheckboxInputClasses()}" id={} ... /&gt;
       {GetCheckboxExtraHtml()}
       &lt;span class="{GetCheckboxLabelSpanClasses()}"&gt;
@@ -379,8 +381,8 @@ items:
 
     Renders text input with wrapping and label:
 
-    <pre><code class="lang-csharp">&lt;div class="{GetTextInputWrapperClasses(type)}"&gt;
-      &lt;label class="{GetTextInputLabelClasses(type)}" for="{id}"&gt;
+    <pre><code class="lang-csharp">&lt;div class="{GetTextInputWrapperClasses(type)}" [id="{WrapId}"]&gt;
+      &lt;label class="{GetTextInputLabelClasses(type)}" for="{id}" [id="{LabelId}"]&gt;
         &lt;span class="{GetTextInputLabelSpanClasses(type)}"&gt;
          {GetLabelAsync(context,output)}
         &lt;/span&gt;
@@ -399,7 +401,7 @@ items:
 
     Renders text input with wrapping and no label:
 
-    <pre><code class="lang-csharp">&lt;div class="{GetTextInputWrapperClasses(type)}"&gt;
+    <pre><code class="lang-csharp">&lt;div class="{GetTextInputWrapperClasses(type)}" [id="{WrapId}"]&gt;
       {GetTextInputPreHtml()}
         &lt;input class="{GetTextInputClasses(type)}" id={} .../&gt;
       {GetTextInputPostHtml()}
@@ -421,8 +423,8 @@ items:
 
     Renders multiline text input with wrapping and label:
 
-    <pre><code class="lang-csharp">&lt;div class="{GetTextInputWrapperClasses(type)}"&gt;
-      &lt;label class="{GetTextInputLabelClasses(type)}" for="{id}"&gt;
+    <pre><code class="lang-csharp">&lt;div class="{GetTextInputWrapperClasses(type)}" [id="{WrapId}"]&gt;
+      &lt;label class="{GetTextInputLabelClasses(type)}" for="{id} [id="{LabelId}"]"&gt;
         &lt;span class="{GetTextInputLabelSpanClasses(type)}"&gt;
          {GetLabelAsync(context,output)}
         &lt;/span&gt;
@@ -441,7 +443,7 @@ items:
 
     Renders multiline text input with wrapping and no label:
 
-    <pre><code class="lang-csharp">&lt;div class="{GetTextInputWrapperClasses(type)}"&gt;
+    <pre><code class="lang-csharp">&lt;div class="{GetTextInputWrapperClasses(type)}" [id="{WrapId}"]&gt;
       {GetTextInputPreHtml(type)}
         &lt;textarea class="{GetTextInputClasses(type)}" id={} ..." &gt;{value}&lt;/textarea&gt;
       {GetTextInputPostHtml()}
@@ -463,8 +465,8 @@ items:
 
     Renders radio input with wrapping and a label:
 
-    <pre><code class="lang-csharp">&lt;div class="{GetRadioWrapperClasses()}"&gt;
-      &lt;label class="{GetRadioLabelClasses()}"&gt;
+    <pre><code class="lang-csharp">&lt;div class="{GetRadioWrapperClasses()}" [id="{WrapId}"]&gt;
+      &lt;label class="{GetRadioLabelClasses()}" [id="{LabelId}"]&gt;
         {GetRadioExtraHtml()}
         &lt;input type="radio" class="{GetRadioInputClasses()}" .../&gt;
         &lt;span class="{GetRadioLabelSpanClasses()}"&gt;
@@ -482,7 +484,7 @@ items:
 
     Renders radio input with wrapping but no label:
 
-    <pre><code class="lang-csharp">&lt;div class="{GetRadioWrapperClasses()}"&gt;
+    <pre><code class="lang-csharp">&lt;div class="{GetRadioWrapperClasses()}" [id="{WrapId}"]&gt;
       &lt;input type="radio" class="{GetRadioInputClasses()}" .../&gt;
       {GetRadioExtraHtml()}
       {GetValidationFeedbackContainer(id)}
@@ -495,7 +497,7 @@ items:
 
     Renders radio input without wrapping but with a label:
 
-    <pre><code class="lang-csharp">&lt;label class="{GetRadioLabelClasses()}"&gt;
+    <pre><code class="lang-csharp">&lt;label class="{GetRadioLabelClasses()}" [id="{LabelId}"]&gt;
       &lt;input type="radio" class="{GetRadioInputClasses()}" .../&gt;
       {GetRadioExtraHtml()}
       &lt;span class="{GetRadiiLabelSpanClasses()}"&gt;
@@ -520,8 +522,8 @@ items:
 
     Renders checkbox input with wrapping and a label:
 
-    <pre><code class="lang-csharp">&lt;div class="{GetCheckboxWrapperClasses()}"&gt;
-      &lt;label class="{GetCheckboxLabelClasses()}"&gt;
+    <pre><code class="lang-csharp">&lt;div class="{GetCheckboxWrapperClasses()}" [id="{WrapId}"]&gt;
+      &lt;label class="{GetCheckboxLabelClasses()}" [id="{LabelId}"]&gt;
         &lt;input type="checkbox" class="{GetCheckboxInputClasses()}" .../&gt;
         {GetCheckboxExtraHtml()}
         &lt;span class="{GetCheckboxLabelSpanClasses()}"&gt;
@@ -539,7 +541,7 @@ items:
 
     Renders checkbox input with wrapping but no label:
 
-    <pre><code class="lang-csharp">&lt;div class="{GetCheckboxWrapperClasses()}"&gt;
+    <pre><code class="lang-csharp">&lt;div class="{GetCheckboxWrapperClasses()}" [id="{WrapId}"]&gt;
       &lt;input type="checkbox" class="{GetCheckboxInputClasses()}" .../&gt;
       {GetCheckboxExtraHtml()}
       {GetValidationFeedbackContainer(id)}
@@ -552,7 +554,7 @@ items:
 
     Renders checkbox input without wrapping but with a label:
 
-    <pre><code class="lang-csharp">&lt;label class="{GetCheckboxLabelClasses()}"&gt;
+    <pre><code class="lang-csharp">&lt;label class="{GetCheckboxLabelClasses()}" [id="{LabelId}"]&gt;
       &lt;input type="checkbox" class="{GetCheckboxInputClasses()}" id={} ... /&gt;
       {GetCheckboxExtraHtml()}
       &lt;span class="{GetCheckboxLabelSpanClasses()}"&gt;
@@ -837,12 +839,110 @@ items:
   summary: When true do not include error block below the input element.
   example: []
   syntax:
-    content: public bool NoError { get; set; }
+    content: >-
+      [HtmlAttributeName("no-error")]
+
+      public bool NoError { get; set; }
     parameters: []
     return:
       type: System.Boolean
-    content.vb: Public Property NoError As Boolean
+    content.vb: >-
+      <HtmlAttributeName("no-error")>
+
+      Public Property NoError As Boolean
   overload: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.NoError*
+  attributes:
+  - type: Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute
+    ctor: Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: no-error
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.WrapId
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.WrapId
+  id: WrapId
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase
+  langs:
+  - csharp
+  - vb
+  name: WrapId
+  nameWithType: UFInputTagHelperBase.WrapId
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.WrapId
+  type: Property
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: WrapId
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
+    startLine: 286
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
+  summary: When set, set the id of the most outer wrapping element to this value.
+  example: []
+  syntax:
+    content: >-
+      [HtmlAttributeName("wrap-id")]
+
+      public string WrapId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <HtmlAttributeName("wrap-id")>
+
+      Public Property WrapId As String
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.WrapId*
+  attributes:
+  - type: Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute
+    ctor: Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: wrap-id
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.LabelId
+  commentId: P:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.LabelId
+  id: LabelId
+  parent: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase
+  langs:
+  - csharp
+  - vb
+  name: LabelId
+  nameWithType: UFInputTagHelperBase.LabelId
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.LabelId
+  type: Property
+  source:
+    remote:
+      path: UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
+      branch: master
+      repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
+    id: LabelId
+    path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
+    startLine: 292
+  assemblies:
+  - UltraForce.Library.Core.Asp
+  namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
+  summary: When set, set the id of the label to this value.
+  example: []
+  syntax:
+    content: >-
+      [HtmlAttributeName("label-id")]
+
+      public string LabelId { get; set; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: >-
+      <HtmlAttributeName("label-id")>
+
+      Public Property LabelId As String
+  overload: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.LabelId*
+  attributes:
+  - type: Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute
+    ctor: Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeNameAttribute.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: label-id
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
   commentId: M:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
   id: ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)
@@ -861,7 +961,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: ProcessAsync
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 287
+    startLine: 300
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -904,7 +1004,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetTextInputClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 359
+    startLine: 372
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -942,7 +1042,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetTextInputLabelClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 371
+    startLine: 384
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -980,7 +1080,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetLabelHtmlAsync
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 388
+    startLine: 401
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -1027,7 +1127,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetDescription
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 415
+    startLine: 428
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -1061,7 +1161,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetTextInputLabelSpanClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 440
+    startLine: 453
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -1099,7 +1199,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetTextInputPreHtml
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 454
+    startLine: 467
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -1143,7 +1243,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetTextInputPostHtml
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 470
+    startLine: 483
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -1187,7 +1287,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetTextInputLabelDescriptionClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 484
+    startLine: 497
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -1225,7 +1325,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetTextInputWrapperClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 496
+    startLine: 509
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -1263,7 +1363,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetValidationFeedbackContainerHtml
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 509
+    startLine: 522
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -1304,7 +1404,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetFieldErrorsClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 521
+    startLine: 534
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -1335,7 +1435,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetFieldErrorsHtml
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 532
+    startLine: 545
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -1376,7 +1476,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetRadioInputClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 544
+    startLine: 557
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -1407,7 +1507,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetRadioWrapperClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 553
+    startLine: 566
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -1438,7 +1538,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetRadioLabelClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 562
+    startLine: 575
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -1469,7 +1569,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetRadioLabelSpanClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 571
+    startLine: 584
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -1500,7 +1600,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetRadioLabelDescriptionClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 580
+    startLine: 593
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -1531,7 +1631,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetRadioExtraHtml
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 589
+    startLine: 602
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -1562,7 +1662,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetCheckboxInputClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 598
+    startLine: 611
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -1593,7 +1693,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetCheckboxWrapperClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 607
+    startLine: 620
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -1624,7 +1724,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetCheckboxLabelClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 616
+    startLine: 629
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -1655,7 +1755,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetCheckboxLabelSpanClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 625
+    startLine: 638
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -1686,7 +1786,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetCheckboxLabelDescriptionClasses
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 634
+    startLine: 647
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -1717,7 +1817,7 @@ items:
       repo: https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp.git
     id: GetCheckboxExtraHtml
     path: ../UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs
-    startLine: 643
+    startLine: 656
   assemblies:
   - UltraForce.Library.Core.Asp
   namespace: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
@@ -2589,6 +2689,18 @@ references:
   name: NoError
   nameWithType: UFInputTagHelperBase.NoError
   fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.NoError
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.WrapId*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.WrapId
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFInputTagHelperBase_WrapId
+  name: WrapId
+  nameWithType: UFInputTagHelperBase.WrapId
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.WrapId
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.LabelId*
+  commentId: Overload:UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.LabelId
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFInputTagHelperBase_LabelId
+  name: LabelId
+  nameWithType: UFInputTagHelperBase.LabelId
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.LabelId
 - uid: System.Threading.Tasks.Task
   commentId: T:System.Threading.Tasks.Task
   parent: System.Threading.Tasks

@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class UFSelectTagHelperBase | UltraForce.Library.Core.Asp ">
       
-      <meta name="description" content="Base class to help with rendering a select element. If not id is set and  is false, the code will generate an id so the label can reference the select element.  If there are no field errors, the field error block is not rendered.   Renders with wrapping: &amp;lt;div class=&quot;{GetInputWrapperClasses()}&quot;&amp;gt;   &amp;lt;label class=&quot;{GetSelectLabelClasses()}&quot; for=&quot;{id}&quot;&amp;gt;     &amp;lt;span class=&quot;{GetSelectLabelSpanClasses()}&quot;&amp;gt;      {GetLabelAsync(context,output)}     &amp;lt;/span&amp;gt;     &amp;lt;span class=&quot;{GetSelectLabelDescriptionClasses()}&quot;&amp;gt;{GetDescription()}&amp;lt;/span&amp;gt;   &amp;lt;/label&amp;gt;   &amp;lt;select class=&quot;{GetSelectClasses() id={} ...&quot; &amp;gt;     {children}   &amp;lt;/select&amp;gt;   {GetValidationFeedbackContainer(id)}   &amp;lt;div class=&quot;{GetFieldErrorsClasses()}&quot;&amp;gt;{GetFieldErrorsHtml()}&amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt;   Renders without wrapping: &amp;lt;select class=&quot;{GetSelectClasses()}&quot; &amp;gt;   {children} &amp;lt;/select&amp;gt;">
+      <meta name="description" content="Base class to help with rendering a select element. If not id is set and  is false, the code will generate an id so the label can reference the select element.  If there are no field errors, the field error block is not rendered.   Renders with wrapping: &amp;lt;div class=&quot;{GetInputWrapperClasses()}&quot; [id=&quot;{WrapId}&quot;]&amp;gt;   &amp;lt;label class=&quot;{GetSelectLabelClasses()}&quot; for=&quot;{id}&quot; [id=&quot;{LabelId}&quot;]&amp;gt;     &amp;lt;span class=&quot;{GetSelectLabelSpanClasses()}&quot;&amp;gt;      {GetLabelAsync(context,output)}     &amp;lt;/span&amp;gt;     &amp;lt;span class=&quot;{GetSelectLabelDescriptionClasses()}&quot;&amp;gt;{GetDescription()}&amp;lt;/span&amp;gt;   &amp;lt;/label&amp;gt;   &amp;lt;select class=&quot;{GetSelectClasses() id={} ...&quot; &amp;gt;     {children}   &amp;lt;/select&amp;gt;   {GetValidationFeedbackContainer(id)}   &amp;lt;div class=&quot;{GetFieldErrorsClasses()}&quot;&amp;gt;{GetFieldErrorsHtml()}&amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt;   Renders without wrapping: &amp;lt;select class=&quot;{GetSelectClasses()}&quot; &amp;gt;   {children} &amp;lt;/select&amp;gt;">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -105,8 +105,8 @@ If there are no field errors, the field error block is not rendered.
 </p>
 <p>
 Renders with wrapping:
-<pre><code class="lang-csharp">&lt;div class="{GetInputWrapperClasses()}"&gt;
-  &lt;label class="{GetSelectLabelClasses()}" for="{id}"&gt;
+<pre><code class="lang-csharp">&lt;div class="{GetInputWrapperClasses()}" [id="{WrapId}"]&gt;
+  &lt;label class="{GetSelectLabelClasses()}" for="{id}" [id="{LabelId}"]&gt;
     &lt;span class="{GetSelectLabelSpanClasses()}"&gt;
      {GetLabelAsync(context,output)}
     &lt;/span&gt;
@@ -228,8 +228,8 @@ If there are no field errors, the field error block is not rendered.
 </p>
 <p>
 Renders with wrapping:
-<pre><code class="lang-csharp">&lt;div class="{GetInputWrapperClasses()}"&gt;
-  &lt;label class="{GetSelectLabelClasses()}" for="{id}"&gt;
+<pre><code class="lang-csharp">&lt;div class="{GetInputWrapperClasses()}" [id="{WrapId}"]&gt;
+  &lt;label class="{GetSelectLabelClasses()}" for="{id}" [id="{LabelId}"]&gt;
     &lt;span class="{GetSelectLabelSpanClasses()}"&gt;
      {GetLabelAsync(context,output)}
     &lt;/span&gt;
@@ -348,6 +348,39 @@ public string Label { get; set; }</code></pre>
 
 
 
+  <a id="UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFSelectTagHelperBase_LabelId_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.LabelId*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFSelectTagHelperBase_LabelId" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.LabelId">
+  LabelId
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFSelectTagHelperBase.cs/#L131"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>When set, set the id of the label to this value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HtmlAttributeName(&quot;label-id&quot;)]
+public string LabelId { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFSelectTagHelperBase_NoError_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.NoError*"></a>
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFSelectTagHelperBase_NoError" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.NoError">
@@ -360,7 +393,8 @@ public string Label { get; set; }</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool NoError { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[HtmlAttributeName(&quot;no-error&quot;)]
+public bool NoError { get; set; }</code></pre>
   </div>
 
 
@@ -446,6 +480,39 @@ public bool NoWrap { get; set; }</code></pre>
 
 
 
+  <a id="UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFSelectTagHelperBase_WrapId_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.WrapId*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFSelectTagHelperBase_WrapId" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.WrapId">
+  WrapId
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFSelectTagHelperBase.cs/#L125"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>When set, set the id of the most outer wrapping element to this value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HtmlAttributeName(&quot;wrap-id&quot;)]
+public string WrapId { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <h2 class="section" id="methods">Methods
 </h2>
 
@@ -454,7 +521,7 @@ public bool NoWrap { get; set; }</code></pre>
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFSelectTagHelperBase_GetDescription" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetDescription">
   GetDescription()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFSelectTagHelperBase.cs/#L246"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFSelectTagHelperBase.cs/#L259"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets a description string either from the <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFSelectTagHelperBase_Description">Description</a> property or from
@@ -487,7 +554,7 @@ one of the known description providing attributes.</p>
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFSelectTagHelperBase_GetFieldErrorsClasses" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetFieldErrorsClasses">
   GetFieldErrorsClasses()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFSelectTagHelperBase.cs/#L222"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFSelectTagHelperBase.cs/#L235"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns the css classes for the field errors block.</p>
@@ -519,7 +586,7 @@ one of the known description providing attributes.</p>
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFSelectTagHelperBase_GetFieldErrorsHtml_Microsoft_AspNetCore_Mvc_ModelBinding_ModelStateDictionary_System_String_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetFieldErrorsHtml(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary,System.String)">
   GetFieldErrorsHtml(ModelStateDictionary, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFSelectTagHelperBase.cs/#L233"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFSelectTagHelperBase.cs/#L246"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns the html for the field errors block.</p>
@@ -558,7 +625,7 @@ one of the known description providing attributes.</p>
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFSelectTagHelperBase_GetSelectClasses" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetSelectClasses">
   GetSelectClasses()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFSelectTagHelperBase.cs/#L164"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFSelectTagHelperBase.cs/#L177"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns css classes for the select element.</p>
@@ -590,7 +657,7 @@ one of the known description providing attributes.</p>
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFSelectTagHelperBase_GetSelectLabelClasses" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetSelectLabelClasses">
   GetSelectLabelClasses()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFSelectTagHelperBase.cs/#L173"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFSelectTagHelperBase.cs/#L186"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns css classes for the label element.</p>
@@ -622,7 +689,7 @@ one of the known description providing attributes.</p>
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFSelectTagHelperBase_GetSelectLabelDescriptionClasses" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetSelectLabelDescriptionClasses">
   GetSelectLabelDescriptionClasses()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFSelectTagHelperBase.cs/#L191"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFSelectTagHelperBase.cs/#L204"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns the classes to use for the description span element inside the label.</p>
@@ -654,7 +721,7 @@ one of the known description providing attributes.</p>
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFSelectTagHelperBase_GetSelectLabelSpanClasses" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetSelectLabelSpanClasses">
   GetSelectLabelSpanClasses()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFSelectTagHelperBase.cs/#L182"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFSelectTagHelperBase.cs/#L195"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns the classes to use for the span element inside the label.</p>
@@ -686,7 +753,7 @@ one of the known description providing attributes.</p>
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFSelectTagHelperBase_GetSelectWrapperClasses" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetSelectWrapperClasses">
   GetSelectWrapperClasses()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFSelectTagHelperBase.cs/#L200"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFSelectTagHelperBase.cs/#L213"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns css classes for the wrapper element.</p>
@@ -718,7 +785,7 @@ one of the known description providing attributes.</p>
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFSelectTagHelperBase_GetValidationFeedbackContainerHtml_System_String_System_String_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.GetValidationFeedbackContainerHtml(System.String,System.String)">
   GetValidationFeedbackContainerHtml(string, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFSelectTagHelperBase.cs/#L211"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFSelectTagHelperBase.cs/#L224"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns the html for the validation feedback container.</p>
@@ -759,7 +826,7 @@ one of the known description providing attributes.</p>
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFSelectTagHelperBase_Process_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContext_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFSelectTagHelperBase.Process(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)">
   Process(TagHelperContext, TagHelperOutput)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFSelectTagHelperBase.cs/#L126"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFSelectTagHelperBase.cs/#L139"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Synchronously executes the <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper">TagHelper</a> with the given <code class="paramref">context</code> and

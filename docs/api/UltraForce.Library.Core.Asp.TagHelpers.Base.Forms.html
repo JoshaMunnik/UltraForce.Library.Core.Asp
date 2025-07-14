@@ -136,8 +136,8 @@ To set a label, there are three options:
 
 <p>
 Renders text input with wrapping and label:
-<pre><code class="lang-csharp">&lt;div class="{GetTextInputWrapperClasses(type)}"&gt;
-  &lt;label class="{GetTextInputLabelClasses(type)}" for="{id}"&gt;
+<pre><code class="lang-csharp">&lt;div class="{GetTextInputWrapperClasses(type)}" [id="{WrapId}"]&gt;
+  &lt;label class="{GetTextInputLabelClasses(type)}" for="{id}" [id="{LabelId}"]&gt;
     &lt;span class="{GetTextInputLabelSpanClasses(type)}"&gt;
      {GetLabelAsync(context,output)}
     &lt;/span&gt;
@@ -152,7 +152,7 @@ Renders text input with wrapping and label:
 
 <p>
 Renders text input with wrapping and no label:
-<pre><code class="lang-csharp">&lt;div class="{GetTextInputWrapperClasses(type)}"&gt;
+<pre><code class="lang-csharp">&lt;div class="{GetTextInputWrapperClasses(type)}" [id="{WrapId}"]&gt;
   {GetTextInputPreHtml()}
     &lt;input class="{GetTextInputClasses(type)}" id={} .../&gt;
   {GetTextInputPostHtml()}
@@ -166,8 +166,8 @@ Renders text input without wrapping:
 
 <p>
 Renders multiline text input with wrapping and label:
-<pre><code class="lang-csharp">&lt;div class="{GetTextInputWrapperClasses(type)}"&gt;
-  &lt;label class="{GetTextInputLabelClasses(type)}" for="{id}"&gt;
+<pre><code class="lang-csharp">&lt;div class="{GetTextInputWrapperClasses(type)}" [id="{WrapId}"]&gt;
+  &lt;label class="{GetTextInputLabelClasses(type)}" for="{id} [id="{LabelId}"]"&gt;
     &lt;span class="{GetTextInputLabelSpanClasses(type)}"&gt;
      {GetLabelAsync(context,output)}
     &lt;/span&gt;
@@ -182,7 +182,7 @@ Renders multiline text input with wrapping and label:
 
 <p>
 Renders multiline text input with wrapping and no label:
-<pre><code class="lang-csharp">&lt;div class="{GetTextInputWrapperClasses(type)}"&gt;
+<pre><code class="lang-csharp">&lt;div class="{GetTextInputWrapperClasses(type)}" [id="{WrapId}"]&gt;
   {GetTextInputPreHtml(type)}
     &lt;textarea class="{GetTextInputClasses(type)}" id={} ..." &gt;{value}&lt;/textarea&gt;
   {GetTextInputPostHtml()}
@@ -196,8 +196,8 @@ Renders multiline text input without wrapping:
 
 <p>
 Renders radio input with wrapping and a label:
-<pre><code class="lang-csharp">&lt;div class="{GetRadioWrapperClasses()}"&gt;
-  &lt;label class="{GetRadioLabelClasses()}"&gt;
+<pre><code class="lang-csharp">&lt;div class="{GetRadioWrapperClasses()}" [id="{WrapId}"]&gt;
+  &lt;label class="{GetRadioLabelClasses()}" [id="{LabelId}"]&gt;
     {GetRadioExtraHtml()}
     &lt;input type="radio" class="{GetRadioInputClasses()}" .../&gt;
     &lt;span class="{GetRadioLabelSpanClasses()}"&gt;
@@ -211,7 +211,7 @@ Renders radio input with wrapping and a label:
 
 <p>
 Renders radio input with wrapping but no label:
-<pre><code class="lang-csharp">&lt;div class="{GetRadioWrapperClasses()}"&gt;
+<pre><code class="lang-csharp">&lt;div class="{GetRadioWrapperClasses()}" [id="{WrapId}"]&gt;
   &lt;input type="radio" class="{GetRadioInputClasses()}" .../&gt;
   {GetRadioExtraHtml()}
   {GetValidationFeedbackContainer(id)}
@@ -220,7 +220,7 @@ Renders radio input with wrapping but no label:
 
 <p>
 Renders radio input without wrapping but with a label:
-<pre><code class="lang-csharp">&lt;label class="{GetRadioLabelClasses()}"&gt;
+<pre><code class="lang-csharp">&lt;label class="{GetRadioLabelClasses()}" [id="{LabelId}"]&gt;
   &lt;input type="radio" class="{GetRadioInputClasses()}" .../&gt;
   {GetRadioExtraHtml()}
   &lt;span class="{GetRadiiLabelSpanClasses()}"&gt;
@@ -236,8 +236,8 @@ Renders radio input without wrapping and without a label:
 
 <p>
 Renders checkbox input with wrapping and a label:
-<pre><code class="lang-csharp">&lt;div class="{GetCheckboxWrapperClasses()}"&gt;
-  &lt;label class="{GetCheckboxLabelClasses()}"&gt;
+<pre><code class="lang-csharp">&lt;div class="{GetCheckboxWrapperClasses()}" [id="{WrapId}"]&gt;
+  &lt;label class="{GetCheckboxLabelClasses()}" [id="{LabelId}"]&gt;
     &lt;input type="checkbox" class="{GetCheckboxInputClasses()}" .../&gt;
     {GetCheckboxExtraHtml()}
     &lt;span class="{GetCheckboxLabelSpanClasses()}"&gt;
@@ -251,7 +251,7 @@ Renders checkbox input with wrapping and a label:
 
 <p>
 Renders checkbox input with wrapping but no label:
-<pre><code class="lang-csharp">&lt;div class="{GetCheckboxWrapperClasses()}"&gt;
+<pre><code class="lang-csharp">&lt;div class="{GetCheckboxWrapperClasses()}" [id="{WrapId}"]&gt;
   &lt;input type="checkbox" class="{GetCheckboxInputClasses()}" .../&gt;
   {GetCheckboxExtraHtml()}
   {GetValidationFeedbackContainer(id)}
@@ -260,7 +260,7 @@ Renders checkbox input with wrapping but no label:
 
 <p>
 Renders checkbox input without wrapping but with a label:
-<pre><code class="lang-csharp">&lt;label class="{GetCheckboxLabelClasses()}"&gt;
+<pre><code class="lang-csharp">&lt;label class="{GetCheckboxLabelClasses()}" [id="{LabelId}"]&gt;
   &lt;input type="checkbox" class="{GetCheckboxInputClasses()}" id={} ... /&gt;
   {GetCheckboxExtraHtml()}
   &lt;span class="{GetCheckboxLabelSpanClasses()}"&gt;
@@ -286,8 +286,8 @@ If there are no field errors, the field error block is not rendered.
 </p>
 <p>
 Renders with wrapping:
-<pre><code class="lang-csharp">&lt;div class="{GetInputWrapperClasses()}"&gt;
-  &lt;label class="{GetSelectLabelClasses()}" for="{id}"&gt;
+<pre><code class="lang-csharp">&lt;div class="{GetInputWrapperClasses()}" [id="{WrapId}"]&gt;
+  &lt;label class="{GetSelectLabelClasses()}" for="{id}" [id="{LabelId}"]&gt;
     &lt;span class="{GetSelectLabelSpanClasses()}"&gt;
      {GetLabelAsync(context,output)}
     &lt;/span&gt;

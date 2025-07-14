@@ -64,8 +64,8 @@ namespace UltraForce.Library.Core.Asp.TagHelpers.Base.Forms;
 /// <para>
 /// Renders text input with wrapping and label:
 /// <code>
-/// &lt;div class="{GetTextInputWrapperClasses(type)}"&gt;
-///   &lt;label class="{GetTextInputLabelClasses(type)}" for="{id}"&gt;
+/// &lt;div class="{GetTextInputWrapperClasses(type)}" [id="{WrapId}"]&gt;
+///   &lt;label class="{GetTextInputLabelClasses(type)}" for="{id}" [id="{LabelId}"]&gt;
 ///     &lt;span class="{GetTextInputLabelSpanClasses(type)}"&gt;
 ///      {GetLabelAsync(context,output)}
 ///     &lt;/span&gt;
@@ -82,7 +82,7 @@ namespace UltraForce.Library.Core.Asp.TagHelpers.Base.Forms;
 /// <para>
 /// Renders text input with wrapping and no label:
 /// <code>
-/// &lt;div class="{GetTextInputWrapperClasses(type)}"&gt;
+/// &lt;div class="{GetTextInputWrapperClasses(type)}" [id="{WrapId}"]&gt;
 ///   {GetTextInputPreHtml()}
 ///     &lt;input class="{GetTextInputClasses(type)}" id={} .../&gt;
 ///   {GetTextInputPostHtml()}
@@ -100,8 +100,8 @@ namespace UltraForce.Library.Core.Asp.TagHelpers.Base.Forms;
 /// <para>
 /// Renders multiline text input with wrapping and label:
 /// <code>
-/// &lt;div class="{GetTextInputWrapperClasses(type)}"&gt;
-///   &lt;label class="{GetTextInputLabelClasses(type)}" for="{id}"&gt;
+/// &lt;div class="{GetTextInputWrapperClasses(type)}" [id="{WrapId}"]&gt;
+///   &lt;label class="{GetTextInputLabelClasses(type)}" for="{id} [id="{LabelId}"]"&gt;
 ///     &lt;span class="{GetTextInputLabelSpanClasses(type)}"&gt;
 ///      {GetLabelAsync(context,output)}
 ///     &lt;/span&gt;
@@ -118,7 +118,7 @@ namespace UltraForce.Library.Core.Asp.TagHelpers.Base.Forms;
 /// <para>
 /// Renders multiline text input with wrapping and no label:
 /// <code>
-/// &lt;div class="{GetTextInputWrapperClasses(type)}"&gt;
+/// &lt;div class="{GetTextInputWrapperClasses(type)}" [id="{WrapId}"]&gt;
 ///   {GetTextInputPreHtml(type)}
 ///     &lt;textarea class="{GetTextInputClasses(type)}" id={} ..." &gt;{value}&lt;/textarea&gt;
 ///   {GetTextInputPostHtml()}
@@ -136,8 +136,8 @@ namespace UltraForce.Library.Core.Asp.TagHelpers.Base.Forms;
 /// <para>
 /// Renders radio input with wrapping and a label:
 /// <code>
-/// &lt;div class="{GetRadioWrapperClasses()}"&gt;
-///   &lt;label class="{GetRadioLabelClasses()}"&gt;
+/// &lt;div class="{GetRadioWrapperClasses()}" [id="{WrapId}"]&gt;
+///   &lt;label class="{GetRadioLabelClasses()}" [id="{LabelId}"]&gt;
 ///     {GetRadioExtraHtml()}
 ///     &lt;input type="radio" class="{GetRadioInputClasses()}" .../&gt;
 ///     &lt;span class="{GetRadioLabelSpanClasses()}"&gt;
@@ -153,7 +153,7 @@ namespace UltraForce.Library.Core.Asp.TagHelpers.Base.Forms;
 /// <para>
 /// Renders radio input with wrapping but no label:
 /// <code>
-/// &lt;div class="{GetRadioWrapperClasses()}"&gt;
+/// &lt;div class="{GetRadioWrapperClasses()}" [id="{WrapId}"]&gt;
 ///   &lt;input type="radio" class="{GetRadioInputClasses()}" .../&gt;
 ///   {GetRadioExtraHtml()}
 ///   {GetValidationFeedbackContainer(id)}
@@ -164,7 +164,7 @@ namespace UltraForce.Library.Core.Asp.TagHelpers.Base.Forms;
 /// <para>
 /// Renders radio input without wrapping but with a label:
 /// <code>
-/// &lt;label class="{GetRadioLabelClasses()}"&gt;
+/// &lt;label class="{GetRadioLabelClasses()}" [id="{LabelId}"]&gt;
 ///   &lt;input type="radio" class="{GetRadioInputClasses()}" .../&gt;
 ///   {GetRadioExtraHtml()}
 ///   &lt;span class="{GetRadiiLabelSpanClasses()}"&gt;
@@ -184,8 +184,8 @@ namespace UltraForce.Library.Core.Asp.TagHelpers.Base.Forms;
 /// <para>
 /// Renders checkbox input with wrapping and a label:
 /// <code>
-/// &lt;div class="{GetCheckboxWrapperClasses()}"&gt;
-///   &lt;label class="{GetCheckboxLabelClasses()}"&gt;
+/// &lt;div class="{GetCheckboxWrapperClasses()}" [id="{WrapId}"]&gt;
+///   &lt;label class="{GetCheckboxLabelClasses()}" [id="{LabelId}"]&gt;
 ///     &lt;input type="checkbox" class="{GetCheckboxInputClasses()}" .../&gt;
 ///     {GetCheckboxExtraHtml()}
 ///     &lt;span class="{GetCheckboxLabelSpanClasses()}"&gt;
@@ -201,7 +201,7 @@ namespace UltraForce.Library.Core.Asp.TagHelpers.Base.Forms;
 /// <para>
 /// Renders checkbox input with wrapping but no label:
 /// <code>
-/// &lt;div class="{GetCheckboxWrapperClasses()}"&gt;
+/// &lt;div class="{GetCheckboxWrapperClasses()}" [id="{WrapId}"]&gt;
 ///   &lt;input type="checkbox" class="{GetCheckboxInputClasses()}" .../&gt;
 ///   {GetCheckboxExtraHtml()}
 ///   {GetValidationFeedbackContainer(id)}
@@ -212,7 +212,7 @@ namespace UltraForce.Library.Core.Asp.TagHelpers.Base.Forms;
 /// <para>
 /// Renders checkbox input without wrapping but with a label:
 /// <code>
-/// &lt;label class="{GetCheckboxLabelClasses()}"&gt;
+/// &lt;label class="{GetCheckboxLabelClasses()}" [id="{LabelId}"]&gt;
 ///   &lt;input type="checkbox" class="{GetCheckboxInputClasses()}" id={} ... /&gt;
 ///   {GetCheckboxExtraHtml()}
 ///   &lt;span class="{GetCheckboxLabelSpanClasses()}"&gt;
@@ -278,7 +278,20 @@ public abstract class UFInputTagHelperBase(
   /// <summary>
   /// When true do not include error block below the input element.
   /// </summary>
+  [HtmlAttributeName("no-error")]
   public bool NoError { get; set; } = false;
+
+  /// <summary>
+  /// When set, set the id of the most outer wrapping element to this value.
+  /// </summary>
+  [HtmlAttributeName("wrap-id")]
+  public string WrapId { get; set; } = "";
+
+  /// <summary>
+  /// When set, set the id of the label to this value.
+  /// </summary>
+  [HtmlAttributeName("label-id")]
+  public string LabelId { get; set; } = "";
 
   #endregion
 
@@ -712,20 +725,52 @@ public abstract class UFInputTagHelperBase(
       $"{description}</span>";
     string labelHtml = string.IsNullOrEmpty(label)
       ? ""
-      : $"<label class=\"{this.GetTextInputLabelClasses(type)}\" for=\"{id}\">" +
+      : $"<label class=\"{this.GetTextInputLabelClasses(type)}\" for=\"{id}\" {this.GetLabelId()}>" +
       $"<span class=\"{this.GetTextInputLabelSpanClasses(type)}\">{label}</span>" +
       descriptionHtml +
       "</label>";
     string preHtml = this.GetTextInputPreHtml(context, id, type);
     string postHtml = this.GetTextInputPostHtml(context, id, type);
     output.PreElement.AppendHtml(
-      $"<div class=\"{this.GetTextInputWrapperClasses(type)}\">{labelHtml}{preHtml}"
+      $"<div {this.GetWrapId()} class=\"{this.GetTextInputWrapperClasses(type)}\">{labelHtml}{preHtml}"
     );
     output.PostElement.AppendHtml(
       $"{postHtml}{this.GetErrorBlock(id, name, errorMessage)}</div>"
     );
   }
 
+  /// <summary>
+  /// Gets the id attribute for the wrapping div element.
+  /// </summary>
+  /// <returns>id attribute definition or empty string if there is no id</returns>
+  private string GetWrapId()
+  {
+    string wrapId = string.IsNullOrEmpty(this.WrapId)
+      ? ""
+      : $"id=\"{this.WrapId}\"";
+    return wrapId;
+  }
+
+  /// <summary>
+  /// Gets the id attribute for the label element.
+  /// </summary>
+  /// <returns>id attribute definition or empty string if there is no id</returns>
+  private string GetLabelId()
+  {
+    string labelId = string.IsNullOrEmpty(this.LabelId)
+      ? ""
+      : $"id=\"{this.LabelId}\"";
+    return labelId;
+  }
+
+  /// <summary>
+  /// Renders the radio input element with a wrapper, label and error message.
+  /// </summary>
+  /// <param name="anOutput"></param>
+  /// <param name="id"></param>
+  /// <param name="name"></param>
+  /// <param name="label"></param>
+  /// <param name="errorMessage"></param>
   private void RenderRadio(
     TagHelperOutput anOutput,
     string id,
@@ -735,14 +780,16 @@ public abstract class UFInputTagHelperBase(
   )
   {
     UFTagHelperTools.AddClasses(anOutput, this.GetRadioInputClasses());
-    string pre = !this.NoWrap ? $"<div class=\"{this.GetRadioWrapperClasses()}\">" : "";
+    string pre = !this.NoWrap
+      ? $"<div {this.GetWrapId()} class=\"{this.GetRadioWrapperClasses()}\">"
+      : "";
     string post = !this.NoWrap
       ? $"{this.GetErrorBlock(id, name, errorMessage)}</div>"
       //? $"{errorMessage}</div>"
       : "";
     string preLabel = string.IsNullOrEmpty(label)
       ? ""
-      : $"<label class=\"{this.GetRadioLabelClasses()}\">";
+      : $"<label class=\"{this.GetRadioLabelClasses()}\" {this.GetLabelId()}>";
     string description = this.GetDescription();
     string descriptionHtml = string.IsNullOrEmpty(description) || string.IsNullOrEmpty(label)
       ? ""
@@ -765,6 +812,14 @@ public abstract class UFInputTagHelperBase(
     }
   }
 
+  /// <summary>
+  /// Renders the checkbox input element with a wrapper, label and error message.
+  /// </summary>
+  /// <param name="anOutput"></param>
+  /// <param name="id"></param>
+  /// <param name="name"></param>
+  /// <param name="label"></param>
+  /// <param name="errorMessage"></param>
   private void RenderCheckbox(
     TagHelperOutput anOutput,
     string id,
@@ -774,14 +829,16 @@ public abstract class UFInputTagHelperBase(
   )
   {
     UFTagHelperTools.AddClasses(anOutput, this.GetCheckboxInputClasses());
-    string pre = !this.NoWrap ? $"<div class=\"{this.GetCheckboxWrapperClasses()}\">" : "";
+    string pre = !this.NoWrap
+      ? $"<div {this.GetWrapId()} class=\"{this.GetCheckboxWrapperClasses()}\">"
+      : "";
     string post = !this.NoWrap
       ? $"{this.GetErrorBlock(id, name, errorMessage)}</div>"
       //? $"{errorMessage}</div>"
       : "";
     string preLabel = string.IsNullOrEmpty(label)
       ? ""
-      : $"<label class=\"{this.GetCheckboxLabelClasses()}\">";
+      : $"<label class=\"{this.GetCheckboxLabelClasses()}\" {this.GetLabelId()}>";
     string description = this.GetDescription();
     string descriptionHtml = string.IsNullOrEmpty(description) || string.IsNullOrEmpty(label)
       ? ""

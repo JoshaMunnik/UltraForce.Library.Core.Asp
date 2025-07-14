@@ -9,9 +9,9 @@
 // Copyright (C) 2024 Ultra Force Development
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
-// of this software and associated documentation files (the "Software"), to 
-// deal in the Software without restriction, including without limitation the 
-// rights to use, copy, modify, merge, publish, distribute, sublicense, and/or 
+// of this software and associated documentation files (the "Software"), to
+// deal in the Software without restriction, including without limitation the
+// rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
 // sell copies of the Software, and to permit persons to whom the Software is
 // furnished to do so, subject to the following conditions:
 //
@@ -22,8 +22,8 @@
 // IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 // FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 // AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING 
-// FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS 
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+// FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
 // IN THE SOFTWARE.
 // </license>
 
@@ -51,8 +51,8 @@ namespace UltraForce.Library.Core.Asp.TagHelpers.Base.Forms;
 /// <para>
 /// Renders with wrapping:
 /// <code>
-/// &lt;div class="{GetInputWrapperClasses()}"&gt;<br/>
-///   &lt;label class="{GetSelectLabelClasses()}" for="{id}"&gt;
+/// &lt;div class="{GetInputWrapperClasses()}" [id="{WrapId}"]&gt;<br/>
+///   &lt;label class="{GetSelectLabelClasses()}" for="{id}" [id="{LabelId}"]&gt;
 ///     &lt;span class="{GetSelectLabelSpanClasses()}"&gt;
 ///      {GetLabelAsync(context,output)}
 ///     &lt;/span&gt;
@@ -101,7 +101,7 @@ public abstract class UFSelectTagHelperBase(
   public bool NoLabel { get; set; } = false;
 
   /// <summary>
-  /// When true, do not the wrap input element in a div. 
+  /// When true, do not the wrap input element in a div.
   /// </summary>
   [HtmlAttributeName("no-wrap")]
   public bool NoWrap { get; set; } = false;
@@ -116,7 +116,20 @@ public abstract class UFSelectTagHelperBase(
   /// <summary>
   /// When true do not include error block below the input element.
   /// </summary>
+  [HtmlAttributeName("no-error")]
   public bool NoError { get; set; } = false;
+
+  /// <summary>
+  /// When set, set the id of the most outer wrapping element to this value.
+  /// </summary>
+  [HtmlAttributeName("wrap-id")]
+  public string WrapId { get; set; } = "";
+
+  /// <summary>
+  /// When set, set the id of the label to this value.
+  /// </summary>
+  [HtmlAttributeName("label-id")]
+  public string LabelId { get; set; } = "";
 
   #endregion
 
@@ -174,7 +187,7 @@ public abstract class UFSelectTagHelperBase(
   {
     return string.Empty;
   }
-  
+
   /// <summary>
   /// Returns the classes to use for the span element inside the label.
   /// </summary>
@@ -262,7 +275,7 @@ public abstract class UFSelectTagHelperBase(
       UFAttributeTools.Find<DescriptionAttribute>(propertyInfo)?.Description ??
       "";
   }
-  
+
   #endregion
 
   #region private methods
@@ -312,14 +325,20 @@ public abstract class UFSelectTagHelperBase(
       ? ""
       : $"<span class=\"{this.GetSelectLabelDescriptionClasses()}\">" +
       $"{description}</span>";
+    string labelId = string.IsNullOrEmpty(this.LabelId)
+      ? ""
+      : $"id=\"{this.LabelId}\"";
     string labelHtml = string.IsNullOrEmpty(label)
       ? ""
-      : $"<label class=\"{this.GetSelectLabelClasses()}\" for=\"{id}\">" +
+      : $"<label class=\"{this.GetSelectLabelClasses()}\" for=\"{id}\" {labelId}>" +
       $"<span class=\"{this.GetSelectLabelSpanClasses()}\">{label}</span>" +
       descriptionHtml +
       "</label>";
+    string wrapId = string.IsNullOrEmpty(this.WrapId)
+      ? ""
+      : $"id=\"{this.WrapId}\"";
     output.PreElement.AppendHtml(
-      $"<div class=\"{this.GetSelectWrapperClasses()}\">{labelHtml}"
+      $"<div {wrapId} class=\"{this.GetSelectWrapperClasses()}\">{labelHtml}"
     );
     output.PostElement.AppendHtml(
       $"{this.GetErrorBlock(id, name, errorMessage)}</div>"

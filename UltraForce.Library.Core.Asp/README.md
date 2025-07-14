@@ -10,6 +10,9 @@ Include the styles in your html using (for example `Shared\_Layout.cshtml`):
 <link rel="stylesheet" href="/_content/UltraForce.Library.Core.Asp/css/uf-styles.css" />
 ````
 ## Version history
+1.0.127
+- added `WrapId` and `LabelId` to `UFInputTagHelperBase` and `UFSelectTagHelperBase`
+
 1.0.126
 - added `UFWrapTagHelper`
  

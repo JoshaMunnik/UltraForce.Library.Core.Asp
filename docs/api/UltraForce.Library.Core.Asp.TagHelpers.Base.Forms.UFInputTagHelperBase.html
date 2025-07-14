@@ -6,7 +6,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="title" content="Class UFInputTagHelperBase | UltraForce.Library.Core.Asp ">
       
-      <meta name="description" content="Renders either a text input, a checkbox or a radio button. If no id is set and  is true the class will generate an id so the label can reference the input element.  If there are no field errors, the field error block is not rendered.   Since the pseudo selectors ::after and ::before can not be used no input and textarea elements, it is possible to override  and  to add extra html before and after the input element.   To set a label, there are three options:    Set the  property/attribute   Add one or more child elements/texts to the tag (they will be moved to the label)   Set the  property    Renders text input with wrapping and label: &amp;lt;div class=&quot;{GetTextInputWrapperClasses(type)}&quot;&amp;gt;   &amp;lt;label class=&quot;{GetTextInputLabelClasses(type)}&quot; for=&quot;{id}&quot;&amp;gt;     &amp;lt;span class=&quot;{GetTextInputLabelSpanClasses(type)}&quot;&amp;gt;      {GetLabelAsync(context,output)}     &amp;lt;/span&amp;gt;     &amp;lt;span class=&quot;{GetTextInputLabelDescriptionClasses(type)}&quot;&amp;gt;{GetDescription()}&amp;lt;/span&amp;gt;   &amp;lt;/label&amp;gt;   {GetTextInputPreHtml()}     &amp;lt;input class=&quot;{GetTextInputClasses(type)}&quot; id={} .../&amp;gt;   {GetTextInputPostHtml()}   {GetValidationFeedbackContainer(id)}   {RenderFieldErrors(...)} &amp;lt;/div&amp;gt;   Renders text input with wrapping and no label: &amp;lt;div class=&quot;{GetTextInputWrapperClasses(type)}&quot;&amp;gt;   {GetTextInputPreHtml()}     &amp;lt;input class=&quot;{GetTextInputClasses(type)}&quot; id={} .../&amp;gt;   {GetTextInputPostHtml()}   {GetValidationFeedbackContainer(id)}   &amp;lt;div class=&quot;{GetFieldErrorsClasses()}&quot;&amp;gt;{GetFieldErrorsHtml()}&amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt;   Renders text input without wrapping: &amp;lt;input class=&quot;{GetTextInputClasses(type) .../&amp;gt;   Renders multiline text input with wrapping and label: &amp;lt;div class=&quot;{GetTextInputWrapperClasses(type)}&quot;&amp;gt;   &amp;lt;label class=&quot;{GetTextInputLabelClasses(type)}&quot; for=&quot;{id}&quot;&amp;gt;     &amp;lt;span class=&quot;{GetTextInputLabelSpanClasses(type)}&quot;&amp;gt;      {GetLabelAsync(context,output)}     &amp;lt;/span&amp;gt;     &amp;lt;span class=&quot;{GetTextInputLabelDescriptionClasses(type)}&quot;&amp;gt;{description}&amp;lt;/span&amp;gt;   &amp;lt;/label&amp;gt;   {GetTextInputPreHtml()}     &amp;lt;textarea class=&quot;{GetTextInputClasses(type)}&quot; id={} ...&quot; &amp;gt;{value}&amp;lt;/textarea&amp;gt;   {GetTextInputPostHtml()}   {GetValidationFeedbackContainer(id)}   {RenderFieldErrors(...)} &amp;lt;/div&amp;gt;   Renders multiline text input with wrapping and no label: &amp;lt;div class=&quot;{GetTextInputWrapperClasses(type)}&quot;&amp;gt;   {GetTextInputPreHtml(type)}     &amp;lt;textarea class=&quot;{GetTextInputClasses(type)}&quot; id={} ...&quot; &amp;gt;{value}&amp;lt;/textarea&amp;gt;   {GetTextInputPostHtml()}   {GetValidationFeedbackContainer(id)}   &amp;lt;div class=&quot;{GetFieldErrorsClasses()}&quot;&amp;gt;{GetFieldErrorsHtml()}&amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt;   Renders multiline text input without wrapping: &amp;lt;textarea class=&quot;{GetTextInputClasses(type)}&quot; id={} ...&quot; &amp;gt;{value}&amp;lt;/textarea&amp;gt;   Renders radio input with wrapping and a label: &amp;lt;div class=&quot;{GetRadioWrapperClasses()}&quot;&amp;gt;   &amp;lt;label class=&quot;{GetRadioLabelClasses()}&quot;&amp;gt;     {GetRadioExtraHtml()}     &amp;lt;input type=&quot;radio&quot; class=&quot;{GetRadioInputClasses()}&quot; .../&amp;gt;     &amp;lt;span class=&quot;{GetRadioLabelSpanClasses()}&quot;&amp;gt;      {GetLabelAsync(context,output)}     &amp;lt;/span&amp;gt;     &amp;lt;span class=&quot;{GetRadioLabelDescriptionClasses()}&quot;&amp;gt;{description}&amp;lt;/span&amp;gt;   &amp;lt;/label&amp;gt;   {GetValidationFeedbackContainer(id)}   &amp;lt;div class=&quot;{GetFieldErrorsClasses()}&quot;&amp;gt;{GetFieldErrorsHtml()}&amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt;   Renders radio input with wrapping but no label: &amp;lt;div class=&quot;{GetRadioWrapperClasses()}&quot;&amp;gt;   &amp;lt;input type=&quot;radio&quot; class=&quot;{GetRadioInputClasses()}&quot; .../&amp;gt;   {GetRadioExtraHtml()}   {GetValidationFeedbackContainer(id)}   &amp;lt;div class=&quot;{GetFieldErrorsClasses()}&quot;&amp;gt;{GetFieldErrorsHtml()}&amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt;   Renders radio input without wrapping but with a label: &amp;lt;label class=&quot;{GetRadioLabelClasses()}&quot;&amp;gt;   &amp;lt;input type=&quot;radio&quot; class=&quot;{GetRadioInputClasses()}&quot; .../&amp;gt;   {GetRadioExtraHtml()}   &amp;lt;span class=&quot;{GetRadiiLabelSpanClasses()}&quot;&amp;gt;    {GetLabelAsync(context,output)}   &amp;lt;/span&amp;gt;   &amp;lt;span class=&quot;{GetRadioLabelDescriptionClasses()}&quot;&amp;gt;{description}&amp;lt;/span&amp;gt; &amp;lt;/label&amp;gt;   Renders radio input without wrapping and without a label: &amp;lt;input type=&quot;radio&quot; class=&quot;{GetRadioInputClasses()}&quot; .../&amp;gt; {GetRadioExtraHtml()}   Renders checkbox input with wrapping and a label: &amp;lt;div class=&quot;{GetCheckboxWrapperClasses()}&quot;&amp;gt;   &amp;lt;label class=&quot;{GetCheckboxLabelClasses()}&quot;&amp;gt;     &amp;lt;input type=&quot;checkbox&quot; class=&quot;{GetCheckboxInputClasses()}&quot; .../&amp;gt;     {GetCheckboxExtraHtml()}     &amp;lt;span class=&quot;{GetCheckboxLabelSpanClasses()}&quot;&amp;gt;      {GetLabelAsync(context,output)}     &amp;lt;/span&amp;gt;    &amp;lt;span class=&quot;{GetCheckboxLabelDescriptionClasses()}&quot;&amp;gt;{description}&amp;lt;/span&amp;gt;   &amp;lt;/label&amp;gt;   {GetValidationFeedbackContainer(id)}   &amp;lt;div class=&quot;{GetFieldErrorsClasses()}&quot;&amp;gt;{GetFieldErrorsHtml()}&amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt;   Renders checkbox input with wrapping but no label: &amp;lt;div class=&quot;{GetCheckboxWrapperClasses()}&quot;&amp;gt;   &amp;lt;input type=&quot;checkbox&quot; class=&quot;{GetCheckboxInputClasses()}&quot; .../&amp;gt;   {GetCheckboxExtraHtml()}   {GetValidationFeedbackContainer(id)}   &amp;lt;div class=&quot;{GetFieldErrorsClasses()}&quot;&amp;gt;{GetFieldErrorsHtml()}&amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt;   Renders checkbox input without wrapping but with a label: &amp;lt;label class=&quot;{GetCheckboxLabelClasses()}&quot;&amp;gt;   &amp;lt;input type=&quot;checkbox&quot; class=&quot;{GetCheckboxInputClasses()}&quot; id={} ... /&amp;gt;   {GetCheckboxExtraHtml()}   &amp;lt;span class=&quot;{GetCheckboxLabelSpanClasses()}&quot;&amp;gt;    {GetLabelAsync(context,output)}   &amp;lt;/span&amp;gt;   &amp;lt;span class=&quot;{GetCheckboxLabelDescriptionClasses()}&quot;&amp;gt;{description}&amp;lt;/span&amp;gt; &amp;lt;/label&amp;gt;   Renders checkbox input without wrapping and without a label: &amp;lt;input type=&quot;checkbox&quot; class=&quot;{GetCheckboxInputClasses()}&quot; id={} .../&amp;gt; {GetCheckboxExtraHtml()}">
+      <meta name="description" content="Renders either a text input, a checkbox or a radio button. If no id is set and  is true the class will generate an id so the label can reference the input element.  If there are no field errors, the field error block is not rendered.   Since the pseudo selectors ::after and ::before can not be used no input and textarea elements, it is possible to override  and  to add extra html before and after the input element.   To set a label, there are three options:    Set the  property/attribute   Add one or more child elements/texts to the tag (they will be moved to the label)   Set the  property    Renders text input with wrapping and label: &amp;lt;div class=&quot;{GetTextInputWrapperClasses(type)}&quot; [id=&quot;{WrapId}&quot;]&amp;gt;   &amp;lt;label class=&quot;{GetTextInputLabelClasses(type)}&quot; for=&quot;{id}&quot; [id=&quot;{LabelId}&quot;]&amp;gt;     &amp;lt;span class=&quot;{GetTextInputLabelSpanClasses(type)}&quot;&amp;gt;      {GetLabelAsync(context,output)}     &amp;lt;/span&amp;gt;     &amp;lt;span class=&quot;{GetTextInputLabelDescriptionClasses(type)}&quot;&amp;gt;{GetDescription()}&amp;lt;/span&amp;gt;   &amp;lt;/label&amp;gt;   {GetTextInputPreHtml()}     &amp;lt;input class=&quot;{GetTextInputClasses(type)}&quot; id={} .../&amp;gt;   {GetTextInputPostHtml()}   {GetValidationFeedbackContainer(id)}   {RenderFieldErrors(...)} &amp;lt;/div&amp;gt;   Renders text input with wrapping and no label: &amp;lt;div class=&quot;{GetTextInputWrapperClasses(type)}&quot; [id=&quot;{WrapId}&quot;]&amp;gt;   {GetTextInputPreHtml()}     &amp;lt;input class=&quot;{GetTextInputClasses(type)}&quot; id={} .../&amp;gt;   {GetTextInputPostHtml()}   {GetValidationFeedbackContainer(id)}   &amp;lt;div class=&quot;{GetFieldErrorsClasses()}&quot;&amp;gt;{GetFieldErrorsHtml()}&amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt;   Renders text input without wrapping: &amp;lt;input class=&quot;{GetTextInputClasses(type) .../&amp;gt;   Renders multiline text input with wrapping and label: &amp;lt;div class=&quot;{GetTextInputWrapperClasses(type)}&quot; [id=&quot;{WrapId}&quot;]&amp;gt;   &amp;lt;label class=&quot;{GetTextInputLabelClasses(type)}&quot; for=&quot;{id} [id=&quot;{LabelId}&quot;]&quot;&amp;gt;     &amp;lt;span class=&quot;{GetTextInputLabelSpanClasses(type)}&quot;&amp;gt;      {GetLabelAsync(context,output)}     &amp;lt;/span&amp;gt;     &amp;lt;span class=&quot;{GetTextInputLabelDescriptionClasses(type)}&quot;&amp;gt;{description}&amp;lt;/span&amp;gt;   &amp;lt;/label&amp;gt;   {GetTextInputPreHtml()}     &amp;lt;textarea class=&quot;{GetTextInputClasses(type)}&quot; id={} ...&quot; &amp;gt;{value}&amp;lt;/textarea&amp;gt;   {GetTextInputPostHtml()}   {GetValidationFeedbackContainer(id)}   {RenderFieldErrors(...)} &amp;lt;/div&amp;gt;   Renders multiline text input with wrapping and no label: &amp;lt;div class=&quot;{GetTextInputWrapperClasses(type)}&quot; [id=&quot;{WrapId}&quot;]&amp;gt;   {GetTextInputPreHtml(type)}     &amp;lt;textarea class=&quot;{GetTextInputClasses(type)}&quot; id={} ...&quot; &amp;gt;{value}&amp;lt;/textarea&amp;gt;   {GetTextInputPostHtml()}   {GetValidationFeedbackContainer(id)}   &amp;lt;div class=&quot;{GetFieldErrorsClasses()}&quot;&amp;gt;{GetFieldErrorsHtml()}&amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt;   Renders multiline text input without wrapping: &amp;lt;textarea class=&quot;{GetTextInputClasses(type)}&quot; id={} ...&quot; &amp;gt;{value}&amp;lt;/textarea&amp;gt;   Renders radio input with wrapping and a label: &amp;lt;div class=&quot;{GetRadioWrapperClasses()}&quot; [id=&quot;{WrapId}&quot;]&amp;gt;   &amp;lt;label class=&quot;{GetRadioLabelClasses()}&quot; [id=&quot;{LabelId}&quot;]&amp;gt;     {GetRadioExtraHtml()}     &amp;lt;input type=&quot;radio&quot; class=&quot;{GetRadioInputClasses()}&quot; .../&amp;gt;     &amp;lt;span class=&quot;{GetRadioLabelSpanClasses()}&quot;&amp;gt;      {GetLabelAsync(context,output)}     &amp;lt;/span&amp;gt;     &amp;lt;span class=&quot;{GetRadioLabelDescriptionClasses()}&quot;&amp;gt;{description}&amp;lt;/span&amp;gt;   &amp;lt;/label&amp;gt;   {GetValidationFeedbackContainer(id)}   &amp;lt;div class=&quot;{GetFieldErrorsClasses()}&quot;&amp;gt;{GetFieldErrorsHtml()}&amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt;   Renders radio input with wrapping but no label: &amp;lt;div class=&quot;{GetRadioWrapperClasses()}&quot; [id=&quot;{WrapId}&quot;]&amp;gt;   &amp;lt;input type=&quot;radio&quot; class=&quot;{GetRadioInputClasses()}&quot; .../&amp;gt;   {GetRadioExtraHtml()}   {GetValidationFeedbackContainer(id)}   &amp;lt;div class=&quot;{GetFieldErrorsClasses()}&quot;&amp;gt;{GetFieldErrorsHtml()}&amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt;   Renders radio input without wrapping but with a label: &amp;lt;label class=&quot;{GetRadioLabelClasses()}&quot; [id=&quot;{LabelId}&quot;]&amp;gt;   &amp;lt;input type=&quot;radio&quot; class=&quot;{GetRadioInputClasses()}&quot; .../&amp;gt;   {GetRadioExtraHtml()}   &amp;lt;span class=&quot;{GetRadiiLabelSpanClasses()}&quot;&amp;gt;    {GetLabelAsync(context,output)}   &amp;lt;/span&amp;gt;   &amp;lt;span class=&quot;{GetRadioLabelDescriptionClasses()}&quot;&amp;gt;{description}&amp;lt;/span&amp;gt; &amp;lt;/label&amp;gt;   Renders radio input without wrapping and without a label: &amp;lt;input type=&quot;radio&quot; class=&quot;{GetRadioInputClasses()}&quot; .../&amp;gt; {GetRadioExtraHtml()}   Renders checkbox input with wrapping and a label: &amp;lt;div class=&quot;{GetCheckboxWrapperClasses()}&quot; [id=&quot;{WrapId}&quot;]&amp;gt;   &amp;lt;label class=&quot;{GetCheckboxLabelClasses()}&quot; [id=&quot;{LabelId}&quot;]&amp;gt;     &amp;lt;input type=&quot;checkbox&quot; class=&quot;{GetCheckboxInputClasses()}&quot; .../&amp;gt;     {GetCheckboxExtraHtml()}     &amp;lt;span class=&quot;{GetCheckboxLabelSpanClasses()}&quot;&amp;gt;      {GetLabelAsync(context,output)}     &amp;lt;/span&amp;gt;    &amp;lt;span class=&quot;{GetCheckboxLabelDescriptionClasses()}&quot;&amp;gt;{description}&amp;lt;/span&amp;gt;   &amp;lt;/label&amp;gt;   {GetValidationFeedbackContainer(id)}   &amp;lt;div class=&quot;{GetFieldErrorsClasses()}&quot;&amp;gt;{GetFieldErrorsHtml()}&amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt;   Renders checkbox input with wrapping but no label: &amp;lt;div class=&quot;{GetCheckboxWrapperClasses()}&quot; [id=&quot;{WrapId}&quot;]&amp;gt;   &amp;lt;input type=&quot;checkbox&quot; class=&quot;{GetCheckboxInputClasses()}&quot; .../&amp;gt;   {GetCheckboxExtraHtml()}   {GetValidationFeedbackContainer(id)}   &amp;lt;div class=&quot;{GetFieldErrorsClasses()}&quot;&amp;gt;{GetFieldErrorsHtml()}&amp;lt;/div&amp;gt; &amp;lt;/div&amp;gt;   Renders checkbox input without wrapping but with a label: &amp;lt;label class=&quot;{GetCheckboxLabelClasses()}&quot; [id=&quot;{LabelId}&quot;]&amp;gt;   &amp;lt;input type=&quot;checkbox&quot; class=&quot;{GetCheckboxInputClasses()}&quot; id={} ... /&amp;gt;   {GetCheckboxExtraHtml()}   &amp;lt;span class=&quot;{GetCheckboxLabelSpanClasses()}&quot;&amp;gt;    {GetLabelAsync(context,output)}   &amp;lt;/span&amp;gt;   &amp;lt;span class=&quot;{GetCheckboxLabelDescriptionClasses()}&quot;&amp;gt;{description}&amp;lt;/span&amp;gt; &amp;lt;/label&amp;gt;   Renders checkbox input without wrapping and without a label: &amp;lt;input type=&quot;checkbox&quot; class=&quot;{GetCheckboxInputClasses()}&quot; id={} .../&amp;gt; {GetCheckboxExtraHtml()}">
       <link rel="icon" href="../favicon.ico">
       <link rel="stylesheet" href="../public/docfx.min.css">
       <link rel="stylesheet" href="../public/main.css">
@@ -118,8 +118,8 @@ To set a label, there are three options:
 
 <p>
 Renders text input with wrapping and label:
-<pre><code class="lang-csharp">&lt;div class="{GetTextInputWrapperClasses(type)}"&gt;
-  &lt;label class="{GetTextInputLabelClasses(type)}" for="{id}"&gt;
+<pre><code class="lang-csharp">&lt;div class="{GetTextInputWrapperClasses(type)}" [id="{WrapId}"]&gt;
+  &lt;label class="{GetTextInputLabelClasses(type)}" for="{id}" [id="{LabelId}"]&gt;
     &lt;span class="{GetTextInputLabelSpanClasses(type)}"&gt;
      {GetLabelAsync(context,output)}
     &lt;/span&gt;
@@ -134,7 +134,7 @@ Renders text input with wrapping and label:
 
 <p>
 Renders text input with wrapping and no label:
-<pre><code class="lang-csharp">&lt;div class="{GetTextInputWrapperClasses(type)}"&gt;
+<pre><code class="lang-csharp">&lt;div class="{GetTextInputWrapperClasses(type)}" [id="{WrapId}"]&gt;
   {GetTextInputPreHtml()}
     &lt;input class="{GetTextInputClasses(type)}" id={} .../&gt;
   {GetTextInputPostHtml()}
@@ -148,8 +148,8 @@ Renders text input without wrapping:
 
 <p>
 Renders multiline text input with wrapping and label:
-<pre><code class="lang-csharp">&lt;div class="{GetTextInputWrapperClasses(type)}"&gt;
-  &lt;label class="{GetTextInputLabelClasses(type)}" for="{id}"&gt;
+<pre><code class="lang-csharp">&lt;div class="{GetTextInputWrapperClasses(type)}" [id="{WrapId}"]&gt;
+  &lt;label class="{GetTextInputLabelClasses(type)}" for="{id} [id="{LabelId}"]"&gt;
     &lt;span class="{GetTextInputLabelSpanClasses(type)}"&gt;
      {GetLabelAsync(context,output)}
     &lt;/span&gt;
@@ -164,7 +164,7 @@ Renders multiline text input with wrapping and label:
 
 <p>
 Renders multiline text input with wrapping and no label:
-<pre><code class="lang-csharp">&lt;div class="{GetTextInputWrapperClasses(type)}"&gt;
+<pre><code class="lang-csharp">&lt;div class="{GetTextInputWrapperClasses(type)}" [id="{WrapId}"]&gt;
   {GetTextInputPreHtml(type)}
     &lt;textarea class="{GetTextInputClasses(type)}" id={} ..." &gt;{value}&lt;/textarea&gt;
   {GetTextInputPostHtml()}
@@ -178,8 +178,8 @@ Renders multiline text input without wrapping:
 
 <p>
 Renders radio input with wrapping and a label:
-<pre><code class="lang-csharp">&lt;div class="{GetRadioWrapperClasses()}"&gt;
-  &lt;label class="{GetRadioLabelClasses()}"&gt;
+<pre><code class="lang-csharp">&lt;div class="{GetRadioWrapperClasses()}" [id="{WrapId}"]&gt;
+  &lt;label class="{GetRadioLabelClasses()}" [id="{LabelId}"]&gt;
     {GetRadioExtraHtml()}
     &lt;input type="radio" class="{GetRadioInputClasses()}" .../&gt;
     &lt;span class="{GetRadioLabelSpanClasses()}"&gt;
@@ -193,7 +193,7 @@ Renders radio input with wrapping and a label:
 
 <p>
 Renders radio input with wrapping but no label:
-<pre><code class="lang-csharp">&lt;div class="{GetRadioWrapperClasses()}"&gt;
+<pre><code class="lang-csharp">&lt;div class="{GetRadioWrapperClasses()}" [id="{WrapId}"]&gt;
   &lt;input type="radio" class="{GetRadioInputClasses()}" .../&gt;
   {GetRadioExtraHtml()}
   {GetValidationFeedbackContainer(id)}
@@ -202,7 +202,7 @@ Renders radio input with wrapping but no label:
 
 <p>
 Renders radio input without wrapping but with a label:
-<pre><code class="lang-csharp">&lt;label class="{GetRadioLabelClasses()}"&gt;
+<pre><code class="lang-csharp">&lt;label class="{GetRadioLabelClasses()}" [id="{LabelId}"]&gt;
   &lt;input type="radio" class="{GetRadioInputClasses()}" .../&gt;
   {GetRadioExtraHtml()}
   &lt;span class="{GetRadiiLabelSpanClasses()}"&gt;
@@ -218,8 +218,8 @@ Renders radio input without wrapping and without a label:
 
 <p>
 Renders checkbox input with wrapping and a label:
-<pre><code class="lang-csharp">&lt;div class="{GetCheckboxWrapperClasses()}"&gt;
-  &lt;label class="{GetCheckboxLabelClasses()}"&gt;
+<pre><code class="lang-csharp">&lt;div class="{GetCheckboxWrapperClasses()}" [id="{WrapId}"]&gt;
+  &lt;label class="{GetCheckboxLabelClasses()}" [id="{LabelId}"]&gt;
     &lt;input type="checkbox" class="{GetCheckboxInputClasses()}" .../&gt;
     {GetCheckboxExtraHtml()}
     &lt;span class="{GetCheckboxLabelSpanClasses()}"&gt;
@@ -233,7 +233,7 @@ Renders checkbox input with wrapping and a label:
 
 <p>
 Renders checkbox input with wrapping but no label:
-<pre><code class="lang-csharp">&lt;div class="{GetCheckboxWrapperClasses()}"&gt;
+<pre><code class="lang-csharp">&lt;div class="{GetCheckboxWrapperClasses()}" [id="{WrapId}"]&gt;
   &lt;input type="checkbox" class="{GetCheckboxInputClasses()}" .../&gt;
   {GetCheckboxExtraHtml()}
   {GetValidationFeedbackContainer(id)}
@@ -242,7 +242,7 @@ Renders checkbox input with wrapping but no label:
 
 <p>
 Renders checkbox input without wrapping but with a label:
-<pre><code class="lang-csharp">&lt;label class="{GetCheckboxLabelClasses()}"&gt;
+<pre><code class="lang-csharp">&lt;label class="{GetCheckboxLabelClasses()}" [id="{LabelId}"]&gt;
   &lt;input type="checkbox" class="{GetCheckboxInputClasses()}" id={} ... /&gt;
   {GetCheckboxExtraHtml()}
   &lt;span class="{GetCheckboxLabelSpanClasses()}"&gt;
@@ -384,8 +384,8 @@ To set a label, there are three options:
 
 <p>
 Renders text input with wrapping and label:
-<pre><code class="lang-csharp">&lt;div class="{GetTextInputWrapperClasses(type)}"&gt;
-  &lt;label class="{GetTextInputLabelClasses(type)}" for="{id}"&gt;
+<pre><code class="lang-csharp">&lt;div class="{GetTextInputWrapperClasses(type)}" [id="{WrapId}"]&gt;
+  &lt;label class="{GetTextInputLabelClasses(type)}" for="{id}" [id="{LabelId}"]&gt;
     &lt;span class="{GetTextInputLabelSpanClasses(type)}"&gt;
      {GetLabelAsync(context,output)}
     &lt;/span&gt;
@@ -400,7 +400,7 @@ Renders text input with wrapping and label:
 
 <p>
 Renders text input with wrapping and no label:
-<pre><code class="lang-csharp">&lt;div class="{GetTextInputWrapperClasses(type)}"&gt;
+<pre><code class="lang-csharp">&lt;div class="{GetTextInputWrapperClasses(type)}" [id="{WrapId}"]&gt;
   {GetTextInputPreHtml()}
     &lt;input class="{GetTextInputClasses(type)}" id={} .../&gt;
   {GetTextInputPostHtml()}
@@ -414,8 +414,8 @@ Renders text input without wrapping:
 
 <p>
 Renders multiline text input with wrapping and label:
-<pre><code class="lang-csharp">&lt;div class="{GetTextInputWrapperClasses(type)}"&gt;
-  &lt;label class="{GetTextInputLabelClasses(type)}" for="{id}"&gt;
+<pre><code class="lang-csharp">&lt;div class="{GetTextInputWrapperClasses(type)}" [id="{WrapId}"]&gt;
+  &lt;label class="{GetTextInputLabelClasses(type)}" for="{id} [id="{LabelId}"]"&gt;
     &lt;span class="{GetTextInputLabelSpanClasses(type)}"&gt;
      {GetLabelAsync(context,output)}
     &lt;/span&gt;
@@ -430,7 +430,7 @@ Renders multiline text input with wrapping and label:
 
 <p>
 Renders multiline text input with wrapping and no label:
-<pre><code class="lang-csharp">&lt;div class="{GetTextInputWrapperClasses(type)}"&gt;
+<pre><code class="lang-csharp">&lt;div class="{GetTextInputWrapperClasses(type)}" [id="{WrapId}"]&gt;
   {GetTextInputPreHtml(type)}
     &lt;textarea class="{GetTextInputClasses(type)}" id={} ..." &gt;{value}&lt;/textarea&gt;
   {GetTextInputPostHtml()}
@@ -444,8 +444,8 @@ Renders multiline text input without wrapping:
 
 <p>
 Renders radio input with wrapping and a label:
-<pre><code class="lang-csharp">&lt;div class="{GetRadioWrapperClasses()}"&gt;
-  &lt;label class="{GetRadioLabelClasses()}"&gt;
+<pre><code class="lang-csharp">&lt;div class="{GetRadioWrapperClasses()}" [id="{WrapId}"]&gt;
+  &lt;label class="{GetRadioLabelClasses()}" [id="{LabelId}"]&gt;
     {GetRadioExtraHtml()}
     &lt;input type="radio" class="{GetRadioInputClasses()}" .../&gt;
     &lt;span class="{GetRadioLabelSpanClasses()}"&gt;
@@ -459,7 +459,7 @@ Renders radio input with wrapping and a label:
 
 <p>
 Renders radio input with wrapping but no label:
-<pre><code class="lang-csharp">&lt;div class="{GetRadioWrapperClasses()}"&gt;
+<pre><code class="lang-csharp">&lt;div class="{GetRadioWrapperClasses()}" [id="{WrapId}"]&gt;
   &lt;input type="radio" class="{GetRadioInputClasses()}" .../&gt;
   {GetRadioExtraHtml()}
   {GetValidationFeedbackContainer(id)}
@@ -468,7 +468,7 @@ Renders radio input with wrapping but no label:
 
 <p>
 Renders radio input without wrapping but with a label:
-<pre><code class="lang-csharp">&lt;label class="{GetRadioLabelClasses()}"&gt;
+<pre><code class="lang-csharp">&lt;label class="{GetRadioLabelClasses()}" [id="{LabelId}"]&gt;
   &lt;input type="radio" class="{GetRadioInputClasses()}" .../&gt;
   {GetRadioExtraHtml()}
   &lt;span class="{GetRadiiLabelSpanClasses()}"&gt;
@@ -484,8 +484,8 @@ Renders radio input without wrapping and without a label:
 
 <p>
 Renders checkbox input with wrapping and a label:
-<pre><code class="lang-csharp">&lt;div class="{GetCheckboxWrapperClasses()}"&gt;
-  &lt;label class="{GetCheckboxLabelClasses()}"&gt;
+<pre><code class="lang-csharp">&lt;div class="{GetCheckboxWrapperClasses()}" [id="{WrapId}"]&gt;
+  &lt;label class="{GetCheckboxLabelClasses()}" [id="{LabelId}"]&gt;
     &lt;input type="checkbox" class="{GetCheckboxInputClasses()}" .../&gt;
     {GetCheckboxExtraHtml()}
     &lt;span class="{GetCheckboxLabelSpanClasses()}"&gt;
@@ -499,7 +499,7 @@ Renders checkbox input with wrapping and a label:
 
 <p>
 Renders checkbox input with wrapping but no label:
-<pre><code class="lang-csharp">&lt;div class="{GetCheckboxWrapperClasses()}"&gt;
+<pre><code class="lang-csharp">&lt;div class="{GetCheckboxWrapperClasses()}" [id="{WrapId}"]&gt;
   &lt;input type="checkbox" class="{GetCheckboxInputClasses()}" .../&gt;
   {GetCheckboxExtraHtml()}
   {GetValidationFeedbackContainer(id)}
@@ -508,7 +508,7 @@ Renders checkbox input with wrapping but no label:
 
 <p>
 Renders checkbox input without wrapping but with a label:
-<pre><code class="lang-csharp">&lt;label class="{GetCheckboxLabelClasses()}"&gt;
+<pre><code class="lang-csharp">&lt;label class="{GetCheckboxLabelClasses()}" [id="{LabelId}"]&gt;
   &lt;input type="checkbox" class="{GetCheckboxInputClasses()}" id={} ... /&gt;
   {GetCheckboxExtraHtml()}
   &lt;span class="{GetCheckboxLabelSpanClasses()}"&gt;
@@ -622,6 +622,39 @@ public string Label { get; set; }</code></pre>
 
 
 
+  <a id="UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFInputTagHelperBase_LabelId_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.LabelId*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFInputTagHelperBase_LabelId" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.LabelId">
+  LabelId
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs/#L293"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>When set, set the id of the label to this value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HtmlAttributeName(&quot;label-id&quot;)]
+public string LabelId { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <a id="UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFInputTagHelperBase_Multiline_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.Multiline*"></a>
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFInputTagHelperBase_Multiline" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.Multiline">
@@ -667,7 +700,8 @@ public bool Multiline { get; set; }</code></pre>
   <div class="markdown level1 conceptual"></div>
 
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public bool NoError { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[HtmlAttributeName(&quot;no-error&quot;)]
+public bool NoError { get; set; }</code></pre>
   </div>
 
 
@@ -753,6 +787,39 @@ public bool NoWrap { get; set; }</code></pre>
 
 
 
+  <a id="UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFInputTagHelperBase_WrapId_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.WrapId*"></a>
+
+  <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFInputTagHelperBase_WrapId" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.WrapId">
+  WrapId
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs/#L287"><i class="bi bi-code-slash"></i></a>
+  </h3>
+
+  <div class="markdown level1 summary"><p>When set, set the id of the most outer wrapping element to this value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[HtmlAttributeName(&quot;wrap-id&quot;)]
+public string WrapId { get; set; }</code></pre>
+  </div>
+
+
+
+
+
+  <h4 class="section">Property Value</h4>
+  <dl class="parameters">
+    <dt><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.string">string</a></dt>
+    <dd></dd>
+  </dl>
+
+
+
+
+
+
+
+
   <h2 class="section" id="methods">Methods
 </h2>
 
@@ -761,7 +828,7 @@ public bool NoWrap { get; set; }</code></pre>
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFInputTagHelperBase_GetCheckboxExtraHtml" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetCheckboxExtraHtml">
   GetCheckboxExtraHtml()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs/#L644"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs/#L657"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns the html to use for the checkbox extra content.</p>
@@ -793,7 +860,7 @@ public bool NoWrap { get; set; }</code></pre>
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFInputTagHelperBase_GetCheckboxInputClasses" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetCheckboxInputClasses">
   GetCheckboxInputClasses()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs/#L599"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs/#L612"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns the classes to use for the checkbox input element.</p>
@@ -825,7 +892,7 @@ public bool NoWrap { get; set; }</code></pre>
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFInputTagHelperBase_GetCheckboxLabelClasses" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetCheckboxLabelClasses">
   GetCheckboxLabelClasses()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs/#L617"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs/#L630"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns the classes to use for the checkbox label element.</p>
@@ -857,7 +924,7 @@ public bool NoWrap { get; set; }</code></pre>
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFInputTagHelperBase_GetCheckboxLabelDescriptionClasses" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetCheckboxLabelDescriptionClasses">
   GetCheckboxLabelDescriptionClasses()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs/#L635"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs/#L648"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns the classes to use for the description span element inside the checkbox label.</p>
@@ -889,7 +956,7 @@ public bool NoWrap { get; set; }</code></pre>
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFInputTagHelperBase_GetCheckboxLabelSpanClasses" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetCheckboxLabelSpanClasses">
   GetCheckboxLabelSpanClasses()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs/#L626"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs/#L639"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns the classes to use for the span element inside the checkbox label.</p>
@@ -921,7 +988,7 @@ public bool NoWrap { get; set; }</code></pre>
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFInputTagHelperBase_GetCheckboxWrapperClasses" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetCheckboxWrapperClasses">
   GetCheckboxWrapperClasses()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs/#L608"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs/#L621"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns the classes to use for the checkbox wrapper div element.</p>
@@ -953,7 +1020,7 @@ public bool NoWrap { get; set; }</code></pre>
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFInputTagHelperBase_GetDescription" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetDescription">
   GetDescription()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs/#L416"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs/#L429"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets a description string either from the <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFInputTagHelperBase_Description">Description</a> property or from
@@ -986,7 +1053,7 @@ one of the known description providing attributes.</p>
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFInputTagHelperBase_GetFieldErrorsClasses" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetFieldErrorsClasses">
   GetFieldErrorsClasses()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs/#L522"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs/#L535"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns the classes to use for the field errors div element.</p>
@@ -1018,7 +1085,7 @@ one of the known description providing attributes.</p>
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFInputTagHelperBase_GetFieldErrorsHtml_Microsoft_AspNetCore_Mvc_ModelBinding_ModelStateDictionary_System_String_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetFieldErrorsHtml(Microsoft.AspNetCore.Mvc.ModelBinding.ModelStateDictionary,System.String)">
   GetFieldErrorsHtml(ModelStateDictionary, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs/#L533"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs/#L546"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns the html to use for the field errors.</p>
@@ -1057,7 +1124,7 @@ one of the known description providing attributes.</p>
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFInputTagHelperBase_GetLabelHtmlAsync_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContext_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetLabelHtmlAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)">
   GetLabelHtmlAsync(TagHelperContext, TagHelperOutput)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs/#L389"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs/#L402"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns the label html. The default implementation checks if <a class="xref" href="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.html#UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFInputTagHelperBase_Label">Label</a> has a value,
@@ -1100,7 +1167,7 @@ the <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspne
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFInputTagHelperBase_GetRadioExtraHtml" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetRadioExtraHtml">
   GetRadioExtraHtml()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs/#L590"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs/#L603"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns the html to use for the radio extra content.</p>
@@ -1132,7 +1199,7 @@ the <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspne
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFInputTagHelperBase_GetRadioInputClasses" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetRadioInputClasses">
   GetRadioInputClasses()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs/#L545"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs/#L558"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns the classes to use for the radio input element.</p>
@@ -1164,7 +1231,7 @@ the <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspne
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFInputTagHelperBase_GetRadioLabelClasses" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetRadioLabelClasses">
   GetRadioLabelClasses()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs/#L563"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs/#L576"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns the classes to use for the radio label element.</p>
@@ -1196,7 +1263,7 @@ the <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspne
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFInputTagHelperBase_GetRadioLabelDescriptionClasses" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetRadioLabelDescriptionClasses">
   GetRadioLabelDescriptionClasses()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs/#L581"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs/#L594"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns the classes to use for the description span element inside the radio label.</p>
@@ -1228,7 +1295,7 @@ the <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspne
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFInputTagHelperBase_GetRadioLabelSpanClasses" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetRadioLabelSpanClasses">
   GetRadioLabelSpanClasses()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs/#L572"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs/#L585"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns the classes to use for the span element inside the radio label.</p>
@@ -1260,7 +1327,7 @@ the <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspne
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFInputTagHelperBase_GetRadioWrapperClasses" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetRadioWrapperClasses">
   GetRadioWrapperClasses()
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs/#L554"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs/#L567"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns the classes to use for the radio wrapper div element.</p>
@@ -1292,7 +1359,7 @@ the <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspne
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFInputTagHelperBase_GetTextInputClasses_System_String_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputClasses(System.String)">
   GetTextInputClasses(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs/#L360"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs/#L373"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns the classes to use for the input element.</p>
@@ -1329,7 +1396,7 @@ the <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspne
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFInputTagHelperBase_GetTextInputLabelClasses_System_String_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputLabelClasses(System.String)">
   GetTextInputLabelClasses(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs/#L372"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs/#L385"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns the classes to use for the label element.</p>
@@ -1366,7 +1433,7 @@ the <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspne
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFInputTagHelperBase_GetTextInputLabelDescriptionClasses_System_String_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputLabelDescriptionClasses(System.String)">
   GetTextInputLabelDescriptionClasses(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs/#L485"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs/#L498"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns the classes to use for the description span element inside the label.</p>
@@ -1403,7 +1470,7 @@ the <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspne
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFInputTagHelperBase_GetTextInputLabelSpanClasses_System_String_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputLabelSpanClasses(System.String)">
   GetTextInputLabelSpanClasses(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs/#L441"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs/#L454"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns the classes to use for the span element inside the label.</p>
@@ -1440,7 +1507,7 @@ the <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspne
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFInputTagHelperBase_GetTextInputPostHtml_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContext_System_String_System_String_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputPostHtml(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,System.String,System.String)">
   GetTextInputPostHtml(TagHelperContext, string, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs/#L471"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs/#L484"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets html code inserted after the input element.</p>
@@ -1481,7 +1548,7 @@ the <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspne
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFInputTagHelperBase_GetTextInputPreHtml_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContext_System_String_System_String_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputPreHtml(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,System.String,System.String)">
   GetTextInputPreHtml(TagHelperContext, string, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs/#L455"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs/#L468"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Gets html code inserted before the input element.</p>
@@ -1522,7 +1589,7 @@ the <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspne
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFInputTagHelperBase_GetTextInputWrapperClasses_System_String_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetTextInputWrapperClasses(System.String)">
   GetTextInputWrapperClasses(string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs/#L497"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs/#L510"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns the classes to use for the wrapper div element.</p>
@@ -1559,7 +1626,7 @@ the <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspne
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFInputTagHelperBase_GetValidationFeedbackContainerHtml_System_String_System_String_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.GetValidationFeedbackContainerHtml(System.String,System.String)">
   GetValidationFeedbackContainerHtml(string, string)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs/#L510"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs/#L523"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Returns the classes to use for the validation feedback container.</p>
@@ -1600,7 +1667,7 @@ the <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspne
 
   <h3 id="UltraForce_Library_Core_Asp_TagHelpers_Base_Forms_UFInputTagHelperBase_ProcessAsync_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperContext_Microsoft_AspNetCore_Razor_TagHelpers_TagHelperOutput_" data-uid="UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFInputTagHelperBase.ProcessAsync(Microsoft.AspNetCore.Razor.TagHelpers.TagHelperContext,Microsoft.AspNetCore.Razor.TagHelpers.TagHelperOutput)">
   ProcessAsync(TagHelperContext, TagHelperOutput)
-  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs/#L288"><i class="bi bi-code-slash"></i></a>
+  <a class="header-action link-secondary" title="View source" href="https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp/blob/master/UltraForce.Library.Core.Asp/TagHelpers/Base/Forms/UFInputTagHelperBase.cs/#L301"><i class="bi bi-code-slash"></i></a>
   </h3>
 
   <div class="markdown level1 summary"><p>Asynchronously executes the <a class="xref" href="https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.razor.taghelpers.taghelper">TagHelper</a> with the given <code class="paramref">context</code> and
