@@ -15,8 +15,10 @@
         <RepositoryUrl>https://github.com/JoshaMunnik/UltraForce.Library.Core.Asp</RepositoryUrl>
         <PackageReadmeFile>README.md</PackageReadmeFile>
         <AssemblyVersion></AssemblyVersion>
-        <Version>1.0.127</Version>
-        <PackageReleaseNotes>- added `WrapId` and `LabelId` to `UFInputTagHelperBase` and `UFSelectTagHelperBase`
+        <Version>1.0.128</Version>
+        <PackageReleaseNotes>- updated `UFDataItemTagHelperBase`, `UFDataNameTagHelperBase` and `UFDataValueTagHelperBase`,
+  the virtual methods to get the css classes now get passed an instance of the containing
+  `UFDataListTagHelperBase` as parameter.
 </PackageReleaseNotes>
         <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
     </PropertyGroup>

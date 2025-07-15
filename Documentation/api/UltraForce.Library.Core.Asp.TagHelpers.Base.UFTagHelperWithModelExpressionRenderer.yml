@@ -44,9 +44,9 @@ items:
   - Microsoft.AspNetCore.Razor.TagHelpers.TagHelper
   - UltraForce.Library.Core.Asp.TagHelpers.Base.UFTagHelperWithViewContext
   derivedClasses:
-  - UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase
-  - UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataNameTagHelperBase
-  - UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataValueTagHelperBase
+  - UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase`1
+  - UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataNameTagHelperBase`1
+  - UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataValueTagHelperBase`1
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Forms.UFFormButtonTagHelperBase
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridHeaderTagHelperBaseBase
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Grid.Base.UFGridItemTagHelperBaseBase

@@ -99,14 +99,14 @@ items:
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Data
   name: UltraForce.Library.Core.Asp.TagHelpers.Base.Data
   items:
-  - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase
-    name: UFDataItemTagHelperBase
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase`1
+    name: UFDataItemTagHelperBase<TDataList>
   - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataListTagHelperBase
     name: UFDataListTagHelperBase
-  - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataNameTagHelperBase
-    name: UFDataNameTagHelperBase
-  - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataValueTagHelperBase
-    name: UFDataValueTagHelperBase
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataNameTagHelperBase`1
+    name: UFDataNameTagHelperBase<TDataList>
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataValueTagHelperBase`1
+    name: UFDataValueTagHelperBase<TDataList>
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
   name: UltraForce.Library.Core.Asp.TagHelpers.Base.Forms
   items:

@@ -4,10 +4,10 @@ items:
   commentId: N:UltraForce.Library.Core.Asp.TagHelpers.Base.Data
   id: UltraForce.Library.Core.Asp.TagHelpers.Base.Data
   children:
-  - UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase
+  - UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase`1
   - UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataListTagHelperBase
-  - UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataNameTagHelperBase
-  - UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataValueTagHelperBase
+  - UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataNameTagHelperBase`1
+  - UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataValueTagHelperBase`1
   langs:
   - csharp
   - vb
@@ -18,27 +18,84 @@ items:
   assemblies:
   - UltraForce.Library.Core.Asp
 references:
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase
-  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase
-  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase.html
-  name: UFDataItemTagHelperBase
-  nameWithType: UFDataItemTagHelperBase
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase`1
+  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase`1
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase-1.html
+  name: UFDataItemTagHelperBase<TDataList>
+  nameWithType: UFDataItemTagHelperBase<TDataList>
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase<TDataList>
+  nameWithType.vb: UFDataItemTagHelperBase(Of TDataList)
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase(Of TDataList)
+  name.vb: UFDataItemTagHelperBase(Of TDataList)
+  spec.csharp:
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase`1
+    name: UFDataItemTagHelperBase
+    href: UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase-1.html
+  - name: <
+  - name: TDataList
+  - name: '>'
+  spec.vb:
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase`1
+    name: UFDataItemTagHelperBase
+    href: UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataItemTagHelperBase-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TDataList
+  - name: )
 - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataListTagHelperBase
   commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataListTagHelperBase
   href: UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataListTagHelperBase.html
   name: UFDataListTagHelperBase
   nameWithType: UFDataListTagHelperBase
   fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataListTagHelperBase
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataNameTagHelperBase
-  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataNameTagHelperBase
-  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataNameTagHelperBase.html
-  name: UFDataNameTagHelperBase
-  nameWithType: UFDataNameTagHelperBase
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataNameTagHelperBase
-- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataValueTagHelperBase
-  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataValueTagHelperBase
-  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataValueTagHelperBase.html
-  name: UFDataValueTagHelperBase
-  nameWithType: UFDataValueTagHelperBase
-  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataValueTagHelperBase
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataNameTagHelperBase`1
+  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataNameTagHelperBase`1
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataNameTagHelperBase-1.html
+  name: UFDataNameTagHelperBase<TDataList>
+  nameWithType: UFDataNameTagHelperBase<TDataList>
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataNameTagHelperBase<TDataList>
+  nameWithType.vb: UFDataNameTagHelperBase(Of TDataList)
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataNameTagHelperBase(Of TDataList)
+  name.vb: UFDataNameTagHelperBase(Of TDataList)
+  spec.csharp:
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataNameTagHelperBase`1
+    name: UFDataNameTagHelperBase
+    href: UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataNameTagHelperBase-1.html
+  - name: <
+  - name: TDataList
+  - name: '>'
+  spec.vb:
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataNameTagHelperBase`1
+    name: UFDataNameTagHelperBase
+    href: UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataNameTagHelperBase-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TDataList
+  - name: )
+- uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataValueTagHelperBase`1
+  commentId: T:UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataValueTagHelperBase`1
+  href: UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataValueTagHelperBase-1.html
+  name: UFDataValueTagHelperBase<TDataList>
+  nameWithType: UFDataValueTagHelperBase<TDataList>
+  fullName: UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataValueTagHelperBase<TDataList>
+  nameWithType.vb: UFDataValueTagHelperBase(Of TDataList)
+  fullName.vb: UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataValueTagHelperBase(Of TDataList)
+  name.vb: UFDataValueTagHelperBase(Of TDataList)
+  spec.csharp:
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataValueTagHelperBase`1
+    name: UFDataValueTagHelperBase
+    href: UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataValueTagHelperBase-1.html
+  - name: <
+  - name: TDataList
+  - name: '>'
+  spec.vb:
+  - uid: UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataValueTagHelperBase`1
+    name: UFDataValueTagHelperBase
+    href: UltraForce.Library.Core.Asp.TagHelpers.Base.Data.UFDataValueTagHelperBase-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TDataList
+  - name: )

@@ -9,9 +9,9 @@
 // Copyright (C) 2024 Ultra Force Development
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
-// of this software and associated documentation files (the "Software"), to 
-// deal in the Software without restriction, including without limitation the 
-// rights to use, copy, modify, merge, publish, distribute, sublicense, and/or 
+// of this software and associated documentation files (the "Software"), to
+// deal in the Software without restriction, including without limitation the
+// rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
 // sell copies of the Software, and to permit persons to whom the Software is
 // furnished to do so, subject to the following conditions:
 //
@@ -22,8 +22,8 @@
 // IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 // FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 // AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING 
-// FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS 
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+// FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
 // IN THE SOFTWARE.
 // </license>
 
@@ -43,12 +43,13 @@ namespace UltraForce.Library.Core.Asp.TagHelpers.Base.Data;
 /// <code>
 /// &lt;dd class="{GetDataNameClasses()}"&gt;{content|For value}&lt;/dd&gt;
 /// </code>
-/// </para> 
+/// </para>
 /// </summary>
 [SuppressMessage("ReSharper", "ClassWithVirtualMembersNeverInherited.Global")]
-public abstract class UFDataValueTagHelperBase(
+public abstract class UFDataValueTagHelperBase<TDataList>(
   IUFModelExpressionRenderer modelExpressionRenderer
 ) : UFTagHelperWithModelExpressionRenderer(modelExpressionRenderer)
+  where TDataList : UFDataListTagHelperBase
 {
   #region public properties
 
@@ -65,13 +66,16 @@ public abstract class UFDataValueTagHelperBase(
   public override async Task ProcessAsync(TagHelperContext context, TagHelperOutput output)
   {
     await base.ProcessAsync(context, output);
+    TDataList dataList = UFTagHelperTools.GetItem<TDataList>(
+      context, UFDataListTagHelperBase.DataList
+    );
     output.TagName = "dd";
     output.TagMode = TagMode.StartTagAndEndTag;
     if (this.For != null)
     {
       await this.ModelExpressionRenderer.SetContentToValueAsync(output, this.For, this.ViewContext);
     }
-    UFTagHelperTools.AddClasses(output, this.GetDataValueClasses());
+    UFTagHelperTools.AddClasses(output, this.GetDataValueClasses(dataList));
   }
 
   #endregion
@@ -81,8 +85,11 @@ public abstract class UFDataValueTagHelperBase(
   /// <summary>
   /// The default implementation returns an empty string.
   /// </summary>
+  /// <param name="dataList">
+  /// The data list this item is part of.
+  /// </param>
   /// <returns></returns>
-  protected virtual string GetDataValueClasses()
+  protected virtual string GetDataValueClasses(TDataList dataList)
   {
     return string.Empty;
   }
